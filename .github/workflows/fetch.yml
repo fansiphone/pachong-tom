@@ -3,7 +3,7 @@ name: Fetch
 on:
   workflow_dispatch:
   schedule:
-    # 表达式生成 https://crontab.guru/
+    # 0表达式生成 https://crontab.guru/
     - cron: '0 0/3 * * *'
   push:
     paths:
@@ -36,7 +36,7 @@ jobs:
       run: |                 
         git config --local user.email "actions@github.com"
         git config --local user.name "GitHub Actions"
-        git pull origin main
+        git pull origin master
         git add list*
         git add snippets/
         git commit -m "$(date '+%Y-%m-%d %H:%M:%S') 抓取节点"
