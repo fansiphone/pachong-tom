@@ -36,10 +36,12 @@ jobs:
       run: |                 
         git config --local user.email "actions@github.com"
         git config --local user.name "GitHub Actions"
-        git pull origin master --rebase
+        git config pull.rebase true       # 配置默认合并策略
+        git pull origin master            # 现在会使用 rebase 自动合并
         git add list*
         git add snippets/
         git commit -m "$(date '+%Y-%m-%d %H:%M:%S') 抓取节点"
+        git push origin master
     - name: 推送更改
       uses: ad-m/github-push-action@master
       with:
