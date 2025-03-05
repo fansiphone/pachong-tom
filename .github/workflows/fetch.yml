@@ -63,3 +63,32 @@ jobs:
       with:
         url: ${{ steps.purge_urls.outputs.urls }}
       continue-on-error: true
+- name: 通过 API 更新 Gist
+      env:
+        GIST_ID: "ccff3b9d505935afdc55356241a099fb"
+        GITHUB_TOKEN: "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"
+      run: |
+        # 安装必要工具
+        sudo apt-get install -y jq
+
+        # 读取 list.yml 内容并 Base64 编码
+        CONTENT_BASE64=$(base64 -w0 list.yml)
+        
+        # 构造 API 请求体
+        JSON_DATA='{
+          "description": "Auto-updated list.yml from GitHub Actions",
+          "files": {
+            "list.yml": {
+              "content": "'$(echo "$CONTENT_BASE64" | base64 -d)'",
+              "filename": "list.yml"
+            }
+          }
+        }'
+
+        # 发送 PATCH 请求更新 Gist
+        curl -X PATCH \
+          -H "Authorization: Bearer $GITHUB_TOKEN" \
+          -H "Accept: application/vnd.github.v3+json" \
+          -H "Content-Type: application/json" \
+          -d "$JSON_DATA" \
+          "https://api.github.com/gists/$GIST_ID"
