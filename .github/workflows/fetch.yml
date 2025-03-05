@@ -88,8 +88,8 @@ jobs:
         )
 
         # 创建临时文件存储中间 JSON
-        TEMP_FILE=$(mktemp)
-        echo "{}" > "$TEMP_FILE"
+        TEMP_JSON=$(mktemp)
+        echo "{}" > "$TEMP_JSON"
 
         # 循环处理文件
         for FILE_PATH in "${FILES[@]}"; do
@@ -97,26 +97,27 @@ jobs:
           jq --null-input \
             --arg name "$FILE_NAME" \
             --rawfile content "$FILE_PATH" \
-            --slurpfile current "$TEMP_FILE" \
+            --slurpfile current "$TEMP_JSON" \
             '($current[0]) + { ($name): { "content": $content, "filename": $name } }' \
-            > "$TEMP_FILE.tmp"
-          mv "$TEMP_FILE.tmp" "$TEMP_FILE"
+            > "$TEMP_JSON.tmp"
+          mv "$TEMP_JSON.tmp" "$TEMP_JSON"
         done
 
-        # 构造最终请求体
-        JSON_BODY=$(jq -n \
+        # 创建最终请求体文件
+        FINAL_JSON=$(mktemp)
+        jq -n \
           --arg desc "Auto-updated config files" \
-          --slurpfile files "$TEMP_FILE" \
-          '{ description: $desc, files: $files[0] }'
-        )
+          --slurpfile files "$TEMP_JSON" \
+          '{ description: $desc, files: $files[0] }' \
+          > "$FINAL_JSON"
 
-        # 清理临时文件
-        rm -f "$TEMP_FILE"
-
-        # 发送请求
+        # 发送请求（从文件读取数据）
         curl -sS -X PATCH \
           -H "Authorization: Bearer $GITHUB_TOKEN" \
           -H "Accept: application/vnd.github.v3+json" \
           -H "Content-Type: application/json" \
-          -d "$JSON_BODY" \
+          --data-binary "@$FINAL_JSON" \
           "https://api.github.com/gists/$GIST_ID"
+
+        # 清理临时文件
+        rm -f "$TEMP_JSON" "$FINAL_JSON"
