@@ -70,11 +70,13 @@ jobs:
         GIST_ID: "ccff3b9d505935afdc55356241a099fb"
         GITHUB_TOKEN: "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"
       run: |
-# 安装必要工具
-sudo apt-get update && sudo apt-get install -y jq
+    #!/bin/bash
 
-# 定义要上传的文件列表
-FILES=(
+    # 安装必要工具
+    sudo apt-get update && sudo apt-get install -y jq
+
+    # 定义要上传的文件列表
+    FILES=(
     "list.yml"
     "snippets/nodes_HK.meta.yml"
     "snippets/nodes_TW.meta.yml"
