@@ -67,42 +67,50 @@ jobs:
     # 新增的 Gist 上传步骤 
     - name: 通过 API 更新 Gist（多文件）
       env:
-        GIST_ID: "ccff3b9d505935afdc55356241a099fb"
-        GITHUB_TOKEN: "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"
+        GIST_ID: ${{ secrets.GIST_ID }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
-    #!/bin/bash
+        #!/bin/bash
+        set -euo pipefail  # 严格模式：错误退出、未定义变量报错
 
-    # 安装必要工具
-    sudo apt-get update && sudo apt-get install -y jq
+        # 安装必要工具
+        sudo apt-get update && sudo apt-get install -y jq
 
-    # 定义要上传的文件列表
-    FILES=(
-    "list.yml"
-    "snippets/nodes_HK.meta.yml"
-    "snippets/nodes_TW.meta.yml"
-    "snippets/nodes_SG.meta.yml"
-    "snippets/nodes_JP.meta.yml"
-    "snippets/nodes_US.meta.yml"
-    "snippets/nodes_KR.meta.yml"
-)
+        # 定义要上传的文件列表
+        FILES=(
+          "list.yml"
+          "snippets/nodes_HK.meta.yml"
+          "snippets/nodes_TW.meta.yml"
+          "snippets/nodes_SG.meta.yml"
+          "snippets/nodes_JP.meta.yml"
+          "snippets/nodes_US.meta.yml"
+          "snippets/nodes_KR.meta.yml"
+        )
 
-# 构建文件内容 JSON 对象
-FILES_JSON="{}"
-for FILE_PATH in "${FILES[@]}"; do
-    FILE_NAME=$(basename "$FILE_PATH")
-    CONTENT=$(cat "$FILE_PATH")
-    FILES_JSON=$(echo "$FILES_JSON" | jq --arg name "$FILE_NAME" --arg content "$CONTENT" \
-        '. + { ($name): { "content": $content, "filename": $name } }')
-done
+        # 构建文件内容 JSON 对象
+        FILES_JSON="{}"
+        for FILE_PATH in "${FILES[@]}"; do
+          FILE_NAME=$(basename "$FILE_PATH")
+          # 使用 --rawfile 直接从文件读取内容，避免参数过长
+          FILES_JSON=$(jq --null-input \
+            --arg name "$FILE_NAME" \
+            --rawfile content "$FILE_PATH" \
+            --argjson current "$FILES_JSON" \
+            '$current + { ($name): { "content": $content, "filename": $name } }'
+          )
+        done
 
-# 构造完整 JSON 请求体
-JSON_BODY=$(jq -n --arg desc "Auto-updated config files" --argjson files "$FILES_JSON" \
-    '{ description: $desc, files: $files }')
+        # 构造完整 JSON 请求体
+        JSON_BODY=$(jq -n \
+          --arg desc "Auto-updated config files" \
+          --argjson files "$FILES_JSON" \
+          '{ description: $desc, files: $files }'
+        )
 
-# 发送 API 请求
-curl -X PATCH \
-    -H "Authorization: Bearer $GITHUB_TOKEN" \
-    -H "Accept: application/vnd.github.v3+json" \
-    -H "Content-Type: application/json" \
-    -d "$JSON_BODY" \
-    "https://api.github.com/gists/$GIST_ID"
+        # 发送 API 请求
+        curl -sS -X PATCH \
+          -H "Authorization: Bearer $GITHUB_TOKEN" \
+          -H "Accept: application/vnd.github.v3+json" \
+          -H "Content-Type: application/json" \
+          -d "$JSON_BODY" \
+          "https://api.github.com/gists/$GIST_ID"
