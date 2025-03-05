@@ -63,32 +63,43 @@ jobs:
       with:
         url: ${{ steps.purge_urls.outputs.urls }}
       continue-on-error: true
-    - name: 通过 API 更新 Gist
+
+    # 新增的 Gist 上传步骤 
+    - name: 通过 API 更新 Gist（多文件）
       env:
         GIST_ID: "ccff3b9d505935afdc55356241a099fb"
         GITHUB_TOKEN: "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"
       run: |
         # 安装必要工具
-        sudo apt-get install -y jq
+        sudo apt-get update && sudo apt-get install -y jq
 
-        # 读取 list.yml 内容并 Base64 编码
-        CONTENT_BASE64=$(base64 -w0 list.yml)
+        # 定义要上传的文件列表
+        FILES=(
+          "list.yml"
+          "snippets/nodes_HK.meta.yml"
+          "snippets/nodes_TW.meta.yml"
+          "snippets/nodes_SG.meta.yml"
+          "snippets/nodes_JP.meta.yml"
+          "snippets/nodes_US.meta.yml"
+          "snippets/nodes_KR.meta.yml"
+        )
+
+        # 构造 JSON 请求体
+        JSON_BODY='{"description": "Auto-updated config files", "files": {}}'
         
-        # 构造 API 请求体
-        JSON_DATA='{
-          "description": "Auto-updated list.yml from GitHub Actions",
-          "files": {
-            "list.yml": {
-              "content": "'$(echo "$CONTENT_BASE64" | base64 -d)'",
-              "filename": "list.yml"
-            }
-          }
-        }'
+        # 遍历文件并添加到请求体
+        for FILE_PATH in "${FILES[@]}"; do
+          FILE_NAME=$(basename "$FILE_PATH")
+          CONTENT_BASE64=$(base64 -w0 "$FILE_PATH")
+          JSON_BODY=$(echo "$JSON_BODY" | jq --arg name "$FILE_NAME" \
+            --arg content "$(echo "$CONTENT_BASE64" | base64 -d)" \
+            '.files[$name] = {"content": $content, "filename": $name}')
+        done
 
-        # 发送 PATCH 请求更新 Gist
+        # 发送 API 请求
         curl -X PATCH \
           -H "Authorization: Bearer $GITHUB_TOKEN" \
           -H "Accept: application/vnd.github.v3+json" \
           -H "Content-Type: application/json" \
-          -d "$JSON_DATA" \
+          -d "$JSON_BODY" \
           "https://api.github.com/gists/$GIST_ID"
