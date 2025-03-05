@@ -71,52 +71,52 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
         #!/bin/bash
-        set -euo pipefail  # 严格模式：错误退出、未定义变量报错
+        set -euo pipefail
 
         # 安装必要工具
         sudo apt-get update && sudo apt-get install -y jq
 
-# 定义文件列表
-FILES=(
-    "list.yml"
-    "snippets/nodes_HK.meta.yml"
-    "snippets/nodes_TW.meta.yml"
-    "snippets/nodes_SG.meta.yml"
-    "snippets/nodes_JP.meta.yml"
-    "snippets/nodes_US.meta.yml"
-    "snippets/nodes_KR.meta.yml"
-)
+        # 定义文件列表
+        FILES=(
+          "list.yml"
+          "snippets/nodes_HK.meta.yml"
+          "snippets/nodes_TW.meta.yml"
+          "snippets/nodes_SG.meta.yml"
+          "snippets/nodes_JP.meta.yml"
+          "snippets/nodes_US.meta.yml"
+          "snippets/nodes_KR.meta.yml"
+        )
 
-# 创建临时文件存储中间 JSON
-TEMP_FILE=$(mktemp)
-echo "{}" > "$TEMP_FILE"
+        # 创建临时文件存储中间 JSON
+        TEMP_FILE=$(mktemp)
+        echo "{}" > "$TEMP_FILE"
 
-# 循环处理文件
-for FILE_PATH in "${FILES[@]}"; do
-    FILE_NAME=$(basename "$FILE_PATH")
-    jq --null-input \
-        --arg name "$FILE_NAME" \
-        --rawfile content "$FILE_PATH" \
-        --slurpfile current "$TEMP_FILE" \
-        '($current[0]) + { ($name): { "content": $content, "filename": $name } }' \
-        > "$TEMP_FILE.tmp"
-    mv "$TEMP_FILE.tmp" "$TEMP_FILE"
-done
+        # 循环处理文件
+        for FILE_PATH in "${FILES[@]}"; do
+          FILE_NAME=$(basename "$FILE_PATH")
+          jq --null-input \
+            --arg name "$FILE_NAME" \
+            --rawfile content "$FILE_PATH" \
+            --slurpfile current "$TEMP_FILE" \
+            '($current[0]) + { ($name): { "content": $content, "filename": $name } }' \
+            > "$TEMP_FILE.tmp"
+          mv "$TEMP_FILE.tmp" "$TEMP_FILE"
+        done
 
-# 构造最终请求体
-JSON_BODY=$(jq -n \
-    --arg desc "Auto-updated config files" \
-    --slurpfile files "$TEMP_FILE" \
-    '{ description: $desc, files: $files[0] }'
-)
+        # 构造最终请求体
+        JSON_BODY=$(jq -n \
+          --arg desc "Auto-updated config files" \
+          --slurpfile files "$TEMP_FILE" \
+          '{ description: $desc, files: $files[0] }'
+        )
 
-# 清理临时文件
-rm -f "$TEMP_FILE"
+        # 清理临时文件
+        rm -f "$TEMP_FILE"
 
-# 发送请求
-curl -sS -X PATCH \
-    -H "Authorization: Bearer $GITHUB_TOKEN" \
-    -H "Accept: application/vnd.github.v3+json" \
-    -H "Content-Type: application/json" \
-    -d "$JSON_BODY" \
-    "https://api.github.com/gists/$GIST_ID"
+        # 发送请求
+        curl -sS -X PATCH \
+          -H "Authorization: Bearer $GITHUB_TOKEN" \
+          -H "Accept: application/vnd.github.v3+json" \
+          -H "Content-Type: application/json" \
+          -d "$JSON_BODY" \
+          "https://api.github.com/gists/$GIST_ID"
