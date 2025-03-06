@@ -1,15 +1,15 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  country: 🇫🇮 FI
+  country: 🇮IR
   delay: 2066
-  name: 21,64,162,263,378|德国 - Frankfurt Am Main - Hetzn...
+  name: 21,64,162,263,378,402|NO23786
   password: kcHOaeQgEca5hRAF/ESLV0Dq7n7BvENRvSGYvKMjdRI=
   port: 26992
   server: matrix4.mobindvil.shop
   type: ss
 - alterId: 0
   cipher: auto
-  name: '21,64,162,263,295,382,386,415|4FreeIran-11489 #1'
+  name: '21,64,162,263,295,306,382,386,402,415|4Jadi-11497 #1'
   network: ws
   port: 443
   server: eu9.998998.best
@@ -61,6 +61,15 @@ proxies:
   type: vmess
   udp: true
   uuid: 000a0d18-02fe-4cda-a68e-96b55e067567
+- down: 500
+  name: 62|🇩🇪 Oracle 德国-Hy2
+  password: 9f79211a-45c0-4810-80e0-0768f686a1da
+  port: 32011
+  server: oracle-de.mmaccc.top
+  skip-cert-verify: true
+  sni: oracle-de.mmaccc.top
+  type: hysteria2
+  up: 100
 - alterId: 0
   cipher: auto
   name: '67,294|🇩🇪 德国-1B #2'
@@ -236,15 +245,17 @@ proxies:
   sni: mmbiz12.redapricotcloud.com
   type: trojan
 - cipher: rc4-md5
-  country: 🇪DE
-  name: 229,276,295,346|DE_05 |48.08Mb
+  country: ' DE'
+  ip-version: dual
+  name: 229,259,276,295,346,402|NO29066
   password: 14fFPrbezE3HDZzsMOr6
   port: 8080
   server: 193.108.119.230
   type: ss
+  udp: true
 - alterId: 0
   cipher: auto
-  name: '229,295,382,386,415|4FreeIran-11057 #1'
+  name: '229,259,295,306,382,386,415|4Jadi-11062 #1'
   network: ws
   port: 443
   server: 57.129.24.125
@@ -259,52 +270,36 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '229,295,382,386,415|4FreeIran-11050 #1'
+  name: '229,259,295,306,382,386,402,415|4Jadi-11055 #1'
   network: ws
   port: 443
   server: 57.129.24.141
   servername: ''
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: true
   type: vmess
+  udp: true
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     headers:
       Host: ''
     path: /
-- name: '229,295,382,386,415|4FreeIran-5308 #1'
+- country: 🇩🇪DE
+  name: '229,259,295,306,382,386,402,415|4Jadi-5303 #1'
+  network: tcp
   password: telegram-id-privatevpns
   port: 22222
   server: 63.177.30.190
-  skip-cert-verify: false
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- country: DE
-  name: '233,295,386,393,415|4FreeIran-5248 #1'
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 3.124.150.215
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: trojan.burgerip.co.uk
   type: trojan
   udp: true
-- country: DE
-  name: '233,382,386,393,394,400,415|4FreeIran-5252 #1'
+- country: 🇪DE
+  name: 233,295,346,393,402|NO15894
   network: tcp
   password: telegram-id-privatevpns
   port: 22222
-  server: 3.127.161.179
-  skip-cert-verify: false
-  sni: trojan.burgerip.co.uk
-  type: trojan
-  udp: true
-- country: DE
-  name: 233,295,393|🇺🇸 [Trojan] 🇺🇸 美国 Amazon EC2服务...
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 3.65.75.114
+  server: 3.78.108.122
   skip-cert-verify: true
   sni: trojan.burgerip.co.uk
   type: trojan
@@ -316,12 +311,29 @@ proxies:
   server: js.wnwwv.cn
   type: ss
   udp: true
+- client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: 2086vless
+  name: '259,366,373,386,402,415|4Jadi-6026 #1'
+  network: grpc
+  port: 2060
+  reality-opts:
+    public-key: jW_vraWBLfMcIkPp89pEPSbFQn2VM4qtPO4FAoC2chE
+    short-id: 629cc26960e47e39
+  server: 91.107.181.177
+  servername: refersion.com
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: 46b06e2c-e5e0-4ad2-ad3e-9f316d7d3065
 - alterId: 0
   cipher: auto
   country: 🇺🇸US
   h2-opts: {}
   http-opts: {}
-  name: '260,346,369,370,385,386,393,394,403,415|4FreeIran-9438 #1'
+  name: '260,306,346,385,386,393,394,402,403,415|4Jadi-9439 #1'
   network: ws
   port: '80'
   server: 151.101.130.168
@@ -358,69 +370,72 @@ proxies:
   server: 185.177.229.245
   type: ss
 - cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 276,295,348|🇫🇷FR_229
+  name: 276,295|🇩🇪DE-217.182.198.219-5820
   password: XKFKl2rULjIp74
   port: 8009
   server: 217.182.198.219
   type: ss
 - cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 276,295,348|🇫🇷FR_228
+  name: 276,295|🇪DE-217.182.198.219-5819
   password: TEzjfAYq2IjtuoS
   port: 6697
   server: 217.182.198.219
   type: ss
 - cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 276,295,348|🇫🇷FR_252
+  name: 276,295|🇩🇪DE-217.182.198.219-5816
   password: Y6R9pAtvxxzmGC
   port: 5000
   server: 217.182.198.219
   type: ss
 - cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 276,295,348|🇫🇷FR_257
+  name: 276,295|🇪DE-217.182.198.219-5821
   password: FoOiGlkAA9yPEGP
   port: 7306
   server: 217.182.198.219
   type: ss
-- cipher: aes-256-gcm
-  name: 276|🇩🇪7 |  1.1MB/s
+- alterId: 0
+  cipher: aes-256-gcm
+  name: 276,402|NO22231
   password: g5MeD6Ft3CWlJId
   port: 5004
   server: 217.182.198.219
+  skip-cert-verify: true
+  tls: true
   type: ss
-- cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 276,295,348|🇫🇷FR_264
+- alterId: 0
+  cipher: aes-256-gcm
+  name: 276,295,402|NO26109
   password: pKEW8JPByTVTLtM
   port: 4444
   server: 217.182.198.219
+  skip-cert-verify: true
+  tls: true
   type: ss
 - cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 276,295,348|🇫🇷FR_250
+  name: 276,295|🇪DE-217.182.198.219-5807
   password: cdBIDV42DCwnfIN
   port: 8119
   server: 217.182.198.219
   type: ss
 - cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 276,295,348|🇫🇷FR_230
+  country: 🇩🇪 DE
+  name: 276,295,402|NO11113
   password: Y6R9pAtvxxzmGC
   port: 3389
   server: 217.182.198.219
   type: ss
-- cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 276,295,348|🇫🇷FR_253
+- alterId: 0
+  cipher: aes-256-gcm
+  name: 276,295,402|NO18000
   password: PCnnH6SQSnfoS27
   port: 8090
   server: 217.182.198.219
+  skip-cert-verify: true
+  tls: true
   type: ss
 - cipher: aes-256-gcm
-  name: 276|🇩🇪12 |  1.1MB/s
+  country: 🇷FR
+  name: 276,402|NO29070
   password: e4FCWrgpkji3QY
   port: 9102
   server: 217.182.198.219
@@ -431,26 +446,30 @@ proxies:
   port: 8888
   server: ns3849026.ip-217-182-198.eu
   type: ss
-- cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 276,295,348|🇫🇷FR_237
+- alterId: 0
+  cipher: aes-256-gcm
+  name: 276,295,402|NO18069
   password: faBAoD54k87UJG7
   port: 2376
   server: 217.182.198.219
+  skip-cert-verify: true
+  tls: true
   type: ss
 - cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 276,295,348|🇫🇷FR_256
+  country: 🇪 DE
+  name: 276,295,402|NO11110
   password: Y6R9pAtvxxzmGC
   port: 5001
   server: 217.182.198.219
   type: ss
-- cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 276,295,348|🇫🇷FR_234
+- alterId: 0
+  cipher: aes-256-gcm
+  name: 276,295,402|NO26070
   password: faBAoD54k87UJG7
   port: 2375
   server: 217.182.198.219
+  skip-cert-verify: true
+  tls: true
   type: ss
 - alterId: 0
   cipher: auto
@@ -473,40 +492,41 @@ proxies:
   server: ns3849026.ip-217-182-198.eu
   type: ss
 - cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 276,295,348|🇫🇷FR_242
+  name: 276,295|🇪DE-217.182.198.219-5798
   password: PCnnH6SQSnfoS27
   port: 8091
   server: 217.182.198.219
   type: ss
-- cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 276,295,348|🇫🇷FR_240
+- alterId: 0
+  cipher: aes-256-gcm
+  name: 276,295,402|NO26148
   password: cdBIDV42DCwnfIN
   port: 8118
   server: 217.182.198.219
+  skip-cert-verify: true
+  tls: true
   type: ss
 - cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 276,295,348|🇫🇷FR_265
+  name: 276,295|🇪DE-217.182.198.219-5825
   password: XKFKl2rULjIp74
   port: 8008
   server: 217.182.198.219
   type: ss
-- cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 276,295,348|🇫🇷FR_239
+- alterId: 0
+  cipher: aes-256-gcm
+  name: 276,295,402|NO62094
   password: e4FCWrgpkji3QY
   port: 9101
   server: 217.182.198.219
+  skip-cert-verify: true
+  tls: true
   type: ss
 - cipher: aes-256-gcm
-  name: 276,295,348|_154
+  name: 276,295|🇪DE-217.182.198.219-5723
   password: g5MeD6Ft3CWlJId
   port: 5003
   server: 217.182.198.219
   type: ss
-  udp: true
 - client-fingerprint: ''
   flow: ''
   fp: ''
@@ -543,7 +563,7 @@ proxies:
     grpc-service-name: ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
   host: ''
   mode: gun
-  name: 279|🇩🇪2 |  1.2MB/s
+  name: 279,402|NO18398
   network: grpc
   path: ''
   pbk: ''
@@ -556,10 +576,11 @@ proxies:
   servername: ''
   serviceName: ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
   sid: ''
+  skip-cert-verify: true
   sni: ''
   tls: false
   type: vless
-  udp: false
+  udp: true
   uuid: 88888888-8888-8888-8888-888888888888
   ws-opts:
     headers:
@@ -577,22 +598,6 @@ proxies:
     headers:
       Host: redw.pooriam.ir
     path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1?ed=2560#14|SC_speednode_0053
-- alterId: 0
-  cipher: auto
-  name: '282,373,394,396,456|🇺🇸 美国 058 #1'
-  network: ws
-  port: '443'
-  server: 172.67.71.217
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 9072d339-3885-4fe1-b0bc-29fa7505410e
-  ws-opts:
-    headers:
-      Host: 1t3chx0.zed23.web1337.net
-    path: /fixedfloati.cfd/linkwsd
 - name: 282|🇩🇪 DE 003 |  15.4MB/s
   network: ws
   port: 2087
@@ -655,7 +660,7 @@ proxies:
     path: /7vZtQ5D4M70AQWRN?ed=2560#5113
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: 290,295,348|_16
+  name: 290,295|🇩🇪DE-80.92.204.106-1181
   password: EXN3S3eQpjE7EJu8
   port: 9027
   server: 80.92.204.106
@@ -677,13 +682,12 @@ proxies:
   uuid: 6a99725d-2af8-d27c-cef5-302fbbe54c07
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: 290,295,348|_28
+  name: 290,295|🇩🇪DE-80.92.204.106-5597
   password: c3NtHJ5ujV2tGDfj
   port: 9084
   server: 80.92.204.106
   tfo: false
   type: ss
-  udp: true
 - client-fingerprint: chrome
   grpc-opts:
     grpc-mode: gun
@@ -700,8 +704,7 @@ proxies:
   uuid: abaf193b-eeb9-4a8a-afa7-6b6385156e94
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  country: 🇪DE
-  name: 290,295,348|🇪DE_207
+  name: 290,295|🇩🇪DE-80.92.204.106-5772
   password: 4R3hUfZ2FHhDmNcP
   port: 9061
   server: 80.92.204.106
@@ -709,7 +712,8 @@ proxies:
   type: ss
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: 290,295,348|_168
+  country: 🇩🇪DE
+  name: 290,295,402|NO11115
   password: M3t2ZEQcMGRWBjRa
   port: 9011
   server: 80.92.204.106
@@ -717,8 +721,7 @@ proxies:
   type: ss
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  country: 🇩🇪DE
-  name: 290,295,348|🇪DE_208
+  name: 290,295|🇪DE-80.92.204.106-1186
   password: XPtzA9sCug3SPR4c
   port: 9025
   server: 80.92.204.106
@@ -726,7 +729,7 @@ proxies:
   type: ss
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: 290,295,348|_15
+  name: 290,295|🇪DE-80.92.204.106-5584
   password: ZET59LF6DvCC8KVt
   port: 9005
   server: 80.92.204.106
@@ -734,8 +737,7 @@ proxies:
   type: ss
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  country: 🇩🇪DE
-  name: 290,295,348|🇩🇪DE_212
+  name: 290,295|🇩🇪DE-80.92.204.106-5770
   password: BwcAUZk8hUFAkDGN
   port: 9031
   server: 80.92.204.106
@@ -743,7 +745,7 @@ proxies:
   type: ss
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: 290,295,348|_02
+  name: 290,295|🇪DE-80.92.204.106-5583
   password: BejrQvtu9sqUeNuZ
   port: 9024
   server: 80.92.204.106
@@ -751,16 +753,15 @@ proxies:
   type: ss
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: 290,295,348|_30
+  name: 290,295|🇩🇪DE-80.92.204.106-5599
   password: f63gg8EruDnUrmz4
   port: 9010
   server: 80.92.204.106
   tfo: false
   type: ss
-  udp: true
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '290,366,386,415|4FreeIran-6490 #1'
+  name: '290,366,386,415|4Jadi-6480 #1'
   network: tcp
   port: 443
   reality-opts:
@@ -775,8 +776,7 @@ proxies:
   uuid: 6ff213b8-ccc7-4b5a-b4aa-37f7b792a1f1
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  country: 🇩🇪DE
-  name: 290,295,348|🇩🇪DE_213
+  name: 290,295|🇩🇪DE-80.92.204.106-5776
   password: cp8pRSUAyLhTfVWH
   port: 9064
   server: 80.92.204.106
@@ -814,8 +814,7 @@ proxies:
   type: trojan
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  country: 🇩🇪DE
-  name: 290,295,348|🇩🇪DE_211
+  name: 290,295|🇩🇪DE-80.92.204.106-5769
   password: NvS8N4Vf8qAGPSCL
   port: 9046
   server: 80.92.204.106
@@ -840,7 +839,7 @@ proxies:
   uuid: 6ff213b8-ccc7-4b5a-b4aa-37f7b792a1f1
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: 290,295,348|_13
+  name: 290,295|🇪DE-80.92.204.106-1179
   password: a3GFYt36Sm82Vys9
   port: 9000
   server: 80.92.204.106
@@ -875,17 +874,16 @@ proxies:
   uuid: e3966665-79e5-4445-bc6d-8f1f955beba5
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: 290,295,348|_32
+  name: 290,295|🇩🇪DE-80.92.204.106-1185
   password: BNmAXXxAHYpTRdzu
   port: 9020
   server: 80.92.204.106
   tfo: false
   type: ss
-  udp: true
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  country: 🇩🇪DE
-  name: 290,295,348|🇩🇪DE_215
+  country: 🇪 DE
+  name: 290,295,402|NO11111
   password: aLpQtfEZe445QyHk
   port: 9098
   server: 80.92.204.106
@@ -909,8 +907,7 @@ proxies:
   type: trojan
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  country: 🇩🇪DE
-  name: 290,295,348|🇩🇪DE_216
+  name: 290,295|🇩🇪DE-80.92.204.106-5777
   password: S7KwUu7yBy58S3Ga
   port: 9042
   server: 80.92.204.106
@@ -932,8 +929,7 @@ proxies:
   uuid: abaf193b-eeb9-4a8a-afa7-6b6385156e94
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  country: 🇩🇪DE
-  name: 290,295,348|🇩🇪DE_214
+  name: 290,295|🇪DE-80.92.204.106-5778
   password: ZpNDDKRu9MagNvaf
   port: 9015
   server: 80.92.204.106
@@ -941,8 +937,7 @@ proxies:
   type: ss
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  country: 🇩🇪DE
-  name: 290,295,348|🇪DE_209
+  name: 290,295|🇪DE-80.92.204.106-5773
   password: FAdUvMJUq5vDgKEq
   port: 9006
   server: 80.92.204.106
@@ -1007,21 +1002,21 @@ proxies:
     headers:
       Host: go.daluquan.top
     path: /
-- name: '295,382,386,415|4FreeIran-5241 #1'
+- name: '295,306,382,386,415|4Jadi-5235 #1'
   password: telegram-id-privatevpns
   port: 22222
   server: 18.196.105.231
   skip-cert-verify: false
   sni: trojan.burgerip.co.uk
   type: trojan
-- name: '295,382,386,415|4FreeIran-5292 #1'
+- name: '295,306,382,386,415|4Jadi-5287 #1'
   password: telegram-id-privatevpns
   port: 22222
   server: 52.28.176.69
   skip-cert-verify: false
   sni: trojan.burgerip.co.uk
   type: trojan
-- name: '295,382,386,415|4FreeIran-5156 #1'
+- name: '295,306,382,386,415|4Jadi-5157 #1'
   password: telegram-id-directvpn
   port: 22222
   server: 3.64.17.216
@@ -1035,14 +1030,14 @@ proxies:
   skip-cert-verify: false
   sni: sni=trojan.burgerip.co.uk
   type: trojan
-- name: '295,382,386,415|4FreeIran-5259 #1'
+- name: '295,306,382,386,415|4Jadi-5253 #1'
   password: telegram-id-privatevpns
   port: 22222
   server: 3.67.211.46
   skip-cert-verify: false
   sni: trojan.burgerip.co.uk
   type: trojan
-- name: '295,382,386,415|4FreeIran-5160 #1'
+- name: '295,306,382,386,415|4Jadi-5161 #1'
   password: telegram-id-directvpn
   port: 22222
   server: 3.78.23.212
@@ -1075,14 +1070,15 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: '295,382,386,415|4FreeIran-10955 #1'
+  name: '295,306,382,386,402,415|4Jadi-10957 #1'
   network: ws
   port: 63456
   server: 5.75.154.136
   servername: ''
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
+  udp: true
   uuid: dab6ce8a-8059-4357-9083-c5283e1908b2
   ws-opts:
     headers:
@@ -1090,7 +1086,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '295,382,386,396,415|4FreeIran-11737 #1'
+  name: '295,306,382,386,396,415|4Jadi-11745 #1'
   network: ws
   port: 443
   server: sgp.kapok.buzz
@@ -1105,14 +1101,15 @@ proxies:
     path: /4befdd8a6/
 - alterId: 64
   cipher: auto
-  name: '295,382,386,396,415|4FreeIran-11198 #1'
+  name: '295,306,382,386,396,402,415|4Jadi-11204 #1'
   network: ws
   port: 443
   server: 89.163.157.147
   servername: ''
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: true
   type: vmess
+  udp: true
   uuid: b8aedf50-c4f5-4255-b73d-3779db661d70
   ws-opts:
     headers:
@@ -1120,7 +1117,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '295,382,386,396,415|4FreeIran-10658 #1'
+  name: '295,306,382,386,396,415|4Jadi-10659 #1'
   network: ws
   port: 443
   server: 31.22.109.209
@@ -1133,7 +1130,14 @@ proxies:
     headers:
       Host: ''
     path: /4ba99a39b90faa/
-- name: '295,382,386,415|4FreeIran-4878 #1'
+- name: '295,386,393,415|4Jadi-5242 #1'
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 3.124.150.215
+  skip-cert-verify: false
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- name: '295,306,382,386,415|4Jadi-4879 #1'
   password: bs6KJkPBW9MP74uHEa
   port: 443
   server: de1.trojan-lite.com
@@ -1141,45 +1145,52 @@ proxies:
   sni: de1.trojan-lite.com
   type: trojan
 - cipher: aes-256-cfb
-  name: 295,348|_19
+  name: 295|🇩🇪DE-80.92.204.106-1182
   password: VP8ZPxQpJtZRCjfZ
   port: 9080
   server: 80.92.204.106
   type: ss
 - cipher: aes-256-cfb
-  name: 295,348|_27
+  name: 295|🇩🇪DE-80.92.204.106-1183
   password: TN2YqghxeFDKZfLU
   port: 9037
   server: 80.92.204.106
   type: ss
-  udp: true
 - cipher: aes-256-cfb
-  name: 295,348|_31
+  name: 295|🇩🇪DE-80.92.204.106-1184
   password: GA9KzeEgvfxNrgmM
   port: 9019
   server: 80.92.204.106
   type: ss
-  udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 295|🇪DE-45.144.54.156-1311
+  country: SI
+  name: 295,402|NO10425
   password: PPXb8J2ciDybokWl7kxKab
   port: 51587
   server: 45.144.54.156
   type: ss
-- name: '295,382,385,386,393,394,415|4FreeIran-5159 #1'
+  udp: true
+- country: 🇩🇪DE
+  name: '295,306,382,385,386,393,394,402,415|4Jadi-5160 #1'
   password: telegram-id-directvpn
   port: 22222
   server: 3.74.198.188
   skip-cert-verify: false
   sni: trojan.burgerip.co.uk
   type: trojan
-- name: '295,382,385,386,393,415|4FreeIran-5250 #1'
+  udp: true
+- alterId: 0
+  country: 🇩🇪DE
+  name: '295,306,382,385,386,393,402,415|4Jadi-5244 #1'
+  network: tcp
   password: telegram-id-privatevpns
   port: 22222
   server: 3.124.225.251
   skip-cert-verify: false
   sni: trojan.burgerip.co.uk
+  tls: true
   type: trojan
+  udp: true
 - cipher: chacha20-ietf-poly1305
   name: 295|🇩🇪DE-164.90.234.85-1677
   password: fdRAl4scWDTg
@@ -1188,14 +1199,15 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: '295,382,386,415|4FreeIran-9303 #1'
+  name: '295,306,382,386,402,415|4Jadi-9301 #1'
   network: ws
   port: 443
   server: 143.42.21.187
   servername: 143.42.21.187
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: true
   type: vmess
+  udp: true
   uuid: 927094d3-d678-4763-8591-e240d0bcae87
   ws-opts:
     headers:
@@ -1213,14 +1225,15 @@ proxies:
   type: ssr
 - alterId: 64
   cipher: auto
-  name: '295,382,386,415|4FreeIran-11191 #1'
+  name: '295,306,382,386,402,415|4Jadi-11197 #1'
   network: ws
   port: 41647
   server: 87.254.31.23
   servername: uk.linkeden.co
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: true
   type: vmess
+  udp: true
   uuid: aae02fcc-179b-4edc-aa69-6878ff29d01c
   ws-opts:
     headers:
@@ -1234,7 +1247,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: '295,382,386,415|4FreeIran-11200 #1'
+  name: '295,306,382,386,415|4Jadi-11206 #1'
   network: ws
   port: 80
   server: 89.163.213.20
@@ -1247,7 +1260,7 @@ proxies:
     headers:
       Host: ''
     path: /vmess
-- name: '295,382,386,415|4FreeIran-5306 #1'
+- name: '295,306,382,386,415|4Jadi-5301 #1'
   password: telegram-id-privatevpns
   port: 22222
   server: 54.93.240.151
@@ -1256,7 +1269,7 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: '295,382,386,415|4FreeIran-11142 #1'
+  name: '295,306,382,386,415|4Jadi-11148 #1'
   network: ws
   port: 8081
   server: 78.47.131.39
@@ -1269,7 +1282,7 @@ proxies:
     headers:
       Host: ''
     path: /@hashmakvpn 🇩🇪
-- name: '295,382,386,415|4FreeIran-4877 #1'
+- name: '295,306,382,386,415|4Jadi-4878 #1'
   password: bs6KJkPBW9MP74uHEa
   port: 443
   server: 45.80.190.66
@@ -1277,7 +1290,7 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: '295,382,386,415|4FreeIran-11205 #1'
+  name: '295,306,382,386,415|4Jadi-11211 #1'
   network: ws
   port: 8081
   server: 91.107.166.231
@@ -1290,7 +1303,7 @@ proxies:
     headers:
       Host: ''
     path: /@hashmakvpn 🇩🇪
-- name: '295,382,386,415|4FreeIran-4876 #1'
+- name: '295,306,382,386,415|4Jadi-4877 #1'
   password: bs6KJkPBW9MP74uHEa
   port: 443
   server: 45.80.190.64
@@ -1304,14 +1317,15 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: '295,382,386,415|4FreeIran-9072 #1'
+  name: '295,306,382,386,402,415|4Jadi-9068 #1'
   network: ws
   port: 8080
   server: 138.68.90.231
   servername: ''
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
+  udp: true
   uuid: 294ffdc3-5942-45ae-a154-dc6c92eacf1d
   ws-opts:
     headers:
@@ -1325,20 +1339,21 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: '295,382,386,415|4FreeIran-9473 #1'
+  name: '295,306,382,386,402,415|4Jadi-9474 #1'
   network: ws
   port: 28164
   server: 165.227.175.88
   servername: ''
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
+  udp: true
   uuid: eba8ccf5-5ab9-4b6b-de4b-83ab920c1005
   ws-opts:
     headers:
       Host: ''
     path: /
-- name: '295,382,386,415|4FreeIran-4027 #1'
+- name: '295,306,382,386,415|4Jadi-4028 #1'
   password: 8a03bc28-2a33-42c4-be59-30464dbb9954
   port: 18818
   server: fra13.yukiss.eu.org
@@ -1346,20 +1361,21 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: '295,382,386,415|4FreeIran-9487 #1'
+  name: '295,306,382,386,402,415|4Jadi-9488 #1'
   network: ws
   port: 80
   server: 168.119.254.234
   servername: ''
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
+  udp: true
   uuid: 41990bdc-da75-496d-bad3-ae822ad8be5f
   ws-opts:
     headers:
       Host: ''
     path: /graphql
-- name: '295,382,386,415|4FreeIran-4904 #1'
+- name: '295,306,382,386,415|4Jadi-4905 #1'
   password: c60fbf90-4b55-11ed-b935-225401db9d57
   port: 443
   server: 51.75.76.22
@@ -1367,26 +1383,27 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: '295,382,386,415|4FreeIran-11218 #1'
+  name: '295,306,382,386,402,415|4Jadi-11224 #1'
   network: ws
   port: 80
   server: 94.130.184.57
   servername: ''
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
+  udp: true
   uuid: c5e523e7-da73-40af-a4a9-c638720c30e1
   ws-opts:
     headers:
       Host: ''
     path: /graphql
-- name: '295,382,386,415|4FreeIran-3919 #1'
+- name: '295,306,382,386,415|4Jadi-3920 #1'
   password: 750a29bf-0a40-437f-b120-38de74ae7eaf
   port: 28443
   server: 89.163.220.99
   skip-cert-verify: false
   type: trojan
-- name: '295,382,386,415|4FreeIran-5114 #1'
+- name: '295,306,382,386,415|4Jadi-5116 #1'
   password: q9870219
   port: 2035
   server: 181.214.99.54
@@ -1395,7 +1412,7 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: '295,382,386,415|4FreeIran-9583 #1'
+  name: '295,306,382,386,415|4Jadi-9584 #1'
   network: ws
   port: 80
   server: 162.55.174.135
@@ -1408,7 +1425,7 @@ proxies:
     headers:
       Host: ''
     path: /graphql
-- name: '295,382,386,415|4FreeIran-5107 #1'
+- name: '295,306,382,386,415|4Jadi-5109 #1'
   password: origin
   port: 443
   server: 188.40.251.19
@@ -1416,7 +1433,7 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: '295,382,386,415|4FreeIran-9585 #1'
+  name: '295,306,382,386,415|4Jadi-9586 #1'
   network: ws
   port: 80
   server: 162.55.62.193
@@ -1431,14 +1448,15 @@ proxies:
     path: /telegram-id-@privatevpns
 - alterId: 0
   cipher: auto
-  name: '295,382,386,415|4FreeIran-10957 #1'
+  name: '295,306,382,386,402,415|4Jadi-10959 #1'
   network: ws
   port: 80
   server: 5.75.173.189
   servername: ''
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
+  udp: true
   uuid: 2aac77de-b3e4-4017-845c-ca1380f2e8d0
   ws-opts:
     headers:
@@ -1446,14 +1464,15 @@ proxies:
     path: /telegram-id-@privatevpns
 - alterId: 0
   cipher: auto
-  name: '295,382,386,415|4FreeIran-11141 #1'
+  name: '295,306,382,386,402,415|4Jadi-11147 #1'
   network: ws
   port: 80
   server: 78.46.129.226
   servername: ''
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
+  udp: true
   uuid: 2aac77de-b3e4-4017-845c-ca1380f2e8d0
   ws-opts:
     headers:
@@ -1461,14 +1480,15 @@ proxies:
     path: /telegram-id-@privatevpns
 - alterId: 0
   cipher: auto
-  name: '295,382,386,415|4FreeIran-9479 #1'
+  name: '295,306,382,386,402,415|4Jadi-9480 #1'
   network: ws
   port: 80
   server: 167.235.78.112
   servername: ''
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
+  udp: true
   uuid: 2aac77de-b3e4-4017-845c-ca1380f2e8d0
   ws-opts:
     headers:
@@ -1480,14 +1500,15 @@ proxies:
     method: GET
     path:
     - /
-  name: '295,382,386,415|4FreeIran-9393 #1'
+  name: '295,306,382,386,402,415|4Jadi-9392 #1'
   network: http
   port: 443
   server: 157.90.20.18
   servername: ''
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
+  udp: true
   uuid: 6b7cbc41-fb80-41a8-8eb6-b5bdb0e86147
 - alterId: 0
   cipher: auto
@@ -1495,14 +1516,15 @@ proxies:
     method: GET
     path:
     - /
-  name: '295,382,386,415|4FreeIran-10956 #1'
+  name: '295,306,382,386,402,415|4Jadi-10958 #1'
   network: http
   port: 443
   server: 5.75.168.155
   servername: ''
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
+  udp: true
   uuid: 6b7cbc41-fb80-41a8-8eb6-b5bdb0e86147
 - alterId: 0
   cipher: auto
@@ -1510,14 +1532,15 @@ proxies:
     method: GET
     path:
     - /
-  name: '295,382,386,415|4FreeIran-11219 #1'
+  name: '295,306,382,386,402,415|4Jadi-11225 #1'
   network: http
   port: 443
   server: 94.130.25.155
   servername: ''
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
+  udp: true
   uuid: 6b7cbc41-fb80-41a8-8eb6-b5bdb0e86147
 - alterId: 0
   cipher: auto
@@ -1525,18 +1548,19 @@ proxies:
     method: GET
     path:
     - /
-  name: '295,382,386,415|4FreeIran-9480 #1'
+  name: '295,306,382,386,402,415|4Jadi-9481 #1'
   network: http
   port: 443
   server: 167.235.136.155
   servername: ''
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
+  udp: true
   uuid: 6b7cbc41-fb80-41a8-8eb6-b5bdb0e86147
 - alterId: 32
   cipher: auto
-  name: '295,382,386,415|4FreeIran-11681 #1'
+  name: '295,306,382,386,415|4Jadi-11689 #1'
   network: ws
   port: 443
   server: mt2.qowch.com
@@ -1551,14 +1575,15 @@ proxies:
     path: users?ed=2048
 - alterId: 0
   cipher: auto
-  name: '295,382,386,415|4FreeIran-10174 #1'
+  name: '295,306,382,386,402,415|4Jadi-10175 #1'
   network: ws
   port: 80
   server: 188.40.132.107
   servername: ''
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
+  udp: true
   uuid: 4ddd24d6-d901-5e5f-9a7c-080015c2e246
   ws-opts:
     headers:
@@ -1566,14 +1591,15 @@ proxies:
     path: /p3573l6m92h1ham3q23t
 - alterId: 0
   cipher: auto
-  name: '295,382,386,415|4FreeIran-9584 #1'
+  name: '295,306,382,386,402,415|4Jadi-9585 #1'
   network: ws
   port: 51549
   server: 162.55.214.110
   servername: ''
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
+  udp: true
   uuid: 6399ab58-b7ce-4d24-be9e-92c581c93b44
   ws-opts:
     headers:
@@ -1581,14 +1607,15 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '295,382,386,415|4FreeIran-9434 #1'
+  name: '295,306,382,386,402,415|4Jadi-9434 #1'
   network: ws
   port: 6374
   server: 150.230.149.55
   servername: ''
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
+  udp: true
   uuid: 80f25361-877d-46d4-8404-f0dce1faf84f
   ws-opts:
     headers:
@@ -1607,7 +1634,7 @@ proxies:
   server: 185.104.184.78
   type: ss
 - cipher: aes-256-cfb
-  name: '295,382,386,415|NEZyZWVJcmFuLTMzMjk%3D #1'
+  name: '295,306,382,386,415|NEphZGktMzMyNw%3D%3D #1'
   obfs: http_simple
   obfs-param: ''
   password: 4369b96
@@ -1624,14 +1651,15 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: '295,382,386,415|4FreeIran-9481 #1'
+  name: '295,306,382,386,402,415|4Jadi-9482 #1'
   network: ws
   port: 25052
   server: 167.235.192.0
   servername: ''
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
+  udp: true
   uuid: cbeff4ce-adcb-4e25-a42b-b4e5463b0d93
   ws-opts:
     headers:
@@ -1639,14 +1667,15 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '295,382,386,415|4FreeIran-9406 #1'
+  name: '295,306,382,386,402,415|4Jadi-9405 #1'
   network: ws
   port: 8081
   server: 159.223.30.153
   servername: ''
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
+  udp: true
   uuid: c2743f4a-9590-4406-dc78-6ac98c12004a
   ws-opts:
     headers:
@@ -1658,7 +1687,7 @@ proxies:
     method: GET
     path:
     - /
-  name: '295,382,386,415|4FreeIran-10960 #1'
+  name: '295,306,382,386,415|4Jadi-10962 #1'
   network: http
   port: 443
   server: 5.75.247.192
@@ -1673,18 +1702,19 @@ proxies:
     method: GET
     path:
     - /
-  name: '295,382,386,415|4FreeIran-11193 #1'
+  name: '295,306,382,386,402,415|4Jadi-11199 #1'
   network: http
   port: 443
   server: 88.198.104.211
   servername: ''
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
+  udp: true
   uuid: 6b7cbc41-fb80-41a8-8eb6-b5bdb0e86147
 - alterId: 4
   cipher: auto
-  name: '295,382,386,415|4FreeIran-9111 #1'
+  name: '295,306,382,386,415|4Jadi-9107 #1'
   network: ws
   port: 443
   server: 146.0.42.87
@@ -1699,50 +1729,44 @@ proxies:
     path: /ws
 - alterId: 4
   cipher: auto
-  name: '295,382,386,415|4FreeIran-9071 #1'
+  name: '295,306,382,386,402,415|4Jadi-9067 #1'
   network: ws
   port: 8080
   server: 138.68.90.231
   servername: ''
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
+  udp: true
   uuid: 826b8d0a-e0d3-407a-927d-19953c170779
   ws-opts:
     headers:
       Host: ''
     path: /cctv13/hd.m3u8
-- country: 🇩🇪DE
-  name: 295,346,393|🇩🇪 德国_030520151 M56
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 3.78.108.122
-  skip-cert-verify: false
-  sni: trojan.burgerip.co.uk
-  type: trojan
-  udp: true
 - cipher: aes-256-cfb
-  name: 295,348|_29
+  name: 295|🇩🇪DE-80.92.204.106-5598
   password: rpgbNnU9rDDU4aWZ
   port: 9094
   server: 80.92.204.106
   type: ss
-  udp: true
-- name: '295,348,382,386,415|4FreeIran-3579 #1'
+- name: '295,306,382,386,402,415|4Jadi-3579 #1'
   password: 3240d72a-1373-4566-9c6c-68524e4b13fc
   port: 443
   server: es-full.privateip.net
-  skip-cert-verify: true
+  skip-cert-verify: false
   type: trojan
   udp: true
 - alterId: 0
   cipher: auto
-  name: '295,357,382,386,394,415|4FreeIran-11051 #1'
+  country: 🇧🇪 BE
+  h2-opts: {}
+  http-opts: {}
+  name: '295,306,346,357,382,386,394,402,415|4Jadi-11056 #1'
   network: ws
   port: 443
   server: 57.129.24.141
   servername: ''
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
@@ -1752,14 +1776,15 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: '295,382,386,415|4FreeIran-11052 #1'
+  name: '295,306,382,386,402,415|4Jadi-11057 #1'
   network: ws
   port: 443
   server: 57.129.24.142
   servername: harriscity.com
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: true
   type: vmess
+  udp: true
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     headers:
@@ -1767,14 +1792,15 @@ proxies:
     path: /linkvws
 - alterId: 1
   cipher: auto
-  name: '295,382,386,415|4FreeIran-11061 #1'
+  name: '295,306,382,386,402,415|4Jadi-11066 #1'
   network: ws
   port: 443
   server: 57.129.25.20
   servername: 57.129.25.20
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: true
   type: vmess
+  udp: true
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     headers:
@@ -1782,14 +1808,15 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: '295,382,386,415|4FreeIran-11065 #1'
+  name: '295,306,382,386,402,415|4Jadi-11070 #1'
   network: ws
   port: 443
   server: 57.129.28.69
   servername: baradiha.com
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: true
   type: vmess
+  udp: true
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     headers:
@@ -1797,7 +1824,10 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: '295,382,386,415|4FreeIran-11056 #1'
+  country: 🇪BE
+  h2-opts: {}
+  http-opts: {}
+  name: '295,306,382,386,402,415|4Jadi-11061 #1'
   network: ws
   port: 443
   server: 57.129.24.125
@@ -1805,6 +1835,7 @@ proxies:
   skip-cert-verify: false
   tls: true
   type: vmess
+  udp: true
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     headers:
@@ -1812,14 +1843,15 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: '295,382,386,415|4FreeIran-11063 #1'
+  name: '295,306,382,386,402,415|4Jadi-11068 #1'
   network: ws
   port: 443
   server: 57.129.25.22
   servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: true
   type: vmess
+  udp: true
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     headers:
@@ -1827,14 +1859,15 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: '295,382,386,415|4FreeIran-11059 #1'
+  name: '295,306,382,386,402,415|4Jadi-11064 #1'
   network: ws
   port: 443
   server: 57.129.25.25
   servername: f.khilei.com
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: true
   type: vmess
+  udp: true
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     headers:
@@ -1842,28 +1875,29 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: '295,382,386,415|4FreeIran-11054 #1'
+  name: '295,306,382,386,402,415|4Jadi-11059 #1'
   network: ws
   port: 443
   server: 57.129.24.124
   servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: true
   type: vmess
+  udp: true
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     headers:
       Host: ''
     path: /linkvws
 - cipher: aes-256-cfb
-  country: 🇩🇪DE
-  name: 295,348|🇩🇪DE_210
+  country: 🇩🇪 DE
+  name: 295,402|NO11112
   password: Sn5B7jTqr76aCJT8
   port: 9097
   server: 80.92.204.106
   type: ss
 - country: 🇩🇪DE
-  name: '295,348,357,382,386,400,415|4FreeIran-3878 #1'
+  name: '295,306,357,382,386,400,402,415|4Jadi-3879 #1'
   network: tcp
   password: 665c944d-047d-4659-80d5-3eaac70241a9
   port: 443
@@ -1873,22 +1907,22 @@ proxies:
   type: trojan
   udp: true
 - cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 295,348|🇫🇷FR_246
+  name: 295|🇪DE-217.182.198.219-5814
   password: Y6R9pAtvxxzmGC
   port: 3306
   server: 217.182.198.219
   type: ss
 - alterId: 0
   cipher: auto
-  name: '295,382,386,415|4FreeIran-10580 #1'
+  name: '295,306,382,386,402,415|4Jadi-10581 #1'
   network: ws
   port: 443
   server: 23.158.56.227
   servername: 23.158.56.227
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: true
   type: vmess
+  udp: true
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     headers:
@@ -1896,14 +1930,18 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: '295,382,386,415|4FreeIran-10403 #1'
+  country: 🇪DE
+  h2-opts: {}
+  http-opts: {}
+  name: '295,306,382,386,402,415|4Jadi-10404 #1'
   network: ws
   port: 443
   server: 193.122.58.158
   servername: irvideo.cfd
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: true
   type: vmess
+  udp: true
   uuid: e537f2f5-2a0c-4f59-92c9-832ca6433bf3
   ws-opts:
     headers:
@@ -1911,14 +1949,18 @@ proxies:
     path: /linkws
 - alterId: 0
   cipher: auto
-  name: '295,382,386,415|4FreeIran-10577 #1'
+  country: 🏁ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: '295,306,382,386,402,415|4Jadi-10578 #1'
   network: ws
   port: 443
   server: 23.158.56.241
   servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: true
   type: vmess
+  udp: true
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     headers:
@@ -1926,26 +1968,39 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: '295,382,386,415|4FreeIran-11536 #1'
+  name: '295,306,382,386,402,415|4Jadi-11544 #1'
   network: ws
   port: 443
   server: hms23.fixedfloati.cfd
   servername: fixedfloati.cfd
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: true
   type: vmess
+  udp: true
   uuid: 9072d339-3885-4fe1-b0bc-29fa7505410e
   ws-opts:
     headers:
       Host: hms23.fixedfloati.cfd
     path: /linkwsd
-- name: 295|🇪DE-63.177.44.5-6172
+- country: 🇪DE
+  name: 295,393,402|NO15895
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 3.65.75.114
+  skip-cert-verify: true
+  sni: trojan.burgerip.co.uk
+  type: trojan
+  udp: true
+- country: 🇸US
+  name: 295,346|🇺🇸US_94 |65.98Mb
   password: telegram-id-directvpn
   port: 22222
   server: 63.177.44.5
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: trojan.burgerip.co.uk
   type: trojan
+  udp: true
 - cipher: aes-256-gcm
   name: 295|🇪DE-193.108.117.75-6373
   password: PCnnH6SQSnfoS27
@@ -2098,14 +2153,15 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: '295,382,386,415|4FreeIran-11001 #1'
+  name: '295,306,382,386,402,415|4Jadi-11003 #1'
   network: ws
   port: 443
   server: 51.75.70.34
   servername: goodfamily19.site
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: true
   type: vmess
+  udp: true
   uuid: 572126f8-5301-83c2-0a26-c30ced3db7c4
   ws-opts:
     headers:
@@ -2113,14 +2169,15 @@ proxies:
     path: /wmzmvws
 - alterId: 0
   cipher: auto
-  name: '295,382,386,415|4FreeIran-11002 #1'
+  name: '295,306,382,386,402,415|4Jadi-11004 #1'
   network: ws
   port: 443
   server: 51.75.70.34
   servername: lg30.cfcdn3.xyz
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: true
   type: vmess
+  udp: true
   uuid: 91646f9a-b4e9-4aca-bfe3-8892b3e58fe7
   ws-opts:
     headers:
@@ -2128,7 +2185,7 @@ proxies:
     path: /ray
 - alterId: 0
   cipher: auto
-  name: '295,382,386,415|4FreeIran-9603 #1'
+  name: '295,306,382,386,415|4Jadi-9604 #1'
   network: ws
   port: 443
   server: 170.187.185.37
@@ -2143,14 +2200,15 @@ proxies:
     path: /chat
 - alterId: 0
   cipher: auto
-  name: '295,382,386,415|4FreeIran-11055 #1'
+  name: '295,306,382,386,402,415|4Jadi-11060 #1'
   network: ws
   port: 443
   server: 57.129.24.124
   servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: true
   type: vmess
+  udp: true
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     headers:
@@ -2158,14 +2216,15 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: '295,357,382,386,415|4FreeIran-11060 #1'
+  name: '295,306,357,382,386,402,415|4Jadi-11065 #1'
   network: ws
   port: 443
   server: 57.129.25.25
   servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: true
   type: vmess
+  udp: true
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     headers:
@@ -2173,14 +2232,15 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: '295,382,386,415|4FreeIran-11064 #1'
+  name: '295,306,382,386,402,415|4Jadi-11069 #1'
   network: ws
   port: 443
   server: 57.129.25.22
   servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: true
   type: vmess
+  udp: true
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     headers:
@@ -2188,14 +2248,15 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: '295,357,382,386,415|4FreeIran-11066 #1'
+  name: '295,306,357,382,386,402,415|4Jadi-11071 #1'
   network: ws
   port: 443
   server: 57.129.28.69
   servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: true
   type: vmess
+  udp: true
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     headers:
@@ -2203,7 +2264,7 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: '295,382,386,415|4FreeIran-9075 #1'
+  name: '295,306,382,386,415|4Jadi-9071 #1'
   network: ws
   port: 443
   server: 139.162.178.95
@@ -2218,14 +2279,15 @@ proxies:
     path: /
 - alterId: 1
   cipher: auto
-  name: '295,382,386,415|4FreeIran-11062 #1'
+  name: '295,306,382,386,402,415|4Jadi-11067 #1'
   network: ws
   port: 443
   server: 57.129.25.20
   servername: ''
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: true
   type: vmess
+  udp: true
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     headers:
@@ -2233,14 +2295,15 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '295,382,386,415|4FreeIran-10578 #1'
+  name: '295,306,382,386,402,415|4Jadi-10579 #1'
   network: ws
   port: 443
   server: 23.158.56.241
   servername: ''
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: true
   type: vmess
+  udp: true
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     headers:
@@ -2248,14 +2311,15 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '295,382,386,415|4FreeIran-11053 #1'
+  name: '295,306,382,386,402,415|4Jadi-11058 #1'
   network: ws
   port: 443
   server: 57.129.24.142
   servername: ''
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: true
   type: vmess
+  udp: true
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     headers:
@@ -2263,14 +2327,15 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '295,382,386,415|4FreeIran-10581 #1'
+  name: '295,306,382,386,402,415|4Jadi-10582 #1'
   network: ws
   port: 443
   server: 23.158.56.227
   servername: ''
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: true
   type: vmess
+  udp: true
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     headers:
@@ -2278,7 +2343,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '295,382,386,394,415|4FreeIran-11058 #1'
+  name: '295,306,382,386,394,415|4Jadi-11063 #1'
   network: ws
   port: 443
   server: 57.129.24.125
@@ -2293,14 +2358,15 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: '295,386,394,401,415|4FreeIran-11067 #1'
+  name: '295,386,394,401,402,415|4Jadi-11072 #1'
   network: ws
   port: '2083'
   server: 57.129.41.216
   servername: ov-germany1.09vpn.com
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: true
   type: vmess
+  udp: true
   uuid: 3967c059-865d-40af-ba3c-8abc9ba5c7f8
   ws-opts:
     headers:
@@ -2308,14 +2374,15 @@ proxies:
     path: /vmess/
 - alterId: 0
   cipher: auto
-  name: '295,382,386,415|4FreeIran-9610 #1'
+  name: '295,306,382,386,402,415|4Jadi-9611 #1'
   network: ws
   port: 443
   server: 172.104.247.121
   servername: ivideos.sbs
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: true
   type: vmess
+  udp: true
   uuid: 441da342-ce90-441e-bff9-d2ceb55e68ca
   ws-opts:
     headers:
@@ -2323,7 +2390,7 @@ proxies:
     path: /linkws
 - alterId: 64
   cipher: auto
-  name: '295,382,386,394,401,415|4FreeIran-11201 #1'
+  name: '295,306,382,386,394,401,415|4Jadi-11207 #1'
   network: ws
   port: 30005
   server: 89.163.231.19
@@ -2338,14 +2405,15 @@ proxies:
     path: /path/240811062813
 - alterId: 1
   cipher: auto
-  name: '295,382,386,415|4FreeIran-10582 #1'
+  name: '295,306,382,386,402,415|4Jadi-10583 #1'
   network: ws
   port: 443
   server: 23.158.56.39
   servername: ''
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: true
   type: vmess
+  udp: true
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     headers:
@@ -2353,7 +2421,7 @@ proxies:
     path: /
 - alterId: 1
   cipher: auto
-  name: '295,382,386,415|4FreeIran-10575 #1'
+  name: '295,306,382,386,415|4Jadi-10576 #1'
   network: ws
   port: 443
   server: 23.158.56.145
@@ -2368,7 +2436,7 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: '295,382,386,415|4FreeIran-11180 #1'
+  name: '295,306,382,386,415|4Jadi-11186 #1'
   network: ws
   port: 443
   server: 80.158.63.104
@@ -2383,14 +2451,15 @@ proxies:
     path: /obdii.cfd:443/linkws
 - alterId: 1
   cipher: auto
-  name: '295,382,386,415|4FreeIran-10583 #1'
+  name: '295,306,382,386,402,415|4Jadi-10584 #1'
   network: ws
   port: 443
   server: 23.158.56.81
   servername: 23.158.56.81
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: true
   type: vmess
+  udp: true
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     headers:
@@ -2398,14 +2467,15 @@ proxies:
     path: linkvws
 - alterId: 1
   cipher: auto
-  name: '295,382,386,415|4FreeIran-10573 #1'
+  name: '295,306,382,386,402,415|4Jadi-10574 #1'
   network: ws
   port: 443
   server: 23.157.88.33
   servername: 23.157.88.33
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: true
   type: vmess
+  udp: true
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     headers:
@@ -2413,14 +2483,15 @@ proxies:
     path: linkvws
 - alterId: 1
   cipher: auto
-  name: '295,382,386,415|4FreeIran-10576 #1'
+  name: '295,306,382,386,402,415|4Jadi-10577 #1'
   network: ws
   port: 443
   server: 23.158.56.129
   servername: ''
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: true
   type: vmess
+  udp: true
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     headers:
@@ -2428,14 +2499,15 @@ proxies:
     path: /
 - alterId: 1
   cipher: auto
-  name: '295,382,386,415|4FreeIran-10574 #1'
+  name: '295,306,382,386,402,415|4Jadi-10575 #1'
   network: ws
   port: 443
   server: 23.157.88.6
   servername: ''
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: true
   type: vmess
+  udp: true
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     headers:
@@ -2443,14 +2515,15 @@ proxies:
     path: linkvws
 - alterId: 1
   cipher: auto
-  name: '295,382,386,415|4FreeIran-10572 #1'
+  name: '295,306,382,386,402,415|4Jadi-10573 #1'
   network: ws
   port: 443
   server: 23.157.88.20
   servername: 23.157.88.20
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: true
   type: vmess
+  udp: true
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     headers:
@@ -2458,7 +2531,7 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: '295,382,386,415|4FreeIran-10535 #1'
+  name: '295,306,382,386,415|4Jadi-10536 #1'
   network: ws
   port: 8880
   server: 217.160.45.31
@@ -2473,14 +2546,15 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '295,382,386,415|4FreeIran-9176 #1'
+  name: '295,306,382,386,402,415|4Jadi-9174 #1'
   network: ws
   port: 80
   server: 141.147.11.108
   servername: ''
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
+  udp: true
   uuid: 96782c55-676e-4b71-c8fe-1defe0988a76
   ws-opts:
     headers:
@@ -2488,14 +2562,15 @@ proxies:
     path: /
 - alterId: 64
   cipher: auto
-  name: '295,382,386,415|4FreeIran-11199 #1'
+  name: '295,306,382,386,402,415|4Jadi-11205 #1'
   network: ws
   port: 443
   server: 89.163.157.209
   servername: www.78791485.xyz
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: true
   type: vmess
+  udp: true
   uuid: b8aedf50-c4f5-4255-b73d-3779db661d70
   ws-opts:
     headers:
@@ -2503,14 +2578,15 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '295,382,386,415|4FreeIran-10894 #1'
+  name: '295,306,382,386,402,415|4Jadi-10894 #1'
   network: ws
   port: 80
   server: 46.101.204.58
   servername: ''
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
+  udp: true
   uuid: 35a409bd-433b-478c-bd5f-4b59c3a88690
   ws-opts:
     headers:
@@ -2518,14 +2594,15 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '295,382,386,415|4FreeIran-10427 #1'
+  name: '295,306,382,386,402,415|4Jadi-10428 #1'
   network: ws
   port: 80
   server: 209.38.218.216
   servername: ''
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
+  udp: true
   uuid: 35a409bd-433b-478c-bd5f-4b59c3a88690
   ws-opts:
     headers:
@@ -2533,7 +2610,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '295,382,386,415|4FreeIran-9495 #1'
+  name: '295,306,382,386,415|4Jadi-9496 #1'
   network: ws
   port: 80
   server: 161.35.212.34
@@ -2548,14 +2625,15 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '295,382,386,415|4FreeIran-9388 #1'
+  name: '295,306,382,386,402,415|4Jadi-9387 #1'
   network: ws
   port: 80
   server: 157.230.114.13
   servername: ''
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
+  udp: true
   uuid: 35a409bd-433b-478c-bd5f-4b59c3a88690
   ws-opts:
     headers:
@@ -2563,14 +2641,15 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '295,382,386,415|4FreeIran-10100 #1'
+  name: '295,306,382,386,402,415|4Jadi-10101 #1'
   network: ws
   port: 443
   server: 185.177.229.100
   servername: ''
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: true
   type: vmess
+  udp: true
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     headers:
@@ -2578,7 +2657,7 @@ proxies:
     path: /
 - grpc-opts:
     grpc-service-name: trgrpc
-  name: '295,382,386,415|4FreeIran-4058 #1'
+  name: '295,306,382,386,415|4Jadi-4056 #1'
   network: grpc
   password: 92902210-2eb5-11ee-b234-205c6d5f5d78
   port: 2087
@@ -2588,14 +2667,15 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: '295,382,386,415|4FreeIran-11231 #1'
+  name: '295,306,382,386,402,415|4Jadi-11237 #1'
   network: ws
   port: 443
   server: 95.179.254.20
   servername: ''
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: true
   type: vmess
+  udp: true
   uuid: 068964e0-2e37-11ee-b733-205c6d5f5d78
   ws-opts:
     headers:
@@ -2603,7 +2683,7 @@ proxies:
     path: /@hopev2ray
 - grpc-opts:
     grpc-service-name: trojangrpc
-  name: '295,382,386,400,415|4FreeIran-5092 #1'
+  name: '295,306,382,386,400,415|4Jadi-5094 #1'
   network: grpc
   password: mainssh-ddoejfv14
   port: 443
@@ -2613,7 +2693,7 @@ proxies:
   type: trojan
 - grpc-opts:
     grpc-service-name: trojangrpc
-  name: '295,382,386,400,415|4FreeIran-5095 #1'
+  name: '295,306,382,386,400,415|4Jadi-5097 #1'
   network: grpc
   password: mainssh-niwrhf87
   port: 443
@@ -2641,14 +2721,15 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: '295,382,386,415|4FreeIran-10877 #1'
+  name: '295,306,382,386,402,415|4Jadi-10877 #1'
   network: ws
   port: 2053
   server: 45.76.88.37
   servername: ''
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
+  udp: true
   uuid: 4134efe7-d935-416c-c2cc-24943e4a80ca
   ws-opts:
     headers:
@@ -2656,14 +2737,15 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '295,382,386,415|4FreeIran-10878 #1'
+  name: '295,306,382,386,402,415|4Jadi-10878 #1'
   network: ws
   port: 2087
   server: 45.76.88.37
   servername: ''
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
+  udp: true
   uuid: d5350465-ab63-4d30-ebda-5cbe0751cbd6
   ws-opts:
     headers:
@@ -2671,58 +2753,62 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '295,382,386,415|4FreeIran-10876 #1'
+  name: '295,306,382,386,402,415|4Jadi-10876 #1'
   network: ws
   port: 8443
   server: 45.76.88.37
   servername: ''
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
+  udp: true
   uuid: 3d0c8ee5-3329-4252-aa1c-65f3fdaa0343
   ws-opts:
     headers:
       Host: ''
     path: /
-- name: '295,382,386,415|4FreeIran-5170 #1'
+- name: '295,306,382,386,415|4Jadi-5170 #1'
   password: telegram-id-directvpn
   port: 22222
   server: 35.156.35.238
   skip-cert-verify: false
   sni: trj.rollingnext.co.uk
   type: trojan
-- name: '295,382,386,415|4FreeIran-5246 #1'
+- name: '295,306,382,386,415|4Jadi-5240 #1'
   password: telegram-id-privatevpns
   port: 22222
   server: 3.123.22.69
   skip-cert-verify: false
   sni: trj.rollingnext.co.uk
   type: trojan
-- name: '295,382,386,415|4FreeIran-5245 #1'
+- name: '295,306,382,386,415|4Jadi-5239 #1'
   password: telegram-id-privatevpns
   port: 22222
   server: 3.123.128.240
   skip-cert-verify: false
   sni: trj.rollingnext.co.uk
   type: trojan
-- name: '295,382,386,415|4FreeIran-5244 #1'
+- name: '295,306,382,386,415|4Jadi-5238 #1'
   password: telegram-id-privatevpns
   port: 22222
   server: 3.120.187.229
   skip-cert-verify: false
   sni: trj.rollingnext.co.uk
   type: trojan
-- name: '295,382,386,400,415|4FreeIran-4504 #1'
+- alterId: 0
+  name: '295,306,382,386,400,402,415|4Jadi-4502 #1'
   network: grpc
   password: Cl150MQWlG
   port: 443
   server: 209.250.236.93
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: irancell-ir-4.mmdruby13.store
+  tls: true
   type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
-  name: '295,382,386,415|4FreeIran-10320 #1'
+  name: '295,306,382,386,415|4Jadi-10321 #1'
   network: ws
   port: 443
   server: 199.247.23.31
@@ -2735,14 +2821,14 @@ proxies:
     headers:
       Host: ''
     path: /12796?ed=2048
-- name: '295,382,386,415|4FreeIran-5147 #1'
+- name: '295,306,382,386,415|4Jadi-5147 #1'
   password: telegram-id-directvpn
   port: 22222
   server: 18.196.127.24
   skip-cert-verify: false
   sni: trj.rollingnext.co.uk
   type: trojan
-- name: '295,382,386,415|4FreeIran-5240 #1'
+- name: '295,306,382,386,415|4Jadi-5234 #1'
   password: telegram-id-privatevpns
   port: 22222
   server: 18.184.9.101
@@ -2751,7 +2837,7 @@ proxies:
   type: trojan
 - grpc-opts:
     grpc-service-name: trojangrpc
-  name: '295,382,386,415|4FreeIran-5091 #1'
+  name: '295,306,382,386,415|4Jadi-5093 #1'
   network: grpc
   password: mainssh-ddoejfv14
   port: 443
@@ -2761,7 +2847,7 @@ proxies:
   type: trojan
 - grpc-opts:
     grpc-service-name: trojangrpc
-  name: '295,382,386,415|4FreeIran-5094 #1'
+  name: '295,306,382,386,415|4Jadi-5096 #1'
   network: grpc
   password: mainssh-niwrhf87
   port: 443
@@ -2771,7 +2857,7 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: '295,382,386,415|4FreeIran-9105 #1'
+  name: '295,306,382,386,415|4Jadi-9101 #1'
   network: ws
   port: 6854
   server: 130.162.47.123
@@ -2786,7 +2872,7 @@ proxies:
     path: /zBLPou
 - grpc-opts:
     grpc-service-name: trojangrpc
-  name: '295,382,386,400,415|4FreeIran-5093 #1'
+  name: '295,306,382,386,400,415|4Jadi-5095 #1'
   network: grpc
   password: mainssh-niwrhf87
   port: 443
@@ -2796,7 +2882,7 @@ proxies:
   type: trojan
 - grpc-opts:
     grpc-service-name: trojangrpc
-  name: '295,382,386,415|4FreeIran-5090 #1'
+  name: '295,306,382,386,415|4Jadi-5092 #1'
   network: grpc
   password: mainssh-ddoejfv14
   port: 443
@@ -2822,6 +2908,93 @@ proxies:
   skip-cert-verify: true
   sni: mmbiz12.redapricotcloud.com
   type: trojan
+- name: 306,372,388,394|8|🇩🇪 @VPNHubMaRKeT ♾  @VpnHubM...
+  obfs: salamander
+  obfs-password: '@VPNHubMaRKeT'
+  password: '@VPNHubMaRKeT'
+  port: 443
+  server: 202.78.166.190
+  skip-cert-verify: true
+  sni: www.bing.com
+  tls: false
+  type: hysteria2
+- down: 100
+  name: 306,372,388,394,402|NO19909
+  obfs: salamander
+  obfs-password: tel:@VPNHubMaRKeT
+  password: VPNHubMaRKeT
+  port: 9999
+  server: 3.123.253.70
+  skip-cert-verify: true
+  tls: false
+  type: hysteria2
+  udp: true
+  up: 10
+- country: DE
+  name: '306,382,386,393,394,402,415|4Jadi-5246 #1'
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 3.127.161.179
+  skip-cert-verify: true
+  sni: trojan.burgerip.co.uk
+  type: trojan
+  udp: true
+- name: '306,382,386,394,402,415|4Jadi-3678 #1'
+  password: 4732adfa16c6450bbef87264e41332db
+  port: 443
+  server: nextstepcareer.online
+  skip-cert-verify: false
+  tfo: false
+  type: trojan
+  udp: true
+- country: 🇩🇪DE
+  name: '306,382,386,402,415|4Jadi-5227 #1'
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 18.153.113.46
+  skip-cert-verify: true
+  sni: trojan.burgerip.co.uk
+  type: trojan
+  udp: true
+- cipher: aes-256-cfb
+  name: '306,382,386,415|NEphZGktMzM0NQ%3D%3D #1'
+  obfs: http_simple
+  obfs-param: d3d3Lm1pY3Jvc29mdC5jb20jVXNlci1BZ2VudDpNb3ppbGxhLzUuMChpUGhvbmU7Q1BVaVBob25lT1MxMV80XzFsaWtlTWFjT1NYKUFwcGxlV2ViS2l0LzYwMi40LjYoS0hUTUwsbGlrZUdlY2tvKVZlcnNpb24vMTAuME1vYmlsZS8xNEQyN01pY3JvTWVzc2VuZ2VyLzYuNS4xM0FjY2VwdDovQ29ubmVjdGlvbjprZWVwLWFsaXZl
+  password: YpX2opBbrfqJzzMs
+  port: '42833'
+  protocol: origin
+  protocol-param: ''
+  server: z0116.security-cloudfront-cdn.com
+  type: ssr
+- cipher: aes-256-cfb
+  name: '306,382,386,415|NEphZGktMzMyMg%3D%3D #1'
+  obfs: plain
+  obfs-param: ZGF0YS5iaWxpYmlsaS5jb20vZWQ1YTIxNjU0MDA%3D
+  password: http://cc.ax/
+  port: '41228'
+  protocol: auth_aes128_md5
+  protocol-param: MTY1NDAwOkhyMmFYTw%3D%3D
+  server: 222.186.20.102
+  type: ssr
+- country: 🇩🇪DE
+  name: '306,382,386,402,415|4Jadi-5292 #1'
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 52.59.75.177
+  skip-cert-verify: true
+  sni: trojan.burgerip.co.uk
+  type: trojan
+  udp: true
+- country: 🇸US
+  name: '306,382,386,402,415|4Jadi-5302 #1'
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 63.177.2.134
+  skip-cert-verify: true
+  sni: trojan.burgerip.co.uk
+  type: trojan
+  udp: true
 - name: 325|德国/رایگان - آلمان
   password: 1ac23de2-4b8b-43b7-8852-a3ef3ab2161c
   port: 32111
@@ -2928,7 +3101,7 @@ proxies:
   ws-path: /youxuan
 - alterId: 0
   cipher: auto
-  name: '357,359,386,415|4FreeIran-11657 #1'
+  name: '357,359,386,415|4Jadi-11665 #1'
   network: ws
   port: 443
   server: linde06.indiavideo.sbs
@@ -3060,7 +3233,7 @@ proxies:
   type: vless
   uuid: f46ad8d7-f22c-40fc-d0b2-5db602a6d815
 - client-fingerprint: chrome
-  name: '357,366,386,415|4FreeIran-7462 #1'
+  name: '357,366,386,415|4Jadi-7460 #1'
   network: ws
   port: 1001
   server: 159.69.22.135
@@ -3157,7 +3330,7 @@ proxies:
 - alpn:
   - h2
   client-fingerprint: chrome
-  name: '357,366,386,415|4FreeIran-6491 #1'
+  name: '357,366,386,415|4Jadi-6481 #1'
   network: tcp
   port: 8443
   server: 89.187.169.71
@@ -3550,7 +3723,7 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: '363,386,394,401,415|4FreeIran-10579 #1'
+  name: '363,386,394,401,415|4Jadi-10580 #1'
   network: tcp
   port: '48961'
   server: 23.158.56.21
@@ -3560,11 +3733,12 @@ proxies:
   uuid: 6eef3448-bbc0-4933-894a-72b3e8786109
 - alterId: 0
   cipher: auto
-  name: '363,386,394,401,415|4FreeIran-10401 #1'
+  name: '363,386,394,401,402,415|4Jadi-10402 #1'
   network: tcp
   port: '24164'
   server: 193.108.117.143
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: aa3c5c18-6578-4de3-b890-2fd25c3a8f35
@@ -3577,21 +3751,28 @@ proxies:
   server: 63.176.184.253
   sni: trojan.burgerip.co.uk
   type: trojan
-- name: '363,386,393,400,415|4FreeIran-3598 #1'
+- alterId: 0
+  name: '363,386,393,400,402,415|4Jadi-3598 #1'
   network: tcp
   password: '!!str 3747000103274291200'
   port: 443
   server: 80.240.112.32
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: trusting-titmouse.adder289.quest
+  tls: true
   type: trojan
-- name: '363,386,400,415|4FreeIran-3600 #1'
+  udp: true
+- alterId: 0
+  name: '363,386,400,402,415|4Jadi-3600 #1'
   network: tcp
   password: '!!str 3747000103274291200'
   port: 443
   server: 85.90.194.160
+  skip-cert-verify: true
   sni: awaited-chicken.adder289.quest
+  tls: true
   type: trojan
+  udp: true
 - name: 363|德国_021805219
   password: '!!str 3778399750324494336'
   port: 443
@@ -3658,126 +3839,39 @@ proxies:
   skip-cert-verify: true
   sni: united-mayfly.adder289.quest
   type: trojan
-- name: 363|德国_021805640
+- name: 363,402|NO58917
   password: '!!str 3747000103274291200'
   port: 443
   server: awaited-chicken.adder289.quest
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: awaited-chicken.adder289.quest
   type: trojan
+  udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '369,370|🇩🇪 0|🇩🇪德国 01 | 1x DE #1'
-  password: d865e5b8-5b2a-4512-96b9-a74961ec57bf
+  name: '369,370|🇩🇪 0|🇩🇪 德国 01 | 1x DE #1'
+  password: 1dc675f1-5800-456e-9a27-1a38d468117b
+  port: 36471
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: '369,370|🇩🇪 1|🇩🇪德国 01 | 1x DE #1'
+  password: 53997698-4a1d-4ea1-ace0-88e9fa1920e5
   port: 31471
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '369,370|🇩🇪 1|🇩🇪 德国 01 | 1x DE #1'
-  password: f360090e-ef15-4621-8e96-0e98f9df7e5d
-  port: 36471
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- name: 372,388,394|8|🇩🇪 @VPNHubMaRKeT ♾  @VpnHubM...
-  obfs: salamander
-  obfs-password: '@VPNHubMaRKeT'
-  password: '@VPNHubMaRKeT'
-  port: 443
-  server: 202.78.166.190
-  skip-cert-verify: true
-  sni: www.bing.com
-  tls: false
-  type: hysteria2
-- name: 372,388,394|8|🇩🇪 @VPNHubMaRKeT ⚡️  @VpnHub...
-  obfs: salamander
-  obfs-password: tel:@VPNHubMaRKeT
-  password: VPNHubMaRKeT
-  port: 9999
-  server: 3.123.253.70
-  skip-cert-verify: true
-  tls: false
-  type: hysteria2
-- alterId: 0
-  cipher: auto
-  country: 🇺🇸US
-  delay: 2187
-  h2-opts: {}
-  http-opts: {}
-  name: 378|德国 - 杜塞尔多夫 - Felix Gassan - 2
-  network: ws
-  port: 443
-  server: eu9.998998.best
-  servername: server54-4.998877.best
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 9accf73f-7372-4403-b31e-0f83d86feb98
-  ws-opts:
-    headers:
-      HOST: server54-4.998877.best
-    path: /jsedr6deersed6h?ed=2560
-- name: '382,386,394,415|4FreeIran-3676 #1'
-  password: 4732adfa16c6450bbef87264e41332db
-  port: 443
-  server: nextstepcareer.online
-  skip-cert-verify: true
-  type: trojan
-- name: '382,386,415|4FreeIran-5233 #1'
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 18.153.113.46
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- cipher: aes-256-cfb
-  name: '382,386,415|NEZyZWVJcmFuLTMzNDc%3D #1'
-  obfs: http_simple
-  obfs-param: d3d3Lm1pY3Jvc29mdC5jb20jVXNlci1BZ2VudDpNb3ppbGxhLzUuMChpUGhvbmU7Q1BVaVBob25lT1MxMV80XzFsaWtlTWFjT1NYKUFwcGxlV2ViS2l0LzYwMi40LjYoS0hUTUwsbGlrZUdlY2tvKVZlcnNpb24vMTAuME1vYmlsZS8xNEQyN01pY3JvTWVzc2VuZ2VyLzYuNS4xM0FjY2VwdDovQ29ubmVjdGlvbjprZWVwLWFsaXZl
-  password: YpX2opBbrfqJzzMs
-  port: '42833'
-  protocol: origin
-  protocol-param: ''
-  server: z0116.security-cloudfront-cdn.com
-  type: ssr
-- cipher: aes-256-cfb
-  name: '382,386,415|NEZyZWVJcmFuLTMzMjQ%3D #1'
-  obfs: plain
-  obfs-param: ZGF0YS5iaWxpYmlsaS5jb20vZWQ1YTIxNjU0MDA%3D
-  password: http://cc.ax/
-  port: '41228'
-  protocol: auth_aes128_md5
-  protocol-param: MTY1NDAwOkhyMmFYTw%3D%3D
-  server: 222.186.20.102
-  type: ssr
-- name: '382,386,415|4FreeIran-5297 #1'
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 52.59.75.177
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- name: '382,386,415|4FreeIran-5307 #1'
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 63.177.2.134
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- cipher: chacha20-ietf-poly1305
-  name: 383|🇩🇪德国01_tolinkshare2
-  password: cbac5a55-ffd6-4203-acdf-7ad147c396aa
-  port: '41471'
-  server: free.6vczxw.xyz
+  name: 383|🇩🇪德国 01_mkshare3
+  password: 44993163-4a2a-434a-ac4a-4297bd2a39f4
+  port: '31471'
+  server: free.2apzhfa.xyz
   type: ss
 - cipher: chacha20-ietf-poly1305
   name: 383|🇩🇪德国01_toshare5
-  password: 43964323-d494-447b-8144-a96d1c08433e
+  password: e3181a91-c78d-4881-9b89-6cd78d803904
   port: '41471'
   server: free.6vczxw.xyz
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 383|🇩🇪德国 01_mkshare3
-  password: c289dd2c-1743-4e0a-a144-83e27d27b8e7
-  port: '31471'
-  server: free.2apzhfa.xyz
   type: ss
 - cipher: chacha20-ietf-poly1305
   name: 383|🇩🇪 德国 01_abshare3
@@ -3785,91 +3879,77 @@ proxies:
   port: '36471'
   server: free.2weradf.xyz
   type: ss
-- name: 383|德国6 | ⬇️ 14.7MB/s
+- cipher: chacha20-ietf-poly1305
+  name: 383|🇩🇪德国01_tolinkshare2
+  password: 83d2e6a5-f38f-4564-a02d-250d4d932269
+  port: '41471'
+  server: free.6vczxw.xyz
+  type: ss
+- name: 383|德国1 | ⬇️ 15.4MB/s
+  network: ws
+  port: 80
+  server: 151.101.66.228
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: 42d21c37-ec7a-43cc-a2d9-f0d91cd89a1c
+  ws-opts:
+    headers:
+      host: foffmelo.com
+    path: /olem/ws?ed=1024
+- alterId: 0
+  cipher: auto
+  name: 383|德国9 | ⬇️ 11.9MB/s
+  port: 443
+  server: eu9.998998.best
+  tls: false
+  type: vmess
+  uuid: 9accf73f-7372-4403-b31e-0f83d86feb98
+- name: 383|德国2 | ⬇️ 10.4MB/s
   network: ws
   port: 443
-  server: cdn.7zz.cn
-  servername: de.oldcloud.online
+  server: 151.101.33.212
+  servername: map.google.com
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: b3903a4d-d9e7-4b7d-82a3-292116fbceb8
+  uuid: 0416d09f-a24f-46a2-a913-b0f2be57c009
   ws-opts:
     headers:
-      host: de.oldcloud.online
+      host: aklisvpn.com
+    path: /@aklisvpn@aklisvpn@aklisvpn
+- name: 383|德国3 | ⬇️ 1.3MB/s
+  network: ws
+  port: 45495
+  server: 37.202.237.107
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: eba63659-e1c0-4fba-a089-bf54b21e05ca
+  ws-opts:
+    headers:
+      host: ''
     path: /
-- name: 383|德国2 | ⬇️ 11.6MB/s
+- name: 383|德国4 | ⬇️ 12.0MB/s
   network: ws
-  port: 8880
-  server: 45.131.4.33
+  port: 80
+  server: 151.101.130.133
   servername: ''
   skip-cert-verify: true
   tls: false
   type: vless
   udp: true
-  uuid: f6bd2c47-99da-4bca-bf70-7186aa9e7e06
+  uuid: 358c4787-1fba-4162-b53c-44957f1c22c3
   ws-opts:
     headers:
-      host: photographipictureai.ir
-    path: /Telegram@Azarbayjab1@Azarbayjab1@Azarbayjab1/?ed=2560
-- name: 383|德国3 | ⬇️ 13.9MB/s
-  network: ws
-  port: 2082
-  server: 104.17.148.22
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vless
-  udp: true
-  uuid: 09660c99-5a16-43d8-ad93-58bb44fe3e4c
-  ws-opts:
-    headers:
-      host: novinsoft.ir.oradoshop.com.persiangsm.ir.digikala.com.abadis.ir.shad.ir.divar.ir.downloadly.com.aparat.com.cafebazar.ir.varzesh3.com.ninisite.com.abadis.ir.bama.ir.p30download.ir.telewebion.bmi.ir.shad.ir.mayket.com.ninisite.top.
-    path: /@spikevpn-@spikevpn-@spikevpn-@spikevpn-@spikevpn-@spikevpn?ed=2082
-- name: 383|德国4 | ⬇️ 1.2MB/s
-  network: ws
-  port: 8880
-  server: 154.83.2.156
-  servername: redw.pooriam.ir
-  skip-cert-verify: true
-  tls: false
-  type: vless
-  udp: true
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  ws-opts:
-    headers:
-      host: redw.pooriam.ir
-    path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1?ed=2560
-- name: 383|德国5 | ⬇️ 14.5MB/s
-  network: ws
-  port: 2052
-  server: 156.238.18.165
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vless
-  udp: true
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  ws-opts:
-    headers:
-      host: redw.pooriam.ir
-    path: /@ShadowProxy66?ed=2048
-- name: 383|德国7 | ⬇️ 17.4MB/s
-  network: ws
-  port: 8880
-  server: 185.146.173.112
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vless
-  udp: true
-  uuid: f6bd2c47-99da-4bca-bf70-7186aa9e7e06
-  ws-opts:
-    headers:
-      host: photographipictureai.ir
-    path: /Telegram@Azarbayjab1@Azarbayjab1@Azarbayjab1/?ed=2560
-- name: 383|德国8 | ⬇️ 13.1MB/s
+      host: namehmain.com
+    path: /TELEGRAM-@mainv2-ray,TELEGRAM-@mainv2-ray,TELEGRAM-@mainv2-ray,TELEGRAM-@mainv2-ray,TELEGRAM-@mainv2-ray,TELEGRAM-@mainv2-ray,TELEGRAM-@mainv2-ray,TELEGRAM-@mainv2-ray,TELEGRAM-@mainv2-ray,TELEGRAM-@mainv2-ray,TELEGRAM-@mainv2-ray,TELEGRAM-@mainv2-ray,TELEGRAM-@mainv2-ray,TELEGRAM-@mainv2-ray?ed=2048
+- name: 383|德国5 | ⬇️ 13.9MB/s
   network: ws
   port: 2087
   server: 192.200.160.188
@@ -3878,11 +3958,33 @@ proxies:
   tls: true
   type: vless
   udp: true
-  uuid: 41212369-3747-4444-9589-4417f250427a
+  uuid: 57d10484-287c-4290-a9c2-8cb509346caa
   ws-opts:
     headers:
       host: crm.iranigamebaz.ir
     path: /Vpnmizban--------Vpnmizban--------Vpnmizban--------Vpnmizban--------Vpnmizban--------Vpnmizban--------Vpnmizban--------Vpnmizban
+- name: 383|德国6 | ⬇️ 6.5MB/s
+  network: ws
+  port: 443
+  server: 151.101.5.114
+  servername: map.google.com
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 0416d09f-a24f-46a2-a913-b0f2be57c009
+  ws-opts:
+    headers:
+      host: aklisvpn.com
+    path: /@aklisvpn@aklisvpn@aklisvpn
+- alterId: 0
+  cipher: auto
+  name: 383|德国8 | ⬇️ 12.0MB/s
+  port: 443
+  server: 172.67.158.97
+  tls: false
+  type: vmess
+  uuid: 9accf73f-7372-4403-b31e-0f83d86feb98
 - name: 383|DE_2
   network: ws
   port: 443
@@ -3928,55 +4030,33 @@ proxies:
     path: /2024
 - alterId: 2
   cipher: auto
-  name: 384|🇪 [vip①]德国1 - MG Network
-  network: ws
-  port: 23616
-  server: 16.mamamajd.site
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 95c94fd4-23e1-3a46-9cfc-1720bc667867
-  ws-opts:
-    headers:
-      Host: 16.mamamajd.site
-    path: /
-- alterId: 2
-  cipher: auto
   name: 384|🇩🇪 [vip①]德国2 - MG Network
   network: ws
   port: 23618
   server: 18.mamamajd.site
   skip-cert-verify: true
+  tfo: true
   tls: false
   type: vmess
   udp: true
-  uuid: 95c94fd4-23e1-3a46-9cfc-1720bc667867
+  uuid: 757010c2-8c17-32a2-9221-60ebaa06f582
   ws-opts:
     headers:
       Host: 18.mamamajd.site
     path: /
-- cipher: chacha20-ietf
-  name: '386,415|NEZyZWVJcmFuLTMzNDE%3D #1'
-  obfs: tls1.2_ticket_auth
-  obfs-param: NWRiOTkxMDE4Mi5taWNyb3NvZnQuY29t
-  password: Fhbe0z
-  port: '11428'
-  protocol: auth_aes128_sha1
-  protocol-param: MTAxODI6RWQ3dTBH
-  server: vip3.niuniupremium.xyz
-  type: ssr
 - alterId: 0
   cipher: auto
   grpc-opts:
     grpc-service-name: ''
-  name: '386,415|[🇩🇪]t.me/ConfigsHub #1'
+  name: '386,402,415|[🇩🇪]t.me/ConfigsHub #1'
   network: grpc
   port: '80'
   server: 5.75.207.37
   servername: ''
+  skip-cert-verify: true
   tls: true
   type: vmess
+  udp: true
   uuid: bdb4c214-5bca-4afd-9ddc-3c401f9a7a12
 - alterId: 0
   cipher: auto
@@ -4082,10 +4162,14 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 394|5|德国 - Falkenstein - Hetzner O...
+  country: DE
+  h2-opts: {}
+  http-opts: {}
+  name: 394,402|NO56342
   network: tcp
-  port: '100'
+  port: 100
   server: 138.199.158.245
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: b52f0a62-068c-41bf-a4f6-ac3faddded46
@@ -4118,6 +4202,14 @@ proxies:
   server: 52.58.149.106
   sni: trojan.burgerip.co.uk
   type: trojan
+- name: 394|DE德国1
+  password: ec9dcfee-f542-4263-9b90-d52c46b72f59
+  port: 3330
+  server: dg1.wuxianjc.top
+  skip-cert-verify: true
+  sni: dg1.wuxianjc.top
+  tls: false
+  type: hysteria2
 - name: 394|德国[B1]备用hy2
   password: d227adad-d1c9-4218-aff4-773f0ce5ba1d
   port: 50000
@@ -4129,14 +4221,6 @@ proxies:
 - name: 394|DE德国2
   password: ec9dcfee-f542-4263-9b90-d52c46b72f59
   port: 43330
-  server: dg1.wuxianjc.top
-  skip-cert-verify: true
-  sni: dg1.wuxianjc.top
-  tls: false
-  type: hysteria2
-- name: 394|DE德国1
-  password: ec9dcfee-f542-4263-9b90-d52c46b72f59
-  port: 3330
   server: dg1.wuxianjc.top
   skip-cert-verify: true
   sni: dg1.wuxianjc.top
@@ -4441,7 +4525,8 @@ proxies:
     headers:
       Host: go.daluquan.top
     path: /
-- name: '398|🇩🇪_定制专线：@QS00008 #1'
+- country: 🇩🇪DE
+  name: 398,402|NO61627
   network: tcp
   password: telegram-id-privatevpns
   port: 22222
@@ -4449,14 +4534,17 @@ proxies:
   skip-cert-verify: true
   sni: trojan.burgerip.co.uk
   type: trojan
-- name: '398|🇩🇪_定制专线：@QS00008 #2'
+  udp: true
+- country: 🇪DE
+  name: 398,402|NO25288
   network: tcp
   password: telegram-id-privatevpns
   port: 22222
   server: 18.195.166.111
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: trojan.burgerip.co.uk
   type: trojan
+  udp: true
 - name: 398|15|DE_speednode_0006
   network: ws
   port: 2053
