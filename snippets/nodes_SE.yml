@@ -8,6 +8,24 @@ proxies:
   type: vmess
   udp: true
   uuid: 000a0d18-02fe-4cda-a68e-96b55e067567
+- country: SE
+  name: 233|SE_24
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 16.171.229.171
+  sni: trojan.burgerip.co.uk
+  type: trojan
+  udp: true
+- country: SE
+  name: 233|netflix_SE
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 13.53.144.232
+  sni: trojan.burgerip.co.uk
+  type: trojan
+  udp: true
 - cipher: aes-256-cfb
   country: RO
   name: 259,295,388,396|5,7,14,16,18|RO_138
@@ -1787,6 +1805,19 @@ proxies:
   uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
   ws-opts:
     path: /obdii.cfd/linkws
+- alterId: 0
+  cipher: auto
+  name: 396|76|607,608|SE 1|openitr
+  network: ws
+  port: '80'
+  server: Back.MsV2ray.online
+  tls: false
+  type: vmess
+  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
+  ws-opts:
+    headers:
+      Host: Back.MsV2ray.online
+    path: /obdii.cfd/linkws
 - name: 400|🇸🇪 瑞典_031310043 L35
   password: telegram-id-privatevpns
   port: 22222
@@ -1812,11 +1843,20 @@ proxies:
   type: trojan
 - alpn:
   - http/1.1
-  name: 408|🔒 TR-TCP-TLS 🇸🇪 SE-13.53.144.2...
+  name: 408|🔒 TR-TCP-TLS 🇸🇪 SE-13.61.84.53...
   network: tcp
   password: telegram-id-privatevpns
   port: 22222
-  server: 13.53.144.232
+  server: 13.61.84.53
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- alpn:
+  - http/1.1
+  name: 408|🔒 TR-TCP-TLS 🇸🇪 SE-13.51.134.1...
+  network: tcp
+  password: telegram-id-v2rayvpnchannel
+  port: 22222
+  server: 13.51.134.152
   sni: trojan.burgerip.co.uk
   type: trojan
 - alpn:
@@ -1830,11 +1870,11 @@ proxies:
   type: trojan
 - alpn:
   - http/1.1
-  name: 408|🔒 TR-TCP-TLS 🇸🇪 SE-13.61.84.53...
+  name: 408|🔒 TR-TCP-TLS 🇸🇪 SE-13.53.144.2...
   network: tcp
   password: telegram-id-privatevpns
   port: 22222
-  server: 13.61.84.53
+  server: 13.53.144.232
   sni: trojan.burgerip.co.uk
   type: trojan
 - name: 408|🔒 TR-WS-TLS 🇸🇪 SE-185.146.173....
@@ -1855,12 +1895,3 @@ proxies:
   server: qq.miaolianyunapp.com
   type: ss
   udp: true
-- alterId: 0
-  cipher: auto
-  name: 528|瑞典住宅[原生IP] [x3.0]
-  port: 44464
-  server: v3-rdzz.netcar.live
-  tls: false
-  type: vmess
-  udp: true
-  uuid: a7215d41-b445-4b1f-8b88-f59443b29164
