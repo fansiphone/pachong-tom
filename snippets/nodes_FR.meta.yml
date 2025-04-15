@@ -1,12 +1,14 @@
 proxies:
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 11,66,68,98,131,132,188,191,200,215,221,222,224,227,234|🇳CN-120.238.124.168-241
-  password: be443689-bc64-49ff-85a5-8eecaa2235d3
-  port: 41068
-  server: zz5.fgmcx.top
-  tfo: false
-  type: ss
+- alpn:
+  - http/1.1
+  ip-version: dual
+  name: '4,9,196,240,248,249|🇫🇷_FR_法国 #3'
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 52.47.195.45
+  sni: trojan.burgerip.co.uk
+  type: trojan
   udp: true
 - name: 12|🇫🇷 法国
   password: 64f4f8e7-cf41-4e53-b123-5e8e9f27defa
@@ -93,20 +95,6 @@ proxies:
   type: vmess
   udp: true
   uuid: 09216880-6484-4c36-89b1-3fe4093b47b6
-- cipher: chacha20-ietf-poly1305
-  name: 26|🇫🇷 法国-01 x1
-  password: 5e138100-15d0-4f3b-889e-ae83673f13e8
-  port: 27785
-  server: gzother-api.2819v2rhzb56.download
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 26|🇫🇷 法国-02 x1
-  password: 5e138100-15d0-4f3b-889e-ae83673f13e8
-  port: 27785
-  server: zjother-api.2819v2rhzb56.download
-  type: ss
-  udp: true
 - alterId: 0
   cipher: auto
   name: '37,146|法国1 #1'
@@ -226,59 +214,18 @@ proxies:
   type: vmess
   udp: true
   uuid: f7eb5b07-0dd6-4d6d-900d-6781c51c2283
-- client-fingerprint: chrome
-  delay: 2730
-  flow: xtls-rprx-vision
-  name: 96,107,109,180,190,193,194,199,210,221,223,233,236,253|CN_speednode_0031
-  network: tcp
-  port: 40072
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: agaungzhou01.bumbleshrimp.com
-  servername: www.yahoo.com
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- alterId: 0
-  country: FR
-  name: 101,188,215,229,233,242|🇷FR国 10.2MB/s
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 52.47.195.45
-  skip-cert-verify: true
-  sni: trojan.burgerip.co.uk
-  tfo: false
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  country: 🇫🇷FR
-  name: '101,106,168,169,180,188,190,215,233,242|未知15 #1'
+- country: FR
+  name: '101,196,215,233|37|未知15 #1'
   network: tcp
   password: telegram-id-privatevpns
   port: 22222
   server: 13.38.186.198
   skip-cert-verify: true
   sni: trojan.burgerip.co.uk
-  tfo: false
-  tls: true
   type: trojan
   udp: true
-- alpn:
-  - http/1.1
-  name: 106,168,169,190,240|🔒 TR-TCP-TLS 🇫🇷 FR-52.47.195.4...
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 52.47.195.45
-  sni: trojan.burgerip.co.uk
-  type: trojan
 - auth: dongtaiwang.com
-  name: 107,130,180,190,193,194,199,221,223,233|0|🇫🇷7 |  5.1MB/s
+  name: 107,130,180,190,193,194,196,199,221,223,233|0|🇫🇷7 |  5.1MB/s
   password: dongtaiwang.com
   port: 61770
   server: 51.159.226.1
@@ -661,73 +608,26 @@ proxies:
   type: vmess
   udp: true
   uuid: 52704bc6-015d-4c36-bead-87053a8a9641
-- client-fingerprint: chrome
-  flow: ''
-  mode: ''
-  name: 130|🇫🇷4 |  1.2MB/s
-  network: ws
-  port: 2053
-  server: 104.17.148.22
-  servername: app37.appdatanewh.lat
-  tls: true
-  type: vless
-  udp: false
-  uuid: c2f690dc-6187-48a8-aa8b-b75d43d11df4
-  ws-opts:
-    headers:
-      Host: app37.appdatanewh.lat
-    path: /
-- client-fingerprint: chrome
-  flow: ''
-  mode: ''
-  name: 130|🇫🇷5 |  4.6MB/s
-  network: ws
-  port: 2053
-  server: www.speedtest.net
-  servername: app50.appdatanewh.lat
-  tls: true
-  type: vless
-  udp: false
-  uuid: c2f690dc-6187-48a8-aa8b-b75d43d11df4
-  ws-opts:
-    headers:
-      Host: app50.appdatanewh.lat
-    path: /
-- client-fingerprint: chrome
-  flow: ''
-  mode: ''
-  name: 130,221|1|🇷5 |  2.3MB/s
-  network: ws
-  port: 2053
-  server: www.speedtest.net
-  servername: app37.appdatanewh.lat
-  tls: true
-  type: vless
-  udp: false
-  uuid: c2f690dc-6187-48a8-aa8b-b75d43d11df4
-  ws-opts:
-    headers:
-      Host: app37.appdatanewh.lat
-    path: /
-- flow: ''
-  mode: ''
-  name: 130|🇫🇷7 |  5.3MB/s
-  network: ws
-  port: 2053
-  server: 104.17.148.22
-  servername: app50.appdatanewh.lat
-  tls: true
-  type: vless
-  udp: false
-  uuid: c2f690dc-6187-48a8-aa8b-b75d43d11df4
-  ws-opts:
-    headers:
-      Host: app50.appdatanewh.lat
-    path: /
 - client-fingerprint: ''
   flow: ''
   mode: ''
-  name: 130,221|1|🇷14 |  1.8MB/s
+  name: 130,221|1|🇷4 |  5.9MB/s
+  network: ws
+  port: 2096
+  server: whatismyipaddress.com
+  servername: wwwspeedtestnetwhiteberinsistomd6625996s26.elitemizban.ir
+  tls: true
+  type: vless
+  udp: false
+  uuid: 27a778d4-543e-43f5-85a2-6acf18821ccb
+  ws-opts:
+    headers:
+      Host: wwwspeedtestnetwhiteberinsistomd6625996s26.elitemizban.ir
+    path: ''
+- client-fingerprint: ''
+  flow: ''
+  mode: ''
+  name: 130,196,221|1|🇫🇷6 |  3.7MB/s
   network: ws
   port: 2096
   server: 104.19.222.79
@@ -742,26 +642,10 @@ proxies:
     path: ''
 - client-fingerprint: chrome
   flow: ''
-  mode: ''
-  name: 130|🇫🇷9 |  2.8MB/s
-  network: ws
-  port: 2053
-  server: www.speedtest.net
-  servername: app39.appdatanewh.lat
-  tls: true
-  type: vless
-  udp: false
-  uuid: c2f690dc-6187-48a8-aa8b-b75d43d11df4
-  ws-opts:
-    headers:
-      Host: app39.appdatanewh.lat
-    path: /
-- client-fingerprint: chrome
-  flow: ''
   grpc-opts:
     grpc-service-name: CANALTELEGRAM--jet_config--TELEGRAM--jet_config--CANALTELEGRAM--jet_config--TELEGRAM--jet_config--CANALTELEGRAM--jet_config--TELEGRAM--jet_config--CANALTELEGRAM--jet_config--TELEGRAM--jet_config
   mode: gun
-  name: 130|🇫🇷10 |  5.6MB/s
+  name: 130,221|1|🇷7 |  2.4MB/s
   network: grpc
   port: 1210
   reality-opts:
@@ -773,38 +657,6 @@ proxies:
   type: vless
   udp: false
   uuid: 526e9f2d-fc0e-412a-baeb-740f0dc5ec73
-- client-fingerprint: ''
-  flow: ''
-  mode: ''
-  name: 130|🇫🇷11 |  1.3MB/s
-  network: ws
-  port: 2096
-  server: whatismyipaddress.com
-  servername: wwwspeedtestnetwhiteberinsistomd6625996s28.elitemizban.ir
-  tls: true
-  type: vless
-  udp: false
-  uuid: 27a778d4-543e-43f5-85a2-6acf18821ccb
-  ws-opts:
-    headers:
-      Host: wwwspeedtestnetwhiteberinsistomd6625996s28.elitemizban.ir
-    path: ''
-- client-fingerprint: ''
-  flow: ''
-  mode: ''
-  name: 130|🇫🇷12 |  5.3MB/s
-  network: ws
-  port: 2096
-  server: whatismyipaddress.com
-  servername: wwwspeedtestnetwhiteberinsistomd6625996s26.elitemizban.ir
-  tls: true
-  type: vless
-  udp: false
-  uuid: 27a778d4-543e-43f5-85a2-6acf18821ccb
-  ws-opts:
-    headers:
-      Host: wwwspeedtestnetwhiteberinsistomd6625996s26.elitemizban.ir
-    path: ''
 - name: 133|🇫🇷法国+1
   network: ws
   port: 2086
@@ -824,26 +676,6 @@ proxies:
   server: ojrandvej2ruev8ejki2unopb5etrur3.08.01.fr.6l6.site
   tfo: false
   type: ss
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: '143,235|🇫🇷 法国2 #3'
-  port: 45071
-  server: xdd.dashuai.cyou
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 5eb8a504-4855-4011-a6bb-6d9488dbcb22
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: '143,235|🇫🇷 法国1 #3'
-  port: 45072
-  server: haa.dashuai.cyou
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 5eb8a504-4855-4011-a6bb-6d9488dbcb22
 - alterId: 0
   cipher: auto
   name: '145|🇫🇷 法国1 #2'
@@ -892,21 +724,6 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: '152,155,214,215,232,233|20,21|🇫🇷FR-51.77.20.137-8327 #...'
-  network: ws
-  port: 443
-  server: 51.77.20.137
-  servername: ''
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: tilebani.com
-    path: /linkvws
-- alterId: 0
-  cipher: auto
   name: 152,155,232|10,20,21|🇫🇷FR-51.77.20.132-093...
   network: ws
   port: 443
@@ -941,7 +758,50 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: 152,214,215,233|20,21|🇫🇷FR-146.19.168.161-6209...
+  name: 152|🇫🇷 FR_149
+  network: ws
+  port: 443
+  server: 163.5.159.231
+  tls: true
+  type: vmess
+  uuid: e537f2f5-2a0c-4f59-92c9-832ca6433bf3
+  ws-opts:
+    headers:
+      Host: irvideo.cfd
+    path: /linkws
+- alterId: 0
+  cipher: auto
+  name: '152,155,196,214,215,232,233|20,21|🇫🇷FR-51.77.20.137-8327 #...'
+  network: ws
+  port: 443
+  server: 51.77.20.137
+  servername: ''
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: tilebani.com
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: 152,196,214,215,232,233|20,21|🇫🇷FR-146.19.168.161-8366...
+  network: ws
+  port: 443
+  server: 146.19.168.161
+  servername: az05.beyondy.cfd
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 3f638f34-8dba-4186-bc43-2716a7ddd4be
+  ws-opts:
+    headers:
+      Host: az05.beyondy.cfd
+    path: /link
+- alterId: 0
+  cipher: auto
+  name: 152,196,214,215,233|20,21|🇫🇷FR-146.19.168.161-6209...
   network: ws
   port: 443
   server: az05.beyondy.cfd
@@ -988,7 +848,7 @@ proxies:
   ws-path: /youxuan
 - alterId: 0
   cipher: auto
-  name: 155,214,215,233|20,21|🇫🇷FR-163.5.159.231-8314 ...
+  name: 155,196,214,215,233|20,21|🇫🇷FR-163.5.159.231-8314 ...
   network: ws
   port: 443
   server: irvideo.cfd
@@ -1017,7 +877,7 @@ proxies:
   skip-cert-verify: true
   sni: aws-fr-paris-1.f1rocketnode.com
   type: trojan
-- name: 155,240|🔒 TR-TCP-TLS 🇪🇪 EE-45.80.110.2...
+- name: 155,196,240|🔒 TR-TCP-TLS 🇪🇪 EE-45.80.110.2...
   network: tcp
   password: bpb-trojan
   port: 443
@@ -1149,6 +1009,16 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
+  name: 191|0|🇫🇷1 |  2.0MB/s
+  port: 17235
+  server: 87ab6ec1-sux8g0-susn3i-1lkt0.cm5.p5pv.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: cd1b0ae0-4010-11ee-953a-f23c9164ca5d
+- alterId: 0
+  cipher: auto
   name: 191|0|🇫🇷8 |  4.5MB/s
   port: 17235
   server: 00fd0574-sux8g0-sv07nd-jtx1.cm5.p5pv.com
@@ -1167,7 +1037,7 @@ proxies:
   type: vless
   udp: true
   uuid: 4815dc93-e49f-4b05-a44a-dbf90985458a
-- name: 207,218,233|24|🇫🇷 _法国
+- name: 196,207,218,233|24|🇫🇷 _法国
   network: tcp
   password: Aimer
   port: 443
@@ -1176,21 +1046,2869 @@ proxies:
   sni: epcco.ambercc.filegear-sg.me
   type: trojan
   udp: true
-- alterId: 0
-  cipher: auto
-  name: 214,215,232,233|20,21|🇫🇷FR-146.19.168.161-8366...
-  network: ws
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 196|🔒 VL-TCP-RLT 🇫 FR-88.214.24.19...
+  network: tcp
+  port: 35443
+  reality-opts:
+    public-key: Fvm8Nk9_xIHnKlrqywijuK6FDWP7zSyNV_ap8qH__EQ
+    short-id: cc024cc0b79b6bad
+  server: 88.214.24.198
+  servername: www.speedtest.net
+  tls: false
+  type: vless
+  uuid: dff6aeff-54dd-4d04-ad68-c79fbf89f9f0
+- client-fingerprint: random
+  name: 196|🔒 VL-XHTTP-RLT 🇫🇷 FR-54.37.7.9...
+  network: xhttp
+  port: 509
+  reality-opts:
+    public-key: bT2H9Af5fVDySSaEfkoV9uW3BHNNuGCX6uUF49VN410
+    short-id: '67'
+  server: 54.37.7.94
+  servername: snapp.ir
+  tls: false
+  type: vless
+  uuid: 410c3d7b-035a-4d0f-a20e-3ced9b8b62c5
+  ws-opts:
+    path: '%2Fed%3Faskdfklasdlf-oiupon'
+- client-fingerprint: chrome
+  name: 196|🔒 VL-TCP-RLT 🇷 FR-51.77.93.29:...
+  network: tcp
+  port: 8883
+  reality-opts:
+    public-key: hVFQpNhSU6uRXpnAIES-MIuye5PsS-jmiWMlgwTC4yA
+    short-id: 93ddf2d2c5d8c56b
+  server: 51.77.93.29
+  servername: wwww.refersion.com
+  tls: false
+  type: vless
+  uuid: c69d6834-e4a8-4ff0-97e5-ca13746c65d1
+- client-fingerprint: qq
+  grpc-opts:
+    grpc-service-name: fr.kuailink.de
+  name: 196|🔒 VL-GRPC-RLT 🇷 FR-54.37.10.31...
+  network: grpc
+  port: 30000
+  reality-opts:
+    public-key: f8ZHPUsZeIwnN-v4hVTy6_ANFCryKYRpA1-ev19emyg
+    short-id: 431d
+  server: 54.37.10.31
+  servername: www.icloud.com
+  tls: false
+  type: vless
+  uuid: 24146d40-a9c8-4d86-af21-57121f96eb4a
+- client-fingerprint: chrome
+  name: 196|🔒 VL-TCP-RLT 🇫🇷 FR-51.77.93.29...
+  network: tcp
+  port: 5183
+  reality-opts:
+    public-key: hVFQpNhSU6uRXpnAIES-MIuye5PsS-jmiWMlgwTC4yA
+    short-id: 93ddf2d2c5d8c56b
+  server: 51.77.93.29
+  servername: wwww.refersion.com
+  tls: false
+  type: vless
+  uuid: c69d6834-e4a8-4ff0-97e5-ca13746c65d1
+- client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: grpc
+  name: 196|🔒 VL-GRPC-RLT 🇫🇷 FR-13.39.155....
+  network: grpc
   port: 443
-  server: 146.19.168.161
-  servername: az05.beyondy.cfd
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: 3f638f34-8dba-4186-bc43-2716a7ddd4be
+  reality-opts:
+    public-key: 66MoA59GCNYSX43b0L-ufGOMp2S7Q45ixJDZLRkkzDk
+    short-id: 6ba85179e30d4fc2
+  server: 13.39.155.100
+  servername: ap130.zhongguocu.link
+  tls: false
+  type: vless
+  uuid: c775021c-c5a5-476e-8f0d-d78116f506c0
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 196|🔒 VL-TCP-RLT 🇷 FR-57.128.166.8...
+  network: tcp
+  port: 1152
+  reality-opts:
+    public-key: EsdPQG7EdQ6yCid_OtlMfCDIRTnmFZ_ujpKbaqOiCT4
+    short-id: 4374d295a4f9dd83
+  server: 57.128.166.88
+  servername: www.stackoverflow.com
+  tls: false
+  type: vless
+  uuid: dfa25b43-edf2-99e4-c3b0-1aa7c9ccaa96
+- name: 196|🔒 VL-WS-NONE 🇷 FR-151.101.123....
+  network: ws
+  port: 80
+  server: 151.101.123.96
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
   ws-opts:
     headers:
-      Host: az05.beyondy.cfd
-    path: /link
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: 196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123...
+  network: ws
+  port: 80
+  server: 151.101.123.30
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #1'
+  network: ws
+  port: 80
+  server: 151.101.123.230
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #2'
+  network: ws
+  port: 80
+  server: 151.101.123.24
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #3'
+  network: ws
+  port: 80
+  server: 151.101.123.63
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: 196|🔒 VL-XHTTP-NA 🇷 FR-199.232.170...
+  network: xhttp
+  port: 80
+  server: 199.232.170.133
+  tls: false
+  type: vless
+  uuid: 753ac1b2-d3a1-408c-a5c6-59a36352e817
+  ws-opts:
+    headers:
+      Host: joinbede_unlimiteddev.ir
+- name: 196|🔒 VL-WS-TLS 🇷 FR-185.16.110.10...
+  network: ws
+  port: 443
+  server: 185.16.110.103
+  servername: nc.dbbn2024.us.kg
+  tls: true
+  type: vless
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    path: /?ed
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #4'
+  network: ws
+  port: 80
+  server: 151.101.123.229
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #5'
+  network: ws
+  port: 80
+  server: 151.101.123.25
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #6'
+  network: ws
+  port: 80
+  server: 151.101.123.134
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #7'
+  network: ws
+  port: 80
+  server: 151.101.123.186
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #8'
+  network: ws
+  port: 80
+  server: 151.101.123.135
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #9'
+  network: ws
+  port: 80
+  server: 151.101.123.140
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #10'
+  network: ws
+  port: 80
+  server: 151.101.123.126
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #11'
+  network: ws
+  port: 80
+  server: 151.101.123.127
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #12'
+  network: ws
+  port: 80
+  server: 151.101.123.148
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #13'
+  network: ws
+  port: 80
+  server: 151.101.123.253
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #14'
+  network: ws
+  port: 80
+  server: 151.101.123.176
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #15'
+  network: ws
+  port: 80
+  server: 151.101.123.104
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #16'
+  network: ws
+  port: 80
+  server: 151.101.123.141
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-TLS 🇷 FR-185.16.110.10... #1'
+  network: ws
+  port: 443
+  server: 185.16.110.107
+  servername: nc.dbbn2024.us.kg
+  tls: true
+  type: vless
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    path: /?ed
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #17'
+  network: ws
+  port: 80
+  server: 151.101.123.46
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #18'
+  network: ws
+  port: 80
+  server: 151.101.123.34
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #19'
+  network: ws
+  port: 80
+  server: 151.101.123.216
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #20'
+  network: ws
+  port: 80
+  server: 151.101.123.203
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #21'
+  network: ws
+  port: 80
+  server: 151.101.123.80
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- grpc-opts:
+    grpc-service-name: ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON%3Fed%3D2048
+  name: 196|🔒 VL-GRPC-NONE 🇷 FR-141.95.103...
+  network: grpc
+  port: 54436
+  server: 141.95.103.120
+  tls: false
+  type: vless
+  uuid: 9486e684-0e38-49ff-954c-a9ed1e595ecf
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #22'
+  network: ws
+  port: 80
+  server: 151.101.123.208
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #23'
+  network: ws
+  port: 80
+  server: 151.101.123.210
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #24'
+  network: ws
+  port: 80
+  server: 151.101.123.22
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #25'
+  network: ws
+  port: 80
+  server: 151.101.123.236
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #26'
+  network: ws
+  port: 80
+  server: 151.101.123.94
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #27'
+  network: ws
+  port: 80
+  server: 151.101.123.16
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #28'
+  network: ws
+  port: 80
+  server: 151.101.123.225
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #29'
+  network: ws
+  port: 80
+  server: 151.101.123.215
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #30'
+  network: ws
+  port: 80
+  server: 151.101.123.9
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #31'
+  network: ws
+  port: 80
+  server: 151.101.123.237
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #32'
+  network: ws
+  port: 80
+  server: 151.101.123.222
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #33'
+  network: ws
+  port: 80
+  server: 151.101.123.105
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- alpn:
+  - http/1.1
+  name: 196|🔒 VL-WS-TLS 🇷 FR-51.38.223.139...
+  network: ws
+  port: 443
+  server: 51.38.223.139
+  servername: api.dota.website
+  tls: true
+  type: vless
+  uuid: 6311942c-d33f-4acf-97af-ceb225b4c049
+  ws-opts:
+    headers:
+      Host: intimate.dota.website
+    path: '%2Fws%2F63b84876f2e89b42bbc19e48%2FX'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #34'
+  network: ws
+  port: 80
+  server: 151.101.123.124
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #35'
+  network: ws
+  port: 80
+  server: 151.101.123.118
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #36'
+  network: ws
+  port: 80
+  server: 151.101.123.250
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #37'
+  network: ws
+  port: 80
+  server: 151.101.123.232
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #38'
+  network: ws
+  port: 80
+  server: 151.101.123.117
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #39'
+  network: ws
+  port: 80
+  server: 151.101.123.142
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #40'
+  network: ws
+  port: 80
+  server: 151.101.123.90
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #41'
+  network: ws
+  port: 80
+  server: 151.101.123.201
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- alpn:
+  - http/1.1
+  name: 196|🔒 VL-WS-TLS 🇷 FR-51.178.56.158...
+  network: ws
+  port: 443
+  server: 51.178.56.158
+  servername: api.dota.website
+  tls: true
+  type: vless
+  uuid: 6311942c-d33f-4acf-97af-ceb225b4c049
+  ws-opts:
+    headers:
+      Host: intimate.dota.website
+    path: '%2Fws%2F63b84876f2e89b42bbc19e48%2FX'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #42'
+  network: ws
+  port: 80
+  server: 151.101.123.184
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #43'
+  network: ws
+  port: 80
+  server: 151.101.123.18
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #44'
+  network: ws
+  port: 80
+  server: 151.101.123.78
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  name: 196|🔒 VL-TCP-TLS 🇷 FR-57.128.178.2...
+  network: tcp
+  port: 443
+  server: 57.128.178.253
+  servername: en.linceedab.com
+  tls: true
+  type: vless
+  uuid: 24f7f8e5-dbe5-4cde-e018-2b74a00b6d69
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #45'
+  network: ws
+  port: 80
+  server: 151.101.123.189
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #46'
+  network: ws
+  port: 80
+  server: 151.101.123.19
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #47'
+  network: ws
+  port: 80
+  server: 151.101.123.132
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #48'
+  network: ws
+  port: 80
+  server: 151.101.123.60
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- grpc-opts:
+    grpc-service-name: ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON%3Fed%3D2048
+  name: 196|🔒 VL-GRPC-NONE 🇷 FR-51.77.108....
+  network: grpc
+  port: 13004
+  server: 51.77.108.99
+  tls: false
+  type: vless
+  uuid: e207c137-47aa-4f56-b82b-19e3d4ee72a6
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #49'
+  network: ws
+  port: 80
+  server: 151.101.123.31
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: 196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.120...
+  network: ws
+  port: 80
+  server: 151.101.120.121
+  tls: false
+  type: vless
+  uuid: aaa777c1-0940-49a4-bfea-5e7dd3ebe7ea
+  ws-opts:
+    headers:
+      Host: meta3.ai
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #50'
+  network: ws
+  port: 80
+  server: 151.101.123.123
+  servername: foffmelo.com
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #51'
+  network: ws
+  port: 80
+  server: 151.101.123.23
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #52'
+  network: ws
+  port: 80
+  server: 151.101.123.69
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #53'
+  network: ws
+  port: 80
+  server: 151.101.123.248
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #54'
+  network: ws
+  port: 80
+  server: 151.101.123.84
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #55'
+  network: ws
+  port: 80
+  server: 151.101.123.125
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: 196|🔒 VL-WS-TLS 🇷 FR-35.180.49.43:...
+  network: ws
+  port: 22222
+  server: 35.180.49.43
+  servername: telegram-channel-vlessconfig.sohala.uk
+  tls: true
+  type: vless
+  uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+  ws-opts:
+    headers:
+      Host: telegram-channel-vlessconfig.sohala.uk
+    path: /telegram-channel-vlessconfig-ws
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #56'
+  network: ws
+  port: 80
+  server: 151.101.123.246
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #57'
+  network: ws
+  port: 80
+  server: 151.101.123.99
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #58'
+  network: ws
+  port: 80
+  server: 151.101.123.73
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #59'
+  network: ws
+  port: 80
+  server: 151.101.123.12
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- grpc-opts:
+    grpc-service-name: 2055vless
+  name: 196|🔒 VL-GRPC-NONE 🇷 FR-108.61.177...
+  network: grpc
+  port: 6067
+  server: 108.61.177.195
+  tls: false
+  type: vless
+  uuid: 0ac50e14-b3a2-4a7d-b881-61d5178e56e1
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #60'
+  network: ws
+  port: 80
+  server: 151.101.123.53
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #61'
+  network: ws
+  port: 80
+  server: 151.101.123.47
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #62'
+  network: ws
+  port: 80
+  server: 151.101.123.133
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #63'
+  network: ws
+  port: 80
+  server: 151.101.123.15
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #64'
+  network: ws
+  port: 80
+  server: 151.101.123.146
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #65'
+  network: ws
+  port: 80
+  server: 151.101.123.244
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #66'
+  network: ws
+  port: 80
+  server: 151.101.123.72
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #67'
+  network: ws
+  port: 80
+  server: 151.101.123.81
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #68'
+  network: ws
+  port: 80
+  server: 151.101.123.49
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #69'
+  network: ws
+  port: 80
+  server: 151.101.123.252
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #70'
+  network: ws
+  port: 80
+  server: 151.101.123.79
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- alpn:
+  - h2
+  name: 196|🔒 VL-TCP-TLS 🇷 FR-138.199.27.2...
+  network: tcp
+  port: 8443
+  server: 138.199.27.206
+  servername: cdg-1.fromblancwithlove.com
+  tls: true
+  type: vless
+  uuid: 157448af-8ecf-4075-a9e9-b23a6a94899b
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #71'
+  network: ws
+  port: 80
+  server: 151.101.123.102
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #72'
+  network: ws
+  port: 80
+  server: 151.101.123.254
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- grpc-opts:
+    grpc-service-name: 2055vless
+  name: 196|🔒 VL-GRPC-NONE 🇷 FR-104.238.18...
+  network: grpc
+  port: 6067
+  server: 104.238.189.4
+  tls: false
+  type: vless
+  uuid: 0ac50e14-b3a2-4a7d-b881-61d5178e56e1
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #73'
+  network: ws
+  port: 80
+  server: 151.101.123.98
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #74'
+  network: ws
+  port: 80
+  server: 151.101.123.233
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+- client-fingerprint: chrome
+  name: 196|🔒 VL-WS-TLS 🇷 FR-141.145.205.1...
+  network: ws
+  port: 8443
+  server: 141.145.205.115
+  servername: re.vs2024.us.kg
+  tls: true
+  type: vless
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    path: '%2F%3Fed'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #75'
+  network: ws
+  port: 80
+  server: 151.101.123.75
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #76'
+  network: ws
+  port: 80
+  server: 151.101.123.89
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #77'
+  network: ws
+  port: 80
+  server: 151.101.123.38
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #78'
+  network: ws
+  port: 80
+  server: 151.101.123.144
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #79'
+  network: ws
+  port: 80
+  server: 151.101.123.179
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #80'
+  network: ws
+  port: 80
+  server: 151.101.123.168
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #81'
+  network: ws
+  port: 80
+  server: 151.101.123.150
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #82'
+  network: ws
+  port: 80
+  server: 151.101.123.206
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #83'
+  network: ws
+  port: 80
+  server: 151.101.123.70
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #84'
+  network: ws
+  port: 80
+  server: 151.101.123.137
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #85'
+  network: ws
+  port: 80
+  server: 151.101.123.193
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #86'
+  network: ws
+  port: 80
+  server: 151.101.123.59
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #87'
+  network: ws
+  port: 80
+  server: 151.101.123.228
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #88'
+  network: ws
+  port: 80
+  server: 151.101.123.199
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #89'
+  network: ws
+  port: 80
+  server: 151.101.123.4
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #90'
+  network: ws
+  port: 80
+  server: 151.101.123.234
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #91'
+  network: ws
+  port: 80
+  server: 151.101.123.224
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: 196|🔒 VL-WS-TLS 🇷 FR-185.16.110.0:...
+  network: ws
+  port: 443
+  server: 185.16.110.0
+  servername: nc.dbbn2024.us.kg
+  tls: true
+  type: vless
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    path: /?ed
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #92'
+  network: ws
+  port: 80
+  server: 151.101.123.17
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #93'
+  network: ws
+  port: 80
+  server: 151.101.123.26
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: 196|🔒 VL-WS-NA 🇷 FR-151.101.123.15...
+  network: ws
+  port: 80
+  server: 151.101.123.159
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: /olem/ws?ed%3D2560
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #94'
+  network: ws
+  port: 80
+  server: 151.101.123.74
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #95'
+  network: ws
+  port: 80
+  server: 151.101.123.242
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #96'
+  network: ws
+  port: 80
+  server: 151.101.123.39
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #97'
+  network: ws
+  port: 80
+  server: 151.101.123.67
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #98'
+  network: ws
+  port: 80
+  server: 151.101.123.45
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #99'
+  network: ws
+  port: 80
+  server: 151.101.123.139
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #100'
+  network: ws
+  port: 80
+  server: 151.101.123.61
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #101'
+  network: ws
+  port: 80
+  server: 151.101.123.156
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #102'
+  network: ws
+  port: 80
+  server: 151.101.123.200
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇷 FR-151.101.123.... #1'
+  network: ws
+  port: 80
+  server: 151.101.123.166
+  servername: foffmelo.com
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #103'
+  network: ws
+  port: 80
+  server: 151.101.123.3
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #104'
+  network: ws
+  port: 80
+  server: 151.101.123.165
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #105'
+  network: ws
+  port: 80
+  server: 151.101.123.112
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #106'
+  network: ws
+  port: 80
+  server: 151.101.123.1
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #107'
+  network: ws
+  port: 80
+  server: 151.101.123.202
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #108'
+  network: ws
+  port: 80
+  server: 151.101.123.204
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #109'
+  network: ws
+  port: 80
+  server: 151.101.123.170
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #110'
+  network: ws
+  port: 80
+  server: 151.101.123.249
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #111'
+  network: ws
+  port: 80
+  server: 151.101.123.106
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: 196|🔒 VL-TCP-NA 🇫🇷 FR-144.24.206.1...
+  network: tcp
+  port: 443
+  server: 144.24.206.147
+  tls: false
+  type: vless
+  uuid: 2c699fc7-cc37-4ca3-a7fe-c7ab9355a248
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #112'
+  network: ws
+  port: 80
+  server: 151.101.123.57
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #113'
+  network: ws
+  port: 80
+  server: 151.101.123.187
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #114'
+  network: ws
+  port: 80
+  server: 151.101.123.68
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #115'
+  network: ws
+  port: 80
+  server: 151.101.123.255
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #116'
+  network: ws
+  port: 80
+  server: 151.101.123.115
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #117'
+  network: ws
+  port: 80
+  server: 151.101.123.11
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #118'
+  network: ws
+  port: 80
+  server: 151.101.123.110
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #119'
+  network: ws
+  port: 80
+  server: 151.101.123.32
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #120'
+  network: ws
+  port: 80
+  server: 151.101.123.177
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #121'
+  network: ws
+  port: 80
+  server: 151.101.123.231
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #122'
+  network: ws
+  port: 80
+  server: 151.101.123.214
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #123'
+  network: ws
+  port: 80
+  server: 151.101.123.71
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- client-fingerprint: chrome
+  name: 196|🔒 VL-WS-TLS 🇷 FR-185.16.110.22...
+  network: ws
+  port: 2053
+  server: 185.16.110.222
+  servername: istap.resources-digikala.com.
+  tls: true
+  type: vless
+  uuid: ef5f8625-a997-4e9c-a79c-7b95f565d675
+  ws-opts:
+    headers:
+      Host: istap.resources-digikala.com.
+    path: '%2F%40amir%3Fed%3D2048'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #124'
+  network: ws
+  port: 80
+  server: 151.101.123.163
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #125'
+  network: ws
+  port: 80
+  server: 151.101.123.198
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #126'
+  network: ws
+  port: 80
+  server: 151.101.123.10
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: 196|🔒 VL-WS-NA 🇷 FR-129.151.225.22...
+  network: ws
+  port: 8443
+  server: 129.151.225.228
+  servername: uu.vs2024.us.kg
+  tls: false
+  type: vless
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      Host: uu.vs2024.us.kg
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #127'
+  network: ws
+  port: 80
+  server: 151.101.123.161
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #128'
+  network: ws
+  port: 80
+  server: 151.101.123.101
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #129'
+  network: ws
+  port: 80
+  server: 151.101.123.88
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #130'
+  network: ws
+  port: 80
+  server: 151.101.123.171
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #131'
+  network: ws
+  port: 80
+  server: 151.101.123.212
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #132'
+  network: ws
+  port: 80
+  server: 151.101.123.92
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #133'
+  network: ws
+  port: 80
+  server: 151.101.123.93
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #134'
+  network: ws
+  port: 80
+  server: 151.101.123.14
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #135'
+  network: ws
+  port: 80
+  server: 151.101.123.85
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #136'
+  network: ws
+  port: 80
+  server: 151.101.123.192
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #137'
+  network: ws
+  port: 80
+  server: 151.101.123.235
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: 196|🔒 VL-GRPC-NONE 🇷 FR-46.226.166...
+  network: grpc
+  port: 443
+  server: 46.226.166.246
+  tls: false
+  type: vless
+  uuid: ece26ca7-1552-4158-806d-a04de25dc4c3
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #138'
+  network: ws
+  port: 80
+  server: 151.101.123.154
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #139'
+  network: ws
+  port: 80
+  server: 151.101.123.211
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #140'
+  network: ws
+  port: 80
+  server: 151.101.123.40
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #141'
+  network: ws
+  port: 80
+  server: 151.101.123.52
+  servername: foffmelo.com
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #142'
+  network: ws
+  port: 80
+  server: 151.101.123.205
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #143'
+  network: ws
+  port: 80
+  server: 151.101.123.138
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #144'
+  network: ws
+  port: 80
+  server: 151.101.123.29
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #145'
+  network: ws
+  port: 80
+  server: 151.101.123.51
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #146'
+  network: ws
+  port: 80
+  server: 151.101.123.50
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #147'
+  network: ws
+  port: 80
+  server: 151.101.123.157
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #148'
+  network: ws
+  port: 80
+  server: 151.101.123.100
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #149'
+  network: ws
+  port: 80
+  server: 151.101.123.64
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #150'
+  network: ws
+  port: 80
+  server: 151.101.123.58
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #151'
+  network: ws
+  port: 80
+  server: 151.101.123.221
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #152'
+  network: ws
+  port: 80
+  server: 151.101.123.243
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #153'
+  network: ws
+  port: 80
+  server: 151.101.123.62
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #154'
+  network: ws
+  port: 80
+  server: 151.101.123.28
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: 196|🔒 VL-WS-TLS 🇷 FR-185.16.110.44...
+  network: ws
+  port: 2096
+  server: 185.16.110.44
+  servername: J0in-te1egram-EiiiM.danesh-bonyan.Store
+  tls: true
+  type: vless
+  uuid: d1aca49a-e5bc-48b2-870a-d590004099b0
+  ws-opts:
+    headers:
+      Host: eiiim.danesh-bonyan.Store
+    path: join.----------------Telegram-EiiiM----------------Telegram-EiiiM---------------.Telegram-EiiiM.
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #155'
+  network: ws
+  port: 80
+  server: 151.101.123.247
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #156'
+  network: ws
+  port: 80
+  server: 151.101.123.167
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #157'
+  network: ws
+  port: 80
+  server: 151.101.123.162
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #158'
+  network: ws
+  port: 80
+  server: 151.101.123.0
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #159'
+  network: ws
+  port: 80
+  server: 151.101.123.178
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: 196|🔒 VL-WS-NONE 🇷 FR-162.19.228.1...
+  network: ws
+  port: 80
+  server: 162.19.228.119
+  tls: false
+  type: vless
+  uuid: dc8eccdb-ecfa-435f-9ac1-5dc4882e7b51
+  ws-opts:
+    headers:
+      Host: google.com
+    path: '%2Fhttp%23Telegram%40V2ray_Alpha%2F%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #160'
+  network: ws
+  port: 80
+  server: 151.101.123.158
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #161'
+  network: ws
+  port: 80
+  server: 151.101.123.191
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #162'
+  network: ws
+  port: 80
+  server: 151.101.123.143
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #163'
+  network: ws
+  port: 80
+  server: 151.101.123.44
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #164'
+  network: ws
+  port: 80
+  server: 151.101.123.5
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: 196|🔒 VL-WS-TLS 🇫🇷 FR-94.131.9.5:4...
+  network: ws
+  port: 443
+  server: 94.131.9.5
+  servername: eu1.abvpn.ru
+  tls: true
+  type: vless
+  uuid: 30948f96-605e-4396-8d95-e1b903f1fd28
+  ws-opts:
+    path: '%2Fwebsocket'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #165'
+  network: ws
+  port: 80
+  server: 151.101.123.128
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #166'
+  network: ws
+  port: 80
+  server: 151.101.123.223
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #167'
+  network: ws
+  port: 80
+  server: 151.101.123.188
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #168'
+  network: ws
+  port: 80
+  server: 151.101.123.164
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #169'
+  network: ws
+  port: 80
+  server: 151.101.123.194
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #170'
+  network: ws
+  port: 80
+  server: 151.101.123.121
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #171'
+  network: ws
+  port: 80
+  server: 151.101.123.2
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #172'
+  network: ws
+  port: 80
+  server: 151.101.123.207
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #173'
+  network: ws
+  port: 80
+  server: 151.101.123.190
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #174'
+  network: ws
+  port: 80
+  server: 151.101.123.238
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #175'
+  network: ws
+  port: 80
+  server: 151.101.123.13
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #176'
+  network: ws
+  port: 80
+  server: 151.101.123.111
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #177'
+  network: ws
+  port: 80
+  server: 151.101.123.91
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: 196|🔒 VL-WS-NA 🇷 FR-185.16.110.111...
+  network: ws
+  port: 443
+  server: 185.16.110.111
+  servername: uu.vs2024.us.kg
+  tls: false
+  type: vless
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      Host: uu.vs2024.us.kg
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #178'
+  network: ws
+  port: 80
+  server: 151.101.123.209
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #179'
+  network: ws
+  port: 80
+  server: 151.101.123.97
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #180'
+  network: ws
+  port: 80
+  server: 151.101.123.183
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #181'
+  network: ws
+  port: 80
+  server: 151.101.123.33
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #182'
+  network: ws
+  port: 80
+  server: 151.101.123.182
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- alpn:
+  - h3
+  - h2
+  - http/1.1
+  name: 196|🔒 VL-TCP-TLS 🇷 FR-51.44.8.64:3...
+  port: 36105
+  server: 51.44.8.64
+  servername: b.vahidvpn.com.tr
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  uuid: ea561f22-02df-4076-b668-73342098af83
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #183'
+  network: ws
+  port: 80
+  server: 151.101.123.145
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #184'
+  network: ws
+  port: 80
+  server: 151.101.123.172
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #185'
+  network: ws
+  port: 80
+  server: 151.101.123.42
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #186'
+  network: ws
+  port: 80
+  server: 151.101.123.149
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- grpc-opts:
+    grpc-service-name: 2055vless
+  name: 196|🔒 VL-GRPC-NONE 🇷 FR-136.244.11...
+  network: grpc
+  port: 6067
+  server: 136.244.112.250
+  tls: false
+  type: vless
+  uuid: 3e817af0-44c2-4cd8-bc09-b27b413256f8
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #187'
+  network: ws
+  port: 80
+  server: 151.101.123.114
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #188'
+  network: ws
+  port: 80
+  server: 151.101.123.129
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #189'
+  network: ws
+  port: 80
+  server: 151.101.123.113
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #190'
+  network: ws
+  port: 80
+  server: 151.101.123.155
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #191'
+  network: ws
+  port: 80
+  server: 151.101.123.41
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #192'
+  network: ws
+  port: 80
+  server: 151.101.123.180
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #193'
+  network: ws
+  port: 80
+  server: 151.101.123.83
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #194'
+  network: ws
+  port: 80
+  server: 151.101.123.119
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #195'
+  network: ws
+  port: 80
+  server: 151.101.123.86
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #196'
+  network: ws
+  port: 80
+  server: 151.101.123.147
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #197'
+  network: ws
+  port: 80
+  server: 151.101.123.82
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #198'
+  network: ws
+  port: 80
+  server: 151.101.123.76
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #199'
+  network: ws
+  port: 80
+  server: 151.101.123.36
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #200'
+  network: ws
+  port: 80
+  server: 151.101.123.55
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: 196|🔒 VL-WS-TLS 🇷 FR-15.237.19.36:...
+  network: ws
+  port: 22222
+  server: 15.237.19.36
+  servername: telegram-channel-vlessconfig.sohala.uk
+  tls: true
+  type: vless
+  uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+  ws-opts:
+    headers:
+      Host: telegram-channel-vlessconfig.sohala.uk
+    path: /telegram-channel-vlessconfig-ws
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #201'
+  network: ws
+  port: 80
+  server: 151.101.123.116
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #202'
+  network: ws
+  port: 80
+  server: 151.101.123.245
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #203'
+  network: ws
+  port: 80
+  server: 151.101.123.122
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #204'
+  network: ws
+  port: 80
+  server: 151.101.123.227
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #205'
+  network: ws
+  port: 80
+  server: 151.101.123.8
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #206'
+  network: ws
+  port: 80
+  server: 151.101.123.77
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #207'
+  network: ws
+  port: 80
+  server: 151.101.123.226
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #208'
+  network: ws
+  port: 80
+  server: 151.101.123.48
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #209'
+  network: ws
+  port: 80
+  server: 151.101.123.27
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #210'
+  network: ws
+  port: 80
+  server: 151.101.123.7
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #211'
+  network: ws
+  port: 80
+  server: 151.101.123.251
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  name: 196|🔒 VL-TCP-TLS 🇷 FR-91.134.88.20...
+  network: tcp
+  port: 443
+  server: 91.134.88.205
+  servername: france.linceed.se
+  tls: true
+  type: vless
+  uuid: e0351c77-411c-43d1-f967-4b5411068aaf
+- name: '196|🔒 VL-WS-NONE 🇫🇷 FR-151.101.123... #212'
+  network: ws
+  port: 80
+  server: 151.101.123.66
+  tls: false
+  type: vless
+  uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+  ws-opts:
+    headers:
+      Host: foffmelo.com
+    path: '%2Folem%2Fws%3Fed%3D2560'
+- name: 196|🔒 VL-WS-NA 🇷 FR-185.16.110.91:...
+  network: ws
+  port: 443
+  server: 185.16.110.91
+  servername: uu.vs2024.us.kg
+  tls: false
+  type: vless
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      Host: uu.vs2024.us.kg
+- name: 196,240|🔒 TR-TCP-TLS 🇫🇷 FR-51.210.182....
+  network: tcp
+  password: dca7cc60-1234-11f0-8a3f-1239d0255272
+  port: 443
+  server: 51.210.182.170
+  skip-cert-verify: true
+  sni: fr1.test3.net
+  type: trojan
+- alpn:
+  - h3
+  - h2
+  - http/1.1
+  name: '196,240|🔒 TR-TCP-TLS 🇫🇷 FR-51.68.13.10... #1'
+  network: tcp
+  password: FiSo7J6vfS
+  port: 1935
+  server: 51.68.13.106
+  sni: x1fr-ovh.devefun.net
+  type: trojan
+- name: 196,240|🔒 TR-WS-TLS 🇫🇷 FR-141.11.203.1...
+  network: ws
+  password: Aimer
+  port: 8443
+  server: 141.11.203.191
+  sni: ngepx.ambercc.filegear-sg.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ngepx.ambercc.filegear-sg.me
+- alpn:
+  - h3
+  - h2
+  - http/1.1
+  name: '196,240|🔒 TR-TCP-TLS 🇫🇷 FR-51.195.254.... #1'
+  network: tcp
+  password: ebhZ11qYng
+  port: 8443
+  server: 51.195.254.75
+  sni: uk-02.allhubb.info
+  type: trojan
+- alpn:
+  - h3
+  - h2
+  - http/1.1
+  name: '196,240|🔒 TR-TCP-TLS 🇫🇷 FR-141.227.160... #1'
+  network: tcp
+  password: AXpQXM4vNh
+  port: 1935
+  server: 141.227.160.167
+  sni: x2swe-ovh.devefun.net
+  type: trojan
+- name: 196,240|🔒 TR-WS-TLS 🇫🇷 FR-141.11.203.2...
+  network: ws
+  password: NISHIKUITAN111
+  port: 443
+  server: 141.11.203.203
+  sni: za.ylks.xyz
+  type: trojan
+  ws-opts:
+    headers:
+      Host: za.ylks.xyz
+    path: /
+- alpn:
+  - http/1.1
+  name: 196,240|🔒 TR-TCP-TLS 🇫🇷 FR-13.39.37.33...
+  network: tcp
+  password: telegram-id-directvpn
+  port: 22222
+  server: 13.39.37.33
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- alterId: 0
+  name: '196,240,242|未知18 #2'
+  password: 9498f3a0-2992-11ee-a4c7-1239d0255272
+  port: 443
+  server: 51.159.59.186
+  skip-cert-verify: true
+  sni: zula.ir
+  tls: true
+  type: trojan
+  udp: true
+- name: '196,240|🔒 TR-WS-TLS 🇫🇷 FR-141.11.203.1... #1'
+  network: ws
+  password: Aimer
+  port: 443
+  server: 141.11.203.168
+  sni: ngepy.ambercc.filegear-sg.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ngepy.ambercc.filegear-sg.me
+- alpn:
+  - http/1.1
+  name: 196,240|🔒 TR-TCP-TLS 🇫🇷 FR-13.38.186.1...
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 13.38.186.198
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- alterId: 0
+  name: '196,215,229,233,242|未知79 #2'
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 52.47.195.45
+  skip-cert-verify: true
+  sni: trojan.burgerip.co.uk
+  tls: true
+  type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: 214,215,216|🇫🇷FR-51.77.20.137-8327 | 34.66...
@@ -2367,21 +5085,6 @@ proxies:
   server: pop.b1c7d2ec-e636-4521-a9f7-abb10044e3a5.heima360.cc
   skip-cert-verify: false
   type: trojan
-- flow: ''
-  mode: ''
-  name: 221|1|🇫🇷10 |  5.2MB/s
-  network: ws
-  port: 2053
-  server: 104.17.147.22
-  servername: app37.appdatanewh.lat
-  tls: true
-  type: vless
-  udp: false
-  uuid: c2f690dc-6187-48a8-aa8b-b75d43d11df4
-  ws-opts:
-    headers:
-      Host: app37.appdatanewh.lat
-    path: /
 - auth: a36fd46c-bd51-4221-b50f-9b937b25d4e1
   name: 225|🇫🇷 法国-2-1A
   password: a36fd46c-bd51-4221-b50f-9b937b25d4e1
@@ -2462,7 +5165,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 225,233|28|🇫🇷 专线-法国-1B
+  name: 225|🇫🇷 专线-法国-1B
   network: ws
   port: 45418
   server: 36.150.94.53
@@ -2477,6 +5180,258 @@ proxies:
 - auth: a36fd46c-bd51-4221-b50f-9b937b25d4e1
   name: 225|🇫🇷 法国-1-1A
   password: a36fd46c-bd51-4221-b50f-9b937b25d4e1
+  port: 19842
+  server: fr1.426624.xyz
+  skip-cert-verify: true
+  sni: rrman.org
+  type: hysteria2
+  udp: true
+- auth: 424444eb-b4f1-4492-8f4c-61796dd28bbb
+  name: '225|🇫🇷 法国-1-1B #1'
+  password: 424444eb-b4f1-4492-8f4c-61796dd28bbb
+  port: 19842
+  server: fr1.426624.xyz
+  skip-cert-verify: true
+  sni: rrman.org
+  type: hysteria2
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: '225|🇫🇷 专线-法国-1B #1'
+  network: ws
+  port: 45418
+  server: 36.150.94.53
+  tls: false
+  type: vmess
+  udp: true
+  uuid: a774a4ec-6793-4de2-934b-2a195c38ba46
+  ws-opts:
+    headers:
+      Host: www.baidu.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 225|🇫🇷 法国1-1A
+  port: 45072
+  server: haa.dashuai.cyou
+  tls: false
+  type: vmess
+  udp: true
+  uuid: aab44545-c209-4d33-bf56-205389c2d4c7
+- cipher: aes-128-gcm
+  name: 225|🇫🇷 FRANCE 01 丨1x-1B
+  password: 8216c559-82b8-4f6d-9942-dcfa327c7a76
+  port: 7539
+  server: bisschaxc.uk
+  type: ss
+  udp: true
+- auth: 467d2e54-d970-4d5c-b397-407f2a08e100
+  name: '225|🇫🇷 法国-1-1A #1'
+  password: 467d2e54-d970-4d5c-b397-407f2a08e100
+  port: 19842
+  server: fr1.426624.xyz
+  skip-cert-verify: true
+  sni: rrman.org
+  type: hysteria2
+  udp: true
+- auth: 467d2e54-d970-4d5c-b397-407f2a08e100
+  name: '225|🇫🇷 法国-2-1A #1'
+  password: 467d2e54-d970-4d5c-b397-407f2a08e100
+  port: 19842
+  server: fr1.731732.xyz
+  skip-cert-verify: false
+  sni: fr1.731732.xyz
+  type: hysteria2
+  udp: true
+- auth: 531b48ef-89e0-4273-a471-200a3cc3ab14
+  name: 225|🇫🇷 法国-2-1D
+  password: 531b48ef-89e0-4273-a471-200a3cc3ab14
+  port: 19842
+  server: fr1.731732.xyz
+  skip-cert-verify: false
+  sni: fr1.731732.xyz
+  type: hysteria2
+  udp: true
+- cipher: aes-128-gcm
+  name: 225|🇫🇷 FRANCE 01 丨1x-1D
+  password: f74827cc-c899-443f-9d40-f0801c765891
+  port: 7539
+  server: bisschaxc.uk
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 225|🇫🇷 法国2-1A
+  port: 45071
+  server: xdd.dashuai.cyou
+  tls: false
+  type: vmess
+  udp: true
+  uuid: aab44545-c209-4d33-bf56-205389c2d4c7
+- auth: d6e8672d-7cd2-4c4f-8503-2f21d16fa4d5
+  name: 225|🇫🇷 法国-1-1C
+  password: d6e8672d-7cd2-4c4f-8503-2f21d16fa4d5
+  port: 19842
+  server: fr1.426624.xyz
+  skip-cert-verify: true
+  sni: rrman.org
+  type: hysteria2
+  udp: true
+- auth: 424444eb-b4f1-4492-8f4c-61796dd28bbb
+  name: '225|🇫🇷 法国-2-1B #1'
+  password: 424444eb-b4f1-4492-8f4c-61796dd28bbb
+  port: 19842
+  server: fr1.731732.xyz
+  skip-cert-verify: false
+  sni: fr1.731732.xyz
+  type: hysteria2
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 225|🇫🇷 专线-法国-1D
+  network: ws
+  port: 45418
+  server: 36.150.94.53
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 9970e184-a9a2-4dcf-9df9-56a669908674
+  ws-opts:
+    headers:
+      Host: www.baidu.com
+    path: /
+- cipher: chacha20-ietf-poly1305
+  name: '225|🇫🇷 IEPL 法国FR 102-1B #1'
+  password: 39f3f42e-c2fa-44ef-80db-8b7bdb320922
+  port: 16119
+  server: 183.240.116.150
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 225|🇫🇷 IEPL 法国FR 102-1C
+  password: 84ce8003-c7cf-40d6-86df-f1b4b3aeb26c
+  port: 16119
+  server: 183.240.116.150
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 225|🇫🇷 法国2-1B
+  port: 45071
+  server: xdd.dashuai.cyou
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 11ed4e04-f2ba-407e-8513-12a114450e22
+- auth: d6e8672d-7cd2-4c4f-8503-2f21d16fa4d5
+  name: 225|🇫🇷 法国-2-1C
+  password: d6e8672d-7cd2-4c4f-8503-2f21d16fa4d5
+  port: 19842
+  server: fr1.731732.xyz
+  skip-cert-verify: false
+  sni: fr1.731732.xyz
+  type: hysteria2
+  udp: true
+- cipher: aes-128-gcm
+  name: 225|🇫🇷 FRANCE 01 丨1x-1C
+  password: 68e9cd56-8ea2-48fd-8c57-2ae850afedcd
+  port: 7539
+  server: bisschaxc.uk
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 225|🇫🇷 CM 隧道 法国 NO1-1A
+  password: 6ee052a8-2ece-47cf-b04c-faa53a324806
+  port: 35111
+  server: sd.needss.top
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 225|🇫🇷 法国A-1A
+  port: 30344
+  server: 183.236.123.34
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 55f6979c-e1f8-4660-a54c-8ccfc05fd987
+- cipher: aes-128-gcm
+  name: 225|🇫🇷 FRANCE 01 丨1x-1A
+  password: f8e1fac4-2d21-48ff-ac56-f46d26467132
+  port: 7539
+  server: bisschaxc.uk
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: '225|🇫🇷 专线-法国-1A #1'
+  network: ws
+  port: 45418
+  server: 36.150.94.53
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 27908b88-e77c-45bb-bb03-98f5e77d09ca
+  ws-opts:
+    headers:
+      Host: www.baidu.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 225|🇫🇷 法国A-1B
+  port: 30344
+  server: 183.236.123.34
+  tls: false
+  type: vmess
+  udp: true
+  uuid: c5274da0-5bdb-44b0-95fc-69a1cfed5eb7
+- cipher: chacha20-ietf-poly1305
+  name: '225|🇫🇷 IEPL 法国FR 102-1A #1'
+  password: 943f5751-030f-4e7f-aa04-440aead111f6
+  port: 16119
+  server: 183.240.116.150
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 225|🇫🇷 法国1-1B
+  port: 45072
+  server: haa.dashuai.cyou
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 11ed4e04-f2ba-407e-8513-12a114450e22
+- cipher: chacha20-ietf-poly1305
+  name: 225|🇫🇷 IEPL 法国FR 102-1D
+  password: a6eefa80-e73c-4141-b965-4b00ae965c66
+  port: 16119
+  server: 183.240.116.150
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 225,233|28|🇫🇷 专线-法国-1C
+  network: ws
+  port: 45418
+  server: 36.150.94.53
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 0ca68e11-c32a-4137-b55f-9bf048481a82
+  ws-opts:
+    headers:
+      Host: www.baidu.com
+    path: /
+- cipher: aes-128-gcm
+  name: 225|🇫🇷 CM 隧道 法国 NO1-1B
+  password: 6ae89851-e357-444e-b15b-46fe40eb9044
+  port: 35111
+  server: sd.needss.top
+  type: ss
+  udp: true
+- auth: 531b48ef-89e0-4273-a471-200a3cc3ab14
+  name: 225|🇫🇷 法国-1-1D
+  password: 531b48ef-89e0-4273-a471-200a3cc3ab14
   port: 19842
   server: fr1.426624.xyz
   skip-cert-verify: true
@@ -2780,13 +5735,31 @@ proxies:
     path: /linkws
 - alterId: 0
   cipher: auto
-  name: 233|28|🇫🇷 法国A
+  name: 233|28|🇫🇷 法国A-1B
   network: tcp
   port: 30344
   server: 183.236.123.34
   tls: false
   type: vmess
-  uuid: 33e28dd6-a2ab-41ff-b622-6b833f730f3c
+  uuid: c5274da0-5bdb-44b0-95fc-69a1cfed5eb7
+- alterId: 0
+  cipher: auto
+  name: 233|28|🇫🇷 法国1-1B
+  network: tcp
+  port: 45072
+  server: haa.dashuai.cyou
+  tls: false
+  type: vmess
+  uuid: 11ed4e04-f2ba-407e-8513-12a114450e22
+- alterId: 0
+  cipher: auto
+  name: 233|28|🇫🇷 法国2-1B
+  network: tcp
+  port: 45071
+  server: xdd.dashuai.cyou
+  tls: false
+  type: vmess
+  uuid: 11ed4e04-f2ba-407e-8513-12a114450e22
 - alterId: 4
   cipher: auto
   name: 234|🇷FR-104.166.135.10-060
@@ -2841,6 +5814,24 @@ proxies:
   ws-path: /linkws
 - alterId: 0
   cipher: auto
+  name: '235|🇫🇷 法国2 #3'
+  port: 45071
+  server: xdd.dashuai.cyou
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 5eb8a504-4855-4011-a6bb-6d9488dbcb22
+- alterId: 0
+  cipher: auto
+  name: '235|🇫🇷 法国1 #3'
+  port: 45072
+  server: haa.dashuai.cyou
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 5eb8a504-4855-4011-a6bb-6d9488dbcb22
+- alterId: 0
+  cipher: auto
   name: '237|法国2 #2'
   network: tcp
   port: '45071'
@@ -2876,88 +5867,21 @@ proxies:
   - h3
   - h2
   - http/1.1
-  name: 240|🔒 TR-TCP-TLS 🇫🇷 FR-51.68.13.10...
+  name: 240|🔒 TR-TCP-TLS 🇫🇷 FR-141.227.138...
   network: tcp
-  password: FiSo7J6vfS
+  password: hZ7JkYVAfB
   port: 1935
-  server: 51.68.13.106
-  sni: x1fr-ovh.devefun.net
-  type: trojan
-- name: 240|🔒 TR-WS-TLS 🇫🇷 FR-141.11.203.2...
-  network: ws
-  password: NISHIKUITAN111
-  port: 443
-  server: 141.11.203.203
-  sni: za.ylks.xyz
-  type: trojan
-  ws-opts:
-    headers:
-      Host: za.ylks.xyz
-    path: /
-- name: 240|🔒 TR-WS-TLS 🇫🇷 FR-141.11.203.1...
-  network: ws
-  password: Aimer
-  port: 8443
-  server: 141.11.203.191
-  sni: ngepx.ambercc.filegear-sg.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ngepx.ambercc.filegear-sg.me
-- name: 240|🔒 TR-TCP-TLS 🇫🇷 FR-51.210.182....
-  network: tcp
-  password: dca7cc60-1234-11f0-8a3f-1239d0255272
-  port: 443
-  server: 51.210.182.170
-  skip-cert-verify: true
-  sni: fr1.test3.net
+  server: 141.227.138.29
+  sni: x1ch-ovh.devefun.net
   type: trojan
 - alpn:
-  - h3
-  - h2
   - http/1.1
-  name: 240|🔒 TR-TCP-TLS 🇫🇷 FR-141.227.160...
+  name: 240|🔒 TR-TCP-TLS 🇫🇷 FR-13.38.240.1...
   network: tcp
-  password: AXpQXM4vNh
-  port: 1935
-  server: 141.227.160.167
-  sni: x2swe-ovh.devefun.net
-  type: trojan
-- name: '240|🔒 TR-WS-TLS 🇫🇷 FR-141.11.203.1... #1'
-  network: ws
-  password: Aimer
-  port: 443
-  server: 141.11.203.168
-  sni: ngepy.ambercc.filegear-sg.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ngepy.ambercc.filegear-sg.me
-- alpn:
-  - http/1.1
-  name: 240|🔒 TR-TCP-TLS 🇫🇷 FR-13.38.186.1...
-  network: tcp
-  password: telegram-id-privatevpns
+  password: telegram-id-v2rayvpnchannel
   port: 22222
-  server: 13.38.186.198
+  server: 13.38.240.15
   sni: trojan.burgerip.co.uk
-  type: trojan
-- name: 240|🔒 TR-TCP-TLS 🇫🇷 FR-51.159.59.1...
-  password: 9498f3a0-2992-11ee-a4c7-1239d0255272
-  port: 443
-  server: 51.159.59.186
-  sni: zula.ir
-  type: trojan
-- alpn:
-  - h3
-  - h2
-  - http/1.1
-  name: 240|🔒 TR-TCP-TLS 🇫🇷 FR-51.195.254....
-  network: tcp
-  password: ebhZ11qYng
-  port: 8443
-  server: 51.195.254.75
-  sni: uk-02.allhubb.info
   type: trojan
 - alterId: 0
   cipher: auto
@@ -3014,7 +5938,7 @@ proxies:
   udp: true
   uuid: a01b5e27-ece5-4675-866f-36b23a65d2a8
 - cipher: chacha20-ietf-poly1305
-  name: '260|🇫🇷 法国 #2'
+  name: '260|🇫🇷 法国 #1'
   password: a81dd416-d6dc-4268-b088-57ca0447b448
   port: 51173
   server: qq.miaolianyunapp.com
@@ -3032,13 +5956,28 @@ proxies:
     headers:
       Host: gozargah.validbv7996.ir
     path: Telegram@WangCai2/?ed
-- name: '280,294,295,296|🇫🇷 法国4 #3'
+- name: '280,294,295,296|🇫🇷 法国3 #3'
   password: '!!str 1'
   port: 443
   server: starlink-par.2513142.xyz
   skip-cert-verify: true
   sni: www.cloudflare.com
   type: hysteria2
+- name: '280,294,296|🇫🇷 法国2 #7'
+  password: '!!str 1'
+  port: 443
+  server: starlink-par2.2513142.xyz
+  skip-cert-verify: true
+  sni: www.cloudflare.com
+  type: hysteria2
+- name: '280,294,296|🇫🇷 法国4 #3'
+  password: '!!str 1'
+  port: 42600
+  server: 84.235.237.61
+  skip-cert-verify: true
+  sni: www.cloudflare.com
+  type: trojan
+  udp: true
 - cipher: chacha20-ietf-poly1305
   name: 288|安徽联通转法国SN[倍率:0.8]
   password: 4EyS3nbpwetIJvPQ
