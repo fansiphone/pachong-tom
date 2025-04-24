@@ -1,7 +1,7 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: '2,3,498,502,506,524,525,547,558,563|1,6|🇺🇸_US_美国->🇨🇦_CA_加拿大 #4 #2'
+  name: '2,3,498,502,506,524,525,547,549,563|1,6|🇺🇸_US_美国->🇨🇦_CA_加拿大 #4 #2'
   network: ws
   port: 2086
   server: 104.19.47.79
@@ -9,10 +9,12 @@ proxies:
   sni: ip14.freegradely.xyz
   tls: false
   type: vmess
-  udp: true
   uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  ws-headers:
+    Host: 104.19.47.79
   ws-opts: {}
-- name: 2,506|2,506|2|🇮🇷_IR_伊朗->🇩🇪_DE_德国
+  ws-path: /
+- name: 2,506|2,506|2,506|2|🇮🇷_IR_伊朗->🇩🇪_DE_...
   network: ws
   port: 29892
   server: 46.100.13.13
@@ -21,7 +23,7 @@ proxies:
   uuid: 981cee4e-f6e8-41cd-bba7-aa4a028c81a8
 - alterId: 0
   cipher: auto
-  name: '2,3,446,498,502,506,524,525,547,558,563|1,6|🇺🇸_US_美国->🇨🇦_CA_加拿大 #5 #2'
+  name: '2,3,446,498,502,506,524,525,547,549,563|1,6|🇺🇸_US_美国->🇨🇦_CA_加拿大 #5 #2'
   network: ws
   port: 2086
   server: 104.19.46.39
@@ -29,12 +31,14 @@ proxies:
   sni: ''
   tls: false
   type: vmess
-  udp: true
   uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  ws-headers:
+    Host: 104.19.46.39
   ws-opts: {}
+  ws-path: /
 - alterId: 0
   cipher: auto
-  name: '2,3,498,502,506,524,525,547,558,563|1,6|🇺🇸_US_美国->🇨🇳_CN_中国 #1 #2'
+  name: '2,3,498,502,506,524,525,547,549,563|1,6|🇺🇸_US_美国->🇨🇳_CN_中国 #1 #2'
   network: ws
   port: 2052
   server: 104.19.21.240
@@ -42,12 +46,14 @@ proxies:
   sni: cdn2.freegradely.xyz
   tls: false
   type: vmess
-  udp: true
   uuid: d6b6d982-d52f-465a-b988-85670b23f64a
+  ws-headers:
+    Host: 104.19.21.240
   ws-opts: {}
+  ws-path: /
 - alterId: 0
   cipher: auto
-  name: '2,3,446,498,502,506,524,525,547,558,563|1,6|🇺🇸_US_美国->🇨🇦_CA_加拿大 #6 #2'
+  name: '2,3,446,498,502,506,524,525,547,549,563|1,6|🇺🇸_US_美国->🇨🇦_CA_加拿大 #6 #2'
   network: ws
   port: 2086
   server: 104.19.47.32
@@ -55,10 +61,12 @@ proxies:
   sni: ip14.freegradely.xyz
   tls: false
   type: vmess
-  udp: true
   uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  ws-headers:
+    Host: 104.19.47.32
   ws-opts: {}
-- name: 2,506|2,506|2|🇧🇷_BR_巴西->🇺🇸_US_美国
+  ws-path: /
+- name: 2,506|2,506|2,506|2|🇧🇷_BR_巴西->🇺🇸_US_...
   network: ws
   port: 80
   server: 188.114.96.223
@@ -67,16 +75,20 @@ proxies:
   uuid: eb201923-0e39-4425-bd0f-6244cd24ef2a
 - alterId: 0
   cipher: auto
-  name: '2,3,498,502,506,524,525,547,563|1,6|🇺🇸_US_美国->🇸🇬_SG_新加坡 #1 #2'
+  name: '2,3,498,502,506,524,525,547,549,563|1,6|🇺🇸_US_美国->🇸🇬_SG_新加坡 #1 #2'
   network: ws
   port: 2052
   server: cfcdn2.sanfencdn9.com
+  skip-cert-verify: true
   sni: ''
   tls: false
   type: vmess
   uuid: ab1ee1ac-884c-44dc-ab65-d533d32e2b1a
+  ws-headers:
+    Host: cfcdn2.sanfencdn9.com
   ws-opts: {}
-- name: 2,506,558|NO104663
+  ws-path: /
+- name: 2,506|2,506,558|NO104663
   network: ws
   port: 80
   server: 45.80.110.44
@@ -84,9 +96,8 @@ proxies:
   skip-cert-verify: true
   tls: false
   type: vless
-  udp: true
   uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-- name: '2,506|2,506|2|🇫🇷_FR_法国->🇺🇸_US_美国 #1'
+- name: 2,506|2,506|2,506|2|🇫🇷_FR_法国->🇺🇸_US_...
   network: ws
   port: 80
   server: 45.80.110.173
@@ -96,24 +107,27 @@ proxies:
   uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
 - alterId: 0
   cipher: auto
-  name: '2,3,498,502,506,524,525,547,563|1,6|🇺🇸_US_美国->🇳🇱_NL_荷兰 #2'
+  name: '2,3,498,502,506,524,525,547,549,563|1,6|🇺🇸_US_美国->🇳🇱_NL_荷兰 #2'
   network: ws
   port: 2086
   server: 172.64.198.249
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  ws-headers:
+    Host: 172.64.198.249
   ws-opts: {}
-- name: 2,506,558|NO102941
+  ws-path: /
+- name: 2,506|2,506,558|NO102941
   network: ws
   port: 80
   server: 104.17.147.22
   skip-cert-verify: true
   tls: false
   type: vless
-  udp: true
   uuid: f8eec5de-eed9-4363-a5c8-26ef7993f47b
-- name: '2,506|2,506|2|🇫🇷_FR_法国->🇺🇸_US_美国 #2'
+- name: '2,506|2,506|2,506|2|🇫🇷_FR_法国->🇺🇸_US_... #1'
   network: ws
   port: 80
   server: 45.80.110.130
@@ -123,7 +137,7 @@ proxies:
   uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
 - alterId: 0
   cipher: auto
-  name: '2,3,498,502,506,524,525,547,558,563|1,6|🇺🇸_US_美国->🇨🇦_CA_加拿大 #7 #2'
+  name: '2,3,498,502,506,524,525,547,549,563|1,6|🇺🇸_US_美国->🇨🇦_CA_加拿大 #7 #2'
   network: ws
   port: 2086
   server: 104.19.45.47
@@ -131,21 +145,22 @@ proxies:
   sni: ip14.freegradely.xyz
   tls: false
   type: vmess
-  udp: true
   uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  ws-headers:
+    Host: 104.19.45.47
   ws-opts: {}
-- name: 2,506,558|NO102943
+  ws-path: /
+- name: 2,506|2,506,558|NO102943
   network: ws
   port: 80
   server: 104.17.148.22
   skip-cert-verify: true
   tls: false
   type: vless
-  udp: true
   uuid: f8eec5de-eed9-4363-a5c8-26ef7993f47b
 - alterId: 0
   cipher: auto
-  name: '2,3,498,502,506,524,525,547,558,563|1,6|🇺🇸_US_美国->🇨🇳_CN_中国 #2 #2'
+  name: '2,3,498,502,506,524,525,547,549,563|1,6|🇺🇸_US_美国->🇨🇳_CN_中国 #2 #2'
   network: ws
   port: 8080
   server: 104.19.47.126
@@ -153,52 +168,50 @@ proxies:
   sni: ''
   tls: false
   type: vmess
-  udp: true
   uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d
+  ws-headers:
+    Host: 104.19.47.126
   ws-opts: {}
-- name: '2,506|2,506|2|🇺🇸_US_美国->🇩🇪_DE_德国 #1'
+  ws-path: /
+- name: 2,506|2,506|2,506|2|🇺🇸_US_美国->🇩🇪_DE_...
   network: ws
   port: 2095
   server: www.speedtest.net
   tls: false
   type: vless
   uuid: cfb6d9ad-7a14-4061-b159-8902fd73bb58
-- name: 2,506,558|NO104734
+- name: 2,506|2,506,558|NO104734
   network: ws
   port: 2095
   server: 185.146.173.58
   skip-cert-verify: true
   tls: false
   type: vless
-  udp: true
   uuid: a3c48196-a190-48d8-9af2-c59b2d4c3b71
-- name: 2,506,558|NO102945
+- name: 2,506|2,506,558|NO102945
   network: ws
   port: 2095
   server: 104.17.148.22
   skip-cert-verify: true
   tls: false
   type: vless
-  udp: true
   uuid: cfb6d9ad-7a14-4061-b159-8902fd73bb58
 - cipher: aes-256-cfb
-  name: '3,363,498,502,522,547,558,563|1|_FR_->_RU_ #4'
+  name: '3,363,498,502,522,547,549,563|1|_FR_->_RU_ #4'
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 163.172.64.22
   type: ss
-  udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '3,363,498,502,522,547,558,563|1|_US_->_ES_ #4'
+  name: '3,363,498,502,522,547,549,563|1|_US_->_ES_ #4'
   password: 2062a5ca-a34e-47bf-9810-db91185f07fc
   port: 59019
   server: fuck5.mmmmmmmmmm.cfd
   type: ss
-  udp: true
 - alterId: 2
   cipher: auto
   ip-version: dual
-  name: 4,9,504,506,507,533,558|NO4572
+  name: '4,9,504,506,507,533|🇨🇳_CN_中国->🇺🇸_US_美国_1 #8'
   network: ws
   port: 30830
   server: v30.heduian.link
@@ -214,11 +227,8 @@ proxies:
     path: /oooo
 - alterId: 2
   cipher: auto
-  country: CN
-  h2-opts: {}
-  http-opts: {}
   ip-version: dual
-  name: '4,9,438,441,504,506,507,533,548,558,565|美国(yudou66.com 玉豆免费节点) #318'
+  name: '4,9,438,441,504,506,507,533,548,565|美国(yudou66.com 玉豆免费节点) #318'
   network: ws
   port: '30829'
   server: v29.heduian.link
@@ -235,11 +245,8 @@ proxies:
     path: /oooo
 - alterId: 2
   cipher: auto
-  country: 🇨🇳CN
-  h2-opts: {}
-  http-opts: {}
   ip-version: dual
-  name: 4,9,504,506,507,533,543,548,558|NO33487
+  name: 4,9,504,506,507,533,543,548|30|_CN_->_US_国
   network: ws
   port: 30836
   server: v36.heduian.link
@@ -250,16 +257,11 @@ proxies:
   udp: true
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-opts:
-    headers:
-      host: baidu.com
     path: /oooo
 - alterId: 2
   cipher: auto
-  country: 🇨🇳CN
-  h2-opts: {}
-  http-opts: {}
   ip-version: dual
-  name: 4,9,325,504,506,507,508,509,533,558|NO2994
+  name: '4,9,325,504,506,507,508,509,533|🇨🇳_CN_中国->🇪🇸_ES_西班牙 #7'
   network: ws
   port: 30805
   server: v5.heduian.link
@@ -272,12 +274,13 @@ proxies:
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-opts:
     headers:
-      HOST: ocbc.com
+      host: ocbc.com
     path: /oooo
 - alpn:
   - http/1.1
   ip-version: dual
-  name: '4,9,440,442,479,504,506,507,533,548,565,566|🇺🇸_US_美国->🇮🇳_IN_印度_1 #4'
+  name: '4,9,440,442,476,478,479,504,506,507,533,548,565,566|🇺🇸_US_美国->🇮🇳_IN_印度_1
+    #4'
   network: tcp
   password: telegram-id-vlessconfig
   port: 22222
@@ -288,7 +291,7 @@ proxies:
 - alterId: 2
   cipher: auto
   ip-version: dual
-  name: 4,9,504,506,507,533,558|NO33474
+  name: '4,9,504,506,507,533|🇨🇳_CN_中国->🇺🇸_US_美国_3 #5'
   network: ws
   port: 30832
   server: v32.heduian.link
@@ -315,7 +318,7 @@ proxies:
 - country: 🇬🇧GB
   delay: 1098
   ip-version: dual
-  name: '4,9,81,328,440,442,479,495,504,506,507,513,533,544,548,556,565,566|🇬🇧_GB_英国->🇩🇪_DE_德国
+  name: '4,9,81,328,440,442,495,504,506,507,513,533,544,548,556,565,566|🇬🇧_GB_英国->🇩🇪_DE_德国
     #9'
   network: tcp
   password: '!!str 3828095943467868160'
@@ -326,7 +329,7 @@ proxies:
   type: trojan
   udp: true
 - ip-version: dual
-  name: '4,9,325,440,442,463,468,504,506,507,533,544,548,565,566|🇷🇴_RO_罗马尼亚->🇦🇱_AL_阿尔巴尼亚
+  name: '4,9,325,440,442,463,468,476,478,504,506,507,533,544,548,565,566|🇷🇴_RO_罗马尼亚->🇦🇱_AL_阿尔巴尼亚
     #10'
   network: tcp
   password: '!!str 3828095943467868160'
@@ -338,56 +341,76 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: '7,8,498,502,506,524,525,547,563|3,30|🇺🇸_US_美国->🇧🇷_BR_巴西 #2'
+  name: '7,8,498,502,506,524,525,547,549,563|3,30|🇺🇸_US_美国->🇧🇷_BR_巴西 #2'
   network: ws
   port: 2052
   server: 104.18.37.248
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 60bcbd52-0c88-4da3-aee2-cc1f9d5ca224
+  ws-headers:
+    Host: 104.18.37.248
   ws-opts: {}
+  ws-path: /
 - alterId: 0
   cipher: auto
-  name: '7,8,498,502,506,524,525,547,563|3,30|🇺🇸_US_美国->🇨🇳_CN_中国 #4'
+  name: '7,8,498,502,506,524,525,547,549,563|3,30|🇺🇸_US_美国->🇨🇳_CN_中国 #4'
   network: ws
   port: 8080
   server: 104.19.47.16
+  skip-cert-verify: true
   sni: ''
   tls: false
   type: vmess
   uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d
+  ws-headers:
+    Host: 104.19.47.16
   ws-opts: {}
+  ws-path: /
 - alterId: 0
   cipher: auto
-  name: '7,8,498,502,506,524,525,547,563|3,30|🇺🇸_US_美国->🇨🇦_CA_加拿大 #13'
+  name: '7,8,498,502,506,524,525,547,549,563|3,30|🇺🇸_US_美国->🇨🇦_CA_加拿大 #13'
   network: ws
   port: 2086
   server: 104.19.47.65
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  ws-headers:
+    Host: 104.19.47.65
   ws-opts: {}
+  ws-path: /
 - alterId: 0
   cipher: auto
-  name: '7,8,498,502,506,524,525,547,563|3,30|🇨🇳_CN_中国->🇺🇸_US_美国 #3'
+  name: '7,8,498,502,506,524,525,547,549,563|3,30|🇨🇳_CN_中国->🇺🇸_US_美国 #3'
   network: ws
   port: 16928
   server: 120.232.240.56
+  skip-cert-verify: true
   sni: ''
   tls: false
   type: vmess
   uuid: 5f6b3c3f-b0a8-33f5-95c6-371f8c6af973
+  ws-headers:
+    Host: 120.232.240.56
   ws-opts: {}
+  ws-path: /
 - alterId: 64
   cipher: auto
-  name: '7,8,498,502,506,524,525,547,550,563|3,30|🇨🇳_CN_中国->🇺🇸_US_美国 #4'
+  name: '7,8,498,502,506,524,525,547,549,550,563|3,30|🇨🇳_CN_中国->🇺🇸_US_美国 #4'
   network: tcp
   port: 54002
   server: 183.240.235.162
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: '7,506|7,506|7|🇺🇸_US_美国->🇩🇪_DE_德国 #3'
+  ws-headers:
+    Host: 183.240.235.162
+  ws-path: /
+- name: 7,506|7,506|7,506|7|🇺🇸_US_美国->🇩🇪_DE_...
   network: ws
   port: 80
   server: 104.17.148.22
@@ -397,23 +420,27 @@ proxies:
 - alterId: 0
   cipher: auto
   fingerprint: ''
-  name: '7,8,498,502,506,524,525,547,563|3,30|🇺🇸_US_美国->🇧🇷_BR_巴西 #3'
+  name: '7,8,498,502,506,524,525,547,549,563|3,30|🇺🇸_US_美国->🇧🇷_BR_巴西 #3'
   network: ws
   port: 2052
   server: p3.v2raybrasil.cloud
+  skip-cert-verify: true
   sni: ''
   tls: false
   type: vmess
   uuid: 60bcbd52-0c88-4da3-aee2-cc1f9d5ca224
+  ws-headers:
+    Host: p3.v2raybrasil.cloud
   ws-opts: {}
-- name: '7,506|7,506|7|🇺🇸_US_美国->🇩🇪_DE_德国 #4'
+  ws-path: /
+- name: '7,506|7,506|7,506|7|🇺🇸_US_美国->🇩🇪_DE_... #1'
   network: ws
   port: 8880
   server: 104.16.188.2
   tls: false
   type: vless
   uuid: 5cfcdf55-0802-42c3-812a-a8c3e04b64a1
-- name: '7,506|7,506|7|🇺🇸_US_美国->🇩🇪_DE_德国 #5'
+- name: '7,506|7,506|7,506|7|🇺🇸_US_美国->🇩🇪_DE_... #2'
   network: ws
   port: 80
   server: 104.21.56.227
@@ -422,7 +449,7 @@ proxies:
   uuid: 31c4469e-cd28-4e5e-ad98-067666661050
 - alterId: 0
   cipher: auto
-  name: '7,8,498,502,506,524,525,547,548,558,563|3,30|🇺🇸_US_美国->🇫🇷_FR_法国 #4'
+  name: '7,8,498,502,506,524,525,547,548,549,563|3,30|🇺🇸_US_美国->🇫🇷_FR_法国 #4'
   network: ws
   port: 2082
   server: 172.67.130.140
@@ -430,34 +457,33 @@ proxies:
   sni: ''
   tls: false
   type: vmess
-  udp: true
   uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
   ws-headers:
-    Host: s1c.v2.v001sss.xyz
+    Host: 172.67.130.140
   ws-opts: {}
   ws-path: /
-- name: '7,506|7,506|7|🇺🇸_US_美国->🇩🇪_DE_德国 #6'
+- name: '7,506|7,506|7,506|7|🇺🇸_US_美国->🇩🇪_DE_... #3'
   network: ws
   port: 80
   server: 172.67.137.169
   tls: false
   type: vless
   uuid: 31c4469e-cd28-4e5e-ad98-067666661050
-- name: '7,506|7,506|7|🇺🇸_US_美国->🇩🇪_DE_德国 #7'
+- name: '7,506|7,506|7,506|7|🇺🇸_US_美国->🇩🇪_DE_... #4'
   network: ws
   port: 80
   server: 151.101.66.187
   tls: false
   type: vless
   uuid: bbe9ef72-a93b-4ee6-918d-2d42b9836f9b
-- name: 7,506|7,506|7|🇸🇪_SE_瑞典->🇺🇸_US_美国
+- name: 7,506|7,506|7,506|7|🇸🇪_SE_瑞典->🇺🇸_US_...
   network: ws
   port: 8080
   server: 185.146.173.69
   tls: false
   type: vless
   uuid: b31e78cb-1715-430c-83dc-f65547ca151e
-- name: '7,506|7,506|7|🇺🇸_US_美国->🇩🇪_DE_德国 #8'
+- name: '7,506|7,506|7,506|7|🇺🇸_US_美国->🇩🇪_DE_... #5'
   network: ws
   port: 8880
   server: 104.16.60.8
@@ -466,23 +492,27 @@ proxies:
   uuid: 51baeda8-1288-458a-b5ae-b8b080b937b6
 - alterId: 0
   cipher: auto
-  name: '7,8,498,502,506,524,525,547,563|3,30|🇺🇸_US_美国->🇨🇦_CA_加拿大 #16'
+  name: '7,8,498,502,506,524,525,547,549,563|3,30|🇺🇸_US_美国->🇨🇦_CA_加拿大 #16'
   network: ws
   port: 2086
   server: 172.64.175.213
+  skip-cert-verify: true
   sni: ip11.freegradely.xyz
   tls: false
   type: vmess
   uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  ws-headers:
+    Host: 172.64.175.213
   ws-opts: {}
-- name: '7,506|7,506|7|🇺🇸_US_美国->🇫🇷_FR_法国 #2'
+  ws-path: /
+- name: 7,506|7,506|7,506|7|🇺🇸_US_美国->🇫🇷_FR_...
   network: ws
   port: 8880
   server: 172.67.137.11
   tls: false
   type: vless
   uuid: 416f18ec-11f3-4648-9693-8c6480d0662d
-- name: '7,506|7,506|7|🇺🇸_US_美国->🇩🇪_DE_德国 #9'
+- name: '7,506|7,506|7,506|7|🇺🇸_US_美国->🇩🇪_DE_... #6'
   network: ws
   port: 80
   server: 104.24.196.20
@@ -553,7 +583,7 @@ proxies:
   type: ss
   udp: true
 - auth: b0f463eb-3387-4be9-a7c8-3c7280bf86f7
-  name: 63,506|63,506|63|🇭🇰 香港01-奈非-中转
+  name: 63,506|63,506|63,506|63|🇭🇰 香港01-奈非-中转
   password: b0f463eb-3387-4be9-a7c8-3c7280bf86f7
   port: 32052
   server: sl.sulink.one
@@ -584,7 +614,7 @@ proxies:
   type: ss
   udp: true
 - auth: b0f463eb-3387-4be9-a7c8-3c7280bf86f7
-  name: 63,506|63,506|63|🇯🇵 日本04三网中转|5x
+  name: 63,506|63,506|63,506|63|🇯🇵 日本04三网中转|5...
   password: b0f463eb-3387-4be9-a7c8-3c7280bf86f7
   port: 33152
   server: sl.sulink.one
@@ -664,7 +694,7 @@ proxies:
   type: ss
   udp: true
 - auth: b0f463eb-3387-4be9-a7c8-3c7280bf86f7
-  name: 63,506|63,506|63|🇭🇰 三网中转香港|5x
+  name: 63,506|63,506|63,506|63|🇭🇰 三网中转香港|5x
   password: b0f463eb-3387-4be9-a7c8-3c7280bf86f7
   port: 42052
   server: sl.sulink.one
@@ -689,7 +719,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 104,506|104,506|104|🇯🇵 No.193_JP_x1.50...
+  name: 104,506|104,506|104,506|104|🇯🇵 No.193_...
   network: ws
   port: 36101
   server: 120.82.70.149
@@ -704,7 +734,7 @@ proxies:
     path: /download
 - alterId: 0
   cipher: auto
-  name: 104,506,558|NO106549
+  name: 104,506|104,506,558|NO106549
   network: ws
   port: 14954
   server: 91.200.242.187
@@ -712,7 +742,6 @@ proxies:
   tfo: false
   tls: false
   type: vmess
-  udp: true
   uuid: efb748ec-c921-42a1-ac9e-1d5485d6c447
   ws-opts:
     headers:
@@ -720,7 +749,7 @@ proxies:
     path: /download
 - alterId: 1
   cipher: auto
-  name: 104,506|104,506|104|🇯🇵 No.113_JP_x0.50...
+  name: 104,506|104,506|104,506|104|🇯🇵 No.113_...
   network: ws
   port: 1552
   server: nas.ruyo.in
@@ -4128,7 +4157,7 @@ proxies:
   server: gstdnb.myfczy168.top
   type: ss
   udp: true
-- name: 193,506|193,506|193|[trojan]美国1-中转1
+- name: '193,506|193,506|193,506|193|[trojan]美国... #1'
   network: ws
   password: b392bced-2765-4978-9e4c-cab4cde3b27b
   port: 443
@@ -4141,7 +4170,7 @@ proxies:
     headers:
       Host: 111.golinkwuxian.top
     path: /apple
-- name: 193,506|193,506|193|[trojan]美国1-中转2
+- name: '193,506|193,506|193,506|193|[trojan]美国... #2'
   network: ws
   password: b392bced-2765-4978-9e4c-cab4cde3b27b
   port: 443
@@ -4154,7 +4183,7 @@ proxies:
     headers:
       Host: 111.golinkwuxian.top
     path: /apple
-- name: 193,506|193,506|193|[trojan]美国1-中转3
+- name: '193,506|193,506|193,506|193|[trojan]美国... #3'
   network: ws
   password: b392bced-2765-4978-9e4c-cab4cde3b27b
   port: 443
@@ -4167,7 +4196,7 @@ proxies:
     headers:
       Host: 111.golinkwuxian.top
     path: /apple
-- name: 193,506|193,506|193|[trojan]美国1-中转4
+- name: '193,506|193,506|193,506|193|[trojan]美国... #4'
   network: ws
   password: b392bced-2765-4978-9e4c-cab4cde3b27b
   port: 443
@@ -4180,7 +4209,7 @@ proxies:
     headers:
       Host: 111.golinkwuxian.top
     path: /apple
-- name: 193,506|193,506|193|[trojan]台湾1-中转1
+- name: '193,506|193,506|193,506|193|[trojan]台湾... #1'
   network: ws
   password: b392bced-2765-4978-9e4c-cab4cde3b27b
   port: 443
@@ -4193,7 +4222,7 @@ proxies:
     headers:
       Host: 222.golinkwuxian.top
     path: /apple
-- name: 193,506|193,506|193|[trojan]台湾1-中转2
+- name: '193,506|193,506|193,506|193|[trojan]台湾... #2'
   network: ws
   password: b392bced-2765-4978-9e4c-cab4cde3b27b
   port: 443
@@ -4206,7 +4235,7 @@ proxies:
     headers:
       Host: 222.golinkwuxian.top
     path: /apple
-- name: 193,506|193,506|193|[trojan]台湾1-中转3
+- name: '193,506|193,506|193,506|193|[trojan]台湾... #3'
   network: ws
   password: b392bced-2765-4978-9e4c-cab4cde3b27b
   port: 443
@@ -4219,7 +4248,7 @@ proxies:
     headers:
       Host: 222.golinkwuxian.top
     path: /apple
-- name: 193,506|193,506|193|[trojan]台湾1-中转4
+- name: '193,506|193,506|193,506|193|[trojan]台湾... #4'
   network: ws
   password: b392bced-2765-4978-9e4c-cab4cde3b27b
   port: 443
@@ -4232,7 +4261,7 @@ proxies:
     headers:
       Host: 222.golinkwuxian.top
     path: /apple
-- name: 193,506|193,506|193|[trojan]香港1-中转1
+- name: '193,506|193,506|193,506|193|[trojan]香港... #1'
   network: ws
   password: b392bced-2765-4978-9e4c-cab4cde3b27b
   port: 443
@@ -4245,7 +4274,7 @@ proxies:
     headers:
       Host: 333.golinkwuxian.top
     path: /apple
-- name: 193,506|193,506|193|[trojan]香港1-中转2
+- name: '193,506|193,506|193,506|193|[trojan]香港... #2'
   network: ws
   password: b392bced-2765-4978-9e4c-cab4cde3b27b
   port: 443
@@ -4258,7 +4287,7 @@ proxies:
     headers:
       Host: 333.golinkwuxian.top
     path: /apple
-- name: 193,506|193,506|193|[trojan]香港1-中转3
+- name: '193,506|193,506|193,506|193|[trojan]香港... #3'
   network: ws
   password: b392bced-2765-4978-9e4c-cab4cde3b27b
   port: 443
@@ -4271,7 +4300,7 @@ proxies:
     headers:
       Host: 333.golinkwuxian.top
     path: /apple
-- name: 193,506|193,506|193|[trojan]香港1-中转4
+- name: '193,506|193,506|193,506|193|[trojan]香港... #4'
   network: ws
   password: b392bced-2765-4978-9e4c-cab4cde3b27b
   port: 443
@@ -4284,7 +4313,7 @@ proxies:
     headers:
       Host: 333.golinkwuxian.top
     path: /apple
-- name: 193,506|193,506|193|[trojan]澳大利亚1-中转1
+- name: '193,506|193,506|193,506|193|[trojan]澳大... #1'
   network: ws
   password: b392bced-2765-4978-9e4c-cab4cde3b27b
   port: 443
@@ -4297,7 +4326,7 @@ proxies:
     headers:
       Host: 555.golinkwuxian.top
     path: /apple
-- name: 193,506|193,506|193|[trojan]澳大利亚1-中转2
+- name: '193,506|193,506|193,506|193|[trojan]澳大... #2'
   network: ws
   password: b392bced-2765-4978-9e4c-cab4cde3b27b
   port: 443
@@ -4310,7 +4339,7 @@ proxies:
     headers:
       Host: 555.golinkwuxian.top
     path: /apple
-- name: 193,506|193,506|193|[trojan]澳大利亚1-中转3
+- name: '193,506|193,506|193,506|193|[trojan]澳大... #3'
   network: ws
   password: b392bced-2765-4978-9e4c-cab4cde3b27b
   port: 443
@@ -4323,7 +4352,7 @@ proxies:
     headers:
       Host: 555.golinkwuxian.top
     path: /apple
-- name: 193,506|193,506|193|[trojan]澳大利亚1-中转4
+- name: '193,506|193,506|193,506|193|[trojan]澳大... #4'
   network: ws
   password: b392bced-2765-4978-9e4c-cab4cde3b27b
   port: 443
@@ -4336,7 +4365,7 @@ proxies:
     headers:
       Host: 555.golinkwuxian.top
     path: /apple
-- name: 193,506|193,506|193|[trojan]新加坡1-中转1
+- name: '193,506|193,506|193,506|193|[trojan]新加... #1'
   network: ws
   password: b392bced-2765-4978-9e4c-cab4cde3b27b
   port: 443
@@ -4349,7 +4378,7 @@ proxies:
     headers:
       Host: 6666.golinkwuxian.top
     path: /apple
-- name: 193,506|193,506|193|[trojan]新加坡1-中转2
+- name: '193,506|193,506|193,506|193|[trojan]新加... #2'
   network: ws
   password: b392bced-2765-4978-9e4c-cab4cde3b27b
   port: 443
@@ -4362,7 +4391,7 @@ proxies:
     headers:
       Host: 6666.golinkwuxian.top
     path: /apple
-- name: 193,506|193,506|193|[trojan]新加坡1-中转3
+- name: '193,506|193,506|193,506|193|[trojan]新加... #3'
   network: ws
   password: b392bced-2765-4978-9e4c-cab4cde3b27b
   port: 443
@@ -4375,7 +4404,7 @@ proxies:
     headers:
       Host: 6666.golinkwuxian.top
     path: /apple
-- name: 193,506|193,506|193|[trojan]新加坡1-中转4
+- name: '193,506|193,506|193,506|193|[trojan]新加... #4'
   network: ws
   password: b392bced-2765-4978-9e4c-cab4cde3b27b
   port: 443
@@ -4388,7 +4417,7 @@ proxies:
     headers:
       Host: 6666.golinkwuxian.top
     path: /apple
-- name: 193,506|193,506|193|[trojan]美国2-中转1
+- name: '193,506|193,506|193,506|193|[trojan]美国... #6'
   network: ws
   password: b392bced-2765-4978-9e4c-cab4cde3b27b
   port: 443
@@ -4401,7 +4430,7 @@ proxies:
     headers:
       Host: 777.golinkwuxian.top
     path: /apple
-- name: 193,506|193,506|193|[trojan]美国2-中转2
+- name: '193,506|193,506|193,506|193|[trojan]美国... #7'
   network: ws
   password: b392bced-2765-4978-9e4c-cab4cde3b27b
   port: 443
@@ -4414,7 +4443,7 @@ proxies:
     headers:
       Host: 777.golinkwuxian.top
     path: /apple
-- name: 193,506|193,506|193|[trojan]美国2-中转3
+- name: '193,506|193,506|193,506|193|[trojan]美国... #8'
   network: ws
   password: b392bced-2765-4978-9e4c-cab4cde3b27b
   port: 443
@@ -4427,7 +4456,7 @@ proxies:
     headers:
       Host: 777.golinkwuxian.top
     path: /apple
-- name: 193,506|193,506|193|[trojan]美国2-中转4
+- name: '193,506|193,506|193,506|193|[trojan]美国... #9'
   network: ws
   password: b392bced-2765-4978-9e4c-cab4cde3b27b
   port: 443
@@ -4440,7 +4469,7 @@ proxies:
     headers:
       Host: 777.golinkwuxian.top
     path: /apple
-- name: 193,506|193,506|193|[trojan]巴西-中转1
+- name: '193,506|193,506|193,506|193|[trojan]巴西... #1'
   network: ws
   password: b392bced-2765-4978-9e4c-cab4cde3b27b
   port: 443
@@ -4453,7 +4482,7 @@ proxies:
     headers:
       Host: 8888.golinkwuxian.top
     path: /apple
-- name: 193,506|193,506|193|[trojan]巴西-中转2
+- name: '193,506|193,506|193,506|193|[trojan]巴西... #2'
   network: ws
   password: b392bced-2765-4978-9e4c-cab4cde3b27b
   port: 443
@@ -4466,7 +4495,7 @@ proxies:
     headers:
       Host: 8888.golinkwuxian.top
     path: /apple
-- name: 193,506|193,506|193|[trojan]巴西-中转3
+- name: '193,506|193,506|193,506|193|[trojan]巴西... #3'
   network: ws
   password: b392bced-2765-4978-9e4c-cab4cde3b27b
   port: 443
@@ -4479,7 +4508,7 @@ proxies:
     headers:
       Host: 8888.golinkwuxian.top
     path: /apple
-- name: 193,506|193,506|193|[trojan]巴西-中转4
+- name: '193,506|193,506|193,506|193|[trojan]巴西... #4'
   network: ws
   password: b392bced-2765-4978-9e4c-cab4cde3b27b
   port: 443
@@ -4492,7 +4521,7 @@ proxies:
     headers:
       Host: 8888.golinkwuxian.top
     path: /apple
-- name: '440,442,548,565,566|🇮🇳_IN_印度->🇺🇸_US_美国 #5'
+- name: '440,442,479,482,495,548,565,566|🇮🇳_IN_印度->🇺🇸_US_美国 #5'
   network: ws
   port: 2052
   server: 14.102.228.75
@@ -4527,7 +4556,7 @@ proxies:
     path: '%2Folem%2Fws%3Fed%3D1024'
 - alterId: 0
   cipher: auto
-  name: 450,547,548,558,563|28|🇦🇪_AE_阿联酋->🇬🇧_GB_英国
+  name: 450,547,548,563|28|🇦🇪_AE_阿联酋->🇬🇧_GB_英国
   network: ws
   port: 8880
   server: 94.140.0.110
@@ -4535,7 +4564,6 @@ proxies:
   skip-cert-verify: true
   tls: false
   type: vmess
-  udp: true
   uuid: 0d1bf26a-ce97-4707-a270-7f4d2ae37334
   ws-opts:
     headers:
@@ -4596,14 +4624,12 @@ proxies:
     path: e9d23b60-6e44-45a2-b24f-c8521c04c310-vm
 - alterId: 0
   cipher: auto
-  name: 450,558,563|28|TG频道:@hkaa0▓美国_5
+  name: 450,563|28|TG频道:@hkaa0▓美国_5
   network: ws
   port: 8080
   server: de-01.cloudlion.me
-  skip-cert-verify: true
   tls: false
   type: vmess
-  udp: true
   uuid: 70666776-4e9f-4350-b3f0-afaff6a70db0
   ws-opts:
     headers:
@@ -4640,14 +4666,13 @@ proxies:
     path: 4a5ae806-ee72-473a-83b2-531808f454d5-vm
 - alterId: 0
   cipher: auto
-  name: 450,547,548,558|NO89784
+  name: 450,547,548|8|🇦🇪_AE_阿联酋->🇬🇧_GB_英国_5@6
   network: ws
   port: 8880
   server: 94.140.0.110
   skip-cert-verify: true
   tls: false
   type: vmess
-  udp: true
   uuid: 0d1bf26a-ce97-4707-a270-7f4d2ae37334
   ws-opts:
     path: /
@@ -4749,7 +4774,7 @@ proxies:
     headers:
       host: championship-bidding-oxygen-brochure.trycloudflare.com
     path: 4a5ae806-ee72-473a-83b2-531808f454d5-vm
-- name: 450,547,548,558|NO38982
+- name: 450,547,548|8|🇨🇦_CA_加拿大->🇺🇸_US_美国_0@38
   network: ws
   password: b17fa17d-13a0-4e8a-a398-8e549ea8b208
   port: 443
@@ -4762,14 +4787,12 @@ proxies:
     path: /argox-tr
 - alterId: 0
   cipher: auto
-  name: '450,558,563|28|🇺🇸_US_美国->🇫🇷_FR_法国 #2'
+  name: '450,563|28|🇺🇸_US_美国->🇫🇷_FR_法国 #2'
   network: ws
   port: 2082
   server: 172.67.130.140
-  skip-cert-verify: true
   tls: false
   type: vmess
-  udp: true
   uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
   ws-opts:
     headers:
@@ -4777,14 +4800,12 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 450,558,563|28|TG频道:@hkaa0▓美国_6
+  name: 450,563|28|TG频道:@hkaa0▓美国_6
   network: ws
   port: 80
   server: 104.21.69.44
-  skip-cert-verify: true
   tls: false
   type: vmess
-  udp: true
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
   ws-opts:
     headers:
@@ -4888,15 +4909,13 @@ proxies:
     path: /dabai.in104.25.175.137
 - alterId: 0
   cipher: auto
-  name: 453,476,478,558|NO125746
+  name: '453,476,478|⚜️Telegram:@IP_CF #4631'
   network: ws
-  port: 8080
+  port: '8080'
   server: 104.17.213.241
   servername: ''
-  skip-cert-verify: true
   tls: false
   type: vmess
-  udp: true
   uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
   ws-opts:
     headers:
@@ -4904,17 +4923,13 @@ proxies:
     path: /dabai.in172.64.41.150
 - alterId: 0
   cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: 453,475,476,477,478,558|NO123904
+  name: '453,475,476,477,478|⚜️Telegram:@IP_CF #4017'
   network: ws
   port: 2095
   server: 104.16.155.10
   servername: ''
-  skip-cert-verify: false
   tls: false
   type: vmess
-  udp: true
   uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
   ws-opts:
     headers:
@@ -4922,7 +4937,7 @@ proxies:
     path: /dabai.in104.20.27.115
 - alterId: 0
   cipher: auto
-  name: '453,476,478,554|美国 CloudFlare节点 #48'
+  name: '453,476,478,554|美国 CloudFlare节点 #44'
   network: ws
   port: '2082'
   server: 104.16.155.10
@@ -4964,15 +4979,13 @@ proxies:
     path: /dabai.in104.20.130.8
 - alterId: 0
   cipher: auto
-  name: 453,475,476,477,478,558|NO92936
+  name: '453,475,476,477,478|⚜️Telegram:@IP_CF #3697'
   network: ws
   port: 443
   server: 104.21.48.160
-  servername: irvideo.cfd
-  skip-cert-verify: true
+  servername: ''
   tls: true
   type: vmess
-  udp: true
   uuid: e537f2f5-2a0c-4f59-92c9-832ca6433bf3
   ws-opts:
     headers:
@@ -4994,15 +5007,13 @@ proxies:
     path: /?ed=2048
 - alterId: 0
   cipher: auto
-  name: 453,558|NO38717
+  name: 453|CF中转_0218052233 L7
   network: ws
-  port: 443
+  port: '443'
   server: 172.67.200.13
-  servername: 1a2d514b-37cf-499f-8d08-d017a92ab5bb.asoul-ava.top
-  skip-cert-verify: true
+  servername: ''
   tls: true
   type: vmess
-  udp: true
   uuid: 5f726fe3-d82e-4da5-a711-8af0cbb2b682
   ws-opts:
     headers:
@@ -5038,7 +5049,7 @@ proxies:
     path: /dabai.in104.24.181.189
 - alterId: 0
   cipher: auto
-  name: '453,476,478|⚜️Telegram:@IP_CF #3161'
+  name: '453,476,478|⚜️Telegram:@IP_CF #3457'
   network: ws
   port: 8443
   server: 104.21.13.222
@@ -5223,17 +5234,13 @@ proxies:
     path: /dabai.in172.64.9.208
 - alterId: 0
   cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: 453,475,476,477,478,544,547,548,557,558|NO111903
+  name: 453,475,476,477,478,544,547|36|🔒 VM-WS-TLS ‍☠️ NA-172.67.1...
   network: ws
   port: 8443
   server: 172.67.153.156
   servername: uswuxian.pai50288.uk
-  skip-cert-verify: true
   tls: true
   type: vmess
-  udp: true
   uuid: c313606f-98c2-4d7b-ba74-48b94f61b11d
   ws-opts:
     headers:
@@ -5269,7 +5276,7 @@ proxies:
     path: /rbqqvws
 - alterId: 0
   cipher: auto
-  name: '453,475,476,477,478|⚜️Telegram:@IP_CF #3335'
+  name: '453,475,476,477,478|⚜️Telegram:@IP_CF #3631'
   network: ws
   port: 8443
   server: 172.67.133.78
@@ -5291,7 +5298,7 @@ proxies:
   type: trojan
   udp: true
 - ip-version: dual
-  name: 463,468,495,556,565|🇷🇴_RO_罗马尼亚->🇪🇸_ES_西班牙_1
+  name: 463,468,476,478,479,495,556,565|🇷🇴_RO_罗马尼亚->🇪🇸_ES_西班牙_1
   network: tcp
   password: '!!str 3828095943467868160'
   port: 443
@@ -5301,7 +5308,7 @@ proxies:
   type: trojan
   udp: true
 - ip-version: dual
-  name: '463,468,506,565|🇷🇴_RO_罗马尼亚->🇪🇸_ES_西班牙_2 #2'
+  name: '463,468,476,478,565|🇷🇴_RO_罗马尼亚->🇪🇸_ES_西班牙_2 #2'
   network: tcp
   password: '!!str 3828095943467868160'
   port: 443
@@ -5312,32 +5319,22 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  country: 🏁ZZ
-  h2-opts: {}
-  http-opts: {}
   ip-version: dual
-  name: 463,468,548,558|NO40402
+  name: 463,468,548|16|_US_国->_DE_国
   network: ws
   port: 8080
   server: dingzhiyx1.sgjc.xyz
-  servername: dingzhiadly.sgjc.xyz
-  skip-cert-verify: true
   sni: ''
   tls: false
   type: vmess
   udp: true
   uuid: 2e235b81-70ad-45c0-959c-7591fa078836
   ws-opts:
-    headers:
-      HOST: dingzhiadly.sgjc.xyz
     path: /?ed=2048
 - alterId: 2
   cipher: auto
-  country: 🇨🇳CN
-  h2-opts: {}
-  http-opts: {}
   ip-version: dual
-  name: 463,468,543,548,558,565|1|🇺🇸50 |  1.4MB/s
+  name: 463,468,543,548,565|1|🇺🇸50 |  1.4MB/s
   network: ws
   port: '30808'
   server: v8.heduian.link
@@ -5413,70 +5410,46 @@ proxies:
     path: /vless#@V2RAY_SPATIAL,@V2RAY_SPATIAL,@V2RAY_SPATIAL,@V2RAY_SPATIAL,@V2RAY_SPATIAL,@V2RAY_SPATIAL,@V2RAY_SPATIAL,@V2RAY_SPATIAL,@V2RAY_SPATIAL,@V2RAY_SPATIAL,@V2RAY_SPATIAL,@V2RAY_SPATIAL
 - alterId: 0
   cipher: auto
-  country: CN
-  h2-opts: {}
-  http-opts: {}
-  name: 543,548,558|NO106511
+  name: 543,548|30|12|🇬 新加坡|@ripaojiedian
   network: tcp
   port: 23910
   server: hzz9.fgmcx.top
   servername: ''
-  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: be443689-bc64-49ff-85a5-8eecaa2235d3
-  ws-headers:
-    Host: hzz9.fgmcx.top
-  ws-path: /
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  ip-version: dual
-  name: 543,558|NO101417
+- cipher: chacha20-ietf-poly1305
+  name: 543|12|🇷 法国|@ripaojiedian
   password: be443689-bc64-49ff-85a5-8eecaa2235d3
   port: 41068
   server: zz5.fgmcx.top
-  skip-cert-verify: true
   tfo: false
-  tls: true
   type: ss
-  udp: true
 - alterId: 0
   cipher: auto
-  country: 🇨🇳CN
-  h2-opts: {}
-  http-opts: {}
-  ip-version: dual
-  name: 543,548,558|NO106516
+  name: 543,548|30|2|🇺🇸30 |  5.3MB/s
   network: tcp
   port: 5229
   server: f5f98477-sutj40-tdcdb7-1k27l.cu.plebai.net
   skip-cert-verify: true
   tls: false
   type: vmess
-  udp: true
   uuid: ba4b1f2e-c985-11ed-9c0c-f23c913c8d2b
   ws-headers:
     Host: f5f98477-sutj40-tdcdb7-1k27l.cu.plebai.net
   ws-path: /
 - alterId: 0
   cipher: auto
-  ip-version: dual
-  name: 543,548,558|NO98200
+  name: 543,548|30|🇨🇳 广东省
   network: tcp
   port: 5229
   server: 74f77c00-sutj40-t5qufl-8n27.cu.plebai.net
-  skip-cert-verify: true
   tls: false
   type: vmess
-  udp: true
   uuid: 5dc6fa05-a601-aba6-7761-ecde22d2b0fc
-  ws-headers:
-    Host: 74f77c00-sutj40-t5qufl-8n27.cu.plebai.net
-  ws-path: /
 - alterId: 2
   cipher: auto
-  name: 543,548,558|NO68349
+  name: 543,548|30|🇨🇳_CN_中国->🇺🇸_US_美国_5
   network: ws
   port: 30824
   server: v24.heduian.link
@@ -5486,36 +5459,26 @@ proxies:
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-opts:
-    headers:
-      host: baidu.com
     path: /oooo
-- name: 543,548,558|NO92629
+- name: 543,548|30|_GB_国->_CH_
   network: tcp
   password: 20bc0771-1fde-45ee-8052-3c26249c43dc
   port: 34865
   server: 144.24.4.176
-  skip-cert-verify: true
   sni: zurich.678789.xyz
   type: trojan
-  udp: true
-- alterId: '0'
+- alterId: 0
   cipher: auto
-  ip-version: dual
-  name: 543,548,554,558|NO109081
+  name: '543,548,554|🇨🇳_定制专线：@QS00008 #3'
   network: tcp
   port: 17235
   server: 00fd0574-sux8g0-sv07nd-jtx1.cm5.p5pv.com
-  skip-cert-verify: true
   tls: false
   type: vmess
-  udp: true
   uuid: 947dde8e-bcf5-11ef-af4a-f23c91cfbbc9
-  ws-headers:
-    Host: 00fd0574-sux8g0-sv07nd-jtx1.cm5.p5pv.com
-  ws-path: /
 - alterId: 0
   cipher: auto
-  name: 543,548,558|NO68351
+  name: 543,548|30|🇸_US_美国->🇨_CR_斯
   network: ws
   port: 80
   server: 104.18.95.231
@@ -5525,12 +5488,10 @@ proxies:
   type: vmess
   uuid: 812eb086-8442-4799-9d92-112fd1a225af
   ws-opts:
-    headers:
-      host: 967183633138002025041119231526459.s15.chibaba.filegear-sg.me
     path: /s15.html
 - alterId: 2
   cipher: auto
-  name: 543,548,558|NO68352
+  name: 543,548|30|🇨🇳_CN_中国->🇺🇸_US_美国_6
   network: ws
   port: 30804
   server: v4.heduian.link
@@ -5540,60 +5501,36 @@ proxies:
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-opts:
-    headers:
-      host: ocbc.com
     path: /oooo
 - alterId: 0
   cipher: auto
-  ip-version: dual
-  name: 543,548,554,558|NO98463
+  name: '543,548,554|🇨🇳_定制专线：@QS00008 #5'
   network: tcp
   port: 5228
-  raw:
-    add: 157.148.96.92
-    aid: '0'
-    alpn: ''
-    fp: ''
-    host: ''
-    id: 6ada1622-e018-11ec-bb74-f23c9164ca5d
-    net: tcp
-    path: ''
-    port: 5228
-    ps: Join+Telegram:@FarahVPN
-    scy: auto
-    sni: ''
-    tls: ''
-    type: none
-    v: '2'
   server: 157.148.96.92
-  servername: ''
   skip-cert-verify: true
   tls: false
   type: vmess
-  udp: true
   uuid: 6ada1622-e018-11ec-bb74-f23c9164ca5d
   ws-headers:
     Host: 157.148.96.92
   ws-path: /
-- alterId: '0'
+- alterId: 0
   cipher: auto
-  ip-version: dual
-  name: 543,548,554,558|NO98605
+  name: '543,548,554|🇨🇳_定制专线：@QS00008 #4'
   network: tcp
   port: 5229
   server: 2c2227e1-sutj40-t907cr-1c1mr.cu.plebai.net
   skip-cert-verify: true
   tls: false
   type: vmess
-  udp: true
   uuid: a12640d0-e2ad-11ef-8f5b-f23c913c8d2b
   ws-headers:
     Host: 2c2227e1-sutj40-t907cr-1c1mr.cu.plebai.net
   ws-path: /
 - alterId: 0
   cipher: auto
-  ip-version: dual
-  name: 543,548,558|NO109030
+  name: 543,548|30|🇸_US_美国->🇨🇷_CR_哥斯达黎加_1
   network: ws
   port: 80
   server: 172.67.75.172
@@ -5601,13 +5538,12 @@ proxies:
   sni: ''
   tls: false
   type: vmess
-  udp: true
   uuid: 0c5e59d4-2ab3-4dc7-8b56-4ee355551162
   ws-opts:
     path: /s15.html
 - alterId: 0
   cipher: auto
-  name: 543,548,558|NO109014
+  name: 543,548|30|🇸_US_美国->🇨🇷_CR_哥斯达黎加_2
   network: ws
   port: 80
   server: 172.67.70.92
@@ -5615,56 +5551,43 @@ proxies:
   sni: ''
   tls: false
   type: vmess
-  udp: true
   uuid: 0ad4e581-231b-4676-ad75-d8d2db103795
   ws-opts:
     path: /s15.html
 - alterId: 0
   cipher: auto
-  name: 543,548,558|NO93798
+  name: 543,548|30|🇸_US_美国->🇨🇷_CR_哥斯达黎加_3
   network: ws
   port: 80
   server: 104.21.23.72
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: ''
   tls: false
   type: vmess
-  udp: true
   uuid: 812eb086-8442-4799-9d92-112fd1a225af
   ws-opts:
     path: /s15.html
-- alterId: '2'
+- alterId: 2
   cipher: auto
-  country: 🇨🇳CN
-  h2-opts: {}
-  http-opts: {}
-  ip-version: dual
-  name: 543,548,558|NO108424
+  name: 543,548|30|🇨🇳_CN_中国->_CA_加
   network: ws
-  port: '30835'
+  port: 30835
   server: v35.heduian.link
-  servername: baidu.com
   skip-cert-verify: true
   sni: ''
   tls: false
   type: vmess
-  udp: true
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-opts:
-    headers:
-      host: baidu.com
     path: /oooo
 - alterId: 0
   cipher: auto
-  name: 544,558|NO48057
+  name: 544|🇺🇸 _US_美国->🇸🇦_SA_沙特阿拉伯
   network: ws
-  port: 80
+  port: '80'
   server: jd3.shabijichang.com
-  skip-cert-verify: true
-  tfo: false
   tls: false
   type: vmess
-  udp: true
   uuid: c458695d-6908-45c3-9512-e0c46418454c
   ws-opts:
     headers:
@@ -5672,15 +5595,12 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 544,558|NO22420
+  name: 544|CF中转_0424101136 L7
   network: ws
-  port: 8443
+  port: '8443'
   server: 141.101.120.239
-  servername: 1743919978.speed.laxha.cccp.freefly.pp.ua
-  skip-cert-verify: true
   tls: true
   type: vmess
-  udp: true
   uuid: 3bb3c730-e107-49c5-a0b2-b576d1b26a5e
   ws-opts:
     headers:
@@ -5701,29 +5621,25 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 544,558|NO112693
+  name: 544|🇺🇸 [VMess] 🇮🇳 _US_美国->🇮🇳_IN_印度...
   network: ws
-  port: 80
+  port: '80'
   server: 104.26.8.44
-  skip-cert-verify: true
-  tfo: false
   tls: false
   type: vmess
-  udp: true
   uuid: 5180444a-4756-43b4-960b-49eb9052e4e8
   ws-opts:
+    headers:
+      Host: ''
     path: /
 - alterId: 0
   cipher: auto
-  name: 544,558|NO43435
+  name: '544|🇺🇸 [VMess] 🇮🇳 _US_美国->🇮🇳_IN_印度... #1'
   network: ws
-  port: 80
+  port: '80'
   server: mm3.shabijichang.com
-  skip-cert-verify: true
-  tfo: false
   tls: false
   type: vmess
-  udp: true
   uuid: c458695d-6908-45c3-9512-e0c46418454c
   ws-opts:
     headers:
@@ -5731,14 +5647,12 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 544,558|NO50280
+  name: 544|CF中转_042410682 L0
   network: ws
-  port: 2082
+  port: '2082'
   server: 104.19.48.236
-  skip-cert-verify: true
   tls: false
   type: vmess
-  udp: true
   uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
   ws-opts:
     headers:
@@ -5746,15 +5660,12 @@ proxies:
     path: /dabai.in104.21.83.57
 - alterId: 0
   cipher: auto
-  name: 544,558|NO48059
+  name: 544|🇺🇸 _US_美国->🇬🇧_GB_英国 4
   network: ws
-  port: 80
+  port: '80'
   server: ld2.shabijichang.com
-  skip-cert-verify: true
-  tfo: false
   tls: false
   type: vmess
-  udp: true
   uuid: c458695d-6908-45c3-9512-e0c46418454c
   ws-opts:
     headers:
@@ -5775,15 +5686,12 @@ proxies:
     path: /dabai.in104.21.83.57
 - alterId: 0
   cipher: auto
-  name: 544,558|NO109805
+  name: 544|CF中转_0424101132 L0
   network: ws
-  port: 8443
+  port: '8443'
   server: 141.101.121.121
-  servername: 1743919978.speed.laxha.cccp.freefly.pp.ua
-  skip-cert-verify: true
   tls: true
   type: vmess
-  udp: true
   uuid: 3bb3c730-e107-49c5-a0b2-b576d1b26a5e
   ws-opts:
     headers:
@@ -5791,15 +5699,12 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 544,558|NO50781
+  name: 544|🇺🇸 _US_美国->🇮🇳_IN_印度_3
   network: ws
-  port: 80
+  port: '80'
   server: mm2.shabijichang.com
-  skip-cert-verify: true
-  tfo: false
   tls: false
   type: vmess
-  udp: true
   uuid: c458695d-6908-45c3-9512-e0c46418454c
   ws-opts:
     headers:
@@ -5833,15 +5738,12 @@ proxies:
     path: ba516af9-329e-4c5c-8ff6-dc59f563269e-vm
 - alterId: 0
   cipher: auto
-  name: 544,558|NO48849
+  name: 544|🇺🇸 _US_美国->🇬🇧_GB_英国_1
   network: ws
-  port: 80
+  port: '80'
   server: mrb2.shabijichang.com
-  skip-cert-verify: true
-  tfo: false
   tls: false
   type: vmess
-  udp: true
   uuid: c458695d-6908-45c3-9512-e0c46418454c
   ws-opts:
     headers:
@@ -5849,15 +5751,12 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 544,558|NO94331
+  name: 544|CF中转_0424101123 L7
   network: ws
-  port: 2053
+  port: '2053'
   server: 141.101.120.164
-  servername: 1743919978.speed.sccapv.cccp.freefly.pp.ua
-  skip-cert-verify: false
   tls: true
   type: vmess
-  udp: true
   uuid: 3bb3c730-e107-49c5-a0b2-b576d1b26a5e
   ws-opts:
     headers:
@@ -5865,15 +5764,12 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 544,558|NO47294
+  name: 544|🇺🇸 [VMess] 🇩🇪 _US_美国->🇩🇪_DE_德国
   network: ws
-  port: 80
+  port: '80'
   server: flkf2.shabijichang.com
-  skip-cert-verify: true
-  tfo: false
   tls: false
   type: vmess
-  udp: true
   uuid: c458695d-6908-45c3-9512-e0c46418454c
   ws-opts:
     headers:
@@ -5881,45 +5777,42 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 544,558|NO42800
+  name: 544|🇨🇳 [VMess] 🇨🇳 _TW_台湾->🇺🇸_US_美国
   network: ws
-  port: 80
+  port: '80'
   server: 107.167.182.230
-  skip-cert-verify: true
-  tfo: false
   tls: false
   type: vmess
-  udp: true
   uuid: efcb7d7c-c582-46f5-eeff-0e553342528d
   ws-opts:
+    headers:
+      Host: ''
     path: /tg@hkaa0
 - alterId: 64
   cipher: auto
-  name: 544,558|NO112765
+  name: 544|🇺🇸 _US_美国->🇳🇱_NL_荷兰
   network: ws
-  port: 30000
+  port: '30000'
   server: 45.199.138.191
-  skip-cert-verify: true
-  tfo: false
   tls: true
   type: vmess
-  udp: true
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
   ws-opts:
+    headers:
+      Host: ''
     path: /path/1696251522438
 - alterId: 0
   cipher: auto
-  name: 544,558|NO112878
+  name: '544|🇺🇸 [VMess] 🇮🇳 _US_美国->🇮🇳_IN_印度... #2'
   network: ws
-  port: 80
+  port: '80'
   server: 104.17.18.26
-  skip-cert-verify: true
-  tfo: false
   tls: false
   type: vmess
-  udp: true
   uuid: 5180444a-4756-43b4-960b-49eb9052e4e8
   ws-opts:
+    headers:
+      Host: ''
     path: /
 - alterId: 0
   cipher: auto
@@ -5936,15 +5829,25 @@ proxies:
     path: /v2ray
 - alterId: 0
   cipher: auto
-  name: 544,558|NO107658
+  name: 544|CF中转_0424101117 L0
   network: ws
-  port: 2096
+  port: '2096'
   server: 104.21.96.1
-  servername: de01.sh-cloudflare.sbs
-  skip-cert-verify: true
   tls: true
   type: vmess
-  udp: true
+  uuid: 75a0885f-0ca5-42a4-8651-391cf8193154
+  ws-opts:
+    headers:
+      Host: de01.sh-cloudflare.sbs
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 544|CF中转_0424101111 L0
+  network: ws
+  port: '2096'
+  server: 104.21.64.1
+  tls: true
+  type: vmess
   uuid: 75a0885f-0ca5-42a4-8651-391cf8193154
   ws-opts:
     headers:
@@ -5991,15 +5894,12 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 544,558|NO125819
+  name: 544|CF中转_042410864 L0
   network: ws
-  port: 2096
+  port: '2096'
   server: 104.21.80.1
-  skip-cert-verify: true
-  tfo: false
   tls: true
   type: vmess
-  udp: true
   uuid: 75a0885f-0ca5-42a4-8651-391cf8193154
   ws-opts:
     headers:
@@ -6060,423 +5960,391 @@ proxies:
     path: /racevpn
 - alterId: 0
   cipher: auto
-  name: 547,548,558|NO90390
+  name: '547,548|8|🇺🇸_US_美国->🇩🇪_DE_德国_1_0@0 #1'
   network: ws
   port: 80
   server: 104.21.225.104
   skip-cert-verify: true
   tls: false
   type: vmess
-  udp: true
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
   ws-opts:
     path: /
 - alterId: 0
   cipher: auto
-  name: 547,548,558|NO91753
+  name: '547,548|8|🇺🇸_US_美国->🇩🇪_DE_德国_2_0@1 #1'
   network: ws
   port: 80
   server: 104.21.226.32
   skip-cert-verify: true
   tls: false
   type: vmess
-  udp: true
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
   ws-opts:
     path: /
 - alterId: 0
   cipher: auto
-  name: 547,548,558|NO90213
+  name: '547,548|8|🇺🇸_US_美国->🇩🇪_DE_德国_3_0@2 #1'
   network: ws
   port: 80
   server: 104.21.225.68
   skip-cert-verify: true
   tls: false
   type: vmess
-  udp: true
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
   ws-opts:
     path: /
 - alterId: 0
   cipher: auto
-  name: 547,548,558|NO90746
+  name: '547,548|8|🇺🇸_US_美国->🇩🇪_DE_德国_4_0@3 #1'
   network: ws
   port: 80
   server: 104.21.229.47
   skip-cert-verify: true
   tls: false
   type: vmess
-  udp: true
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
   ws-opts:
     path: /?ed=2048
 - alterId: 0
   cipher: auto
-  name: 547,548,558|NO90800
+  name: '547,548|8|🇺🇸_US_美国->🇩🇪_DE_德国_5_0@4 #1'
   network: ws
   port: 80
   server: 104.21.225.187
   skip-cert-verify: true
   tls: false
   type: vmess
-  udp: true
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
   ws-opts:
     path: /
 - alterId: 0
   cipher: auto
-  name: 547,548,558|NO90358
+  name: '547,548|8|🇺🇸_US_美国->🇩🇪_DE_德国_6_0@5 #1'
   network: ws
   port: 80
   server: 104.21.225.123
   skip-cert-verify: true
   tls: false
   type: vmess
-  udp: true
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
   ws-opts:
     path: /
 - alterId: 0
   cipher: auto
-  name: 547,548,558|NO91500
+  name: '547,548|8|🇺🇸_US_美国->🇩🇪_DE_德国_7_0@6 #1'
   network: ws
   port: 80
   server: 104.21.225.193
   skip-cert-verify: true
   tls: false
   type: vmess
-  udp: true
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
   ws-opts:
     path: /
 - alterId: 0
   cipher: auto
-  name: 547,548,558|NO91641
+  name: '547,548|8|🇺🇸_US_美国->🇩🇪_DE_德国_8_0@7 #1'
   network: ws
   port: 80
   server: 104.21.225.92
   skip-cert-verify: true
   tls: false
   type: vmess
-  udp: true
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
   ws-opts:
     path: /
 - alterId: 0
   cipher: auto
-  name: 547,548,558|NO91107
+  name: '547,548|8|🇺🇸_US_美国->🇩🇪_DE_德国_9_0@8 #1'
   network: ws
   port: 80
   server: 104.21.225.96
   skip-cert-verify: true
   tls: false
   type: vmess
-  udp: true
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
   ws-opts:
     path: /
 - alterId: 0
   cipher: auto
-  name: 547,548,558|NO91446
+  name: '547,548|8|🇺🇸_US_美国->🇩🇪_DE_德国_10_0@9 #1'
   network: ws
   port: 80
   server: 104.21.227.36
   skip-cert-verify: true
   tls: false
   type: vmess
-  udp: true
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
   ws-opts:
     path: /
 - alterId: 0
   cipher: auto
-  name: 547,548,558|NO91690
+  name: '547,548|8|🇺🇸_US_美国->🇩🇪_DE_德国_11_0@10 #1'
   network: ws
   port: 80
   server: 104.21.235.58
   skip-cert-verify: true
   tls: false
   type: vmess
-  udp: true
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
   ws-opts:
     path: /?ed=2048
 - alterId: 0
   cipher: auto
-  name: 547,548,558|NO90441
+  name: '547,548|8|🇺🇸_US_美国->🇩🇪_DE_德国_12_0@11 #1'
   network: ws
   port: 80
   server: 104.21.225.121
   skip-cert-verify: true
   tls: false
   type: vmess
-  udp: true
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
   ws-opts:
     path: /
 - alterId: 0
   cipher: auto
-  name: 547,548,558|NO90649
+  name: '547,548|8|🇺🇸_US_美国->🇩🇪_DE_德国_13_0@12 #1'
   network: ws
   port: 80
   server: 104.21.230.30
   skip-cert-verify: true
   tls: false
   type: vmess
-  udp: true
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
   ws-opts:
     path: /?ed=2048
 - alterId: 0
   cipher: auto
-  name: 547,548,558|NO90571
+  name: '547,548|8|🇺🇸_US_美国->🇩🇪_DE_德国_14_0@13 #1'
   network: ws
   port: 80
   server: 104.21.225.229
   skip-cert-verify: true
   tls: false
   type: vmess
-  udp: true
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
   ws-opts:
     path: /
 - alterId: 0
   cipher: auto
-  name: 547,548,558|NO90383
+  name: '547,548|8|🇺🇸_US_美国->🇩🇪_DE_德国_15_0@14 #1'
   network: ws
   port: 80
   server: 104.21.225.133
   skip-cert-verify: true
   tls: false
   type: vmess
-  udp: true
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
   ws-opts:
     path: /
 - alterId: 0
   cipher: auto
-  name: 547,548,558|NO90556
+  name: '547,548|8|🇺🇸_US_美国->🇩🇪_DE_德国_16_0@15 #1'
   network: ws
   port: 80
   server: 104.21.237.85
   skip-cert-verify: true
   tls: false
   type: vmess
-  udp: true
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
   ws-opts:
     path: /?ed=2048
 - alterId: 0
   cipher: auto
-  name: 547,548,558|NO91341
+  name: '547,548|8|🇺🇸_US_美国->🇩🇪_DE_德国_17_0@16 #1'
   network: ws
   port: 80
   server: 104.21.238.93
   skip-cert-verify: true
   tls: false
   type: vmess
-  udp: true
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
   ws-opts:
     path: /?ed=2048
 - alterId: 0
   cipher: auto
-  name: 547,548,558|NO91242
+  name: '547,548|8|🇺🇸_US_美国->🇩🇪_DE_德国_18_0@17 #1'
   network: ws
   port: 80
   server: 104.21.225.2
   skip-cert-verify: true
   tls: false
   type: vmess
-  udp: true
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
   ws-opts:
     path: /
 - alterId: 0
   cipher: auto
-  name: 547,548,558|NO90435
+  name: '547,548|8|🇺🇸_US_美国->🇩🇪_DE_德国_19_0@18 #1'
   network: ws
   port: 80
   server: 104.21.225.27
   skip-cert-verify: true
   tls: false
   type: vmess
-  udp: true
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
   ws-opts:
     path: /?ed=2048
 - alterId: 0
   cipher: auto
-  name: 547,548,558|NO90553
+  name: '547,548|8|🇺🇸_US_美国->🇩🇪_DE_德国_20_0@19 #1'
   network: ws
   port: 80
   server: 104.21.225.209
   skip-cert-verify: true
   tls: false
   type: vmess
-  udp: true
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
   ws-opts:
     path: /
 - alterId: 0
   cipher: auto
-  name: 547,548,558|NO91176
+  name: '547,548|8|🇺🇸_US_美国->🇩🇪_DE_德国_21_0@20 #1'
   network: ws
   port: 80
   server: 104.21.237.65
   skip-cert-verify: true
   tls: false
   type: vmess
-  udp: true
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
   ws-opts:
     path: /?ed=2048
 - alterId: 0
   cipher: auto
-  name: 547,548,558|NO90734
+  name: '547,548|8|🇺🇸_US_美国->🇩🇪_DE_德国_22_0@21 #1'
   network: ws
   port: 80
   server: 104.21.225.99
   skip-cert-verify: true
   tls: false
   type: vmess
-  udp: true
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
   ws-opts:
     path: /
 - alterId: 0
   cipher: auto
-  name: 547,548,558|NO90487
+  name: '547,548|8|🇺🇸_US_美国->🇩🇪_DE_德国_23_0@22 #1'
   network: ws
   port: 80
   server: 104.21.233.65
   skip-cert-verify: true
   tls: false
   type: vmess
-  udp: true
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
   ws-opts:
     path: /?ed=2048
 - alterId: 0
   cipher: auto
-  name: 547,548,558|NO90534
+  name: '547,548|8|🇺🇸_US_美国->🇩🇪_DE_德国_24_0@23 #1'
   network: ws
   port: 80
   server: 104.21.225.126
   skip-cert-verify: true
   tls: false
   type: vmess
-  udp: true
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
   ws-opts:
     path: /
 - alterId: 0
   cipher: auto
-  name: 547,548,558|NO90202
+  name: '547,548|8|🇺🇸_US_美国->🇩🇪_DE_德国_25_0@24 #1'
   network: ws
   port: 80
   server: 104.21.225.55
   skip-cert-verify: true
   tls: false
   type: vmess
-  udp: true
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
   ws-opts:
     path: /
 - alterId: 0
   cipher: auto
-  name: 547,548,558|NO90907
+  name: '547,548|8|🇺🇸_US_美国->🇩🇪_DE_德国_26_0@25 #1'
   network: ws
   port: 80
   server: 104.21.225.94
   skip-cert-verify: true
   tls: false
   type: vmess
-  udp: true
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
   ws-opts:
     path: /
 - alterId: 0
   cipher: auto
-  name: 547,548,558|NO91796
+  name: '547,548|8|🇺🇸_US_美国->🇩🇪_DE_德国_27_0@26 #1'
   network: ws
   port: 80
   server: 104.21.228.21
   skip-cert-verify: true
   tls: false
   type: vmess
-  udp: true
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
   ws-opts:
     path: /?ed=2048
 - alterId: 0
   cipher: auto
-  name: 547,548,558|NO91519
+  name: '547,548|8|🇺🇸_US_美国->🇩🇪_DE_德国_28_0@27 #1'
   network: ws
   port: 80
   server: 104.21.233.68
   skip-cert-verify: true
   tls: false
   type: vmess
-  udp: true
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
   ws-opts:
     path: /?ed=2048
 - alterId: 0
   cipher: auto
-  name: 547,548,558|NO91627
+  name: '547,548|8|🇺🇸_US_美国->🇩🇪_DE_德国_29_0@29 #1'
   network: ws
   port: 80
   server: 104.21.225.176
   skip-cert-verify: true
   tls: false
   type: vmess
-  udp: true
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
   ws-opts:
     path: /
 - alterId: 0
   cipher: auto
-  name: 547,548,558|NO91544
+  name: '547,548|8|🇺🇸_US_美国->🇩🇪_DE_德国_30_0@30 #1'
   network: ws
   port: 80
   server: 104.21.225.243
   skip-cert-verify: true
   tls: false
   type: vmess
-  udp: true
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
   ws-opts:
     path: /
 - alterId: 0
   cipher: auto
-  name: 547,548,558|NO90436
+  name: '547,548|8|🇺🇸_US_美国->🇩🇪_DE_德国_31_0@31 #1'
   network: ws
   port: 80
   server: 104.21.225.221
   skip-cert-verify: true
   tls: false
   type: vmess
-  udp: true
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
   ws-opts:
     path: /
 - alterId: 0
   cipher: auto
-  name: 547,548,558|NO91415
+  name: '547,548|8|🇺🇸_US_美国->🇩🇪_DE_德国_32_0@32 #1'
   network: ws
   port: 80
   server: 104.21.232.64
   skip-cert-verify: true
   tls: false
   type: vmess
-  udp: true
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
   ws-opts:
     path: /?ed=2048
 - alterId: 0
   cipher: auto
-  name: 547,548,558|NO38977
+  name: 547,548|8|🇨🇳_CN_中国->🇫🇷_FR_法国_0@33
   network: ws
   port: 16645
   server: yes.cnmjcn.net
@@ -6485,181 +6353,166 @@ proxies:
   type: vmess
   uuid: c99074bd-bacd-48b5-9561-da069c481602
   ws-opts:
-    headers:
-      host: fe5be62428b65a2ce7a22d9997b4c9d0.mobgslb.tbcache.com
     path: /
 - alterId: 0
   cipher: auto
-  name: 547,548,558|NO90574
+  name: '547,548|8|🇺🇸_US_美国->🇩🇪_DE_德国_33_0@34 #1'
   network: ws
   port: 80
   server: 104.21.225.157
   skip-cert-verify: true
   tls: false
   type: vmess
-  udp: true
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
   ws-opts:
     path: /
 - alterId: 0
   cipher: auto
-  name: 547,548,558|NO91319
+  name: '547,548|8|🇺🇸_US_美国->🇩🇪_DE_德国_34_0@35 #1'
   network: ws
   port: 80
   server: 104.21.225.64
   skip-cert-verify: true
   tls: false
   type: vmess
-  udp: true
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
   ws-opts:
     path: /
 - alterId: 0
   cipher: auto
-  name: 547,548,558|NO91237
+  name: '547,548|8|🇺🇸_US_美国->🇩🇪_DE_德国_35_0@36 #1'
   network: ws
   port: 80
   server: 104.21.225.59
   skip-cert-verify: true
   tls: false
   type: vmess
-  udp: true
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
   ws-opts:
     path: /
 - alterId: 0
   cipher: auto
-  name: 547,548,558|NO91186
+  name: '547,548|8|🇺🇸_US_美国->🇩🇪_DE_德国_36_0@39 #1'
   network: ws
   port: 80
   server: 104.21.229.46
   skip-cert-verify: true
   tls: false
   type: vmess
-  udp: true
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
   ws-opts:
     path: /?ed=2048
 - alterId: 0
   cipher: auto
-  name: 547,548,558|NO91135
+  name: '547,548|8|🇺🇸_US_美国->🇩🇪_DE_德国_37_0@40 #1'
   network: ws
   port: 80
   server: 104.21.225.208
   skip-cert-verify: true
   tls: false
   type: vmess
-  udp: true
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
   ws-opts:
     path: /
 - alterId: 0
   cipher: auto
-  name: 547,548,558|NO91670
+  name: '547,548|8|🇺🇸_US_美国->🇩🇪_DE_德国_38_0@41 #1'
   network: ws
   port: 80
   server: 104.21.225.22
   skip-cert-verify: true
   tls: false
   type: vmess
-  udp: true
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
   ws-opts:
     path: /
 - alterId: 0
   cipher: auto
-  name: 547,548,558|NO90248
+  name: '547,548|8|🇺🇸_US_美国->🇩🇪_DE_德国_39_0@42 #1'
   network: ws
   port: 80
   server: 104.21.233.46
   skip-cert-verify: true
   tls: false
   type: vmess
-  udp: true
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
   ws-opts:
     path: /?ed=2048
 - alterId: 0
   cipher: auto
-  name: 547,548,558|NO91317
+  name: '547,548|8|🇺🇸_US_美国->🇩🇪_DE_德国_40_0@43 #1'
   network: ws
   port: 80
   server: 104.21.225.122
   skip-cert-verify: true
   tls: false
   type: vmess
-  udp: true
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
   ws-opts:
     path: /
 - alterId: 0
   cipher: auto
-  name: 547,548,558|NO91681
+  name: '547,548|8|🇺🇸_US_美国->🇩🇪_DE_德国_41_0@44 #1'
   network: ws
   port: 80
   server: 104.21.225.223
   skip-cert-verify: true
   tls: false
   type: vmess
-  udp: true
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
   ws-opts:
     path: /?ed=2048
 - alterId: 0
   cipher: auto
-  name: 547,548,558|NO91819
+  name: '547,548|8|🇺🇸_US_美国->🇩🇪_DE_德国_42_0@45 #1'
   network: ws
   port: 80
   server: 104.21.237.68
   skip-cert-verify: true
   tls: false
   type: vmess
-  udp: true
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
   ws-opts:
     path: /?ed=2048
 - alterId: 0
   cipher: auto
-  name: 547,548,558|NO90565
+  name: '547,548|8|🇺🇸_US_美国->🇩🇪_DE_德国_43_0@46 #1'
   network: ws
   port: 80
   server: 104.21.225.6
   skip-cert-verify: true
   tls: false
   type: vmess
-  udp: true
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
   ws-opts:
     path: /?ed=2048
 - alterId: 0
   cipher: auto
-  name: 547,548,558|NO91338
+  name: '547,548|8|🇺🇸_US_美国->🇩🇪_DE_德国_44_0@47 #1'
   network: ws
   port: 80
   server: 104.21.225.158
   skip-cert-verify: true
   tls: false
   type: vmess
-  udp: true
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
   ws-opts:
     path: /
 - alterId: 0
   cipher: auto
-  name: 547,548,558|NO91616
+  name: '547,548|8|🇺🇸_US_美国->🇩🇪_DE_德国_45_0@48 #1'
   network: ws
   port: 80
   server: 104.21.232.61
   skip-cert-verify: true
   tls: false
   type: vmess
-  udp: true
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
   ws-opts:
     path: /?ed=2048
 - alterId: 0
   cipher: auto
-  name: 547,548,558|NO39229
+  name: 547,548|8|🇺🇸_US_美国->🇬🇧_GB_英国_1_5@5
   network: ws
   port: 8880
   server: cdn.vds-server.ir
@@ -6668,56 +6521,46 @@ proxies:
   type: vmess
   uuid: 0d1bf26a-ce97-4707-a270-7f4d2ae37334
   ws-opts:
-    headers:
-      host: cdn.vds-server.ir
     path: /
 - alterId: 0
   cipher: auto
-  name: 547,548,558|NO89128
+  name: 547,548|8|🇨🇦_CA_加拿大->🇺🇸_US_美国_2_5@10
   network: ws
   port: 8080
   server: 23.227.38.23
   skip-cert-verify: true
   tls: false
   type: vmess
-  udp: true
   uuid: 34c0bb5e-c120-432d-9c58-bd7d82c7397b
   ws-opts:
     path: 34c0bb5e-c120-432d-9c58-bd7d82c7397b-vm
 - alterId: 0
   cipher: auto
-  name: 547,548,558|NO90209
+  name: 547,548|8|🇺🇸_US_美国->🇭🇰_HK_香港_1_5@15
   network: ws
   port: 2052
   server: 172.67.152.170
   skip-cert-verify: true
   tls: false
   type: vmess
-  udp: true
   uuid: 7a737f41-b792-4260-94ff-3d864da67b80
   ws-opts:
     path: /
 - alterId: 0
   cipher: auto
-  country: 🇸US
-  h2-opts: {}
-  http-opts: {}
-  name: 547,548,558|NO39237
+  name: '547,548|8|🇺🇸_US_美国->🇭🇰_HK_香港_3_5@22 #1'
   network: ws
   port: 2095
   server: onea.flha.ru
-  servername: onea.flha.ru
   skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 7a737f41-b792-4260-94ff-3d864da67b80
   ws-opts:
-    headers:
-      host: onea.flha.ru
     path: /
 - alterId: 0
   cipher: auto
-  name: 547,548,558|NO39238
+  name: 547,548|8|🇨🇳_CN_中国->🇩🇪_DE_德国_5@23
   network: ws
   port: 46038
   server: mf838f.micloud.buzz
@@ -6726,12 +6569,10 @@ proxies:
   type: vmess
   uuid: 4a7929d8-f59e-4f37-9708-22027f210a07
   ws-opts:
-    headers:
-      host: mf838f.micloud.buzz
     path: /zh-cn
 - alterId: 0
   cipher: auto
-  name: 547,548,558|NO39240
+  name: 547,548|8|🇺🇸_US_美国->🇬🇧_GB_英国_2_5@26
   network: ws
   port: 2086
   server: mizban.arzonhost.ir
@@ -6740,43 +6581,36 @@ proxies:
   type: vmess
   uuid: e690ff9e-1676-4be3-d136-dcae586cb1e7
   ws-opts:
-    headers:
-      host: mizban.arzonhost.ir
     path: /
 - alterId: 0
   cipher: auto
-  name: 547,548,558|NO18358
+  name: '547,548|13|🇬🇧_GB_英国->🇷🇺_RU_俄罗斯 #1'
   network: ws
   port: 23169
   server: 5.39.254.196
-  skip-cert-verify: true
   tls: false
   type: vmess
-  udp: true
   uuid: 398ce84e-4849-4e5f-9b1a-a56fbe233b81
   ws-opts: {}
 - alterId: 64
   cipher: auto
-  name: 547,548,554,558|NO54204
+  name: '547,548,554|不定期抽奖https://t.me/mftizi #1'
   network: tcp
   port: '52112'
   server: 183.236.51.23
   servername: ''
-  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: 547,548,558|NO33845
+  name: 547,548|13|🇨🇳_CN_中国->🇷🇺_RU_俄罗斯_2
   network: ws
   port: 25230
   server: cm1.awslcn.info
   servername: cm1.awslcn.info
-  skip-cert-verify: true
   tls: false
   type: vmess
-  udp: true
   uuid: 243eab52-9ac1-405c-887c-eb112c0985b8
   ws-opts:
     headers:
@@ -6784,7 +6618,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 547,548,558|NO98142
+  name: 547,548|23|🇨🇳_CN_中国->🇺🇸_US_美国_1
   network: ws
   port: 16928
   server: vip3.niuniupremium.xyz
@@ -6819,41 +6653,35 @@ proxies:
     headers:
       Host: MgbJP.divarcdn.com,LXHRl.snappfood.ir,3cubP.yjc.ir,XbifM.digikala.com,HL56Q.tic.ir
     path: '%2F'
-- name: 548,558|NO18369
+- name: 548|13|🇺🇸_US_美国->🇫🇷_FR_法国_1
   network: ws
   port: 80
   server: 151.101.130.228
   servername: wWw.SpEeDtEsT.NeT.ZuLa.aIr.IkCoSaLeS.iR.D662599.v05.feadlenetwork19922h.net
-  skip-cert-verify: true
   tls: false
   type: vless
-  udp: true
   uuid: 0862aacf-9eb1-46ef-9743-df83346e1a08
   ws-opts:
     headers:
       Host: wWw.SpEeDtEsT.NeT.ZuLa.aIr.IkCoSaLeS.iR.D662599.v05.feadlenetwork19922h.net
-- name: 548,558|NO18371
+- name: 548|13|🇺🇸_US_美国->🇫🇷_FR_法国_2
   network: ws
   port: 80
   server: 151.101.2.228
   servername: wWw.SpEeDtEsT.NeT.ZuLa.aIr.IkCoSaLeS.iR.D662599.v04.feadlenetwork19922h.net
-  skip-cert-verify: true
   tls: false
   type: vless
-  udp: true
   uuid: 0862aacf-9eb1-46ef-9743-df83346e1a08
   ws-opts:
     headers:
       Host: wWw.SpEeDtEsT.NeT.ZuLa.aIr.IkCoSaLeS.iR.D662599.v04.feadlenetwork19922h.net
-- name: 548,558|NO18380
+- name: 548|13|🇺🇸_US_美国->🇫🇷_FR_法国_3
   network: ws
   port: 80
   server: 151.101.66.228
   servername: wWw.SpEeDtEsT.NeT.ZuLa.aIr.IkCoSaLeS.iR.D662599.v05.feadlenetwork19922h.net
-  skip-cert-verify: true
   tls: false
   type: vless
-  udp: true
   uuid: 0862aacf-9eb1-46ef-9743-df83346e1a08
   ws-opts:
     headers:
@@ -6946,6 +6774,70 @@ proxies:
   uuid: 98d30ce3-cf8c-499e-ba2b-fbc9b008fc07
   ws-opts:
     path: /
+- alterId: 0
+  cipher: auto
+  name: 563|24|_SG_->🇺🇸_US_美国
+  network: ws
+  port: 80
+  server: 8.222.198.105
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: ffffffff-ffff-ffff-ffff-ffffffffffff
+  ws-opts:
+    headers:
+      host: warp.chigua.tk
+    path: /
+- name: 563|24|_CN_国->🇺_UA_
+  network: tcp
+  password: cb9c8687-b85d-4f43-88a3-4829e3ec27eb
+  port: 10845
+  server: other.kunlun-ppg.com
+  skip-cert-verify: true
+  sni: alibaba-node.cn
+  type: trojan
+  udp: true
+- name: 563|24|🇳_CN_中国->🇺_US_美国_1
+  network: tcp
+  password: cb9c8687-b85d-4f43-88a3-4829e3ec27eb
+  port: 10837
+  server: other.kunlun-ppg.com
+  skip-cert-verify: true
+  sni: alibaba-node.cn
+  type: trojan
+  udp: true
+- name: 563|24|🇳_CN_中国->🇺🇸_US_美国_2
+  network: tcp
+  password: cb9c8687-b85d-4f43-88a3-4829e3ec27eb
+  port: 10838
+  server: other.kunlun-ppg.com
+  skip-cert-verify: true
+  sni: alibaba-node.cn
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 563|24|🇸_US_美国->🇳_IN_
+  network: ws
+  port: 80
+  server: mm2.shabijichang.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: c458695d-6908-45c3-9512-e0c46418454c
+  ws-opts:
+    headers:
+      host: mm2.shabijichang.com
+    path: /
+- name: 563|24|🇨🇳_CN_中国->🇺_US_美国_3
+  network: tcp
+  password: cb9c8687-b85d-4f43-88a3-4829e3ec27eb
+  port: 10850
+  server: other.kunlun-ppg.com
+  skip-cert-verify: true
+  sni: alibaba-node.cn
+  type: trojan
+  udp: true
 - name: '565|🇺🇸_US_美国->🇨🇳_CN_中国_2 #2'
   network: ws
   port: 80
