@@ -1,6 +1,6 @@
 proxies:
 - client-fingerprint: chrome
-  name: '11,31,201,205,325,363,487,491,492,495,499,500,501,521,522,528,529,534,535,536,537,541,542,548,550|🇨🇳
+  name: '11,31,201,205,325,363,479,487,491,492,495,499,500,501,521,522,528,529,534,535,536,537,541,542,548,550|🇨🇳
     12,13|台湾|@ripaojiedian #4'
   network: tcp
   password: dcc3fba3-9b9a-48b7-94be-c2e566535d66
@@ -143,7 +143,7 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 82547cc7-6ad6-473d-8df6-c0bcb43b14bf
+  uuid: 3b46fb6f-2029-4cc1-ade6-6a5df5247717
 - alterId: 0
   cipher: auto
   name: '113,114,415,416|台湾2-1A-GPT #1'
@@ -153,17 +153,17 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 82547cc7-6ad6-473d-8df6-c0bcb43b14bf
+  uuid: 3b46fb6f-2029-4cc1-ade6-6a5df5247717
 - alterId: 0
   cipher: auto
-  name: '114,416|台湾2-1B-GPT #1'
+  name: '114,416|台湾2-1B #1'
   port: 45077
   server: xdd.dashuai.cyou
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: f38d5735-0b3a-4cb4-9cfd-cd255159cbef
+  uuid: 5fbf961e-041c-4b09-ade4-d489cb939f77
 - alterId: 0
   cipher: auto
   name: 189|标准|台湾01解锁
@@ -1170,6 +1170,33 @@ proxies:
   port: 50701
   server: 61.220.130.70
   type: ss
+- client-fingerprint: chrome
+  name: 365|🇹🇼15 |  3.2MB/s
+  network: ws
+  password: Aimer
+  port: 2053
+  server: 147.45.79.236
+  skip-cert-verify: true
+  sni: epcca.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: epcca.ambercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: 365|🇹🇼18 |  1.8MB/s
+  network: ws
+  password: Aimer
+  port: 2083
+  server: 188.164.159.91
+  skip-cert-verify: true
+  sni: epcca.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epcca.ambercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
 - name: '373,568|🇹🇼 [wzdnzd/aggregator] 台湾-云 01... #1'
   network: tcp
   password: 75095e4c-2338-4ead-ba7a-d341a0e996f5
@@ -1328,22 +1355,21 @@ proxies:
     headers:
       Host: tw1bQiWSE4x.fzbqfrse.xyz
     path: /video/GQ2qE5Us9g
-- name: '495,528,529,544,548,550|2|🇹🇼1 |  5.0MB/s #4'
-  password: Aimer
-  port: 20087
-  server: 107.173.111.232
-  skip-cert-verify: true
-  sni: epcca.ambercc.filegear-sg.me
-  type: trojan
-  ws-path: h=%2F%3Fed%3D2560
-- name: 495,556|🔒 TR-TCP-TLS 🇹🇼 TW-220.130.58....
-  network: tcp
+- name: '495,556|🔒 TR-TCP-NA 🇹🇼 TW-220.130.58.1... #1'
   password: 851418c5-a1f0-453c-b8f8-24664990bdf8
-  port: 28506
-  server: 220.130.58.136
+  port: 28507
+  server: 220.130.58.144
+  skip-cert-verify: true
   sni: green2.cdntencentmusic.com
   type: trojan
-- name: '495,556|🔒 TR-TCP-NA 🇹🇼 TW-220.130.58.1... #3'
+- name: 495,556|🔒 TR-GRPC-TLS 🇹🇼 TW-60.249.28....
+  network: grpc
+  password: 67eb147db1c0f8c5
+  port: 443
+  server: 60.249.28.59
+  sni: 007.com
+  type: trojan
+- name: 495,556|🔒 TR-TCP-NA 🇹🇼 TW-220.130.58.1...
   password: 851418c5-a1f0-453c-b8f8-24664990bdf8
   port: 28504
   server: 220.130.58.136
@@ -1413,13 +1439,87 @@ proxies:
   server: cn01.efan8867801.xyz
   tfo: false
   type: ss
-- name: 512|台湾-碧海云_联通+2
-  network: tcp
-  password: 540e93a2-9728-4b40-afd0-bce72e096f53
-  port: 27201
-  server: 58.254.186.231
-  sni: q08m.vgraxiw73s.hasyaf.cn
+- cipher: chacha20-ietf-poly1305
+  name: 538|1号专线 台湾TW 89-1A
+  password: eeb4f415-7d22-4f12-85f3-ac5bda3abb36
+  port: 33922
+  server: 120.232.239.186
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 538|台湾-1B
+  password: cbf4d0a7-4b71-4e42-92c1-02251aba48b9
+  port: 30628
+  server: 01.kjahbg.info
+  type: ss
+  udp: true
+- name: 538|台湾01直连-1H
+  password: e7e069a8-0da2-4a12-b2fc-a73e19462e91
+  port: 23342
+  server: 2gzdx21.376897.xyz
+  skip-cert-verify: false
+  sni: 2gzdx21.376897.xyz
   type: trojan
+  udp: true
+- cipher: aes-256-gcm
+  name: 538|台湾B-1D
+  password: 189d424b-1b4a-4e42-8af7-fbc840955f26
+  port: 29129
+  server: b.skrspc.org
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 538|台湾-联通
+  password: 4fe377e6-5455-4c72-8270-4056371d72df
+  port: 27872
+  server: gtm-sg-acm44szjs05.gym0boy.com
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  name: 538|V1 | 台湾1-1A
+  password: c749c14c-206d-4ce4-8ab5-203ac2c28e1f
+  port: 49021
+  server: tw91.cctv14.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 538|国际专线 台湾TW 89 VIP-1G
+  password: ff18e51e-e863-4e6b-834f-2366fa67b14f
+  port: 443
+  server: 1.1.1.1
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 538|台湾 01-1C
+  password: d97392ce-1d0d-44e5-9d3a-af8a01a234be
+  port: 45503
+  server: aambx01tw.dorabbb.top
+  type: ss
+  udp: true
+- name: 538|台湾02直连-1A
+  password: 9c07744f-0ee5-48ac-b283-5ae3e29e309f
+  port: 2324
+  server: tw1.376897.xyz
+  skip-cert-verify: false
+  sni: tw1.376897.xyz
+  type: trojan
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 538|亚洲|台湾01-1B
+  password: 56ef8fdf-5530-4949-8fef-0e2edf4c6e74
+  port: 22556
+  server: gd.qlrk0.cc
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: '538|台湾2-1B #2'
+  port: 45077
+  server: xdd.dashuai.cyou
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 0d4d0b28-a5f6-4e4a-8926-0e5c93f94dd3
 - cipher: chacha20-ietf-poly1305
   name: '543|0| 01 | 1x TW #3'
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
@@ -1449,7 +1549,7 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '543|1|🇹🇼 台湾 02 | 1x TW #5'
+  name: '543|1|🇹🇼 台湾 02 | 1x TW #3'
   password: eea28d8c-2132-4147-85d5-93b4bd405b34
   port: 36243
   server: free.2weradf.xyz
@@ -1635,6 +1735,25 @@ proxies:
   type: vmess
   udp: true
   uuid: d9c7c6b0-e4c2-4f70-939f-3d3263a69f0d
+- cipher: chacha20-ietf-poly1305
+  name: 551|🇹🇼 台湾家宽直连 20x-1A
+  password: 681d97e0-200e-4b6c-948b-2c1e96fa8157
+  port: 26900
+  server: hinetiw0k.yooddns.stream
+  type: ss
+  udp: true
+- name: 556|🔒 TR-WS-TLS 🇹🇼 TW-166.0.198.68...
+  network: ws
+  password: 02926f9e-153a-42c8-8ecd-8fade7009ad1
+  port: 443
+  server: 166.0.198.68
+  skip-cert-verify: true
+  sni: golinkwuxian.top
+  type: trojan
+  ws-opts:
+    headers:
+      Host: 222.golinkwuxian.top
+    path: '%2Fapple'
 - alterId: 0
   cipher: chacha20-ietf-poly1305
   name: '559|TW #1'
