@@ -123,34 +123,17 @@ proxies:
   type: trojan
   udp: true
 - client-fingerprint: chrome
-  flow: xtls-rprx-vision
+  flow: xtls-rprx-vision-udp443
   http-opts:
     headers: {}
     path:
     - /
-  name: 325,347,461,466,482,487,491,492,495,508,509,548,552|CH_5bc40_0003
+  name: 325,347,461,466,482,495,508,509,548|5|15|CH_speednode_0003
   network: tcp
   port: 443
   server: 152.67.68.116
   servername: YAPC-1.afshin.ir
   skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 7c317161-5cf8-4cbc-811a-d1297c41bb23
-  xudp: true
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  http-opts:
-    headers: {}
-    path:
-    - /
-  name: 325,347,461,466,474,482|🔗 Vauth - 4885
-  network: tcp
-  port: 443
-  server: yapc-1.afshin.ir
-  servername: yapc-1.afshin.ir
-  skip-cert-verify: true
   tls: true
   type: vless
   udp: true
@@ -171,12 +154,15 @@ proxies:
   type: vless
   udp: true
   uuid: 37ce86f5-df0c-0384-a4b2-8cedd9a1aedc
-- cipher: aes-128-gcm
+- alterId: 0
+  cipher: aes-128-gcm
   country: 🇺🇸 US
-  name: 341,342,363,420,522,523|CH-156.146.62.164-1058 | 26.76...
+  name: '341,342,363,420,522,523,559|未知83 14.4MB/s #1'
   password: shadowsocks
   port: 443
   server: 156.146.62.164
+  skip-cert-verify: true
+  tls: true
   type: ss
 - cipher: aes-128-gcm
   country: 🇸 US
@@ -204,6 +190,23 @@ proxies:
   port: 989
   server: 51.15.15.82
   type: ss
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  http-opts:
+    headers: {}
+    path:
+    - /
+  name: '347,461,466|🇨🇭瑞士2|⬇️13.6MB/s #1'
+  network: tcp
+  port: 443
+  server: yapc-1.afshin.ir
+  servername: YAPC-1.afshin.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 7c317161-5cf8-4cbc-811a-d1297c41bb23
+  xudp: true
 - cipher: aes-256-cfb
   name: '363,522|🇨CH-185.126.116.125-0118 #1'
   password: aLpQtfEZe445QyHk
@@ -356,14 +359,19 @@ proxies:
   tls: false
   type: vmess
   uuid: 81b2b630-8b6a-404f-b996-b12f13db5786
-- cipher: aes-256-cfb
-  name: 485|[SS] 🇨🇭 _CH_瑞士
-  password: asdKkaskJKfnsa
-  port: 80
-  server: 84.17.53.163
-  tfo: false
-  type: ss
-  udp: true
+- client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: '%2FWedBaZtel-----WedBaZtel-----WedBaZtel-----WedBaZtel-----WedBaZtel-----WedBaZtel-----WedBaZtel-----WedBaZtel-----WedBaZtel-----WedBaZtel%3Fed%3D2048'
+  name: 495|🔒 VL-GRPC-RLT 🇭 CH-37.156.45.2...
+  network: grpc
+  port: 2086
+  reality-opts:
+    public-key: KkfRRyKAlTUZLEyeUwfoXdcqHU3vLz34sJmVcy7uYls
+  server: 37.156.45.234
+  servername: www.cdn77.com
+  tls: false
+  type: vless
+  uuid: 8a87217b-59bc-4dad-90f9-7d368ec77d09
 - alterId: 0
   cipher: auto
   name: 503|V2FETCH
