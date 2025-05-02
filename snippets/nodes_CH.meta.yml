@@ -123,23 +123,6 @@ proxies:
   type: trojan
   udp: true
 - client-fingerprint: chrome
-  flow: xtls-rprx-vision-udp443
-  http-opts:
-    headers: {}
-    path:
-    - /
-  name: 325,347,461,466,548|5|15|CH_speednode_0003
-  network: tcp
-  port: 443
-  server: 152.67.68.116
-  servername: YAPC-1.afshin.ir
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 7c317161-5cf8-4cbc-811a-d1297c41bb23
-  xudp: true
-- client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: '325,482,487,491,492,495,499,534,536,548,552,570,571|CH_speednode_0001 #1'
   network: tcp
@@ -162,7 +145,7 @@ proxies:
   server: 156.146.62.164
   type: ss
 - cipher: aes-128-gcm
-  country: 🇺🇸 US
+  country: ' US'
   name: 341,342,363,420,522,523|CH-156.146.62.162-1071 | 30.84...
   password: shadowsocks
   port: 443
@@ -187,6 +170,23 @@ proxies:
   port: 989
   server: 51.15.15.82
   type: ss
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  http-opts:
+    headers: {}
+    path:
+    - /
+  name: '347,461,466|🇨🇭瑞士2|⬇️7.4MB/s #1'
+  network: tcp
+  port: 443
+  server: 152.67.68.116
+  servername: YAPC-1.afshin.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 7c317161-5cf8-4cbc-811a-d1297c41bb23
+  xudp: true
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   http-opts:
@@ -365,33 +365,14 @@ proxies:
   type: ss
   udp: true
 - client-fingerprint: chrome
-  grpc-opts:
-    grpc-service-name: '@@jet_config-@jet_config-@jet_config'
-  name: 495|🔒 VL-GRPC-RLT 🇭 CH-141.227.138...
+  name: 495|🔒 VL-GRPC-TLS  CH-141.227.138....
   network: grpc
   port: 1210
-  reality-opts:
-    public-key: YWfCdTnr4FAOMYTY2dLrMtQUokyxOGpPhYEEszPj20E
-    short-id: 7fe29733
   server: 141.227.138.11
   servername: ubuntu.com
-  tls: false
+  tls: true
   type: vless
-  uuid: 77f680d1-1881-4b16-9eac-b8882c05fe62
-- client-fingerprint: chrome
-  grpc-opts:
-    grpc-service-name: CANALTELEGRAM--jet_config--TELEGRAM--jet_config--CANALTELEGRAM--jet_config--TELEGRAM--jet_config--CANALTELEGRAM--jet_config
-  name: 495| VL-GRPC-RLT 🇨🇭 CH-141.227.138...
-  network: grpc
-  port: 2030
-  reality-opts:
-    public-key: YWfCdTnr4FAOMYTY2dLrMtQUokyxOGpPhYEEszPj20E
-    short-id: 7fe29733
-  server: 141.227.138.11
-  servername: refersion.com
-  tls: false
-  type: vless
-  uuid: e103ffce-ef58-40e3-81d9-ed9f2956f933
+  uuid: bb24f7aa-f144-4c92-b474-fd5a876dd76f
 - alterId: 0
   cipher: auto
   name: 503|V2FETCH
