@@ -48,6 +48,16 @@ proxies:
   server: cnamelm-dwzksl7kzye3rdby.bestcassoulet.com
   type: ss
   udp: true
+- country: 🇸US
+  name: '298,363,418,495,521,522,523,544,548|20,21|🇸🇪SE-51.21.59.141-6675 #...'
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 51.21.59.141
+  skip-cert-verify: false
+  sni: trojan.burgerip.co.uk
+  type: trojan
+  udp: true
 - client-fingerprint: chrome
   name: 357|🇸🇪 Sweden 1 TG:@nodpai
   password: telegram-id-directvpn
@@ -135,8 +145,8 @@ proxies:
   type: ss
 - alterId: 0
   cipher: chacha20-ietf-poly1305
-  country: 🇰 HK
-  name: '363,420,474,522|SE-62.60.231.81-6266 #1'
+  country: 🇰HK
+  name: '363,418,474,522|SE-62.60.231.81-6266 #1'
   password: W7fIo8Gp6TLb1YHZNH1fu5
   port: 39008
   server: 62.60.231.81
@@ -144,27 +154,17 @@ proxies:
   tls: true
   type: ss
 - cipher: chacha20-ietf-poly1305
-  country: 🇷 IR
-  name: 363,420,522,523|SE-62.60.152.158-1109 | 19.952...
+  name: 363,522,523|SE-62.60.152.158-1109 | 19.952...
   password: y6fgyC28hscmdwqXj2v0Fm
   port: 37618
   server: 62.60.152.158
   type: ss
 - cipher: chacha20-ietf-poly1305
-  country: 🇪 SE
-  name: 363,420,522,523|SE-46.246.98.155-1078 | 30.977...
+  name: 363,522,523|SE-46.246.98.155-1078 | 30.977...
   password: UDcjYQ6Z6AIWxViZpqyOmO
   port: 44013
   server: 46.246.98.155
   type: ss
-- name: '363,495,521,522,523,544,548|20,21|🇸🇪SE-51.21.59.141-6675 #...'
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 51.21.59.141
-  skip-cert-verify: false
-  sni: trojan.burgerip.co.uk
-  type: trojan
 - cipher: aes-256-cfb
   name: '363,522|🇸SE-37.19.222.214-9751 #1'
   password: asdKkaskJKfnsa
@@ -237,36 +237,6 @@ proxies:
   port: 989
   server: 121.127.46.147
   type: ss
-- alterId: 0
-  cipher: auto
-  country: 🇪 SE
-  h2-opts: {}
-  http-opts: {}
-  name: 420|🇪 SE_450
-  network: ws
-  port: 443
-  server: 185.146.173.95
-  servername: jahfkjha.cfd
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 950db6aa-4926-4616-816e-ec0312dcb87b
-  ws-headers:
-    HOST: jahfkjha.cfd
-  ws-path: /linkws
-- alterId: 0
-  cipher: auto
-  name: 422|🇸🇪 SE_450
-  network: ws
-  port: 443
-  server: 185.146.173.95
-  tls: true
-  type: vmess
-  uuid: 950db6aa-4926-4616-816e-ec0312dcb87b
-  ws-opts:
-    headers:
-      Host: jahfkjha.cfd
-    path: /linkws
 - name: 437|🇸🇪SE(AzadNet.t.me)
   network: tcp
   password: 6455f944-7c07-4ab0-b88f-440e581f41d9
@@ -297,26 +267,20 @@ proxies:
   server: 13.60.149.22
   sni: trojan.burgerip.co.uk
   type: trojan
-- name: 495,556|🔒 TR-WS-TLS 🇸🇪 SE-185.146.173....
+- alterId: 0
+  cipher: auto
+  name: 495|🔒 VM-WS-NA 🇸🇪 SE-185.146.173.9...
   network: ws
-  password: auto
-  port: 443
-  server: 185.146.173.158
-  sni: esetsecuritylicense.bwnsmv.workers.dev
-  type: trojan
+  port: '2052'
+  server: 185.146.173.91
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 6e88465e-a2ac-57d3-bbaf-f72e4439bd75
   ws-opts:
     headers:
-      Host: esetsecuritylicense.bwnsmv.workers.dev
-    path: '%2F@v2rayngzendegimamad%2F%3Fed%3D2560'
-- alpn:
-  - http/1.1
-  name: 495,556|🔒 TR-TCP-TLS 🇸🇪 SE-56.228.72.1...
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 56.228.72.135
-  sni: trojan.burgerip.co.uk
-  type: trojan
+      Host: De1.vmess.site.
+    path: /vmess
 - alpn:
   - http/1.1
   name: '495,556|🔒 TR-TCP-TLS 🇸🇪 SE-51.21.59.14... #1'
@@ -324,6 +288,15 @@ proxies:
   password: telegram-id-privatevpns
   port: 22222
   server: 51.21.59.141
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- alpn:
+  - http/1.1
+  name: 495|🔒 TR-TCP-TLS 🇸🇪 SE-56.228.72.1...
+  network: tcp
+  password: telegram-id-vlessconfig
+  port: 22222
+  server: 56.228.72.135
   sni: trojan.burgerip.co.uk
   type: trojan
 - name: 495,556|🔒 TR-WS-NONE 🇸🇪 SE-150.241.78....
@@ -336,12 +309,24 @@ proxies:
     headers:
       Host: vkvd127.mycdn.me
     path: '%2F'
-- name: 521|🇸🇪SE-56.228.72.135-6677
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 56.228.72.135
-  sni: trojan.burgerip.co.uk
+- name: 495,556|🔒 TR-WS-TLS 🇸🇪 SE-185.146.173....
+  network: ws
+  password: auto
+  port: 443
+  server: 185.146.173.158
+  sni: esetsecuritylicense.bwnsmv.workers.dev
   type: trojan
+  ws-opts:
+    headers:
+      Host: esetsecuritylicense.bwnsmv.workers.dev
+    path: '%2F@v2rayngzendegimamad%2F%3Fed%3D2560'
+- cipher: chacha20-ietf-poly1305
+  name: 538|🇸🇪 bing641
+  password: 3c50b25f-bc27-4675-803e-8bdf06ce6718
+  port: 26037
+  server: diao.arken8379.com
+  type: ss
+  udp: true
 - name: '544|🇸🇪 瑞典 #1'
   password: telegram-id-vlessconfig
   port: 22222
@@ -372,8 +357,25 @@ proxies:
   port: 15128
   server: sto2.g.edgeservers.org
   type: ss
-- name: '664,712,713,714|🇸🇪 瑞典2 #3'
+- alpn:
+  - http/1.1
+  name: '556|🔒 TR-TCP-TLS 🇸🇪 SE-56.228.72.1... #1'
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 56.228.72.135
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- name: '664,712,714|🇸🇪 瑞典2 #2'
   password: '!!str 1'
+  port: 443
+  server: starlink-sto.2513142.xyz
+  skip-cert-verify: true
+  sni: www.cloudflare.com
+  type: trojan
+  udp: true
+- name: 713|🇸🇪 瑞典2🔒
+  password: 升级订阅解锁全部节点
   port: 443
   server: starlink-sto.2513142.xyz
   skip-cert-verify: true
