@@ -77,8 +77,8 @@ proxies:
   type: trojan
   udp: true
 - client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '325,482,487,491,492,495,499,534,536,548,552,570,571|CH_speednode_0001 #1'
+  flow: xtls-rprx-vision-udp443
+  name: 325,482,487,491,492,495,548|5|13|CH_speednode_0001
   network: tcp
   port: 31548
   reality-opts:
@@ -89,10 +89,29 @@ proxies:
   skip-cert-verify: false
   tls: true
   type: vless
-  udp: true
   uuid: 37ce86f5-df0c-0384-a4b2-8cedd9a1aedc
+- client-fingerprint: chrome
+  delay: 853
+  flow: xtls-rprx-vision
+  name: '328,482,487,495,499,513,534,536,548,552,570,571|CH_speednode_0003 #1'
+  network: tcp
+  port: 48740
+  reality-opts:
+    public-key: KmXtdOimd1xGGg7V2rvo74_HxMd6_bzFyosF6Z5c22A
+    short-id: d6d54c08fbbf895f
+  server: 37.156.46.65
+  servername: stackoverflow.com
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 37f1363a-e041-8ccd-d27f-e542a4a2def5
+  ws-opts:
+    headers:
+      Host: '---@External_Net---@External_Net---@External_Net---@External_Net---@External_Net'
+  xudp: true
 - cipher: aes-128-gcm
-  country: 🇺🇸 US
+  country: 🇸 US
   name: 341,342,363,420,522,523|CH-156.146.62.164-1088 | 20.65...
   password: shadowsocks
   port: 443
@@ -299,6 +318,16 @@ proxies:
       Host: rs1.youxuan.wiki
     path: /youxuan
   ws-path: /youxuan
+- flow: ''
+  name: '437|🇨🇭CH(AzadNet.t.me) #1'
+  network: ws
+  port: 2053
+  server: tify-binex-join.espikernajafi.ir
+  tls: false
+  type: vless
+  uuid: 4685521b-ee0b-4976-9323-42352daba9e0
+  ws-opts:
+    path: '%2Ftelegram%2C%40BINEXTIFY-telegram%2C%40BINEXTIFY-telegram%2C%40BINEXTIFY-telegram%2C%40BINEXTIFY-telegram%2C%40BINEXTIFY-telegram%2C%40BINEXTIFY-telegram%2C%40BINEXTIFY-telegram%2C%40BINEXTIFY-telegram%2C%40BINEXTIFY%3Fed%3D2560'
 - alterId: 0
   cipher: auto
   name: '450,503|@Vpn_Tehran 🔥 کانال تلگرام ما ... #6'
@@ -317,6 +346,28 @@ proxies:
   tfo: false
   type: ss
   udp: true
+- client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: '%2FWedBaZtel-----WedBaZtel-----WedBaZtel-----WedBaZtel-----WedBaZtel-----WedBaZtel-----WedBaZtel-----WedBaZtel-----WedBaZtel-----WedBaZtel%3Fed%3D2048'
+  name: 495|🔒 VL-GRPC-RLT 🇭 CH-37.156.45.2...
+  network: grpc
+  port: 2086
+  reality-opts:
+    public-key: KkfRRyKAlTUZLEyeUwfoXdcqHU3vLz34sJmVcy7uYls
+  server: 37.156.45.234
+  servername: www.cdn77.com
+  tls: false
+  type: vless
+  uuid: 8a87217b-59bc-4dad-90f9-7d368ec77d09
+- grpc-opts:
+    grpc-service-name: '%2F%40BinexTiFy%2F%40BinexTiFy%2F%40BinexTiFy%2F%40BinexTiFy%2F%40BinexTiFy%2F%40BinexTiFy%2F%40BinexTiFy%2F%40BinexTiFy%2F%40BinexTiFy%2F%40BinexTiFy%2F%40BinexTiFy%2F%40BinexTiFy%2F%40BinexTiFy%2F%40BinexTiFy%2F%40BinexTiFy%2F%40BinexTiFy'
+  name: 495|🔒 VL-GRPC-NONE  CH-195.15.240....
+  network: grpc
+  port: 6666
+  server: 195.15.240.12
+  tls: false
+  type: vless
+  uuid: ac0f5c1a-0d7f-45e0-a10d-452c77ae0d7e
 - alterId: 0
   cipher: auto
   name: 503|V2FETCH
