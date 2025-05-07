@@ -92,7 +92,8 @@ proxies:
   server: 46.246.98.155
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 364,523,524|SE-62.60.231.81-6287 | 3.659MB
+  country: 🇰 HK
+  name: 364,419,421,523,524|SE-62.60.231.81-6287 | 3.659MB
   password: W7fIo8Gp6TLb1YHZNH1fu5
   port: 39008
   server: 62.60.231.81
@@ -212,21 +213,6 @@ proxies:
   port: 989
   server: 121.127.46.147
   type: ss
-- name: 438|🇸🇪SE(AzadNet.t.me)
-  network: tcp
-  password: 6455f944-7c07-4ab0-b88f-440e581f41d9
-  port: 443
-  server: jp2.twincloud.xyz
-  skip-cert-verify: true
-  type: trojan
-- name: '438|🇸🇪SE(AzadNet.t.me) #1'
-  network: tcp
-  password: auto
-  port: 443
-  server: 185.146.173.158
-  skip-cert-verify: true
-  sni: esetsecuritylicense.bwnsmv.workers.dev
-  type: trojan
 - name: 454|瑞典_021805001+L30
   password: telegram-id-privatevpns
   port: 22222
@@ -256,15 +242,45 @@ proxies:
     headers:
       Host: De1.vmess.site.
     path: /vmess
+- name: 496,557|🔒 TR-WS-NONE 🇸🇪 SE-109.120.132...
+  network: ws
+  password: vpn
+  port: 2025
+  server: 109.120.132.80
+  type: trojan
+  ws-opts:
+    headers:
+      Host: vkvd127.mycdn.me
+    path: '%2F'
 - alpn:
   - http/1.1
   name: 496,557|🔒 TR-TCP-TLS 🇸🇪 SE-13.60.151.1...
   network: tcp
-  password: telegram-id-directvpn
+  password: telegram-id-privatevpns
   port: 22222
   server: 13.60.151.163
   sni: trojan.burgerip.co.uk
   type: trojan
+- alpn:
+  - http/1.1
+  name: '496,557|🔒 TR-TCP-TLS 🇸🇪 SE-56.228.53.2... #1'
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 56.228.53.24
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- alterId: 0
+  name: '496,549,557,560|未知33 #2'
+  network: tcp
+  password: Bw5Mz7QkVp
+  port: 443
+  server: 70.34.206.32
+  skip-cert-verify: true
+  sni: z-v2-077787.kailib.com
+  tls: true
+  type: trojan
+  udp: true
 - name: 496,557|🔒 TR-WS-NONE 🇸🇪 SE-150.241.78....
   network: ws
   password: vpn
@@ -275,23 +291,6 @@ proxies:
     headers:
       Host: vkvd127.mycdn.me
     path: /
-- alpn:
-  - http/1.1
-  name: 496,557|🔒 TR-TCP-TLS 🇸🇪 SE-56.228.53.2...
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 56.228.53.24
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- name: 496,557|🔒 TR-TCP-TLS 🇸🇪 SE-70.34.206.3...
-  network: tcp
-  password: Bw5Mz7QkVp
-  port: 443
-  server: 70.34.206.32
-  skip-cert-verify: true
-  sni: z-v2-077787.kailib.com
-  type: trojan
 - name: 496,557|🔒 TR-WS-TLS 🇸🇪 SE-185.146.173....
   network: ws
   password: auto
