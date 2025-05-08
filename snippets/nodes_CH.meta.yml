@@ -86,19 +86,22 @@ proxies:
   type: trojan
   udp: true
 - cipher: aes-128-gcm
-  name: 342,343,364,523,524|CH-156.146.62.164-1060 | 18.48...
+  country: 🇺🇸 US
+  name: 342,343,364,421,523,524|CH-156.146.62.164-1060 | 18.48...
   password: shadowsocks
   port: 443
   server: 156.146.62.164
   type: ss
 - cipher: aes-128-gcm
-  name: 342,343,364,523,524|CH-156.146.62.162-1063 | 19.00...
+  country: 🇺🇸 US
+  name: 342,343,364,421,523,524|CH-156.146.62.162-1063 | 19.00...
   password: shadowsocks
   port: 443
   server: 156.146.62.162
   type: ss
 - cipher: aes-128-gcm
-  name: 342,343,364,523,524|CH-156.146.62.163-1056 | 18.97...
+  country: 🇸 US
+  name: 342,343,364,421,523,524|CH-156.146.62.163-1056 | 18.97...
   password: shadowsocks
   port: 443
   server: 156.146.62.163
@@ -260,7 +263,7 @@ proxies:
     path: '%2Fyouxuan'
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 412,483,496|🔒 VL-TCP-RLT 🇭 CH-37.156.46.65...
+  name: 412,483,496|🔒 VL-TCP-RLT 🇨🇭 CH-37.156.46.6...
   network: tcp
   port: 59536
   reality-opts:
@@ -278,7 +281,7 @@ proxies:
       Host: /BIA_TELEGRAM@MARAMBASHI_MARAMBASHI
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 412,483,496|🔒 VL-TCP-RLT 🇨🇭 CH-37.156.46.4...
+  name: 412,483,496|🔒 VL-TCP-RLT  CH-37.156.46.44:...
   network: tcp
   port: 59536
   reality-opts:
@@ -389,7 +392,7 @@ proxies:
 - client-fingerprint: chrome
   grpc-opts:
     grpc-service-name: '@@jet_config-@jet_config-@jet_config'
-  name: 496|🔒 VL-GRPC-RLT 🇨🇭 CH-141.227.13...
+  name: '496|🔒 VL-GRPC-RLT 🇨🇭 CH-141.227.13... #1'
   network: grpc
   port: 1210
   reality-opts:
@@ -400,20 +403,13 @@ proxies:
   tls: false
   type: vless
   uuid: 77f680d1-1881-4b16-9eac-b8882c05fe62
-- client-fingerprint: chrome
-  grpc-opts:
-    grpc-service-name: '@@jet_config-@jet_config-@jet_config'
-  name: 496|🔒 VL-GRPC-RLT 🇭 CH-141.227.138...
-  network: grpc
-  port: 2030
-  reality-opts:
-    public-key: YWfCdTnr4FAOMYTY2dLrMtQUokyxOGpPhYEEszPj20E
-    short-id: 7fe29733
-  server: 141.227.138.11
-  servername: refersion.com
+- name: 496|🔒 VL-WS-NONE 🇭 CH-195.15.240.1...
+  network: ws
+  port: 2053
+  server: 195.15.240.12
   tls: false
   type: vless
-  uuid: 77f680d1-1881-4b16-9eac-b8882c05fe62
+  uuid: e22246f4-b57a-407d-a330-fe7842cdb4e7
 - grpc-opts:
     grpc-service-name: /@BinexTiFy/@BinexTiFy/@BinexTiFy/@BinexTiFy/@BinexTiFy/@BinexTiFy/@BinexTiFy/@BinexTiFy/@BinexTiFy/@BinexTiFy/@BinexTiFy/@BinexTiFy/@BinexTiFy/@BinexTiFy/@BinexTiFy/@BinexTiFy
   name: 496|🔒 VL-GRPC-NONE  CH-195.15.240....
@@ -423,6 +419,16 @@ proxies:
   tls: false
   type: vless
   uuid: a4c0c37e-c2bd-4d1e-feeb-34441f84935c
+- alterId: 0
+  cipher: auto
+  name: '496,549,558|🔒 VM-TCP-NA 🇨🇭 CH-23.166.88.18... #1'
+  network: tcp
+  port: '22324'
+  server: 23.166.88.183
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
 - alterId: 0
   cipher: auto
   name: 504|V2FETCH
@@ -441,6 +447,20 @@ proxies:
   tls: false
   type: vmess
   uuid: 597d19df-de7f-4d27-ec94-a80ab3cb9626
+- name: '509,510|🇨🇭_瑞士 #1'
+  network: ws
+  port: 443
+  server: 140.238.212.95
+  servername: nv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: nv.bgm2024.dpdns.org
+    path: /?ed=2560
 - name: 519|科技网络 🇨🇭_261
   network: ws
   port: 443
@@ -453,16 +473,6 @@ proxies:
     headers:
       Host: cfed.tgzdyz2.top
     path: tg%40zdyz2
-- alterId: 0
-  cipher: auto
-  name: 549|36|🔒 VM-TCP-NA 🇨🇭 CH-23.166.88...
-  network: tcp
-  port: '22324'
-  server: 23.166.88.183
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
 - name: '665,713,714,715|🇨🇭 瑞士1 #3'
   password: '!!str 1'
   port: 10009
