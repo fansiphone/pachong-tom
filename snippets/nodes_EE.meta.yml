@@ -1,4 +1,26 @@
 proxies:
+- alpn:
+  - h1
+  client-fingerprint: chrome
+  delay: 1106
+  flow: xtls-rprx-vision
+  http-opts:
+    headers: {}
+    path:
+    - /
+  name: 83,330,515|拉脱维亚 - Riga - SIA VEESP - 1
+  network: tcp
+  port: 6003
+  reality-opts:
+    public-key: EnZCoW0ZE047unVnwVg6jOTWxCvAbj3OrweS_ANYCVg
+    short-id: 34d8ddb4971913eb
+  server: cs_office.hideshots.eu
+  servername: t.me
+  tls: true
+  type: vless
+  udp: true
+  uuid: e34e5748-c75c-4847-bbc9-a389da28a1a2
+  xudp: true
 - alterId: 0
   cipher: auto
   name: '191,349,350|🌀22-EE |  21.4MB/s |  21.3MB/s #1'
@@ -21,14 +43,6 @@ proxies:
   tls: true
   type: vless
   uuid: 8da3432a-d4da-4f43-801f-342cda5eae9f
-- cipher: chacha20-ietf-poly1305
-  country: 🇷🇺 RU
-  name: 365,422,524,540|🇷🇺 bing1387
-  password: LqlPI19oqnunGNSLMvdXyB
-  port: 16356
-  server: 147.45.60.33
-  type: ss
-  udp: true
 - alterId: 0
   cipher: auto
   name: 365,523,524,552|🇪🇪 github.com/freefq - 爱沙尼亚  2...
@@ -45,10 +59,16 @@ proxies:
       Host: ''
     path: /
 - cipher: aes-256-cfb
-  name: '365,524|🇪EE-37.252.5.234-5178 #1'
+  name: '365,524|🇪EE-37.252.5.234-5216 #1'
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 37.252.5.234
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 365,524,525|EE-147.45.60.33-1069 | 7.309MB
+  password: LqlPI19oqnunGNSLMvdXyB
+  port: 16356
+  server: 147.45.60.33
   type: ss
 - name: 449|爱沙尼亚_塔林
   network: ws
@@ -290,19 +310,6 @@ proxies:
     headers:
       Host: a.ssll.gay
     path: twitterfreecodessecurity%3Dtls
-- alpn:
-  - h2
-  name: 497|🔒 VL-GRPC-TLS 🇪 EE-45.80.110.1...
-  network: grpc
-  port: 443
-  server: 45.80.110.128
-  servername: pqh36v4.hiddendom.shop
-  tls: true
-  type: vless
-  uuid: 401374e6-df77-41fb-f638-dad8184f175b
-  ws-opts:
-    headers:
-      Host: pqh36v4.hiddendom.shop
 - name: 497|🔒 VL-WS-NA 🇪 EE-45.80.110.75:8...
   network: ws
   port: 8880
@@ -340,6 +347,19 @@ proxies:
   uuid: 740b2fbe-6d3a-4061-ad0f-b5c5486dc92d
   ws-opts:
     path: '%2Fwp-admin'
+- alpn:
+  - h2
+  name: 497|🔒 VL-GRPC-TLS 🇪 EE-45.80.110.1...
+  network: grpc
+  port: 443
+  server: 45.80.110.128
+  servername: pqh36v4.hiddendom.shop
+  tls: true
+  type: vless
+  uuid: 401374e6-df77-41fb-f638-dad8184f175b
+  ws-opts:
+    headers:
+      Host: pqh36v4.hiddendom.shop
 - name: 497,558|🔒 TR-TCP-TLS 🇪🇪 EE-45.80.110.2...
   network: tcp
   password: bpb-trojan
@@ -361,41 +381,6 @@ proxies:
     headers:
       Host: ee1.xv2ray.net
     path: /vmess
-- alpn:
-  - h1
-  client-fingerprint: chrome
-  delay: 1106
-  flow: xtls-rprx-vision
-  http-opts:
-    headers: {}
-    path:
-    - /
-  name: 515|拉脱维亚 - Riga - SIA VEESP - 1
-  network: tcp
-  port: 6003
-  reality-opts:
-    public-key: EnZCoW0ZE047unVnwVg6jOTWxCvAbj3OrweS_ANYCVg
-    short-id: 34d8ddb4971913eb
-  server: cs_office.hideshots.eu
-  servername: t.me
-  tls: true
-  type: vless
-  udp: true
-  uuid: e34e5748-c75c-4847-bbc9-a389da28a1a2
-  xudp: true
-- alterId: 0
-  cipher: auto
-  name: 551|🇪EE-176.112.146.190-288
-  network: ws
-  port: 80
-  server: 176.112.146.190
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: f9247df4-02d5-4b31-acc5-4022652c5953
-  ws-headers:
-    Host: 176.112.146.190
-  ws-path: /
 - alterId: 0
   cipher: auto
   name: '552|🇪🇪 github.com/freefq - 爱沙尼亚  2... #1'
