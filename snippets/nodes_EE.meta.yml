@@ -65,7 +65,8 @@ proxies:
   server: 37.252.5.234
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '365,524|🇪EE-147.45.60.33-6622 #1'
+  country: 🇺 RU
+  name: '365,422,524|🇪EE-147.45.60.33-6622 #1'
   password: LqlPI19oqnunGNSLMvdXyB
   port: 16356
   server: 147.45.60.33
@@ -310,18 +311,19 @@ proxies:
     headers:
       Host: a.ssll.gay
     path: twitterfreecodessecurity%3Dtls
-- name: 497|🔒 VL-WS-TLS 🇪 EE-45.80.108.253...
-  network: ws
+- alpn:
+  - h2
+  name: 497|🔒 VL-GRPC-TLS 🇪 EE-45.80.110.1...
+  network: grpc
   port: 443
-  server: 45.80.108.253
-  servername: mmdserver.us.kg
+  server: 45.80.110.128
+  servername: pqh36v4.hiddendom.shop
   tls: true
   type: vless
-  uuid: 41abecd9-8096-4142-a75c-4e1d36d990bd
+  uuid: 401374e6-df77-41fb-f638-dad8184f175b
   ws-opts:
     headers:
-      Host: mmdserver.us.kg
-    path: '%2F%3Fed%3D2048'
+      Host: pqh36v4.hiddendom.shop
 - alpn:
   - h2
   - http/1.1
@@ -336,30 +338,18 @@ proxies:
   uuid: 740b2fbe-6d3a-4061-ad0f-b5c5486dc92d
   ws-opts:
     path: '%2Fwp-admin'
-- name: 497|🔒 VL-WS-NA 🇪 EE-45.80.110.75:8...
+- name: 497|🔒 VL-WS-TLS 🇪 EE-45.80.108.253...
   network: ws
-  port: 8880
-  server: 45.80.110.75
-  tls: false
-  type: vless
-  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
-  ws-opts:
-    headers:
-      Host: 23-lsjfjwiposkfls.hc2021.cfd
-    path: '%2F%3Fed%3D2560'
-- alpn:
-  - h2
-  name: 497|🔒 VL-GRPC-TLS 🇪 EE-45.80.110.1...
-  network: grpc
   port: 443
-  server: 45.80.110.128
-  servername: pqh36v4.hiddendom.shop
+  server: 45.80.108.253
+  servername: mmdserver.us.kg
   tls: true
   type: vless
-  uuid: 401374e6-df77-41fb-f638-dad8184f175b
+  uuid: 41abecd9-8096-4142-a75c-4e1d36d990bd
   ws-opts:
     headers:
-      Host: pqh36v4.hiddendom.shop
+      Host: mmdserver.us.kg
+    path: '%2F%3Fed%3D2048'
 - name: 497,558|🔒 TR-TCP-TLS 🇪🇪 EE-45.80.110.2...
   network: tcp
   password: bpb-trojan
@@ -381,6 +371,19 @@ proxies:
     headers:
       Host: ee1.xv2ray.net
     path: /vmess
+- alterId: 0
+  cipher: auto
+  name: 551|🇪EE-176.112.146.190-296
+  network: ws
+  port: 80
+  server: 176.112.146.190
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: f9247df4-02d5-4b31-acc5-4022652c5953
+  ws-headers:
+    Host: 176.112.146.190
+  ws-path: /
 - alterId: 0
   cipher: auto
   name: '552|🇪🇪 github.com/freefq - 爱沙尼亚  2... #1'
