@@ -79,19 +79,22 @@ proxies:
   type: trojan
   udp: true
 - cipher: aes-128-gcm
-  name: 343,344,365,524,525|CH-156.146.62.164-1087 | 30.88...
+  country: ' US'
+  name: 343,344,365,422,524,525|CH-156.146.62.164-1087 | 30.88...
   password: shadowsocks
   port: 443
   server: 156.146.62.164
   type: ss
 - cipher: aes-128-gcm
-  name: 343,344,365,524,525|CH-156.146.62.162-1066 | 30.87...
+  country: 🇸 US
+  name: 343,344,365,422,524,525|CH-156.146.62.162-1066 | 30.87...
   password: shadowsocks
   port: 443
   server: 156.146.62.162
   type: ss
 - cipher: aes-128-gcm
-  name: 343,344,365,524,525|CH-156.146.62.163-1068 | 24.66...
+  country: 🇸 US
+  name: 343,344,365,422,524,525|CH-156.146.62.163-1068 | 24.66...
   password: shadowsocks
   port: 443
   server: 156.146.62.163
@@ -240,20 +243,6 @@ proxies:
     headers:
       Host: 186.190.215.149
     path: linkvws
-- name: 367,536|1|1 |  5.1MB/s|Youtube|Openai
-  network: ws
-  port: '2053'
-  server: 37.156.44.42
-  type: vless
-  udp: true
-  uuid: a980de30-82d7-4a59-dfaf-f0b64c954ccc
-  ws-opts:
-    headers:
-      Host: ''
-      User-Agent: Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko)
-        Chrome/49.0.2623.112 Safari/537.36
-    path: /telegram,@BINEXTIFY-telegram,@BINEXTIFY-telegram,@BINEXTIFY-telegram,@BINEXTIFY-telegram,@BINEXTIFY-telegram,@BINEXTIFY-telegram,@BINEXTIFY-telegram,@BINEXTIFY-telegram,@BINEXTIFY?ed=2560
-  xudp: true
 - name: 374|🇨🇭瑞士
   network: ws
   port: 2086
@@ -308,17 +297,17 @@ proxies:
   type: vmess
   uuid: 81b2b630-8b6a-404f-b996-b12f13db5786
 - client-fingerprint: chrome
-  name: 497|🔒 VL-TCP-RLT  CH-188.213.129.1...
+  flow: xtls-rprx-vision
+  name: 497|🔒 VL-TCP-RLT 🇭 CH-84.234.29.94...
   network: tcp
-  port: 443
+  port: 1300
   reality-opts:
-    public-key: YWfCdTnr4FAOMYTY2dLrMtQUokyxOGpPhYEEszPj20E
-    short-id: fd1dff03520d8f56
-  server: 188.213.129.15
-  servername: app.hubspot.com
+    public-key: FdMFSpgEwT0nhczf37d-Z8gFgJtwyV4C_pJlnOTScUA
+  server: 84.234.29.94
+  servername: refersion.com
   tls: false
   type: vless
-  uuid: 8c2bb7d3-7079-434b-b2ba-dc7ddc2cb859
+  uuid: 04c73880-8479-4164-bd2c-e7d49eb82c2c
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: 497|🔒 VL-TCP-RLT 🇭 CH-195.15.215.1...
@@ -333,6 +322,20 @@ proxies:
   type: vless
   uuid: e40799ef-6343-450a-95cf-88b12749e492
 - client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: CANALTELEGRAM--jet_config--TELEGRAM--jet_config--CANALTELEGRAM--jet_config--TELEGRAM--jet_config--CANALTELEGRAM--jet_config
+  name: 497| VL-GRPC-RLT  CH-141.227.138.1...
+  network: grpc
+  port: 2030
+  reality-opts:
+    public-key: YWfCdTnr4FAOMYTY2dLrMtQUokyxOGpPhYEEszPj20E
+    short-id: 7fe29733
+  server: 141.227.138.11
+  servername: refersion.com
+  tls: false
+  type: vless
+  uuid: 3f9185b3-c35c-4b22-8675-cbd67bd03afc
+- client-fingerprint: chrome
   name: 497|🔒 VL-TCP-RLT 🇭 CH-37.156.45.88...
   network: tcp
   port: 80
@@ -345,57 +348,17 @@ proxies:
   type: vless
   uuid: 81447221-6548-60a1-a9d9-aac48e8c410b
 - client-fingerprint: chrome
-  grpc-opts:
-    grpc-service-name: CANALTELEGRAM--jet_config--TELEGRAM--jet_config--CANALTELEGRAM--jet_config--TELEGRAM--jet_config--CANALTELEGRAM--jet_config
-  name: 497|🔒 VL-GRPC-RLT 🇭 CH-141.227.138...
-  network: grpc
-  port: 2030
+  name: 497|🔒 VL-TCP-RLT 🇭 CH-188.213.129....
+  network: tcp
+  port: 443
   reality-opts:
     public-key: YWfCdTnr4FAOMYTY2dLrMtQUokyxOGpPhYEEszPj20E
-    short-id: 7fe29733
-  server: 141.227.138.11
-  servername: refersion.com
+    short-id: fd1dff03520d8f56
+  server: 188.213.129.15
+  servername: app.hubspot.com
   tls: false
   type: vless
-  uuid: 3f9185b3-c35c-4b22-8675-cbd67bd03afc
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 497|🔒 VL-TCP-RLT 🇭 CH-84.234.29.94...
-  network: tcp
-  port: 1300
-  reality-opts:
-    public-key: FdMFSpgEwT0nhczf37d-Z8gFgJtwyV4C_pJlnOTScUA
-  server: 84.234.29.94
-  servername: refersion.com
-  tls: false
-  type: vless
-  uuid: 04c73880-8479-4164-bd2c-e7d49eb82c2c
-- grpc-opts:
-    grpc-service-name: '%2F%40BinexTiFy%2F%40BinexTiFy%2F%40BinexTiFy%2F%40BinexTiFy%2F%40BinexTiFy%2F%40BinexTiFy%2F%40BinexTiFy%2F%40BinexTiFy%2F%40BinexTiFy%2F%40BinexTiFy%2F%40BinexTiFy%2F%40BinexTiFy%2F%40BinexTiFy%2F%40BinexTiFy%2F%40BinexTiFy%2F%40BinexTiFy'
-  name: 497|🔒 VL-GRPC-NONE 🇨 CH-37.156.44....
-  network: grpc
-  port: 6666
-  server: 37.156.44.42
-  tls: false
-  type: vless
-  uuid: 2491ed46-13f6-4650-bb76-e8fb251d6ea2
-- name: 497|🔒 VL-WS-NONE  CH-37.156.44.42:...
-  network: ws
-  port: 2053
-  server: 37.156.44.42
-  tls: false
-  type: vless
-  uuid: a980de30-82d7-4a59-dfaf-f0b64c954ccc
-  ws-opts:
-    path: '%2Ftelegram%2C%40BINEXTIFY-telegram%2C%40BINEXTIFY-telegram%2C%40BINEXTIFY-telegram%2C%40BINEXTIFY-telegram%2C%40BINEXTIFY-telegram%2C%40BINEXTIFY-telegram%2C%40BINEXTIFY-telegram%2C%40BINEXTIFY-telegram%2C%40BINEXTIFY%3Fed%3D2560'
-- name: 497|🔒 VL-GRPC-TLS 🇭 CH-141.227.138...
-  network: grpc
-  port: 2030
-  server: 141.227.138.11
-  servername: refersion.com
-  tls: true
-  type: vless
-  uuid: 3f9185b3-c35c-4b22-8675-cbd67bd03afc
+  uuid: 8c2bb7d3-7079-434b-b2ba-dc7ddc2cb859
 - name: 497|🔒 VL-WS-NA 🇭 CH-140.238.212.95...
   network: ws
   port: 443
@@ -405,6 +368,46 @@ proxies:
   tls: false
   type: vless
   uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+- name: 497|🔒 VL-GRPC-TLS 🇭 CH-141.227.138...
+  network: grpc
+  port: 1210
+  server: 141.227.138.11
+  servername: ubuntu.com
+  tls: true
+  type: vless
+  uuid: 83ee0d49-d693-41cb-b97f-1f69fa3e89cd
+- name: 497|🔒 VL-WS-NONE 🇭 CH-37.156.44.42...
+  network: ws
+  port: 2053
+  server: 37.156.44.42
+  tls: false
+  type: vless
+  uuid: a980de30-82d7-4a59-dfaf-f0b64c954ccc
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  name: 497|🔒 VL-WS-TLS 🇨 CH-185.18.250.23...
+  network: ws
+  port: 2087
+  server: 185.18.250.239
+  servername: Tp3993VbRi.ScOrPiOnBiGpLaY.oRg
+  tls: true
+  type: vless
+  uuid: 31a27ed1-2ec6-4ab5-95b6-3e213e59e0a9
+  ws-opts:
+    headers:
+      Host: Tp3993VbRi.ScOrPiOnBiGpLaY.oRg
+    path: '%2F'
+- grpc-opts:
+    grpc-service-name: /@BinexTiFy/@BinexTiFy/@BinexTiFy/@BinexTiFy/@BinexTiFy/@BinexTiFy/@BinexTiFy/@BinexTiFy/@BinexTiFy/@BinexTiFy/@BinexTiFy/@BinexTiFy/@BinexTiFy/@BinexTiFy/@BinexTiFy/@BinexTiFy
+  name: 497|🔒 VL-GRPC-NONE 🇨 CH-37.156.44....
+  network: grpc
+  port: 6666
+  server: 37.156.44.42
+  tls: false
+  type: vless
+  uuid: a4c0c37e-c2bd-4d1e-feeb-34441f84935c
 - name: 497|🔒 VL-WS-NONE 🇭 CH-185.18.250.1...
   network: ws
   port: 2095
@@ -416,29 +419,7 @@ proxies:
     headers:
       Host: fuckingcloudflare.2-5e8.workers.dev
     path: '%2F%40AZARBAYJAB1%40AZARBAYJAB1-TABREZ.NET%3Fed%3D2560'
-- name: 497|🔒 VL-WS-NONE 🇨🇭 CH-185.18.250....
-  network: ws
-  port: 2095
-  server: 185.18.250.240
-  tls: false
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: fuckingcloudflare.2-5e8.workers.dev
-    path: '%2F%40AZARBAYJAB1%40AZARBAYJAB1-TABREZ.NET%3Fed%3D2560'
-- name: 497|🔒 VL-WS-NONE 🇨 CH-185.18.250.7...
-  network: ws
-  port: 2095
-  server: 185.18.250.76
-  tls: false
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: fuckingcloudflare.2-5e8.workers.dev
-    path: '%2F%40AZARBAYJAB1%40AZARBAYJAB1-TABREZ.NET%3Fed%3D2560'
-- name: 497|🔒 VL-WS-NA  CH-38.180.15.138:8...
+- name: 497|🔒 VL-WS-NA 🇨 CH-38.180.15.138:...
   network: ws
   port: 80
   server: 38.180.15.138
@@ -449,14 +430,6 @@ proxies:
     headers:
       Host: vv.cscfwoker.fun
     path: Telegram%F0%9F%87%A8%F0%9F%87%B3%20%40WangCai2%20%2F%3Fed%3D2560
-- name: 497|🔒 VL-GRPC-TLS 🇨 CH-141.227.138...
-  network: grpc
-  port: 1210
-  server: 141.227.138.11
-  servername: ubuntu.com
-  tls: true
-  type: vless
-  uuid: 83ee0d49-d693-41cb-b97f-1f69fa3e89cd
 - name: 497|🔒 VL-TCP-NONE 🇭 CH-188.213.129...
   network: tcp
   port: 8855
@@ -467,6 +440,14 @@ proxies:
   ws-opts:
     headers:
       Host: zula.ir
+- name: 497|🔒 VL-GRPC-TLS  CH-141.227.138....
+  network: grpc
+  port: 2030
+  server: 141.227.138.11
+  servername: refersion.com
+  tls: true
+  type: vless
+  uuid: 3f9185b3-c35c-4b22-8675-cbd67bd03afc
 - name: 497|🔒 VL-WS-TLS 🇨 CH-152.67.74.223...
   network: ws
   port: 443
@@ -479,44 +460,6 @@ proxies:
     headers:
       Host: psycho.suex12.ir
     path: '%2FEujcp9ekQlNJr3cu%3Fed'
-- alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: chrome
-  name: 497|🔒 VL-WS-TLS 🇭 CH-185.18.250.23...
-  network: ws
-  port: 2087
-  server: 185.18.250.239
-  servername: Tp3993VbRi.ScOrPiOnBiGpLaY.oRg
-  tls: true
-  type: vless
-  uuid: 31a27ed1-2ec6-4ab5-95b6-3e213e59e0a9
-  ws-opts:
-    headers:
-      Host: Tp3993VbRi.ScOrPiOnBiGpLaY.oRg
-    path: '%2F'
-- name: 497|🔒 VL-WS-NONE 🇭 CH-185.18.250.2...
-  network: ws
-  port: 2095
-  server: 185.18.250.242
-  tls: false
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: fuckingcloudflare.2-5e8.workers.dev
-    path: '%2F%40AZARBAYJAB1%40AZARBAYJAB1-TABREZ.NET%3Fed%3D2560'
-- name: 497|🔒 VL-WS-TLS 🇨 CH-185.18.250.27...
-  network: ws
-  port: 443
-  server: 185.18.250.27
-  servername: sany.sofia321.woRkers.DEV
-  tls: true
-  type: vless
-  uuid: f9fd5b50-ae7d-5f9a-82e8-b1a9633e682e
-  ws-opts:
-    headers:
-      Host: sany.sofia321.woRkers.DEV
 - client-fingerprint: chrome
   flow: -udp443
   name: 497|🔒 VL-TCP-TLS  CH-144.24.243.20...
@@ -537,6 +480,50 @@ proxies:
     headers:
       Host: fuckingcloudflare.2-5e8.workers.dev
     path: '%2F%40AZARBAYJAB1%40AZARBAYJAB1-TABREZ.NET%3Fed%3D2560'
+- name: 497|🔒 VL-WS-NONE 🇨🇭 CH-185.18.250....
+  network: ws
+  port: 2095
+  server: 185.18.250.242
+  tls: false
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: fuckingcloudflare.2-5e8.workers.dev
+    path: '%2F%40AZARBAYJAB1%40AZARBAYJAB1-TABREZ.NET%3Fed%3D2560'
+- name: 497|🔒 VL-WS-NONE 🇨 CH-185.18.250.7...
+  network: ws
+  port: 2095
+  server: 185.18.250.76
+  tls: false
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: fuckingcloudflare.2-5e8.workers.dev
+    path: '%2F%40AZARBAYJAB1%40AZARBAYJAB1-TABREZ.NET%3Fed%3D2560'
+- name: 497|🔒 VL-WS-NONE 🇭 CH-185.18.250.2...
+  network: ws
+  port: 2095
+  server: 185.18.250.240
+  tls: false
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: fuckingcloudflare.2-5e8.workers.dev
+    path: '%2F%40AZARBAYJAB1%40AZARBAYJAB1-TABREZ.NET%3Fed%3D2560'
+- name: 497|🔒 VL-WS-TLS 🇨 CH-185.18.250.27...
+  network: ws
+  port: 443
+  server: 185.18.250.27
+  servername: sany.sofia321.woRkers.DEV
+  tls: true
+  type: vless
+  uuid: f9fd5b50-ae7d-5f9a-82e8-b1a9633e682e
+  ws-opts:
+    headers:
+      Host: sany.sofia321.woRkers.DEV
 - alterId: 0
   cipher: auto
   name: 505|V2FETCH
