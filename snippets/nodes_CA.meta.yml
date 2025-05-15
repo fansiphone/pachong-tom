@@ -73,6 +73,16 @@ proxies:
   uuid: 2429bee3-e0c1-47dd-b420-75e6512b184b
 - alterId: 0
   cipher: auto
+  name: '115,116,417,418|加拿大1-1A #1'
+  port: 45064
+  server: haa.dashuai.cyou
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 1b49044d-6e40-4825-a562-04d3ee18750c
+- alterId: 0
+  cipher: auto
   name: '115,116,417,418|加拿大2-1A #1'
   port: 45065
   server: xdd.dashuai.cyou
@@ -80,17 +90,17 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 78e9c3f2-b812-4226-b3b1-24d4b895d61b
+  uuid: 1b49044d-6e40-4825-a562-04d3ee18750c
 - alterId: 0
   cipher: auto
-  name: '115,417|加拿大1 #1'
+  name: '116,418|加拿大1-1B #1'
   port: 45064
   server: haa.dashuai.cyou
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: 78e9c3f2-b812-4226-b3b1-24d4b895d61b
+  uuid: 7c6f9e26-599e-4323-98ae-6bd8c7e0235b
 - alterId: 0
   cipher: auto
   name: '116,418|加拿大2-1B #1'
@@ -100,7 +110,7 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 1529b6eb-1deb-43fa-804b-ad4219ba8fff
+  uuid: 7c6f9e26-599e-4323-98ae-6bd8c7e0235b
 - down: 0
   name: 185|🇨🇦 加拿大1 | x0.01
   password: 32d3795c-7e38-425a-8a8c-9d195d1cb351
@@ -216,7 +226,8 @@ proxies:
   server: 149.22.95.183
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 343,365,524,525|🇨🇦CA-142.4.216.225-1136 | 18.3...
+  country: 🇦CA
+  name: 343,365,422,524,525|🇨🇦CA-142.4.216.225-1136 | 18.3...
   password: JIhN6rBKkaEboLNXVSv5rq
   port: 80
   server: ca225.vpnbook.com
@@ -1565,10 +1576,27 @@ proxies:
   skip-cert-verify: false
   sni: trj.rollingnext.co.uk
   type: trojan
-- name: 367,536|2|🇦3 |  2.7MB/s|62%|Disney|Ope...
+- alpn:
+  - h3
+  auth: cfe032e4-1bc3-454f-9d09-301b0aea08ff
+  down: ''
+  fingerprint: ''
+  name: '367,476,489,493,494,497,536,538|2|🇨🇦2 |  1.4MB/s|20%|Netflix|D... #2'
+  obfs: ''
+  obfs-password: ''
+  password: cfe032e4-1bc3-454f-9d09-301b0aea08ff
+  port: 45979
+  server: 40.233.80.61
+  skip-cert-verify: true
+  sni: www.bing.com
+  tls: false
+  type: hysteria2
+  udp: true
+  up: ''
+- name: 367,536|2|🇦3 |  1.5MB/s|Disney|Gemini
   network: ws
-  port: 55555
-  server: 128.14.140.2
+  port: 443
+  server: 160.123.255.180
   servername: sl.ylka.dpdns.org
   skip-cert-verify: true
   tls: true
@@ -1579,10 +1607,10 @@ proxies:
     headers:
       Host: sl.ylka.dpdns.org
     path: /?ed=2560
-- name: 367,536|2|🇨🇦4 |  5.3MB/s|62%|Disney
+- name: 367,510,511,536|2|🇦4 |  2.0MB/s|62%|Disney|Gem...
   network: ws
   port: 443
-  server: 160.79.104.33
+  server: 212.183.88.249
   servername: sl.ylka.dpdns.org
   skip-cert-verify: true
   tls: true
@@ -1591,35 +1619,7 @@ proxies:
   uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
   ws-opts:
     headers:
-      Host: sl.ylka.dpdns.org
-    path: /?ed=2560
-- name: 367,536|2|🇦5 |  1.0MB/s|62%|Disney|Ope...
-  network: ws
-  port: 443
-  server: 160.79.105.66
-  servername: sl.ylka.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      Host: sl.ylka.dpdns.org
-    path: /?ed=2560
-- name: 367,536|2|🇦6 |  1.7MB/s|62%|Disney
-  network: ws
-  port: 443
-  server: huxley.ns.cloudflare.com
-  servername: sl.ylka.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      Host: sl.ylka.dpdns.org
+      host: sl.ylka.dpdns.org
     path: /?ed=2560
 - cipher: aes-256-cfb
   name: 383|🇨🇦 CA, Vancouver
@@ -1731,7 +1731,7 @@ proxies:
       Host: 51b0e42034dd75a815fa9eb16021fbda.mobgslb.tbcache.com
     path: /
   ws-path: /
-- name: '440,567|US美国(mibei77.com 米贝节点分享) #280'
+- name: '440,497,567|US美国(mibei77.com 米贝节点分享) #280'
   network: ws
   port: 443
   server: 212.183.88.46
@@ -3790,7 +3790,7 @@ proxies:
     path: /linkws
 - alterId: 0
   cipher: auto
-  name: '448|加拿大_多伦多 #244'
+  name: '448,556|关注电报https://t.me/aifenxiang202... #31'
   network: ws
   port: 2086
   server: 104.26.8.156
@@ -3998,7 +3998,7 @@ proxies:
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: '448,450,556|关注电报https://t.me/aifenxiang202... #9'
+  name: '448,450,556|关注电报https://t.me/aifenxiang202... #1'
   network: ws
   port: '2086'
   server: 104.26.0.56
@@ -4039,7 +4039,7 @@ proxies:
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: '448,449,450,556|关注电报https://t.me/aifenxiang202... #21'
+  name: '448,449,450|加拿大_多伦多 #355'
   network: ws
   port: 2086
   server: ip.sb
@@ -4053,7 +4053,7 @@ proxies:
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: '448,449,450|加拿大_多伦多 #384'
+  name: '448,449,450,556|关注电报https://t.me/aifenxiang202... #22'
   network: ws
   port: 2086
   server: malaysia.com
@@ -4067,7 +4067,7 @@ proxies:
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: '448,556|关注电报https://t.me/aifenxiang202... #6'
+  name: '448,556|关注电报https://t.me/aifenxiang202... #14'
   network: ws
   port: 2086
   server: singapore.com
@@ -4080,7 +4080,7 @@ proxies:
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: '448,556|关注电报https://t.me/aifenxiang202... #24'
+  name: '448|加拿大_多伦多 #266'
   network: ws
   port: 2086
   server: japan.com
@@ -4119,7 +4119,7 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: '448|加拿大_多伦多 #269'
+  name: '448,556|关注电报https://t.me/aifenxiang202... #25'
   network: ws
   port: 2086
   server: icook.tw
@@ -4171,7 +4171,7 @@ proxies:
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: '448|加拿大_多伦多 #273'
+  name: '448,556|关注电报https://t.me/aifenxiang202... #34'
   network: ws
   port: 2086
   server: 104.19.21.63
@@ -4210,7 +4210,7 @@ proxies:
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: '448|加拿大_多伦多 #276'
+  name: '448,556|关注电报https://t.me/aifenxiang202... #32'
   network: ws
   port: 2086
   server: 104.22.37.243
@@ -5027,7 +5027,7 @@ proxies:
     path: /api/v3/download.getFile
 - alterId: 0
   cipher: auto
-  name: '449,556|关注电报https://t.me/aifenxiang202... #7'
+  name: '449,556|关注电报https://t.me/aifenxiang202... #24'
   network: ws
   port: 2086
   server: 104.19.38.62
@@ -5079,7 +5079,7 @@ proxies:
     path: '%2F%3Fed%3D2048'
 - alterId: 0
   cipher: auto
-  name: '450,556|关注电报https://t.me/aifenxiang202... #14'
+  name: '450,556|关注电报https://t.me/aifenxiang202... #10'
   network: ws
   port: 2086
   server: 23.227.38.6
@@ -5092,7 +5092,7 @@ proxies:
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: '450,556|关注电报https://t.me/aifenxiang202... #22'
+  name: '450,556|关注电报https://t.me/aifenxiang202... #13'
   network: ws
   port: 2086
   server: 23.227.38.6
@@ -5119,7 +5119,7 @@ proxies:
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: '450,556|关注电报https://t.me/aifenxiang202... #20'
+  name: '450,556|关注电报https://t.me/aifenxiang202... #4'
   network: ws
   port: 2086
   server: 23.227.38.5
@@ -5146,11 +5146,10 @@ proxies:
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: '450,556|关注电报https://t.me/aifenxiang202... #23'
+  name: '450|加拿大_渥太華 #15'
   network: ws
   port: 2086
   server: 23.227.38.6
-  servername: ip006.3196772.xyz
   tls: false
   type: vmess
   uuid: 29eebb60-b27b-4a9d-bba5-947763d9205e
@@ -5251,7 +5250,7 @@ proxies:
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: '450,556|关注电报https://t.me/aifenxiang202... #19'
+  name: '450,556|关注电报https://t.me/aifenxiang202... #20'
   network: ws
   port: 2086
   server: 104.19.32.46
@@ -5278,7 +5277,7 @@ proxies:
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: '450,556|关注电报https://t.me/aifenxiang202... #32'
+  name: '450,556|关注电报https://t.me/aifenxiang202... #15'
   network: ws
   port: 2086
   server: 104.19.38.62
@@ -5331,7 +5330,7 @@ proxies:
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: '450,556|关注电报https://t.me/aifenxiang202... #18'
+  name: '450,556|关注电报https://t.me/aifenxiang202... #21'
   network: ws
   port: 2086
   server: 104.19.51.232
@@ -5384,7 +5383,7 @@ proxies:
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: '450,556|关注电报https://t.me/aifenxiang202... #2'
+  name: '450,556|关注电报https://t.me/aifenxiang202... #12'
   network: ws
   port: 2086
   server: 104.19.51.232
@@ -5411,7 +5410,7 @@ proxies:
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: '450,556|关注电报https://t.me/aifenxiang202... #4'
+  name: '450,556|关注电报https://t.me/aifenxiang202... #7'
   network: ws
   port: 2086
   server: 104.19.46.233
@@ -5490,7 +5489,7 @@ proxies:
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: '450,556|关注电报https://t.me/aifenxiang202... #3'
+  name: '450,556|关注电报https://t.me/aifenxiang202... #17'
   network: ws
   port: 2086
   server: 104.19.38.62
@@ -5756,7 +5755,7 @@ proxies:
     path: /YnqGMcAt/
 - alterId: 0
   cipher: auto
-  name: '450,556|关注电报https://t.me/aifenxiang202... #17'
+  name: '450,556|关注电报https://t.me/aifenxiang202... #2'
   network: ws
   port: 2086
   server: 104.16.148.244
@@ -6029,21 +6028,431 @@ proxies:
   tls: false
   type: vmess
   uuid: db5afae4-ac23-41a6-8378-f307a9a47436
-- alpn:
-  - h3
-  auth: cfe032e4-1bc3-454f-9d09-301b0aea08ff
-  name: '476,489,493,494,497|3|🇨🇦6 |  1.5MB/s|20%|Netflix|D... #4'
-  password: cfe032e4-1bc3-454f-9d09-301b0aea08ff
-  port: 45979
-  server: 40.233.80.61
-  skip-cert-verify: true
-  sni: www.bing.com
+- client-fingerprint: randomized
+  fingerprint: ''
+  name: 457|e527ac4ddf0941fd8c7c87c1671587...
+  network: ws
+  port: 443
+  server: 104.21.112.1
+  servername: mmrez-509.pages.dev
+  tls: true
+  type: vless
+  udp: false
+  uuid: 80a53317-30aa-49a5-9704-5d4ec64d1813
+  ws-opts:
+    headers:
+      host: mmrez-509.pages.dev
+    path: /YcoJ68CXt2AFHehq?ed=2560
+- client-fingerprint: chrome
+  fingerprint: ''
+  name: 457|ea85e7a373e04536b4ad453fede84b...
+  network: ws
+  port: 80
+  server: www.speedtest.net
   tls: false
-  type: hysteria2
-  udp: true
+  type: vless
+  udp: false
+  uuid: ac2bfdf2-7c88-449f-b353-0ff9d026bb6a
+  ws-opts:
+    path: /@SavageNet----@SavageNet----@SavageNet----@SavageNet----@SavageNet----@SavageNet----@SavageNet----@SavageNet----@SavageNet----@SavageNet----@SavageNet----@SavageNet?ed=2048
+- client-fingerprint: chrome
+  fingerprint: ''
+  name: 457|f8ef2a91966d4e269655cb74d4572d...
+  network: ws
+  port: 80
+  server: 104.17.148.22
+  tls: false
+  type: vless
+  udp: false
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    path: /re5IzbZ9IZZMddtw?ed=2560/TELEGRAM-@MARAMBASHI_MARAMBASHI
+- client-fingerprint: chrome
+  fingerprint: ''
+  name: 457|aff7abda0a1f435b823d91cb8b4f6c...
+  network: ws
+  port: 8880
+  server: www.speedtest.net
+  tls: false
+  type: vless
+  udp: false
+  uuid: ac7623cc-cb2a-4e26-839a-580c8f080b74
+  ws-opts:
+    path: /Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420?ed=2048
+- client-fingerprint: chrome
+  fingerprint: ''
+  name: 457|804a642a6178457292f944b3134fc7...
+  network: ws
+  port: 8880
+  server: www.zula.ir
+  tls: false
+  type: vless
+  udp: false
+  uuid: ac7623cc-cb2a-4e26-839a-580c8f080b74
+  ws-opts:
+    path: /Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420?ed=2048
+- client-fingerprint: chrome
+  fingerprint: ''
+  name: 457|c543041fd3d1449cb4a479e43b0dd9...
+  network: ws
+  port: 80
+  server: 104.16.132.136
+  tls: false
+  type: vless
+  udp: false
+  uuid: 0cca1132-94a6-476c-ab13-6b28e0727751
+  ws-opts:
+    path: /?ed=2560
+- client-fingerprint: chrome
+  fingerprint: ''
+  name: '457,535|🇺🇸_US_美国->🇨🇳_CN_中国_2 #1'
+  network: ws
+  port: 8080
+  server: 104.19.54.50
+  tls: false
+  type: vless
+  udp: false
+  uuid: d8b04c6a-bafd-47a9-993a-6f8f7d0998fe
+  ws-opts:
+    headers:
+      host: www.speedtest.net.www.zula.ir.cloudflare.com.www.parsvds.ir.svgspeedtest.net.
+    path: /@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy?ed=2048
+- client-fingerprint: chrome
+  fingerprint: ''
+  name: 457|65f1023171f647a195bce3d8e364d0...
+  network: ws
+  port: 80
+  server: 104.16.213.98
+  tls: false
+  type: vless
+  udp: false
+  uuid: 708bb7c1-473c-4f06-9f29-69e6ea006f66
+  ws-opts:
+    path: /Telegram@V2ray_Alpha/?ed=2560
+- client-fingerprint: chrome
+  fingerprint: ''
+  name: 457|e36d7f81363143429b065ff31a4e99...
+  network: ws
+  port: 80
+  server: www.speedtest.net
+  tls: false
+  type: vless
+  udp: false
+  uuid: 9de9a82e-8c84-4e84-8cc9-b025fc8e9629
+  ws-opts:
+    path: /@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy?ed=2048
+- client-fingerprint: chrome
+  name: 457,550|3|b6d2b681934447909d3c781a0bb6...
+  password: 53249200-30ff-436f-a032-0bb00605f8f9
+  port: 443
+  server: 104.21.24.172
+  type: trojan
+- client-fingerprint: chrome
+  name: 457,550|3|875f15f09a424ef19c3f326d0caf...
+  password: 114ad614-fe6c-4422-b0af-be6161190d7a
+  port: 443
+  server: 172.67.211.136
+  type: trojan
+- client-fingerprint: chrome
+  fingerprint: ''
+  name: 457|1d0fa3901d594f9bb729602c5f6778...
+  network: ws
+  port: 80
+  server: 151.101.64.155
+  tls: false
+  type: vless
+  udp: false
+  uuid: a04d9ec4-5034-4acc-9771-c2baf1dfdcf1
+  ws-opts:
+    path: /-LiV2ry@LIGHTNING6-TEL--@LIGHTNING6-TEL--@LIGHTNING6-TEL--@LIGHTNING6-JOIN-@LIGHTNING6-TEL--@LIGHTNING6-JOIN-@LIGHTNING6-TEL-@LIGHTNING6-TEL--@LIGHTNING6-JOIN-@LIGHTNING6-TEL--@LIGHTNING6?ed=2048
+- client-fingerprint: chrome
+  fingerprint: ''
+  name: 457|85b81d43a3d64421acddcf7d7280f6...
+  network: ws
+  port: 8880
+  server: 104.17.147.22
+  tls: false
+  type: vless
+  udp: false
+  uuid: 39bd8266-8f33-492e-a44b-1a7c393a8281
+  ws-opts:
+    path: /Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420?ed=2048
+- client-fingerprint: chrome
+  fingerprint: ''
+  name: 457|edcb9c72cf7249499cbbd28da7554f...
+  network: ws
+  port: 2095
+  server: 104.18.20.69
+  tls: false
+  type: vless
+  udp: false
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    path: /
+- client-fingerprint: chrome
+  name: 457,550|3|788f39e740a44372a75251c88f18...
+  password: fefba36d-5142-42f1-b14d-db5249511d93
+  port: 443
+  server: 104.21.82.39
+  type: trojan
+- client-fingerprint: chrome
+  fingerprint: ''
+  name: 457|04c1fdbc9d524eb4bafb64a2a49ac6...
+  network: ws
+  port: 443
+  server: 104.21.11.194
+  servername: m4dfghu.999358.xyz
+  tls: true
+  type: vless
+  udp: false
+  uuid: ced307a2-af2c-4113-bebc-fb888c702b7d
+  ws-opts:
+    headers:
+      host: m4dfghu.999358.xyz
+    path: /a2YATZF8eZrBwsbnEcmJLxC
+- client-fingerprint: chrome
+  fingerprint: ''
+  name: 457|24b30acfae1e4f4d880eaae07d7b97...
+  network: ws
+  port: 443
+  server: 104.21.86.140
+  servername: M6dFg.777219.XYZ
+  tls: true
+  type: vless
+  udp: false
+  uuid: d889b4c8-dab9-4b0c-932b-e4071c727308
+  ws-opts:
+    headers:
+      host: M6dFg.777219.XYZ
+    path: /s9mtnLBjERPwvxRA
+- client-fingerprint: chrome
+  name: 457,550|3|62e74940bdd4468d9cf91e9c9445...
+  password: fefba36d-5142-42f1-b14d-db5249511d93
+  port: 443
+  server: 104.21.61.154
+  type: trojan
+- client-fingerprint: chrome
+  name: 457,550|3|082551d40981495c8185419c8781...
+  password: 9e7caa3b-ca9c-40ba-9ea0-f0c992359239
+  port: 443
+  server: 172.67.220.93
+  type: trojan
+- client-fingerprint: chrome
+  name: 457,550|3|e70cae6a21df40bdaa746eb08d61...
+  password: 4a3ee276-f50f-46f6-ba4d-13571732ab70
+  port: 443
+  server: 172.67.175.139
+  type: trojan
+- client-fingerprint: chrome
+  name: 457,550|3|b265aa1d999848d99ee8eca0d261...
+  password: 4be20cf1-6af1-4e87-ae5a-80d6ec30fecd
+  port: 443
+  server: 172.67.214.21
+  type: trojan
+- client-fingerprint: chrome
+  name: 457,550|3|8e715659b3214f769700b082dc70...
+  password: 4a3ee276-f50f-46f6-ba4d-13571732ab70
+  port: 443
+  server: 172.67.204.120
+  type: trojan
+- client-fingerprint: chrome
+  fingerprint: ''
+  name: 457|bb2241743676489bb69a16d318ca13...
+  network: ws
+  port: 443
+  server: 104.17.177.51
+  servername: salad.1945157171.workers.dev
+  tls: true
+  type: vless
+  udp: false
+  uuid: 54c5f9f1-1f0d-4d61-9eb8-db65a1f62d56
+  ws-opts:
+    headers:
+      host: salad.1945157171.workers.dev
+    path: /
+- client-fingerprint: randomized
+  fingerprint: ''
+  name: 457|5482ec731a6944118d932869e169dc...
+  network: ws
+  port: 443
+  server: 104.21.32.208
+  servername: PpaL03.EDmUnD-RAU.wORkeRs.dev
+  tls: true
+  type: vless
+  udp: false
+  uuid: 4d5400ef-201d-43a3-890f-c767746fc524
+  ws-opts:
+    headers:
+      host: PpaL03.EDmUnD-RAU.wORkeRs.dev
+    path: /Telegram@SiNABiGO/?ed=2048
+- client-fingerprint: chrome
+  fingerprint: ''
+  name: 457|fcf736b2eff244afacfc65c4e40cf1...
+  network: ws
+  port: 443
+  server: 172.67.229.214
+  servername: abc.vpneee.top
+  tls: true
+  type: vless
+  udp: false
+  uuid: 8250d638-45df-41fa-b06f-160d1cb1de0c
+  ws-opts:
+    headers:
+      host: abc.vpneee.top
+    path: /YnqGMcAt/
+- client-fingerprint: chrome
+  fingerprint: ''
+  name: 457|b626c0c67b9046339f576ab93950fe...
+  network: ws
+  port: 443
+  server: 104.16.213.210
+  servername: cf-wuxianll.xixi.icu
+  tls: true
+  type: vless
+  udp: false
+  uuid: d4324490-9d8f-4424-9a4d-a5178ebfbeca
+  ws-opts:
+    headers:
+      host: cf-wuxianll.xixi.icu
+    path: /
+- client-fingerprint: randomized
+  fingerprint: ''
+  name: 457|9b2d88f3434243e3b3f3cc9ca52e77...
+  network: ws
+  port: 443
+  server: 104.31.16.65
+  servername: uciranirskiaromadarjendeh.bitokaw551.workers.dev
+  tls: true
+  type: vless
+  udp: false
+  uuid: 741f2cb6-4d5b-4fd7-830a-d731c9e1e859
+  ws-opts:
+    headers:
+      host: uciranirskiaromadarjendeh.bitokaw551.workers.dev
+    path: /?ed=443
+- client-fingerprint: chrome
+  fingerprint: ''
+  name: 457|e03b00d3e8514da19ec4a4c2ed4184...
+  network: ws
+  port: 443
+  server: 104.21.2.88
+  servername: worker-little-frost-1b1c.cataben844.workers.Dev
+  tls: true
+  type: vless
+  udp: false
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      host: worker-little-frost-1b1c.cataben844.workers.Dev
+    path: /
+- client-fingerprint: chrome
+  fingerprint: ''
+  name: 457|fb0da3136ec84404a0a048b103f4c5...
+  network: ws
+  port: 443
+  server: 172.67.157.75
+  servername: damp-moon-9a22.houmandadash84.workers.dev
+  tls: true
+  type: vless
+  udp: false
+  uuid: 9a407093-e267-4f2a-91da-b7bfc63dcaf6
+  ws-opts:
+    headers:
+      host: damp-moon-9a22.houmandadash84.workers.dev
+    path: /?ed=2048
+- client-fingerprint: chrome
+  fingerprint: ''
+  name: 457|1173f2f811774d228f5f4c96c31104...
+  network: ws
+  port: 443
+  server: 104.21.84.35
+  servername: PPAL03.NaVIYi2139.WOrKErs.dEV
+  tls: true
+  type: vless
+  udp: false
+  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
+  ws-opts:
+    headers:
+      host: PPAL03.NaVIYi2139.WOrKErs.dEV
+    path: /
+- client-fingerprint: chrome
+  fingerprint: ''
+  name: 457|dc384126677341828cc9393f8a411f...
+  network: ws
+  port: 8443
+  server: 172.66.44.81
+  servername: azadnet05.pages.dev
+  tls: true
+  type: vless
+  udp: false
+  uuid: 4d794980-54c0-4fcb-8def-c2beaecadbad
+  ws-opts:
+    headers:
+      host: azadnet05.pages.dev
+    path: /V29fjXieDqVsAAmi?ed=2560
+- client-fingerprint: randomized
+  fingerprint: ''
+  name: 457|c8c38d85f1fc40b3a8d50c69f40708...
+  network: ws
+  port: 443
+  server: 172.67.169.50
+  servername: pPAl03.cAyNAn-dAedALus.wORkeRS.Dev
+  tls: true
+  type: vless
+  udp: false
+  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
+  ws-opts:
+    headers:
+      host: pPAl03.cAyNAn-dAedALus.wORkeRS.Dev
+    path: /telegram@V2ray_Alpha/?ed=2560
+- client-fingerprint: chrome
+  fingerprint: ''
+  name: 457|ab6d31af33954ce29b2e5bc7b591a8...
+  network: ws
+  port: 443
+  server: 172.66.47.175
+  servername: azadnet05.pages.dev
+  tls: true
+  type: vless
+  udp: false
+  uuid: 4d794980-54c0-4fcb-8def-c2beaecadbad
+  ws-opts:
+    headers:
+      host: azadnet05.pages.dev
+    path: /onqTSGxT0rgc7nPc?ed=2560
+- client-fingerprint: chrome
+  fingerprint: ''
+  name: 457|bfcfdf4946f34b838690396815ccff...
+  network: ws
+  port: 8443
+  server: www.speedtest.net
+  servername: GxVpOnLl13.pRiMeXaD.OrG
+  tls: true
+  type: vless
+  udp: false
+  uuid: 96a1b724-68d2-4f4d-ab25-38ecd83577bc
+  ws-opts:
+    headers:
+      host: GxVpOnLl13.pRiMeXaD.OrG
+    path: /
+- client-fingerprint: chrome
+  fingerprint: ''
+  name: 457|76dff3cc76c540c1af0422e2160071...
+  network: ws
+  port: 2096
+  server: 104.17.148.22
+  servername: LgUoZjGr14.hAmEcHiRuHaVaSt.cOm
+  tls: true
+  type: vless
+  udp: false
+  uuid: 96a1b724-68d2-4f4d-ab25-38ecd83577bc
+  ws-opts:
+    headers:
+      host: LgUoZjGr14.hAmEcHiRuHaVaSt.cOm
+    path: /
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 476,497|🔒 VL-TCP-TLS 🇦 CA-40.233.80.61...
+  name: 476,497|🔒 VL-TCP-TLS 🇨 CA-40.233.80.61...
   network: tcp
   port: 26113
   reality-opts:
@@ -6154,7 +6563,7 @@ proxies:
       Host: 1.659118019.uk
     path: '%2F%3Fed%3D2560'
 - client-fingerprint: chrome
-  name: 497|🔒 VL-TCP-RLT 🇦 CA-167.99.183.3...
+  name: 497|🔒 VL-TCP-RLT  CA-167.99.183.32...
   network: tcp
   port: 443
   reality-opts:
@@ -6165,208 +6574,6 @@ proxies:
   tls: false
   type: vless
   uuid: e26a79fd-35d0-4c25-8f6b-8bcd8726348c
-- name: 497|🔒 VL-WS-TLS  CA-40.69.106.103:...
-  network: ws
-  port: 443
-  server: 40.69.106.103
-  servername: mmghgy5.azurewebsites.net
-  tls: true
-  type: vless
-  uuid: 6f995056-7802-4a1d-bff7-61678e626c3f
-  ws-opts:
-    headers:
-      Host: mmghgy5.azurewebsites.net
-    path: '%2F'
-- client-fingerprint: chrome
-  name: 497|🔒 VL-WS-TLS 🇦 CA-23.227.39.179...
-  network: ws
-  port: 2053
-  server: 23.227.39.179
-  servername: n2vpn.projectis.ir
-  tls: true
-  type: vless
-  uuid: fa80408d-f7ce-4c96-ac0b-6c1b791b5b69
-  ws-opts:
-    headers:
-      Host: n2vpn.projectis.ir
-    path: /@n2vpn
-- name: 497|🔒 VL-WS-NONE  CA-44.31.62.2:80
-  network: ws
-  port: 80
-  server: 44.31.62.2
-  tls: false
-  type: vless
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  ws-opts:
-    headers:
-      Host: reedfree8mahsang2.redorg.ir
-    path: Telegram%F0%9F%87%A8%F0%9F%87%B3+%40WangCai2+%2F%3Fed%3D2560
-- name: 497|🔒 VL-WS-TLS 🇦 CA-23.227.39.154...
-  network: ws
-  port: 2053
-  server: 23.227.39.154
-  servername: 8b562c77-fc99-4d25-9100-d8c0849cc9ff.bvzizx.com
-  tls: true
-  type: vless
-  uuid: 8b562c77-fc99-4d25-9100-d8c0849cc9ff
-  ws-opts:
-    headers:
-      Host: cosi.bvzizx.com
-    path: '%2Fwss37193'
-- name: 497|🔒 VL-WS-TLS  CA-23.227.38.135:...
-  network: ws
-  port: 443
-  server: 23.227.38.135
-  servername: eupmaq-fyvoq0da0mdvvzehshnqqcd6inl5ihzvry3fo5veeghhfkkhertre6uy.t03w4b.workers.Dev
-  tls: true
-  type: vless
-  uuid: 465fc43c-9872-40f9-bb94-ebee934e40b4
-  ws-opts:
-    headers:
-      Host: eupmaq-fyvoq0da0mdvvzehshnqqcd6inl5ihzvry3fo5veeghhfkkhertre6uy.t03w4b.workers.Dev
-    path: '%2F'
-- name: 497|🔒 VL-WS-TLS 🇦 CA-159.203.57.16...
-  network: ws
-  port: 3951
-  server: 159.203.57.161
-  servername: ukmci.cdnpark.net
-  tls: true
-  type: vless
-  uuid: fd99e44d-a046-4477-b48b-8f15bc0f217a
-  ws-opts:
-    path: '%2F'
-- client-fingerprint: ios
-  name: 497|🔒 VL-WS-TLS 🇦 CA-23.227.38.0:4...
-  network: ws
-  port: 443
-  server: 23.227.38.0
-  servername: us5.pqvip.top
-  tls: true
-  type: vless
-  uuid: 50c32afb-ee63-443c-ad0a-a3f4866e4106
-  ws-opts:
-    headers:
-      Host: us5.pqvip.top
-    path: '%2Fpq%2Fus5'
-- client-fingerprint: chrome
-  name: '497|🔒 VL-WS-TLS 🇦 CA-23.227.39.179... #1'
-  network: ws
-  port: 2096
-  server: 23.227.39.179
-  servername: n2vpn.projectis.ir
-  tls: true
-  type: vless
-  uuid: a2c96a8e-0dec-49f3-945b-efb6353c11e8
-  ws-opts:
-    headers:
-      Host: n2vpn.projectis.ir
-    path: /@n2vpn
-- name: 497|🔒 VL-WS-NONE 🇨 CA-23.227.39.18...
-  network: ws
-  port: 8080
-  server: 23.227.39.185
-  tls: false
-  type: vless
-  uuid: ebe7d94e-c664-48f6-9ab5-b7f68b9029f2
-  ws-opts:
-    headers:
-      Host: seyyed.webdade.ddns-ip.net
-    path: '%2FV2ray_Alpha%2F%3Fed%3D2560'
-- client-fingerprint: chrome
-  name: 497|🔒 VL-WS-TLS 🇨🇦 CA-23.227.39.17...
-  network: ws
-  port: 2083
-  server: 23.227.39.179
-  servername: n2vpn.projectis.ir
-  tls: true
-  type: vless
-  uuid: 466346a8-84ec-4f9b-8fc9-f1ccb079dd67
-  ws-opts:
-    headers:
-      Host: n2vpn.projectis.ir
-    path: /@n2vpn
-- client-fingerprint: chrome
-  name: 497|🔒 VL-WS-TLS  CA-23.227.39.179:...
-  network: ws
-  port: 443
-  server: 23.227.39.179
-  servername: n2vpn.projectis.ir
-  tls: true
-  type: vless
-  uuid: 9ad6196e-9332-4ba8-a60f-efd3bba1f37b
-  ws-opts:
-    headers:
-      Host: n2vpn.projectis.ir
-    path: /@n2vpn
-- alpn:
-  - h3
-  - h2
-  client-fingerprint: chrome
-  name: 497|🔒 VL-WS-TLS 🇦 CA-23.227.60.231...
-  network: ws
-  port: 443
-  server: 23.227.60.231
-  servername: xxx.66500-280b-471c-b2b8-d68b7f9960008.workers.dev
-  tls: true
-  type: vless
-  uuid: d96ddab8-306d-4a6b-86d9-d8e427316075
-  ws-opts:
-    headers:
-      Host: xxx.66500-280b-471c-b2b8-d68b7f9960008.workers.dev
-    path: '%2F%3Fed%3D2048'
-- alpn:
-  - h3
-  - h2
-  client-fingerprint: chrome
-  name: 497|🔒 VL-WS-TLS  CA-23.227.39.47:4...
-  network: ws
-  port: 443
-  server: 23.227.39.47
-  servername: steep-pine-3b0b.facic63646.workers.dev
-  tls: true
-  type: vless
-  uuid: d6660712-4d18-47fd-b095-0c36db667250
-  ws-opts:
-    headers:
-      Host: steep-pine-3b0b.facic63646.workers.dev
-    path: '%2F%3Fed%3D2048'
-- name: 497|🔒 VL-WS-NA 🇨🇦 CA-44.31.62.3:80
-  network: ws
-  port: 80
-  server: 44.31.62.3
-  tls: false
-  type: vless
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  ws-opts:
-    headers:
-      Host: reedfree8mahsang2.redorg.ir
-    path: Telegram%F0%9F%87%A8%F0%9F%87%B3%20%40WangCai2%20%2F%3Fed%3D2560
-- alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 497|🔒 VL-TCP-TLS 🇦 CA-149.56.95.14...
-  network: tcp
-  port: 443
-  server: 149.56.95.142
-  servername: tor5.vpntype.dev
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  uuid: 4a43d22b-73ad-4181-aedd-527fb673a494
-- name: 497|🔒 VL-WS-TLS  CA-138.197.175.15...
-  network: ws
-  port: 443
-  server: 138.197.175.155
-  servername: imn90-plkdefss5487-jhnvgfdf.ssaaddaaffmmoottaahhaarrii.store
-  tls: true
-  type: vless
-  uuid: 3df4aabf-29d7-457e-f228-016156fc686a
-  ws-opts:
-    headers:
-      Host: imn90-plkdefss5487-jhnvgfdf.ssaaddaaffmmoottaahhaarrii.store
-    path: '%2F'
 - alpn:
   - h2
   - http/1.1
@@ -6384,6 +6591,188 @@ proxies:
       Host: show.wfft.ir
     path: t.me/sinavm%3D@sinavm
 - client-fingerprint: chrome
+  name: 497|🔒 VL-WS-TLS 🇨 CA-23.227.39.179...
+  network: ws
+  port: 2096
+  server: 23.227.39.179
+  servername: n2vpn.projectis.ir
+  tls: true
+  type: vless
+  uuid: a2c96a8e-0dec-49f3-945b-efb6353c11e8
+  ws-opts:
+    headers:
+      Host: n2vpn.projectis.ir
+    path: /@n2vpn
+- name: 497|🔒 VL-WS-NONE 🇦 CA-44.31.62.2:8...
+  network: ws
+  port: 80
+  server: 44.31.62.2
+  tls: false
+  type: vless
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      Host: reedfree8mahsang2.redorg.ir
+    path: Telegram%F0%9F%87%A8%F0%9F%87%B3+%40WangCai2+%2F%3Fed%3D2560
+- name: 497|🔒 VL-WS-TLS  CA-159.203.57.161...
+  network: ws
+  port: 3951
+  server: 159.203.57.161
+  servername: ukmci.cdnpark.net
+  tls: true
+  type: vless
+  uuid: fd99e44d-a046-4477-b48b-8f15bc0f217a
+  ws-opts:
+    path: '%2F'
+- client-fingerprint: chrome
+  name: 497|🔒 VL-WS-TLS 🇦 CA-23.227.39.179...
+  network: ws
+  port: 2083
+  server: 23.227.39.179
+  servername: n2vpn.projectis.ir
+  tls: true
+  type: vless
+  uuid: 466346a8-84ec-4f9b-8fc9-f1ccb079dd67
+  ws-opts:
+    headers:
+      Host: n2vpn.projectis.ir
+    path: /@n2vpn
+- client-fingerprint: chrome
+  name: 497|🔒 VL-WS-TLS  CA-23.227.39.179:...
+  network: ws
+  port: 2053
+  server: 23.227.39.179
+  servername: n2vpn.projectis.ir
+  tls: true
+  type: vless
+  uuid: fa80408d-f7ce-4c96-ac0b-6c1b791b5b69
+  ws-opts:
+    headers:
+      Host: n2vpn.projectis.ir
+    path: /@n2vpn
+- alpn:
+  - h3
+  - h2
+  client-fingerprint: chrome
+  name: 497|🔒 VL-WS-TLS  CA-23.227.39.47:4...
+  network: ws
+  port: 443
+  server: 23.227.39.47
+  servername: steep-pine-3b0b.facic63646.workers.dev
+  tls: true
+  type: vless
+  uuid: d6660712-4d18-47fd-b095-0c36db667250
+  ws-opts:
+    headers:
+      Host: steep-pine-3b0b.facic63646.workers.dev
+    path: '%2F%3Fed%3D2048'
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 497|🔒 VL-TCP-TLS 🇦 CA-149.56.95.14...
+  network: tcp
+  port: 443
+  server: 149.56.95.142
+  servername: tor5.vpntype.dev
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  uuid: 4a43d22b-73ad-4181-aedd-527fb673a494
+- name: 497|🔒 VL-WS-TLS 🇦 CA-138.197.175.1...
+  network: ws
+  port: 443
+  server: 138.197.175.155
+  servername: imn90-plkdefss5487-jhnvgfdf.ssaaddaaffmmoottaahhaarrii.store
+  tls: true
+  type: vless
+  uuid: 3df4aabf-29d7-457e-f228-016156fc686a
+  ws-opts:
+    headers:
+      Host: imn90-plkdefss5487-jhnvgfdf.ssaaddaaffmmoottaahhaarrii.store
+    path: '%2F'
+- name: 497|🔒 VL-WS-NONE 🇦 CA-23.227.39.18...
+  network: ws
+  port: 8080
+  server: 23.227.39.185
+  tls: false
+  type: vless
+  uuid: ebe7d94e-c664-48f6-9ab5-b7f68b9029f2
+  ws-opts:
+    headers:
+      Host: seyyed.webdade.ddns-ip.net
+    path: '%2FV2ray_Alpha%2F%3Fed%3D2560'
+- name: 497|🔒 VL-WS-TLS 🇦 CA-23.227.38.135...
+  network: ws
+  port: 443
+  server: 23.227.38.135
+  servername: eupmaq-fyvoq0da0mdvvzehshnqqcd6inl5ihzvry3fo5veeghhfkkhertre6uy.t03w4b.workers.Dev
+  tls: true
+  type: vless
+  uuid: 465fc43c-9872-40f9-bb94-ebee934e40b4
+  ws-opts:
+    headers:
+      Host: eupmaq-fyvoq0da0mdvvzehshnqqcd6inl5ihzvry3fo5veeghhfkkhertre6uy.t03w4b.workers.Dev
+    path: '%2F'
+- name: 497|🔒 VL-GRPC-NA 🇨 CA-51.79.29.239...
+  network: grpc
+  port: 8880
+  server: 51.79.29.239
+  tls: false
+  type: vless
+  uuid: a8a7948a-a617-4e2d-a611-6d605be9d018
+- name: 497|🔒 VL-WS-TLS 🇦 CA-40.69.106.103...
+  network: ws
+  port: 443
+  server: 40.69.106.103
+  servername: mmghgy5.azurewebsites.net
+  tls: true
+  type: vless
+  uuid: 6f995056-7802-4a1d-bff7-61678e626c3f
+  ws-opts:
+    headers:
+      Host: mmghgy5.azurewebsites.net
+    path: '%2F'
+- name: 497|🔒 VL-WS-TLS 🇨 CA-23.227.39.154...
+  network: ws
+  port: 2053
+  server: 23.227.39.154
+  servername: 8b562c77-fc99-4d25-9100-d8c0849cc9ff.bvzizx.com
+  tls: true
+  type: vless
+  uuid: 8b562c77-fc99-4d25-9100-d8c0849cc9ff
+  ws-opts:
+    headers:
+      Host: cosi.bvzizx.com
+    path: '%2Fwss37193'
+- client-fingerprint: ios
+  name: 497|🔒 VL-WS-TLS  CA-23.227.38.0:44...
+  network: ws
+  port: 443
+  server: 23.227.38.0
+  servername: us5.pqvip.top
+  tls: true
+  type: vless
+  uuid: 50c32afb-ee63-443c-ad0a-a3f4866e4106
+  ws-opts:
+    headers:
+      Host: us5.pqvip.top
+    path: '%2Fpq%2Fus5'
+- client-fingerprint: chrome
+  name: '497|🔒 VL-WS-TLS  CA-23.227.39.179:... #1'
+  network: ws
+  port: 443
+  server: 23.227.39.179
+  servername: n2vpn.projectis.ir
+  tls: true
+  type: vless
+  uuid: 9ad6196e-9332-4ba8-a60f-efd3bba1f37b
+  ws-opts:
+    headers:
+      Host: n2vpn.projectis.ir
+    path: /@n2vpn
+- client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: 497|🔒 VL-TCP-TLS 🇦 CA-142.179.77.4...
   port: 56565
@@ -6393,23 +6782,33 @@ proxies:
   tls: true
   type: vless
   uuid: b1867b10-e968-44d1-9182-a674ef81ecb7
-- name: 497|🔒 VL-GRPC-NA 🇨 CA-51.79.29.239...
-  network: grpc
-  port: 8880
-  server: 51.79.29.239
+- alpn:
+  - h3
+  - h2
+  client-fingerprint: chrome
+  name: 497|🔒 VL-WS-TLS  CA-23.227.60.231:...
+  network: ws
+  port: 443
+  server: 23.227.60.231
+  servername: xxx.66500-280b-471c-b2b8-d68b7f9960008.workers.dev
+  tls: true
+  type: vless
+  uuid: d96ddab8-306d-4a6b-86d9-d8e427316075
+  ws-opts:
+    headers:
+      Host: xxx.66500-280b-471c-b2b8-d68b7f9960008.workers.dev
+    path: '%2F%3Fed%3D2048'
+- name: 497|🔒 VL-WS-NA 🇨🇦 CA-44.31.62.3:80
+  network: ws
+  port: 80
+  server: 44.31.62.3
   tls: false
   type: vless
-  uuid: a8a7948a-a617-4e2d-a611-6d605be9d018
-- alterId: 0
-  cipher: auto
-  name: '497,550,559|🔒 VM-TCP-NA 🇨🇦 CA-91.194.11.17... #1'
-  network: tcp
-  port: '28984'
-  server: 91.194.11.178
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 9b2335af-f24c-4810-9c34-95568ebd579d
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      Host: reedfree8mahsang2.redorg.ir
+    path: Telegram%F0%9F%87%A8%F0%9F%87%B3%20%40WangCai2%20%2F%3Fed%3D2560
 - alterId: 0
   cipher: auto
   name: '497,550,559|🔒 VM-TCP-NA 🇨🇦 CA-91.194.11.11... #1'
@@ -6422,6 +6821,16 @@ proxies:
   uuid: c23b127b-af87-43bb-aa1e-ce42374a2b53
 - alterId: 0
   cipher: auto
+  name: '497,550,559|🔒 VM-TCP-NA 🇨🇦 CA-91.194.11.17... #1'
+  network: tcp
+  port: '28984'
+  server: 91.194.11.178
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 9b2335af-f24c-4810-9c34-95568ebd579d
+- alterId: 0
+  cipher: auto
   name: '497,550,559|🔒 VM-TCP-NA 🇨🇦 CA-91.194.11.16... #1'
   network: tcp
   port: '58891'
@@ -6430,16 +6839,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 4439cf3e-d072-4a5b-88b2-2a2ec6d71340
-- name: 497|🔒 TR-WS-NA 🇨 CA-140.238.158.23...
-  network: ws
-  password: 6884d714-d3c4-4b49-aa20-767ea92837d6
-  port: 443
-  server: 140.238.158.238
-  sni: icecream.955850.xyz
-  type: trojan
-  ws-opts:
-    headers:
-      Host: icecream.955850.xyz
 - name: 497,558|🔒 TR-TCP-TLS 🇨🇦 CA-104.234.239...
   network: tcp
   password: Aimer
@@ -6447,17 +6846,13 @@ proxies:
   server: 104.234.239.235
   sni: ngepx.ambercc.filegear-sg.me
   type: trojan
-- alterId: 0
-  name: '497,550,558,561|未知156 #2'
+- name: 497,558|🔒 TR-TCP-TLS 🇨🇦 CA-23.227.60.8...
   network: tcp
   password: bpb-trojan
   port: 443
   server: 23.227.60.8
-  skip-cert-verify: true
   sni: 403b3611-99bc-43b7-88D7-26Ed5D0825A9-3.paGeS.dev
-  tls: true
   type: trojan
-  udp: true
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   name: 500,549|9,11,19,20,21,27|11| 加拿大|@ripa...
@@ -6495,6 +6890,20 @@ proxies:
     headers:
       Host: ''
     path: /racevpn
+- name: '510,511|🇨🇦_加拿大 #1'
+  network: ws
+  port: 8443
+  server: 205.233.181.186
+  servername: CiR346yL3b.DeRaKhT.iNfO
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 9e769ce1-34be-4e3f-b0a6-823f30eb8f69
+  ws-opts:
+    headers:
+      host: CiR346yL3b.DeRaKhT.iNfO
+    path: /
 - alterId: 0
   cipher: auto
   name: 523,525|🇨🇦CA-51.79.103.76-1783 | 6.778...
@@ -6542,15 +6951,8 @@ proxies:
     Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
   ws-path: /IOebhLMhl1CTbFHbL95myfRX2
 - cipher: chacha20-ietf-poly1305
-  name: '536,537,539|0|🇦加大 01 | 1x CA #2'
-  password: 9bb5d685-bcbd-4c5b-90f6-b69c6a0eff9f
-  port: 31441
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: '536,537,539|3|🇦 加拿大 01 | 1x CA #1'
-  password: bfb40fde-b944-4893-a67f-802ca8aeabb8
+  name: '536,537,539|0|🇦 加大 01 | 1x CA #2'
+  password: 372e92f8-d703-41c0-a974-c156ffab49b0
   port: 36441
   server: free.2weradf.xyz
   type: ss
@@ -7036,71 +7438,19 @@ proxies:
   uuid: 58fe1542-5290-40ad-815a-77707a81afe5
   ws-opts:
     path: /IOebhLMhl1CTbFHbL95myfRX2
+- name: 558|🔒 TR-WS-NA 🇨🇦 CA-140.238.158.2...
+  network: ws
+  password: 6884d714-d3c4-4b49-aa20-767ea92837d6
+  port: 443
+  server: 140.238.158.238
+  sni: icecream.955850.xyz
+  type: trojan
+  ws-opts:
+    headers:
+      Host: icecream.955850.xyz
 - alterId: 0
   cipher: auto
-  name: '553|🇨🇦 加拿大2 #2'
-  port: 45065
-  server: xdd.dashuai.cyou
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 0ff1562b-b695-4a55-b488-53b7f8929195
-- alterId: 0
-  cipher: auto
-  name: '553|🇨🇦 加拿大1 #2'
-  port: 45064
-  server: haa.dashuai.cyou
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 0ff1562b-b695-4a55-b488-53b7f8929195
-- alterId: 0
-  cipher: auto
-  name: 553|🇨🇦 加拿大 IEPL专线 NO1
-  port: 45105
-  server: sd.needss.top
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 58e107f9-7456-4203-8d1b-bdeca67e5ee9
-- alterId: 0
-  cipher: auto
-  name: '555|加拿大2 #2'
-  network: tcp
-  port: '45065'
-  server: xdd.dashuai.cyou
-  tls: false
-  type: vmess
-  uuid: 0ff1562b-b695-4a55-b488-53b7f8929195
-- alterId: 0
-  cipher: auto
-  name: '555|加拿大1 #2'
-  network: tcp
-  port: '45064'
-  server: haa.dashuai.cyou
-  tls: false
-  type: vmess
-  uuid: 0ff1562b-b695-4a55-b488-53b7f8929195
-- alterId: 0
-  cipher: auto
-  name: 555|加拿大 IEPL专线 NO1
-  network: tcp
-  port: '45105'
-  server: sd.needss.top
-  tls: false
-  type: vmess
-  uuid: 58e107f9-7456-4203-8d1b-bdeca67e5ee9
-- cipher: aes-256-cfb
-  name: 562,563|U1NSLeWKoOaLv-Wkpy1ORuino-mUge...
-  obfs: plain
-  password: f8f7aCzcPKbsF8p3
-  port: '989'
-  protocol: origin
-  server: 79.127.233.170
-  type: ssr
-- alterId: 0
-  cipher: auto
-  name: '564|加拿大1 #3'
+  name: '564|加拿大1 #2'
   network: tcp
   port: '45064'
   server: haa.dashuai.cyou
@@ -7109,7 +7459,7 @@ proxies:
   uuid: 070f662b-3c75-4e7f-8381-287d6d8f45b2
 - alterId: 0
   cipher: auto
-  name: '564|加拿大2 #3'
+  name: '564|加拿大2 #2'
   network: tcp
   port: '45065'
   server: xdd.dashuai.cyou
@@ -7176,7 +7526,7 @@ proxies:
     headers:
       Host: vx.ylks0033.dpdns.org
     path: '%2F%3Fed%3D2560'
-- name: '666,714,716|🇨🇦 加拿大1 #5'
+- name: '666,714,715,716|🇨🇦 加拿大1 #5'
   password: '!!str 1'
   port: 443
   server: starlink-tor.2513142.xyz
@@ -7184,24 +7534,8 @@ proxies:
   sni: www.cloudflare.com
   type: hysteria2
   udp: true
-- name: '666,714,716|🇨🇦 加拿大2 #5'
+- name: '666,714,715,716|🇨🇦 加拿大2 #5'
   password: '!!str 1'
-  port: 443
-  server: starlink-tor.2513142.xyz
-  skip-cert-verify: true
-  sni: www.cloudflare.com
-  type: trojan
-  udp: true
-- name: 715|🇨🇦 加拿大1🔒
-  password: 升级订阅解锁全部节点
-  port: 443
-  server: starlink-tor.2513142.xyz
-  skip-cert-verify: true
-  sni: www.cloudflare.com
-  type: hysteria2
-  udp: true
-- name: 715|🇨🇦 加拿大2🔒
-  password: 升级订阅解锁全部节点
   port: 443
   server: starlink-tor.2513142.xyz
   skip-cert-verify: true
