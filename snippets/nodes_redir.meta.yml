@@ -206,7 +206,7 @@ proxies:
 - alterId: 2
   cipher: auto
   ip-version: dual
-  name: 4,11,465,470,509,535,545,550|30|_CN_->_US_国
+  name: 4,11,465,470,509,545,550|30|_CN_->_US_国
   network: ws
   port: 30836
   server: v36.heduian.link
@@ -221,7 +221,7 @@ proxies:
 - alterId: 2
   cipher: auto
   ip-version: dual
-  name: 4,11,327,465,470,509,535,545,550|16,30|🇨🇳_CN_中国->🇺🇸_US_美国_8
+  name: 4,11,327,465,470,509,545,550|16,30|🇨🇳_CN_中国->🇺🇸_US_美国_8
   network: ws
   port: 30808
   server: v8.heduian.link
@@ -235,8 +235,8 @@ proxies:
     path: /oooo
 - cipher: aes-256-gcm
   ip-version: dual
-  name: '4,11,365,463,465,466,468,470,471,476,506,509,524,535|US美国(mibei77.com 米贝节点分享)
-    19 #2'
+  name: '4,11,365,463,465,466,468,470,471,476,506,509,524|🇨🇳CN-120.232.91.137-1321
+    #1'
   password: 77a12a3d-6df0-48c8-a189-b071fcda1456
   port: 11511
   server: cdn-p1-us.youku-dns.com
@@ -244,9 +244,12 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  http-opts: {}
+  http-opts:
+    method: GET
+    path:
+    - /
   ip-version: dual
-  name: '4,11,327,365,442,444,509,523,524,535,550,567,568|🇫🇷_FR_法国->🇨🇳_CN_中国 #9'
+  name: '4,11,365,442,444,509,523,524,567,568|🇫🇷_FR_法国->🇨🇳_CN_中国 #8'
   network: http
   port: 47006
   server: 141.11.122.27
@@ -258,7 +261,7 @@ proxies:
   uuid: 364a033d-99bf-4610-d552-8516e63aaac5
 - alterId: 0
   ip-version: dual
-  name: '4,11,293,442,444,489,497,509,510,511,531,535,546,550,551,552,561,567,568,704|中国【机场推荐：https://socks.news】39
+  name: '4,11,327,442,444,489,497,509,510,511,530,531,546,550,561,567,568,704|中国【机场推荐：https://socks.news】39
     #1'
   network: tcp
   password: 5e2f888c-68ef-11ef-96ca-f23c9164ca5d
@@ -269,25 +272,26 @@ proxies:
   tls: true
   type: trojan
   udp: true
-- alterId: 2
+- alterId: '2'
   cipher: auto
   ip-version: dual
-  name: 4,11,293,509,510,511,535,550|11,27|3|🇺🇸54 |  5.7MB/s|25%|Op...
+  name: '4,11,509,510,511|🇨🇳_中国_44 #1'
   network: ws
-  port: 30807
+  port: '30807'
   server: v7.heduian.link
   skip-cert-verify: true
   sni: ''
-  tls: false
   type: vmess
   udp: true
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-opts:
+    headers:
+      host: v7.heduian.link
     path: /oooo
 - alterId: 2
   cipher: auto
   ip-version: dual
-  name: '4,11,459,460,461,489,509,535|🇨🇳_CN_中国->🇺🇸_US_美国_5 #8'
+  name: '4,11,327,509,550|5|江苏省 移动 #1'
   network: ws
   port: 30805
   server: v5.heduian.link
@@ -298,24 +302,26 @@ proxies:
   udp: true
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-opts:
-    headers:
-      host: ocbc.com
     path: /oooo
 - alterId: 0
   cipher: auto
   ip-version: dual
-  name: '4,11,440,442,444,446,497,506,509,510,511,531,535,546,549,550,567,568|🇨🇳_CN_中国->🇺🇦_UA_乌克兰
-    #9'
+  name: '4,11,440,442,444,446,497,506,509,510,511,530,531,546,549,550,567,568|🇨🇳_CN_中国->🇺🇦_UA_乌克兰
+    #8'
   network: tcp
   port: 14100
   server: dxv4.pai50288.uk
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
   uuid: f6866b0b-f946-4a03-8df0-c7e0016b55ad
+  ws-headers:
+    Host: dxv4.pai50288.uk
+  ws-path: /
 - ip-version: dual
-  name: '4,11,293,365,367,442,444,489,493,494,497,501,506,509,510,511,523,524,531,535,536,537,538,539,546,550,567,568,704|中国【机场推荐：https://socks.news】28
+  name: '4,11,293,365,367,442,444,459,460,461,487,489,493,494,497,501,502,503,506,509,510,511,523,524,530,531,536,537,538,539,546,550,551,552,567,568,704|中国【机场推荐：https://socks.news】28
     #1'
   network: tcp
   password: 5e2f888c-68ef-11ef-96ca-f23c9164ca5d
@@ -323,12 +329,13 @@ proxies:
   server: b5d29914-swb8g0-swy6li-tni2.cu.plebai.net
   skip-cert-verify: false
   sni: b5d29914-swb8g0-swy6li-tni2.cu.plebai.net
+  tfo: false
   type: trojan
   udp: true
 - alpn:
   - http/1.1
   ip-version: dual
-  name: '4,11,442,444,509,535,567,568|🇺🇸_US_美国->🇩🇪_DE_德国_1 #8'
+  name: '4,11,442,444,509,567,568|🇺🇸_US_美国->🇩🇪_DE_德国_1 #7'
   network: tcp
   password: telegram-id-directvpn
   port: 22223
@@ -339,7 +346,7 @@ proxies:
 - alpn:
   - http/1.1
   ip-version: dual
-  name: '4,11,442,444,509,535,567,568|🇺🇸_US_美国->🇩🇪_DE_德国_2 #8'
+  name: '4,11,442,444,509,567,568|🇺🇸_US_美国->🇩🇪_DE_德国_2 #7'
   network: tcp
   password: telegram-id-privatevpns
   port: 22222
@@ -4718,7 +4725,7 @@ proxies:
     path: /dabai.in104.20.27.115
 - alterId: 0
   cipher: auto
-  name: '455,556|美国 CloudFlare节点 #25'
+  name: '455,556|美国 CloudFlare节点 #21'
   network: ws
   port: '2082'
   server: 104.16.155.10
@@ -4987,7 +4994,7 @@ proxies:
     path: /dabai.in172.64.9.208
 - alterId: 0
   cipher: auto
-  name: 455,549|36|🔒 VM-WS-TLS ‍☠️ NA-172.67.1...
+  name: '455,497,549,550,559|🔒 VM-WS-TLS 🏴‍☠️ NA-172.67.153... #1'
   network: ws
   port: 8443
   server: 172.67.153.156
@@ -5107,37 +5114,6 @@ proxies:
   type: vmess
   uuid: 2ab54438-8af9-3711-bf1a-676fcc144586
   ws-opts: {}
-- name: '535|🇺🇸_US_美国->🇨🇳_CN_中国 #3'
-  network: ws
-  port: 8080
-  server: tgju.org
-  servername: IO.IhJtq0hklC.ZULAiR.OrG.
-  type: vless
-  uuid: 690ab90e-3f21-422b-8cb1-bc9845c7af1e
-  ws-opts:
-    headers:
-      host: IO.IhJtq0hklC.ZULAiR.OrG.
-    path: /
-- name: '535|🇺🇸_US_美国->🇨🇳_CN_中国_2 #1'
-  network: ws
-  port: 8080
-  server: 104.19.54.50
-  type: vless
-  uuid: d8b04c6a-bafd-47a9-993a-6f8f7d0998fe
-  ws-opts:
-    headers:
-      host: www.speedtest.net.www.zula.ir.cloudflare.com.www.parsvds.ir.svgspeedtest.net.
-    path: /@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy?ed=2048
-- name: 535|🇮🇳_IN_印度->🇺🇸_US_美国
-  network: ws
-  port: 80
-  server: 14.102.228.75
-  type: vless
-  uuid: b49d8a13-12f6-4613-bb0d-3e2f6244f29c
-  ws-opts:
-    headers:
-      host: ov-canada1.09vpn.com
-    path: /vless/
 - alterId: 0
   cipher: auto
   name: 545,546,550|30|12|🇬 新加坡|@ripaojiedian
@@ -5578,9 +5554,9 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '546,550|5|美国 CloudFlare节点 #3 #1'
+  name: 546|CF中转_0514201283 L0
   network: ws
-  port: 2053
+  port: '2053'
   server: 104.21.112.1
   tls: true
   type: vmess
@@ -6283,6 +6259,17 @@ proxies:
   uuid: 2ab54438-8af9-3711-bf1a-676fcc144586
   ws-opts:
     path: /v2ray
+- alterId: 2
+  cipher: auto
+  name: 550|5,16|🇨🇳_CN_中国->🇺🇸_US_美国_6
+  network: ws
+  port: 30825
+  server: v25.heduian.link
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    path: /oooo
 - name: 550|12|🇺🇸_US_美国->🇫🇷_FR_法国
   network: ws
   password: 4a3ee276-f50f-46f6-ba4d-13571732ab70
@@ -6388,7 +6375,7 @@ proxies:
     headers:
       Host: p3.v2raybrasil.cloud
     path: /
-- name: '556|🇺🇸_US_美国->🇨🇳_CN_中国_2 #2'
+- name: '556|🇺🇸_US_美国->🇨🇳_CN_中国_2 #1'
   network: ws
   port: 80
   server: 151.101.64.223
@@ -6400,7 +6387,7 @@ proxies:
     headers:
       Host: JOIN.unlimiteddev.4.4.4.4.wWw.CloudFlare.cOm.wWw.SpeedTeSt.cOm.Home.iRan.0.0.0.0.Hide.my.IP.xXx.333.22.1.CDN.Free.unlimiteddev.DDNS1-IP.nEt
     path: '%2F%40UnlimitedDev----%40UnlimitedDev-----%40UnlimitedDev----%40UnlimitedDev----%40UnlimitedDev----%40UnlimitedDev----%40UnlimitedDev----%40UnlimitedDev----%40UnlimitedDev----%40UnlimitedDev----%40UnlimitedDev----%40UnlimitedDev%3Fed%3D2480'
-- name: '556|🇺🇸_US_美国->🇩🇪_DE_德国 #12'
+- name: '556|🇺🇸_US_美国->🇩🇪_DE_德国 #10'
   network: ws
   port: 80
   server: join.isvvpn.fastly80-3.hosting-ip.com
