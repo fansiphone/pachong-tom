@@ -1,8 +1,8 @@
 proxies:
 - client-fingerprint: chrome
   delay: 920
-  flow: xtls-rprx-vision
-  name: 83,327,330,476,489,493,494,497,515|瑞士 - 苏黎世 - Nine Internet Solut...
+  flow: xtls-rprx-vision-udp443
+  name: 83,330,476,497,515,550|5|1|🇨🇭1 |  3.8MB/s|0%|Openai
   network: tcp
   port: 444
   reality-opts:
@@ -24,15 +24,28 @@ proxies:
   type: vmess
   udp: true
   uuid: aa15b97a-24b1-3a31-824a-bc52f5a15bac
+- name: '293,365,524,536,537,539,554,572,573|CH_speednode_0024 #1'
+  network: ws
+  password: 6884d714-d3c4-4b49-aa20-767ea92837d6
+  port: 443
+  server: 140.238.212.95
+  skip-cert-verify: true
+  sni: icecream.955850.xyz
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: icecream.955850.xyz
+    path: /proxyip=140.238.212.95:443&proxyIP=null
 - cipher: aes-128-gcm
-  country: 🇺🇸 US
+  country: 🇸 US
   name: 343,344,365,422,524,525|CH-156.146.62.164-1030 | 32.55...
   password: shadowsocks
   port: 443
   server: 156.146.62.164
   type: ss
 - cipher: aes-128-gcm
-  country: 🇺🇸 US
+  country: ' US'
   name: '343,344,365,422,524|🇨CH-156.146.62.162-2651 #1'
   password: shadowsocks
   port: 443
@@ -96,20 +109,8 @@ proxies:
   port: 9098
   server: 185.126.116.125
   type: ss
-- name: '365,524|🇨CH-140.238.212.95-0628 #1'
-  network: ws
-  password: 6884d714-d3c4-4b49-aa20-767ea92837d6
-  port: 443
-  server: 140.238.212.95
-  skip-cert-verify: false
-  sni: icecream.955850.xyz
-  type: trojan
-  ws-opts:
-    headers:
-      Host: icecream.955850.xyz
-    path: /proxyip=140.238.212.95:443&proxyIP=null
 - cipher: chacha20-ietf-poly1305
-  name: 365,524,530,562|SS--NF解锁自制剧-ChatGPT-TikTok-You...
+  name: 365,524,562|SS--NF解锁自制剧-ChatGPT-TikTok-You...
   password: oXGp1+ihlfKg826H
   port: 1866
   server: 204.136.10.115
@@ -266,7 +267,15 @@ proxies:
   tls: false
   type: vmess
   uuid: 81b2b630-8b6a-404f-b996-b12f13db5786
-- name: 459,460,461,487,489,497,550,558|🔒 TR-WS-NA 🇨🇭 CH-140.238.212.9...
+- cipher: aes-256-cfb
+  name: 487|[SS] 🇨🇭 _CH_瑞士
+  password: asdKkaskJKfnsa
+  port: 80
+  server: 84.17.53.163
+  tfo: false
+  type: ss
+  udp: true
+- name: 487|[Trojan] 🇨🇭 瑞士 苏黎世Oracle云计算数据中...
   network: ws
   password: 6884d714-d3c4-4b49-aa20-767ea92837d6
   port: 443
@@ -279,14 +288,7 @@ proxies:
   ws-opts:
     headers:
       Host: icecream.955850.xyz
-- cipher: aes-256-cfb
-  name: 487|[SS] 🇨🇭 _CH_瑞士
-  password: asdKkaskJKfnsa
-  port: 80
-  server: 84.17.53.163
-  tfo: false
-  type: ss
-  udp: true
+    path: /proxyip=140.238.212.95:443
 - name: '489,704|瑞士【机场推荐：https://socks.news】38 #1'
   network: ws
   password: 6884d714-d3c4-4b49-aa20-767ea92837d6
@@ -298,9 +300,29 @@ proxies:
     headers:
       Host: icecream.955850.xyz
     path: '%2Fproxyip%3D140.238.212.95%3A443'
+- name: '497,531,546,550,551,552|5月15丨TG频道@stymei1丨26 #2'
+  password: 6884d714-d3c4-4b49-aa20-767ea92837d6
+  port: 443
+  server: 140.238.212.95
+  skip-cert-verify: true
+  sni: icecream.955850.xyz
+  type: trojan
+  ws-path: h=%2Fproxyip%3D140.238.212.95%3A443%26proxyIP%3Dnull
+- client-fingerprint: chrome
+  name: 497|🔒 VL-TCP-RLT 🇨 CH-188.213.129....
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: YWfCdTnr4FAOMYTY2dLrMtQUokyxOGpPhYEEszPj20E
+    short-id: fd1dff03520d8f56
+  server: 188.213.129.15
+  servername: app.hubspot.com
+  tls: false
+  type: vless
+  uuid: 8c2bb7d3-7079-434b-b2ba-dc7ddc2cb859
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 497|🔒 VL-TCP-RLT  CH-84.234.29.94:...
+  name: 497|🔒 VL-TCP-RLT 🇭 CH-84.234.29.94...
   network: tcp
   port: 1300
   reality-opts:
@@ -310,19 +332,6 @@ proxies:
   tls: false
   type: vless
   uuid: 04c73880-8479-4164-bd2c-e7d49eb82c2c
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 497|🔒 VL-TCP-RLT  CH-195.15.215.19...
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: FpsSPBGXGa6c1mIGmCMmrnsdnVSHQAYnQNur-QMiDTw
-    short-id: 65bd65cb739aeebe
-  server: 195.15.215.198
-  servername: www.samsung.com
-  tls: false
-  type: vless
-  uuid: e40799ef-6343-450a-95cf-88b12749e492
 - client-fingerprint: chrome
   name: 497|🔒 VL-TCP-RLT 🇭 CH-37.156.45.88...
   network: tcp
@@ -336,39 +345,28 @@ proxies:
   type: vless
   uuid: 81447221-6548-60a1-a9d9-aac48e8c410b
 - client-fingerprint: chrome
-  name: 497|🔒 VL-TCP-RLT 🇨🇭 CH-188.213.129...
+  flow: xtls-rprx-vision
+  name: 497|🔒 VL-TCP-RLT 🇨🇭 CH-195.15.215....
   network: tcp
   port: 443
   reality-opts:
-    public-key: YWfCdTnr4FAOMYTY2dLrMtQUokyxOGpPhYEEszPj20E
-    short-id: fd1dff03520d8f56
-  server: 188.213.129.15
-  servername: app.hubspot.com
+    public-key: FpsSPBGXGa6c1mIGmCMmrnsdnVSHQAYnQNur-QMiDTw
+    short-id: 65bd65cb739aeebe
+  server: 195.15.215.198
+  servername: www.samsung.com
   tls: false
   type: vless
-  uuid: 8c2bb7d3-7079-434b-b2ba-dc7ddc2cb859
-- name: 497|🔒 VL-WS-TLS  CH-185.18.250.27:...
+  uuid: e40799ef-6343-450a-95cf-88b12749e492
+- name: 497|🔒 VL-WS-NA 🇭 CH-185.18.250.12:...
   network: ws
-  port: 443
-  server: 185.18.250.27
-  servername: sany.sofia321.woRkers.DEV
-  tls: true
-  type: vless
-  uuid: f9fd5b50-ae7d-5f9a-82e8-b1a9633e682e
-  ws-opts:
-    headers:
-      Host: sany.sofia321.woRkers.DEV
-- name: 497|🔒 VL-WS-NONE 🇭 CH-185.18.250.2...
-  network: ws
-  port: 2095
-  server: 185.18.250.242
+  port: 80
+  server: 185.18.250.12
   tls: false
   type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
   ws-opts:
     headers:
-      Host: fuckingcloudflare.2-5e8.workers.dev
-    path: '%2F%40AZARBAYJAB1%40AZARBAYJAB1-TABREZ.NET%3Fed%3D2560'
+      Host: ana-SErVICe.xAbjCDZ.wORkErs.deV
 - name: 497|🔒 VL-WS-TLS  CH-152.67.74.223:...
   network: ws
   port: 443
@@ -381,7 +379,40 @@ proxies:
     headers:
       Host: psycho.suex12.ir
     path: '%2FEujcp9ekQlNJr3cu%3Fed'
-- name: 497|🔒 VL-TCP-NONE 🇨 CH-188.213.129...
+- name: 497|🔒 VL-WS-NONE  CH-185.18.250.24...
+  network: ws
+  port: 2095
+  server: 185.18.250.242
+  tls: false
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: fuckingcloudflare.2-5e8.workers.dev
+    path: '%2F%40AZARBAYJAB1%40AZARBAYJAB1-TABREZ.NET%3Fed%3D2560'
+- name: 497|🔒 VL-WS-NONE  CH-185.18.250.76...
+  network: ws
+  port: 2095
+  server: 185.18.250.76
+  tls: false
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: fuckingcloudflare.2-5e8.workers.dev
+    path: '%2F%40AZARBAYJAB1%40AZARBAYJAB1-TABREZ.NET%3Fed%3D2560'
+- name: 497|🔒 VL-WS-TLS 🇨 CH-185.18.250.27...
+  network: ws
+  port: 443
+  server: 185.18.250.27
+  servername: sany.sofia321.woRkers.DEV
+  tls: true
+  type: vless
+  uuid: f9fd5b50-ae7d-5f9a-82e8-b1a9633e682e
+  ws-opts:
+    headers:
+      Host: sany.sofia321.woRkers.DEV
+- name: 497|🔒 VL-TCP-NONE 🇭 CH-188.213.129...
   network: tcp
   port: 8855
   server: 188.213.129.55
@@ -391,10 +422,31 @@ proxies:
   ws-opts:
     headers:
       Host: zula.ir
-- name: 497|🔒 VL-WS-NONE  CH-185.18.250.76...
+- client-fingerprint: chrome
+  flow: -udp443
+  name: 497|🔒 VL-TCP-TLS 🇭 CH-144.24.243.2...
+  port: 443
+  server: 144.24.243.207
+  servername: 147135004002.sec20org.com
+  tls: true
+  type: vless
+  uuid: 54694a33-a8dc-47dd-bc38-acd3971e0055
+- name: 497|🔒 VL-WS-TLS 🇭 CH-140.238.212.9...
+  network: ws
+  port: 443
+  server: 140.238.212.95
+  servername: sx.ylks0033.dpdns.org
+  tls: true
+  type: vless
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      Host: sx.ylks0033.dpdns.org
+    path: '%2F%3Fed'
+- name: 497|🔒 VL-WS-NONE  CH-185.18.250.12...
   network: ws
   port: 2095
-  server: 185.18.250.76
+  server: 185.18.250.121
   tls: false
   type: vless
   uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
@@ -418,50 +470,7 @@ proxies:
     headers:
       Host: Tp3993VbRi.ScOrPiOnBiGpLaY.oRg
     path: '%2F'
-- name: 497|🔒 VL-WS-NONE 🇨 CH-185.18.250.2...
-  network: ws
-  port: 2095
-  server: 185.18.250.240
-  tls: false
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: fuckingcloudflare.2-5e8.workers.dev
-    path: '%2F%40AZARBAYJAB1%40AZARBAYJAB1-TABREZ.NET%3Fed%3D2560'
-- client-fingerprint: chrome
-  flow: -udp443
-  name: 497|🔒 VL-TCP-TLS 🇭 CH-144.24.243.2...
-  port: 443
-  server: 144.24.243.207
-  servername: 147135004002.sec20org.com
-  tls: true
-  type: vless
-  uuid: 54694a33-a8dc-47dd-bc38-acd3971e0055
-- name: 497|🔒 VL-WS-NONE 🇭 CH-185.18.250.1...
-  network: ws
-  port: 2095
-  server: 185.18.250.121
-  tls: false
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: fuckingcloudflare.2-5e8.workers.dev
-    path: '%2F%40AZARBAYJAB1%40AZARBAYJAB1-TABREZ.NET%3Fed%3D2560'
-- name: 497|🔒 VL-WS-TLS 🇨 CH-140.238.212.9...
-  network: ws
-  port: 443
-  server: 140.238.212.95
-  servername: sx.ylks0033.dpdns.org
-  tls: true
-  type: vless
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      Host: sx.ylks0033.dpdns.org
-    path: '%2F%3Fed'
-- name: 497|🔒 VL-WS-NONE  CH-185.18.250.52...
+- name: 497|🔒 VL-WS-NONE 🇨 CH-185.18.250.5...
   network: ws
   port: 2095
   server: 185.18.250.52
@@ -472,6 +481,27 @@ proxies:
     headers:
       Host: fuckingcloudflare.2-5e8.workers.dev
     path: '%2F%40AZARBAYJAB1%40AZARBAYJAB1-TABREZ.NET%3Fed%3D2560'
+- name: 497|🔒 VL-WS-NONE 🇭 CH-185.18.250.2...
+  network: ws
+  port: 2095
+  server: 185.18.250.240
+  tls: false
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: fuckingcloudflare.2-5e8.workers.dev
+    path: '%2F%40AZARBAYJAB1%40AZARBAYJAB1-TABREZ.NET%3Fed%3D2560'
+- name: 497,550,558|🔒 TR-WS-NA 🇨🇭 CH-140.238.212.9...
+  network: ws
+  password: 6884d714-d3c4-4b49-aa20-767ea92837d6
+  port: 443
+  server: 140.238.212.95
+  sni: icecream.955850.xyz
+  type: trojan
+  ws-opts:
+    headers:
+      Host: icecream.955850.xyz
 - alterId: 0
   cipher: auto
   name: 505|V2FETCH
@@ -490,6 +520,20 @@ proxies:
   tls: false
   type: vmess
   uuid: 597d19df-de7f-4d27-ec94-a80ab3cb9626
+- name: '510,511|🇨🇭_瑞士 #1'
+  network: ws
+  port: 443
+  server: 140.238.212.95
+  servername: zx.ylks0033.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: zx.ylks0033.dpdns.org
+    path: /?ed=2560
 - name: 520|科技网络 🇨🇭_261
   network: ws
   port: 443
@@ -520,14 +564,6 @@ proxies:
   type: trojan
   ws-opts:
     path: '%2Fproxyip%3D140.238.212.95%3A443'
-- name: 550|37|🇭CH
-  network: ws
-  password: 6884d714-d3c4-4b49-aa20-767ea92837d6
-  port: 443
-  server: 140.238.212.95
-  skip-cert-verify: true
-  sni: icecream.955850.xyz
-  type: trojan
 - name: '666,714,715,716|🇨🇭 瑞士1 #3'
   password: '!!str 1'
   port: 10009
