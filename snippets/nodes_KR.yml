@@ -1,22 +1,24 @@
 proxies:
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  country: 🇷KR
+  country: 🇷 KR
   delay: 304
-  name: 13,83,293,330,365,420,476,502,503,515,524,535,536,537,543,551|🇰🇷KR-125.141.31.72-213
+  name: 13,83,330,365,420,422,476,490,491,502,503,515,524,536,537,539,543,551|🇰🇷KR-125.141.31.72-213
   password: qwerREWQ@@
   port: 15098
   server: 125.141.31.72
   tfo: false
   type: ss
+  udp: true
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: 13,293,365,502,503,524,535,536,537,543,551|🇰🇷KR-13.209.10.213-214
+  name: 13,365,490,491,502,503,524,536,537,539,543,551|🇰🇷KR-13.209.10.213-214
   password: 1a17b19d-4896-4531-af79-6e91d8ef8228
   port: 6666
   server: 13.209.10.213
   tfo: false
   type: ss
+  udp: true
 - name: 65|🇰🇷 韩国-三网优化2-1C
   password: b262e991-a233-4dfd-87e2-9c5898ecd4c2
   port: 44732
@@ -497,15 +499,6 @@ proxies:
   udp: true
   uuid: f7eb5b07-0dd6-4d6d-900d-6781c51c2283
 - cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 293,476,525|🇰🇷KR-221.150.109.89-0793 | 9.9...
-  password: qwerREWQ@@
-  port: 11389
-  server: p231.panda004.net
-  tfo: true
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
   name: 343|🇰🇷1 |  8.2MB/s
   password: amazonskr05
   port: 443
@@ -867,7 +860,7 @@ proxies:
   skip-cert-verify: false
   sni: epccx.ambercc.filegear-sg.me
   type: trojan
-- name: 365,497,524,546,558|🔒 TR-TCP-NA 🇰🇷 KR-175.215.205....
+- name: '365,497,524,546,558|🔒 TR-TCP-NA 🇰🇷 KR-175.215.205.... #1'
   password: Aimer
   port: 18004
   server: 175.215.205.40
@@ -992,18 +985,20 @@ proxies:
   server: 43.201.48.212
   type: ss
 - cipher: aes-256-cfb
-  name: 365,524,551|KR-221.150.109.89-184
+  name: 365,367,524,536,537,539,551|KR-221.150.109.89-184
   password: qwerREWQ@@
   port: 11389
   server: 221.150.109.89
   type: ss
 - cipher: aes-256-cfb
-  country: 🇰🇷KR
-  name: 365,367,420,502,503,524,525,536,537,551|🇰🇷KR-125.141.26.12-185
+  country: 🇷KR
+  delay: 772
+  name: 365,420,476,490,491,524,525,551|🇰🇷KR-125.141.26.12-185
   password: qwerREWQ@@
   port: 4857
   server: 125.141.26.12
   type: ss
+  udp: true
 - alterId: 0
   cipher: auto
   name: '365,523,524|🇷KR-161.129.34.102-2745 #1'
@@ -1420,20 +1415,37 @@ proxies:
   server: 125.141.26.5
   type: ss
 - cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: '367,476,502,503,525,536,537|3|🇰🇷3 |  6.1MB/s|44% #2'
-  password: qwerREWQ@@
-  port: 15098
-  server: p222.panda001.net
-  tfo: true
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
   name: 383|🇰🇷 KR, Incheon
   password: amazonskr05
   port: 443
   server: 52.221.255.53
   type: ss
+- cipher: aes-256-cfb
+  country: 🇰🇷KR
+  name: 420,490,491,525|🇰🇷KR-125.141.31.72-0393 | 5.93...
+  password: qwerREWQ@@
+  port: 15098
+  server: p222.panda001.net
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  country: 🇷KR
+  h2-opts: {}
+  http-opts: {}
+  name: 420|Relay_🇷KR-🇰🇷KR_21
+  network: ws
+  port: 2087
+  server: lv4.789900.xyz
+  servername: lv4.789900.xyz
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 7dd16ab1-2a36-4b32-86fd-eb49fb039752
+  ws-opts:
+    headers:
+      HOST: lv4.789900.xyz
+    path: /7dd16ab1-2a36-4b32-86fd-eb49fb039752-vm
 - name: 440|KR韩国(mibei77.com 米贝节点分享)
   network: ws
   password: Aimer
@@ -1617,17 +1629,21 @@ proxies:
   skip-cert-verify: true
   sni: humble-rodent.treefrog761.one
   type: trojan
-- name: 459,460,461,489,497,558|🔒 TR-WS-NA 🇰🇷 KR-221.151.124.1...
+- alterId: 0
+  cipher: auto
+  name: 459,460,461,476,489,497,523,550|20,21|🇰🇷KR-193.123.244.36-6047...
   network: ws
-  password: 6884d714-d3c4-4b49-aa20-767ea92837d6
-  port: 10243
-  server: 221.151.124.103
-  skip-cert-verify: true
-  sni: icecream.955850.xyz
-  type: trojan
+  port: 2087
+  server: lv4.789900.xyz
+  servername: lv4.789900.xyz
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 7dd16ab1-2a36-4b32-86fd-eb49fb039752
   ws-opts:
     headers:
-      Host: icecream.955850.xyz
+      Host: lv4.789900.xyz
+    path: /7dd16ab1-2a36-4b32-86fd-eb49fb039752-vm
 - name: '463,466,468,471|韩国(yudou66.cc 玉豆免费节点) #1'
   password: Aimer
   port: 50000
@@ -1647,8 +1663,32 @@ proxies:
       Host: icecream.955850.xyz
     path: '%2Fproxyip%3D221.151.124.103%3A10243'
 - alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 490,491,561|KR
+  password: 8579afac-fad3-43ee-89d1-f8ca613f6fdc
+  port: 31311
+  server: free.2apzhfa.xyz
+  skip-cert-verify: true
+  tls: true
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: '490,491|🇰🇷 0|🇰🇷韩国 02 | 1x KR #1'
+  password: 8579afac-fad3-43ee-89d1-f8ca613f6fdc
+  port: 31313
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: '490,491|🇰🇷 1|🇰🇷 韩国 01 | 1x KR #1'
+  password: 12cca33f-2d48-4180-9e62-6e2c55834886
+  port: 36311
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- alterId: 0
   cipher: auto
-  name: '497,550,559|🔒 VM-WS-TLS 🇰🇷 KR-193.122.119.... #1'
+  name: 497|🔒 VM-WS-TLS 🇰🇷 KR-193.122.119....
   network: ws
   port: 2096
   server: 193.122.119.152
@@ -1670,200 +1710,11 @@ proxies:
   tls: false
   type: vmess
   uuid: cff7001e-3a74-43e8-bfd8-a7af9630a58b
-- name: 497,558|🔒 TR-TCP-NA 🇰🇷 KR-129.154.207....
-  password: Aimer
-  port: 443
-  server: 129.154.207.203
-  sni: agept.ambercc.filegear-sg.me
-  type: trojan
-- name: '497,558|🔒 TR-TCP-NA 🇰🇷 KR-119.203.202.... #1'
-  password: Aimer
-  port: 12226
-  server: 119.203.202.120
-  sni: epcch.ambercc.filegear-sg.me
-  type: trojan
-- name: 497,558|🔒 TR-TCP-NA 🇰🇷 KR-14.32.12.235...
-  password: Aimer
-  port: 12109
-  server: 14.32.12.235
-  sni: epccf.ambercc.filegear-sg.me
-  type: trojan
-- name: '497,558|🔒 TR-TCP-NA 🇰🇷 KR-222.106.126.... #1'
-  password: Aimer
-  port: 50000
-  server: 222.106.126.224
-  sni: epcci.ambercc.filegear-sg.me
-  type: trojan
-- name: 497,558|🔒 TR-TCP-NA 🇰🇷 KR-220.78.176.1...
-  password: Aimer
-  port: 18059
-  server: 220.78.176.158
-  sni: epcci.ambercc.filegear-sg.me
-  type: trojan
-- name: 497,558|🔒 TR-TCP-TLS 🇰🇷 KR-220.71.185....
-  network: tcp
-  password: Aimer
-  port: 10093
-  server: 220.71.185.223
-  sni: ngepz.ambercc.filegear-sg.me
-  type: trojan
-- name: 497,558|🔒 TR-TCP-NA 🇰🇷 KR-121.163.189....
-  password: Aimer
-  port: 30005
-  server: 121.163.189.187
-  sni: epccg.ambercc.filegear-sg.me
-  type: trojan
-- name: '497,558|🔒 TR-WS-NA 🇰🇷 KR-146.56.46.84:... #1'
-  network: ws
-  password: bpb-trojan
-  port: 443
-  server: 146.56.46.84
-  skip-cert-verify: true
-  sni: skwygx.top
-  type: trojan
-  ws-opts:
-    headers:
-      Host: skwygx.top
-- name: '497,558|🔒 TR-TCP-NA 🇰🇷 KR-221.151.204.... #1'
-  password: Aimer
-  port: 12369
-  server: 221.151.204.241
-  sni: epcci.ambercc.filegear-sg.me
-  type: trojan
-- name: 497,558|🔒 TR-TCP-NA 🇰🇷 KR-64.110.70.20...
-  password: juzi
-  port: 23022
-  server: 64.110.70.205
-  sni: juzi8186-sr1.pages.dev
-  type: trojan
-- name: 497,523,558|🔒 TR-TCP-NA 🇰🇷 KR-211.228.5.11...
-  password: Aimer
-  port: 50000
-  server: 211.228.5.119
-  skip-cert-verify: false
-  sni: epccx.ambercc.filegear-sg.me
-  type: trojan
-- name: '497,523,558|🔒 TR-TCP-NA 🇰🇷 KR-221.146.185.... #1'
-  password: Aimer
-  port: 12170
-  server: 221.146.185.120
-  skip-cert-verify: false
-  sni: epccx.ambercc.filegear-sg.me
-  type: trojan
-- name: '497,558|🔒 TR-WS-NA 🇰🇷 KR-193.123.235.5... #1'
-  network: ws
-  password: bpb-trojan
-  port: 443
-  server: 193.123.235.59
-  skip-cert-verify: true
-  sni: skwygx.top
-  type: trojan
-  ws-opts:
-    headers:
-      Host: skwygx.top
-- name: '497,558|🔒 TR-TCP-NA 🇰🇷 KR-121.145.126.... #1'
-  password: Aimer
-  port: 18048
-  server: 121.145.126.10
-  skip-cert-verify: false
-  sni: epccs.ambercc.filegear-sg.me
-  type: trojan
 - name: 497,558|🔒 TR-TCP-NA 🇰🇷 KR-14.42.89.42:...
   password: Aimer
   port: 50004
   server: 14.42.89.42
   sni: epcch.ambercc.filegear-sg.me
-  type: trojan
-- name: '497,558|🔒 TR-TCP-NA 🇰🇷 KR-175.199.227.... #1'
-  password: Aimer
-  port: 50000
-  server: 175.199.227.244
-  sni: epccx.ambercc.filegear-sg.me
-  type: trojan
-- name: '497,558|🔒 TR-TCP-NA 🇰🇷 KR-121.135.236.... #1'
-  password: Aimer
-  port: 12176
-  server: 121.135.236.180
-  sni: epccj.ambercc.filegear-sg.me
-  type: trojan
-- name: 497,558|🔒 TR-TCP-NA 🇰🇷 KR-218.158.109....
-  password: Aimer
-  port: 12336
-  server: 218.158.109.102
-  sni: epcca.ambercc.filegear-sg.me
-  type: trojan
-- name: '497,558|🔒 TR-WS-NA 🇰🇷 KR-123.111.169.7... #1'
-  network: ws
-  password: bpb-trojan
-  port: 443
-  server: 123.111.169.70
-  skip-cert-verify: true
-  sni: skwygx.top
-  type: trojan
-  ws-opts:
-    headers:
-      Host: skwygx.top
-- name: 497,558|🔒 TR-TCP-NA 🇰🇷 KR-220.86.228.1...
-  password: Aimer
-  port: 12393
-  server: 220.86.228.109
-  sni: epccf.ambercc.filegear-sg.me
-  type: trojan
-- name: '497,558|🔒 TR-TCP-NA 🇰🇷 KR-183.108.31.6... #1'
-  password: Aimer
-  port: 35251
-  server: 183.108.31.63
-  sni: epccf.ambercc.filegear-sg.me
-  type: trojan
-- alterId: 0
-  name: '497,546,550,558,561|未知148 #2'
-  network: tcp
-  password: Aimer
-  port: 12558
-  server: 220.80.154.29
-  skip-cert-verify: true
-  sni: epccr.ambercc.filegear-sg.me
-  tls: true
-  type: trojan
-  udp: true
-- name: '497,558|🔒 TR-TCP-NA 🇰🇷 KR-59.22.76.222... #1'
-  password: Aimer
-  port: 12482
-  server: 59.22.76.222
-  sni: epcca.ambercc.filegear-sg.me
-  type: trojan
-- grpc-opts:
-    grpc-service-name: freehr01
-  name: 497,558|🔒 TR-GRPC-TLS 🇰🇷 KR-158.180.82...
-  network: grpc
-  password: 63dbc6d0-4890-320c-8874-56f9f002d425
-  port: 15446
-  server: 158.180.82.98
-  sni: freehr01.jd0001.top
-  type: trojan
-- name: '497,558|🔒 TR-TCP-TLS 🇰🇷 KR-121.139.207... #1'
-  network: tcp
-  password: Aimer
-  port: 12370
-  server: 121.139.207.184
-  sni: epcci.ambercc.filegear-sg.me
-  type: trojan
-- name: 497,558|🔒 TR-WS-TLS 🇰🇷 KR-210.222.30.1...
-  network: ws
-  password: Aimer
-  port: 17100
-  server: 210.222.30.180
-  sni: agepq.ambercc.filegear-sg.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: agepq.ambercc.filegear-sg.mehttp%2F1.1
-    path: '%2F'
-- name: 497,558|🔒 TR-TCP-NA 🇰🇷 KR-131.186.16.2...
-  password: juzi
-  port: 56803
-  server: 131.186.16.245
-  sni: juzi8186-sr1.pages.dev
   type: trojan
 - name: 497,523,558|🔒 TR-TCP-NA 🇰🇷 KR-121.176.175....
   password: Aimer
@@ -1871,21 +1722,31 @@ proxies:
   server: 121.176.175.54
   sni: epccx.ambercc.filegear-sg.me
   type: trojan
-- alterId: 0
-  name: '497,546,550,558,561|未知48 #2'
+- name: '497,558|🔒 TR-TCP-NA 🇰🇷 KR-193.122.114.... #1'
   password: Aimer
-  port: 11300
-  server: 118.37.220.10
-  skip-cert-verify: true
-  sni: ngepo.ambercc.filegear-sg.me
-  tls: true
+  port: 443
+  server: 193.122.114.82
+  sni: epccs.ambercc.filegear-sg.me
   type: trojan
-  udp: true
-- name: 497,558|🔒 TR-TCP-NA 🇰🇷 KR-118.45.113.4...
+- name: 497,523,558|🔒 TR-TCP-NA 🇰🇷 KR-221.146.185....
   password: Aimer
-  port: 12238
-  server: 118.45.113.48
-  sni: epccu.ambercc.filegear-sg.me
+  port: 12170
+  server: 221.146.185.120
+  skip-cert-verify: false
+  sni: epccx.ambercc.filegear-sg.me
+  type: trojan
+- name: 497,558|🔒 TR-TCP-NA 🇰🇷 KR-121.145.126....
+  password: Aimer
+  port: 18048
+  server: 121.145.126.10
+  skip-cert-verify: false
+  sni: epccs.ambercc.filegear-sg.me
+  type: trojan
+- name: '497,558|🔒 TR-TCP-NA 🇰🇷 KR-221.151.204.... #1'
+  password: Aimer
+  port: 12369
+  server: 221.151.204.241
+  sni: epcci.ambercc.filegear-sg.me
   type: trojan
 - name: '497,558|🔒 TR-TCP-NA 🇰🇷 KR-221.164.192.... #1'
   password: Aimer
@@ -1893,68 +1754,6 @@ proxies:
   server: 221.164.192.95
   sni: agepj.ambercc.filegear-sg.me
   type: trojan
-- name: '497,558|🔒 TR-TCP-NA 🇰🇷 KR-220.116.147.... #1'
-  password: '!!str 0588'
-  port: 17774
-  server: 220.116.147.73
-  sni: 888.uskm.dpdns.org
-  type: trojan
-- name: 497,558|🔒 TR-TCP-NA 🇰🇷 KR-121.175.158....
-  password: Aimer
-  port: 12263
-  server: 121.175.158.112
-  skip-cert-verify: false
-  sni: epccc.ambercc.filegear-sg.me
-  type: trojan
-- name: 497,558|🔒 TR-TCP-NA 🇰🇷 KR-211.38.168.1...
-  password: Aimer
-  port: 50000
-  server: 211.38.168.1
-  sni: epcci.ambercc.filegear-sg.me
-  type: trojan
-- name: 497,558|🔒 TR-TCP-NA 🇰🇷 KR-146.56.140.7...
-  password: juzi
-  port: 22561
-  server: 146.56.140.79
-  sni: juzi8186-sr1.pages.dev
-  type: trojan
-- name: 497,558|🔒 TR-TCP-NA 🇰🇷 KR-183.98.186.1...
-  password: Aimer
-  port: 18020
-  server: 183.98.186.160
-  sni: epcca.ambercc.filegear-sg.me
-  type: trojan
-- name: 497,523,558|🔒 TR-TCP-NA 🇰🇷 KR-175.205.119....
-  password: Aimer
-  port: 38422
-  server: 175.205.119.253
-  skip-cert-verify: false
-  sni: epccx.ambercc.filegear-sg.me
-  type: trojan
-- name: 497,523,558|🔒 TR-TCP-NA 🇰🇷 KR-175.199.169....
-  password: Aimer
-  port: 50003
-  server: 175.199.169.221
-  skip-cert-verify: false
-  sni: epccx.ambercc.filegear-sg.me
-  type: trojan
-- name: 497,558|🔒 TR-TCP-NA 🇰🇷 KR-218.144.55.1...
-  password: Aimer
-  port: 21282
-  server: 218.144.55.101
-  sni: agepj.ambercc.filegear-sg.me
-  type: trojan
-- alterId: 0
-  name: '497,546,550,558,561|未知39 #2'
-  network: tcp
-  password: Aimer
-  port: 50003
-  server: 175.215.175.175
-  skip-cert-verify: true
-  sni: ngepz.ambercc.filegear-sg.me
-  tls: true
-  type: trojan
-  udp: true
 - name: 497,558|🔒 TR-TCP-TLS 🇰🇷 KR-175.214.237...
   network: tcp
   password: Aimer
@@ -1962,25 +1761,25 @@ proxies:
   server: 175.214.237.120
   sni: agepy.ambercc.filegear-sg.me
   type: trojan
-- name: '497,558|🔒 TR-TCP-NA 🇰🇷 KR-121.149.228.... #1'
+- name: '497,558|🔒 TR-TCP-NA 🇰🇷 KR-218.144.55.1... #1'
   password: Aimer
-  port: 12315
-  server: 121.149.228.125
-  sni: epcca.ambercc.filegear-sg.me
+  port: 21282
+  server: 218.144.55.101
+  sni: agepj.ambercc.filegear-sg.me
   type: trojan
-- name: 497,558|🔒 TR-TCP-TLS 🇰🇷 KR-121.180.184...
+- name: 497,546,558|🔒 TR-TCP-TLS 🇰🇷 KR-220.80.154....
   network: tcp
   password: Aimer
-  port: 50000
-  server: 121.180.184.145
-  sni: ngepy.ambercc.filegear-sg.me
+  port: 12558
+  server: 220.80.154.29
+  skip-cert-verify: false
+  sni: epccr.ambercc.filegear-sg.me
   type: trojan
-- name: '497,558|🔒 TR-TCP-TLS 🇰🇷 KR-146.56.155.... #1'
-  network: tcp
+- name: 497,523,558|🔒 TR-TCP-NA 🇰🇷 KR-125.134.157....
   password: Aimer
-  port: 20003
-  server: 146.56.155.102
-  sni: ngepo.ambercc.filegear-sg.me
+  port: 35241
+  server: 125.134.157.224
+  sni: epccx.ambercc.filegear-sg.me
   type: trojan
 - name: 497,558|🔒 TR-WS-TLS 🇰🇷 KR-14.47.175.40...
   network: ws
@@ -1993,28 +1792,32 @@ proxies:
     headers:
       Host: agept.ambercc.filegear-sg.mehttp/1.1
     path: /
-- name: 497,523,558|🔒 TR-TCP-NA 🇰🇷 KR-125.134.157....
+- name: 497,546,558|🔒 TR-TCP-TLS 🇰🇷 KR-175.215.175...
+  network: tcp
   password: Aimer
-  port: 35241
-  server: 125.134.157.224
-  sni: epccx.ambercc.filegear-sg.me
+  port: 50003
+  server: 175.215.175.175
+  skip-cert-verify: false
+  sni: ngepz.ambercc.filegear-sg.me
   type: trojan
-- name: 497,558|🔒 TR-WS-NA 🇰🇷 KR-138.2.122.191...
-  network: ws
-  password: bpb-trojan
-  port: 443
-  server: 138.2.122.191
-  skip-cert-verify: true
-  sni: skwygx.top
-  type: trojan
-  ws-opts:
-    headers:
-      Host: skwygx.top
-- name: 497,523,558|🔒 TR-TCP-NA 🇰🇷 KR-183.99.193.1...
+- name: '497,558|🔒 TR-TCP-TLS 🇰🇷 KR-121.139.207... #1'
+  network: tcp
   password: Aimer
-  port: 12580
-  server: 183.99.193.147
-  sni: epccx.ambercc.filegear-sg.me
+  port: 12370
+  server: 121.139.207.184
+  sni: epcci.ambercc.filegear-sg.me
+  type: trojan
+- name: '497,558|🔒 TR-TCP-NA 🇰🇷 KR-222.106.126.... #1'
+  password: Aimer
+  port: 50000
+  server: 222.106.126.224
+  sni: epcci.ambercc.filegear-sg.me
+  type: trojan
+- name: 497,558|🔒 TR-TCP-NA 🇰🇷 KR-121.149.228....
+  password: Aimer
+  port: 12315
+  server: 121.149.228.125
+  sni: epcca.ambercc.filegear-sg.me
   type: trojan
 - name: '497,558|🔒 TR-TCP-NA 🇰🇷 KR-140.238.5.75... #1'
   password: Aimer
@@ -2022,11 +1825,76 @@ proxies:
   server: 140.238.5.75
   sni: epcci.ambercc.filegear-sg.me
   type: trojan
-- name: '497,558|🔒 TR-TCP-NA 🇰🇷 KR-193.122.114.... #1'
+- name: 497,523,558|🔒 TR-TCP-NA 🇰🇷 KR-175.205.119....
   password: Aimer
-  port: 443
-  server: 193.122.114.82
-  sni: epccs.ambercc.filegear-sg.me
+  port: 38422
+  server: 175.205.119.253
+  skip-cert-verify: false
+  sni: epccx.ambercc.filegear-sg.me
+  type: trojan
+- name: 497,558|🔒 TR-WS-TLS 🇰🇷 KR-210.222.30.1...
+  network: ws
+  password: Aimer
+  port: 17100
+  server: 210.222.30.180
+  sni: agepq.ambercc.filegear-sg.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: agepq.ambercc.filegear-sg.mehttp%2F1.1
+    path: '%2F'
+- name: 497,558|🔒 TR-TCP-NA 🇰🇷 KR-183.108.31.6...
+  password: Aimer
+  port: 35251
+  server: 183.108.31.63
+  sni: epccf.ambercc.filegear-sg.me
+  type: trojan
+- name: 497,558|🔒 TR-TCP-NA 🇰🇷 KR-64.110.70.20...
+  password: juzi
+  port: 23022
+  server: 64.110.70.205
+  sni: juzi8186-sr1.pages.dev
+  type: trojan
+- name: '497,558|🔒 TR-TCP-NA 🇰🇷 KR-146.56.140.7... #1'
+  password: juzi
+  port: 22561
+  server: 146.56.140.79
+  sni: juzi8186-sr1.pages.dev
+  type: trojan
+- name: 497,558|🔒 TR-WS-NA 🇰🇷 KR-221.151.124.1...
+  network: ws
+  password: 6884d714-d3c4-4b49-aa20-767ea92837d6
+  port: 10243
+  server: 221.151.124.103
+  skip-cert-verify: true
+  sni: icecream.955850.xyz
+  type: trojan
+  ws-opts:
+    headers:
+      Host: icecream.955850.xyz
+- name: '497,558|🔒 TR-TCP-NA 🇰🇷 KR-14.32.12.235... #1'
+  password: Aimer
+  port: 12109
+  server: 14.32.12.235
+  sni: epccf.ambercc.filegear-sg.me
+  type: trojan
+- name: '497,558|🔒 TR-TCP-NA 🇰🇷 KR-220.78.176.1... #1'
+  password: Aimer
+  port: 18059
+  server: 220.78.176.158
+  sni: epcci.ambercc.filegear-sg.me
+  type: trojan
+- name: 497,558|🔒 TR-TCP-NA 🇰🇷 KR-131.186.16.2...
+  password: juzi
+  port: 56803
+  server: 131.186.16.245
+  sni: juzi8186-sr1.pages.dev
+  type: trojan
+- name: 497,558|🔒 TR-TCP-NA 🇰🇷 KR-59.27.236.24...
+  password: Aimer
+  port: 50003
+  server: 59.27.236.245
+  sni: epccj.ambercc.filegear-sg.me
   type: trojan
 - name: 497,558|🔒 TR-WS-NA 🇰🇷 KR-150.230.249.4...
   network: ws
@@ -2038,11 +1906,193 @@ proxies:
   ws-opts:
     headers:
       Host: skwygx.top
-- name: 497,558|🔒 TR-TCP-NA 🇰🇷 KR-59.27.236.24...
+- alterId: 0
+  name: '497,550,558,561|未知38 #2'
+  password: '!!str 0588'
+  port: 17774
+  server: 220.116.147.73
+  skip-cert-verify: true
+  sni: 888.uskm.dpdns.org
+  tls: true
+  type: trojan
+  udp: true
+- name: 497,558|🔒 TR-TCP-NA 🇰🇷 KR-59.22.76.222...
+  password: Aimer
+  port: 12482
+  server: 59.22.76.222
+  sni: epcca.ambercc.filegear-sg.me
+  type: trojan
+- name: 497,558|🔒 TR-TCP-NA 🇰🇷 KR-121.163.189....
+  password: Aimer
+  port: 30005
+  server: 121.163.189.187
+  sni: epccg.ambercc.filegear-sg.me
+  type: trojan
+- name: 497,558|🔒 TR-TCP-NA 🇰🇷 KR-220.86.228.1...
+  password: Aimer
+  port: 12393
+  server: 220.86.228.109
+  sni: epccf.ambercc.filegear-sg.me
+  type: trojan
+- name: 497,523,558|🔒 TR-TCP-NA 🇰🇷 KR-183.99.193.1...
+  password: Aimer
+  port: 12580
+  server: 183.99.193.147
+  sni: epccx.ambercc.filegear-sg.me
+  type: trojan
+- name: 497,558|🔒 TR-TCP-NA 🇰🇷 KR-121.175.158....
+  password: Aimer
+  port: 12263
+  server: 121.175.158.112
+  skip-cert-verify: false
+  sni: epccc.ambercc.filegear-sg.me
+  type: trojan
+- name: 497,558|🔒 TR-WS-NA 🇰🇷 KR-123.111.169.7...
+  network: ws
+  password: bpb-trojan
+  port: 443
+  server: 123.111.169.70
+  skip-cert-verify: true
+  sni: skwygx.top
+  type: trojan
+  ws-opts:
+    headers:
+      Host: skwygx.top
+- name: '497,558|🔒 TR-WS-NA 🇰🇷 KR-193.123.235.5... #1'
+  network: ws
+  password: bpb-trojan
+  port: 443
+  server: 193.123.235.59
+  skip-cert-verify: true
+  sni: skwygx.top
+  type: trojan
+  ws-opts:
+    headers:
+      Host: skwygx.top
+- name: '497,558|🔒 TR-TCP-NA 🇰🇷 KR-175.199.227.... #1'
+  password: Aimer
+  port: 50000
+  server: 175.199.227.244
+  sni: epccx.ambercc.filegear-sg.me
+  type: trojan
+- name: '497,558|🔒 TR-WS-NA 🇰🇷 KR-146.56.46.84:... #1'
+  network: ws
+  password: bpb-trojan
+  port: 443
+  server: 146.56.46.84
+  skip-cert-verify: true
+  sni: skwygx.top
+  type: trojan
+  ws-opts:
+    headers:
+      Host: skwygx.top
+- name: 497,558|🔒 TR-TCP-NA 🇰🇷 KR-211.38.168.1...
+  password: Aimer
+  port: 50000
+  server: 211.38.168.1
+  sni: epcci.ambercc.filegear-sg.me
+  type: trojan
+- name: 497,558|🔒 TR-TCP-TLS 🇰🇷 KR-121.180.184...
+  network: tcp
+  password: Aimer
+  port: 50000
+  server: 121.180.184.145
+  sni: ngepy.ambercc.filegear-sg.me
+  type: trojan
+- name: 497,558|🔒 TR-TCP-NA 🇰🇷 KR-121.135.236....
+  password: Aimer
+  port: 12176
+  server: 121.135.236.180
+  sni: epccj.ambercc.filegear-sg.me
+  type: trojan
+- name: 497,558|🔒 TR-TCP-TLS 🇰🇷 KR-220.71.185....
+  network: tcp
+  password: Aimer
+  port: 10093
+  server: 220.71.185.223
+  sni: ngepz.ambercc.filegear-sg.me
+  type: trojan
+- name: '497,558|🔒 TR-WS-NA 🇰🇷 KR-138.2.122.191... #1'
+  network: ws
+  password: bpb-trojan
+  port: 443
+  server: 138.2.122.191
+  skip-cert-verify: true
+  sni: skwygx.top
+  type: trojan
+  ws-opts:
+    headers:
+      Host: skwygx.top
+- name: 497,558|🔒 TR-TCP-NA 🇰🇷 KR-118.45.113.4...
+  password: Aimer
+  port: 12238
+  server: 118.45.113.48
+  sni: epccu.ambercc.filegear-sg.me
+  type: trojan
+- name: 497,546,558|🔒 TR-TCP-NA 🇰🇷 KR-118.37.220.1...
+  password: Aimer
+  port: 11300
+  server: 118.37.220.10
+  skip-cert-verify: false
+  sni: ngepo.ambercc.filegear-sg.me
+  type: trojan
+- name: 497,558|🔒 TR-TCP-NA 🇰🇷 KR-218.158.109....
+  password: Aimer
+  port: 12336
+  server: 218.158.109.102
+  sni: epcca.ambercc.filegear-sg.me
+  type: trojan
+- name: 497,523,558|🔒 TR-TCP-NA 🇰🇷 KR-211.228.5.11...
+  password: Aimer
+  port: 50000
+  server: 211.228.5.119
+  skip-cert-verify: false
+  sni: epccx.ambercc.filegear-sg.me
+  type: trojan
+- name: 497,523,558|🔒 TR-TCP-NA 🇰🇷 KR-175.199.169....
   password: Aimer
   port: 50003
-  server: 59.27.236.245
-  sni: epccj.ambercc.filegear-sg.me
+  server: 175.199.169.221
+  skip-cert-verify: false
+  sni: epccx.ambercc.filegear-sg.me
+  type: trojan
+- grpc-opts:
+    grpc-service-name: freehr01
+  name: 497,558|🔒 TR-GRPC-TLS 🇰🇷 KR-158.180.82...
+  network: grpc
+  password: 63dbc6d0-4890-320c-8874-56f9f002d425
+  port: 15446
+  server: 158.180.82.98
+  sni: freehr01.jd0001.top
+  type: trojan
+- name: 497,558|🔒 TR-TCP-NA 🇰🇷 KR-119.203.202....
+  password: Aimer
+  port: 12226
+  server: 119.203.202.120
+  sni: epcch.ambercc.filegear-sg.me
+  type: trojan
+- name: 497,558|🔒 TR-TCP-TLS 🇰🇷 KR-146.56.155....
+  network: tcp
+  password: Aimer
+  port: 20003
+  server: 146.56.155.102
+  sni: ngepo.ambercc.filegear-sg.me
+  type: trojan
+- alterId: 0
+  name: '497,550,558,561|未知63 #2'
+  password: Aimer
+  port: 443
+  server: 129.154.207.203
+  skip-cert-verify: true
+  sni: agept.ambercc.filegear-sg.me
+  tls: true
+  type: trojan
+  udp: true
+- name: 497,558|🔒 TR-TCP-NA 🇰🇷 KR-183.98.186.1...
+  password: Aimer
+  port: 18020
+  server: 183.98.186.160
+  sni: epcca.ambercc.filegear-sg.me
   type: trojan
 - alterId: 0
   cipher: auto
@@ -2058,20 +2108,6 @@ proxies:
     headers:
       Host: dv4.789900.xyz
     path: /0c8f3e29-4ec9-4ba6-a6ef-4487873f5d05-vm
-- alterId: 0
-  cipher: auto
-  name: 497,523,550|20,21|🇰🇷KR-193.123.244.36-6047...
-  network: ws
-  port: 2087
-  server: lv4.789900.xyz
-  servername: lv4.789900.xyz
-  tls: true
-  type: vmess
-  uuid: 7dd16ab1-2a36-4b32-86fd-eb49fb039752
-  ws-opts:
-    headers:
-      Host: lv4.789900.xyz
-    path: /7dd16ab1-2a36-4b32-86fd-eb49fb039752-vm
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   name: 500,549|9,11,27|11|🇷 国|@ripaojiedian
@@ -2083,21 +2119,21 @@ proxies:
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: '502,503|0| 01 | 1x KR #1'
-  password: 240051b0-ccf2-401d-a48b-194ae0ec919c
+  password: 7cf29444-4532-4341-b06e-c46704c9f1dd
   port: 31311
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: '502,503|0|🇷韩国 02 | 1x KR #1'
-  password: 240051b0-ccf2-401d-a48b-194ae0ec919c
+  password: 7cf29444-4532-4341-b06e-c46704c9f1dd
   port: 31313
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: '502,503|1|🇷 韩国 01 | 1x KR #1'
-  password: dc622cb1-c806-471b-9211-682e3267d84f
+  password: 3d98d473-684c-4d3c-bf52-dc63dc25f379
   port: 36311
   server: free.2weradf.xyz
   type: ss
@@ -2169,22 +2205,22 @@ proxies:
   type: trojan
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '536,537|0| 01 | 1x KR #3'
-  password: 8579afac-fad3-43ee-89d1-f8ca613f6fdc
+  name: '536,537,539|0| 01 | 1x KR #4'
+  password: feeef7f0-336c-4b07-892a-78ff86dcf020
   port: 31311
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '536,537|0|🇷韩国 02 | 1x KR #3'
-  password: 8579afac-fad3-43ee-89d1-f8ca613f6fdc
+  name: '536,537,539|0|🇷韩国 02 | 1x KR #4'
+  password: feeef7f0-336c-4b07-892a-78ff86dcf020
   port: 31313
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '536,537|1|🇷 韩国 01 | 1x KR #3'
-  password: 12cca33f-2d48-4180-9e62-6e2c55834886
+  name: '536,537,539|1|🇷 韩国 01 | 1x KR #4'
+  password: 6740dcc9-bc73-4334-9569-b685c600436d
   port: 36311
   server: free.2weradf.xyz
   type: ss
@@ -2197,14 +2233,14 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '545|0|🇷韩国 02 | 1x KR #4'
+  name: '545|0|🇷韩国 02 | 1x KR #5'
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
   port: 31313
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '545|1|🇷 韩国 01 | 1x KR #4'
+  name: '545|1|🇷 韩国 01 | 1x KR #5'
   password: eea28d8c-2132-4147-85d5-93b4bd405b34
   port: 36311
   server: free.2weradf.xyz
@@ -2228,7 +2264,7 @@ proxies:
   type: vmess
   uuid: aed1cc24-351d-11ef-ba52-f23c9164ca5d
 - cipher: aes-256-cfb
-  name: '545|12|🇰🇷 韩国|@ripaojiedian #4'
+  name: '545|12|🇰🇷 韩国|@ripaojiedian #3'
   password: amazonskr05
   port: 443
   server: 3.34.192.249
