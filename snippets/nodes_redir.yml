@@ -112,7 +112,7 @@ proxies:
   type: trojan
   udp: true
 - ip-version: dual
-  name: '4,11,327,365,497,506,510,511,523,524,531,535,546,550,567,568|🇨🇳_CN_中国->🇺🇸_US_美国_2
+  name: '4,11,114,327,365,413,497,506,510,511,523,524,531,535,546,550,567,568|🇨🇳_CN_中国->🇺🇸_US_美国_2
     #14'
   network: tcp
   password: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
@@ -152,7 +152,7 @@ proxies:
   type: trojan
   udp: true
 - ip-version: dual
-  name: '4,11,293,327,365,476,489,490,491,497,501,502,503,506,524,531,535,546,550,552,554,567,568|🇨🇳_CN_中国->🇺🇸_US_美国_4
+  name: '4,11,114,293,327,365,413,476,490,491,497,506,523,524,531,535,546,550,552,554,567,568|🇨🇳_CN_中国->🇺🇸_US_美国_4
     #14'
   network: tcp
   password: d30d2718-91d5-11ef-b635-f23c9164ca5d
@@ -189,7 +189,7 @@ proxies:
   type: trojan
   udp: true
 - ip-version: dual
-  name: '4,11,293,365,367,489,490,491,493,494,497,501,502,503,506,510,511,524,531,535,536,537,538,539,546,550,552,567,568|🇨🇳_CN_中国->🇺🇸_US_美国_7
+  name: '4,11,114,293,365,367,413,459,460,461,487,489,490,491,493,494,497,501,502,503,506,510,511,523,524,531,535,536,537,538,539,546,550,552,567,568|🇨🇳_CN_中国->🇺🇸_US_美国_7
     #15'
   network: tcp
   password: def14a51-e0d9-11ec-8429-f23c91cfbbc9
@@ -197,6 +197,7 @@ proxies:
   server: 4560c642-swin40-tjuq6l-wf62.cu.plebai.net
   skip-cert-verify: true
   sni: 4560c642-swin40-tjuq6l-wf62.cu.plebai.net
+  tfo: false
   type: trojan
   udp: true
 - cipher: aes-256-cfb
@@ -3920,6 +3921,22 @@ proxies:
       Host: baidu.com
     path: /oooo
 - ip-version: dual
+  name: 442,444,462,465,467,470,509,550|16|🇨🇳_CN_中国->🇺🇸_US_美国_1
+  network: tcp
+  password: 5e2f888c-68ef-11ef-96ca-f23c9164ca5d
+  port: 15229
+  server: c378385c-swd340-swy6li-tni2.cu.plebai.net
+  type: trojan
+  udp: true
+- ip-version: dual
+  name: '442,444,462,465,467,470,509,550|16|🇨🇳_CN_中国->🇺🇸_US_美国 #11'
+  network: tcp
+  password: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
+  port: 15229
+  server: 4ef54dd8-swd340-t1bnjq-1krtb.cu.plebai.net
+  type: trojan
+  udp: true
+- ip-version: dual
   name: '442,444,465,470,509|🇨🇳_CN_中国->🇳🇱_NL_荷兰 #2'
   network: tcp
   password: 905edb54-b4ce-47ad-ac94-51d58161a59a
@@ -4806,6 +4823,12 @@ proxies:
   skip-cert-verify: false
   sni: trojan.burgerip.co.uk
   type: trojan
+- name: 462,467,550|16|🇸_US_美国->🇸🇪_SE_瑞典_1
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 13.61.166.141
+  sni: trojan.burgerip.co.uk
+  type: trojan
 - alterId: 2
   cipher: auto
   ip-version: dual
@@ -5108,6 +5131,19 @@ proxies:
   uuid: a6ddfc37-05eb-11ed-af40-f23c91cfbbc9
 - alterId: 0
   cipher: auto
+  name: 546|CF中转_0518205326 L1
+  network: ws
+  port: '2082'
+  server: 172.67.214.33
+  tls: false
+  type: vmess
+  uuid: 2f821152-c3e9-4074-9185-2790e7425f42
+  ws-opts:
+    headers:
+      Host: cs.flha.ru
+    path: /
+- alterId: 0
+  cipher: auto
   name: 546|CF中转_0518205601 L0
   network: ws
   port: '8443'
@@ -5118,6 +5154,19 @@ proxies:
   ws-opts:
     headers:
       Host: us01.sh-cloudflare.sbs
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 546|CF中转_0518205006 L0
+  network: ws
+  port: '2096'
+  server: 104.21.64.1
+  tls: true
+  type: vmess
+  uuid: 8f78e709-2c5f-4c19-9f44-b5b5f80ab74c
+  ws-opts:
+    headers:
+      Host: cc2d1.988988.shop
     path: /
 - alterId: 0
   cipher: auto
@@ -6056,6 +6105,12 @@ proxies:
     headers:
       Host: p3.v2raybrasil.cloud
     path: /
+- cipher: chacha20-ietf-poly1305
+  name: 562|SS->荷兰-NF解锁荷兰自制剧-ChatGPT-TikTo...
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 45.87.175.28
+  type: ss
 - cipher: aes-256-cfb
   name: 562|SSR->-NF解锁地区非自制剧-ChatGPT-YouTu...
   obfs: plain
