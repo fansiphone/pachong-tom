@@ -2,7 +2,7 @@ proxies:
 - client-fingerprint: chrome
   delay: 1217
   flow: xtls-rprx-vision
-  name: 83,330,476,515|爱沙尼亚 - 塔林 - BlueVPS OU - 1
+  name: 83,330,476,497,515|爱沙尼亚 - 塔林 - BlueVPS OU - 1
   network: tcp
   port: 5234
   reality-opts:
@@ -14,6 +14,9 @@ proxies:
   type: vless
   udp: true
   uuid: a5053089-8d6e-0ef9-8d09-aebb94f33aff
+  ws-opts:
+    headers:
+      Host: /BIA_TELEGRAM@MARAMBASHI_MARAMBASHI
   xudp: true
 - alterId: 0
   cipher: auto
@@ -37,12 +40,55 @@ proxies:
   tls: true
   type: vless
   uuid: 8da3432a-d4da-4f43-801f-342cda5eae9f
+- cipher: chacha20-ietf-poly1305
+  country: 🇺 RU
+  name: 365,422,524,525|EE-147.45.60.33-5713 | 4.302MB
+  password: LqlPI19oqnunGNSLMvdXyB
+  port: 16356
+  server: 147.45.60.33
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 365,523,524,552|🇪🇪 github.com/freefq - 爱沙尼亚  2...
+  network: ws
+  port: '80'
+  server: 176.112.146.190
+  servername: ''
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: f9247df4-02d5-4b31-acc5-4022652c5953
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- cipher: aes-256-cfb
+  name: '365,524|🇪EE-37.252.5.234-4404 #1'
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 37.252.5.234
+  type: ss
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
   name: 408|🇪🇪 爱沙尼亚 | EST
   network: ws
   port: 80
+  server: tiamo1.tiamocloud.us.kg
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 88057b54-4e76-4e1b-9854-6633ee6145f3
+  ws-opts:
+    headers:
+      Host: tiamo1.tiamocloud.us.kg
+    path: /
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 408,553,555|荷兰-FREE优化-CDN | 2x
+  network: ws
+  port: '80'
   server: tiamo1.tiamocloud.us.kg
   tls: false
   type: vmess
@@ -292,17 +338,6 @@ proxies:
     headers:
       Host: a.ssll.gay
     path: twitterfreecodessecurity%3Dtls
-- name: 476|❓_🇪🇪_💻_github.com/Ruk1ng001_63...
-  network: ws
-  port: 8880
-  server: 45.80.110.29
-  tls: false
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: hk.laoyoutiao.link
-    path: Telegram🇨🇳 @MxlShare @WangCai2 /?ed=2560
 - name: 476|❓_🇪🇪_💻_github.com/Ruk1ng001_38...
   network: ws
   port: 8880
@@ -325,27 +360,92 @@ proxies:
     headers:
       Host: reedfree8mahsang2.redorg.ir
     path: /?ed=2560
-- alterId: 0
-  cipher: auto
-  name: 523,524,552|🇪🇪 github.com/freefq - 爱沙尼亚  2...
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  name: 497|🔒 VL-WS-TLS 🇪 EE-109.206.241.1...
   network: ws
-  port: '80'
-  server: 176.112.146.190
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: f9247df4-02d5-4b31-acc5-4022652c5953
+  port: 443
+  server: 109.206.241.155
+  servername: cdn.getasa.ir
+  tls: true
+  type: vless
+  uuid: 740b2fbe-6d3a-4061-ad0f-b5c5486dc92d
+  ws-opts:
+    path: '%2Fwp-admin'
+- name: 497|🔒 VL-WS-TLS 🇪 EE-45.80.108.253...
+  network: ws
+  port: 443
+  server: 45.80.108.253
+  servername: mmdserver.us.kg
+  tls: true
+  type: vless
+  uuid: 41abecd9-8096-4142-a75c-4e1d36d990bd
   ws-opts:
     headers:
-      Host: ''
-    path: /
-- cipher: aes-256-cfb
-  name: 524|🇪EE-37.252.5.234-4404
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 37.252.5.234
-  type: ss
+      Host: mmdserver.us.kg
+    path: '%2F%3Fed%3D2048'
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 497|🔒 VL-TCP-TLS 🇪 EE-146.19.143.1...
+  port: 5234
+  server: 146.19.143.150
+  servername: yandex.com
+  tls: true
+  type: vless
+  uuid: 5a67b9fc-505b-7530-06ba-6527ed320c12
+- alpn:
+  - h2
+  name: 497|🔒 VL-GRPC-TLS 🇪 EE-45.80.110.1...
+  network: grpc
+  port: 443
+  server: 45.80.110.128
+  servername: pqh36v4.hiddendom.shop
+  tls: true
+  type: vless
+  uuid: 401374e6-df77-41fb-f638-dad8184f175b
+  ws-opts:
+    headers:
+      Host: pqh36v4.hiddendom.shop
+- name: 497|🔒 VL-WS-NA 🇪🇪 EE-45.80.110.75:...
+  network: ws
+  port: 8880
+  server: 45.80.110.75
+  tls: false
+  type: vless
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      Host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: '%2F%3Fed%3D2560'
+- name: 497,558|🔒 TR-TCP-NA 🇪🇪 EE-37.252.5.75:...
+  password: bpb-trojan
+  port: 443
+  server: 37.252.5.75
+  sni: skwygx.top
+  type: trojan
+- name: 497,558|🔒 TR-TCP-TLS 🇪🇪 EE-45.80.110.2...
+  network: tcp
+  password: bpb-trojan
+  port: 443
+  server: 45.80.110.224
+  sni: bpb.my79801.com
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 505|t.me/v2Line | (1403) EE
+  network: ws
+  port: '80'
+  server: ee1.xv2ray.net
+  servername: ee1.xv2ray.net
+  tls: false
+  type: vmess
+  uuid: 83018580-58ce-464f-b75c-2a1331a8f016
+  ws-opts:
+    headers:
+      Host: ee1.xv2ray.net
+    path: /vmess
 - alterId: 0
   cipher: auto
   name: 551|🇪EE-176.112.146.190-256
@@ -372,16 +472,3 @@ proxies:
     headers:
       Host: ee.oppo.quest
     path: /
-- name: 558|🔒 TR-TCP-TLS 🇪🇪 EE-45.80.110.2...
-  network: tcp
-  password: bpb-trojan
-  port: 443
-  server: 45.80.110.224
-  sni: bpb.my79801.com
-  type: trojan
-- name: 558|🔒 TR-TCP-NA 🇪🇪 EE-37.252.5.75:...
-  password: bpb-trojan
-  port: 443
-  server: 37.252.5.75
-  sni: skwygx.top
-  type: trojan
