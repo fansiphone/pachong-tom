@@ -50,14 +50,14 @@ proxies:
   server: 156.146.62.164
   type: ss
 - cipher: aes-128-gcm
-  country: 🇺🇸 US
+  country: 🇸 US
   name: 343,344,365,422,524,525|CH-156.146.62.162-0537 | 19.25...
   password: shadowsocks
   port: 443
   server: 156.146.62.162
   type: ss
 - cipher: aes-128-gcm
-  country: 🇸 US
+  country: 🇺🇸 US
   name: 343,344,365,422,524,525|CH-156.146.62.163-0534 | 17.69...
   password: shadowsocks
   port: 443
@@ -115,7 +115,7 @@ proxies:
   server: 185.126.116.125
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 365,524,525,530,562|SS--NF解锁自制剧-ChatGPT-TikTok-You...
+  name: 365,524,525,562|SS--NF解锁自制剧-ChatGPT-TikTok-You...
   password: oXGp1+ihlfKg826H
   port: 1866
   server: 204.136.10.115
@@ -220,6 +220,24 @@ proxies:
     path: '%2Fyouxuan'
 - alterId: 0
   cipher: auto
+  country: 🇭CH
+  h2-opts: {}
+  http-opts: {}
+  name: 420|Relay_CH-🇨🇭CH_10
+  network: ws
+  port: 2096
+  server: fr.vmess.comnpmjs.com
+  servername: fr.vmess.comnpmjs.com
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 708358a5-8c9a-55b8-a521-73b8d7b63d3b
+  ws-opts:
+    headers:
+      HOST: fr.vmess.comnpmjs.com
+    path: /vmess
+- alterId: 0
+  cipher: auto
   name: '430|🇨🇭瑞士 #1'
   network: ws
   port: 2086
@@ -261,7 +279,7 @@ proxies:
   type: vmess
   uuid: 81b2b630-8b6a-404f-b996-b12f13db5786
 - client-fingerprint: chrome
-  name: 497|🔒 VL-TCP-RLT 🇨 CH-188.213.129....
+  name: 497|🔒 VL-TCP-RLT  CH-188.213.129.1...
   network: tcp
   port: 443
   reality-opts:
@@ -274,19 +292,6 @@ proxies:
   uuid: 8c2bb7d3-7079-434b-b2ba-dc7ddc2cb859
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 497|🔒 VL-TCP-RLT 🇨🇭 CH-195.15.215....
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: FpsSPBGXGa6c1mIGmCMmrnsdnVSHQAYnQNur-QMiDTw
-    short-id: 65bd65cb739aeebe
-  server: 195.15.215.198
-  servername: www.samsung.com
-  tls: false
-  type: vless
-  uuid: e40799ef-6343-450a-95cf-88b12749e492
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
   name: 497|🔒 VL-TCP-RLT 🇭 CH-84.234.29.94...
   network: tcp
   port: 1300
@@ -297,33 +302,20 @@ proxies:
   tls: false
   type: vless
   uuid: 04c73880-8479-4164-bd2c-e7d49eb82c2c
-- alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: chrome
-  name: 497|🔒 VL-WS-TLS  CH-185.18.250.239...
-  network: ws
-  port: 2087
-  server: 185.18.250.239
-  servername: Tp3993VbRi.ScOrPiOnBiGpLaY.oRg
-  tls: true
-  type: vless
-  uuid: 31a27ed1-2ec6-4ab5-95b6-3e213e59e0a9
-  ws-opts:
-    headers:
-      Host: Tp3993VbRi.ScOrPiOnBiGpLaY.oRg
-    path: '%2F'
-- name: 497|🔒 VL-TCP-NONE  CH-188.213.129....
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 497|🔒 VL-TCP-RLT 🇭 CH-195.15.215.1...
   network: tcp
-  port: 8855
-  server: 188.213.129.55
+  port: 443
+  reality-opts:
+    public-key: FpsSPBGXGa6c1mIGmCMmrnsdnVSHQAYnQNur-QMiDTw
+    short-id: 65bd65cb739aeebe
+  server: 195.15.215.198
+  servername: www.samsung.com
   tls: false
   type: vless
-  uuid: 1e9569c5-f581-463c-b667-34001ae127e8
-  ws-opts:
-    headers:
-      Host: zula.ir
-- name: 497|🔒 VL-WS-TLS 🇭 CH-152.67.74.223...
+  uuid: e40799ef-6343-450a-95cf-88b12749e492
+- name: 497|🔒 VL-WS-TLS  CH-152.67.74.223:...
   network: ws
   port: 443
   server: 152.67.74.223
@@ -335,76 +327,10 @@ proxies:
     headers:
       Host: psycho.suex12.ir
     path: '%2FEujcp9ekQlNJr3cu%3Fed'
-- name: 497|🔒 VL-WS-TLS  CH-140.238.212.95...
-  network: ws
-  port: 443
-  server: 140.238.212.95
-  servername: sx.ylks0033.dpdns.org
-  tls: true
-  type: vless
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      Host: sx.ylks0033.dpdns.org
-    path: '%2F%3Fed'
-- name: 497|🔒 VL-WS-NA  CH-185.18.250.12:8...
-  network: ws
-  port: 80
-  server: 185.18.250.12
-  tls: false
-  type: vless
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-  ws-opts:
-    headers:
-      Host: ana-SErVICe.xAbjCDZ.wORkErs.deV
-    path: '%2F1Y6MN5DFV8zB82Ai%3Fed'
-- name: 497|🔒 VL-WS-NONE  CH-185.18.250.52...
-  network: ws
-  port: 2095
-  server: 185.18.250.52
-  tls: false
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: fuckingcloudflare.2-5e8.workers.dev
-    path: '%2F%40AZARBAYJAB1%40AZARBAYJAB1-TABREZ.NET%3Fed%3D2560'
-- name: 497|🔒 VL-WS-TLS 🇨 CH-185.18.250.27...
-  network: ws
-  port: 443
-  server: 185.18.250.27
-  servername: sany.sofia321.woRkers.DEV
-  tls: true
-  type: vless
-  uuid: f9fd5b50-ae7d-5f9a-82e8-b1a9633e682e
-  ws-opts:
-    headers:
-      Host: sany.sofia321.woRkers.DEV
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 497|🔒 VL-TCP-TLS  CH-178.209.51.11...
-  port: 444
-  server: 178.209.51.115
-  servername: opensuse.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  uuid: faaaf16e-188e-42f2-bcc1-17feadc84fad
-- name: 497|🔒 VL-WS-NONE 🇭 CH-185.18.250.7...
+- name: 497|🔒 VL-WS-NONE 🇨 CH-185.18.250.7...
   network: ws
   port: 2095
   server: 185.18.250.76
-  tls: false
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: fuckingcloudflare.2-5e8.workers.dev
-    path: '%2F%40AZARBAYJAB1%40AZARBAYJAB1-TABREZ.NET%3Fed%3D2560'
-- name: 497|🔒 VL-WS-NONE 🇨🇭 CH-185.18.250....
-  network: ws
-  port: 2095
-  server: 185.18.250.240
   tls: false
   type: vless
   uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
@@ -423,6 +349,71 @@ proxies:
     headers:
       Host: fuckingcloudflare.2-5e8.workers.dev
     path: '%2F%40AZARBAYJAB1%40AZARBAYJAB1-TABREZ.NET%3Fed%3D2560'
+- name: 497|🔒 VL-WS-NONE  CH-185.18.250.24...
+  network: ws
+  port: 2095
+  server: 185.18.250.240
+  tls: false
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: fuckingcloudflare.2-5e8.workers.dev
+    path: '%2F%40AZARBAYJAB1%40AZARBAYJAB1-TABREZ.NET%3Fed%3D2560'
+- name: 497|🔒 VL-WS-NA 🇨 CH-185.18.250.12:...
+  network: ws
+  port: 80
+  server: 185.18.250.12
+  tls: false
+  type: vless
+  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
+  ws-opts:
+    headers:
+      Host: ana-SErVICe.xAbjCDZ.wORkErs.deV
+    path: '%2F1Y6MN5DFV8zB82Ai%3Fed'
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 497|🔒 VL-TCP-TLS 🇭 CH-178.209.51.1...
+  port: 444
+  server: 178.209.51.115
+  servername: opensuse.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  uuid: faaaf16e-188e-42f2-bcc1-17feadc84fad
+- name: 497|🔒 VL-TCP-NONE 🇭 CH-188.213.129...
+  network: tcp
+  port: 8855
+  server: 188.213.129.55
+  tls: false
+  type: vless
+  uuid: 1e9569c5-f581-463c-b667-34001ae127e8
+  ws-opts:
+    headers:
+      Host: zula.ir
+- name: 497|🔒 VL-WS-TLS 🇨 CH-140.238.212.9...
+  network: ws
+  port: 443
+  server: 140.238.212.95
+  servername: sx.ylks0033.dpdns.org
+  tls: true
+  type: vless
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      Host: sx.ylks0033.dpdns.org
+    path: '%2F%3Fed'
+- name: 497|🔒 VL-WS-TLS  CH-185.18.250.27:...
+  network: ws
+  port: 443
+  server: 185.18.250.27
+  servername: sany.sofia321.woRkers.DEV
+  tls: true
+  type: vless
+  uuid: f9fd5b50-ae7d-5f9a-82e8-b1a9633e682e
+  ws-opts:
+    headers:
+      Host: sany.sofia321.woRkers.DEV
 - client-fingerprint: chrome
   flow: -udp443
   name: 497|🔒 VL-TCP-TLS 🇭 CH-144.24.243.2...
@@ -432,7 +423,34 @@ proxies:
   tls: true
   type: vless
   uuid: 54694a33-a8dc-47dd-bc38-acd3971e0055
-- name: 497|🔒 VL-WS-NONE 🇭 CH-185.18.250.2...
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  name: 497|🔒 VL-WS-TLS 🇭 CH-185.18.250.23...
+  network: ws
+  port: 2087
+  server: 185.18.250.239
+  servername: Tp3993VbRi.ScOrPiOnBiGpLaY.oRg
+  tls: true
+  type: vless
+  uuid: 31a27ed1-2ec6-4ab5-95b6-3e213e59e0a9
+  ws-opts:
+    headers:
+      Host: Tp3993VbRi.ScOrPiOnBiGpLaY.oRg
+    path: '%2F'
+- name: 497|🔒 VL-WS-NONE  CH-185.18.250.52...
+  network: ws
+  port: 2095
+  server: 185.18.250.52
+  tls: false
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: fuckingcloudflare.2-5e8.workers.dev
+    path: '%2F%40AZARBAYJAB1%40AZARBAYJAB1-TABREZ.NET%3Fed%3D2560'
+- name: '497|🔒 VL-WS-NONE  CH-185.18.250.24... #1'
   network: ws
   port: 2095
   server: 185.18.250.242
@@ -443,6 +461,16 @@ proxies:
     headers:
       Host: fuckingcloudflare.2-5e8.workers.dev
     path: '%2F%40AZARBAYJAB1%40AZARBAYJAB1-TABREZ.NET%3Fed%3D2560'
+- alterId: 0
+  cipher: auto
+  name: 497|🔒 VM-TCP-NA 🇨🇭 CH-23.166.88.18...
+  network: tcp
+  port: '22324'
+  server: 23.166.88.183
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
 - name: 497,558|🔒 TR-WS-NA 🇨🇭 CH-140.238.212.9...
   network: ws
   password: 6884d714-d3c4-4b49-aa20-767ea92837d6
