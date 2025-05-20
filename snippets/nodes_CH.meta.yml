@@ -15,24 +15,9 @@ proxies:
   udp: true
   uuid: 148cfb6d-e6c1-46a1-bf83-15f5d4052eca
   xudp: true
-- alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '114,413|🇨🇭 瑞士1 | ⬇️ 4.3MB/s|39%|Openai #1'
-  network: tcp
-  port: 443
-  server: 94.131.12.63
-  servername: wgpazu9paq-941311263-direct.threea.org
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: vless
-  uuid: 88888888-8888-8888-8888-888888888888
 - alterId: 0
   cipher: auto
-  name: 191,350|🇨🇭 CH 015 |  25.2MB/s
+  name: '191,349,350|🇨🇭 CH 015 |  25.2MB/s #1'
   port: 26104
   server: ppy-boardv2.02ijp4uos1.download
   tls: false
@@ -47,21 +32,18 @@ proxies:
   server: 156.146.62.164
   type: ss
 - cipher: aes-128-gcm
-  country: 🇸 US
+  country: 🇺🇸 US
   name: 343,344,365,422,524,525|CH-156.146.62.162-0537 | 31.38...
   password: shadowsocks
   port: 443
   server: 156.146.62.162
   type: ss
-- alterId: 0
-  cipher: aes-128-gcm
-  country: 🇸 US
-  name: '343,344,365,422,524,525,561|未知106 11.6MB/s #1'
+- cipher: aes-128-gcm
+  country: 🇺🇸 US
+  name: 343,344,365,422,524,525|CH-156.146.62.163-0534 | 30.38...
   password: shadowsocks
   port: 443
   server: 156.146.62.163
-  skip-cert-verify: true
-  tls: true
   type: ss
 - cipher: aes-256-cfb
   name: 343|🌀29-CH |  12.1MB/s
@@ -75,6 +57,39 @@ proxies:
   port: 989
   server: 51.15.15.82
   type: ss
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  http-opts:
+    headers: {}
+    path:
+    - /
+  name: 349|🇨🇭1 |  11.4MB/s |28%|Netflix|Y...
+  network: tcp
+  port: '443'
+  server: 152.67.68.116
+  servername: YAPC-1.afshin.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 7c317161-5cf8-4cbc-811a-d1297c41bb23
+  xudp: true
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  http-opts:
+    headers: {}
+    path:
+    - /
+  name: 349|🇨🇭2 |  14.0MB/s |29%|Netflix|D...
+  network: tcp
+  port: '443'
+  server: yapc-1.afshin.ir
+  servername: yapc-1.afshin.ir
+  tls: true
+  type: vless
+  udp: true
+  uuid: 7c317161-5cf8-4cbc-811a-d1297c41bb23
+  xudp: true
 - cipher: aes-256-cfb
   name: '365,524|🇨CH-185.126.116.125-0090 #1'
   password: aLpQtfEZe445QyHk
@@ -187,6 +202,24 @@ proxies:
     path: '%2Fyouxuan'
 - alterId: 0
   cipher: auto
+  country: 🇨🇭CH
+  h2-opts: {}
+  http-opts: {}
+  name: 420|Relay_CH-🇨🇭CH_10
+  network: ws
+  port: 2096
+  server: fr.vmess.comnpmjs.com
+  servername: fr.vmess.comnpmjs.com
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 708358a5-8c9a-55b8-a521-73b8d7b63d3b
+  ws-opts:
+    headers:
+      HOST: fr.vmess.comnpmjs.com
+    path: /vmess
+- alterId: 0
+  cipher: auto
   name: '430|🇨🇭瑞士 #1'
   network: ws
   port: 2086
@@ -237,19 +270,7 @@ proxies:
   udp: true
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 497|🔒 VL-TCP-RLT  CH-84.234.29.94:...
-  network: tcp
-  port: 1300
-  reality-opts:
-    public-key: FdMFSpgEwT0nhczf37d-Z8gFgJtwyV4C_pJlnOTScUA
-  server: 84.234.29.94
-  servername: refersion.com
-  tls: false
-  type: vless
-  uuid: 04c73880-8479-4164-bd2c-e7d49eb82c2c
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 497|🔒 VL-TCP-RLT 🇭 CH-195.15.215.1...
+  name: 497|🔒 VL-TCP-RLT  CH-195.15.215.19...
   network: tcp
   port: 443
   reality-opts:
@@ -261,7 +282,7 @@ proxies:
   type: vless
   uuid: e40799ef-6343-450a-95cf-88b12749e492
 - client-fingerprint: chrome
-  name: 497|🔒 VL-TCP-RLT 🇨 CH-188.213.129....
+  name: 497|🔒 VL-TCP-RLT 🇨🇭 CH-188.213.129...
   network: tcp
   port: 443
   reality-opts:
@@ -273,135 +294,17 @@ proxies:
   type: vless
   uuid: 8c2bb7d3-7079-434b-b2ba-dc7ddc2cb859
 - client-fingerprint: chrome
-  flow: -udp443
-  name: 497|🔒 VL-TCP-TLS  CH-144.24.243.20...
-  port: 443
-  server: 144.24.243.207
-  servername: 147135004002.sec20org.com
-  tls: true
-  type: vless
-  uuid: 54694a33-a8dc-47dd-bc38-acd3971e0055
-- name: 497|🔒 VL-WS-NONE 🇨 CH-185.18.250.5...
-  network: ws
-  port: 2095
-  server: 185.18.250.52
-  tls: false
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: fuckingcloudflare.2-5e8.workers.dev
-    path: '%2F%40AZARBAYJAB1%40AZARBAYJAB1-TABREZ.NET%3Fed%3D2560'
-- name: 497|🔒 VL-WS-TLS 🇨 CH-185.18.250.27...
-  network: ws
-  port: 443
-  server: 185.18.250.27
-  servername: sany.sofia321.woRkers.DEV
-  tls: true
-  type: vless
-  uuid: f9fd5b50-ae7d-5f9a-82e8-b1a9633e682e
-  ws-opts:
-    headers:
-      Host: sany.sofia321.woRkers.DEV
-- name: 497|🔒 VL-WS-NONE 🇭 CH-185.18.250.2...
-  network: ws
-  port: 2095
-  server: 185.18.250.242
-  tls: false
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: fuckingcloudflare.2-5e8.workers.dev
-    path: '%2F%40AZARBAYJAB1%40AZARBAYJAB1-TABREZ.NET%3Fed%3D2560'
-- name: 497|🔒 VL-WS-TLS 🇭 CH-152.67.74.223...
-  network: ws
-  port: 443
-  server: 152.67.74.223
-  servername: psycho.suex12.ir
-  tls: true
-  type: vless
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  ws-opts:
-    headers:
-      Host: psycho.suex12.ir
-    path: '%2FEujcp9ekQlNJr3cu%3Fed'
-- name: 497|🔒 VL-WS-NONE  CH-185.18.250.12...
-  network: ws
-  port: 2095
-  server: 185.18.250.121
-  tls: false
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: fuckingcloudflare.2-5e8.workers.dev
-    path: '%2F%40AZARBAYJAB1%40AZARBAYJAB1-TABREZ.NET%3Fed%3D2560'
-- name: 497|🔒 VL-WS-NONE 🇨🇭 CH-185.18.250....
-  network: ws
-  port: 2095
-  server: 185.18.250.76
-  tls: false
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: fuckingcloudflare.2-5e8.workers.dev
-    path: '%2F%40AZARBAYJAB1%40AZARBAYJAB1-TABREZ.NET%3Fed%3D2560'
-- name: 497|🔒 VL-TCP-NONE  CH-188.213.129....
-  network: tcp
-  port: 8855
-  server: 188.213.129.55
-  tls: false
-  type: vless
-  uuid: 1e9569c5-f581-463c-b667-34001ae127e8
-  ws-opts:
-    headers:
-      Host: zula.ir
-- name: 497|🔒 VL-WS-NA  CH-185.18.250.12:8...
-  network: ws
-  port: 80
-  server: 185.18.250.12
-  tls: false
-  type: vless
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-  ws-opts:
-    headers:
-      Host: ana-SErVICe.xAbjCDZ.wORkErs.deV
-    path: '%2F1Y6MN5DFV8zB82Ai%3Fed'
-- client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 497|🔒 VL-TCP-TLS 🇭 CH-178.209.51.1...
-  port: 444
-  server: 178.209.51.115
-  servername: opensuse.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  uuid: faaaf16e-188e-42f2-bcc1-17feadc84fad
-- name: 497|🔒 VL-WS-TLS 🇭 CH-140.238.212.9...
-  network: ws
-  port: 443
-  server: 140.238.212.95
-  servername: sx.ylks0033.dpdns.org
-  tls: true
-  type: vless
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      Host: sx.ylks0033.dpdns.org
-    path: '%2F%3Fed'
-- name: '497|🔒 VL-WS-NONE 🇭 CH-185.18.250.2... #1'
-  network: ws
-  port: 2095
-  server: 185.18.250.240
+  name: 497|🔒 VL-TCP-RLT 🇨 CH-84.234.29.94...
+  network: tcp
+  port: 1300
+  reality-opts:
+    public-key: FdMFSpgEwT0nhczf37d-Z8gFgJtwyV4C_pJlnOTScUA
+  server: 84.234.29.94
+  servername: refersion.com
   tls: false
   type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: fuckingcloudflare.2-5e8.workers.dev
-    path: '%2F%40AZARBAYJAB1%40AZARBAYJAB1-TABREZ.NET%3Fed%3D2560'
+  uuid: 04c73880-8479-4164-bd2c-e7d49eb82c2c
 - alpn:
   - h2
   - http/1.1
@@ -418,6 +321,136 @@ proxies:
     headers:
       Host: Tp3993VbRi.ScOrPiOnBiGpLaY.oRg
     path: '%2F'
+- client-fingerprint: chrome
+  flow: -udp443
+  name: 497|🔒 VL-TCP-TLS  CH-144.24.243.20...
+  port: 443
+  server: 144.24.243.207
+  servername: 147135004002.sec20org.com
+  tls: true
+  type: vless
+  uuid: 54694a33-a8dc-47dd-bc38-acd3971e0055
+- name: 497|🔒 VL-WS-NONE  CH-185.18.250.12...
+  network: ws
+  port: 2095
+  server: 185.18.250.121
+  tls: false
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: fuckingcloudflare.2-5e8.workers.dev
+    path: '%2F%40AZARBAYJAB1%40AZARBAYJAB1-TABREZ.NET%3Fed%3D2560'
+- name: 497|🔒 VL-WS-NONE  CH-185.18.250.76...
+  network: ws
+  port: 2095
+  server: 185.18.250.76
+  tls: false
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: fuckingcloudflare.2-5e8.workers.dev
+    path: '%2F%40AZARBAYJAB1%40AZARBAYJAB1-TABREZ.NET%3Fed%3D2560'
+- name: 497|🔒 VL-WS-NONE 🇭 CH-185.18.250.2...
+  network: ws
+  port: 2095
+  server: 185.18.250.240
+  tls: false
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: fuckingcloudflare.2-5e8.workers.dev
+    path: '%2F%40AZARBAYJAB1%40AZARBAYJAB1-TABREZ.NET%3Fed%3D2560'
+- name: 497|🔒 VL-WS-TLS  CH-140.238.212.95...
+  network: ws
+  port: 443
+  server: 140.238.212.95
+  servername: sx.ylks0033.dpdns.org
+  tls: true
+  type: vless
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      Host: sx.ylks0033.dpdns.org
+    path: '%2F%3Fed'
+- name: 497|🔒 VL-WS-TLS 🇨🇭 CH-185.18.250.2...
+  network: ws
+  port: 443
+  server: 185.18.250.27
+  servername: sany.sofia321.woRkers.DEV
+  tls: true
+  type: vless
+  uuid: f9fd5b50-ae7d-5f9a-82e8-b1a9633e682e
+  ws-opts:
+    headers:
+      Host: sany.sofia321.woRkers.DEV
+- name: 497|🔒 VL-TCP-NONE  CH-188.213.129....
+  network: tcp
+  port: 8855
+  server: 188.213.129.55
+  tls: false
+  type: vless
+  uuid: 1e9569c5-f581-463c-b667-34001ae127e8
+  ws-opts:
+    headers:
+      Host: zula.ir
+- name: 497|🔒 VL-WS-NONE  CH-185.18.250.52...
+  network: ws
+  port: 2095
+  server: 185.18.250.52
+  tls: false
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: fuckingcloudflare.2-5e8.workers.dev
+    path: '%2F%40AZARBAYJAB1%40AZARBAYJAB1-TABREZ.NET%3Fed%3D2560'
+- name: 497|🔒 VL-WS-TLS 🇨 CH-152.67.74.223...
+  network: ws
+  port: 443
+  server: 152.67.74.223
+  servername: psycho.suex12.ir
+  tls: true
+  type: vless
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      Host: psycho.suex12.ir
+    path: '%2FEujcp9ekQlNJr3cu%3Fed'
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 497|🔒 VL-TCP-TLS 🇭 CH-178.209.51.1...
+  port: 444
+  server: 178.209.51.115
+  servername: opensuse.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  uuid: faaaf16e-188e-42f2-bcc1-17feadc84fad
+- name: 497|🔒 VL-WS-NONE  CH-185.18.250.24...
+  network: ws
+  port: 2095
+  server: 185.18.250.242
+  tls: false
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: fuckingcloudflare.2-5e8.workers.dev
+    path: '%2F%40AZARBAYJAB1%40AZARBAYJAB1-TABREZ.NET%3Fed%3D2560'
+- name: 497|🔒 VL-WS-NA 🇨 CH-185.18.250.12:...
+  network: ws
+  port: 80
+  server: 185.18.250.12
+  tls: false
+  type: vless
+  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
+  ws-opts:
+    headers:
+      Host: ana-SErVICe.xAbjCDZ.wORkErs.deV
+    path: '%2F1Y6MN5DFV8zB82Ai%3Fed'
 - name: 497,558|🔒 TR-WS-NA 🇨🇭 CH-140.238.212.9...
   network: ws
   password: 6884d714-d3c4-4b49-aa20-767ea92837d6
@@ -428,6 +461,23 @@ proxies:
   ws-opts:
     headers:
       Host: icecream.955850.xyz
+- name: 501,536,538,541|CHANEL@v2rayngzendegimamad_Aq
+  password: 3a10983a-d8b3-4b16-b3d5-fe3ed7ec724c
+  port: 80
+  server: ru.mochizuki.top
+  sni: ru.mochizuki.top
+  tls: false
+  type: hysteria2
+- name: '501,536,538|12|CHANEL@v2rayngzendegimamad2 #1'
+  obfs: salamander
+  obfs-password: 7d9dff369a11f6e0
+  password: 81ea378b37931b23
+  port: 7373
+  server: 77.221.158.52
+  skip-cert-verify: true
+  sni: www.bing.com
+  tls: false
+  type: hysteria2
 - alterId: 0
   cipher: auto
   name: 505|V2FETCH
@@ -472,6 +522,16 @@ proxies:
     headers:
       Host: cfed.tgzdyz2.top
     path: tg%40zdyz2
+- name: 541|CHANEL@v2rayngzendegimamad2
+  obfs: salamander
+  obfs-password: 7d9dff369a11f6e0
+  password: 81ea378b37931b23
+  port: 7373
+  server: 77.221.158.52
+  skip-cert-verify: true
+  sni: www.bing.com
+  tls: false
+  type: hysteria2
 - name: '666,714,715,716|🇨🇭 瑞士1 #3'
   password: '!!str 1'
   port: 10009
