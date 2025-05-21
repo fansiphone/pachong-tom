@@ -1,8 +1,16 @@
 proxies:
+- alterId: 0
+  cipher: auto
+  name: '191,349,350|🌀22-EE |  21.4MB/s |  21.3MB/s #1'
+  port: 26152
+  server: ppy-boardv2.02ijp4uos1.download
+  type: vmess
+  udp: true
+  uuid: aa15b97a-24b1-3a31-824a-bc52f5a15bac
 - client-fingerprint: chrome
   delay: 1217
   flow: xtls-rprx-vision
-  name: 83,330,476,497,515|爱沙尼亚 - 塔林 - BlueVPS OU - 1
+  name: 330,476,497,515|爱沙尼亚 - 塔林 - BlueVPS OU - 1
   network: tcp
   port: 5234
   reality-opts:
@@ -18,14 +26,6 @@ proxies:
     headers:
       Host: '%2FBIA_TELEGRAM%40MARAMBASHI_MARAMBASHI'
   xudp: true
-- alterId: 0
-  cipher: auto
-  name: '191,349,350|🌀22-EE |  21.4MB/s |  21.3MB/s #1'
-  port: 26152
-  server: ppy-boardv2.02ijp4uos1.download
-  type: vmess
-  udp: true
-  uuid: aa15b97a-24b1-3a31-824a-bc52f5a15bac
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: 359|🇪🇪 Estonia 1 TG:@nodpai
@@ -41,7 +41,8 @@ proxies:
   type: vless
   uuid: 8da3432a-d4da-4f43-801f-342cda5eae9f
 - cipher: chacha20-ietf-poly1305
-  name: 365,524,525|EE-147.45.60.33-0550 | 25.602M...
+  country: 🇺 RU
+  name: 365,422,524,525|EE-147.45.60.33-0550 | 8.889MB
   password: LqlPI19oqnunGNSLMvdXyB
   port: 16356
   server: 147.45.60.33
@@ -62,26 +63,11 @@ proxies:
       Host: ''
     path: /
 - cipher: aes-256-cfb
-  name: '365,524|🇪EE-37.252.5.234-4577 #1'
+  name: '365,524|🇪EE-37.252.5.234-4536 #1'
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 37.252.5.234
   type: ss
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 408|🇪🇪 爱沙尼亚 | EST
-  network: ws
-  port: 80
-  server: tiamo1.tiamocloud.us.kg
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 676b3f72-7ca5-4141-af0d-fb17ca955b3c
-  ws-opts:
-    headers:
-      Host: tiamo1.tiamocloud.us.kg
-    path: /
 - name: 449|爱沙尼亚_塔林
   network: ws
   port: 2087
@@ -324,7 +310,7 @@ proxies:
     path: twitterfreecodessecurity%3Dtls
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '497|🔒 VL-TCP-RLT 🇪 EE-146.19.143.1... #1'
+  name: 497|🔒 VL-TCP-RLT 🇪 EE-146.19.143.1...
   network: tcp
   port: 4768
   reality-opts:
@@ -335,6 +321,32 @@ proxies:
   tls: false
   type: vless
   uuid: af50bdbf-1715-a461-cbb4-ebbea9ed338c
+- name: 497|🔒 VL-WS-NA 🇪 EE-45.80.110.20:8...
+  network: ws
+  port: 8880
+  server: 45.80.110.20
+  servername: reedfree8mahsang2.redorg.ir
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      Host: reedfree8mahsang2.redorg.ir
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  name: 497|🔒 VL-WS-TLS 🇪 EE-109.206.241.1...
+  network: ws
+  port: 443
+  server: 109.206.241.155
+  servername: cdn.getasa.ir
+  tls: true
+  type: vless
+  uuid: 740b2fbe-6d3a-4061-ad0f-b5c5486dc92d
+  ws-opts:
+    path: '%2Fwp-admin'
 - alpn:
   - h2
   name: 497|🔒 VL-GRPC-TLS 🇪 EE-45.80.110.1...
@@ -359,20 +371,32 @@ proxies:
     headers:
       Host: 23-lsjfjwiposkfls.hc2021.cfd
     path: '%2F%3Fed%3D2560'
-- alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: chrome
-  name: 497|🔒 VL-WS-TLS 🇪 EE-109.206.241.1...
+- name: 497|🔒 VL-WS-NA 🇪 EE-45.80.110.29:8...
   network: ws
-  port: 443
-  server: 109.206.241.155
-  servername: cdn.getasa.ir
-  tls: true
+  port: 8880
+  server: 45.80.110.29
+  servername: hk.laoyoutiao.link
+  skip-cert-verify: false
+  tls: false
   type: vless
-  uuid: 740b2fbe-6d3a-4061-ad0f-b5c5486dc92d
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
   ws-opts:
-    path: '%2Fwp-admin'
+    headers:
+      Host: hk.laoyoutiao.link
+    path: /TelegramU0001F1E8U0001F1F3
+- name: 497|🔒 VL-WS-NA 🇪 EE-185.159.247.29...
+  network: ws
+  port: 8880
+  server: 185.159.247.29
+  servername: hk.laoyoutiao.link
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: hk.laoyoutiao.link
+    path: /TelegramU0001F1E8U0001F1F3
 - name: 497|🔒 VL-WS-TLS 🇪 EE-45.80.108.253...
   network: ws
   port: 443
@@ -421,9 +445,23 @@ proxies:
     headers:
       Host: ee1.xv2ray.net
     path: /vmess
+- name: '536,554,572,573|EE_speednode_0061 #1'
+  network: ws
+  port: 8880
+  server: 45.80.110.29
+  servername: hk.laoyoutiao.link
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: hk.laoyoutiao.link
+    path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
 - alterId: 0
   cipher: auto
-  name: 551|🇪EE-176.112.146.190-266
+  name: 551|🇪EE-176.112.146.190-282
   network: ws
   port: 80
   server: 176.112.146.190
@@ -447,17 +485,3 @@ proxies:
     headers:
       Host: ee.oppo.quest
     path: /
-- name: '554,572,573|EE_speednode_0061 #1'
-  network: ws
-  port: 8880
-  server: 45.80.110.29
-  servername: hk.laoyoutiao.link
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: hk.laoyoutiao.link
-    path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
