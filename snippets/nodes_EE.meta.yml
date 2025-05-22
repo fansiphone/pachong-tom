@@ -12,7 +12,7 @@ proxies:
   client-fingerprint: chrome
   delay: 1167
   flow: xtls-rprx-vision
-  name: 330,515|拉脱维亚 - Riga - SIA VEESP - 1
+  name: 330,476,515|拉脱维亚 - Riga - SIA VEESP - 1
   network: tcp
   port: 6003
   reality-opts:
@@ -69,7 +69,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 408|🇪🇪 爱沙尼亚 | EST
+  name: 408,553|🇳🇱 荷兰-FREE优化-CDN | 2x
   network: ws
   port: 80
   server: tiamo1.tiamocloud.us.kg
@@ -347,7 +347,7 @@ proxies:
   uuid: af50bdbf-1715-a461-cbb4-ebbea9ed338c
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 497|🔒 VL-TCP-RLT 🇪🇪 EE-146.19.143....
+  name: '497|🔒 VL-TCP-RLT 🇪 EE-146.19.143.1... #1'
   network: tcp
   port: 5234
   reality-opts:
@@ -361,6 +361,27 @@ proxies:
   ws-opts:
     headers:
       Host: '%2FBIA_TELEGRAM%40MARAMBASHI_MARAMBASHI'
+- name: 497|🔒 VL-WS-TLS 🇪 EE-45.80.108.253...
+  network: ws
+  port: 443
+  server: 45.80.108.253
+  servername: mmdserver.us.kg
+  tls: true
+  type: vless
+  uuid: 41abecd9-8096-4142-a75c-4e1d36d990bd
+  ws-opts:
+    headers:
+      Host: mmdserver.us.kg
+    path: '%2F%3Fed%3D2048'
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 497|🔒 VL-TCP-TLS 🇪 EE-146.19.143.1...
+  port: 5234
+  server: 146.19.143.150
+  servername: yandex.com
+  tls: true
+  type: vless
+  uuid: 5a67b9fc-505b-7530-06ba-6527ed320c12
 - name: 497|🔒 VL-WS-NA 🇪 EE-45.80.110.29:8...
   network: ws
   port: 8880
@@ -374,29 +395,6 @@ proxies:
     headers:
       Host: hk.laoyoutiao.link
     path: /TelegramU0001F1E8U0001F1F3
-- name: 497|🔒 VL-WS-NA 🇪 EE-45.80.110.20:8...
-  network: ws
-  port: 8880
-  server: 45.80.110.20
-  servername: reedfree8mahsang2.redorg.ir
-  skip-cert-verify: true
-  tls: false
-  type: vless
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  ws-opts:
-    headers:
-      Host: reedfree8mahsang2.redorg.ir
-- name: 497|🔒 VL-WS-NA 🇪 EE-45.80.110.75:8...
-  network: ws
-  port: 8880
-  server: 45.80.110.75
-  tls: false
-  type: vless
-  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
-  ws-opts:
-    headers:
-      Host: 23-lsjfjwiposkfls.hc2021.cfd
-    path: '%2F%3Fed%3D2560'
 - name: 497|🔒 VL-WS-NA 🇪 EE-185.159.247.29...
   network: ws
   port: 8880
@@ -410,15 +408,6 @@ proxies:
     headers:
       Host: hk.laoyoutiao.link
     path: /TelegramU0001F1E8U0001F1F3
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 497|🔒 VL-TCP-TLS 🇪 EE-146.19.143.1...
-  port: 5234
-  server: 146.19.143.150
-  servername: yandex.com
-  tls: true
-  type: vless
-  uuid: 5a67b9fc-505b-7530-06ba-6527ed320c12
 - alpn:
   - h2
   - http/1.1
@@ -433,18 +422,17 @@ proxies:
   uuid: 740b2fbe-6d3a-4061-ad0f-b5c5486dc92d
   ws-opts:
     path: '%2Fwp-admin'
-- name: 497|🔒 VL-WS-TLS 🇪 EE-45.80.108.253...
+- name: 497|🔒 VL-WS-NA 🇪 EE-45.80.110.75:8...
   network: ws
-  port: 443
-  server: 45.80.108.253
-  servername: mmdserver.us.kg
-  tls: true
+  port: 8880
+  server: 45.80.110.75
+  tls: false
   type: vless
-  uuid: 41abecd9-8096-4142-a75c-4e1d36d990bd
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
   ws-opts:
     headers:
-      Host: mmdserver.us.kg
-    path: '%2F%3Fed%3D2048'
+      Host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: '%2F%3Fed%3D2560'
 - alpn:
   - h2
   name: 497|🔒 VL-GRPC-TLS 🇪 EE-45.80.110.1...
@@ -458,18 +446,30 @@ proxies:
   ws-opts:
     headers:
       Host: pqh36v4.hiddendom.shop
-- name: 497,558|🔒 TR-TCP-NA 🇪🇪 EE-37.252.5.75:...
-  password: bpb-trojan
-  port: 443
-  server: 37.252.5.75
-  sni: skwygx.top
-  type: trojan
+- name: 497|🔒 VL-WS-NA 🇪 EE-45.80.110.20:8...
+  network: ws
+  port: 8880
+  server: 45.80.110.20
+  servername: reedfree8mahsang2.redorg.ir
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      Host: reedfree8mahsang2.redorg.ir
 - name: 497,558|🔒 TR-TCP-TLS 🇪🇪 EE-45.80.110.2...
   network: tcp
   password: bpb-trojan
   port: 443
   server: 45.80.110.224
   sni: bpb.my79801.com
+  type: trojan
+- name: 497,558|🔒 TR-TCP-NA 🇪🇪 EE-37.252.5.75:...
+  password: bpb-trojan
+  port: 443
+  server: 37.252.5.75
+  sni: skwygx.top
   type: trojan
 - alterId: 0
   cipher: auto
