@@ -1,8 +1,9 @@
 proxies:
 - cipher: aes-256-cfb
+  country: ' ZZ'
   delay: 723
   ip-version: dual
-  name: '4,11,83,330,365,465,470,506,509,515,524,535|🇷🇺_RU_俄罗斯 #7'
+  name: '4,11,83,330,365,422,465,470,506,509,515,524,535|🇷🇺_RU_俄罗斯 #7'
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 185.231.233.112
@@ -37,7 +38,7 @@ proxies:
   client-fingerprint: chrome
   delay: 594
   disable-sni: false
-  name: 83,114,330,367,413,476,515,536|2|🇷🇺1 |  2.5MB/s|50%
+  name: 83,114,330,367,413,476,515,536|3|🇷🇺1 |  2.5MB/s|50%
   password: f3ba3679-f2f4-465f-92a5-de320b775a88
   port: 43516
   reduce-rtt: false
@@ -75,22 +76,11 @@ proxies:
 - cipher: aes-256-gcm
   country: 🇷🇺RU
   delay: 377
-  name: 83,330,515|俄罗斯 - 莫斯科 - LLC Baxet - 4
+  name: 83,330,476,515|俄罗斯 - 莫斯科 - LLC Baxet - 4
   password: 4194ce5b1f36f660
   port: 2022
   server: 176.32.35.68
   type: ss
-- auth: dongtaiwang.com
-  country: RU
-  name: 114,300,413,556|Russia_hysteria2_2
-  password: dongtaiwang.com
-  port: 30033
-  server: hy2.694463.xyz
-  skip-cert-verify: true
-  sni: www.bing.com
-  tls: false
-  type: hysteria2
-  udp: true
 - alpn:
   - h3
   auth-str: ''
@@ -107,20 +97,18 @@ proxies:
   tls: true
   type: hysteria
   up: 1000 Mbps
-- alpn:
-  - h3
-  auth-str: ''
-  auth_str: dongtaiwang.com
-  down: 1000 Mbps
-  fast-open: false
-  name: '114,413,547,548|AlvinQuick-1 #1'
-  port: 10803
-  protocol: udp
-  server: 185.22.155.71
+- auth: dongtaiwang.com
+  country: RU
+  fast-open: true
+  name: 114,293,300,413,556|Russia_hysteria2_2
+  password: dongtaiwang.com
+  port: 30033
+  server: hy2.694463.xyz
   skip-cert-verify: true
   sni: www.bing.com
-  type: hysteria
-  up: 1000 Mbps
+  tls: false
+  type: hysteria2
+  udp: true
 - auth: 32d3795c-7e38-425a-8a8c-9d195d1cb351
   down: 1000
   name: 185,540|yandex-1586
@@ -170,7 +158,21 @@ proxies:
   type: vmess
   udp: true
   uuid: f7eb5b07-0dd6-4d6d-900d-6781c51c2283
-- name: '327,489,493,494,501,536,538,541|Channel id: @ShadowProxy66🇷🇺'
+- alpn:
+  - h3
+  auth_str: dongtaiwang.com
+  down: 1000 Mbps
+  fast-open: true
+  name: '293,547,548|AlvinQuick-1 #1'
+  port: 10803
+  ports: 10803
+  protocol: udp
+  server: 185.22.155.71
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria
+  up: 1000 Mbps
+- name: '327,489,493,494,501,536,538,541,550|11|Channel id: @ShadowProxy66🇷... #11'
   password: dongtaiwang.com
   port: 12904
   server: 46.17.41.5
@@ -178,7 +180,7 @@ proxies:
   sni: apple.com
   tls: false
   type: hysteria2
-- name: '327,489,493,494,501,536,538,541|Channel id: @ShadowProxy66🇷🇺 #1'
+- name: '327,489,493,494,501,536,538,541,550|11|Channel id: @ShadowProxy66🇷... #10'
   password: ADA91529-7BC1-4A5B-8AE7-30ED6D8959C0
   port: 56410
   server: 85.235.205.212
@@ -540,7 +542,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '365,500,504,523,524,549,565|2|🇷🇺_RU_俄罗斯联邦 #1 #2'
+  name: '365,500,504,523,524,549,550,565|2|🇷🇺_RU_俄罗斯联邦 #1 #2'
   network: ws
   port: 12910
   server: 45.136.245.240
@@ -657,15 +659,14 @@ proxies:
   server: 185.126.239.250
   type: ss
 - cipher: chacha20-ietf-poly1305
-  country: 🇷🇺RU
-  name: '365,420,524|🇷🇺RU-45.139.24.24-5231 #1'
+  name: '365,524|🇷🇺RU-45.139.24.24-5231 #1'
   password: 360e21d21977dc11
   port: 57456
   server: 45.139.24.24
   type: ss
 - alterId: 0
   cipher: auto
-  name: 365,524,540,556,559|🔒 VM-WS-NA 🇷🇺 RU-45.147.201.23...
+  name: 365,524,540,550,556,559|🔒 VM-WS-NA 🇷🇺 RU-45.147.201.23...
   network: ws
   port: 20037
   server: 45.147.201.231
@@ -743,13 +744,14 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  country: 🇺🇸 US
+  country: 🇺 RU
   h2-opts: {}
   http-opts: {}
-  name: '420,422,424|🇺🇸 US_268 #1'
+  name: '422,424|🇷🇺 RU_217 #1'
   network: tcp
-  port: 45417
-  server: lt.fxlcn.com
+  port: 45245
+  server: ye.fxlcn.com
+  servername: ye.fxlcn.com
   skip-cert-verify: true
   tls: false
   type: vmess
@@ -760,11 +762,10 @@ proxies:
   country: 🇷🇺 RU
   h2-opts: {}
   http-opts: {}
-  name: 422,424|🇷🇺 RU_221
+  name: 422,424|🇷🇺 RU_218
   network: tcp
-  port: 45245
-  server: ye.fxlcn.com
-  servername: ye.fxlcn.com
+  port: 45215
+  server: fa.fxlcn.com
   skip-cert-verify: true
   tls: false
   type: vmess
@@ -1749,6 +1750,12 @@ proxies:
     headers:
       Host: ''
     path: /
+- client-fingerprint: chrome
+  name: 457,550|3|edc7ec3897e74474b3e9bb54a71f...
+  password: 6884d714-d3c4-4b49-aa20-767ea92837d6
+  port: 443
+  server: 45.67.215.196
+  type: trojan
 - name: '463,468|俄罗斯(mibei77.com 米贝节点分享) #21'
   password: Aimer
   port: 8443
@@ -1763,403 +1770,6 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
-- auth: 35c941a1-3abc-4007-9567-0e64f1a4c00a
-  client-fingerprint: chrome
-  down: 50
-  name: 476|🟠_🇷🇺_💻_github.com/Ruk1ng001_39...
-  obfs: salamander
-  obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
-  password: 35c941a1-3abc-4007-9567-0e64f1a4c00a
-  port: 31005
-  server: 45.147.201.231
-  skip-cert-verify: true
-  type: hysteria2
-  udp: true
-  up: 50
-- auth: 9c6ad3af-e7a6-4e92-b465-a75cb23e4888
-  client-fingerprint: chrome
-  down: 100
-  name: 476|🟠_🇷🇺_💻_github.com/Ruk1ng001_62...
-  obfs: salamander
-  obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
-  password: 9c6ad3af-e7a6-4e92-b465-a75cb23e4888
-  port: 30073
-  server: 45.147.201.231
-  skip-cert-verify: true
-  type: hysteria2
-  udp: true
-  up: 100
-- auth: 7d472690-b667-499f-a601-156d8a8f151e
-  client-fingerprint: chrome
-  down: 50
-  name: 476|🟠_🇷🇺_💻_github.com/Ruk1ng001_63...
-  obfs: salamander
-  obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
-  password: 7d472690-b667-499f-a601-156d8a8f151e
-  port: 30073
-  server: 45.147.201.231
-  skip-cert-verify: true
-  type: hysteria2
-  udp: true
-  up: 50
-- auth: 543c2ab3-440f-4273-81d6-5def5eaaa269
-  client-fingerprint: chrome
-  down: 50
-  name: '476|🟠_🇷🇺_💻_github.com/Ruk1ng001_39... #1'
-  obfs: salamander
-  obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
-  password: 543c2ab3-440f-4273-81d6-5def5eaaa269
-  port: 30073
-  server: 45.147.201.231
-  skip-cert-verify: true
-  type: hysteria2
-  udp: true
-  up: 50
-- auth: 5833c1b9-b23d-43b3-9ac8-b7f66d1e01f6
-  client-fingerprint: chrome
-  down: 100
-  name: 476|🟠_🇷🇺_💻_github.com/Ruk1ng001_34...
-  obfs: salamander
-  obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
-  password: 5833c1b9-b23d-43b3-9ac8-b7f66d1e01f6
-  port: 30073
-  server: 45.147.201.231
-  skip-cert-verify: true
-  type: hysteria2
-  udp: true
-  up: 100
-- auth: d1bd5276-7bf1-4527-878c-fbd9f22d39de
-  client-fingerprint: chrome
-  down: 100
-  name: 476|🟠_🇷🇺_💻_github.com/Ruk1ng001_31...
-  obfs: salamander
-  obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
-  password: d1bd5276-7bf1-4527-878c-fbd9f22d39de
-  port: 33076
-  server: 45.147.201.231
-  skip-cert-verify: true
-  type: hysteria2
-  udp: true
-  up: 100
-- auth: 9e379764-6539-469f-90d5-5e48e9b9a4b8
-  client-fingerprint: chrome
-  down: 100
-  name: 476|🟠_🇷🇺_💻_github.com/Ruk1ng001_37...
-  obfs: salamander
-  obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
-  password: 9e379764-6539-469f-90d5-5e48e9b9a4b8
-  port: 31005
-  server: 45.147.201.231
-  skip-cert-verify: true
-  type: hysteria2
-  udp: true
-  up: 100
-- auth: bb7edade-2cfc-44bb-b4ae-76c4e736ea93
-  client-fingerprint: chrome
-  down: 100
-  name: '476|🟠_🇷🇺_💻_github.com/Ruk1ng001_62... #1'
-  obfs: salamander
-  obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
-  password: bb7edade-2cfc-44bb-b4ae-76c4e736ea93
-  port: 31005
-  server: 45.147.201.231
-  skip-cert-verify: true
-  type: hysteria2
-  udp: true
-  up: 100
-- name: 476|❓_🇷🇺_💻_github.com/Ruk1ng001_32...
-  network: ws
-  port: 8880
-  server: 5.182.85.29
-  tls: false
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: hk.laoyoutiao.link
-    path: Telegram🇨🇳 @MxlShare @WangCai2 /?ed=2560
-- auth: c368652b-7f56-4586-b1b4-b3acd70b10f4
-  client-fingerprint: chrome
-  down: 15
-  name: '476|🟠_🇷🇺_💻_github.com/Ruk1ng001_62... #2'
-  obfs: salamander
-  obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
-  password: c368652b-7f56-4586-b1b4-b3acd70b10f4
-  port: 30073
-  server: 45.147.201.231
-  skip-cert-verify: true
-  type: hysteria2
-  udp: true
-  up: 15
-- auth: d4fc5bc4-4522-4437-afaa-ed006051b23d
-  client-fingerprint: chrome
-  down: 50
-  name: 476|🟠_🇷🇺_💻_github.com/Ruk1ng001_33...
-  obfs: salamander
-  obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
-  password: d4fc5bc4-4522-4437-afaa-ed006051b23d
-  port: 31005
-  server: 45.147.201.231
-  skip-cert-verify: true
-  type: hysteria2
-  udp: true
-  up: 50
-- auth: 7d472690-b667-499f-a601-156d8a8f151e
-  client-fingerprint: chrome
-  down: 50
-  name: '476|🟠_🇷🇺_💻_github.com/Ruk1ng001_39... #2'
-  obfs: salamander
-  obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
-  password: 7d472690-b667-499f-a601-156d8a8f151e
-  port: 31005
-  server: 45.147.201.231
-  skip-cert-verify: true
-  type: hysteria2
-  udp: true
-  up: 50
-- name: 476|❓_🇷🇺_💻_github.com/Ruk1ng001_61...
-  network: ws
-  port: 8880
-  server: 5.182.84.29
-  tls: false
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: hk.laoyoutiao.link
-    path: Telegram🇨🇳 @MxlShare @WangCai2 /?ed=2560
-- name: 476|🟡_🇷🇺_💻_github.com/Ruk1ng001_34...
-  network: ws
-  port: 8880
-  server: 185.221.160.29
-  tls: false
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: hk.laoyoutiao.link
-    path: Telegram🇨🇳 @MxlShare @WangCai2 /?ed=2560
-- auth: db873e6b-8a1f-4727-b25e-7b82ae18533e
-  client-fingerprint: chrome
-  down: 100
-  name: '476|🟠_🇷🇺_💻_github.com/Ruk1ng001_62... #3'
-  obfs: salamander
-  obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
-  password: db873e6b-8a1f-4727-b25e-7b82ae18533e
-  port: 31005
-  server: 45.147.201.231
-  skip-cert-verify: true
-  type: hysteria2
-  udp: true
-  up: 100
-- auth: f597218c-f080-4888-a6f6-f787874921d5
-  client-fingerprint: chrome
-  down: 100
-  name: 476|🟠_🇷🇺_💻_github.com/Ruk1ng001_65...
-  obfs: salamander
-  obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
-  password: f597218c-f080-4888-a6f6-f787874921d5
-  port: 31005
-  server: 45.147.201.231
-  skip-cert-verify: true
-  type: hysteria2
-  udp: true
-  up: 100
-- auth: c581a44a-f3d1-4537-b941-97ca18127882
-  client-fingerprint: chrome
-  down: 100
-  name: 476|🟠_🇷🇺_💻_github.com/Ruk1ng001_36...
-  obfs: salamander
-  obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
-  password: c581a44a-f3d1-4537-b941-97ca18127882
-  port: 31005
-  server: 45.147.201.231
-  skip-cert-verify: true
-  type: hysteria2
-  udp: true
-  up: 100
-- auth: 2eaf2b51-667f-4a2e-a688-41242b6edc33
-  client-fingerprint: chrome
-  down: 50
-  name: '476|🟠_🇷🇺_💻_github.com/Ruk1ng001_33... #1'
-  obfs: salamander
-  obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
-  password: 2eaf2b51-667f-4a2e-a688-41242b6edc33
-  port: 33076
-  server: 45.147.201.231
-  skip-cert-verify: true
-  type: hysteria2
-  udp: true
-  up: 50
-- auth: cab5e4c5-5659-4fce-a03a-17097eba59af
-  client-fingerprint: chrome
-  down: 50
-  name: '476|🟠_🇷🇺_💻_github.com/Ruk1ng001_39... #3'
-  obfs: salamander
-  obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
-  password: cab5e4c5-5659-4fce-a03a-17097eba59af
-  port: 31005
-  server: 45.147.201.231
-  skip-cert-verify: true
-  type: hysteria2
-  udp: true
-  up: 50
-- auth: 52075e02-ca4e-4001-bf3a-4298baecc85b
-  client-fingerprint: chrome
-  down: 50
-  name: '476|🟠_🇷🇺_💻_github.com/Ruk1ng001_63... #1'
-  obfs: salamander
-  obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
-  password: 52075e02-ca4e-4001-bf3a-4298baecc85b
-  port: 31005
-  server: 45.147.201.231
-  skip-cert-verify: true
-  type: hysteria2
-  udp: true
-  up: 50
-- auth: 51f7bdf3-306e-4919-8eb5-989f78bb9f50
-  client-fingerprint: chrome
-  down: 100
-  name: 476|🟠_🇷🇺_💻_github.com/Ruk1ng001_61...
-  obfs: salamander
-  obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
-  password: 51f7bdf3-306e-4919-8eb5-989f78bb9f50
-  port: 30073
-  server: 45.147.201.231
-  skip-cert-verify: true
-  type: hysteria2
-  udp: true
-  up: 100
-- auth: 526211f6-dd67-436f-9b80-08457eabf5f6
-  client-fingerprint: chrome
-  down: 50
-  name: '476|🟠_🇷🇺_💻_github.com/Ruk1ng001_62... #4'
-  obfs: salamander
-  obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
-  password: 526211f6-dd67-436f-9b80-08457eabf5f6
-  port: 30073
-  server: 45.147.201.231
-  skip-cert-verify: true
-  type: hysteria2
-  udp: true
-  up: 50
-- auth: 21fda3fb-225b-4b7e-84e3-e64e988803db
-  client-fingerprint: chrome
-  down: 100
-  name: 476|🟠_🇷🇺_💻_github.com/Ruk1ng001_66...
-  obfs: salamander
-  obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
-  password: 21fda3fb-225b-4b7e-84e3-e64e988803db
-  port: 30073
-  server: 45.147.201.231
-  skip-cert-verify: true
-  type: hysteria2
-  udp: true
-  up: 100
-- auth: e5b806f8-c3a1-4e20-b9a6-bf6f6b736b29
-  client-fingerprint: chrome
-  down: 100
-  name: '476|🟠_🇷🇺_💻_github.com/Ruk1ng001_37... #1'
-  obfs: salamander
-  obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
-  password: e5b806f8-c3a1-4e20-b9a6-bf6f6b736b29
-  port: 31005
-  server: 45.147.201.231
-  skip-cert-verify: true
-  type: hysteria2
-  udp: true
-  up: 100
-- auth: fcbf77c9-e7b4-4686-90ab-67fcaf78a8c2
-  client-fingerprint: chrome
-  down: 100
-  name: '476|🟠_🇷🇺_💻_github.com/Ruk1ng001_34... #1'
-  obfs: salamander
-  obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
-  password: fcbf77c9-e7b4-4686-90ab-67fcaf78a8c2
-  port: 31005
-  server: 45.147.201.231
-  skip-cert-verify: true
-  type: hysteria2
-  udp: true
-  up: 100
-- auth: a77464cb-077c-4a9e-b133-1540951ee2d2
-  client-fingerprint: chrome
-  down: 100
-  name: '476|🟠_🇷🇺_💻_github.com/Ruk1ng001_61... #1'
-  obfs: salamander
-  obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
-  password: a77464cb-077c-4a9e-b133-1540951ee2d2
-  port: 30073
-  server: 45.147.201.231
-  skip-cert-verify: true
-  type: hysteria2
-  udp: true
-  up: 100
-- auth: 128f085a-6a02-4118-9770-b3050c0b80ef
-  client-fingerprint: chrome
-  down: 100
-  name: 476|🟠_🇷🇺_💻_github.com/Ruk1ng001_38...
-  obfs: salamander
-  obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
-  password: 128f085a-6a02-4118-9770-b3050c0b80ef
-  port: 30073
-  server: 45.147.201.231
-  skip-cert-verify: true
-  type: hysteria2
-  udp: true
-  up: 100
-- auth: c2f0a430-15e3-424d-802d-1ab38e00d003
-  client-fingerprint: chrome
-  down: 100
-  name: '476|🟠_🇷🇺_💻_github.com/Ruk1ng001_34... #2'
-  obfs: salamander
-  obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
-  password: c2f0a430-15e3-424d-802d-1ab38e00d003
-  port: 30073
-  server: 45.147.201.231
-  skip-cert-verify: true
-  type: hysteria2
-  udp: true
-  up: 100
-- auth: 3f2a89b4-0fa8-40a7-ad51-7ea85cd12605
-  client-fingerprint: chrome
-  down: 100
-  name: '476|🟠_🇷🇺_💻_github.com/Ruk1ng001_37... #2'
-  obfs: salamander
-  obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
-  password: 3f2a89b4-0fa8-40a7-ad51-7ea85cd12605
-  port: 31005
-  server: 45.147.201.231
-  skip-cert-verify: true
-  type: hysteria2
-  udp: true
-  up: 100
-- auth: 272e4b14-dd50-45dc-ac7e-b4e969eccf6e
-  client-fingerprint: chrome
-  down: 50
-  name: '476|🟠_🇷🇺_💻_github.com/Ruk1ng001_31... #1'
-  obfs: salamander
-  obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
-  password: 272e4b14-dd50-45dc-ac7e-b4e969eccf6e
-  port: 30073
-  server: 45.147.201.231
-  skip-cert-verify: true
-  type: hysteria2
-  udp: true
-  up: 50
-- auth: 59a2e2fe-5af6-4825-b293-19bf94dbed9e
-  client-fingerprint: chrome
-  down: 100
-  name: 476|🟠_🇷🇺_💻_github.com/Ruk1ng001_35...
-  obfs: salamander
-  obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
-  password: 59a2e2fe-5af6-4825-b293-19bf94dbed9e
-  port: 30073
-  server: 45.147.201.231
-  skip-cert-verify: true
-  type: hysteria2
-  udp: true
-  up: 100
 - auth: 7b434505-a2b9-423e-a990-5a2f8eee86ac
   client-fingerprint: chrome
   down: 100
@@ -2173,183 +1783,62 @@ proxies:
   type: hysteria2
   udp: true
   up: 100
-- auth: a77464cb-077c-4a9e-b133-1540951ee2d2
-  client-fingerprint: chrome
-  down: 100
-  name: '476|🟠_🇷🇺_💻_github.com/Ruk1ng001_62... #5'
-  obfs: salamander
-  obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
-  password: a77464cb-077c-4a9e-b133-1540951ee2d2
-  port: 31005
-  server: 45.147.201.231
-  skip-cert-verify: true
-  type: hysteria2
-  udp: true
-  up: 100
-- auth: 96f8cfcc-428a-4a58-b678-aa1efa86e47a
+- name: 476|🟡_🇷🇺_💻_github.com/Ruk1ng001_34...
+  network: ws
+  port: 8880
+  server: 185.221.160.29
+  tls: false
+  type: vless
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: hk.laoyoutiao.link
+    path: Telegram🇨🇳 @MxlShare @WangCai2 /?ed=2560
+- auth: 7d472690-b667-499f-a601-156d8a8f151e
   client-fingerprint: chrome
   down: 50
-  name: '476|🟠_🇷🇺_💻_github.com/Ruk1ng001_39... #4'
+  name: 476|🟠_🇷🇺_💻_github.com/Ruk1ng001_63...
   obfs: salamander
   obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
-  password: 96f8cfcc-428a-4a58-b678-aa1efa86e47a
-  port: 31005
-  server: 45.147.201.231
-  skip-cert-verify: true
-  type: hysteria2
-  udp: true
-  up: 50
-- auth: 2e2eb54a-2e3a-449d-bff4-0957b8d2334e
-  client-fingerprint: chrome
-  down: 50
-  name: '476|🟠_🇷🇺_💻_github.com/Ruk1ng001_36... #1'
-  obfs: salamander
-  obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
-  password: 2e2eb54a-2e3a-449d-bff4-0957b8d2334e
-  port: 31005
-  server: 45.147.201.231
-  skip-cert-verify: true
-  type: hysteria2
-  udp: true
-  up: 50
-- auth: d954ee5c-7bf3-4aca-b17a-faf4b9d3f5f7
-  client-fingerprint: chrome
-  down: 50
-  name: '476|🟠_🇷🇺_💻_github.com/Ruk1ng001_38... #1'
-  obfs: salamander
-  obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
-  password: d954ee5c-7bf3-4aca-b17a-faf4b9d3f5f7
-  port: 31005
-  server: 45.147.201.231
-  skip-cert-verify: true
-  type: hysteria2
-  udp: true
-  up: 50
-- auth: 9b794aef-df52-4f93-a746-ffa99b81e315
-  client-fingerprint: chrome
-  down: 50
-  name: '476|🟠_🇷🇺_💻_github.com/Ruk1ng001_62... #6'
-  obfs: salamander
-  obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
-  password: 9b794aef-df52-4f93-a746-ffa99b81e315
-  port: 31005
-  server: 45.147.201.231
-  skip-cert-verify: true
-  type: hysteria2
-  udp: true
-  up: 50
-- auth: 52075e02-ca4e-4001-bf3a-4298baecc85b
-  client-fingerprint: chrome
-  down: 50
-  name: '476|🟠_🇷🇺_💻_github.com/Ruk1ng001_39... #5'
-  obfs: salamander
-  obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
-  password: 52075e02-ca4e-4001-bf3a-4298baecc85b
+  password: 7d472690-b667-499f-a601-156d8a8f151e
   port: 30073
   server: 45.147.201.231
   skip-cert-verify: true
   type: hysteria2
   udp: true
   up: 50
-- auth: 99fe3e8c-47dd-4659-8804-6a1e0a150dcd
+- auth: d2734605-9697-4e92-847f-b6391892bdd1
   client-fingerprint: chrome
   down: 50
-  name: '476|🟠_🇷🇺_💻_github.com/Ruk1ng001_39... #6'
+  name: 476|🟠_🇷🇺_💻_github.com/Ruk1ng001_39...
   obfs: salamander
   obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
-  password: 99fe3e8c-47dd-4659-8804-6a1e0a150dcd
+  password: d2734605-9697-4e92-847f-b6391892bdd1
+  port: 31005
+  server: 45.147.201.231
+  skip-cert-verify: true
+  type: hysteria2
+  udp: true
+  up: 50
+- name: 476|❓_🇷🇺_💻_github.com/Ruk1ng001_36...
+  network: ws
+  port: 8880
+  server: 185.148.105.20
+  tls: false
+  type: vless
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      Host: reedfree8mahsang2.redorg.ir
+    path: /?ed=2560
+- auth: e88570b9-52d6-49f4-9654-f65600f6fc9f
+  client-fingerprint: chrome
+  down: 100
+  name: 476|🟠_🇷🇺_💻_github.com/Ruk1ng001_38...
+  obfs: salamander
+  obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
+  password: e88570b9-52d6-49f4-9654-f65600f6fc9f
   port: 30073
-  server: 45.147.201.231
-  skip-cert-verify: true
-  type: hysteria2
-  udp: true
-  up: 50
-- auth: f5c55661-75a5-4434-b9b4-99c5b206abf6
-  client-fingerprint: chrome
-  down: 100
-  name: '476|🟠_🇷🇺_💻_github.com/Ruk1ng001_62... #7'
-  obfs: salamander
-  obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
-  password: f5c55661-75a5-4434-b9b4-99c5b206abf6
-  port: 31005
-  server: 45.147.201.231
-  skip-cert-verify: true
-  type: hysteria2
-  udp: true
-  up: 100
-- auth: c21b2140-5a46-4735-aa2d-2e59e5aff5a7
-  client-fingerprint: chrome
-  down: 50
-  name: '476|🟠_🇷🇺_💻_github.com/Ruk1ng001_34... #3'
-  obfs: salamander
-  obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
-  password: c21b2140-5a46-4735-aa2d-2e59e5aff5a7
-  port: 31005
-  server: 45.147.201.231
-  skip-cert-verify: true
-  type: hysteria2
-  udp: true
-  up: 50
-- auth: 4b04e3e2-708f-43d8-a6bd-b90480f5d3e5
-  client-fingerprint: chrome
-  down: 100
-  name: '476|🟠_🇷🇺_💻_github.com/Ruk1ng001_36... #2'
-  obfs: salamander
-  obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
-  password: 4b04e3e2-708f-43d8-a6bd-b90480f5d3e5
-  port: 31005
-  server: 45.147.201.231
-  skip-cert-verify: true
-  type: hysteria2
-  udp: true
-  up: 100
-- auth: cf739017-cd05-41c1-9c4f-8eaf92798e9f
-  client-fingerprint: chrome
-  down: 100
-  name: '476|🟠_🇷🇺_💻_github.com/Ruk1ng001_66... #1'
-  obfs: salamander
-  obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
-  password: cf739017-cd05-41c1-9c4f-8eaf92798e9f
-  port: 31005
-  server: 45.147.201.231
-  skip-cert-verify: true
-  type: hysteria2
-  udp: true
-  up: 100
-- auth: 228f9463-e652-4c35-a45f-3f1ff39e992d
-  client-fingerprint: chrome
-  down: 100
-  name: '476|🟠_🇷🇺_💻_github.com/Ruk1ng001_38... #2'
-  obfs: salamander
-  obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
-  password: 228f9463-e652-4c35-a45f-3f1ff39e992d
-  port: 31005
-  server: 45.147.201.231
-  skip-cert-verify: true
-  type: hysteria2
-  udp: true
-  up: 100
-- auth: d740927e-ca43-49f1-8b10-923d19bd388c
-  client-fingerprint: chrome
-  down: 100
-  name: '476|🟠_🇷🇺_💻_github.com/Ruk1ng001_37... #3'
-  obfs: salamander
-  obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
-  password: d740927e-ca43-49f1-8b10-923d19bd388c
-  port: 31005
-  server: 45.147.201.231
-  skip-cert-verify: true
-  type: hysteria2
-  udp: true
-  up: 100
-- auth: c110b0a2-21e0-4ddb-9384-a2cf40f735d3
-  client-fingerprint: chrome
-  down: 100
-  name: '476|🟠_🇷🇺_💻_github.com/Ruk1ng001_65... #1'
-  obfs: salamander
-  obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
-  password: c110b0a2-21e0-4ddb-9384-a2cf40f735d3
-  port: 31005
   server: 45.147.201.231
   skip-cert-verify: true
   type: hysteria2
@@ -2358,7 +1847,7 @@ proxies:
 - auth: 7b434505-a2b9-423e-a990-5a2f8eee86ac
   client-fingerprint: chrome
   down: 100
-  name: '476|🟠_🇷🇺_💻_github.com/Ruk1ng001_39... #7'
+  name: '476|🟠_🇷🇺_💻_github.com/Ruk1ng001_39... #1'
   obfs: salamander
   obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
   password: 7b434505-a2b9-423e-a990-5a2f8eee86ac
@@ -2368,76 +1857,39 @@ proxies:
   type: hysteria2
   udp: true
   up: 100
-- auth: 71a4ff8b-ff11-43d2-9e44-fe5f9d58ef9a
+- auth: 2eaf2b51-667f-4a2e-a688-41242b6edc33
   client-fingerprint: chrome
   down: 50
-  name: '476|🟠_🇷🇺_💻_github.com/Ruk1ng001_38... #3'
+  name: 476|🟠_🇷🇺_💻_github.com/Ruk1ng001_33...
   obfs: salamander
   obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
-  password: 71a4ff8b-ff11-43d2-9e44-fe5f9d58ef9a
+  password: 2eaf2b51-667f-4a2e-a688-41242b6edc33
+  port: 33076
+  server: 45.147.201.231
+  skip-cert-verify: true
+  type: hysteria2
+  udp: true
+  up: 50
+- auth: 66666ff2-1b11-45c3-854f-5a1ee3eec98c
+  client-fingerprint: chrome
+  down: 50
+  name: 476|🟠_🇷🇺_💻_github.com/Ruk1ng001_37...
+  obfs: salamander
+  obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
+  password: 66666ff2-1b11-45c3-854f-5a1ee3eec98c
   port: 30073
   server: 45.147.201.231
   skip-cert-verify: true
   type: hysteria2
   udp: true
   up: 50
-- name: '476|❓_🇷🇺_💻_github.com/Ruk1ng001_34... #1'
-  network: ws
-  port: 8880
-  server: 185.148.106.29
-  tls: false
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: hk.laoyoutiao.link
-    path: Telegram🇨🇳 @MxlShare @WangCai2 /?ed=2560
-- auth: 10f4d9b0-548d-4ceb-982c-4fc95345594d
+- auth: f19666e1-5325-4346-854e-8ac4443bf1f9
   client-fingerprint: chrome
   down: 100
-  name: '476|🟠_🇷🇺_💻_github.com/Ruk1ng001_39... #8'
+  name: '476|🟠_🇷🇺_💻_github.com/Ruk1ng001_39... #2'
   obfs: salamander
   obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
-  password: 10f4d9b0-548d-4ceb-982c-4fc95345594d
-  port: 30073
-  server: 45.147.201.231
-  skip-cert-verify: true
-  type: hysteria2
-  udp: true
-  up: 100
-- auth: 526211f6-dd67-436f-9b80-08457eabf5f6
-  client-fingerprint: chrome
-  down: 50
-  name: '476|🟠_🇷🇺_💻_github.com/Ruk1ng001_61... #2'
-  obfs: salamander
-  obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
-  password: 526211f6-dd67-436f-9b80-08457eabf5f6
-  port: 31005
-  server: 45.147.201.231
-  skip-cert-verify: true
-  type: hysteria2
-  udp: true
-  up: 50
-- auth: 8a1dec10-30f6-4aa2-be4a-1ca87d115fb7
-  client-fingerprint: chrome
-  down: 50
-  name: '476|🟠_🇷🇺_💻_github.com/Ruk1ng001_31... #2'
-  obfs: salamander
-  obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
-  password: 8a1dec10-30f6-4aa2-be4a-1ca87d115fb7
-  port: 31005
-  server: 45.147.201.231
-  skip-cert-verify: true
-  type: hysteria2
-  udp: true
-  up: 50
-- auth: d1bd5276-7bf1-4527-878c-fbd9f22d39de
-  client-fingerprint: chrome
-  down: 100
-  name: '476|🟠_🇷🇺_💻_github.com/Ruk1ng001_38... #4'
-  obfs: salamander
-  obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
-  password: d1bd5276-7bf1-4527-878c-fbd9f22d39de
+  password: f19666e1-5325-4346-854e-8ac4443bf1f9
   port: 30073
   server: 45.147.201.231
   skip-cert-verify: true
@@ -2446,7 +1898,7 @@ proxies:
   up: 100
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '476,489,536,538,554,572,573|RU_speednode_0175 #1'
+  name: '476,489,493,494,501,536,538,550,554,572,573|RU_speednode_0175 #1'
   network: tcp
   port: 42632
   reality-opts:
@@ -2459,10 +1911,34 @@ proxies:
   type: vless
   udp: true
   uuid: f3ba3679-f2f4-465f-92a5-de320b775a88
+- name: 476|❓_🇷🇺_💻_github.com/Ruk1ng001_63...
+  network: ws
+  port: 8880
+  server: 185.176.26.20
+  tls: false
+  type: vless
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      Host: reedfree8mahsang2.redorg.ir
+    path: /?ed=2560
+- auth: 682e03c3-b2ae-4f8d-a9a6-9ea8995f9043
+  client-fingerprint: chrome
+  down: 15
+  name: 476|🟠_🇷🇺_💻_github.com/Ruk1ng001_66...
+  obfs: salamander
+  obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
+  password: 682e03c3-b2ae-4f8d-a9a6-9ea8995f9043
+  port: 31005
+  server: 45.147.201.231
+  skip-cert-verify: true
+  type: hysteria2
+  udp: true
+  up: 15
 - auth: 58f93014-b99b-4b41-995c-3eac688ee8c2
   client-fingerprint: chrome
   down: 100
-  name: '476|🟠_🇷🇺_💻_github.com/Ruk1ng001_31... #3'
+  name: 476|🟠_🇷🇺_💻_github.com/Ruk1ng001_31...
   obfs: salamander
   obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
   password: 58f93014-b99b-4b41-995c-3eac688ee8c2
@@ -2472,32 +1948,136 @@ proxies:
   type: hysteria2
   udp: true
   up: 100
-- auth: 71a4ff8b-ff11-43d2-9e44-fe5f9d58ef9a
+- auth: 8a1dec10-30f6-4aa2-be4a-1ca87d115fb7
   client-fingerprint: chrome
   down: 50
-  name: '476|🟠_🇷🇺_💻_github.com/Ruk1ng001_63... #2'
+  name: 476|🟠_🇷🇺_💻_github.com/Ruk1ng001_65...
   obfs: salamander
   obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
-  password: 71a4ff8b-ff11-43d2-9e44-fe5f9d58ef9a
+  password: 8a1dec10-30f6-4aa2-be4a-1ca87d115fb7
+  port: 33076
+  server: 45.147.201.231
+  skip-cert-verify: true
+  type: hysteria2
+  udp: true
+  up: 50
+- auth: a9f40b0c-9fc1-436a-954d-517ca5d98910
+  client-fingerprint: chrome
+  down: 100
+  name: '476|🟠_🇷🇺_💻_github.com/Ruk1ng001_32... #1'
+  obfs: salamander
+  obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
+  password: a9f40b0c-9fc1-436a-954d-517ca5d98910
+  port: 33076
+  server: 45.147.201.231
+  skip-cert-verify: true
+  type: hysteria2
+  udp: true
+  up: 100
+- auth: 5520ba09-36df-41d7-933b-6a7a20a8bdb9
+  client-fingerprint: chrome
+  down: 100
+  name: 476|🟠_🇷🇺_💻_github.com/Ruk1ng001_35...
+  obfs: salamander
+  obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
+  password: 5520ba09-36df-41d7-933b-6a7a20a8bdb9
+  port: 33076
+  server: 45.147.201.231
+  skip-cert-verify: true
+  type: hysteria2
+  udp: true
+  up: 100
+- auth: 09fbee8d-5edc-4da6-b2a8-d96c4fc40cea
+  client-fingerprint: chrome
+  down: 100
+  name: 476|🟠_🇷🇺_💻_github.com/Ruk1ng001_61...
+  obfs: salamander
+  obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
+  password: 09fbee8d-5edc-4da6-b2a8-d96c4fc40cea
+  port: 31005
+  server: 45.147.201.231
+  skip-cert-verify: true
+  type: hysteria2
+  udp: true
+  up: 100
+- auth: d1bd5276-7bf1-4527-878c-fbd9f22d39de
+  client-fingerprint: chrome
+  down: 100
+  name: '476|🟠_🇷🇺_💻_github.com/Ruk1ng001_31... #1'
+  obfs: salamander
+  obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
+  password: d1bd5276-7bf1-4527-878c-fbd9f22d39de
+  port: 33076
+  server: 45.147.201.231
+  skip-cert-verify: true
+  type: hysteria2
+  udp: true
+  up: 100
+- auth: 35c941a1-3abc-4007-9567-0e64f1a4c00a
+  client-fingerprint: chrome
+  down: 50
+  name: '476|🟠_🇷🇺_💻_github.com/Ruk1ng001_39... #4'
+  obfs: salamander
+  obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
+  password: 35c941a1-3abc-4007-9567-0e64f1a4c00a
   port: 31005
   server: 45.147.201.231
   skip-cert-verify: true
   type: hysteria2
   udp: true
   up: 50
-- auth: 151bdaf8-11a1-4469-b036-f54548287912
+- auth: 228f9463-e652-4c35-a45f-3f1ff39e992d
   client-fingerprint: chrome
-  down: 50
-  name: '476|🟠_🇷🇺_💻_github.com/Ruk1ng001_39... #10'
+  down: 100
+  name: '476|🟠_🇷🇺_💻_github.com/Ruk1ng001_38... #1'
   obfs: salamander
   obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
-  password: 151bdaf8-11a1-4469-b036-f54548287912
+  password: 228f9463-e652-4c35-a45f-3f1ff39e992d
+  port: 31005
+  server: 45.147.201.231
+  skip-cert-verify: true
+  type: hysteria2
+  udp: true
+  up: 100
+- auth: a77464cb-077c-4a9e-b133-1540951ee2d2
+  client-fingerprint: chrome
+  down: 100
+  name: 476|🟠_🇷🇺_💻_github.com/Ruk1ng001_62...
+  obfs: salamander
+  obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
+  password: a77464cb-077c-4a9e-b133-1540951ee2d2
+  port: 31005
+  server: 45.147.201.231
+  skip-cert-verify: true
+  type: hysteria2
+  udp: true
+  up: 100
+- auth: 9290d79d-a1c8-4cb8-80c4-fba5427471db
+  client-fingerprint: chrome
+  down: 50
+  name: '476|🟠_🇷🇺_💻_github.com/Ruk1ng001_66... #1'
+  obfs: salamander
+  obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
+  password: 9290d79d-a1c8-4cb8-80c4-fba5427471db
   port: 30073
   server: 45.147.201.231
   skip-cert-verify: true
   type: hysteria2
   udp: true
   up: 50
+- auth: e88570b9-52d6-49f4-9654-f65600f6fc9f
+  client-fingerprint: chrome
+  down: 100
+  name: '476|🟠_🇷🇺_💻_github.com/Ruk1ng001_37... #1'
+  obfs: salamander
+  obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
+  password: e88570b9-52d6-49f4-9654-f65600f6fc9f
+  port: 31005
+  server: 45.147.201.231
+  skip-cert-verify: true
+  type: hysteria2
+  udp: true
+  up: 100
 - auth: bf103a1e-0714-4dac-ae62-295b2c4d3ca1
   client-fingerprint: chrome
   down: 50
@@ -2511,268 +2091,73 @@ proxies:
   type: hysteria2
   udp: true
   up: 50
-- auth: 1dc7b056-7ddc-49f5-9d82-58415d295bb8
-  client-fingerprint: chrome
-  down: 100
-  name: '476|🟠_🇷🇺_💻_github.com/Ruk1ng001_35... #2'
-  obfs: salamander
-  obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
-  password: 1dc7b056-7ddc-49f5-9d82-58415d295bb8
-  port: 31005
-  server: 45.147.201.231
-  skip-cert-verify: true
-  type: hysteria2
-  udp: true
-  up: 100
-- auth: f0226923-0287-4940-a937-2dcf15396acb
-  client-fingerprint: chrome
-  down: 100
-  name: '476|🟠_🇷🇺_💻_github.com/Ruk1ng001_38... #5'
-  obfs: salamander
-  obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
-  password: f0226923-0287-4940-a937-2dcf15396acb
-  port: 30073
-  server: 45.147.201.231
-  skip-cert-verify: true
-  type: hysteria2
-  udp: true
-  up: 100
-- auth: d9c2a4b4-832d-4103-a084-b69c145d1654
-  client-fingerprint: chrome
-  down: 100
-  name: '476|🟠_🇷🇺_💻_github.com/Ruk1ng001_62... #8'
-  obfs: salamander
-  obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
-  password: d9c2a4b4-832d-4103-a084-b69c145d1654
-  port: 31005
-  server: 45.147.201.231
-  skip-cert-verify: true
-  type: hysteria2
-  udp: true
-  up: 100
-- auth: 96f8cfcc-428a-4a58-b678-aa1efa86e47a
-  client-fingerprint: chrome
-  down: 50
-  name: '476|🟠_🇷🇺_💻_github.com/Ruk1ng001_36... #3'
-  obfs: salamander
-  obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
-  password: 96f8cfcc-428a-4a58-b678-aa1efa86e47a
-  port: 30073
-  server: 45.147.201.231
-  skip-cert-verify: true
-  type: hysteria2
-  udp: true
-  up: 50
-- auth: 46645609-6f23-46ae-b4a5-ce27b4e002e0
-  client-fingerprint: chrome
-  down: 50
-  name: '476|🟠_🇷🇺_💻_github.com/Ruk1ng001_39... #11'
-  obfs: salamander
-  obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
-  password: 46645609-6f23-46ae-b4a5-ce27b4e002e0
-  port: 31005
-  server: 45.147.201.231
-  skip-cert-verify: true
-  type: hysteria2
-  udp: true
-  up: 50
-- auth: 58f93014-b99b-4b41-995c-3eac688ee8c2
-  client-fingerprint: chrome
-  down: 100
-  name: '476|🟠_🇷🇺_💻_github.com/Ruk1ng001_34... #4'
-  obfs: salamander
-  obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
-  password: 58f93014-b99b-4b41-995c-3eac688ee8c2
-  port: 31005
-  server: 45.147.201.231
-  skip-cert-verify: true
-  type: hysteria2
-  udp: true
-  up: 100
-- auth: dbc2f3e1-45cc-4579-bdad-541d59f5fe11
-  client-fingerprint: chrome
-  down: 100
-  name: '476|🟠_🇷🇺_💻_github.com/Ruk1ng001_39... #12'
-  obfs: salamander
-  obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
-  password: dbc2f3e1-45cc-4579-bdad-541d59f5fe11
-  port: 31005
-  server: 45.147.201.231
-  skip-cert-verify: true
-  type: hysteria2
-  udp: true
-  up: 100
-- auth: 3fbd614d-9c70-49e0-a85f-cf02c4fbd8ff
-  client-fingerprint: chrome
-  down: 100
-  name: 476|🟠_🇷🇺_💻_github.com/Ruk1ng001_64...
-  obfs: salamander
-  obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
-  password: 3fbd614d-9c70-49e0-a85f-cf02c4fbd8ff
-  port: 31005
-  server: 45.147.201.231
-  skip-cert-verify: true
-  type: hysteria2
-  udp: true
-  up: 100
-- auth: d6a54bd3-45a4-4f40-9cd1-6edf5adfe8dd
-  client-fingerprint: chrome
-  down: 100
-  name: '476|🟠_🇷🇺_💻_github.com/Ruk1ng001_64... #1'
-  obfs: salamander
-  obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
-  password: d6a54bd3-45a4-4f40-9cd1-6edf5adfe8dd
-  port: 31005
-  server: 45.147.201.231
-  skip-cert-verify: true
-  type: hysteria2
-  udp: true
-  up: 100
-- auth: a9f40b0c-9fc1-436a-954d-517ca5d98910
-  client-fingerprint: chrome
-  down: 100
-  name: '476|🟠_🇷🇺_💻_github.com/Ruk1ng001_31... #4'
-  obfs: salamander
-  obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
-  password: a9f40b0c-9fc1-436a-954d-517ca5d98910
-  port: 31005
-  server: 45.147.201.231
-  skip-cert-verify: true
-  type: hysteria2
-  udp: true
-  up: 100
-- name: 476|❓_🇷🇺_💻_github.com/Ruk1ng001_36...
+- name: '476|❓_🇷🇺_💻_github.com/Ruk1ng001_34... #2'
   network: ws
   port: 8880
-  server: 185.148.105.20
+  server: 185.148.106.29
   tls: false
   type: vless
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
   ws-opts:
     headers:
-      Host: reedfree8mahsang2.redorg.ir
-    path: /?ed=2560
+      Host: hk.laoyoutiao.link
+    path: Telegram🇨🇳 @MxlShare @WangCai2 /?ed=2560
 - auth: 7e5a3a60-1bba-4062-952c-ae803d459c7e
   client-fingerprint: chrome
   down: 50
-  name: '476|🟠_🇷🇺_💻_github.com/Ruk1ng001_39... #13'
+  name: '476|🟠_🇷🇺_💻_github.com/Ruk1ng001_31... #2'
   obfs: salamander
   obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
   password: 7e5a3a60-1bba-4062-952c-ae803d459c7e
-  port: 30073
-  server: 45.147.201.231
-  skip-cert-verify: true
-  type: hysteria2
-  udp: true
-  up: 50
-- auth: aff17f63-74ec-4707-8149-9ed6fd307e30
-  client-fingerprint: chrome
-  down: 100
-  name: '476|🟠_🇷🇺_💻_github.com/Ruk1ng001_37... #4'
-  obfs: salamander
-  obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
-  password: aff17f63-74ec-4707-8149-9ed6fd307e30
-  port: 31005
-  server: 45.147.201.231
-  skip-cert-verify: true
-  type: hysteria2
-  udp: true
-  up: 100
-- auth: 66666ff2-1b11-45c3-854f-5a1ee3eec98c
-  client-fingerprint: chrome
-  down: 50
-  name: '476|🟠_🇷🇺_💻_github.com/Ruk1ng001_36... #4'
-  obfs: salamander
-  obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
-  password: 66666ff2-1b11-45c3-854f-5a1ee3eec98c
-  port: 31005
-  server: 45.147.201.231
-  skip-cert-verify: true
-  type: hysteria2
-  udp: true
-  up: 50
-- auth: f622c806-3fde-4aa5-b247-06e58b87b6be
-  client-fingerprint: chrome
-  down: 100
-  name: '476|🟠_🇷🇺_💻_github.com/Ruk1ng001_36... #5'
-  obfs: salamander
-  obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
-  password: f622c806-3fde-4aa5-b247-06e58b87b6be
-  port: 31005
-  server: 45.147.201.231
-  skip-cert-verify: true
-  type: hysteria2
-  udp: true
-  up: 100
-- auth: 9290d79d-a1c8-4cb8-80c4-fba5427471db
-  client-fingerprint: chrome
-  down: 50
-  name: '476|🟠_🇷🇺_💻_github.com/Ruk1ng001_66... #2'
-  obfs: salamander
-  obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
-  password: 9290d79d-a1c8-4cb8-80c4-fba5427471db
-  port: 30073
-  server: 45.147.201.231
-  skip-cert-verify: true
-  type: hysteria2
-  udp: true
-  up: 50
-- auth: e54277a5-ebb4-45c8-8f09-4fb507314033
-  client-fingerprint: chrome
-  down: 100
-  name: '476|🟠_🇷🇺_💻_github.com/Ruk1ng001_39... #14'
-  obfs: salamander
-  obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
-  password: e54277a5-ebb4-45c8-8f09-4fb507314033
-  port: 31005
-  server: 45.147.201.231
-  skip-cert-verify: true
-  type: hysteria2
-  udp: true
-  up: 100
-- auth: a2a26d08-2c9e-468c-bc51-e7982d976b89
-  client-fingerprint: chrome
-  down: 50
-  name: '476|🟠_🇷🇺_💻_github.com/Ruk1ng001_64... #2'
-  obfs: salamander
-  obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
-  password: a2a26d08-2c9e-468c-bc51-e7982d976b89
-  port: 31005
-  server: 45.147.201.231
-  skip-cert-verify: true
-  type: hysteria2
-  udp: true
-  up: 50
-- auth: 4349ee1d-8719-4e4e-9dc8-5b53b6f34d2e
-  client-fingerprint: chrome
-  down: 15
-  name: '476|🟠_🇷🇺_💻_github.com/Ruk1ng001_37... #5'
-  obfs: salamander
-  obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
-  password: 4349ee1d-8719-4e4e-9dc8-5b53b6f34d2e
-  port: 31005
-  server: 45.147.201.231
-  skip-cert-verify: true
-  type: hysteria2
-  udp: true
-  up: 15
-- auth: c21b2140-5a46-4735-aa2d-2e59e5aff5a7
-  client-fingerprint: chrome
-  down: 50
-  name: '476|🟠_🇷🇺_💻_github.com/Ruk1ng001_38... #6'
-  obfs: salamander
-  obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
-  password: c21b2140-5a46-4735-aa2d-2e59e5aff5a7
   port: 33076
   server: 45.147.201.231
   skip-cert-verify: true
   type: hysteria2
   udp: true
   up: 50
+- auth: ad6ad4ca-3c6f-4812-a1aa-9c367a2dac61
+  client-fingerprint: chrome
+  down: 15
+  name: '476|🟠_🇷🇺_💻_github.com/Ruk1ng001_63... #1'
+  obfs: salamander
+  obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
+  password: ad6ad4ca-3c6f-4812-a1aa-9c367a2dac61
+  port: 30073
+  server: 45.147.201.231
+  skip-cert-verify: true
+  type: hysteria2
+  udp: true
+  up: 15
+- auth: 730716ab-fe5e-4f67-a737-67cc2c475b2b
+  client-fingerprint: chrome
+  down: 100
+  name: '476|🟠_🇷🇺_💻_github.com/Ruk1ng001_66... #2'
+  obfs: salamander
+  obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
+  password: 730716ab-fe5e-4f67-a737-67cc2c475b2b
+  port: 31005
+  server: 45.147.201.231
+  skip-cert-verify: true
+  type: hysteria2
+  udp: true
+  up: 100
+- auth: c19f24d0-ad43-4653-af33-a3afd0cd7945
+  client-fingerprint: chrome
+  down: 100
+  name: '476|🟠_🇷🇺_💻_github.com/Ruk1ng001_33... #1'
+  obfs: salamander
+  obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
+  password: c19f24d0-ad43-4653-af33-a3afd0cd7945
+  port: 33076
+  server: 45.147.201.231
+  skip-cert-verify: true
+  type: hysteria2
+  udp: true
+  up: 100
 - auth: 272e4b14-dd50-45dc-ac7e-b4e969eccf6e
   client-fingerprint: chrome
   down: 50
-  name: '476|🟠_🇷🇺_💻_github.com/Ruk1ng001_63... #3'
+  name: '476|🟠_🇷🇺_💻_github.com/Ruk1ng001_63... #2'
   obfs: salamander
   obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
   password: 272e4b14-dd50-45dc-ac7e-b4e969eccf6e
@@ -2782,33 +2167,137 @@ proxies:
   type: hysteria2
   udp: true
   up: 50
-- auth: 2472eee9-f584-4524-835d-b9c2345b8dd9
+- auth: d1bd5276-7bf1-4527-878c-fbd9f22d39de
   client-fingerprint: chrome
   down: 100
-  name: '476|🟠_🇷🇺_💻_github.com/Ruk1ng001_36... #6'
+  name: '476|🟠_🇷🇺_💻_github.com/Ruk1ng001_38... #2'
   obfs: salamander
   obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
-  password: 2472eee9-f584-4524-835d-b9c2345b8dd9
+  password: d1bd5276-7bf1-4527-878c-fbd9f22d39de
   port: 30073
   server: 45.147.201.231
   skip-cert-verify: true
   type: hysteria2
   udp: true
   up: 100
-- auth: 09fbee8d-5edc-4da6-b2a8-d96c4fc40cea
+- auth: 2e2eb54a-2e3a-449d-bff4-0957b8d2334e
   client-fingerprint: chrome
-  down: 100
-  name: '476|🟠_🇷🇺_💻_github.com/Ruk1ng001_61... #3'
+  down: 50
+  name: '476|🟠_🇷🇺_💻_github.com/Ruk1ng001_39... #5'
   obfs: salamander
   obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
-  password: 09fbee8d-5edc-4da6-b2a8-d96c4fc40cea
+  password: 2e2eb54a-2e3a-449d-bff4-0957b8d2334e
+  port: 33076
+  server: 45.147.201.231
+  skip-cert-verify: true
+  type: hysteria2
+  udp: true
+  up: 50
+- auth: cf739017-cd05-41c1-9c4f-8eaf92798e9f
+  client-fingerprint: chrome
+  down: 100
+  name: '476|🟠_🇷🇺_💻_github.com/Ruk1ng001_66... #3'
+  obfs: salamander
+  obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
+  password: cf739017-cd05-41c1-9c4f-8eaf92798e9f
   port: 31005
   server: 45.147.201.231
   skip-cert-verify: true
   type: hysteria2
   udp: true
   up: 100
-- name: '495,496|俄罗斯 004 #1'
+- auth: 5d6f789f-8ea5-44a0-a5ec-fff8a7bde283
+  client-fingerprint: chrome
+  down: 100
+  name: '476|🟠_🇷🇺_💻_github.com/Ruk1ng001_31... #3'
+  obfs: salamander
+  obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
+  password: 5d6f789f-8ea5-44a0-a5ec-fff8a7bde283
+  port: 33076
+  server: 45.147.201.231
+  skip-cert-verify: true
+  type: hysteria2
+  udp: true
+  up: 100
+- auth: f622c806-3fde-4aa5-b247-06e58b87b6be
+  client-fingerprint: chrome
+  down: 100
+  name: '476|🟠_🇷🇺_💻_github.com/Ruk1ng001_61... #1'
+  obfs: salamander
+  obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
+  password: f622c806-3fde-4aa5-b247-06e58b87b6be
+  port: 30073
+  server: 45.147.201.231
+  skip-cert-verify: true
+  type: hysteria2
+  udp: true
+  up: 100
+- auth: 3c9c2bed-0fa1-43dd-9faa-05ffb099dddf
+  client-fingerprint: chrome
+  down: 100
+  name: 476|🟠_🇷🇺_💻_github.com/Ruk1ng001_64...
+  obfs: salamander
+  obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
+  password: 3c9c2bed-0fa1-43dd-9faa-05ffb099dddf
+  port: 31005
+  server: 45.147.201.231
+  skip-cert-verify: true
+  type: hysteria2
+  udp: true
+  up: 100
+- auth: ed001a00-a469-4216-8e4e-3f96b4010029
+  client-fingerprint: chrome
+  down: 50
+  name: '476|🟠_🇷🇺_💻_github.com/Ruk1ng001_37... #2'
+  obfs: salamander
+  obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
+  password: ed001a00-a469-4216-8e4e-3f96b4010029
+  port: 33076
+  server: 45.147.201.231
+  skip-cert-verify: true
+  type: hysteria2
+  udp: true
+  up: 50
+- auth: 1bb12728-6326-4ba9-bed0-74d307b90da4
+  client-fingerprint: chrome
+  down: 100
+  name: '476|🟠_🇷🇺_💻_github.com/Ruk1ng001_61... #2'
+  obfs: salamander
+  obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
+  password: 1bb12728-6326-4ba9-bed0-74d307b90da4
+  port: 31005
+  server: 45.147.201.231
+  skip-cert-verify: true
+  type: hysteria2
+  udp: true
+  up: 100
+- auth: 9d859a05-f323-470e-81f9-afbe8c973f94
+  client-fingerprint: chrome
+  down: 50
+  name: '476|🟠_🇷🇺_💻_github.com/Ruk1ng001_37... #3'
+  obfs: salamander
+  obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
+  password: 9d859a05-f323-470e-81f9-afbe8c973f94
+  port: 33076
+  server: 45.147.201.231
+  skip-cert-verify: true
+  type: hysteria2
+  udp: true
+  up: 50
+- auth: b51975c3-6ade-4a37-8f61-cecdd62650ac
+  client-fingerprint: chrome
+  down: 50
+  name: '476|🟠_🇷🇺_💻_github.com/Ruk1ng001_62... #1'
+  obfs: salamander
+  obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
+  password: b51975c3-6ade-4a37-8f61-cecdd62650ac
+  port: 33076
+  server: 45.147.201.231
+  skip-cert-verify: true
+  type: hysteria2
+  udp: true
+  up: 50
+- name: 495,496,550|10|俄罗斯 004
   network: ws
   port: 80
   server: 185.174.138.194
@@ -2852,8 +2341,8 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '502,503|14|30🇺俄罗斯|官网：abluecloud.xyz #1'
-  password: 04b15653-4f0d-4772-acba-d0618c86ebae
+  name: '502,503|2|30🇺俄罗斯|官网：蓝色海洋.xyz #1'
+  password: 39f5a5f8-c8a8-457b-9b80-5bb7eae339a4
   port: 36511
   server: freea.glyphara.com
   type: ss
@@ -2872,7 +2361,7 @@ proxies:
     headers:
       Host: 103.113.68.233
     path: /vmess
-- name: 510,511,530,531|🇷🇺 _俄罗斯
+- name: 510,511,530,531,550|24|🇷🇺 _俄罗斯
   network: tcp
   password: Aimer
   port: 443
@@ -2881,7 +2370,7 @@ proxies:
   sni: epme.ambercc.filegear-sg.me
   type: trojan
   udp: true
-- name: '510,511,530,531|🇷🇺 _俄罗斯 #1'
+- name: '510,511,530,531,550|24|🇷🇺 _俄罗斯 #1'
   network: tcp
   password: Aimer
   port: 2083
@@ -2890,7 +2379,7 @@ proxies:
   sni: epme.ambercc.filegear-sg.me
   type: trojan
   udp: true
-- name: '510,511,523,530,531|🇷🇺 _俄罗斯 #2'
+- name: '510,511,523,530,531,550|24|🇷🇺 _俄罗斯 #2'
   network: tcp
   password: Aimer
   port: 2083
@@ -2899,7 +2388,7 @@ proxies:
   sni: epmw.ambercc.filegear-sg.me
   type: trojan
   udp: true
-- name: '510,511,530,531|🇷🇺 _俄罗斯 #3'
+- name: '510,511,530,531,550|24|🇷🇺 _俄罗斯 #3'
   network: tcp
   password: Aimer
   port: 2087
@@ -2908,7 +2397,7 @@ proxies:
   sni: epmw.ambercc.filegear-sg.me
   type: trojan
   udp: true
-- name: '510,511,523,530,531|🇷🇺 _俄罗斯 #4'
+- name: '510,511,523,530,531,550|24|🇷🇺 _俄罗斯 #4'
   network: tcp
   password: Aimer
   port: 2087
@@ -2917,7 +2406,7 @@ proxies:
   sni: epme.ambercc.filegear-sg.me
   type: trojan
   udp: true
-- name: '510,511,523,530,531|🇷🇺 _俄罗斯 #5'
+- name: '510,511,523,530,531,550|24|🇷🇺 _俄罗斯 #5'
   network: tcp
   password: Aimer
   port: 443
@@ -2932,6 +2421,13 @@ proxies:
   server: 45.150.115.195
   skip-cert-verify: true
   type: trojan
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: '536,537,539|1|33🇷🇺俄罗斯|官网：米卡莎.xyz #4'
+  password: e84dc82a-69a6-4dbb-a113-41911c456a77
+  port: 31511
+  server: freem.vidalith.com
+  type: ss
   udp: true
 - name: '536,554,572,573|RU_speednode_0177 #1'
   network: ws
@@ -3009,7 +2505,7 @@ proxies:
   server: free.2weradf.xyz
   type: ss
   udp: true
-- name: 549|8|🇺RU-176.32.35.167-210_1@209
+- name: 549,550|8|🇷🇺RU-176.32.35.167-210_1@209
   password: 85bce006-4885-11ee-8792-f23c9164ca5d
   port: 1007
   server: 004282c1-sbdj40-sdlngq-1n7jq.ru.z7zi.com
@@ -3064,6 +2560,16 @@ proxies:
     headers:
       Host: ''
     path: /
+- alterId: 0
+  cipher: auto
+  name: 550,559|🔒 VM-TCP-NA 🇷🇺 RU-45.12.114.15...
+  network: tcp
+  port: '20779'
+  server: 45.12.114.15
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 9dc5bff8-bcbb-4703-b0fe-4f91ba517402
 - name: '551,552,558,623|🇺🇦 乌克兰 001 #1'
   password: 6884d714-d3c4-4b49-aa20-767ea92837d6
   port: 443
@@ -3111,6 +2617,48 @@ proxies:
     headers:
       Host: ru2902.cloudmatrix.xyz
     path: /hls/cctv5phd.m3u8
+- name: 558|🔒 TR-TCP-NA 🇷🇺 RU-5.182.84.66:...
+  password: Aimer
+  port: 2083
+  server: 5.182.84.66
+  sni: epccf.ambercc.filegear-sg.me
+  type: trojan
+- name: 558|🔒 TR-TCP-NA 🇷🇺 RU-5.182.84.52:...
+  password: Aimer
+  port: 2083
+  server: 5.182.84.52
+  skip-cert-verify: false
+  sni: epccv.ambercc.filegear-sg.me
+  type: trojan
+- name: 558|🔒 TR-TCP-NA 🇷🇺 RU-5.182.85.28:...
+  password: Aimer
+  port: 443
+  server: 5.182.85.28
+  sni: epccf.ambercc.filegear-sg.me
+  type: trojan
+- name: 558|🔒 TR-TCP-NA 🇷🇺 RU-5.182.84.93:...
+  password: NISHIKUITAN111
+  port: 443
+  server: 5.182.84.93
+  type: trojan
+- name: 558|🔒 TR-WS-TLS 🇷🇺 RU-45.67.215.25...
+  network: ws
+  password: Aimer
+  port: 2096
+  server: 45.67.215.250
+  sni: ageph.ambercc.filegear-sg.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ageph.ambercc.filegear-sg.mehttp/1.1
+    path: /
+- name: 558|🔒 TR-TCP-NA 🇷🇺 RU-5.182.84.9:2...
+  password: Aimer
+  port: 2087
+  server: 5.182.84.9
+  skip-cert-verify: false
+  sni: epccv.ambercc.filegear-sg.me
+  type: trojan
 - name: 558|🔒 TR-TCP-TLS 🇷🇺 RU-46.254.93.3...
   network: tcp
   password: Aimer
@@ -3118,68 +2666,22 @@ proxies:
   server: 46.254.93.37
   sni: acepo.ambercc.filegear-sg.me
   type: trojan
-- alterId: 0
-  name: '558,561|未知54 #1'
-  password: Aimer
-  port: 2096
-  server: 5.182.85.255
-  skip-cert-verify: true
-  sni: epcch.ambercc.filegear-sg.me
-  tls: true
-  type: trojan
-  udp: true
-- name: 558|🔒 TR-WS-TLS 🇷🇺 RU-176.124.223....
+- name: 558|🔒 TR-WS-TLS 🇷🇺 RU-45.67.215.19...
   network: ws
-  password: Aimer
-  port: 2053
-  server: 176.124.223.40
-  sni: ngepy.ambercc.filegear-sg.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ngepy.ambercc.filegear-sg.me
-- name: 558|🔒 TR-TCP-NA 🇷🇺 RU-45.67.215.19...
   password: 6884d714-d3c4-4b49-aa20-767ea92837d6
   port: 443
   server: 45.67.215.196
-  skip-cert-verify: true
   sni: icecream.955850.xyz
-  type: trojan
-- name: 558|🔒 TR-TCP-NA 🇷🇺 RU-5.182.84.120...
-  password: Aimer
-  port: 443
-  server: 5.182.84.120
-  sni: agepy.aimercc.filegear-sg.me
-  type: trojan
-- name: 558|🔒 TR-WS-TLS 🇷🇺 RU-46.254.92.27...
-  network: ws
-  password: NISHIKUITAN111
-  port: 443
-  server: 46.254.92.27
-  sni: zb.ylks.xyz
   type: trojan
   ws-opts:
     headers:
-      Host: zb.ylks.xyz
-    path: /
-- name: 558|🔒 TR-TCP-NA 🇷🇺 RU-77.232.140.1...
-  password: Aimer
-  port: 2053
-  server: 77.232.140.101
-  skip-cert-verify: false
-  sni: epccv.ambercc.filegear-sg.me
-  type: trojan
-- name: 558|🔒 TR-TCP-NA 🇷🇺 RU-77.232.140.7...
-  password: Aimer
-  port: 443
-  server: 77.232.140.7
-  sni: epccf.ambercc.filegear-sg.me
-  type: trojan
-- name: 558|🔒 TR-WS-TLS 🇷🇺 RU-46.254.93.17...
+      Host: icecream.955850.xyz
+    path: '%2Fproxyip%3D45.67.215.196%3A443'
+- name: 558|🔒 TR-WS-TLS 🇷🇺 RU-46.254.93.25...
   network: ws
   password: Aimer
-  port: 2083
-  server: 46.254.93.175
+  port: 2087
+  server: 46.254.93.251
   sni: ageph.ambercc.filegear-sg.me
   type: trojan
   ws-opts:
@@ -3193,35 +2695,27 @@ proxies:
   server: 5.182.84.22
   sni: ngepx.ambercc.filegear-sg.me
   type: trojan
-- name: 558|🔒 TR-TCP-NA 🇷🇺 RU-213.241.198....
-  password: Aimer
-  port: 2053
-  server: 213.241.198.189
-  skip-cert-verify: false
-  sni: epccv.ambercc.filegear-sg.me
-  type: trojan
-- name: 558|🔒 TR-WS-TLS 🇷🇺 RU-45.67.215.25...
+- name: 558|🔒 TR-WS-TLS 🇷🇺 RU-46.254.93.17...
   network: ws
   password: Aimer
-  port: 2096
-  server: 45.67.215.250
+  port: 2083
+  server: 46.254.93.175
   sni: ageph.ambercc.filegear-sg.me
   type: trojan
   ws-opts:
     headers:
       Host: ageph.ambercc.filegear-sg.mehttp/1.1
     path: /
-- name: 558|🔒 TR-WS-NA 🇷🇺 RU-45.67.215.95:...
+- name: 558|🔒 TR-WS-TLS 🇷🇺 RU-46.254.92.27...
   network: ws
-  password: tg-fq521free
+  password: NISHIKUITAN111
   port: 443
-  server: 45.67.215.95
-  skip-cert-verify: false
-  sni: torjan.xn--xhq44j.eu.org
+  server: 46.254.92.27
+  sni: zb.ylks.xyz
   type: trojan
   ws-opts:
     headers:
-      Host: torjan.xn--xhq44j.eu.org
+      Host: zb.ylks.xyz
     path: /
 - name: 558|🔒 TR-TCP-NA 🇷🇺 RU-5.182.85.189...
   password: Aimer
@@ -3230,156 +2724,11 @@ proxies:
   skip-cert-verify: false
   sni: epccn.ambercc.filegear-sg.me
   type: trojan
-- name: '558|🔒 TR-TCP-TLS 🇷🇺 RU-5.182.84.22... #1'
-  network: tcp
+- name: 558|🔒 TR-TCP-NA 🇷🇺 RU-45.67.215.21...
   password: Aimer
   port: 2087
-  server: 5.182.84.229
-  sni: ngepy.ambercc.filegear-sg.me
-  type: trojan
-- name: 558|🔒 TR-WS-TLS 🇷🇺 RU-46.254.92.19...
-  network: ws
-  password: Aimer
-  port: 443
-  server: 46.254.92.191
-  sni: epcct.ambercc.filegear-sg.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: epcct.ambercc.filegear-sg.me
-- alterId: 0
-  name: '558,561|未知2 #1'
-  password: Aimer
-  port: 2096
-  server: 5.182.84.50
-  skip-cert-verify: true
-  sni: epcch.ambercc.filegear-sg.me
-  tls: true
-  type: trojan
-  udp: true
-- name: 558|🔒 TR-WS-NA 🇷🇺 RU-45.67.215.5:4...
-  network: ws
-  password: 6884d714-d3c4-4b49-aa20-767ea92837d6
-  port: 443
-  server: 45.67.215.5
-  sni: icecream.955850.xyz
-  type: trojan
-  ws-opts:
-    headers:
-      Host: icecream.955850.xyz
-- name: '558|🔒 TR-TCP-NA 🇷🇺 RU-213.241.198.... #1'
-  password: Aimer
-  port: 2083
-  server: 213.241.198.59
-  sni: epccn.ambercc.filegear-sg.me
-  type: trojan
-- name: 558|🔒 TR-WS-TLS 🇷🇺 RU-46.254.93.21...
-  network: ws
-  password: Aimer
-  port: 2053
-  server: 46.254.93.211
-  sni: epcch.ambercc.filegear-sg.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: epcch.ambercc.filegear-sg.me
-- name: 558|🔒 TR-TCP-NA 🇷🇺 RU-5.182.85.28:...
-  password: Aimer
-  port: 443
-  server: 5.182.85.28
-  sni: epccf.ambercc.filegear-sg.me
-  type: trojan
-- name: 558|🔒 TR-WS-TLS 🇷🇺 RU-46.254.92.14...
-  network: ws
-  password: Aimer
-  port: 2087
-  server: 46.254.92.142
-  sni: ngepx.ambercc.filegear-sg.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ngepx.ambercc.filegear-sg.me
-- name: 558|🔒 TR-TCP-NA 🇷🇺 RU-5.182.84.9:2...
-  password: Aimer
-  port: 2087
-  server: 5.182.84.9
-  skip-cert-verify: false
-  sni: epccv.ambercc.filegear-sg.me
-  type: trojan
-- name: '558|🔒 TR-WS-TLS 🇷🇺 RU-176.124.223.... #1'
-  network: ws
-  password: Aimer
-  port: 8443
-  server: 176.124.223.50
-  sni: ageph.ambercc.filegear-sg.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ageph.ambercc.filegear-sg.mehttp/1.1
-    path: /
-- name: 558|🔒 TR-TCP-NA 🇷🇺 RU-46.254.93.52...
-  password: Aimer
-  port: 8443
-  server: 46.254.93.52
-  sni: epcca.ambercc.filegear-sg.me
-  type: trojan
-- name: 558|🔒 TR-WS-TLS 🇷🇺 RU-46.254.93.25...
-  network: ws
-  password: Aimer
-  port: 2087
-  server: 46.254.93.251
-  sni: ageph.ambercc.filegear-sg.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ageph.ambercc.filegear-sg.mehttp/1.1
-    path: /
-- name: 558|🔒 TR-TCP-NA 🇷🇺 RU-5.182.84.52:...
-  password: Aimer
-  port: 2083
-  server: 5.182.84.52
-  skip-cert-verify: false
-  sni: epccv.ambercc.filegear-sg.me
-  type: trojan
-- name: 558|🔒 TR-TCP-NA 🇷🇺 RU-46.254.93.24...
-  password: Aimer
-  port: 8443
-  server: 46.254.93.243
-  sni: epcca.ambercc.filegear-sg.me
-  type: trojan
-- name: 558|🔒 TR-WS-TLS 🇷🇺 RU-5.182.85.129...
-  network: ws
-  password: blue2024
-  port: 443
-  server: 5.182.85.129
-  sni: b.promote.icu
-  type: trojan
-  ws-opts:
-    headers:
-      Host: tb.promote.icu
-    path: /?ed
-- alterId: 0
-  name: '558,561|未知60 #1'
-  network: tcp
-  password: Aimer
-  port: 2083
-  server: 213.241.198.56
-  skip-cert-verify: true
-  sni: ngepy.ambercc.filegear-sg.me
-  tls: true
-  type: trojan
-  udp: true
-- name: 558|🔒 TR-TCP-NA 🇷🇺 RU-5.182.84.93:...
-  password: NISHIKUITAN111
-  port: 443
-  server: 5.182.84.93
-  type: trojan
-- name: 558|🔒 TR-TCP-TLS 🇷🇺 RU-46.254.92.2...
-  network: tcp
-  password: Aimer
-  port: 2053
-  server: 46.254.92.201
-  sni: ngepx.ambercc.filegear-sg.me
+  server: 45.67.215.217
+  sni: epccg.ambercc.filegear-sg.me
   type: trojan
 - name: 558|🔒 TR-WS-NA 🇷🇺 RU-45.67.215.218...
   network: ws
@@ -3392,6 +2741,95 @@ proxies:
   ws-opts:
     headers:
       Host: icecream.955850.xyz
+- name: 558|🔒 TR-TCP-NA 🇷🇺 RU-46.254.93.24...
+  password: Aimer
+  port: 8443
+  server: 46.254.93.243
+  sni: epcca.ambercc.filegear-sg.me
+  type: trojan
+- name: 558|🔒 TR-WS-NA 🇷🇺 RU-45.67.215.153...
+  network: ws
+  password: 6884d714-d3c4-4b49-aa20-767ea92837d6
+  port: 443
+  server: 45.67.215.153
+  sni: icecream.955850.xyz
+  type: trojan
+  ws-opts:
+    headers:
+      Host: icecream.955850.xyz
+- name: 558|🔒 TR-TCP-NA 🇷🇺 RU-77.232.140.7...
+  password: Aimer
+  port: 443
+  server: 77.232.140.7
+  sni: epccf.ambercc.filegear-sg.me
+  type: trojan
+- name: 558|🔒 TR-TCP-TLS 🇷🇺 RU-46.254.92.2...
+  network: tcp
+  password: Aimer
+  port: 2053
+  server: 46.254.92.201
+  sni: ngepx.ambercc.filegear-sg.me
+  type: trojan
+- name: 558|🔒 TR-WS-TLS 🇷🇺 RU-176.124.223....
+  network: ws
+  password: Aimer
+  port: 2053
+  server: 176.124.223.40
+  sni: ngepy.ambercc.filegear-sg.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ngepy.ambercc.filegear-sg.me
+- name: 558|🔒 TR-TCP-NA 🇷🇺 RU-213.241.198....
+  password: Aimer
+  port: 2083
+  server: 213.241.198.59
+  sni: epccn.ambercc.filegear-sg.me
+  type: trojan
+- name: '558|🔒 TR-WS-TLS 🇷🇺 RU-176.124.223.... #1'
+  network: ws
+  password: Aimer
+  port: 2096
+  server: 176.124.223.133
+  sni: epccj.ambercc.filegear-sg.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: epccj.ambercc.filegear-sg.me
+- name: 558|🔒 TR-WS-TLS 🇷🇺 RU-5.182.85.129...
+  network: ws
+  password: blue2024
+  port: 443
+  server: 5.182.85.129
+  sni: b.promote.icu
+  type: trojan
+  ws-opts:
+    headers:
+      Host: tb.promote.icu
+    path: /?ed
+- name: 558|🔒 TR-WS-TLS 🇷🇺 RU-46.254.92.14...
+  network: ws
+  password: Aimer
+  port: 2087
+  server: 46.254.92.142
+  sni: ngepx.ambercc.filegear-sg.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ngepx.ambercc.filegear-sg.me
+- name: 558|🔒 TR-TCP-NA 🇷🇺 RU-46.254.93.52...
+  password: Aimer
+  port: 8443
+  server: 46.254.93.52
+  sni: epcca.ambercc.filegear-sg.me
+  type: trojan
+- name: '558|🔒 TR-TCP-TLS 🇷🇺 RU-5.182.84.22... #1'
+  network: tcp
+  password: Aimer
+  port: 2087
+  server: 5.182.84.229
+  sni: ngepy.ambercc.filegear-sg.me
+  type: trojan
 - name: 558|🔒 TR-WS-TLS 🇷🇺 RU-185.148.106....
   network: ws
   password: NISHIKUITAN111
@@ -3403,64 +2841,85 @@ proxies:
     headers:
       Host: za.ylks.xyz
     path: /
-- name: 558|🔒 TR-TCP-NA 🇷🇺 RU-45.67.215.21...
+- name: 558|🔒 TR-WS-TLS 🇷🇺 RU-46.254.92.19...
+  network: ws
   password: Aimer
-  port: 2087
-  server: 45.67.215.217
-  sni: epccg.ambercc.filegear-sg.me
+  port: 443
+  server: 46.254.92.191
+  sni: epcct.ambercc.filegear-sg.me
   type: trojan
+  ws-opts:
+    headers:
+      Host: epcct.ambercc.filegear-sg.me
+- name: '558|🔒 TR-WS-TLS 🇷🇺 RU-176.124.223.... #2'
+  network: ws
+  password: Aimer
+  port: 8443
+  server: 176.124.223.50
+  sni: ageph.ambercc.filegear-sg.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ageph.ambercc.filegear-sg.mehttp/1.1
+    path: /
+- name: '558|🔒 TR-TCP-NA 🇷🇺 RU-213.241.198.... #1'
+  password: Aimer
+  port: 2053
+  server: 213.241.198.189
+  skip-cert-verify: false
+  sni: epccv.ambercc.filegear-sg.me
+  type: trojan
+- name: 558|🔒 TR-WS-NA 🇷🇺 RU-45.67.215.5:4...
+  network: ws
+  password: 6884d714-d3c4-4b49-aa20-767ea92837d6
+  port: 443
+  server: 45.67.215.5
+  sni: icecream.955850.xyz
+  type: trojan
+  ws-opts:
+    headers:
+      Host: icecream.955850.xyz
 - name: 558|🔒 TR-TCP-NA 🇷🇺 RU-5.182.84.244...
   password: Aimer
   port: 443
   server: 5.182.84.244
   sni: epccn.ambercc.filegear-sg.me
   type: trojan
-- alterId: 0
-  name: '558,561|未知93 #1'
-  password: Aimer
-  port: 443
-  server: 176.124.223.92
-  skip-cert-verify: true
-  sni: epccn.ambercc.filegear-sg.me
-  tls: true
-  type: trojan
-  udp: true
-- name: '558|🔒 TR-WS-TLS 🇷🇺 RU-176.124.223.... #2'
+- name: 558|🔒 TR-WS-TLS 🇷🇺 RU-46.254.93.21...
   network: ws
   password: Aimer
-  port: 2096
-  server: 176.124.223.133
-  sni: epccj.ambercc.filegear-sg.me
+  port: 2053
+  server: 46.254.93.211
+  sni: epcch.ambercc.filegear-sg.me
   type: trojan
   ws-opts:
     headers:
-      Host: epccj.ambercc.filegear-sg.me
-- name: 558|🔒 TR-WS-NA 🇷🇺 RU-45.67.215.153...
+      Host: epcch.ambercc.filegear-sg.me
+- name: 558|🔒 TR-TCP-NA 🇷🇺 RU-77.232.140.1...
+  password: Aimer
+  port: 2053
+  server: 77.232.140.101
+  skip-cert-verify: false
+  sni: epccv.ambercc.filegear-sg.me
+  type: trojan
+- name: 558|🔒 TR-WS-NA 🇷🇺 RU-45.67.215.95:...
   network: ws
-  password: 6884d714-d3c4-4b49-aa20-767ea92837d6
+  password: tg-fq521free
   port: 443
-  server: 45.67.215.153
-  sni: icecream.955850.xyz
+  server: 45.67.215.95
+  skip-cert-verify: false
+  sni: torjan.xn--xhq44j.eu.org
   type: trojan
   ws-opts:
     headers:
-      Host: icecream.955850.xyz
-- name: 558|🔒 TR-TCP-NA 🇷🇺 RU-5.182.84.66:...
+      Host: torjan.xn--xhq44j.eu.org
+    path: /
+- name: 558|🔒 TR-TCP-NA 🇷🇺 RU-5.182.84.120...
   password: Aimer
-  port: 2083
-  server: 5.182.84.66
-  sni: epccf.ambercc.filegear-sg.me
+  port: 443
+  server: 5.182.84.120
+  sni: agepy.aimercc.filegear-sg.me
   type: trojan
-- alterId: 0
-  cipher: auto
-  name: 559|🔒 VM-TCP-NA 🇷🇺 RU-45.12.114.15...
-  network: tcp
-  port: '20779'
-  server: 45.12.114.15
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 9dc5bff8-bcbb-4703-b0fe-4f91ba517402
 - alterId: 0
   cipher: auto
   name: 565|11|俄罗斯 Rubtsovsk Branch of Alt...
@@ -3523,7 +2982,7 @@ proxies:
   skip-cert-verify: true
   sni: www.bing.com
   type: hysteria2
-- name: '666,714,715,716|🇷🇺 俄罗斯1 #4'
+- name: '666,714,716|🇷🇺 俄罗斯1 #3'
   password: '!!str 1'
   port: 10010
   server: starlink-fra.2513142.xyz
@@ -3531,10 +2990,26 @@ proxies:
   sni: www.cloudflare.com
   type: trojan
   udp: true
-- name: '666,714,715,716|🇷🇺 俄罗斯2 #3'
+- name: '666,714,716|🇷🇺 俄罗斯2 #2'
   password: '!!str 1'
   port: 10010
   server: starlink-fra2.2513142.xyz
+  skip-cert-verify: true
+  sni: www.cloudflare.com
+  type: trojan
+  udp: true
+- name: 715|🇷🇺 俄罗斯1🔒
+  password: 升级订阅解锁全部节点
+  port: 10010
+  server: z-eu.2513142.xyz
+  skip-cert-verify: true
+  sni: www.cloudflare.com
+  type: trojan
+  udp: true
+- name: 715|🇷🇺 俄罗斯2🔒
+  password: 升级订阅解锁全部节点
+  port: 10010
+  server: z-eu2.2513142.xyz
   skip-cert-verify: true
   sni: www.cloudflare.com
   type: trojan
