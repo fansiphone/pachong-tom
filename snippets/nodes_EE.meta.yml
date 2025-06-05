@@ -4,7 +4,7 @@ proxies:
   client-fingerprint: chrome
   delay: 1057
   flow: xtls-rprx-vision
-  name: 83,330,515|拉脱维亚 - Riga - SIA VEESP - 1
+  name: 83,330,476,515|拉脱维亚 - Riga - SIA VEESP - 1
   network: tcp
   port: 6003
   reality-opts:
@@ -74,14 +74,29 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 408|🇪🇪 爱沙尼亚 | EST
+  name: 408,553,555|英国-FREE优化节点-CDN | 2x-1A
   network: ws
-  port: 80
+  port: '80'
   server: tci2.tiamoci.us.kg
   tls: false
   type: vmess
   udp: true
   uuid: c9045a96-518b-4538-8fde-35568b1c2de6
+  ws-opts:
+    headers:
+      Host: tci2.tiamoci.us.kg
+    path: /
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 408,553,555|英国-FREE优化节点-CDN | 2x-1B
+  network: ws
+  port: '80'
+  server: tci2.tiamoci.us.kg
+  tls: false
+  type: vmess
+  udp: true
+  uuid: f517c3cd-bcce-4975-8c24-1adf79e5b444
   ws-opts:
     headers:
       Host: tci2.tiamoci.us.kg
@@ -373,4 +388,10 @@ proxies:
   port: 443
   server: 45.80.110.224
   sni: bpb.my79801.com
+  type: trojan
+- name: 558|🔒 TR-TCP-NA 🇪🇪 EE-37.252.5.75:...
+  password: bpb-trojan
+  port: 443
+  server: 37.252.5.75
+  sni: skwygx.top
   type: trojan
