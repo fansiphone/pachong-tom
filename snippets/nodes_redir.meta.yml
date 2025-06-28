@@ -2,7 +2,7 @@ proxies:
 - alterId: 0
   delay: 1304
   ip-version: dual
-  name: '4,11,83,330,365,442,444,445,459,460,461,462,467,476,487,489,509,515,523,524,535,546,550,567,568|🇨🇳_CN_中国->🇺🇸_US_美国_1
+  name: '4,11,83,330,365,442,444,445,462,467,476,509,515,523,524,535,546,550,567,568|🇨🇳_CN_中国->🇺🇸_US_美国_1
     #14'
   network: tcp
   password: 1b4c16925f934c57b954a9f0f23dea33
@@ -10,7 +10,6 @@ proxies:
   server: 42.240.152.238
   skip-cert-verify: true
   sni: brwx.spvpv.com
-  tfo: false
   tls: true
   type: trojan
   udp: true
@@ -91,7 +90,7 @@ proxies:
     path: /oooo
 - cipher: aes-256-cfb
   ip-version: dual
-  name: 4,11,365,462,465,467,470,476,506,509,524,535|_07
+  name: 4,11,365,462,465,467,470,476,506,509,524,525,535|_07
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 185.153.197.5
@@ -3748,6 +3747,14 @@ proxies:
   server: gstdnb.myfczy168.top
   type: ss
   udp: true
+- name: 442,523,546|🇨🇳_CN_中国->🇯🇵_JP_日本
+  network: tcp
+  password: VdWBGFmg
+  port: 23770
+  server: 36.151.251.62
+  skip-cert-verify: true
+  sni: 36.151.251.62
+  type: trojan
 - alterId: 2
   cipher: auto
   name: '442,476,546|🇨🇳_CN_中国->🇺🇸_US_美国_3 #15'
@@ -3804,6 +3811,20 @@ proxies:
   type: vless
   udp: true
   uuid: a5324051-2777-4d59-9f1e-d666b6f4c05f
+- alterId: 0
+  cipher: auto
+  name: '444,445,523,546,567,568|🇨🇳_CN_中国->🇨🇦_CA_加拿大 #17'
+  network: ws
+  port: 30840
+  server: v40.heduian.link
+  servername: v40.heduian.link
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: v40.heduian.link
+    path: /index
 - alterId: 0
   cipher: auto
   name: 451,487|[VMess] 🇨🇳 _TW_台湾->🇺🇸_US_美国
@@ -4411,7 +4432,7 @@ proxies:
   cipher: auto
   h2-opts: {}
   http-opts: {}
-  name: 455,535|Relay_-🇫🇷FR_71
+  name: 455,481,535|Relay_-🇫🇷FR_71
   network: ws
   port: 443
   server: 172.67.200.13
@@ -4665,7 +4686,7 @@ proxies:
     headers:
       Host: lax2.ibgfw.top
     path: /dyajvws
-- name: 462,467,550|16|_US_->_CA_
+- name: 462,467,523,550|16|_US_->_CA_
   network: ws
   password: 03e92910-34b1-4245-ac63-04a865f43cd5
   port: 443
@@ -4687,7 +4708,7 @@ proxies:
   ws-opts:
     path: /oooo
 - ip-version: dual
-  name: 462,465,467,470,523,550|16|🇨🇳_CN_中国->🇺🇸_US_美国_2
+  name: 462,465,467,470,550|16|🇨🇳_CN_中国->🇺🇸_US_美国_2
   password: VdWBGFmg
   port: 23770
   server: 36.151.251.62
@@ -4710,7 +4731,7 @@ proxies:
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-opts:
     path: /oooo
-- name: 462,467,523,550|16|🇨🇳_CN_中国->🇨🇦_CA_加拿大_2
+- name: 462,467,550|16|🇨🇳_CN_中国->🇨🇦_CA_加拿大_2
   password: 85f133142f04dbf6547da33895cfabb3
   port: 39001
   server: 120.233.128.68
@@ -4972,6 +4993,15 @@ proxies:
   type: vmess
   uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   ws-opts: {}
+- alpn:
+  - http/1.1
+  name: 506,535,550|12|🇺🇸_US_美国->🇩🇪_DE_德国
+  network: tcp
+  password: telegram-id-directvpn
+  port: 22223
+  server: 63.178.144.147
+  sni: trojan.burgerip.co.uk
+  type: trojan
 - name: 529|🇺🇸 中转•美国295•高速 - 飞翔吧
   password: a6ba0ada-cef1-3009-98dc-a1300ca76ed6
   port: 20295
@@ -5674,6 +5704,20 @@ proxies:
   port: '8443'
   server: 104.21.32.1
   servername: us01.sh-cloudflare.sbs
+  tls: true
+  type: vmess
+  uuid: f10598e2-c606-4945-bfde-e5730756a2dd
+  ws-opts:
+    headers:
+      Host: us01.sh-cloudflare.sbs
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 546|CF中转_06272013516 L0
+  network: ws
+  port: '8443'
+  server: 104.21.80.1
+  servername: ''
   tls: true
   type: vmess
   uuid: f10598e2-c606-4945-bfde-e5730756a2dd
@@ -6459,6 +6503,17 @@ proxies:
   uuid: 2ab54438-8af9-3711-bf1a-676fcc144586
   ws-opts:
     path: /v2ray
+- name: 550|12|🇮🇹_IT_意大利->🇺🇸_US_美国
+  network: ws
+  port: 80
+  server: 151.101.242.172
+  tls: false
+  type: vless
+  uuid: 8b4bb431-21bf-46c9-a4bf-4deac75613f9
+  ws-opts:
+    headers:
+      Host: Afkarnews.com
+    path: '%2Fde%3Fed%3D1048'
 - name: '550|13|🇺🇸_US_美国->🇩🇪_DE_德国 #1'
   network: ws
   port: 80
