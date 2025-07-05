@@ -239,8 +239,7 @@ proxies:
   server: 217.182.198.219
   type: ss
 - cipher: rc4-md5
-  country: 🇪DE
-  name: '343,365,420,524|🇪DE-193.108.119.230-5012 #1'
+  name: '343,365,524|🇪DE-193.108.119.230-5012 #1'
   password: 14fFPrbezE3HDZzsMOr6
   port: 8080
   server: 193.108.119.230
@@ -500,7 +499,8 @@ proxies:
   port: 811
   server: 161.35.69.20
   type: ss
-- name: '365,481,523,524,525,550|20,21|🇩🇪DE-104.248.18.1-0404 #...'
+- country: 🇩🇪DE
+  name: '365,420,481,523,524,525,550|20,21|🇩🇪DE-104.248.18.1-0404 #...'
   network: tcp
   password: 6gZh2JbfhQ
   port: 1935
@@ -508,6 +508,7 @@ proxies:
   skip-cert-verify: false
   sni: x1-germany-digitalocean-v2.devefun.org
   type: trojan
+  udp: true
 - cipher: chacha20-ietf-poly1305
   name: 365,524,525|🇩🇪DE-147.45.178.200-0430 | 15....
   password: c40641c1f89e7acb
@@ -1488,7 +1489,7 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: '365,523,524|🇩🇪DE-57.129.28.69-7221 #1'
+  name: '365,424,523,524|🇩🇪DE-57.129.28.69-7221 #1'
   network: ws
   port: 443
   server: 57.129.28.69
@@ -1548,7 +1549,7 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: '365,481,523,524|🇩🇪DE-57.129.25.25-7230 #1'
+  name: '365,424,481,523,524|🇩🇪DE-57.129.25.25-7230 #1'
   network: ws
   port: 443
   server: 57.129.25.25
@@ -1563,14 +1564,16 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: '365,523,524|🇩🇪DE-132.145.232.171-7238 #1'
+  name: '365,451,459,460,461,487,489,523,524,546,556|德国 法兰克福Oracle云计算数据中心 #4'
   network: ws
   port: 443
   server: 132.145.232.171
   servername: beyonddsz.cfd
   skip-cert-verify: false
+  tfo: false
   tls: true
   type: vmess
+  udp: true
   uuid: 9b456c2a-f2c1-45e1-87a9-b7628b04bb24
   ws-opts:
     headers:
@@ -2130,31 +2133,6 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  country: 🇪DE
-  h2-opts: {}
-  http-opts: {}
-  name: 420,550|19|🇩🇪DE-132.145.232.171-7279
-  network: ws
-  port: 443
-  server: 132.145.232.171
-  servername: beyonddsz.cfd
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 9b456c2a-f2c1-45e1-87a9-b7628b04bb24
-  ws-opts:
-    path: /linkws
-- country: 🇩🇪DE
-  name: 420,546|香港_070418054
-  password: dda4f3bf-85fb-41bd-9d8e-77a8a02dbd59
-  port: 1066
-  server: 194.104.147.74
-  skip-cert-verify: true
-  sni: 194.104.147.74
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
   name: 443|DE德国(mibei77.com 米贝节点分享)
   network: ws
   port: '8080'
@@ -2465,7 +2443,7 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 5095caac-6e66-3e6a-9be3-095f4bede78b
+  uuid: 835e0cc9-2412-3095-a3f4-31b07049ad1d
   ws-opts:
     headers:
       Host: 16.mamamajd.site
@@ -2480,7 +2458,7 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 5095caac-6e66-3e6a-9be3-095f4bede78b
+  uuid: 835e0cc9-2412-3095-a3f4-31b07049ad1d
   ws-opts:
     headers:
       Host: 18.mamamajd.site
@@ -2501,11 +2479,20 @@ proxies:
   udp: true
 - alpn:
   - http/1.1
-  name: 546|德国_070418050
+  name: 546|德国_070504030
   network: tcp
   password: telegram-id-privatevpns
   port: 22222
-  server: 35.157.171.73
+  server: 18.199.109.12
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- alpn:
+  - http/1.1
+  name: 546|德国_070504031
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 63.177.35.173
   sni: trojan.burgerip.co.uk
   type: trojan
 - alterId: 0
@@ -2716,6 +2703,17 @@ proxies:
   uuid: f74e277e-84b3-46a2-8abd-2777fa5e4af9
 - alterId: 0
   cipher: auto
+  name: 550|19|🇩🇪DE-132.145.232.171-7279
+  network: ws
+  port: 443
+  server: 132.145.232.171
+  tls: true
+  type: vmess
+  uuid: 9b456c2a-f2c1-45e1-87a9-b7628b04bb24
+  ws-opts:
+    path: /linkws
+- alterId: 0
+  cipher: auto
   name: 551|🇪DE-91.195.240.12-179
   network: ws
   port: 443
@@ -2873,14 +2871,14 @@ proxies:
   server: p1.bxy-edge.xyz
   type: ss
   udp: true
-- name: '666,714,715,716|🇩🇪 德国3 #3'
+- name: '666,714,716|🇩🇪 德国3 #3'
   password: '!!str 1'
   port: 443
   server: starlink-fra.2513142.xyz
   skip-cert-verify: true
   sni: www.cloudflare.com
   type: trojan
-- name: '666,714,715,716|🇩🇪 德国4 #3'
+- name: '666,714,716|🇩🇪 德国4 #3'
   password: '!!str 1'
   port: 443
   server: starlink-fra2.2513142.xyz
@@ -2926,3 +2924,31 @@ proxies:
   sni: dl.jscudehet.cc.tjcct.xyz
   type: trojan
   udp: true
+- name: '715|🇩🇪 德国3 #2'
+  password: ZIXQa-7pg0vPahuyi8bABhob
+  port: 443
+  server: starlink-fra.2513142.xyz
+  skip-cert-verify: true
+  sni: www.cloudflare.com
+  type: trojan
+- name: '715|🇩🇪 德国4 #2'
+  password: ZIXQa-7pg0vPahuyi8bABhob
+  port: 443
+  server: starlink-fra2.2513142.xyz
+  skip-cert-verify: true
+  sni: www.cloudflare.com
+  type: trojan
+- name: 715|🇩🇪 德国5🔒
+  password: 升级订阅解锁全部节点
+  port: 10025
+  server: z-eu.2513142.xyz
+  skip-cert-verify: true
+  sni: www.cloudflare.com
+  type: trojan
+- name: 715|🇩🇪 德国6🔒
+  password: 升级订阅解锁全部节点
+  port: 33850
+  server: 158.180.36.225
+  skip-cert-verify: true
+  sni: www.cloudflare.com
+  type: trojan
