@@ -1,11 +1,10 @@
 proxies:
 - alterId: 64
   cipher: auto
-  name: '4,11,442,444,445,509,535,546,567,568|🇨🇳_CN_中国 #10'
+  name: '4,11|_CN_ #1'
   network: tcp
-  port: 51707
+  port: 45020
   server: 183.236.51.23
-  tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - cipher: chacha20-ietf-poly1305
@@ -370,11 +369,14 @@ proxies:
   port: 15010
   server: 8tv68qhq.slashdevslashnetslashtun.net
   type: ss
-- cipher: aes-256-gcm
-  name: '365,524|🇳CN-36.141.40.20-0231 #1'
+- alterId: 0
+  cipher: aes-256-gcm
+  name: 365,524,561|🇨🇳
   password: O1ASFJVUHXP5UE9D
   port: 16014
   server: ti3hyra4.slashdevslashnetslashtun.net
+  skip-cert-verify: true
+  tls: true
   type: ss
 - name: '365,523,524|🇨🇳CN-183.240.179.89-0232 #2'
   password: a5a81a34-f257-11ef-ba82-f23c913c8d2b
@@ -384,11 +386,12 @@ proxies:
   sni: 183.240.179.89
   type: trojan
 - cipher: aes-256-gcm
-  name: '365,524|🇳CN-36.141.40.20-0239 #1'
+  name: '365,524,553|🇯🇵 日本 | JPN #1'
   password: 9RFK4DMQZQEII9LJ
   port: 18009
   server: 8tv68qhq.slashdevslashnetslashtun.net
   type: ss
+  udp: true
 - cipher: aes-256-gcm
   name: '365,524|🇨🇳CN-36.141.40.20-0240 #2'
   password: C42DZQFZWLQOGV75
@@ -423,17 +426,20 @@ proxies:
     headers:
       Host: v7.heduian.link
     path: /oooo
-- name: '365,523,524|🇨🇳CN-157.148.64.2-0268 #2'
+- alterId: 0
+  name: 365,481,523,524,561|🇳
   password: 730223f0-ef31-11ef-b5d9-f23c9164ca5d
   port: 15229
   server: 675b39e1-sz38g0-t3mmvc-1qgd1.cu2.plebai.net
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: 675b39e1-sz38g0-t3mmvc-1qgd1.cu2.plebai.net
+  tls: true
   type: trojan
+  udp: true
 - alterId: 2
   cipher: auto
   ip-version: dual
-  name: '365,451,459,460,461,476,489,523,524|🇨🇳CN-111.26.109.79-0275 #2'
+  name: '365,476,523,524|🇨🇳CN-111.26.109.79-0275 #2'
   network: ws
   port: 30835
   server: 111.26.109.79
@@ -452,14 +458,14 @@ proxies:
   skip-cert-verify: false
   sni: 183.240.179.89
   type: trojan
-- name: '365,523,524|🇳CN-183.240.179.89-0282 #1'
+- name: '365,481,523,524|🇳CN-183.240.179.89-0282 #1'
   password: 7c077572-6da9-11ef-b786-f23c91cfbbc9
   port: 31233
   server: 183.240.179.89
   skip-cert-verify: false
   sni: 183.240.179.89
   type: trojan
-- name: '365,523,524|🇨🇳CN-183.240.179.89-0283 #2'
+- name: '365,459,460,461,489,523,524|🇨🇳CN-183.240.179.89-0283 #2'
   password: 775baa4a-d75b-11ef-a11a-f23c913c8d2b
   port: 32233
   server: 183.240.179.89
@@ -475,7 +481,7 @@ proxies:
   type: trojan
 - alterId: 2
   cipher: auto
-  name: '365,443,523,524,556|🇨🇳_CN_中国->🇺🇸_US_美国 #20'
+  name: '365,443,523,524,556|🇨🇳_CN_中国->🇺🇸_US_美国 #18'
   network: ws
   port: 30829
   server: v29.heduian.link
@@ -490,21 +496,31 @@ proxies:
     path: /oooo
 - alterId: 0
   cipher: auto
-  name: '365,446,481,487,489,523,524,546,567,704|中国【机场推荐：https://a0a.xyz/】8 #1'
+  name: '365,446,489,523,524,546,567,704|中国【机场推荐：https://a0a.xyz/】8 #1'
   network: ws
   port: '30840'
   server: 111.26.109.79
   servername: ''
   skip-cert-verify: false
-  tfo: false
   tls: false
   type: vmess
-  udp: true
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-opts:
     headers:
       Host: api100-core-quic-lf.amemv.com
     path: /index
+- alterId: 0
+  country: 🇨🇳CN
+  name: '365,420,441,476,481,523,524,546,561,567|🇯🇵 日本4|@stairnode #2'
+  network: tcp
+  password: d0d08cddacc3190ea81b1b792e1b5fde
+  port: 53067
+  server: 36.151.251.29
+  skip-cert-verify: true
+  sni: www.baidu.com
+  tls: true
+  type: trojan
+  udp: true
 - cipher: chacha20-ietf-poly1305
   name: '365,524|🇨CN-120.233.248.2-1009 #1'
   password: 9191d221-b36f-40a5-bc5d-dfbf798362c8
@@ -514,7 +530,7 @@ proxies:
 - alterId: 2
   cipher: auto
   ip-version: dual
-  name: '365,465,470,481,510,511,523,524,531,546,556,567|🇨🇳_CN_中国->🇺🇸_US_美国_2 #2'
+  name: '365,465,470,481,510,511,523,524,531,546,567|🇨🇳_CN_中国->🇺🇸_US_美国_2 #1'
   network: ws
   port: 30829
   server: 111.26.109.79
@@ -529,14 +545,15 @@ proxies:
     path: /oooo
 - alterId: 2
   cipher: auto
-  name: '365,481,523,524,531,546,552,556|🇨🇳_定制专线：@QS00008 #10'
+  name: '365,481,523,524,531,546,552,553,556|🇨🇳_定制专线：@QS00008 #10'
   network: ws
   port: 30825
   server: v25.heduian.link
   servername: ''
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
+  udp: true
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-opts:
     headers:
@@ -1719,7 +1736,7 @@ proxies:
   skip-cert-verify: false
   type: trojan
 - cipher: aes-256-cfb
-  name: '365,427,524|CN-222.186.20.102-5191 #1'
+  name: '365,420,427,524|CN-222.186.20.102-5191 #1'
   obfs: plain
   obfs-param: data.bilibili.com/ed5a2165400
   password: http://cc.ax/
@@ -1729,7 +1746,7 @@ proxies:
   server: 222.186.20.102
   type: ssr
 - cipher: chacha20-ietf
-  name: '365,524|🇳CN-59.42.247.125-5198 #1'
+  name: '365,420,524|🇳CN-59.42.247.125-5198 #1'
   obfs: http_simple
   obfs-param: dfde699935.microsoft.com
   password: ygUo3W
@@ -1738,8 +1755,9 @@ proxies:
   protocol-param: 99935:vb3TTF
   server: cname04b-srmkx6ffsizssmjw.bestruisleipa.com
   type: ssr
+  udp: true
 - cipher: chacha20-ietf
-  name: '365,524|🇨🇳CN-59.42.247.125-5199 #1'
+  name: '365,420,524|🇨🇳CN-59.42.247.125-5199 #1'
   obfs: http_simple
   obfs-param: dfde699935.microsoft.com
   password: ygUo3W
@@ -1748,6 +1766,7 @@ proxies:
   protocol-param: 99935:vb3TTF
   server: cname04b-srmkx6ffsizssmjw.bestruisleipa.com
   type: ssr
+  udp: true
 - name: '365,523,524|🇳CN-183.232.139.195-5538 #1'
   password: ED177480-E516-11EA-8B44-BBC4E882BA0B
   port: 20261
@@ -2084,6 +2103,82 @@ proxies:
   port: 870
   server: 183.240.222.15
   type: ss
+- alterId: 0
+  cipher: auto
+  country: 🇨🇳CN
+  delay: 1403
+  h2-opts: {}
+  http-opts: {}
+  name: '420,515|日本 - Chiyoda - Asia Pacific Ne... #2'
+  network: ws
+  port: 443
+  server: nmtow.hjdfghfc.asia
+  servername: file.dingtalk.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: 16f000d7-7805-459d-9130-200d00180b7c
+  ws-opts:
+    headers:
+      HOST: file.dingtalk.com
+    path: /market?ed=512
+- alterId: 64
+  cipher: auto
+  country: 🇨🇳CN
+  h2-opts: {}
+  http-opts: {}
+  name: '420,424,481,546|Github搜索TrojanLinks #9'
+  network: tcp
+  port: '50007'
+  server: 112.132.215.34
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 64
+  cipher: auto
+  country: 🇨🇳CN
+  h2-opts: {}
+  http-opts: {}
+  name: '420,546|Github搜索TrojanLinks #31'
+  network: tcp
+  port: '50002'
+  server: 47.116.166.178
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 0
+  cipher: auto
+  country: 🇨🇳CN
+  h2-opts: {}
+  http-opts: {}
+  name: 420,546,549|36|🔒 VM-TCP-NA 🇳 CN-47.104.186...
+  network: tcp
+  port: '50002'
+  server: 47.104.186.133
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 0
+  cipher: auto
+  country: 🇨🇳CN
+  h2-opts: {}
+  http-opts: {}
+  name: 420|🇨🇳CN |18.61Mb
+  network: raw
+  port: 50002
+  server: 47.92.152.169
+  skip-cert-verify: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- name: 423|🇨🇳 CN_58
+  password: d0d08cddacc3190ea81b1b792e1b5fde
+  port: 30534
+  server: 36.151.251.36
+  type: trojan
 - name: 423|🇨🇳 CN_59
   password: d0d08cddacc3190ea81b1b792e1b5fde
   port: 19577
@@ -2091,41 +2186,26 @@ proxies:
   type: trojan
 - name: 423|🇨🇳 CN_60
   password: d0d08cddacc3190ea81b1b792e1b5fde
-  port: 21829
-  server: 36.151.251.58
+  port: 9141
+  server: 36.151.192.10
   type: trojan
 - name: 423|🇨🇳 CN_61
-  password: d0d08cddacc3190ea81b1b792e1b5fde
-  port: 30534
-  server: 36.151.251.36
-  type: trojan
-- name: 423|🇨🇳 CN_63
   password: d0d08cddacc3190ea81b1b792e1b5fde
   port: 50723
   server: 36.151.251.24
   type: trojan
-- name: 423|🇨🇳 CN_64
+- name: 423|🇨🇳 CN_62
   password: d0d08cddacc3190ea81b1b792e1b5fde
-  port: 9141
-  server: 36.151.192.10
+  port: 21829
+  server: 36.151.251.58
   type: trojan
-- alterId: 64
-  cipher: auto
-  name: '424,481,546|Github搜索TrojanLinks #9'
-  network: tcp
-  port: '50007'
-  server: 112.132.215.34
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: none
-  country: 🇨🇳CN
+  country: 🇨🇳 CN
   delay: 232
   h2-opts: {}
   http-opts: {}
-  name: 424,515,535,546,549|36|🔒 VM-TCP-NA 🇳 CN-183.236.51...
+  name: 424,515,546,549|36|🔒 VM-TCP-NA 🇳 CN-183.236.51...
   network: tcp
   port: '59003'
   server: 183.236.51.36
@@ -2137,36 +2217,21 @@ proxies:
   ws-path: /
 - alterId: 64
   cipher: auto
-  country: 🇨🇳CN
-  h2-opts: {}
-  http-opts: {}
   ip-version: dual
-  name: '424,476,535,546|Github搜索TrojanLinks #8'
+  name: '424,476,546|Github搜索TrojanLinks #8'
   network: tcp
   port: '50002'
   server: 112.132.215.12
-  servername: 09jzus.zdzdzd.xyz
-  skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
-  name: '424,481,546|Github搜索TrojanLinks #32'
+  name: '442,444,445,509,546,567,568|🇨🇳_CN_中国 #7'
   network: tcp
-  port: '50002'
-  server: 47.92.152.169
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  name: '424,546,556|🇨🇳_定制专线：@QS00008 #12'
-  network: tcp
-  port: 50002
-  server: 120.26.55.225
+  port: 51707
+  server: 183.236.51.23
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
@@ -2363,7 +2428,7 @@ proxies:
   delay: 1401
   h2-opts: {}
   http-opts: {}
-  name: 515,535|Relay_🇨🇳CN-🇨🇳CN_52
+  name: '515|中国 - 北京 - Shenzhen Tencent Com... #1'
   network: ws
   port: 65500
   server: pjknkhkd.hjdfghfc.asia
@@ -2807,23 +2872,6 @@ proxies:
   server: scloud50.jafiyun.ltd
   sni: scloud50.jafiyun.ltd
   type: trojan
-- alterId: 0
-  cipher: auto
-  country: 🇨🇳CN
-  h2-opts: {}
-  http-opts: {}
-  name: 535|Relay_🇨🇳CN-🇨🇳CN_55
-  network: ws
-  port: 32309
-  server: gcvbnjth.hjdfghfc.asia
-  servername: file.dingtalk.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: 16f000d7-7805-459d-9130-200d00180b7c
-  ws-opts:
-    headers:
-      HOST: file.dingtalk.com
-    path: /market?ed=512
 - alterId: 0
   cipher: auto
   name: 545|2|🇸24 |  4.8MB/s
@@ -4064,15 +4112,6 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: '556|🇨🇳_定制专线：@QS00008 #3'
-  network: tcp
-  port: 5228
-  server: 1449f183-svhls0-t28b6o-ef48.cu.plebai.net
-  tls: false
-  type: vmess
-  uuid: cb15123a-084c-11f0-8eab-f23c91cfbbc9
-- alterId: 0
-  cipher: auto
   name: '556|🇨🇳_定制专线：@QS00008 #4'
   network: tcp
   port: 5229
@@ -4080,6 +4119,15 @@ proxies:
   tls: false
   type: vmess
   uuid: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
+- alterId: 0
+  cipher: auto
+  name: '556|🇨🇳_定制专线：@QS00008 #3'
+  network: tcp
+  port: 5228
+  server: 1449f183-svhls0-t28b6o-ef48.cu.plebai.net
+  tls: false
+  type: vmess
+  uuid: cb15123a-084c-11f0-8eab-f23c91cfbbc9
 - alterId: 0
   cipher: auto
   name: '565|11,21|_中国 #13'
