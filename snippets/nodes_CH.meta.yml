@@ -9,13 +9,15 @@ proxies:
   udp: true
   uuid: aa15b97a-24b1-3a31-824a-bc52f5a15bac
 - cipher: aes-128-gcm
-  name: 343,344,365,524,525|CH-156.146.62.164-0427 | 31.79...
+  country: 🇺🇸 US
+  name: 343,344,365,524,525,535|🇺🇸 US_217
   password: shadowsocks
   port: 443
   server: 156.146.62.164
   type: ss
 - cipher: aes-128-gcm
-  name: 343,344,365,524,525|CH-156.146.62.162-0448 | 31.06...
+  country: 🇺🇸 US
+  name: 343,344,365,524,525,535|🇺🇸 US_222
   password: shadowsocks
   port: 443
   server: 156.146.62.162
@@ -271,10 +273,22 @@ proxies:
     headers:
       host: rt.ylks0033.dpdns.org
     path: /?ed=2560
+- name: 546|🇨🇭_瑞士
+  network: ws
+  port: 443
+  server: 140.238.212.95
+  servername: rn.ylks0033.dpdns.org
+  tls: true
+  type: vless
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      Host: rn.ylks0033.dpdns.org
+    path: '%2F%3Fed%3D2560'
 - alpn:
   - h3
   client-fingerprint: random
-  name: 567|CH
+  name: '546,567|CH #1'
   network: ws
   port: 443
   server: 140.238.212.95
@@ -287,10 +301,19 @@ proxies:
     headers:
       Host: dv.bgm2024.dpdns.org
     path: '%2F%3Fed%3D2560'
+- alterId: 0
+  cipher: auto
+  name: 556|🇨🇭_定制专线：@QS00008
+  network: ''
+  port: 16650
+  server: jp.mousse.tk
+  tls: false
+  type: vmess
+  uuid: d66a47f2-5136-492c-c82a-74835bb03a76
 - alpn:
   - h3
   client-fingerprint: random
-  name: '567|CH #1'
+  name: '567|CH #2'
   network: ws
   port: 443
   server: 140.238.212.95
