@@ -177,7 +177,7 @@ proxies:
   server: 149.202.82.172
   type: ss
 - cipher: aes-256-cfb
-  name: 343,365,422,524,525|🇫🇷FR-195.154.169.198-0254 | 11...
+  name: '343,365,422,524,525,535|_33 #2'
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 195.154.169.198
@@ -185,7 +185,7 @@ proxies:
   udp: true
 - cipher: aes-256-cfb
   country: 🇫🇷FR
-  name: 343,365,422,524,525|🇫🇷FR-195.154.185.174-0197 | 22...
+  name: 343,365,422,524,525,535|🇫🇷FR_82
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 195.154.185.174
@@ -371,29 +371,28 @@ proxies:
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇱🇹 LT
-  name: 365,422,524,525|🇫🇷FR-45.158.171.110-0201 | 20....
+  name: '365,422,524,525,535|🇱🇹 LT_122 #1'
   password: oZIoA69Q8yhcQV8ka3Pa3A
   port: 8080
   server: 45.158.171.110
   type: ss
 - cipher: aes-256-gcm
-  country: FR
-  name: 365,420,524,525|🇫🇷FR-51.195.103.227-0199 | 18....
+  name: 365,524,525,535|Relay_-🇫🇷FR_24
   password: 5bda2736-81e7-43b4-86fc-286f8f8e6578
   port: 8443
   server: de-freevmess.privateip.net
   type: ss
 - cipher: chacha20-ietf-poly1305
-  country: 🇷 FR
-  name: 365,422,524,525|🇫🇷FR-51.195.119.47-0334 | 18.3...
+  country: 🇫🇷 FR
+  name: 365,422,524,525,535|🇫🇷 FR_80
   password: qXvO7zYU7KeaB0Md7DQLow
   port: 1080
   server: 51.195.119.47
   type: ss
 - alterId: 0
   cipher: chacha20-ietf-poly1305
-  country: 🇸US
-  name: 365,422,524,525,549|37|未知47 73.0KB/s
+  country: 🇺🇸US
+  name: 365,422,524,525,535,549|37|未知47 73.0KB/s
   password: oZIoA69Q8yhcQV8ka3Pa3A
   port: 8080
   server: 45.158.171.66
@@ -662,19 +661,21 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  fingerprint: ''
-  name: '365,457,523,524|🇷FR-146.59.55.50-5011 #1'
+  country: 🇳🇴 NO
+  h2-opts: {}
+  http-opts: {}
+  name: 365,523,524,535|🇳🇴 NO_147
   network: ws
   port: 443
   server: 146.59.55.50
   servername: o.metuji.com
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: true
   type: vmess
-  udp: false
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
+    headers:
+      HOST: o.metuji.com
     path: /linkvws
 - country: 🇸US
   name: '365,422,423,523,524|🇫🇷FR-51.178.42.187-5059 #1'
@@ -736,7 +737,7 @@ proxies:
     path: /ray
 - alterId: 0
   cipher: auto
-  name: '365,424,523,524|🇷FR-146.59.55.50-6970 #1'
+  name: '365,424,481,523,524|🇷FR-146.59.55.50-6970 #1'
   network: ws
   port: 443
   server: 146.59.55.50
@@ -1315,7 +1316,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 408,540|yandex-1290
+  name: 408,540|yandex-563
   port: 45071
   server: xdd.dashuai.cyou
   tls: false
@@ -1325,13 +1326,28 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 408,540|yandex-1291
+  name: 408,540|yandex-564
   port: 45072
   server: haa.dashuai.cyou
   tls: false
   type: vmess
   udp: true
   uuid: 1ab84625-b236-4813-85b5-029972bc730f
+- alterId: 0
+  cipher: auto
+  country: 🇷FR
+  h2-opts: {}
+  http-opts: {}
+  name: 420|Relay_FR-🇫🇷FR_30 | 0.01Mb
+  network: ws
+  port: 8443
+  server: ov-germany4.09vpn.com
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: cfc66d8d-48b5-434f-b92d-22de1907ced7
+  ws-opts:
+    path: /vmess/
 - name: '446,489,567,704|法国【机场推荐：https://a0a.xyz/】15 #1'
   network: ws
   password: Aimer
@@ -1498,6 +1514,24 @@ proxies:
     headers:
       Host: epmk.ambercc.filegear-sg.me
     path: '%2F'
+- name: 510,511,523,546|🇫🇷_法国
+  network: tcp
+  password: Aimer
+  port: 8443
+  server: 141.11.203.191
+  skip-cert-verify: true
+  sni: epmk.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+- name: 510,511,523|🇱🇺LU-45.80.209.25-0938
+  network: tcp
+  password: Aimer
+  port: 81
+  server: 45.80.209.25
+  skip-cert-verify: true
+  sni: epml.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
 - country: 🇫🇷FR
   delay: 2292
   name: 515|法国 - 巴黎 - Amazon Technologies ...
@@ -1508,29 +1542,6 @@ proxies:
   sni: trojan.burgerip.co.uk
   type: trojan
   udp: true
-- country: 🇫🇷FR
-  delay: 1041
-  name: '515|法国 - 巴黎 - Amazon Technologies ... #1'
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 13.36.23.189
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 523|🇫🇷FR-51.68.189.39-5084
-  network: ws
-  port: 8443
-  server: ov-germany4.09vpn.com
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: cfc66d8d-48b5-434f-b92d-22de1907ced7
-  ws-opts:
-    headers:
-      Host: ov-germany4.09vpn.com
-    path: /vmess/
 - alterId: 0
   cipher: auto
   name: 523|🇫🇷FR-45.145.167.103-7105
@@ -1586,36 +1597,31 @@ proxies:
     headers:
       Host: ov-germany4.09vpn.com
     path: /
-- alterId: 0
-  name: 531,551,552,561|🇷FR国
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 15.188.5.40
-  skip-cert-verify: true
-  sni: trojan.burgerip.co.uk
-  tls: true
-  type: trojan
-  udp: true
 - name: '532,533|法国[01] #1'
   password: 4568465a-a435-4569-b3ab-7f606018474f
   port: 443
   server: pop.b1c7d2ec-e636-4521-a9f7-abb10044e3a5.heima360.cc
   skip-cert-verify: false
   type: trojan
-- name: 546|法国_070904316
-  password: 3c298ab7185c9b435da08fd17af7e5ac
-  port: 42300
-  server: 79.72.25.240
+- alterId: 0
+  cipher: auto
+  country: 🇫🇷FR
+  h2-opts: {}
+  http-opts: {}
+  name: 535|🇫🇷FR_83
+  network: tcp
+  port: 28213
+  server: 135.125.182.74
   skip-cert-verify: true
-  sni: www.cloudflare.com
-  type: trojan
-- name: 546|🇫🇷FR_68
+  type: vmess
+  uuid: 81852771-76fb-4e94-e4f1-4e37a698a49a
+- name: '546|🇫🇷FR_63 #1'
   password: d150c8c3-a667-4d3e-843c-739f8558c7d2
   port: 443
   server: uk-full.privateip.net
   sni: uk-full.privateip.net
   type: trojan
-- name: 546|🇫🇷FR_67
+- name: '546|🇫🇷FR_62 #1'
   password: d86c421f-dbfe-4507-a864-f8f9e29d80e4
   port: 443
   server: de-full.privateip.net
@@ -1623,21 +1629,7 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 546|法国_070904307
-  network: ws
-  port: '80'
-  server: 57.129.132.223
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: a25cbf11-2908-4a1b-a3a8-9a571777dca3
-  ws-opts:
-    headers:
-      Host: ''
-    path: /vmess/
-- alterId: 0
-  cipher: auto
-  name: 546|法国_070904035
+  name: 546|法国_070918031
   network: tcp
   port: '36'
   server: 147.45.42.201
@@ -1916,32 +1908,15 @@ proxies:
     Host: 146.59.43.129
   ws-path: /
 - alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: '551,561|🇺🇸US美国3 #1'
-  password: cvII85TrW6n0OGyfpHVS1u
-  port: 8080
-  server: 45.158.171.132
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
   cipher: auto
   name: '553|🇫🇷 法国 | FRA #1'
   port: 45072
   server: haa.dashuai.cyou
+  skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: b02815c0-f640-4c1d-8e39-994b6c5f8fb2
-- alterId: 0
-  cipher: auto
-  name: 555|🇫🇷 法国 25
-  network: tcp
-  port: '45072'
-  server: haa.dashuai.cyou
-  tls: false
-  type: vmess
-  uuid: 0eac6ca0-b7e3-4643-9917-59e586438abd
+  uuid: 7b04ad30-95c5-4ed3-8a74-34b805566161
 - cipher: chacha20-ietf-poly1305
   name: 562|SS-法国-NF解锁法国地区非自制剧-ChatGPT-Tik...
   password: WDavBimDmH2QLxljf5PSO1
