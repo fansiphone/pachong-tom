@@ -894,17 +894,21 @@ proxies:
   udp: true
 - alterId: 64
   cipher: auto
-  name: '327,481,489,493,494,501,538,546,550,552|🇸🇬 新加坡1 | ⬇️ 1.0MB/s|0%|Netfli...
+  name: '327,481,489,493,494,501,538,546,550,551,552|🇸🇬 新加坡1 | ⬇️ 1.0MB/s|0%|Netfli...
     #3'
   network: tcp
   port: '49291'
   server: 183.236.51.38
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-headers:
+    Host: 183.236.51.38
+  ws-path: /
 - alterId: 0
   client-fingerprint: chrome
-  name: '327,365,441,481,489,490,491,493,494,501,502,503,523,524,530,531,537,538,539,543,544,546,550,552,561,566,567,569|🇸🇬
+  name: '327,365,441,481,489,490,491,493,494,501,502,503,523,524,531,537,538,539,543,544,546,550,551,552,561,566,567,569|🇸🇬
     新加坡|@stairnode #5'
   network: tcp
   password: d0d08cddacc3190ea81b1b792e1b5fde
@@ -917,7 +921,7 @@ proxies:
   udp: true
 - alterId: 0
   client-fingerprint: chrome
-  name: '327,365,441,481,489,490,491,493,494,501,502,503,523,524,530,531,537,538,539,543,544,546,550,552,561,566,567,569|🇸🇬
+  name: '327,365,441,481,489,490,491,493,494,501,502,503,523,524,531,537,538,539,543,544,546,550,551,552,561,566,567,569|🇸🇬
     新加坡2|@stairnode #5'
   network: tcp
   password: d0d08cddacc3190ea81b1b792e1b5fde
@@ -1776,11 +1780,11 @@ proxies:
     headers:
       Host: westsg2-ddns.oraclenat.cc
     path: /
-- alterId: 64
+- alterId: 0
   cipher: auto
-  name: '365,523,524,552|🇸🇬 新加坡(油管:破解资源君2.0) #2'
+  name: '365,523,524|🇬SG-18.141.146.58-0007 #1'
   network: ws
-  port: '43950'
+  port: 43950
   server: 18.141.146.58
   servername: ''
   skip-cert-verify: false
@@ -1793,9 +1797,9 @@ proxies:
     path: /
 - alterId: 4
   cipher: auto
-  name: '365,481,523,524,552|🇸🇬 新加坡(油管:破解资源君2.0) #1'
+  name: '365,481,523,524|🇬SG-103.253.26.20-0008 #1'
   network: ws
-  port: '443'
+  port: 443
   server: 103.253.26.20
   servername: ''
   skip-cert-verify: false
@@ -2171,9 +2175,9 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '365,481,523,524|🇸🇬SG-8.214.33.158-0185 #2'
+  name: '365,481,523,524,552|🇸🇬 新加坡(油管:破解资源君) #2'
   network: ws
-  port: 80
+  port: '80'
   server: 8.214.33.158
   servername: ''
   skip-cert-verify: false
@@ -2216,7 +2220,7 @@ proxies:
     path: /
 - cipher: chacha20-ietf-poly1305
   country: 🇬 SG
-  name: 365,420,422,524,525|🇸🇬SG-188.166.220.70-0302 | 7.4...
+  name: 365,422,524,525|🇸🇬SG-188.166.220.70-0302 | 7.4...
   password: 24Wk2NSszrfHn22zem1lYV
   port: 37708
   server: 188.166.220.70
@@ -2655,13 +2659,15 @@ proxies:
   server: de01.trojanyyds.xyz
   skip-cert-verify: false
   type: trojan
-- name: '365,523,524|🇬SG-13.250.177.51-2752 #1'
+- name: '365,478,480,523,524|🇬SG-13.250.177.51-2752 #1'
+  network: tcp
   password: cd41b9d7-df15-46ad-a778-257b0851525a
   port: 443
   server: sg02.trojanyyds.xyz
   skip-cert-verify: false
   type: trojan
-- name: '365,523,524|🇬SG-13.250.177.51-2827 #1'
+- name: '365,478,480,523,524|🇬SG-13.250.177.51-2827 #1'
+  network: tcp
   password: cd41b9d7-df15-46ad-a778-257b0851525a
   port: 443
   server: sg01.trojanyyds.xyz
@@ -2814,13 +2820,13 @@ proxies:
   ws-opts:
     path: /cctv13/hd.m3u8
 - cipher: aes-256-cfb
-  name: 365,524,549|8|SG-13.213.46.196-170_1@170
+  name: 365,524,549,551|🇬SG-13.213.46.196-235
   password: amazonskr05
   port: 443
   server: 13.213.46.196
   type: ss
 - cipher: aes-256-cfb
-  name: 365,524,549|8|🇬SG-54.251.168.143-172_1@172
+  name: 365,524,549,551|🇸🇬SG-54.251.168.143-237
   password: amazonskr05
   port: 443
   server: 54.251.168.143
@@ -2850,10 +2856,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  country: 🇬SG
-  h2-opts: {}
-  http-opts: {}
-  name: '365,420,523,524|🇬SG-202.79.161.21-5372 #1'
+  name: '365,523,524|🇬SG-202.79.161.21-5372 #1'
   network: ws
   port: 443
   server: 202.79.161.21
@@ -3658,9 +3661,9 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 455|新加坡_021805059 L0
+  name: '455,478,480|⚜️Telegram:@IP_CF #2744'
   network: tcp
-  port: '14372'
+  port: 14372
   server: 62.146.232.159
   servername: ''
   tls: false
@@ -3668,7 +3671,7 @@ proxies:
   uuid: ed1d7ea8-bf40-4a4a-8eac-8e57798ba6f7
 - alterId: 0
   cipher: auto
-  name: 455,549|36|🔒 VM-TCP-NONE 🇸🇬 SG-109.123...
+  name: 455,478,480,549|36|🔒 VM-TCP-NONE 🇸🇬 SG-109.123...
   network: tcp
   port: 59032
   server: 109.123.232.74
@@ -3678,7 +3681,7 @@ proxies:
   uuid: 96ab7e1f-bf0d-45cd-8ebc-c8be2f8d43cd
 - alterId: 0
   cipher: auto
-  name: 455|新加坡_021805061 L20
+  name: '455,478,480|[🏁]t.me/ConfigsHub #661'
   network: tcp
   port: '38324'
   server: 62.146.233.115
@@ -3688,7 +3691,7 @@ proxies:
   uuid: f863ef99-5ef0-4321-aaac-a476a5e8c3fb
 - alterId: 0
   cipher: auto
-  name: 455,549|36|🔒 VM-TCP-NA 🇬 SG-154.26.129...
+  name: 455,478,480,549|36|🔒 VM-TCP-NA 🇬 SG-154.26.129...
   network: tcp
   port: '57143'
   server: 154.26.129.247
@@ -3708,7 +3711,7 @@ proxies:
   uuid: 1ddf3ade-5b8c-420c-84f6-f96979ec3080
 - alterId: 0
   cipher: auto
-  name: 455,549|36,37|未知92
+  name: 455,478,480,481,549|36,37|未知92
   network: tcp
   port: 27575
   server: 194.233.72.228
@@ -3719,7 +3722,7 @@ proxies:
   uuid: 16509262-dbe2-43ba-99ce-07913d2a18b4
 - alterId: 0
   cipher: auto
-  name: 455,549|36|🔒 VM-TCP-NONE 🇬 SG-62.146.2...
+  name: 455,478,480,549|36|🔒 VM-TCP-NONE 🇬 SG-62.146.2...
   network: tcp
   port: 50678
   server: 62.146.233.53
@@ -3745,7 +3748,7 @@ proxies:
   sni: probable-drum.treefrog761.one
   type: trojan
 - alterId: 0
-  name: 455,549|37|未知9
+  name: 455,478,480,549|37|未知9
   network: tcp
   password: '!!str 3774827088566296576'
   port: 443
@@ -3765,7 +3768,7 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 455,549|36|🔒 VM-TCP-NA 🇸🇬 SG-62.146.23...
+  name: 455,478,480,549|36|🔒 VM-TCP-NA 🇸🇬 SG-62.146.23...
   network: tcp
   port: '33281'
   server: 62.146.232.156
@@ -3821,6 +3824,40 @@ proxies:
   server: flying-tuna.treefrog761.one
   skip-cert-verify: true
   sni: ''
+  type: trojan
+- name: '478,480|[🏁]t.me/ConfigsHub #535'
+  password: 18304160-03d4-4c55-95c1-586c0a5f3a0a
+  port: 443
+  server: 54.254.99.233
+  skip-cert-verify: true
+  sni: ap.liangyuandian.top
+  type: trojan
+- name: '478,480|[🏁]t.me/ConfigsHub #533'
+  password: 58dcd460-65df-47b1-b062-517df30bef29
+  port: 443
+  server: 54.254.95.251
+  skip-cert-verify: true
+  sni: ca.liangyuandian.top
+  type: trojan
+- name: '478,480|👉🆔 @MoftConfig📡🇸🇬Singapore #21'
+  password: a124e41a-0fb8-4543-a0ab-a127c7b515a9
+  port: 20230
+  server: sg005.421421.xyz
+  skip-cert-verify: true
+  type: trojan
+- name: '478,480|👉🆔 @MoftConfig📡Singapore #3'
+  network: tcp
+  password: pHVTjq5osh
+  port: 443
+  server: darkevil.news
+  sni: android.googleapis.com
+  type: trojan
+- name: '478,480|👉🆔 @MoftConfig📡🇸🇬Singapore #22'
+  network: tcp
+  password: pHVTjq5osh
+  port: 443
+  server: darkevil.news
+  sni: m.viber.com
   type: trojan
 - cipher: aes-256-cfb
   name: '500,504,549,565|1|_SG_ #2'
@@ -3904,6 +3941,124 @@ proxies:
   server: 52.196.181.68
   tfo: false
   type: ss
+- alterId: 0
+  cipher: auto
+  name: 529|【高级】🇸🇬新加坡 - 滑梯云
+  network: ws
+  port: 20011
+  server: htsub-2024.899696998.xyz
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: eb9b6d07-8644-437f-a1c5-dbed378d38ed
+  ws-opts:
+    headers:
+      Host: yyyt-sg-2024.mofaxw.top
+    path: /2024
+- grpc-opts:
+    grpc-service-name: sgvip101
+  name: 529|🇬 新加坡 101 - 墙了个墙
+  network: grpc
+  password: 3c668456-cc9c-3392-9014-0f73e5a09bb3
+  port: 11223
+  server: sgvip101.qlgq.fun
+  skip-cert-verify: true
+  sni: sgvip101.qlgq.fun
+  type: trojan
+  udp: true
+- grpc-opts:
+    grpc-service-name: sgvip101
+  name: 529|🇸🇬 新加坡 102 - 墙了个墙
+  network: grpc
+  password: 3c668456-cc9c-3392-9014-0f73e5a09bb3
+  port: 21223
+  server: sgvip101.qlgq.fun
+  skip-cert-verify: true
+  sni: sgvip101.qlgq.fun
+  type: trojan
+  udp: true
+- grpc-opts:
+    grpc-service-name: sgvip101
+  name: 529|🇸🇬 新加坡 103 - 墙了个墙
+  network: grpc
+  password: 3c668456-cc9c-3392-9014-0f73e5a09bb3
+  port: 31223
+  server: sgvip101.qlgq.fun
+  skip-cert-verify: true
+  sni: sgvip101.qlgq.fun
+  type: trojan
+  udp: true
+- grpc-opts:
+    grpc-service-name: sgvip101
+  name: 529|🇸🇬 新加坡 104 - 墙了个墙
+  network: grpc
+  password: 3c668456-cc9c-3392-9014-0f73e5a09bb3
+  port: 41223
+  server: sgvip101.qlgq.fun
+  skip-cert-verify: true
+  sni: sgvip101.qlgq.fun
+  type: trojan
+  udp: true
+- grpc-opts:
+    grpc-service-name: sgvip101
+  name: 529|🇸🇬 新加坡 105 - 墙了个墙
+  network: grpc
+  password: 3c668456-cc9c-3392-9014-0f73e5a09bb3
+  port: 51223
+  server: sgvip101.qlgq.fun
+  skip-cert-verify: true
+  sni: sgvip101.qlgq.fun
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 529|🇬 新加坡 1 GPT/Netflix  - 西瓜皮是真的皮
+  port: 19841
+  server: xgcma.dx002.top
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 075c16e6-67cb-3599-aa5a-025b478db156
+- alterId: 0
+  cipher: auto
+  name: 529|🇬 新加坡 2 GPT/Netflix - 西瓜皮是真的皮
+  port: 19842
+  server: xgcta.dx002.top
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 075c16e6-67cb-3599-aa5a-025b478db156
+- name: 529|🇸🇬 新加坡•高速129•高速 - 飞翔吧
+  password: a6ba0ada-cef1-3009-98dc-a1300ca76ed6
+  port: 20129
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: x129.flybar.work
+  tfo: true
+  type: trojan
+  udp: true
+- name: 529|🇸🇬 新加坡•高速130•铂金 - 飞翔吧
+  password: a6ba0ada-cef1-3009-98dc-a1300ca76ed6
+  port: 20130
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: x130.flybar.work
+  tfo: true
+  type: trojan
+  udp: true
+- alterId: 2
+  cipher: auto
+  name: 529|🇬 [vip①]②新加坡 - MG Network
+  port: 23617
+  server: 17.mamamajd.site
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d99a004e-d7b2-34fe-bc56-e38919f95a5c
 - name: '532,533|新加坡[02] #1'
   password: 4568465a-a435-4569-b3ab-7f606018474f
   port: 443
@@ -4018,6 +4173,19 @@ proxies:
   skip-cert-verify: true
   sni: sg.mjt000.com
   type: trojan
+- alterId: 0
+  cipher: auto
+  name: 549|5|新加坡-优化3
+  network: ws
+  port: '16618'
+  server: t.cnmjcn.cyou
+  tls: false
+  type: vmess
+  uuid: da91214e-b022-4f61-a724-01c538170e62
+  ws-opts:
+    headers:
+      Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
+    path: /
 - cipher: chacha20-ietf-poly1305
   name: 549|5,9,24,27|1|  01 | 1x SG
   password: b9bc70b4-8825-4b0a-a6a1-2314a5f45f79
@@ -4032,6 +4200,19 @@ proxies:
   server: free.2apzhfa.xyz
   type: ss
   udp: true
+- alterId: 0
+  cipher: auto
+  name: 549|5|新加坡-优化2
+  network: ws
+  port: '16618'
+  server: m.cnmjin.net
+  tls: false
+  type: vmess
+  uuid: da91214e-b022-4f61-a724-01c538170e62
+  ws-opts:
+    headers:
+      Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
+    path: /
 - cipher: chacha20-ietf-poly1305
   name: 549|5,9,24,27|1|🇬 新加坡 02 | 1x SG
   password: b9bc70b4-8825-4b0a-a6a1-2314a5f45f79
@@ -4077,7 +4258,7 @@ proxies:
   type: trojan
 - alterId: 64
   cipher: auto
-  name: 549|8|🇬SG-159.223.94.156-176_1@176
+  name: 549,551|🇸SG-159.223.94.156-241
   network: ws
   port: 80
   server: 159.223.94.156
@@ -4138,16 +4319,6 @@ proxies:
     path: /54f634fs
 - alterId: 0
   cipher: auto
-  name: 549|36|🔒 VM-TCP-NA 🇬 SG-62.146.232...
-  network: tcp
-  port: '53144'
-  server: 62.146.232.153
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 13e13a3e-e981-4eea-a9fc-13e50628fd9b
-- alterId: 0
-  cipher: auto
   name: 549|36|🔒 VM-WS-NA 🇬 SG-18.143.169....
   network: ws
   port: 40000
@@ -4176,15 +4347,6 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 549|36|🔒 VM-TCP-NA 🇬 SG-62.146.233...
-  network: tcp
-  port: 36712
-  server: 62.146.233.112
-  tls: false
-  type: vmess
-  uuid: 9266df42-0830-48c2-8509-4c57b30fe29d
-- alterId: 0
-  cipher: auto
   name: 549|36|🔒 VM-TCP-NONE 🇸🇬 SG-62.146....
   network: tcp
   port: 52856
@@ -4194,35 +4356,69 @@ proxies:
   uuid: ed54e388-bfc5-4b36-ae4d-8b3cd460d3d4
 - alterId: 0
   cipher: auto
-  name: '552|🇸🇬 新加坡(油管:破解资源君2.0) #3'
-  network: tcp
-  port: '28475'
-  server: 47.241.220.160
+  name: 551|SG-8.214.33.158-051
+  network: ws
+  port: 80
+  server: 8.214.33.158
+  skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: 5b00ad6f-bc33-4946-8a32-b7e59620e935
+  uuid: cb81e6ab-1d83-4ac1-f0ad-ae5c2a7c29ef
+  ws-headers:
+    Host: 8.214.33.158
+  ws-path: /
 - alterId: 0
   cipher: auto
-  name: '552|🇸🇬 新加坡(油管:破解资源君2.0) #4'
+  name: 551|🇸🇬SG-8.219.146.138-089
   network: ws
-  port: '38701'
-  server: in-sg-1.onebox6.org
+  port: 23205
+  server: 8.219.146.138
+  skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: 79386685-16da-327c-9e14-aa6d702d86bc
-  ws-opts:
-    headers:
-      Host: www.ivpnpro.net
-    path: /hls/cctv5phd.m3u8
+  uuid: 442094b1-a2c2-422f-f3cf-7fc0bb134666
+  ws-headers:
+    Host: 8.219.146.138
+  ws-path: /wss
 - alterId: 32
   cipher: auto
-  name: 552|🇸🇬 github.com/freefq - 新加坡OVH ...
+  name: 551,552|🇸🇬 github.com/freefq - 新加坡OVH ...
   network: tcp
   port: '443'
   server: 139.99.91.95
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: c0156451-4efb-45e2-84fc-8d315c4650db
+  ws-headers:
+    Host: 139.99.91.95
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 551,552|🇺🇸 github.com/freefq - 美国  44
+  network: tcp
+  port: '443'
+  server: 168.138.171.65
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 4af6fd9a-e8b4-46f2-da3a-207f4577656c
+  ws-headers:
+    Host: 168.138.171.65
+  ws-path: /
+- alterId: 4
+  cipher: auto
+  name: 552|🇸🇬 新加坡(油管:破解资源君)
+  network: ws
+  port: '443'
+  server: zecjk.com
+  tls: true
+  type: vmess
+  uuid: aba50dd4-5484-3b05-b14a-4661caf862d5
+  ws-opts:
+    headers:
+      Host: zecjk.com
+    path: /ws
 - cipher: chacha20-ietf-poly1305
   name: 553|🇸🇬 新加坡 | SGP
   password: 24ca9745-8069-40de-a568-a97feea11829
