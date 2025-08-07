@@ -1,10 +1,19 @@
 proxies:
-- cipher: aes-256-cfb
-  name: 4,11,365,462,465,467,470,509,524,530|🇹PT-185.231.233.112-086
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 185.231.233.112
+- cipher: chacha20-ietf-poly1305
+  name: '4,11,365,524,525,535|🇷🇺_RU_俄罗斯_1 #2'
+  password: oVfvPkqJFCjOEbBsbmOtIiAuqgmEFOEf332F26C8lwEwQng9
+  port: 31348
+  server: 213.156.138.138
   type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇷🇺RU
+  delay: 2491
+  name: 4,11,83,330,365,476,515,524,525,530,535,551|GB-89.185.84.172-043
+  password: PPDI4eTCSUzQ
+  port: 443
+  server: 89.185.84.172
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
   name: 65|🇷🇺 莫斯科专线
@@ -29,16 +38,18 @@ proxies:
   type: vmess
   udp: true
   uuid: 000a0d18-02fe-4cda-a68e-96b55e067567
-- down: 1000
-  name: 185|🇷🇺 俄罗斯1
+- auth: 32d3795c-7e38-425a-8a8c-9d195d1cb351
+  down: 1000
+  name: 185,540|yandex-187
   password: 32d3795c-7e38-425a-8a8c-9d195d1cb351
   port: 30102
   server: 46.17.43.71
   skip-cert-verify: true
   sni: du.wish.ml
   type: hysteria2
+  udp: true
   up: 1000
-- name: '327,483,489,493,494,501,538,546|10|ه 🇷🇺 @V2xay #2'
+- name: '327,483,489,493,494,501,538,546|10|ه 🇷🇺 @V2xay #1'
   password: dongtaiwang.com
   port: 30033
   server: 46.17.41.217
@@ -360,12 +371,18 @@ proxies:
     headers:
       Host: d76bb35696.laowanxiang.com
     path: /api/v3/download.getFile
-- cipher: chacha20-ietf-poly1305
-  name: 365,524,525|🇷🇺RU-194.87.118.34-5400 | 4.54...
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  country: 🇷🇺 RU
+  name: 365,422,476,487,524,525,561|🇷🇺RU俄罗斯2 953.4KB/s
   password: trErto8XzLALaQEslTp_jw
   port: 2222
   server: ytreserved.opengate.wiki
+  skip-cert-verify: true
+  tfo: false
+  tls: true
   type: ss
+  udp: true
 - cipher: aes-256-cfb
   name: '365,524|🇺RU-213.183.53.222-0412 #1'
   password: KnJGad3FqTvjqbaX
@@ -536,13 +553,15 @@ proxies:
   server: 213.183.53.222
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '365,524|🇺RU-185.126.239.250-4849 #1'
+  country: 🇬🇧 GB
+  name: 365,524,535|🇬🇧 GB_137
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 185.126.239.250
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '365,524|RU-45.139.24.24-5113 #1'
+  country: 🇷🇺 RU
+  name: 365,524,535|🇷🇺 RU_501
   password: 360e21d21977dc11
   port: 57456
   server: 45.139.24.24
@@ -632,26 +651,43 @@ proxies:
   sni: eu.mjanyt.com
   type: anytls
   udp: true
+- cipher: chacha20-ietf-poly1305
+  country: 🇷🇺 RU
+  name: 422,535|🇷🇺 RU_502
+  password: qscavF5UviIL-8V-E4raBA
+  port: 2222
+  server: 2.59.163.104
+  type: ss
 - alterId: 0
   cipher: auto
-  name: 424,546|🇷🇺 RU_389
+  country: 🇺 RU
+  h2-opts: {}
+  http-opts: {}
+  name: 422,424,546|🇷🇺 RU_389
   network: tcp
   port: 45245
   server: ye.fxlcn.com
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 469e0b31-30c3-4dab-800d-711232634ce1
+  ws-path: /
 - alterId: 0
   cipher: auto
-  name: 424,546|🇷🇺 RU_390
+  country: 🇷🇺 RU
+  h2-opts: {}
+  http-opts: {}
+  name: 422,424,546|🇷🇺 RU_390
   network: tcp
   port: 45215
   server: fa.fxlcn.com
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 469e0b31-30c3-4dab-800d-711232634ce1
+  ws-path: /
 - name: 443|俄罗斯(mibei77.com 米贝节点分享)
   network: ws
   password: Aimer
@@ -663,7 +699,7 @@ proxies:
     headers:
       Host: epcca.ambercc.filegear-sg.me
     path: '%2F%3Fed%3D2560%26proxyip%3Dts.hpc.tw'
-- name: '443,480|⚜️Telegram:@IP_CF #1746'
+- name: '443|俄罗斯(mibei77.com 米贝节点分享) #1'
   network: tcp
   password: '!!str 3828095943467868160'
   port: 443
@@ -702,7 +738,7 @@ proxies:
     headers:
       Host: epccd.ambercc.filegear-sg.me
     path: '%2F%3Fed%3D2560%26proxyip%3Dts.hpc.tw'
-- name: '446,481,546,567|RU俄罗斯(mibei77.com 米贝节点分享) #3'
+- name: '446,481,546,567|RU俄罗斯(mibei77.com 米贝节点分享) #4'
   network: grpc
   port: 443
   server: 94.247.142.103
@@ -1464,43 +1500,31 @@ proxies:
     headers:
       Host: ''
     path: /
-- name: '460,481|🔥Join+Telegram:@Farah_VPN🟣 #7719'
-  network: ws
-  port: 8880
-  server: 91.193.58.246
-  servername: sk.laoyoutiao.link
-  skip-cert-verify: true
-  tls: false
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: sk.laoyoutiao.link
-    path: /Telegram
-- name: '460,481,494,538|GB_speednode_0043 #4'
-  network: ws
-  port: 8880
-  server: 91.193.58.162
-  servername: sk.laoyoutiao.link
-  skip-cert-verify: true
-  tls: false
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: sk.laoyoutiao.link
-    path: /TelegramğŸ‡
 - cipher: chacha20-ietf-poly1305
-  name: '462,467|🇷🇺_RU_俄罗斯 #3'
+  name: '462,467|🇷🇺_RU_俄罗斯 #1'
   password: Wxnt17A2bShe9u2pI2o62K
   port: 12445
   server: 91.219.23.165
   type: ss
 - client-fingerprint: chrome
-  name: 476|❓_🇷🇺_💻_github.com/Ruk1ng001_32...
+  name: 476|❓_🇷🇺_💻_github.com/Ruk1ng001_65...
   network: ws
   port: 8880
-  server: 185.174.138.177
+  server: 185.59.218.63
+  servername: jp.laoyoutiao.link
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: jp.laoyoutiao.link
+    path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+- name: 476|🟠_🇷🇺_💻_github.com/Ruk1ng001_61...
+  network: ws
+  port: 8880
+  server: 193.233.21.186
   servername: Telegram-channel-WangCai2
   skip-cert-verify: false
   tls: false
@@ -1511,50 +1535,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- client-fingerprint: chrome
-  name: 476|❓_🇷🇺_💻_github.com/Ruk1ng001_61...
-  network: ws
-  port: 8880
-  server: 185.174.138.63
-  servername: jp.laoyoutiao.link
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: jp.laoyoutiao.link
-    path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- name: 476|❓_🇷🇺_💻_github.com/Ruk1ng001_63...
-  network: ws
-  port: 8880
-  server: 185.174.138.213
-  servername: jp.laoyoutiao.link
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: jp.laoyoutiao.link
-    path: /?ed=2560
-- name: 476|🟠_🇷🇺_💻_github.com/Ruk1ng001_35...
-  network: ws
-  port: 8880
-  server: 193.233.21.156
-  servername: Telegram-channel-WangCai2
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: kjgx.laoyoutiao.link
-    path: /TelegramU0001F1E8U0001F1F3 @WangCai2 /?ed=2560
-- name: 480|[🇷🇺]t.me/MoftConfig
+- name: 478|[🇷🇺]t.me/MoftConfig
   network: tcp
   port: 23393
   server: 95.142.37.48
@@ -1566,7 +1547,7 @@ proxies:
       Host: '---%40External_Net---%40External_Net---%40External_Net---%40External_Net---%40External_Net'
 - alterId: 0
   cipher: auto
-  name: 480,549|37|未知105
+  name: 478,549|37|未知105
   network: tcp
   port: 47555
   server: 46.29.166.237
@@ -1579,7 +1560,7 @@ proxies:
   - h3
   - h2
   - http/1.1
-  name: '480|[🇺]t.me/ConfigsHub #6'
+  name: '478|[🇺]t.me/ConfigsHub #6'
   network: tcp
   password: '@NoForcedHeaven@NoForcedHeaven@NoForcedHeaven@NoForcedHeaven@NoForcedHeaven'
   port: 8443
@@ -1589,21 +1570,21 @@ proxies:
   ws-opts:
     headers:
       Host: ru2.asc-sam.ir
-- name: '480|👉🆔 @MoftConfig📡🇺Russia #1'
+- name: '478|👉🆔 @MoftConfig📡🇺Russia #1'
   network: tcp
   password: Aimer
   port: 443
   server: 212.41.15.119
   sni: agepy.ambercc.filegear-sg.me
   type: trojan
-- name: '480|👉🆔 @MoftConfig📡🇺Russia #2'
+- name: '478|👉🆔 @MoftConfig📡🇺Russia #2'
   network: tcp
   password: Aimer
   port: 2083
   server: 5.182.84.66
   sni: acepo.ambercc.filegear-sg.me
   type: trojan
-- name: 480|👉🆔 @MoftConfig📡🇷🇺Russia
+- name: 478|👉🆔 @MoftConfig📡🇷🇺Russia
   network: tcp
   password: Aimer
   port: 443
@@ -1612,7 +1593,7 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: '480|[🇷🇺]t.me/ConfigsHub #3'
+  name: '478|[🇷🇺]t.me/ConfigsHub #3'
   network: ws
   port: '16231'
   server: 31.129.105.239
@@ -1626,7 +1607,7 @@ proxies:
     path: /
 - alpn:
   - http/1.1
-  name: '480|👉🆔 @MoftConfig📡🇺Russia #4'
+  name: '478|👉🆔 @MoftConfig📡🇺Russia #4'
   network: ws
   password: Aimer
   port: 2053
@@ -1639,7 +1620,7 @@ proxies:
     path: '%2F'
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '480|[🇷🇺]t.me/MoftConfig #8'
+  name: '478|[🇷🇺]t.me/MoftConfig #8'
   network: tcp
   port: 443
   reality-opts:
@@ -1652,7 +1633,7 @@ proxies:
   uuid: 88888888-8888-8888-8888-888888888888
 - alterId: 0
   cipher: auto
-  name: '480|[🇷🇺]t.me/ConfigsHub #4'
+  name: '478|[🇷🇺]t.me/ConfigsHub #4'
   network: ws
   port: '22001'
   server: 195.58.49.84
@@ -1666,7 +1647,7 @@ proxies:
     path: ''
 - alterId: 0
   cipher: auto
-  name: '480|⚜️Telegram:@IP_CF #1687'
+  name: '478|⚜️Telegram:@IP_CF #1372'
   network: tcp
   port: '20779'
   server: 45.12.114.15
@@ -1674,32 +1655,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 9dc5bff8-bcbb-4703-b0fe-4f91ba517402
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '480|[🇷🇺]t.me/ConfigsHub #7'
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: cGzNRbN_zruI3CVTDukB2nOqWWEj7kgkay24f2fdLmQ
-    short-id: 0f917152a871e9c0
-  server: 212.233.94.204
-  servername: maviks.eu
-  tls: false
-  type: vless
-  uuid: c8898cfd-9927-4f36-b7bc-40de76076b80
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '480|[🇷🇺]t.me/ConfigsHub #9'
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: cGzNRbN_zruI3CVTDukB2nOqWWEj7kgkay24f2fdLmQ
-    short-id: 0f917152a871e9c0
-  server: ru.maviks.eu
-  servername: maviks.eu
-  tls: false
-  type: vless
-  uuid: c8898cfd-9927-4f36-b7bc-40de76076b80
 - name: '489,546,704|俄罗斯【机场推荐：https://a0a.xyz/】145 #2'
   network: ws
   password: tg-fq521free
@@ -1941,6 +1896,132 @@ proxies:
     headers:
       Host: 195.133.53.192
     path: /
+- alterId: 0
+  cipher: auto
+  name: 535|RU俄罗斯(mibei77.com 米贝节点分享)
+  network: ws
+  port: 8880
+  server: 213.219.247.226
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 5d5c957f-b0e7-3e4e-9db6-65a5fec7e080
+  ws-headers:
+    Host: TG.WangCai2.s2.cn-db.top
+  ws-path: /dabai&Telegram🇨🇳@WangCai2/?ed=2560
+- alterId: 0
+  cipher: auto
+  name: 535|RU俄罗斯(mibei77.com 米贝节点分享) 2
+  network: ws
+  port: 8880
+  server: 193.233.21.226
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 5d5c957f-b0e7-3e4e-9db6-65a5fec7e080
+  ws-headers:
+    Host: TG.WangCai2.s2.cn-db.top
+  ws-path: /dabai&Telegram🇨🇳@WangCai2/?ed=2560
+- alterId: 0
+  cipher: auto
+  name: 535|RU俄罗斯(mibei77.com 米贝节点分享) 3
+  network: ws
+  port: 8880
+  server: 185.221.160.226
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 5d5c957f-b0e7-3e4e-9db6-65a5fec7e080
+  ws-headers:
+    Host: TG.WangCai2.s2.cn-db.top
+  ws-path: /dabai&Telegram🇨🇳@WangCai2/?ed=2560
+- alterId: 0
+  cipher: auto
+  name: 535|RU俄罗斯(mibei77.com 米贝节点分享) 4
+  network: ws
+  port: 8880
+  server: 176.124.223.226
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 5d5c957f-b0e7-3e4e-9db6-65a5fec7e080
+  ws-headers:
+    Host: TG.WangCai2.s2.cn-db.top
+  ws-path: /dabai&Telegram🇨🇳@WangCai2/?ed=2560
+- alterId: 0
+  cipher: auto
+  name: 535|RU俄罗斯(mibei77.com 米贝节点分享) 5
+  network: ws
+  port: 8880
+  server: 5.182.84.226
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 5d5c957f-b0e7-3e4e-9db6-65a5fec7e080
+  ws-headers:
+    Host: TG.WangCai2.s2.cn-db.top
+  ws-path: /dabai&Telegram🇨🇳@WangCai2/?ed=2560
+- alterId: 0
+  cipher: auto
+  name: 535|RU俄罗斯(mibei77.com 米贝节点分享) 6
+  network: ws
+  port: 8880
+  server: 185.59.218.226
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 5d5c957f-b0e7-3e4e-9db6-65a5fec7e080
+  ws-headers:
+    Host: TG.WangCai2.s2.cn-db.top
+  ws-path: /dabai&Telegram🇨🇳@WangCai2/?ed=2560
+- alterId: 0
+  cipher: auto
+  name: 535|RU俄罗斯(mibei77.com 米贝节点分享) 7
+  network: ws
+  port: 8880
+  server: 195.13.45.226
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 5d5c957f-b0e7-3e4e-9db6-65a5fec7e080
+  ws-headers:
+    Host: TG.WangCai2.s2.cn-db.top
+  ws-path: /dabai&Telegram🇨🇳@WangCai2/?ed=2560
+- alterId: 0
+  cipher: auto
+  name: 535|RU俄罗斯(mibei77.com 米贝节点分享) 8
+  network: ws
+  port: 8880
+  server: 46.254.92.226
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 5d5c957f-b0e7-3e4e-9db6-65a5fec7e080
+  ws-headers:
+    Host: TG.WangCai2.s2.cn-db.top
+  ws-path: /dabai&Telegram🇨🇳@WangCai2/?ed=2560
+- alterId: 0
+  cipher: auto
+  name: 535|RU俄罗斯(mibei77.com 米贝节点分享) 9
+  network: ws
+  port: 8880
+  server: 92.243.74.226
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 5d5c957f-b0e7-3e4e-9db6-65a5fec7e080
+  ws-headers:
+    Host: TG.WangCai2.s2.cn-db.top
+  ws-path: /dabai&Telegram🇨🇳@WangCai2/?ed=2560
 - cipher: chacha20-ietf-poly1305
   name: 545|0|🇺俄罗斯 01 | 1x RU
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
@@ -1962,13 +2043,7 @@ proxies:
   port: 31348
   server: 5.189.201.250
   type: ss
-- name: 546|🇷🇺 RU_391
-  password: dda4f3bf-85fb-41bd-9d8e-77a8a02dbd59
-  port: 1066
-  server: 194.104.147.74
-  sni: 194.104.147.74
-  type: trojan
-- name: 546|RU俄罗斯(mibei77.com 米贝节点分享)
+- name: '546|RU俄罗斯(mibei77.com 米贝节点分享) #1'
   network: grpc
   port: 443
   server: 89.116.180.248
@@ -1976,7 +2051,7 @@ proxies:
   tls: true
   type: vless
   uuid: 401374e6-df77-41fb-f638-dad8184f175b
-- name: '546|RU俄罗斯(mibei77.com 米贝节点分享) #2'
+- name: '546|RU俄罗斯(mibei77.com 米贝节点分享) #3'
   network: ws
   port: 8880
   server: 193.124.224.3
