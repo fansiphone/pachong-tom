@@ -1250,7 +1250,7 @@ proxies:
   udp: true
 - cipher: chacha20-ietf-poly1305
   country: 🇮🇩ID
-  name: 365,422,524,535|🇮🇩ID_391
+  name: 365,422,524,535|🇮🇩ID_363
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 223.165.4.173
@@ -1260,7 +1260,7 @@ proxies:
   country: 🇹🇼TW
   h2-opts: {}
   http-opts: {}
-  name: 365,420,424,481,523,524,535,546|台湾_080804014 L0
+  name: 365,481,523,524,535,546|台湾_080804014 L0
   network: ws
   port: '20521'
   server: 103.61.139.137
@@ -1341,17 +1341,6 @@ proxies:
   port: 50701
   server: 61.220.130.70
   type: ss
-- client-fingerprint: chrome
-  delay: 1233
-  name: '367,476,515,547,548|TW Moon #1'
-  password: exaxgqkKkd0TAMrCxeonWg==
-  port: 1443
-  server: twmoon1-cdn-route.couldflare-cdn.com
-  skip-cert-verify: false
-  sni: twmoon1-cdn-route.couldflare-cdn.com
-  tls: true
-  type: http
-  username: mrwdfNTD8M79LCukCieldrqZWqs=
 - alterId: 0
   cipher: auto
   name: 404|台湾-优化
@@ -1448,19 +1437,102 @@ proxies:
       Host: 51b0e42034dd75a815fa9eb16021fbda.mobgslb.tbcache.com
     path: /
   ws-path: /
-- alterId: 0
-  cipher: auto
-  country: 🇼 TW
-  h2-opts: {}
-  http-opts: {}
-  name: 422| TW_342
+- alpn:
+  - h3
+  client-fingerprint: random
+  name: 440|TW
   network: ws
-  port: 20521
-  server: 103.61.139.137
+  port: 43
+  server: 61.220.128.226
+  servername: edga.aimercc.dpdns.org
   skip-cert-verify: true
-  type: vmess
-  uuid: f8d93cfb-3d5d-447c-a697-16496dd74697
-  ws-path: /
+  tls: true
+  type: vless
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      Host: edga.aimercc.dpdns.org
+    path: '%2F%3Fed%3D2560%26proxyip%3Dts.hpc.tw'
+- alpn:
+  - h3
+  client-fingerprint: random
+  name: '440|TW #1'
+  network: ws
+  port: 443
+  server: 125.227.219.100
+  servername: edga.aimercc.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      Host: edga.aimercc.dpdns.org
+    path: '%2F%3Fed%3D2560%26proxyip%3Dts.hpc.tw'
+- alpn:
+  - h3
+  client-fingerprint: random
+  name: '440|TW #2'
+  network: ws
+  port: 10240
+  server: 34.81.140.124
+  servername: edga.aimercc.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      Host: edga.aimercc.dpdns.org
+    path: '%2F%3Fed%3D2560%26proxyip%3Dts.hpc.tw'
+- alpn:
+  - h3
+  client-fingerprint: random
+  name: '440|TW #3'
+  network: ws
+  port: 443
+  server: 125.227.219.97
+  servername: edga.aimercc.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      Host: edga.aimercc.dpdns.org
+    path: '%2F%3Fed%3D2560%26proxyip%3Dts.hpc.tw'
+- alpn:
+  - h3
+  client-fingerprint: random
+  name: '440|TW #4'
+  network: ws
+  port: 58888
+  server: 220.132.77.244
+  servername: edga.aimercc.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      Host: edga.aimercc.dpdns.org
+    path: '%2F%3Fed%3D2560%26proxyip%3Dts.hpc.tw'
+- alpn:
+  - h3
+  client-fingerprint: random
+  name: '447,567|TW #6'
+  network: ws
+  port: 1099
+  server: 35.194.246.231
+  servername: edgb.aimercc.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      Host: edgb.aimercc.dpdns.org
+    path: '%2F%3Fed%3D2560%26proxyip%3Dts.hpc.tw'
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: 452|18|🇹🇼 台湾|@ripaojiedian
@@ -1556,9 +1628,16 @@ proxies:
     headers:
       host: edga.aimercc.dpdns.org
     path: /?ed=2560&proxyip=ts.hpc.tw
+- name: 479|👉🆔 @MoftConfig📡Taiwan
+  network: tcp
+  password: ZZKC9RDCeClE87u3D0NZ3xSRgAD8B3aSI3YOaDjFjR2aTqy6enpS6Fw4Y3unXpK9aAgAz
+  port: 28332
+  server: levuior.taiwanesefood.link
+  sni: levuior.taiwanesefood.link
+  type: trojan
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 480|👉🆔 @MoftConfig📡Taiwan
+  name: '480|👉🆔 @MoftConfig📡Taiwan #1'
   network: tcp
   port: 20413
   reality-opts:
@@ -1736,26 +1815,6 @@ proxies:
   server: qs.xunyunnode.sbs
   type: ss
   udp: true
-- alterId: 0
-  cipher: auto
-  name: 529|🇼 台湾 1 动画疯 - 西瓜皮是真的皮
-  port: 19821
-  server: xgcma.dx002.top
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 075c16e6-67cb-3599-aa5a-025b478db156
-- alterId: 0
-  cipher: auto
-  name: 529|🇼 台湾 2 动画疯 - 西瓜皮是真的皮
-  port: 19822
-  server: xgcta.dx002.top
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 075c16e6-67cb-3599-aa5a-025b478db156
 - cipher: chacha20-ietf-poly1305
   name: 545|0| 01 | 1x TW
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
@@ -2008,23 +2067,7 @@ proxies:
 - alpn:
   - h3
   client-fingerprint: random
-  name: 567|TW
-  network: ws
-  port: 1099
-  server: 35.194.246.231
-  servername: edgb.aimercc.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      Host: edgb.aimercc.dpdns.org
-    path: '%2F%3Fed%3D2560%26proxyip%3Dts.hpc.tw'
-- alpn:
-  - h3
-  client-fingerprint: random
-  name: '567|TW #1'
+  name: '567|TW #7'
   network: ws
   port: 1099
   server: 35.194.246.231
@@ -2037,6 +2080,15 @@ proxies:
     headers:
       Host: edgb.esslh.filegear-sg.me
     path: '%2F%3Fed%3D2560%26proxyip%3Dts.hpc.tw'
+- name: 571|🇹🇼 台湾 hinet1
+  password: test.+
+  port: 30443
+  server: cmhka.ssv.vc
+  skip-cert-verify: true
+  sni: cmhka.ssv.vc
+  tls: true
+  type: http
+  username: test
 - alterId: 0
   cipher: auto
   name: 588|TW.台湾.A
