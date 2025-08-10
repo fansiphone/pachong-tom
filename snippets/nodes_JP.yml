@@ -1064,11 +1064,11 @@ proxies:
   sni: www.alibaba.com
   type: trojan
   udp: true
-- name: 242|🇯🇵 JP
+- name: 242|JP
+  network: tcp
   password: f57f01e6-9bb1-4277-a5cb-75ad0ce1fa11
   port: 21125
   server: 125.94.40.162
-  skip-cert-verify: true
   sni: k12.tudou211.com
   type: trojan
 - name: '262,263|日本05 #2'
@@ -1179,46 +1179,10 @@ proxies:
   sni: www.alibaba.com
   type: trojan
   udp: true
-- name: '312,313|日本05 #8'
-  network: ws
-  password: fdd1d613-f234-40f6-b63d-97517e0fc4b3
-  port: 20230
-  server: jp005.421421.xyz
-  skip-cert-verify: true
-  sni: www.alibaba.com
-  type: trojan
-  udp: true
-- name: '312,313|日本06 #8'
-  network: ws
-  password: fdd1d613-f234-40f6-b63d-97517e0fc4b3
-  port: 20230
-  server: jp006.421421.xyz
-  skip-cert-verify: true
-  sni: www.alibaba.com
-  type: trojan
-  udp: true
-- name: '312,313|日本07 #8'
-  network: ws
-  password: fdd1d613-f234-40f6-b63d-97517e0fc4b3
-  port: 20230
-  server: jp007.421421.xyz
-  skip-cert-verify: true
-  sni: www.alibaba.com
-  type: trojan
-  udp: true
-- name: '312,313|日本08 #8'
-  network: ws
-  password: fdd1d613-f234-40f6-b63d-97517e0fc4b3
-  port: 20230
-  server: jp008.421421.xyz
-  skip-cert-verify: true
-  sni: www.alibaba.com
-  type: trojan
-  udp: true
 - alterId: 64
   cipher: auto
-  name: '327,367,481,489,490,491,493,494,501,502,503,537,538,539,546,550,552|🇯🇵 日本1
-    | ⬇️ 1.8MB/s|54%|Youtub... #3'
+  name: '327,367,481,489,490,491,493,494,501,502,503,538,546,550,552|🇯🇵 日本1 | ⬇️ 1.8MB/s|54%|Youtub...
+    #3'
   network: ws
   port: '1443'
   server: sslvpn.51job.com
@@ -1234,7 +1198,7 @@ proxies:
     path: /634c5c4f9782
 - alterId: 0
   client-fingerprint: chrome
-  name: '327,365,441,481,489,490,491,493,494,501,502,503,523,524,530,531,537,538,539,543,544,546,550,551,552,561,566,567,569|🇯🇵
+  name: '327,365,441,481,489,490,491,493,494,501,502,503,523,524,530,531,535,538,543,544,546,550,551,552,561,566,567,569|🇯🇵
     日本3|@stairnode #7'
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
@@ -1247,7 +1211,7 @@ proxies:
   udp: true
 - alterId: 0
   client-fingerprint: chrome
-  name: '327,365,441,481,489,490,491,493,494,501,502,503,523,524,530,531,537,538,539,543,544,546,550,551,552,561,566,567,569|🇯🇵
+  name: '327,365,441,481,489,490,491,493,494,501,502,503,523,524,530,531,535,538,543,544,546,550,551,552,561,566,567,569|🇯🇵
     日本4|@stairnode #6'
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
@@ -1259,8 +1223,21 @@ proxies:
   type: trojan
   udp: true
 - alterId: 0
+  client-fingerprint: chrome
+  name: '327,365,481,489,493,494,501,502,503,524,530,531,538,543,544,546,550,551,552,561,566,567,569|🇯🇵
+    日本5|@stairnode #4'
+  network: tcp
+  password: f60cd513-7b83-4b64-936c-f7e88e95dacd
+  port: 8181
+  server: 120.240.118.186
+  skip-cert-verify: false
+  sni: www.microsoft365.com
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
   cipher: auto
-  name: '327,489,493,494,501,502,503,530,531,537,538,539,544,546,550,551,552|🇯🇵 日本v2|@ripaojiedian
+  name: '327,481,489,493,494,501,502,503,530,531,538,544,546,550,551,552|🇯🇵 日本v2|@ripaojiedian
     #3'
   network: kcp
   port: '37257'
@@ -1444,7 +1421,8 @@ proxies:
   server: 149.22.87.241
   type: ss
 - cipher: aes-128-gcm
-  name: 343,344,365,524,525|🇯🇵JP-149.22.87.204-0311 | 38.6...
+  country: 🇬🇧GB
+  name: 343,344,365,524,525,535|🇬🇧GB_109
   password: shadowsocks
   port: 443
   server: 149.22.87.204
@@ -3025,8 +3003,7 @@ proxies:
   server: jp06a.roc-taiwan.org.ua
   skip-cert-verify: false
   type: trojan
-- name: '365,480,523,524|🇯🇵JP-172.207.174.78-2766 #1'
-  network: tcp
+- name: '365,523,524|🇯🇵JP-172.207.174.78-2766 #1'
   password: cd41b9d7-df15-46ad-a778-257b0851525a
   port: 443
   server: sg01.trojanyyds.xyz
@@ -3483,6 +3460,13 @@ proxies:
       Host: 51b0e42034dd75a815fa9eb16021fbda.mobgslb.tbcache.com
     path: /
   ws-path: /
+- cipher: aes-128-gcm
+  country: 🇵JP
+  name: 427|JP_22
+  password: '!!str 10086'
+  port: 10087
+  server: 160.16.123.124
+  type: ss
 - name: '443|JP日本(mibei77.com 米贝节点分享) #27'
   network: ws
   password: Aimer
@@ -3636,7 +3620,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 455,479,480,549|36|🔒 VM-TCP-NA 🇬🇧 GB-46.250.25...
+  name: 455,549|36|🔒 VM-TCP-NA 🇬🇧 GB-46.250.25...
   network: tcp
   port: '46617'
   server: 46.250.253.232
@@ -3651,16 +3635,15 @@ proxies:
   skip-cert-verify: true
   sni: inspired-dinosaur.adder289.quest
   type: trojan
-- name: '455,479,480|⚜️Telegram:@IP_CF #1258'
+- name: 455|日本_021805032+L36
   network: tcp
   password: '!!str 3747000103274291200'
   port: 443
   server: 87.120.204.100
-  skip-cert-verify: true
   sni: crucial-moccasin.adder289.quest
   type: trojan
 - alterId: 0
-  name: 455,479,480,549|37|未知11
+  name: 455,549|37|未知11
   network: tcp
   password: '!!str 3747000103274291200'
   port: 443
@@ -3766,7 +3749,7 @@ proxies:
   uuid: 55b88b14-0ff3-4f25-8983-e73d1f9f3a0a
 - cipher: aes-256-gcm
   client-fingerprint: chrome
-  name: '476,490,491,502,503,537,539,543,566,569|🇯🇵 日本2|@stairnode #1'
+  name: '476,490,491,502,503,535,543,566,569|🇯🇵 日本2|@stairnode #2'
   password: 823e135ed103
   plugin: v2ray-plugin
   plugin-opts:
@@ -3797,7 +3780,7 @@ proxies:
   tfo: false
   type: ss
 - cipher: aes-256-gcm
-  name: 476|🟡_🇯🇵_💻_github.com/Ruk1ng001_37...
+  name: 476,535|_14
   password: 823e135ed103
   plugin: v2ray-plugin
   plugin-opts:
@@ -3811,180 +3794,9 @@ proxies:
   server: 137.220.191.38
   tfo: false
   type: ss
-- name: 479|👉🆔 @MoftConfig📡🇵Japan
-  password: 2155145a-b1b5-443a-8977-670f6bd10f02
-  port: 50001
-  server: 18.183.13.60
-  skip-cert-verify: true
-  sni: bgroup.node1.t.nodelist-airport.com
-  type: trojan
-- name: '479|👉🆔 @MoftConfig📡Japan #2'
-  password: a124e41a-0fb8-4543-a0ab-a127c7b515a9
-  port: 20230
-  server: 52.194.229.10
-  sni: 421421.xyz
-  type: trojan
-- name: '479,480|[🏁]t.me/ConfigsHub #836'
-  password: b44da489-fc70-4fd0-8997-a83b51f59267
-  port: 20230
-  server: 57.180.30.125
-  skip-cert-verify: true
-  sni: jp007.421421.xyz
-  type: trojan
-- name: '479,480|👉🆔 @MoftConfig📡🇯🇵Japan #44'
-  password: a124e41a-0fb8-4543-a0ab-a127c7b515a9
-  port: 20230
-  server: 18.182.4.56
-  skip-cert-verify: true
-  sni: jp005.421421.xyz
-  type: trojan
-- name: '479,480|👉🆔 @MoftConfig📡🇯🇵Japan #43'
-  password: a124e41a-0fb8-4543-a0ab-a127c7b515a9
-  port: 20230
-  server: 18.179.178.237
-  skip-cert-verify: true
-  sni: jp005.421421.xyz
-  type: trojan
-- name: '479,480|👉🆔 @MoftConfig📡🇯🇵Japan #45'
-  password: 0bfa2050-b165-4156-859c-70f36d300dce
-  port: 20230
-  server: 3.113.7.83
-  skip-cert-verify: true
-  sni: jp008.421421.xyz
-  type: trojan
-- name: '479|👉🆔 @MoftConfig📡🇵Japan #6'
-  password: FeCOjFDq3aXx8BD39R2O4zxSxNDY3R4zl3x6K2SZaZY3ElTRaO5EeR08yNnSI0Zew9lyC
-  port: 443
-  server: mailbox.meijireform.com
-  skip-cert-verify: true
-  type: trojan
-- name: '479,480|👉🆔 @MoftConfig📡🇯🇵Japan #48'
-  password: 5a81db08-7af3-49a4-b089-b7a5b2c24c38
-  port: 20230
-  server: 52.195.176.39
-  skip-cert-verify: true
-  sni: jp007.421421.xyz
-  type: trojan
-- name: '479|👉🆔 @MoftConfig📡🇯🇵Japan #17'
-  password: lCnTqRDYyYzSCwCaa9euS0BO2KlaepCyyepSOSN8ACB86DZl3aZ3c0n8xOxTI55w3O4SX
-  port: 28340
-  server: social.meijireform.com
-  skip-cert-verify: true
-  sni: social.meijireform.com
-  type: trojan
-- name: '479|👉🆔 @MoftConfig📡🇯🇵Japan #18'
-  password: '!!str 74260712244661900'
-  port: 443
-  server: gorgeous-bull.shiner427.skin
-  skip-cert-verify: true
-  type: trojan
-- name: '479|👉🆔 @MoftConfig📡🇯🇵Japan #19'
-  password: '!!str 74260712244661900'
-  port: 443
-  server: gorgeous-bull.shiner427.skin
-  skip-cert-verify: true
-  sni: gorgeous-bull.shiner427.skin
-  type: trojan
-- name: '479|👉🆔 @MoftConfig📡Japan #5'
-  password: 2155145a-b1b5-443a-8977-670f6bd10f02
-  port: 50001
-  server: 3.113.26.19
-  skip-cert-verify: true
-  sni: bgroup.node1.t.nodelist-airport.com
-  type: trojan
-- name: '479|👉🆔 @MoftConfig📡🇯🇵Japan #21'
-  password: a124e41a-0fb8-4543-a0ab-a127c7b515a9
-  port: 20230
-  server: 18.183.228.197
-  skip-cert-verify: true
-  sni: jp007.421421.xyz
-  type: trojan
-- name: '479,480|👉🆔 @MoftConfig📡🇵Japan #22'
-  password: f08d6a6b-a0b3-410e-a0ba-eae71b521904
-  port: 20230
-  server: 54.238.183.54
-  skip-cert-verify: true
-  sni: jp006.421421.xyz
-  type: trojan
-- name: '479,480|⚜️Telegram:@IP_CF #1016'
-  password: 429ad146-8f43-4dd4-8fb3-cca3f3a30c63
-  port: 20230
-  server: jp006.421421.xyz
-  type: trojan
-- name: '479|👉🆔 @MoftConfig📡🇵Japan #12'
-  password: Y0IweO6223CjwZD8FFZAaCz3yTYxDKX9yOAlXp5FTRONDaZl3zSeS7a3D4cYuCxFRx7yS
-  port: 28337
-  server: 154.31.112.95
-  sni: tenderly.meijireform.com
-  type: trojan
-- name: '479|👉🆔 @MoftConfig📡🇯🇵Japan #34'
-  password: TTcyAOIqSCCZSO7XNCyzcS2Azlp3Yujw0j4uaR39DAeYw38Ye9F3eplxxg63FaCxC8R3S
-  port: 28332
-  server: country.meijireform.com
-  skip-cert-verify: false
-  sni: country.meijireform.com
-  type: trojan
-- name: '479|[🏁]t.me/MoftConfig #557'
-  password: JH9NEZKTib
-  port: 17748
-  server: djvp.sywk.com.cn
-  skip-cert-verify: false
-  sni: djvp.sywk.com.cn
-  type: trojan
-- name: '479|👉🆔 @MoftConfig📡🇵Japan #15'
-  password: TOZA9E6pyq4z3pFYeIeOC3ApaSDjR2wFueaO8uNDx0czDF3YCSwa3xjZ3qZAyB4YCKCZS
-  port: 443
-  server: 154.31.115.31
-  sni: swiftly.meijireform.com
-  type: trojan
-- name: '479|👉🆔 @MoftConfig📡Japan #7'
-  password: 6aqnYj7NA2CAeSeZpY34RIC3KzNzDO33aOOaZSxFSc5ETBcwXeyaDF3qC9A907y2nXT8S
-  port: 443
-  server: 154.31.114.12
-  skip-cert-verify: true
-  type: trojan
-- name: '480|👉🆔 @MoftConfig📡🇯🇵Japan #40'
-  password: 9wSlq29Ta3DD633lCcXzFe3qAa3AyC8eO7T7RaFayZRYF3z43ExZuYaEjS0XppgAOg4BC
-  port: 28334
-  server: boohoo.meijireform.com
-  skip-cert-verify: true
-  sni: boohoo.meijireform.com
-  type: trojan
-- name: '480|👉🆔 @MoftConfig📡🇵Japan #20'
-  password: 32aFSDKwjFRcASN6DyAF9eqZ07D3OauYTYgxXBI50Tgy8Oxp8N3KAFDaOn3ZDYE334SEC
-  port: 28335
-  server: 54.238.151.32
-  skip-cert-verify: true
-  sni: kuam.meijireform.com
-  type: trojan
-- name: '480|[🏁]t.me/MoftConfig #943'
-  password: 0bfa2050-b165-4156-859c-70f36d300dce
-  port: 20230
-  server: 52.195.175.197
-  skip-cert-verify: true
-  sni: jp008.421421.xyz
-  type: trojan
-- name: '480|👉🆔 @MoftConfig📡🇵Japan #28'
-  password: 6aqnYj7NA2CAeSeZpY34RIC3KzNzDO33aOOaZSxFSc5ETBcwXeyaDF3qC9A907y2nXT8S
-  port: 443
-  server: 154.31.114.12
-  sni: visual.superpokemon.com
-  type: trojan
-- name: '480|⚜️Telegram:@IP_CF #2076'
-  network: tcp
-  password: '!!str 74260700211203800'
-  port: 443
-  server: possible-tiger.shiner427.skin
-  skip-cert-verify: true
-  type: trojan
-- name: '480|👉🆔 @MoftConfig📡🇯🇵®️Japan©️Koto... #2'
-  password: '!!str 74260700211203800'
-  port: 443
-  server: daring-gobbler.shiner427.skin
-  skip-cert-verify: true
-  type: trojan
 - cipher: rc4-md5
-  name: '490,491|🇯🇵 日本|@ripaojiedian 2 #1'
+  client-fingerprint: chrome
+  name: 490,491,535|🇯🇵 日本|@stairnode
   password: efanccyun
   plugin: obfs
   plugin-opts:
@@ -3992,6 +3804,7 @@ proxies:
     mode: http
   port: 8766
   server: cn01.efan8867801.xyz
+  tfo: false
   type: ss
   udp: true
 - alterId: 0
@@ -4067,7 +3880,7 @@ proxies:
   server: 18.181.194.77
   tfo: false
   type: ss
-- name: '510,511|日期：08-10 #1'
+- name: '510,511,546|日期：08-10 #2'
   network: tcp
   password: Aimer
   port: 17000
@@ -4076,7 +3889,7 @@ proxies:
   sni: epgb.aimercc.dpdns.org
   type: trojan
   udp: true
-- name: '510,511|🇯🇵_日本_1 #1'
+- name: 510,511,546|🇯🇵_日本
   network: tcp
   password: Aimer
   port: 2083
@@ -4085,7 +3898,7 @@ proxies:
   sni: epgb.aimercc.dpdns.org
   type: trojan
   udp: true
-- name: '510,511|🇯🇵_日本_2 #1'
+- name: '510,511,546|🇯🇵_日本 #1'
   network: tcp
   password: Aimer
   port: 2096
@@ -4311,6 +4124,20 @@ proxies:
   port: 636/?plugin=v2ray-plugin%3Bmode%3Dwebsocket%3Btls%3Bmux%3D4%3Bhost%3Djp7v1.lingjfjkm002.com%3Bpath%3D%2Fdchlbvrbbotc%3Bmux%3Dmux%3D4%3B%3B
   server: 137.220.191.40
   type: ss
+- cipher: aes-128-gcm
+  country: 🇯🇵JP
+  name: 535|disney_JP
+  password: '!!str 10086'
+  port: 10087
+  server: 153.121.51.214
+  type: ss
+- cipher: aes-128-gcm
+  country: 🇯🇵JP
+  name: '535|disney_JP #1'
+  password: '!!str 10086'
+  port: 10087
+  server: 153.121.43.183
+  type: ss
 - cipher: chacha20-ietf-poly1305
   name: 545|0| 01 | 1x JP
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
@@ -4408,7 +4235,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: '545|12|🇵 日本2|@ripaojiedian #2'
+  name: 545|12|🇵 日本2|@ripaojiedian
   port: 23919
   server: hzz9.fgmcx.top
   skip-cert-verify: false
@@ -4452,19 +4279,32 @@ proxies:
   server: 18.179.174.138
   tfo: false
   type: ss
-- name: 546|日本_081004263
+- alterId: 0
+  cipher: auto
+  name: 545|13|日本2|@ripaojiedian
+  network: tcp
+  port: 23919
+  server: hzz9.fgmcx.top
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: be443689-bc64-49ff-85a5-8eecaa2235d3
+- alterId: 0
+  cipher: auto
+  name: 545|13|日本4|@ripaojiedian
+  network: tcp
+  port: 17233
+  server: 81f6bf37-sutj40-svgpxu-y2gs.cm5.p5pv.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: b806b388-5f97-11ee-8014-f23c913c8d2b
+- name: 546|日本_081018227
   password: 0xC6Mws4Dg
   port: 1935
   server: x2-japan-amazon-v2.devefun.org
   skip-cert-verify: true
   sni: x2-japan-amazon-v2.devefun.org
-  type: trojan
-- name: '546|🇯🇵 日本3|@stairnode #3'
-  password: 6b5b43c9-05bd-471e-b502-d52c0dbd55fd
-  port: 23008
-  server: okanc.iepl.cac.cab
-  skip-cert-verify: false
-  sni: www.bilibili.com
   type: trojan
 - name: '546|🇯🇵 日本5|@stairnode #1'
   password: 6bc1c915-2fee-469b-b0e2-01968be45bf6
@@ -4473,27 +4313,6 @@ proxies:
   skip-cert-verify: false
   sni: www.bilibili.com
   type: trojan
-- name: '546|🇯🇵 日本4|@stairnode #2'
-  password: d0d08cddacc3190ea81b1b792e1b5fde
-  port: 461
-  server: 36.156.102.125
-  skip-cert-verify: true
-  sni: www.baidu.com
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: '546|JP日本(mibei77.com 米贝节点分享) #50'
-  network: ws
-  port: '8880'
-  server: 45.196.29.226
-  servername: TG.WangCai2.s2.cn-db.top
-  tls: false
-  type: vmess
-  uuid: 5d5c957f-b0e7-3e4e-9db6-65a5fec7e080
-  ws-opts:
-    headers:
-      Host: TG.WangCai2.s2.cn-db.top
-    path: /dabai&Telegram🇨🇳@WangCai2/?ed=2560
 - alterId: 0
   cipher: auto
   name: 546|github.com/freefq - 日本东京Linode...
@@ -4508,169 +4327,9 @@ proxies:
     headers:
       Host: v6.583181.xyz
     path: /
-- alterId: 1
-  cipher: auto
-  name: 546|日本_081004203
-  network: tcp
-  port: '21584'
-  server: 48zdw-g04.jp03-j7-vm0.entry.fr0528.art
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 256b4a91-af39-3314-9931-981dfd26a53e
-- alterId: 1
-  cipher: auto
-  name: 546|日本_081004181
-  network: tcp
-  port: '21584'
-  server: 4pkrm-g04.jp03-j7-vm0.entry.fr0528.art
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 256b4a91-af39-3314-9931-981dfd26a53e
-- alterId: 1
-  cipher: auto
-  name: 546|日本_081004184
-  network: tcp
-  port: '64657'
-  server: 4s7l8-g04.jp05-vm5.entry.rtysjur.quest
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 256b4a91-af39-3314-9931-981dfd26a53e
-- alterId: 1
-  cipher: auto
-  name: 546|日本_081004186
-  network: tcp
-  port: '28786'
-  server: 56n1e-g04.jp06-jz-vm0.entry.fr0528.art
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 256b4a91-af39-3314-9931-981dfd26a53e
-- alterId: 1
-  cipher: auto
-  name: 546|日本_081004193
-  network: tcp
-  port: '447'
-  server: 6653l-g04.jp04-1d-vm0.entry.fr0528.art
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 256b4a91-af39-3314-9931-981dfd26a53e
-- alterId: 1
-  cipher: auto
-  name: 546|日本_081004188
-  network: tcp
-  port: '64657'
-  server: 6o7w0-g04.jp05-vm5.entry.rtysjur.quest
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 256b4a91-af39-3314-9931-981dfd26a53e
-- alterId: 1
-  cipher: auto
-  name: 546|日本_081004187
-  network: tcp
-  port: '447'
-  server: 7p2g4-g04.jp04-1d-vm0.entry.fr0528.art
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 256b4a91-af39-3314-9931-981dfd26a53e
-- alterId: 1
-  cipher: auto
-  name: 546|日本_081004214
-  network: tcp
-  port: '28786'
-  server: 9pba2-g04.jp06-jz-vm0.entry.fr0528.art
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 256b4a91-af39-3314-9931-981dfd26a53e
-- alterId: 1
-  cipher: auto
-  name: 546|日本_081004176
-  network: tcp
-  port: '64657'
-  server: 11j2w-g04.jp05-vm5.entry.rtysjur.quest
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 256b4a91-af39-3314-9931-981dfd26a53e
-- alterId: 1
-  cipher: auto
-  name: 546|日本_081004175
-  network: tcp
-  port: '665'
-  server: 3vkqx-g04.jp06-vm5.entry.rtysjur.quest
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 256b4a91-af39-3314-9931-981dfd26a53e
-- alterId: 1
-  cipher: auto
-  name: 546|日本_081004189
-  network: tcp
-  port: '665'
-  server: tkrel-g04.jp06-vm5.entry.rtysjur.quest
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 256b4a91-af39-3314-9931-981dfd26a53e
-- alterId: 1
-  cipher: auto
-  name: 546|日本_081004196
-  network: tcp
-  port: '21584'
-  server: u66mp-g04.jp01-nn-vm0.entry.fr0528.art
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 256b4a91-af39-3314-9931-981dfd26a53e
-- alterId: 1
-  cipher: auto
-  name: 546|日本_081004198
-  network: tcp
-  port: '21584'
-  server: woam8-g04.jp01-nn-vm0.entry.fr0528.art
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 256b4a91-af39-3314-9931-981dfd26a53e
-- alterId: 1
-  cipher: auto
-  name: 546|日本_081004179
-  network: tcp
-  port: '21584'
-  server: y5ok6-g04.jp01-nn-vm0.entry.fr0528.art
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 256b4a91-af39-3314-9931-981dfd26a53e
-- alterId: 1
-  cipher: auto
-  name: 546|日本_081004208
-  network: tcp
-  port: '447'
-  server: acr2z-g04.jp04-1d-vm0.entry.fr0528.art
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 256b4a91-af39-3314-9931-981dfd26a53e
-- alterId: 1
-  cipher: auto
-  name: 546|日本_081004207
-  network: tcp
-  port: '11776'
-  server: bbtdh-g04.jp02-e3-vm0.entry.fr0528.art
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 256b4a91-af39-3314-9931-981dfd26a53e
 - alterId: 0
   cipher: auto
-  name: 546|日本_081004264
+  name: 546|日本_081018228
   network: tcp
   port: '14011'
   server: cgroup.node1.v.nodelist-airport.com
@@ -4678,186 +4337,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 8f3a835c-8a45-480d-ae35-1deb2c52dcae
-- alterId: 1
-  cipher: auto
-  name: 546|日本_081004182
-  network: tcp
-  port: '665'
-  server: ci5jm-g04.jp06-vm5.entry.rtysjur.quest
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 256b4a91-af39-3314-9931-981dfd26a53e
-- alterId: 1
-  cipher: auto
-  name: 546|日本_081004183
-  network: tcp
-  port: '447'
-  server: cwcrf-g04.jp04-1d-vm0.entry.fr0528.art
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 256b4a91-af39-3314-9931-981dfd26a53e
-- alterId: 1
-  cipher: auto
-  name: 546|日本_081004195
-  network: tcp
-  port: '64657'
-  server: dq6pw-g04.jp05-vm5.entry.rtysjur.quest
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 256b4a91-af39-3314-9931-981dfd26a53e
-- alterId: 1
-  cipher: auto
-  name: 546|日本_081004185
-  network: tcp
-  port: '28786'
-  server: i1ck7-g04.jp06-jz-vm0.entry.fr0528.art
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 256b4a91-af39-3314-9931-981dfd26a53e
-- alterId: 1
-  cipher: auto
-  name: 546|日本_081004201
-  network: tcp
-  port: '11776'
-  server: i1xxv-g04.jp02-e3-vm0.entry.fr0528.art
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 256b4a91-af39-3314-9931-981dfd26a53e
-- alterId: 1
-  cipher: auto
-  name: 546|日本_081004191
-  network: tcp
-  port: '447'
-  server: ixh63-g04.jp04-1d-vm0.entry.fr0528.art
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 256b4a91-af39-3314-9931-981dfd26a53e
-- alterId: 1
-  cipher: auto
-  name: 546|日本_081004194
-  network: tcp
-  port: '21584'
-  server: jc8jf-g04.jp03-j7-vm0.entry.fr0528.art
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 256b4a91-af39-3314-9931-981dfd26a53e
-- alterId: 1
-  cipher: auto
-  name: 546|日本_081004213
-  network: tcp
-  port: '11776'
-  server: jizqs-g04.jp02-e3-vm0.entry.fr0528.art
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 256b4a91-af39-3314-9931-981dfd26a53e
-- alterId: 1
-  cipher: auto
-  name: 546|日本_081004202
-  network: tcp
-  port: '28786'
-  server: jyumx-g04.jp06-jz-vm0.entry.fr0528.art
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 256b4a91-af39-3314-9931-981dfd26a53e
-- alterId: 1
-  cipher: auto
-  name: 546|日本_081004192
-  network: tcp
-  port: '21584'
-  server: lzsbn-g04.jp01-nn-vm0.entry.fr0528.art
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 256b4a91-af39-3314-9931-981dfd26a53e
-- alterId: 1
-  cipher: auto
-  name: 546|日本_081004210
-  network: tcp
-  port: '28786'
-  server: mhqr1-g04.jp06-jz-vm0.entry.fr0528.art
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 256b4a91-af39-3314-9931-981dfd26a53e
-- alterId: 1
-  cipher: auto
-  name: 546|日本_081004180
-  network: tcp
-  port: '21584'
-  server: mxt5y-g04.jp03-j7-vm0.entry.fr0528.art
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 256b4a91-af39-3314-9931-981dfd26a53e
-- alterId: 1
-  cipher: auto
-  name: 546|日本_081004190
-  network: tcp
-  port: '64657'
-  server: o2ikr-g04.jp05-vm5.entry.rtysjur.quest
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 256b4a91-af39-3314-9931-981dfd26a53e
-- alterId: 1
-  cipher: auto
-  name: 546|日本_081004211
-  network: tcp
-  port: '665'
-  server: opqux-g04.jp06-vm5.entry.rtysjur.quest
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 256b4a91-af39-3314-9931-981dfd26a53e
-- alterId: 1
-  cipher: auto
-  name: 546|日本_081004197
-  network: tcp
-  port: '21584'
-  server: qv2ug-g04.jp01-nn-vm0.entry.fr0528.art
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 256b4a91-af39-3314-9931-981dfd26a53e
-- alterId: 1
-  cipher: auto
-  name: 546|日本_081004212
-  network: tcp
-  port: '21584'
-  server: r98gt-g04.jp03-j7-vm0.entry.fr0528.art
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 256b4a91-af39-3314-9931-981dfd26a53e
-- alterId: 1
-  cipher: auto
-  name: 546|日本_081004178
-  network: tcp
-  port: '665'
-  server: rz042-g04.jp06-vm5.entry.rtysjur.quest
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 256b4a91-af39-3314-9931-981dfd26a53e
-- alterId: 1
-  cipher: auto
-  name: 546|日本_081004199
-  network: tcp
-  port: '11776'
-  server: sckwk-g04.jp02-e3-vm0.entry.fr0528.art
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 256b4a91-af39-3314-9931-981dfd26a53e
 - cipher: chacha20-ietf-poly1305
   name: 549|5,9,24,27|1|  01 | 1x JP
   password: b9bc70b4-8825-4b0a-a6a1-2314a5f45f79
@@ -5110,6 +4589,15 @@ proxies:
   uuid: f7d16b10-83a1-4915-8fb4-c81f24ee7d17
 - alterId: 0
   cipher: auto
+  name: 549|36|🔒 VM-TCP-NA 🇵 JP-13.230.235...
+  network: tcp
+  port: '48889'
+  server: 13.230.235.247
+  tls: false
+  type: vmess
+  uuid: c130cb36-c93f-4be7-9228-a7a97d43885a
+- alterId: 0
+  cipher: auto
   name: 549|36|🔒 VM-TCP-NA 🇵 JP-20.78.127....
   network: tcp
   port: '550'
@@ -5196,76 +4684,15 @@ proxies:
   ws-headers:
     Host: 172.105.219.18
   ws-path: /
-- cipher: aes-256-gcm
-  name: '553|🇯🇵 日本 | JPN 3 #1'
-  password: 746e587b-531f-4fb3-be75-91f187b0a27f
-  port: 22609
-  server: i2plcwjnhrl6.gym0boy.com
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: '553|🇯🇵 日本 | JPN 4 #1'
-  password: ljqdalu13..
-  port: 8313
-  server: 13.231.129.122
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 553|🇯🇵 日本 | JPN 7
-  password: ljqdalu13..
-  port: 8313
-  server: 18.183.10.226
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  name: 553|🇯🇵 日本 | JPN 8
-  password: 17a1908f-78a3-4518-b35f-0d76e0930faf
-  port: 22609
-  server: i2plcwjnhrl6.gym0boy.com
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  name: 553|🇯🇵 日本 | JPN 9
-  password: 17a1908f-78a3-4518-b35f-0d76e0930faf
-  port: 28799
-  server: i2plcwjnhrl6.gym0boy.com
-  type: ss
-  udp: true
 - alterId: 0
   cipher: auto
-  name: 553|🇯🇵 日本 | JPN 10
-  port: 22235
-  server: jzgz.tcity8.monster
+  name: 555|🇯🇵 日本 52
+  network: tcp
+  port: '45057'
+  server: xdd.dashuai.cyou
   tls: false
   type: vmess
-  udp: true
-  uuid: 87d277ef-c599-4d2e-8ab0-cdff17c9a964
-- name: 553|🇯🇵 日本 | JPN 12
-  network: ws
-  password: Aimer
-  port: 28015
-  server: 222.114.159.171
-  skip-cert-verify: true
-  sni: epgb.aimercc.dpdns.org
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: epgb.aimercc.dpdns.org
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- name: 553|🇯🇵 日本 | JPN 14
-  network: ws
-  password: Aimer
-  port: 38880
-  server: 59.19.192.51
-  skip-cert-verify: true
-  sni: epgb.aimercc.dpdns.org
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: epgb.aimercc.dpdns.org
-    path: /?ed=2560&proxyip=ts.hpc.tw
+  uuid: 2ff07610-b1d9-44ee-ba6f-6ebf6dc79219
 - alterId: 0
   cipher: auto
   name: '564|日本NO.1 #2'
