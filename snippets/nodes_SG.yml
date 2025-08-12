@@ -731,6 +731,13 @@ proxies:
   port: 17315
   server: 120.240.103.35
   type: ss
+- name: 242|SG
+  network: tcp
+  password: f57f01e6-9bb1-4277-a5cb-75ad0ce1fa11
+  port: 32702
+  server: xd-sh.timiwc.com
+  sni: k36.tudou211.com
+  type: trojan
 - name: '262,263|新加坡05|流媒体 #2'
   network: ws
   password: 90e7b2f3-fb61-4fd7-959f-176e9a51d8d7
@@ -877,7 +884,7 @@ proxies:
   udp: true
 - alterId: 64
   cipher: auto
-  name: 327,481,489,493,494,501,538,546|1|🇸🇬1 |  1.0MB/s|0%|Netflix|Di...
+  name: '327,481,489,493,494,501,538,546|1|🇸🇬1 |  1.0MB/s|0%|Netflix|Di... #1'
   network: tcp
   port: 49291
   server: 183.236.51.38
@@ -885,8 +892,8 @@ proxies:
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
-  name: '327,365,441,481,489,493,494,501,502,503,523,524,530,531,538,543,544,546,561,566,567,569|🇸🇬
-    新加坡|@stairnode #5'
+  name: '327,365,441,481,489,493,494,501,502,503,523,524,531,535,538,543,544,546,561,566,567,569|🇸🇬
+    新加坡|@stairnode #6'
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
   port: 1256
@@ -896,17 +903,14 @@ proxies:
   tls: true
   type: trojan
   udp: true
-- alterId: 0
-  name: '327,365,441,481,523,524,546,561,567|🇸🇬 新加坡3|@stairnode #2'
+- name: '327,365,441,481,523,524,546,567|🇸🇬 新加坡3|@stairnode #2'
   network: tcp
   password: f60cd513-7b83-4b64-936c-f7e88e95dacd
   port: 8233
   server: 120.240.118.187
   skip-cert-verify: false
   sni: steamcdn-a.akamaihd.net
-  tls: true
   type: trojan
-  udp: true
 - name: 343|🇸🇬1 |  9.0MB/s
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   port: 443
@@ -2078,7 +2082,8 @@ proxies:
   ws-opts:
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 365,524,525|🇸🇬SG-188.166.220.70-0340 | 17....
+  country: 🇬 SG
+  name: '365,422,524,525,535|_29 #1'
   password: 24Wk2NSszrfHn22zem1lYV
   port: 37708
   server: 188.166.220.70
@@ -2639,30 +2644,39 @@ proxies:
     headers:
       Host: ''
     path: /anti13.zingfast.vn
-- name: '365,423,523,524|🇬SG-167.172.89.10-4963 #1'
+- country: 🇬SG
+  name: '365,422,423,523,524|🇬SG-167.172.89.10-4963 #1'
   password: d4bdfc72-7f0c-4ff0-aa4d-3530736f4088
   port: 443
   server: sg-full.privateip.net
   skip-cert-verify: false
   type: trojan
-- name: '365,423,523,524|🇬SG-68.183.234.52-4964 #1'
+  udp: true
+- country: 🇬SG
+  name: '365,422,423,523,524|🇬SG-68.183.234.52-4964 #1'
   password: c3d6d2e4-05a5-4a48-b91a-070b5e9fcdfb
   port: 443
   server: sg2-full.privateip.net
   skip-cert-verify: false
   type: trojan
+  udp: true
 - alterId: 64
   cipher: auto
-  name: '365,523,524|🇸🇬SG-202.79.161.188-5052 #1'
+  country: 🇸🇬SG
+  h2-opts: {}
+  http-opts: {}
+  name: 365,523,524,535|Pool_🇸🇬SG_247
   network: ws
   port: 443
   server: 202.79.161.188
   servername: www.32278117.xyz
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: true
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
   ws-opts:
+    headers:
+      HOST: www.32278117.xyz
     path: /path/170733132233
 - cipher: aes-256-gcm
   name: '365,524|🇬SG-139.99.68.21-5474 #1'
@@ -3193,7 +3207,7 @@ proxies:
   type: ss
 - alterId: 64
   cipher: auto
-  name: '367,502,503|2|1 |  1.0MB/s|0%|Netflix|Disn... #1'
+  name: '367,502,503|1|1 |  1.0MB/s|0%|Netflix|Disn... #1'
   port: 49291
   server: 183.236.51.38
   skip-cert-verify: false
@@ -3492,7 +3506,7 @@ proxies:
   uuid: 1ddf3ade-5b8c-420c-84f6-f96979ec3080
 - alterId: 0
   cipher: auto
-  name: '455,478,481|🔥Join+Telegram:@Farah_VPN🟣 #251'
+  name: '455,478,481|🔥Join+Telegram:@Farah_VPN🟣 #7817'
   network: tcp
   port: '27575'
   server: 194.233.72.228
@@ -3922,6 +3936,17 @@ proxies:
   type: trojan
 - grpc-opts:
     grpc-service-name: sgvip101
+  name: 529|🇸🇬 新加坡 101 - 墙了个墙
+  network: grpc
+  password: 3c668456-cc9c-3392-9014-0f73e5a09bb3
+  port: 11223
+  server: sgvip101.qlgq.fun
+  skip-cert-verify: true
+  sni: sgvip101.qlgq.fun
+  type: trojan
+  udp: true
+- grpc-opts:
+    grpc-service-name: sgvip101
   name: 529|🇸🇬 新加坡 102 - 墙了个墙
   network: grpc
   password: 3c668456-cc9c-3392-9014-0f73e5a09bb3
@@ -3964,15 +3989,6 @@ proxies:
   sni: sgvip101.qlgq.fun
   type: trojan
   udp: true
-- name: 529|🇬 新加坡299• -
-  password: a6ba0ada-cef1-3009-98dc-a1300ca76ed6
-  port: 20299
-  server: gy.58n.net
-  skip-cert-verify: true
-  sni: x299.flybar.work
-  tfo: true
-  type: trojan
-  udp: true
 - name: 529|🇸🇬 新加坡•高速129•高速 - 飞翔吧
   password: a6ba0ada-cef1-3009-98dc-a1300ca76ed6
   port: 20129
@@ -3982,7 +3998,7 @@ proxies:
   tfo: true
   type: trojan
   udp: true
-- name: 529|🇸🇬 新加坡•高速130• - 飞翔吧
+- name: 529|🇸🇬 新加坡•高速130•铂金 - 飞翔吧
   password: a6ba0ada-cef1-3009-98dc-a1300ca76ed6
   port: 20130
   server: gy.58n.net
@@ -3993,7 +4009,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 529|🇬 新加坡 1 GPT/Netflix  - 皮
+  name: 529|🇬 新加坡 1 GPT/Netflix  - 西瓜皮是真的皮
   port: 19841
   server: xgcma.dx002.top
   skip-cert-verify: true
@@ -4013,17 +4029,17 @@ proxies:
   uuid: 075c16e6-67cb-3599-aa5a-025b478db156
 - alterId: 2
   cipher: auto
-  name: 529|🇬 [vip]新加坡 - MG Network
+  name: 529|🇬 [vip①]②新加坡 - MG Network
   port: 23617
   server: 17.mamamajd.site
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: f62dd2f3-fb0a-3192-94bc-f06c15b94647
+  uuid: 715cff61-c2b3-378d-8bbc-cf80105ba681
 - alterId: 0
   cipher: auto
-  name: 529|🇸🇬新加坡 - 云
+  name: 529|【高级】🇸🇬新加坡 - 滑梯云
   network: ws
   port: 20011
   server: htsub-2024.899696998.xyz
@@ -4189,6 +4205,71 @@ proxies:
     headers:
       Host: gw.alicdn.com
     path: /CAT
+- name: '572,573|SG_speednode_0171 #1'
+  network: ws
+  password: Aimer
+  port: 2096
+  server: 92.243.74.23
+  skip-cert-verify: true
+  sni: epgb.aimercc.dpdns.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: epgb.aimercc.dpdns.org
+    path: /?ed=2560
+- name: '572,573|SG_speednode_0172 #1'
+  network: ws
+  password: Aimer
+  port: 8443
+  server: 92.243.74.3
+  skip-cert-verify: true
+  sni: epgb.aimercc.dpdns.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: epgb.aimercc.dpdns.org
+    path: /?ed=2560
+- name: '572,573|SG_speednode_0173 #1'
+  network: ws
+  password: Aimer
+  port: 2053
+  server: 27.50.49.37
+  skip-cert-verify: true
+  sni: epgb.aimercc.dpdns.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: epgb.aimercc.dpdns.org
+    path: /?ed=2560
+- name: '572,573|SG_speednode_0174 #1'
+  network: ws
+  password: Aimer
+  port: 443
+  server: 27.50.49.136
+  skip-cert-verify: true
+  sni: epgb.aimercc.dpdns.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: epgb.aimercc.dpdns.org
+    path: /?ed=2560
+- name: '572,573|SG_speednode_0175 #1'
+  network: ws
+  password: Aimer
+  port: 8443
+  server: 92.243.74.239
+  skip-cert-verify: true
+  sni: epgb.aimercc.dpdns.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: epgb.aimercc.dpdns.org
+    path: /?ed=2560
 - cipher: aes-128-gcm
   name: 588|SGP.新加坡.A | 推荐
   password: a01b5e27-ece5-4675-866f-36b23a65d2a8
