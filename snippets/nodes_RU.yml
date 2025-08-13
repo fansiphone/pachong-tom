@@ -368,15 +368,13 @@ proxies:
   server: 213.183.53.222
   type: ss
 - cipher: chacha20-ietf-poly1305
-  country: 🇬🇧 GB
-  name: 365,422,524,525,535|🇬🇧 GB_90
+  name: 365,524,525|🇷🇺RU-185.126.239.250-0373 | 0....
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 185.126.239.250
   type: ss
 - cipher: chacha20-ietf-poly1305
-  country: 🇷🇺 RU
-  name: '365,422,524|🇺RU-45.139.24.24-5042 #1'
+  name: '365,524|🇺RU-45.139.24.24-5042 #1'
   password: 360e21d21977dc11
   port: 57456
   server: 45.139.24.24
@@ -426,28 +424,40 @@ proxies:
   port: 444
   server: 146.185.198.44
   type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇺 RU
-  name: 422| RU_148
-  password: qscavF5UviIL-8V-E4raBA
-  port: 2222
-  server: 2.59.163.104
-  type: ss
 - alterId: 0
   cipher: auto
-  country: 🇺 RU
-  h2-opts: {}
-  http-opts: {}
-  name: 422,424,546|🇷🇺 RU_160
+  name: 424,546|🇷🇺 RU_161
+  network: tcp
+  port: 45215
+  server: fa.fxlcn.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
+- alterId: 0
+  cipher: auto
+  name: 424,546|🇷🇺 RU_160
   network: tcp
   port: 45245
   server: ye.fxlcn.com
   servername: ''
-  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 469e0b31-30c3-4dab-800d-711232634ce1
-  ws-path: /
+- alterId: 0
+  cipher: auto
+  country: 🇺RU
+  h2-opts: {}
+  http-opts: {}
+  name: 427|🇷🇺RU_06
+  network: ws
+  port: 22092
+  server: 45.136.245.177
+  skip-cert-verify: true
+  type: vmess
+  uuid: 4affd149-133d-45f9-b71b-6213bc95a221
+  ws-opts:
+    path: /
 - name: '443|俄罗斯(mibei77.com 米贝节点分享) #1'
   network: ws
   password: Aimer
@@ -848,34 +858,106 @@ proxies:
   server: sakura.outlinekeys.net
   type: ss
   udp: true
-- name: '487,490,491,502,503,537,539,554,572,573|RU_speednode_0158 #5'
+- alterId: 0
+  cipher: auto
+  name: '477,479|[🇷🇺]t.me/ConfigsHub #14'
   network: ws
-  password: Aimer
-  port: 2053
-  server: 77.232.140.114
-  skip-cert-verify: true
-  sni: epgb.aimercc.dpdns.org
-  tfo: false
-  type: trojan
-  udp: true
+  port: '16231'
+  server: 31.129.105.239
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 793e03cc-2b08-4d1b-bb0b-592567d19043
   ws-opts:
     headers:
-      Host: epgb.aimercc.dpdns.org
-    path: /?ed=2560
-- name: '487,490,491,502,503,537,539,554,572,573|SG_speednode_0171 #5'
+      Host: 31.129.105.239
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '477,479|⚜️Telegram:@IP_CF #1327'
+  network: tcp
+  port: '47555'
+  server: 46.29.166.237
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 0c49cd19-2758-4d38-e6a8-11f2d6635860
+- alterId: 0
+  cipher: auto
+  name: '477,479|⚜️Telegram:@IP_CF #1885'
   network: ws
+  port: 16231
+  server: 31.129.105.239
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 793e03cc-2b08-4d1b-bb0b-592567d19043
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '477,479|[🇷🇺]t.me/ConfigsHub #20'
+  network: ws
+  port: '23011'
+  server: 185.22.152.236
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 6a98cdde-6b47-4c2f-8eee-7199dec2b3be
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- name: '477,479|👉🆔 @MoftConfig📡🇺Russia #7'
+  network: tcp
+  password: Aimer
+  port: 2083
+  server: 213.241.198.59
+  sni: ageph.ambercc.filegear-sg.me
+  type: trojan
+- name: '477,479|👉🆔 @MoftConfig📡🇺Russia #8'
+  network: tcp
   password: Aimer
   port: 2096
-  server: 92.243.74.23
-  skip-cert-verify: true
-  sni: epgb.aimercc.dpdns.org
-  tfo: false
+  server: 213.109.205.55
+  sni: agept.ambercc.filegear-sg.me
   type: trojan
-  udp: true
+- name: '477,479|👉🆔 @MoftConfig📡🇺Russia #9'
+  network: tcp
+  password: Aimer
+  port: 443
+  server: 212.41.15.119
+  sni: agepy.ambercc.filegear-sg.me
+  type: trojan
+- alpn:
+  - h3
+  - h2
+  - http/1.1
+  grpc-opts:
+    grpc-service-name: ''
+  name: '477,479|👉🆔 @MoftConfig📡🇺Russia #10'
+  network: grpc
+  password: '@NoForcedHeaven@NoForcedHeaven@NoForcedHeaven@NoForcedHeaven@NoForcedHeaven'
+  port: 2087
+  server: ru2.asc-sam.ir
+  sni: ru2.asc-sam.ir
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: '477,479|[🇷🇺]t.me/ConfigsHub #23'
+  network: ws
+  port: '23031'
+  server: 195.133.5.127
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 31be2acf-ed70-4960-9517-6e2a4366b105
   ws-opts:
     headers:
-      Host: epgb.aimercc.dpdns.org
-    path: /?ed=2560
+      Host: ''
+    path: /
 - name: '489,546,704|俄罗斯【机场推荐：https://a0a.xyz/】117 #2'
   network: ws
   password: tg-fq521free
@@ -913,6 +995,19 @@ proxies:
     headers:
       Host: epgb.aimercc.dpdns.org
     path: /?ed=2560
+- name: '490,491,502,503,537,539,554,572,573|RU_speednode_0158 #5'
+  network: ws
+  password: Aimer
+  port: 2053
+  server: 77.232.140.114
+  skip-cert-verify: true
+  sni: epgb.aimercc.dpdns.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: epgb.aimercc.dpdns.org
+    path: /?ed=2560
 - name: '490,491,502,503,537,539,554,572,573|RU_speednode_0159 #5'
   network: ws
   password: Aimer
@@ -931,6 +1026,32 @@ proxies:
   password: Aimer
   port: 2053
   server: 176.124.223.40
+  skip-cert-verify: true
+  sni: epgb.aimercc.dpdns.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: epgb.aimercc.dpdns.org
+    path: /?ed=2560
+- name: '490,491,502,503,537,539,554,572,573|RU_speednode_0161 #5'
+  network: ws
+  password: Aimer
+  port: 2096
+  server: 5.182.84.50
+  skip-cert-verify: true
+  sni: epgb.aimercc.dpdns.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: epgb.aimercc.dpdns.org
+    path: /?ed=2560
+- name: '490,491,502,503,537,539,554,572,573|RU_speednode_0162 #5'
+  network: ws
+  password: Aimer
+  port: 2087
+  server: 45.67.215.217
   skip-cert-verify: true
   sni: epgb.aimercc.dpdns.org
   type: trojan
@@ -1003,7 +1124,7 @@ proxies:
   sni: epgb.aimercc.dpdns.org
   type: trojan
   udp: true
-- name: '510,511,546|🇷🇺_俄罗斯 #10'
+- name: 510,511,546,555|🇳🇱 荷兰 098
   network: tcp
   password: Aimer
   port: 8443
@@ -1039,7 +1160,7 @@ proxies:
   sni: epgb.aimercc.dpdns.org
   type: trojan
   udp: true
-- name: 510,511,546,555|🇺🇸 美国 044
+- name: '510,511,546|🇷🇺_俄罗斯 #5'
   network: tcp
   password: Aimer
   port: 2083
@@ -1048,7 +1169,7 @@ proxies:
   sni: epgb.aimercc.dpdns.org
   type: trojan
   udp: true
-- name: 510,511,546,555|🇳🇱 荷兰 239
+- name: '510,511,546|🇷🇺_俄罗斯 #9'
   network: tcp
   password: Aimer
   port: 8443
@@ -1155,7 +1276,7 @@ proxies:
   country: 🇷🇺RU
   h2-opts: {}
   http-opts: {}
-  name: 535|🇷🇺RU_212
+  name: 535|🇷🇺RU_197
   network: ws
   port: 20086
   server: 91.218.143.133
@@ -1187,16 +1308,6 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 546|🇷🇺 RU_161
-  network: tcp
-  port: 45215
-  server: fa.fxlcn.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
-- alterId: 0
-  cipher: auto
   name: 546|俄罗斯联邦_081318251 L0
   network: ws
   port: '23157'
@@ -1211,26 +1322,13 @@ proxies:
     path: ''
 - alterId: 0
   cipher: auto
-  name: 555|🇷🇺 俄罗斯联邦 18
+  name: 555|🇷🇺 俄罗斯联邦 26
   network: ws
   port: '22092'
   server: 45.136.245.177
   tls: false
   type: vmess
-  uuid: 69ee436d-ec6f-4705-a4e6-ad11f86bede5
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 555|🇷🇺 俄罗斯联邦 25
-  network: ws
-  port: '22092'
-  server: 45.136.245.177
-  tls: false
-  type: vmess
-  uuid: a3112283-8bc9-4a83-bec6-2e8b401cc2dd
+  uuid: 394ee3b2-598c-4bc4-8cf2-9a55647954aa
   ws-opts:
     headers:
       Host: ''
@@ -1266,7 +1364,7 @@ proxies:
   server: rutf.cokecloud.top
   type: ss
   udp: true
-- name: '666,714,715,716|🇷🇺 俄罗斯1🔒 #3'
+- name: '714,715,716|🇷🇺 俄罗斯1🔒 #2'
   password: 升级订阅解锁全部节点
   port: 10010
   server: z-eu.2513142.xyz
@@ -1274,7 +1372,7 @@ proxies:
   sni: www.cloudflare.com
   type: trojan
   udp: true
-- name: '666,714,715,716|🇷🇺 俄罗斯2🔒 #3'
+- name: '714,715,716|🇷🇺 俄罗斯2🔒 #2'
   password: 升级订阅解锁全部节点
   port: 10010
   server: z-eu2.2513142.xyz
