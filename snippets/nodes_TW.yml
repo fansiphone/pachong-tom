@@ -87,44 +87,74 @@ proxies:
     path: /download
 - alterId: 0
   cipher: auto
-  name: '115,417|台湾2 #1'
-  port: 45077
-  server: xdd.dashuai.cyou
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 528196d9-12ae-471b-a1f4-bfab61b6ba99
-- alterId: 0
-  cipher: auto
-  name: '115,417|台湾1 #1'
+  name: '115,116,417,418|台湾1-1A-GPT #1'
   port: 45078
   server: haa.dashuai.cyou
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: 528196d9-12ae-471b-a1f4-bfab61b6ba99
+  uuid: 59156391-e6f2-44e4-bf12-5f00f32de757
 - alterId: 0
   cipher: auto
-  name: '116,418|台湾2-1B #1'
+  name: '115,116,417,418|3x备用专线台湾1-1A #1'
+  port: 50050
+  server: xh.dashuai.cyou
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 59156391-e6f2-44e4-bf12-5f00f32de757
+- alterId: 0
+  cipher: auto
+  name: '115,116,417,418|台湾2-1A-GPT #1'
   port: 45077
   server: xdd.dashuai.cyou
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: d158d164-3f09-4e11-95ba-17d92db2ac37
+  uuid: 59156391-e6f2-44e4-bf12-5f00f32de757
 - alterId: 0
   cipher: auto
-  name: '116,418|台湾1-1B #1'
+  name: '116,418|3x备用专线台湾1-1B #1'
+  port: 50050
+  server: xh.dashuai.cyou
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: b02a9746-2873-48a4-afe7-9856b246e6bb
+- alterId: 0
+  cipher: auto
+  name: '116,418|台湾2-1B-GPT #1'
+  port: 45077
+  server: xdd.dashuai.cyou
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: b02a9746-2873-48a4-afe7-9856b246e6bb
+- alterId: 0
+  cipher: auto
+  name: '116,418|台湾1-1B-GPT #1'
   port: 45078
   server: haa.dashuai.cyou
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: d158d164-3f09-4e11-95ba-17d92db2ac37
+  uuid: b02a9746-2873-48a4-afe7-9856b246e6bb
+- name: 242|TW
+  network: ws
+  password: Aimer
+  port: 2096
+  server: 167.68.4.223
+  skip-cert-verify: true
+  sni: epcca.ambercc.filegear-sg.me
+  type: trojan
+  ws-opts:
+    path: '%2F'
 - cipher: aes-256-cfb
   name: 343|🇹🇼1 |  2.1MB/s
   password: qwerREWQ@@
@@ -893,32 +923,38 @@ proxies:
       Host: us3.guolicheng.cyou
     path: /suti/us3?ed=2048
 - cipher: aes-256-cfb
-  name: 365,524,565|29|TW_speednode_0055
+  name: 365,422,524,565|29|TW_speednode_0055
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 154.223.20.79
   type: ss
   udp: true
-- name: '365,423,523,524|🇼TW-211.20.245.139-5268 #1'
+- country: 🇨 CN
+  name: '365,422,423,523,524|🇼TW-211.20.245.139-5268 #1'
   password: 6e1b9a65-884f-3aa9-9469-bf6ec0f08610
   port: 3462
   server: a03.taipeicitygovernment.cn.ua
   skip-cert-verify: false
   type: trojan
+  udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '365,524|🇼TW-223.165.4.173-5290 #1'
+  country: 🇮🇩ID
+  name: 365,524,535|🇮🇩ID_118
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 223.165.4.173
   type: ss
 - alterId: 0
   cipher: auto
-  name: 365,424,481,523,524,546|🇹🇼 TW_154
+  country: 🇹🇼TW
+  h2-opts: {}
+  http-opts: {}
+  name: 365,424,481,523,524,535,546|台湾_081618013 L0
   network: ws
-  port: 20521
+  port: '20521'
   server: 103.61.139.137
   servername: ''
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: f8d93cfb-3d5d-447c-a697-16496dd74697
@@ -926,12 +962,14 @@ proxies:
     headers:
       Host: ''
     path: /
-- name: '365,423,523,524|🇼TW-210.203.60.190-5316 #1'
+- country: 🇼 TW
+  name: '365,422,423,523,524|🇼TW-210.203.60.190-5316 #1'
   password: 6e1b9a65-884f-3aa9-9469-bf6ec0f08610
   port: 443
   server: taifo03a.kbservice.club
   skip-cert-verify: false
   type: trojan
+  udp: true
 - name: '365,523,524|🇼TW-36.227.200.25-5778 #1'
   password: ED177480-E516-11EA-8B44-BBC4E882BA0B
   port: 20261
@@ -1039,6 +1077,19 @@ proxies:
     headers:
       Host: ba0f678896ea70308a3ea611bb985d7b.mobgslb.tbcache.com
     path: /
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  country: 🇼 TW
+  h2-opts: {}
+  http-opts: {}
+  name: 422| TW_153
+  network: ws
+  port: 20521
+  server: 103.61.139.137
+  skip-cert-verify: true
+  type: vmess
+  uuid: f8d93cfb-3d5d-447c-a697-16496dd74697
   ws-path: /
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
@@ -1157,7 +1208,21 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 7dfb5f07-4d7b-3784-a20b-d6e1cb944a31
+  uuid: 6d8624c2-30cf-3b3c-a029-ff2a955bbef3
+- alterId: 0
+  cipher: auto
+  country: 🇨🇳 TW
+  h2-opts: {}
+  http-opts: {}
+  name: 535|disney_TW
+  network: tcp
+  port: 39999
+  server: twgnjby3f.kw1030v8.xyz
+  servername: www.douyin.com
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 765b0464-789d-375d-a549-8149d1f1dba1
 - cipher: chacha20-ietf-poly1305
   name: 545|0| 01 | 1x TW
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
@@ -1229,7 +1294,7 @@ proxies:
     headers:
       Host: fadawtawd.zhangwei.li
     path: /zh-cn
-- name: '546|🇹🇼 TW_155 #1'
+- name: '546|🇹🇼 TW_154 #1'
   password: 6e1b9a65-884f-3aa9-9469-bf6ec0f08610
   port: 443
   server: taifo03a.kbservice.club
