@@ -101,15 +101,15 @@ proxies:
   server: 149.22.95.183
   type: ss
 - cipher: chacha20-ietf-poly1305
-  country: 🇦CA
-  name: 343,365,422,524,525|🇨🇦CA-142.4.216.225-0288 | 2.19...
+  country: 🇨🇦CA
+  name: 343,365,524,525,535|Relay_🇨🇦CA-🇨🇦CA_53
   password: JIhN6rBKkaEboLNXVSv5rq
   port: 80
   server: ca225.vpnbook.com
   type: ss
 - cipher: chacha20-ietf-poly1305
-  country: 🇨 CZ
-  name: 343,365,422,524,525|🇨🇦CA-79.127.233.170-0164 | 48....
+  country: 🇨🇿 CZ
+  name: 343,365,524,525,535|Pool_🇨🇿 CZ_64
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 79.127.233.170
@@ -198,14 +198,14 @@ proxies:
       Host: inna.cfd
     path: /
 - cipher: chacha20-ietf-poly1305
-  country: 🇸 US
-  name: '365,422,524|🇨CA-38.180.211.126-0265 #1'
+  country: 🇺🇸US
+  name: 365,524,535|🇺🇸US_242
   password: Kuiqk2cP0BMWrgme9IfEvp
   port: 443
   server: 38.180.211.126
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 365,422,524,525|🇨🇦CA-142.4.216.225-0278 | 1.46...
+  name: '365,524,525,535|_30 #1'
   password: JIhN6rBKkaEboLNXVSv5rq
   port: 80
   server: 142.4.216.225
@@ -224,8 +224,8 @@ proxies:
   ws-opts:
     path: /
 - cipher: aes-128-cfb
-  country: 🇪 SE
-  name: '365,422,462,465,467,470,523,524|🇨🇦CA-45.154.204.13-0286 #1'
+  country: 🇦🇿AZ
+  name: '365,427,462,465,467,470,523,524|🇨🇦CA-45.154.204.13-0286 #1'
   obfs: http_post
   obfs-param: ''
   password: $$Turb0VPN$$
@@ -272,7 +272,7 @@ proxies:
   cipher: auto
   h2-opts: {}
   http-opts: {}
-  name: 365,479,481,523,524,531,562|VMESS--NF加拿大-ChatGPT-TikTok-Yo...
+  name: 365,479,481,523,524,531,535,562|VMESS--NF加拿大-ChatGPT-TikTok-Yo...
   network: ws
   port: 80
   server: 51.79.102.253
@@ -792,7 +792,7 @@ proxies:
   uuid: 2ed609d0-7467-471b-94a9-34a734ccc40a
   ws-opts:
     path: /cctv13/hd.m3u8
-- name: '365,422,423,523,524|🇨CA-148.113.207.224-4892 #1'
+- name: '365,423,523,524|🇨CA-148.113.207.224-4892 #1'
   password: acfef609-b3c7-4e52-b292-8921d5fca90d
   port: 443
   server: ca-full.privateip.net
@@ -826,16 +826,21 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: '365,523,524|🇨🇦CA-15.235.83.228-5029 #2'
+  country: 🇺🇸 US
+  h2-opts: {}
+  http-opts: {}
+  name: 365,481,523,524,535|🇺🇸 US_224
   network: ws
   port: 443
   server: 15.235.83.228
   servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
+    headers:
+      HOST: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
     path: /linkvws
 - cipher: aes-256-gcm
   name: '365,524|🇨🇦CA-134.195.196.149-5231 #2'
@@ -1297,7 +1302,7 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: 365,523,524,546|🇺🇸 US_183
+  name: '365,523,524,546|🇺🇸 US_183 #1'
   network: ws
   port: 443
   server: 15.235.83.228
@@ -3849,22 +3854,6 @@ proxies:
   ws-opts:
     headers:
       Host: onea.flha.ru
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '451,487,546|🇨🇦 _CA_加拿大 #1'
-  network: ws
-  port: '80'
-  server: 108.181.10.17
-  skip-cert-verify: true
-  tfo: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 474e8680-701f-11ee-b436-205c6d5f5d78
-  ws-opts:
-    headers:
-      Host: ''
     path: /
 - alterId: 0
   cipher: auto
@@ -7240,6 +7229,38 @@ proxies:
   server: 95.217.158.231
   tfo: false
   type: ss
+- alterId: 0
+  cipher: auto
+  name: 535|CA加拿大(mibei77.com 米贝节点分享)
+  network: ws
+  port: 443
+  server: 205.233.181.3
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: de94cc0a-0592-4969-b1fc-97ea8f0ea0b3
+  ws-headers:
+    Host: farid.1.berozha.ir
+  ws-path: /us.kkp.me.eu.org/aa
+- alterId: 0
+  cipher: auto
+  country: 🏁ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 535|Relay_🏁ZZ-🇨🇦CA_284
+  network: ws
+  port: 443
+  server: www.speedtest.net
+  servername: blaze-cana-126.blazeservers1.site
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: e2fb28b8-a457-4bd2-801e-56fdcccbd88e
+  ws-opts:
+    headers:
+      HOST: blaze-cana-126.blazeservers1.site
+    path: /linkvkwsss
 - cipher: chacha20-ietf-poly1305
   name: 545|0|🇦加拿大 01 | 1x CA
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
@@ -7254,6 +7275,19 @@ proxies:
   server: free.2weradf.xyz
   type: ss
   udp: true
+- alterId: 0
+  cipher: auto
+  name: 546|🇨🇦 _CA_加拿大
+  network: ws
+  port: '80'
+  server: 108.181.10.17
+  tls: false
+  type: vmess
+  uuid: 474e8680-701f-11ee-b436-205c6d5f5d78
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
 - alterId: 0
   cipher: auto
   name: 546|加拿大_081818123
