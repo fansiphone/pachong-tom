@@ -85,14 +85,6 @@ proxies:
     headers:
       Host: download.windowsupdate.com
     path: /download
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: '114,413|🇹🇼 TW_1|4.2MB/s|GPT⁺|YT-TW|NF|... #1'
-  password: 0424dad0-66ed-4fc5-a9df-a60eee147383
-  port: 10060
-  server: 114.46.126.9
-  tfo: false
-  type: ss
 - alterId: 0
   cipher: auto
   name: '116,418|3x备用专线台湾1-1B #1'
@@ -116,7 +108,7 @@ proxies:
 - alterId: 0
   cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: '293,365,490,491,502,503,524,535,543,561,566,569|🇹🇼 台湾|@stairnode #2'
+  name: '293,365,490,491,502,503,524,543,561,566,569|🇹🇼 台湾|@stairnode #1'
   password: 72ba05a3-632e-490b-ad00-158578664c18
   port: 10032
   server: 125.230.12.246
@@ -127,7 +119,7 @@ proxies:
 - alterId: 0
   cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: '293,365,490,491,502,503,524,535,543,561,566,569|🇹🇼 台湾2|@stairnode #2'
+  name: '293,365,490,491,502,503,524,543,561,566,569|🇹🇼 台湾2|@stairnode #1'
   password: befbdd4b-0cb5-42f1-9aad-7aae3ba11ed9
   port: 10121
   server: 125.229.88.58
@@ -389,7 +381,7 @@ proxies:
   skip-cert-verify: false
   type: trojan
 - cipher: aes-256-cfb
-  name: 365,524,525,535,565|29|TW_speednode_0055
+  name: 365,422,524,525,565|29|TW_speednode_0055
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 154.223.20.79
@@ -397,15 +389,12 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  country: 🇹🇼TW
-  h2-opts: {}
-  http-opts: {}
-  name: 365,424,481,523,524,525,535|🇹🇼TW_181
+  name: 365,424,481,523,524,525|🇨🇳TW-103.61.139.137-0348 | 0.0...
   network: ws
   port: 20521
   server: 103.61.139.137
   servername: ''
-  skip-cert-verify: true
+  skip-cert-verify: false
   tls: false
   type: vmess
   uuid: f8d93cfb-3d5d-447c-a697-16496dd74697
@@ -949,24 +938,28 @@ proxies:
     headers:
       Host: us3.guolicheng.cyou
     path: /suti/us3?ed=2048
-- name: '365,423,523,524|🇹TW-60.250.152.229-4823 #1'
+- country: 🇨 CN
+  name: '365,422,423,523,524|🇹TW-60.250.152.229-4823 #1'
   password: 6e1b9a65-884f-3aa9-9469-bf6ec0f08610
   port: 3462
   server: a03.taipeicitygovernment.cn.ua
   skip-cert-verify: false
   type: trojan
+  udp: true
 - cipher: chacha20-ietf-poly1305
   name: '365,524|🇹🇼TW-223.165.4.173-4847 #1'
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 223.165.4.173
   type: ss
-- name: '365,423,523,524|🇼TW-210.203.60.190-4899 #1'
+- country: 🇼 TW
+  name: '365,422,423,523,524|🇼TW-210.203.60.190-4899 #1'
   password: 6e1b9a65-884f-3aa9-9469-bf6ec0f08610
   port: 443
   server: taifo03a.kbservice.club
   skip-cert-verify: false
   type: trojan
+  udp: true
 - name: '365,523,524|TW-36.227.210.110-5421 #1'
   password: ED177480-E516-11EA-8B44-BBC4E882BA0B
   port: 20261
@@ -1075,6 +1068,19 @@ proxies:
       Host: ba0f678896ea70308a3ea611bb985d7b.mobgslb.tbcache.com
     path: /
   ws-path: /
+- alterId: 0
+  cipher: auto
+  country: 🇼 TW
+  h2-opts: {}
+  http-opts: {}
+  name: 422| TW_129
+  network: ws
+  port: 20521
+  server: 103.61.139.137
+  skip-cert-verify: true
+  type: vmess
+  uuid: f8d93cfb-3d5d-447c-a697-16496dd74697
+  ws-path: /
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: 452|18|🇹🇼 台湾|@ripaojiedian
@@ -1156,18 +1162,6 @@ proxies:
   server: cn01.efan8867801.xyz
   tfo: false
   type: ss
-- alterId: 0
-  cipher: auto
-  country: 🇨🇳 TW
-  h2-opts: {}
-  http-opts: {}
-  name: 535|disney_TW
-  network: tcp
-  port: 20788
-  server: 45.121.48.174
-  skip-cert-verify: true
-  type: vmess
-  uuid: bfc630aa-4598-4481-9338-cac15e3e6b65
 - cipher: chacha20-ietf-poly1305
   name: 545|0| 01 | 1x TW
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
@@ -1258,6 +1252,13 @@ proxies:
   server: tuntro011.instconn.com
   skip-cert-verify: false
   sni: tuntro011.instconn.com
+  type: trojan
+- name: 555|🇹🇼 台湾 178
+  password: 4900dfb4-32e6-40d2-859f-c7ed7acf7703
+  port: 39769
+  server: cdntwa.xiaomispeed.com
+  skip-cert-verify: true
+  sni: cdntwa.xiaomispeed.com
   type: trojan
 - alterId: 0
   cipher: auto
