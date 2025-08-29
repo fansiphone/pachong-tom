@@ -134,15 +134,6 @@ proxies:
     headers:
       Host: download.windowsupdate.com
     path: /download
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 114,413,553|🇨🇳 台湾 | TWN 32
-  password: 02427771-d094-4380-8beb-804695abda16
-  port: 10014
-  server: 118.170.218.227
-  tfo: false
-  type: ss
-  udp: true
 - alterId: 0
   cipher: auto
   name: '116,418|3x备用专线台湾1-1B #1'
@@ -163,31 +154,27 @@ proxies:
   type: vmess
   udp: true
   uuid: a8685516-a3c7-4559-af66-ce04aef102d2
-- name: 242|TW
-  network: ws
-  password: Aimer
-  port: 2096
-  server: 167.68.4.223
-  skip-cert-verify: true
-  sni: epcca.ambercc.filegear-sg.me
-  type: trojan
-  ws-opts:
-    path: '%2F'
-- cipher: chacha20-ietf-poly1305
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: '293,365,490,491,502,503,524,530,543,566,569|🇹🇼 台湾|@stairnode #1'
+  name: '293,365,490,491,502,503,524,530,535,543,561,566,569|🇹🇼 台湾|@stairnode #2'
   password: 87db2955-048b-4ac9-bf8d-fb1bfe760e71
   port: 10148
   server: 36.232.74.25
+  skip-cert-verify: true
   tfo: false
+  tls: true
   type: ss
-- cipher: chacha20-ietf-poly1305
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: '293,365,490,491,502,503,524,530,543,566,569|🇹🇼 台湾2|@stairnode #1'
+  name: '293,365,490,491,502,503,524,530,535,543,561,566,569|🇹🇼 台湾2|@stairnode #2'
   password: 0a28538e-d7a3-4185-928a-c8bd49bb9c6b
   port: 10141
   server: 36.232.100.114
+  skip-cert-verify: true
   tfo: false
+  tls: true
   type: ss
 - cipher: aes-256-cfb
   name: 343|🇹🇼1 |  2.1MB/s
@@ -517,7 +504,7 @@ proxies:
   udp: true
   uuid: 52704bc6-015d-4c36-bead-87053a8a9641
 - cipher: aes-256-cfb
-  name: 365,524,525,565|29|TW_speednode_0055
+  name: 365,422,524,525,535,565|29|TW_speednode_0055
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 154.223.20.79
@@ -525,12 +512,15 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 365,424,481,523,524,525,546|台湾_082918016 L0
+  country: 🇹🇼TW
+  h2-opts: {}
+  http-opts: {}
+  name: 365,424,481,523,524,525,535,546|台湾_082918016 L0
   network: ws
   port: '20521'
   server: 103.61.139.137
   servername: ''
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: f8d93cfb-3d5d-447c-a697-16496dd74697
@@ -1058,18 +1048,22 @@ proxies:
     headers:
       Host: us3.guolicheng.cyou
     path: /suti/us3?ed=2048
-- name: '365,423,523,524|TW-211.20.245.139-4846 #1'
+- country: 🇨 CN
+  name: '365,422,423,523,524|TW-211.20.245.139-4846 #1'
   password: 6e1b9a65-884f-3aa9-9469-bf6ec0f08610
   port: 3462
   server: a03.taipeicitygovernment.cn.ua
   skip-cert-verify: false
   type: trojan
-- name: '365,423,523,524|🇼TW-210.203.60.190-4921 #1'
+  udp: true
+- country: 🇼 TW
+  name: 365,422,423,523,524,540|yandex-17
   password: 6e1b9a65-884f-3aa9-9469-bf6ec0f08610
   port: 443
   server: taifo03a.kbservice.club
-  skip-cert-verify: false
+  skip-cert-verify: true
   type: trojan
+  udp: true
 - name: '365,523,524|TW-36.227.210.110-5441 #1'
   password: ED177480-E516-11EA-8B44-BBC4E882BA0B
   port: 20261
@@ -1178,6 +1172,19 @@ proxies:
       Host: ba0f678896ea70308a3ea611bb985d7b.mobgslb.tbcache.com
     path: /
   ws-path: /
+- alterId: 0
+  cipher: auto
+  country: 🇼 TW
+  h2-opts: {}
+  http-opts: {}
+  name: 422| TW_126
+  network: ws
+  port: 20521
+  server: 103.61.139.137
+  skip-cert-verify: true
+  type: vmess
+  uuid: f8d93cfb-3d5d-447c-a697-16496dd74697
+  ws-path: /
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: 452|18|🇹🇼 台湾|@ripaojiedian
@@ -1203,6 +1210,19 @@ proxies:
     headers:
       Host: tw1bQiWSE4x.fzbqfrse.xyz
     path: /video/GQ2qE5Us9g
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 478|👉🆔 @MoftConfig📡Taiwan
+  network: tcp
+  port: 20413
+  reality-opts:
+    public-key: BQk3bbYxbWAzoi8F0gl7oiM90YO7wFNuwTJRxaWtWFg
+    short-id: bd2ca454
+  server: 111.243.171.244
+  servername: www.visa.com
+  tls: false
+  type: vless
+  uuid: f5202085-8402-4b17-9e35-58ccd1b7f79b
 - cipher: aes-256-gcm
   client-fingerprint: chrome
   name: '500,504|15|🇹🇼 台湾|@ripaojiedian #1'
@@ -1259,6 +1279,18 @@ proxies:
   server: cn01.efan8867801.xyz
   tfo: false
   type: ss
+- alterId: 0
+  cipher: auto
+  country: 🇨🇳 TW
+  h2-opts: {}
+  http-opts: {}
+  name: 535|disney_TW
+  network: tcp
+  port: 20788
+  server: 45.121.48.174
+  skip-cert-verify: true
+  type: vmess
+  uuid: bfc630aa-4598-4481-9338-cac15e3e6b65
 - cipher: chacha20-ietf-poly1305
   name: 545|0| 01 | 1x TW
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
