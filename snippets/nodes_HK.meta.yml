@@ -836,7 +836,7 @@ proxies:
     path: /stream?ed=2048
 - auth: 32d3795c-7e38-425a-8a8c-9d195d1cb351
   down: 100
-  name: 185,540|yandex-431
+  name: 185,540|yandex-737
   password: 32d3795c-7e38-425a-8a8c-9d195d1cb351
   port: 30102
   server: 154.16.183.55
@@ -846,7 +846,7 @@ proxies:
   up: 100
 - auth: 32d3795c-7e38-425a-8a8c-9d195d1cb351
   down: 100
-  name: 185,540|yandex-432
+  name: 185,540|yandex-738
   password: 32d3795c-7e38-425a-8a8c-9d195d1cb351
   port: 30102
   server: 62.72.163.251
@@ -856,7 +856,7 @@ proxies:
   up: 100
 - auth: 32d3795c-7e38-425a-8a8c-9d195d1cb351
   down: 100
-  name: 185,540|yandex-433
+  name: 185,540|yandex-739
   password: 32d3795c-7e38-425a-8a8c-9d195d1cb351
   port: 30102
   server: 154.16.183.27
@@ -866,7 +866,7 @@ proxies:
   up: 100
 - auth: 32d3795c-7e38-425a-8a8c-9d195d1cb351
   down: 100
-  name: 185,540|yandex-434
+  name: 185,540|yandex-740
   password: 32d3795c-7e38-425a-8a8c-9d195d1cb351
   port: 30102
   server: 154.16.183.44
@@ -874,30 +874,48 @@ proxies:
   type: hysteria2
   udp: true
   up: 100
-- name: 242|HK
+- name: 242|🇭🇰 HK
   network: ws
   port: 65056
   server: 202.181.24.70
+  skip-cert-verify: true
+  tfo: false
   tls: false
   type: vless
   uuid: c9d0ddb5-f2c1-4111-a92d-9798a2348a56
   ws-opts:
-    path: '%2Fyz'
+    path: /yz
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '242|HK #1'
+  name: 242|🇭🇰 HK 2
   network: tcp
   port: 46716
   reality-opts:
     public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
   server: agaungzhou01.bumbleshrimp.com
   servername: www.nvidia.com
-  tls: false
+  skip-cert-verify: true
+  tfo: false
+  tls: true
   type: vless
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- alterId: 0
+  cipher: none
+  name: 242|🇭🇰 HK-Eons_Data_Communications
+  network: ws
+  port: 443
+  server: www.visa.com.tw
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: df7a96e2-c663-48ed-9713-1c144705f79e
+  ws-opts:
+    headers:
+      Host: ee-boston-therapist-cleaning.trycloudflare.com
+    path: /vmess-argo?ed=2048
 - client-fingerprint: safari
   flow: xtls-rprx-vision
-  name: '242|HK #2'
+  name: 242|🇭🇰 HK 3
   network: tcp
   port: 25791
   reality-opts:
@@ -905,12 +923,13 @@ proxies:
     short-id: 57d9de10de16538d
   server: 34.92.65.82
   servername: cloudreve.mnm.pp.ua
-  tls: false
+  skip-cert-verify: true
+  tfo: false
+  tls: true
   type: vless
   uuid: 711007f1-9cdf-4fd9-b5d4-d67aee173281
 - cipher: aes-256-gcm
-  client-fingerprint: chrome
-  name: '293,476,490,491,502,503,543,566,569|🇭🇰 香港2|@stairnode #1'
+  name: '293,476,490,491,502,503|11| 香港2|@ripaojiedian #1'
   password: 9bfdde71b4c0
   plugin: v2ray-plugin
   plugin-opts:
@@ -926,8 +945,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  name: '293,490,491,502,503,543,566,569|🇭🇰 香港3|@stairnode #3'
+  name: '293,490,491,502,503|11|🇭🇰 香港3|@ripaojiedian #3'
   port: 27549
   server: 103.224.80.26
   skip-cert-verify: false
@@ -937,8 +955,7 @@ proxies:
   uuid: 907a372b-b6b8-41df-9d56-a244b4e1a320
 - alterId: 0
   cipher: auto
-  name: '293,327,481,489,493,494,501,502,503,530,531,538,544,546|11|🇭🇰 香港3|@ripaojiedian
-    #4'
+  name: 293,327,481,489,493,494,501,502,503,530,531,546|10|🇭🇰 香港3|@ripaojiedian
   network: tcp
   port: 27549
   server: 103.224.80.26
@@ -965,8 +982,29 @@ proxies:
   ws-headers:
     Host: 47.239.183.87
   ws-path: /
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: '293,543|🇭🇰 香港3|@ripaojiedian #6'
+  port: 51571
+  server: 38.147.188.96
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 740ec514-d2bd-45bb-b410-7ea5a05cdd87
+- alterId: 0
+  cipher: auto
+  name: '293,489,538,544|香港3|@ripaojiedian #5'
+  network: tcp
+  port: '51571'
+  server: 38.147.188.96
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 740ec514-d2bd-45bb-b410-7ea5a05cdd87
 - auth: 38589924-caf7-4857-812b-80020febd3ff
-  name: '327,482,489,490,491,493,494,501,538,546,567|香港 #8'
+  name: '327,482,489,490,491,493,494,501,538,546,567|香港 #7'
   password: 38589924-caf7-4857-812b-80020febd3ff
   port: 10880
   server: ssssssssssssssssssssssssssss-mualhk229.hizui.cn
@@ -984,7 +1022,7 @@ proxies:
   tls: false
   type: hysteria2
 - auth: 66975a45-dd40-4854-ba7b-80157a38dd64
-  name: '327,482,489,490,491,493,494,501,538,546|8|香港 #1 #2'
+  name: '327,489,490,491,493,494,546,567|香港 #1 #6'
   password: 66975a45-dd40-4854-ba7b-80157a38dd64
   port: 40001
   server: xg.dimoyun.top
@@ -993,7 +1031,7 @@ proxies:
   tls: false
   type: hysteria2
 - auth: 66975a45-dd40-4854-ba7b-80157a38dd64
-  name: '327,482,489,490,491,493,494,501,538,546|8|香港2@vlees_v2rayng #2'
+  name: '327,489,490,491,493,494,546,567|香港2@vlees_v2rayng #3'
   password: 66975a45-dd40-4854-ba7b-80157a38dd64
   port: 40001
   server: xg2.dimoyun.top
@@ -1002,7 +1040,7 @@ proxies:
   tls: false
   type: hysteria2
 - auth: Cyi3TPih9FtQRwsZAh8aT6ynGJk
-  name: '327,476,482,489,490,491,493,494,501,538,546,567|HK #16'
+  name: '327,476,482,489,490,491,493,494,501,538,546,567|HK #13'
   password: Cyi3TPih9FtQRwsZAh8aT6ynGJk
   port: 2166
   server: 54.169.144.240
@@ -1042,7 +1080,7 @@ proxies:
 - auth: XK52yierGckONMJWbJnuskD3unI
   country: 🇭🇰HK
   delay: 1479
-  name: '327,482,489,490,491,493,494,501,515,538,546,567|香港 #1 #6'
+  name: '327,482,489,490,491,493,494,501,515,538,546,567|香港 #2 #4'
   password: XK52yierGckONMJWbJnuskD3unI
   port: 12854
   server: 47.242.195.121
@@ -1303,7 +1341,7 @@ proxies:
   uuid: aa15b97a-24b1-3a31-824a-bc52f5a15bac
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '349,350,481|🔥Join+Telegram:@Farah_VPN🟣 #1571'
+  name: '349,350,481|🔥Join+Telegram:@Farah_VPN🟣 #2147'
   network: tcp
   port: 31800
   reality-opts:
@@ -1316,7 +1354,7 @@ proxies:
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '349,350,481|🔥Join+Telegram:@Farah_VPN🟣 #4105'
+  name: '349,350,481|🔥Join+Telegram:@Farah_VPN🟣 #2927'
   network: tcp
   port: 41279
   reality-opts:
@@ -1566,7 +1604,7 @@ proxies:
   type: trojan
   udp: true
 - client-fingerprint: chrome
-  name: '349,350,351,481|🔥Join+Telegram:@Farah_VPN🟣 #7985'
+  name: '349,350,351,479,481|🔥Join+Telegram:@Farah_VPN🟣 #7895'
   network: tcp
   password: 1e63e585ab2fef3adcc9ea75a62abc23
   port: 443
@@ -1993,7 +2031,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: '361|🇭🇰 香港 #1'
+  name: '361|🇭🇰 香港 #2'
   port: 19901
   server: xg.dashuai.cyou
   tls: false
@@ -2077,7 +2115,7 @@ proxies:
   port: 8316
   server: 18.162.146.85
   type: ss
-- name: 365,481,523,524,525,546|香港_083018023+L0
+- name: 365,481,523,524,525,546|香港_083104024+L0
   password: 2ee85121-31de-4581-a492-eb00f606e392
   port: 443
   server: 103.252.116.138
@@ -2128,9 +2166,9 @@ proxies:
   type: ss
 - alterId: 2
   cipher: auto
-  name: 365,481,523,524,525,531,540,567|香港5|@ripaojiedian
+  name: 365,459,481,489,523,524,525,531,540|yandex-27
   network: ws
-  port: '80'
+  port: 80
   server: hkt.gotochinatown.net
   servername: ''
   skip-cert-verify: false
@@ -2157,7 +2195,7 @@ proxies:
     path: /zh-cn/download
 - alterId: 2
   cipher: auto
-  name: '365,424,459,460,461,481,489,523,524,531|🇭🇰 香港 电讯盈科有限公司 #1'
+  name: '365,424,481,523,524,531,546|🇭🇰 香港 电讯盈科有限公司 #2'
   network: ws
   port: '30807'
   server: v10.heduian.link
@@ -2944,7 +2982,7 @@ proxies:
     path: /
 - alterId: 2
   cipher: auto
-  name: 365,476,481,523,524,540|yandex-683
+  name: 365,476,481,523,524,540|yandex-26
   network: ws
   port: 30807
   server: v10.heduian.link
@@ -2988,16 +3026,16 @@ proxies:
   protocol-param: 11275:KWQHheqWo8
   server: 231103levelx.unclemanco.com
   type: ssr
-- country: 🇺🇸 US
-  name: 365,422,423,523,524,540|yandex-707
+- country: 🇸 US
+  name: 365,422,423,523,524,540|yandex-50
   password: 92435aa8-f3b6-466a-ad58-c55cbb6d2acf
   port: 443
   server: hinet.mjt000.com
   skip-cert-verify: true
   type: trojan
   udp: true
-- country: 🇸 US
-  name: 365,422,423,523,524,540|yandex-709
+- country: 🇺🇸 US
+  name: 365,422,423,523,524,540|yandex-52
   password: ea17601d-8ebf-4431-b815-4d644821ca7e
   port: 443
   server: kz.mjt000.com
@@ -3005,7 +3043,7 @@ proxies:
   type: trojan
   udp: true
 - country: 🇺🇸 US
-  name: 365,422,423,523,524,540|yandex-708
+  name: 365,422,423,523,524,540|yandex-51
   password: e4af2638-bb12-4e4a-84f1-a032e23ca63f
   port: 443
   server: usla.mjt000.com
@@ -3562,6 +3600,24 @@ proxies:
     headers:
       Host: 081d1aad-rwcsg0-1n7jq.bn.p5pv.com
     path: /
+- cipher: aes-256-cfb
+  name: 383|🇭🇰 HK, Kowloon
+  password: amazonskr05
+  port: 443
+  server: 47.129.170.82
+  type: ss
+- cipher: aes-256-cfb
+  name: 383|🇭🇰 HK, New Territories
+  password: amazonskr05
+  port: 443
+  server: 54.95.5.168
+  type: ss
+- cipher: aes-256-cfb
+  name: 383|🇭🇰 HK, Los Angeles
+  password: amazonskr05
+  port: 443
+  server: 44.244.21.125
+  type: ss
 - alpn:
   - h2
   - http/1.1
@@ -3679,28 +3735,28 @@ proxies:
     path: /
   ws-path: /
 - cipher: chacha20-ietf-poly1305
-  name: 408,540|yandex-1344
+  name: 408,540|yandex-126
   password: 2e73bf8e-8108-46cf-9fc7-6e1845436eda
   port: 22800
   server: 156.224.77.215
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 408,540|yandex-1345
+  name: 408,540|yandex-127
   password: cdc8f95a-8fbd-4339-8ac7-e9da977fbb84
   port: 22800
   server: 156.224.77.215
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 408,540|yandex-1346
+  name: 408,540|yandex-128
   password: 92970739-a656-472e-b7f7-be0e68fc12f0
   port: 22800
   server: 156.224.77.215
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 408,540|yandex-1347
+  name: 408,540|yandex-129
   password: 5e13672c-b195-4e6e-8f03-e54ae0a921a5
   port: 34061
   server: ldu.izenny.com
@@ -3708,7 +3764,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 408,540|yandex-1348
+  name: 408,540|yandex-130
   port: 45051
   server: xdd.dashuai.cyou
   skip-cert-verify: true
@@ -3717,56 +3773,56 @@ proxies:
   udp: true
   uuid: dd565d75-3bc9-4469-9811-5e1f1f364949
 - cipher: chacha20-ietf-poly1305
-  name: 408,540|yandex-1349
+  name: 408,540|yandex-131
   password: f1c0ce52-29c5-4cd9-af5c-53d7c72217f4
   port: 22800
   server: 156.224.77.215
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 408,540|yandex-1350
+  name: 408,540|yandex-132
   password: c69bd381-4a76-46c9-8033-856b79496045
   port: 22800
   server: 156.224.77.215
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 408,540|yandex-1351
+  name: 408,540|yandex-133
   password: a9b64743-c34b-412a-8352-3194b864ab36
   port: 22800
   server: 156.224.77.215
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 408,540|yandex-1352
+  name: 408,540|yandex-134
   password: db9ba59c-25ea-4367-97de-42bbbe05cfe1
   port: 22800
   server: 156.224.77.215
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 408,540|yandex-1353
+  name: 408,540|yandex-135
   password: 57babdde-542e-4a5f-8a90-58fbe7ca9753
   port: 22800
   server: 156.224.77.215
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 408,540|yandex-1354
+  name: 408,540|yandex-136
   password: e334da27-ed2b-4547-aac6-86e20277df41
   port: 22800
   server: 156.224.77.215
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 408,540|yandex-1355
+  name: 408,540|yandex-137
   password: bee39ee8-92f9-4ede-ac56-59b874d27669
   port: 22800
   server: 156.224.77.215
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 408,540|yandex-1356
+  name: 408,540|yandex-138
   password: f6cdd372-11ff-49bb-85d6-97788bb2d52b
   port: 22800
   server: 156.224.77.215
@@ -3774,7 +3830,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 408,540|yandex-1357
+  name: 408,540|yandex-139
   port: 50051
   server: xh.dashuai.cyou
   skip-cert-verify: true
@@ -3783,7 +3839,7 @@ proxies:
   udp: true
   uuid: dd565d75-3bc9-4469-9811-5e1f1f364949
 - cipher: chacha20-ietf-poly1305
-  name: 408,540|yandex-1358
+  name: 408,540|yandex-140
   password: 7901bce6-aa63-413a-805d-e81ae1386705
   port: 22800
   server: 156.224.77.215
@@ -3792,26 +3848,6 @@ proxies:
 - alterId: 2
   cipher: auto
   country: 🇰 HK
-  h2-opts: {}
-  http-opts: {}
-  name: 422,459,460,461,489,530|HK-219.77.227.121-051
-  network: ws
-  port: 80
-  server: hkt.gotochinatown.net
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
-  ws-headers:
-    Host: hkt.gotochinatown.net
-  ws-opts:
-    headers:
-      Host: ''
-    path: ''
-  ws-path: /
-- alterId: 2
-  cipher: auto
-  country: 🇭🇰 HK
   h2-opts: {}
   http-opts: {}
   name: 422,530|🇭🇰HK-1.36.212.58-052
@@ -3826,28 +3862,10 @@ proxies:
   ws-headers:
     Host: baidu.com
   ws-path: /oooo
-- alterId: 2
-  cipher: auto
-  country: 🇰HK
-  h2-opts: {}
-  http-opts: {}
-  name: 424,427,546|🇭🇰 HK_59
-  network: ws
-  port: 80
-  server: hkt.gotochinatown.net
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
 - alpn:
   - h3
   client-fingerprint: random
-  name: '440|HK #3'
+  name: 440|HK
   network: ws
   port: 443
   server: 46.3.26.12
@@ -3863,7 +3881,7 @@ proxies:
 - alpn:
   - h3
   client-fingerprint: random
-  name: '440|HK #4'
+  name: '440|HK #1'
   network: ws
   port: 443
   server: 46.3.26.12
@@ -3879,7 +3897,7 @@ proxies:
 - alpn:
   - h3
   client-fingerprint: random
-  name: '440|HK #5'
+  name: '440|HK #2'
   network: ws
   port: 443
   server: 1.65.209.123
@@ -3895,7 +3913,7 @@ proxies:
 - alpn:
   - h3
   client-fingerprint: random
-  name: '440|HK #6'
+  name: '440|HK #3'
   network: ws
   port: 443
   server: 219.76.13.169
@@ -3911,7 +3929,7 @@ proxies:
 - alpn:
   - h3
   client-fingerprint: random
-  name: '440|HK #7'
+  name: '440|HK #4'
   network: ws
   port: 443
   server: 219.76.13.169
@@ -4954,6 +4972,758 @@ proxies:
     headers:
       host: fv.ylka.dpdns.org
     path: /?ed=2560
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 479| Hong Kong
+  network: tcp
+  port: 443
+  server: hon5.vpntype.dev
+  tls: true
+  type: vless
+  uuid: c1410eab-cf4a-4ec6-9fc0-674e3c138ab8
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 479|🇭🇰 Hong Kong
+  network: tcp
+  port: 443
+  server: hon5.vpntype.dev
+  tls: true
+  type: vless
+  uuid: 68866afe-3297-4fe8-8979-c1166cb0035a
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '479|🇭🇰 Hong Kong #1'
+  network: tcp
+  port: 443
+  server: hon5.vpntype.dev
+  tls: true
+  type: vless
+  uuid: 6ce8daac-3faa-483b-960c-34a473547109
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '479| Hong Kong #1'
+  network: tcp
+  port: 443
+  server: hon5.vpntype.dev
+  tls: true
+  type: vless
+  uuid: 9b04c449-a55d-4f74-a602-f9d735872a05
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '479| Hong Kong #2'
+  network: tcp
+  port: 443
+  server: hon5.vpntype.dev
+  tls: true
+  type: vless
+  uuid: 99648902-df5a-40ed-a768-cd742188fd78
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '479| Hong Kong #3'
+  network: tcp
+  port: 443
+  server: hon5.vpntype.dev
+  tls: true
+  type: vless
+  uuid: fe4751e3-3ee3-4325-8513-ee871b8cb311
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '479| Hong Kong #4'
+  network: tcp
+  port: 443
+  server: hon5.vpntype.dev
+  tls: true
+  type: vless
+  uuid: 559dff5e-619b-45c9-ad4b-7e920431062b
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '479| Hong Kong #5'
+  network: tcp
+  port: 443
+  server: hon5.vpntype.dev
+  tls: true
+  type: vless
+  uuid: da3bcc7f-4b2a-4f79-8e87-8f0e05b44375
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '479| Hong Kong #6'
+  network: tcp
+  port: 443
+  server: hon5.vpntype.dev
+  tls: true
+  type: vless
+  uuid: 1319e36c-9ac6-423b-b1a4-85e8c572df19
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '479| Hong Kong #7'
+  network: tcp
+  port: 443
+  server: hon5.vpntype.dev
+  tls: true
+  type: vless
+  uuid: ca889194-0ed7-446b-87a9-02fd088b0bbb
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '479|🇭🇰 Hong Kong #2'
+  network: tcp
+  port: 443
+  server: hon5.vpntype.dev
+  tls: true
+  type: vless
+  uuid: aea4096f-47ca-4ecb-8874-10fc971a9dae
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '479| Hong Kong #8'
+  network: tcp
+  port: 443
+  server: hon5.vpntype.dev
+  tls: true
+  type: vless
+  uuid: 4de270ee-8019-4853-9fb1-348912ed428c
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '479| Hong Kong #9'
+  network: tcp
+  port: 443
+  server: hon5.vpntype.dev
+  tls: true
+  type: vless
+  uuid: ef1b6d3e-5bb3-47f9-a0d7-10ba48b13545
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '479|🇭🇰 Hong Kong #3'
+  network: tcp
+  port: 443
+  server: hon5.vpntype.dev
+  tls: true
+  type: vless
+  uuid: 9e4afa33-fd1d-4ec3-8653-4f31360e03e2
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '479| Hong Kong #10'
+  network: tcp
+  port: 443
+  server: hon5.vpntype.dev
+  tls: true
+  type: vless
+  uuid: 2fb6ba06-d225-4db4-8299-2661b8980997
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '479|🇭🇰 Hong Kong #4'
+  network: tcp
+  port: 443
+  server: hon5.vpntype.dev
+  tls: true
+  type: vless
+  uuid: d9341c93-298f-4e90-ad9f-efa984e3c529
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '479| Hong Kong #11'
+  network: tcp
+  port: 443
+  server: hon5.vpntype.dev
+  tls: true
+  type: vless
+  uuid: 455613c8-0bb0-4e5c-a1ce-797a926060bd
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '479| Hong Kong #12'
+  network: tcp
+  port: 443
+  server: hon5.vpntype.dev
+  tls: true
+  type: vless
+  uuid: 64400be0-6e4a-4c65-9f00-fa641a5ba94c
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '479| Hong Kong #13'
+  network: tcp
+  port: 443
+  server: hon5.vpntype.dev
+  tls: true
+  type: vless
+  uuid: 73c95e0c-d2d8-4b9a-96b0-a1d2fbd347f3
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '479| Hong Kong #14'
+  network: tcp
+  port: 443
+  server: hon5.vpntype.dev
+  tls: true
+  type: vless
+  uuid: ee3bc75b-52ad-4d62-a505-ba3d10f073a2
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '479| Hong Kong #15'
+  network: tcp
+  port: 443
+  server: hon5.vpntype.dev
+  tls: true
+  type: vless
+  uuid: 2395ccc4-dd88-4a4c-be0e-c52875ed5507
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '479| Hong Kong #16'
+  network: tcp
+  port: 443
+  server: hon5.vpntype.dev
+  tls: true
+  type: vless
+  uuid: 1afac872-dae8-47e9-8d96-f62a86201a49
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '479|🇭🇰 Hong Kong #5'
+  network: tcp
+  port: 443
+  server: hon5.vpntype.dev
+  tls: true
+  type: vless
+  uuid: 8c4b6e8a-2840-4136-80d0-ccd0b93535a3
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '479| Hong Kong #17'
+  network: tcp
+  port: 443
+  server: hon5.vpntype.dev
+  tls: true
+  type: vless
+  uuid: bb78e295-9164-4e54-9b2d-d2daf0302a4b
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '479| Hong Kong #18'
+  network: tcp
+  port: 443
+  server: hon5.vpntype.dev
+  tls: true
+  type: vless
+  uuid: 8e036c79-b0c7-4a41-8990-3cb014e516eb
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '479|🇭🇰 Hong Kong #6'
+  network: tcp
+  port: 443
+  server: hon5.vpntype.dev
+  tls: true
+  type: vless
+  uuid: 5fef45ee-7474-43bc-822c-ab46a92caa87
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '479|🇭🇰 Hong Kong #7'
+  network: tcp
+  port: 443
+  server: hon5.vpntype.dev
+  tls: true
+  type: vless
+  uuid: 3a14b3ad-648e-41c4-a796-bcb53e07812f
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 479|🇭 Hong Kong
+  network: tcp
+  port: 443
+  server: hon5.vpntype.dev
+  tls: true
+  type: vless
+  uuid: 87c2c19b-38ad-4e1f-8743-e5345724d4e6
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '479| Hong Kong #19'
+  network: tcp
+  port: 443
+  server: hon5.vpntype.dev
+  tls: true
+  type: vless
+  uuid: a4f9334a-1db2-4abc-aa09-2b4697cec681
+- name: 479|👉🆔 @MoftConfig📡Hong Kong
+  network: ws
+  port: 443
+  server: 47.57.190.3
+  servername: clawhk.costs.asia
+  tls: true
+  type: vless
+  uuid: a5c6f225-4cb9-4e58-edea-1e0793b656b7
+  ws-opts:
+    path: '%2Fbing'
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '479| Hong Kong #20'
+  network: tcp
+  port: 443
+  server: hon5.vpntype.dev
+  tls: true
+  type: vless
+  uuid: fc1e090d-057d-44f5-99d7-60de2f39ec83
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 479|🆔 @MoftConfig📡🇰Hong Kong
+  network: tcp
+  port: 443
+  server: hon5.vpntype.dev
+  tls: true
+  type: vless
+  uuid: e4ea91f2-4305-4ae1-9374-9d0d6ffdb91a
+- name: 479|👉🆔 @MoftConfig📡🇰Hong Kong
+  password: cd41b9d7-df15-46ad-a778-257b0851525a
+  port: 443
+  server: 52.175.31.234
+  skip-cert-verify: true
+  sni: sg01.trojanyyds.xyz
+  type: trojan
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 479|🇰 Hong Kong
+  network: tcp
+  port: 443
+  server: hon5.vpntype.dev
+  tls: true
+  type: vless
+  uuid: 02015258-ffff-4fa9-9b73-cf6b12bbcfaf
+- name: 479|👉🆔 @MoftConfig📡🇭🇰Hong Kong
+  password: 607a2b12-058d-4fb8-826f-2489df00d062
+  port: 27102
+  server: 45.146.232.173
+  skip-cert-verify: false
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  type: trojan
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 479|🆔 @MoftConfig📡Hong Kong
+  network: tcp
+  port: 443
+  server: hon5.vpntype.dev
+  tls: true
+  type: vless
+  uuid: 4b2458b9-9555-4e59-a5bf-54d63c468bce
+- name: '479|👉🆔 @MoftConfig📡🇭🇰Hong Kong #1'
+  network: ws
+  port: 2083
+  server: 27.50.48.61
+  servername: ngedc.ambercc.filegear-sg.me
+  tls: true
+  type: vless
+  uuid: cf3df05c-bb63-427a-b48a-d8b1d9ada2c4
+  ws-opts:
+    path: '%2F%3Fed'
+- name: '479|[🏁]t.me/ConfigsHub #523'
+  network: tcp
+  password: 0979046d-90cc-4f58-9595-75ba19550d1c
+  port: 42881
+  server: aafrtpfxr.sgl02i9zjfegelp.5xfsur8v62.gosdk.xyz
+  skip-cert-verify: false
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  type: trojan
+- name: '479|[🏁]t.me/ConfigsHub #514'
+  password: Aimer
+  port: 10093
+  server: 206.237.13.106
+  skip-cert-verify: false
+  sni: agepj.ambercc.filegear-sg.me
+  type: trojan
+- name: '479|👉🆔 @MoftConfig📡🇰Hong Kong #3'
+  password: 699ceb45-ab95-4838-a534-dd914a936eb4
+  port: 50026
+  server: 5.83.221.31
+  sni: v2tw01.fuqiangren.com
+  type: trojan
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '479|👉🆔 @MoftConfig📡🇰Hong Kong #4'
+  network: tcp
+  port: 443
+  server: hon5.vpntype.dev
+  tls: true
+  type: vless
+  uuid: f4410110-1433-40aa-a8ca-f3b76ec773e6
+- name: '479|👉🆔 @MoftConfig📡🇰Hong Kong #5'
+  password: 0979046d-90cc-4f58-9595-75ba19550d1c
+  port: 42881
+  server: 45.146.232.172
+  skip-cert-verify: true
+  type: trojan
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '479|🇰 Hong Kong #1'
+  network: tcp
+  port: 443
+  server: hon5.vpntype.dev
+  tls: true
+  type: vless
+  uuid: 186b9808-508e-4905-85fd-d67b1a53de71
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '479|🇰 Hong Kong #2'
+  network: tcp
+  port: 443
+  server: hon5.vpntype.dev
+  tls: true
+  type: vless
+  uuid: c114debd-15b1-45ff-8ce7-d51acf0734c0
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '479|🇭🇰 Hong Kong #8'
+  network: tcp
+  port: 443
+  server: hon5.vpntype.dev
+  tls: true
+  type: vless
+  uuid: e30315da-aa56-43de-a7bb-8801588d5d84
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '479|🇭🇰 Hong Kong #9'
+  network: tcp
+  port: 443
+  server: hon5.vpntype.dev
+  tls: true
+  type: vless
+  uuid: cb20cb91-c7a7-4f4c-b491-bdd259966b69
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '479| Hong Kong #21'
+  network: tcp
+  port: 443
+  server: hon5.vpntype.dev
+  tls: true
+  type: vless
+  uuid: 055fbab8-d893-4572-92d7-4d340ce9664c
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '479|[🏁]t.me/MoftConfig #595'
+  network: tcp
+  port: 443
+  server: hon5.vpntype.dev
+  tls: true
+  type: vless
+  uuid: 5e1102b1-742f-4d55-af7b-aaee668eb9d3
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '479|[🏁]t.me/MoftConfig #599'
+  network: tcp
+  port: 443
+  server: hon5.vpntype.dev
+  tls: true
+  type: vless
+  uuid: d082eef7-baa8-4d73-a29e-faf193aa0021
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '479|🇭🇰 Hong Kong #11'
+  network: tcp
+  port: 443
+  server: hon5.vpntype.dev
+  tls: true
+  type: vless
+  uuid: 4fb2e55d-0941-4a99-aa3d-d371ea65dbe1
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '479|🇭🇰 Hong Kong #12'
+  network: tcp
+  port: 443
+  server: hon5.vpntype.dev
+  tls: true
+  type: vless
+  uuid: bdd2f434-cbd2-41ec-ab4a-d0efd3392508
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '479|🇭🇰 Hong Kong #13'
+  network: tcp
+  port: 443
+  server: hon5.vpntype.dev
+  tls: true
+  type: vless
+  uuid: 06977858-b271-4133-9e5b-95c54fb0e09e
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '479|🇭🇰 Hong Kong #14'
+  network: tcp
+  port: 443
+  server: hon5.vpntype.dev
+  tls: true
+  type: vless
+  uuid: 1c45726b-64ce-464f-a040-022a5ab1b216
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '479| Hong Kong #23'
+  network: tcp
+  port: 443
+  server: hon5.vpntype.dev
+  tls: true
+  type: vless
+  uuid: ad4b8f76-d1d2-4881-b33a-9a8a06e00a98
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '479| Hong Kong #24'
+  network: tcp
+  port: 443
+  server: hon5.vpntype.dev
+  tls: true
+  type: vless
+  uuid: abade549-6d62-4239-830d-e2bf5924083a
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '479| Hong Kong #25'
+  network: tcp
+  port: 443
+  server: hon5.vpntype.dev
+  tls: true
+  type: vless
+  uuid: ab441240-5474-4308-9dcd-d8407b85a2c0
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '479|🇰 Hong Kong #3'
+  network: tcp
+  port: 443
+  server: hon5.vpntype.dev
+  tls: true
+  type: vless
+  uuid: 6a2ba6e3-7b95-4f60-a0f2-35a209b5c7a7
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '479|🇭🇰 Hong Kong #15'
+  network: tcp
+  port: 443
+  server: hon5.vpntype.dev
+  tls: true
+  type: vless
+  uuid: 0326fd83-4cd4-47cc-b9f2-7167d476a85e
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '479|🇭🇰 Hong Kong #16'
+  network: tcp
+  port: 443
+  server: hon5.vpntype.dev
+  tls: true
+  type: vless
+  uuid: 7ebf4e3d-9eb0-4b1b-9386-e27653cb3527
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '479| Hong Kong #26'
+  network: tcp
+  port: 443
+  server: hon5.vpntype.dev
+  tls: true
+  type: vless
+  uuid: d4973b29-21f7-4d0d-8a05-4e193d5e9fbc
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '479|🇭🇰 Hong Kong #17'
+  network: tcp
+  port: 443
+  server: hon5.vpntype.dev
+  tls: true
+  type: vless
+  uuid: 16fdffe4-98be-4b66-8e4c-376dece7a18b
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '479| Hong Kong #27'
+  network: tcp
+  port: 443
+  server: hon5.vpntype.dev
+  tls: true
+  type: vless
+  uuid: 8bdfa9d8-dbaa-46df-850d-1045e28952fd
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '479|🇭🇰 Hong Kong #18'
+  network: tcp
+  port: 443
+  server: hon5.vpntype.dev
+  tls: true
+  type: vless
+  uuid: 167870e4-a8d4-49c3-bf2b-5f217b52996b
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '479|🇭🇰 Hong Kong #19'
+  network: tcp
+  port: 443
+  server: hon5.vpntype.dev
+  tls: true
+  type: vless
+  uuid: 903e4fbe-52b7-4272-9b4e-2c31ff88cea2
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '479|🇭🇰 Hong Kong #20'
+  network: tcp
+  port: 443
+  server: hon5.vpntype.dev
+  tls: true
+  type: vless
+  uuid: 21dcf835-cd00-44f1-823d-2c135674dab9
+- name: '479|👉🆔 @MoftConfig📡Hong Kong #3'
+  network: tcp
+  password: 268f8604-ae22-47ea-a846-121bfa584236
+  port: 44397
+  server: aafrtpfxr.gbl01i9zjfegelp.5xfsur8v62.gosdk.xyz
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  type: trojan
 - client-fingerprint: chrome
   name: '500,504|15|🇭🇰 香港|@ripaojiedian #1'
   network: ws
@@ -5069,6 +5839,19 @@ proxies:
     headers:
       Host: 23.230.2.216
     path: /
+- alterId: 2
+  cipher: auto
+  name: 530|HK-219.77.227.121-051
+  network: ws
+  port: 80
+  server: hkt.gotochinatown.net
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
+  ws-headers:
+    Host: hkt.gotochinatown.net
+  ws-path: /
 - cipher: aes-256-gcm
   name: 530|🇰HK-103.103.245.158-059
   password: 9bfdde71b4c0
@@ -5212,7 +5995,7 @@ proxies:
   tls: false
   type: vmess
   uuid: d6abdbda-fe9d-11ec-bb74-f23c9164ca5d
-- name: '546,567|香港6|@ripaojiedian #8'
+- name: '546|香港6|@ripaojiedian #7'
   password: 253bc477d4e43c209f2d427272968280
   port: 443
   server: 42.2.237.179
@@ -5221,24 +6004,23 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: '546,567|香港3|@ripaojiedian #6'
+  name: '546|🇭🇰 香港3|@ripaojiedian #7'
   network: tcp
-  port: '31552'
+  port: 31552
   server: 38.147.189.37
-  servername: ''
   tls: false
   type: vmess
   uuid: 07048eb8-af77-407f-9426-af79a45d2bb1
 - alterId: 2
   cipher: auto
-  name: 546|🇭🇰 HK_60
+  name: 546|🇭🇰 HK_66
   network: ws
-  port: 30807
-  server: v10.heduian.link
+  port: 80
+  server: hkt.gotochinatown.net
   servername: ''
   tls: false
   type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
   ws-opts:
     headers:
       Host: ''
@@ -5256,6 +6038,20 @@ proxies:
   ws-opts:
     headers:
       Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 546|香港_083104051 L0
+  network: ws
+  port: '20086'
+  server: 103.96.73.162
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 253fd22d-6cbe-4953-891b-4ce3108ed935
+  ws-opts:
+    headers:
+      Host: ''
     path: /
 - alpn:
   - h3
@@ -5455,6 +6251,16 @@ proxies:
     headers:
       Host: cfhk.393930.xyz
     path: /
+- alterId: 64
+  cipher: auto
+  name: '567|香港3|@ripaojiedian #6'
+  network: tcp
+  port: '47272'
+  server: 183.240.245.250
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
   name: 588|HK.香港.B | 推荐
@@ -5503,7 +6309,7 @@ proxies:
   type: vmess
   udp: true
   uuid: a01b5e27-ece5-4675-866f-36b23a65d2a8
-- name: '592|HK #17'
+- name: '592|HK #14'
   network: tcp
   password: aa6ddd2f-d1cf-4a52-ba1b-2640c41a7856
   port: 41288
