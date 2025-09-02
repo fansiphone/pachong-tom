@@ -194,34 +194,16 @@ proxies:
   type: vmess
   udp: true
   uuid: 6b83eae1-b5fc-46d4-b494-ce3a80ff2b33
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 293,365,524,530,561|TW
-  password: 34393fa0-a7d3-4c4a-bd18-c70764f73a6d
-  port: 10061
-  server: 118.170.208.178
+- name: 242|TW
+  network: ws
+  password: Aimer
+  port: 2096
+  server: 167.68.4.223
   skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: ss
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 293,365,524,530,561|🇼TW台湾2
-  password: 5063e044-694e-400c-8db7-76223e86b6fb
-  port: 10097
-  server: 125.228.31.117
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: '293,365,490,491,502,503,524,543,566,569|🇹🇼 台湾3|@stairnode #1'
-  password: 60f661f4-579c-45c9-8156-e0db88911dc6
-  port: 10089
-  server: 125.228.180.215
-  tfo: false
-  type: ss
+  sni: epcca.ambercc.filegear-sg.me
+  type: trojan
+  ws-opts:
+    path: '%2F'
 - cipher: aes-256-cfb
   name: 343|🇹🇼1 |  2.1MB/s
   password: qwerREWQ@@
@@ -556,12 +538,30 @@ proxies:
   skip-cert-verify: false
   type: trojan
 - cipher: aes-256-cfb
-  name: 365,422,524,525,535,565|29|TW_speednode_0055
+  name: 365,422,524,525,565|29|TW_speednode_0055
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 154.223.20.79
   type: ss
   udp: true
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: '365,524,561|TW #1'
+  password: 34393fa0-a7d3-4c4a-bd18-c70764f73a6d
+  port: 10061
+  server: 118.170.208.178
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 365,524,561|🇼TW台湾2
+  password: 5063e044-694e-400c-8db7-76223e86b6fb
+  port: 10097
+  server: 125.228.31.117
+  skip-cert-verify: true
+  tls: true
+  type: ss
 - alterId: 0
   cipher: auto
   name: '365,523,524|🇼TW-104.29.64.2-0723 #1'
@@ -635,6 +635,14 @@ proxies:
     headers:
       Host: 012.AP.POP.node-for-smallairport.win
     path: /
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: '365,490,491,502,503,524,530,543,566,569|🇹🇼 台湾3|@stairnode #1'
+  password: 60f661f4-579c-45c9-8156-e0db88911dc6
+  port: 10089
+  server: 125.228.180.215
+  tfo: false
+  type: ss
 - alterId: 0
   cipher: auto
   name: '365,523,524|🇹🇼TW-61.222.202.140-1882 #1'
@@ -1093,15 +1101,12 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  country: 🇹🇼TW
-  h2-opts: {}
-  http-opts: {}
-  name: 365,424,481,523,524,525,535,546|台湾_090123001 L0
+  name: 365,424,481,523,524,525,546|台湾_090123001 L0
   network: ws
   port: '20521'
   server: 103.61.139.137
   servername: ''
-  skip-cert-verify: true
+  skip-cert-verify: false
   tls: false
   type: vmess
   uuid: f8d93cfb-3d5d-447c-a697-16496dd74697
@@ -1278,7 +1283,7 @@ proxies:
   country: 🇼 TW
   h2-opts: {}
   http-opts: {}
-  name: 422| TW_157
+  name: 422| TW_153
   network: ws
   port: 20521
   server: 103.61.139.137
@@ -1311,6 +1316,19 @@ proxies:
     headers:
       Host: tw1bQiWSE4x.fzbqfrse.xyz
     path: /video/GQ2qE5Us9g
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 480|👉🆔 @MoftConfig📡Taiwan
+  network: tcp
+  port: 20413
+  reality-opts:
+    public-key: BQk3bbYxbWAzoi8F0gl7oiM90YO7wFNuwTJRxaWtWFg
+    short-id: bd2ca454
+  server: 111.243.171.244
+  servername: www.visa.com
+  tls: false
+  type: vless
+  uuid: f5202085-8402-4b17-9e35-58ccd1b7f79b
 - cipher: aes-256-gcm
   client-fingerprint: chrome
   name: '500,504|15|🇹🇼 台湾|@ripaojiedian #1'
@@ -1368,20 +1386,22 @@ proxies:
   tfo: false
   type: ss
 - cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 535|🇹🇼 台湾|@stairnode
-  password: c9fd29d2-3c04-42cf-b60b-bbf3115a4e7c
-  port: 10152
-  server: 1.170.17.164
-  tfo: false
+  name: 530|🇹TW-36.232.126.210-042
+  password: bc318033-0adc-44c7-b75a-e6f927d31dca
+  port: 10147
+  server: 36.232.126.210
   type: ss
 - cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 535|🇹🇼 台湾2|@stairnode
-  password: 7fcfaa5c-5ce1-422a-bcb6-b96284aada90
-  port: 10130
-  server: 36.232.72.237
-  tfo: false
+  name: 530|🇼TW-36.232.127.162-044
+  password: 1f64d67c-33f3-478f-a6a4-1dc4284ee192
+  port: 10140
+  server: 36.232.127.162
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 530|🇹🇼TW-114.46.79.69-045
+  password: ee095dba-fdb0-4ba0-b16e-fa6f6d02b5d0
+  port: 10070
+  server: 114.46.79.69
   type: ss
 - cipher: chacha20-ietf-poly1305
   name: 545|0| 01 | 1x TW
@@ -1460,153 +1480,16 @@ proxies:
   server: taifo03a.kbservice.club
   sni: taifo03a.kbservice.club
   type: trojan
-- cipher: chacha20-ietf-poly1305
-  name: 554|TW_7ebda_0017
-  password: 1cdb8dcd-36be-4d54-ae30-7c88b3f04e18
-  port: 10141
-  server: 111.253.197.201
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 554|TW_7ebda_0018
-  password: 60df4359-5fe2-4df7-8751-c97ff6a52668
-  port: 10075
-  server: 114.46.83.122
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 554|TW_7ebda_0019
-  password: 5aeb7d55-60fc-479d-a35d-f24e3d757f8c
-  port: 10020
-  server: 118.170.217.180
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 554|TW_7ebda_0020
-  password: f1ad222f-b304-40a8-aeab-24a810371ea9
-  port: 10148
-  server: 111.253.199.25
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 554|TW_7ebda_0021
-  password: 9cd50d98-7e20-4b5f-8c1c-23a81de7a541
-  port: 10089
-  server: 125.228.180.215
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 554|TW_7ebda_0022
-  password: 7182ca82-f580-4e2e-9e9a-22b1c3fdfafb
-  port: 10140
-  server: 36.232.127.162
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 554|TW_7ebda_0024
-  password: e73c8f9f-d53e-4f34-9237-2212ccc12d63
-  port: 10025
-  server: 118.170.220.47
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 554|TW_7ebda_0026
-  password: 5b60ce4f-e6f1-4db8-a8a3-6778e7f3ef53
-  port: 10025
-  server: 118.170.220.47
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 554|TW_7ebda_0027
-  password: 04066376-d974-4ba0-a76f-20f8aeecd05b
-  port: 10075
-  server: 114.46.83.122
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 554|TW_7ebda_0028
-  password: 7182ca82-f580-4e2e-9e9a-22b1c3fdfafb
-  port: 10075
-  server: 114.46.83.122
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 554|TW_7ebda_0030
-  password: 5f1cdb54-70ee-4f52-a8d3-db5bf6f2729c
-  port: 10066
-  server: 59.126.32.59
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 554|TW_7ebda_0031
-  password: 95911f0e-ca9e-4570-89a3-2622ac71ada0
-  port: 10141
-  server: 111.253.197.201
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 554|TW_7ebda_0032
-  password: 04066376-d974-4ba0-a76f-20f8aeecd05b
-  port: 10140
-  server: 36.232.127.162
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 554|TW_7ebda_0033
-  password: 5b60ce4f-e6f1-4db8-a8a3-6778e7f3ef53
-  port: 10005
-  server: 118.170.211.35
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 554|TW_7ebda_0034
-  password: 7182ca82-f580-4e2e-9e9a-22b1c3fdfafb
-  port: 10025
-  server: 118.170.220.47
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 554|TW_7ebda_0035
-  password: 60df4359-5fe2-4df7-8751-c97ff6a52668
-  port: 10005
-  server: 118.170.211.35
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 554|TW_7ebda_0036
-  password: 9cd50d98-7e20-4b5f-8c1c-23a81de7a541
-  port: 10047
-  server: 114.33.53.80
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 554|TW_7ebda_0038
-  password: 5f1cdb54-70ee-4f52-a8d3-db5bf6f2729c
-  port: 10047
-  server: 114.33.53.80
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 554|TW_7ebda_0039
-  password: 5b60ce4f-e6f1-4db8-a8a3-6778e7f3ef53
-  port: 10027
-  server: 118.170.208.202
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 554|TW_7ebda_0040
-  password: 04066376-d974-4ba0-a76f-20f8aeecd05b
-  port: 10126
-  server: 111.253.200.231
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 554|TW_7ebda_0041
-  password: f1ad222f-b304-40a8-aeab-24a810371ea9
-  port: 10080
-  server: 125.231.85.152
-  type: ss
-  udp: true
+- alterId: 0
+  cipher: auto
+  name: 546|台湾_090123042 L0
+  network: ''
+  port: '35034'
+  server: 165.154.195.38
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 959a8caf-4cea-43d0-a548-3628e7ddfafc
 - name: 555|🇹🇼 台湾 024
   password: c794fa38-d694-4e21-af72-2d83bd459605
   port: 51003
