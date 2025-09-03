@@ -145,23 +145,13 @@ proxies:
   type: vmess
   udp: true
   uuid: 6b83eae1-b5fc-46d4-b494-ce3a80ff2b33
-- name: 242|TW
-  network: ws
-  password: Aimer
-  port: 2096
-  server: 167.68.4.223
-  skip-cert-verify: true
-  sni: epcca.ambercc.filegear-sg.me
-  type: trojan
-  ws-opts:
-    path: '%2F'
 - alterId: 64
   cipher: auto
-  country: 🇳CN
+  country: 🇨🇳 CN
   delay: 320
   h2-opts: {}
   http-opts: {}
-  name: '327,427,440,466,471,476,481,501,502,503,510,511,515,530,531,544,546|11|🇹🇼
+  name: '327,440,466,471,476,481,501,502,503,510,511,515,530,531,535,544,546|11|🇹🇼
     台湾2|@ripaojiedian #4'
   network: tcp
   port: 50002
@@ -430,7 +420,7 @@ proxies:
   skip-cert-verify: false
   type: trojan
 - cipher: aes-256-cfb
-  name: 365,524,525,565|29|TW_speednode_0055
+  name: 365,422,524,525,535,565|29|TW_speednode_0055
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 154.223.20.79
@@ -438,12 +428,15 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 365,424,481,523,524,546|台湾_090218001 L0
+  country: 🇹🇼TW
+  h2-opts: {}
+  http-opts: {}
+  name: 365,424,481,523,524,535,546|台湾_090304014 L0
   network: ws
   port: '20521'
   server: 103.61.139.137
   servername: ''
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: f8d93cfb-3d5d-447c-a697-16496dd74697
@@ -453,8 +446,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: '365,502,503,524,530,543,561,566,569|🇹🇼 台湾3|@stairnode #1'
+  name: 365,502,503,524,530,561|🇹🇼TW台湾5
   password: 60f661f4-579c-45c9-8156-e0db88911dc6
   port: 10089
   server: 125.228.180.215
@@ -1001,18 +993,22 @@ proxies:
     headers:
       Host: us3.guolicheng.cyou
     path: /suti/us3?ed=2048
-- name: '365,423,523,524|TW-59.125.131.163-4888 #1'
+- country: 🇨 CN
+  name: '365,422,423,523,524|TW-59.125.131.163-4888 #1'
   password: 6e1b9a65-884f-3aa9-9469-bf6ec0f08610
   port: 3462
   server: a03.taipeicitygovernment.cn.ua
   skip-cert-verify: false
   type: trojan
-- name: '365,423,523,524|🇼TW-210.203.60.190-4964 #1'
+  udp: true
+- country: 🇼 TW
+  name: '365,422,423,523,524|🇼TW-210.203.60.190-4964 #1'
   password: 6e1b9a65-884f-3aa9-9469-bf6ec0f08610
   port: 443
   server: taifo03a.kbservice.club
   skip-cert-verify: false
   type: trojan
+  udp: true
 - name: '365,523,524|TW-36.227.210.110-5490 #1'
   password: ED177480-E516-11EA-8B44-BBC4E882BA0B
   port: 20261
@@ -1169,27 +1165,19 @@ proxies:
       Host: 51b0e42034dd75a815fa9eb16021fbda.mobgslb.tbcache.com
     path: /
   ws-path: /
-- cipher: chacha20-ietf-poly1305
-  country: 🇼TW
-  name: 427|TW_12
-  password: 6150d205-c7fc-4f51-bf78-c40b68f73500
-  port: 10124
-  server: 36.232.116.119
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇹🇼TW
-  name: 427|🇹🇼TW_13
-  password: ab81ea11-ee79-48a6-8b5a-dfdde31294fd
-  port: 10088
-  server: 1.170.63.190
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇹🇼TW
-  name: 427|🇹🇼TW_14
-  password: e29af388-e050-4f8a-bc32-1d0720ad5a49
-  port: 10117
-  server: 36.235.7.111
-  type: ss
+- alterId: 0
+  cipher: auto
+  country: 🇼 TW
+  h2-opts: {}
+  http-opts: {}
+  name: 422| TW_153
+  network: ws
+  port: 20521
+  server: 103.61.139.137
+  skip-cert-verify: true
+  type: vmess
+  uuid: f8d93cfb-3d5d-447c-a697-16496dd74697
+  ws-path: /
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: 452|18|🇹🇼 台湾|@ripaojiedian
@@ -1250,7 +1238,7 @@ proxies:
 - alterId: 64
   cipher: auto
   client-fingerprint: chrome
-  name: '502,503,543,566,569|🇹🇼 台湾2|@stairnode #1'
+  name: 502,503,543|🇹🇼 台湾2|@ripaojiedian
   port: 50002
   server: 47.116.166.178
   skip-cert-verify: false
@@ -1282,6 +1270,44 @@ proxies:
   server: cn01.efan8867801.xyz
   tfo: false
   type: ss
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 535|🇹🇼 台湾|@stairnode
+  password: c9fd29d2-3c04-42cf-b60b-bbf3115a4e7c
+  port: 10152
+  server: 1.170.17.164
+  tfo: false
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 535|🇹🇼 台湾2|@stairnode
+  password: 7fcfaa5c-5ce1-422a-bcb6-b96284aada90
+  port: 10130
+  server: 36.232.72.237
+  tfo: false
+  type: ss
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  country: 🇨🇳 TW
+  name: 535,561|🇼TW台湾4
+  password: a7653b0d-4483-4e16-8ae3-e24f5e7c923a
+  port: 10057
+  server: 125.231.72.47
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: auto
+  country: 🇨🇳 TW
+  h2-opts: {}
+  http-opts: {}
+  name: '535|disney_TW #1'
+  network: tcp
+  port: 20788
+  server: 45.121.48.174
+  skip-cert-verify: true
+  type: vmess
+  uuid: bfc630aa-4598-4481-9338-cac15e3e6b65
 - cipher: chacha20-ietf-poly1305
   name: 545|0| 01 | 1x TW
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
@@ -1353,34 +1379,18 @@ proxies:
     headers:
       Host: fadawtawd.zhangwei.li
     path: /zh-cn
-- name: 546|🇹🇼 TW_131
+- name: 546|🇹🇼 TW_144
   password: 6e1b9a65-884f-3aa9-9469-bf6ec0f08610
   port: 443
   server: taifo03a.kbservice.club
   sni: taifo03a.kbservice.club
   type: trojan
-- name: 546|台湾_090218101
-  password: 86dea495-bb00-4292-b06b-40c7fed00743
-  port: 33889
-  server: cdntwa.xiaomispeed.com
-  skip-cert-verify: true
-  sni: cdntwa.xiaomispeed.com
-  type: trojan
 - alterId: 0
   cipher: chacha20-ietf-poly1305
-  name: '561|TW #1'
+  name: 561|TW
   password: 3c3560d3-d334-48af-a570-d9f1a353d436
   port: 10044
   server: 125.231.80.235
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 561|🇼TW台湾4
-  password: a7653b0d-4483-4e16-8ae3-e24f5e7c923a
-  port: 10057
-  server: 125.231.72.47
   skip-cert-verify: true
   tls: true
   type: ss
