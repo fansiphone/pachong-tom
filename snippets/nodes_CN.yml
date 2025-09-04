@@ -1,19 +1,23 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: '4,11,442,444,445,465,470,481,489,509,531,535,546,567,568,704|中国【机场推荐：https://a0a.xyz/】50
+  name: '4,11,442,444,445,465,470,481,489,509,530,531,546,567,568,704|中国【机场推荐：https://a0a.xyz/】50
     #8'
   network: tcp
   port: '50414'
   server: 103.13.19.254
   servername: ''
+  skip-cert-verify: true
   sni: ''
   tls: false
   type: vmess
   uuid: aacec49a-c6eb-43a0-b14a-e3b4302e5f1a
+  ws-headers:
+    Host: 103.13.19.254
+  ws-path: /
 - alterId: 2
   cipher: auto
-  name: '4,11,465,470,509,535|🇨🇳_CN_中国_2 #5'
+  name: '4,11,465,470,509|🇨🇳_CN_中国_2 #4'
   network: ws
   port: 30805
   server: v5.heduian.link
@@ -28,8 +32,8 @@ proxies:
 - alterId: 2
   cipher: auto
   client-fingerprint: chrome
-  name: '293,327,365,443,451,466,471,481,487,489,490,491,493,494,501,502,503,523,524,531,535,538,543,544,545,546,566,567,569|🇭🇰
-    香港|@stairnode #3'
+  name: '293,327,365,443,451,466,471,476,480,481,487,489,490,491,493,494,501,502,503,523,524,531,538,540,543,544,545,546,566,567,569|🇭🇰
+    香港|@stairnode #2'
   network: ws
   port: 30809
   server: v9.heduian.link
@@ -46,7 +50,7 @@ proxies:
     path: /oooo
 - cipher: aes-256-gcm
   client-fingerprint: chrome
-  name: '293,490,491,502,503,543,566,569|🇭🇰 香港2|@stairnode #2'
+  name: '293,490,491,502,503,540,543,566,569|🇭🇰 香港2|@stairnode #1'
   password: 2b5fad3874e5
   plugin: v2ray-plugin
   plugin-opts:
@@ -60,41 +64,37 @@ proxies:
   server: 156.251.179.135
   tfo: false
   type: ss
-- cipher: aes-128-gcm
-  delay: 713
-  name: '293,365,490,491,515,524|🇭🇰HK-103.181.165.246-0674 #1'
-  password: 01721e43-5389-4f97-b21c-900abb2bda9e
-  port: 12008
-  server: awes35lesl.blhao0o.dpdns.org
-  tfo: false
-  type: ss
+  udp: true
 - alterId: 64
   cipher: auto
   client-fingerprint: chrome
-  name: '293,490,491,502,503,543,566,569|🇹🇼 台湾2|@stairnode #2'
+  name: '293,490,491,502,503,540,543,566,569|🇹🇼 台湾2|@stairnode #1'
   port: 50002
   server: 47.116.166.178
   skip-cert-verify: false
   tfo: false
   tls: false
   type: vmess
+  udp: true
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - cipher: rc4-md5
-  name: '293,490,491|[SS] 🇯🇵 日本|@ripaojiedian 2 #3'
+  client-fingerprint: chrome
+  name: '293,490,491,502,503,540,543,566,569|🇯🇵 日本|@stairnode #1'
   password: efanccyun
   plugin: obfs
   plugin-opts:
-    host: 202508150964186-5McRC3HiAX.download.microsoft.com
+    host: 202509031722041-UfAvWCjqQ0.download.microsoft.com
     mode: http
   port: 8766
   server: cn01.efan8867801.xyz
   tfo: false
   type: ss
+  udp: true
 - alterId: 2
   cipher: auto
   client-fingerprint: chrome
-  name: '293,327,365,466,471,476,481,489,490,491,493,494,501,502,503,523,524,531,535,538,543,544,546,566,567,569|🇸🇬
-    新加坡3|@stairnode #3'
+  name: '293,327,365,451,466,471,476,481,487,489,490,491,493,494,501,502,503,523,524,531,538,540,543,544,546,566,567,569|🇸🇬
+    新加坡3|@stairnode #2'
   network: ws
   port: 30839
   server: v39.heduian.link
@@ -109,31 +109,25 @@ proxies:
     headers:
       Host: baidu.com
     path: /oooo
-- cipher: aes-128-gcm
-  name: '293,365,466,471,490,491,524|🇰HK-103.181.165.246-0682 #1'
-  password: 01721e43-5389-4f97-b21c-900abb2bda9e
-  port: 12020
-  server: awes35lesl.blhao0o.dpdns.org
-  tfo: false
-  type: ss
 - cipher: rc4-md5
-  name: '293,365,490,491,524|🇨🇳CN-120.233.31.170-1887 #1'
+  client-fingerprint: chrome
+  name: '293,490,491,502,503,540,543,566,569|🇺🇸 美国2|@stairnode #1'
   password: efanccyun
   plugin: obfs
   plugin-opts:
-    host: 202508150964186-5McRC3HiAX.download.microsoft.com
+    host: 202509031722041-UfAvWCjqQ0.download.microsoft.com
     mode: http
   port: 8774
   server: cn01.efan8867801.xyz
   tfo: false
   type: ss
+  udp: true
 - alterId: 64
   cipher: auto
-  country: 🇨🇳 CN
   delay: 320
   h2-opts: {}
   http-opts: {}
-  name: '293,327,476,481,489,493,494,501,502,503,515,531,535,538,544,546,567|台湾2|@ripaojiedian
+  name: '293,327,481,489,493,494,501,502,503,515,530,531,538,544,546,567|台湾2|@ripaojiedian
     #6'
   network: tcp
   port: '50002'
@@ -144,7 +138,9 @@ proxies:
   type: vmess
   udp: true
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  xudp: true
+  ws-headers:
+    Host: 23.45.86.28
+  ws-path: /
 - cipher: chacha20-ietf-poly1305
   name: '349,350|423|🇨🇳  20X-1B |  16.5MB/s #1'
   password: cac56de5-40e5-4cd1-b23a-5e7e1dde311f
@@ -317,7 +313,7 @@ proxies:
   type: ss
 - alterId: 2
   cipher: auto
-  name: '365,443,523,524|🇨CN-36.151.194.29-0514 #1'
+  name: 365,443,523,524,540|yandex-416
   network: ws
   port: 30829
   server: v29.heduian.link
@@ -325,33 +321,37 @@ proxies:
   skip-cert-verify: false
   tls: false
   type: vmess
+  udp: true
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-opts:
     headers:
       Host: v29.heduian.link
     path: /oooo
 - cipher: rc4-md5
-  name: '365,466,471,490,491,524|🇨🇳CN-103.219.176.199-0675 #1'
+  name: 365,466,471,490,491,524,540|yandex-464
   password: efanccyun
   port: 8766
   server: cn01.efan8867801.xyz
   type: ss
+  udp: true
 - cipher: rc4-md5
-  name: '365,466,471,490,491,524|🇨🇳CN-103.219.176.199-0683 #1'
+  name: 365,466,471,490,491,524,540|yandex-471
   password: efanccyun
   port: 8774
   server: cn01.efan8867801.xyz
   type: ss
+  udp: true
 - alterId: 2
   cipher: auto
-  name: 365,481,523,524,531|🇨🇳 CN-36.151.194.29-0545
+  name: 365,481,523,524,531,540|yandex-271
   network: ws
-  port: '30805'
+  port: 30805
   server: v5.heduian.link
   servername: ''
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
+  udp: true
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-opts:
     headers:
@@ -359,7 +359,7 @@ proxies:
     path: /
 - alterId: 2
   cipher: auto
-  name: '365,459,460,461,476,481,523,524,531,546,567|🇨🇳_CN_中国->🇺🇸_US_美国 #4'
+  name: '365,476,481,523,524,531,540,546,567|🇨🇳_CN_中国->🇺🇸_US_美国 #4'
   network: ws
   port: 30829
   server: v29.heduian.link
@@ -367,6 +367,7 @@ proxies:
   skip-cert-verify: false
   tls: false
   type: vmess
+  udp: true
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-opts:
     headers:
@@ -861,6 +862,17 @@ proxies:
   tls: false
   type: vmess
   uuid: fa4b6f8f-1264-45ec-9651-6160c12cabc5
+- cipher: rc4-md5
+  name: 365,524,540|yandex-3760
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    host: 202508150964186-5McRC3HiAX.download.microsoft.com
+    mode: http
+  port: 8774
+  server: cn01.efan8867801.xyz
+  type: ss
+  udp: true
 - name: 365,523,524,546| Google搜二爷翻墙，免费获取翻墙节点_2
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
@@ -868,8 +880,7 @@ proxies:
   server: 36.150.215.188
   skip-cert-verify: true
   type: trojan
-- client-fingerprint: chrome
-  name: 365,466,471,523,524,535,546| Google搜二爷翻墙，免费获取翻墙节点_3
+- name: 365,466,471,523,524,546| Google搜二爷翻墙，免费获取翻墙节点_3
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
   port: 4397
@@ -907,8 +918,7 @@ proxies:
   server: 36.150.215.203
   skip-cert-verify: true
   type: trojan
-- client-fingerprint: chrome
-  name: 365,466,471,523,524,535,546| Google搜二爷翻墙，免费获取翻墙节点_36
+- name: 365,466,471,523,524,546| Google搜二爷翻墙，免费获取翻墙节点_36
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
   port: 4801
@@ -1950,7 +1960,7 @@ proxies:
   type: ss
 - alterId: 2
   cipher: auto
-  name: '365,523,524|🇳CN-36.151.194.29-6938 #1'
+  name: 365,476,523,524,540|yandex-3600
   network: ws
   port: 30824
   server: v24.heduian.link
@@ -1958,6 +1968,7 @@ proxies:
   skip-cert-verify: false
   tls: false
   type: vmess
+  udp: true
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-opts:
     headers:
@@ -1965,14 +1976,15 @@ proxies:
     path: /oooo
 - alterId: 2
   cipher: auto
-  name: '365,523,524|🇨🇳CN-36.151.194.29-6940 #1'
+  name: 365,523,524,540|yandex-2741
   network: ws
   port: 30828
   server: v28.heduian.link
   servername: ''
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
+  udp: true
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-opts:
     headers:
@@ -1986,43 +1998,11 @@ proxies:
   type: ss
 - alterId: 64
   cipher: auto
-  country: 🇨🇳CN
-  h2-opts: {}
-  http-opts: {}
-  name: '422,424,535,546|Github搜索TrojanLinks #9'
-  network: tcp
-  port: '50002'
-  server: 112.132.215.12
-  servername: 09jzus.zdzdzd.xyz
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-path: /ivideos.sbs/linkws
-- alterId: 64
-  cipher: auto
-  country: 🇳 CN
-  h2-opts: {}
-  http-opts: {}
-  name: 422|🇳 CN_44
-  network: ws
-  port: 443
-  server: 202.79.161.188
-  servername: www.32278117.xyz
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-headers:
-    HOST: www.32278117.xyz
-  ws-path: /path/170733132233
-- alterId: 64
-  cipher: auto
-  country: 🇨🇳CN
+  country: 🇨🇳 CN
   delay: 320
   h2-opts: {}
   http-opts: {}
-  name: '422,424,515,535,546|Github搜索TrojanLinks #10'
+  name: '422,424,515,546|Github搜索TrojanLinks #10'
   network: tcp
   port: '50007'
   server: 112.132.215.34
@@ -2033,27 +2013,38 @@ proxies:
   ws-path: /
 - alterId: 64
   cipher: auto
-  name: '424,481|🔥Join+Telegram:@Farah_VPN🟣 #2239'
-  network: ws
-  port: 443
-  server: 202.79.161.188
-  servername: ''
-  tls: true
+  country: 🇨🇳 CN
+  h2-opts: {}
+  http-opts: {}
+  name: '422,424,476,480,546|Github搜索TrojanLinks #9'
+  network: tcp
+  port: '50002'
+  server: 112.132.215.12
+  servername: ury-unit-c030ehei8.poget71138.workers.dev
+  skip-cert-verify: true
+  tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-opts:
-    headers:
-      Host: www.32278117.xyz
-    path: /path/170733132233
+  ws-path: /ivideos.sbs/linkws
+- country: 🇨 CN
+  name: 422,423,523|🇹🇼TW-61.221.189.241-4865
+  password: 6e1b9a65-884f-3aa9-9469-bf6ec0f08610
+  port: 3462
+  server: a03.taipeicitygovernment.cn.ua
+  skip-cert-verify: true
+  type: trojan
+  udp: true
 - alterId: 2
   cipher: auto
-  name: '442,444,445,546,567,568|🇨🇳CN-36.151.194.29-0545 #6'
+  name: '442,444,445,476,540,546,567,568|🇨🇳CN-36.151.194.29-0545 #6'
   network: ws
   port: 30805
   server: v5.heduian.link
   servername: ''
+  skip-cert-verify: false
   tls: false
   type: vmess
+  udp: true
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-opts:
     headers:
@@ -2122,39 +2113,107 @@ proxies:
     headers:
       Host: data-us-v1.shwjfkw.cn
     path: /debian
-- alterId: 64
-  cipher: auto
-  ip-version: dual
-  name: '476,546|Github搜索TrojanLinks #33'
-  network: tcp
-  port: '50002'
-  server: 47.104.186.133
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 64
-  cipher: auto
-  delay: 346
-  name: 476,515|中国 - 杭州 - Hangzhou Alibaba Adv...
-  port: 50112
-  server: 120.26.55.225
+- name: '480|[🏁]t.me/MoftConfig #326'
+  password: b86e8900-f2cb-37fb-83a6-f43fd068db49
+  port: 20294
+  server: gy.58n.net
   skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 64
-  cipher: auto
-  name: 476|❓_🇨🇳_📶_github.com/Ruk1ng001_31...
+  sni: z294.hongkongnode.top
+  type: trojan
+- name: 480|👉🆔 @MoftConfig📡China
   network: tcp
-  port: 44009
-  server: 183.240.245.240
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  xudp: true
+  password: 13c3cf97-5a4a-434f-880a-aecbd70c15bc
+  port: 20104
+  server: 4.2gyh5ybsic.xyz
+  skip-cert-verify: true
+  sni: 4.2gyh5ybsic.xyz
+  type: trojan
+- name: '480|👉🆔 @MoftConfig📡🇨🇳China #2'
+  network: tcp
+  password: 13c3cf97-5a4a-434f-880a-aecbd70c15bc
+  port: 20093
+  server: 13.p5zqtpj2n7.xyz
+  skip-cert-verify: true
+  sni: 13.p5zqtpj2n7.xyz
+  type: trojan
+- name: '480|👉🆔 @MoftConfig📡🇨🇳China #3'
+  network: tcp
+  password: 13c3cf97-5a4a-434f-880a-aecbd70c15bc
+  port: 20012
+  server: 2.elk3b3nwfy.xyz
+  skip-cert-verify: true
+  sni: 2.elk3b3nwfy.xyz
+  type: trojan
+- name: '480|👉🆔 @MoftConfig📡🇨🇳China #4'
+  network: tcp
+  password: 13c3cf97-5a4a-434f-880a-aecbd70c15bc
+  port: 20103
+  server: 3.2gyh5ybsic.xyz
+  skip-cert-verify: true
+  sni: 3.2gyh5ybsic.xyz
+  type: trojan
+- name: '480|👉🆔 @MoftConfig📡🇨🇳China #5'
+  network: tcp
+  password: 13c3cf97-5a4a-434f-880a-aecbd70c15bc
+  port: 20110
+  server: 10.2gyh5ybsic.xyz
+  skip-cert-verify: true
+  sni: 10.2gyh5ybsic.xyz
+  type: trojan
+- name: '480|👉🆔 @MoftConfig📡🇨🇳China #6'
+  network: tcp
+  password: 13c3cf97-5a4a-434f-880a-aecbd70c15bc
+  port: 20087
+  server: 7.p5zqtpj2n7.xyz
+  skip-cert-verify: true
+  sni: 7.p5zqtpj2n7.xyz
+  type: trojan
+- name: '480|👉🆔 @MoftConfig📡🇨🇳China #7'
+  network: tcp
+  password: 13c3cf97-5a4a-434f-880a-aecbd70c15bc
+  port: 20107
+  server: 7.2gyh5ybsic.xyz
+  skip-cert-verify: true
+  sni: 7.2gyh5ybsic.xyz
+  type: trojan
+- name: '480|👉🆔 @MoftConfig📡🇨🇳China #8'
+  network: tcp
+  password: 13c3cf97-5a4a-434f-880a-aecbd70c15bc
+  port: 20055
+  server: 15.elk3b3nwfy.xyz
+  skip-cert-verify: true
+  sni: 15.9n3pqn1406.xyz
+  type: trojan
+- name: '480|👉🆔 @MoftConfig📡🇨🇳China #9'
+  network: tcp
+  password: 13c3cf97-5a4a-434f-880a-aecbd70c15bc
+  port: 20105
+  server: 5.2gyh5ybsic.xyz
+  skip-cert-verify: true
+  sni: 5.2gyh5ybsic.xyz
+  type: trojan
+- name: '480|👉🆔 @MoftConfig📡🇨🇳China #10'
+  network: tcp
+  password: 13c3cf97-5a4a-434f-880a-aecbd70c15bc
+  port: 20106
+  server: 6.2gyh5ybsic.xyz
+  skip-cert-verify: true
+  sni: 6.2gyh5ybsic.xyz
+  type: trojan
+- name: '480|👉🆔 @MoftConfig📡🇨🇳China #11'
+  password: 13c3cf97-5a4a-434f-880a-aecbd70c15bc
+  port: 20083
+  server: 111.62.241.211
+  skip-cert-verify: true
+  sni: 3.p5zqtpj2n7.xyz
+  type: trojan
+- name: '480|👉🆔 @MoftConfig📡🇨🇳China #12'
+  password: 13c3cf97-5a4a-434f-880a-aecbd70c15bc
+  port: 20012
+  server: 183.240.228.139
+  skip-cert-verify: true
+  sni: 2.elk3b3nwfy.xyz
+  type: trojan
 - cipher: aes-256-cfb
   name: '500,504,565|1|_CN_ #2'
   password: hGkQ6915tD
@@ -2170,33 +2229,47 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 64
+- alterId: 0
   cipher: auto
   delay: 346
-  name: 515|中国 - 北京 - Hangzhou Alibaba Adv...
+  name: 515,540|yandex-3209
   port: 50002
   server: 47.92.152.169
   servername: chunchuan.kejixiaoqi666.store
   skip-cert-verify: true
   tls: false
   type: vmess
+  udp: true
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
   delay: 1478
-  name: 515|中国 - 广州市 - China Mobile commun...
+  name: 515,540|yandex-2987
   port: 50002
   server: 120.210.205.59
   skip-cert-verify: true
   tls: false
   type: vmess
+  udp: true
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
+- alterId: 64
+  cipher: auto
+  delay: 346
+  name: 515,540|yandex-685
+  port: 50112
+  server: 120.26.55.225
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 64
   cipher: auto
   delay: 307
-  name: 515|中国 - 青岛市 - Hangzhou Alibaba Ad...
+  name: 515,540|yandex-3457
   port: 50002
   server: 47.104.186.133
+  skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
@@ -2660,33 +2733,82 @@ proxies:
     headers:
       Host: ''
     path: /hls/cctv5phd.m3u8
-- alterId: 64
+- alterId: 2
   cipher: auto
-  country: 🇨🇳 CN
-  h2-opts: {}
-  http-opts: {}
-  name: '535,546|Github搜索TrojanLinks #12'
-  network: tcp
-  port: '50002'
-  server: 120.210.205.59
+  name: 530|CN-36.151.194.29-008
+  network: ws
+  port: 30805
+  server: v5.heduian.link
   skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 64
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-headers:
+    Host: v5.heduian.link
+  ws-path: /
+- alterId: 0
   cipher: auto
-  country: 🇨🇳CN
-  h2-opts: {}
-  http-opts: {}
-  name: '535,546|Github搜索TrojanLinks #34'
-  network: tcp
-  port: '50002'
-  server: 47.92.152.169
-  servername: chunchuan.kejixiaoqi666.store
+  name: 530|🇨🇳CN-36.151.194.29-158
+  network: ws
+  port: 30839
+  server: v39.heduian.link
   skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-headers:
+    Host: baidu.com
+  ws-path: /oooo
+- alterId: 0
+  cipher: auto
+  name: 530|🇨🇳CN-36.151.194.29-142
+  network: ws
+  port: 30809
+  server: v9.heduian.link
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-headers:
+    Host: baidu.com
+  ws-path: /oooo
+- cipher: rc4-md5
+  name: 530|🇨🇳CN-113.99.143.13-060
+  password: efanccyun
+  port: 8766/?plugin=obfs-local%3Bobfs%3Dhttp%3Bobfs-host%3D202509031722041-UfAvWCjqQ0.download.microsoft.com
+  server: cn01.efan8867801.xyz
+  type: ss
+- cipher: rc4-md5
+  name: 530|🇨🇳CN-113.99.143.13-068
+  password: efanccyun
+  port: 8774/?plugin=obfs-local%3Bobfs%3Dhttp%3Bobfs-host%3D202509031722041-UfAvWCjqQ0.download.microsoft.com
+  server: cn01.efan8867801.xyz
+  type: ss
+- alterId: 2
+  cipher: auto
+  name: 530|🇨CN-36.151.194.29-163
+  network: ws
+  port: 30829
+  server: v29.heduian.link
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-headers:
+    Host: ocbc.com
+  ws-path: /oooo
+- cipher: rc4-md5
+  name: 530|🇨🇳CN-113.99.143.13-152
+  password: efanccyun
+  port: 8766/?plugin=simple-obfs%3Bobfs%3Dhttp%3Bobfs-host%3D202509031722041-UfAvWCjqQ0.download.microsoft.com
+  server: cn01.efan8867801.xyz
+  type: ss
+- cipher: rc4-md5
+  name: 530|🇳CN-113.99.143.13-159
+  password: efanccyun
+  port: 8774/?plugin=simple-obfs%3Bobfs%3Dhttp%3Bobfs-host%3D202509031722041-UfAvWCjqQ0.download.microsoft.com
+  server: cn01.efan8867801.xyz
+  type: ss
 - alterId: 0
   cipher: auto
   name: 545|2|🇸24 |  4.8MB/s
@@ -2960,7 +3082,7 @@ proxies:
   tls: false
   type: vmess
   uuid: a6ddfc37-05eb-11ed-af40-f23c91cfbbc9
-- name: 546|🇨🇳 CN_42
+- name: '546|🇨🇳 CN_42 #1'
   password: 6e1b9a65-884f-3aa9-9469-bf6ec0f08610
   port: 3462
   server: a03.taipeicitygovernment.cn.ua
@@ -2980,6 +3102,13 @@ proxies:
     headers:
       Host: ''
     path: /
+- cipher: chacha20-ietf-poly1305
+  name: 554,572|CN_speednode_0002
+  password: feafc2ef-d5fd-4f6d-803b-fad4a5cc1f0e
+  port: 19852
+  server: mm.huawei-api.top
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
   name: 565|11,21|_中国
