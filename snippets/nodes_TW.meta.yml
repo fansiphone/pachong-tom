@@ -174,37 +174,20 @@ proxies:
   type: vmess
   udp: true
   uuid: aa870dd1-21bd-4ba6-a26f-3c2639c668c3
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: '293,365,490,491,524,540,566,569|🇹🇼 台湾|@stairnode #1'
-  password: e6187cf8-7003-47e2-967b-7b900b132ddb
-  port: 10129
-  server: 114.35.114.182
-  tfo: false
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: '293,365,490,491,524,540,566,569|🇹🇼 台湾2|@stairnode #1'
-  password: 8fc95eb8-83b4-47af-ae17-d7639dd0fd2c
-  port: 10147
-  server: 111.253.205.251
-  tfo: false
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: '293,365,490,491,524,540,566,569|🇹🇼 台湾3|@stairnode #1'
-  password: f200fa8b-dd29-4fac-a67f-67bc05717bad
-  port: 10147
-  server: 111.253.205.251
-  tfo: false
-  type: ss
-  udp: true
+- name: 242|TW
+  network: ws
+  password: Aimer
+  port: 2096
+  server: 167.68.4.223
+  skip-cert-verify: true
+  sni: epcca.ambercc.filegear-sg.me
+  type: trojan
+  ws-opts:
+    path: '%2F'
 - alterId: 0
   cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: 293,502,503,540,543,561|TW 1.1MB/s
+  name: 293,490,491,502,503,530,535,540,543,561|TW 1.1MB/s
   password: a6c9f4e3-372d-414c-b945-d63544d599ec
   port: 10129
   server: 114.35.114.182
@@ -216,7 +199,7 @@ proxies:
 - alterId: 0
   cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: 293,365,502,503,524,540,543,561|🇼TW台湾2 1.0MB/s
+  name: 293,365,490,491,502,503,524,530,535,540,543,561|🇼TW台湾2 1.0MB/s
   password: 0867a369-602f-42f1-9fb4-c4aa9475d3a9
   port: 10045
   server: 114.46.72.1
@@ -553,13 +536,14 @@ proxies:
   udp: true
   uuid: 52704bc6-015d-4c36-bead-87053a8a9641
 - cipher: chacha20-ietf-poly1305
-  name: 365,524,525|🇨🇳TW-223.165.4.173-0354 | 0.50...
+  country: 🇮🇩ID
+  name: 365,422,524,525,535|🇮🇩ID_172
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 223.165.4.173
   type: ss
 - cipher: aes-256-cfb
-  name: 365,524,525,565|29|TW_speednode_0055
+  name: 365,422,524,525,535,565|29|TW_speednode_0055
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 154.223.20.79
@@ -567,12 +551,15 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 365,424,481,523,524,525,546|台湾_091004001 L0
+  country: 🇹🇼TW
+  h2-opts: {}
+  http-opts: {}
+  name: 365,424,481,523,524,525,535,546|台湾_091004001 L0
   network: ws
   port: '20521'
   server: 103.61.139.137
   servername: ''
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: f8d93cfb-3d5d-447c-a697-16496dd74697
@@ -580,6 +567,24 @@ proxies:
     headers:
       Host: ''
     path: /
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: '365,524,540,566,569|🇹🇼 台湾|@stairnode #2'
+  password: e6187cf8-7003-47e2-967b-7b900b132ddb
+  port: 10129
+  server: 114.35.114.182
+  tfo: false
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: '365,524,540,566,569|🇹🇼 台湾2|@stairnode #2'
+  password: 8fc95eb8-83b4-47af-ae17-d7639dd0fd2c
+  port: 10147
+  server: 111.253.205.251
+  tfo: false
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
   name: '365,523,524|🇼TW-104.29.64.2-0893 #1'
@@ -610,6 +615,15 @@ proxies:
   tls: false
   type: vmess
   uuid: f6406b6d-5487-46da-f793-46611269a306
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: '365,524,540,566,569|🇹🇼 台湾3|@stairnode #1'
+  password: f200fa8b-dd29-4fac-a67f-67bc05717bad
+  port: 10147
+  server: 111.253.205.251
+  tfo: false
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
   name: '365,523,524,546|这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使... #19'
@@ -1101,13 +1115,16 @@ proxies:
     headers:
       Host: us3.guolicheng.cyou
     path: /suti/us3?ed=2048
-- name: '365,423,523,524|TW-60.248.240.223-5161 #1'
+- country: 🇨 CN
+  name: '365,422,423,523,524|TW-60.248.240.223-5161 #1'
   password: 6e1b9a65-884f-3aa9-9469-bf6ec0f08610
   port: 3462
   server: a03.taipeicitygovernment.cn.ua
   skip-cert-verify: false
   type: trojan
-- name: 365,423,523,524,540|yandex-3588
+  udp: true
+- country: 🇼 TW
+  name: 365,422,423,523,524,540|yandex-4417
   password: 6e1b9a65-884f-3aa9-9469-bf6ec0f08610
   port: 443
   server: taifo03a.kbservice.club
@@ -1270,82 +1287,76 @@ proxies:
       Host: 51b0e42034dd75a815fa9eb16021fbda.mobgslb.tbcache.com
     path: /
   ws-path: /
+- alterId: 0
+  cipher: auto
+  country: 🇼 TW
+  h2-opts: {}
+  http-opts: {}
+  name: 422| TW_155
+  network: ws
+  port: 20521
+  server: 103.61.139.137
+  skip-cert-verify: true
+  type: vmess
+  uuid: f8d93cfb-3d5d-447c-a697-16496dd74697
+  ws-path: /
 - cipher: chacha20-ietf-poly1305
-  country: 🇼TW
-  name: 427|TW_24
+  country: 🇨🇳 TW
+  name: 427,535|🇨🇳 TW_106
   password: dcbc9951-f087-48d9-a04c-87500bb0ef4b
   port: 10076
   server: 125.231.78.25
   type: ss
 - cipher: chacha20-ietf-poly1305
-  country: 🇹🇼TW
-  name: 427|🇼TW_25
-  password: 932fbc01-54f0-4d9c-9441-a17f35ee3350
-  port: 10021
-  server: 118.170.222.48
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇹🇼TW
-  name: 427|🇹🇼TW_26
-  password: dcbc9951-f087-48d9-a04c-87500bb0ef4b
-  port: 10017
-  server: 1.165.103.147
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇹🇼TW
-  name: 427|🇹🇼TW_27
-  password: dcbc9951-f087-48d9-a04c-87500bb0ef4b
-  port: 10150
-  server: 111.253.209.195
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇹🇼TW
-  name: 427|🇹🇼TW_28
-  password: 1448a8fa-e2ce-4032-a081-e1a12fbd5a0a
-  port: 10151
-  server: 36.232.97.222
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇹🇼TW
-  name: 427|🇹🇼TW_29
-  password: 932fbc01-54f0-4d9c-9441-a17f35ee3350
-  port: 10125
-  server: 36.232.104.92
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇹🇼TW
-  name: 427|🇹🇼TW_30
-  password: 5226fcab-0997-4f2a-900b-e896038cdf93
-  port: 10106
-  server: 1.170.3.190
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇹🇼TW
-  name: 427|🇹🇼TW_31
-  password: 58a20b91-0fea-4838-95e9-c52c1af23661
-  port: 10110
-  server: 36.235.20.125
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇹🇼TW
-  name: 427|🇹🇼TW_32
-  password: b62f8f97-3385-43b5-9fa6-0c7f064075a1
-  port: 10005
-  server: 118.170.206.50
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇹🇼TW
-  name: 427|🇹🇼TW_33
+  country: 🇨🇳 TW
+  name: 427,535|🇨🇳 TW_104
   password: 1448a8fa-e2ce-4032-a081-e1a12fbd5a0a
   port: 10107
   server: 1.170.31.90
   type: ss
 - cipher: chacha20-ietf-poly1305
-  country: 🇹🇼TW
-  name: 427|🇹🇼TW_34
+  country: 🇨🇳 TW
+  name: 427,535|🇨🇳 TW_105
+  password: b62f8f97-3385-43b5-9fa6-0c7f064075a1
+  port: 10005
+  server: 118.170.206.50
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇨🇳 TW
+  name: 427,535|🇨🇳 TW_108
   password: f0fb8975-61c0-4832-90b5-da16629d40df
   port: 10080
   server: 114.46.78.82
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇨🇳 TW
+  name: 427,487,530,535,540|yandex-4852
+  password: 5226fcab-0997-4f2a-900b-e896038cdf93
+  port: 10106
+  server: 1.170.3.190
+  tfo: false
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  country: 🇨🇳 TW
+  name: 427,535|🇨🇳 TW_109
+  password: dcbc9951-f087-48d9-a04c-87500bb0ef4b
+  port: 10017
+  server: 1.165.103.147
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇨🇳 TW
+  name: 427,535|🇨🇳 TW_107
+  password: 932fbc01-54f0-4d9c-9441-a17f35ee3350
+  port: 10021
+  server: 118.170.222.48
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇨🇳 TW
+  name: 427,535|🇨🇳 TW_110
+  password: 932fbc01-54f0-4d9c-9441-a17f35ee3350
+  port: 10125
+  server: 36.232.104.92
   type: ss
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
@@ -1372,19 +1383,6 @@ proxies:
     headers:
       Host: tw1bQiWSE4x.fzbqfrse.xyz
     path: /video/GQ2qE5Us9g
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 480|👉🆔 @MoftConfig📡Taiwan
-  network: tcp
-  port: 20413
-  reality-opts:
-    public-key: BQk3bbYxbWAzoi8F0gl7oiM90YO7wFNuwTJRxaWtWFg
-    short-id: bd2ca454
-  server: 111.243.171.244
-  servername: www.visa.com
-  tls: false
-  type: vless
-  uuid: f5202085-8402-4b17-9e35-58ccd1b7f79b
 - cipher: aes-256-gcm
   client-fingerprint: chrome
   name: '500,504|15|🇹🇼 台湾|@ripaojiedian #1'
