@@ -87,7 +87,27 @@ proxies:
     path: /download
 - alterId: 0
   cipher: auto
-  name: '115,116,417,418|台湾2-1A-GPT #1'
+  name: '115,417|台湾2 #1'
+  port: 45077
+  server: xdd.dashuai.cyou
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: a5f57ab0-e5b4-4f8d-b734-a04b22946c80
+- alterId: 0
+  cipher: auto
+  name: '115,417|台湾1 #1'
+  port: 45078
+  server: haa.dashuai.cyou
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: a5f57ab0-e5b4-4f8d-b734-a04b22946c80
+- alterId: 0
+  cipher: auto
+  name: '116,418|台湾2-1A-GPT #1'
   port: 45077
   server: xdd.dashuai.cyou
   skip-cert-verify: true
@@ -97,7 +117,7 @@ proxies:
   uuid: 57e3817d-62f5-4300-918b-41e553b4e86f
 - alterId: 0
   cipher: auto
-  name: '115,116,417,418|台湾1-1A-GPT #1'
+  name: '116,418|台湾1-1A-GPT #1'
   port: 45078
   server: haa.dashuai.cyou
   skip-cert-verify: true
@@ -125,10 +145,20 @@ proxies:
   type: vmess
   udp: true
   uuid: 1d20e718-4f37-44bd-98c2-11f695c9aef2
+- name: 242|TW
+  network: ws
+  password: Aimer
+  port: 2096
+  server: 167.68.4.223
+  skip-cert-verify: true
+  sni: epcca.ambercc.filegear-sg.me
+  type: trojan
+  ws-opts:
+    path: '%2F'
 - alterId: 0
   cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: '293,490,491,502,503,530,540,543,561,566,569|🇹🇼 台湾|@stairnode #1'
+  name: '293,490,491,502,503,530,535,540,543,561,566,569|🇹🇼 台湾|@stairnode #2'
   password: 97a6ea47-3009-48bf-bc5b-2c08e2fe2128
   port: 10100
   server: 36.235.20.46
@@ -140,7 +170,7 @@ proxies:
 - alterId: 0
   cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: '293,490,491,502,503,530,540,543,561,566,569|🇹🇼 台湾2|@stairnode #1'
+  name: '293,490,491,502,503,530,535,540,543,561,566,569|🇹🇼 台湾2|@stairnode #2'
   password: 283bd7ec-0b5c-40bc-8a0a-a86a6355b697
   port: 10089
   server: 125.228.180.215
@@ -398,12 +428,15 @@ proxies:
   uuid: 52704bc6-015d-4c36-bead-87053a8a9641
 - alterId: 0
   cipher: auto
-  name: 365,424,481,523,524,525,546|台湾_091104001 L0
+  country: 🇹🇼TW
+  h2-opts: {}
+  http-opts: {}
+  name: 365,424,481,523,524,525,535,546|台湾_091118001 L0
   network: ws
   port: '20521'
   server: 103.61.139.137
   servername: ''
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: f8d93cfb-3d5d-447c-a697-16496dd74697
@@ -412,14 +445,14 @@ proxies:
       Host: ''
     path: /
 - cipher: chacha20-ietf-poly1305
-  country: 🇩 ID
-  name: 365,422,524,525|🇨🇳TW-223.165.4.173-0334 | 3.35...
+  country: 🇮🇩ID
+  name: 365,422,524,525,535|🇮🇩ID_124
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 223.165.4.173
   type: ss
 - cipher: aes-256-cfb
-  name: 365,422,524,525,565|29|TW_speednode_0055
+  name: 365,422,524,525,535,565|29|TW_speednode_0055
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 154.223.20.79
@@ -966,8 +999,7 @@ proxies:
   skip-cert-verify: false
   type: trojan
   udp: true
-- country: 🇼 TW
-  name: 365,422,423,523,524,540|yandex-4361
+- name: 365,523,524,540|yandex-1531
   password: 6e1b9a65-884f-3aa9-9469-bf6ec0f08610
   port: 443
   server: taifo03a.kbservice.club
@@ -1135,7 +1167,7 @@ proxies:
   country: 🇼 TW
   h2-opts: {}
   http-opts: {}
-  name: 422| TW_134
+  name: 422| TW_129
   network: ws
   port: 20521
   server: 103.61.139.137
@@ -2442,12 +2474,6 @@ proxies:
     headers:
       Host: fadawtawd.zhangwei.li
     path: /zh-cn
-- name: 546|🇹🇼 TW_146
-  password: 6e1b9a65-884f-3aa9-9469-bf6ec0f08610
-  port: 443
-  server: taifo03a.kbservice.club
-  sni: taifo03a.kbservice.club
-  type: trojan
 - alterId: 0
   cipher: auto
   name: 564|台湾1(GPT等流媒体1.5倍）
@@ -2557,73 +2583,5 @@ proxies:
   password: a01b5e27-ece5-4675-866f-36b23a65d2a8
   port: 21073
   server: xdtw.cokecloud.top
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 691|安徽联通转台湾HiNet2[倍率:1]
-  password: 4EyS3nbpwetIJvPQ
-  plugin: obfs
-  plugin-opts:
-    host: fc322298278.cc.baidu.com
-    mode: http
-  port: 65406
-  server: ahcu.k1ka52.ccddn4.icu
-  type: ss
-  udp: true
-- name: 691|安徽联通转台湾HiNet[M][Trojan][倍率:1]
-  password: d8176c20-4671-370a-ad14-f55e1de83233
-  port: 65300
-  server: ahcu.k1ka52.ccddn4.icu
-  sni: dl.hntwhinet.cc.tjcct.xyz
-  type: trojan
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 691|安徽联通转台湾KBT[M][倍率:1]
-  password: 4EyS3nbpwetIJvPQ
-  plugin: obfs
-  plugin-opts:
-    host: fc322298278.cc.baidu.com
-    mode: http
-  port: 65400
-  server: ahcu.k1ka52.ccddn4.icu
-  type: ss
-  udp: true
-- name: 691|广州移动转台湾HiNet2[M][Trojan][倍率:1]
-  password: d8176c20-4671-370a-ad14-f55e1de83233
-  port: 65400
-  server: gzcm.g0nyy3.ccddn4.icu
-  sni: dl.gdhinet2.cc.tjcct.xyz
-  type: trojan
-  udp: true
-- name: 691|广州移动转台湾HiNet[M][Trojan][倍率:1]
-  password: d8176c20-4671-370a-ad14-f55e1de83233
-  port: 65214
-  server: gzcm.g0nyy3.ccddn4.icu
-  sni: gztwhinetz.cc.tjcct.xyz
-  type: trojan
-  udp: true
-- name: 691|广州移动转台湾KBT[M][Trojan][倍率:1]
-  password: d8176c20-4671-370a-ad14-f55e1de83233
-  port: 65210
-  server: gzcm.g0nyy3.ccddn4.icu
-  sni: gztwkbt.cc.tjcct.xyz
-  type: trojan
-  udp: true
-- name: 691|江苏联通转台湾HiNet2[M][Trojan][倍率:1]
-  password: d8176c20-4671-370a-ad14-f55e1de83233
-  port: 65223
-  server: jscu.b3jg6a.ccddn4.icu
-  sni: dl.jscutwhinet2.cc.tjcct.xyz
-  type: trojan
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 691|江苏联通转台湾HiNet[M][倍率:1]
-  password: 4EyS3nbpwetIJvPQ
-  plugin: obfs
-  plugin-opts:
-    host: fc322298278.cc.baidu.com
-    mode: http
-  port: 65405
-  server: jscu.b3jg6a.ccddn4.icu
   type: ss
   udp: true
