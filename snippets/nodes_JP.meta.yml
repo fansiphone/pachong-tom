@@ -695,12 +695,6 @@ proxies:
     headers:
       Host: download.windowsupdate.com
     path: /download
-- cipher: chacha20-ietf-poly1305
-  name: '127,426|🇯🇵 JP_1|10.2MB/s|GPT⁺|YT-JP|NF... #1'
-  password: KJ6nALbBsfY82q416QVSAQ
-  port: 8443
-  server: 167.253.156.226
-  type: ss
 - alterId: 0
   cipher: auto
   name: '129,431|日本NO.1 #1'
@@ -1442,8 +1436,9 @@ proxies:
   sni: www.alibaba.com
   type: trojan
   udp: true
-- client-fingerprint: chrome
-  name: '306,494,502,503,504,506,507,514,515,516,544,548,551,556,557,563,565,579,580,582|🇯🇵
+- alterId: 0
+  client-fingerprint: chrome
+  name: '306,494,502,503,504,506,507,514,515,516,544,548,551,553,556,557,563,565,574,579,580,582|🇯🇵
     日本3|@stairnode #8'
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
@@ -1451,9 +1446,12 @@ proxies:
   server: 160.16.124.55
   skip-cert-verify: false
   sni: www.nintendogames.net
+  tls: true
   type: trojan
-- client-fingerprint: chrome
-  name: '306,494,502,503,504,506,507,514,515,516,544,548,551,556,557,563,565,579,580,582|🇸🇬
+  udp: true
+- alterId: 0
+  client-fingerprint: chrome
+  name: '306,494,502,503,504,506,507,514,515,516,544,548,551,553,556,557,563,565,574,579,580,582|🇸🇬
     新加坡2|@stairnode #8'
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
@@ -1461,9 +1459,12 @@ proxies:
   server: 160.16.72.33
   skip-cert-verify: false
   sni: www.nintendogames.net
+  tls: true
   type: trojan
-- client-fingerprint: chrome
-  name: '306,494,502,503,504,506,507,514,515,516,544,548,551,556,557,563,565,579,580,582|🇺🇸
+  udp: true
+- alterId: 0
+  client-fingerprint: chrome
+  name: '306,494,502,503,504,506,507,514,515,516,544,548,551,553,556,557,563,565,574,579,580,582|🇺🇸
     美国|@stairnode #8'
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
@@ -1471,7 +1472,9 @@ proxies:
   server: 160.16.124.55
   skip-cert-verify: false
   sni: www.nintendogames.net
+  tls: true
   type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: '306,340,494,502,506,507,508,509,514,515,516,544,551,557,559,563,565,636|🇯🇵
@@ -1797,26 +1800,22 @@ proxies:
   sni: www.alibaba.com
   type: trojan
   udp: true
-- alterId: 0
-  name: '340,378,494,508,509,536,537,553,559,565,574,580,636|🇯🇵 日本 002 #1'
+- name: '340,378,494,508,509,536,537,553,559,565,580,636|🇯🇵 日本 002 #1'
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
   port: 1331
   server: 160.16.138.24
   skip-cert-verify: false
   sni: www.nintendogames.net
-  tls: true
   type: trojan
   udp: true
-- alterId: 0
-  name: '340,378,494,508,509,536,537,553,559,565,574,580,636|🇯🇵 日本 003 #1'
+- name: '340,378,494,508,509,536,537,553,559,565,580,636|🇯🇵 日本 003 #1'
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
   port: 409
   server: 153.121.51.29
   skip-cert-verify: false
   sni: www.nintendogames.net
-  tls: true
   type: trojan
   udp: true
 - name: 356|🇯🇵1 |  34.4MB/s
@@ -1845,14 +1844,14 @@ proxies:
   type: ss
 - cipher: aes-128-gcm
   country: 🇬🇧GB
-  name: 356,357,548|🇬🇧GB_189
+  name: 356,357,548|🇬🇧GB_156
   password: shadowsocks
   port: 443
   server: 149.22.87.241
   type: ss
 - cipher: aes-128-gcm
   country: 🇬🇧GB
-  name: 356,357,378,537,538,548|🇬🇧GB_190
+  name: 356,357,378,537,538,548|🇬🇧GB_154
   password: shadowsocks
   port: 443
   server: 149.22.87.204
@@ -3937,7 +3936,7 @@ proxies:
   country: 🇨🇳CN
   h2-opts: {}
   http-opts: {}
-  name: 378,440,536,537,548,559|日本_100204032
+  name: 378,440,536,537,559|日本_100204032
   network: ws
   port: '52131'
   server: 144.48.8.51
@@ -3952,10 +3951,10 @@ proxies:
     path: /arki?ed=2048
 - alterId: 0
   cipher: auto
-  country: 🇳CN
+  country: 🇨🇳CN
   h2-opts: {}
   http-opts: {}
-  name: 378,440,536,537,548,559|日本_100204031
+  name: 378,440,536,537,559|日本_100204031
   network: ws
   port: '19887'
   server: 144.48.8.51
@@ -3991,12 +3990,12 @@ proxies:
   country: 🇯🇵JP
   h2-opts: {}
   http-opts: {}
-  name: 378,440,494,536,537,563|3|🇯🇵JP-47.74.10.111-5240
+  name: 378,440,494,536,537,548,563|3|🇯🇵JP-47.74.10.111-5240
   network: ws
   port: 46049
   server: 47.74.10.111
   servername: ''
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 728257b1-5158-47d9-a1a1-6ac29faab878
@@ -4424,6 +4423,18 @@ proxies:
   sni: eu.mjanyt.com
   type: anytls
   udp: true
+- alterId: 0
+  cipher: auto
+  country: 🇯🇵JP
+  h2-opts: {}
+  http-opts: {}
+  name: 440|🇵JP_25
+  network: none
+  port: 43930
+  server: 163.227.160.55
+  skip-cert-verify: true
+  type: vmess
+  uuid: e1285cf3-293f-41bd-8f2a-217cf1269e24
 - name: '453,454,559,580|日本2|@ripaojiedian #8'
   password: 253bc477d4e43c209f2d427272968280
   port: 3160
@@ -5165,7 +5176,7 @@ proxies:
   type: vless
   udp: true
   uuid: 401374e6-df77-41fb-f638-dad8184f175b
-- name: 508,509,553|yandex-968
+- name: 508,509,553|yandex-4492
   network: ws
   port: 2083
   server: 103.116.7.103
@@ -5181,7 +5192,7 @@ proxies:
       Host: saas.cfliu.filegear-sg.me
     path: /snippets?ip=tw.tp81.netlib.re:81
 - client-fingerprint: chrome
-  name: 508,509,553|yandex-1026
+  name: 508,509,553|yandex-4550
   network: ws
   port: 18788
   server: 146.56.157.15
@@ -5196,7 +5207,7 @@ proxies:
     headers:
       Host: oracle1.mianfeicf.lol
     path: /?ed=2560
-- name: 508,509,553|yandex-1276
+- name: 508,509,553|yandex-4800
   network: ws
   port: 8880
   server: 156.238.18.179
@@ -5211,7 +5222,7 @@ proxies:
     headers:
       Host: sg.laoyoutiao.link
     path: /Telegram
-- name: 508,509,553|yandex-1277
+- name: 508,509,553|yandex-4801
   network: ws
   port: 8880
   server: 156.238.18.214
@@ -5226,7 +5237,7 @@ proxies:
     headers:
       Host: yd.laoyoutiao.link
     path: /Telegram
-- name: 508,509,553|yandex-1278
+- name: 508,509,553|yandex-4802
   network: ws
   port: 8880
   server: 156.238.18.40
@@ -5241,7 +5252,7 @@ proxies:
     headers:
       Host: kjgx.laoyoutiao.link
     path: Telegram
-- name: 508,509,553|yandex-1279
+- name: 508,509,553|yandex-4803
   network: ws
   port: 8880
   server: 156.238.18.71
@@ -5256,7 +5267,7 @@ proxies:
     headers:
       Host: kjgx.laoyoutiao.link
     path: Telegram
-- name: 508,509,553|yandex-1280
+- name: 508,509,553|yandex-4804
   network: ws
   port: 8880
   server: 156.238.18.75
@@ -5271,7 +5282,7 @@ proxies:
     headers:
       Host: yd.laoyoutiao.link
     path: /telegram
-- name: 508,509,553|yandex-1281
+- name: 508,509,553|yandex-4805
   network: ws
   port: 8880
   server: 91.193.58.107
@@ -5286,7 +5297,7 @@ proxies:
     headers:
       Host: kjgx.laoyoutiao.link
     path: Telegram
-- name: 508,509,553|yandex-1282
+- name: 508,509,553|yandex-4806
   network: ws
   port: 8880
   server: 91.193.58.112
@@ -5301,7 +5312,7 @@ proxies:
     headers:
       Host: kjgx.laoyoutiao.link
     path: Telegram
-- name: 508,509,553|yandex-1283
+- name: 508,509,553|yandex-4807
   network: ws
   port: 8880
   server: 91.193.58.114
@@ -5316,7 +5327,7 @@ proxies:
     headers:
       Host: kjgx.laoyoutiao.link
     path: Telegram
-- name: 508,509,553|yandex-1284
+- name: 508,509,553|yandex-4808
   network: tcp
   port: 8880
   server: 91.193.58.167
@@ -5327,7 +5338,7 @@ proxies:
   type: vless
   udp: true
   uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-- name: 508,509,553|yandex-1285
+- name: 508,509,553|yandex-4809
   network: ws
   port: 8880
   server: 91.193.58.171
@@ -5464,19 +5475,26 @@ proxies:
   server: 202.8.9.27
   sni: glc.hruqoaw.cn
   type: trojan
-- cipher: aes-128-gcm
-  country: 🇯🇵JP
-  name: 548|🇯🇵JP_228
-  password: '!!str 10086'
-  port: 10087
-  server: 153.121.51.214
-  type: ss
+- alterId: 34463
+  cipher: auto
+  country: 🇯🇵 JP
+  h2-opts: {}
+  http-opts: {}
+  name: 548|Relay_🇯🇵 JP-🇯🇵JP_193
+  network: tcp
+  port: 21583
+  server: c2nnc-g01.jp03-7d22-vm0.entry.fr0307a.art
+  servername: trojan.burgerip.co.uk
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 8e555d33-4ce4-395e-93cd-670297aeeb0f
 - cipher: aes-128-gcm
   country: 🇯🇵JP
   name: 548|disney_JP
   password: '!!str 10086'
   port: 10087
-  server: 153.121.43.183
+  server: 153.121.51.214
   type: ss
 - cipher: aes-128-gcm
   country: 🇯🇵JP
@@ -5485,19 +5503,27 @@ proxies:
   port: 10087
   server: 160.16.123.124
   type: ss
+- cipher: aes-128-gcm
+  country: 🇯🇵JP
+  name: '548|disney_JP #2'
+  password: '!!str 10086'
+  port: 10087
+  server: 153.121.43.183
+  type: ss
 - alterId: 0
   cipher: auto
   country: 🇯🇵JP
   h2-opts: {}
   http-opts: {}
-  name: 548|Relay_🇯🇵JP-🇯🇵JP_231
-  network: tcp
-  port: 53231
-  server: cgroup.node1.v.nodelist-airport.com
-  servername: cgroup.node1.v.nodelist-airport.com
+  name: 548|🇯🇵JP_200
+  network: ws
+  port: 80
+  server: 172.111.146.64
   skip-cert-verify: true
   type: vmess
-  uuid: 8f3a835c-8a45-480d-ae35-1deb2c52dcae
+  uuid: 05b8c783-7f59-47f9-9923-06a465679f6a
+  ws-opts:
+    path: /vmess/
 - cipher: chacha20-ietf-poly1305
   name: 558|0| 01 | 1x JP
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
@@ -5699,6 +5725,15 @@ proxies:
   sni: www.bing.com
   tls: false
   type: hysteria2
+- name: 559|日本_100204146
+  network: tcp
+  password: 6et7U7udLe
+  port: 22846
+  server: qige.zaide.tech
+  sni: qige.zaide.tech
+  type: trojan
+  ws-opts:
+    path: '%2f'
 - name: 559|🇯🇵 日本_2
   network: ws
   port: 35951
