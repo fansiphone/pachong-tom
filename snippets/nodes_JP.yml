@@ -1093,11 +1093,11 @@ proxies:
   sni: www.alibaba.com
   type: trojan
   udp: true
-- name: 255|JP
-  network: tcp
+- name: 255|🇯🇵 JP
   password: f57f01e6-9bb1-4277-a5cb-75ad0ce1fa11
   port: 21125
   server: 125.94.40.162
+  skip-cert-verify: true
   sni: k12.tudou211.com
   type: trojan
 - name: '275,276|日本05 #2'
@@ -1296,14 +1296,14 @@ proxies:
   type: ss
 - cipher: aes-128-gcm
   country: 🇬🇧GB
-  name: 356,357,548|🇬🇧GB_171
+  name: 356,357,548|🇬🇧GB_159
   password: shadowsocks
   port: 443
   server: 149.22.87.241
   type: ss
 - cipher: aes-128-gcm
   country: 🇬🇧GB
-  name: 356,357,378,537,538,548|🇬🇧GB_173
+  name: 356,357,378,537,538,548|🇬🇧GB_158
   password: shadowsocks
   port: 443
   server: 149.22.87.204
@@ -3287,7 +3287,7 @@ proxies:
   cipher: auto
   h2-opts: {}
   http-opts: {}
-  name: 378,536,537,548|_64
+  name: 378,536,537,548|_62
   network: ws
   port: 19887
   server: 144.48.8.51
@@ -3300,7 +3300,9 @@ proxies:
     path: /arki?ed=2048
 - alterId: 0
   cipher: auto
-  name: '378,536,537|🇯🇵JP-144.48.8.51-5285 #1'
+  h2-opts: {}
+  http-opts: {}
+  name: 378,536,537,548|_61
   network: ws
   port: 52131
   server: 144.48.8.51
@@ -3331,15 +3333,12 @@ proxies:
     path: /arki?ed=2048
 - alterId: 0
   cipher: auto
-  country: 🇯🇵JP
-  h2-opts: {}
-  http-opts: {}
-  name: 378,494,536,537,548,559,563|3|🇯🇵JP-47.74.10.111-5257
+  name: 378,494,536,537,559,563|3|🇯🇵JP-47.74.10.111-5257
   network: ws
   port: 46049
   server: 47.74.10.111
   servername: ''
-  skip-cert-verify: true
+  skip-cert-verify: false
   tls: false
   type: vmess
   uuid: 728257b1-5158-47d9-a1a1-6ac29faab878
@@ -3709,6 +3708,18 @@ proxies:
       Host: 51b0e42034dd75a815fa9eb16021fbda.mobgslb.tbcache.com
     path: /
   ws-path: /
+- alterId: 0
+  cipher: auto
+  country: 🏁 ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 440,548|🏁 ZZ_361
+  network: none
+  port: 43930
+  server: 163.227.160.55
+  skip-cert-verify: true
+  type: vmess
+  uuid: e1285cf3-293f-41bd-8f2a-217cf1269e24
 - name: '453,454,559|日本2|@ripaojiedian #6'
   password: 253bc477d4e43c209f2d427272968280
   port: 3160
@@ -4107,7 +4118,7 @@ proxies:
   udp: true
 - country: 🇩🇪DE
   delay: 1519
-  name: 528,553|yandex-5095
+  name: 528,553|yandex-1879
   password: YlfdAfTHoAuoRIbTPl
   port: 443
   server: ty-4.rise-fuji.com
@@ -4481,40 +4492,28 @@ proxies:
     headers:
       Host: ''
     path: /
+- cipher: aes-256-gcm
+  country: 🇯🇵JP
+  name: 548,553|yandex-1942
+  password: 8f3a835c-8a45-480d-ae35-1deb2c52dcae
+  port: 51205
+  server: cgroup.node1.s2.nodelist-airport.com
+  type: ss
+  udp: true
 - cipher: aes-128-gcm
   country: 🇯🇵JP
   name: 548|disney_JP
-  password: '!!str 10086'
-  port: 10087
-  server: 160.16.123.124
-  type: ss
-- cipher: aes-128-gcm
-  country: 🇯🇵JP
-  name: '548|disney_JP #1'
   password: '!!str 10086'
   port: 10087
   server: 153.121.43.183
   type: ss
 - cipher: aes-128-gcm
   country: 🇯🇵JP
-  name: '548|disney_JP #2'
+  name: '548|disney_JP #1'
   password: '!!str 10086'
   port: 10087
   server: 153.121.51.214
   type: ss
-- alterId: 0
-  cipher: auto
-  country: 🇯🇵JP
-  h2-opts: {}
-  http-opts: {}
-  name: 548|Relay_🇯🇵JP-🇯🇵JP_212
-  network: tcp
-  port: 53231
-  server: cgroup.node1.v.nodelist-airport.com
-  servername: cgroup.node1.v.nodelist-airport.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: 8f3a835c-8a45-480d-ae35-1deb2c52dcae
 - cipher: chacha20-ietf-poly1305
   name: 558|0| 01 | 1x JP
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
@@ -4676,15 +4675,6 @@ proxies:
   tls: false
   type: vmess
   uuid: b806b388-5f97-11ee-8014-f23c913c8d2b
-- name: 559|日本_100318137
-  network: tcp
-  password: 6et7U7udLe
-  port: 22846
-  server: qige.zaide.tech
-  sni: qige.zaide.tech
-  type: trojan
-  ws-opts:
-    path: '%2f'
 - alterId: 0
   cipher: auto
   name: 559|github.com/freefq - 日本东京Linode...
@@ -5000,66 +4990,6 @@ proxies:
   port: 443
   server: 1002jp.tfzhc.top
   skip-cert-verify: true
-  type: trojan
-- name: '566|🇯🇵 日本 | JPN #1'
-  password: 1cf3cd79-dacc-449c-913e-0d770b65254d
-  port: 21869
-  server: baigou1.kkieo555.cn
-  skip-cert-verify: true
-  sni: douyin.com
-  type: trojan
-  udp: true
-- name: '566|🇯🇵 日本 | JPN 2 #1'
-  password: 1cf3cd79-dacc-449c-913e-0d770b65254d
-  port: 21867
-  server: baigou1.kkieo555.cn
-  skip-cert-verify: true
-  sni: douyin.com
-  type: trojan
-  udp: true
-- name: '566|🇯🇵 日本 | JPN 3 #1'
-  password: e0cd7b9f-0846-499c-af0d-e415d9c811f5
-  port: 21868
-  server: baigou1.kkieo555.cn
-  skip-cert-verify: true
-  sni: douyin.com
-  type: trojan
-  udp: true
-- name: 566|🇯🇵 日本 | JPN 11
-  password: 8594be9b-94ed-419e-aebb-a92f5d3fbd0a
-  port: 21869
-  server: baigou1.kkieo555.cn
-  skip-cert-verify: true
-  sni: douyin.com
-  type: trojan
-  udp: true
-- name: 568|🇯🇵 日本 14
-  password: e0cd7b9f-0846-499c-af0d-e415d9c811f5
-  port: 21869
-  server: baigou1.kkieo555.cn
-  skip-cert-verify: true
-  sni: douyin.com
-  type: trojan
-- name: 568|🇯🇵 日本 11
-  password: d9c1d3c5-12ea-4ea7-8ab3-1312d67ec181
-  port: 21867
-  server: baigou1.kkieo555.cn
-  skip-cert-verify: true
-  sni: douyin.com
-  type: trojan
-- name: 568|🇯🇵 日本 12
-  password: dc0281c1-5f69-45bf-9b72-f56d2edb3966
-  port: 21868
-  server: baigou1.kkieo555.cn
-  skip-cert-verify: true
-  sni: douyin.com
-  type: trojan
-- name: 568|🇯🇵 日本 05
-  password: dc0281c1-5f69-45bf-9b72-f56d2edb3966
-  port: 21869
-  server: baigou1.kkieo555.cn
-  skip-cert-verify: true
-  sni: douyin.com
   type: trojan
 - alterId: 0
   cipher: auto
