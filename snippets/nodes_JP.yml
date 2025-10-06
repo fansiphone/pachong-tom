@@ -1103,11 +1103,11 @@ proxies:
   sni: www.alibaba.com
   type: trojan
   udp: true
-- name: 255|🇯🇵 JP
+- name: 255|JP
+  network: tcp
   password: f57f01e6-9bb1-4277-a5cb-75ad0ce1fa11
   port: 21125
   server: 125.94.40.162
-  skip-cert-verify: true
   sni: k12.tudou211.com
   type: trojan
 - name: '275,276|日本05 #2'
@@ -1313,7 +1313,7 @@ proxies:
   type: ss
 - cipher: aes-128-gcm
   country: 🇬🇧GB
-  name: 356,357,378,537,538,548|🇬🇧GB_162
+  name: 356,357,378,537,538,548|🇬🇧GB_163
   password: shadowsocks
   port: 443
   server: 149.22.87.204
@@ -2486,15 +2486,13 @@ proxies:
   sni: www.nintendogames.net
   type: trojan
   udp: true
-- alterId: 0
-  name: '378,494,508,509,536,537,548,553,559,565,574,636|🇯🇵 日本 027 #1'
+- name: '378,508,509,536,537,553,559,565,636|🇯🇵 日本 027 #1'
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
   port: 3160
   server: 160.16.89.176
   skip-cert-verify: false
   sni: www.nintendogames.net
-  tls: true
   type: trojan
   udp: true
 - name: '378,508,509,536,537,553,565,636|🇯🇵 日本 028 #1'
@@ -3340,7 +3338,9 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: '378,536,537|JP-144.48.8.51-5557 #1'
+  h2-opts: {}
+  http-opts: {}
+  name: 378,536,537,548|_29
   network: ws
   port: 19887
   server: 144.48.8.51
@@ -3353,7 +3353,9 @@ proxies:
     path: /arki?ed=2048
 - alterId: 0
   cipher: auto
-  name: '378,536,537|🇯🇵JP-144.48.8.51-5558 #1'
+  h2-opts: {}
+  http-opts: {}
+  name: 378,536,537,548|_31
   network: ws
   port: 52131
   server: 144.48.8.51
@@ -3366,15 +3368,12 @@ proxies:
     path: /arki?ed=2048
 - alterId: 0
   cipher: auto
-  country: 🇯🇵JP
-  h2-opts: {}
-  http-opts: {}
-  name: 378,494,536,537,548,563|3|🇯🇵JP-47.74.10.111-5593
+  name: 378,494,536,537,563|3|🇯🇵JP-47.74.10.111-5593
   network: ws
   port: 34029
   server: 47.74.10.111
   servername: ''
-  skip-cert-verify: true
+  skip-cert-verify: false
   tls: false
   type: vmess
   uuid: 2e80d0c8-16c8-420a-b86c-c2e7e2e4f764
@@ -3402,15 +3401,12 @@ proxies:
     path: /arki?ed=2048
 - alterId: 0
   cipher: auto
-  country: 🇯🇵JP
-  h2-opts: {}
-  http-opts: {}
-  name: 378,494,536,537,548,563|3|🇯🇵JP-47.74.10.111-5595
+  name: 378,494,536,537,563|3|🇯🇵JP-47.74.10.111-5595
   network: ws
   port: 46049
   server: 47.74.10.111
   servername: ''
-  skip-cert-verify: true
+  skip-cert-verify: false
   tls: false
   type: vmess
   uuid: 728257b1-5158-47d9-a1a1-6ac29faab878
@@ -3890,7 +3886,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 468,491,493,562|36|🔒 VM-TCP-NA 🇬🇧 GB-46.250.25...
+  name: 468,492,493,562|36|🔒 VM-TCP-NA 🇬🇧 GB-46.250.25...
   network: tcp
   port: '46617'
   server: 46.250.253.232
@@ -3905,7 +3901,7 @@ proxies:
   skip-cert-verify: true
   sni: inspired-dinosaur.adder289.quest
   type: trojan
-- name: '468,491,493|⚜️Telegram:@IP_CF #1950'
+- name: '468,492,493|⚜️Telegram:@IP_CF #1258'
   network: tcp
   password: '!!str 3747000103274291200'
   port: 443
@@ -3914,7 +3910,7 @@ proxies:
   sni: crucial-moccasin.adder289.quest
   type: trojan
 - alterId: 0
-  name: 468,491,493,562|37|未知11
+  name: 468,492,493,562|37|未知11
   network: tcp
   password: '!!str 3747000103274291200'
   port: 443
@@ -4020,7 +4016,7 @@ proxies:
   uuid: 55b88b14-0ff3-4f25-8983-e73d1f9f3a0a
 - alterId: 0
   cipher: auto
-  name: 489,553|yandex-3091
+  name: 489,553|yandex-5109
   network: ws
   port: 45028
   server: 43.246.198.134
@@ -4032,7 +4028,7 @@ proxies:
     path: /arki?ed=2048
 - alterId: 0
   cipher: auto
-  name: 489,553|yandex-3217
+  name: 489,553|yandex-5235
   network: ws
   port: 1010
   server: 134.122.194.218
@@ -4044,7 +4040,7 @@ proxies:
     path: /46674157
 - alterId: 0
   cipher: auto
-  name: 489,553|yandex-3261
+  name: 489,553|yandex-5279
   network: ws
   port: 11683
   server: 43.246.198.134
@@ -4054,76 +4050,173 @@ proxies:
   uuid: c040f159-377d-4b62-aaf6-994460d3ee4e
   ws-opts:
     path: /arki?ed=2048
-- name: '491,493|[🏁]t.me/MoftConfig #1011'
+- name: 492|👉🆔 @MoftConfig📡🇵Japan
   password: 2155145a-b1b5-443a-8977-670f6bd10f02
   port: 50001
-  server: 35.78.64.238
+  server: 18.183.13.60
   skip-cert-verify: true
   sni: bgroup.node1.t.nodelist-airport.com
   type: trojan
-- name: '491,493|👉🆔 @MoftConfig📡🇯🇵Japan #27'
-  password: 9wSlq29Ta3DD633lCcXzFe3qAa3AyC8eO7T7RaFayZRYF3z43ExZuYaEjS0XppgAOg4BC
-  port: 28334
-  server: boohoo.meijireform.com
-  skip-cert-verify: true
-  sni: boohoo.meijireform.com
-  type: trojan
-- name: '491,493|👉🆔 @MoftConfig📡🇵Japan #11'
-  password: 32aFSDKwjFRcASN6DyAF9eqZ07D3OauYTYgxXBI50Tgy8Oxp8N3KAFDaOn3ZDYE334SEC
-  port: 28335
-  server: 54.238.151.32
-  skip-cert-verify: true
-  sni: kuam.meijireform.com
-  type: trojan
-- name: '491,493|👉🆔 @MoftConfig📡🇯🇵Japan #30'
+- name: '492|👉🆔 @MoftConfig📡Japan #2'
   password: a124e41a-0fb8-4543-a0ab-a127c7b515a9
   port: 20230
-  server: 18.179.178.237
-  skip-cert-verify: true
-  sni: jp005.421421.xyz
+  server: 52.194.229.10
+  sni: 421421.xyz
   type: trojan
-- name: '491,493|👉🆔 @MoftConfig📡🇯🇵Japan #31'
+- name: '492,493|[🏁]t.me/ConfigsHub #868'
+  password: b44da489-fc70-4fd0-8997-a83b51f59267
+  port: 20230
+  server: 57.180.30.125
+  skip-cert-verify: true
+  sni: jp007.421421.xyz
+  type: trojan
+- name: '492,493|👉🆔 @MoftConfig📡🇯🇵Japan #46'
   password: a124e41a-0fb8-4543-a0ab-a127c7b515a9
   port: 20230
   server: 18.182.4.56
   skip-cert-verify: true
   sni: jp005.421421.xyz
   type: trojan
-- name: '491,493|👉🆔 @MoftConfig📡🇯🇵Japan #32'
+- name: '492,493|👉🆔 @MoftConfig📡🇯🇵Japan #45'
+  password: a124e41a-0fb8-4543-a0ab-a127c7b515a9
+  port: 20230
+  server: 18.179.178.237
+  skip-cert-verify: true
+  sni: jp005.421421.xyz
+  type: trojan
+- name: '492,493|👉🆔 @MoftConfig📡🇯🇵Japan #47'
   password: 0bfa2050-b165-4156-859c-70f36d300dce
   port: 20230
   server: 3.113.7.83
   skip-cert-verify: true
   sni: jp008.421421.xyz
   type: trojan
-- name: '491,493|[🏁]t.me/MoftConfig #1023'
-  password: 0bfa2050-b165-4156-859c-70f36d300dce
-  port: 20230
-  server: 52.195.175.197
+- name: '492|👉🆔 @MoftConfig📡🇵Japan #6'
+  password: FeCOjFDq3aXx8BD39R2O4zxSxNDY3R4zl3x6K2SZaZY3ElTRaO5EeR08yNnSI0Zew9lyC
+  port: 443
+  server: mailbox.meijireform.com
   skip-cert-verify: true
-  sni: jp008.421421.xyz
   type: trojan
-- name: '491,493|👉🆔 @MoftConfig📡🇯🇵Japan #35'
+- name: '492,493|👉🆔 @MoftConfig📡🇯🇵Japan #50'
   password: 5a81db08-7af3-49a4-b089-b7a5b2c24c38
   port: 20230
   server: 52.195.176.39
   skip-cert-verify: true
   sni: jp007.421421.xyz
   type: trojan
-- name: '491,493|👉🆔 @MoftConfig📡🇵Japan #19'
+- name: '492|👉🆔 @MoftConfig📡🇯🇵Japan #17'
+  password: lCnTqRDYyYzSCwCaa9euS0BO2KlaepCyyepSOSN8ACB86DZl3aZ3c0n8xOxTI55w3O4SX
+  port: 28340
+  server: social.meijireform.com
+  skip-cert-verify: true
+  sni: social.meijireform.com
+  type: trojan
+- name: '492|👉🆔 @MoftConfig📡🇯🇵Japan #18'
+  password: '!!str 74260712244661900'
+  port: 443
+  server: gorgeous-bull.shiner427.skin
+  skip-cert-verify: true
+  type: trojan
+- name: '492|👉🆔 @MoftConfig📡🇯🇵Japan #19'
+  password: '!!str 74260712244661900'
+  port: 443
+  server: gorgeous-bull.shiner427.skin
+  skip-cert-verify: true
+  sni: gorgeous-bull.shiner427.skin
+  type: trojan
+- name: '492|👉🆔 @MoftConfig📡Japan #5'
+  password: 2155145a-b1b5-443a-8977-670f6bd10f02
+  port: 50001
+  server: 3.113.26.19
+  skip-cert-verify: true
+  sni: bgroup.node1.t.nodelist-airport.com
+  type: trojan
+- name: '492|👉🆔 @MoftConfig📡🇯🇵Japan #21'
+  password: a124e41a-0fb8-4543-a0ab-a127c7b515a9
+  port: 20230
+  server: 18.183.228.197
+  skip-cert-verify: true
+  sni: jp007.421421.xyz
+  type: trojan
+- name: '492,493|👉🆔 @MoftConfig📡🇵Japan #22'
+  password: f08d6a6b-a0b3-410e-a0ba-eae71b521904
+  port: 20230
+  server: 54.238.183.54
+  skip-cert-verify: true
+  sni: jp006.421421.xyz
+  type: trojan
+- name: '492,493|⚜️Telegram:@IP_CF #1016'
+  password: 429ad146-8f43-4dd4-8fb3-cca3f3a30c63
+  port: 20230
+  server: jp006.421421.xyz
+  type: trojan
+- name: '492|👉🆔 @MoftConfig📡🇵Japan #12'
+  password: Y0IweO6223CjwZD8FFZAaCz3yTYxDKX9yOAlXp5FTRONDaZl3zSeS7a3D4cYuCxFRx7yS
+  port: 28337
+  server: 154.31.112.95
+  sni: tenderly.meijireform.com
+  type: trojan
+- name: '492|👉🆔 @MoftConfig📡🇯🇵Japan #34'
+  password: TTcyAOIqSCCZSO7XNCyzcS2Azlp3Yujw0j4uaR39DAeYw38Ye9F3eplxxg63FaCxC8R3S
+  port: 28332
+  server: country.meijireform.com
+  skip-cert-verify: false
+  sni: country.meijireform.com
+  type: trojan
+- name: '492|[🏁]t.me/MoftConfig #557'
+  password: JH9NEZKTib
+  port: 17748
+  server: djvp.sywk.com.cn
+  skip-cert-verify: false
+  sni: djvp.sywk.com.cn
+  type: trojan
+- name: '492|👉🆔 @MoftConfig📡🇵Japan #15'
+  password: TOZA9E6pyq4z3pFYeIeOC3ApaSDjR2wFueaO8uNDx0czDF3YCSwa3xjZ3qZAyB4YCKCZS
+  port: 443
+  server: 154.31.115.31
+  sni: swiftly.meijireform.com
+  type: trojan
+- name: '492|👉🆔 @MoftConfig📡Japan #7'
+  password: 6aqnYj7NA2CAeSeZpY34RIC3KzNzDO33aOOaZSxFSc5ETBcwXeyaDF3qC9A907y2nXT8S
+  port: 443
+  server: 154.31.114.12
+  skip-cert-verify: true
+  type: trojan
+- name: '493|👉🆔 @MoftConfig📡🇯🇵Japan #42'
+  password: 9wSlq29Ta3DD633lCcXzFe3qAa3AyC8eO7T7RaFayZRYF3z43ExZuYaEjS0XppgAOg4BC
+  port: 28334
+  server: boohoo.meijireform.com
+  skip-cert-verify: true
+  sni: boohoo.meijireform.com
+  type: trojan
+- name: '493|👉🆔 @MoftConfig📡🇵Japan #20'
+  password: 32aFSDKwjFRcASN6DyAF9eqZ07D3OauYTYgxXBI50Tgy8Oxp8N3KAFDaOn3ZDYE334SEC
+  port: 28335
+  server: 54.238.151.32
+  skip-cert-verify: true
+  sni: kuam.meijireform.com
+  type: trojan
+- name: '493|[🏁]t.me/MoftConfig #974'
+  password: 0bfa2050-b165-4156-859c-70f36d300dce
+  port: 20230
+  server: 52.195.175.197
+  skip-cert-verify: true
+  sni: jp008.421421.xyz
+  type: trojan
+- name: '493|👉🆔 @MoftConfig📡🇵Japan #28'
   password: 6aqnYj7NA2CAeSeZpY34RIC3KzNzDO33aOOaZSxFSc5ETBcwXeyaDF3qC9A907y2nXT8S
   port: 443
   server: 154.31.114.12
   sni: visual.superpokemon.com
   type: trojan
-- name: '491,493|⚜️Telegram:@IP_CF #2768'
+- name: '493|⚜️Telegram:@IP_CF #2076'
   network: tcp
   password: '!!str 74260700211203800'
   port: 443
   server: possible-tiger.shiner427.skin
   skip-cert-verify: true
   type: trojan
-- name: '491,493|👉🆔 @MoftConfig📡🇯🇵®️Japan©️Koto... #5'
+- name: '493|👉🆔 @MoftConfig📡🇯🇵®️Japan©️Koto... #2'
   password: '!!str 74260700211203800'
   port: 443
   server: daring-gobbler.shiner427.skin
@@ -4295,7 +4388,7 @@ proxies:
 - alterId: 0
   cipher: auto
   delay: 1201
-  name: 528,553|yandex-3413
+  name: 528,553|yandex-5403
   port: 20021
   server: itjhcwds.xn--fiqs8sjz2bull.com
   tls: false
@@ -4655,36 +4748,23 @@ proxies:
   type: vmess
   udp: true
   uuid: e155830d-6700-4608-ab97-a44854358ba3
-- alterId: 0
-  cipher: auto
-  country: 🇯🇵 JP
-  h2-opts: {}
-  http-opts: {}
-  name: 548|🇯🇵 JP_197
-  network: tcp
-  port: 23211
-  server: tls.19.node-for-bigairport.win
-  skip-cert-verify: true
-  type: vmess
-  uuid: c69374da-2208-4cbd-b81e-cdf88b5e7f53
-- cipher: aes-256-gcm
-  country: 🇯🇵JP
-  name: 548,553|yandex-5034
-  password: 8f3a835c-8a45-480d-ae35-1deb2c52dcae
-  port: 51205
-  server: cgroup.node1.s2.nodelist-airport.com
-  type: ss
-  udp: true
 - cipher: aes-128-gcm
   country: 🇯🇵JP
   name: 548|disney_JP
+  password: '!!str 10086'
+  port: 10087
+  server: 153.121.43.183
+  type: ss
+- cipher: aes-128-gcm
+  country: 🇯🇵JP
+  name: '548|disney_JP #1'
   password: '!!str 10086'
   port: 10087
   server: 160.16.123.124
   type: ss
 - cipher: aes-128-gcm
   country: 🇯🇵JP
-  name: 548|🇯🇵JP_200
+  name: '548|disney_JP #2'
   password: '!!str 10086'
   port: 10087
   server: 153.121.51.214
@@ -4694,14 +4774,19 @@ proxies:
   country: 🇯🇵JP
   h2-opts: {}
   http-opts: {}
-  name: 548|Relay_🇯🇵JP-🇯🇵JP_202
-  network: tcp
-  port: 53231
-  server: cgroup.node1.v.nodelist-airport.com
-  servername: cgroup.node1.v.nodelist-airport.com
+  name: 548,559|日本_100618177 L0
+  network: ws
+  port: '80'
+  server: 172.111.146.64
+  servername: ''
   skip-cert-verify: true
+  tls: false
   type: vmess
-  uuid: 8f3a835c-8a45-480d-ae35-1deb2c52dcae
+  uuid: 05b8c783-7f59-47f9-9923-06a465679f6a
+  ws-opts:
+    headers:
+      Host: ''
+    path: /vmess/
 - cipher: chacha20-ietf-poly1305
   name: 558|0| 01 | 1x JP
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
@@ -4866,20 +4951,6 @@ proxies:
     headers:
       Host: v6.583181.xyz
     path: /
-- alterId: 0
-  cipher: auto
-  name: 559|日本_100618177 L0
-  network: ws
-  port: '80'
-  server: 172.111.146.64
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 05b8c783-7f59-47f9-9923-06a465679f6a
-  ws-opts:
-    headers:
-      Host: ''
-    path: /vmess/
 - cipher: chacha20-ietf-poly1305
   name: 562|5,9,24,27|1|  01 | 1x JP
   password: b9bc70b4-8825-4b0a-a6a1-2314a5f45f79
@@ -5150,51 +5221,6 @@ proxies:
   tls: false
   type: vmess
   uuid: f1d39fe1-bfa3-34ff-86a2-29250af03183
-- alterId: 0
-  cipher: auto
-  name: 566|🇯🇵 日本 | JPN
-  port: 10002
-  server: g1.aerivon.net
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 2795ca06-d46c-3b9e-919f-6c1762b9d6eb
-- alterId: 0
-  cipher: auto
-  name: 566|🇯🇵 日本 | JPN 2
-  port: 11034
-  server: g1.aerivon.net
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 2795ca06-d46c-3b9e-919f-6c1762b9d6eb
-- alterId: 0
-  cipher: auto
-  name: 566|🇯🇵 日本 | JPN 3
-  port: 1032
-  server: g1.aerivon.net
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 2795ca06-d46c-3b9e-919f-6c1762b9d6eb
-- alterId: 0
-  cipher: auto
-  name: 566|🇯🇵 日本 | JPN 4
-  port: 2301
-  server: g1.aerivon.net
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 2795ca06-d46c-3b9e-919f-6c1762b9d6eb
-- alterId: 0
-  cipher: auto
-  name: 566|🇳🇬 尼日利亚 | NGA
-  port: 38110
-  server: g1.aerivon.net
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 2795ca06-d46c-3b9e-919f-6c1762b9d6eb
 - alterId: 0
   cipher: auto
   name: '577|日本NO.1 #2'
