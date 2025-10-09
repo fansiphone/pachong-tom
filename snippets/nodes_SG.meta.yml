@@ -852,11 +852,11 @@ proxies:
   port: 17315
   server: 120.240.103.35
   type: ss
-- name: 255|🇸🇬 SG
+- name: 255|SG
+  network: tcp
   password: f57f01e6-9bb1-4277-a5cb-75ad0ce1fa11
   port: 32702
   server: xd-sh.timiwc.com
-  skip-cert-verify: true
   sni: k36.tudou211.com
   type: trojan
 - client-fingerprint: chrome
@@ -946,7 +946,7 @@ proxies:
   sni: www.alibaba.com
   type: trojan
   udp: true
-- name: '306,340,378,494,502,503,504,506,507,508,509,514,515,516,537,551,553,559,563,566,567,585,586|SG_speednode_0050
+- name: '306,340,378,494,502,503,504,506,507,508,509,514,515,516,537,551,553,559,563,566,567,580,585,586|SG_speednode_0050
     #8'
   network: ws
   password: wb6368
@@ -980,8 +980,9 @@ proxies:
 - client-fingerprint: chrome
   flow: ''
   grpc-opts:
+    grpc-mode: gun
     grpc-service-name: tj
-  name: '320|新加坡03|流媒体 #3'
+  name: '320,508,509|新加坡 001 #1'
   network: grpc
   port: 20230
   reality-opts:
@@ -3139,7 +3140,7 @@ proxies:
     path: /arki?ed=2048
 - alterId: 0
   cipher: auto
-  name: 378,536,537,559|新加坡_100818179
+  name: 378,536,537,559|新加坡_100904035
   network: ws
   port: '50110'
   server: 47.237.13.208
@@ -3154,7 +3155,7 @@ proxies:
     path: /arki?ed=2048
 - alterId: 0
   cipher: auto
-  name: 378,536,537,559|新加坡_100818180
+  name: 378,536,537,559|新加坡_100904037
   network: ws
   port: '16043'
   server: 47.237.13.208
@@ -3169,9 +3170,7 @@ proxies:
     path: /arki?ed=2048
 - alterId: 0
   cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: 378,536,537,548,559|新加坡_100818181
+  name: 378,536,537,559|新加坡_100904036
   network: ws
   port: '51378'
   server: 47.237.13.208
@@ -3193,9 +3192,7 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: 378,494,536,537,548,563|3|🇸🇬SG-8.219.218.138-5684
+  name: 378,494,536,537,563|3|🇸🇬SG-8.219.218.138-5684
   network: ws
   port: 2678
   server: 8.219.218.138
@@ -4882,21 +4879,19 @@ proxies:
   server: 101.32.245.58
   type: http
   username: yunxi8848
-- client-fingerprint: chrome
-  name: '508,509|新加坡 006 #1'
-  network: grpc
+- name: '508,509|新加坡 002 #1'
+  network: ws
+  password: 1b26d982-fd68-44f4-bf6d-22fe17a9249a
   port: 20230
-  reality-opts:
-    public-key: hBXQa1tSoP0jjIezHxeyKhf1YKxe8CoBHoxvIxEJuAc
-    short-id: 2c5ecaae
-  server: sg003.421421.xyz
-  servername: www.nvidia.com
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
+  server: sg006.421421.xyz
+  skip-cert-verify: true
+  sni: www.alibaba.com
+  type: trojan
   udp: true
-  uuid: 910eff70-917c-49d8-81d1-6c0bc0e27e3c
+  ws-opts:
+    headers:
+      Host: www.alibaba.com
+    path: /
 - cipher: aes-256-cfb
   name: '513,517,562,578|1|_SG_ #2'
   password: amazonskr05
@@ -5535,45 +5530,21 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
+  country: 🏁ZZ
   h2-opts: {}
   http-opts: {}
-  name: 548|disney_SG
-  port: 35034
-  server: 165.154.195.38
-  type: vmess
-  udp: true
-  uuid: 959a8caf-4cea-43d0-a548-3628e7ddfafc
-- alterId: 0
-  cipher: auto
-  country: 🇸🇬 SG
-  h2-opts: {}
-  http-opts:
-    method: GET
-    path:
-    - /baidu
-  name: 548|🇸🇬 SG_249
-  network: http
-  port: 53798
-  server: 139.180.155.29
-  type: vmess
-  uuid: 1531a9f1-6e81-4eed-bf9a-6a3383c98238
-- alterId: 0
-  cipher: auto
-  country: 🇸🇬 SG
-  h2-opts: {}
-  http-opts: {}
-  name: 548,559|新加坡_100818031 L9
+  name: 548|Relay_🏁ZZ-🇸🇬SG_479
   network: ws
-  port: '20521'
-  server: 139.180.155.29
-  servername: ''
-  tls: false
+  port: 80
+  server: ips.993888.xyz
+  servername: sg.anycast.dpdns.org
+  skip-cert-verify: true
   type: vmess
-  uuid: 08c2a76e-15d1-4ec0-a8d0-1f51bc76a667
+  uuid: 60824dd4-77f6-413e-89da-8325e259219f
   ws-opts:
     headers:
-      Host: ''
-    path: ''
+      HOST: sg.anycast.dpdns.org
+    path: /rongseven?ed=2048
 - cipher: chacha20-ietf-poly1305
   name: 558|0|🇬加 01 | 1x SG
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
@@ -5633,12 +5604,46 @@ proxies:
   server: gg21.hangfengjiasu.com
   tfo: false
   type: ss
-- name: 559|🇸🇬SG_125
-  password: d4bdfc72-7f0c-4ff0-aa4d-3530736f4088
-  port: 443
-  server: sg-full.privateip.net
-  sni: sg-full.privateip.net
-  type: trojan
+- name: 559|🇸🇬新加坡-Singapore
+  password: d90549b7-2f95-4c7e-a52c-e953561b7fb5
+  port: 55843
+  server: singapore.nezhasu.com
+  skip-cert-verify: true
+  sni: Singapore.nezhasu.com
+  tls: false
+  type: hysteria2
+- name: 559|🇸🇬新加坡-Singaporex-1
+  password: d90549b7-2f95-4c7e-a52c-e953561b7fb5
+  port: 55293
+  server: singaporex-1.nezhasu.com
+  skip-cert-verify: true
+  sni: Singaporex-1.nezhasu.com
+  tls: false
+  type: hysteria2
+- name: 559|🇸🇬新加坡-Singaporex-2
+  password: d90549b7-2f95-4c7e-a52c-e953561b7fb5
+  port: 52570
+  server: singaporex-2.nezhasu.com
+  skip-cert-verify: true
+  sni: px4.nezhasu.com
+  tls: false
+  type: hysteria2
+- name: 559|🇸🇬新加坡-Singaporex-3
+  password: d90549b7-2f95-4c7e-a52c-e953561b7fb5
+  port: 53026
+  server: singaporex-3.nezhasu.com
+  skip-cert-verify: false
+  sni: Singaporex-3.nezhasu.com
+  tls: false
+  type: hysteria2
+- name: 559|🇸🇬新加坡-Singaporex-4
+  password: d90549b7-2f95-4c7e-a52c-e953561b7fb5
+  port: 58362
+  server: singaporex-4.nezhasu.com
+  skip-cert-verify: false
+  sni: Singaporex-4.nezhasu.com
+  tls: false
+  type: hysteria2
 - name: 559|🇸🇬 新加坡
   network: ws
   port: 12365
@@ -5651,18 +5656,20 @@ proxies:
     headers:
       Host: 0000yhuxn8zf1sqvj1qx.x0uck1bfji4.8f25.dbhnjola4.bmj6yq1giy.ujwpeuoqhayd.pci8t1.paxljcy7c.u9v3a.a1s36uciu.2r11kwhbqtj9k5ix.neib.cn
     path: '%2Fsnippets%253Fip%253Dproxyip%253Aport%2528443%2529%2526nat64%253D6to4'
-- name: 559|SG新加坡(mibei77.com 米贝节点分享)
+- alterId: 0
+  cipher: auto
+  name: 559|新加坡_100904181 L9
   network: ws
-  port: 2096
-  server: 114.129.43.52
-  servername: saas.git.cloudns.org
-  tls: true
-  type: vless
-  uuid: 12345678-1234-1234-1234-123456789123
+  port: '20521'
+  server: 139.180.155.29
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 08c2a76e-15d1-4ec0-a8d0-1f51bc76a667
   ws-opts:
     headers:
-      Host: saas.git.cloudns.org
-    path: '%2Fsnippets%26freecodes%40%E8%8A%82%E7%82%B9%E7%8B%82%E9%AD%94%2F%3Fed%3D2560'
+      Host: ''
+    path: ''
 - cipher: chacha20-ietf-poly1305
   name: 562|5,9,24,27|14|新加坡 03 | 1x SG
   password: 59e5bfca-7e2f-4b60-b885-f46225d51044
@@ -5940,20 +5947,6 @@ proxies:
   tls: false
   type: vmess
   uuid: c0156451-4efb-45e2-84fc-8d315c4650db
-- name: 568|🇸🇬 新加坡 04
-  password: d2b61d87-d3a2-4a33-8051-57dd9dae28d5
-  port: 25507
-  server: lthost.oboob.cn
-  skip-cert-verify: true
-  sni: v1-dy.ixigua.com
-  type: trojan
-- name: 568|🇸🇬 新加坡 07
-  password: d2b61d87-d3a2-4a33-8051-57dd9dae28d5
-  port: 25507
-  server: dxhost.oboob.cn
-  skip-cert-verify: true
-  sni: v1-dy.ixigua.com
-  type: trojan
 - alterId: 0
   cipher: auto
   name: '577|新加坡NO.1 #2'
@@ -6009,46 +6002,6 @@ proxies:
     headers:
       Host: gw.alicdn.com
     path: /CAT
-- name: 580|🇸🇬新加坡-Singapore
-  password: d90549b7-2f95-4c7e-a52c-e953561b7fb5
-  port: 55843
-  server: singapore.nezhasu.com
-  skip-cert-verify: true
-  sni: Singapore.nezhasu.com
-  tls: false
-  type: hysteria2
-- name: 580|🇸🇬新加坡-Singaporex-1
-  password: d90549b7-2f95-4c7e-a52c-e953561b7fb5
-  port: 55293
-  server: singaporex-1.nezhasu.com
-  skip-cert-verify: true
-  sni: Singaporex-1.nezhasu.com
-  tls: false
-  type: hysteria2
-- name: 580|🇸🇬新加坡-Singaporex-2
-  password: d90549b7-2f95-4c7e-a52c-e953561b7fb5
-  port: 52570
-  server: singaporex-2.nezhasu.com
-  skip-cert-verify: true
-  sni: px4.nezhasu.com
-  tls: false
-  type: hysteria2
-- name: 580|🇸🇬新加坡-Singaporex-3
-  password: d90549b7-2f95-4c7e-a52c-e953561b7fb5
-  port: 53026
-  server: singaporex-3.nezhasu.com
-  skip-cert-verify: false
-  sni: Singaporex-3.nezhasu.com
-  tls: false
-  type: hysteria2
-- name: 580|🇸🇬新加坡-Singaporex-4
-  password: d90549b7-2f95-4c7e-a52c-e953561b7fb5
-  port: 58362
-  server: singaporex-4.nezhasu.com
-  skip-cert-verify: false
-  sni: Singaporex-4.nezhasu.com
-  tls: false
-  type: hysteria2
 - client-fingerprint: randomized
   name: 583|TS-13-02-SG
   network: ws
