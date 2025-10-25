@@ -42,7 +42,7 @@ proxies:
   uuid: 09216880-6484-4c36-89b1-3fe4093b47b6
 - alterId: 0
   cipher: auto
-  name: '119,416,508,509,553,565,636|🇺🇸 美国 288 #1'
+  name: 119,416,508,509,553,565|🇺🇸 美国 288
   network: ws
   port: '8080'
   server: 34.81.49.231
@@ -58,7 +58,7 @@ proxies:
     path: /download
 - alterId: 0
   cipher: auto
-  name: '119,378,416,508,509,536,537,553,565,636|🇨🇳 中国 063 #1'
+  name: 119,378,416,508,509,536,537,553,565|🇨🇳 中国 063
   network: ws
   port: '28080'
   server: tw-pqshi.vm.331331.xyz
@@ -128,16 +128,6 @@ proxies:
   type: vmess
   udp: true
   uuid: e70ec686-bcdf-402b-9f4d-452b600646d2
-- name: 255|TW
-  network: ws
-  password: Aimer
-  port: 2096
-  server: 167.68.4.223
-  skip-cert-verify: true
-  sni: epcca.ambercc.filegear-sg.me
-  type: trojan
-  ws-opts:
-    path: '%2F'
 - cipher: aes-256-cfb
   name: 356|🇹🇼1 |  2.1MB/s
   password: qwerREWQ@@
@@ -416,13 +406,14 @@ proxies:
       Host: v2ray2.udpgw.com
     path: /howdy
 - cipher: chacha20-ietf-poly1305
-  name: 378,537,538|🇨🇳TW-223.165.4.173-0313 | 6.17...
+  country: 🇮🇩ID
+  name: 378,435,537,538,548|🇮🇩ID_236
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 223.165.4.173
   type: ss
 - cipher: aes-256-cfb
-  name: 378,537,538,562,578|29|TW_speednode_0055
+  name: 378,435,537,538,548,562,578|29|TW_speednode_0055
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 154.223.20.79
@@ -848,15 +839,19 @@ proxies:
     headers:
       Host: tw3.594888.xyz
     path: /v2ray
-- name: '378,436,536,537|TW-60.250.152.209-5450 #1'
+- country: 🇨 CN
+  name: '378,435,436,536,537|TW-60.250.152.209-5450 #1'
   password: 6e1b9a65-884f-3aa9-9469-bf6ec0f08610
   port: 3462
   server: a03.taipeicitygovernment.cn.ua
   skip-cert-verify: false
   type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
-  name: '378,536,537|TW-140.235.38.56-6361 #1'
+  h2-opts: {}
+  http-opts: {}
+  name: 378,536,537,548|_59
   network: ws
   port: 20522
   server: 140.235.38.56
@@ -975,6 +970,19 @@ proxies:
       Host: 51b0e42034dd75a815fa9eb16021fbda.mobgslb.tbcache.com
     path: /
   ws-path: /
+- name: '456,559,580|🇹🇼 台湾|@ripaojiedian #1'
+  password: 82e0ff78-c281-4806-99ee-24c1d9912b4c
+  port: 38001
+  server: lazy.rsqpq.cn
+  skip-cert-verify: true
+  sni: lazy.rsqpq.cn
+  type: trojan
+- name: '456,580|台湾|@ripaojiedian #1'
+  password: 82e0ff78-c281-4806-99ee-24c1d9912b4c
+  port: 38001
+  server: lazy.rsqpq.cn
+  skip-cert-verify: true
+  type: trojan
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: 465|18|🇹🇼 台湾|@ripaojiedian
@@ -1835,6 +1843,19 @@ proxies:
   server: free.2weradf.xyz
   type: ss
   udp: true
+- alterId: 0
+  cipher: auto
+  name: 562|5|台湾-优化2-GPT
+  network: ws
+  port: '16616'
+  server: m.cnmjin.net
+  tls: false
+  type: vmess
+  uuid: da91214e-b022-4f61-a724-01c538170e62
+  ws-opts:
+    headers:
+      Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
+    path: /
 - cipher: chacha20-ietf-poly1305
   name: 562|5,9,24,27|14|台湾 01 | 1x TW
   password: 59e5bfca-7e2f-4b60-b885-f46225d51044
@@ -1876,6 +1897,19 @@ proxies:
   server: free.2apzhfa.xyz
   type: ss
   udp: true
+- alterId: 0
+  cipher: auto
+  name: 562|5|台湾-优化3
+  network: ws
+  port: '16616'
+  server: t.cnmjcn.cyou
+  tls: false
+  type: vmess
+  uuid: da91214e-b022-4f61-a724-01c538170e62
+  ws-opts:
+    headers:
+      Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
+    path: /
 - alterId: 0
   cipher: auto
   name: 562|36|🔒 VM-HTTP-TLS  TW-118.167.5...
@@ -1987,9 +2021,3 @@ proxies:
     headers:
       Host: tw.appleid.bf
     path: /ws?ed=2048
-- name: 580|台湾|@ripaojiedian
-  password: 82e0ff78-c281-4806-99ee-24c1d9912b4c
-  port: 38001
-  server: lazy.rsqpq.cn
-  skip-cert-verify: true
-  type: trojan
