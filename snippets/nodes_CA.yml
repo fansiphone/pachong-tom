@@ -34,16 +34,6 @@ proxies:
     path: /xyz
 - alterId: 0
   cipher: auto
-  name: '128,430|加拿大2 #1'
-  port: 45065
-  server: xdd.dashuai.cyou
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: daa9d349-8ec7-4295-8a78-9c5e7bb65000
-- alterId: 0
-  cipher: auto
   name: '128,129,430,431|加拿大1-1A #1'
   port: 45064
   server: haa.dashuai.cyou
@@ -51,7 +41,17 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: daa9d349-8ec7-4295-8a78-9c5e7bb65000
+  uuid: a51cb4ee-6ccb-4940-91b6-3e48ccbbdba7
+- alterId: 0
+  cipher: auto
+  name: '128,129,430,431|加拿大2-1A #1'
+  port: 45065
+  server: xdd.dashuai.cyou
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: a51cb4ee-6ccb-4940-91b6-3e48ccbbdba7
 - alterId: 0
   cipher: auto
   name: '129,431|加拿大2-1B #1'
@@ -61,7 +61,17 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 681d01e3-9d53-405d-9d7a-9f174b2aba1e
+  uuid: 740ff771-8803-4af2-a93a-7ce4b8b281f2
+- alterId: 0
+  cipher: auto
+  name: '129,431|加拿大1-1B #1'
+  port: 45064
+  server: haa.dashuai.cyou
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 740ff771-8803-4af2-a93a-7ce4b8b281f2
 - cipher: aes-128-gcm
   name: 356|🇨🇦1 |  14.1MB/s
   password: shadowsocks
@@ -69,13 +79,15 @@ proxies:
   server: 149.22.95.183
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 356,378,537,538|🇨🇦CA-142.4.216.225-0228 | 24.1...
+  country: 🇨🇦CA
+  name: 356,378,537,538,548|Relay_🇨🇦CA-🇨🇦CA_132
   password: JIhN6rBKkaEboLNXVSv5rq
   port: 80
   server: ca225.vpnbook.com
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 356,378,537,538|🇨🇦CA-79.127.233.170-0160 | 120...
+  country: 🇨🇿 CZ
+  name: 356,378,537,538,548|Pool_🇨🇿 CZ_152
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 79.127.233.170
@@ -214,7 +226,8 @@ proxies:
   server: 134.195.198.95
   type: ss
 - cipher: aes-256-cfb
-  name: 378,537,538|🇨🇦CA-79.127.233.170-0159 | 123...
+  country: 🇨🇦 CA
+  name: 378,537,538,548|Pool_🇨🇦 CA_130
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 79.127.233.170
@@ -235,7 +248,7 @@ proxies:
       Host: pelang.org
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 378,537,538|🇨🇦CA-142.4.216.225-0217 | 31.1...
+  name: 378,537,538,548|_20
   password: JIhN6rBKkaEboLNXVSv5rq
   port: 80
   server: 142.4.216.225
@@ -516,7 +529,7 @@ proxies:
   cipher: auto
   h2-opts: {}
   http-opts: {}
-  name: 378,494,536,537,544,559,563,575|VMESS--NF加拿大-ChatGPT-TikTok-Yo...
+  name: 378,494,536,537,544,548,559,563,575|VMESS--NF加拿大-ChatGPT-TikTok-Yo...
   network: ws
   port: 80
   server: 51.79.102.253
@@ -1029,55 +1042,75 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: '378,494,536,537|🇦CA-148.113.176.192-5507 #1'
+  country: 🇨🇦CA
+  h2-opts: {}
+  http-opts: {}
+  name: 378,494,536,537,548|🇨🇦CA_138
   network: ws
   port: 443
   server: 148.113.176.192
   servername: fapeng.org
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
+    headers:
+      HOST: fapeng.org
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: '378,494,536,537|🇦CA-15.235.83.228-5510 #1'
+  country: 🇺🇸 US
+  h2-opts: {}
+  http-opts: {}
+  name: 378,494,536,537,548|🇺🇸 US_374
   network: ws
   port: 443
   server: 15.235.83.228
   servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
+    headers:
+      HOST: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: '378,536,537|🇦CA-15.235.50.172-5511 #1'
+  country: 🇺🇸 US
+  h2-opts: {}
+  http-opts: {}
+  name: 378,536,537,548|🇺🇸 US_372
   network: ws
   port: 443
   server: 15.235.50.172
   servername: baradiha.com
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
+    headers:
+      HOST: baradiha.com
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: '378,536,537|🇦CA-15.235.83.227-5515 #1'
+  country: 🇺🇸 US
+  h2-opts: {}
+  http-opts: {}
+  name: 378,536,537,548|🇺🇸 US_378
   network: ws
   port: 443
   server: 15.235.83.227
   servername: mankadmu.com
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
+    headers:
+      HOST: mankadmu.com
     path: /linkvws
 - cipher: aes-256-gcm
   name: '378,537|CA-134.195.196.149-6123 #1'
@@ -3872,7 +3905,7 @@ proxies:
 - cipher: chacha20-ietf-poly1305
   country: 🇬🇧GB
   delay: 1607
-  name: 528,553|yandex-431
+  name: 528,553|yandex-3054
   password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
   port: 990
   server: 45.154.204.7
@@ -4172,6 +4205,67 @@ proxies:
     headers:
       Host: pulau.org
     path: /
+- cipher: rc4-md5
+  country: 🇨🇦 CA
+  name: 548|🇨🇦 CA_131
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 137.184.174.93
+  type: ss
+- alterId: 0
+  cipher: auto
+  country: 🇨🇦CA
+  fingerprint: ''
+  h2-opts: {}
+  http-opts: {}
+  name: 548,562|3|2c266bef19dd41f2bf352e5e40d1...
+  network: ws
+  port: 80
+  server: 51.79.103.76
+  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: false
+  uuid: 58fe1542-5290-40ad-815a-77707a81afe5
+  ws-opts:
+    path: /IOebhLMhl1CTbFHbL95myfRX2
+- alterId: 0
+  cipher: auto
+  country: 🇨🇦CA
+  h2-opts: {}
+  http-opts: {}
+  name: 548|🇨🇦CA_135
+  network: ws
+  port: 443
+  server: 15.235.85.147
+  servername: pelang.org
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      HOST: pelang.org
+    path: linkvws
+- alterId: 0
+  cipher: auto
+  country: 🇨🇦CA
+  h2-opts: {}
+  http-opts: {}
+  name: 548|🇨🇦CA_137
+  network: ws
+  port: 443
+  server: 15.235.85.156
+  servername: kampong.org
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      HOST: kampong.org
+    path: linkvws
 - cipher: chacha20-ietf-poly1305
   name: 558|0|🇦加拿大 01 | 1x CA
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
@@ -4653,31 +4747,49 @@ proxies:
 - cipher: chacha20-ietf-poly1305
   name: 566|🇨🇦 加拿大 | CAN
   password: 11095b6f-1d57-47c0-a0b3-dac8e693163d
-  port: 44306
-  server: 01.xunyunnode.sbs
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 566|🇨🇦 加拿大 | CAN 2
-  password: 558bfc6d-0abd-4118-85d8-be36629ac6cf
   port: 19707
   server: xc.xunyunnode.sbs
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 566|🇨🇦 加拿大 | CAN 3
-  password: 11095b6f-1d57-47c0-a0b3-dac8e693163d
+  name: 566|🇨🇦 加拿大 | CAN 2
+  password: afa72286-62d3-4f63-bb50-4a5ec1375101
   port: 50737
   server: wa.xunyunnode.sbs
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 566|🇨🇦 加拿大 | CAN 4
-  password: afa72286-62d3-4f63-bb50-4a5ec1375101
-  port: 19707
-  server: xc.xunyunnode.sbs
+  password: 558bfc6d-0abd-4118-85d8-be36629ac6cf
+  port: 57990
+  server: 02.xunyunnode.sbs
   type: ss
   udp: true
+- alterId: 0
+  cipher: auto
+  name: 566|🇨🇦 加拿大 | CAN 5
+  port: 45064
+  server: haa.dashuai.cyou
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 46025bf3-8bd3-4f49-a3d1-657531dc82d5
+- cipher: chacha20-ietf-poly1305
+  name: 566|🇨🇦 加拿大 | CAN 6
+  password: f46b76c5-934e-4a87-9e3d-306299d84a8d
+  port: 57990
+  server: 02.xunyunnode.sbs
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 566|🇨🇦 加拿大 | CAN 7
+  port: 45064
+  server: haa.dashuai.cyou
+  tls: false
+  type: vmess
+  udp: true
+  uuid: be28b5ab-9d96-4e8f-9805-374f5d8360a0
 - alterId: 0
   cipher: auto
   name: '577|加拿大1 #2'
