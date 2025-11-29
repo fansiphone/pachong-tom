@@ -1,5 +1,6 @@
 proxies:
-- name: '17,24,378,478,483,494,502,503,504,506,507,522,523,524,536,537,559,580|未知
+- alterId: 0
+  name: '17,24,378,478,483,494,502,503,504,506,507,522,523,524,536,537,559,574,580|未知
     TROJAN-545@free-nodes #3'
   network: tcp
   password: Q9gofGxinwLv0TfDfdKmdttdPGxrhKQS
@@ -9,11 +10,15 @@ proxies:
   sni: pod-kr-g1.psusercontent.com
   tls: true
   type: trojan
-- cipher: aes-128-gcm
-  name: '17,24,478,483,522|🇨🇳_CN_中国_1 #2'
+  udp: true
+- alterId: 0
+  cipher: aes-128-gcm
+  name: '17,24,478,483,522,574|🇺🇸US美国2 #1'
   password: 79ad2852-eb76-4c3e-ba4d-3668ee5ece74
   port: 21712
   server: wangcai.singdns.com
+  skip-cert-verify: true
+  tls: true
   type: ss
 - name: '17,24,478,483,494,502,503,504,506,507,522,544,559,580|未知 TROJAN-436@free-nodes
     #3'
@@ -35,8 +40,7 @@ proxies:
   sni: www.nintendogames.net
   type: trojan
 - alterId: 0
-  country: 🇭🇰HK
-  name: '17,24,440,478,483,489,494,522,553,574|未知173 #1'
+  name: 17,24,478,483,489,522,553|yandex-131
   network: tcp
   password: BxceQaOe
   port: 443
@@ -377,7 +381,7 @@ proxies:
   type: trojan
 - alterId: 2
   cipher: auto
-  name: 378,508,509,536,537,553|yandex-3402
+  name: 378,508,509,536,537,553|yandex-1005
   network: ws
   port: 30829
   server: v29.heduian.link
@@ -402,12 +406,12 @@ proxies:
   udp: true
 - alterId: 2
   cipher: auto
-  name: 378,508,509,536,537,553|yandex-3264
+  name: 378,508,509,536,537,553|yandex-4004
   network: ws
   port: 30806
   server: v6.heduian.link
   servername: ''
-  skip-cert-verify: false
+  skip-cert-verify: true
   tfo: false
   tls: false
   type: vmess
@@ -417,17 +421,19 @@ proxies:
     headers:
       Host: ocbc.com
     path: /oooo
-- name: '378,494,502,503,504,506,507,508,509,536,537,553,559,580|未知 TROJAN-394@free-nodes
+- alterId: 0
+  name: '378,494,502,503,504,506,507,508,509,536,537,553,559,574,580|未知 TROJAN-394@free-nodes
     #4'
   network: tcp
   password: c53647f3153f784b3c695ffbe5fb43c0
   port: 3272
   server: 36.156.102.84
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: www.nintendogames.net
+  tls: true
   type: trojan
   udp: true
-- name: 378,508,509,536,537,553|yandex-3266
+- name: 378,508,509,536,537,553|yandex-869
   network: tcp
   password: c53647f3153f784b3c695ffbe5fb43c0
   port: 1806
@@ -436,14 +442,16 @@ proxies:
   sni: www.nintendogames.net
   type: trojan
   udp: true
-- name: '378,494,502,503,504,506,507,508,509,536,537,553,559,580|未知 TROJAN-548@free-nodes
+- alterId: 0
+  name: '378,494,502,503,504,506,507,508,509,536,537,553,559,574,580|未知 TROJAN-548@free-nodes
     #4'
   network: tcp
   password: c53647f3153f784b3c695ffbe5fb43c0
   port: 2283
   server: 36.156.102.84
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: www.nintendogames.net
+  tls: true
   type: trojan
   udp: true
 - alterId: 0
@@ -458,7 +466,7 @@ proxies:
   tls: true
   type: trojan
   udp: true
-- name: 378,508,509,536,537,553|yandex-3269
+- name: 378,508,509,536,537,553|yandex-872
   network: tcp
   password: c53647f3153f784b3c695ffbe5fb43c0
   port: 6752
@@ -467,7 +475,7 @@ proxies:
   sni: fe2.update.microsoft.com
   type: trojan
   udp: true
-- name: 378,508,509,536,537,553|yandex-3270
+- name: 378,508,509,536,537,553|yandex-873
   network: tcp
   password: c53647f3153f784b3c695ffbe5fb43c0
   port: 2381
@@ -476,29 +484,30 @@ proxies:
   sni: fe2.update.microsoft.com
   type: trojan
   udp: true
-- alterId: 0
-  name: '378,494,502,503,504,506,507,508,509,536,537,553,559,574,580|未知 TROJAN-438@free-nodes
+- name: '378,494,502,503,504,506,507,508,509,536,537,553,559,580|未知 TROJAN-438@free-nodes
     #3'
   network: tcp
   password: e9368912c4ed6046dca6949229cbff02
   port: 1920
+  server: 36.156.102.84
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+  type: trojan
+  udp: true
+- alterId: 0
+  name: '378,494,502,503,504,506,507,508,509,536,537,553,559,574,580|未知 TROJAN-540@free-nodes
+    #4'
+  network: tcp
+  password: e9368912c4ed6046dca6949229cbff02
+  port: 3271
   server: 36.156.102.84
   skip-cert-verify: true
   sni: www.nintendogames.net
   tls: true
   type: trojan
   udp: true
-- name: '378,494,502,503,504,506,507,508,509,536,537,553,559,580|未知 TROJAN-540@free-nodes
-    #4'
-  network: tcp
-  password: e9368912c4ed6046dca6949229cbff02
-  port: 3271
-  server: 36.156.102.84
-  skip-cert-verify: false
-  sni: www.nintendogames.net
-  type: trojan
-  udp: true
-- name: '378,494,502,503,504,506,507,508,509,536,537,553,559,580|未知 TROJAN-473@free-nodes
+- alterId: 0
+  name: '378,494,502,503,504,506,507,508,509,536,537,553,559,574,580|未知 TROJAN-473@free-nodes
     #4'
   network: tcp
   password: e9368912c4ed6046dca6949229cbff02
@@ -506,9 +515,10 @@ proxies:
   server: 36.156.102.84
   skip-cert-verify: true
   sni: www.nintendogames.net
+  tls: true
   type: trojan
   udp: true
-- name: 378,508,509,536,537,553|yandex-3275
+- name: 378,508,509,536,537,553|yandex-878
   network: tcp
   password: e9368912c4ed6046dca6949229cbff02
   port: 5321
@@ -517,7 +527,8 @@ proxies:
   sni: www.nintendogames.net
   type: trojan
   udp: true
-- name: '378,494,502,503,504,506,507,508,509,536,537,553,559,580|未知 TROJAN-142@free-nodes
+- alterId: 0
+  name: '378,494,502,503,504,506,507,508,509,536,537,553,559,574,580|未知 TROJAN-142@free-nodes
     #3'
   network: tcp
   password: e9368912c4ed6046dca6949229cbff02
@@ -525,23 +536,22 @@ proxies:
   server: 36.156.102.84
   skip-cert-verify: true
   sni: fe2.update.microsoft.com
+  tls: true
   type: trojan
   udp: true
-- alterId: 0
-  name: '378,453,494,502,503,504,506,507,508,509,536,537,553,559,574,580|未知 TROJAN-439@free-nodes
+- name: '378,453,494,502,503,504,506,507,508,509,536,537,553,559,580|未知 TROJAN-439@free-nodes
     #4'
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
   port: 3160
   server: 36.156.102.84
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: www.nintendogames.net
-  tls: true
   type: trojan
   udp: true
 - alterId: 0
   cipher: auto
-  name: 378,508,509,536,537,553|yandex-3281
+  name: 378,508,509,536,537,553|yandex-884
   network: ws
   port: 21791
   server: kf5uhgscrdl73kmihv8c.appsworld.shop
@@ -568,7 +578,7 @@ proxies:
   udp: true
 - alterId: 2
   cipher: auto
-  name: 378,508,509,536,537,553|yandex-3399
+  name: 378,508,509,536,537,553|yandex-2828
   network: ws
   port: 30839
   server: v39.heduian.link
@@ -592,7 +602,7 @@ proxies:
   sni: www.nintendogames.net
   type: trojan
   udp: true
-- name: 378,508,509,536,537,553|yandex-3524
+- name: 378,508,509,536,537,553|yandex-1127
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
   port: 3271
@@ -601,7 +611,7 @@ proxies:
   sni: www.nintendogames.net
   type: trojan
   udp: true
-- name: 378,508,509,536,537,553|yandex-3525
+- name: 378,508,509,536,537,553|yandex-1128
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
   port: 26295
@@ -632,7 +642,7 @@ proxies:
   sni: www.nintendogames.net
   type: trojan
   udp: true
-- name: 378,508,509,536,537,553|yandex-3560
+- name: 378,508,509,536,537,553|yandex-1163
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
   port: 1806
@@ -641,7 +651,7 @@ proxies:
   sni: www.nintendogames.net
   type: trojan
   udp: true
-- name: 378,508,509,536,537,553|yandex-3562
+- name: 378,508,509,536,537,553|yandex-1165
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
   port: 1085
@@ -664,7 +674,7 @@ proxies:
   udp: true
 - alterId: 2
   cipher: auto
-  name: 378,508,509,536,537,553|yandex-4241
+  name: 378,508,509,536,537,553|yandex-3957
   network: ws
   port: 30808
   server: v8.heduian.link
@@ -696,34 +706,38 @@ proxies:
   server: 183.236.51.9
   skip-cert-verify: false
   type: trojan
-- alterId: 0
-  name: '378,494,502,503,504,506,507,536,537,559,574,580|未知 TROJAN-176@free-nodes
-    #3'
+- name: '378,494,502,503,504,506,507,536,537,559,580|未知 TROJAN-176@free-nodes #3'
   password: 7d223bae-e183-4bf6-89c3-e327b15df490
   port: 10824
   server: 183.236.51.4
+  skip-cert-verify: false
+  type: trojan
+- alterId: 0
+  name: '378,494,502,503,504,506,507,536,537,559,574,580|未知 TROJAN-180@free-nodes
+    #4'
+  password: 0b2d98a4-25bc-3d9f-9694-9d1e929de8dd
+  port: 19248
+  server: 120.226.39.25
   skip-cert-verify: true
   tls: true
   type: trojan
   udp: true
-- name: '378,494,502,503,504,506,507,536,537,559,580|未知 TROJAN-180@free-nodes #4'
-  password: 0b2d98a4-25bc-3d9f-9694-9d1e929de8dd
-  port: 19248
-  server: 120.226.39.25
-  skip-cert-verify: false
-  type: trojan
 - name: '378,494,502,503,504,506,507,536,537,559,580|未知 TROJAN-183@free-nodes #4'
   password: 0b2d98a4-25bc-3d9f-9694-9d1e929de8dd
   port: 19240
   server: 120.226.39.25
   skip-cert-verify: false
   type: trojan
-- name: '378,494,502,503,504,506,507,536,537,559,580|未知 TROJAN-185@free-nodes #4'
+- alterId: 0
+  name: '378,494,502,503,504,506,507,536,537,559,574,580|未知 TROJAN-185@free-nodes
+    #4'
   password: 0b2d98a4-25bc-3d9f-9694-9d1e929de8dd
   port: 19245
   server: 120.226.39.25
-  skip-cert-verify: false
+  skip-cert-verify: true
+  tls: true
   type: trojan
+  udp: true
 - name: '378,494,502,503,504,506,507,536,537,559,580|未知 TROJAN-187@free-nodes #3'
   password: 7d223bae-e183-4bf6-89c3-e327b15df490
   port: 10823
@@ -754,40 +768,40 @@ proxies:
   server: 183.236.51.4
   skip-cert-verify: false
   type: trojan
-- alterId: 0
-  name: '378,494,502,503,504,506,507,536,537,559,574,580|未知 TROJAN-206@free-nodes
-    #3'
+- name: '378,494,502,503,504,506,507,536,537,559,580|未知 TROJAN-206@free-nodes #3'
   password: 96983eb4-c8f1-316e-ab00-500014ed3d8b
   port: 8443
+  server: official.seoulcityhall.com.ua
+  skip-cert-verify: false
+  type: trojan
+- alterId: 0
+  name: '378,494,502,503,504,506,507,536,537,559,574,580|未知 TROJAN-243@free-nodes
+    #4'
+  password: 96983eb4-c8f1-316e-ab00-500014ed3d8b
+  port: 2053
   server: official.seoulcityhall.com.ua
   skip-cert-verify: true
   tls: true
   type: trojan
   udp: true
-- name: '378,494,502,503,504,506,507,536,537,559,580|未知 TROJAN-243@free-nodes #4'
-  password: 96983eb4-c8f1-316e-ab00-500014ed3d8b
-  port: 2053
-  server: official.seoulcityhall.com.ua
-  skip-cert-verify: false
-  type: trojan
-- name: '378,494,502,503,504,506,507,536,537,559,580|未知 TROJAN-256@free-nodes #3'
+- alterId: 0
+  name: '378,494,502,503,504,506,507,536,537,559,574,580|未知 TROJAN-256@free-nodes
+    #3'
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
   port: 4801
   server: 36.150.215.203
   skip-cert-verify: true
   sni: 36.156.102.116
-  type: trojan
-- alterId: 0
-  name: '378,494,502,503,504,506,507,536,537,559,574,580|未知 TROJAN-276@free-nodes
-    #3'
-  password: 7d223bae-e183-4bf6-89c3-e327b15df490
-  port: 10823
-  server: 183.236.51.3
-  skip-cert-verify: true
   tls: true
   type: trojan
   udp: true
+- name: '378,494,502,503,504,506,507,536,537,559,580|未知 TROJAN-276@free-nodes #3'
+  password: 7d223bae-e183-4bf6-89c3-e327b15df490
+  port: 10823
+  server: 183.236.51.3
+  skip-cert-verify: false
+  type: trojan
 - alterId: 0
   name: '378,494,502,503,504,506,507,536,537,559,574,580|未知 TROJAN-282@free-nodes
     #4'
@@ -824,16 +838,12 @@ proxies:
   tls: true
   type: trojan
   udp: true
-- alterId: 0
-  name: '378,494,502,503,504,506,507,536,537,559,574,580|未知 TROJAN-305@free-nodes
-    #3'
+- name: '378,494,502,503,504,506,507,536,537,559,580|未知 TROJAN-305@free-nodes #3'
   password: 7d223bae-e183-4bf6-89c3-e327b15df490
   port: 10826
   server: 183.236.51.7
-  skip-cert-verify: true
-  tls: true
+  skip-cert-verify: false
   type: trojan
-  udp: true
 - name: '378,494,502,503,504,506,507,536,537,559,580|未知 TROJAN-314@free-nodes #3'
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
@@ -847,22 +857,22 @@ proxies:
   server: official.tokyometropolis.kherson.ua
   skip-cert-verify: false
   type: trojan
-- name: '378,494,502,503,504,506,507,536,537,559,580|未知 TROJAN-345@free-nodes #3'
+- alterId: 0
+  name: '378,494,502,503,504,506,507,536,537,559,574,580|未知 TROJAN-345@free-nodes
+    #3'
   password: 7d223bae-e183-4bf6-89c3-e327b15df490
   port: 10819
   server: 183.236.51.2
-  skip-cert-verify: false
-  type: trojan
-- alterId: 0
-  name: '378,494,502,503,504,506,507,536,537,559,574,580|未知 TROJAN-351@free-nodes
-    #4'
-  password: ED177480-E516-11EA-8B44-BBC4E882BA0B
-  port: 20261
-  server: js04.balala2016.xyz
   skip-cert-verify: true
   tls: true
   type: trojan
   udp: true
+- name: '378,494,502,503,504,506,507,536,537,559,580|未知 TROJAN-351@free-nodes #4'
+  password: ED177480-E516-11EA-8B44-BBC4E882BA0B
+  port: 20261
+  server: js04.balala2016.xyz
+  skip-cert-verify: false
+  type: trojan
 - name: '378,494,502,503,504,506,507,536,537,559,580|未知 TROJAN-370@free-nodes #3'
   password: 0b2d98a4-25bc-3d9f-9694-9d1e929de8dd
   port: 19243
@@ -885,16 +895,12 @@ proxies:
   tls: true
   type: trojan
   udp: true
-- alterId: 0
-  name: '378,494,502,503,504,506,507,536,537,559,574,580|未知 TROJAN-391@free-nodes
-    #4'
+- name: '378,494,502,503,504,506,507,536,537,559,580|未知 TROJAN-391@free-nodes #4'
   password: 7d223bae-e183-4bf6-89c3-e327b15df490
   port: 10823
   server: 183.236.51.8
-  skip-cert-verify: true
-  tls: true
+  skip-cert-verify: false
   type: trojan
-  udp: true
 - alterId: 0
   name: '378,494,502,503,504,506,507,536,537,559,574,580|未知 TROJAN-418@free-nodes
     #4'
@@ -905,26 +911,18 @@ proxies:
   tls: true
   type: trojan
   udp: true
-- alterId: 0
-  name: '378,494,502,503,504,506,507,536,537,559,574,580|未知 TROJAN-420@free-nodes
-    #3'
+- name: '378,494,502,503,504,506,507,536,537,559,580|未知 TROJAN-420@free-nodes #3'
   password: 96983eb4-c8f1-316e-ab00-500014ed3d8b
   port: 2053
   server: official.tokyometropolis.ivano-frankivsk.ua
-  skip-cert-verify: true
-  tls: true
+  skip-cert-verify: false
   type: trojan
-  udp: true
-- alterId: 0
-  name: '378,494,502,503,504,506,507,536,537,559,574,580|未知 TROJAN-431@free-nodes
-    #4'
+- name: '378,494,502,503,504,506,507,536,537,559,580|未知 TROJAN-431@free-nodes #4'
   password: 7d223bae-e183-4bf6-89c3-e327b15df490
   port: 10823
   server: 183.236.51.5
-  skip-cert-verify: true
-  tls: true
+  skip-cert-verify: false
   type: trojan
-  udp: true
 - name: '378,494,502,503,504,506,507,536,537,559,580|未知 TROJAN-434@free-nodes #3'
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
@@ -932,13 +930,17 @@ proxies:
   server: 36.150.215.203
   skip-cert-verify: true
   type: trojan
-- name: '378,494,502,503,504,506,507,536,537,559,580|未知 TROJAN-435@free-nodes #3'
+- alterId: 0
+  name: '378,494,502,503,504,506,507,536,537,559,574,580|未知 TROJAN-435@free-nodes
+    #3'
   password: ba4fedf8c217c146
   port: 3389
   server: 120.236.197.205
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: n2.gladns.com
+  tls: true
   type: trojan
+  udp: true
 - alterId: 0
   name: '378,494,502,503,504,506,507,536,537,559,574,580|未知 TROJAN-520@free-nodes
     #3'
@@ -1818,7 +1820,7 @@ proxies:
   sni: www.baidu.com
   type: trojan
 - cipher: aes-256-cfb
-  name: '378,440,537|🇨CN-222.186.20.102-6009 #1'
+  name: '378,537|🇨CN-222.186.20.102-6009 #1'
   obfs: plain
   obfs-param: data.bilibili.com/ed5a2165400
   password: http://cc.ax/
@@ -2132,7 +2134,7 @@ proxies:
     path: /
 - alterId: 2
   cipher: auto
-  name: 378,536,537,553|yandex-607
+  name: 378,536,537,553|yandex-2873
   network: ws
   port: 30812
   server: v12.heduian.link
@@ -2148,7 +2150,7 @@ proxies:
     path: /oooo
 - alterId: 2
   cipher: auto
-  name: 378,536,537,553|yandex-2676
+  name: 378,536,537,553|yandex-4942
   network: ws
   port: 30829
   server: v29.heduian.link
@@ -2164,7 +2166,7 @@ proxies:
     path: /oooo
 - alterId: 2
   cipher: auto
-  name: 378,536,537,553|yandex-2189
+  name: 378,536,537,553|yandex-4455
   network: ws
   port: 30828
   server: v28.heduian.link
@@ -2190,7 +2192,7 @@ proxies:
   delay: 172
   h2-opts: {}
   http-opts: {}
-  name: 435,437,528|中国 - 广州市 - China Mobile - 2
+  name: 437,528|中国 - 广州市 - China Mobile - 2
   network: tcp
   port: 59003
   server: 183.236.51.36
@@ -2198,7 +2200,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-path: /
 - alterId: 64
   cipher: auto
   name: '462,508,509|中国 085 #1'
@@ -2276,7 +2277,7 @@ proxies:
     headers:
       Host: joss.gpj1.web.id
     path: /Free-VPN-CF-Geo-Project/36.50.90.241=35951
-- name: 508,509,553|yandex-3271
+- name: 508,509,553|yandex-874
   network: tcp
   password: e9368912c4ed6046dca6949229cbff02
   port: 4400
@@ -2294,7 +2295,7 @@ proxies:
   tls: false
   type: vmess
   uuid: a9ba904e-2d8b-401e-9226-b5114c049f05
-- name: 508,509,553|yandex-3283
+- name: 508,509,553|yandex-886
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
   port: 4400
@@ -2337,7 +2338,7 @@ proxies:
   type: vmess
   udp: true
   uuid: 3a4271fb-2718-4489-da78-80a8e7701aa5
-- name: 508,509,553|yandex-3389
+- name: 508,509,553|yandex-992
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
   port: 4431
@@ -2358,7 +2359,7 @@ proxies:
   type: vmess
   udp: true
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: 508,509,553|yandex-3529
+- name: 508,509,553|yandex-1132
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
   port: 443
@@ -2379,7 +2380,7 @@ proxies:
   type: vmess
   udp: true
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: 508,509,553|yandex-3558
+- name: 508,509,553|yandex-1161
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
   port: 444
@@ -2397,7 +2398,7 @@ proxies:
   tls: false
   type: vmess
   uuid: 93c35277-ee3f-4ab2-9d9e-462b97a8795f
-- name: 508,509,553|yandex-3581
+- name: 508,509,553|yandex-1184
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
   port: 443
