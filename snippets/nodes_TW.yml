@@ -90,16 +90,6 @@ proxies:
     path: /download
 - alterId: 0
   cipher: auto
-  name: '128,430|台湾2 #1'
-  port: 45077
-  server: hxb.dashuai.help
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 7082f5d7-8ea3-4f80-8c1d-b3855ce68cea
-- alterId: 0
-  cipher: auto
   name: '128,430|台湾1 #1'
   port: 45078
   server: hxa.dashuai.help
@@ -107,7 +97,17 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 7082f5d7-8ea3-4f80-8c1d-b3855ce68cea
+  uuid: 1279ad5f-188a-4cfd-a1ac-26c4a17031eb
+- alterId: 0
+  cipher: auto
+  name: '128,430|台湾2 #1'
+  port: 45077
+  server: hxb.dashuai.help
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 1279ad5f-188a-4cfd-a1ac-26c4a17031eb
 - alterId: 0
   cipher: auto
   name: '129,431|台湾2-1B-GPT #1'
@@ -128,6 +128,16 @@ proxies:
   type: vmess
   udp: true
   uuid: 59e126b9-b887-40fd-a48b-198a621c8f96
+- name: 255|TW
+  network: ws
+  password: Aimer
+  port: 2096
+  server: 167.68.4.223
+  skip-cert-verify: true
+  sni: epcca.ambercc.filegear-sg.me
+  type: trojan
+  ws-opts:
+    path: '%2F'
 - cipher: aes-256-cfb
   name: 356|🇹🇼1 |  2.1MB/s
   password: qwerREWQ@@
@@ -375,55 +385,23 @@ proxies:
   type: vmess
   udp: true
   uuid: 52704bc6-015d-4c36-bead-87053a8a9641
-- name: 378,479,484,502,503,504,506,507,536,537,559,580|未知 TROJAN-633@free-nodes
-  password: 7b06d22a8a7c764f
-  port: 3389
-  server: 211.72.35.153
-  skip-cert-verify: false
-  type: trojan
-- alterId: 0
-  name: 378,479,484,502,503,504,506,507,536,537,559,574,580|未知 TROJAN-213@free-nodes
-  password: 96983eb4-c8f1-316e-ab00-500014ed3d8b
-  port: 8443
-  server: official.taipeicitygovernment.kyiv.ua
-  skip-cert-verify: true
-  tls: true
-  type: trojan
+- cipher: chacha20-ietf-poly1305
+  name: 378,537,538|🇨🇳TW-223.165.4.173-6595 | 0.00...
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 223.165.4.173
+  type: ss
+- cipher: aes-256-cfb
+  name: 378,537,578|29|TW_speednode_0055
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 154.223.20.79
+  type: ss
   udp: true
-- name: 378,479,484,502,503,504,506,507,536,537,559,580|未知 TROJAN-353@free-nodes
-  password: ED177480-E516-11EA-8B44-BBC4E882BA0B
-  port: 20261
-  server: tw01.balala2016.xyz
-  skip-cert-verify: false
-  type: trojan
-- name: 378,479,484,502,503,504,506,507,536,537,559,580|未知 TROJAN-347@free-nodes
-  password: 96983eb4-c8f1-316e-ab00-500014ed3d8b
-  port: 8443
-  server: official.taipeicitygovernment.com.ua
-  skip-cert-verify: false
-  type: trojan
-- name: 378,479,484,502,503,504,507,536,537,559,580|未知 TROJAN-557@free-nodes
-  password: 182228812d1e0f23
-  port: 3389
-  server: 60.249.3.230
-  skip-cert-verify: false
-  type: trojan
 - name: 378,479,484,502,503,504,506,507,536,537,559,580|未知 TROJAN-482@free-nodes
   password: 8b475d9e868e43e0
   port: 3389
   server: 211.72.35.157
-  skip-cert-verify: false
-  type: trojan
-- name: 378,479,484,502,503,504,506,507,536,537,559,580|未知 TROJAN-249@free-nodes
-  password: b09d2aaa443af97a
-  port: 3389
-  server: 211.72.35.152
-  skip-cert-verify: false
-  type: trojan
-- name: 378,479,484,502,503,504,506,507,536,537,559,580|未知 TROJAN-604@free-nodes
-  password: 7b06d22a8a7c764f
-  port: 3389
-  server: 211.72.35.158
   skip-cert-verify: false
   type: trojan
 - name: '378,502,503,504,506,507,536,537,559|未知 TROJAN-162 | free-nodes #3'
@@ -432,16 +410,22 @@ proxies:
   server: 60.249.3.228
   skip-cert-verify: false
   type: trojan
-- name: '378,502,503,504,506,507,536,537,559|未知 TROJAN-510 | free-nodes #3'
-  password: 7b06d22a8a7c764f
-  port: 3389
-  server: 211.72.35.156
-  skip-cert-verify: false
-  type: trojan
 - name: 378,436,479,484,502,503,504,506,507,536,537,580|未知 TROJAN-395@free-nodes
   password: 6e1b9a65-884f-3aa9-9469-bf6ec0f08610
   port: 3462
   server: a03.taipeicitygovernment.cn.ua
+  skip-cert-verify: false
+  type: trojan
+- name: 378,479,484,502,503,504,506,507,536,537,559,580|未知 TROJAN-353@free-nodes
+  password: ED177480-E516-11EA-8B44-BBC4E882BA0B
+  port: 20261
+  server: tw01.balala2016.xyz
+  skip-cert-verify: false
+  type: trojan
+- name: '378,536,537,559|未知 TROJAN-325 | free-nodes #3'
+  password: 7ac49a893e0bd10c
+  port: 3389
+  server: 60.249.3.226
   skip-cert-verify: false
   type: trojan
 - alterId: 0
@@ -453,52 +437,73 @@ proxies:
   tls: true
   type: trojan
   udp: true
-- name: 378,479,484,502,503,504,506,507,536,537,559,580|未知 TROJAN-149@free-nodes
-  password: 96983eb4-c8f1-316e-ab00-500014ed3d8b
-  port: 8443
-  server: official.taipeicitygovernment.biz.ua
-  skip-cert-verify: false
-  type: trojan
-- name: 378,479,484,502,503,504,506,507,536,537,559,580|未知 TROJAN-219@free-nodes
-  password: 96983eb4-c8f1-316e-ab00-500014ed3d8b
-  port: 8443
-  server: official.taipeicitygovernment.cn.ua
-  skip-cert-verify: false
-  type: trojan
-- name: '378,536,537|🇼TW-60.250.152.209-1595 #1'
-  password: 96983eb4-c8f1-316e-ab00-500014ed3d8b
-  port: 8443
-  server: official.taipeicitygovernment.chernovtsy.ua
-  skip-cert-verify: false
-  type: trojan
-- name: 378,479,484,502,503,504,506,507,536,537,559,580|未知 TROJAN-234@free-nodes
-  password: 96983eb4-c8f1-316e-ab00-500014ed3d8b
-  port: 8443
-  server: official.taipeicitygovernment.dp.ua
-  skip-cert-verify: false
-  type: trojan
-- name: 378,479,484,502,503,504,506,507,536,537,559,580|未知 TROJAN-152@free-nodes
-  password: 96983eb4-c8f1-316e-ab00-500014ed3d8b
-  port: 8443
-  server: official.taipeicitygovernment.ivano-frankivsk.ua
-  skip-cert-verify: false
-  type: trojan
-- name: '378,536,537|🇼TW-60.249.3.227-1700 #1'
-  password: 7ac49a893e0bd10c
+- name: '378,502,503,504,506,507,536,537,559|未知 TROJAN-510 | free-nodes #3'
+  password: 7b06d22a8a7c764f
   port: 3389
-  server: 60.249.3.227
+  server: 211.72.35.156
   skip-cert-verify: false
   type: trojan
+- alterId: 0
+  name: '378,502,503,504,506,507,536,537,559,574|未知31 #1'
+  password: 96983eb4-c8f1-316e-ab00-500014ed3d8b
+  port: 8443
+  server: official.taipeicitygovernment.net.ua
+  skip-cert-verify: true
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 378,479,484,502,503,504,506,507,536,537,559,574,580|未知 TROJAN-293@free-nodes
+  password: YWVzLTI1Ni1nY206eHBRd3lWNFc1RmRBNk5NQU5KSng3M1VT
+  port: 443
+  server: 2.58.242.43
+  skip-cert-verify: true
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 378,479,484,502,503,504,506,507,536,537,559,574,580|未知 TROJAN-213@free-nodes
+  password: 96983eb4-c8f1-316e-ab00-500014ed3d8b
+  port: 8443
+  server: official.taipeicitygovernment.kyiv.ua
+  skip-cert-verify: true
+  tls: true
+  type: trojan
+  udp: true
 - name: 378,479,484,502,503,504,506,507,536,537,559,580|未知 TROJAN-259@free-nodes
   password: 182228812d1e0f23
   port: 3389
   server: 60.249.3.229
   skip-cert-verify: false
   type: trojan
-- name: '378,502,503,504,507,536,537,559|未知 TROJAN-325 | free-nodes #3'
-  password: 7ac49a893e0bd10c
+- name: 378,479,484,502,503,504,506,507,536,537,559,580|未知 TROJAN-380@free-nodes
+  password: 0cc6b4268dea0ba8
   port: 3389
-  server: 60.249.3.226
+  server: 60.249.3.231
+  skip-cert-verify: false
+  type: trojan
+- name: 378,479,484,502,503,504,506,507,536,537,559,580|未知 TROJAN-347@free-nodes
+  password: 96983eb4-c8f1-316e-ab00-500014ed3d8b
+  port: 8443
+  server: official.taipeicitygovernment.com.ua
+  skip-cert-verify: false
+  type: trojan
+- name: 378,479,484,502,503,504,506,507,536,537,559,580|未知 TROJAN-249@free-nodes
+  password: b09d2aaa443af97a
+  port: 3389
+  server: 211.72.35.152
+  skip-cert-verify: false
+  type: trojan
+- name: 378,479,484,502,503,504,506,507,536,537,559,580|未知 TROJAN-149@free-nodes
+  password: 96983eb4-c8f1-316e-ab00-500014ed3d8b
+  port: 8443
+  server: official.taipeicitygovernment.biz.ua
+  skip-cert-verify: false
+  type: trojan
+- name: 378,479,484,502,503,504,506,507,536,537,559,580|未知 TROJAN-633@free-nodes
+  password: 7b06d22a8a7c764f
+  port: 3389
+  server: 211.72.35.153
   skip-cert-verify: false
   type: trojan
 - alterId: 0
@@ -510,36 +515,29 @@ proxies:
   tls: true
   type: trojan
   udp: true
-- name: '378,506,536,537|🇼TW-211.72.35.155-1833 #1'
-  password: 0cc6b4268dea0ba8
-  port: 3389
-  server: 211.72.35.155
-  skip-cert-verify: false
-  type: trojan
-- alterId: 0
-  name: 378,479,484,502,503,504,506,507,536,537,559,574,580|未知 TROJAN-293@free-nodes
-  password: YWVzLTI1Ni1nY206eHBRd3lWNFc1RmRBNk5NQU5KSng3M1VT
-  port: 443
-  server: 2.58.242.43
-  skip-cert-verify: true
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: '378,502,503,504,506,507,536,537,559,574|未知31 #1'
+- name: 378,479,484,502,503,504,506,507,536,537,559,580|未知 TROJAN-467@free-nodes
   password: 96983eb4-c8f1-316e-ab00-500014ed3d8b
   port: 8443
-  server: official.taipeicitygovernment.net.ua
-  skip-cert-verify: true
-  tls: true
-  type: trojan
-  udp: true
-- name: '378,537|🇹🇼TW-220.130.58.138-1958 #1'
-  password: 7d6a40d5-782d-4363-bc84-4ce56b8d903d
-  port: 31102
-  server: green2.cdntencentmusic.com
+  server: official.taipeicitygovernment.kiev.ua
   skip-cert-verify: false
-  sni: green2.cdntencentmusic.com
+  type: trojan
+- name: 378,479,484,536,537,559,580|未知 TROJAN-557@free-nodes
+  password: 182228812d1e0f23
+  port: 3389
+  server: 60.249.3.230
+  skip-cert-verify: false
+  type: trojan
+- name: 378,479,484,502,503,504,506,507,536,537,559,580|未知 TROJAN-152@free-nodes
+  password: 96983eb4-c8f1-316e-ab00-500014ed3d8b
+  port: 8443
+  server: official.taipeicitygovernment.ivano-frankivsk.ua
+  skip-cert-verify: false
+  type: trojan
+- name: '378,536,537,559|未知 TROJAN-1425 | free-nodes #3'
+  password: 96983eb4-c8f1-316e-ab00-500014ed3d8b
+  port: 8443
+  server: official.taipeicitygovernment.co.ua
+  skip-cert-verify: false
   type: trojan
 - alterId: 0
   name: 378,479,484,502,503,504,506,507,536,537,559,574,580|未知 TROJAN-269@free-nodes
@@ -550,10 +548,22 @@ proxies:
   tls: true
   type: trojan
   udp: true
-- name: 378,479,484,502,503,504,506,507,536,537,559,580|未知 TROJAN-467@free-nodes
+- name: 378,479,484,502,503,504,506,507,536,537,559,580|未知 TROJAN-604@free-nodes
+  password: 7b06d22a8a7c764f
+  port: 3389
+  server: 211.72.35.158
+  skip-cert-verify: false
+  type: trojan
+- name: 378,479,484,502,503,504,506,507,536,537,559,580|未知 TROJAN-219@free-nodes
   password: 96983eb4-c8f1-316e-ab00-500014ed3d8b
   port: 8443
-  server: official.taipeicitygovernment.kiev.ua
+  server: official.taipeicitygovernment.cn.ua
+  skip-cert-verify: false
+  type: trojan
+- name: 378,479,484,502,503,504,506,507,536,537,559,580|未知 TROJAN-234@free-nodes
+  password: 96983eb4-c8f1-316e-ab00-500014ed3d8b
+  port: 8443
+  server: official.taipeicitygovernment.dp.ua
   skip-cert-verify: false
   type: trojan
 - alterId: 0
@@ -562,7 +572,7 @@ proxies:
     method: GET
     path:
     - /
-  name: '378,536,537|TW-45.121.51.103-2491 #1'
+  name: '378,536,537|TW-45.121.51.103-3050 #1'
   network: http
   port: 20715
   server: 45.121.51.103
@@ -588,7 +598,7 @@ proxies:
     path: ?ed=2048
 - alterId: 1
   cipher: auto
-  name: '378,536,537|🇹🇼TW-1.161.186.146-3086 #1'
+  name: '378,536,537|🇹🇼TW-1.161.186.146-3647 #1'
   network: ws
   port: 64443
   server: 1.161.186.146
@@ -601,7 +611,7 @@ proxies:
     path: /clientarea
 - alterId: 0
   cipher: auto
-  name: '378,536,537|🇼TW-111.250.119.13-3292 #1'
+  name: '378,536,537|🇼TW-111.250.119.13-3853 #1'
   network: ws
   port: 45215
   server: 012.AP.POP.node-for-smallairport.win
@@ -616,7 +626,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '378,536,537|🇹🇼TW-61.222.202.140-3565 #1'
+  name: '378,536,537|🇹🇼TW-61.222.202.140-4126 #1'
   network: ws
   port: 33792
   server: 61.222.202.140
@@ -627,31 +637,31 @@ proxies:
   uuid: e55cd182-01b0-4fb7-a510-363701a491c5
   ws-opts:
     path: /
-- name: '378,502,503,504,507,536,537,559|未知 TROJAN-1425 | free-nodes #3'
-  password: 96983eb4-c8f1-316e-ab00-500014ed3d8b
-  port: 8443
-  server: official.taipeicitygovernment.co.ua
-  skip-cert-verify: false
-  type: trojan
-- name: 378,479,484,502,503,504,506,507,536,537,559,580|未知 TROJAN-380@free-nodes
-  password: 0cc6b4268dea0ba8
+- name: '378,479,484,502,503,504,506,507,537,559,580|未知 TROJAN-577@free-nodes #1'
+  password: b09d2aaa443af97a
   port: 3389
-  server: 60.249.3.231
+  server: 211.72.35.155
   skip-cert-verify: false
   type: trojan
-- name: '378,536,537|🇼TW-211.72.35.154-4261 #1'
+- name: '378,536,537|🇹🇼TW-60.249.3.227-5699 #1'
+  password: 7ac49a893e0bd10c
+  port: 3389
+  server: 60.249.3.227
+  skip-cert-verify: false
+  type: trojan
+- name: '378,536,537|🇼TW-211.72.35.154-4822 #1'
   password: 7b06d22a8a7c764f
   port: 3389
   server: 211.72.35.154
   skip-cert-verify: false
   type: trojan
-- name: '378,537|🇼TW-211.72.35.152-5147 #1'
-  password: 7ac49a893e0bd10c
-  port: 3389
-  server: 211.72.35.152
+- name: '378,536,537|🇼TW-60.250.152.209-5068 #1'
+  password: 96983eb4-c8f1-316e-ab00-500014ed3d8b
+  port: 8443
+  server: official.taipeicitygovernment.chernovtsy.ua
   skip-cert-verify: false
   type: trojan
-- name: '378,537|🇹🇼TW-211.72.35.155-5158 #1'
+- name: '378,536,537|🇼TW-211.72.35.155-5719 #1'
   password: 3febb05ea76a940f
   port: 3389
   server: 211.72.35.155
@@ -659,7 +669,7 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: '378,536,537|🇹🇼TW-211.72.35.110-5832 #1'
+  name: '378,536,537|🇹🇼TW-211.72.35.110-6393 #1'
   network: ws
   port: 443
   server: 211.72.35.110
@@ -674,7 +684,7 @@ proxies:
     path: /nishikata
 - alterId: 0
   cipher: auto
-  name: '378,536,537|🇹🇼TW-211.72.35.110-5833 #1'
+  name: '378,536,537|🇹🇼TW-211.72.35.110-6394 #1'
   network: ws
   port: 443
   server: 211.72.35.110
@@ -689,7 +699,7 @@ proxies:
     path: /nishikata
 - alterId: 0
   cipher: auto
-  name: '378,536,537|🇹🇼TW-211.72.35.110-5834 #1'
+  name: '378,536,537|🇹🇼TW-211.72.35.110-6395 #1'
   network: ws
   port: 443
   server: 211.72.35.110
@@ -704,7 +714,7 @@ proxies:
     path: /nishikata
 - alterId: 0
   cipher: auto
-  name: '378,536,537|🇹🇼TW-211.72.35.110-5835 #1'
+  name: '378,536,537|🇹🇼TW-211.72.35.110-6396 #1'
   network: ws
   port: 443
   server: 211.72.35.110
@@ -719,7 +729,7 @@ proxies:
     path: /nishikata3
 - alterId: 0
   cipher: auto
-  name: '378,536,537|🇹🇼TW-211.72.35.110-5836 #1'
+  name: '378,536,537|🇹🇼TW-211.72.35.110-6397 #1'
   network: ws
   port: 443
   server: 211.72.35.110
@@ -734,7 +744,7 @@ proxies:
     path: /nishikata3
 - alterId: 0
   cipher: auto
-  name: '378,536,537|🇼TW-220.130.80.179-6029 #1'
+  name: '378,536,537|🇼TW-220.130.80.179-6590 #1'
   network: ws
   port: 443
   server: 220.130.80.179
@@ -749,7 +759,7 @@ proxies:
     path: /howdy
 - alterId: 0
   cipher: auto
-  name: '378,536,537|🇼TW-165.154.226.45-6031 #1'
+  name: '378,536,537|🇼TW-165.154.226.45-6592 #1'
   network: ws
   port: 80
   server: 165.154.226.45
@@ -762,7 +772,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '378,536,537|🇼TW-211.72.35.110-6032 #1'
+  name: '378,536,537|🇼TW-211.72.35.110-6593 #1'
   network: ws
   port: 443
   server: 211.72.35.110
@@ -777,7 +787,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '378,536,537|🇹🇼TW-165.154.253.35-6034 #1'
+  name: '378,536,537|🇹🇼TW-165.154.253.35-6595 #1'
   network: ws
   port: 443
   server: tw-1.qwqjsq.top
@@ -792,7 +802,7 @@ proxies:
     path: /
 - alterId: 64
   cipher: auto
-  name: '378,536,537|🇹🇼TW-61.216.85.68-6039 #1'
+  name: '378,536,537|🇹🇼TW-61.216.85.68-6600 #1'
   network: ws
   port: 443
   server: 61.216.85.68
@@ -807,7 +817,7 @@ proxies:
     path: /path/243535322906
 - alterId: 0
   cipher: auto
-  name: '378,536,537|🇹🇼TW-165.154.246.107-6042 #1'
+  name: '378,536,537|🇹🇼TW-165.154.246.107-6603 #1'
   network: ws
   port: 80
   server: 165.154.246.107
@@ -822,7 +832,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '378,536,537|🇹🇼TW-122.118.153.38-6049 #1'
+  name: '378,536,537|🇹🇼TW-122.118.153.38-6610 #1'
   network: ws
   port: 11463
   server: tw4.594888.xyz
@@ -837,7 +847,7 @@ proxies:
     path: /v2ray
 - alterId: 0
   cipher: auto
-  name: '378,536,537|🇹🇼TW-61.224.73.189-6050 #1'
+  name: '378,536,537|🇹🇼TW-61.224.73.189-6611 #1'
   network: ws
   port: 25551
   server: tw3.594888.xyz
@@ -850,22 +860,9 @@ proxies:
     headers:
       Host: tw3.594888.xyz
     path: /v2ray
-- cipher: aes-256-cfb
-  name: 378,537,578|29|TW_speednode_0055
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 154.223.20.79
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: '378,537|🇼TW-223.165.4.173-6595 #1'
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 223.165.4.173
-  type: ss
 - alterId: 0
   cipher: auto
-  name: '378,536,537|TW-103.229.127.212-9088 #1'
+  name: '378,536,537|TW-103.229.127.212-9649 #1'
   network: ws
   port: 32381
   server: 103.229.127.212
@@ -878,7 +875,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '378,536,537|🇼TW-103.61.139.137-9097 #1'
+  name: '378,536,537|🇼TW-103.61.139.137-9658 #1'
   network: ws
   port: 20521
   server: 103.61.139.137
@@ -891,7 +888,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '378,536,537|🇼TW-140.235.38.89-9102 #1'
+  name: '378,536,537|🇼TW-140.235.38.89-9663 #1'
   network: ws
   port: 20521
   server: 140.235.38.89
@@ -904,7 +901,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '378,536,537|🇼TW-103.229.124.3-9175 #1'
+  name: '378,536,537|🇼TW-103.229.124.3-9736 #1'
   network: ws
   port: 20521
   server: 103.229.124.3
@@ -924,7 +921,7 @@ proxies:
     method: GET
     path:
     - /
-  name: '378,536,537|TW-111.249.70.15-9560 #1'
+  name: '378,536,537|TW-111.249.70.15-10121 #1'
   network: http
   port: 1443
   server: tw2.sdklkd.org
@@ -934,7 +931,7 @@ proxies:
   type: vmess
   uuid: fa98714c-1d2b-3b60-81e0-f7151110e801
 - cipher: aes-256-cfb
-  name: '378,537|TW-61.220.130.70-10057 #1'
+  name: '378,537|TW-61.220.130.70-10618 #1'
   password: qwerREWQ@@
   port: 50701
   server: 61.220.130.70
@@ -1321,6 +1318,17 @@ proxies:
   type: vmess
   udp: true
   uuid: aaba2807-e05d-4b46-a819-10aca0793576
+- name: 536|🇹🇼TW-220.130.58.138-1958
+  password: 7d6a40d5-782d-4363-bc84-4ce56b8d903d
+  port: 31102
+  server: green2.cdntencentmusic.com
+  sni: green2.cdntencentmusic.com
+  type: trojan
+- name: 536|🇹🇼TW-211.72.35.152-5147
+  password: 7ac49a893e0bd10c
+  port: 3389
+  server: 211.72.35.152
+  type: trojan
 - cipher: chacha20-ietf-poly1305
   name: 558|0| 01 | 1x TW
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
