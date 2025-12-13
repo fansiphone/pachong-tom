@@ -1,7 +1,7 @@
 proxies:
 - client-fingerprint: qq
   flow: xtls-rprx-vision
-  name: '340,502,503,504,506,507,514,551,559,567,580|🇨🇭_CH_瑞士 #1'
+  name: '340,502,503,504,506,507,559,567,580|🇨🇭_CH_瑞士 #1'
   network: tcp
   port: 443
   reality-opts:
@@ -78,7 +78,7 @@ proxies:
   uuid: 7c317161-5cf8-4cbc-811a-d1297c41bb23
   xudp: true
 - cipher: aes-256-cfb
-  name: '378,537|🇨CH-185.126.116.125-0111 #1'
+  name: '378,537|🇭CH-185.126.116.125-0127 #1'
   password: aLpQtfEZe445QyHk
   port: 9098
   server: 185.126.116.125
@@ -90,23 +90,26 @@ proxies:
   server: ch12.yukiss.eu.org
   skip-cert-verify: false
   type: trojan
-- name: '378,456,479,484,502,503,504,506,507,536,537,559,580|未知 TROJAN-1859 | free-nodes
-    #4'
+- alterId: 0
+  name: '378,456,479,484,502,503,504,506,507,536,537,559,574,580|未知 TROJAN-1859 |
+    free-nodes #4'
   password: 8d047125-8467-4724-bb62-ef64405dca78
   port: 443
   server: 91.192.102.92
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: joss.gpj1.web.id
+  tls: true
   type: trojan
+  udp: true
 - cipher: aes-128-cfb
-  name: '378,537|🇨CH-156.146.62.160-5854 #1'
+  name: '378,537|🇨CH-156.146.62.160-5876 #1'
   password: shadowsocks
   port: 443
   server: 156.146.62.160
   type: ss
 - alterId: 1
   cipher: auto
-  name: '378,536,537|CH-186.190.215.32-9777 #1'
+  name: '378,536,537|CH-186.190.215.32-9790 #1'
   network: ws
   port: 443
   server: 186.190.215.32
@@ -121,7 +124,7 @@ proxies:
     path: linkvws
 - alterId: 1
   cipher: auto
-  name: '378,536,537|🇭CH-186.190.215.75-9841 #1'
+  name: '378,536,537|🇭CH-186.190.215.75-9854 #1'
   network: ws
   port: 443
   server: 186.190.215.75
@@ -136,7 +139,7 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: '378,536,537|🇭CH-140.238.212.95-9854 #1'
+  name: '378,536,537|🇭CH-140.238.212.95-9867 #1'
   network: ws
   port: 443
   server: 140.238.212.95
@@ -151,7 +154,7 @@ proxies:
     path: /
 - alterId: 1
   cipher: auto
-  name: '378,536,537|🇭CH-23.166.88.27-9948 #1'
+  name: '378,536,537|🇭CH-23.166.88.27-9961 #1'
   network: ws
   port: 443
   server: 23.166.88.27
@@ -182,6 +185,18 @@ proxies:
   tfo: false
   type: ss
   udp: true
+- client-fingerprint: random
+  encryption: none
+  name: '523,524|🇨🇭_瑞士 #1'
+  network: ws
+  port: 443
+  server: 45.131.185.234
+  servername: ak.suoni.nyc.mn
+  tls: true
+  type: vless
+  uuid: 78fc9ba9-9c68-4b49-891f-ea9e38bd3b56
+  ws-opts:
+    path: /
 - name: 559|瑞士 - 梅兰 - 2
   password: trojan
   port: 2095
