@@ -25,17 +25,13 @@ proxies:
   uuid: 000a0d18-02fe-4cda-a68e-96b55e067567
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '340,502,514,551,559,567,585,586|RU_speednode_0016 #3'
+  name: '340,559|13|RU_speednode_0016 #1'
   port: 4443
-  reality-opts:
-    public-key: 5XB_N3ATilH-6tp_MXht-84_y5YaJnx_Z7MbuY2otHE
-    short-id: aa7e96542880027a
   server: 212.60.21.104
   servername: github.com
   skip-cert-verify: false
   tls: true
   type: vless
-  udp: true
   uuid: edb3d24d-1a55-42f7-8752-6ae216f18cf4
 - cipher: chacha20-ietf-poly1305
   name: 356|🇷🇺1 |  5.2MB/s
@@ -391,14 +387,14 @@ proxies:
   uuid: 08bc30e1-be39-4eb4-e887-e6579be15a45
   ws-opts:
     path: /
-- name: '378,456,536,537|🇺RU-45.88.148.237-2359 #1'
+- name: '378,536,537|🇺RU-45.88.148.237-2359 #1'
   password: a1b16d10-4f43-4dd9-8c4f-52065b2b0910
   port: 28443
   server: 45.88.148.237
   skip-cert-verify: false
   sni: sbank.ir
   type: trojan
-- name: '378,479,484,536,537,559|未知 TROJAN-236 | free-nodes #1'
+- name: 378,479,484,536,537,559|未知 TROJAN-236 | free-nodes
   password: 750a29bf-0a40-437f-b120-38de74ae7eaf
   port: 28443
   server: 45.88.148.234
@@ -634,9 +630,8 @@ proxies:
   uuid: 469e0b31-30c3-4dab-800d-711232634ce1
   ws-path: /
 - client-fingerprint: chrome
-  encryption: none
   flow: xtls-rprx-vision
-  name: '455,456,457,458,507,523,524,559,580,581|🇷🇺_RU_俄罗斯 #21'
+  name: '455,457,458,559,580,581|🇷🇺_RU_俄罗斯 #21'
   network: tcp
   port: 443
   reality-opts:
@@ -671,21 +666,28 @@ proxies:
   tls: false
   type: vless
   uuid: 1859f2db-e6e8-4dc4-b21e-99da517e2e62
-- client-fingerprint: chrome
-  encryption: none
-  flow: xtls-rprx-vision
-  name: '456,479,484,507,523,524,559,580|RU VLESS-106 | free-nodes #1'
-  network: tcp
+- alpn:
+  - h2
+  grpc-opts:
+    grpc-service-name: db
+  name: '456,459|俄罗斯(yudou6677.top 玉豆免费节点) #2'
+  network: grpc
+  password: ab47264dad8b0fbe
   port: 443
-  reality-opts:
-    public-key: 8OsJx6xuHcpL_5e1w0U4bMBa-icevDgvvzNwPwZbORQ
-    short-id: 5540e44a53c3d01c
-  server: 217.16.24.170
-  servername: api-maps.yandex.ru
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: a91e64f0-9295-499d-bf4a-661ad99d4938
+  server: 51aa8f7.p6.glados-config.net
+  sni: n2.gladns.com
+  type: trojan
+- alpn:
+  - h2
+  grpc-opts:
+    grpc-service-name: db
+  name: '456,459|俄罗斯(yudou6677.top 玉豆免费节点) #1'
+  network: grpc
+  password: de24be07de746f4f
+  port: 443
+  server: 3348107.p3.glados-config.net
+  sni: n2.gladns.com
+  type: trojan
 - name: 460|俄罗斯_新西伯利亚
   network: ws
   port: 443
@@ -1455,6 +1457,36 @@ proxies:
       Host: ''
     path: /
 - client-fingerprint: chrome
+  fingerprint: ''
+  name: 470|07a49d2b990f438f99a09d6b709f8a...
+  network: ws
+  port: 2053
+  server: 172.67.155.231
+  servername: INDEX.Arcane509.Workers.DEV
+  tls: true
+  type: vless
+  udp: false
+  uuid: ef23616d-8a9d-4b22-b2f5-9bda864de179
+  ws-opts:
+    headers:
+      host: INDEX.Arcane509.Workers.DEV
+    path: /assets?ed=2048
+- client-fingerprint: chrome
+  fingerprint: ''
+  name: 470|68ae5f951b014ddcb0ea583de0a2e3...
+  network: ws
+  port: 443
+  server: 172.67.145.21
+  servername: INDEX.Arcane509.Workers.DEV
+  tls: true
+  type: vless
+  udp: false
+  uuid: ef23616d-8a9d-4b22-b2f5-9bda864de179
+  ws-opts:
+    headers:
+      host: INDEX.Arcane509.Workers.DEV
+    path: /assets?ed=2048
+- client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: '479,484|[Vless] 🇷🇺 RU VLESS-17 | free-... #1'
   network: tcp
@@ -1504,6 +1536,20 @@ proxies:
   type: ss
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
+  name: 479,484,507,559,580|RU VLESS-106 | free-nodes
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: 8OsJx6xuHcpL_5e1w0U4bMBa-icevDgvvzNwPwZbORQ
+    short-id: 5540e44a53c3d01c
+  server: 217.16.24.170
+  servername: api-maps.yandex.ru
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: a91e64f0-9295-499d-bf4a-661ad99d4938
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
   name: '479,484|[Vless] 🇷🇺 RU VLESS-57 | free-... #1'
   network: tcp
   port: 443
@@ -1544,6 +1590,20 @@ proxies:
   tls: true
   type: vless
   uuid: 90c9c25c-df6c-4438-83d3-ef97166a9184
+- client-fingerprint: firefox
+  grpc-opts:
+    grpc-service-name: 7034vless
+  name: 507,559|RU VLESS-78 | free-nodes
+  network: grpc
+  port: 7033
+  reality-opts:
+    public-key: iLik9C9our-5dRYuvFtrYOzd1NedgTsqUKew2ogLdgE
+    short-id: 16b6cda7ab793526
+  server: rusdokyav.vtuix.ir
+  servername: telewebion.com
+  tls: false
+  type: vless
+  uuid: 2652fbc5-e1b1-691f-c9c7-11ad83e828a6
 - alterId: 0
   cipher: auto
   name: '513,517,578|2|🇷🇺_RU_俄罗斯联邦 #3'
@@ -1572,20 +1632,6 @@ proxies:
   server: 185.158.155.33
   tfo: false
   type: ss
-- client-fingerprint: chrome
-  encryption: none
-  flow: xtls-rprx-vision
-  name: '523,524,559|🇷🇺_俄罗斯 #3'
-  network: tcp
-  port: 8443
-  reality-opts:
-    public-key: e2X3eYakAbU2NCCldc2uRMJG00SBKv9Nzp8AcCRlMik
-    short-id: c950
-  server: 51.250.43.141
-  servername: ads.x5.ru
-  tls: false
-  type: vless
-  uuid: c69ccf0c-02e4-4325-8687-3a622a9f9fcf
 - client-fingerprint: qq
   encryption: none
   flow: xtls-rprx-vision
@@ -1600,13 +1646,7 @@ proxies:
   tls: false
   type: vless
   uuid: fd4b0117-d752-46fd-9a94-21a21e360fdb
-- cipher: chacha20-ietf-poly1305
-  name: '523,524|🇷🇺_俄罗斯_5 #1'
-  password: qdpM4ROvoLtayi7NN9DIId
-  port: 443
-  server: 194.156.103.148
-  type: ss
-- name: '533|RU俄罗斯(mibei77.com 米贝节点分享) #2'
+- name: '533|RU俄罗斯(mibei77.com 米贝节点分享) #6'
   network: ws
   port: 2096
   server: 195.13.45.253
@@ -1618,7 +1658,7 @@ proxies:
     headers:
       Host: gaosir.unfeeling.sbs
     path: '%2FTelegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2%2F%3Fed%3D2560'
-- name: '533|RU俄罗斯(mibei77.com 米贝节点分享) #3'
+- name: '533|RU俄罗斯(mibei77.com 米贝节点分享) #7'
   network: ws
   port: 2053
   server: 31.192.238.71
@@ -1630,7 +1670,7 @@ proxies:
     headers:
       Host: gaosir.unfeeling.sbs
     path: '%2FTelegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2%2F%3Fed%3D2560'
-- name: '533|RU俄罗斯(mibei77.com 米贝节点分享) #4'
+- name: '533|RU俄罗斯(mibei77.com 米贝节点分享) #8'
   network: ws
   port: 8443
   server: 31.192.238.71
@@ -1642,7 +1682,7 @@ proxies:
     headers:
       Host: gaosir.unfeeling.sbs
     path: X%40%E8%8A%82%E7%82%B9%E7%8B%82%E9%AD%94%2F%3Fed%3D2560
-- name: '533|RU俄罗斯(mibei77.com 米贝节点分享) #5'
+- name: '533|RU俄罗斯(mibei77.com 米贝节点分享) #9'
   network: ws
   port: 2053
   server: 31.192.238.71
@@ -1654,7 +1694,7 @@ proxies:
     headers:
       Host: gaosir.unfeeling.sbs
     path: '%2FX%40%E8%8A%82%E7%82%B9%E7%8B%82%E9%AD%94%2F'
-- name: '533|RU俄罗斯(mibei77.com 米贝节点分享) #6'
+- name: '533|RU俄罗斯(mibei77.com 米贝节点分享) #10'
   network: ws
   port: 2053
   server: 31.192.238.71
@@ -1666,7 +1706,7 @@ proxies:
     headers:
       Host: gaosir.unfeeling.sbs
     path: X%40freecodes%2F%3Fed%3D2560
-- name: '533|RU俄罗斯(mibei77.com 米贝节点分享) #7'
+- name: '533|RU俄罗斯(mibei77.com 米贝节点分享) #11'
   network: ws
   port: 8443
   server: 46.8.226.39
@@ -1678,7 +1718,7 @@ proxies:
     headers:
       Host: gaosir.unfeeling.sbs
     path: Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2%2F%3Fed%3D2560
-- name: '533|RU俄罗斯(mibei77.com 米贝节点分享) #8'
+- name: '533|RU俄罗斯(mibei77.com 米贝节点分享) #12'
   network: ws
   port: 2053
   server: 31.192.238.71
@@ -1690,7 +1730,7 @@ proxies:
     headers:
       Host: gaosir.unfeeling.sbs
     path: '%2FX%40%E8%8A%82%E7%82%B9%E7%8B%82%E9%AD%94%2F%3Fed%3D2560'
-- name: '533|RU俄罗斯(mibei77.com 米贝节点分享) #9'
+- name: '533|RU俄罗斯(mibei77.com 米贝节点分享) #13'
   network: ws
   port: 2053
   server: 31.192.238.71
@@ -1778,6 +1818,19 @@ proxies:
   tls: false
   type: vless
   uuid: 81c5e9f6-daf6-4ce9-9fb7-4b0d4e53b85e
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '559|🇷🇺_俄罗斯 #3'
+  network: tcp
+  port: 8443
+  reality-opts:
+    public-key: e2X3eYakAbU2NCCldc2uRMJG00SBKv9Nzp8AcCRlMik
+    short-id: c950
+  server: 51.250.43.141
+  servername: ads.x5.ru
+  tls: false
+  type: vless
+  uuid: c69ccf0c-02e4-4325-8687-3a622a9f9fcf
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: '559|🇷🇺_RU_俄罗斯 #12'
