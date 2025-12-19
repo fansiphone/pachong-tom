@@ -840,11 +840,11 @@ proxies:
   port: 17315
   server: 120.240.103.35
   type: ss
-- name: 255|🇸🇬 SG
+- name: 255|SG
+  network: tcp
   password: f57f01e6-9bb1-4277-a5cb-75ad0ce1fa11
   port: 32702
   server: xd-sh.timiwc.com
-  skip-cert-verify: true
   sni: k36.tudou211.com
   type: trojan
 - client-fingerprint: firefox
@@ -934,16 +934,16 @@ proxies:
   sni: www.alibaba.com
   type: trojan
   udp: true
-- name: '340,378,454,536,537,548,559,580|🇸🇬 新加坡|@stairnode #7'
-  network: tcp
+- country: 🇵JP
+  name: '340,378,440,454,536,537,559,580|🇸🇬 新加坡|@stairnode #7'
   password: e2722c0fb503f8a592436c12bce0509a
   port: 2760
   server: 160.16.106.144
   skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
+  udp: true
 - name: '340,378,454,536,537,559,580|🇸🇬 新加坡3|@stairnode #6'
-  network: tcp
   password: BxceQaOe
   port: 1196
   server: 13.113.37.246
@@ -2250,19 +2250,17 @@ proxies:
       Host: 180.215.130.123
     path: /
 - cipher: chacha20-ietf-poly1305
-  country: 🇨🇿CZ
-  name: 378,537,538,548|🇨🇿CZ_123
+  name: 378,537,538|🇸🇬SG-95.173.218.203-0359 | 9.3...
   password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
   port: 990
   server: 95.173.218.203
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 378,537,538,548|_05
+  name: 378,537,538|🇸🇬SG-167.150.100.115-0315 | 2....
   password: pJtDFXMfdW9VNdJpaf4e2LfFkXdWgxrz
   port: 443
   server: 167.150.100.115
   type: ss
-  udp: true
 - alterId: 4
   cipher: auto
   name: 378,536,537,538|🇸🇬SG-202.61.141.130-0230 | 0.3...
@@ -3496,12 +3494,11 @@ proxies:
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
-- name: '459,559,580|HK香港(mibei77.com 米贝节点分享) #22'
+- name: '459,580|HK香港(mibei77.com 米贝节点分享) #21'
   network: ws
   port: 42841
   server: 43.165.190.11
   servername: mot.luyuju.dpdns.org
-  skip-cert-verify: false
   tls: true
   type: vless
   uuid: 00000000-0000-4000-8000-000000000000
@@ -5216,7 +5213,7 @@ proxies:
   server: gg21.hangfengjiasu.com
   tfo: false
   type: ss
-- name: 559|防失效github+SubCrawler新加坡_121904...
+- name: 559|防失效github+SubCrawler新加坡_121918...
   password: 52d0cb21-56da-4f00-862f-be01b66446a8
   port: 443
   server: singaporex-1.nezhasu.com
@@ -5224,7 +5221,7 @@ proxies:
   sni: Singaporex-1.nezhasu.com
   tls: false
   type: hysteria2
-- name: 559|新加坡_121904186
+- name: 559|新加坡_121918196
   password: f62dcdd4-a8f8-440e-8cc7-f5bb2f762375
   port: 443
   server: singaporex-1.nezhasu.com
@@ -5232,27 +5229,36 @@ proxies:
   sni: Singaporex-1.nezhasu.com
   tls: false
   type: hysteria2
+- name: '559|🇸🇬_新加坡 #2'
+  network: ws
+  password: 5a2c16f9
+  port: 443
+  server: 27.50.48.206
+  skip-cert-verify: false
+  sni: snippets.kkii.eu.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: snippets.kkii.eu.org
+    path: '%2F'
+- name: '559|🇸🇬_新加坡 #3'
+  network: ws
+  password: 5a2c16f9
+  port: 443
+  server: 8.219.9.172
+  skip-cert-verify: false
+  sni: snippets.kkii.eu.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: snippets.kkii.eu.org
+    path: '%2F'
 - name: '559,580|未知 TROJAN-290 | free-nodes #1'
   password: BxceQaOe
   port: 1691
   server: 18.167.69.38
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
-  type: trojan
-- name: 559|新加坡_121904121
-  network: tcp
-  password: aWgKDJmn2q.hv=51
-  port: 10293
-  server: 139.180.143.191
-  sni: zmbvgixwdqusy.advudjng.click
-  type: trojan
-- name: 559|新加坡_121904008+M56
-  network: tcp
-  password: b-9.TgJs0hHMI4jKRCoDy
-  port: 29415
-  server: 64.176.85.73
-  skip-cert-verify: true
-  sni: ozon.ru
   type: trojan
 - name: '559,580|未知 TROJAN-550 | free-nodes #1'
   password: e2722c0fb503f8a592436c12bce0509a
@@ -5267,6 +5273,124 @@ proxies:
   server: kinsta.com
   sni: doufeng.pages.dev
   type: trojan
+- client-fingerprint: randomized
+  name: '559|🇸🇬_新加坡 #5'
+  network: ws
+  port: 443
+  server: 27.50.48.206
+  servername: snippets.kkii.eu.org
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 5a2c16f9-e365-4080-8d38-6924c3835586
+  ws-opts:
+    headers:
+      Host: snippets.kkii.eu.org
+    path: '%2F'
+- name: '559|🇸🇬_新加坡 #6'
+  network: ws
+  port: 8080
+  server: 20.191.143.151
+  servername: stall.saass.ccwu.cc
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 6943fe4d-0a5e-0543-d402-0e5cf7fe7af0
+  ws-opts:
+    headers:
+      Host: stall.saass.ccwu.cc
+    path: '%2Fproxyip%3Dsjc.o00o.ooo'
+- name: '559|🇸🇬_新加坡 #7'
+  network: ws
+  port: 443
+  server: 27.50.48.206
+  servername: stall.saass.ccwu.cc
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 6943fe4d-0a5e-0543-d402-0e5cf7fe7af0
+  ws-opts:
+    headers:
+      Host: stall.saass.ccwu.cc
+    path: '%2Fproxyip%3Dsjc.o00o.ooo'
+- name: '559|🇸🇬_新加坡 #8'
+  network: ws
+  port: 2087
+  server: 27.50.48.26
+  servername: stall.saass.ccwu.cc
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 6943fe4d-0a5e-0543-d402-0e5cf7fe7af0
+  ws-opts:
+    headers:
+      Host: stall.saass.ccwu.cc
+    path: '%2Fproxyip%3Dsjc.o00o.ooo'
+- name: '559|🇸🇬_新加坡 #9'
+  network: ws
+  port: 2096
+  server: 27.50.48.29
+  servername: stall.saass.ccwu.cc
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 6943fe4d-0a5e-0543-d402-0e5cf7fe7af0
+  ws-opts:
+    headers:
+      Host: stall.saass.ccwu.cc
+    path: '%2Fproxyip%3Dsjc.o00o.ooo'
+- name: '559|🇸🇬_新加坡 #10'
+  network: ws
+  port: 2087
+  server: 27.50.48.72
+  servername: stall.saass.ccwu.cc
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 6943fe4d-0a5e-0543-d402-0e5cf7fe7af0
+  ws-opts:
+    headers:
+      Host: stall.saass.ccwu.cc
+    path: '%2Fproxyip%3Dsjc.o00o.ooo'
+- name: '559|🇸🇬_新加坡 #11'
+  network: ws
+  port: 443
+  server: 34.143.159.175
+  servername: stall.saass.ccwu.cc
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 6943fe4d-0a5e-0543-d402-0e5cf7fe7af0
+  ws-opts:
+    headers:
+      Host: stall.saass.ccwu.cc
+    path: '%2Fproxyip%3Dsjc.o00o.ooo'
+- name: '559|🇸🇬_新加坡 #12'
+  network: ws
+  port: 443
+  server: 43.134.87.15
+  servername: stall.saass.ccwu.cc
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 6943fe4d-0a5e-0543-d402-0e5cf7fe7af0
+  ws-opts:
+    headers:
+      Host: stall.saass.ccwu.cc
+    path: '%2Fproxyip%3Dsjc.o00o.ooo'
+- name: '559|🇸🇬_新加坡 #13'
+  network: ws
+  port: 443
+  server: 8.219.9.172
+  servername: stall.saass.ccwu.cc
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 6943fe4d-0a5e-0543-d402-0e5cf7fe7af0
+  ws-opts:
+    headers:
+      Host: stall.saass.ccwu.cc
+    path: '%2Fproxyip%3Dsjc.o00o.ooo'
 - name: 559,580|SG VLESS-77 | free-nodes
   port: 42409
   server: 143.198.222.68
