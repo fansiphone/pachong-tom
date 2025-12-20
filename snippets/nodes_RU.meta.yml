@@ -252,13 +252,15 @@ proxies:
   server: 45.89.55.173
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 378,537,538|🇷🇺RU-5.182.37.87-0332 | 27.887...
+  country: 🇷🇺RU
+  name: 378,537,538,548|🇷🇺RU_324
   password: Oy4TsrxfaJExUIhlcSqHpVQIWIFM2jZR
   port: 443
   server: 5.182.37.87
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 378,537,538|🇷🇺RU-45.138.157.162-0334 | 26....
+  country: 🇷🇺RU
+  name: 378,537,538,548|🇷🇺RU_326
   password: qFAJdBEqsI71jaSML67nHoPBCGhX94uk
   port: 443
   server: 45.138.157.162
@@ -448,11 +450,12 @@ proxies:
       Host: YouTube-aweikeji
     path: /
 - cipher: aes-256-cfb
-  name: '378,537|RU-38.60.223.8-5093 #1'
+  name: '378,537,548|_06 #1'
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 38.60.223.8
   type: ss
+  udp: true
 - alterId: 0
   cipher: auto
   name: '378,536,537|🇺RU-185.174.138.209-7580 #1'
@@ -606,17 +609,23 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 437,559|美国_122004011
+  country: 🇺 RU
+  h2-opts: {}
+  http-opts: {}
+  name: 435,437,559|美国_122004011
   network: tcp
   port: '45245'
   server: ye.fxlcn.com
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 469e0b31-30c3-4dab-800d-711232634ce1
+  ws-path: /
 - client-fingerprint: chrome
+  encryption: none
   flow: xtls-rprx-vision
-  name: '455,457,458,559,580,581|🇷🇺_RU_俄罗斯 #20'
+  name: '455,457,458,548,559,580,581|🇷🇺_RU_俄罗斯 #22'
   network: tcp
   port: 443
   reality-opts:
@@ -627,7 +636,7 @@ proxies:
   type: vless
   uuid: eb162ab1-a006-4931-b1b3-8fc88a22b10e
 - client-fingerprint: chrome
-  name: '455,457,458,559,580,581|🇷🇺_RU_俄罗斯 #21'
+  name: '455,457,458,548,559,580,581|🇷🇺_RU_俄罗斯 #23'
   network: tcp
   port: 35728
   reality-opts:
@@ -639,8 +648,9 @@ proxies:
   type: vless
   uuid: a00d89f6-ab7e-4e30-a5e5-54c701d62c93
 - client-fingerprint: chrome
+  encryption: none
   flow: xtls-rprx-vision
-  name: '455,457,458,559,580,581|🇷🇺_RU_俄罗斯 #22'
+  name: '455,457,458,548,559,580,581|🇷🇺_RU_俄罗斯 #24'
   network: tcp
   port: 4443
   reality-opts:
@@ -1419,9 +1429,52 @@ proxies:
     headers:
       Host: ''
     path: /
+- client-fingerprint: chrome
+  fingerprint: ''
+  name: 470|7b7c3b6569f7469084c98fed5078a3...
+  network: ws
+  port: 2053
+  server: 172.67.155.231
+  servername: INDEX.Arcane509.Workers.DEV
+  tls: true
+  type: vless
+  udp: false
+  uuid: ef23616d-8a9d-4b22-b2f5-9bda864de179
+  ws-opts:
+    headers:
+      host: INDEX.Arcane509.Workers.DEV
+    path: /assets?ed=2048
+- client-fingerprint: chrome
+  fingerprint: ''
+  name: 470|242abdb731294fbba09276bc64359d...
+  network: ws
+  port: 443
+  server: 172.67.145.21
+  servername: INDEX.Arcane509.Workers.DEV
+  tls: true
+  type: vless
+  udp: false
+  uuid: ef23616d-8a9d-4b22-b2f5-9bda864de179
+  ws-opts:
+    headers:
+      host: INDEX.Arcane509.Workers.DEV
+    path: /assets?ed=2048
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 507|RU VLESS-06 | free-nodes
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: pPGE5Uacj1AGAB_WLOXB_UUnVBOmuJGH0vTSfmRBKzM
+    short-id: 2e40144ddc07e8e1
+  server: ch1.tunnely.ru
+  servername: ch1.tunnely.ru
+  tls: false
+  type: vless
+  uuid: aee540f8-fb73-4ee7-98f9-125d4d1d41ff
 - client-fingerprint: random
   flow: xtls-rprx-vision
-  name: 507|RU VLESS-37 | free-nodes
+  name: 507|RU VLESS-40 | free-nodes
   network: tcp
   port: 443
   reality-opts:
@@ -1431,15 +1484,22 @@ proxies:
   tls: false
   type: vless
   uuid: 29419eea-2d3e-4e17-8114-7ba0c1e7e666
-- name: 507|RU VLESS-61 | free-nodes
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 507|RU VLESS-66 | free-nodes
+  network: tcp
   port: 443
+  reality-opts:
+    public-key: F14RpPKCKo_qPcW7EFVu1M18JsAT8c04O08cIi0Ghg4
+    short-id: ab1cd2
   server: 5.129.249.134
+  servername: ir.ozone.ru
   tls: false
   type: vless
   uuid: 88888888-8888-8888-8888-888888888888
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '507,580|RU VLESS-21 | free-nodes #1'
+  name: 507,580|RU VLESS-21 | free-nodes
   network: tcp
   port: 443
   reality-opts:
@@ -1491,10 +1551,23 @@ proxies:
     headers:
       Host: stall.saass.ccwu.cc
     path: /proxyip=sjc.o00o.ooo
+- client-fingerprint: chrome
+  encryption: none
+  name: '523,524|🇷🇺_俄罗斯_1 #1'
+  network: tcp
+  port: 47944
+  reality-opts:
+    public-key: _7L2lOpu_wMQLTxy0VT0WIHe8yYfBFKKq8wWWLr-4Tw
+    short-id: ffffffffff
+  server: 89.23.113.137
+  servername: www.ietf.org
+  tls: true
+  type: vless
+  uuid: 9f721f50-e015-5ea3-8bb0-22428307e9c0
 - client-fingerprint: qq
   encryption: none
   flow: xtls-rprx-vision
-  name: '523,524,559,580|🇬🇧_GB_英国 #12'
+  name: '523,524,548,559,580|🇬🇧_GB_英国 #17'
   network: tcp
   port: 443
   reality-opts:
@@ -1502,6 +1575,62 @@ proxies:
     short-id: 65c7748be8
   server: 51.250.10.228
   servername: sun6-21.userapi.com
+  tls: false
+  type: vless
+  uuid: fd4b0117-d752-46fd-9a94-21a21e360fdb
+- client-fingerprint: qq
+  encryption: none
+  flow: xtls-rprx-vision
+  name: '523,524|🇷🇺_俄罗斯_3 #1'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: r5WB5FnSCt4eeBC1FJMfkWHbzsMuabo0Rc6wuAhlZUs
+    short-id: dc9998c3
+  server: 84.201.168.206
+  servername: sun6-21.userapi.com
+  tls: true
+  type: vless
+  uuid: fd4b0117-d752-46fd-9a94-21a21e360fdb
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  name: '523,524|🇷🇺_俄罗斯_4 #1'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: mLmBhbVFfNuo2eUgBh6r9-5Koz9mUCn3aSzlR6IejUg
+    short-id: 48720c
+  server: jp01-vlr01.tcp-reset-club.net
+  servername: hls-svod.itunes.apple.com
+  tls: true
+  type: vless
+  uuid: f0383138-8329-40cf-8b68-dabcd1b6c754
+- client-fingerprint: qq
+  encryption: none
+  flow: xtls-rprx-vision
+  name: '523,524|🇷🇺_俄罗斯_5 #1'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: r5WB5FnSCt4eeBC1FJMfkWHbzsMuabo0Rc6wuAhlZUs
+    short-id: 65c7748be8
+  server: 217.16.17.135
+  servername: sun6-21.userapi.com
+  tls: true
+  type: vless
+  uuid: fd4b0117-d752-46fd-9a94-21a21e360fdb
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  name: '523,524,548,559,580|🇷🇺_RU_俄罗斯 #15'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: r5WB5FnSCt4eeBC1FJMfkWHbzsMuabo0Rc6wuAhlZUs
+    short-id: 672ff0
+  server: 178.154.205.131
+  servername: ads.x5.ru
   tls: false
   type: vless
   uuid: fd4b0117-d752-46fd-9a94-21a21e360fdb
@@ -1692,19 +1821,6 @@ proxies:
   tls: false
   type: vless
   uuid: a91e64f0-9295-499d-bf4a-661ad99d4938
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '559,580|🇷🇺_RU_俄罗斯 #13'
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: r5WB5FnSCt4eeBC1FJMfkWHbzsMuabo0Rc6wuAhlZUs
-    short-id: 672ff0
-  server: 178.154.205.131
-  servername: ads.x5.ru
-  tls: false
-  type: vless
-  uuid: fd4b0117-d752-46fd-9a94-21a21e360fdb
 - alpn:
   - h3
   auth_str: dongtaiwang.com
