@@ -731,11 +731,11 @@ proxies:
   port: 17315
   server: 120.240.103.35
   type: ss
-- name: 255|🇸🇬 SG
+- name: 255|SG
+  network: tcp
   password: f57f01e6-9bb1-4277-a5cb-75ad0ce1fa11
   port: 32702
   server: xd-sh.timiwc.com
-  skip-cert-verify: true
   sni: k36.tudou211.com
   type: trojan
 - name: '321,322,323|tg群组: https://t.me/tjiajc1 #3'
@@ -793,7 +793,8 @@ proxies:
   server: 128.199.172.224
   type: ss
 - cipher: rc4-md5
-  name: 356,378,537,538|🇸🇬SG-68.183.227.4-0342 | 11.64...
+  country: 🇸🇬SG
+  name: 356,378,537,538,548|🇸🇬SG_291
   password: 14fFPrbezE3HDZzsMOr6
   port: 8080
   server: 68.183.227.4
@@ -1965,17 +1966,19 @@ proxies:
       Host: 180.215.130.123
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 378,537,538|🇸🇬SG-95.173.218.203-0414 | 13....
+  country: 🇨🇿CZ
+  name: 378,537,538,548|🇨🇿CZ_100
   password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
   port: 990
   server: 95.173.218.203
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 378,537,538|🇸🇬SG-167.150.100.115-0440 | 0....
+  name: '378,537,538,548|_02 #1'
   password: pJtDFXMfdW9VNdJpaf4e2LfFkXdWgxrz
   port: 443
   server: 167.150.100.115
   type: ss
+  udp: true
 - alterId: 0
   cipher: auto
   name: '378,536,537|🇸🇬SG-139.99.61.53-0494 #2'
@@ -2995,6 +2998,12 @@ proxies:
   port: 9044
   server: 103.172.116.79
   type: ss
+- cipher: aes-256-cfb
+  name: 396|🇸🇬 SG, Singapore
+  password: amazonskr05
+  port: 443
+  server: 13.113.17.246
+  type: ss
 - alterId: 0
   cipher: auto
   name: 417|新加坡-优化-Gemini-GPT
@@ -3096,7 +3105,7 @@ proxies:
   country: 🇬 SG
   h2-opts: {}
   http-opts: {}
-  name: 435,437,559|🇸🇬 SG_138
+  name: 435,437,548,559|🇸🇬 SG_148
   network: none
   port: 52752
   server: 8.218.105.196
@@ -3499,7 +3508,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: '523,524,559,580|HK香港(mibei77.com 米贝节点分享) #10'
+  name: '523,524,559,580|HK香港(mibei77.com 米贝节点分享) #31'
   network: tcp
   port: '19751'
   server: 43.165.7.71
@@ -3520,7 +3529,7 @@ proxies:
   uuid: fb5a4283-dbfb-458b-8619-c4a53739f781
 - client-fingerprint: chrome
   delay: 551
-  name: 528,553|yandex-562
+  name: 528,553|yandex-3151
   network: ws
   password: 87d1bfd4-574e-4c96-ad42-0426f27461ff
   port: 443
@@ -3802,19 +3811,48 @@ proxies:
   server: 27.50.48.206
   sni: snippets.kkii.eu.org
   type: trojan
-- name: 566|🇸🇬 新加坡 | SGP 2
+- alterId: 0
+  cipher: auto
+  name: '559,580|GB英国(mibei77.com 米贝节点分享) #3'
   network: ws
-  password: trojan
-  port: 443
-  server: kinsta.com
+  port: '443'
+  server: n1747624280.lie5d.cyou
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 49dcf4b4-81eb-4fe2-91d3-86dc2e27ced5
+  ws-opts:
+    headers:
+      Host: n1747624280.lie5d.cyou
+    path: /
+- name: 566|🇸🇬 新加坡 | SGP
+  password: bcb12795-9b04-4293-93e5-42f448481532
+  port: 33301
+  server: green2.cdntencentmusic.com
   skip-cert-verify: true
-  sni: doufeng.pages.dev
+  sni: green2.cdntencentmusic.com
+  type: trojan
+  udp: true
+- name: 566|🇸🇬 新加坡 | SGP 6
+  network: ws
+  password: 22367c45-f6c4-4ca8-8d52-d9787d7bbe91
+  port: 443
+  server: ct.090227.xyz
+  sni: cm2-bpg.filegear-sg.me
   type: trojan
   udp: true
   ws-opts:
     headers:
-      Host: doufeng.pages.dev
-    path: /
+      Host: cm2-bpg.filegear-sg.me
+    path: /proxyip=210.61.97.241:81
+- name: 566|🇸🇬 新加坡 | SGP 8
+  password: c8a04902-14b3-4e7b-9ece-08d12a4c092a
+  port: 33301
+  server: green2.cdntencentmusic.com
+  skip-cert-verify: true
+  sni: green2.cdntencentmusic.com
+  type: trojan
+  udp: true
 - name: '568|🇸🇬 新加坡 | SGP #1'
   password: 87d1bfd4-574e-4c96-ad42-0426f27461ff
   port: 443
@@ -3828,6 +3866,13 @@ proxies:
   server: kinsta.com
   skip-cert-verify: true
   sni: doufeng.pages.dev
+  type: trojan
+- name: '568|🇸🇬 新加坡 | SGP #3'
+  password: 22367c45-f6c4-4ca8-8d52-d9787d7bbe91
+  port: 2096
+  server: mfa.gov.ua
+  skip-cert-verify: true
+  sni: cm2-bpg.filegear-sg.me
   type: trojan
 - alterId: 0
   name: 574|🇸🇬SG新加坡2
