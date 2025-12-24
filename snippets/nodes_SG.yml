@@ -731,11 +731,11 @@ proxies:
   port: 17315
   server: 120.240.103.35
   type: ss
-- name: 255|SG
-  network: tcp
+- name: 255|🇸🇬 SG
   password: f57f01e6-9bb1-4277-a5cb-75ad0ce1fa11
   port: 32702
   server: xd-sh.timiwc.com
+  skip-cert-verify: true
   sni: k36.tudou211.com
   type: trojan
 - name: '321,322,323|tg群组: https://t.me/tjiajc1 #3'
@@ -793,7 +793,8 @@ proxies:
   server: 128.199.172.224
   type: ss
 - cipher: rc4-md5
-  name: 356,378,537,538|🇸🇬SG-68.183.227.4-0315 | 14.60...
+  country: 🇸🇬SG
+  name: 356,378,537,538,548|🇸🇬SG_283
   password: 14fFPrbezE3HDZzsMOr6
   port: 8080
   server: 68.183.227.4
@@ -1965,17 +1966,19 @@ proxies:
       Host: 180.215.130.123
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 378,537,538|🇸🇬SG-95.173.218.203-0307 | 15....
+  country: 🇨🇿CZ
+  name: 378,537,538,548|🇨🇿CZ_101
   password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
   port: 990
   server: 95.173.218.203
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 378,537,538|🇸🇬SG-167.150.100.115-0337 | 4....
+  name: 378,537,538,548|_21
   password: pJtDFXMfdW9VNdJpaf4e2LfFkXdWgxrz
   port: 443
   server: 167.150.100.115
   type: ss
+  udp: true
 - alterId: 0
   cipher: auto
   name: '378,536,537|🇸🇬SG-139.99.61.53-0495 #2'
@@ -3093,14 +3096,54 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: 437,559|🇸🇬 SG_148
+  country: 🇬 SG
+  h2-opts: {}
+  http-opts: {}
+  name: '435,437,559|🇸🇬 SG_136 #1'
   network: none
   port: 52752
   server: 8.218.105.196
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 925bdbf5-72be-4437-bebf-441c61089f6b
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  country: 🇬 SG
+  h2-opts: {}
+  http-opts: {}
+  name: '435,548|HK香港(mibei77.com 米贝节点分享) 7 #2'
+  network: ws
+  port: 443
+  server: n1761214911.74qxv.top
+  servername: n1761214911.74qxv.top
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 372c1939-299d-4946-9633-5ffa971f8b67
+  ws-headers:
+    Host: n1761214911.74qxv.top
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: '437,464,472,473,474,500,502,544,553,559,580|HK香港(mibei77.com 米贝节点分享) #37'
+  network: ws
+  port: '443'
+  server: n1761214911.74qxv.top
+  servername: ''
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 372c1939-299d-4946-9633-5ffa971f8b67
+  ws-opts:
+    headers:
+      Host: n1761214911.74qxv.top
+    path: /
 - name: 453|🇸🇬 新加坡|@stairnode
   password: 253bc477d4e43c209f2d427272968280
   port: 2173
@@ -3494,7 +3537,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: '523,524,544,559,580|HK香港(mibei77.com 米贝节点分享) #30'
+  name: '523,524,544,559,580|HK香港(mibei77.com 米贝节点分享) #39'
   network: tcp
   port: '19751'
   server: 43.165.7.71
@@ -3504,11 +3547,11 @@ proxies:
   uuid: 6cfa6103-5d06-40cb-f452-b563db578288
 - alterId: 0
   cipher: auto
-  name: '523,524|🇸🇬_新加坡_6 #1'
+  name: '523,524,559|🇸🇬_新加坡 #9'
   network: ws
-  port: 443
+  port: '443'
   server: n1747624267.4u9ma.icu
-  servername: n1747624267.4u9ma.icu
+  servername: ''
   tls: true
   type: vmess
   uuid: 8c5d150c-b046-4440-8230-e84506a065a3
@@ -3518,7 +3561,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '523,524,544,559,580|GB英国(mibei77.com 米贝节点分享) #2'
+  name: '523,524,544,559,580|GB英国(mibei77.com 米贝节点分享) #4'
   network: ws
   port: '443'
   server: n1747624280.lie5d.cyou
@@ -3543,7 +3586,7 @@ proxies:
   uuid: fb5a4283-dbfb-458b-8619-c4a53739f781
 - client-fingerprint: chrome
   delay: 551
-  name: 528,553|yandex-3119
+  name: 528,553|yandex-39
   network: ws
   password: 87d1bfd4-574e-4c96-ad42-0426f27461ff
   port: 443
@@ -3760,6 +3803,17 @@ proxies:
   server: pop.09d21837-9b89-4490-92bf-eabf449e3321.heima360.cc
   skip-cert-verify: false
   type: trojan
+- alterId: 0
+  cipher: auto
+  country: 🇭🇰HK
+  h2-opts: {}
+  http-opts: {}
+  name: 548|disney_SG
+  port: 35034
+  server: 165.154.195.38
+  skip-cert-verify: true
+  type: vmess
+  uuid: 959a8caf-4cea-43d0-a548-3628e7ddfafc
 - cipher: chacha20-ietf-poly1305
   name: 558|0|🇬加 01 | 1x SG
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
@@ -3825,12 +3879,12 @@ proxies:
   server: 27.50.48.206
   sni: snippets.kkii.eu.org
   type: trojan
-- name: '559|🇸🇬 新加坡3|@stairnode #2'
-  password: BxceQaOe
-  port: 804
-  server: 57.180.15.254
+- name: '559,568|🇸🇬 新加坡 | SGP #2'
+  password: trojan
+  port: 443
+  server: kinsta.com
   skip-cert-verify: true
-  sni: t.me%252Fripaojiedian
+  sni: doufeng.pages.dev
   type: trojan
 - cipher: chacha20-ietf-poly1305
   name: 566|🇸🇬 新加坡 | SGP
@@ -3854,15 +3908,8 @@ proxies:
   skip-cert-verify: false
   sni: _acme-challenge.2go.cloudns.be
   type: trojan
-- name: '568|🇸🇬 新加坡 | SGP #2'
-  password: trojan
-  port: 443
-  server: kinsta.com
-  skip-cert-verify: true
-  sni: doufeng.pages.dev
-  type: trojan
 - alterId: 0
-  name: '574|SG #1'
+  name: 574|SG
   password: BxceQaOe
   port: 1691
   server: 3.112.42.86
