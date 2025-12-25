@@ -809,11 +809,11 @@ proxies:
   port: 17315
   server: 120.240.103.35
   type: ss
-- name: 255|🇸🇬 SG
+- name: 255|SG
+  network: tcp
   password: f57f01e6-9bb1-4277-a5cb-75ad0ce1fa11
   port: 32702
   server: xd-sh.timiwc.com
-  skip-cert-verify: true
   sni: k36.tudou211.com
   type: trojan
 - client-fingerprint: firefox
@@ -923,7 +923,7 @@ proxies:
   type: ss
 - cipher: rc4-md5
   country: 🇸🇬SG
-  name: 356,378,537,538,548|🇸🇬SG_290
+  name: 356,378,537,538,548|🇸🇬SG_307
   password: 14fFPrbezE3HDZzsMOr6
   port: 8080
   server: 68.183.227.4
@@ -2245,7 +2245,7 @@ proxies:
       Host: 180.215.130.123
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: '378,537,538,548|_10 #1'
+  name: '378,537,538,548|_02 #1'
   password: pJtDFXMfdW9VNdJpaf4e2LfFkXdWgxrz
   port: 443
   server: 167.150.100.115
@@ -2253,7 +2253,7 @@ proxies:
   udp: true
 - cipher: chacha20-ietf-poly1305
   country: 🇨🇿CZ
-  name: 378,537,538,548|🇨🇿CZ_107
+  name: 378,537,538,548|🇨🇿CZ_115
   password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
   port: 990
   server: 95.173.218.203
@@ -3433,6 +3433,19 @@ proxies:
       Host: 51b0e42034dd75a815fa9eb16021fbda.mobgslb.tbcache.com
     path: /
   ws-path: /
+- alterId: 0
+  cipher: auto
+  country: 🇬SG
+  h2-opts: {}
+  http-opts: {}
+  name: 440,464,472,473,474,502,544,548|_46
+  network: none
+  port: 51000
+  server: 8.217.90.175
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 6c82a994-b6ba-48ca-f2ed-11288fe4913b
 - name: 453|🇸🇬 新加坡|@stairnode
   password: 253bc477d4e43c209f2d427272968280
   port: 2173
@@ -4654,14 +4667,17 @@ proxies:
   skip-cert-verify: true
   sni: ''
   type: trojan
-- name: 507,580|未知 VLESS-02 | free-nodes
+- name: 507|SG VLESS-47 | free-nodes
+  network: ws
   port: 23675
   server: 152.42.185.230
   tls: false
   type: vless
   uuid: bfb7355f-da10-470c-99d2-16c5061c403a
   ws-opts:
-    path: '%2FFREE%20By%20Tharuwa%20%280767597317%29'
+    headers:
+      Host: m.zoom.us
+    path: /FREE By Tharuwa (0767597317)
 - alpn:
   - ''
   client-fingerprint: random
@@ -5060,17 +5076,13 @@ proxies:
   ws-headers:
     Host: bbbbbbbbb.222769.xyz
   ws-path: /f6taOMcOSZb9TPR
-- alterId: 0
-  cipher: auto
-  country: 🇭🇰HK
-  h2-opts: {}
-  http-opts: {}
-  name: 548|disney_SG
-  port: 35034
-  server: 165.154.195.38
-  skip-cert-verify: true
-  type: vmess
-  uuid: 959a8caf-4cea-43d0-a548-3628e7ddfafc
+- cipher: aes-256-gcm
+  country: 🇸🇬SG
+  name: 548|Relay_🇸🇬SG-🇸🇬SG_308
+  password: c69374da-2208-4cbd-b81e-cdf88b5e7f53
+  port: 11688
+  server: ss.037.node-for-bigairport.win
+  type: ss
 - cipher: chacha20-ietf-poly1305
   name: 558|0|🇬加 01 | 1x SG
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
@@ -5407,22 +5419,50 @@ proxies:
     headers:
       Host: n1747624267.4u9ma.icu
     path: /
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
+- cipher: chacha20-ietf-poly1305
   name: 566|🇸🇬 新加坡 | SGP
-  network: tcp
-  port: 30402
-  reality-opts:
-    public-key: uTOYAGREMpfEr3cQFcLwgMAWwwxjS3e2Yw32kCdN3Ew
-    short-id: f5f6e6f4
-  server: freea.glyphara.com
-  servername: itunes.apple.com
+  password: 482df74f-6fef-42e6-bed8-6e9756ae9a8f
+  port: 35209
+  server: bp7x2a.641sjc.cn
+  type: ss
+  udp: true
+- client-fingerprint: chrome
+  name: 566|🇸🇬 新加坡 | SGP 3
+  network: ws
+  port: 2083
+  server: 104.18.36.0
+  servername: vless.hubp.de
   tls: true
   type: vless
   udp: true
-  uuid: 720b4378-d3bd-458a-8ca8-f5ff31694371
+  uuid: 29187857-4a1f-4d1e-88eb-0016771e0dbb
+  ws-opts:
+    headers:
+      Host: vless.hubp.de
+    path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1
+- client-fingerprint: qq
+  flow: xtls-rprx-vision
+  name: 566|🇸🇬 新加坡 | SGP 4
+  network: tcp
+  port: 29900
+  reality-opts:
+    public-key: XPA6z8rF7u5PktPHScbl5rAXzxcZr3GGcWjQsAbgGCQ
+    short-id: 42fe6ac8
+  server: rm-eco-sg-01.409648.xyz
+  servername: d1--ov-gotcha07.bilivideo.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 1f96ea91-034b-46a1-aa66-275193b426f6
+- cipher: chacha20-ietf-poly1305
+  name: 566|🇸🇬 新加坡 | SGP 5
+  password: b2de3819-90b9-459a-a79e-216ea9a89402
+  port: 57884
+  server: jry.izenny.com
+  type: ss
+  udp: true
 - alterId: 0
-  name: 574|🇸🇬SG新加坡2
+  name: 574|🇬SG新加坡2
   password: BxceQaOe
   port: 1691
   server: 3.112.42.86
