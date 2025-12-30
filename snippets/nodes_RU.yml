@@ -1,11 +1,10 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 17,24,378,522,537,538,548,606|194.246.114.101_Gemini
+  name: 17,24,378,522,537,538,543,606|194.246.114.101_Gemini
   password: HaNqw9pIE4jcx98sg7UQgHeGNTM4R2pk
   port: 443
   server: 194.246.114.101
   type: ss
-  udp: true
 - alterId: 0
   cipher: auto
   name: 78|🇷🇺 莫斯科专线
@@ -172,15 +171,13 @@ proxies:
       Host: 45.136.244.181
     path: /fr-unlimitxxx
 - cipher: chacha20-ietf-poly1305
-  country: 🇷🇺RU
-  name: 378,537,538,548|🇷🇺RU_309
+  name: 378,537,538|🇷🇺RU-45.89.55.173-0403 | 5.371...
   password: ixPymFma6P7U41wk9MNP7znPnvax3mjd
   port: 443
   server: 45.89.55.173
   type: ss
 - cipher: chacha20-ietf-poly1305
-  country: 🇷🇺RU
-  name: 378,537,538,548|🇷🇺RU_314
+  name: 378,537,538|🇷🇺RU-45.138.157.162-0399 | 5.1...
   password: qFAJdBEqsI71jaSML67nHoPBCGhX94uk
   port: 443
   server: 45.138.157.162
@@ -355,12 +352,11 @@ proxies:
       Host: YouTube-aweikeji
     path: /
 - cipher: aes-256-cfb
-  name: '378,537,548|_05 #1'
+  name: '378,537|🇺RU-38.60.223.8-5083 #1'
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 38.60.223.8
   type: ss
-  udp: true
 - alterId: 0
   cipher: auto
   name: '378,536,537|🇺RU-185.174.138.209-7556 #1'
@@ -488,13 +484,19 @@ proxies:
   port: 444
   server: 146.185.198.44
   type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇰🇿 KZ
-  name: 435,548|🇰🇿 KZ_190
-  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
-  port: 990
-  server: 45.159.250.190
-  type: ss
+- alterId: 0
+  cipher: auto
+  name: 437,472,473,474,489,502,543,544|🇸🇬 俄罗斯 新西伯利亚justhost
+  network: none
+  port: '34895'
+  server: 2.56.242.210
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 6fe6b62a-dfbe-4753-d795-e02f2561edea
+  ws-headers:
+    Host: 2.56.242.210
+  ws-path: /
 - name: '461|俄罗斯联邦_莫斯科 #2'
   network: tcp
   password: 88903f70-b50b-11ed-8775-f23c9164ca5d
@@ -853,26 +855,16 @@ proxies:
       Host: ''
     path: /
 - alterId: 0
-  cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: 489,548|_37
-  network: none
-  port: 34895
-  server: 2.56.242.210
-  tls: false
-  type: vmess
-  uuid: 6fe6b62a-dfbe-4753-d795-e02f2561edea
-- alpn:
-  - h2
-  - http/1.1
-  name: 507,559|日本_123018035
+  name: '507,574|未知6 #1'
   network: tcp
   password: yUHNMwWvenoHBaN5CtqKPwt1CTzXgW
   port: 443
   server: ru2.nnvpn.io
+  skip-cert-verify: true
   sni: ru2.nnvpn.io
+  tls: true
   type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: '513,517,578|2|🇷🇺_RU_俄罗斯联邦 #3'
@@ -911,33 +903,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 6fe6b62a-dfbe-4753-d795-e02f2561edea
-- alterId: 0
-  name: 544,574|🇺RU
-  password: 870133af-bf3d-4ece-99a7-8a77bf2d3b40
-  port: 443
-  server: veraams2.uspn.io
-  skip-cert-verify: true
-  sni: veraams2.uspn.io
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 548|RU俄罗斯(mibei77.com 米贝节点分享) 2
-  port: 34895
-  server: 2.56.242.210
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 6fe6b62a-dfbe-4753-d795-e02f2561edea
-- cipher: chacha20-ietf-poly1305
-  country: 🇷🇺RU
-  name: 548|🇷🇺RU_315
-  password: Oy4TsrxfaJExUIhlcSqHpVQIWIFM2jZR
-  port: 443
-  server: 5.182.37.87
-  type: ss
 - cipher: chacha20-ietf-poly1305
   name: 558|0|🇺俄罗斯 01 | 1x RU
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
@@ -965,6 +930,16 @@ proxies:
   server: hk-full.privateip.net
   sni: hk-full.privateip.net
   type: trojan
+- alterId: 0
+  name: 574|🇺RU
+  password: 870133af-bf3d-4ece-99a7-8a77bf2d3b40
+  port: 443
+  server: veraams2.uspn.io
+  skip-cert-verify: true
+  sni: veraams2.uspn.io
+  tls: true
+  type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: 578|11|俄罗斯 Rubtsovsk Branch of Alt...
