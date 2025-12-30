@@ -262,23 +262,53 @@ proxies:
     headers:
       Host: download.windowsupdate.com
     path: /download
-- name: '127,426|🇭🇰 HK_1|5.0MB/s|YT-HK|NF|D+ #1'
+- delay: 2370
+  name: '127,426,502,514,515,516,528,551,553,585,586|US_speednode_0042 #3'
+  network: ws
+  password: 5a2c16f9
+  port: 443
+  server: 104.19.220.22
+  skip-cert-verify: false
+  sni: snippets.kkii.eu.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: snippets.kkii.eu.org
+    path: /
+- name: '127,426,502,514,515,516,551,585,586|US_speednode_0063 #3'
   network: ws
   password: 5a2c16f9
   port: 443
   server: 172.64.229.65
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: snippets.kkii.eu.org
   type: trojan
+  udp: true
   ws-opts:
     headers:
       Host: snippets.kkii.eu.org
     path: /
-- name: '127,426|🇭🇰 HK_2|5.0MB/s|YT-HK|NF|D+ #1'
+- client-fingerprint: chrome
+  name: '127,426|🇭🇰 HK_3|5.4MB/s|YT-HK|D+ #1'
+  network: ws
+  port: 443
+  server: 104.19.220.22
+  servername: snippets.kkii.eu.org
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 5a2c16f9-e365-4080-8d38-6924c3835586
+  ws-opts:
+    headers:
+      Host: snippets.kkii.eu.org
+    path: /
+- name: '127,426|🇭🇰 HK_4|7.2MB/s|YT-HK|D+ #1'
   network: ws
   password: 5a2c16f9
   port: 443
-  server: 104.16.246.188
+  server: 172.64.229.43
   skip-cert-verify: true
   sni: snippets.kkii.eu.org
   type: trojan
@@ -286,13 +316,6 @@ proxies:
     headers:
       Host: snippets.kkii.eu.org
     path: /
-- cipher: chacha20-ietf-poly1305
-  name: '127,426,548|HK香港(mibei77.com 米贝节点分享) 8 #2'
-  password: 53db9c44-94a1-4976-8682-5d1c3642058d
-  port: 11001
-  server: hn.yuyan.vin
-  type: ss
-  udp: true
 - alterId: 0
   cipher: auto
   name: '128,430|香港NO.2 #1'
@@ -845,48 +868,30 @@ proxies:
     headers:
       Host: d1th2ch215a6xr.cloudfront.net
     path: /stream?ed=2048
-- name: 255|🇭🇰 HK
+- name: 255|HK
   network: ws
   port: 65056
   server: 202.181.24.70
-  skip-cert-verify: true
-  tfo: false
   tls: false
   type: vless
   uuid: c9d0ddb5-f2c1-4111-a92d-9798a2348a56
   ws-opts:
-    path: /yz
+    path: '%2Fyz'
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 255|🇭🇰 HK 2
+  name: '255|HK #1'
   network: tcp
   port: 46716
   reality-opts:
     public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
   server: agaungzhou01.bumbleshrimp.com
   servername: www.nvidia.com
-  skip-cert-verify: true
-  tfo: false
-  tls: true
+  tls: false
   type: vless
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- alterId: 0
-  cipher: none
-  name: 255|🇭🇰 HK-Eons_Data_Communications
-  network: ws
-  port: 443
-  server: www.visa.com.tw
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: df7a96e2-c663-48ed-9713-1c144705f79e
-  ws-opts:
-    headers:
-      Host: ee-boston-therapist-cleaning.trycloudflare.com
-    path: /vmess-argo?ed=2048
 - client-fingerprint: safari
   flow: xtls-rprx-vision
-  name: 255|🇭🇰 HK 3
+  name: '255|HK #2'
   network: tcp
   port: 25791
   reality-opts:
@@ -894,9 +899,7 @@ proxies:
     short-id: 57d9de10de16538d
   server: 34.92.65.82
   servername: cloudreve.mnm.pp.ua
-  skip-cert-verify: true
-  tfo: false
-  tls: true
+  tls: false
   type: vless
   uuid: 711007f1-9cdf-4fd9-b5d4-d67aee173281
 - alterId: 2
@@ -918,8 +921,9 @@ proxies:
   tls: false
   type: vmess
   uuid: f6a1f4ad-9d26-43c7-bce3-025df8dac591
-- country: 🇭🇰HK
-  name: '306,378,502,514,515,516,536,537,538,543,544,548,551,556,557,579,580,582|🇭🇰
+- alterId: 0
+  country: 🇭🇰HK
+  name: '306,378,502,507,514,515,516,536,537,538,543,544,548,551,556,557,574,579,580,582|🇭🇰
     香港3|@stairnode #6'
   network: tcp
   password: f36f4495b4b26cc2fe346cfa23e05b1b
@@ -927,6 +931,7 @@ proxies:
   server: 58.152.18.48
   skip-cert-verify: false
   sni: www.nintendogames.net
+  tls: true
   type: trojan
   udp: true
 - name: '306,340,378,454,456,489,502,507,514,515,516,523,524,536,537,543,544,548,551,553,556,557,559,579,580,582|🇭🇰
@@ -940,7 +945,7 @@ proxies:
   tls: true
   type: trojan
   udp: true
-- name: '306,340,378,454,489,502,507,514,515,516,536,537,543,544,548,551,553,556,557,559,579,580,582|🇭🇰
+- name: '306,340,378,454,472,473,474,489,502,514,515,516,536,537,543,544,548,551,553,556,557,559,579,580,582|🇭🇰
     香港5|@stairnode #6'
   network: tcp
   password: BxceQaOe
@@ -955,8 +960,7 @@ proxies:
   country: 🇭🇰HK
   h2-opts: {}
   http-opts: {}
-  name: '306,340,440,502,514,515,516,543,544,548,551,557,559|12|🇭🇰 香港|@ripaojiedian
-    #3'
+  name: '306,340,440,502,514,515,516,543,544,551,557,559|12|🇭🇰 香港|@ripaojiedian #3'
   network: tcp
   port: 30807
   server: v10.hdacd.com
@@ -982,14 +986,16 @@ proxies:
   ws-headers:
     Host: 8.210.248.133
   ws-path: /
-- country: 🇭🇰HK
-  name: '340,378,440,454,507,536,537,538,548,559,580|🇭🇰 香港3|@stairnode #4'
+- alterId: 0
+  country: 🇭🇰HK
+  name: '340,378,440,454,507,536,537,538,548,559,574,580|🇭🇰 香港3|@stairnode #4'
   network: tcp
   password: f36f4495b4b26cc2fe346cfa23e05b1b
   port: 443
   server: 58.152.18.226
   skip-cert-verify: false
   sni: www.nintendogames.net
+  tls: true
   type: trojan
   udp: true
 - cipher: chacha20-ietf-poly1305
@@ -1876,7 +1882,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: '374|🇭🇰 香港 #2'
+  name: '374|🇭🇰 香港 #1'
   port: 19901
   server: xg.dashuai.cyou
   tls: false
@@ -2000,7 +2006,7 @@ proxies:
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇭🇰 HK
-  name: 378,435,537,538,548|🇭🇰 HK_162
+  name: 378,435,537,538,548|🇭🇰 HK_157
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 203.23.128.33
@@ -2694,7 +2700,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '378,536,537|🇰HK-45.136.12.37-4821 #1'
+  name: '378,437,536,537|🇰HK-45.136.12.37-4821 #1'
   network: ws
   port: 20521
   server: 45.136.12.37
@@ -2726,7 +2732,7 @@ proxies:
     headers:
       Host: n1761214911.74qxv.top
     path: /
-- country: 🇸 US
+- country: 🇺🇸 US
   name: '378,435,436,536,537|🇰HK-45.149.92.71-4911 #1'
   password: e4af2638-bb12-4e4a-84f1-a032e23ca63f
   port: 443
@@ -2734,7 +2740,7 @@ proxies:
   skip-cert-verify: false
   type: trojan
   udp: true
-- country: 🇺🇸 US
+- country: 🇸 US
   name: '378,435,436,536,537|🇭🇰HK-45.149.92.71-4912 #2'
   password: 92435aa8-f3b6-466a-ad58-c55cbb6d2acf
   port: 443
@@ -2749,14 +2755,14 @@ proxies:
   server: 103.149.182.158
   type: ss
 - cipher: chacha20-ietf
-  country: 🇭🇰HK
-  name: 378,537,548|🇭🇰HK_164
+  name: '378,537|🇰HK-103.149.182.203-4955 #1'
   password: asd123456
   port: 8388
   server: 103.149.182.203
   type: ss
 - cipher: chacha20-ietf
-  name: '378,537|🇭🇰HK-103.149.182.79-4956 #2'
+  country: 🇭🇰HK
+  name: 378,537,548|🇭🇰HK_160
   password: asd123456
   port: 8388
   server: 103.149.182.79
@@ -2775,7 +2781,7 @@ proxies:
   server: 103.149.183.200
   type: ss
 - country: 🇭🇰HK
-  name: 378,536,537,548|🇭🇰HK_181
+  name: 378,536,537,548|🇭🇰HK_175
   password: 92690597d6298061459918a371e8d77d
   port: 443
   server: 47.242.225.242
@@ -4679,7 +4685,7 @@ proxies:
   country: 🇰 HK
   h2-opts: {}
   http-opts: {}
-  name: 435,437,548|disney_HK
+  name: 435,437,548|_44
   network: none
   port: 13852
   server: 45.207.157.29
@@ -4689,42 +4695,12 @@ proxies:
   uuid: 845764df-ecb3-4b13-bed2-bf1551b68e9a
   ws-path: /
 - alterId: 0
-  cipher: auto
-  country: 🇰HK
-  delay: 2937
-  h2-opts: {}
-  http-opts: {}
-  name: 440,464,472,473,474,489,502,528,543,544,548,559|🇸🇬 SG_150
-  network: none
-  port: 43425
-  server: 8.210.248.133
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: aa10afb0-f913-4343-9c69-bc797fcba2db
-  ws-headers:
-    Host: 8.210.248.133
-  ws-path: /
-- alterId: 0
   country: 🇭🇰HK
   name: '440,489,523,524,548,553,580|香港 #14'
   network: tcp
   password: BxceQaOe
   port: 443
   server: 58.152.46.60
-  skip-cert-verify: true
-  sni: t.me/ripaojiedian
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  country: 🇭🇰HK
-  name: 440,456,489,523,524,548,553,580|HK TROJAN-38 | free-nodes
-  network: tcp
-  password: BxceQaOe
-  port: 443
-  server: 203.198.84.221
   skip-cert-verify: true
   sni: t.me/ripaojiedian
   tls: true
@@ -4744,6 +4720,18 @@ proxies:
   skip-cert-verify: true
   sni: fe2.update.microsoft.com
   type: trojan
+- alterId: 0
+  country: 🇭🇰HK
+  name: 456,489,523,524,548,553,574,580|HK TROJAN-38 | free-nodes
+  network: tcp
+  password: BxceQaOe
+  port: 443
+  server: 203.198.84.221
+  skip-cert-verify: true
+  sni: t.me/ripaojiedian
+  tls: true
+  type: trojan
+  udp: true
 - client-fingerprint: chrome
   name: 456,507,559,580|HK VLESS-75 | free-nodes
   network: tcp
@@ -5455,9 +5443,42 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: 507|HK VLESS-30 | free-nodes
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '502,514,551,585,586|HK_speednode_0014 #3'
+  port: 10122
+  reality-opts:
+    public-key: TU2OTQBiMyK-mKCI3G6fENadfG-fdNlWJF7Qv9ywkFY
+    short-id: 8a6394aa28d6
+  server: 1.36.189.217
+  servername: music.apple.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 7f60f6e7-8419-4cff-9e1b-14179f677a5e
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 507|HK VLESS-20 | free-nodes
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: mLmBhbVFfNuo2eUgBh6r9-5Koz9mUCn3aSzlR6IejUg
+    short-id: 48720c
+  server: hk01-vlr01.tcp-reset-club.net
+  servername: hls-svod.itunes.apple.com
+  tls: false
+  type: vless
+  uuid: e9dbc178-3656-40f8-8833-5023f306ef1d
+- client-fingerprint: chrome
+  name: 507|HK VLESS-52 | free-nodes
+  network: tcp
   port: 2053
+  reality-opts:
+    public-key: xZASrvjLL1OaBTvAsqKV_fzCLiZ4LNeoe8Dk_FZ9UWU
+    short-id: e3575268
   server: 82.26.150.12
+  servername: canva.com
   tls: false
   type: vless
   uuid: 3d389a6c-9ba8-40f2-9d96-2a6d3f9f92bc
@@ -6417,6 +6438,13 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
+  name: '548|HK香港(mibei77.com 米贝节点分享) 8 #2'
+  password: 53db9c44-94a1-4976-8682-5d1c3642058d
+  port: 11001
+  server: hn.yuyan.vin
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
   name: 548|HK香港(mibei77.com 米贝节点分享) 9
   password: 53db9c44-94a1-4976-8682-5d1c3642058d
   port: 10012
@@ -6449,6 +6477,13 @@ proxies:
   password: 53db9c44-94a1-4976-8682-5d1c3642058d
   port: 10048
   server: hn.yuyan.vin
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 548|HK香港(mibei77.com 米贝节点分享) 16
+  password: 53db9c44-94a1-4976-8682-5d1c3642058d
+  port: 10007
+  server: hd.yuyan.vin
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
@@ -6570,61 +6605,110 @@ proxies:
   server: hn.yuyan.vin
   type: ss
   udp: true
-- alterId: 0
-  cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: 548|Relay_-🇭🇰HK_37
-  network: ws
-  port: 443
-  server: 154.38.116.8
-  servername: hk.nbee.pp.ua
-  tls: true
-  type: vmess
-  uuid: 4bf075f5-4d5e-4d39-f5ab-b32a86250f0e
-  ws-opts:
-    headers:
-      Host: hk.nbee.pp.ua
-    path: /aa
-- alterId: 0
-  cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: 548|Relay_-🇭🇰HK_41
-  network: ws
-  port: 11655
-  server: 131.186.63.89
-  servername: hk.nbee.pp.ua
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 4bf075f5-4d5e-4d39-f5ab-b32a86250f0e
-  ws-opts:
-    headers:
-      Host: hk.nbee.pp.ua
-    path: /aa
 - cipher: chacha20-ietf
   country: 🇭🇰HK
-  name: 548|Relay_🇭🇰HK-🇭🇰HK_165
-  password: asd123456
-  port: 8388
-  server: 103.149.182.105
-  type: ss
-- cipher: chacha20-ietf
-  country: 🇭🇰HK
-  name: 548|🇭🇰HK_166
-  password: asd123456
-  port: 8388
-  server: 103.141.221.101
-  type: ss
-- cipher: chacha20-ietf
-  country: 🇭🇰HK
-  name: 548|Pool_🇭🇰HK_167
+  name: 548|Pool_🇭🇰HK_161
   password: asd123456
   port: 8388
   server: 103.141.221.124
   type: ss
+- alterId: 2
+  cipher: auto
+  country: 🇭🇰HK
+  h2-opts: {}
+  http-opts: {}
+  name: 548|Relay_🇭🇰HK-🇭🇰HK_162
+  network: ws
+  port: 80
+  server: hkt.gotochinatown.net
+  servername: hkt.gotochinatown.net
+  skip-cert-verify: true
+  type: vmess
+  uuid: fd224a6c-addc-11ed-a8bf-f23c91cfbbc9
+  ws-opts:
+    headers:
+      HOST: hkt.gotochinatown.net
+    path: /
+- alterId: 0
+  cipher: auto
+  country: 🇭🇰HK
+  h2-opts: {}
+  http-opts: {}
+  name: 548|🇭🇰HK_163
+  port: 35034
+  server: 165.154.195.38
+  skip-cert-verify: true
+  type: vmess
+  uuid: 959a8caf-4cea-43d0-a548-3628e7ddfafc
+- alterId: 2
+  cipher: auto
+  country: 🇭🇰HK
+  h2-opts: {}
+  http-opts: {}
+  name: 548|Relay_🇭🇰HK-🇭🇰HK_164
+  network: ws
+  port: 80
+  server: eb8f27cc-t70f40-t80cbx-1k0yf.hkt.gotochinatown.net
+  servername: broadcastlv.chat.bilibili.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: 9cc3c03e-21fd-11ee-a642-f23c91369f2d
+  ws-opts:
+    headers:
+      HOST: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  country: 🇭🇰HK
+  h2-opts: {}
+  http-opts: {}
+  name: 548|Relay_🇭🇰HK-🇭🇰HK_165
+  network: ws
+  port: 80
+  server: 63805c11-t6g1s0-t7v83h-1kcpe.hkt.gotochinatown.net
+  servername: broadcastlv.chat.bilibili.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: 3f514ea2-4662-11ed-a8bf-f23c91cfbbc9
+  ws-opts:
+    headers:
+      HOST: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 0
+  cipher: auto
+  country: 🇭🇰HK
+  h2-opts: {}
+  http-opts: {}
+  name: 548,559|🇸🇬 SG_148
+  network: ws
+  port: 443
+  server: n1761214911.74qxv.top
+  servername: ''
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 372c1939-299d-4946-9633-5ffa971f8b67
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 2
+  cipher: auto
+  country: 🇭🇰HK
+  h2-opts: {}
+  http-opts: {}
+  name: 548|Relay_🇭🇰HK-🇭🇰HK_167
+  network: ws
+  port: 80
+  server: f06ab53d-t70f40-t7xcfs-1ldl3.hkt.gotochinatown.net
+  servername: broadcastlv.chat.bilibili.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: fd224a6c-addc-11ed-a8bf-f23c91cfbbc9
+  ws-opts:
+    headers:
+      HOST: broadcastlv.chat.bilibili.com
+    path: /
 - alterId: 2
   cipher: auto
   country: 🇭🇰HK
@@ -6650,57 +6734,6 @@ proxies:
   name: 548|Relay_🇭🇰HK-🇭🇰HK_169
   network: ws
   port: 80
-  server: eb8f27cc-t70f40-t80cbx-1k0yf.hkt.gotochinatown.net
-  servername: broadcastlv.chat.bilibili.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: 9cc3c03e-21fd-11ee-a642-f23c91369f2d
-  ws-opts:
-    headers:
-      HOST: broadcastlv.chat.bilibili.com
-    path: /
-- alterId: 2
-  cipher: auto
-  country: 🇭🇰HK
-  h2-opts: {}
-  http-opts: {}
-  name: 548|Relay_🇭🇰HK-🇭🇰HK_170
-  network: ws
-  port: 80
-  server: f06ab53d-t70f40-t7xcfs-1ldl3.hkt.gotochinatown.net
-  servername: broadcastlv.chat.bilibili.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: fd224a6c-addc-11ed-a8bf-f23c91cfbbc9
-  ws-opts:
-    headers:
-      HOST: broadcastlv.chat.bilibili.com
-    path: /
-- alterId: 2
-  cipher: auto
-  country: 🇭🇰HK
-  h2-opts: {}
-  http-opts: {}
-  name: 548|Relay_🇭🇰HK-🇭🇰HK_173
-  network: ws
-  port: 80
-  server: hkt.gotochinatown.net
-  servername: hkt.gotochinatown.net
-  skip-cert-verify: true
-  type: vmess
-  uuid: fd224a6c-addc-11ed-a8bf-f23c91cfbbc9
-  ws-opts:
-    headers:
-      HOST: hkt.gotochinatown.net
-    path: /
-- alterId: 2
-  cipher: auto
-  country: 🇭🇰HK
-  h2-opts: {}
-  http-opts: {}
-  name: 548|Relay_🇭🇰HK-🇭🇰HK_174
-  network: ws
-  port: 80
   server: 3d0c52fb-t70f40-t7v83h-1kcpe.hkt.gotochinatown.net
   servername: broadcastlv.chat.bilibili.com
   skip-cert-verify: true
@@ -6715,35 +6748,7 @@ proxies:
   country: 🇭🇰HK
   h2-opts: {}
   http-opts: {}
-  name: 548|Relay_🇭🇰HK-🇭🇰HK_175
-  network: ws
-  port: 80
-  server: 63805c11-t6g1s0-t7v83h-1kcpe.hkt.gotochinatown.net
-  servername: broadcastlv.chat.bilibili.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: 3f514ea2-4662-11ed-a8bf-f23c91cfbbc9
-  ws-opts:
-    headers:
-      HOST: broadcastlv.chat.bilibili.com
-    path: /
-- alterId: 0
-  cipher: auto
-  country: 🇭🇰HK
-  h2-opts: {}
-  http-opts: {}
-  name: 548|🇭🇰HK_176
-  port: 35034
-  server: 165.154.195.38
-  skip-cert-verify: true
-  type: vmess
-  uuid: 959a8caf-4cea-43d0-a548-3628e7ddfafc
-- alterId: 2
-  cipher: auto
-  country: 🇭🇰HK
-  h2-opts: {}
-  http-opts: {}
-  name: 548|Relay_🇭🇰HK-🇭🇰HK_177
+  name: 548|Relay_🇭🇰HK-🇭🇰HK_170
   network: ws
   port: 80
   server: 2eb3ab7d-t6hwg0-t7xcfs-1ldl3.hkt.gotochinatown.net
@@ -6755,42 +6760,6 @@ proxies:
     headers:
       HOST: broadcastlv.chat.bilibili.com
     path: /
-- alterId: 0
-  cipher: auto
-  country: 🇭🇰HK
-  h2-opts: {}
-  http-opts: {}
-  name: 548|Relay_🇭🇰HK-🇭🇰HK_179
-  network: ws
-  port: 443
-  server: n1761214906.wpg27.xyz
-  servername: n1761214906.wpg27.xyz
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: c28a6258-7baa-40fc-8a51-87f59c847cd7
-  ws-opts:
-    headers:
-      HOST: n1761214906.wpg27.xyz
-    path: /
-- alterId: 0
-  cipher: auto
-  country: 🏁ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: 548|Relay_🏁ZZ-🇭🇰HK_410
-  network: ws
-  port: 443
-  server: 104.19.61.72
-  servername: hk.nbee.pp.ua
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 4bf075f5-4d5e-4d39-f5ab-b32a86250f0e
-  ws-opts:
-    headers:
-      HOST: hk.nbee.pp.ua
-    path: /aa
 - cipher: chacha20-ietf-poly1305
   name: 558|0|🇭 01 | 1x HK
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
@@ -7157,6 +7126,16 @@ proxies:
   tls: false
   type: vmess
   uuid: 04d9a404-78bc-35bd-948b-9acb04997636
+- alterId: 0
+  name: 574|🇭🇰HK香港3
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: t.me%252Fripaojiedian
+  tls: true
+  type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: 577|澳门NO.2
@@ -7581,7 +7560,7 @@ proxies:
     headers:
       Host: yf.xhya.nyc.mn
     path: /
-- name: 605|HK
+- name: '605|HK #4'
   network: tcp
   password: aa6ddd2f-d1cf-4a52-ba1b-2640c41a7856
   port: 41288
