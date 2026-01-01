@@ -539,7 +539,7 @@ proxies:
   delay: 1330
   down: 500 Mbps
   mtu: 1350
-  name: 127,426,528,553|yandex-440
+  name: 127,426,528,553|yandex-51
   obfs: salamander
   obfs-password: xK9mN2pLq5vR8wB3
   password: A8069A5B-E992-44E8-917E-7246CFD19F61
@@ -1218,11 +1218,11 @@ proxies:
   sni: www.alibaba.com
   type: trojan
   udp: true
-- name: 255|🇯🇵 JP
+- name: 255|JP
+  network: tcp
   password: f57f01e6-9bb1-4277-a5cb-75ad0ce1fa11
   port: 21125
   server: 125.94.40.162
-  skip-cert-verify: true
   sni: k12.tudou211.com
   type: trojan
 - name: '306,340,378,502,514,515,516,536,537,544,548,551,556,557,559,579,580,582|🇯🇵
@@ -1475,7 +1475,7 @@ proxies:
   type: ss
 - cipher: aes-128-gcm
   country: 🇬🇧GB
-  name: 356,357,378,537,538,548|🇬🇧GB_105
+  name: 356,357,378,537,538,548|🇬🇧GB_132
   password: shadowsocks
   port: 443
   server: 149.22.87.204
@@ -2554,13 +2554,13 @@ proxies:
   server: 185.160.24.217
   type: ss
 - cipher: rc4-md5
-  name: 378,537,538,548|_31
+  name: 378,537,538,548|_23
   password: 14fFPrbezE3HDZzsMOr6
   port: 8080
   server: 172.105.199.111
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 378,537,538,548|_19
+  name: '378,537,538,548|_04 #1'
   password: XLOrvLWkCBBBxLqSEe9S8lnC5PLsNfRh
   port: 443
   server: 103.75.118.125
@@ -2576,7 +2576,7 @@ proxies:
   type: trojan
   udp: true
 - country: 🇯🇵JP
-  name: 378,507,536,537,538,548,559|日本_010118004+L0
+  name: 378,536,537,538,548,559|日本_010118004+L0
   password: f36f4495b4b26cc2fe346cfa23e05b1b
   port: 1281
   server: 160.16.68.250
@@ -3273,7 +3273,8 @@ proxies:
   server: 54.199.83.239
   type: ss
 - cipher: aes-256-gcm
-  name: '378,537|🇵JP-52.195.229.75-4784 #1'
+  country: 🇦🇺 AU
+  name: '378,435,537|🇵JP-52.195.229.75-4784 #1'
   password: c69374da-2208-4cbd-b81e-cdf88b5e7f53
   port: 15199
   server: ss.021.node-for-bigairport.win
@@ -3285,14 +3286,13 @@ proxies:
   server: ss.022.node-for-bigairport.win
   type: ss
 - cipher: aes-256-gcm
-  country: 🇰 HK
-  name: '378,435,537|🇯🇵JP-52.195.211.59-4827 #1'
+  name: '378,537|🇯🇵JP-52.195.211.59-4827 #1'
   password: c69374da-2208-4cbd-b81e-cdf88b5e7f53
   port: 10079
   server: ss.030.node-for-bigairport.win
   type: ss
 - country: 🇯🇵JP
-  name: 378,536,537,548,559|日本_010118018
+  name: 378,507,536,537,548,559|日本_010118018
   password: f36f4495b4b26cc2fe346cfa23e05b1b
   port: 1281
   server: 160.16.150.76
@@ -3629,7 +3629,7 @@ proxies:
   country: 🇵 JP
   h2-opts: {}
   http-opts: {}
-  name: 435| JP_100
+  name: 435| JP_101
   network: ws
   port: 443
   server: seoul03.zgjok.com
@@ -4405,7 +4405,7 @@ proxies:
   flow: xtls-rprx-vision
   grpc-opts:
     grpc-service-name: ''
-  name: 507|JP VLESS-147 | free-nodes
+  name: 507|JP VLESS-146 | free-nodes
   network: tcp
   port: 443
   server: s591.okgfwbackxyz.xyz
@@ -4423,7 +4423,7 @@ proxies:
   flow: xtls-rprx-vision
   grpc-opts:
     grpc-service-name: ''
-  name: 507|JP VLESS-159 | free-nodes
+  name: '507|JP VLESS-158 | free-nodes #1'
   network: tcp
   port: 443
   server: s589.okgfwbackxyz.xyz
@@ -4441,7 +4441,7 @@ proxies:
   flow: xtls-rprx-vision
   grpc-opts:
     grpc-service-name: ''
-  name: 507|JP VLESS-189 | free-nodes
+  name: 507|JP VLESS-188 | free-nodes
   network: tcp
   port: 443
   server: s588.okgfwbackxyz.xyz
@@ -5094,19 +5094,44 @@ proxies:
   server: 202.181.103.235
   sni: www.nintendogames.net
   type: trojan
-- cipher: aes-256-gcm
+- alterId: 0
+  cipher: auto
   country: 🇯🇵JP
-  name: 548|Relay_🇯🇵JP-🇯🇵JP_303
-  password: c69374da-2208-4cbd-b81e-cdf88b5e7f53
-  port: 36887
-  server: ss.029.node-for-bigairport.win
-  type: ss
+  h2-opts: {}
+  http-opts: {}
+  name: 548|🇯🇵JP_400
+  network: ws
+  port: 80
+  server: 172.111.146.64
+  skip-cert-verify: true
+  type: vmess
+  uuid: 05b8c783-7f59-47f9-9923-06a465679f6a
+  ws-opts:
+    path: /vmess/
+- alterId: 0
+  cipher: auto
+  country: 🇯🇵JP
+  h2-opts: {}
+  http-opts: {}
+  name: 548|Relay_🇯🇵JP-🇯🇵JP_401
+  network: ws
+  port: 443
+  server: n1753598452.wpg27.xyz
+  servername: n1753598452.wpg27.xyz
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 4f23eb7c-ef2f-43b0-90dd-f2b8a75954a5
+  ws-opts:
+    headers:
+      HOST: n1753598452.wpg27.xyz
+    path: /
 - alterId: 1
   cipher: auto
   country: 🇯🇵JP
   h2-opts: {}
   http-opts: {}
-  name: 548|Relay_🇯🇵JP-🇯🇵JP_304
+  name: 548|Relay_🇯🇵JP-🇯🇵JP_402
   network: tcp
   port: 11773
   server: f4ix2-g01.jp02-e3-vm0.entry.fr0528.art
@@ -5119,7 +5144,7 @@ proxies:
   country: 🏁ZZ
   h2-opts: {}
   http-opts: {}
-  name: 548|Relay_🏁ZZ-🇯🇵JP_477
+  name: 548|netflix_JP
   network: ws
   port: 8443
   server: t1.620720.xyz
