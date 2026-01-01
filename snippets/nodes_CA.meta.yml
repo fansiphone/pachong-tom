@@ -103,14 +103,16 @@ proxies:
   server: 149.22.95.183
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 356,378,537,538|🇨🇦CA-142.4.216.225-0402 | 24.3...
+  country: 🇦CA
+  name: 356,378,435,537,538|🇨🇦CA-142.4.216.225-0402 | 24.3...
   password: JIhN6rBKkaEboLNXVSv5rq
   port: 80
   server: ca225.vpnbook.com
   type: ss
 - alterId: 0
   cipher: chacha20-ietf-poly1305
-  name: 356,378,537,538,543,553,574,575|SS-英国-NF解锁加拿大地区非自制剧-ChatGPT-Ti...
+  country: 🇨 CZ
+  name: 356,378,435,537,538,543,553,574,575|SS-英国-NF解锁加拿大地区非自制剧-ChatGPT-Ti...
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 79.127.233.170
@@ -222,13 +224,14 @@ proxies:
     headers:
       Host: inna.cfd
     path: /
-- country: 🇸US
-  name: 378,440,536,537,538,559|加拿大_010104002
+- alterId: 0
+  name: 378,502,536,537,538,559,574|🇺🇸US美国2 23.7MB/s
   password: .ie4rghJuMkcf0oF
   port: 18509
   server: 38.96.254.102
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: shoppingmall.electricbanana.click
+  tls: true
   type: trojan
   udp: true
 - alterId: 0
@@ -245,7 +248,8 @@ proxies:
   ws-opts:
     path: /
 - cipher: aes-128-cfb
-  name: '378,536,537|🇦CA-45.154.204.13-0328 #1'
+  country: 🇪 SE
+  name: '378,435,536,537|🇦CA-45.154.204.13-0328 #1'
   obfs: http_post
   obfs-param: ''
   password: $$Turb0VPN$$
@@ -255,7 +259,7 @@ proxies:
   server: ssca.irundns.net
   type: ssr
 - cipher: chacha20-ietf-poly1305
-  name: 378,537,538|🇨🇦CA-142.4.216.225-0401 | 25.6...
+  name: 378,435,537,538|🇨🇦CA-142.4.216.225-0401 | 25.6...
   password: JIhN6rBKkaEboLNXVSv5rq
   port: 80
   server: 142.4.216.225
@@ -536,7 +540,9 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: '378,536,537|CA-158.51.121.36-2020 #1'
+  client-fingerprint: chrome
+  fingerprint: ''
+  name: '378,470,536,537|CA-158.51.121.36-2020 #1'
   network: ws
   port: 443
   server: 158.51.121.36
@@ -544,6 +550,7 @@ proxies:
   skip-cert-verify: false
   tls: true
   type: vmess
+  udp: false
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     path: /linkvws
@@ -856,7 +863,7 @@ proxies:
   uuid: 2ed609d0-7467-471b-94a9-34a734ccc40a
   ws-opts:
     path: /cctv13/hd.m3u8
-- name: '378,436,536,537|🇦CA-148.113.207.224-4894 #1'
+- name: '378,435,436,536,537|🇦CA-148.113.207.224-4894 #1'
   password: acfef609-b3c7-4e52-b292-8921d5fca90d
   port: 443
   server: ca-full.privateip.net
@@ -927,15 +934,13 @@ proxies:
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     path: /linkvws
-- country: 🇨🇦CA
-  name: '378,440,536,537|🇨🇦CA-198.57.27.27-5049 #2'
+- name: '378,536,537|🇨🇦CA-198.57.27.27-5049 #2'
   password: 6pRjKQJ0CWyFtG.9
   port: 12990
   server: 198.57.27.27
   skip-cert-verify: false
   sni: 198.57.27.27
   type: trojan
-  udp: true
 - cipher: aes-256-gcm
   name: '378,537|CA-134.195.196.149-5599 #1'
   password: PCnnH6SQSnfoS27
@@ -1484,7 +1489,7 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: '378,437,536,537|🇦CA-15.235.83.227-7358 #1'
+  name: '378,536,537|🇦CA-15.235.83.227-7358 #1'
   network: ws
   port: 443
   server: 15.235.83.227
@@ -6018,10 +6023,31 @@ proxies:
   tls: false
   type: vmess
   uuid: db5afae4-ac23-41a6-8378-f307a9a47436
-- name: 507|CA VLESS-104 | free-nodes
+- client-fingerprint: chrome
+  fingerprint: ''
+  name: 470|4faa834b844b4b3a87c5483497b8a7...
   network: ws
   port: 80
   server: 104.26.6.89
+  tls: false
+  type: vless
+  udp: false
+  uuid: c5b129d7-f133-4b34-a9c6-68c9a8f70248
+  ws-opts:
+    path: /
+- alterId: 0
+  name: 472,473,474,502,543,544,553,574|CA加
+  password: 6pRjKQJ0CWyFtG.9
+  port: 12990
+  server: 198.57.27.27
+  skip-cert-verify: true
+  tls: true
+  type: trojan
+  udp: true
+- name: 507|CA VLESS-97 | free-nodes
+  network: ws
+  port: 80
+  server: www.perplexity.ai
   tls: false
   type: vless
   uuid: c5b129d7-f133-4b34-a9c6-68c9a8f70248
@@ -6029,7 +6055,7 @@ proxies:
     headers:
       Host: EMotioNaL-peRMIsSiONf1bs65u5f4.EcOTOuRISs.Co.uK
     path: /
-- name: 507|CA VLESS-113 | free-nodes
+- name: 507|CA VLESS-105 | free-nodes
   network: ws
   port: 8080
   server: 198.50.119.86
@@ -6190,12 +6216,6 @@ proxies:
   server: 79.127.233.170
   type: ssr
   udp: true
-- name: 543,544|🇨🇦 加拿大多伦多 V2CROSS.COM
-  password: 6pRjKQJ0CWyFtG.9
-  port: 12990
-  server: 198.57.27.27
-  skip-cert-verify: false
-  type: trojan
 - cipher: chacha20-ietf-poly1305
   name: 558|0|🇦加拿大 01 | 1x CA
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
