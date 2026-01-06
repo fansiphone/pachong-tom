@@ -767,11 +767,11 @@ proxies:
   port: 17315
   server: 120.240.103.35
   type: ss
-- name: 255|SG
-  network: tcp
+- name: 255|🇸🇬 SG
   password: f57f01e6-9bb1-4277-a5cb-75ad0ce1fa11
   port: 32702
   server: xd-sh.timiwc.com
+  skip-cert-verify: true
   sni: k36.tudou211.com
   type: trojan
 - name: '321,322,323|tg群组: https://t.me/tjiajc1 #3'
@@ -810,22 +810,6 @@ proxies:
   sni: www.alibaba.com
   type: trojan
   udp: true
-- country: 🇯🇵JP
-  name: '340,378,440,456,536,537,538,559,580|🇸🇬 新加坡2|@stairnode #6'
-  password: 381f2e86233720eacda26d50e9aa26da
-  port: 3901
-  server: 202.181.103.246
-  skip-cert-verify: false
-  sni: www.nintendogames.net
-  type: trojan
-  udp: true
-- name: '340,456,559,580|🇸🇬 新加坡3|@stairnode #6'
-  password: BxceQaOe
-  port: 1196
-  server: 43.199.187.111
-  skip-cert-verify: true
-  sni: t.me%252Fripaojiedian
-  type: trojan
 - name: 356|🇸🇬1 |  9.0MB/s
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   port: 443
@@ -847,7 +831,7 @@ proxies:
   type: ss
 - cipher: rc4-md5
   country: 🇸🇬SG
-  name: 356,378,537,538,548|🇸🇬SG_170
+  name: 356,378,537,538,548|🇸🇬SG_248
   password: 14fFPrbezE3HDZzsMOr6
   port: 8080
   server: 68.183.227.4
@@ -1969,7 +1953,8 @@ proxies:
   server: 95.173.218.203
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 378,537,538|🇸🇬SG-167.150.100.115-0340 | 0....
+  country: 🇺🇸US
+  name: 378,537,538,548|🇺🇸US_259
   password: pJtDFXMfdW9VNdJpaf4e2LfFkXdWgxrz
   port: 443
   server: 167.150.100.115
@@ -3117,13 +3102,36 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: 437|🇸🇬 SG_158
+  country: 🇭🇰HK
+  h2-opts: {}
+  http-opts: {}
+  name: 437,548,559|🇸🇬 SG_160
   network: none
-  port: 52752
-  server: 8.218.105.196
+  port: 43425
+  server: 8.210.248.133
+  servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: 925bdbf5-72be-4437-bebf-441c61089f6b
+  uuid: aa10afb0-f913-4343-9c69-bc797fcba2db
+- alterId: 0
+  cipher: auto
+  country: 🇬SG
+  h2-opts: {}
+  http-opts: {}
+  name: 440,523,524,559|新加坡_010618020
+  network: ws
+  port: '80'
+  server: 150.109.11.193
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: b7118dcc-a234-4784-e487-4064c2920808
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
 - name: 453|🇸🇬 新加坡|@stairnode
   password: 253bc477d4e43c209f2d427272968280
   port: 2173
@@ -3137,6 +3145,13 @@ proxies:
   server: 36.156.102.84
   skip-cert-verify: false
   sni: www.nintendogames.net
+  type: trojan
+- name: '456,559,580|🇸🇬 新加坡3|@stairnode #6'
+  password: BxceQaOe
+  port: 1196
+  server: 43.199.187.111
+  skip-cert-verify: true
+  sni: t.me%252Fripaojiedian
   type: trojan
 - name: 459|新加坡(yudou789.top 玉豆免费节点)
   network: ws
@@ -3626,39 +3641,6 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  fingerprint: ''
-  h2-opts: {}
-  http-opts: {}
-  name: 470,523,524,548,559|新加坡_010618020
-  network: ws
-  port: '80'
-  server: 150.109.11.193
-  servername: ''
-  tls: false
-  type: vmess
-  udp: false
-  uuid: b7118dcc-a234-4784-e487-4064c2920808
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  fingerprint: ''
-  name: 470|3509af9ff0764bd99fb7df41bfa0c7...
-  network: ws
-  port: 12901
-  server: gtm1.ktmwan.net
-  tls: false
-  type: vmess
-  udp: false
-  uuid: 81a5821c-b354-4c29-a4b3-3c9747cc674f
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
   name: '476,481|US美国(mibei77.com 米贝节点分享) 28 #1'
   port: 30812
   server: v12.hdacd.com
@@ -3772,7 +3754,7 @@ proxies:
   type: ss
 - cipher: aes-128-gcm
   delay: 725
-  name: 528,553|yandex-2654
+  name: 528,553|yandex-304
   password: 177446dd-9d98-472a-a656-0375facea6e8
   port: 43461
   server: sgp.fastcokeasdasd.com
@@ -3780,14 +3762,14 @@ proxies:
   udp: true
 - cipher: chacha20-ietf-poly1305
   delay: 976
-  name: 528,553|yandex-2655
+  name: 528,553|yandex-305
   password: 177446dd-9d98-472a-a656-0375facea6e8
   port: 29631
   server: sgp.fastcokeasdasd.com
   type: ss
   udp: true
 - delay: 605
-  name: 528,553|yandex-2661
+  name: 528,553|yandex-311
   network: ws
   password: 97e79a62-f686-4b91-87a7-be39c9e57658
   port: 443
@@ -3840,7 +3822,7 @@ proxies:
   cipher: auto
   client-fingerprint: chrome
   delay: 845
-  name: 528,553|yandex-2664
+  name: 528,553|yandex-314
   port: 19229
   server: 103.181.165.238
   skip-cert-verify: true
@@ -3853,7 +3835,7 @@ proxies:
   cipher: auto
   client-fingerprint: chrome
   delay: 1218
-  name: 528,553|yandex-2665
+  name: 528,553|yandex-315
   port: 19232
   server: 103.181.165.238
   skip-cert-verify: true
@@ -3898,7 +3880,19 @@ proxies:
   country: 🇸🇬SG
   h2-opts: {}
   http-opts: {}
-  name: 548|🇸🇬SG_171
+  name: 548|🇸🇬SG_249
+  network: none
+  port: 52752
+  server: 8.218.105.196
+  skip-cert-verify: true
+  type: vmess
+  uuid: 925bdbf5-72be-4437-bebf-441c61089f6b
+- alterId: 0
+  cipher: auto
+  country: 🇸🇬SG
+  h2-opts: {}
+  http-opts: {}
+  name: 548|🇸🇬SG_250
   network: none
   port: 51000
   server: 8.217.90.175
