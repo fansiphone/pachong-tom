@@ -1,56 +1,4 @@
 proxies:
-- alpn:
-  - h3
-  auth-str: dongtaiwang.com
-  auth_str: dongtaiwang.com
-  down: 55 Mbps
-  name: 17,24,478,483,489,522,553,606|FR_Paris_Online S.A.S._Claude
-  port: 26691
-  protocol: udp
-  server: 62.210.196.68
-  skip-cert-verify: true
-  sni: apple.com
-  type: hysteria
-  udp: true
-  up: 11 Mbps
-- alpn:
-  - h3
-  auth-str: dongtaiwang.com
-  down: '55'
-  name: 17,24,478,483,522,606|62.210.127.217_Claude2
-  port: 35511
-  protocol: udp
-  server: 62.210.10.186
-  skip-cert-verify: true
-  sni: apple.com
-  type: hysteria
-  up: '11'
-- alpn:
-  - h3
-  auth-str: dongtaiwang.com
-  down: 55 Mbps
-  name: 17,24,478,483,522,606|62.210.127.217_Claude1
-  port: 50011
-  protocol: udp
-  server: 62.210.10.186
-  skip-cert-verify: true
-  sni: apple.com
-  type: hysteria
-  up: 11 Mbps
-- alterId: 2
-  cipher: auto
-  country: 🇭🇰HK
-  h2-opts: {}
-  http-opts: {}
-  name: '17,24,455,456,457,458,478,483,489,522,544,559,580,581|🇫🇷 法国 09 #13'
-  network: tcp
-  port: '30835'
-  server: v35.hdacd.com
-  servername: v35.hdacd.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - auth: b0f463eb-3387-4be9-a7c8-3c7280bf86f7
   name: 78|🇫🇷 法国IPV6-09
   password: b0f463eb-3387-4be9-a7c8-3c7280bf86f7
@@ -136,6 +84,20 @@ proxies:
   type: vmess
   udp: true
   uuid: 21629fa5-8a06-4c2c-bdaa-85a6fe5222d5
+- alterId: 0
+  cipher: auto
+  name: 255|🇫🇷 法国
+  network: ws
+  port: 30837
+  server: v37.heduian.link
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: ocbc.com
+    path: /oooo
 - cipher: aes-256-cfb
   name: '356,378,537|🇳🇱NL-51.15.27.48-8217 #1'
   password: f8f7aCzcPKbsF8p3
@@ -556,7 +518,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: '378,536,537,538,559|🇫🇷 FR_44 #1'
+  name: 378,536,537,538,559|🇫🇷 FR_44
   network: ws
   port: 443
   server: 91.134.8.101
@@ -870,12 +832,14 @@ proxies:
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     path: /linkvws
-- name: '378,436,536,537|🇫🇷FR-51.195.202.129-4670 #1'
+- country: 🇷FR
+  name: '378,435,436,536,537|🇫🇷FR-51.195.202.129-4670 #1'
   password: d150c8c3-a667-4d3e-843c-739f8558c7d2
   port: 443
   server: uk-full.privateip.net
   skip-cert-verify: false
   type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: '378,536,537|🇷FR-146.59.55.50-4735 #1'
@@ -1665,40 +1629,57 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: '437,559|🇫🇷 FR_43 #1'
+  country: 🇷 FR
+  h2-opts: {}
+  http-opts: {}
+  name: '435,437,559|🇫🇷 FR_43 #1'
   network: none
   port: 38141
   server: 45.136.12.37
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: fd291be6-b48d-43a1-da38-66c7f80e2f80
-- name: '459,559|🇦🇪_阿联酋 #3'
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  country: 🇷 FR
+  h2-opts: {}
+  http-opts: {}
+  name: 435|🇷 FR_43
   network: ws
-  port: 2096
-  server: 94.140.0.101
-  servername: spdf.qzz.io
-  skip-cert-verify: false
+  port: 443
+  server: 91.134.8.101
+  skip-cert-verify: true
   tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-path: /linkvws
+- alterId: 2
+  cipher: auto
+  country: 🇭🇰HK
+  h2-opts: {}
+  http-opts: {}
+  name: '455,457,458,478,483,489,522,543,544,559,580|🇫🇷 法国 09 #8'
+  network: tcp
+  port: '30835'
+  server: v35.hdacd.com
+  servername: v35.hdacd.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-headers:
+    Host: v35.hdacd.com
+  ws-path: /
+- name: '459,523,524|🇮🇷_伊朗_2 #1'
+  network: tcp
+  port: 8412
+  server: v22.vipshopkar8.shop
+  tls: false
   type: vless
-  uuid: 502524df-bb02-4a14-8362-d84caf2b0a76
-  ws-opts:
-    headers:
-      Host: spdf.qzz.io
-    path: Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2%2F%3Fed%3D2560
-- name: '459,559|🇺🇸_美国 #9'
-  network: ws
-  port: 2096
-  server: 141.11.203.101
-  servername: spdf.qzz.io
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 502524df-bb02-4a14-8362-d84caf2b0a76
-  ws-opts:
-    headers:
-      Host: spdf.qzz.io
-    path: Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2%2F%3Fed%3D2560
+  uuid: 27a351f2-63c3-4ca6-8e11-034bccc64549
 - name: 460|法国_巴黎
   network: ws
   port: 443
@@ -1942,7 +1923,45 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
-- name: 507|FR VLESS-02 | free-nodes
+- alpn:
+  - h3
+  auth-str: dongtaiwang.com
+  auth_str: dongtaiwang.com
+  down: 55 Mbps
+  name: 478,483,489,522,553,606|FR_Paris_Online S.A.S._Claude
+  port: 26691
+  protocol: udp
+  server: 62.210.196.68
+  skip-cert-verify: true
+  sni: apple.com
+  type: hysteria
+  udp: true
+  up: 11 Mbps
+- alpn:
+  - h3
+  auth-str: dongtaiwang.com
+  down: '55'
+  name: 478,483,522,606|62.210.127.217_Claude2
+  port: 35511
+  protocol: udp
+  server: 62.210.10.186
+  skip-cert-verify: true
+  sni: apple.com
+  type: hysteria
+  up: '11'
+- alpn:
+  - h3
+  auth-str: dongtaiwang.com
+  down: 55 Mbps
+  name: 478,483,522,606|62.210.127.217_Claude1
+  port: 50011
+  protocol: udp
+  server: 62.210.10.186
+  skip-cert-verify: true
+  sni: apple.com
+  type: hysteria
+  up: 11 Mbps
+- name: 507|FR VLESS-04 | free-nodes
   port: 2087
   server: 188.114.98.224
   tls: false
@@ -1952,7 +1971,7 @@ proxies:
     path: '%2Frahh'
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 507|FR VLESS-05 | free-nodes
+  name: 507|FR VLESS-07 | free-nodes
   network: tcp
   port: 443
   reality-opts:
@@ -1970,17 +1989,6 @@ proxies:
   tls: false
   type: vless
   uuid: a9171965-cda0-461f-a6f2-a57069c875a3
-- name: 507|FR VLESS-45 | free-nodes
-  network: ws
-  port: 80
-  server: france.streamvault-premium.site
-  tls: false
-  type: vless
-  uuid: 0a49a5cb-526c-471d-b08e-1a52d52ee635
-  ws-opts:
-    headers:
-      Host: france.streamvault-premium.site
-    path: /vless
 - name: 536|🇫🇷FR-146.70.158.111-8853
   network: ws
   password: 11ae0edd-2f63-4495-8683-037abbda9986
@@ -2048,13 +2056,13 @@ proxies:
   skip-cert-verify: true
   sni: ads.x5.ru
   type: trojan
-- name: 559|🇫🇷FR_45
+- name: '559|🇫🇷FR_45 #1'
   password: d150c8c3-a667-4d3e-843c-739f8558c7d2
   port: 443
   server: 198.244.190.189
   sni: 198.244.190.189
   type: trojan
-- name: '559|🇫🇷FR_46 #1'
+- name: 559|🇫🇷FR_46
   password: d150c8c3-a667-4d3e-843c-739f8558c7d2
   port: 443
   server: uk-full.privateip.net
@@ -2123,6 +2131,19 @@ proxies:
   tls: false
   type: vless
   uuid: 4f55ad4a-286f-46ab-8971-0a35aea2c537
+- name: '559|🇫🇷_法国 #2'
+  network: ws
+  port: 2096
+  server: 89.117.112.101
+  servername: spdf.qzz.io
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 502524df-bb02-4a14-8362-d84caf2b0a76
+  ws-opts:
+    headers:
+      Host: spdf.qzz.io
+    path: Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2%2F%3Fed%3D2560
 - client-fingerprint: firefox
   name: '559|🇫🇷[openproxylist.com] vless-FR #1'
   network: tcp

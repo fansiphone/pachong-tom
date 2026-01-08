@@ -1,37 +1,46 @@
 proxies:
-- name: '17,24,478,483,522|🇨🇳_CN_中国 #13'
-  network: tcp
-  password: BxceQaOe
-  port: 443
-  server: 219.79.214.159
-  skip-cert-verify: true
-  sni: t.me/ripaojiedian
-  type: trojan
-- cipher: chacha20-ietf
-  name: '17,24,378,478,483,522,537|🇰HK-103.149.183.80-0844 #1'
-  password: asd123456
-  port: 8388
-  server: 103.149.183.80
+- cipher: chacha20-ietf-poly1305
+  name: '17,24|🇨🇳_CN_中国 #1'
+  password: 34bafa5f59fc339f
+  port: 11201
+  server: 156.244.36.105
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '306,378,537|CN-103.109.23.165-0879 #1'
-  password: sxnCPKb70DGRo62-goXFVHrjzF-5oMbD
-  port: 33007
-  server: 103.109.23.165
+  name: '17,24|🇨🇳_CN_中国_1 #1'
+  password: 2272de48c53e0a57
+  port: 11201
+  server: 154.205.147.237
   type: ss
 - alterId: 0
   cipher: auto
-  name: '306,502,514,515,516,551,557|香港2|@ripaojiedian #2'
+  client-fingerprint: chrome
+  delay: 1867
+  name: '306,489,515,516,528,553,556,579,582|🇭🇰 香港2|@stairnode #2'
+  port: 19226
+  server: jy-hk.kunlun07dns.com
+  skip-cert-verify: false
+  tfo: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 48d361a8-e9a1-3c28-9b51-47775d62077e
+- alterId: 0
+  cipher: auto
+  name: '306,502,514,515,516,543,544,551,557|香港2|@ripaojiedian #2'
   network: tcp
   port: '19226'
   server: jy-hk.kunlun07dns.com
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 48d361a8-e9a1-3c28-9b51-47775d62077e
+  ws-headers:
+    Host: jy-hk.kunlun07dns.com
+  ws-path: /
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '340,489,502,514,551,553,559,567,585,586|CN_speednode_0001 #3'
+  name: '340,489,502,514,551,553,559,567,585,586|CN_speednode_0003 #3'
   network: tcp
   port: 29877
   reality-opts:
@@ -202,6 +211,12 @@ proxies:
     headers:
       Host: v29.heduian.link
     path: /oooo
+- cipher: chacha20-ietf-poly1305
+  name: '378,537|CN-103.109.23.165-0879 #1'
+  password: sxnCPKb70DGRo62-goXFVHrjzF-5oMbD
+  port: 33007
+  server: 103.109.23.165
+  type: ss
 - name: '378,536,537,559|这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使... #3'
   password: ba4fedf8c217c146
   port: 3389
@@ -1205,7 +1220,7 @@ proxies:
   skip-cert-verify: false
   type: trojan
 - cipher: aes-256-cfb
-  name: '378,537|🇨CN-222.186.20.102-4800 #1'
+  name: '378,440,537|🇨CN-222.186.20.102-4800 #1'
   obfs: plain
   obfs-param: data.bilibili.com/ed5a2165400
   password: http://cc.ax/
@@ -1516,7 +1531,7 @@ proxies:
   type: ss
 - alterId: 2
   cipher: auto
-  name: 378,536,537,553,558|12,13|香港4|@ripaojiedian
+  name: '378,536,537,553,558|12,13|香港4|@ripaojiedian #3'
   network: ws
   port: 30809
   server: v9.heduian.link
@@ -1548,7 +1563,7 @@ proxies:
     path: /
 - alterId: 2
   cipher: auto
-  name: 378,536,537,553|yandex-481
+  name: 378,536,537,553|yandex-630
   network: ws
   port: 30812
   server: v12.heduian.link
@@ -1564,7 +1579,7 @@ proxies:
     path: /oooo
 - alterId: 2
   cipher: auto
-  name: 378,536,537,553|yandex-2550
+  name: 378,536,537,553|yandex-2699
   network: ws
   port: 30829
   server: v29.heduian.link
@@ -1580,7 +1595,7 @@ proxies:
     path: /oooo
 - alterId: 2
   cipher: auto
-  name: 378,536,537,553|yandex-2063
+  name: 378,536,537,553|yandex-2212
   network: ws
   port: 30828
   server: v28.heduian.link
@@ -1600,19 +1615,9 @@ proxies:
   port: 870
   server: 183.240.222.15
   type: ss
-- alterId: 64
-  cipher: auto
-  name: '437,489,559|🇨🇳 CN_33 #1'
-  network: tcp
-  port: 59003
-  server: 183.236.51.36
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '455,456,457,458,559,580,581|🇨🇳_CN_中国 #23'
+  name: '455,457,458,559,580|🇨🇳_CN_中国 #15'
   network: tcp
   port: 443
   reality-opts:
@@ -1686,9 +1691,27 @@ proxies:
     headers:
       Host: data-us-v1.shwjfkw.cn
     path: /debian
+- name: '478,483,522|🇨🇳_CN_中国 #11'
+  network: tcp
+  password: BxceQaOe
+  port: 443
+  server: 219.79.214.159
+  skip-cert-verify: true
+  sni: t.me/ripaojiedian
+  type: trojan
+- alterId: 64
+  cipher: auto
+  name: '489,559|🇨🇳 CN_33 #1'
+  network: tcp
+  port: 59003
+  server: 183.236.51.36
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: aes-256-gcm
-  name: 489,553|yandex-2879
+  name: 489,553|yandex-282
   password: '!!str 123'
   port: 6100
   server: 14.18.106.88
@@ -2596,7 +2619,7 @@ proxies:
   server: xiaozhu1.kkieo555.cn
   skip-cert-verify: true
   type: trojan
-- name: '559|🇨🇳 CN_34 #1'
+- name: 559|🇨🇳 CN_34
   password: 6e1b9a65-884f-3aa9-9469-bf6ec0f08610
   port: 3462
   server: a03.taipeicitygovernment.cn.ua
@@ -3086,6 +3109,26 @@ proxies:
   uuid: 50105c9a-186e-44f1-b226-28732a049546
 - alterId: 0
   cipher: auto
+  name: '559|🇨🇳_中国 #101'
+  network: tcp
+  port: '49301'
+  server: cees.owwoedu.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 6b285574-1a2d-4a5e-950f-e3b83c9a5a0c
+- alterId: 0
+  cipher: auto
+  name: '559,580|新加坡节点 #4'
+  network: tcp
+  port: '49301'
+  server: cees.owwoedu.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 8394770f-608f-4493-a428-1a15fcda3a55
+- alterId: 0
+  cipher: auto
   name: '559|🇨🇳_中国 #103'
   network: tcp
   port: '49301'
@@ -3096,6 +3139,16 @@ proxies:
   uuid: 88ac2af8-f5cc-42dd-a028-bff06c4414aa
 - alterId: 0
   cipher: auto
+  name: '559|🇨🇳_中国 #104'
+  network: tcp
+  port: '49301'
+  server: cees.owwoedu.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 8a1249e4-e232-4d98-93df-edf7d54ba2b6
+- alterId: 0
+  cipher: auto
   name: '559|🇨🇳_中国 #105'
   network: tcp
   port: '49301'
@@ -3104,6 +3157,76 @@ proxies:
   tls: false
   type: vmess
   uuid: 03d8e750-dea2-4562-bce5-ae677a50d11e
+- alterId: 0
+  cipher: auto
+  name: '559|🇨🇳_中国 #106'
+  network: tcp
+  port: '49301'
+  server: cees.owwoedu.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 020025bc-ff03-4007-980b-fa5dcf4367c0
+- alterId: 0
+  cipher: auto
+  name: '559|🇨🇳_中国 #107'
+  network: tcp
+  port: '49301'
+  server: cees.owwoedu.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 0cea6aca-77f1-4194-9864-80ce2788a97b
+- alterId: 0
+  cipher: auto
+  name: 559,580|🇭🇰 香港 HK - 1
+  network: tcp
+  port: '49301'
+  server: cees.owwoedu.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 119177df-9f60-476a-9cb7-d6bcc2fb467c
+- alterId: 0
+  cipher: auto
+  name: '559|🇨🇳_中国 #109'
+  network: tcp
+  port: '49301'
+  server: cees.owwoedu.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: ae9b82ea-8e23-46f8-b803-7481babff662
+- alterId: 0
+  cipher: auto
+  name: '559,580|新加坡节点 #1'
+  network: tcp
+  port: '49301'
+  server: cees.owwoedu.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: b2ef2c34-a629-4377-8619-a1e90a3d511f
+- alterId: 0
+  cipher: auto
+  name: '559|🇨🇳_中国 #111'
+  network: tcp
+  port: '49301'
+  server: cees.owwoedu.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: b4d2048f-e382-460a-83ee-f51e405036cf
+- alterId: 0
+  cipher: auto
+  name: '559|🇨🇳_中国 #112'
+  network: tcp
+  port: '49301'
+  server: cees.owwoedu.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: d41e3b77-5186-43a6-8545-4caeab3fdbac
 - alterId: 0
   cipher: auto
   name: '559|🇨🇳_中国 #113'
@@ -3136,6 +3259,36 @@ proxies:
   uuid: 23eda9d8-c661-46b0-b132-310eb1c5ccf1
 - alterId: 0
   cipher: auto
+  name: '559|🇨🇳_中国 #116'
+  network: tcp
+  port: '49303'
+  server: cees.owwoedu.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 434ce2b1-1105-44aa-9011-3e6405eac51a
+- alterId: 0
+  cipher: auto
+  name: '559|🇨🇳_中国 #117'
+  network: tcp
+  port: '49303'
+  server: cees.owwoedu.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 50640f79-b76a-4fb0-aad6-48f029b1a8f6
+- alterId: 0
+  cipher: auto
+  name: '559|🇨🇳_中国 #118'
+  network: tcp
+  port: '49303'
+  server: cees.owwoedu.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 52389a8b-3161-442d-8ad3-d68be7f2eb76
+- alterId: 0
+  cipher: auto
   name: '559|🇨🇳_中国 #119'
   network: tcp
   port: '49303'
@@ -3146,6 +3299,16 @@ proxies:
   uuid: 9bf8aae6-2295-46ef-8581-c92cd5538f62
 - alterId: 0
   cipher: auto
+  name: '559|🇨🇳_中国 #120'
+  network: tcp
+  port: '49303'
+  server: cees.owwoedu.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: ce8b5c66-c533-4578-9e16-efe14d01f128
+- alterId: 0
+  cipher: auto
   name: '559|🇨🇳_中国 #121'
   network: tcp
   port: '49303'
@@ -3154,6 +3317,26 @@ proxies:
   tls: false
   type: vmess
   uuid: d52321d0-6183-433b-8e87-d2b5cc865551
+- alterId: 0
+  cipher: auto
+  name: '559|🇨🇳_中国 #122'
+  network: tcp
+  port: '49310'
+  server: cees.owwoedu.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 8165ff0f-23a9-4608-a889-438bc4f451d9
+- alterId: 0
+  cipher: auto
+  name: '559|🇨🇳_中国 #123'
+  network: tcp
+  port: '49310'
+  server: cees.owwoedu.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 86445b6b-9467-487c-9305-4fa8d6bbddbf
 - alterId: 0
   cipher: auto
   name: '559|🇨🇳_中国 #124'
@@ -3176,6 +3359,66 @@ proxies:
   uuid: 050f3ef7-7df0-4f00-8001-3574f0360357
 - alterId: 0
   cipher: auto
+  name: '559|🇨🇳_中国 #126'
+  network: tcp
+  port: '49310'
+  server: cees.owwoedu.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 19434f2e-2ca3-4930-84f9-3cb7fa95f00c
+- alterId: 0
+  cipher: auto
+  name: 559,580|🇺🇸 美国 US - 2
+  network: tcp
+  port: '49312'
+  server: cees.owwoedu.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: ce29e676-2cea-4949-81fd-b64aa0e0a0d7
+- alterId: 0
+  cipher: auto
+  name: '559|🇨🇳_中国 #128'
+  network: tcp
+  port: '49317'
+  server: cees.owwoedu.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 8472450d-cb67-40c8-994b-81dcf6258026
+- alterId: 0
+  cipher: auto
+  name: '559|🇨🇳_中国 #129'
+  network: tcp
+  port: '49317'
+  server: cees.owwoedu.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 20e385dd-2315-40a5-b525-7706f26a69fb
+- alterId: 0
+  cipher: auto
+  name: '559|🇨🇳_中国 #130'
+  network: tcp
+  port: '49317'
+  server: cees.owwoedu.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: ce29e676-2cea-4949-81fd-b64aa0e0a0d7
+- alterId: 0
+  cipher: auto
+  name: '559|🇨🇳_中国 #131'
+  network: tcp
+  port: '49317'
+  server: cees.owwoedu.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: e74cdf36-3b08-47b1-9ef5-4dfa26d9c1f8
+- alterId: 0
+  cipher: auto
   name: '559|🇨🇳_中国 #132'
   network: tcp
   port: '43527'
@@ -3184,6 +3427,56 @@ proxies:
   tls: false
   type: vmess
   uuid: 02a75d20-c38a-470d-8d4b-7a7a46d3d5d9
+- alterId: 0
+  cipher: auto
+  name: '559|🇨🇳_中国 #133'
+  network: tcp
+  port: '59501'
+  server: ffiw.owwoedu.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 900ee234-279a-4c8c-a7a4-7dced7092a49
+- alterId: 0
+  cipher: auto
+  name: 559,580|香港04 【IEPL】
+  network: tcp
+  port: '59501'
+  server: ffiw.owwoedu.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 92881954-d2c2-4d32-a044-074c7eea957c
+- alterId: 0
+  cipher: auto
+  name: '559|🇨🇳_中国 #135'
+  network: tcp
+  port: '59501'
+  server: ffiw.owwoedu.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 23d56a06-ba74-4830-accf-557523406c9b
+- alterId: 0
+  cipher: auto
+  name: '559|🇨🇳_中国 #136'
+  network: tcp
+  port: '59501'
+  server: ffiw.owwoedu.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 2ca0d644-2892-4280-87ec-1a72b01500fb
+- alterId: 0
+  cipher: auto
+  name: '559|🇨🇳_中国 #137'
+  network: tcp
+  port: '59501'
+  server: ffiw.owwoedu.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3b974380-b035-41ae-8a12-d21e58d0a1f2
 - alterId: 0
   cipher: auto
   name: '559|🇨🇳_中国 #138'
@@ -3196,6 +3489,56 @@ proxies:
   uuid: c59f71e7-f4ce-49dd-8cb8-bfb9cf08399f
 - alterId: 0
   cipher: auto
+  name: '559|🇨🇳_中国 #139'
+  network: tcp
+  port: '59501'
+  server: ffiw.owwoedu.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: e12a2899-d9df-46c8-8a82-5040a5ae298c
+- alterId: 0
+  cipher: auto
+  name: '559|🇨🇳_中国 #140'
+  network: tcp
+  port: '59503'
+  server: ffiw.owwoedu.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 4dc2371a-95b2-4dad-bbde-3100ea8b5446
+- alterId: 0
+  cipher: auto
+  name: '559|🇨🇳_中国 #141'
+  network: tcp
+  port: '59503'
+  server: ffiw.owwoedu.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 502187a3-9404-4fee-afe3-f24a74b66367
+- alterId: 0
+  cipher: auto
+  name: '559|🇨🇳_中国 #142'
+  network: tcp
+  port: '59503'
+  server: ffiw.owwoedu.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 59d40291-f6a2-45b1-84ab-22d89e889cf8
+- alterId: 0
+  cipher: auto
+  name: '559|🇨🇳_中国 #143'
+  network: tcp
+  port: '59503'
+  server: ffiw.owwoedu.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 5d19092e-54e2-4c59-811f-e7048ea890c5
+- alterId: 0
+  cipher: auto
   name: '559|🇨🇳_中国 #144'
   network: tcp
   port: '59503'
@@ -3204,6 +3547,46 @@ proxies:
   tls: false
   type: vmess
   uuid: 62697c46-261a-4e97-9686-cfee5a5a2e9e
+- alterId: 0
+  cipher: auto
+  name: '559|🇨🇳_中国 #145'
+  network: tcp
+  port: '59503'
+  server: ffiw.owwoedu.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 8a5ed52e-9a0d-4570-9138-118f9d2f13f9
+- alterId: 0
+  cipher: auto
+  name: '559|🇨🇳_中国 #146'
+  network: tcp
+  port: '59503'
+  server: ffiw.owwoedu.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 98025cf1-9a01-4922-bf3d-99a30d67b5af
+- alterId: 0
+  cipher: auto
+  name: '559|🇨🇳_中国 #147'
+  network: tcp
+  port: '59503'
+  server: ffiw.owwoedu.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 18fe34ca-3607-40a2-be0b-c7e532d5427a
+- alterId: 0
+  cipher: auto
+  name: '559|🇨🇳_中国 #148'
+  network: tcp
+  port: '59503'
+  server: ffiw.owwoedu.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 1af47fb8-8f1e-4e1a-afe2-e95b85412128
 - alterId: 0
   cipher: auto
   name: '559|🇨🇳_中国 #149'
@@ -3216,6 +3599,116 @@ proxies:
   uuid: 2427db6f-84d3-4c89-9b82-146def58b34f
 - alterId: 0
   cipher: auto
+  name: '559|🇨🇳_中国 #150'
+  network: tcp
+  port: '59503'
+  server: ffiw.owwoedu.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: a8cf63a2-5334-470d-8a93-149870a06253
+- alterId: 0
+  cipher: auto
+  name: 559,580|美国 01【IEPL】
+  network: tcp
+  port: '59504'
+  server: ffiw.owwoedu.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: eddcc1ae-c39c-4c83-b994-c2fa133f087c
+- alterId: 0
+  cipher: auto
+  name: '559|🇨🇳_中国 #152'
+  network: tcp
+  port: '59510'
+  server: ffiw.owwoedu.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 6420fab2-7f1f-444a-a5b4-df3b8e25580e
+- alterId: 0
+  cipher: auto
+  name: '559|🇨🇳_中国 #153'
+  network: tcp
+  port: '59510'
+  server: ffiw.owwoedu.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 6a43dcb6-584d-4861-84ee-bf0c732776cd
+- alterId: 0
+  cipher: auto
+  name: '559|🇨🇳_中国 #154'
+  network: tcp
+  port: '59510'
+  server: ffiw.owwoedu.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 885a3dea-b851-4640-a38e-6a2ee0d486ae
+- alterId: 0
+  cipher: auto
+  name: '559|🇨🇳_中国 #155'
+  network: tcp
+  port: '59510'
+  server: ffiw.owwoedu.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 186eb72a-9082-4e5a-9eec-8fd3ee526509
+- alterId: 0
+  cipher: auto
+  name: '559|🇨🇳_中国 #156'
+  network: tcp
+  port: '59510'
+  server: ffiw.owwoedu.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: c50d9ce2-98c8-4275-ab20-a53e67b48633
+- alterId: 0
+  cipher: auto
+  name: '559|🇨🇳_中国 #157'
+  network: tcp
+  port: '59510'
+  server: ffiw.owwoedu.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: e922c598-c394-4bbf-994d-42eca9814281
+- alterId: 0
+  cipher: auto
+  name: '559|🇨🇳_中国 #158'
+  network: tcp
+  port: '59517'
+  server: ffiw.owwoedu.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 71b63634-d6bf-42e0-9e90-8301cf35c161
+- alterId: 0
+  cipher: auto
+  name: '559|🇨🇳_中国 #159'
+  network: tcp
+  port: '59517'
+  server: ffiw.owwoedu.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3bf1883d-0335-4a47-87c5-93d94b983b2d
+- alterId: 0
+  cipher: auto
+  name: '559|🇨🇳_中国 #160'
+  network: tcp
+  port: '59517'
+  server: ffiw.owwoedu.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: a51fb41a-e016-4420-b740-5af99aea9831
+- alterId: 0
+  cipher: auto
   name: '559|🇨🇳_中国 #161'
   network: tcp
   port: '59517'
@@ -3224,6 +3717,16 @@ proxies:
   tls: false
   type: vmess
   uuid: ab00adaf-ece4-4b6e-ae18-f0ae512e1d4a
+- alterId: 0
+  cipher: auto
+  name: '559|🇨🇳_中国 #162'
+  network: tcp
+  port: '59517'
+  server: ffiw.owwoedu.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: ae7a1ac0-b89e-441e-bba9-007c9bd9fcc1
 - alterId: 0
   cipher: auto
   name: 578|11,21|_中国
