@@ -131,22 +131,6 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: '96,306,343,378,502,536,537,551,559|JP5｜机房｜低风险 #2'
-  network: ws
-  port: '443'
-  server: tokyo01.zgjok.com
-  servername: tokyo01.zgjok.com
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  udp: true
-  uuid: e6d5d668-2091-41d9-9bff-df0a1c5107ec
-  ws-opts:
-    headers:
-      Host: tokyo01.zgjok.com
-    path: /
-- alterId: 0
-  cipher: auto
   name: 119|🇯🇵 No.379_JP_x0.50_AWS_东京@qing...
   network: ws
   port: 8080
@@ -550,6 +534,22 @@ proxies:
     headers:
       Host: download.windowsupdate.com
     path: /download
+- client-fingerprint: chrome
+  delay: 526
+  name: 127,426,528,553|yandex-95
+  network: ws
+  port: 443
+  server: 162.159.45.232
+  servername: l.ayovo.netlib.re
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 3e2e3c21-3fc8-468f-9ab5-e782bdf5bf97
+  ws-opts:
+    headers:
+      Host: l.ayovo.netlib.re
+    path: /
 - alterId: 0
   cipher: auto
   name: '128,430|日本NO.1 #2'
@@ -1203,11 +1203,11 @@ proxies:
   sni: www.alibaba.com
   type: trojan
   udp: true
-- name: 255|JP
-  network: tcp
+- name: 255|🇯🇵 JP
   password: f57f01e6-9bb1-4277-a5cb-75ad0ce1fa11
   port: 21125
   server: 125.94.40.162
+  skip-cert-verify: true
   sni: k12.tudou211.com
   type: trojan
 - name: '306,378,454,494,502,514,515,516,536,537,543,544,548,551,556,557,559,579,580,582|🇯🇵
@@ -1221,7 +1221,7 @@ proxies:
   type: trojan
 - alterId: 0
   country: 🇯🇵JP
-  name: '306,378,440,454,494,502,514,515,516,536,537,543,544,548,551,556,557,559,574,579,580,582|🇯🇵
+  name: '306,378,454,494,502,514,515,516,536,537,543,544,548,551,556,557,559,574,579,580,582|🇯🇵
     日本2|@stairnode #7'
   network: tcp
   password: 61d8077bfb174e171b8283f155a555ad
@@ -1271,7 +1271,7 @@ proxies:
   tls: true
   type: trojan
   udp: true
-- name: '306,378,454,489,494,502,514,515,516,536,537,543,544,548,551,553,556,557,559,566,579,580,582|🇸🇬
+- name: '306,378,454,489,494,502,514,515,516,536,537,543,544,548,551,553,556,557,559,579,580,582|🇸🇬
     新加坡3|@stairnode #7'
   network: tcp
   password: BxceQaOe
@@ -1305,6 +1305,21 @@ proxies:
   tls: true
   type: trojan
   udp: true
+- alterId: 0
+  cipher: auto
+  name: '306,378,502,536,537,551,559|JP5｜机房｜低风险 #2'
+  network: ws
+  port: '443'
+  server: tokyo01.zgjok.com
+  servername: tokyo01.zgjok.com
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: e6d5d668-2091-41d9-9bff-df0a1c5107ec
+  ws-opts:
+    headers:
+      Host: tokyo01.zgjok.com
+    path: /
 - client-fingerprint: firefox
   flow: ''
   name: '321,322,323|日本01 #3'
@@ -1413,15 +1428,13 @@ proxies:
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
-- country: 🇯🇵JP
-  name: '340,378,440,494,536,537,538,548,559,580|🇯🇵 日本2|@stairnode #5'
+- name: '340,378,494,536,537,538,548,559,580|🇯🇵 日本2|@stairnode #5'
   password: 61d8077bfb174e171b8283f155a555ad
   port: 4006
   server: 160.16.87.174
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-  udp: true
 - country: 🇯🇵JP
   name: '340,378,440,494,536,537,538,548,559,580|🇯🇵 日本3|@stairnode #6'
   password: 61d8077bfb174e171b8283f155a555ad
@@ -1463,7 +1476,7 @@ proxies:
   type: ss
 - cipher: aes-128-gcm
   country: 🇬🇧GB
-  name: '356,357,378,537,538,548|🇬🇧GB_52 #1'
+  name: 356,357,378,537,538,548|🇬🇧GB_65
   password: shadowsocks
   port: 443
   server: 149.22.87.204
@@ -2513,25 +2526,29 @@ proxies:
   type: ss
 - cipher: rc4-md5
   country: 🇯🇵JP
-  name: 378,537,538,548|🇯🇵JP_83
+  name: 378,537,538,548|🇯🇵JP_121
   password: 14fFPrbezE3HDZzsMOr6
   port: 8080
   server: 172.105.199.111
   type: ss
-- name: 378,479,484,494,536,537,538,559|日本_011018002+L0
+- country: 🇯🇵JP
+  name: 378,479,484,494,536,537,538,548,559|日本_011018002+L0
   password: 381f2e86233720eacda26d50e9aa26da
   port: 1281
   server: 202.181.103.246
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
-- name: 378,494,536,537,538,559|日本_011018003+L0
+  udp: true
+- country: 🇯🇵JP
+  name: 378,494,536,537,538,548,559|日本_011018003+L0
   password: 381f2e86233720eacda26d50e9aa26da
   port: 1281
   server: 160.16.196.59
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
+  udp: true
 - country: 🇯🇵JP
   name: 378,440,494,536,537,538,548,559|日本_011018004
   password: 381f2e86233720eacda26d50e9aa26da
@@ -2548,18 +2565,18 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- country: 🇵JP
-  name: 378,440,494,536,537,538,559|日本_011018006
+- country: 🇯🇵JP
+  name: 378,440,494,536,537,538,548,559|日本_011018006
   password: 381f2e86233720eacda26d50e9aa26da
   port: 1281
   server: 160.16.116.227
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
   udp: true
   ws-opts:
     path: /
-- country: 🇵JP
+- country: 🇯🇵JP
   name: 378,440,494,536,537,538,548,559|日本_011018008
   password: 381f2e86233720eacda26d50e9aa26da
   port: 1281
@@ -2578,7 +2595,8 @@ proxies:
   type: trojan
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 378,537,538|🇯🇵JP-103.75.118.125-0362 | 1.0...
+  country: 🇯🇵JP
+  name: 378,537,538,548|🇯🇵JP_120
   password: XLOrvLWkCBBBxLqSEe9S8lnC5PLsNfRh
   port: 443
   server: 103.75.118.125
@@ -3294,7 +3312,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: '378,437,536,537|🇵JP-47.245.42.92-4896 #1'
+  name: '378,536,537|🇵JP-47.245.42.92-4896 #1'
   network: ws
   port: 443
   server: n1753598452.wpg27.xyz
@@ -3308,12 +3326,12 @@ proxies:
       Host: n1753598452.wpg27.xyz
     path: /
 - cipher: chacha20-ietf-poly1305
-  country: 🇮🇳IN
-  name: 378,537,548|🇮🇳IN_80
+  name: 378,537,566|🇯🇵 日本 | JPN 12
   password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
   port: 990
   server: 103.106.228.247
   type: ss
+  udp: true
 - alterId: 0
   cipher: auto
   name: '378,536,537|JP-138.2.52.244-7176 #1'
@@ -3617,6 +3635,23 @@ proxies:
   sni: eu.mjanyt.com
   type: anytls
   udp: true
+- alterId: 0
+  cipher: auto
+  country: 🇵 JP
+  h2-opts: {}
+  http-opts: {}
+  name: 435| JP_85
+  network: ws
+  port: 443
+  server: seoul03.zgjok.com
+  servername: seoul03.zgjok.com
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 72a0dac4-9689-4a57-b164-5c65bfa94772
+  ws-headers:
+    HOST: seoul03.zgjok.com
+  ws-path: /
 - name: 453|🇯🇵 日本2|@stairnode
   password: 253bc477d4e43c209f2d427272968280
   port: 1806
@@ -4496,7 +4531,7 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
-- name: '479,484,494|🔥Join+Telegram:@Farah_VPN🟣 #652'
+- name: '479,484,494|🔥Join+Telegram:@Farah_VPN🟣 #474'
   password: 381f2e86233720eacda26d50e9aa26da
   port: 1933
   server: 202.181.103.246
@@ -4518,7 +4553,8 @@ proxies:
   sni: fq-jp.mxtn.net
   tls: false
   type: hysteria2
-- name: '502,551,559|JP8｜家宽｜非常安全 #2'
+- auth: e3c9c176-7ce6-40c8-9206-ff5ea72b1f0a
+  name: 502,551,559,566|🇯🇵 日本 | JPN 14
   password: e3c9c176-7ce6-40c8-9206-ff5ea72b1f0a
   port: 21855
   server: fq-jp.mxtn.net
@@ -4526,7 +4562,8 @@ proxies:
   sni: fq-jp.mxtn.net
   tls: false
   type: hysteria2
-- name: '502,551,559,568|🇯🇵 日本 | JPN #3'
+  udp: true
+- name: '502,551,559|JP9｜家宽｜非常安全 #2'
   password: e3c9c176-7ce6-40c8-9206-ff5ea72b1f0a
   port: 21458
   server: fq-jp.mxtn.net
@@ -4540,7 +4577,7 @@ proxies:
   flow: xtls-rprx-vision
   grpc-opts:
     grpc-service-name: ''
-  name: 507|JP VLESS-157 | free-nodes
+  name: 507|JP VLESS-154 | free-nodes
   network: tcp
   port: 443
   server: s455.okgg.top
@@ -4558,7 +4595,7 @@ proxies:
   flow: xtls-rprx-vision
   grpc-opts:
     grpc-service-name: ''
-  name: 507|JP VLESS-183 | free-nodes
+  name: 507|JP VLESS-180 | free-nodes
   network: tcp
   port: 443
   server: s452.okgg.top
@@ -4647,11 +4684,11 @@ proxies:
   type: vless
   uuid: 15b84012-d261-4b4c-807a-061bb4a901fd
 - client-fingerprint: chrome
-  delay: 1000
-  name: 528,553|yandex-3155
+  delay: 532
+  name: 528,553|yandex-94
   network: ws
   port: 443
-  server: 162.159.45.232
+  server: 162.159.44.142
   servername: l.ayovo.netlib.re
   tls: true
   type: vless
@@ -4659,40 +4696,6 @@ proxies:
   ws-opts:
     headers:
       Host: l.ayovo.netlib.re
-    path: /
-- client-fingerprint: chrome
-  delay: 1056
-  name: 528,553|yandex-3156
-  network: ws
-  port: 2053
-  server: nrt.xxxxxxxx.nyc.mn
-  servername: news3.f1w.de5.net
-  tls: true
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: news3.f1w.de5.net
-    path: /proxyip=sjc.o00o.ooo
-- alterId: 0
-  cipher: auto
-  country: 🇯🇵JP
-  delay: 2123
-  h2-opts: {}
-  http-opts: {}
-  name: 528|日本 - 东京 - Oracle Corporation -...
-  network: ws
-  port: 443
-  server: tokyo01.zgjok.com
-  servername: tokyo01.zgjok.com
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: e6d5d668-2091-41d9-9bff-df0a1c5107ec
-  ws-opts:
-    headers:
-      HOST: tokyo01.zgjok.com
     path: /
 - name: '533|JP日本(mibei77.com 米贝节点分享) #2'
   network: ws
@@ -5291,83 +5294,73 @@ proxies:
     headers:
       Host: n1753598448.74qxv.top
     path: /
+- name: 566|🇯🇵 日本 | JPN 2
+  password: 5030748a-7432-42aa-bdfc-0ef5f5f6aa1e
+  port: 50020
+  server: v1dytv.lalakw.com
+  skip-cert-verify: true
+  sni: v1dytv.lalakw.com
+  type: trojan
+  udp: true
+- name: 566|🇯🇵 日本 | JPN 3
+  password: 5030748a-7432-42aa-bdfc-0ef5f5f6aa1e
+  port: 50039
+  server: v1dytv.lalakw.com
+  skip-cert-verify: true
+  sni: v1dytv.lalakw.com
+  type: trojan
+  udp: true
+- name: 566|🇯🇵 日本 | JPN 4
+  password: 5030748a-7432-42aa-bdfc-0ef5f5f6aa1e
+  port: 50021
+  server: v1dytv.lalakw.com
+  skip-cert-verify: true
+  sni: v1dytv.lalakw.com
+  type: trojan
+  udp: true
 - auth: pro@_awpOFPcjwKiqMPkhg5uuEGU
-  name: 566|🇯🇵 日本 | JPN
+  name: 566|🇯🇵 日本 | JPN 5
   password: pro@_awpOFPcjwKiqMPkhg5uuEGU
   port: 443
-  server: starlink-jp2.2513142.xyz
+  server: starlink-jp5.2513142.xyz
   skip-cert-verify: true
   sni: www.cloudflare.com
   type: hysteria2
   udp: true
 - auth: e3c9c176-7ce6-40c8-9206-ff5ea72b1f0a
-  name: 566|🇯🇵 日本 | JPN 2
+  name: 566|🇯🇵 日本 | JPN 6
   password: e3c9c176-7ce6-40c8-9206-ff5ea72b1f0a
-  port: 21701
+  port: 21609
+  server: fq-jp.mxtn.net
+  skip-cert-verify: false
+  type: hysteria2
+  udp: true
+- auth: e3c9c176-7ce6-40c8-9206-ff5ea72b1f0a
+  name: 566|🇯🇵 日本 | JPN 7
+  password: e3c9c176-7ce6-40c8-9206-ff5ea72b1f0a
+  port: 21866
   server: fq-jp.mxtn.net
   skip-cert-verify: false
   type: hysteria2
   udp: true
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: 566|🇯🇵 日本 | JPN 3
+  name: 566|🇯🇵 日本 | JPN 8
   network: tcp
-  port: 30301
+  port: 30303
   reality-opts:
-    public-key: IoW1RqD-BzW9oxaM4KtHx5ap6haIENhYyZt_oMZqlCM
-    short-id: 950cee8a
+    public-key: RuNAMARjcI4VNAkqWazbFm4sa3Kc-uViiruuByx2TiM
+    short-id: 4d77021d
   server: freea.glyphara.com
-  servername: lol.secure.dyn.riotcdn.net
+  servername: mensura.cdn-apple.com
   tls: true
   type: vless
   udp: true
   uuid: 362b5d67-9130-4b3b-9e82-26038efcfedd
 - auth: e3c9c176-7ce6-40c8-9206-ff5ea72b1f0a
-  name: 566|🇯🇵 日本 | JPN 4
-  password: e3c9c176-7ce6-40c8-9206-ff5ea72b1f0a
-  port: 21554
-  server: fq-jp.mxtn.net
-  skip-cert-verify: false
-  type: hysteria2
-  udp: true
-- auth: e3c9c176-7ce6-40c8-9206-ff5ea72b1f0a
-  name: 566|🇯🇵 日本 | JPN 5
-  password: e3c9c176-7ce6-40c8-9206-ff5ea72b1f0a
-  port: 21317
-  server: fq-jp.mxtn.net
-  skip-cert-verify: false
-  type: hysteria2
-  udp: true
-- auth: e3c9c176-7ce6-40c8-9206-ff5ea72b1f0a
-  name: 566|🇯🇵 日本 | JPN 6
-  password: e3c9c176-7ce6-40c8-9206-ff5ea72b1f0a
-  port: 21688
-  server: fq-jp.mxtn.net
-  skip-cert-verify: false
-  type: hysteria2
-  udp: true
-- name: 566|🇯🇵 日本 | JPN 7
-  password: pro@_awpOFPcjwKiqMPkhg5uuEGU
-  port: 20001
-  server: starlink-jp1.2513142.xyz
-  skip-cert-verify: true
-  sni: www.cloudflare.com
-  type: trojan
-  udp: true
-- auth: 080d1733-7509-4c7b-8c7e-5a1f415efc80
-  name: 566|🇯🇵 日本 | JPN 8
-  password: 080d1733-7509-4c7b-8c7e-5a1f415efc80
-  port: 50000
-  ports: 50000-53000
-  server: 103.62.49.132
-  skip-cert-verify: true
-  sni: www.bing.com
-  type: hysteria2
-  udp: true
-- auth: e3c9c176-7ce6-40c8-9206-ff5ea72b1f0a
   name: 566|🇯🇵 日本 | JPN 9
   password: e3c9c176-7ce6-40c8-9206-ff5ea72b1f0a
-  port: 21095
+  port: 21032
   server: fq-jp.mxtn.net
   skip-cert-verify: false
   type: hysteria2
@@ -5375,73 +5368,53 @@ proxies:
 - auth: e3c9c176-7ce6-40c8-9206-ff5ea72b1f0a
   name: 566|🇯🇵 日本 | JPN 11
   password: e3c9c176-7ce6-40c8-9206-ff5ea72b1f0a
-  port: 21563
+  port: 21164
   server: fq-jp.mxtn.net
   skip-cert-verify: false
   type: hysteria2
-  udp: true
-- name: 566|🇯🇵 日本 | JPN 12
-  password: pro@_awpOFPcjwKiqMPkhg5uuEGU
-  port: 20000
-  server: starlink-jp2.2513142.xyz
-  skip-cert-verify: true
-  sni: www.cloudflare.com
-  type: trojan
   udp: true
 - auth: e3c9c176-7ce6-40c8-9206-ff5ea72b1f0a
   name: 566|🇯🇵 日本 | JPN 13
   password: e3c9c176-7ce6-40c8-9206-ff5ea72b1f0a
-  port: 21750
+  port: 21263
   server: fq-jp.mxtn.net
   skip-cert-verify: false
   type: hysteria2
   udp: true
-- auth: e3c9c176-7ce6-40c8-9206-ff5ea72b1f0a
-  name: 566|🇯🇵 日本 | JPN 14
-  password: e3c9c176-7ce6-40c8-9206-ff5ea72b1f0a
-  port: 21766
-  server: fq-jp.mxtn.net
-  skip-cert-verify: false
-  type: hysteria2
-  udp: true
-- auth: e3c9c176-7ce6-40c8-9206-ff5ea72b1f0a
-  name: 566|🇯🇵 日本 | JPN 15
-  password: e3c9c176-7ce6-40c8-9206-ff5ea72b1f0a
-  port: 21665
-  server: fq-jp.mxtn.net
-  skip-cert-verify: false
-  type: hysteria2
-  udp: true
-- auth: e3c9c176-7ce6-40c8-9206-ff5ea72b1f0a
-  name: 566|🇯🇵 日本 | JPN 16
-  password: e3c9c176-7ce6-40c8-9206-ff5ea72b1f0a
-  port: 21150
-  server: fq-jp.mxtn.net
-  skip-cert-verify: false
-  type: hysteria2
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 566|🇯🇵 日本 | JPN 17
-  password: 623787ef-7786-4572-abf5-0180892558aa
-  port: 21315
-  server: ncgdyd.gdsxrk.com
-  type: ss
-  udp: true
-- name: '568|🇯🇵 日本 | JPN #1'
+- name: 566|🇯🇵 日本 | JPN 15
   password: pro@_awpOFPcjwKiqMPkhg5uuEGU
-  port: 443
+  port: 20001
   server: starlink-jp3.2513142.xyz
   skip-cert-verify: true
   sni: www.cloudflare.com
-  tls: false
-  type: hysteria2
-- name: '568|🇯🇵 日本 | JPN #4'
-  password: 5030748a-7432-42aa-bdfc-0ef5f5f6aa1e
-  port: 50019
-  server: v1dytv.lalakw.com
-  skip-cert-verify: true
-  sni: v1dytv.lalakw.com
   type: trojan
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 566|🇯🇵 日本 | JPN 18
+  password: 623787ef-7786-4572-abf5-0180892558aa
+  port: 19215
+  server: ncgddx.gdsxrk.com
+  type: ss
+  udp: true
+- auth: 080d1733-7509-4c7b-8c7e-5a1f415efc80
+  name: 566|🇯🇵 日本 | JPN 19
+  password: 080d1733-7509-4c7b-8c7e-5a1f415efc80
+  port: 50000
+  ports: 50000-53000
+  server: 131.186.42.162
+  skip-cert-verify: true
+  sni: www.microsoft.com
+  type: hysteria2
+  udp: true
+- auth: pro@_awpOFPcjwKiqMPkhg5uuEGU
+  name: 566|🇯🇵 日本 | JPN 20
+  password: pro@_awpOFPcjwKiqMPkhg5uuEGU
+  port: 443
+  server: starlink-jp1.2513142.xyz
+  skip-cert-verify: true
+  sni: www.cloudflare.com
+  type: hysteria2
+  udp: true
 - alterId: 0
   cipher: auto
   name: '577|日本NO.1 #4'
