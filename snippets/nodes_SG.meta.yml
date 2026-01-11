@@ -809,11 +809,11 @@ proxies:
   port: 17315
   server: 120.240.103.35
   type: ss
-- name: 255|🇸🇬 SG
+- name: 255|SG
+  network: tcp
   password: f57f01e6-9bb1-4277-a5cb-75ad0ce1fa11
   port: 32702
   server: xd-sh.timiwc.com
-  skip-cert-verify: true
   sni: k36.tudou211.com
   type: trojan
 - alterId: 0
@@ -916,6 +916,39 @@ proxies:
   server: sg008.421421.xyz
   skip-cert-verify: true
   sni: www.alibaba.com
+  type: trojan
+  udp: true
+- alterId: 0
+  country: 🇯🇵JP
+  name: '340,378,440,494,536,537,538,559,574,580|🇸🇬 新加坡|@stairnode #4'
+  network: tcp
+  password: 61d8077bfb174e171b8283f155a555ad
+  port: 544
+  server: 160.16.70.180
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  country: 🇯🇵JP
+  name: '340,378,440,494,507,536,537,538,559,574,580|🇸🇬 新加坡2|@stairnode #4'
+  network: tcp
+  password: 61d8077bfb174e171b8283f155a555ad
+  port: 544
+  server: 160.16.150.76
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+  tls: true
+  type: trojan
+  udp: true
+- name: '340,378,489,494,536,537,553,559,580|🇸🇬 新加坡3|@stairnode #4'
+  network: tcp
+  password: BxceQaOe
+  port: 3579
+  server: 3.112.254.143
+  skip-cert-verify: true
+  sni: t.me%252Fripaojiedian
   type: trojan
   udp: true
 - name: 356|🇸🇬1 |  9.0MB/s
@@ -2263,8 +2296,7 @@ proxies:
       Host: 180.215.130.123
     path: /
 - cipher: chacha20-ietf-poly1305
-  country: 🇺🇸US
-  name: 378,537,538,548|🇺🇸US_208
+  name: 378,537,538|🇸🇬SG-167.150.100.115-0368 | 10...
   password: pJtDFXMfdW9VNdJpaf4e2LfFkXdWgxrz
   port: 443
   server: 167.150.100.115
@@ -3452,7 +3484,7 @@ proxies:
   country: 🇬 SG
   h2-opts: {}
   http-opts: {}
-  name: 435,437|🇸🇬 SG_163
+  name: 435,437|🇸🇬 SG_153
   network: none
   port: 43425
   server: 8.210.248.133
@@ -3460,21 +3492,6 @@ proxies:
   tls: false
   type: vmess
   uuid: aa10afb0-f913-4343-9c69-bc797fcba2db
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  country: 🇸🇬SG
-  h2-opts: {}
-  http-opts: {}
-  name: '435,437,548,559|🇸🇬 SG_163 #1'
-  network: none
-  port: 52752
-  server: 8.218.105.196
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 925bdbf5-72be-4437-bebf-441c61089f6b
   ws-path: /
 - name: 453|🇸🇬 新加坡|@stairnode
   password: 253bc477d4e43c209f2d427272968280
@@ -3490,21 +3507,39 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: '459,580|SG新加坡(mibei77.com 米贝节点分享) #6'
-  network: ws
+- alpn:
+  - ''
+  client-fingerprint: random
+  flow: xtls-rprx-vision
+  grpc-opts:
+    grpc-service-name: ''
+  name: '456,507,580|SG VLESS-185 | free-nodes #1'
+  network: tcp
   port: 443
-  server: 8.223.63.150
-  servername: ww20.sgxaniu.qzz.io
+  server: s420.okgfw.top
+  servername: u726759ubca3s420.okgfw.top
   tls: true
   type: vless
-  uuid: e258977b-e413-4718-a3af-02d75492c349
+  uuid: 7ea4c8e3-0f76-3231-b5c8-27fed8bbe326
   ws-opts:
     headers:
-      Host: ww20.sgxaniu.qzz.io
+      Host: s420.okgfw.top
+    path: ''
+- name: 459|新加坡(yudou789.top 玉豆免费节点)
+  network: ws
+  port: 39738
+  server: 8.218.94.13
+  servername: danfeng.ye.gs
+  tls: true
+  type: vless
+  uuid: 00a85603-d8c6-437d-a8bd-ea521107bd87
+  ws-opts:
+    headers:
+      Host: danfeng.ye.gs
     path: '%2F%3Fed%3D2560'
 - alterId: 32
   cipher: auto
-  name: '459,494,559,580|SG新加坡(mibei77.com 米贝节点分享) #5'
+  name: '459,494,544,559,580|SG新加坡(mibei77.com 米贝节点分享) #3'
   network: ws
   port: '443'
   server: vc.fly.dev
@@ -3516,18 +3551,6 @@ proxies:
     headers:
       Host: vc.fly.dev
     path: /vc
-- name: '459|新加坡(yudou789.top 玉豆免费节点) #2'
-  network: ws
-  port: 443
-  server: 43.160.253.51
-  servername: ww1.sgxaniu.qzz.io
-  tls: true
-  type: vless
-  uuid: e258977b-e413-4718-a3af-02d75492c349
-  ws-opts:
-    headers:
-      Host: ww1.sgxaniu.qzz.io
-    path: '%2F%3Fed%3D2560'
 - name: 460|新加坡_新加坡
   network: ws
   port: 32101
@@ -5026,14 +5049,14 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
-- name: '476,481,548|HK香港(mibei77.com 米贝节点分享) #13'
+- name: '476,481|SG新加坡(mibei77.com 米贝节点分享) 2 #1'
   password: 381f2e86233720eacda26d50e9aa26da
   port: 443
   server: 58.152.110.104
   skip-cert-verify: true
   type: trojan
   udp: true
-- name: '479,484,494|🔥Join+Telegram:@Farah_VPN🟣 #2961'
+- name: '479,484,494|🔥Join+Telegram:@Farah_VPN🟣 #852'
   password: 381f2e86233720eacda26d50e9aa26da
   port: 3901
   server: 202.181.103.246
@@ -5070,24 +5093,6 @@ proxies:
   sni: fq-sg.mxtn.net
   tls: false
   type: hysteria2
-- alpn:
-  - ''
-  client-fingerprint: random
-  flow: xtls-rprx-vision
-  grpc-opts:
-    grpc-service-name: ''
-  name: '507,580|SG VLESS-185 | free-nodes #1'
-  network: tcp
-  port: 443
-  server: s420.okgfw.top
-  servername: u726759ubca3s420.okgfw.top
-  tls: true
-  type: vless
-  uuid: 7ea4c8e3-0f76-3231-b5c8-27fed8bbe326
-  ws-opts:
-    headers:
-      Host: s420.okgfw.top
-    path: ''
 - cipher: aes-256-cfb
   name: '513,517,578|1|_SG_ #2'
   password: amazonskr05
@@ -5189,7 +5194,7 @@ proxies:
     path: /@Marisa_kristi
 - client-fingerprint: randomized
   delay: 485
-  name: 528,553|yandex-3236
+  name: 528,553|yandex-169
   network: ws
   port: 2095
   server: www.shopify.com
@@ -5204,7 +5209,7 @@ proxies:
     path: /
 - client-fingerprint: randomized
   delay: 800
-  name: 528,553|yandex-3237
+  name: 528,553|yandex-170
   network: ws
   port: 2095
   server: www.wto.org
@@ -5219,7 +5224,7 @@ proxies:
     path: /
 - client-fingerprint: randomized
   delay: 562
-  name: 528,553|yandex-3238
+  name: 528,553|yandex-171
   network: ws
   port: 2095
   server: ns.cloudflare.com
@@ -5234,7 +5239,7 @@ proxies:
     path: /
 - client-fingerprint: randomized
   delay: 571
-  name: 528,553|yandex-3239
+  name: 528,553|yandex-172
   network: ws
   port: 2095
   server: openai.com
@@ -5281,49 +5286,6 @@ proxies:
   server: pop.09d21837-9b89-4490-92bf-eabf449e3321.heima360.cc
   skip-cert-verify: false
   type: trojan
-- alterId: 32
-  cipher: auto
-  name: '548|SG新加坡(mibei77.com 米贝节点分享) #2'
-  network: ws
-  port: 443
-  server: vc.fly.dev
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 35379219-6535-4f2e-a4fe-3e44f61e0eee
-  ws-headers:
-    Host: vc.fly.dev
-  ws-path: /vc
-- cipher: chacha20-ietf-poly1305
-  name: 548|disney_SG
-  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
-  port: 990
-  server: 38.89.142.56
-  type: ss
-- alterId: 0
-  cipher: auto
-  country: 🇭🇰HK
-  h2-opts: {}
-  http-opts: {}
-  name: '548|disney_SG #2'
-  port: 35034
-  server: 165.154.195.38
-  skip-cert-verify: true
-  type: vmess
-  uuid: 959a8caf-4cea-43d0-a548-3628e7ddfafc
-- alterId: 0
-  cipher: auto
-  country: 🇸🇬SG
-  h2-opts: {}
-  http-opts: {}
-  name: 548|🇸🇬SG_185
-  network: none
-  port: 51000
-  server: 8.217.90.175
-  skip-cert-verify: true
-  type: vmess
-  uuid: 6c82a994-b6ba-48ca-f2ed-11288fe4913b
 - cipher: chacha20-ietf-poly1305
   name: 558|0|🇬加 01 | 1x SG
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
@@ -5383,7 +5345,7 @@ proxies:
   server: gg21.hangfengjiasu.com
   tfo: false
   type: ss
-- name: '559|🇸🇬 新加坡3|@stairnode #3'
+- name: '559|🇸🇬 新加坡3|@stairnode #2'
   password: BxceQaOe
   port: 3127
   server: 54.250.46.5
@@ -5493,6 +5455,16 @@ proxies:
     path: '%2F'
 - alterId: 0
   cipher: auto
+  name: 559|🇸🇬 SG_163
+  network: none
+  port: 52752
+  server: 8.218.105.196
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 925bdbf5-72be-4437-bebf-441c61089f6b
+- alterId: 0
+  cipher: auto
   name: 559|新加坡_011104027
   network: ws
   port: '443'
@@ -5519,137 +5491,6 @@ proxies:
     headers:
       Host: ovh-sg.rtxconfigz.com
     path: /t.me/RtxEhi
-- cipher: chacha20-ietf-poly1305
-  name: 566|🇸🇬 新加坡 | SGP
-  password: 623787ef-7786-4572-abf5-0180892558aa
-  port: 21318
-  server: ncgdyd.gdsxrk.com
-  type: ss
-  udp: true
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 566|🇸🇬 新加坡 | SGP 2
-  network: tcp
-  port: 30401
-  reality-opts:
-    public-key: ZeXA8rcM3TV466jK83J157gY7U2JTI9KP9nmn_Nbawk
-    short-id: 105a652c
-  server: freea.glyphara.com
-  servername: learn.microsoft.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 362b5d67-9130-4b3b-9e82-26038efcfedd
-- auth: pro@_awpOFPcjwKiqMPkhg5uuEGU
-  name: 566|🇸🇬 新加坡 | SGP 3
-  password: pro@_awpOFPcjwKiqMPkhg5uuEGU
-  port: 443
-  server: starlink-sg1.2513142.xyz
-  skip-cert-verify: true
-  sni: www.cloudflare.com
-  type: hysteria2
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 566|🇸🇬 新加坡 | SGP 4
-  password: 623787ef-7786-4572-abf5-0180892558aa
-  port: 19217
-  server: ncgddx.gdsxrk.com
-  type: ss
-  udp: true
-- name: 566|🇸🇬 新加坡 | SGP 5
-  password: 5030748a-7432-42aa-bdfc-0ef5f5f6aa1e
-  port: 50032
-  server: v1dytv.lalakw.com
-  skip-cert-verify: true
-  sni: v1dytv.lalakw.com
-  type: trojan
-  udp: true
-- auth: e3c9c176-7ce6-40c8-9206-ff5ea72b1f0a
-  name: 566|🇸🇬 新加坡 | SGP 6
-  password: e3c9c176-7ce6-40c8-9206-ff5ea72b1f0a
-  port: 21593
-  server: fq-sg.mxtn.net
-  skip-cert-verify: false
-  type: hysteria2
-  udp: true
-- auth: pro@_awpOFPcjwKiqMPkhg5uuEGU
-  name: 566|🇸🇬 新加坡 | SGP 7
-  password: pro@_awpOFPcjwKiqMPkhg5uuEGU
-  port: 443
-  server: starlink-sg2.2513142.xyz
-  skip-cert-verify: true
-  sni: www.cloudflare.com
-  type: hysteria2
-  udp: true
-- auth: e3c9c176-7ce6-40c8-9206-ff5ea72b1f0a
-  name: 566|🇸🇬 新加坡 | SGP 8
-  password: e3c9c176-7ce6-40c8-9206-ff5ea72b1f0a
-  port: 21136
-  server: fq-sg.mxtn.net
-  skip-cert-verify: false
-  type: hysteria2
-  udp: true
-- auth: e3c9c176-7ce6-40c8-9206-ff5ea72b1f0a
-  name: 566|🇸🇬 新加坡 | SGP 9
-  password: e3c9c176-7ce6-40c8-9206-ff5ea72b1f0a
-  port: 21281
-  server: fq-sg.mxtn.net
-  skip-cert-verify: false
-  type: hysteria2
-  udp: true
-- auth: e3c9c176-7ce6-40c8-9206-ff5ea72b1f0a
-  name: 566|🇸🇬 新加坡 | SGP 10
-  password: e3c9c176-7ce6-40c8-9206-ff5ea72b1f0a
-  port: 21080
-  server: fq-sg.mxtn.net
-  skip-cert-verify: false
-  type: hysteria2
-  udp: true
-- name: 566|🇸🇬 新加坡 | SGP 11
-  password: pro@_awpOFPcjwKiqMPkhg5uuEGU
-  port: 20001
-  server: starlink-sg5.2513142.xyz
-  skip-cert-verify: true
-  sni: www.cloudflare.com
-  type: trojan
-  udp: true
-- name: 566|🇸🇬 新加坡 | SGP 12
-  password: pro@_awpOFPcjwKiqMPkhg5uuEGU
-  port: 20000
-  server: starlink-sg1.2513142.xyz
-  skip-cert-verify: true
-  sni: www.cloudflare.com
-  type: trojan
-  udp: true
-- name: 566|🇸🇬 新加坡 | SGP 13
-  password: pro@_awpOFPcjwKiqMPkhg5uuEGU
-  port: 20001
-  server: starlink-sg3.2513142.xyz
-  skip-cert-verify: true
-  sni: www.cloudflare.com
-  type: trojan
-  udp: true
-- name: 566|🇸🇬 新加坡 | SGP 14
-  network: ws
-  port: 443
-  server: 104.18.37.172
-  servername: cf.ldy2023.eu.org
-  tls: true
-  type: vless
-  udp: true
-  uuid: 80d6cbef-6f0d-4e80-b9d0-d000d052119f
-  ws-opts:
-    headers:
-      Host: cf.ldy2023.eu.org
-    path: /?ed=2560
-- auth: e3c9c176-7ce6-40c8-9206-ff5ea72b1f0a
-  name: 566|🇸🇬 新加坡 | SGP 15
-  password: e3c9c176-7ce6-40c8-9206-ff5ea72b1f0a
-  port: 21759
-  server: fq-sg.mxtn.net
-  skip-cert-verify: false
-  type: hysteria2
-  udp: true
 - alterId: 0
   cipher: auto
   name: '577|新加坡NO.1 #4'
@@ -5705,6 +5546,18 @@ proxies:
     headers:
       Host: gw.alicdn.com
     path: /CAT
+- name: '580|SG新加坡(mibei77.com 米贝节点分享) #4'
+  network: ws
+  port: 443
+  server: 8.223.63.150
+  servername: ww20.sgxaniu.qzz.io
+  tls: true
+  type: vless
+  uuid: e258977b-e413-4718-a3af-02d75492c349
+  ws-opts:
+    headers:
+      Host: ww20.sgxaniu.qzz.io
+    path: '%2F%3Fed%3D2560'
 - client-fingerprint: randomized
   name: 583|TS-13-02-SG
   network: ws
