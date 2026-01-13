@@ -84,6 +84,20 @@ proxies:
   type: vmess
   udp: true
   uuid: 21629fa5-8a06-4c2c-bdaa-85a6fe5222d5
+- alterId: 0
+  cipher: auto
+  name: 255|🇫🇷 法国
+  network: ws
+  port: 30837
+  server: v37.heduian.link
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: ocbc.com
+    path: /oooo
 - cipher: aes-256-cfb
   name: '356,378,537|🇳🇱NL-51.15.27.48-8588 #1'
   password: f8f7aCzcPKbsF8p3
@@ -134,15 +148,21 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 356|🇫🇷9 |  4.3MB/s
+  country: 🇫🇷FR
+  h2-opts: {}
+  http-opts: {}
+  name: 356,548|🇫🇷FR_50
   network: ws
   port: 2082
   server: 5.196.29.123
+  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
   skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
   ws-opts:
+    headers:
+      HOST: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
     path: /
 - cipher: aes-256-gcm
   name: '356,378,537|🇷FR-149.202.82.172-5953 #1'
@@ -432,14 +452,15 @@ proxies:
   ws-opts:
     path: /vmess
 - cipher: aes-256-cfb
-  name: 378,537,538|🇫🇷FR-51.159.106.175-0243 | 25....
+  country: 🇫🇷FR
+  name: 378,537,538,548|🇫🇷FR_49
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 51.159.106.175
   type: ss
 - alterId: 0
   cipher: auto
-  name: '378,536,537,538,559|🇧🇪 BE_24 #1'
+  name: '378,536,537,538,559|🇧🇪 BE_24 #2'
   network: ws
   port: 443
   server: 57.128.189.240
@@ -468,7 +489,8 @@ proxies:
       Host: ''
     path: /
 - cipher: aes-256-cfb
-  name: 378,537,538|🇫🇷FR-195.154.119.77-0297 | 22....
+  country: 🇫🇷FR
+  name: 378,537,538,548|🇫🇷FR_48
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 195.154.119.77
@@ -724,12 +746,15 @@ proxies:
     path: /ws
 - alterId: 0
   cipher: auto
-  name: '378,437,494,536,537|🇷FR-57.128.189.240-4997 #1'
+  country: 🇧🇪BE
+  h2-opts: {}
+  http-opts: {}
+  name: 378,437,494,536,537,548|🇧🇪BE_36
   network: ws
   port: 443
   server: 57.128.189.240
   servername: ''
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
@@ -787,12 +812,14 @@ proxies:
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     path: /linkvws
-- name: '378,436,536,537|🇫🇷FR-51.195.202.129-5021 #1'
+- country: 🇷FR
+  name: '378,435,436,536,537|🇫🇷FR-51.195.202.129-5021 #1'
   password: d150c8c3-a667-4d3e-843c-739f8558c7d2
   port: 443
   server: uk-full.privateip.net
   skip-cert-verify: false
   type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: '378,536,537|🇷FR-146.59.55.50-5084 #1'
@@ -1567,54 +1594,28 @@ proxies:
   skip-cert-verify: false
   sni: trj.rollingnext.co.uk
   type: trojan
-- name: '456,559|FR法国(mibei77.com 米贝节点分享) #16'
+- alterId: 0
+  cipher: auto
+  country: 🇷 FR
+  h2-opts: {}
+  http-opts: {}
+  name: 435| FR_44
   network: ws
-  port: 8443
-  server: 54.36.98.30
-  servername: danfeng.ye.gs
+  port: 443
+  server: 91.134.8.101
+  skip-cert-verify: true
   tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-path: /linkvws
+- name: '456,494,507,559,580|FR VLESS-45 | free-nodes #1'
+  port: 2087
+  server: 188.114.98.224
+  tls: false
   type: vless
-  uuid: 00a85603-d8c6-437d-a8bd-ea521107bd87
+  uuid: 8443822d-6b68-4af2-d096-c03207ed880d
   ws-opts:
-    headers:
-      Host: danfeng.ye.gs
-    path: '%2F%3Fed%3D2560'
-- name: '456,559|FR法国(mibei77.com 米贝节点分享) #15'
-  network: ws
-  port: 2053
-  server: 51.38.51.14
-  servername: danfeng.ye.gs
-  tls: true
-  type: vless
-  uuid: 00a85603-d8c6-437d-a8bd-ea521107bd87
-  ws-opts:
-    headers:
-      Host: danfeng.ye.gs
-    path: '%2F%3Fed%3D2560'
-- name: '456,559|FR法国(mibei77.com 米贝节点分享) #17'
-  network: ws
-  port: 8443
-  server: 104.17.102.95
-  servername: protkskd.webn.cc
-  tls: true
-  type: vless
-  uuid: 3ce3d565-3a9c-65dc-acdd-2d299ed15936
-  ws-opts:
-    headers:
-      Host: protkskd.webn.cc
-    path: '%2F'
-- name: '456,559|FR法国(mibei77.com 米贝节点分享) #18'
-  network: ws
-  port: 8443
-  server: 104.19.150.163
-  servername: protkskd.webn.cc
-  tls: true
-  type: vless
-  uuid: 3ce3d565-3a9c-65dc-acdd-2d299ed15936
-  ws-opts:
-    headers:
-      Host: protkskd.webn.cc
-    path: '%2F'
+    path: '%2Frahh'
 - alterId: 2
   cipher: auto
   name: '458,478,483|🇫🇷 法国 09 #2'
@@ -1861,7 +1862,7 @@ proxies:
     headers:
       Host: snippets.kkii.eu.org
     path: Telegram🇨🇳WangCai2
-- name: '476,481|FR法国(mibei77.com 米贝节点分享) #14'
+- name: '476,481|FR法国(mibei77.com 米贝节点分享) #1'
   password: 5a2c16f9
   port: 2096
   server: 94.140.0.238
@@ -1931,7 +1932,7 @@ proxies:
   server: pop.b1c7d2ec-e636-4521-a9f7-abb10044e3a5.heima360.cc
   skip-cert-verify: false
   type: trojan
-- name: 559|法国 上法兰西大区
+- name: '559,568|🇫🇷 法国 | FRA #2'
   password: a516b408-e06d-4278-9e6d-5271571ecab5
   port: 20248
   server: 51.75.118.149
@@ -1939,7 +1940,7 @@ proxies:
   sni: dash.cloudflare.com
   tls: false
   type: hysteria2
-- name: 559|🇫🇷FR_48
+- name: '559|🇫🇷FR_48 #1'
   password: d150c8c3-a667-4d3e-843c-739f8558c7d2
   port: 443
   server: 198.244.190.189
@@ -1951,6 +1952,30 @@ proxies:
   server: 212.47.245.217
   sni: doufeng.pages.dev
   type: trojan
+- name: '559|FR法国(mibei77.com 米贝节点分享) #2'
+  network: ws
+  port: 2053
+  server: 51.38.51.14
+  servername: danfeng.ye.gs
+  tls: true
+  type: vless
+  uuid: 00a85603-d8c6-437d-a8bd-ea521107bd87
+  ws-opts:
+    headers:
+      Host: danfeng.ye.gs
+    path: '%2F%3Fed%3D2560'
+- name: '559|FR法国(mibei77.com 米贝节点分享) #3'
+  network: ws
+  port: 8443
+  server: 54.36.98.30
+  servername: danfeng.ye.gs
+  tls: true
+  type: vless
+  uuid: 00a85603-d8c6-437d-a8bd-ea521107bd87
+  ws-opts:
+    headers:
+      Host: danfeng.ye.gs
+    path: '%2F%3Fed%3D2560'
 - client-fingerprint: firefox
   name: '559|🇫🇷_法国 #2'
   network: tcp
@@ -1975,6 +2000,30 @@ proxies:
     headers:
       Host: sni.111000.de5.net
     path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2540WangCai2'
+- name: '559|FR法国(mibei77.com 米贝节点分享) #4'
+  network: ws
+  port: 8443
+  server: 104.17.102.95
+  servername: protkskd.webn.cc
+  tls: true
+  type: vless
+  uuid: 3ce3d565-3a9c-65dc-acdd-2d299ed15936
+  ws-opts:
+    headers:
+      Host: protkskd.webn.cc
+    path: '%2F'
+- name: '559|FR法国(mibei77.com 米贝节点分享) #5'
+  network: ws
+  port: 8443
+  server: 104.19.150.163
+  servername: protkskd.webn.cc
+  tls: true
+  type: vless
+  uuid: 3ce3d565-3a9c-65dc-acdd-2d299ed15936
+  ws-opts:
+    headers:
+      Host: protkskd.webn.cc
+    path: '%2F'
 - grpc-opts:
     grpc-service-name: ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
   name: 559|🇫🇷[openproxylist.com] vless-FR
@@ -2024,6 +2073,25 @@ proxies:
     headers:
       Host: pelang.org
     path: /linkvws
+- name: '566,568|🇫🇷 法国 | FRA #1'
+  password: telegram-id-directvpn
+  port: 22223
+  server: 52.47.67.33
+  skip-cert-verify: true
+  sni: trojan.burgerip.co.uk
+  type: trojan
+  udp: true
+- alpn:
+  - h3
+  auth: a516b408-e06d-4278-9e6d-5271571ecab5
+  name: 566|🇫🇷 法国 | FRA 2
+  password: a516b408-e06d-4278-9e6d-5271571ecab5
+  port: 20248
+  server: 51.75.118.149
+  skip-cert-verify: true
+  sni: dash.cloudflare.com
+  type: hysteria2
+  udp: true
 - alterId: 0
   cipher: auto
   name: '577|法国1 #4'
