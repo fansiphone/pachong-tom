@@ -128,6 +128,14 @@ proxies:
   type: vmess
   udp: true
   uuid: 09216880-6484-4c36-89b1-3fe4093b47b6
+- cipher: chacha20-ietf-poly1305
+  delay: 1740
+  name: 96,343,528,553|yandex-2724
+  password: 3b72ad57035835c7
+  port: 49696
+  server: 38.54.93.66
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
   name: 119|🇭🇰 No.895_HK_x0.50_Azure_香港@lr...
@@ -278,6 +286,15 @@ proxies:
     headers:
       Host: download.windowsupdate.com
     path: /download
+- alterId: 0
+  cipher: auto
+  name: '127,426|🇭🇰 HK_1|5.3MB/s|YT-HK|NF #1'
+  port: 40374
+  server: 8.210.184.105
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 36b76373-7a4f-4669-9113-7d247bcf2704
 - alterId: 0
   cipher: auto
   name: '128,430|香港NO.2 #1'
@@ -830,30 +847,48 @@ proxies:
     headers:
       Host: d1th2ch215a6xr.cloudfront.net
     path: /stream?ed=2048
-- name: 255|HK
+- name: 255|🇭🇰 HK
   network: ws
   port: 65056
   server: 202.181.24.70
+  skip-cert-verify: true
+  tfo: false
   tls: false
   type: vless
   uuid: c9d0ddb5-f2c1-4111-a92d-9798a2348a56
   ws-opts:
-    path: '%2Fyz'
+    path: /yz
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '255|HK #1'
+  name: 255|🇭🇰 HK 2
   network: tcp
   port: 46716
   reality-opts:
     public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
   server: agaungzhou01.bumbleshrimp.com
   servername: www.nvidia.com
-  tls: false
+  skip-cert-verify: true
+  tfo: false
+  tls: true
   type: vless
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- alterId: 0
+  cipher: none
+  name: 255|🇭🇰 HK-Eons_Data_Communications
+  network: ws
+  port: 443
+  server: www.visa.com.tw
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: df7a96e2-c663-48ed-9713-1c144705f79e
+  ws-opts:
+    headers:
+      Host: ee-boston-therapist-cleaning.trycloudflare.com
+    path: /vmess-argo?ed=2048
 - client-fingerprint: safari
   flow: xtls-rprx-vision
-  name: '255|HK #2'
+  name: 255|🇭🇰 HK 3
   network: tcp
   port: 25791
   reality-opts:
@@ -861,12 +896,14 @@ proxies:
     short-id: 57d9de10de16538d
   server: 34.92.65.82
   servername: cloudreve.mnm.pp.ua
-  tls: false
+  skip-cert-verify: true
+  tfo: false
+  tls: true
   type: vless
   uuid: 711007f1-9cdf-4fd9-b5d4-d67aee173281
 - alterId: 2
   cipher: auto
-  name: '306,489,515,516,548,553,556,579,582|🇭🇰 香港|@stairnode #3'
+  name: '306,489,515,516,553,556,579,582|🇭🇰 香港|@stairnode #2'
   port: 30807
   server: v10.hdacd.com
   skip-cert-verify: false
@@ -875,8 +912,7 @@ proxies:
   udp: true
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - alterId: 0
-  country: 🇭🇰HK
-  name: '306,340,378,440,454,456,459,489,494,502,507,514,515,516,523,524,536,537,538,543,544,548,551,553,556,557,559,574,579,580,582,717|节点日期：01-13
+  name: '306,340,378,454,456,459,489,494,502,507,514,515,516,523,524,536,537,538,543,544,551,553,556,557,559,574,579,580,582,717|节点日期：01-13
     #1'
   network: tcp
   password: 61d8077bfb174e171b8283f155a555ad
@@ -887,20 +923,16 @@ proxies:
   tls: true
   type: trojan
   udp: true
-- alterId: 0
-  name: '306,340,454,494,502,514,515,516,536,543,544,548,551,556,557,559,574,579,580,582|🇭🇰
-    香港4|@stairnode #7'
+- name: '306,340,454,494,502,514,515,516,536,543,544,551,556,557,559,579,580,582|🇭🇰
+    香港4|@stairnode #6'
   network: tcp
   password: BxceQaOe
   port: 443
   server: 58.152.25.130
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
-  tls: true
   type: trojan
-  udp: true
-- alterId: 0
-  name: '306,340,454,494,502,514,515,516,536,543,544,548,551,553,556,557,559,567,574,579,580,582,585,586|HK_speednode_0017
+- name: '306,340,454,494,502,507,514,515,516,536,543,544,551,553,556,557,559,567,579,580,582,585,586|HK_speednode_0017
     #3'
   network: tcp
   password: BxceQaOe
@@ -908,11 +940,10 @@ proxies:
   server: 58.152.53.219
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
-  tls: true
   type: trojan
   udp: true
-- name: '306,340,378,454,494,502,514,515,516,536,537,543,544,548,551,556,557,559,579,580,582|🇸🇬
-    新加坡3|@stairnode #8'
+- name: '306,340,378,454,494,502,514,515,516,536,537,543,544,551,556,557,559,579,580,582|🇸🇬
+    新加坡3|@stairnode #7'
   network: tcp
   password: BxceQaOe
   port: 381
@@ -920,8 +951,8 @@ proxies:
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
-- name: '306,340,378,454,494,502,514,515,516,536,537,543,544,548,551,556,557,559,568,579,580,582|🇺🇸
-    美国3|@stairnode #9'
+- name: '306,340,378,454,494,502,514,515,516,536,537,543,544,551,556,557,559,579,580,582|🇺🇸
+    美国3|@stairnode #8'
   network: tcp
   password: BxceQaOe
   port: 2173
@@ -931,7 +962,11 @@ proxies:
   type: trojan
 - alterId: 2
   cipher: auto
-  name: '306,340,494,502,514,515,516,543,544,551,557,559|12|🇭🇰 香港|@ripaojiedian #3'
+  country: 🇭🇰HK
+  h2-opts: {}
+  http-opts: {}
+  name: '306,340,440,494,502,514,515,516,543,544,551,557,559|12|🇭🇰 香港|@ripaojiedian
+    #3'
   network: tcp
   port: 30807
   server: v10.hdacd.com
@@ -943,6 +978,1265 @@ proxies:
   ws-headers:
     Host: v10.hdacd.com
   ws-path: /
+- alterId: 0
+  cipher: auto
+  name: '306,459,502,523,524,551,559,717|【机场推荐：https://a0a.xyz/】2 #1'
+  network: ws
+  port: '443'
+  server: sv2.wy888.us
+  servername: ''
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: cda69512-ad1b-4f85-b547-b1d545e7cc90
+  ws-opts:
+    headers:
+      Host: sv2.wy888.us
+    path: /vmess
+- name: '306,502,551|HK4｜家宽｜高风险 (黑名单) #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%2520%2520%2520%2520%2520%2520%2520%255BBy%2520EbraSha%255D%2520b2n.ir%252Fv2ray-configs%2520%257C%2520127%2520'
+  type: trojan
+- name: '306,502,551|HK5｜家宽｜非常安全 #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%252520%25255BBy%252520DukeMehdi%25255D%252520trojan-HK%252520'
+  type: trojan
+- name: '306,502,551|HK6｜家宽｜非常安全 #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: t.me%2525252Fripaojiedian
+  type: trojan
+- name: '306,502,551|HK7｜家宽｜非常安全 #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%252B%252B%252B%252B%252B%252B%252B%255BBy%252BEbraSha%255D%252Bb2n.ir%252Fv2ray-configs%252B'
+  type: trojan
+- name: '306,502,551|HK8｜家宽｜非常安全 #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%2520%2520%2520%2520%2520%2520%2520%255BBy%2520DukeMehdi%255D%2520b2n.ir%252Fv2ray-configs%2520%257C%2520166%2520'
+  type: trojan
+- name: '306,502,551|HK9｜家宽｜非常安全 #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%2525EF%2525BF%2525BD%2525EF%2525BF%2525BD%2525EF%2525BF%2525BD%2525EF%2525BF%2525BD%2525EF%2525BF%2525BD%2525EF%2525BF%2525BD%252520%25255BBy%252520EbraSha%25255D%252520b2n.ir%25252Fv2ray-configs%252520%25257C%252520945%252520'
+  type: trojan
+- name: '306,502,551|HK10｜家宽｜非常安全 #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%2525EF%2525BF%2525BD%2525EF%2525BF%2525BD%2525EF%2525BF%2525BD%2525EF%2525BF%2525BD%2525EF%2525BF%2525BD%2525EF%2525BF%2525BD%252520%25255BBy%252520DukeMehdi%25255D%252520b2n.ir%25252Fv2ray-configs%252520%25257C%25252017%252520'
+  type: trojan
+- name: '306,502,551|HK11｜家宽｜非常安全 #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%25F0%259F%2594%2592%2520%255BBy%2520DukeMehdi%255D%2520b2n.ir%252Fv2ray-configs%2520%257C%2520382%2520'
+  type: trojan
+- name: '306,502,551|HK12｜家宽｜非常安全 #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%2520%2520%2520%2520%2520%2520%2520%255BBy%252BDukeMehdi%255D%252Bb2n.ir%252Fv2ray-configs%2520'
+  type: trojan
+- name: '306,378,502,536,537,551|HK13｜家宽｜非常安全 #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%252B%252B%252B%252B%252B%252B%252B%255BBy%252BDukeMehdi%255D%252Btrojan-HK%252B'
+  type: trojan
+- name: '306,502,551|HK14｜家宽｜非常安全 #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%252520%252520%252520%252520%252520%252520%252520%25255BBy%252520DukeMehdi%25255D%25252Bb2n.ir%25252Fv2ray-configs%252520%25257C%252520789%252520'
+  type: trojan
+- name: '306,502,551|HK15｜家宽｜非常安全 #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%25F0%259F%2594%2592%2520%255BBy%2520DukeMehdi%255D%2520b2n.ir%252Fv2ray-configs%2520%257C%252054%2520'
+  type: trojan
+- name: '306,502,551|HK16｜家宽｜非常安全 #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%2520%2520%2520%2520%2520%2520'
+  type: trojan
+- name: '306,502,551|HK17｜家宽｜高风险 (黑名单) #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%25F0%259F%2594%2592%2520%255BBy%2520DukeMehdi%255D%2520b2n.ir%252Fv2ray-configs%2520%257C%2520402%2520'
+  type: trojan
+- name: '306,502,551|HK18｜家宽｜非常安全 #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%2520%252B%255BBy%252BDukeMehdi%255D%252Btrojan-HK%252B'
+  type: trojan
+- name: '306,502,551|HK19｜家宽｜非常安全 #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%2525EF%2525BF%2525BD%2525EF%2525BF%2525BD%2525EF%2525BF%2525BD%2525EF%2525BF%2525BD%2525EF%2525BF%2525BD%2525EF%2525BF%2525BD%252520%25255BBy%252520DukeMehdi%25255D%252520b2n.ir%25252Fv2ray-configs%252520%25257C%252520402%252520'
+  type: trojan
+- name: '306,378,502,536,537,551|HK20｜家宽｜非常安全 #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%252520%252520%252520%252520%252520%252520%252520%25255BBy%252520DukeMehdi%25255D%252520b2n.ir%25252Fv2ray-configs%252520%25257C%252520945%252520'
+  type: trojan
+- name: '306,502,551|HK21｜家宽｜非常安全 #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%2525EF%2525BF%2525BD%2525EF%2525BF%2525BD%2525EF%2525BF%2525BD%2525EF%2525BF%2525BD%2525EF%2525BF%2525BD%2525EF%2525BF%2525BD%25252B%25255BBy%25252BEbraSha%25255D%25252Btrojan-HK%25252B'
+  type: trojan
+- name: '306,502,551|HK22｜家宽｜非常安全 #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%2520%255BBy%2520EbraSha%255D%2520b2n.ir%252Fv2ray-configs%2520%257C%2520934%2520'
+  type: trojan
+- name: '306,502,551|HK23｜家宽｜非常安全 #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%252B%255BBy%252BEbraSha%255D%252Bb2n.ir%252Fv2ray-configs%252B%257C%252B127%252B'
+  type: trojan
+- name: '306,502,551|HK24｜家宽｜非常安全 #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%2520%255BBy%2520DukeMehdi%255D%2520b2n.ir%252Fv2ray-configs%2520%257C%2520382%2520'
+  type: trojan
+- name: '306,502,551|HK25｜家宽｜非常安全 #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%2520%2520%2520%2520%2520%2520%2520%255BBy%2520EbraSha%255D%2520b2n.ir%252Fv2ray-configs%2520%257C%252088%2520'
+  type: trojan
+- name: '306,502,551|HK26｜家宽｜非常安全 #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%2520%2520%2520%2520%2520%2520%2520%255BBy%2520EbraSha%255D%2520b2n.ir%252Fv2ray-configs%2520%257C%2520761%2520'
+  type: trojan
+- name: '306,502,551|HK27｜家宽｜非常安全 #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%252B%252B%252B%252B%252B%252B%252B%255BBy%252BEbraSha%255D%252Bb2n.ir%252Fv2ray-configs%252B%257C%252B761%252B'
+  type: trojan
+- name: '306,502,551|HK28｜家宽｜非常安全 #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%252B%255BBy%252BDukeMehdi%255D%252Btrojan-HK%252B'
+  type: trojan
+- name: '306,502,551|HK171｜家宽｜高风险 (黑名单) #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: 58.152.46.60
+  type: trojan
+- name: '306,502,551|HK30｜家宽｜非常安全 #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%2520%2520%2520%2520%2520%2520%2520%255BBy%2520EbraSha%255D%2520'
+  type: trojan
+- name: '306,502,551|HK31｜家宽｜非常安全 #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%2520%255BBy%2520DukeMehdi%255D%2520b2n.ir%252Fv2ray-configs%2520%257C%2520934%2520'
+  type: trojan
+- name: '306,502,551|HK32｜家宽｜非常安全 #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%2520%2520%2520%2520%2520%2520%2520%255BBy%2520DukeMehdi%255D%2520b2n.ir%252Fv2ray-configs%2520%257C%2520868%2520'
+  type: trojan
+- name: '306,502,551|HK33｜家宽｜非常安全 #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%2525EF%2525BF%2525BD%2525EF%2525BF%2525BD%2525EF%2525BF%2525BD%2525EF%2525BF%2525BD%2525EF%2525BF%2525BD%2525EF%2525BF%2525BD%252520%25255BBy%252520EbraSha%25255D%252520b2n.ir%25252Fv2ray-configs%252520'
+  type: trojan
+- name: '306,502,551|HK34｜家宽｜非常安全 #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%2520%255BBy%2520EbraSha%255D%2520b2n.ir%252Fv2ray-configs%2520%257C%2520885%2520'
+  type: trojan
+- name: '306,502,551|HK35｜家宽｜高风险 (黑名单) #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%2525EF%2525BF%2525BD%2525EF%2525BF%2525BD%2525EF%2525BF%2525BD%2525EF%2525BF%2525BD%2525EF%2525BF%2525BD%2525EF%2525BF%2525BD%252520%25255BBy%252520DukeMehdi%25255D%252520'
+  type: trojan
+- name: '306,502,551|HK36｜家宽｜高风险 (黑名单) #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%2525EF%2525BF%2525BD%2525EF%2525BF%2525BD%2525EF%2525BF%2525BD%2525EF%2525BF%2525BD%2525EF%2525BF%2525BD%2525EF%2525BF%2525BD%252520%25255BBy%252520EbraSha%25255D%252520trojan-HK%252520'
+  type: trojan
+- name: '306,502,551|HK37｜家宽｜非常安全 #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%2525EF%2525BF%2525BD%2525EF%2525BF%2525BD%2525EF%2525BF%2525BD%2525EF%2525BF%2525BD%2525EF%2525BF%2525BD%2525EF%2525BF%2525BD%252520%25255BBy%252520EbraSha%25255D%252520'
+  type: trojan
+- name: '306,502,551|HK38｜家宽｜非常安全 #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%252B%252B%252B%252B%252B%252B%252B%255BBy%252BDukeMehdi%255D%252Bb2n.ir%252Fv2ray-configs%252B%257C%252B160%252B'
+  type: trojan
+- name: '306,502,551|HK39｜家宽｜非常安全 #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%25252B%25252B%25252B%25252B%25252B%25252B%25252B%25255BBy%25252BEbraSha%25255D%25252Btrojan-HK%25252B'
+  type: trojan
+- name: '306,502,551|HK40｜家宽｜非常安全 #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%250A%255BBy%2520EbraSha%255D%2520b2n.ir%252Fv2ray-configs%2520%257C%2520868%2520'
+  type: trojan
+- name: '306,502,551|HK41｜家宽｜非常安全 #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%2520%255BBy%2520DukeMehdi%255D%2520b2n.ir%252Fv2ray-configs%2520%257C%252088%2520'
+  type: trojan
+- name: '306,502,551|HK42｜家宽｜非常安全 #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%25F0%259F%2594%2592%2520%255BBy%2520EbraSha%255D%2520b2n.ir%252Fv2ray-configs%2520%257C%252078%2520'
+  type: trojan
+- name: '306,502,551|HK43｜家宽｜非常安全 #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%252B%255BBy%252BDukeMehdi%255D%252Bb2n.ir%252Fv2ray-configs%252B%257C%252B868%252B'
+  type: trojan
+- name: '306,502,551|HK44｜家宽｜高风险 (黑名单) #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%2520%255BBy%2520DukeMehdi%255D%2520b2n.ir%252Fv2ray-configs%2520%257C%2520166%2520'
+  type: trojan
+- alterId: 0
+  name: '306,494,502,551,574|🇭🇰HK香港4 #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%2520%255BBy%2520EbraSha%255D%2520trojan-HK%2520'
+  tls: true
+  type: trojan
+  udp: true
+- name: '306,502,551|HK46｜家宽｜非常安全 #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%252B%255BBy%252BEbraSha%255D%252Btrojan-HK%252B'
+  type: trojan
+- name: '306,502,551|HK47｜家宽｜非常安全 #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%250A%255BBy%2520EbraSha%255D%2520trojan-HK%2520'
+  type: trojan
+- name: '306,502,551|HK48｜家宽｜非常安全 #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%25F0%259F%2594%2592%2520%255BBy%2520EbraSha%255D%2520b2n.ir%252Fv2ray-configs%2520%257C%2520152%2520'
+  type: trojan
+- name: '306,502,551|HK49｜家宽｜高风险 (黑名单) #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%252520%25252B%25255BBy%25252BDukeMehdi%25255D%25252Btrojan-HK%25252B'
+  type: trojan
+- name: '306,502,551|HK50｜家宽｜非常安全 #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: t.me%252525252Fripaojiedian
+  type: trojan
+- name: '306,502,551|HK51｜家宽｜非常安全 #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: t.me%2525252525252Fripaojiedian
+  type: trojan
+- name: '306,502,551|HK52｜家宽｜非常安全 #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%250A%255BBy%252BDukeMehdi%255D%252Btrojan-HK%252B'
+  type: trojan
+- name: '306,479,484,502,551|HK139｜家宽｜高风险 (黑名单) #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: t.me%252Fripaojiedian
+  type: trojan
+- name: '306,502,551|HK54｜家宽｜非常安全 #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%2520%255BBy%2520EbraSha%255D%2520b2n.ir%252Fv2ray-configs%2520%257C%2520648%2520'
+  type: trojan
+- name: '306,502,551|HK55｜家宽｜非常安全 #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%2520%255BBy%2520EbraSha%255D%2520b2n.io%252Fv2ray-configs%2520%257C%2520160%2520'
+  type: trojan
+- name: '306,502,551|HK56｜家宽｜非常安全 #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%2520%255BBy%2520DukeMehdi%255D%2520b2n.ir%252Fv2ray-configs%2520%257C%2520934%2520'
+  type: trojan
+- name: '306,502,551|HK57｜家宽｜非常安全 #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%2520%2520%2520%2520%2520%2520%2520%255BBy%2520EbraSha%255D%2520b2n.ir%252Fv2ray-configs%2520%257C%252054%2520'
+  type: trojan
+- name: '306,502,551|HK58｜家宽｜非常安全 #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%2520%255BBy%2520EbraSha%255D%2520b2n.ir%252Fv2ray-configs%2520%257C%2520152%2520'
+  type: trojan
+- name: '306,502,551|HK59｜家宽｜非常安全 #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD'
+  type: trojan
+- name: '306,502,551|HK60｜家宽｜非常安全 #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%25F0%259F%2594%2592%2520%255BBy%2520DukeMehdi%255D%2520b2n.ir%252Fv2ray-configs%2520%257C%2520160%2520'
+  type: trojan
+- name: '306,502,551|HK65｜家宽｜高风险 (黑名单) #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%F0%9F%94%92%2B%5BBy%2BEbraSha%5D%2Bb2n.ir%2Fv2ray-configs%2B%7C%2B789%2B'
+  type: trojan
+- name: '306,502,551|HK66｜家宽｜高风险 (黑名单) #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%EF%BF%BD%2B%5BBy%2BDukeMehdi%5D'
+  type: trojan
+- name: '306,502,551|HK67｜家宽｜高风险 (黑名单) #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%EF%BF%BD%2B%5BBy%2BDukeMehdi%5D%2Bb2n.ir%2Fv2ray-configs%2B%7C%2B232%2B'
+  type: trojan
+- name: '306,502,551|HK68｜家宽｜高风险 (黑名单) #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%2B%5BBy%2BEbraSha%5D%2Bb2n.ir%2Fv2ray-configs%2B%7C%2B83%2B'
+  type: trojan
+- name: '306,502,551|HK69｜家宽｜高风险 (黑名单) #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%2B%5BBy%2BEbraSha%5D%2Bb2n.ir%2Fv2ray-configs%2B%7C%2B934%2B'
+  type: trojan
+- name: '306,502,551|HK70｜家宽｜高风险 (黑名单) #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%F0%9F%94%92%2B%5BBy%2BEbraSha%5D%2B'
+  type: trojan
+- name: '306,502,551|HK71｜家宽｜高风险 (黑名单) #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%F0%9F%94%92%2B%5BBy%2BDukeMehdi%5D%2Bb2n.ir%2Fv2ray-configs%2B%7C%2B382%2B'
+  type: trojan
+- name: '306,502,551|HK72｜家宽｜高风险 (黑名单) #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%2B'
+  type: trojan
+- name: '306,502,551|HK73｜家宽｜高风险 (黑名单) #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%2B%2B%2B%2B%2B%2B%2B%5BBy%2BDukeMehdi%5D%2Bb2n.ir%2Fv2ray-configs%2B%7C%2B868%2B'
+  type: trojan
+- name: '306,502,551|HK74｜家宽｜高风险 (黑名单) #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%F0%9F%94%92%2B%5BBy%2BDukeMehdi%5D%2Bb2n.ir%2Fv2ray-configs%2B%7C%2B127%2B'
+  type: trojan
+- name: '306,502,551|HK75｜家宽｜高风险 (黑名单) #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%2B%5BBy%2BEbraSha%5D%2Bb2n.ir%2Fv2ray-configs%2B%7C%2B475%2B'
+  type: trojan
+- name: '306,502,551|HK76｜家宽｜高风险 (黑名单) #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%2B%2B%2B%2B%2B%2B%2B%5BBy%2BEbraSha%5D%2Bb2n.ir%2Fv2ray-configs%2B%7C%2B934%2B'
+  type: trojan
+- name: '306,502,551|HK77｜家宽｜高风险 (黑名单) #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%F0%9F%94%92%2B%5BBy%2BEbraSha%5D%2Bb2n.ir%2Fv2ray-configs%2B%7C%2B648%2B'
+  type: trojan
+- name: '306,502,551|HK78｜家宽｜高风险 (黑名单) #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%2B%2B%2B%2B%2B%2B%2B%5BBy%2BDukeMehdi%5D%2Bb2n.ir%2Fv2ray-configs%2B%7C%2B166%2B'
+  type: trojan
+- name: '306,502,551|HK79｜家宽｜高风险 (黑名单) #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%2B%5BBy%2BEbraSha%5D%2Bb2n.io%2Fv2ray-configs%2B%7C%2B160%2B'
+  type: trojan
+- name: '306,502,551|HK80｜家宽｜高风险 (黑名单) #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%2B%5BBy%2BDukeMehdi%5D%2Bb2n.ir%2Fv2ray-configs%2B%7C%2B402%2B'
+  type: trojan
+- name: '306,502,551|HK81｜家宽｜高风险 (黑名单) #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%EF%BF%BD%2B%5BBy%2BDukeMehdi%5D%2Btrojan-HK%2B'
+  type: trojan
+- name: '306,502,551|HK82｜家宽｜高风险 (黑名单) #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%2520%255BBy%2520EbraSha%255D%2520trojan-HK%2520'
+  type: trojan
+- name: '306,502,551|HK83｜家宽｜高风险 (黑名单) #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%22%22%5BBy%2BDukeMehdi%5D%2Btrojan-HK%2B'
+  type: trojan
+- name: '306,502,551|HK84｜家宽｜高风险 (黑名单) #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%2B%5BBy%2BDukeMehdi%5D%2Bb2n.ir%2Fv2ray-configs%2B%7C%2B681%2B'
+  type: trojan
+- name: '306,502,551|HK85｜家宽｜高风险 (黑名单) #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%2B%5BBy%2BEbraSha%5D%2Bb2n.ir%2Fv2ray-configs%2B%7C%2B127%2B'
+  type: trojan
+- name: '306,502,551|HK86｜家宽｜高风险 (黑名单) #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%2B%2B%2B%2B%2B%2B%2B%5BBy%2BEbraSha%5D%2Bb2n.ir%2Fv2ray-configs%2B%7C%2B78%2B'
+  type: trojan
+- name: '306,502,551|HK87｜家宽｜高风险 (黑名单) #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: t.me%25252525252Fripaojiedian
+  type: trojan
+- name: '306,502,551|HK88｜家宽｜高风险 (黑名单) #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%EF%BF%BD%2B%5BBy%2BEbraSha%5D%2Bb2n.ir%2Fv2ray-configs%2B%7C%2B681%2B'
+  type: trojan
+- name: '306,502,551|HK89｜家宽｜高风险 (黑名单) #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%2B%2B%2B%2B%2B%2B%2B%5BBy%2BDukeMehdi%5D%2Bb2n.ir%2Fv2ray-configs%2B%7C%2B382%2B'
+  type: trojan
+- name: '306,502,551|HK90｜家宽｜高风险 (黑名单) #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%2B%5BBy%2BEbraSha%5D%2Bb2n.ir%2Fv2ray-configs%2B%7C%2B178%2B'
+  type: trojan
+- name: '306,502,551|HK91｜家宽｜高风险 (黑名单) #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%2520%2520%2520%2520%2520%2520%2520%255BBy%2520DukeMehdi%255D%2520b2n.ir%252Fv2ray-configs%2520%257C%2520945%2520'
+  type: trojan
+- name: '306,502,551|HK92｜家宽｜高风险 (黑名单) #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%2B%5BBy%2BDukeMehdi%5D%2Bb2n.ir%2Fv2ray-configs%2B%7C%2B166%2B'
+  type: trojan
+- name: '306,502,551|HK93｜家宽｜高风险 (黑名单) #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%2B%2B%2B%2B%2B%2B%2B%5BBy%2BEbraSha%5D%2Bb2n.ir%2Fv2ray-configs%2B%7C%2B475%2B'
+  type: trojan
+- name: '306,502,551|HK94｜家宽｜高风险 (黑名单) #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%F0%9F%94%92%2B%5BBy%2BEbraSha%5D%2Bb2n.ir%2Fv2ray-configs%2B%7C%2B681%2B'
+  type: trojan
+- name: '306,502,551|HK95｜家宽｜高风险 (黑名单) #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%2B%5BBy%2BDukeMehdi%5D%2Bb2n.ir%2Fv2ray-configs%2B%7C%2B17%2B'
+  type: trojan
+- name: '306,502,551|HK96｜家宽｜高风险 (黑名单) #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%2B%5BBy%2BEbraSha%5D%2Bb2n.ir%2Fv2ray-configs%2B'
+  type: trojan
+- name: '306,502,551|HK97｜家宽｜高风险 (黑名单) #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%2B%2B%2B%2B%2B%2B%2B%5BBy%2BEbraSha%5D%2Bb2n.ir%2Fv2ray-configs%2B%7C%2B945%2B'
+  type: trojan
+- name: '306,502,551|HK98｜家宽｜高风险 (黑名单) #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%EF%BF%BD%2B%5BBy%2BDukeMehdi%5D%2Bb2n.ir%2Fv2ray-configs%2B%7C%2B17%2B'
+  type: trojan
+- name: '306,502,551|HK99｜家宽｜高风险 (黑名单) #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%2B%5BBy%2BEbraSha%5D%2Bb2n.ir%2Fv2ray-configs%2B%7C%2B88%2B'
+  type: trojan
+- name: '306,502,551|HK100｜家宽｜高风险 (黑名单) #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%2B%5BBy%2BDukeMehdi%5D%2Bb2n.ir%2Fv2ray-configs%2B%7C%2B783%2B'
+  type: trojan
+- name: '306,502,551|HK101｜家宽｜高风险 (黑名单) #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%2B%2B%5BBy%2BDukeMehdi%5D%2Btrojan-HK%2B'
+  type: trojan
+- name: '306,502,551|HK102｜家宽｜高风险 (黑名单) #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%20%20%20%20%20%20%2B%5BBy%2BDukeMehdi%5D%2Btrojan-HK%2B'
+  type: trojan
+- name: '306,502,551|HK103｜家宽｜高风险 (黑名单) #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%20%20%20%20%20%20%2B%5BBy%2BEbraSha%5D%2Bb2n.ir%2Fv2ray-configs%2B'
+  type: trojan
+- name: '306,502,551|HK104｜家宽｜高风险 (黑名单) #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%20%5BBy%20DukeMehdi%5D%20b2n.ir%2Fv2ray-configs%20%7C%20945%20'
+  type: trojan
+- name: '306,502,551|HK105｜家宽｜高风险 (黑名单) #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%2B%2B%2B%2B%2B%2B%2B%5BBy%2BDukeMehdi%5D%2Bb2n.ir%2Fv2ray-configs%2B%7C%2B789%2B'
+  type: trojan
+- name: '306,502,551|HK145｜家宽｜高风险 (黑名单) #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%20%5BBy%20EbraSha%5D%20'
+  type: trojan
+- name: '306,502,551|HK107｜家宽｜高风险 (黑名单) #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%20%20%20%20%20%20%20%5BBy%20DukeMehdi%5D%20b2n.ir%2Fv2ray-configs%20%7C%20945%20'
+  type: trojan
+- name: '306,502,551|HK108｜家宽｜高风险 (黑名单) #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%2B%2B%2B%2B%2B%2B'
+  type: trojan
+- name: '306,502,551|HK109｜家宽｜高风险 (黑名单) #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%2B%5BBy%2BEbraSha%5D%2Btrojan-HK%2B'
+  type: trojan
+- name: '306,502,551|HK110｜家宽｜高风险 (黑名单) #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%2B%2B%2B%2B%2B%2B%2B%5BBy%2BDukeMehdi%5D%2Btrojan-HK%2B'
+  type: trojan
+- name: '306,502,551|HK111｜家宽｜高风险 (黑名单) #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%20%20%20%20%20%20%20%5BBy%20EbraSha%5D%20b2n.ir%2Fv2ray-configs%20%7C%20449%20'
+  type: trojan
+- name: '306,502,551|HK112｜家宽｜高风险 (黑名单) #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%20%20%20%20%20%20%2B%5BBy%2BDukeMehdi%5D%2Bb2n.ir%2Fv2ray-configs%2B%7C%2B88%2B'
+  type: trojan
+- name: '306,502,551|HK147｜家宽｜高风险 (黑名单) #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%20%5BBy%20EbraSha%5D%20b2n.ir%2Fv2ray-configs%20%7C%2054%20'
+  type: trojan
+- name: '306,502,551|HK114｜家宽｜高风险 (黑名单) #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%20%20%20%20%20%20%2B%5BBy%2BDukeMehdi%5D%2Bb2n.ir%2Fv2ray-configs%2B'
+  type: trojan
+- name: '306,502,551|HK115｜家宽｜高风险 (黑名单) #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%20%20%20%20%20%20'
+  type: trojan
+- name: '306,502,551|HK116｜家宽｜高风险 (黑名单) #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%2B%5BBy%2BDukeMehdi%5D%2Bb2n.ir%2Fv2ray-configs%2B%7C%2B160%2B'
+  type: trojan
+- name: '306,502,551|HK117｜家宽｜高风险 (黑名单) #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%2B%5BBy%2BEbraSha%5D%2Bb2n.ir%2Fv2ray-configs%2B%7C%2B681%2B'
+  type: trojan
+- name: '306,502,551|HK118｜家宽｜高风险 (黑名单) #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%2B%5BBy%2BDukeMehdi%5D%2Bb2n.ir%2Fv2ray-configs%2B%7C%2B868%2B'
+  type: trojan
+- name: '306,502,551|HK119｜家宽｜高风险 (黑名单) #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%2B%5BBy%2BEbraSha%5D%2Bb2n.ir%2Fv2ray-configs%2B%7C%2B761%2B'
+  type: trojan
+- name: '306,502,551|HK120｜家宽｜高风险 (黑名单) #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%25F0%259F%2594%2592%2520%255BBy%2520EbraSha%255D%2520b2n.ir%252Fv2ray-configs%2520%257C%2520178%2520'
+  type: trojan
+- name: '306,502,551|HK121｜家宽｜高风险 (黑名单) #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%252B%252B%252B%252B%252B%252B%252B%255BBy%252BEbraSha%255D%252Bb2n.ir%252Fv2ray-configs%252B%257C%252B160%252B'
+  type: trojan
+- name: '306,502,551|HK122｜家宽｜高风险 (黑名单) #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%252520%252520%252520%252520%252520%252520%252520%25255BBy%25252BDukeMehdi%25255D%25252Bb2n.ir%25252Fv2ray-configs%252520'
+  type: trojan
+- name: '306,502,551|HK123｜家宽｜高风险 (黑名单) #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%25F0%259F%2594%2592%2520%255BBy%2520EbraSha%255D%2520b2n.ir%252Fv2ray-configs%2520%257C%252054%2520'
+  type: trojan
+- name: '306,502,551|HK124｜家宽｜高风险 (黑名单) #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%0A%5BBy%2BDukeMehdi%5D%2Btrojan-HK%2B'
+  type: trojan
+- name: '306,502,551|HK125｜家宽｜高风险 (黑名单) #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%20%5BBy%20DukeMehdi%5D%20b2n.ir%2Fv2ray-configs%20'
+  type: trojan
+- name: '306,502,551|HK126｜家宽｜高风险 (黑名单) #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%20%20%20%20%20%20%20%5BBy%20EbraSha%5D%20'
+  type: trojan
+- name: '306,502,551|HK127｜家宽｜高风险 (黑名单) #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%20%5BBy%20EbraSha%5D%20b2n.ir%2Fv2ray-configs%20%7C%20681%20'
+  type: trojan
+- name: '306,502,551|HK128｜家宽｜高风险 (黑名单) #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%20%5BBy%20DukeMehdi%5D%20b2n.ir%2Fv2ray-configs%20%7C%2078%20'
+  type: trojan
+- name: '306,502,551|HK129｜家宽｜高风险 (黑名单) #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%20%5BBy%20EbraSha%5D%20b2n.ir%2Fv2ray-configs%20%7C%20789%20'
+  type: trojan
+- name: '306,378,502,536,537,551|HK135｜家宽｜高风险 (黑名单) #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%20%5BBy%20EbraSha%5D%20trojan-HK%20'
+  type: trojan
+- name: '306,502,551|HK131｜家宽｜高风险 (黑名单) #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%20%5BBy%20DukeMehdi%5D%20'
+  type: trojan
+- name: '306,502,551|HK132｜家宽｜高风险 (黑名单) #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%20%5BBy%20DukeMehdi%5D%20b2n.ir%2Fv2ray-configs%20%7C%20160%20'
+  type: trojan
+- name: '306,502,551|HK133｜家宽｜高风险 (黑名单) #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%20%5BBy%20EbraSha%5D%20b2n.ir%2Fv2ray-configs%20%7C%2054%20'
+  type: trojan
+- name: '306,502,551|HK134｜家宽｜高风险 (黑名单) #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%20%5BBy%20EbraSha%5D%20b2n.ir%2Fv2ray-configs%20%7C%20761%20'
+  type: trojan
+- name: '306,502,551|HK136｜家宽｜高风险 (黑名单) #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%20%5BBy%20DukeMehdi%5D%20b2n.ir%2Fv2ray-configs%20%7C%2078%20'
+  type: trojan
+- name: '306,502,551|HK137｜家宽｜高风险 (黑名单) #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%20%5BBy%20EbraSha%5D%20b2n.ir%2Fv2ray-configs%20%7C%2083%20'
+  type: trojan
+- name: '306,502,551|HK138｜家宽｜高风险 (黑名单) #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%20%5BBy%20DukeMehdi%5D%20b2n.ir%2Fv2ray-configs%20%7C%2054%20'
+  type: trojan
+- name: '306,502,551|HK140｜家宽｜高风险 (黑名单) #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%20%5BBy%20DukeMehdi%5D%20b2n.io%2Fv2ray-configs%20%7C%20166%20'
+  type: trojan
+- name: '306,502,551|HK141｜家宽｜高风险 (黑名单) #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%20%5BBy%20DukeMehdi%5D%20b2n.ir%2Fv2ray-configs%20%7C%2088%20'
+  type: trojan
+- name: '306,502,551|HK142｜家宽｜高风险 (黑名单) #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%20%5BBy%20EbraSha%5D%20b2n.ir%2Fv2ray-configs%20%7C%20648%20'
+  type: trojan
+- name: '306,502,551|HK143｜家宽｜高风险 (黑名单) #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%20%5BBy%20DukeMehdi%5D%20b2n.ir%2Fv2ray-configs%20%7C%2017%20'
+  type: trojan
+- name: '306,502,551|US65｜原生/疑似家宽｜非常安全 #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%20%5BBy%20EbraSha%5D%20b2n.ir%2Fv2ray-configs%20%7C%2083%20'
+  type: trojan
+- name: '306,502,551|HK146｜家宽｜高风险 (黑名单) #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%20%5BBy%20EbraSha%5D%20b2n.ir%2Fv2ray-configs%20%7C%20449%20'
+  type: trojan
+- name: '306,502,551|HK148｜家宽｜高风险 (黑名单) #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%20%5BBy%20EbraSha%5D%20b2n.ir%2Fv2ray-configs%20%7C%20178%20'
+  type: trojan
+- name: '306,502,551|HK149｜家宽｜高风险 (黑名单) #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%20%5BBy%20EbraSha%5D%20b2n.ir%2Fv2ray-configs%20%7C%2088%20'
+  type: trojan
+- name: '306,502,551|HK150｜家宽｜高风险 (黑名单) #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%20%5BBy%20DukeMehdi%5D%20b2n.ir%2Fv2ray-configs%20%7C%20681%20'
+  type: trojan
+- name: '306,502,551|HK152｜家宽｜高风险 (黑名单) #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%20%5BBy%20EbraSha%5D%20b2n.ir%2Fv2ray-configs%20'
+  type: trojan
+- name: '306,502,551|HK153｜家宽｜高风险 (黑名单) #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%20%5BBy%20DukeMehdi%5D%20b2n.ir%2Fv2ray-configs%20%7C%2054%20'
+  type: trojan
+- name: '306,502,551|HK154｜家宽｜高风险 (黑名单) #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%EF%BF%BD%20%5BBy%20EbraSha%5D%20b2n.ir%2Fv2ray-configs%20%7C%20681%20'
+  type: trojan
+- name: '306,502,551|HK155｜家宽｜高风险 (黑名单) #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%20%5BBy%20EbraSha%5D%20b2n.ir%2Fv2ray-configs%20%7C%20868%20'
+  type: trojan
+- name: '306,502,551|HK156｜家宽｜高风险 (黑名单) #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%20%5BBy%20EbraSha%5D%20b2n.ir%2Fv2ray-configs%20%7C%20945%20'
+  type: trojan
+- name: '306,502,551|HK157｜家宽｜高风险 (黑名单) #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%20%5BBy%20EbraSha%5D%20b2n.ir%2Fv2ray-configs%20%7C%2078%20'
+  type: trojan
+- name: '306,502,551|HK158｜家宽｜高风险 (黑名单) #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%20%5BBy%20EbraSha%5D%20b2n.ir%2Fv2ray-configs%20%7C%20160%20'
+  type: trojan
+- name: '306,502,551|HK159｜家宽｜高风险 (黑名单) #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%20%5BBy%20EbraSha%5D%20b2n.ir%2Fv2ray-configs%20%7C%20178%20'
+  type: trojan
+- name: '306,502,551|HK160｜家宽｜高风险 (黑名单) #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%20%5BBy%20EbraSha%5D%20b2n.ir%2Fv2ray-configs%20%7C%2078%20'
+  type: trojan
+- name: '306,502,551|HK161｜家宽｜高风险 (黑名单) #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%F0%9F%94%92%20%5BBy%20DukeMehdi%5D%20b2n.ir%2Fv2ray-configs%20%7C%20127%20'
+  type: trojan
+- name: '306,502,551|HK162｜家宽｜高风险 (黑名单) #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%20%5BBy%20DukeMehdi%5D%20b2n.ir%2Fv2ray-configs%20%7C%20402%20'
+  type: trojan
+- name: '306,502,551|HK163｜家宽｜高风险 (黑名单) #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%20%5BBy%20DukeMehdi%5D%20b2n.ir%2Fv2ray-configs%20%7C%20783%20'
+  type: trojan
+- name: '306,502,551|HK170｜家宽｜高风险 (黑名单) #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%E9%A6%83%E6%95%80%20%5BBy%20DukeMehdi%5D%20b2n.ir%2Fv2ray-configs%20%7C%20783%20'
+  type: trojan
+- name: '306,502,551|HK180｜家宽｜非常安全 #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.25.130
+  skip-cert-verify: true
+  sni: 58.152.25.130
+  type: trojan
+- name: '306,502,551|HK181｜家宽｜高风险 (黑名单) #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%2B%5BBy%2BEbraSha%5D%2B'
+  type: trojan
+- name: '306,502,551|HK182｜家宽｜高风险 (黑名单) #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%E9%A6%83%E6%95%80%2B%5BBy%2BDukeMehdi%5D%2Bb2n.ir%2Fv2ray-configs%2B%7C%2B783%2B'
+  type: trojan
+- name: '306,502,551|HK183｜家宽｜高风险 (黑名单) #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%EF%BF%BD%2B%5BBy%2BEbraSha%5D%2Bb2n.ir%2Fv2ray-configs%2B%7C%2B232%2B'
+  type: trojan
+- name: '306,502,551|HK184｜家宽｜高风险 (黑名单) #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%F0%9F%94%92%2B%5BBy%2BDukeMehdi%5D%2Bb2n.ir%2Fv2ray-configs%2B%7C%2B54%2B'
+  type: trojan
+- name: '306,502,551|HK186｜家宽｜高风险 (黑名单) #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%2B%5BBy%2BEbraSha%5D%2Bb2n.ir%2Fv2ray-configs%2B%7C%2B868%2B'
+  type: trojan
+- name: '306,502,551|US57｜原生/疑似家宽｜非常安全 #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%20%20%20%20%20%20%2B%5BBy%2BDukeMehdi%5D%2Bb2n.ir%2Fv2ray-configs%2B%7C%2B166%2B'
+  type: trojan
+- name: '306,502,551|US58｜原生/疑似家宽｜非常安全 #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%2B%2B%2B%2B%2B%2B%2B%5BBy%2BEbraSha%5D%2Bb2n.ir%2Fv2ray-configs%2B%7C%2B761%2B'
+  type: trojan
+- name: '306,502,551|US59｜原生/疑似家宽｜非常安全 #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%20%20%20%20%20%20%2B%5BBy%2BDukeMehdi%5D%2Bb2n.ir%2Fv2ray-configs%2B%7C%2B54%2B'
+  type: trojan
+- name: '306,502,551|US60｜原生/疑似家宽｜非常安全 #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%20%20%20%20%20%20%2B%5BBy%2BEbraSha%5D%2Bb2n.ir%2Fv2ray-configs%2B%7C%2B681%2B'
+  type: trojan
+- name: '306,502,551|US61｜原生/疑似家宽｜非常安全 #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%20%20%20%20%20%20%2B%5BBy%2BEbraSha%5D%2B'
+  type: trojan
+- name: '306,502,551|US62｜原生/疑似家宽｜非常安全 #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%20%20%20%20%20%20%2B%5BBy%2BEbraSha%5D%2Bb2n.ir%2Fv2ray-configs%2B%7C%2B885%2B'
+  type: trojan
+- name: '306,502,551|US63｜原生/疑似家宽｜非常安全 #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%20%5BBy%20EbraSha%5D%20trojan-HK%20'
+  type: trojan
+- name: '306,502,551|US64｜原生/疑似家宽｜非常安全 #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%2B%5BBy%2BEbraSha%5D%2Btrojan-HK%2B'
+  type: trojan
+- name: '306,502,551|US66｜原生/疑似家宽｜非常安全 #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%20%20%20%20%20%20%20%5BBy%20EbraSha%5D%20b2n.ir%2Fv2ray-configs%20%7C%2083%20'
+  type: trojan
+- name: '306,502,551|US67｜原生/疑似家宽｜非常安全 #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%2B%2B%2B%2B%2B%2B%2B%5BBy%2BEbraSha%5D%2Bb2n.ir%2Fv2ray-configs%2B%7C%2B178%2B'
+  type: trojan
+- name: '306,502,551|US68｜原生/疑似家宽｜非常安全 #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%20%20%20%20%20%20%2B%5BBy%2BDukeMehdi%5D%2B'
+  type: trojan
+- name: '306,502,551|HK191｜家宽｜高风险 (黑名单) #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%2520%2520%2520%2520%2520%2520%2520%255BBy%2520EbraSha%255D%2520b2n.ir%252Fv2ray-configs%2520%257C%2520945%2520'
+  type: trojan
+- name: '306,502,551|HK192｜家宽｜高风险 (黑名单) #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%20%20%20%20%20%20%20%5BBy%20DukeMehdi%5D%20b2n.ir%2Fv2ray-configs%20'
+  type: trojan
+- name: '306,502,551|HK193｜家宽｜高风险 (黑名单) #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%20%20%20%20%20%20%20%5BBy%20DukeMehdi%5D%20trojan-HK%20'
+  type: trojan
+- name: '306,502,551|HK197｜家宽｜高风险 (黑名单) #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%2B%5BBy%2BDukeMehdi%5D%2Bb2n.ir%2Fv2ray-configs%2B'
+  type: trojan
+- name: '306,502,551|HK198｜家宽｜高风险 (黑名单) #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%20%5BBy%20DukeMehdi%5D%20b2n.ir%2Fv2ray-configs%20%7C%2083%20'
+  type: trojan
+- name: '306,502,551|HK199｜家宽｜高风险 (黑名单) #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%20%5BBy%20DukeMehdi%5D%20b2n.ir%2Fv2ray-configs%20%7C%20789%20'
+  type: trojan
+- name: '306,502,551|HK200｜家宽｜高风险 (黑名单) #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%20%20%20%20%20%20%20%5BBy%20DukeMehdi%5D%20b2n.ir%2Fv2ray-configs%20%7C%20783%20'
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: '306,502,551|HK201｜机房｜低风险 #1'
+  network: tcp
+  port: '40374'
+  server: 8.210.184.105
+  tls: false
+  type: vmess
+  uuid: 36b76373-7a4f-4669-9113-7d247bcf2704
 - name: '340,495,502,514,551,559|9| HK #2'
   password: a305ac08-d136-11ee-b6db-f23c91cfbbc9
   port: 443
@@ -1834,7 +3128,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: '374|🇭🇰 香港 #1'
+  name: '374|🇭🇰 香港 #2'
   port: 19901
   server: xg.dashuai.cyou
   tls: false
@@ -1891,15 +3185,14 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf
-  country: 🇭🇰HK
-  name: '378,537,538,548|disney_HK #4'
+  name: 378,537,538|🇭🇰HK-103.141.221.88-5199 | 0.9...
   password: asd123456
   port: 8388
   server: 103.141.221.88
   type: ss
 - cipher: chacha20-ietf-poly1305
-  country: 🇭🇰 HK
-  name: 378,537,538,548|🇭🇰 HK_67
+  country: 🇰 HK
+  name: 378,435,537,538|🇭🇰HK-203.23.128.33-0425 | 0.77...
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 203.23.128.33
@@ -1973,13 +3266,14 @@ proxies:
   uuid: 80e94af6-e42a-4dbc-8f4b-c5f99bf97d3d
   ws-opts:
     path: /zh-cn/download
-- name: '378,507,537|🇭🇰HK-58.152.53.219-0874 #1'
+- name: 378,472,473,474,502,537,553|yandex-2649
   password: BxceQaOe
   port: 443
   server: 58.152.53.219
   skip-cert-verify: false
   sni: t.me%252Fripaojiedian
   type: trojan
+  udp: true
 - name: '378,537|🇭🇰HK-58.152.46.60-0875 #1'
   password: BxceQaOe
   port: 443
@@ -1987,7 +3281,7 @@ proxies:
   skip-cert-verify: false
   sni: '%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%20%5BBy%20EbraSha%5D%20b2n.io%2Fv2ray-configs%20%7C%20885%20'
   type: trojan
-- name: '378,537|🇭🇰HK-58.152.25.130-0877 #1'
+- name: '378,507,537|🇭🇰HK-58.152.25.130-0877 #1'
   password: BxceQaOe
   port: 443
   server: 58.152.25.130
@@ -2002,7 +3296,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: aes-128-gcm
-  name: 378,489,537,553,574|🇨 52.5KB/s
+  name: 378,489,537,553|yandex-3168
   password: 57bc0c04-8184-48f5-906b-897d095ed445
   port: 17459
   server: liubu9.singdns.com
@@ -2267,43 +3561,28 @@ proxies:
   server: 103.103.245.125
   skip-cert-verify: false
   type: trojan
-- name: '378,502,536,537,551|HK2｜家宽｜非常安全 #1'
+- name: '378,536,537|🇭🇰HK-58.152.46.60-1737 #1'
   password: BxceQaOe
   port: 443
   server: 58.152.46.60
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: '%2520%2520%2520%2520%2520%2520%2520%255BBy%2520EbraSha%255D%2520b2n.ir%252Fv2ray-configs%2520'
   type: trojan
-- name: '378,502,536,537,551|HK6｜家宽｜非常安全 #1'
+- name: '378,536,537|🇰HK-58.152.46.60-1741 #1'
   password: BxceQaOe
   port: 443
   server: 58.152.46.60
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: '%2520%2520%2520%2520%2520%2520%2520%255BBy%2520EbraSha%255D%2520b2n.ir%252Fv2ray-configs%2520%257C%2520868%2520'
   type: trojan
-- name: '378,502,536,537,551|HK15｜家宽｜非常安全 #1'
+- name: '378,536,537|🇭🇰HK-58.152.46.60-1797 #1'
   password: BxceQaOe
   port: 443
   server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%252B%252B%252B%252B%252B%252B%252B%255BBy%252BDukeMehdi%255D%252Btrojan-HK%252B'
-  type: trojan
-- name: '378,502,536,537,551|HK31｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%252520%252520%252520%252520%252520%252520%252520%25255BBy%252520DukeMehdi%25255D%252520b2n.ir%25252Fv2ray-configs%252520%25257C%252520945%252520'
-  type: trojan
-- name: '378,502,536,537,551|HK63｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: '%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%2520%255BBy%2520DukeMehdi%255D%2520b2n.ir%252Fv2ray-configs%2520'
   type: trojan
-- name: '378,456,459,502,507,536,537,551,559,566,580,717|【机场推荐：https://a0a.xyz/】12
-    #2'
+- name: '378,456,459,502,536,537,559,580,717|【机场推荐：https://a0a.xyz/】12 #2'
   network: tcp
   password: 469c8135-8aea-4c7f-8ec2-c5fdfa980b48
   port: 443
@@ -2311,17 +3590,9 @@ proxies:
   skip-cert-verify: true
   sni: hkip5.686911.xyz
   type: trojan
-  udp: true
-- name: '378,502,536,537,551|HK309｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%20%5BBy%20EbraSha%5D%20trojan-HK%20'
-  type: trojan
 - alterId: 2
   cipher: auto
-  name: '378,502,536,537,551,559|HK313｜家宽｜非常安全 #2'
+  name: 378,536,537,559|HK313｜家宽｜非常安全
   network: ws
   port: '80'
   server: 6d3b5b9f-t8pj40-trg4wh-z65w.hkt.gotochinatown.net
@@ -2336,15 +3607,14 @@ proxies:
     path: /
 - alterId: 2
   cipher: auto
-  name: 378,502,536,537,551,559,566|🇭🇰 香港 | HKG 24
+  name: 378,536,537,559|HK314｜家宽｜非常安全
   network: ws
-  port: 80
+  port: '80'
   server: 8a441d34-t6r5s0-taj9mo-1tco3.hkt.gotochinatown.net
   servername: ''
   skip-cert-verify: false
   tls: false
   type: vmess
-  udp: true
   uuid: e29de954-ea01-11ef-a271-f23c91cfbbc9
   ws-opts:
     headers:
@@ -2352,7 +3622,7 @@ proxies:
     path: /
 - alterId: 2
   cipher: auto
-  name: '378,502,536,537,551,559|HK315｜家宽｜非常安全 #2'
+  name: 378,536,537,559|HK315｜家宽｜非常安全
   network: ws
   port: '80'
   server: 82efdbb6-t8pj40-t9eu8q-tlhh.hkt.gotochinatown.net
@@ -2367,7 +3637,7 @@ proxies:
     path: /
 - alterId: 2
   cipher: auto
-  name: '378,502,536,537,551,559|HK316｜家宽｜非常安全 #2'
+  name: 378,536,537,559|HK316｜家宽｜非常安全
   network: ws
   port: '80'
   server: 1c13c28a-t8nog0-thntyd-1f596.hkt.gotochinatown.net
@@ -2382,7 +3652,7 @@ proxies:
     path: /
 - alterId: 2
   cipher: auto
-  name: '378,502,536,537,551,559|HK317｜家宽｜非常安全 #2'
+  name: 378,536,537,559|HK317｜家宽｜非常安全
   network: ws
   port: '80'
   server: 0a023e52-t8pj40-tifnix-1ro8s.hkt.gotochinatown.net
@@ -2397,7 +3667,7 @@ proxies:
     path: /
 - alterId: 2
   cipher: auto
-  name: '378,502,536,537,551,559|HK318｜家宽｜非常安全 #2'
+  name: 378,536,537,559|HK318｜家宽｜非常安全
   network: ws
   port: '80'
   server: 0bba3742-t8nog0-tlvq5w-1jcwu.hkt.gotochinatown.net
@@ -2412,7 +3682,7 @@ proxies:
     path: /
 - alterId: 2
   cipher: auto
-  name: '378,502,536,537,551,559|HK319｜家宽｜非常安全 #2'
+  name: 378,536,537,559|HK319｜家宽｜非常安全
   network: ws
   port: '80'
   server: 2712f088-t8nog0-tnqudu-1mim2.hkt.gotochinatown.net
@@ -2427,7 +3697,7 @@ proxies:
     path: /
 - alterId: 2
   cipher: auto
-  name: '378,502,536,537,551,559|HK320｜家宽｜非常安全 #2'
+  name: 378,536,537,559|HK320｜家宽｜非常安全
   network: ws
   port: '80'
   server: 7d1c5b1e-t8nog0-ta42cg-1phla.hkt.gotochinatown.net
@@ -2442,7 +3712,7 @@ proxies:
     path: /
 - alterId: 2
   cipher: auto
-  name: '378,502,536,537,551,559|HK321｜家宽｜非常安全 #2'
+  name: 378,536,537,559|HK321｜家宽｜非常安全
   network: ws
   port: '80'
   server: a2ec8dbd-t8pj40-tgl02u-1jr1u.hkt.gotochinatown.net
@@ -2457,7 +3727,7 @@ proxies:
     path: /
 - alterId: 2
   cipher: auto
-  name: '378,502,536,537,551,559|HK322｜家宽｜非常安全 #2'
+  name: 378,536,537,559|HK322｜家宽｜非常安全
   network: ws
   port: '80'
   server: 61dbc334-t8nog0-tl09la-1q91p.hkt.gotochinatown.net
@@ -2472,15 +3742,14 @@ proxies:
     path: /
 - alterId: 2
   cipher: auto
-  name: 378,502,536,537,551,559,566|🇭🇰 香港 | HKG 40
+  name: 378,536,537,559|HK323｜家宽｜非常安全
   network: ws
-  port: 80
+  port: '80'
   server: 9ef7d9d8-t8pj40-tr9h64-1f1f1.hkt.gotochinatown.net
   servername: ''
   skip-cert-verify: false
   tls: false
   type: vmess
-  udp: true
   uuid: 61c4be90-6235-11ec-a8bf-f23c91cfbbc9
   ws-opts:
     headers:
@@ -2488,7 +3757,7 @@ proxies:
     path: /
 - alterId: 2
   cipher: auto
-  name: '378,502,536,537,551,559,568|🇭🇰 香港 | HKG #3'
+  name: 378,536,537,559|HK324｜家宽｜非常安全
   network: ws
   port: '80'
   server: 6af113cb-t8lts0-tcfo40-17xo8.hkt.gotochinatown.net
@@ -2503,7 +3772,7 @@ proxies:
     path: /
 - alterId: 2
   cipher: auto
-  name: '378,502,536,537,551,559|HK325｜家宽｜非常安全 #2'
+  name: 378,536,537,559|HK325｜家宽｜非常安全
   network: ws
   port: '80'
   server: hkt.gotochinatown.net
@@ -2518,7 +3787,7 @@ proxies:
     path: /
 - alterId: 2
   cipher: auto
-  name: '378,502,536,537,551,559|HK326｜家宽｜非常安全 #2'
+  name: 378,536,537,559|HK326｜家宽｜非常安全
   network: ws
   port: '80'
   server: e542f5ac-t8pj40-td95qh-1isea.hkt.gotochinatown.net
@@ -2533,7 +3802,7 @@ proxies:
     path: /
 - alterId: 2
   cipher: auto
-  name: '378,502,536,537,551,559|HK327｜家宽｜非常安全 #2'
+  name: 378,536,537,559|HK327｜家宽｜非常安全
   network: ws
   port: '80'
   server: 1fd3ae26-t8nog0-tpftcp-13x18.hkt.gotochinatown.net
@@ -2548,7 +3817,7 @@ proxies:
     path: /
 - alterId: 2
   cipher: auto
-  name: '378,502,536,537,551,559|HK328｜家宽｜非常安全 #2'
+  name: 378,536,537,559|HK328｜家宽｜非常安全
   network: ws
   port: '80'
   server: e6c543b9-t8pj40-tan99f-1rdqg.hkt.gotochinatown.net
@@ -2563,7 +3832,7 @@ proxies:
     path: /
 - alterId: 2
   cipher: auto
-  name: '378,502,536,537,551,559|HK329｜家宽｜非常安全 #2'
+  name: 378,536,537,559|HK329｜家宽｜非常安全
   network: ws
   port: 80
   server: 4b5ef466-t8pj40-tbicd9-1go3q.hkt.gotochinatown.net
@@ -2578,7 +3847,7 @@ proxies:
     path: /
 - alterId: 2
   cipher: auto
-  name: '378,502,536,537,551,559|HK330｜家宽｜非常安全 #2'
+  name: 378,536,537,559|HK330｜家宽｜非常安全
   network: ws
   port: '80'
   server: f098ccea-t8lts0-thzbn1-1gxvd.hkt.gotochinatown.net
@@ -2593,7 +3862,7 @@ proxies:
     path: /
 - alterId: 2
   cipher: auto
-  name: '378,502,536,537,551,559|HK331｜家宽｜非常安全 #2'
+  name: 378,536,537,559|HK331｜家宽｜非常安全
   network: ws
   port: '80'
   server: 4dbbf66c-t70f40-tifnix-1ro8s.hkt.gotochinatown.net
@@ -2608,7 +3877,7 @@ proxies:
     path: /
 - alterId: 2
   cipher: auto
-  name: '378,502,536,537,551,559|HK332｜家宽｜非常安全 #2'
+  name: 378,536,537,559|HK332｜家宽｜非常安全
   network: ws
   port: '80'
   server: 293beaf2-t8nog0-tk4rx8-1n7d9.hkt.gotochinatown.net
@@ -2623,7 +3892,7 @@ proxies:
     path: /
 - alterId: 2
   cipher: auto
-  name: '378,502,536,537,551,559|HK333｜家宽｜非常安全 #2'
+  name: 378,536,537,559|HK333｜家宽｜非常安全
   network: ws
   port: 80
   server: 87af7d1a-t8nog0-t9hghw-1sdoq.hkt.gotochinatown.net
@@ -2638,7 +3907,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '378,494,502,536,537,551,559|HK340｜机房｜低风险 #2'
+  name: 378,494,536,537,559|HK340｜机房｜低风险
   network: ws
   port: '443'
   server: n1761214915.mv7wh.tech
@@ -2653,7 +3922,7 @@ proxies:
     path: /
 - alterId: 2
   cipher: auto
-  name: '378,502,536,537,551,559|HK341｜家宽｜非常安全 #2'
+  name: 378,536,537,559|HK341｜家宽｜非常安全
   network: ws
   port: '80'
   server: bcc4c365-t70f40-tpaqgu-1smhu.hkt.gotochinatown.net
@@ -3034,18 +4303,22 @@ proxies:
     headers:
       Host: aflzzul.meiquankongjian.com
     path: /564dfa20/
-- name: '378,436,536,537|🇰HK-45.149.92.71-5098 #1'
+- country: 🇺🇸 US
+  name: '378,435,436,536,537|🇰HK-45.149.92.71-5098 #1'
   password: 92435aa8-f3b6-466a-ad58-c55cbb6d2acf
   port: 443
   server: hinet.mjt000.com
   skip-cert-verify: false
   type: trojan
-- name: '378,436,536,537|🇭🇰HK-45.149.92.71-5100 #1'
+  udp: true
+- country: 🇸 US
+  name: '378,435,436,536,537|🇭🇰HK-45.149.92.71-5100 #1'
   password: e4af2638-bb12-4e4a-84f1-a032e23ca63f
   port: 443
   server: usla.mjt000.com
   skip-cert-verify: false
   type: trojan
+  udp: true
 - cipher: aes-256-cfb
   name: '378,537|🇰HK-216.250.97.82-5184 #1'
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
@@ -3053,7 +4326,7 @@ proxies:
   server: 216.250.97.82
   type: ss
 - cipher: chacha20-ietf
-  name: 378,537,548|disney_HK
+  name: '378,537|🇰HK-103.149.182.158-5186 #1'
   password: asd123456
   port: 8388
   server: 103.149.182.158
@@ -3084,15 +4357,13 @@ proxies:
   uuid: 845e6b08-2919-4290-ade0-5dc7dcea59ca
   ws-opts:
     path: /arki?ed=2048
-- country: 🇭🇰HK
-  name: 378,536,537,548|🇭🇰HK_77
+- name: '378,536,537|🇭🇰HK-47.242.225.242-5192 #1'
   password: 92690597d6298061459918a371e8d77d
   port: 443
   server: 47.242.225.242
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: hezijiasuqi.com
   type: trojan
-  udp: true
 - cipher: aes-256-gcm
   name: '378,537|🇰HK-18.162.209.191-5248 #1'
   password: c69374da-2208-4cbd-b81e-cdf88b5e7f53
@@ -5009,53 +6280,344 @@ proxies:
       Host: 51b0e42034dd75a815fa9eb16021fbda.mobgslb.tbcache.com
     path: /
   ws-path: /
+- cipher: aes-256-cfb
+  country: 🇰 HK
+  name: 435| HK_55
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 154.223.16.212
+  type: ss
+- alterId: 2
+  cipher: auto
+  country: 🇰 HK
+  h2-opts: {}
+  http-opts: {}
+  name: 435|🇰 HK_59
+  network: ws
+  port: 80
+  server: hkt.gotochinatown.net
+  skip-cert-verify: true
+  type: vmess
+  uuid: c11ff50c-f582-11ee-94df-f23c9164ca5d
+  ws-path: /
+- alterId: 2
+  cipher: auto
+  country: 🇭🇰 HK
+  h2-opts: {}
+  http-opts: {}
+  name: 435|🇰 HK_60
+  network: ws
+  port: 80
+  server: hkt.gotochinatown.net
+  skip-cert-verify: true
+  type: vmess
+  uuid: 55cce5a4-56b7-11ee-af82-f23c9164ca5d
+  ws-path: /
+- alterId: 2
+  cipher: auto
+  country: 🇭🇰 HK
+  h2-opts: {}
+  http-opts: {}
+  name: 435|🇭🇰 HK_61
+  network: ws
+  port: 80
+  server: hkt.gotochinatown.net
+  skip-cert-verify: true
+  type: vmess
+  uuid: bb85e074-b0c2-11ea-ad28-f23c913c8d2b
+  ws-path: /
+- alterId: 2
+  cipher: auto
+  country: 🇭🇰 HK
+  h2-opts: {}
+  http-opts: {}
+  name: 435|🇭🇰 HK_62
+  network: ws
+  port: 80
+  server: hkt.gotochinatown.net
+  servername: broadcastlv.chat.bilibili.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: 40fb1315-191a-11ed-b0ca-f23c91cfbbc9
+  ws-headers:
+    HOST: broadcastlv.chat.bilibili.com
+  ws-path: /
+- alterId: 2
+  cipher: auto
+  country: 🇭🇰 HK
+  h2-opts: {}
+  http-opts: {}
+  name: 435|🇭🇰 HK_63
+  network: ws
+  port: 80
+  server: hkt.gotochinatown.net
+  skip-cert-verify: true
+  type: vmess
+  uuid: a6ddfc37-05eb-11ed-af40-f23c91cfbbc9
+  ws-path: /
+- alterId: 2
+  cipher: auto
+  country: 🇭🇰 HK
+  h2-opts: {}
+  http-opts: {}
+  name: 435|🇭🇰 HK_64
+  network: ws
+  port: 80
+  server: hkt.gotochinatown.net
+  servername: broadcastlv.chat.bilibili.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: a2313fba-74a6-11ed-a8bf-f23c91cfbbc9
+  ws-headers:
+    HOST: broadcastlv.chat.bilibili.com
+  ws-path: /
 - alterId: 0
   cipher: auto
-  name: 437,559|🇭🇰 HK_62
+  country: 🇰 HK
+  h2-opts: {}
+  http-opts: {}
+  name: '435,437,559|🇭🇰 HK_62 #2'
   network: none
   port: 13852
   server: 45.207.157.29
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 845764df-ecb3-4b13-bed2-bf1551b68e9a
+  ws-path: /
+- alterId: 2
+  cipher: auto
+  country: 🇭🇰 HK
+  h2-opts: {}
+  http-opts: {}
+  name: 435|🇰 HK_66
+  network: ws
+  port: 80
+  server: hkt.gotochinatown.net
+  servername: broadcastlv.chat.bilibili.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: 7c077572-6da9-11ef-b786-f23c91cfbbc9
+  ws-headers:
+    HOST: broadcastlv.chat.bilibili.com
+  ws-path: /
+- alterId: 2
+  cipher: auto
+  country: 🇭🇰 HK
+  h2-opts: {}
+  http-opts: {}
+  name: 435|🇭🇰 HK_67
+  network: ws
+  port: 80
+  server: hkt.gotochinatown.net
+  skip-cert-verify: true
+  type: vmess
+  uuid: de003c72-0157-11ef-86da-f23c91cfbbc9
+  ws-path: /
+- alterId: 2
+  cipher: auto
+  country: 🇭🇰 HK
+  h2-opts: {}
+  http-opts: {}
+  name: 435|🇭🇰 HK_68
+  network: ws
+  port: 80
+  server: hkt.gotochinatown.net
+  skip-cert-verify: true
+  type: vmess
+  uuid: 3085fcf8-a69c-11ec-bd7c-f23c913c8d2b
+  ws-path: /
+- alterId: 2
+  cipher: auto
+  country: 🇭🇰 HK
+  h2-opts: {}
+  http-opts: {}
+  name: 435|🇭🇰 HK_69
+  network: ws
+  port: 80
+  server: hkt.gotochinatown.net
+  skip-cert-verify: true
+  type: vmess
+  uuid: dcccacba-fa44-11ef-8400-f23c9164ca5d
+  ws-path: /
+- alterId: 2
+  cipher: auto
+  name: '437,559|🇭🇰 HK_66 #1'
+  network: ws
+  port: 80
+  server: hkt.gotochinatown.net
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: c11ff50c-f582-11ee-94df-f23c9164ca5d
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 2
+  cipher: auto
+  name: 437|🇭🇰 HK_60
+  network: ws
+  port: 80
+  server: hkt.gotochinatown.net
+  tls: false
+  type: vmess
+  uuid: 55cce5a4-56b7-11ee-af82-f23c9164ca5d
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 2
+  cipher: auto
+  name: '437,559|🇭🇰 HK_59 #1'
+  network: ws
+  port: 80
+  server: hkt.gotochinatown.net
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: bb85e074-b0c2-11ea-ad28-f23c913c8d2b
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 2
+  cipher: auto
+  name: '437|🇭🇰 HK_62 #1'
+  network: ws
+  port: 80
+  server: hkt.gotochinatown.net
+  tls: false
+  type: vmess
+  uuid: 40fb1315-191a-11ed-b0ca-f23c91cfbbc9
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: '437,559|🇭🇰 HK_60 #1'
+  network: ws
+  port: 80
+  server: hkt.gotochinatown.net
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: a6ddfc37-05eb-11ed-af40-f23c91cfbbc9
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 2
+  cipher: auto
+  name: '437|🇭🇰 HK_64 #1'
+  network: ws
+  port: 80
+  server: hkt.gotochinatown.net
+  tls: false
+  type: vmess
+  uuid: a2313fba-74a6-11ed-a8bf-f23c91cfbbc9
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: 437|🇭🇰 HK_66
+  network: ws
+  port: 80
+  server: hkt.gotochinatown.net
+  tls: false
+  type: vmess
+  uuid: 7c077572-6da9-11ef-b786-f23c91cfbbc9
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: 437,559|🇭🇰 HK_58
+  network: ws
+  port: 80
+  server: hkt.gotochinatown.net
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: de003c72-0157-11ef-86da-f23c91cfbbc9
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 2
+  cipher: auto
+  name: '437,559|🇭🇰 HK_63 #2'
+  network: ws
+  port: 80
+  server: hkt.gotochinatown.net
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3085fcf8-a69c-11ec-bd7c-f23c913c8d2b
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 2
+  cipher: auto
+  name: '437,559|🇭🇰 HK_65 #2'
+  network: ws
+  port: 80
+  server: hkt.gotochinatown.net
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: dcccacba-fa44-11ef-8400-f23c9164ca5d
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
 - alterId: 0
   cipher: auto
   country: 🇰HK
   h2-opts: {}
   http-opts: {}
-  name: 440|HK_03
+  name: 440|HK_04
   network: none
   port: 52190
   server: 47.242.192.233
   skip-cert-verify: true
   type: vmess
   uuid: 98689724-deb2-4a3d-b83b-602221995baf
-- country: 🇭🇰HK
-  name: 440,548|🇭🇰HK_78
-  password: BxceQaOe
-  port: 443
-  server: 58.152.53.219
-  skip-cert-verify: true
-  sni: t.me/ripaojiedian
-  type: trojan
-  udp: true
-- country: 🇭🇰HK
-  name: 440,548|🇭🇰HK_79
-  password: BxceQaOe
-  port: 443
-  server: 58.152.25.130
-  skip-cert-verify: true
-  sni: t.me/ripaojiedian
-  type: trojan
-  udp: true
-- country: 🇭🇰HK
-  name: 440|🇭🇰HK_07
+- country: 🇰HK
+  name: 440|🇭🇰HK_06
   password: BxceQaOe
   port: 443
   server: 58.152.46.60
   skip-cert-verify: true
   sni: '       [By EbraSha] b2n.io/v2ray-configs | 88 '
+  type: trojan
+  udp: true
+- alterId: 0
+  country: 🇭🇰HK
+  name: 440,494,574|🇰HK香港2
+  password: BxceQaOe
+  port: 443
+  server: 58.152.53.219
+  skip-cert-verify: true
+  sni: t.me/ripaojiedian
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  country: 🇭🇰HK
+  name: 440,494,574|HK
+  password: BxceQaOe
+  port: 443
+  server: 58.152.25.130
+  skip-cert-verify: true
+  sni: t.me/ripaojiedian
+  tls: true
   type: trojan
   udp: true
 - name: 453|🇭🇰 香港4|@stairnode
@@ -5104,7 +6666,7 @@ proxies:
   flow: xtls-rprx-vision
   grpc-opts:
     grpc-service-name: ''
-  name: '456,507,559,580|HK VLESS-165 | free-nodes #3'
+  name: '456,507,559,580|HK VLESS-165 | free-nodes #2'
   network: tcp
   port: 443
   server: s457.okgg.top
@@ -5170,21 +6732,6 @@ proxies:
     headers:
       Host: s409.okgfw.top
     path: ''
-- alterId: 0
-  cipher: auto
-  name: '459,502,523,524,559,717|【机场推荐：https://a0a.xyz/】2 #1'
-  network: ws
-  port: '443'
-  server: sv2.wy888.us
-  servername: ''
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: cda69512-ad1b-4f85-b547-b1d545e7cc90
-  ws-opts:
-    headers:
-      Host: sv2.wy888.us
-    path: /vmess
 - name: 460|香港_香港
   network: ws
   port: 2053
@@ -5658,6 +7205,20 @@ proxies:
   skip-cert-verify: true
   sni: v1.littlexing.eu.org
   type: trojan
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  fingerprint: ''
+  name: 470|b4c5622439764c1f81aefd99ee9258...
+  network: ws
+  port: 443
+  server: sv2.wy888.us
+  tls: true
+  type: vmess
+  udp: false
+  uuid: cda69512-ad1b-4f85-b547-b1d545e7cc90
+  ws-opts:
+    path: /vmess
 - name: '475,480|香港(yudou789.top 玉豆免费节点)_1 #1'
   network: ws
   password: 5a2c16f9
@@ -6119,1925 +7680,6 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
-- name: '502,551|HK1｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%2525EF%2525BF%2525BD%2525EF%2525BF%2525BD%2525EF%2525BF%2525BD%2525EF%2525BF%2525BD%2525EF%2525BF%2525BD%2525EF%2525BF%2525BD%25252B%25255BBy%25252BDukeMehdi%25255D%25252Btrojan-HK%25252B'
-  type: trojan
-- name: '502,551|HK3｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%2520%2520%2520%2520%2520%2520%2520%255BBy%2520EbraSha%255D%2520b2n.ir%252Fv2ray-configs%2520%257C%2520127%2520'
-  type: trojan
-- name: '502,551|HK4｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%252520%25255BBy%252520DukeMehdi%25255D%252520trojan-HK%252520'
-  type: trojan
-- name: '502,551|HK5｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: t.me%2525252Fripaojiedian
-  type: trojan
-- name: '502,551|HK7｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%252B%252B%252B%252B%252B%252B%252B%255BBy%252BEbraSha%255D%252Bb2n.ir%252Fv2ray-configs%252B'
-  type: trojan
-- name: '502,551|HK8｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%2520%2520%2520%2520%2520%2520%2520%255BBy%2520DukeMehdi%255D%2520b2n.ir%252Fv2ray-configs%2520%257C%2520166%2520'
-  type: trojan
-- name: '502,551|HK10｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%2525EF%2525BF%2525BD%2525EF%2525BF%2525BD%2525EF%2525BF%2525BD%2525EF%2525BF%2525BD%2525EF%2525BF%2525BD%2525EF%2525BF%2525BD%252520%25255BBy%252520EbraSha%25255D%252520b2n.ir%25252Fv2ray-configs%252520%25257C%252520945%252520'
-  type: trojan
-- name: '502,551|HK11｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%2525EF%2525BF%2525BD%2525EF%2525BF%2525BD%2525EF%2525BF%2525BD%2525EF%2525BF%2525BD%2525EF%2525BF%2525BD%2525EF%2525BF%2525BD%252520%25255BBy%252520DukeMehdi%25255D%252520b2n.ir%25252Fv2ray-configs%252520%25257C%25252017%252520'
-  type: trojan
-- name: '502,551|HK12｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%2520%255BBy%2520DukeMehdi%255D%2520b2n.ir%252Fv2ray-configs%2520%257C%2520868%2520'
-  type: trojan
-- name: '502,551|HK13｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%25F0%259F%2594%2592%2520%255BBy%2520DukeMehdi%255D%2520b2n.ir%252Fv2ray-configs%2520%257C%2520382%2520'
-  type: trojan
-- name: '502,551|HK14｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%2520%2520%2520%2520%2520%2520%2520%255BBy%252BDukeMehdi%255D%252Bb2n.ir%252Fv2ray-configs%2520'
-  type: trojan
-- name: '502,551|HK16｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%252520%252520%252520%252520%252520%252520%252520%25255BBy%252520DukeMehdi%25255D%25252Bb2n.ir%25252Fv2ray-configs%252520%25257C%252520789%252520'
-  type: trojan
-- name: '502,551|HK17｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%252B%252B%252B%252B%252B%252B%252B%255BBy%252BEbraSha%255D%252Btrojan-HK%252B'
-  type: trojan
-- name: '502,551|HK18｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%2525EF%2525BF%2525BD%2525EF%2525BF%2525BD%2525EF%2525BF%2525BD%2525EF%2525BF%2525BD%2525EF%2525BF%2525BD%2525EF%2525BF%2525BD%252520%25255BBy%252520EbraSha%25255D%252520b2n.ir%25252Fv2ray-configs%252520%25257C%252520885%252520'
-  type: trojan
-- name: '502,551|HK19｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%2525EF%2525BF%2525BD%2525EF%2525BF%2525BD%2525EF%2525BF%2525BD%2525EF%2525BF%2525BD%2525EF%2525BF%2525BD%2525EF%2525BF%2525BD%252520%25255BBy%252520DukeMehdi%25255D%252520b2n.ir%25252Fv2ray-configs%252520%25257C%252520934%252520'
-  type: trojan
-- name: '502,551|HK20｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%25F0%259F%2594%2592%2520%255BBy%2520DukeMehdi%255D%2520b2n.ir%252Fv2ray-configs%2520%257C%252054%2520'
-  type: trojan
-- name: '502,551|HK21｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%2520%2520%2520%2520%2520%2520'
-  type: trojan
-- name: '502,551|HK22｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%2525EF%2525BF%2525BD%2525EF%2525BF%2525BD%2525EF%2525BF%2525BD%2525EF%2525BF%2525BD%2525EF%2525BF%2525BD%2525EF%2525BF%2525BD%252520%25255BBy%252520DukeMehdi%25255D%252520b2n.ir%25252Fv2ray-configs%252520%25257C%252520783%252520'
-  type: trojan
-- name: '502,551|HK23｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%252B%252B%252B%252B%252B%252B%252B%255BBy%252BEbraSha%255D%252Bb2n.ir%252Fv2ray-configs%252B%257C%252B88%252B'
-  type: trojan
-- name: '502,551|HK24｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%252520%252520%252520%252520%252520%252520%252520%25255BBy%252520DukeMehdi%25255D%252520b2n.ir%25252Fv2ray-configs%252520'
-  type: trojan
-- name: '502,551|HK25｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%25F0%259F%2594%2592%2520%255BBy%2520DukeMehdi%255D%2520b2n.ir%252Fv2ray-configs%2520%257C%2520402%2520'
-  type: trojan
-- name: '502,551|HK26｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%2520%252B%255BBy%252BDukeMehdi%255D%252Btrojan-HK%252B'
-  type: trojan
-- name: '502,551|HK173｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: t.me%25252Fripaojiedian
-  type: trojan
-- name: '502,551|HK28｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%2525EF%2525BF%2525BD%2525EF%2525BF%2525BD%2525EF%2525BF%2525BD%2525EF%2525BF%2525BD%2525EF%2525BF%2525BD%2525EF%2525BF%2525BD%252520%25255BBy%252520DukeMehdi%25255D%252520b2n.ir%25252Fv2ray-configs%252520%25257C%252520402%252520'
-  type: trojan
-- name: '502,551|HK29｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%25F0%259F%2594%2592%2520%255BBy%2520DukeMehdi%255D%2520b2n.ir%252Fv2ray-configs%2520%257C%252017%2520'
-  type: trojan
-- name: '502,551|HK30｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%25F0%259F%2594%2592'
-  type: trojan
-- name: '502,551|HK32｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%2525EF%2525BF%2525BD%2525EF%2525BF%2525BD%2525EF%2525BF%2525BD%2525EF%2525BF%2525BD%2525EF%2525BF%2525BD%2525EF%2525BF%2525BD%25252B%25255BBy%25252BEbraSha%25255D%25252Btrojan-HK%25252B'
-  type: trojan
-- name: '502,551|HK33｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%2520%255BBy%2520EbraSha%255D%2520b2n.ir%252Fv2ray-configs%2520%257C%2520934%2520'
-  type: trojan
-- name: '502,551|HK34｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%252B%255BBy%252BEbraSha%255D%252Bb2n.ir%252Fv2ray-configs%252B%257C%252B127%252B'
-  type: trojan
-- name: '502,551|HK35｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%252B%255BBy%252BDukeMehdi%255D%252Btrojan-HK%252B'
-  type: trojan
-- name: '502,551|HK36｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%2520%255BBy%2520EbraSha%255D%2520b2n.ir%252Fv2ray-configs%2520%257C%2520166%2520'
-  type: trojan
-- name: '502,551|HK37｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%252B%252B%252B%252B%252B%252B%252B%255BBy%252BDukeMehdi%255D%252Bb2n.ir%252Fv2ray-configs%252B%257C%252B78%252B'
-  type: trojan
-- name: '502,551|HK38｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%2520%255BBy%2520DukeMehdi%255D%2520b2n.ir%252Fv2ray-configs%2520%257C%2520382%2520'
-  type: trojan
-- name: '502,551|HK39｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%25F0%259F%2594%2592%2520%255BBy%2520EbraSha%255D%2520b2n.ir%252Fv2ray-configs%2520%257C%2520868%2520'
-  type: trojan
-- name: '502,551|HK40｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%2520%255BBy%2520DukeMehdi%255D%2520b2n.ir%252Fv2ray-configs%2520%257C%252017%2520'
-  type: trojan
-- name: '502,551|HK41｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%2520%2520%2520%2520%2520%2520%2520%255BBy%2520EbraSha%255D%2520b2n.ir%252Fv2ray-configs%2520%257C%252088%2520'
-  type: trojan
-- name: '502,551|HK42｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%252B%255BBy%252BEbraSha%255D%252Bb2n.ir%252Fv2ray-configs%252B'
-  type: trojan
-- name: '502,551|HK43｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%252B'
-  type: trojan
-- name: '502,551|HK44｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%2520%255BBy%2520EbraSha%255D%2520b2n.ir%252Fv2ray-configs%2520%257C%2520868%2520'
-  type: trojan
-- name: '502,551|HK45｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%2520%2520%2520%2520%2520%2520%2520%255BBy%2520EbraSha%255D%2520b2n.ir%252Fv2ray-configs%2520%257C%2520761%2520'
-  type: trojan
-- name: '502,551|HK46｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%2520%255BBy%2520DukeMehdi%255D%2520b2n.ir%252Fv2ray-configs%2520%257C%2520160%2520'
-  type: trojan
-- name: '502,551|HK47｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%2520%255BBy%2520DukeMehdi%255D%2520'
-  type: trojan
-- name: '502,551|HK48｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%252B%252B%252B%252B%252B%252B%252B%255BBy%252BEbraSha%255D%252Bb2n.ir%252Fv2ray-configs%252B%257C%252B761%252B'
-  type: trojan
-- name: '502,551|HK49｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%252B%255BBy%252BDukeMehdi%255D%252Btrojan-HK%252B'
-  type: trojan
-- name: '502,551|HK50｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%2520%2520%2520%2520%2520%2520%2520%255BBy%2520EbraSha%255D%2520b2n.ir%252Fv2ray-configs%2520%257C%252078%2520'
-  type: trojan
-- name: '502,551|HK159｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: 58.152.46.60
-  type: trojan
-- name: '502,551|HK52｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%2525EF%2525BF%2525BD%2525EF%2525BF%2525BD%2525EF%2525BF%2525BD%2525EF%2525BF%2525BD%2525EF%2525BF%2525BD%2525EF%2525BF%2525BD%252520%25255BBy%252520DukeMehdi%25255D%252520b2n.ir%25252Fv2ray-configs%252520%25257C%252520166%252520'
-  type: trojan
-- name: '502,551|HK53｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%2520%2520%2520%2520%2520%2520%2520%255BBy%2520EbraSha%255D%2520'
-  type: trojan
-- name: '502,551|HK54｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%2520%255BBy%2520DukeMehdi%255D%2520b2n.ir%252Fv2ray-configs%2520%257C%2520934%2520'
-  type: trojan
-- name: '502,551|HK55｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%2520%2520%2520%2520%2520%2520%2520%255BBy%2520DukeMehdi%255D%2520b2n.ir%252Fv2ray-configs%2520%257C%2520868%2520'
-  type: trojan
-- name: '502,551|HK56｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%25F0%259F%2594%2592%2520%255BBy%2520DukeMehdi%255D%2520b2n.ir%252Fv2ray-configs%2520%257C%252083%2520'
-  type: trojan
-- name: '502,551|HK57｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%2520%255BBy%2520EbraSha%255D%2520b2n.ir%252Fv2ray-configs%2520%257C%252083%2520'
-  type: trojan
-- name: '502,551|HK58｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%2525EF%2525BF%2525BD%2525EF%2525BF%2525BD%2525EF%2525BF%2525BD%2525EF%2525BF%2525BD%2525EF%2525BF%2525BD%2525EF%2525BF%2525BD%252520%25255BBy%252520EbraSha%25255D%252520b2n.ir%25252Fv2ray-configs%252520'
-  type: trojan
-- name: '502,551|HK59｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%2520%255BBy%2520DukeMehdi%255D%2520trojan-HK%2520'
-  type: trojan
-- name: '502,551|HK60｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%2520%255BBy%2520EbraSha%255D%2520b2n.ir%252Fv2ray-configs%2520%257C%2520885%2520'
-  type: trojan
-- name: '502,551|HK61｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%2520%2520%2520%2520%2520%2520%2520%255BBy%252BDukeMehdi%255D%252Bb2n.ir%252Fv2ray-configs%2520%257C%2520945%2520'
-  type: trojan
-- name: '502,551|HK62｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%2525EF%2525BF%2525BD%2525EF%2525BF%2525BD%2525EF%2525BF%2525BD%2525EF%2525BF%2525BD%2525EF%2525BF%2525BD%2525EF%2525BF%2525BD%252520%25255BBy%252520DukeMehdi%25255D%252520'
-  type: trojan
-- name: '502,551|HK64｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%2525EF%2525BF%2525BD%2525EF%2525BF%2525BD%2525EF%2525BF%2525BD%2525EF%2525BF%2525BD%2525EF%2525BF%2525BD%2525EF%2525BF%2525BD%252520%25255BBy%252520EbraSha%25255D%252520b2n.ir%25252Fv2ray-configs%252520%25257C%25252083%252520'
-  type: trojan
-- name: '502,551|HK65｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%2525EF%2525BF%2525BD%2525EF%2525BF%2525BD%2525EF%2525BF%2525BD%2525EF%2525BF%2525BD%2525EF%2525BF%2525BD%2525EF%2525BF%2525BD%252520%25255BBy%252520EbraSha%25255D%252520trojan-HK%252520'
-  type: trojan
-- name: '502,551|HK66｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%252520%252520%252520%252520%252520%252520%252520%25255BBy%252520EbraSha%25255D%252520b2n.ir%25252Fv2ray-configs%252520%25257C%252520648%252520'
-  type: trojan
-- name: '502,551|HK67｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%2525EF%2525BF%2525BD%2525EF%2525BF%2525BD%2525EF%2525BF%2525BD%2525EF%2525BF%2525BD%2525EF%2525BF%2525BD%2525EF%2525BF%2525BD%252520%25255BBy%252520EbraSha%25255D%252520'
-  type: trojan
-- name: '502,551|HK68｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%252B%252B%252B%252B%252B%252B%252B%255BBy%252BDukeMehdi%255D%252Bb2n.ir%252Fv2ray-configs%252B%257C%252B160%252B'
-  type: trojan
-- name: '502,551|HK70｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%25252B%25252B%25252B%25252B%25252B%25252B%25252B%25255BBy%25252BEbraSha%25255D%25252Btrojan-HK%25252B'
-  type: trojan
-- name: '502,551|HK71｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%250A%255BBy%2520EbraSha%255D%2520b2n.ir%252Fv2ray-configs%2520%257C%2520868%2520'
-  type: trojan
-- name: '502,551|HK72｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%2520%255BBy%2520DukeMehdi%255D%2520b2n.ir%252Fv2ray-configs%2520%257C%252088%2520'
-  type: trojan
-- name: '502,551|HK73｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%252520%252520%252520%252520%252520%252520%252520%25255BBy%252520DukeMehdi%25255D%252520b2n.ir%25252Fv2ray-configs%252520%25257C%252520160%252520'
-  type: trojan
-- name: '502,551|HK74｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%25F0%259F%2594%2592%2520%255BBy%2520EbraSha%255D%2520b2n.ir%252Fv2ray-configs%2520%257C%252078%2520'
-  type: trojan
-- name: '502,551|HK75｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%252B%255BBy%252BDukeMehdi%255D%252Bb2n.ir%252Fv2ray-configs%252B%257C%252B868%252B'
-  type: trojan
-- name: '502,551|HK76｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%2520%255BBy%2520DukeMehdi%255D%2520b2n.ir%252Fv2ray-configs%2520%257C%2520166%2520'
-  type: trojan
-- name: '502,551|HK77｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%2525EF%2525BF%2525BD%2525EF%2525BF%2525BD%2525EF%2525BF%2525BD%2525EF%2525BF%2525BD%2525EF%2525BF%2525BD%2525EF%2525BF%2525BD%252520%25255BBy%252520EbraSha%25255D%252520b2n.ir%25252Fv2ray-configs%252520%25257C%252520166%252520'
-  type: trojan
-- name: '502,551|HK78｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%2520%255BBy%2520DukeMehdi%255D%2520b2n.ir%252Fv2ray-configs%2520%257C%252083%2520'
-  type: trojan
-- name: '502,551|HK79｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%2520%255BBy%2520EbraSha%255D%2520trojan-HK%2520'
-  type: trojan
-- name: '502,551|HK80｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%252520%252520%252520%252520%252520%252520%252520%25255BBy%252520EbraSha%25255D%252520b2n.ir%25252Fv2ray-configs%252520%25257C%25252088%252520'
-  type: trojan
-- name: '502,551|HK81｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%252B%255BBy%252BEbraSha%255D%252Btrojan-HK%252B'
-  type: trojan
-- name: '502,551|HK82｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%2520%255BBy%2520EbraSha%255D%2520b2n.ir%252Fv2ray-configs%2520'
-  type: trojan
-- name: '502,551|HK83｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%25F0%259F%2594%2592%2520%255BBy%2520DukeMehdi%255D%2520b2n.ir%252Fv2ray-configs%2520%257C%2520789%2520'
-  type: trojan
-- name: '502,551|HK84｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%250A%255BBy%2520EbraSha%255D%2520trojan-HK%2520'
-  type: trojan
-- name: '502,551|HK85｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%25F0%259F%2594%2592%2520%255BBy%2520EbraSha%255D%2520b2n.ir%252Fv2ray-configs%2520%257C%2520152%2520'
-  type: trojan
-- name: '502,551|HK86｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%252B%255BBy%252BDukeMehdi%255D%252Bb2n.ir%252Fv2ray-configs%252B%257C%252B160%252B'
-  type: trojan
-- name: '502,551|HK87｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%2525EF%2525BF%2525BD%2525EF%2525BF%2525BD%2525EF%2525BF%2525BD%2525EF%2525BF%2525BD%2525EF%2525BF%2525BD%2525EF%2525BF%2525BD%252520%25255BBy%252520DukeMehdi%25255D%252520b2n.ir%25252Fv2ray-configs%252520%25257C%252520127%252520'
-  type: trojan
-- name: '502,551|HK88｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%252520%25252B%25255BBy%25252BDukeMehdi%25255D%25252Btrojan-HK%25252B'
-  type: trojan
-- name: '502,551|HK89｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%250A%255BBy%2520DukeMehdi%255D%2520trojan-HK%2520'
-  type: trojan
-- name: '502,551|HK90｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%25F0%259F%2594%2592%2520%255BBy%2520DukeMehdi%255D%2520b2n.ir%252Fv2ray-configs%2520%257C%2520783%2520'
-  type: trojan
-- name: '502,551|HK91｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%2520%2520%2520%2520%2520%2520%2520%255BBy%2520DukeMehdi%255D%2520b2n.ir%252Fv2ray-configs%2520'
-  type: trojan
-- name: '502,551|HK92｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: t.me%252525252Fripaojiedian
-  type: trojan
-- name: '502,551|HK93｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: t.me%2525252525252Fripaojiedian
-  type: trojan
-- name: '502,551|HK94｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%252B%255BBy%252BDukeMehdi%255D%252Bb2n.ir%252Fv2ray-configs%252B%257C%252B88%252B'
-  type: trojan
-- name: '502,551|HK95｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%252B%252B%252B%252B%252B%252B%252B%255BBy%252BEbraSha%255D%252Bb2n.ir%252Fv2ray-configs%252B%257C%252B648%252B'
-  type: trojan
-- name: '502,551|HK96｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%2520%2520%2520%2520%2520%2520%2520%255BBy%2520DukeMehdi%255D%2520'
-  type: trojan
-- name: '502,551|HK97｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%252520%252520%252520%252520%252520%252520%252520%25255BBy%252520EbraSha%25255D%252520trojan-HK%252520'
-  type: trojan
-- name: '502,551|HK98｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%2520%2520%2520%2520%2520%2520%252B%255BBy%252BDukeMehdi%255D%252Btrojan-HK%252B'
-  type: trojan
-- name: '502,551|HK99｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%250A%255BBy%252BDukeMehdi%255D%252Btrojan-HK%252B'
-  type: trojan
-- name: '502,551|HK101｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%252520%25252B%25255BBy%25252BEbraSha%25255D%25252Btrojan-HK%25252B'
-  type: trojan
-- name: '502,551|HK102｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%2525EF%2525BF%2525BD%2525EF%2525BF%2525BD%2525EF%2525BF%2525BD%2525EF%2525BF%2525BD%2525EF%2525BF%2525BD%2525EF%2525BF%2525BD%25250A%25255BBy%25252BEbraSha%25255D%25252Btrojan-HK%25252B'
-  type: trojan
-- name: '502,551|HK103｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%2520%255BBy%2520DukeMehdi%255D%2520trojan-HK%2520'
-  type: trojan
-- name: '502,551|HK104｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%2525EF%2525BF%2525BD%2525EF%2525BF%2525BD%2525EF%2525BF%2525BD%2525EF%2525BF%2525BD%2525EF%2525BF%2525BD%2525EF%2525BF%2525BD%252520%25255BBy%252520EbraSha%25255D%252520b2n.ir%25252Fv2ray-configs%252520%25257C%252520681%252520'
-  type: trojan
-- name: '502,551|HK105｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%2520%255BBy%2520EbraSha%255D%2520'
-  type: trojan
-- name: '502,551|HK106｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%2520%255BBy%2520EbraSha%255D%2520b2n.ir%252Fv2ray-configs%2520%257C%2520648%2520'
-  type: trojan
-- name: '502,551|HK107｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%2520%255BBy%2520EbraSha%255D%2520b2n.io%252Fv2ray-configs%2520%257C%2520160%2520'
-  type: trojan
-- name: '502,551|HK108｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%2520%255BBy%2520DukeMehdi%255D%2520b2n.ir%252Fv2ray-configs%2520%257C%2520934%2520'
-  type: trojan
-- name: '502,551|HK109｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%2520%2520%2520%2520%2520%2520%2520%255BBy%252BDukeMehdi%255D%252Bb2n.ir%252Fv2ray-configs%2520%257C%252088%2520'
-  type: trojan
-- name: '502,551|HK110｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%2520%2520%2520%2520%2520%2520%2520%255BBy%2520EbraSha%255D%2520b2n.ir%252Fv2ray-configs%2520%257C%252054%2520'
-  type: trojan
-- name: '502,551|HK111｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%252520%25255BBy%252520EbraSha%25255D%252520trojan-HK%252520'
-  type: trojan
-- name: '502,551|HK112｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%2520%255BBy%2520EbraSha%255D%2520b2n.ir%252Fv2ray-configs%2520%257C%2520152%2520'
-  type: trojan
-- name: '502,551|HK113｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%25F0%259F%2594%2592%2520%255BBy%2520EbraSha%255D%2520b2n.ir%252Fv2ray-configs%2520%257C%2520789%2520'
-  type: trojan
-- name: '502,551|HK114｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD'
-  type: trojan
-- name: '502,551|HK115｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%2520%2520%2520%2520%2520%2520%2520%255BBy%2520DukeMehdi%255D%2520trojan-HK%2520'
-  type: trojan
-- name: '502,551|HK116｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%2520%255BBy%2520DukeMehdi%255D%2520b2n.ir%252Fv2ray-configs%2520%257C%252078%2520'
-  type: trojan
-- name: '502,551|HK117｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%25F0%259F%2594%2592%2520%255BBy%2520DukeMehdi%255D%2520b2n.ir%252Fv2ray-configs%2520%257C%2520160%2520'
-  type: trojan
-- name: '502,551|HK118｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%2520%255BBy%2520EbraSha%255D%2520b2n.ir%252Fv2ray-configs%2520%257C%2520160%2520'
-  type: trojan
-- name: '502,536,551,559|HK119｜机房｜低风险 #2'
-  password: 4de7d295-ea17-4c41-9c88-bdcc815443bd
-  port: 49213
-  server: xiaozhu.gisorty.cn
-  skip-cert-verify: true
-  sni: xiaozhu.gisorty.cn
-  type: trojan
-- name: '502,551|HK209｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%20%20%20%20%20%20%20%5BBy%20EbraSha%5D%20b2n.ir%2Fv2ray-configs%20'
-  type: trojan
-- name: '502,551|HK129｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%250A%255BBy%2520DukeMehdi%255D%2520b2n.ir%252Fv2ray-configs%2520%257C%2520783%2520'
-  type: trojan
-- name: '502,551|HK130｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%2520%255BBy%2520DukeMehdi%255D%2520'
-  type: trojan
-- name: '502,551|HK131｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%2525EF%2525BF%2525BD%2525EF%2525BF%2525BD%2525EF%2525BF%2525BD%2525EF%2525BF%2525BD%2525EF%2525BF%2525BD%2525EF%2525BF%2525BD%252520%25255BBy%252520EbraSha%25255D%252520b2n.ir%25252Fv2ray-configs%252520%25257C%252520934%252520'
-  type: trojan
-- name: '502,551|HK132｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%252B%255BBy%252BDukeMehdi%255D%252B'
-  type: trojan
-- name: '502,551|HK133｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%250A%255BBy%252BEbraSha%255D%252Btrojan-HK%252B'
-  type: trojan
-- name: '502,551|HK134｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%252520%252520%252520%252520%252520%252520%252520%25255BBy%252520DukeMehdi%25255D%252520'
-  type: trojan
-- name: '502,551|HK135｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%2520%2520%2520%2520%2520%2520%2520%255BBy%2520DukeMehdi%255D%2520b2n.ir%252Fv2ray-configs%2520%257C%252078%2520'
-  type: trojan
-- name: '502,551|HK136｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%2520%255BBy%2520DukeMehdi%255D%2520b2n.ir%252Fv2ray-configs%2520%257C%2520160%2520'
-  type: trojan
-- name: '502,551|HK137｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%25F0%259F%2594%2592%2520%255BBy%2520EbraSha%255D'
-  type: trojan
-- name: '502,551|HK138｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%2525EF%2525BF%2525BD%2525EF%2525BF%2525BD%2525EF%2525BF%2525BD%2525EF%2525BF%2525BD%2525EF%2525BF%2525BD%2525EF%2525BF%2525BD%252520%25255BBy%252520EbraSha%25255D%252520b2n.ir%25252Fv2ray-configs%252520%25257C%252520178%252520'
-  type: trojan
-- name: '502,551|HK139｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%252B%255BBy%252BDukeMehdi%255D%252Bb2n.ir%252Fv2ray-configs%252B%257C%252B402%252B'
-  type: trojan
-- name: '502,551|HK140｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%252B%255BBy%252BEbraSha%255D%252Bb2n.ir%252Fv2ray-configs%252B%257C%252B868%252B'
-  type: trojan
-- name: '502,551|HK141｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%252B%252B%252B%252B%252B%252B%252B%255BBy%252BEbraSha%255D%252Bb2n.ir%252Fv2ray-configs%252B%257C%252B83%252B'
-  type: trojan
-- name: '502,551|HK142｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%2520%255BBy%2520DukeMehdi%255D%2520b2n.ir%252Fv2ray-configs%2520%257C%2520789%2520'
-  type: trojan
-- name: '502,551|HK143｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%2520%255BBy%2520DukeMehdi%255D%2520b2n.ir%252Fv2ray-configs%2520%257C%2520789%2520'
-  type: trojan
-- name: '502,551|HK144｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%2520%2520%2520%2520%2520%2520%2520%255BBy%2520EbraSha%255D%2520b2n.ir%252Fv2ray-configs%2520%257C%252083%2520'
-  type: trojan
-- name: '502,551|HK145｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%25F0%259F%2594%2592%2520%255BBy%2520EbraSha%255D%2520b2n.ir%252Fv2ray-configs%2520%257C%2520449%2520'
-  type: trojan
-- name: '502,551|HK147｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%20%5BBy%20DukeMehdi%5D%20b2n.ir%2Fv2ray-configs%20%7C%20945%20'
-  type: trojan
-- name: '502,551|HK148｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%20%5BBy%20DukeMehdi%5D%20b2n.ir%2Fv2ray-configs%20%7C%20166%20'
-  type: trojan
-- name: '502,551|HK150｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%20%5BBy%20DukeMehdi%5D%20'
-  type: trojan
-- name: '502,551|HK151｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%20%5BBy%20DukeMehdi%5D%20trojan-HK%20'
-  type: trojan
-- name: '502,551|HK152｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%20%5BBy%20EbraSha%5D%20b2n.ir%2Fv2ray-configs%20%7C%20885%20'
-  type: trojan
-- name: '502,551|HK155｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%F0%9F%94%92%20%5BBy%20DukeMehdi%5D%20b2n.ir%2Fv2ray-configs%20%7C%20382%20'
-  type: trojan
-- name: '502,551|HK269｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%20%5BBy%20DukeMehdi%5D%20b2n.ir%2Fv2ray-configs%20%7C%20945%20'
-  type: trojan
-- name: '502,551|HK157｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%20%5BBy%20DukeMehdi%5D%20b2n.ir%2Fv2ray-configs%20%7C%2088%20'
-  type: trojan
-- name: '502,551|HK158｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%20%5BBy%20DukeMehdi%5D%20b2n.ir%2Fv2ray-configs%20%7C%20783%20'
-  type: trojan
-- name: '502,551|HK160｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%20%5BBy%20DukeMehdi%5D%20b2n.ir%2Fv2ray-configs%20%7C%20789%20'
-  type: trojan
-- name: '502,551|HK161｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%F0%9F%94%92%20%5BBy%20EbraSha%5D%20b2n.ir%2Fv2ray-configs%20%7C%20789%20'
-  type: trojan
-- name: '502,551|HK338｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%20%5BBy%20EbraSha%5D%20b2n.ir%2Fv2ray-configs%20%7C%20934%20'
-  type: trojan
-- name: '502,551|HK311｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%20'
-  type: trojan
-- name: '502,551|HK164｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%20%5BBy%20DukeMehdi%5D%20b2n.ir%2Fv2ray-configs%20%7C%20868%20'
-  type: trojan
-- name: '502,551|HK165｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%20%5BBy%20DukeMehdi%5D%20b2n.ir%2Fv2ray-configs%20%7C%20934%20'
-  type: trojan
-- name: '502,551|HK166｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%F0%9F%94%92%20%5BBy%20EbraSha%5D%20'
-  type: trojan
-- name: '502,551|HK167｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%20%5BBy%20DukeMehdi%5D%20b2n.ir%2Fv2ray-configs%20%7C%2083%20'
-  type: trojan
-- name: '502,551|HK168｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%EF%BF%BD%20%5BBy%20DukeMehdi%5D'
-  type: trojan
-- name: '502,551|HK169｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%F0%9F%94%92%20%5BBy%20DukeMehdi%5D%20trojan-HK%20'
-  type: trojan
-- name: '502,551|HK170｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%20%5BBy%20EbraSha%5D%20b2n.ir%2Fv2ray-configs%20%7C%20934%20'
-  type: trojan
-- name: '502,551|HK171｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%20%5BBy%20EbraSha%5D%20b2n.io%2Fv2ray-configs%20%7C%20160%20'
-  type: trojan
-- name: '502,551|HK172｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%22%22%5BBy%20DukeMehdi%5D%20trojan-HK%20'
-  type: trojan
-- name: '502,551|HK174｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%20%5BBy%20DukeMehdi%5D%20b2n.ir%2Fv2ray-configs%20%7C%20127%20'
-  type: trojan
-- name: '502,551|HK175｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%20%5BBy%20EbraSha%5D%20b2n.ir%2Fv2ray-configs%20%7C%20475%20'
-  type: trojan
-- name: '502,551|HK176｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%EF%BF%BD%20%5BBy%20EbraSha%5D%20b2n.ir%2Fv2ray-configs%20%7C%20232%20'
-  type: trojan
-- name: '502,551|HK177｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%20%5BBy%20EbraSha%5D%20b2n.ir%2Fv2ray-configs%20%7C%2088%20'
-  type: trojan
-- name: '502,551|HK178｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%20%5BBy%20DukeMehdi%5D%20b2n.ir%2Fv2ray-configs%20%7C%20127%20'
-  type: trojan
-- name: '502,551|HK179｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%20%5BBy%20DukeMehdi%5D%20b2n.ir%2Fv2ray-configs%20%7C%20402%20'
-  type: trojan
-- name: '502,551|HK180｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%F0%9F%94%92%20%5BBy%20EbraSha%5D%20b2n.ir%2Fv2ray-configs%20%7C%20648%20'
-  type: trojan
-- name: '502,551|HK339｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%20%5BBy%20DukeMehdi%5D%20b2n.ir%2Fv2ray-configs%20%7C%20382%20'
-  type: trojan
-- name: '502,551|HK182｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%20%5BBy%20DukeMehdi%5D%20b2n.ir%2Fv2ray-configs%20%7C%2017%20'
-  type: trojan
-- name: '502,551|HK183｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%20%5BBy%20EbraSha%5D%20b2n.ir%2Fv2ray-configs%20%7C%20127%20'
-  type: trojan
-- name: '502,551|HK296｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%20%5BBy%20EbraSha%5D%20b2n.ir%2Fv2ray-configs%20'
-  type: trojan
-- name: '502,551|HK185｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%20%5BBy%20EbraSha%5D%20b2n.io%2Fv2ray-configs%20%7C%20934%20'
-  type: trojan
-- name: '502,551|HK186｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%20%5BBy%20EbraSha%5D%20'
-  type: trojan
-- name: '502,551|HK187｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%20%5BBy%20EbraSha%5D%20b2n.ir%2Fv2ray-configs%20%7C%20681%20'
-  type: trojan
-- name: '502,551|HK188｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%20%5BBy%20EbraSha%5D%20b2n.ir%2Fv2ray-configs%20%7C%20475%20'
-  type: trojan
-- name: '502,551|HK189｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%EF%BF%BD%20%5BBy%20DukeMehdi%5D%20trojan-HK%20'
-  type: trojan
-- name: '502,551|HK190｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%EF%BF%BD%20%5BBy%20DukeMehdi%5D%20b2n.ir%2Fv2ray-configs%20%7C%2017%20'
-  type: trojan
-- name: '502,551|HK191｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%20%5BBy%20DukeMehdi%5D%20b2n.ir%2Fv2ray-configs%20%7C%20166%20'
-  type: trojan
-- name: '502,551|HK195｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%25F0%259F%2594%2592%2520%255BBy%2520DukeMehdi%255D%2520b2n.ir%252Fv2ray-configs%2520%257C%2520868%2520'
-  type: trojan
-- name: '502,551|HK196｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%252520%252520%252520%252520%252520%252520%252520%25255BBy%252520DukeMehdi%25255D%252520b2n.ir%25252Fv2ray-configs%252520%25257C%252520783%252520'
-  type: trojan
-- name: '502,551|HK197｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%2520%255BBy%2520EbraSha%255D%2520b2n.ir%252Fv2ray-configs%2520%257C%252088%2520'
-  type: trojan
-- name: '502,551|HK198｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%252B%255BBy%252BDukeMehdi%255D%252Bb2n.ir%252Fv2ray-configs%252B%257C%252B166%252B'
-  type: trojan
-- name: '502,551|HK199｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%2520%255BBy%2520EbraSha%255D%2520b2n.ir%252Fv2ray-configs%2520%257C%252078%2520'
-  type: trojan
-- name: '502,551|HK200｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%25F0%259F%2594%2592%2520%255BBy%2520EbraSha%255D%2520b2n.ir%252Fv2ray-configs%2520%257C%2520934%2520'
-  type: trojan
-- name: '502,551|HK201｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%2525EF%2525BF%2525BD%2525EF%2525BF%2525BD%2525EF%2525BF%2525BD%2525EF%2525BF%2525BD%2525EF%2525BF%2525BD%2525EF%2525BF%2525BD%252520%25255BBy%252520DukeMehdi%25255D%252520trojan-HK%252520'
-  type: trojan
-- name: '502,551|HK207｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%F0%9F%94%92%2B%5BBy%2BDukeMehdi%5D%2Bb2n.ir%2Fv2ray-configs%2B%7C%2B783%2B'
-  type: trojan
-- name: '502,551,559|🇭🇰[openproxylist.com] trojan-H... #2'
-  network: tcp
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%2B%5BBy%2BDukeMehdi%5D%2Btrojan-HK%2B'
-  type: trojan
-- name: '502,551|HK213｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%2B%5BBy%2BDukeMehdi%5D%2Bb2n.io%2Fv2ray-configs%2B%7C%2B166%2B'
-  type: trojan
-- name: '502,551|HK214｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%2B%5BBy%2BEbraSha%5D%2Bb2n.ir%2Fv2ray-configs%2B%7C%2B761%2B'
-  type: trojan
-- name: '502,551|HK216｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%2B%2B%2B%2B%2B%2B%2B%5BBy%2BEbraSha%5D%2Bb2n.ir%2Fv2ray-configs%2B%7C%2B885%2B'
-  type: trojan
-- name: '502,551|HK217｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%F0%9F%94%92%2B%5BBy%2BEbraSha%5D%2Bb2n.ir%2Fv2ray-configs%2B%7C%2B789%2B'
-  type: trojan
-- name: '502,551|HK218｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%EF%BF%BD%2B%5BBy%2BDukeMehdi%5D'
-  type: trojan
-- name: '502,551|HK219｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%2B%5BBy%2BDukeMehdi%5D%2Bb2n.ir%2Fv2ray-configs%2B%7C%2B88%2B'
-  type: trojan
-- name: '502,551|HK220｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%F0%9F%94%92%2B%5BBy%2BDukeMehdi%5D%2Bb2n.ir%2Fv2ray-configs%2B%7C%2B166%2B'
-  type: trojan
-- name: '502,551|HK221｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%EF%BF%BD%2B%5BBy%2BDukeMehdi%5D%2Bb2n.ir%2Fv2ray-configs%2B%7C%2B232%2B'
-  type: trojan
-- name: '502,551|HK222｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%252B%255BBy%252BEbraSha%255D%252Btrojan-HK%252B'
-  type: trojan
-- name: '502,551|HK223｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%2B%5BBy%2BDukeMehdi%5D%2Bb2n.ir%2Fv2ray-configs%2B%7C%2B885%2B'
-  type: trojan
-- name: '502,551|HK224｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%2520%2520%2520%2520%2520%2520%2520%255BBy%2520EbraSha%255D%2520b2n.ir%252Fv2ray-configs%2520%257C%2520449%2520'
-  type: trojan
-- name: '502,551|HK225｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%2B%5BBy%2BEbraSha%5D%2Bb2n.ir%2Fv2ray-configs%2B%7C%2B54%2B'
-  type: trojan
-- name: '502,551|HK226｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%2B%5BBy%2BDukeMehdi%5D%2Bb2n.ir%2Fv2ray-configs%2B%7C%2B54%2B'
-  type: trojan
-- name: '502,551|HK227｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%2520%255BBy%2520EbraSha%255D%2520b2n.ir%252Fv2ray-configs%2520%257C%252054%2520'
-  type: trojan
-- name: '502,551|HK228｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%0A%5BBy%2BEbraSha%5D%2Bb2n.ir%2Fv2ray-configs%2B%7C%2B868%2B'
-  type: trojan
-- name: '502,551|HK229｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%2B%5BBy%2BEbraSha%5D%2Bb2n.ir%2Fv2ray-configs%2B%7C%2B83%2B'
-  type: trojan
-- name: '502,551|HK230｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%2B%5BBy%2BEbraSha%5D%2Bb2n.ir%2Fv2ray-configs%2B%7C%2B934%2B'
-  type: trojan
-- name: '502,551|HK231｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%F0%9F%94%92%2B%5BBy%2BEbraSha%5D%2B'
-  type: trojan
-- name: '502,551|HK232｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%F0%9F%94%92%2B%5BBy%2BDukeMehdi%5D%2Bb2n.ir%2Fv2ray-configs%2B%7C%2B382%2B'
-  type: trojan
-- name: '502,551|HK233｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%2B%2B%2B%2B%2B%2B%2B%5BBy%2BDukeMehdi%5D%2Bb2n.ir%2Fv2ray-configs%2B%7C%2B83%2B'
-  type: trojan
-- name: '502,551|HK234｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%2B'
-  type: trojan
-- name: '502,551|HK235｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%2B%2B%2B%2B%2B%2B%2B%5BBy%2BDukeMehdi%5D%2Bb2n.ir%2Fv2ray-configs%2B%7C%2B868%2B'
-  type: trojan
-- name: '502,551|HK236｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%F0%9F%94%92%2B%5BBy%2BDukeMehdi%5D%2Bb2n.ir%2Fv2ray-configs%2B%7C%2B127%2B'
-  type: trojan
-- name: '502,551|HK237｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%2B%5BBy%2BEbraSha%5D%2Bb2n.ir%2Fv2ray-configs%2B%7C%2B475%2B'
-  type: trojan
-- name: '502,551|HK238｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%2B%2B%2B%2B%2B%2B%2B%5BBy%2BEbraSha%5D%2Bb2n.ir%2Fv2ray-configs%2B%7C%2B934%2B'
-  type: trojan
-- name: '502,551|HK239｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%F0%9F%94%92%2B%5BBy%2BEbraSha%5D%2Bb2n.ir%2Fv2ray-configs%2B%7C%2B648%2B'
-  type: trojan
-- name: '502,551|HK240｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%2B%2B%2B%2B%2B%2B%2B%5BBy%2BDukeMehdi%5D%2Bb2n.ir%2Fv2ray-configs%2B%7C%2B166%2B'
-  type: trojan
-- name: '502,551|HK241｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%2B%5BBy%2BEbraSha%5D%2Bb2n.io%2Fv2ray-configs%2B%7C%2B160%2B'
-  type: trojan
-- name: '502,551|HK242｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%2B%5BBy%2BDukeMehdi%5D%2Bb2n.ir%2Fv2ray-configs%2B%7C%2B402%2B'
-  type: trojan
-- name: '502,551|HK243｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%EF%BF%BD%2B%5BBy%2BDukeMehdi%5D%2Btrojan-HK%2B'
-  type: trojan
-- name: '502,551|HK244｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%2B%5BBy%2BDukeMehdi%5D%2Bb2n.ir%2Fv2ray-configs%2B%7C%2B382%2B'
-  type: trojan
-- name: '502,551|HK245｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%25EF%25BF%25BD%2520%255BBy%2520EbraSha%255D%2520trojan-HK%2520'
-  type: trojan
-- name: '502,551|HK246｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%22%22%5BBy%2BDukeMehdi%5D%2Btrojan-HK%2B'
-  type: trojan
-- name: '502,551|HK247｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%EF%BF%BD%2B%5BBy%2BDukeMehdi%5D%2Bb2n.ir%2Fv2ray-configs%2B%7C%2B166%2B'
-  type: trojan
-- name: '502,551|HK248｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%2B%5BBy%2BDukeMehdi%5D%2Bb2n.ir%2Fv2ray-configs%2B%7C%2B681%2B'
-  type: trojan
-- name: '502,551|HK249｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%2B%5BBy%2BEbraSha%5D%2Bb2n.ir%2Fv2ray-configs%2B%7C%2B127%2B'
-  type: trojan
-- name: '502,551|HK250｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%2B%2B%2B%2B%2B%2B%2B%5BBy%2BEbraSha%5D%2Bb2n.ir%2Fv2ray-configs%2B%7C%2B78%2B'
-  type: trojan
-- name: '502,551|HK251｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%2B%5BBy%2BDukeMehdi%5D%2Bb2n.ir%2Fv2ray-configs%2B%7C%2B934%2B'
-  type: trojan
-- name: '502,551|HK252｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: t.me%25252525252Fripaojiedian
-  type: trojan
-- name: '502,551|HK253｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%EF%BF%BD%2B%5BBy%2BEbraSha%5D%2Bb2n.ir%2Fv2ray-configs%2B%7C%2B681%2B'
-  type: trojan
-- name: '502,551|HK254｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%2B%2B%2B%2B%2B%2B%2B%5BBy%2BDukeMehdi%5D%2Bb2n.ir%2Fv2ray-configs%2B%7C%2B382%2B'
-  type: trojan
-- name: '502,551|HK255｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%2B%5BBy%2BEbraSha%5D%2Bb2n.ir%2Fv2ray-configs%2B%7C%2B178%2B'
-  type: trojan
-- name: '502,551|HK256｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%2520%2520%2520%2520%2520%2520%2520%255BBy%2520DukeMehdi%255D%2520b2n.ir%252Fv2ray-configs%2520%257C%2520945%2520'
-  type: trojan
-- name: '502,551|HK257｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%2B%5BBy%2BDukeMehdi%5D%2Bb2n.ir%2Fv2ray-configs%2B%7C%2B166%2B'
-  type: trojan
-- name: '502,551|HK258｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%2B%2B%2B%2B%2B%2B%2B%5BBy%2BEbraSha%5D%2Bb2n.ir%2Fv2ray-configs%2B%7C%2B475%2B'
-  type: trojan
-- name: '502,551|HK259｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%F0%9F%94%92%2B%5BBy%2BEbraSha%5D%2Bb2n.ir%2Fv2ray-configs%2B%7C%2B681%2B'
-  type: trojan
-- name: '502,551|HK260｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%2B%5BBy%2BDukeMehdi%5D%2Bb2n.ir%2Fv2ray-configs%2B%7C%2B17%2B'
-  type: trojan
-- name: '502,551|HK261｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%2B%5BBy%2BEbraSha%5D%2Bb2n.ir%2Fv2ray-configs%2B'
-  type: trojan
-- name: '502,551|HK262｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%2B%2B%2B%2B%2B%2B%2B%5BBy%2BEbraSha%5D%2Bb2n.ir%2Fv2ray-configs%2B%7C%2B945%2B'
-  type: trojan
-- name: '502,551|HK263｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%EF%BF%BD%2B%5BBy%2BDukeMehdi%5D%2Bb2n.ir%2Fv2ray-configs%2B%7C%2B17%2B'
-  type: trojan
-- name: '502,551|HK264｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%2B%5BBy%2BEbraSha%5D%2Bb2n.ir%2Fv2ray-configs%2B%7C%2B88%2B'
-  type: trojan
-- name: '502,551|HK265｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%2B%5BBy%2BDukeMehdi%5D%2Bb2n.ir%2Fv2ray-configs%2B%7C%2B783%2B'
-  type: trojan
-- name: '502,551|HK266｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%2B%2B%5BBy%2BDukeMehdi%5D%2Btrojan-HK%2B'
-  type: trojan
-- name: '502,551|HK267｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%20%20%20%20%20%20%2B%5BBy%2BDukeMehdi%5D%2Btrojan-HK%2B'
-  type: trojan
-- name: '502,551|HK268｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%20%20%20%20%20%20%2B%5BBy%2BEbraSha%5D%2Bb2n.ir%2Fv2ray-configs%2B'
-  type: trojan
-- name: '502,551|HK270｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%20%20%20%20%20%20%20%5BBy%20DukeMehdi%5D%20b2n.ir%2Fv2ray-configs%20%7C%20783%20'
-  type: trojan
-- name: '502,551|HK271｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%2B%2B%2B%2B%2B%2B%2B%5BBy%2BDukeMehdi%5D%2Bb2n.ir%2Fv2ray-configs%2B%7C%2B789%2B'
-  type: trojan
-- name: '502,551|HK272｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%20%5BBy%20EbraSha%5D%20'
-  type: trojan
-- name: '502,551|HK273｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%20%20%20%20%20%20%20%5BBy%20DukeMehdi%5D%20b2n.ir%2Fv2ray-configs%20%7C%20945%20'
-  type: trojan
-- name: '502,551|HK274｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%2B%2B%2B%2B%2B%2B'
-  type: trojan
-- name: '502,551|HK275｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%2B%5BBy%2BEbraSha%5D%2Btrojan-HK%2B'
-  type: trojan
-- name: '502,551|HK276｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%2B%2B%2B%2B%2B%2B%2B%5BBy%2BDukeMehdi%5D%2Btrojan-HK%2B'
-  type: trojan
-- name: '502,551|HK277｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%20%20%20%20%20%20%20%5BBy%20EbraSha%5D%20b2n.ir%2Fv2ray-configs%20%7C%20449%20'
-  type: trojan
-- name: '502,551|HK278｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%20%20%20%20%20%20%2B%5BBy%2BDukeMehdi%5D%2Bb2n.ir%2Fv2ray-configs%2B%7C%2B88%2B'
-  type: trojan
-- name: '502,551|HK279｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%20%5BBy%20EbraSha%5D%20b2n.ir%2Fv2ray-configs%20%7C%2054%20'
-  type: trojan
-- name: '502,551|HK280｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%20%20%20%20%20%20%2B%5BBy%2BDukeMehdi%5D%2Bb2n.ir%2Fv2ray-configs%2B'
-  type: trojan
-- name: '502,551|HK281｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%20%20%20%20%20%20'
-  type: trojan
-- name: '502,551|HK282｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%2B%5BBy%2BDukeMehdi%5D%2Bb2n.ir%2Fv2ray-configs%2B%7C%2B160%2B'
-  type: trojan
-- name: '502,551|HK283｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%2B%5BBy%2BEbraSha%5D%2Bb2n.io%2Fv2ray-configs%2B%7C%2B934%2B'
-  type: trojan
-- name: '502,551|HK284｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%2B%5BBy%2BEbraSha%5D%2Bb2n.ir%2Fv2ray-configs%2B%7C%2B681%2B'
-  type: trojan
-- name: '502,551|HK285｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%2B%5BBy%2BDukeMehdi%5D%2Bb2n.ir%2Fv2ray-configs%2B%7C%2B868%2B'
-  type: trojan
-- name: '502,551|HK286｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%2B%5BBy%2BEbraSha%5D%2Bb2n.ir%2Fv2ray-configs%2B%7C%2B761%2B'
-  type: trojan
-- name: '502,551|HK287｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%F0%9F%94%92%20%5BBy%20DukeMehdi%5D%20b2n.ir%2Fv2ray-configs%20%7C%20783%20'
-  type: trojan
-- name: '502,551|HK288｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%25F0%259F%2594%2592%2520%255BBy%2520EbraSha%255D%2520b2n.ir%252Fv2ray-configs%2520%257C%2520178%2520'
-  type: trojan
-- name: '502,551|HK289｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%252B%252B%252B%252B%252B%252B%252B%255BBy%252BEbraSha%255D%252Bb2n.ir%252Fv2ray-configs%252B%257C%252B160%252B'
-  type: trojan
-- name: '502,551|HK290｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%252520%252520%252520%252520%252520%252520%252520%25255BBy%25252BDukeMehdi%25255D%25252Bb2n.ir%25252Fv2ray-configs%252520'
-  type: trojan
-- name: '502,551|HK291｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%25F0%259F%2594%2592%2520%255BBy%2520EbraSha%255D%2520b2n.ir%252Fv2ray-configs%2520%257C%252054%2520'
-  type: trojan
-- name: '502,551|HK292｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%2B%5BBy%2BDukeMehdi%5D%2Bb2n.ir%2Fv2ray-configs%2B%7C%2B127%2B'
-  type: trojan
-- name: '502,551|HK293｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%2B%5BBy%2BDukeMehdi%5D%2B'
-  type: trojan
-- name: '502,551|HK294｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%0A%5BBy%2BDukeMehdi%5D%2Btrojan-HK%2B'
-  type: trojan
-- name: '502,551|HK297｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%20%5BBy%20DukeMehdi%5D%20b2n.ir%2Fv2ray-configs%20'
-  type: trojan
-- name: '502,551|HK298｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%20%20%20%20%20%20%20%5BBy%20EbraSha%5D%20'
-  type: trojan
-- name: '502,551|HK299｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%20%5BBy%20DukeMehdi%5D%20b2n.ir%2Fv2ray-configs%20%7C%2083%20'
-  type: trojan
-- name: '502,551|HK300｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%20%5BBy%20EbraSha%5D%20b2n.ir%2Fv2ray-configs%20%7C%20885%20'
-  type: trojan
-- name: '502,551|HK301｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%20%5BBy%20EbraSha%5D%20b2n.io%2Fv2ray-configs%20%7C%20934%20'
-  type: trojan
-- name: '502,551|HK302｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%20%5BBy%20EbraSha%5D%20b2n.ir%2Fv2ray-configs%20%7C%20681%20'
-  type: trojan
-- name: '502,551|HK303｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%20%5BBy%20DukeMehdi%5D%20b2n.ir%2Fv2ray-configs%20%7C%20934%20'
-  type: trojan
-- name: '502,551|HK304｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%2B%5BBy%2BDukeMehdi%5D%2Bb2n.ir%2Fv2ray-configs%2B%7C%2B934%2B'
-  type: trojan
-- name: '502,551|HK337｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%20%5BBy%20DukeMehdi%5D%20b2n.ir%2Fv2ray-configs%20%7C%2078%20'
-  type: trojan
-- name: '502,551|HK336｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%20%5BBy%20EbraSha%5D%20b2n.ir%2Fv2ray-configs%20%7C%20789%20'
-  type: trojan
-- name: '502,551|HK307｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%20%20%20%20%20%20%20%5BBy%20DukeMehdi%5D%20'
-  type: trojan
-- name: '502,551|HK308｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%20%20%20%20%20%20%20%5BBy%20DukeMehdi%5D%20b2n.ir%2Fv2ray-configs%20%7C%2078%20'
-  type: trojan
-- name: '502,551|HK310｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%20%5BBy%20DukeMehdi%5D%20'
-  type: trojan
-- name: '502,551|HK312｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%0A%5BBy%20DukeMehdi%5D%20trojan-HK%20'
-  type: trojan
-- name: '502,551|HK334｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%20%5BBy%20DukeMehdi%5D%20trojan-HK%20'
-  type: trojan
-- name: '502,551|HK335｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.60
-  skip-cert-verify: true
-  sni: '%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%20%5BBy%20EbraSha%5D%20b2n.ir%2Fv2ray-configs%20%7C%20761%20'
-  type: trojan
 - client-fingerprint: chrome
   name: '513,517|15|🇭🇰 香港|@ripaojiedian #1'
   network: ws
@@ -8221,14 +7863,6 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- cipher: chacha20-ietf-poly1305
-  delay: 1740
-  name: 528,553|yandex-49
-  password: 3b72ad57035835c7
-  port: 49696
-  server: 38.54.93.66
-  type: ss
-  udp: true
 - name: '533|HK香港(mibei77.com 米贝节点分享) #2'
   network: ws
   port: 18622
@@ -8387,7 +8021,7 @@ proxies:
   server: 58.152.46.60
   sni: '%F0%9F%94%92%20%5BBy%20DukeMehdi%5D%20b2n.io%2Fv2ray-configs%20%7C%20783%20'
   type: trojan
-- name: '536,559,580|🇺🇸 美国3|@stairnode #7'
+- name: '536,559,580|🇺🇸 美国3|@stairnode #6'
   password: BxceQaOe
   port: 1221
   server: 95.40.125.94
@@ -8461,113 +8095,6 @@ proxies:
   server: 107.149.254.26
   skip-cert-verify: true
   type: trojan
-- alterId: 0
-  cipher: auto
-  h2-opts: {}
-  http-opts:
-    method: GET
-    path:
-    - /
-  name: '548|disney_HK #1'
-  network: http
-  port: 80
-  server: 45.196.235.171
-  type: vmess
-  uuid: 47eefac2-9767-49e1-c8e6-524e39d8765f
-- alterId: 0
-  cipher: auto
-  h2-opts: {}
-  http-opts:
-    method: GET
-    path:
-    - /
-  name: '548|disney_HK #2'
-  network: http
-  port: 443
-  server: 45.196.235.171
-  type: vmess
-  uuid: ac6e19f8-4852-41e1-c120-c7261ee8f6e5
-- cipher: chacha20-ietf
-  country: 🇭🇰HK
-  name: '548|disney_HK #3'
-  password: asd123456
-  port: 8388
-  server: 103.149.182.105
-  type: ss
-- cipher: chacha20-ietf
-  country: 🇭🇰HK
-  name: 548|🇭🇰HK_71
-  password: asd123456
-  port: 8388
-  server: 103.141.221.101
-  type: ss
-- cipher: chacha20-ietf
-  country: 🇭🇰HK
-  name: 548|Pool_🇭🇰HK_74
-  password: asd123456
-  port: 8388
-  server: 103.149.183.113
-  type: ss
-- alterId: 0
-  cipher: auto
-  country: 🇺🇸US
-  h2-opts: {}
-  http-opts: {}
-  name: '548|disney_HK #5'
-  network: none
-  port: 35760
-  server: 149.88.95.94
-  skip-cert-verify: true
-  type: vmess
-  uuid: 17e96792-d8c3-4741-9c34-e5d1c11d754f
-- alterId: 0
-  cipher: auto
-  country: 🇺🇸US
-  h2-opts: {}
-  http-opts: {}
-  name: '548|disney_HK #6'
-  network: none
-  port: 18937
-  server: 149.88.95.94
-  skip-cert-verify: true
-  type: vmess
-  uuid: ebaa1ae1-fa4d-40d8-958f-d4524d551218
-- alterId: 0
-  cipher: auto
-  country: 🇺🇸US
-  h2-opts: {}
-  http-opts: {}
-  name: '548|disney_HK #7'
-  network: none
-  port: 35760
-  server: 149.88.95.217
-  skip-cert-verify: true
-  type: vmess
-  uuid: 17e96792-d8c3-4741-9c34-e5d1c11d754f
-- alterId: 0
-  cipher: auto
-  country: 🇺🇸US
-  h2-opts: {}
-  http-opts: {}
-  name: '548|disney_HK #9'
-  network: none
-  port: 40741
-  server: 149.88.95.217
-  skip-cert-verify: true
-  type: vmess
-  uuid: 1b8a751b-4909-4fec-f019-907d92e6c47f
-- alterId: 0
-  cipher: auto
-  country: 🇺🇸US
-  h2-opts: {}
-  http-opts: {}
-  name: '548|disney_HK #10'
-  network: none
-  port: 40741
-  server: 149.88.95.94
-  skip-cert-verify: true
-  type: vmess
-  uuid: 1b8a751b-4909-4fec-f019-907d92e6c47f
 - cipher: chacha20-ietf-poly1305
   name: 558|0|🇭 01 | 1x HK
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
@@ -8703,6 +8230,14 @@ proxies:
   server: green2.cdntencentmusic.com
   skip-cert-verify: false
   sni: green2.cdntencentmusic.com
+  type: trojan
+- name: '559|🇭🇰[openproxylist.com] trojan-H... #2'
+  network: tcp
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  skip-cert-verify: true
+  sni: '%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%2B%5BBy%2BDukeMehdi%5D%2Btrojan-HK%2B'
   type: trojan
 - name: '559|🇭🇰 HK香港(mibei77.com 米贝节点分享) #2'
   password: cde8eda2-9c2e-4fae-b308-2fed2cc33e4b
@@ -8926,35 +8461,7 @@ proxies:
     path: /
 - alterId: 2
   cipher: auto
-  name: 559|🇭🇰 HK_58
-  network: ws
-  port: 80
-  server: hkt.gotochinatown.net
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: de003c72-0157-11ef-86da-f23c91cfbbc9
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 2
-  cipher: auto
-  name: '559|🇭🇰 HK_59 #1'
-  network: ws
-  port: 80
-  server: hkt.gotochinatown.net
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: bb85e074-b0c2-11ea-ad28-f23c913c8d2b
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 559|🇭🇰 HK_64
+  name: '559|🇭🇰 HK_64 #2'
   network: ws
   port: 80
   server: hkt.gotochinatown.net
@@ -8968,49 +8475,7 @@ proxies:
     path: /
 - alterId: 2
   cipher: auto
-  name: 559|🇭🇰 HK_65
-  network: ws
-  port: 80
-  server: hkt.gotochinatown.net
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: dcccacba-fa44-11ef-8400-f23c9164ca5d
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 559|🇭🇰 HK_66
-  network: ws
-  port: 80
-  server: hkt.gotochinatown.net
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: c11ff50c-f582-11ee-94df-f23c9164ca5d
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 559|🇭🇰 HK_60
-  network: ws
-  port: 80
-  server: hkt.gotochinatown.net
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: a6ddfc37-05eb-11ed-af40-f23c91cfbbc9
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 559|🇭🇰 HK_61
+  name: '559|🇭🇰 HK_61 #2'
   network: ws
   port: 80
   server: hkt.gotochinatown.net
@@ -9018,20 +8483,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 7c077572-6da9-11ef-b786-f23c91cfbbc9
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 559|🇭🇰 HK_63
-  network: ws
-  port: 80
-  server: hkt.gotochinatown.net
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 3085fcf8-a69c-11ec-bd7c-f23c913c8d2b
   ws-opts:
     headers:
       Host: ''
@@ -9094,14 +8545,13 @@ proxies:
     path: /
 - alterId: 2
   cipher: auto
-  name: 559,566|🇭🇰 香港 | HKG 7
+  name: 559|香港_011318209
   network: ws
-  port: 80
+  port: '80'
   server: 50db9a43-t8v340-tbe46y-1la7v.hkt.gotochinatown.net
   servername: ''
   tls: false
   type: vmess
-  udp: true
   uuid: 460749c2-bcef-11ee-89fc-f23c913c8d2b
   ws-opts:
     headers:
@@ -9577,14 +9027,13 @@ proxies:
     path: /
 - alterId: 2
   cipher: auto
-  name: 559,566|🇭🇰 香港 | HKG 26
+  name: 559|香港_011318210
   network: ws
-  port: 80
+  port: '80'
   server: eecec081-t8v340-tkhmfr-1jm8i.hkt.gotochinatown.net
   servername: ''
   tls: false
   type: vmess
-  udp: true
   uuid: a6ddfc37-05eb-11ed-af40-f23c91cfbbc9
   ws-opts:
     headers:
@@ -9672,1000 +9121,116 @@ proxies:
   type: hysteria
   udp: true
   up: 1000 Mbps
-- name: 566|🇭🇰 香港 | HKG
-  password: ac618770-e358-418e-b7a9-74dfa32afaf4
-  port: 31103
-  server: green2.cdntencentmusic.com
-  skip-cert-verify: true
-  sni: green2.cdntencentmusic.com
-  type: trojan
-  udp: true
 - alterId: 2
   cipher: auto
-  name: 566|🇭🇰 香港 | HKG 2
+  name: '566,568|🇭🇰 香港 | HKG #1'
   network: ws
-  port: 80
-  server: hkt.gotochinatown.net
-  skip-cert-verify: true
+  port: '80'
+  server: 65ba78b3-t8wxs0-tbnlwl-1qaek.hkt.gotochinatown.net
   tls: false
   type: vmess
   udp: true
-  uuid: 31676725-b0fd-fed2-c857-2da8ce5a6e4f
-  ws-opts:
-    headers:
-      Host: hkt.gotochinatown.net
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 566|🇭🇰 香港 | HKG 3
-  network: ws
-  port: 80
-  server: 28561085-t8wxs0-ta00rd-1o8ak.hkt.gotochinatown.net
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 8bb68d04-6973-11ee-b518-f23c9164ca5d
+  uuid: 98cedeca-99a0-11ef-bb64-f23c913c8d2b
   ws-opts:
     headers:
       Host: broadcastlv.chat.bilibili.com
     path: /
-- name: 566|🇭🇰 香港 | HKG 4
-  password: ddfc1345-f92d-4b4e-aa8f-0acbd3ef4164
-  port: 21103
-  server: cdnfire.xiaomispeed.com
-  skip-cert-verify: true
-  sni: cdnfire.xiaomispeed.com
-  type: trojan
-  udp: true
-- name: 566|🇭🇰 香港 | HKG 5
-  password: cccce61b-b07d-47e5-82c1-c0f1ccba1454
-  port: 31103
-  server: green2.cdntencentmusic.com
-  skip-cert-verify: true
-  sni: green2.cdntencentmusic.com
-  type: trojan
-  udp: true
-- name: 566|🇭🇰 香港 | HKG 6
-  password: 9c372e9a-0601-4490-a7ff-d2609ccfcab5
-  port: 31102
-  server: green2.cdntencentmusic.com
-  skip-cert-verify: true
-  sni: green2.cdntencentmusic.com
-  type: trojan
-  udp: true
-- alterId: 2
-  cipher: auto
-  name: 566|🇭🇰 香港 | HKG 8
-  network: ws
-  port: 80
-  server: d8035a66-t8wxs0-t9eu8q-tlhh.hkt.gotochinatown.net
-  tls: false
-  type: vmess
-  udp: true
-  uuid: bdf3e15e-c64c-11ea-82ef-f23c9164ca5d
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-- name: 566|🇭🇰 香港 | HKG 9
-  password: 013e17fa-d240-4f5e-997c-e47e2ef89eb1
-  port: 31101
-  server: green2.cdntencentmusic.com
-  skip-cert-verify: true
-  sni: green2.cdntencentmusic.com
-  type: trojan
-  udp: true
-- alterId: 2
-  cipher: auto
-  name: 566|🇭🇰 香港 | HKG 10
-  network: ws
-  port: 80
-  server: e6cb2dd4-t8wxs0-tphxte-1h5u7.hkt.gotochinatown.net
-  tls: false
-  type: vmess
-  udp: true
-  uuid: e3fdbd22-8c17-11ee-ace4-f23c913c8d2b
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 566|🇭🇰 香港 | HKG 11
-  network: ws
-  port: 80
-  server: ca61566e-t8wxs0-tc5odo-1mh85.hkt.gotochinatown.net
-  tls: false
-  type: vmess
-  udp: true
-  uuid: cf7331fa-bfeb-11ed-a807-f23c913c8d2b
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 566|🇭🇰 香港 | HKG 12
-  network: ws
-  port: 80
-  server: fb8bcc39-t8wxs0-tifnix-1ro8s.hkt.gotochinatown.net
-  tls: false
-  type: vmess
-  udp: true
-  uuid: a18ef18e-293a-11ef-b76e-f23c91cfbbc9
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 566|🇭🇰 香港 | HKG 13
-  network: ws
-  port: 80
-  server: hkt.gotochinatown.net
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: d2f0bee2-02f1-11f0-8eb0-f23c9164ca5d
-  ws-opts:
-    headers:
-      Host: hkt.gotochinatown.net
-    path: /
-- name: 566|🇭🇰 香港 | HKG 14
-  password: a6f5c138-1807-4851-a083-34c915d116c2
-  port: 21103
-  server: cdnfire.xiaomispeed.com
-  skip-cert-verify: true
-  sni: cdnfire.xiaomispeed.com
-  type: trojan
-  udp: true
-- alterId: 2
-  cipher: auto
-  name: 566|🇭🇰 香港 | HKG 15
-  network: ws
-  port: 80
-  server: 9f42af8a-t70f40-t99b5n-1hhyy.hkt.gotochinatown.net
-  servername: 9f42af8a-t70f40-t99b5n-1hhyy.hkt.gotochinatown.net
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: c594c7ec-8b10-11ef-a2b8-f23c9164ca5d
-  ws-opts:
-    headers:
-      Host: 9f42af8a-t70f40-t99b5n-1hhyy.hkt.gotochinatown.net
-    path: /
-- name: 566|🇭🇰 香港 | HKG 16
-  password: 9ea0d0ac-0bb8-4e66-a1f2-0bde1935486a
-  port: 21102
-  server: cdnfire.xiaomispeed.com
-  skip-cert-verify: true
-  sni: cdnfire.xiaomispeed.com
-  type: trojan
-  udp: true
-- cipher: chacha20-ietf
-  name: 566|🇭🇰 香港 | HKG 17
-  obfs: http_simple
-  obfsparam: 5ed4e33485.microsoft.com
-  password: HuTaoCloud
-  port: 12409
-  protocol: auth_aes128_sha1
-  protocolparam: 33485:UlPWVWB0liUJHbD9
-  server: 27.152.180.144
-  type: ssr
-  udp: true
-- name: 566|🇭🇰 香港 | HKG 18
-  password: fa7a3ba5-baaf-4313-847d-868274e5113d
-  port: 21102
-  server: cdnfire.xiaomispeed.com
-  skip-cert-verify: true
-  sni: cdnfire.xiaomispeed.com
-  type: trojan
-  udp: true
-- alterId: 2
-  cipher: auto
-  name: 566|🇭🇰 香港 | HKG 20
-  network: ws
-  port: 80
-  server: b838b828-t8wxs0-thzbn1-1gxvd.hkt.gotochinatown.net
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 398e0d38-8649-11ef-959c-f23c9164ca5d
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 566|🇭🇰 香港 | HKG 21
-  network: ws
-  port: 80
-  server: b9d2b045-t8wxs0-tan99f-1rdqg.hkt.gotochinatown.net
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 2b57ec48-0da4-11ef-8f35-f23c913c8d2b
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 566|🇭🇰 香港 | HKG 22
-  network: ws
-  port: 80
-  server: hkt.gotochinatown.net
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: c11ff50c-f582-11ee-94df-f23c9164ca5d
-  ws-opts:
-    headers:
-      Host: hkt.gotochinatown.net
-    path: /
-- name: 566|🇭🇰 香港 | HKG 23
+- name: '566,568|🇭🇰 香港 | HKG #2'
   password: 4eb8c5d3-b8ac-4bea-ac8c-166b9c4279c1
-  port: 31103
-  server: green2.cdntencentmusic.com
-  skip-cert-verify: true
-  sni: green2.cdntencentmusic.com
-  type: trojan
-  udp: true
-- name: 566|🇭🇰 香港 | HKG 25
-  password: e533c912-1ed3-401e-8336-daf2cdfb5c01
-  port: 21102
-  server: cdnfire.xiaomispeed.com
-  skip-cert-verify: true
-  sni: cdnfire.xiaomispeed.com
-  type: trojan
-  udp: true
-- alterId: 2
-  cipher: auto
-  name: 566|🇭🇰 香港 | HKG 27
-  network: ws
-  port: 80
-  server: 7240affc-t8wxs0-t9pc69-mv7m.hkt.gotochinatown.net
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 94d40708-8273-11ea-8fc9-f23c913c8d2b
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 566|🇭🇰 香港 | HKG 28
-  network: ws
-  port: 80
-  server: ae0f870e-t8wxs0-tc67m2-1tjc4.hkt.gotochinatown.net
-  tls: false
-  type: vmess
-  udp: true
-  uuid: fac704ae-0304-11f0-a2ef-f23c91cfbbc9
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 566|🇭🇰 香港 | HKG 29
-  network: ws
-  port: 80
-  server: hkt.gotochinatown.net
-  servername: hkt.gotochinatown.net
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: de003c72-0157-11ef-86da-f23c91cfbbc9
-  ws-opts:
-    headers:
-      Host: hkt.gotochinatown.net
-    path: /
-- name: 566|🇭🇰 香港 | HKG 30
-  password: f8b58beb-1cf6-443d-a1ba-0d873037538d
-  port: 31102
-  server: green2.cdntencentmusic.com
-  skip-cert-verify: true
-  sni: green2.cdntencentmusic.com
-  type: trojan
-  udp: true
-- alterId: 2
-  cipher: auto
-  name: 566|🇭🇰 香港 | HKG 31
-  network: ws
-  port: 80
-  server: hkt.gotochinatown.net
-  servername: hkt.gotochinatown.net
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 5a4c13ae-6673-11ee-a149-f23c9164ca5d
-  ws-opts:
-    headers:
-      Host: hkt.gotochinatown.net
-    path: /
-- name: 566|🇭🇰 香港 | HKG 32
-  password: a1049ee8-c121-42ed-8e3f-cdd48aa2bb77
-  port: 31103
-  server: green2.cdntencentmusic.com
-  skip-cert-verify: true
-  sni: green2.cdntencentmusic.com
-  type: trojan
-  udp: true
-- alterId: 2
-  cipher: auto
-  name: 566|🇭🇰 香港 | HKG 33
-  network: ws
-  port: 80
-  server: 2ce6219a-t6r5s0-tiaexf-ufc0.hkt.gotochinatown.net
-  servername: broadcastlv.chat.bilibili.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 22308988-8548-11ea-a22e-f23c91cfbbc9
-  ws-opts:
-    headers:
-      Host: 2ce6219a-t6r5s0-tiaexf-ufc0.hkt.gotochinatown.net
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 566|🇭🇰 香港 | HKG 34
-  network: ws
-  port: 80
-  server: 256a53b2-t8pj40-tm3dx0-1r9dt.hkt.gotochinatown.net
-  servername: broadcastlv.chat.bilibili.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: de003c72-0157-11ef-86da-f23c91cfbbc9
-  ws-opts:
-    headers:
-      Host: 256a53b2-t8pj40-tm3dx0-1r9dt.hkt.gotochinatown.net
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 566|🇭🇰 香港 | HKG 35
-  network: ws
-  port: 80
-  server: fb87d6c5-t8wxs0-ta5nd4-e06r.hkt.gotochinatown.net
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 861726bb-c61a-b0e0-99fa-5ddfdcf21902
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 566|🇭🇰 香港 | HKG 36
-  network: ws
-  port: 80
-  server: 7945fcce-t8wxs0-t9x9zr-1lkt0.hkt.gotochinatown.net
-  tls: false
-  type: vmess
-  udp: true
-  uuid: cd1b0ae0-4010-11ee-953a-f23c9164ca5d
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-- name: 566|🇭🇰 香港 | HKG 37
-  password: a92e4cd1-b1d0-48a7-925d-401835299026
   port: 31101
   server: green2.cdntencentmusic.com
   skip-cert-verify: false
   sni: green2.cdntencentmusic.com
   type: trojan
   udp: true
-- alterId: 2
-  cipher: auto
-  name: 566|🇭🇰 香港 | HKG 38
-  network: ws
-  port: 80
-  server: 23f3738b-t8wxs0-t8yvjz-1fqef.hkt.gotochinatown.net
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 1239028c-a825-11ed-a0ca-f23c9164ca5d
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 566|🇭🇰 香港 | HKG 39
-  network: ws
-  port: 80
-  server: 29ac53f0-t8wxs0-t8w16f-1j6h0.hkt.gotochinatown.net
-  tls: false
-  type: vmess
-  udp: true
-  uuid: dcccacba-fa44-11ef-8400-f23c9164ca5d
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 566|🇭🇰 香港 | HKG 42
-  network: ws
-  port: 80
-  server: 8ffcf5b1-t8wxs0-taxf6m-ieln.hkt.gotochinatown.net
-  tls: false
-  type: vmess
-  udp: true
-  uuid: f5c0eda2-4b97-11ed-bd7c-f23c913c8d2b
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 566|🇭🇰 香港 | HKG 44
-  network: ws
-  port: 80
-  server: 223f4e42-t8wxs0-tbnk1n-ueq.hkt.gotochinatown.net
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 91df5a86-fcdd-11ef-94aa-f23c913c8d2b
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 566|🇭🇰 香港 | HKG 46
-  network: ws
-  port: 80
-  server: 8991ebc4-t8wxs0-tkhmfr-1jm8i.hkt.gotochinatown.net
-  tls: false
-  type: vmess
-  udp: true
-  uuid: a6ddfc37-05eb-11ed-af40-f23c91cfbbc9
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-- name: 566|🇭🇰 香港 | HKG 47
-  password: 9ea0d0ac-0bb8-4e66-a1f2-0bde1935486a
+- name: '566,568|🇭🇰 香港 | HKG #3'
+  password: 6bdb1dd2-b5c4-4585-8ecc-81ac3598c222
   port: 21101
   server: cdnfire.xiaomispeed.com
+  skip-cert-verify: false
   sni: cdnfire.xiaomispeed.com
   type: trojan
   udp: true
-- auth: 70223341-1c5a-4ea5-b88a-b4fc1e2f5b35
-  name: 566|🇭🇰 香港 | HKG 48
-  password: 70223341-1c5a-4ea5-b88a-b4fc1e2f5b35
-  port: 46298
-  server: hk3.jueduibupao.top
-  skip-cert-verify: true
-  sni: hk3.jueduibupao.top
-  type: hysteria2
-  udp: true
-- alterId: 2
-  cipher: auto
-  name: 566|🇭🇰 香港 | HKG 49
-  network: ws
-  port: 80
-  server: ccbe1adb-t8wxs0-tl09la-1q91p.hkt.gotochinatown.net
-  tls: false
-  type: vmess
-  udp: true
-  uuid: c11ff50c-f582-11ee-94df-f23c9164ca5d
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 566|🇭🇰 香港 | HKG 50
-  network: ws
-  port: 80
-  server: c2379231-t8wxs0-t99b5n-1hhyy.hkt.gotochinatown.net
-  tls: false
-  type: vmess
-  udp: true
-  uuid: c594c7ec-8b10-11ef-a2b8-f23c9164ca5d
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-- name: 566|🇭🇰 香港 | HKG 51
-  password: 906d3f51-f9fd-4901-9666-f917babec7a3
-  port: 54655
-  server: v1dytv.lalakw.com
-  skip-cert-verify: true
-  sni: v1dytv.lalakw.com
-  type: trojan
-  udp: true
-- name: 566|🇭🇰 香港 | HKG 52
-  password: d30c2d87-9541-4681-a912-e51e190bad2a
-  port: 31103
-  server: green2.cdntencentmusic.com
-  skip-cert-verify: true
-  sni: green2.cdntencentmusic.com
-  type: trojan
-  udp: true
-- alterId: 2
-  cipher: auto
-  name: 566|🇭🇰 香港 | HKG 53
-  network: ws
-  port: 80
-  server: d2d619b5-t8wxs0-tnsc3a-1f0gu.hkt.gotochinatown.net
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 3085fcf8-a69c-11ec-bd7c-f23c913c8d2b
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 566|🇭🇰 香港 | HKG 54
-  network: ws
-  port: 80
-  server: 6f65c092-t8wxs0-tighxj-12hj8.hkt.gotochinatown.net
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 5acc7a7c-d7ea-11eb-8673-f23c9164ca5d
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-- name: 566|🇭🇰 香港 | HKG 55
-  password: 2680016f-449e-4c72-b9d2-dc1fe5b97909
-  port: 31101
-  server: green2.cdntencentmusic.com
-  skip-cert-verify: true
-  sni: green2.cdntencentmusic.com
-  type: trojan
-  udp: true
-- alterId: 2
-  cipher: auto
-  name: 566|🇭🇰 香港 | HKG 56
-  network: ws
-  port: 80
-  server: 74803dd6-t8wxs0-tbac1z-1j3zm.hkt.gotochinatown.net
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 6ce63b80-8b5b-11ef-b635-f23c9164ca5d
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 566|🇭🇰 香港 | HKG 57
-  network: ws
-  port: 80
-  server: fd5a0a4d-t8wxs0-te0v28-1mh67.hkt.gotochinatown.net
-  tls: false
-  type: vmess
-  udp: true
-  uuid: e1c7fbbc-96b6-11ef-8563-f23c913c8d2b
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-- cipher: aes-128-gcm
-  name: 566|🇭🇰 香港 | HKG 58
-  password: 2502da81-8636-42b7-a78b-e306221fe920
-  port: 651
-  server: cpathhk01.cloud-links.org
-  type: ss
-  udp: true
-- alterId: 2
-  cipher: auto
-  name: 566|🇭🇰 香港 | HKG 60
-  network: ws
-  port: 80
-  server: c6f53a1e-t8wxs0-trftb1-1psmw.hkt.gotochinatown.net
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 42bb6d36-97c7-11ee-be7f-f23c9164ca5d
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-- name: 566|🇭🇰 香港 | HKG 61
-  password: e533c912-1ed3-401e-8336-daf2cdfb5c01
-  port: 21101
-  server: cdnfire.xiaomispeed.com
-  sni: cdnfire.xiaomispeed.com
-  type: trojan
-  udp: true
-- name: 566|🇭🇰 香港 | HKG 62
-  password: ddfc1345-f92d-4b4e-aa8f-0acbd3ef4164
-  port: 21102
-  server: cdnfire.xiaomispeed.com
-  skip-cert-verify: true
-  sni: cdnfire.xiaomispeed.com
-  type: trojan
-  udp: true
-- alterId: 2
-  cipher: auto
-  name: 566|🇭🇰 香港 | HKG 63
-  network: ws
-  port: 80
-  server: f15d44c3-t8wxs0-tr9h64-1f1f1.hkt.gotochinatown.net
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 61c4be90-6235-11ec-a8bf-f23c91cfbbc9
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-- client-fingerprint: chrome
-  name: 566|🇭🇰 香港 | HKG 64
-  network: ws
-  port: 443
-  server: 43.161.254.121
-  servername: sg.aniuge.qzz.io
-  tls: true
-  type: vless
-  udp: true
-  uuid: e258977b-e413-4718-a3af-02d75492c349
-  ws-opts:
-    headers:
-      Host: sg.aniuge.qzz.io
-    path: /?ed=2560
-- alterId: 2
-  cipher: auto
-  name: 566|🇭🇰 香港 | HKG 65
-  network: ws
-  port: 80
-  server: 3b26251a-t8wxs0-ta2rg6-amya.hkt.gotochinatown.net
-  tls: false
-  type: vmess
-  udp: true
-  uuid: ee1b9e94-9b95-11ef-8967-f23c91cfbbc9
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 566|🇭🇰 香港 | HKG 66
-  network: ws
-  port: 80
-  server: c8b73bb9-t8wxs0-tasors-1tdqt.hkt.gotochinatown.net
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 167db97c-ee01-11ef-b737-f23c91cfbbc9
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-- name: '568|🇭🇰 香港 | HKG #1'
+- name: '566,568|🇭🇰 香港 | HKG #4'
   password: ecaeb42d-3290-47ea-9d40-49c368f11e75
   port: 31103
   server: green2.cdntencentmusic.com
   skip-cert-verify: true
   sni: green2.cdntencentmusic.com
   type: trojan
-- alterId: 2
-  cipher: auto
-  name: '568|🇭🇰 香港 | HKG #2'
-  network: ws
-  port: '80'
-  server: 086d3b37-t8wxs0-tcp4th-1c4g6.hkt.gotochinatown.net
-  tls: false
-  type: vmess
-  uuid: 676c67c6-5e73-11ee-9a79-f23c9164ca5d
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-- name: '568|🇭🇰 香港 | HKG #4'
-  password: 3bd3799d-ff1a-4e7e-8f0b-a43da04b116e
-  port: 21101
-  server: cdnfire.xiaomispeed.com
-  skip-cert-verify: false
-  sni: cdnfire.xiaomispeed.com
-  type: trojan
-- alterId: 2
-  cipher: auto
-  name: '568|🇭🇰 香港 | HKG #5'
-  network: ws
-  port: '80'
-  server: 459c7623-t8wxs0-t9hghw-1sdoq.hkt.gotochinatown.net
-  tls: false
-  type: vmess
-  uuid: 7c077572-6da9-11ef-b786-f23c91cfbbc9
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: '568|🇭🇰 香港 | HKG #6'
-  network: ws
-  port: '80'
-  server: f2c396a1-t8wxs0-tmynyz-1s3mx.hkt.gotochinatown.net
-  tls: false
-  type: vmess
-  uuid: b58095f0-52dc-11ef-bc74-f23c91cfbbc9
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-- name: '568|🇭🇰 香港 | HKG #7'
-  password: b4b4f04c-f365-4edd-8297-7ce52f7e4bc6
-  port: 16666
-  server: hkju.zuomomo.top
-  skip-cert-verify: false
-  tls: false
-  type: hysteria2
-- name: '568|🇭🇰 香港 | HKG #9'
-  password: 07234fca-0154-41d7-95ba-5ca9d29d6b78
-  port: 21101
-  server: cdnfire.xiaomispeed.com
-  skip-cert-verify: true
-  sni: cdnfire.xiaomispeed.com
-  type: trojan
-- name: '568|🇭🇰 香港 | HKG #11'
-  password: 7de5d3a8-bf15-42a2-8d63-27b05cdf58ab
-  port: 31101
-  server: green2.cdntencentmusic.com
-  skip-cert-verify: false
-  sni: green2.cdntencentmusic.com
-  type: trojan
-- name: '568|🇭🇰 香港 | HKG #12'
-  password: 89b160ae-39c9-4b14-844d-9decf75ddf2a
-  port: 21101
-  server: cdnfire.xiaomispeed.com
-  skip-cert-verify: false
-  sni: cdnfire.xiaomispeed.com
-  type: trojan
-- name: '568|🇭🇰 香港 | HKG #13'
-  password: 1637a40f-f32a-4900-a74b-f432af608db8
-  port: 21101
-  server: cdnfire.xiaomispeed.com
-  skip-cert-verify: false
-  sni: cdnfire.xiaomispeed.com
-  type: trojan
-- alterId: 2
-  cipher: auto
-  name: '568|🇭🇰 香港 | HKG #14'
-  network: ws
-  port: '80'
-  server: dd2a5e96-t8wxs0-tqx9ef-1k0yf.hkt.gotochinatown.net
-  tls: false
-  type: vmess
-  uuid: 9cc3c03e-21fd-11ee-a642-f23c91369f2d
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-- name: '568|🇭🇰 香港 | HKG #15'
-  password: d3a1072f-4f26-4385-818c-b024ce779866
-  port: 31102
-  server: green2.cdntencentmusic.com
-  skip-cert-verify: true
-  sni: green2.cdntencentmusic.com
-  type: trojan
-- alterId: 2
-  cipher: auto
-  name: '568|🇭🇰 香港 | HKG #16'
-  network: ws
-  port: '80'
-  server: e70cd76c-t8wxs0-ta6lxc-jjv2.hkt.gotochinatown.net
-  tls: false
-  type: vmess
-  uuid: 31676725-b0fd-fed2-c857-2da8ce5a6e4f
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: '568|🇭🇰 香港 | HKG #20'
-  network: ws
-  port: '80'
-  server: hkt.gotochinatown.net
-  tls: false
-  type: vmess
-  uuid: 3085fcf8-a69c-11ec-bd7c-f23c913c8d2b
-  ws-opts:
-    headers:
-      Host: hkt.gotochinatown.net
-    path: /
-- name: '568|🇭🇰 香港 | HKG #21'
-  password: a92e4cd1-b1d0-48a7-925d-401835299026
+  udp: true
+- name: '566,568|🇭🇰 香港 | HKG #5'
+  password: b83c55a8-f481-4a92-b996-6badeecc0891
   port: 31103
   server: green2.cdntencentmusic.com
   skip-cert-verify: true
   sni: green2.cdntencentmusic.com
   type: trojan
-- name: '568|🇭🇰 香港 | HKG #24'
-  password: 6c3eb858-7507-4108-b60b-170b78b20002
-  port: 31103
-  server: green2.cdntencentmusic.com
-  skip-cert-verify: true
-  sni: green2.cdntencentmusic.com
-  type: trojan
-- name: '568|🇭🇰 香港 | HKG #25'
-  password: 89b160ae-39c9-4b14-844d-9decf75ddf2a
-  port: 21103
-  server: cdnfire.xiaomispeed.com
-  skip-cert-verify: true
-  sni: cdnfire.xiaomispeed.com
-  type: trojan
-- alterId: 2
-  cipher: auto
-  name: '568|🇭🇰 香港 | HKG #26'
-  network: ws
-  port: '80'
-  server: daa85a3a-t8wxs0-tbe46y-1la7v.hkt.gotochinatown.net
-  tls: false
-  type: vmess
-  uuid: 460749c2-bcef-11ee-89fc-f23c913c8d2b
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-- name: '568|🇭🇰 香港 | HKG #27'
+  udp: true
+- name: '566,568|🇭🇰 香港 | HKG #6'
   password: 9ea0d0ac-0bb8-4e66-a1f2-0bde1935486a
   port: 21103
   server: cdnfire.xiaomispeed.com
   skip-cert-verify: true
   sni: cdnfire.xiaomispeed.com
   type: trojan
-- alterId: 2
-  cipher: auto
-  name: '568|🇭🇰 香港 | HKG #28'
-  network: ws
-  port: '80'
-  server: hkt.gotochinatown.net
-  tls: false
-  type: vmess
-  uuid: 28a8a4d0-3e02-11eb-a8bf-f23c91cfbbc9
-  ws-opts:
-    headers:
-      Host: hkt.gotochinatown.net
-    path: /
-- alterId: 2
-  cipher: auto
-  name: '568|🇭🇰 香港 | HKG #29'
-  network: ws
-  port: '80'
-  server: f74a2003-t8wxs0-tc4puo-m0b9.hkt.gotochinatown.net
-  tls: false
-  type: vmess
-  uuid: bb85e074-b0c2-11ea-ad28-f23c913c8d2b
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: '568|🇭🇰 香港 | HKG #31'
-  network: ws
-  port: '80'
-  server: a0677704-t8wxs0-tbc0ig-1ssud.hkt.gotochinatown.net
-  tls: false
-  type: vmess
-  uuid: e6aa39b6-f0b5-11ef-bca1-f23c91cfbbc9
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-- name: '568|🇭🇰 香港 | HKG #32'
-  password: 462b4ab5-24fc-44ad-9b14-c4cc2a86b995
+  udp: true
+- name: '566,568|🇭🇰 香港 | HKG #7'
+  password: 89b160ae-39c9-4b14-844d-9decf75ddf2a
   port: 21103
   server: cdnfire.xiaomispeed.com
   skip-cert-verify: true
   sni: cdnfire.xiaomispeed.com
   type: trojan
-- name: '568|🇭🇰 香港 | HKG #34'
-  password: e7b70a75-f4f1-4e1e-ab1e-4c76d96eb257
+  udp: true
+- name: '566,568|🇭🇰 香港 | HKG #8'
+  password: d3a03667-6154-44cd-867d-308391491c52
   port: 31101
   server: green2.cdntencentmusic.com
   skip-cert-verify: false
   sni: green2.cdntencentmusic.com
   type: trojan
-- alterId: 2
-  cipher: auto
-  name: '568|🇭🇰 香港 | HKG #36'
-  network: ws
-  port: '80'
-  server: hkt.gotochinatown.net
-  tls: false
-  type: vmess
-  uuid: 80aa5178-f936-11ed-8ce6-f23c91369f2d
-  ws-opts:
-    headers:
-      Host: hkt.gotochinatown.net
-    path: /
-- alterId: 2
-  cipher: auto
-  name: '568|🇭🇰 香港 | HKG #37'
-  network: ws
-  port: '80'
-  server: 0928f376-t8wxs0-td95qh-1isea.hkt.gotochinatown.net
-  tls: false
-  type: vmess
-  uuid: d6abdbda-fe9d-11ec-bb74-f23c9164ca5d
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: '568|🇭🇰 香港 | HKG #38'
-  network: ws
-  port: '80'
-  server: 657f95aa-t8wxs0-tnqudu-1mim2.hkt.gotochinatown.net
-  tls: false
-  type: vmess
-  uuid: 6e3ee1de-381f-11ee-87f9-f23c91cfbbc9
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-- name: '568|🇭🇰 香港 | HKG #41'
-  password: 906d3f51-f9fd-4901-9666-f917babec7a3
-  port: 54654
-  server: v1dytv.lalakw.com
-  skip-cert-verify: true
-  sni: v1dytv.lalakw.com
-  type: trojan
-- name: '568|🇭🇰 香港 | HKG #42'
-  password: 95a9c171-2fe6-4145-8fc3-d6831ba002d6
-  port: 21103
-  server: cdnfire.xiaomispeed.com
-  skip-cert-verify: true
-  sni: cdnfire.xiaomispeed.com
-  type: trojan
-- alterId: 2
-  cipher: auto
-  name: '568|🇭🇰 香港 | HKG #43'
-  network: ws
-  port: '80'
-  server: af16aa6b-t8wxs0-tcdlur-1qwom.hkt.gotochinatown.net
-  tls: false
-  type: vmess
-  uuid: 8d0ec7cc-eefa-11ee-9b59-f23c91cfbbc9
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-- name: '568|🇭🇰 香港 | HKG #45'
-  password: fa7a3ba5-baaf-4313-847d-868274e5113d
+  udp: true
+- name: '566,568|🇭🇰 香港 | HKG #9'
+  password: e533c912-1ed3-401e-8336-daf2cdfb5c01
   port: 21101
   server: cdnfire.xiaomispeed.com
   skip-cert-verify: false
   sni: cdnfire.xiaomispeed.com
   type: trojan
-- alterId: 2
-  cipher: auto
-  name: '568|🇭🇰 香港 | HKG #46'
-  network: ws
-  port: '80'
-  server: hkt.gotochinatown.net
-  tls: false
-  type: vmess
-  uuid: 94d40708-8273-11ea-8fc9-f23c913c8d2b
-  ws-opts:
-    headers:
-      Host: hkt.gotochinatown.net
-    path: /
+  udp: true
+- name: '566,568|🇭🇰 香港 | HKG #10'
+  password: 9344280e-2ec7-40e2-a456-62b62b7d4e78
+  port: 31103
+  server: green2.cdntencentmusic.com
+  skip-cert-verify: true
+  sni: green2.cdntencentmusic.com
+  type: trojan
+  udp: true
+- name: '566,568|🇭🇰 香港 | HKG #11'
+  password: 372e32d4-8359-4bd4-aca5-cd15334967d8
+  port: 31101
+  server: green2.cdntencentmusic.com
+  skip-cert-verify: false
+  sni: green2.cdntencentmusic.com
+  type: trojan
+  udp: true
+- name: '566,568|🇭🇰 香港 | HKG #12'
+  password: 7de5d3a8-bf15-42a2-8d63-27b05cdf58ab
+  port: 31101
+  server: green2.cdntencentmusic.com
+  skip-cert-verify: false
+  sni: green2.cdntencentmusic.com
+  type: trojan
+  udp: true
+- name: '566,568|🇭🇰 香港 | HKG #13'
+  password: 5e03e749-4b46-41b5-badd-49a1ae4a46db
+  port: 31103
+  server: green2.cdntencentmusic.com
+  skip-cert-verify: true
+  sni: green2.cdntencentmusic.com
+  type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: 577|澳门NO.2
@@ -10974,7 +9539,7 @@ proxies:
     headers:
       Host: yf.xhya.nyc.mn
     path: /
-- name: '605|HK #3'
+- name: '605|HK #1'
   network: tcp
   password: aa6ddd2f-d1cf-4a52-ba1b-2640c41a7856
   port: 41288
