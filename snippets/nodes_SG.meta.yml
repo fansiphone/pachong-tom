@@ -74,13 +74,16 @@ proxies:
   server: sg6.sulink.one
   type: ss
   udp: true
-- cipher: aes-128-gcm
+- alterId: 0
+  cipher: aes-128-gcm
   country: 🇨🇳CN
   delay: 1529
-  name: '96,306,343,378,515,516,528,537,548,553,556,579,582|🇸🇬 新加坡4|@stairnode #5'
+  name: 96,306,343,378,515,516,528,537,548,553,556,574,579,582,585|CN_speednode_0007
   password: b637f2e47b7827b308ebf399008075d2
   port: 25819
   server: 223.95.183.132
+  skip-cert-verify: true
+  tls: true
   type: ss
   udp: true
 - alterId: 0
@@ -173,24 +176,6 @@ proxies:
     headers:
       Host: download.cloud.189.cn
     path: /
-- client-fingerprint: chrome
-  delay: 431
-  name: '127,340,426,502,514,523,524,528,551,553,559,567,585,586|US_speednode_0040
-    #3'
-  network: ws
-  port: 80
-  server: 151.101.3.8
-  servername: mitivpn.global.ssl.fastly.net
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: dd0cfef0-fda9-47ec-8a65-49d7bc004f82
-  ws-opts:
-    headers:
-      Host: mitivpn.global.ssl.fastly.net
-    path: /---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN
 - alterId: 0
   cipher: auto
   name: '128,430|新加坡NO.2 #2'
@@ -836,11 +821,11 @@ proxies:
   port: 17315
   server: 120.240.103.35
   type: ss
-- name: 255|SG
-  network: tcp
+- name: 255|🇸🇬 SG
   password: f57f01e6-9bb1-4277-a5cb-75ad0ce1fa11
   port: 32702
   server: xd-sh.timiwc.com
+  skip-cert-verify: true
   sni: k36.tudou211.com
   type: trojan
 - client-fingerprint: firefox
@@ -938,28 +923,24 @@ proxies:
   sni: bing.com
   tls: false
   type: hysteria2
-- alterId: 0
-  country: 🇯🇵JP
-  name: '340,378,440,456,536,537,538,548,559,574,580|🇸🇬 新加坡|@stairnode #6'
+- country: 🇯🇵JP
+  name: '340,378,440,456,494,536,537,538,548,559,580|🇸🇬 新加坡|@stairnode #6'
   network: tcp
   password: 61d8077bfb174e171b8283f155a555ad
   port: 3901
   server: 153.121.65.107
   skip-cert-verify: false
   sni: www.nintendogames.net
-  tls: true
   type: trojan
   udp: true
-- alterId: 0
-  country: 🇯🇵JP
-  name: '340,378,440,456,536,537,538,548,559,574,580|🇸🇬 新加坡2|@stairnode #6'
+- country: 🇯🇵JP
+  name: '340,378,440,456,494,536,537,538,548,559,580|🇸🇬 新加坡2|@stairnode #6'
   network: tcp
   password: 61d8077bfb174e171b8283f155a555ad
   port: 544
   server: 160.16.124.55
   skip-cert-verify: false
   sni: www.nintendogames.net
-  tls: true
   type: trojan
   udp: true
 - name: '340,378,456,536,537,559,580|🇸🇬 新加坡3|@stairnode #6'
@@ -991,7 +972,7 @@ proxies:
   type: ss
 - cipher: rc4-md5
   country: 🇸🇬SG
-  name: 356,378,440,537,538,548|🇸🇬SG_222
+  name: 356,378,440,537,538,548|🇸🇬SG_205
   password: 14fFPrbezE3HDZzsMOr6
   port: 8080
   server: 68.183.227.4
@@ -2313,7 +2294,8 @@ proxies:
       Host: 180.215.130.123
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 378,537,538|🇸🇬SG-167.150.100.115-0379 | 5....
+  country: 🇺🇸US
+  name: 378,537,538,548|🇺🇸US_231
   password: pJtDFXMfdW9VNdJpaf4e2LfFkXdWgxrz
   port: 443
   server: 167.150.100.115
@@ -3537,10 +3519,10 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  country: 🇭🇰HK
+  country: 🇬 SG
   h2-opts: {}
   http-opts: {}
-  name: 435,437,548|🇭🇰HK_93
+  name: '435,437,472,473,474,502|香港 阿里云 #3'
   network: none
   port: 43425
   server: 8.210.248.133
@@ -3551,10 +3533,25 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
+  country: 🇸🇬SG
+  h2-opts: {}
+  http-opts: {}
+  name: 435,437,548,559|🇸🇬 SG_158
+  network: none
+  port: 52752
+  server: 8.218.105.196
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 925bdbf5-72be-4437-bebf-441c61089f6b
+  ws-path: /
+- alterId: 0
+  cipher: auto
   country: 🇬SG
   h2-opts: {}
   http-opts: {}
-  name: 440,548|_26
+  name: 440,548|_21
   network: none
   port: 55976
   server: 8.218.208.153
@@ -5080,7 +5077,7 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
-- name: '479,484|🇸🇬 SG TROJAN-108 | free-nodes #1'
+- name: '479,484,494|🔥Join+Telegram:@Farah_VPN🟣 #1647'
   password: 381f2e86233720eacda26d50e9aa26da
   port: 3901
   server: 202.181.103.246
@@ -5093,6 +5090,20 @@ proxies:
   port: 990
   server: 38.247.64.176
   type: ss
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '502,514,551,585,586|SG_speednode_0024 #3'
+  port: 52800
+  reality-opts:
+    public-key: m1nbh-ENgK8K1buwwZlmdVl-G39XIQChmy9ZhfWcuSk
+    short-id: 9b5677e8
+  server: sgclaw.lycoreco.eu.org
+  servername: www.paypal.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: beddd73b-ed90-4e76-8a30-492384220878
 - name: 507,559|SG VLESS-01 | free-nodes
   network: ws
   port: 11441
@@ -5110,7 +5121,7 @@ proxies:
   flow: xtls-rprx-vision
   grpc-opts:
     grpc-service-name: ''
-  name: 507,559,580|SG VLESS-182 | free-nodes
+  name: '507,559,580|SG VLESS-182 | free-nodes #1'
   network: tcp
   port: 443
   server: s420.okgfw.top
@@ -5202,7 +5213,7 @@ proxies:
   type: ss
 - client-fingerprint: chrome
   delay: 374
-  name: 528,553|yandex-649
+  name: 528,553|yandex-418
   network: ws
   port: 443
   server: 162.159.16.63
@@ -5216,7 +5227,7 @@ proxies:
     path: /
 - client-fingerprint: chrome
   delay: 1100
-  name: 528,553|yandex-650
+  name: 528,553|yandex-419
   network: ws
   port: 443
   server: vip3.kaixincloud.top
@@ -5237,18 +5248,27 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
+  country: 🇭🇰HK
+  h2-opts: {}
+  http-opts: {}
+  name: 548|disney_SG
+  port: 35034
+  server: 165.154.195.38
+  skip-cert-verify: true
+  type: vmess
+  uuid: 959a8caf-4cea-43d0-a548-3628e7ddfafc
+- alterId: 0
+  cipher: auto
   country: 🇸🇬SG
   h2-opts: {}
   http-opts: {}
-  name: 548,559|🇸🇬 SG_158
+  name: 548|🇸🇬SG_206
   network: none
-  port: 52752
-  server: 8.218.105.196
-  servername: ''
+  port: 51000
+  server: 8.217.90.175
   skip-cert-verify: true
-  tls: false
   type: vmess
-  uuid: 925bdbf5-72be-4437-bebf-441c61089f6b
+  uuid: 6c82a994-b6ba-48ca-f2ed-11288fe4913b
 - cipher: chacha20-ietf-poly1305
   name: 558|0|🇬加 01 | 1x SG
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
@@ -5633,10 +5653,10 @@ proxies:
       Host: sg.aniuge.qzz.io
     path: /?ed=2560
 - alterId: 0
-  name: 574|🇬SG新加坡3
+  name: 574|🇸🇬SG新加坡3
   password: BxceQaOe
-  port: 381
-  server: 16.163.104.139
+  port: 1196
+  server: 18.163.206.7
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   tls: true
