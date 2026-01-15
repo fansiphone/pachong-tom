@@ -47,19 +47,30 @@ proxies:
   server: sg6.sulink.one
   type: ss
   udp: true
-- cipher: aes-128-gcm
-  name: '96,343,378,537|🇳CN-223.95.183.132-0971 #1'
-  password: b637f2e47b7827b308ebf399008075d2
-  port: 39398
-  server: 223.95.183.132
+- cipher: aes-256-gcm
+  delay: 1198
+  name: 96,343,528,553|yandex-102
+  password: d2umVadPT1m/FwIn
+  port: 8388
+  server: 194.87.10.161
+  skip-cert-verify: false
   type: ss
+  udp: false
+- name: 96,343,553|yandex-104
+  password: 8jJVmFbM7qKnR3bSXX
+  port: 6031
+  server: pro-fw-sg1.dimsumyumcha.com
+  skip-cert-verify: true
+  sni: pro-fw-sg1.dimsumyumcha.com
+  type: trojan
   udp: true
-- cipher: aes-128-gcm
-  name: '96,343,378,537|🇨🇳CN-223.95.183.132-0964 #1'
-  password: b637f2e47b7827b308ebf399008075d2
-  port: 45295
-  server: 223.95.183.132
-  type: ss
+- name: '96,343,553,568|🇸🇬 新加坡 | SGP #5'
+  password: 8jJVmFbM7qKnR3bSXX
+  port: 465
+  server: pro-sg1.dimsumyumcha.com
+  skip-cert-verify: true
+  sni: pro-sg1.dimsumyumcha.com
+  type: trojan
   udp: true
 - alterId: 0
   cipher: auto
@@ -745,11 +756,11 @@ proxies:
   port: 17315
   server: 120.240.103.35
   type: ss
-- name: 255|SG
-  network: tcp
+- name: 255|🇸🇬 SG
   password: f57f01e6-9bb1-4277-a5cb-75ad0ce1fa11
   port: 32702
   server: xd-sh.timiwc.com
+  skip-cert-verify: true
   sni: k36.tudou211.com
   type: trojan
 - name: '321,322,323|tg群组: https://t.me/tjiajc1 #3'
@@ -788,32 +799,27 @@ proxies:
   sni: www.alibaba.com
   type: trojan
   udp: true
-- country: 🇯🇵JP
-  name: '340,378,440,456,494,536,537,538,559,580|🇸🇬 新加坡|@stairnode #5'
+- name: '340,378,456,494,536,537,538,559,580|🇸🇬 新加坡|@stairnode #5'
   password: 61d8077bfb174e171b8283f155a555ad
   port: 3076
   server: 160.16.106.99
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-  udp: true
-- country: 🇯🇵JP
-  name: '340,378,440,456,494,536,537,538,559,580|🇸🇬 新加坡2|@stairnode #5'
+- name: '340,378,456,494,536,537,538,559,580|🇸🇬 新加坡2|@stairnode #5'
   password: 61d8077bfb174e171b8283f155a555ad
   port: 544
   server: 160.16.106.99
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-  udp: true
-- name: '340,456,536,566,580|🇸🇬 新加坡3|@stairnode #4'
+- name: '340,456,536,580|🇸🇬 新加坡3|@stairnode #4'
   password: BxceQaOe
   port: 1196
   server: 18.163.206.7
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
-  udp: true
 - name: 356|🇸🇬1 |  9.0MB/s
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   port: 443
@@ -834,8 +840,7 @@ proxies:
   server: 128.199.172.224
   type: ss
 - cipher: rc4-md5
-  country: 🇬SG
-  name: 356,378,440,537,538|🇸🇬SG-68.183.227.4-0358 | 20.11...
+  name: 356,378,537,538|🇸🇬SG-68.183.227.4-0358 | 20.11...
   password: 14fFPrbezE3HDZzsMOr6
   port: 8080
   server: 68.183.227.4
@@ -3158,7 +3163,7 @@ proxies:
   country: 🇬 SG
   h2-opts: {}
   http-opts: {}
-  name: 435,437|🇸🇬 SG_142
+  name: 435,437|🇸🇬 SG_153
   network: none
   port: 43425
   server: 8.210.248.133
@@ -3605,15 +3610,6 @@ proxies:
   server: 52.196.181.68
   tfo: false
   type: ss
-- cipher: aes-256-gcm
-  delay: 1198
-  name: 528,553|yandex-542
-  password: d2umVadPT1m/FwIn
-  port: 8388
-  server: 194.87.10.161
-  skip-cert-verify: false
-  type: ss
-  udp: false
 - alpn:
   - h2
   - http/1.1
@@ -3759,6 +3755,50 @@ proxies:
   ws-opts:
     headers:
       Host: n1747624282.lie5d.cyou
+    path: /
+- cipher: chacha20-ietf
+  name: 566|🇸🇬 新加坡 | SGP 4
+  obfs: http_simple
+  obfsparam: 5ed4e33485.microsoft.com
+  password: HuTaoCloud
+  port: 12303
+  protocol: auth_aes128_sha1
+  protocolparam: 33485:UlPWVWB0liUJHbD9
+  server: 27.152.180.144
+  type: ssr
+  udp: true
+- name: 566|🇸🇬 新加坡 | SGP 12
+  password: 906d3f51-f9fd-4901-9666-f917babec7a3
+  port: 50030
+  server: v1dytv.lalakw.com
+  skip-cert-verify: true
+  sni: v1dytv.lalakw.com
+  type: trojan
+  udp: true
+- cipher: chacha20-ietf
+  name: 566|🇸🇬 新加坡 | SGP 19
+  obfs: http_simple
+  obfsparam: 5ed4e33485.microsoft.com
+  password: HuTaoCloud
+  port: 12310
+  protocol: auth_aes128_sha1
+  protocolparam: 33485:UlPWVWB0liUJHbD9
+  server: 27.152.180.144
+  type: ssr
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 566|🇸🇬 新加坡 | SGP 20
+  network: ws
+  port: 12901
+  server: gtm1.ktmwan.net
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 20370795-7412-479b-9529-a43e6a60677a
+  ws-opts:
+    headers:
+      Host: baidu.com
     path: /
 - alterId: 0
   cipher: auto
