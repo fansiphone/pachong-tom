@@ -29,7 +29,7 @@ proxies:
 - cipher: aes-256-cfb
   country: 🇫🇷FR
   delay: 1410
-  name: 96,343,528,553|yandex-46
+  name: 96,343,528,553|yandex-681
   password: amazonskr05
   port: 443
   server: 13.38.30.95
@@ -37,7 +37,7 @@ proxies:
   udp: true
 - cipher: aes-128-gcm
   delay: 2441
-  name: 96,343,528,553|yandex-48
+  name: 96,343,528,553|yandex-683
   password: be1c6eab-3d70-4cf0-ae9a-b3175c7dfb47
   plugin: obfs
   plugin-opts:
@@ -401,7 +401,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 378,536,537,538,559|🇧🇪 BE_14
+  name: '378,536,537,538,559|🇧🇪 BE_19 #1'
   network: ws
   port: 443
   server: 57.128.189.240
@@ -416,7 +416,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 378,536,537,538,559|🇫🇷 FR_41
+  name: 378,536,537,538,559|🇫🇷 FR_43
   network: ws
   port: 443
   server: 91.134.8.101
@@ -671,12 +671,15 @@ proxies:
     path: /ws
 - alterId: 0
   cipher: auto
-  name: '378,437,494,536,537|🇷FR-57.128.189.240-4768 #1'
+  country: 🇧🇪BE
+  h2-opts: {}
+  http-opts: {}
+  name: 378,437,494,536,537,548|🇧🇪BE_43
   network: ws
   port: 443
   server: 57.128.189.240
   servername: ''
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
@@ -734,22 +737,18 @@ proxies:
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     path: /linkvws
-- country: 🇷FR
-  name: '378,435,436,536,537|🇫🇷FR-51.254.142.162-4792 #2'
+- name: '378,436,536,537|🇫🇷FR-51.254.142.162-4792 #2'
   password: 6c64e6f9-a76c-49eb-96d2-bf8b1afee4a3
   port: 443
   server: fr-full.privateip.net
   skip-cert-verify: false
   type: trojan
-  udp: true
-- country: 🇫🇷FR
-  name: '378,435,436,536,537|🇷FR-57.128.174.124-4794 #1'
+- name: '378,436,536,537|🇷FR-57.128.174.124-4794 #1'
   password: d150c8c3-a667-4d3e-843c-739f8558c7d2
   port: 443
   server: uk-full.privateip.net
   skip-cert-verify: false
   type: trojan
-  udp: true
 - alterId: 0
   cipher: auto
   name: '378,536,537|🇷FR-146.59.55.50-4852 #1'
@@ -763,14 +762,12 @@ proxies:
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     path: /linkvws
-- country: 🇦UA
-  name: '378,435,436,536,537|🇷FR-57.131.38.150-4857 #1'
+- name: '378,436,536,537|🇷FR-57.131.38.150-4857 #1'
   password: 8d16a256-42d7-4431-8039-da1eb06cafbc
   port: 443
   server: it-full.privateip.net
   skip-cert-verify: false
   type: trojan
-  udp: true
 - cipher: chacha20-ietf-poly1305
   name: '378,537|FR-178.18.244.2-5685 #1'
   password: 97OnDEZYGja4
@@ -1534,20 +1531,6 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  country: 🇷 FR
-  h2-opts: {}
-  http-opts: {}
-  name: 435| FR_43
-  network: ws
-  port: 443
-  server: 91.134.8.101
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-path: /linkvws
-- alterId: 0
-  cipher: auto
   name: 461|法国_马赛
   network: ws
   port: 443
@@ -1710,13 +1693,13 @@ proxies:
   server: pop.b1c7d2ec-e636-4521-a9f7-abb10044e3a5.heima360.cc
   skip-cert-verify: false
   type: trojan
-- name: 559|🇫🇷FR_42
+- name: '559|🇫🇷FR_46 #1'
   password: 6c64e6f9-a76c-49eb-96d2-bf8b1afee4a3
   port: 443
   server: fr-full.privateip.net
   sni: fr-full.privateip.net
   type: trojan
-- name: 559|🇫🇷FR_43
+- name: '559|🇫🇷FR_44 #1'
   password: d150c8c3-a667-4d3e-843c-739f8558c7d2
   port: 443
   server: 198.244.190.189
@@ -1728,11 +1711,17 @@ proxies:
   server: uk-full.privateip.net
   sni: uk-full.privateip.net
   type: trojan
-- name: '559|🇫🇷FR_44 #1'
+- name: 559|🇫🇷FR_47
   password: d86c421f-dbfe-4507-a864-f8f9e29d80e4
   port: 443
   server: de-full.privateip.net
   sni: de-full.privateip.net
+  type: trojan
+- name: 559|法国 - 奧奈叢林 - 1
+  password: trojan
+  port: 50000
+  server: 212.47.245.217
+  sni: doufeng.pages.dev
   type: trojan
 - alterId: 0
   cipher: auto
