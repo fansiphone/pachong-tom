@@ -809,11 +809,11 @@ proxies:
   port: 17315
   server: 120.240.103.35
   type: ss
-- name: 255|🇸🇬 SG
+- name: 255|SG
+  network: tcp
   password: f57f01e6-9bb1-4277-a5cb-75ad0ce1fa11
   port: 32702
   server: xd-sh.timiwc.com
-  skip-cert-verify: true
   sni: k36.tudou211.com
   type: trojan
 - client-fingerprint: firefox
@@ -903,7 +903,7 @@ proxies:
   sni: www.alibaba.com
   type: trojan
   udp: true
-- name: '340,495,502,514,551,559|9|SG #2'
+- name: '340,495,502,514,551,559|9|SG #1'
   password: e7965e64-e001-4e8c-8273-39c61ff4a094
   port: 30000
   server: sg3.oomz.ru
@@ -911,30 +911,6 @@ proxies:
   sni: bing.com
   tls: false
   type: hysteria2
-- name: '340,378,507,536,537,559,580|🇸🇬 新加坡|@stairnode #1'
-  network: tcp
-  password: 4843e94d205f3893f588255a591abe94
-  port: 544
-  server: 153.121.65.107
-  skip-cert-verify: false
-  sni: www.nintendogames.net
-  type: trojan
-- name: '340,378,536,537,559,580|🇸🇬 新加坡2|@stairnode #1'
-  network: tcp
-  password: 4843e94d205f3893f588255a591abe94
-  port: 3901
-  server: 160.16.124.55
-  skip-cert-verify: false
-  sni: www.nintendogames.net
-  type: trojan
-- name: '340,378,536,537,559,580|🇸🇬 新加坡3|@stairnode #1'
-  network: tcp
-  password: BxceQaOe
-  port: 1196
-  server: 13.114.140.34
-  skip-cert-verify: true
-  sni: t.me%252Fripaojiedian
-  type: trojan
 - name: 356|🇸🇬1 |  9.0MB/s
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   port: 443
@@ -955,7 +931,7 @@ proxies:
   type: ss
 - cipher: rc4-md5
   country: 🇸🇬SG
-  name: 356,378,440,537,548|🇸🇬SG_196
+  name: 356,378,440,537,548|🇸🇬SG_199
   password: 14fFPrbezE3HDZzsMOr6
   port: 8080
   server: 68.183.227.4
@@ -2849,14 +2825,15 @@ proxies:
   server: 45.135.228.135
   type: ss
 - cipher: aes-256-gcm
-  name: '378,537|🇸🇬SG-13.229.180.24-4815 #1'
+  country: 🇸SG
+  name: '378,440,537|🇸🇬SG-13.229.180.24-4815 #1'
   password: c69374da-2208-4cbd-b81e-cdf88b5e7f53
   port: 11688
   server: ss.037.node-for-bigairport.win
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇺🇸US
-  name: 378,537,548|🇺🇸US_222
+  name: 378,537,548|🇺🇸US_208
   password: pJtDFXMfdW9VNdJpaf4e2LfFkXdWgxrz
   port: 443
   server: 167.150.100.115
@@ -3479,7 +3456,7 @@ proxies:
   country: 🇭🇰HK
   h2-opts: {}
   http-opts: {}
-  name: 435,437,548|🇭🇰HK_73
+  name: 435,437,548|🇭🇰HK_72
   network: none
   port: 43425
   server: 8.210.248.133
@@ -3488,6 +3465,37 @@ proxies:
   type: vmess
   uuid: aa10afb0-f913-4343-9c69-bc797fcba2db
   ws-path: /
+- alterId: 0
+  cipher: auto
+  country: 🇸🇬 SG
+  h2-opts: {}
+  http-opts: {}
+  name: 435|🇬 SG_135
+  network: ws
+  port: 443
+  server: n1761214911.74qxv.top
+  servername: n1761214911.74qxv.top
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 372c1939-299d-4946-9633-5ffa971f8b67
+  ws-headers:
+    HOST: n1761214911.74qxv.top
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 437,536|🇭🇰HK-8.210.166.22-4715
+  network: ws
+  port: 443
+  server: n1761214911.74qxv.top
+  servername: n1761214911.74qxv.top
+  tls: true
+  type: vmess
+  uuid: 372c1939-299d-4946-9633-5ffa971f8b67
+  ws-opts:
+    headers:
+      Host: n1761214911.74qxv.top
+    path: /
 - name: 453|🇸🇬 新加坡|@stairnode
   password: 253bc477d4e43c209f2d427272968280
   port: 2173
@@ -3504,7 +3512,7 @@ proxies:
   type: trojan
 - alterId: 32
   cipher: auto
-  name: '459,494,523,524,536,544,559,580|NL荷兰(mibei77.com 米贝节点分享) #7'
+  name: '459,494,523,524,536,544,559,580|NL荷兰(mibei77.com 米贝节点分享) #9'
   network: ws
   port: '443'
   server: vc.fly.dev
@@ -4716,25 +4724,7 @@ proxies:
   flow: ''
   grpc-opts:
     grpc-service-name: grpc
-  name: '475,480,489,494|🔥Join+Telegram:@Farah_VPN🟣 #1711'
-  network: grpc
-  port: 22955
-  reality-opts:
-    public-key: 9Mt_Y8J_qDb1khlieWnhDSAq-kGtLHw6aOKgkAzOMms
-    short-id: 6ba85179e30d4fc2
-  server: 152.53.51.24
-  servername: one-piece.com
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: 63f92f3c-447c-4283-80b9-0af8e164cdad
-- client-fingerprint: chrome
-  flow: ''
-  grpc-opts:
-    grpc-service-name: grpc
-  name: '475,480,494|🔥Join+Telegram:@Farah_VPN🟣 #343'
+  name: '475,480,494|🔥Join+Telegram:@Farah_VPN🟣 #2657'
   network: grpc
   port: 22955
   reality-opts:
@@ -4747,41 +4737,28 @@ proxies:
   type: vless
   udp: true
   uuid: 63f92f3c-447c-4283-80b9-0af8e164cdad
-- name: '476,481|SG新加坡(mibei77.com 米贝节点分享) #1'
-  password: 5a2c16f9
-  port: 8443
-  server: 104.234.151.10
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: '476,481|SG新加坡(mibei77.com 米贝节点分享) 2 #1'
-  password: 381f2e86233720eacda26d50e9aa26da
-  port: 443
-  server: 58.152.110.104
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: '479,484|🇸🇬 SG TROJAN-21 | free-nodes #1'
-  password: 61d8077bfb174e171b8283f155a555ad
+- name: 479,484,536,559,580|SG TROJAN-48 | free-nodes
+  password: 4843e94d205f3893f588255a591abe94
   port: 544
-  server: 160.16.124.55
-  skip-cert-verify: true
+  server: 153.121.45.139
+  skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: '479,484|🇸🇬 SG TROJAN-31 | free-nodes #1'
-  password: 61d8077bfb174e171b8283f155a555ad
+- name: 479,484,536,559,580|SG TROJAN-54 | free-nodes
+  password: 4843e94d205f3893f588255a591abe94
   port: 3076
-  server: 153.121.38.213
+  server: 153.121.45.139
+  skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: '479,484|🇸🇬 SG SS-63 | free-nodes #1'
+  name: '479,484|🇸🇬 SG SS-73 | free-nodes #1'
   password: 42d2b47181a32de7
   port: 16922
   server: 154.26.132.38
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '479,484|🇸🇬 SG SS-100 | free-nodes #1'
+  name: '479,484|🇸🇬 SG SS-106 | free-nodes #1'
   password: 7afa39016d5a409c
   port: 48803
   server: 194.233.73.51
@@ -5002,7 +4979,7 @@ proxies:
     path: /@Marisa_kristi
 - client-fingerprint: chrome
   delay: 1740
-  name: 528,553|yandex-470
+  name: 528,553|yandex-2951
   network: ws
   port: 443
   server: staticdelivery.nexusmods.com
@@ -5018,7 +4995,7 @@ proxies:
 - client-fingerprint: chrome
   delay: 1103
   encryption: none
-  name: 528,553|yandex-471
+  name: 528,553|yandex-2952
   network: ws
   port: 443
   server: vip3.kaixincloud.top
@@ -5033,7 +5010,7 @@ proxies:
     path: /
 - client-fingerprint: chrome
   delay: 1029
-  name: 528,553|yandex-472
+  name: 528,553|yandex-2953
   network: ws
   port: 443
   server: registry.cyou
@@ -5049,7 +5026,7 @@ proxies:
 - client-fingerprint: chrome
   delay: 2584
   encryption: none
-  name: 528,553|yandex-473
+  name: 528,553|yandex-2954
   network: ws
   port: 443
   server: store.ubi.com
@@ -5065,7 +5042,7 @@ proxies:
 - client-fingerprint: chrome
   delay: 1234
   encryption: none
-  name: 528,553|yandex-474
+  name: 528,553|yandex-2955
   network: ws
   port: 8443
   server: 172.64.157.136
@@ -5118,7 +5095,7 @@ proxies:
   country: 🇭🇰HK
   h2-opts: {}
   http-opts: {}
-  name: '548|disney_SG #1'
+  name: 548|disney_SG
   port: 35034
   server: 165.154.195.38
   skip-cert-verify: true
@@ -5129,7 +5106,7 @@ proxies:
   country: 🇸🇬SG
   h2-opts: {}
   http-opts: {}
-  name: 548|🇸🇬SG_197
+  name: 548|🇸🇬SG_200
   network: none
   port: 51000
   server: 8.217.90.175
@@ -5275,7 +5252,7 @@ proxies:
   uuid: 602b380a-9fdf-4425-bc07-aae9a95cfc4b
   ws-opts:
     path: '%2Fsnippets%2Fip'
-- name: '559|SG新加坡(mibei77.com 米贝节点分享) #2'
+- name: 559|SG新加坡(mibei77.com 米贝节点分享)
   network: ws
   port: 443
   server: 8.223.63.150
@@ -5622,7 +5599,7 @@ proxies:
     headers:
       Host: sg.aniuge.qzz.io
     path: '%2F'
-- name: '559|SG新加坡(mibei77.com 米贝节点分享) #3'
+- name: '559|SG新加坡(mibei77.com 米贝节点分享) #1'
   network: ws
   port: 8080
   server: 20.191.143.151
@@ -5803,7 +5780,7 @@ proxies:
     headers:
       Host: gw.alicdn.com
     path: /CAT
-- name: '580|SG新加坡(mibei77.com 米贝节点分享) #4'
+- name: '580|SG新加坡(mibei77.com 米贝节点分享) #2'
   network: ws
   port: 443
   server: 27.50.48.6
@@ -5815,7 +5792,7 @@ proxies:
     headers:
       Host: snip.qqq.hidns.co
     path: '%2F%3Fed%3D2560'
-- name: '580|SG新加坡(mibei77.com 米贝节点分享) #5'
+- name: '580|SG新加坡(mibei77.com 米贝节点分享) #3'
   network: ws
   port: 443
   server: 27.50.49.104
@@ -5827,7 +5804,7 @@ proxies:
     headers:
       Host: snip.qqq.hidns.co
     path: '%2F%3Fed%3D2560'
-- name: '580|SG新加坡(mibei77.com 米贝节点分享) #6'
+- name: '580|SG新加坡(mibei77.com 米贝节点分享) #4'
   network: ws
   port: 443
   server: 27.50.48.2
