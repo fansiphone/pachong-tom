@@ -279,7 +279,7 @@ proxies:
       Host: cnm-fangbinxing-nmsl.cnm-fangbinxing-nmsl-966.workers.dev
     path: /
 - client-fingerprint: random
-  name: '127,426|🇭🇰 HK_1|3.3MB/s|GPT⁺|YT-HK|NF|... #1'
+  name: 127,426,553|yandex-3450
   network: ws
   port: 443
   server: 104.19.44.107
@@ -369,7 +369,7 @@ proxies:
       Host: snip.ere.de5.net
     path: /?ed=2560
 - client-fingerprint: random
-  name: '127,426|🇭🇰 HK_7|2.3MB/s|GPT⁺|YT-HK|NF|... #1'
+  name: 127,426,553|yandex-3453
   network: ws
   port: 443
   server: 172.64.144.22
@@ -399,13 +399,12 @@ proxies:
       Host: l.ayovo.netlib.re
     path: /?ed=2560
 - client-fingerprint: chrome
-  name: 127,426,566|🇭🇰 香港 | HKG 21
+  name: '127,426|🇭🇰 HK_9|2.2MB/s|YT-HK|NF|D+|1% #1'
   password: be8cc8f6-0c6a-11f0-a5a3-f23c93141fad
   port: 8300
   server: ec1c1972-t9lmo0-ta37qp-b4pt.hkt.east.wctype.com
   skip-cert-verify: true
   type: anytls
-  udp: true
 - alterId: 0
   cipher: auto
   name: '128,430|香港NO.2 #1'
@@ -958,30 +957,48 @@ proxies:
     headers:
       Host: d1th2ch215a6xr.cloudfront.net
     path: /stream?ed=2048
-- name: 255|HK
+- name: 255|🇭🇰 HK
   network: ws
   port: 65056
   server: 202.181.24.70
+  skip-cert-verify: true
+  tfo: false
   tls: false
   type: vless
   uuid: c9d0ddb5-f2c1-4111-a92d-9798a2348a56
   ws-opts:
-    path: '%2Fyz'
+    path: /yz
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '255|HK #1'
+  name: 255|🇭🇰 HK 2
   network: tcp
   port: 46716
   reality-opts:
     public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
   server: agaungzhou01.bumbleshrimp.com
   servername: www.nvidia.com
-  tls: false
+  skip-cert-verify: true
+  tfo: false
+  tls: true
   type: vless
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- alterId: 0
+  cipher: none
+  name: 255|🇭🇰 HK-Eons_Data_Communications
+  network: ws
+  port: 443
+  server: www.visa.com.tw
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: df7a96e2-c663-48ed-9713-1c144705f79e
+  ws-opts:
+    headers:
+      Host: ee-boston-therapist-cleaning.trycloudflare.com
+    path: /vmess-argo?ed=2048
 - client-fingerprint: safari
   flow: xtls-rprx-vision
-  name: '255|HK #2'
+  name: 255|🇭🇰 HK 3
   network: tcp
   port: 25791
   reality-opts:
@@ -989,7 +1006,9 @@ proxies:
     short-id: 57d9de10de16538d
   server: 34.92.65.82
   servername: cloudreve.mnm.pp.ua
-  tls: false
+  skip-cert-verify: true
+  tfo: false
+  tls: true
   type: vless
   uuid: 711007f1-9cdf-4fd9-b5d4-d67aee173281
 - alterId: 2
@@ -1002,8 +1021,9 @@ proxies:
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - alterId: 0
-  name: '306,340,378,454,494,502,507,514,515,516,523,524,536,537,543,544,548,551,556,557,559,566,568,574,579,580,582|🇭🇰
-    香港3|@stairnode #7'
+  country: 🇭🇰HK
+  name: '306,340,378,440,454,494,502,507,514,515,516,523,524,536,537,543,544,548,551,556,557,559,574,579,580,582|🇭🇰
+    香港3|@stairnode #6'
   network: tcp
   password: 869e9086806483ca4744a4cb0f3d6e16
   port: 443
@@ -1013,8 +1033,8 @@ proxies:
   tls: true
   type: trojan
   udp: true
-- name: '306,454,494,502,507,514,515,516,543,544,548,551,556,557,579,580,582|🇭🇰 香港4|@stairnode
-    #7'
+- name: '306,454,494,502,507,514,515,516,543,544,548,551,556,557,559,579,580,582|🇭🇰
+    香港4|@stairnode #7'
   network: tcp
   password: BxceQaOe
   port: 443
@@ -1024,7 +1044,11 @@ proxies:
   type: trojan
 - alterId: 2
   cipher: auto
-  name: '306,340,494,502,514,515,516,543,544,551,557,559|11|🇭🇰 香港|@ripaojiedian #1'
+  country: 🇭🇰HK
+  h2-opts: {}
+  http-opts: {}
+  name: '306,340,440,494,502,514,515,516,543,544,551,557,559|12|🇭🇰 香港|@ripaojiedian
+    #3'
   network: tcp
   port: 30807
   server: v10.hdacd.com
@@ -1036,110 +1060,32 @@ proxies:
   ws-headers:
     Host: v10.hdacd.com
   ws-path: /
-- name: '306,378,507,537|HK-58.152.53.45-0902 #1'
+- name: '306,502,551|HK11｜家宽｜非常安全 #1'
   password: BxceQaOe
   port: 443
-  server: 58.152.53.45
-  skip-cert-verify: false
-  sni: t.me%252Fripaojiedian
-  type: trojan
-- name: '306,378,537,559|TR TROJAN-80 | free-nodes #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.25.130
+  server: 203.198.122.187
   skip-cert-verify: true
-  sni: 58.152.25.130
+  sni: 203.198.122.187
   type: trojan
-- name: 306,536|🇭🇰HK-58.152.25.130-1715
-  password: BxceQaOe
-  port: 443
-  server: 58.152.25.130
-  skip-cert-verify: true
-  sni: t.me%252Fripaojiedian
-  type: trojan
-- name: '306,456,507,523,524,536,559,566,568,580|HK TROJAN-48 | free-nodes #1'
-  network: tcp
-  password: BxceQaOe
-  port: 443
-  server: 219.76.135.98
-  skip-cert-verify: true
-  sni: 219.76.135.98
-  tls: true
-  type: trojan
-  udp: true
-- name: '306,378,537|🇭🇰HK-58.152.25.130-1767 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.25.130
-  skip-cert-verify: false
-  sni: t.me%2Fripaojiedian
-  type: trojan
-- alterId: 0
-  name: 306,340,378,494,523,524,536,537,559,574|🇸🇬SG新加坡5
-  network: tcp
-  password: 869e9086806483ca4744a4cb0f3d6e16
-  port: 443
-  server: 203.198.122.227
-  skip-cert-verify: true
-  sni: www.nintendogames.net
-  tls: true
-  type: trojan
-  udp: true
-- name: '306,378,537|🇭🇰HK-219.76.135.98-0903 #1'
-  password: BxceQaOe
-  port: 443
-  server: 219.76.135.98
-  skip-cert-verify: false
-  sni: t.me%252Fripaojiedian
-  type: trojan
-- name: 306|Hong Kong_Sai Wan_trojan_1196
-  password: BxceQaOe
-  port: 443
-  server: 58.152.25.130
-  skip-cert-verify: true
-  sni: t.me%25252Fripaojiedian
-  type: trojan
-- alterId: 0
-  name: '306,494,574|🇭🇰HK香港5 #1'
-  password: BxceQaOe
-  port: 443
-  server: 219.76.135.98
-  skip-cert-verify: true
-  sni: t.me%2Fripaojiedian
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 306,459,559|NL4｜机房｜低风险
-  network: tcp
-  port: '30830'
-  server: v30.hdacd.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: '340,495,502,514,551,559|8| HK #1'
+- name: '340,495,502,514,551,559|9| HK #2'
   password: a305ac08-d136-11ee-b6db-f23c91cfbbc9
   port: 443
   server: ffc60249-t53wg0-t92wi1-1qkeg.hk2.hyhuawei.com
   sni: ffc60249-t53wg0-t92wi1-1qkeg.hk2.hyhuawei.com
   tls: false
   type: hysteria2
-- name: '340,378,536,537,559|11,12|香港4|@ripaojiedian #3'
-  network: tcp
+- name: '340,378,536,537|🇵JP-18.182.8.233-0905 #1'
   password: BxceQaOe
   port: 432
   server: 18.182.8.233
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: t.me%2Fripaojiedian
   type: trojan
-- name: '340,378,536,537,559|11,12|香港5|@ripaojiedian #3'
-  network: tcp
+- name: '340,378,536,537|🇵JP-54.250.244.16-0906 #1'
   password: BxceQaOe
   port: 1867
   server: 54.250.244.16
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: t.me%2Fripaojiedian
   type: trojan
 - cipher: chacha20-ietf-poly1305
@@ -2026,7 +1972,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: '374|🇭🇰 香港 #1'
+  name: '374|🇭🇰 香港 #2'
   port: 19901
   server: xg.dashuai.cyou
   tls: false
@@ -2151,8 +2097,23 @@ proxies:
   uuid: 80e94af6-e42a-4dbc-8f4b-c5f99bf97d3d
   ws-opts:
     path: /zh-cn/download
+- name: '378,507,537|HK-58.152.53.45-0902 #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.53.45
+  skip-cert-verify: false
+  sni: t.me%252Fripaojiedian
+  type: trojan
+- name: '378,537|🇭🇰HK-219.76.135.98-0903 #1'
+  password: BxceQaOe
+  port: 443
+  server: 219.76.135.98
+  skip-cert-verify: false
+  sni: t.me%252Fripaojiedian
+  type: trojan
 - alterId: 0
-  name: '378,494,523,524,536,537,543,544,559,574,580|HK香港(mibei77.com 米贝节点分享) #10'
+  name: '378,494,523,524,536,537,543,544,548,559,574,580|HK香港(mibei77.com 米贝节点分享)
+    #10'
   network: tcp
   password: 30077070-596e-48ea-9400-14c8ed07bd97
   port: 443
@@ -2163,7 +2124,7 @@ proxies:
   type: trojan
   udp: true
 - alterId: 0
-  name: '378,494,536,537,559,574,580|🇭🇰 香港3|@stairnode #5'
+  name: '378,494,536,537,559,574,580|🇭🇰 香港3|@stairnode #4'
   password: 869e9086806483ca4744a4cb0f3d6e16
   port: 443
   server: 58.152.110.193
@@ -2172,21 +2133,21 @@ proxies:
   tls: true
   type: trojan
   udp: true
-- name: '378,536,537,559,580|🇭🇰 香港5|@stairnode #5'
+- name: '378,536,537,580|🇭🇰 香港5|@stairnode #4'
   password: BxceQaOe
   port: 432
   server: 43.199.45.223
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- name: '378,536,537,559,580|🇸🇬 新加坡3|@stairnode #5'
+- name: '378,536,537,580|🇸🇬 新加坡3|@stairnode #4'
   password: BxceQaOe
   port: 1691
   server: 43.198.102.247
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
-- name: '378,536,537,559,580|🇺🇸 美国3|@stairnode #6'
+- name: '378,536,537,580|🇺🇸 美国3|@stairnode #5'
   password: BxceQaOe
   port: 3159
   server: 43.198.102.247
@@ -2433,6 +2394,20 @@ proxies:
   port: 50418
   server: 103.103.245.125
   skip-cert-verify: false
+  type: trojan
+- name: '378,537,559|TR TROJAN-80 | free-nodes #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.25.130
+  skip-cert-verify: true
+  sni: 58.152.25.130
+  type: trojan
+- name: '378,537|🇭🇰HK-58.152.25.130-1767 #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.25.130
+  skip-cert-verify: false
+  sni: t.me%2Fripaojiedian
   type: trojan
 - name: 378,536,537,559|🇭🇰[openproxylist.com] trojan-H...
   network: tcp
@@ -2810,7 +2785,7 @@ proxies:
     headers:
       Host: hkt.gotochinatown.net
     path: /
-- country: 🇸 US
+- country: 🇺🇸 US
   name: '378,435,436,536,537|🇰HK-45.149.92.71-4853 #1'
   password: e4af2638-bb12-4e4a-84f1-a032e23ca63f
   port: 443
@@ -3330,12 +3305,15 @@ proxies:
   type: ssr
 - alterId: 0
   cipher: auto
-  name: '378,536,537|🇭🇰HK-47.244.120.197-5013 #1'
+  country: 🇭🇰HK
+  h2-opts: {}
+  http-opts: {}
+  name: 378,536,537,548|🇭🇰HK_75
   network: ws
   port: 36703
   server: 47.244.120.197
   servername: ''
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 45b83519-9c4f-4052-a11b-02e017b636d4
@@ -5257,12 +5235,32 @@ proxies:
       Host: 51b0e42034dd75a815fa9eb16021fbda.mobgslb.tbcache.com
     path: /
   ws-path: /
-- alterId: 0
+- cipher: aes-256-cfb
+  country: 🇭🇰HK
+  name: 435,548|🇭🇰HK_67
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 154.223.16.212
+  type: ss
+- alterId: 2
   cipher: auto
   country: 🇰 HK
   h2-opts: {}
   http-opts: {}
-  name: '435,437,559|🇭🇰 HK_54 #1'
+  name: 435|🇰 HK_51
+  network: ws
+  port: 80
+  server: hkt.gotochinatown.net
+  skip-cert-verify: true
+  type: vmess
+  uuid: 384d1b42-655f-11ed-a8bf-f23c91cfbbc9
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  country: 🇭🇰HK
+  h2-opts: {}
+  http-opts: {}
+  name: '435,437,548,559|🇭🇰 HK_52 #1'
   network: none
   port: 13852
   server: 45.207.157.29
@@ -5277,20 +5275,7 @@ proxies:
   country: 🇭🇰 HK
   h2-opts: {}
   http-opts: {}
-  name: 435|🇰 HK_55
-  network: ws
-  port: 80
-  server: hkt.gotochinatown.net
-  skip-cert-verify: true
-  type: vmess
-  uuid: 384d1b42-655f-11ed-a8bf-f23c91cfbbc9
-  ws-path: /
-- alterId: 2
-  cipher: auto
-  country: 🇭🇰 HK
-  h2-opts: {}
-  http-opts: {}
-  name: 435|🇰 HK_56
+  name: 435|🇰 HK_53
   network: ws
   port: 80
   server: hkt.gotochinatown.net
@@ -5303,7 +5288,7 @@ proxies:
   ws-path: /
 - alterId: 2
   cipher: auto
-  name: 437,559|🇭🇰 HK_53
+  name: '437,559|🇭🇰 HK_51 #1'
   network: ws
   port: 80
   server: hkt.gotochinatown.net
@@ -5317,7 +5302,7 @@ proxies:
     path: /
 - alterId: 2
   cipher: auto
-  name: 437|🇭🇰 HK_56
+  name: 437|🇭🇰 HK_53
   network: ws
   port: 80
   server: hkt.gotochinatown.net
@@ -5328,6 +5313,46 @@ proxies:
     headers:
       Host: broadcastlv.chat.bilibili.com
     path: /
+- alterId: 0
+  cipher: auto
+  country: 🇰HK
+  h2-opts: {}
+  http-opts: {}
+  name: 440|HK_10
+  network: tcp
+  port: 13852
+  server: 45.207.157.29
+  skip-cert-verify: true
+  type: vmess
+  uuid: 845764df-ecb3-4b13-bed2-bf1551b68e9a
+- country: 🇰HK
+  name: 440|🇭🇰HK_13
+  password: BxceQaOe
+  port: 443
+  server: 203.198.122.187
+  skip-cert-verify: true
+  sni: t.me/ripaojiedian
+  type: trojan
+  udp: true
+- country: 🇭🇰HK
+  name: '440,523,524|🇭🇰_香港_42 #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.53.45
+  skip-cert-verify: true
+  sni: t.me/ripaojiedian
+  tls: true
+  type: trojan
+  udp: true
+- country: 🇭🇰HK
+  name: 440|🇭🇰HK_16
+  password: BxceQaOe
+  port: 443
+  server: 219.76.135.98
+  skip-cert-verify: true
+  sni: t.me/ripaojiedian
+  type: trojan
+  udp: true
 - name: 453|🇭🇰 香港4|@stairnode
   password: 253bc477d4e43c209f2d427272968280
   port: 4419
@@ -5357,7 +5382,7 @@ proxies:
       Host: 010ece56-t6r5s0-thd0h1-1rz5s.hkt.gotochinatown.net
     path: /
 - alterId: 0
-  name: '456,494,536,559,574,580|HK TROJAN-14 | free-nodes #1'
+  name: '456,494,536,559,568,574,580|HK TROJAN-14 | free-nodes #1'
   password: BxceQaOe
   port: 443
   server: 58.152.53.45
@@ -5366,6 +5391,14 @@ proxies:
   tls: true
   type: trojan
   udp: true
+- name: '456,507,523,524,536,580|HK TROJAN-48 | free-nodes #1'
+  password: BxceQaOe
+  port: 443
+  server: 219.76.135.98
+  skip-cert-verify: true
+  sni: 219.76.135.98
+  tls: true
+  type: trojan
 - name: '456,580|HK TROJAN-127 | free-nodes #1'
   password: BxceQaOe
   port: 443
@@ -5971,7 +6004,7 @@ proxies:
   sni: 58.152.18.124
   type: trojan
   udp: true
-- name: 475,480,489,553,559|🇭🇰HK香港
+- name: 475,480,489,553|yandex-2847
   network: tcp
   password: 4843e94d205f3893f588255a591abe94
   port: 443
@@ -5988,7 +6021,7 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
-- name: 475,480,489,553|yandex-2946
+- name: 475,480,489,553|yandex-3062
   network: tcp
   password: 808b5ae2-7b94-43e7-8632-c639c3f72415
   port: 31103
@@ -5997,7 +6030,7 @@ proxies:
   sni: green2.cdntencentmusic.com
   type: trojan
   udp: true
-- name: 475,480,489,553|yandex-2972
+- name: 475,480,489,553|yandex-3088
   network: tcp
   password: b8a8025b-275a-4304-a789-b0881b281b81
   port: 31103
@@ -6015,7 +6048,7 @@ proxies:
   sni: green2.cdntencentmusic.com
   type: trojan
   udp: true
-- name: 475,480,489,553|yandex-3015
+- name: 475,480,489,553|yandex-3131
   network: tcp
   password: 57d69288-b782-4798-81d6-64b13777549a
   port: 31102
@@ -6051,7 +6084,7 @@ proxies:
   sni: green2.cdntencentmusic.com
   type: trojan
   udp: true
-- name: 475,480,489,553|yandex-3004
+- name: 475,480,489,553|yandex-3120
   network: tcp
   password: 27c8cb66-d0c0-4a87-8ef6-177e12f70c80
   port: 31102
@@ -6060,7 +6093,7 @@ proxies:
   sni: green2.cdntencentmusic.com
   type: trojan
   udp: true
-- name: 475,480,489,553|yandex-2875
+- name: 475,480,489,553|yandex-2991
   network: tcp
   password: efe9d5fc-823d-43d5-baef-9bc1fb0e651d
   port: 31102
@@ -6069,7 +6102,7 @@ proxies:
   sni: green2.cdntencentmusic.com
   type: trojan
   udp: true
-- name: 475,480,489,553|yandex-3000
+- name: 475,480,489,553|yandex-3116
   network: tcp
   password: 01c7c307-2ae3-4c9e-bfa2-d64b8a2f5e44
   port: 31102
@@ -6085,7 +6118,7 @@ proxies:
   server: 38.54.85.242
   type: ss
 - cipher: auto
-  name: '489,523,524,553,559,580|HK香港(mibei77.com 米贝节点分享)-clone #4'
+  name: '489,523,524,553,559,580|HK香港(mibei77.com 米贝节点分享)-clone #3'
   network: tcp
   port: 9527
   server: 43.161.253.78
@@ -6095,7 +6128,7 @@ proxies:
   uuid: d4a23188-85b0-4b46-b84b-f1d36d66c03e
   xudp: true
 - cipher: chacha20-ietf
-  name: 489,553|yandex-2697
+  name: 489,553|yandex-2813
   obfs: plain
   obfs-param: 1fa5048573.microsoft.com
   password: NaikoCloud
@@ -6106,7 +6139,7 @@ proxies:
   type: ssr
   udp: true
 - cipher: chacha20-ietf
-  name: 489,553|yandex-2701
+  name: 489,553|yandex-2817
   obfs: plain
   obfs-param: 1fa5048573.microsoft.com
   password: NaikoCloud
@@ -6117,7 +6150,7 @@ proxies:
   type: ssr
   udp: true
 - cipher: chacha20-ietf
-  name: 489,553|yandex-2702
+  name: 489,553|yandex-2818
   obfs: plain
   obfs-param: 1fa5048573.microsoft.com
   password: NaikoCloud
@@ -6128,7 +6161,7 @@ proxies:
   type: ssr
   udp: true
 - cipher: chacha20-ietf
-  name: 489,553|yandex-2703
+  name: 489,553|yandex-2819
   obfs: plain
   obfs-param: 1fa5048573.microsoft.com
   password: NaikoCloud
@@ -6139,7 +6172,7 @@ proxies:
   type: ssr
   udp: true
 - cipher: chacha20-ietf
-  name: 489,553|yandex-2705
+  name: 489,553|yandex-2821
   obfs: plain
   obfs-param: 1fa5048573.microsoft.com
   password: NaikoCloud
@@ -6150,7 +6183,7 @@ proxies:
   type: ssr
   udp: true
 - cipher: chacha20-ietf
-  name: 489,553|yandex-2710
+  name: 489,553|yandex-2826
   obfs: plain
   obfs-param: 1fa5048573.microsoft.com
   password: NaikoCloud
@@ -6161,14 +6194,15 @@ proxies:
   type: ssr
   udp: true
 - cipher: chacha20-ietf
-  name: 489,553|yandex-2723
+  country: 🇭🇰HK
+  name: 489,548,553|yandex-2839
   password: asd123456
   port: 8388
   server: 103.149.183.12
   type: ss
   udp: true
 - cipher: chacha20-ietf
-  name: 489,553|yandex-2734
+  name: 489,553|yandex-2850
   obfs: plain
   obfs-param: 1fa5048573.microsoft.com
   password: NaikoCloud
@@ -6184,7 +6218,7 @@ proxies:
   server: 47.242.192.233
   type: http
   username: cCgLrLvJAt
-- name: 489,553|yandex-2743
+- name: 489,553|yandex-2859
   network: tcp
   password: BxceQaOe
   port: 443
@@ -6194,7 +6228,7 @@ proxies:
   type: trojan
   udp: true
 - client-fingerprint: chrome
-  name: 489,553|yandex-2750
+  name: 489,553|yandex-2866
   network: tcp
   password: a9c65266-acdb-4868-b498-aff429cdddee
   port: 31102
@@ -6204,7 +6238,7 @@ proxies:
   type: trojan
   udp: true
 - client-fingerprint: chrome
-  name: 489,553|yandex-2751
+  name: 489,553|yandex-2867
   network: tcp
   password: 4bd174f9-4ce6-4ff0-8bd4-263d9ed19fa2
   port: 31101
@@ -6214,7 +6248,7 @@ proxies:
   type: trojan
   udp: true
 - client-fingerprint: chrome
-  name: 489,553|yandex-2752
+  name: 489,553|yandex-2868
   network: tcp
   password: 909020a3-40d6-47ba-93f3-fedde341e6aa
   port: 31103
@@ -6224,7 +6258,7 @@ proxies:
   type: trojan
   udp: true
 - client-fingerprint: chrome
-  name: 489,553|yandex-2757
+  name: 489,553|yandex-2873
   network: tcp
   password: 03c12414-6ad7-4e37-831a-41b59f9406fd
   port: 31103
@@ -6234,7 +6268,7 @@ proxies:
   type: trojan
   udp: true
 - client-fingerprint: chrome
-  name: 489,553|yandex-2761
+  name: 489,553|yandex-2877
   network: tcp
   password: 79c04a93-a9d4-4bfa-b06c-4317e04d0099
   port: 21103
@@ -6244,7 +6278,7 @@ proxies:
   type: trojan
   udp: true
 - client-fingerprint: chrome
-  name: 489,553|yandex-2764
+  name: 489,553|yandex-2880
   network: tcp
   password: 43f279f5-ba7b-4cc0-8dea-adc0ff597d59
   port: 31102
@@ -6254,7 +6288,7 @@ proxies:
   type: trojan
   udp: true
 - client-fingerprint: chrome
-  name: 489,553|yandex-2765
+  name: 489,553|yandex-2881
   network: tcp
   password: 5705663c-a88a-49c6-889e-5917742a8076
   port: 21103
@@ -6264,7 +6298,7 @@ proxies:
   type: trojan
   udp: true
 - client-fingerprint: chrome
-  name: 489,553|yandex-2776
+  name: 489,553|yandex-2892
   network: tcp
   password: c45a2ac1-32e0-4ff6-9508-182f4802ccb4
   port: 31101
@@ -6273,7 +6307,7 @@ proxies:
   type: trojan
   udp: true
 - client-fingerprint: chrome
-  name: 489,553|yandex-2786
+  name: 489,553|yandex-2902
   network: tcp
   password: f37cb6e1-ad57-49c6-be62-d78da6c7751a
   port: 31101
@@ -6283,7 +6317,7 @@ proxies:
   type: trojan
   udp: true
 - client-fingerprint: chrome
-  name: 489,553|yandex-2788
+  name: 489,553|yandex-2904
   network: tcp
   password: e77009cf-13db-4014-87d1-800bcfa9e173
   port: 31103
@@ -6293,7 +6327,7 @@ proxies:
   type: trojan
   udp: true
 - client-fingerprint: chrome
-  name: 489,553|yandex-2804
+  name: 489,553|yandex-2920
   network: tcp
   password: c45a2ac1-32e0-4ff6-9508-182f4802ccb4
   port: 31102
@@ -6303,7 +6337,7 @@ proxies:
   type: trojan
   udp: true
 - client-fingerprint: chrome
-  name: 489,553|yandex-2805
+  name: 489,553|yandex-2921
   network: tcp
   password: cec71a02-0703-423f-938f-1abfb99795bd
   port: 31103
@@ -6313,7 +6347,7 @@ proxies:
   type: trojan
   udp: true
 - client-fingerprint: chrome
-  name: 489,553|yandex-2806
+  name: 489,553|yandex-2922
   network: tcp
   password: 01c7c307-2ae3-4c9e-bfa2-d64b8a2f5e44
   port: 31103
@@ -6323,7 +6357,7 @@ proxies:
   type: trojan
   udp: true
 - client-fingerprint: chrome
-  name: 489,553|yandex-2810
+  name: 489,553|yandex-2926
   network: tcp
   password: 09007daa-a345-4ec2-b3e8-37068855f877
   port: 31103
@@ -6333,7 +6367,7 @@ proxies:
   type: trojan
   udp: true
 - client-fingerprint: chrome
-  name: 489,553|yandex-2813
+  name: 489,553|yandex-2929
   network: tcp
   password: 98edcf90-4337-47e3-b389-7923f67aefc7
   port: 31103
@@ -6342,7 +6376,7 @@ proxies:
   sni: green2.cdntencentmusic.com
   type: trojan
   udp: true
-- name: 489,553|yandex-2814
+- name: 489,553|yandex-2930
   password: f82357f6-c9e4-4dac-bbf4-58f4cfe0bb06
   port: 31103
   server: green2.cdntencentmusic.com
@@ -6350,7 +6384,7 @@ proxies:
   sni: green2.cdntencentmusic.com
   type: trojan
   udp: true
-- name: 489,553|yandex-2817
+- name: 489,553|yandex-2933
   password: d4e70158-aa1c-4c54-8e0a-63225ea9d9d2
   port: 31103
   server: green2.cdntencentmusic.com
@@ -6358,7 +6392,7 @@ proxies:
   sni: green2.cdntencentmusic.com
   type: trojan
   udp: true
-- name: 489,553|yandex-2818
+- name: 489,553|yandex-2934
   password: a21089f4-d7b7-40fe-80db-cf483ff8e6c6
   port: 31103
   server: green2.cdntencentmusic.com
@@ -6367,7 +6401,7 @@ proxies:
   type: trojan
   udp: true
 - client-fingerprint: chrome
-  name: 489,553|yandex-2828
+  name: 489,553|yandex-2944
   network: tcp
   password: 986b0e5b-1372-443f-bbcd-c672bdff7b00
   port: 31103
@@ -6377,7 +6411,7 @@ proxies:
   type: trojan
   udp: true
 - client-fingerprint: chrome
-  name: 489,553|yandex-2830
+  name: 489,553|yandex-2946
   network: tcp
   password: dec43cf3-32b5-4cad-bc3e-f1b905cc9dc6
   port: 31103
@@ -6387,7 +6421,7 @@ proxies:
   type: trojan
   udp: true
 - client-fingerprint: chrome
-  name: 489,553|yandex-2833
+  name: 489,553|yandex-2949
   network: tcp
   password: 909020a3-40d6-47ba-93f3-fedde341e6aa
   port: 31102
@@ -6397,7 +6431,7 @@ proxies:
   type: trojan
   udp: true
 - client-fingerprint: chrome
-  name: 489,553|yandex-2834
+  name: 489,553|yandex-2950
   network: tcp
   password: d589cb37-5f49-4bf0-aeb5-573b0af69c0a
   port: 31103
@@ -6407,7 +6441,7 @@ proxies:
   type: trojan
   udp: true
 - client-fingerprint: chrome
-  name: 489,553|yandex-2836
+  name: 489,553|yandex-2952
   network: tcp
   password: aaee4477-81cd-44c0-9bfa-0a7ad8f7d783
   port: 31102
@@ -6417,7 +6451,7 @@ proxies:
   type: trojan
   udp: true
 - client-fingerprint: chrome
-  name: 489,553|yandex-2838
+  name: 489,553|yandex-2954
   network: tcp
   password: 57d69288-b782-4798-81d6-64b13777549a
   port: 31101
@@ -6425,7 +6459,7 @@ proxies:
   sni: green2.cdntencentmusic.com
   type: trojan
   udp: true
-- name: 489,553|yandex-2840
+- name: 489,553|yandex-2956
   password: f37cb6e1-ad57-49c6-be62-d78da6c7751a
   port: 31102
   server: green2.cdntencentmusic.com
@@ -6434,7 +6468,7 @@ proxies:
   type: trojan
   udp: true
 - client-fingerprint: chrome
-  name: 489,553|yandex-2841
+  name: 489,553|yandex-2957
   network: tcp
   password: 66b8e205-4f63-423f-b6b5-6a061b51abdf
   port: 21103
@@ -6444,7 +6478,7 @@ proxies:
   type: trojan
   udp: true
 - client-fingerprint: chrome
-  name: 489,553|yandex-2843
+  name: 489,553|yandex-2959
   network: tcp
   password: d8b3841a-ece7-4ce7-b2f9-30fc909cbeea
   port: 31101
@@ -6453,7 +6487,7 @@ proxies:
   type: trojan
   udp: true
 - client-fingerprint: chrome
-  name: 489,553|yandex-2846
+  name: 489,553|yandex-2962
   network: tcp
   password: f4e646fb-d984-444d-9fee-65068ce0a0d6
   port: 31102
@@ -6463,7 +6497,7 @@ proxies:
   type: trojan
   udp: true
 - client-fingerprint: chrome
-  name: 489,553|yandex-2847
+  name: 489,553|yandex-2963
   network: tcp
   password: 4d1dd99b-33b5-4fbd-8a29-282815fc352b
   port: 31101
@@ -6472,7 +6506,7 @@ proxies:
   type: trojan
   udp: true
 - client-fingerprint: chrome
-  name: 489,553|yandex-2848
+  name: 489,553|yandex-2964
   network: tcp
   password: eb1bea06-78d9-4fe9-8308-98db41d3304f
   port: 31101
@@ -6482,7 +6516,7 @@ proxies:
   type: trojan
   udp: true
 - client-fingerprint: chrome
-  name: 489,553|yandex-2850
+  name: 489,553|yandex-2966
   network: tcp
   password: 5705663c-a88a-49c6-889e-5917742a8076
   port: 21102
@@ -6491,7 +6525,7 @@ proxies:
   sni: cdnfire.xiaomispeed.com
   type: trojan
   udp: true
-- name: 489,553|yandex-2851
+- name: 489,553|yandex-2967
   password: a21089f4-d7b7-40fe-80db-cf483ff8e6c6
   port: 31102
   server: green2.cdntencentmusic.com
@@ -6500,7 +6534,7 @@ proxies:
   type: trojan
   udp: true
 - client-fingerprint: chrome
-  name: 489,553|yandex-2854
+  name: 489,553|yandex-2970
   network: tcp
   password: a0838e25-3f25-437d-9c6a-3b59e617f3eb
   port: 31101
@@ -6510,7 +6544,7 @@ proxies:
   type: trojan
   udp: true
 - client-fingerprint: chrome
-  name: 489,553|yandex-2855
+  name: 489,553|yandex-2971
   network: tcp
   password: ce377145-8316-4740-bb1e-dafa5d8715cf
   port: 21103
@@ -6520,7 +6554,7 @@ proxies:
   type: trojan
   udp: true
 - client-fingerprint: chrome
-  name: 489,553|yandex-2857
+  name: 489,553|yandex-2973
   network: tcp
   password: f1f610d9-35f2-4e81-905f-5904f14c99a1
   port: 31103
@@ -6530,7 +6564,7 @@ proxies:
   type: trojan
   udp: true
 - client-fingerprint: chrome
-  name: 489,553|yandex-2866
+  name: 489,553|yandex-2982
   network: tcp
   password: a0838e25-3f25-437d-9c6a-3b59e617f3eb
   port: 31102
@@ -6540,7 +6574,7 @@ proxies:
   type: trojan
   udp: true
 - client-fingerprint: chrome
-  name: 489,553|yandex-2869
+  name: 489,553|yandex-2985
   network: tcp
   password: 66b8e205-4f63-423f-b6b5-6a061b51abdf
   port: 21101
@@ -6565,7 +6599,7 @@ proxies:
       Host: dabaif0.webn.cc
     path: /db1024faebdb62e0
 - client-fingerprint: chrome
-  name: 489,553|yandex-2873
+  name: 489,553|yandex-2989
   network: tcp
   password: 78529fd0-946a-4834-94a1-0d19c67b2aaf
   port: 31103
@@ -6575,7 +6609,7 @@ proxies:
   type: trojan
   udp: true
 - client-fingerprint: chrome
-  name: 489,553|yandex-2877
+  name: 489,553|yandex-2993
   network: tcp
   password: 01c7c307-2ae3-4c9e-bfa2-d64b8a2f5e44
   port: 31101
@@ -6584,455 +6618,18 @@ proxies:
   type: trojan
   udp: true
 - client-fingerprint: chrome
-  name: 489,553|yandex-2882
-  network: tcp
-  password: f4e646fb-d984-444d-9fee-65068ce0a0d6
-  port: 31101
-  server: green2.cdntencentmusic.com
-  sni: green2.cdntencentmusic.com
-  type: trojan
-  udp: true
-- client-fingerprint: chrome
-  name: 489,553|yandex-2887
-  network: tcp
-  password: d589cb37-5f49-4bf0-aeb5-573b0af69c0a
-  port: 31102
-  server: green2.cdntencentmusic.com
-  skip-cert-verify: true
-  sni: green2.cdntencentmusic.com
-  type: trojan
-  udp: true
-- client-fingerprint: chrome
-  name: 489,553|yandex-2889
-  network: tcp
-  password: e77009cf-13db-4014-87d1-800bcfa9e173
-  port: 31102
-  server: green2.cdntencentmusic.com
-  skip-cert-verify: true
-  sni: green2.cdntencentmusic.com
-  type: trojan
-  udp: true
-- client-fingerprint: chrome
-  name: 489,553|yandex-2891
-  network: tcp
-  password: 03c12414-6ad7-4e37-831a-41b59f9406fd
-  port: 31101
-  server: green2.cdntencentmusic.com
-  skip-cert-verify: false
-  sni: green2.cdntencentmusic.com
-  type: trojan
-  udp: true
-- client-fingerprint: chrome
-  name: 489,553|yandex-2893
-  network: tcp
-  password: 27c8cb66-d0c0-4a87-8ef6-177e12f70c80
-  port: 31103
-  server: green2.cdntencentmusic.com
-  skip-cert-verify: true
-  sni: green2.cdntencentmusic.com
-  type: trojan
-  udp: true
-- client-fingerprint: chrome
-  name: 489,553|yandex-2894
-  network: tcp
-  password: 66f19341-ba12-4446-9bb3-fc4e36d5cac7
-  port: 31103
-  server: green2.cdntencentmusic.com
-  skip-cert-verify: true
-  sni: green2.cdntencentmusic.com
-  type: trojan
-  udp: true
-- client-fingerprint: chrome
-  name: 489,553|yandex-2896
-  network: tcp
-  password: 66f19341-ba12-4446-9bb3-fc4e36d5cac7
-  port: 31102
-  server: green2.cdntencentmusic.com
-  skip-cert-verify: true
-  sni: green2.cdntencentmusic.com
-  type: trojan
-  udp: true
-- client-fingerprint: chrome
-  name: 489,553|yandex-2898
-  network: tcp
-  password: 98141c38-7701-46dc-8f7f-d51c79550b21
-  port: 31103
-  server: green2.cdntencentmusic.com
-  skip-cert-verify: true
-  sni: green2.cdntencentmusic.com
-  type: trojan
-  udp: true
-- client-fingerprint: chrome
-  name: 489,553|yandex-2900
-  network: tcp
-  password: d4e70158-aa1c-4c54-8e0a-63225ea9d9d2
-  port: 31102
-  server: green2.cdntencentmusic.com
-  skip-cert-verify: true
-  sni: green2.cdntencentmusic.com
-  type: trojan
-  udp: true
-- client-fingerprint: chrome
-  name: 489,553|yandex-2908
-  network: tcp
-  password: 524a5f00-faee-4dfa-9383-c7d01918d98f
-  port: 31103
-  server: green2.cdntencentmusic.com
-  skip-cert-verify: true
-  sni: green2.cdntencentmusic.com
-  type: trojan
-  udp: true
-- client-fingerprint: chrome
-  name: 489,553|yandex-2914
-  network: tcp
-  password: e12390e2-350a-450b-a247-5f037c0a6661
-  port: 31102
-  server: green2.cdntencentmusic.com
-  skip-cert-verify: true
-  sni: green2.cdntencentmusic.com
-  type: trojan
-  udp: true
-- client-fingerprint: chrome
-  name: 489,553|yandex-2915
-  network: tcp
-  password: a9c65266-acdb-4868-b498-aff429cdddee
-  port: 31103
-  server: green2.cdntencentmusic.com
-  skip-cert-verify: true
-  sni: green2.cdntencentmusic.com
-  type: trojan
-  udp: true
-- client-fingerprint: chrome
-  name: 489,553|yandex-2921
-  network: tcp
-  password: 627f062c-cd6f-4e01-827f-fb7b60c4d069
-  port: 21101
-  server: cdnfire.xiaomispeed.com
-  skip-cert-verify: false
-  sni: cdnfire.xiaomispeed.com
-  type: trojan
-  udp: true
-- client-fingerprint: chrome
-  name: 489,553|yandex-2922
-  network: tcp
-  password: d52b1619-280c-4d3d-9a28-32b51839f4d5
-  port: 21103
-  server: cdnfire.xiaomispeed.com
-  skip-cert-verify: true
-  sni: cdnfire.xiaomispeed.com
-  type: trojan
-  udp: true
-- client-fingerprint: chrome
-  name: 489,553|yandex-2925
-  network: tcp
-  password: e77009cf-13db-4014-87d1-800bcfa9e173
-  port: 31101
-  server: green2.cdntencentmusic.com
-  sni: green2.cdntencentmusic.com
-  type: trojan
-  udp: true
-- client-fingerprint: chrome
-  name: 489,553|yandex-2927
-  network: tcp
-  password: add5d59b-5196-4b3e-bf80-50f851ba51a5
-  port: 31103
-  server: green2.cdntencentmusic.com
-  skip-cert-verify: true
-  sni: green2.cdntencentmusic.com
-  type: trojan
-  udp: true
-- client-fingerprint: chrome
-  name: 489,553|yandex-2935
-  network: tcp
-  password: dec43cf3-32b5-4cad-bc3e-f1b905cc9dc6
-  port: 31101
-  server: green2.cdntencentmusic.com
-  sni: green2.cdntencentmusic.com
-  type: trojan
-  udp: true
-- client-fingerprint: chrome
-  name: 489,553|yandex-2937
-  network: tcp
-  password: 24237683-2753-4878-a95e-88d1b8e3d047
-  port: 31101
-  server: green2.cdntencentmusic.com
-  sni: green2.cdntencentmusic.com
-  type: trojan
-  udp: true
-- client-fingerprint: chrome
-  name: 489,553|yandex-2939
-  network: tcp
-  password: c45a2ac1-32e0-4ff6-9508-182f4802ccb4
-  port: 31103
-  server: green2.cdntencentmusic.com
-  skip-cert-verify: true
-  sni: green2.cdntencentmusic.com
-  type: trojan
-  udp: true
-- client-fingerprint: chrome
-  name: 489,553|yandex-2940
-  network: tcp
-  password: 43f279f5-ba7b-4cc0-8dea-adc0ff597d59
-  port: 31101
-  server: green2.cdntencentmusic.com
-  sni: green2.cdntencentmusic.com
-  type: trojan
-  udp: true
-- client-fingerprint: chrome
-  name: 489,553|yandex-2941
-  network: tcp
-  password: 49d51e4a-7770-4a78-9165-b4fed003bfcb
-  port: 31101
-  server: green2.cdntencentmusic.com
-  sni: green2.cdntencentmusic.com
-  type: trojan
-  udp: true
-- client-fingerprint: chrome
-  name: 489,553|yandex-2945
-  network: tcp
-  password: f37cb6e1-ad57-49c6-be62-d78da6c7751a
-  port: 31103
-  server: green2.cdntencentmusic.com
-  skip-cert-verify: true
-  sni: green2.cdntencentmusic.com
-  type: trojan
-  udp: true
-- client-fingerprint: chrome
-  name: 489,553|yandex-2948
-  network: tcp
-  password: 24237683-2753-4878-a95e-88d1b8e3d047
-  port: 31102
-  server: green2.cdntencentmusic.com
-  skip-cert-verify: true
-  sni: green2.cdntencentmusic.com
-  type: trojan
-  udp: true
-- client-fingerprint: chrome
-  name: 489,553|yandex-2949
-  network: tcp
-  password: d589cb37-5f49-4bf0-aeb5-573b0af69c0a
-  port: 31101
-  server: green2.cdntencentmusic.com
-  sni: green2.cdntencentmusic.com
-  type: trojan
-  udp: true
-- client-fingerprint: chrome
-  name: 489,553|yandex-2951
-  network: tcp
-  password: 43f279f5-ba7b-4cc0-8dea-adc0ff597d59
-  port: 31103
-  server: green2.cdntencentmusic.com
-  skip-cert-verify: true
-  sni: green2.cdntencentmusic.com
-  type: trojan
-  udp: true
-- client-fingerprint: chrome
-  name: 489,553|yandex-2954
-  network: tcp
-  password: ce377145-8316-4740-bb1e-dafa5d8715cf
-  port: 21101
-  server: cdnfire.xiaomispeed.com
-  skip-cert-verify: true
-  sni: cdnfire.xiaomispeed.com
-  type: trojan
-  udp: true
-- client-fingerprint: chrome
-  name: 489,553|yandex-2957
-  network: tcp
-  password: a9c65266-acdb-4868-b498-aff429cdddee
-  port: 31101
-  server: green2.cdntencentmusic.com
-  sni: green2.cdntencentmusic.com
-  type: trojan
-  udp: true
-- client-fingerprint: chrome
-  name: 489,553|yandex-2962
-  network: tcp
-  password: aaee4477-81cd-44c0-9bfa-0a7ad8f7d783
-  port: 31103
-  server: green2.cdntencentmusic.com
-  skip-cert-verify: true
-  sni: green2.cdntencentmusic.com
-  type: trojan
-  udp: true
-- name: 489,553|yandex-2963
-  password: 59d240c9-c72e-4ea1-9672-4a319f3c9541
-  port: 31101
-  server: green2.cdntencentmusic.com
-  skip-cert-verify: false
-  sni: green2.cdntencentmusic.com
-  type: trojan
-  udp: true
-- name: 489,553|yandex-2964
-  password: 09531da2-9460-42a0-a467-a09998226de3
-  port: 31103
-  server: green2.cdntencentmusic.com
-  skip-cert-verify: true
-  sni: green2.cdntencentmusic.com
-  type: trojan
-  udp: true
-- client-fingerprint: chrome
-  name: 489,553|yandex-2965
-  network: tcp
-  password: aaee4477-81cd-44c0-9bfa-0a7ad8f7d783
-  port: 31101
-  server: green2.cdntencentmusic.com
-  sni: green2.cdntencentmusic.com
-  type: trojan
-  udp: true
-- client-fingerprint: chrome
-  name: 489,553|yandex-2966
-  network: tcp
-  password: 808b5ae2-7b94-43e7-8632-c639c3f72415
-  port: 31101
-  server: green2.cdntencentmusic.com
-  skip-cert-verify: false
-  sni: green2.cdntencentmusic.com
-  type: trojan
-  udp: true
-- client-fingerprint: chrome
-  name: 489,553|yandex-2971
-  network: tcp
-  password: 33e8b929-6fef-4eee-b141-b8ff48a64ce8
-  port: 21103
-  server: cdnfire.xiaomispeed.com
-  skip-cert-verify: true
-  sni: cdnfire.xiaomispeed.com
-  type: trojan
-  udp: true
-- client-fingerprint: chrome
-  name: 489,553|yandex-2973
-  network: tcp
-  password: 24237683-2753-4878-a95e-88d1b8e3d047
-  port: 31103
-  server: green2.cdntencentmusic.com
-  skip-cert-verify: true
-  sni: green2.cdntencentmusic.com
-  type: trojan
-  udp: true
-- client-fingerprint: chrome
-  name: 489,553|yandex-2974
-  network: tcp
-  password: f4e646fb-d984-444d-9fee-65068ce0a0d6
-  port: 31103
-  server: green2.cdntencentmusic.com
-  skip-cert-verify: true
-  sni: green2.cdntencentmusic.com
-  type: trojan
-  udp: true
-- client-fingerprint: chrome
-  name: 489,553|yandex-2978
-  network: tcp
-  password: 986b0e5b-1372-443f-bbcd-c672bdff7b00
-  port: 31101
-  server: green2.cdntencentmusic.com
-  sni: green2.cdntencentmusic.com
-  type: trojan
-  udp: true
-- client-fingerprint: chrome
-  name: 489,553|yandex-2981
-  network: tcp
-  password: d52b1619-280c-4d3d-9a28-32b51839f4d5
-  port: 21102
-  server: cdnfire.xiaomispeed.com
-  skip-cert-verify: true
-  sni: cdnfire.xiaomispeed.com
-  type: trojan
-  udp: true
-- client-fingerprint: chrome
-  name: 489,553|yandex-2982
-  network: tcp
-  password: e2bbb544-87ef-4387-9292-1d2ec4a62ff5
-  port: 21103
-  server: cdnfire.xiaomispeed.com
-  skip-cert-verify: true
-  sni: cdnfire.xiaomispeed.com
-  type: trojan
-  udp: true
-- client-fingerprint: chrome
-  name: 489,553|yandex-2983
-  network: tcp
-  password: d8b3841a-ece7-4ce7-b2f9-30fc909cbeea
-  port: 31103
-  server: green2.cdntencentmusic.com
-  skip-cert-verify: true
-  sni: green2.cdntencentmusic.com
-  type: trojan
-  udp: true
-- client-fingerprint: chrome
-  name: 489,553|yandex-2988
-  network: tcp
-  password: 943b3204-0008-4ae8-989e-59e48d4bf526
-  port: 21101
-  server: cdnfire.xiaomispeed.com
-  skip-cert-verify: true
-  sni: cdnfire.xiaomispeed.com
-  type: trojan
-  udp: true
-- client-fingerprint: chrome
-  name: 489,553|yandex-2993
-  network: tcp
-  password: 98edcf90-4337-47e3-b389-7923f67aefc7
-  port: 31102
-  server: green2.cdntencentmusic.com
-  skip-cert-verify: true
-  sni: green2.cdntencentmusic.com
-  type: trojan
-  udp: true
-- client-fingerprint: chrome
-  name: 489,553|yandex-2994
-  network: tcp
-  password: 627f062c-cd6f-4e01-827f-fb7b60c4d069
-  port: 21102
-  server: cdnfire.xiaomispeed.com
-  skip-cert-verify: true
-  sni: cdnfire.xiaomispeed.com
-  type: trojan
-  udp: true
-- client-fingerprint: chrome
-  name: 489,553|yandex-2995
-  network: tcp
-  password: 943b3204-0008-4ae8-989e-59e48d4bf526
-  port: 21103
-  server: cdnfire.xiaomispeed.com
-  skip-cert-verify: true
-  sni: cdnfire.xiaomispeed.com
-  type: trojan
-  udp: true
-- client-fingerprint: chrome
-  name: 489,553|yandex-2996
-  network: tcp
-  password: dec43cf3-32b5-4cad-bc3e-f1b905cc9dc6
-  port: 31102
-  server: green2.cdntencentmusic.com
-  skip-cert-verify: true
-  sni: green2.cdntencentmusic.com
-  type: trojan
-  udp: true
-- client-fingerprint: chrome
   name: 489,553|yandex-2998
   network: tcp
-  password: add5d59b-5196-4b3e-bf80-50f851ba51a5
-  port: 31102
-  server: green2.cdntencentmusic.com
-  skip-cert-verify: true
-  sni: green2.cdntencentmusic.com
-  type: trojan
-  udp: true
-- client-fingerprint: chrome
-  name: 489,553|yandex-2999
-  network: tcp
-  password: 271f994c-02f2-45d3-b8b4-f497c1ce9753
+  password: f4e646fb-d984-444d-9fee-65068ce0a0d6
   port: 31101
   server: green2.cdntencentmusic.com
-  skip-cert-verify: true
   sni: green2.cdntencentmusic.com
   type: trojan
   udp: true
 - client-fingerprint: chrome
-  name: 489,553|yandex-3001
+  name: 489,553|yandex-3003
   network: tcp
-  password: 49d51e4a-7770-4a78-9165-b4fed003bfcb
+  password: d589cb37-5f49-4bf0-aeb5-573b0af69c0a
   port: 31102
   server: green2.cdntencentmusic.com
   skip-cert-verify: true
@@ -7042,6 +6639,443 @@ proxies:
 - client-fingerprint: chrome
   name: 489,553|yandex-3005
   network: tcp
+  password: e77009cf-13db-4014-87d1-800bcfa9e173
+  port: 31102
+  server: green2.cdntencentmusic.com
+  skip-cert-verify: true
+  sni: green2.cdntencentmusic.com
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: 489,553|yandex-3007
+  network: tcp
+  password: 03c12414-6ad7-4e37-831a-41b59f9406fd
+  port: 31101
+  server: green2.cdntencentmusic.com
+  skip-cert-verify: false
+  sni: green2.cdntencentmusic.com
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: 489,553|yandex-3009
+  network: tcp
+  password: 27c8cb66-d0c0-4a87-8ef6-177e12f70c80
+  port: 31103
+  server: green2.cdntencentmusic.com
+  skip-cert-verify: true
+  sni: green2.cdntencentmusic.com
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: 489,553|yandex-3010
+  network: tcp
+  password: 66f19341-ba12-4446-9bb3-fc4e36d5cac7
+  port: 31103
+  server: green2.cdntencentmusic.com
+  skip-cert-verify: true
+  sni: green2.cdntencentmusic.com
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: 489,553|yandex-3012
+  network: tcp
+  password: 66f19341-ba12-4446-9bb3-fc4e36d5cac7
+  port: 31102
+  server: green2.cdntencentmusic.com
+  skip-cert-verify: true
+  sni: green2.cdntencentmusic.com
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: 489,553|yandex-3014
+  network: tcp
+  password: 98141c38-7701-46dc-8f7f-d51c79550b21
+  port: 31103
+  server: green2.cdntencentmusic.com
+  skip-cert-verify: true
+  sni: green2.cdntencentmusic.com
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: 489,553|yandex-3016
+  network: tcp
+  password: d4e70158-aa1c-4c54-8e0a-63225ea9d9d2
+  port: 31102
+  server: green2.cdntencentmusic.com
+  skip-cert-verify: true
+  sni: green2.cdntencentmusic.com
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: 489,553|yandex-3024
+  network: tcp
+  password: 524a5f00-faee-4dfa-9383-c7d01918d98f
+  port: 31103
+  server: green2.cdntencentmusic.com
+  skip-cert-verify: true
+  sni: green2.cdntencentmusic.com
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: 489,553|yandex-3030
+  network: tcp
+  password: e12390e2-350a-450b-a247-5f037c0a6661
+  port: 31102
+  server: green2.cdntencentmusic.com
+  skip-cert-verify: true
+  sni: green2.cdntencentmusic.com
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: 489,553|yandex-3031
+  network: tcp
+  password: a9c65266-acdb-4868-b498-aff429cdddee
+  port: 31103
+  server: green2.cdntencentmusic.com
+  skip-cert-verify: true
+  sni: green2.cdntencentmusic.com
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: 489,553|yandex-3037
+  network: tcp
+  password: 627f062c-cd6f-4e01-827f-fb7b60c4d069
+  port: 21101
+  server: cdnfire.xiaomispeed.com
+  skip-cert-verify: false
+  sni: cdnfire.xiaomispeed.com
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: 489,553|yandex-3038
+  network: tcp
+  password: d52b1619-280c-4d3d-9a28-32b51839f4d5
+  port: 21103
+  server: cdnfire.xiaomispeed.com
+  skip-cert-verify: true
+  sni: cdnfire.xiaomispeed.com
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: 489,553|yandex-3041
+  network: tcp
+  password: e77009cf-13db-4014-87d1-800bcfa9e173
+  port: 31101
+  server: green2.cdntencentmusic.com
+  sni: green2.cdntencentmusic.com
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: 489,553|yandex-3043
+  network: tcp
+  password: add5d59b-5196-4b3e-bf80-50f851ba51a5
+  port: 31103
+  server: green2.cdntencentmusic.com
+  skip-cert-verify: true
+  sni: green2.cdntencentmusic.com
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: 489,553|yandex-3051
+  network: tcp
+  password: dec43cf3-32b5-4cad-bc3e-f1b905cc9dc6
+  port: 31101
+  server: green2.cdntencentmusic.com
+  sni: green2.cdntencentmusic.com
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: 489,553|yandex-3053
+  network: tcp
+  password: 24237683-2753-4878-a95e-88d1b8e3d047
+  port: 31101
+  server: green2.cdntencentmusic.com
+  sni: green2.cdntencentmusic.com
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: 489,553|yandex-3055
+  network: tcp
+  password: c45a2ac1-32e0-4ff6-9508-182f4802ccb4
+  port: 31103
+  server: green2.cdntencentmusic.com
+  skip-cert-verify: true
+  sni: green2.cdntencentmusic.com
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: 489,553|yandex-3056
+  network: tcp
+  password: 43f279f5-ba7b-4cc0-8dea-adc0ff597d59
+  port: 31101
+  server: green2.cdntencentmusic.com
+  sni: green2.cdntencentmusic.com
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: 489,553|yandex-3057
+  network: tcp
+  password: 49d51e4a-7770-4a78-9165-b4fed003bfcb
+  port: 31101
+  server: green2.cdntencentmusic.com
+  sni: green2.cdntencentmusic.com
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: 489,553|yandex-3061
+  network: tcp
+  password: f37cb6e1-ad57-49c6-be62-d78da6c7751a
+  port: 31103
+  server: green2.cdntencentmusic.com
+  skip-cert-verify: true
+  sni: green2.cdntencentmusic.com
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: 489,553|yandex-3064
+  network: tcp
+  password: 24237683-2753-4878-a95e-88d1b8e3d047
+  port: 31102
+  server: green2.cdntencentmusic.com
+  skip-cert-verify: true
+  sni: green2.cdntencentmusic.com
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: 489,553|yandex-3065
+  network: tcp
+  password: d589cb37-5f49-4bf0-aeb5-573b0af69c0a
+  port: 31101
+  server: green2.cdntencentmusic.com
+  sni: green2.cdntencentmusic.com
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: 489,553|yandex-3067
+  network: tcp
+  password: 43f279f5-ba7b-4cc0-8dea-adc0ff597d59
+  port: 31103
+  server: green2.cdntencentmusic.com
+  skip-cert-verify: true
+  sni: green2.cdntencentmusic.com
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: 489,553|yandex-3070
+  network: tcp
+  password: ce377145-8316-4740-bb1e-dafa5d8715cf
+  port: 21101
+  server: cdnfire.xiaomispeed.com
+  skip-cert-verify: true
+  sni: cdnfire.xiaomispeed.com
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: 489,553|yandex-3073
+  network: tcp
+  password: a9c65266-acdb-4868-b498-aff429cdddee
+  port: 31101
+  server: green2.cdntencentmusic.com
+  sni: green2.cdntencentmusic.com
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: 489,553|yandex-3078
+  network: tcp
+  password: aaee4477-81cd-44c0-9bfa-0a7ad8f7d783
+  port: 31103
+  server: green2.cdntencentmusic.com
+  skip-cert-verify: true
+  sni: green2.cdntencentmusic.com
+  type: trojan
+  udp: true
+- name: 489,553|yandex-3079
+  password: 59d240c9-c72e-4ea1-9672-4a319f3c9541
+  port: 31101
+  server: green2.cdntencentmusic.com
+  skip-cert-verify: false
+  sni: green2.cdntencentmusic.com
+  type: trojan
+  udp: true
+- name: 489,553|yandex-3080
+  password: 09531da2-9460-42a0-a467-a09998226de3
+  port: 31103
+  server: green2.cdntencentmusic.com
+  skip-cert-verify: true
+  sni: green2.cdntencentmusic.com
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: 489,553|yandex-3081
+  network: tcp
+  password: aaee4477-81cd-44c0-9bfa-0a7ad8f7d783
+  port: 31101
+  server: green2.cdntencentmusic.com
+  sni: green2.cdntencentmusic.com
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: 489,553|yandex-3082
+  network: tcp
+  password: 808b5ae2-7b94-43e7-8632-c639c3f72415
+  port: 31101
+  server: green2.cdntencentmusic.com
+  skip-cert-verify: false
+  sni: green2.cdntencentmusic.com
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: 489,553|yandex-3087
+  network: tcp
+  password: 33e8b929-6fef-4eee-b141-b8ff48a64ce8
+  port: 21103
+  server: cdnfire.xiaomispeed.com
+  skip-cert-verify: true
+  sni: cdnfire.xiaomispeed.com
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: 489,553|yandex-3089
+  network: tcp
+  password: 24237683-2753-4878-a95e-88d1b8e3d047
+  port: 31103
+  server: green2.cdntencentmusic.com
+  skip-cert-verify: true
+  sni: green2.cdntencentmusic.com
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: 489,553|yandex-3090
+  network: tcp
+  password: f4e646fb-d984-444d-9fee-65068ce0a0d6
+  port: 31103
+  server: green2.cdntencentmusic.com
+  skip-cert-verify: true
+  sni: green2.cdntencentmusic.com
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: 489,553|yandex-3094
+  network: tcp
+  password: 986b0e5b-1372-443f-bbcd-c672bdff7b00
+  port: 31101
+  server: green2.cdntencentmusic.com
+  sni: green2.cdntencentmusic.com
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: 489,553|yandex-3097
+  network: tcp
+  password: d52b1619-280c-4d3d-9a28-32b51839f4d5
+  port: 21102
+  server: cdnfire.xiaomispeed.com
+  skip-cert-verify: true
+  sni: cdnfire.xiaomispeed.com
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: 489,553|yandex-3098
+  network: tcp
+  password: e2bbb544-87ef-4387-9292-1d2ec4a62ff5
+  port: 21103
+  server: cdnfire.xiaomispeed.com
+  skip-cert-verify: true
+  sni: cdnfire.xiaomispeed.com
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: 489,553|yandex-3099
+  network: tcp
+  password: d8b3841a-ece7-4ce7-b2f9-30fc909cbeea
+  port: 31103
+  server: green2.cdntencentmusic.com
+  skip-cert-verify: true
+  sni: green2.cdntencentmusic.com
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: 489,553|yandex-3104
+  network: tcp
+  password: 943b3204-0008-4ae8-989e-59e48d4bf526
+  port: 21101
+  server: cdnfire.xiaomispeed.com
+  skip-cert-verify: true
+  sni: cdnfire.xiaomispeed.com
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: 489,553|yandex-3109
+  network: tcp
+  password: 98edcf90-4337-47e3-b389-7923f67aefc7
+  port: 31102
+  server: green2.cdntencentmusic.com
+  skip-cert-verify: true
+  sni: green2.cdntencentmusic.com
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: 489,553|yandex-3110
+  network: tcp
+  password: 627f062c-cd6f-4e01-827f-fb7b60c4d069
+  port: 21102
+  server: cdnfire.xiaomispeed.com
+  skip-cert-verify: true
+  sni: cdnfire.xiaomispeed.com
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: 489,553|yandex-3111
+  network: tcp
+  password: 943b3204-0008-4ae8-989e-59e48d4bf526
+  port: 21103
+  server: cdnfire.xiaomispeed.com
+  skip-cert-verify: true
+  sni: cdnfire.xiaomispeed.com
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: 489,553|yandex-3112
+  network: tcp
+  password: dec43cf3-32b5-4cad-bc3e-f1b905cc9dc6
+  port: 31102
+  server: green2.cdntencentmusic.com
+  skip-cert-verify: true
+  sni: green2.cdntencentmusic.com
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: 489,553|yandex-3114
+  network: tcp
+  password: add5d59b-5196-4b3e-bf80-50f851ba51a5
+  port: 31102
+  server: green2.cdntencentmusic.com
+  skip-cert-verify: true
+  sni: green2.cdntencentmusic.com
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: 489,553|yandex-3115
+  network: tcp
+  password: 271f994c-02f2-45d3-b8b4-f497c1ce9753
+  port: 31101
+  server: green2.cdntencentmusic.com
+  skip-cert-verify: true
+  sni: green2.cdntencentmusic.com
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: 489,553|yandex-3117
+  network: tcp
+  password: 49d51e4a-7770-4a78-9165-b4fed003bfcb
+  port: 31102
+  server: green2.cdntencentmusic.com
+  skip-cert-verify: true
+  sni: green2.cdntencentmusic.com
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: 489,553|yandex-3121
+  network: tcp
   password: 66b8e205-4f63-423f-b6b5-6a061b51abdf
   port: 21102
   server: cdnfire.xiaomispeed.com
@@ -7050,7 +7084,7 @@ proxies:
   type: trojan
   udp: true
 - client-fingerprint: chrome
-  name: 489,553|yandex-3006
+  name: 489,553|yandex-3122
   network: tcp
   password: 66f19341-ba12-4446-9bb3-fc4e36d5cac7
   port: 31101
@@ -7059,7 +7093,7 @@ proxies:
   type: trojan
   udp: true
 - client-fingerprint: chrome
-  name: 489,553|yandex-3007
+  name: 489,553|yandex-3123
   network: tcp
   password: bf5f6425-6a55-4507-9aef-a0dc3a4bb66a
   port: 21103
@@ -7069,7 +7103,7 @@ proxies:
   type: trojan
   udp: true
 - client-fingerprint: chrome
-  name: 489,553|yandex-3010
+  name: 489,553|yandex-3126
   network: tcp
   password: 49d51e4a-7770-4a78-9165-b4fed003bfcb
   port: 31103
@@ -7079,7 +7113,7 @@ proxies:
   type: trojan
   udp: true
 - client-fingerprint: chrome
-  name: 489,553|yandex-3018
+  name: 489,553|yandex-3134
   network: tcp
   password: 27c8cb66-d0c0-4a87-8ef6-177e12f70c80
   port: 31101
@@ -7087,13 +7121,6 @@ proxies:
   sni: green2.cdntencentmusic.com
   type: trojan
   udp: true
-- name: '502,551|HK11｜家宽｜非常安全 #1'
-  password: BxceQaOe
-  port: 443
-  server: 203.198.122.187
-  skip-cert-verify: true
-  sni: 203.198.122.187
-  type: trojan
 - client-fingerprint: chrome
   name: '513,517|15|🇭🇰 香港|@ripaojiedian #1'
   network: ws
@@ -7149,7 +7176,7 @@ proxies:
   type: ss
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: '513,558|12|🇭🇰 香港|@ripaojiedian #1'
+  name: '513,558|12|🇭🇰 香港|@ripaojiedian #2'
   password: 2be0c954-4291-45ea-b47d-ca713180550b
   port: 52612
   server: hk02.x.quickcht3.club
@@ -7234,12 +7261,13 @@ proxies:
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - alterId: 2
   cipher: auto
-  name: '523,524|🇭🇰_香港_23 #1'
+  name: 523,524,553|yandex-3502
   port: 30833
   server: v33.hdacd.com
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
+  udp: true
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - alterId: 2
   cipher: auto
@@ -7253,7 +7281,7 @@ proxies:
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - alterId: 2
   cipher: auto
-  name: 523,524,548,566|🇬🇧 英国 | GBR 5
+  name: 523,524,548|US美国(mibei77.com 米贝节点分享) 60
   port: 30836
   server: v36.hdacd.com
   skip-cert-verify: true
@@ -7261,14 +7289,6 @@ proxies:
   type: vmess
   udp: true
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: '523,524|🇭🇰_香港_42 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.53.45
-  skip-cert-verify: true
-  sni: t.me/ripaojiedian
-  tls: true
-  type: trojan
 - name: '523,524|🇭🇰_香港_45 #1'
   network: ws
   port: 443
@@ -7460,6 +7480,26 @@ proxies:
   server: 58.152.25.130
   sni: t.me/ripaojiedian
   type: trojan
+- name: 536|🇭🇰HK-58.152.25.130-1715
+  password: BxceQaOe
+  port: 443
+  server: 58.152.25.130
+  sni: t.me%252Fripaojiedian
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 536|🇭🇰HK-8.210.166.22-4785
+  network: ws
+  port: 443
+  server: n1761214911.74qxv.top
+  servername: n1761214911.74qxv.top
+  tls: true
+  type: vmess
+  uuid: 372c1939-299d-4946-9633-5ffa971f8b67
+  ws-opts:
+    headers:
+      Host: n1761214911.74qxv.top
+    path: /
 - alterId: 0
   cipher: auto
   name: 536|🇭🇰HK-47.243.244.164-4801
@@ -7508,7 +7548,7 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: '548|HK香港(mibei77.com 米贝节点分享)-clone... #14'
+  name: 548,553|yandex-3420
   password: 6H905uR3Pm0Lv7H
   port: 46048
   server: mbqg94o.26l6c42.rkzn8ni.vm331.cn
@@ -7522,7 +7562,7 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: '548|HK香港(mibei77.com 米贝节点分享)-clone... #16'
+  name: 548,553|yandex-3426
   password: 6H905uR3Pm0Lv7H
   port: 46074
   server: mbqg94o.26l6c42.rkzn8ni.vm331.cn
@@ -7536,7 +7576,7 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: '548|HK香港(mibei77.com 米贝节点分享)-clone... #21'
+  name: 548,553|yandex-3486
   password: 6H905uR3Pm0Lv7H
   port: 46024
   server: mbqg94o.26l6c42.rkzn8ni.vm331.cn
@@ -7564,7 +7604,7 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: '548|HK香港(mibei77.com 米贝节点分享)-clone... #27'
+  name: 548,553|yandex-3516
   password: 6H905uR3Pm0Lv7H
   port: 46020
   server: mbqg94o.26l6c42.rkzn8ni.vm331.cn
@@ -7574,7 +7614,20 @@ proxies:
   cipher: auto
   h2-opts: {}
   http-opts: {}
-  name: 548|Relay_-🇭🇰HK_09
+  name: 548|Relay_-🇭🇰HK_07
+  network: ws
+  port: 80
+  server: hkt.gotochinatown.net
+  skip-cert-verify: true
+  type: vmess
+  udp: true
+  uuid: f860f2da-5035-11ed-bb74-f23c9164ca5d
+  ws-opts: {}
+- alterId: 2
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: 548|Relay_-🇭🇰HK_08
   network: ws
   port: 80
   server: 82efdbb6-t8pj40-t9eu8q-tlhh.hkt.gotochinatown.net
@@ -7586,45 +7639,42 @@ proxies:
     path: /
 - alterId: 2
   cipher: auto
+  country: 🇭🇰 HK
   h2-opts: {}
   http-opts: {}
-  name: 548|Relay_-🇭🇰HK_10
+  name: '548,559|🇭🇰 HK_53 #1'
   network: ws
   port: 80
   server: hkt.gotochinatown.net
+  servername: ''
   skip-cert-verify: true
+  tls: false
   type: vmess
-  udp: true
-  uuid: f860f2da-5035-11ed-bb74-f23c9164ca5d
-  ws-opts: {}
-- alterId: 0
-  cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: 548|Relay_-🇭🇰HK_13
-  network: ws
-  port: 443
-  server: n1761214905.wpg27.xyz
-  tls: true
-  type: vmess
-  uuid: b1d3007c-441a-42d5-84b5-20301c46fa2c
+  uuid: a2b0fd2b-716f-0df8-d4e2-03a1c00e5f1a
   ws-opts:
     headers:
-      Host: n1761214905.wpg27.xyz
+      Host: ''
     path: /
 - cipher: chacha20-ietf
   country: 🇭🇰HK
-  name: 548|Pool_🇭🇰HK_74
+  name: 548|Pool_🇭🇰HK_66
   password: asd123456
   port: 8388
   server: 103.149.183.80
+  type: ss
+- cipher: chacha20-ietf
+  country: 🇭🇰HK
+  name: 548|Pool_🇭🇰HK_69
+  password: asd123456
+  port: 8388
+  server: 103.149.183.113
   type: ss
 - alterId: 2
   cipher: auto
   country: 🇭🇰HK
   h2-opts: {}
   http-opts: {}
-  name: 548|Relay_🇭🇰HK-🇭🇰HK_78
+  name: 548|Relay_🇭🇰HK-🇭🇰HK_71
   network: ws
   port: 80
   server: e3c7f60e-t8pj40-t9b2j8-11p9g.hkt.gotochinatown.net
@@ -7636,15 +7686,23 @@ proxies:
     headers:
       HOST: broadcastlv.chat.bilibili.com
     path: /
-- country: 🇭🇰HK
-  name: 548|disney_HK
-  password: BxceQaOe
-  port: 443
-  server: 58.152.25.236
+- alterId: 2
+  cipher: auto
+  country: 🇭🇰HK
+  h2-opts: {}
+  http-opts: {}
+  name: 548|Relay_🇭🇰HK-🇭🇰HK_73
+  network: ws
+  port: 80
+  server: 0b0c6db6-t70f40-tbe46y-1la7v.hkt.gotochinatown.net
+  servername: broadcastlv.chat.bilibili.com
   skip-cert-verify: true
-  sni: t.me/ripaojiedian
-  type: trojan
-  udp: true
+  type: vmess
+  uuid: 460749c2-bcef-11ee-89fc-f23c913c8d2b
+  ws-opts:
+    headers:
+      HOST: broadcastlv.chat.bilibili.com
+    path: /
 - cipher: chacha20-ietf-poly1305
   name: 558|0|🇭 01 | 1x HK
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
@@ -7774,87 +7832,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: 559|🇭🇰 HKG Free 1
-  obfs: salamander
-  obfs-password: ZWI4MWQ5YmMzOWY2NzlhMA%3D%3D
-  password: 6dfbef3b-f718-4053-806f-c9657e2fd943
-  port: 12344
-  server: hkfree.jljd.xyz
-  sni: hkfree.jljd.xyz
-  tls: false
-  type: hysteria2
-- name: 559|🇭🇰HK香港2
-  password: 4843e94d205f3893f588255a591abe94
-  port: 443
-  server: 58.152.18.247
-  sni: www.nintendogames.net
-  type: trojan
-- name: 559|🇭🇰HK香港6
-  password: BxceQaOe
-  port: 2266
-  server: 54.238.101.170
-  sni: t.me/ripaojiedian
-  type: trojan
-- name: 559|🇭🇰HK香港5
-  password: BxceQaOe
-  port: 3830
-  server: 54.95.183.161
-  sni: t.me/ripaojiedian
-  type: trojan
-- name: 559|🇭🇰HK香港4
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.246
-  sni: t.me%2Fripaojiedian
-  type: trojan
-- name: 559|🇭🇰HK香港3
-  password: BxceQaOe
-  port: 443
-  server: 58.152.53.219
-  sni: t.me%252Fripaojiedian
-  type: trojan
-- client-fingerprint: random
-  name: '559|🇭🇰_香港 #3'
-  network: ws
-  port: 443
-  server: 154.211.8.18
-  servername: snip.ere.de5.net
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 15235ce9-4cd2-4483-b6b6-7fc4a3f44735
-  ws-opts:
-    headers:
-      Host: snip.ere.de5.net
-    path: '%2F%3Fed%3D2560'
-- client-fingerprint: random
-  name: '559|🇭🇰_香港 #4'
-  network: ws
-  port: 443
-  server: 154.218.15.198
-  servername: snip.ere.de5.net
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 15235ce9-4cd2-4483-b6b6-7fc4a3f44735
-  ws-opts:
-    headers:
-      Host: snip.ere.de5.net
-    path: '%2F%3Fed%3D2560'
-- client-fingerprint: random
-  name: '559|🇭🇰_香港 #5'
-  network: ws
-  port: 443
-  server: 154.218.15.1
-  servername: snip.ere.de5.net
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 15235ce9-4cd2-4483-b6b6-7fc4a3f44735
-  ws-opts:
-    headers:
-      Host: snip.ere.de5.net
-    path: '%2F%3Fed%3D2560'
 - name: 559|🇭🇰 橘子电报频道@juzibaipiao-香港HK-3
   network: ws
   port: 33483
@@ -7867,6 +7844,19 @@ proxies:
     headers:
       Host: l.ayovo.netlib.re
     path: '%2F'
+- name: '559,580|HK香港(mibei77.com 米贝节点分享)-clone #2'
+  network: ws
+  port: 443
+  server: 43.161.254.121
+  servername: l.ayovo.netlib.re
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 3e2e3c21-3fc8-468f-9ab5-e782bdf5bf97
+  ws-opts:
+    headers:
+      Host: l.ayovo.netlib.re
+    path: '%2F%3Fed%3D2560'
 - name: 559|🇭🇰 橘子电报频道@juzibaipiao-香港HK-1
   network: ws
   port: 443
@@ -7879,47 +7869,54 @@ proxies:
     headers:
       Host: l.ayovo.netlib.re
     path: '%2F'
-- name: '559,580|US美国(mibei77.com 米贝节点分享)-clone #69'
-  network: ws
-  port: 80
-  server: 104.18.15.19
-  tls: false
-  type: vless
-  uuid: a2af6e7c-a792-4e51-9460-fff4bd74fbfc
-  ws-opts:
-    headers:
-      Host: vahidqaz-ft33vt-1.vahidqaz.workers.dev
-    path: '%2F%3Fed%3D2560'
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '559|🇭🇰_香港 #6'
-  network: tcp
-  port: 39875
-  reality-opts:
-    public-key: VjM5am4Y_Re7e4wSwt7SZi0L3Y2laOHOs7YBcN_Isjg
-  server: hkt1.hkg.hypernat.com
-  servername: www.microsoft.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: bfdafd1b-795b-44c7-9bad-f441f08d08b5
-- alterId: 2
+- alterId: 0
   cipher: auto
-  name: 559|🇭🇰 HK_52
-  network: ws
-  port: 80
-  server: hkt.gotochinatown.net
+  name: '559|🇭🇰_香港 #4'
+  network: tcp
+  port: '30812'
+  server: 202.85.53.179
   servername: ''
   tls: false
   type: vmess
-  uuid: a2b0fd2b-716f-0df8-d4e2-03a1c00e5f1a
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- alterId: 2
+  cipher: auto
+  name: '559|🇭🇰_香港 #6'
+  network: tcp
+  port: '30809'
+  server: v9.hdacd.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- alterId: 0
+  cipher: auto
+  name: '559|🇭🇰_香港 #7'
+  network: tcp
+  port: '30812'
+  server: v12.hdacd.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- alterId: 2
+  cipher: auto
+  name: 559,566|🇭🇰 香港 | HKG 40
+  network: ws
+  port: 80
+  server: 53218d67-t9mv40-taksay-1tcuf.hkt.gotochinatown.net
+  servername: ''
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 3952a514-eaa7-11ef-97da-f23c91cfbbc9
   ws-opts:
     headers:
-      Host: ''
+      Host: broadcastlv.chat.bilibili.com
     path: /
 - alterId: 2
   cipher: auto
-  name: 559|香港_012704210
+  name: 559|香港_012718222
   network: ws
   port: '80'
   server: 77ecea99-t94cg0-tnt75r-1k8ga.hkt.gotochinatown.net
@@ -7933,7 +7930,7 @@ proxies:
     path: /
 - alterId: 2
   cipher: auto
-  name: 559|香港_012704203
+  name: 559|香港_012718217
   network: ws
   port: '80'
   server: 7945fcce-t8wxs0-t9x9zr-1lkt0.hkt.gotochinatown.net
@@ -7947,7 +7944,22 @@ proxies:
     path: /
 - alterId: 2
   cipher: auto
-  name: 559|香港_012704200
+  name: 559,566|🇭🇰 香港 | HKG 25
+  network: ws
+  port: 80
+  server: 7c31dbe6-t9mv40-tipjoa-1slop.hkt.gotochinatown.net
+  servername: ''
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 520b9126-9870-11ef-81b0-f23c9164ca5d
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: 559|香港_012718214
   network: ws
   port: '80'
   server: 807da387-t8ysg0-tnt75r-1k8ga.hkt.gotochinatown.net
@@ -7961,7 +7973,7 @@ proxies:
     path: /
 - alterId: 2
   cipher: auto
-  name: 559|香港_012704201
+  name: 559|香港_012718215
   network: ws
   port: '80'
   server: 011b0339-t8ysg0-tc9wl2-py5w.hkt.gotochinatown.net
@@ -7975,7 +7987,22 @@ proxies:
     path: /
 - alterId: 2
   cipher: auto
-  name: 559|香港_012704211
+  name: 559,566|🇭🇰 香港 | HKG 8
+  network: ws
+  port: 80
+  server: 0746e6b4-t9mv40-tb08pe-luwe.hkt.gotochinatown.net
+  servername: ''
+  tls: false
+  type: vmess
+  udp: true
+  uuid: a2b0fd2b-716f-0df8-d4e2-03a1c00e5f1a
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: 559|香港_012718223
   network: ws
   port: '80'
   server: 08a8456e-t9hb40-tcuz7t-1ta58.hkt.gotochinatown.net
@@ -7989,7 +8016,7 @@ proxies:
     path: /
 - alterId: 2
   cipher: auto
-  name: 559|香港_012704198
+  name: 559|香港_012718212
   network: ws
   port: '80'
   server: 1384913f-t8lts0-t9lm1q-1p1b.hkt.gotochinatown.net
@@ -8003,7 +8030,7 @@ proxies:
     path: /
 - alterId: 2
   cipher: auto
-  name: 559|香港_012704199
+  name: 559|香港_012718213
   network: ws
   port: '80'
   server: 23aa5ec8-t8ysg0-tcmken-19les.hkt.gotochinatown.net
@@ -8017,7 +8044,7 @@ proxies:
     path: /
 - alterId: 2
   cipher: auto
-  name: 559|香港_012704197
+  name: 559|香港_012718255
   network: ws
   port: '80'
   server: 24a3f1e7-t8ysg0-ta00rd-1o8ak.hkt.gotochinatown.net
@@ -8031,7 +8058,7 @@ proxies:
     path: /
 - alterId: 2
   cipher: auto
-  name: 559|香港_012704196
+  name: 559|香港_012718211
   network: ws
   port: '80'
   server: 28561085-t8wxs0-ta00rd-1o8ak.hkt.gotochinatown.net
@@ -8045,7 +8072,7 @@ proxies:
     path: /
 - alterId: 2
   cipher: auto
-  name: 559|香港_012704209
+  name: 559|香港_012718221
   network: ws
   port: '80'
   server: 317e22e6-t94cg0-tcmken-19les.hkt.gotochinatown.net
@@ -8059,7 +8086,7 @@ proxies:
     path: /
 - alterId: 2
   cipher: auto
-  name: 559|香港_012704212
+  name: 559|香港_012718224
   network: ws
   port: '80'
   server: 3746cd32-t9hb40-tipjoa-1slop.hkt.gotochinatown.net
@@ -8073,7 +8100,22 @@ proxies:
     path: /
 - alterId: 2
   cipher: auto
-  name: 559|香港_012704208
+  name: 559,566|🇭🇰 香港 | HKG 34
+  network: ws
+  port: 80
+  server: 3db23874-t9mv40-t9x9zr-1lkt0.hkt.gotochinatown.net
+  servername: ''
+  tls: false
+  type: vmess
+  udp: true
+  uuid: cd1b0ae0-4010-11ee-953a-f23c9164ca5d
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: 559|香港_012718220
   network: ws
   port: '80'
   server: 3f637c17-t94cg0-tcuz7t-1ta58.hkt.gotochinatown.net
@@ -8087,7 +8129,7 @@ proxies:
     path: /
 - alterId: 2
   cipher: auto
-  name: 559|香港_012704205
+  name: 559|香港_012718256
   network: ws
   port: '80'
   server: c55918de-t8ysg0-t9x9zr-1lkt0.hkt.gotochinatown.net
@@ -8101,7 +8143,7 @@ proxies:
     path: /
 - alterId: 2
   cipher: auto
-  name: 559|香港_012704204
+  name: 559|香港_012718218
   network: ws
   port: '80'
   server: c6467880-t8ysg0-taksay-1tcuf.hkt.gotochinatown.net
@@ -8115,7 +8157,7 @@ proxies:
     path: /
 - alterId: 2
   cipher: auto
-  name: 559|香港_012704202
+  name: 559|香港_012718216
   network: ws
   port: '80'
   server: c6f53a1e-t8wxs0-trftb1-1psmw.hkt.gotochinatown.net
@@ -8129,7 +8171,22 @@ proxies:
     path: /
 - alterId: 2
   cipher: auto
-  name: 559|香港_012704207
+  name: 559,566|🇭🇰 香港 | HKG 22
+  network: ws
+  port: 80
+  server: cea9883a-t9mv40-tar8u7-1fy29.hkt.gotochinatown.net
+  servername: ''
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 500dd8cc-a21c-11ec-bd7c-f23c913c8d2b
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: 559|香港_012718257
   network: ws
   port: '80'
   server: cedba343-t94cg0-t9lm1q-1p1b.hkt.gotochinatown.net
@@ -8143,7 +8200,7 @@ proxies:
     path: /
 - alterId: 2
   cipher: auto
-  name: 559|香港_012704206
+  name: 559|香港_012718219
   network: ws
   port: '80'
   server: d0cdc1f2-t94cg0-tc9wl2-py5w.hkt.gotochinatown.net
@@ -8157,7 +8214,7 @@ proxies:
     path: /
 - alterId: 2
   cipher: auto
-  name: 559|香港_012704213
+  name: 559|香港_012718258
   network: ws
   port: '80'
   server: ddaf61a9-t9hb40-tar8u7-1fy29.hkt.gotochinatown.net
@@ -8181,123 +8238,160 @@ proxies:
   type: hysteria
   udp: true
   up: 1000 Mbps
-- name: '566,568|🇭🇰 香港 | HKG #1'
-  password: ffafdf14-ee83-4ad5-b4b5-895909573a80
-  port: 31101
-  server: green2.cdntencentmusic.com
-  skip-cert-verify: false
-  sni: green2.cdntencentmusic.com
-  type: trojan
-  udp: true
-- name: '566,568|🇭🇰 香港 | HKG #2'
-  password: e1b8cd44-b643-4952-ab49-b62e1da7d08b
-  port: 31101
-  server: green2.cdntencentmusic.com
-  skip-cert-verify: false
-  sni: green2.cdntencentmusic.com
-  type: trojan
-  udp: true
-- auth: bfe4ca26-3a9d-403d-a483-ca036f0fce6f
-  name: '566,568|🇭🇰 香港 | HKG #4'
-  password: bfe4ca26-3a9d-403d-a483-ca036f0fce6f
-  port: 43448
-  server: hkt1.jueduibupao.top
+- alterId: 2
+  cipher: auto
+  name: 566|🇭🇰 香港 | HKG
+  network: ws
+  port: 80
+  server: hkt.gotochinatown.net
+  servername: hkt.gotochinatown.net
   skip-cert-verify: true
-  sni: hkt1.jueduibupao.top
   tls: false
-  type: hysteria2
+  type: vmess
   udp: true
+  uuid: 28a8a4d0-3e02-11eb-a8bf-f23c91cfbbc9
+  ws-opts:
+    headers:
+      Host: hkt.gotochinatown.net
+    path: /
 - client-fingerprint: chrome
-  name: 566|🇭🇰 香港 | HKG 7
-  password: 537d7098-fdbe-11ef-8ebc-f23c93141fad
-  port: 8300
-  server: cb6e9e1b-t9lmo0-tcjtj6-d70y.hkt.east.wctype.com
-  skip-cert-verify: true
-  type: anytls
-  udp: true
-- client-fingerprint: chrome
-  name: 566|🇭🇰 香港 | HKG 10
+  name: 566|🇭🇰 香港 | HKG 2
   password: 712bdc36-24be-11ee-be53-f23c9313b177
   port: 8300
   server: d6cc43ac-t9l0g0-tckngf-5fdt.hkt.east.wctype.com
   skip-cert-verify: true
   type: anytls
   udp: true
-- name: '566,568|🇭🇰 香港 | HKG #9'
-  password: f7f2d1d7-1861-476a-a814-c62f8c88d472
-  port: 31102
-  server: green2.cdntencentmusic.com
+- alterId: 0
+  cipher: auto
+  name: 566|🇭🇰 香港 | HKG 3
+  port: 22226
+  server: jzgz.tcity8.monster
   skip-cert-verify: true
-  sni: green2.cdntencentmusic.com
-  type: trojan
+  tls: false
+  type: vmess
   udp: true
-- name: '566,568|🇭🇰 香港 | HKG #11'
-  password: 4b8449bf-ce33-4ec4-a261-7ca06029f021
-  port: 31103
-  server: green2.cdntencentmusic.com
+  uuid: ea761ad5-288f-40a0-913b-d31009e96005
+- auth: 991b8611-ca06-4177-99fa-1084f2d93b4c
+  name: 566|🇭🇰 香港 | HKG 4
+  password: 991b8611-ca06-4177-99fa-1084f2d93b4c
+  port: 20000
+  ports: 20000-55000
+  server: 103.197.71.102
   skip-cert-verify: true
-  sni: green2.cdntencentmusic.com
-  type: trojan
+  sni: www.bing.com
+  type: hysteria2
   udp: true
-- name: '566,568|🇭🇰 香港 | HKG #13'
-  password: 10d8b18b-8dbc-4eb7-bb1b-9ec75ab0d12a
-  port: 31103
-  server: green2.cdntencentmusic.com
+- client-fingerprint: chrome
+  name: 566|🇭🇰 香港 | HKG 5
+  password: 537d7098-fdbe-11ef-8ebc-f23c93141fad
+  port: 8300
+  server: 96078085-t9l0g0-tcj7b6-d70y.hkt.east.wctype.com
   skip-cert-verify: true
-  sni: green2.cdntencentmusic.com
-  type: trojan
+  type: anytls
   udp: true
-- name: '566,568|🇭🇰 香港 | HKG #14'
-  password: e35ae3cc-8a78-4c6f-95ea-98d34e9e7074
-  port: 21101
-  server: cdnfire.xiaomispeed.com
-  skip-cert-verify: false
-  sni: cdnfire.xiaomispeed.com
-  type: trojan
-  udp: true
-- name: '566,568|🇭🇰 香港 | HKG #15'
-  password: 3d79885d-1f5f-45be-92df-ab220c4c2e7e
-  port: 31101
-  server: green2.cdntencentmusic.com
-  skip-cert-verify: false
-  sni: green2.cdntencentmusic.com
-  type: trojan
-  udp: true
-- name: '566,568|🇭🇰 香港 | HKG #16'
-  password: 9713f300-fa6c-4658-a2d4-b32a738d8c52
-  port: 21115
-  server: cdnfire.xiaomispeed.com
+- client-fingerprint: chrome
+  name: 566|🇭🇰 香港 | HKG 6
+  password: 7a2512b4-09ee-11f0-8d46-f23c9313b177
+  port: 8300
+  server: 90b96b82-t9l0g0-tclkqs-deip.hkt.east.wctype.com
   skip-cert-verify: true
-  sni: cdnfire.xiaomispeed.com
-  type: trojan
+  type: anytls
   udp: true
-- name: '566,568|🇭🇰 香港 | HKG #18'
-  password: 1afa3b47-16ec-4fae-8b8a-6b2d8335e3d4
-  port: 31102
-  server: green2.cdntencentmusic.com
+- alterId: 0
+  cipher: auto
+  name: 566|🇭🇰 香港 | HKG 7
+  port: 22224
+  server: jzgz.tcity8.monster
   skip-cert-verify: true
-  sni: green2.cdntencentmusic.com
-  type: trojan
+  tls: false
+  type: vmess
   udp: true
-- name: '566,568|🇭🇰 香港 | HKG #19'
-  password: b5e3e3b9-de0a-4e47-9baa-2cde1d8405ff
-  port: 31102
-  server: green2.cdntencentmusic.com
+  uuid: 784f1582-3549-4aa2-a5a8-4b9824f7b0f8
+- client-fingerprint: chrome
+  name: 566|🇭🇰 香港 | HKG 9
+  password: 6286105c-fb6d-11ef-be96-f23c93136cb3
+  port: 8300
+  server: 50195fb3-t9nhc0-t9j5x5-4550.hkt.east.wctype.com
   skip-cert-verify: true
-  sni: green2.cdntencentmusic.com
-  type: trojan
+  type: anytls
   udp: true
-- name: '566,568|🇭🇰 香港 | HKG #20'
-  password: 58989c2d-b69d-46d1-996f-50d855c9b8c0
-  port: 21115
-  server: cdnfire.xiaomispeed.com
+- client-fingerprint: chrome
+  name: 566|🇭🇰 香港 | HKG 10
+  password: 6286105c-fb6d-11ef-be96-f23c93136cb3
+  port: 8300
+  server: 1f99c2a2-t9l0g0-t9ijp5-4550.hkt.east.wctype.com
   skip-cert-verify: true
-  sni: cdnfire.xiaomispeed.com
-  type: trojan
+  type: anytls
+  udp: true
+- name: 566|🇭🇰 香港 | HKG 11
+  password: 537d7098-fdbe-11ef-8ebc-f23c93141fad
+  port: 8300
+  server: cb6e9e1b-t9lmo0-tcjtj6-d70y.hkt.east.wctype.com
+  skip-cert-verify: true
+  type: anytls
+  udp: true
+- alterId: 2
+  cipher: auto
+  name: 566|🇭🇰 香港 | HKG 12
+  network: ws
+  port: 80
+  server: 2530f477-t9mv40-ts3rye-mrtr.hkt.gotochinatown.net
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 28a8a4d0-3e02-11eb-a8bf-f23c91cfbbc9
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 566|🇭🇰 香港 | HKG 14
+  port: 22003
+  server: jzgz.tcity8.monster
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 784f1582-3549-4aa2-a5a8-4b9824f7b0f8
+- client-fingerprint: chrome
+  name: 566|🇭🇰 香港 | HKG 15
+  password: 7a2512b4-09ee-11f0-8d46-f23c9313b177
+  port: 8300
+  server: 9ba67cb4-t9nhc0-tcm6ys-deip.hkt.east.wctype.com
+  skip-cert-verify: true
+  type: anytls
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 566|🇭🇰 香港 | HKG 16
+  port: 22003
+  server: jzgz.tcity8.monster
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 6404e21a-3fc5-45ed-91a8-001a5e48362b
+- alterId: 0
+  cipher: auto
+  name: 566|🇭🇰 香港 | HKG 17
+  port: 35213
+  server: dzgz.tcity8.monster
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 6404e21a-3fc5-45ed-91a8-001a5e48362b
+- client-fingerprint: chrome
+  name: 566|🇭🇰 香港 | HKG 18
+  password: 712bdc36-24be-11ee-be53-f23c9313b177
+  port: 8300
+  server: e2b22c24-t9mv40-tckngf-5fdt.hkt.east.wctype.com
+  skip-cert-verify: true
+  type: anytls
   udp: true
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: 566|🇭🇰 香港 | HKG 24
+  name: 566|🇭🇰 香港 | HKG 19
   network: tcp
   port: 30101
   reality-opts:
@@ -8308,95 +8402,336 @@ proxies:
   tls: true
   type: vless
   udp: true
-  uuid: 97c4acd1-f371-47ad-ab0b-e8970e607dd1
-- name: '566,568|🇭🇰 香港 | HKG #21'
-  password: e35ae3cc-8a78-4c6f-95ea-98d34e9e7074
+  uuid: 6abf7088-5519-4772-ad41-06ba1a535d18
+- client-fingerprint: chrome
+  name: 566|🇭🇰 香港 | HKG 20
+  password: 92b2a3d4-f353-11ef-b714-f23c93136cb3
+  port: 8300
+  server: ea9be154-t9nhc0-taedaq-63bp.hkt.east.wctype.com
+  skip-cert-verify: true
+  type: anytls
+  udp: true
+- auth: 991b8611-ca06-4177-99fa-1084f2d93b4c
+  name: 566|🇭🇰 香港 | HKG 21
+  password: 991b8611-ca06-4177-99fa-1084f2d93b4c
+  port: 20000
+  ports: 20000-55000
+  server: 103.197.71.103
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria2
+  udp: true
+- name: 566|🇭🇰 香港 | HKG 23
+  password: 55ea0914-7a87-4160-8bb7-46bcc843b81c
   port: 21115
   server: cdnfire.xiaomispeed.com
   skip-cert-verify: true
   sni: cdnfire.xiaomispeed.com
   type: trojan
   udp: true
-- name: '566,568|🇭🇰 香港 | HKG #22'
-  password: 271f1b33-fe68-4a72-ada3-9e789edd9966
-  port: 31102
-  server: green2.cdntencentmusic.com
+- alterId: 0
+  cipher: auto
+  name: 566|🇭🇰 香港 | HKG 27
+  port: 22226
+  server: jzgz.tcity8.monster
   skip-cert-verify: true
-  sni: green2.cdntencentmusic.com
-  type: trojan
+  tls: false
+  type: vmess
   udp: true
-- name: '566,568|🇭🇰 香港 | HKG #24'
-  password: 23b68125-1717-4743-af1d-abd9b78ecacc
-  port: 31101
-  server: green2.cdntencentmusic.com
-  skip-cert-verify: false
-  sni: green2.cdntencentmusic.com
-  type: trojan
-  udp: true
-- name: '566,568|🇭🇰 香港 | HKG #26'
-  password: f7f2d1d7-1861-476a-a814-c62f8c88d472
-  port: 31103
-  server: green2.cdntencentmusic.com
+  uuid: 0fe86dd8-c73a-4860-9ade-877e0a1c6ebf
+- alterId: 0
+  cipher: auto
+  name: 566|🇭🇰 香港 | HKG 28
+  port: 35214
+  server: dzgz.tcity8.monster
   skip-cert-verify: true
-  sni: green2.cdntencentmusic.com
-  type: trojan
+  tls: false
+  type: vmess
   udp: true
-- name: '566,568|🇭🇰 香港 | HKG #30'
-  password: dd46276b-1e48-4c33-829c-fe8bb1fa3272
-  port: 31102
-  server: green2.cdntencentmusic.com
+  uuid: 0fe86dd8-c73a-4860-9ade-877e0a1c6ebf
+- alterId: 0
+  cipher: auto
+  name: 566|🇭🇰 香港 | HKG 29
+  port: 35213
+  server: dzgz.tcity8.monster
   skip-cert-verify: true
-  sni: green2.cdntencentmusic.com
-  type: trojan
+  tls: false
+  type: vmess
   udp: true
-- name: '566,568|🇭🇰 香港 | HKG #31'
-  password: 768b1526-a92c-428c-a8fa-978940e0e63b
-  port: 31102
-  server: green2.cdntencentmusic.com
-  skip-cert-verify: true
-  sni: green2.cdntencentmusic.com
-  type: trojan
-  udp: true
-- client-fingerprint: chrome
-  name: 566|🇭🇰 香港 | HKG 37
-  password: 06c625ea-5902-11ee-9e87-f23c9313b177
+  uuid: 784f1582-3549-4aa2-a5a8-4b9824f7b0f8
+- name: 566|🇭🇰 香港 | HKG 30
+  password: d720a490-d56b-11ef-a1cb-f23c9313b177
   port: 8300
-  server: 78fb080c-t9lmo0-tbomae-4mce.hkt.east.wctype.com
+  server: b7fd6a5e-t9lmo0-t9izwa-64gc.hkt.east.wctype.com
   skip-cert-verify: true
   type: anytls
   udp: true
-- name: '566,568|🇭🇰 香港 | HKG #34'
-  password: d2345694-3485-4e77-b3d4-5a14cd57a0c4
-  port: 31101
-  server: green2.cdntencentmusic.com
-  skip-cert-verify: false
-  sni: green2.cdntencentmusic.com
-  type: trojan
-  udp: true
-- name: '566,568|🇭🇰 香港 | HKG #38'
-  password: 157db8b8-45bb-46dd-9d27-13e9b2b5ab91
-  port: 31102
-  server: green2.cdntencentmusic.com
+- auth: 991b8611-ca06-4177-99fa-1084f2d93b4c
+  name: 566|🇭🇰 香港 | HKG 31
+  password: 991b8611-ca06-4177-99fa-1084f2d93b4c
+  port: 20000
+  ports: 20000-55000
+  server: 103.197.71.99
   skip-cert-verify: true
-  sni: green2.cdntencentmusic.com
-  type: trojan
+  sni: www.bing.com
+  type: hysteria2
   udp: true
-- client-fingerprint: chrome
-  name: 566|🇭🇰 香港 | HKG 44
-  password: 7a2512b4-09ee-11f0-8d46-f23c9313b177
-  port: 8300
-  server: 90b96b82-t9l0g0-tclkqs-deip.hkt.east.wctype.com
+- alterId: 0
+  cipher: auto
+  name: 566|🇭🇰 香港 | HKG 33
+  port: 22224
+  server: jzgz.tcity8.monster
   skip-cert-verify: true
-  type: anytls
+  tls: false
+  type: vmess
   udp: true
+  uuid: ea761ad5-288f-40a0-913b-d31009e96005
 - client-fingerprint: chrome
-  name: 566|🇭🇰 香港 | HKG 48
+  name: 566|🇭🇰 香港 | HKG 35
   password: df7bed3c-06eb-11f0-8ebc-f23c93141fad
   port: 8300
-  server: ef212de6-t9lmo0-t9lxaa-1glq.hkt.east.wctype.com
+  server: 270d7536-t9l0g0-t9lb2a-1glq.hkt.east.wctype.com
   skip-cert-verify: true
   type: anytls
   udp: true
+- alterId: 0
+  cipher: auto
+  name: 566|🇭🇰 香港 | HKG 36
+  port: 22003
+  server: jzgz.tcity8.monster
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: ea761ad5-288f-40a0-913b-d31009e96005
+- alterId: 0
+  cipher: auto
+  name: 566|🇭🇰 香港 | HKG 37
+  port: 35212
+  server: dzgz.tcity8.monster
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 0fe86dd8-c73a-4860-9ade-877e0a1c6ebf
+- client-fingerprint: chrome
+  name: 566|🇭🇰 香港 | HKG 38
+  password: be8cc8f6-0c6a-11f0-a5a3-f23c93141fad
+  port: 8300
+  server: 499f6eb5-t9nhc0-ta37qp-b4pt.hkt.east.wctype.com
+  skip-cert-verify: true
+  type: anytls
+  udp: true
+- alterId: 2
+  cipher: auto
+  name: 566|🇭🇰 香港 | HKG 39
+  network: ws
+  port: 80
+  server: hkt.gotochinatown.net
+  servername: broadcastlv.chat.bilibili.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: a2b0fd2b-716f-0df8-d4e2-03a1c00e5f1a
+  ws-opts:
+    headers:
+      Host: hkt.gotochinatown.net
+    path: /
+- alterId: 2
+  cipher: auto
+  name: '568|🇭🇰 香港 | HKG #1'
+  network: ws
+  port: '80'
+  server: 3550c067-t9mv40-trftb1-1psmw.hkt.gotochinatown.net
+  tls: false
+  type: vmess
+  uuid: 42bb6d36-97c7-11ee-be7f-f23c9164ca5d
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '568|🇭🇰 香港 | HKG #2'
+  network: tcp
+  port: '22003'
+  server: jzgz.tcity8.monster
+  tls: false
+  type: vmess
+  uuid: 0fe86dd8-c73a-4860-9ade-877e0a1c6ebf
+- alterId: 0
+  cipher: auto
+  name: '568|🇭🇰 香港 | HKG #4'
+  network: tcp
+  port: '22226'
+  server: jzgz.tcity8.monster
+  tls: false
+  type: vmess
+  uuid: 784f1582-3549-4aa2-a5a8-4b9824f7b0f8
+- alterId: 0
+  cipher: auto
+  name: '568|🇭🇰 香港 | HKG #6'
+  network: tcp
+  port: '35214'
+  server: dzgz.tcity8.monster
+  tls: false
+  type: vmess
+  uuid: ea761ad5-288f-40a0-913b-d31009e96005
+- alterId: 2
+  cipher: auto
+  name: '568|🇭🇰 香港 | HKG #7'
+  network: ws
+  port: '80'
+  server: hkt.gotochinatown.net
+  tls: false
+  type: vmess
+  uuid: f860f2da-5035-11ed-bb74-f23c9164ca5d
+  ws-opts:
+    headers:
+      Host: hkt.gotochinatown.net
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '568|🇭🇰 香港 | HKG #8'
+  network: tcp
+  port: '22226'
+  server: jzgz.tcity8.monster
+  tls: false
+  type: vmess
+  uuid: 6404e21a-3fc5-45ed-91a8-001a5e48362b
+- alterId: 0
+  cipher: auto
+  name: '568|🇭🇰 香港 | HKG #9'
+  network: tcp
+  port: '35214'
+  server: dzgz.tcity8.monster
+  tls: false
+  type: vmess
+  uuid: 784f1582-3549-4aa2-a5a8-4b9824f7b0f8
+- alterId: 0
+  cipher: auto
+  name: '568|🇭🇰 香港 | HKG #11'
+  network: tcp
+  port: '22224'
+  server: jzgz.tcity8.monster
+  tls: false
+  type: vmess
+  uuid: 6404e21a-3fc5-45ed-91a8-001a5e48362b
+- alterId: 0
+  cipher: auto
+  name: '568|🇭🇰 香港 | HKG #12'
+  network: tcp
+  port: '35212'
+  server: dzgz.tcity8.monster
+  tls: false
+  type: vmess
+  uuid: 784f1582-3549-4aa2-a5a8-4b9824f7b0f8
+- alterId: 2
+  cipher: auto
+  name: '568|🇭🇰 香港 | HKG #13'
+  network: ws
+  port: '80'
+  server: da78346a-t9mv40-tart0c-g3b3.hkt.gotochinatown.net
+  tls: false
+  type: vmess
+  uuid: 9ad05870-d8c5-11ef-9f1c-f23c913c8d2b
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: '568|🇭🇰 香港 | HKG #14'
+  network: ws
+  port: '80'
+  server: 1808992d-t9mv40-tcmken-19les.hkt.gotochinatown.net
+  tls: false
+  type: vmess
+  uuid: d095ecc6-7b69-11eb-b77b-f23c913c8d2b
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: '568|🇭🇰 香港 | HKG #15'
+  network: ws
+  port: '80'
+  server: e9a95584-t9mv40-tazlv3-11p9g.hkt.gotochinatown.net
+  tls: false
+  type: vmess
+  uuid: 384d1b42-655f-11ed-a8bf-f23c91cfbbc9
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: '568|🇭🇰 香港 | HKG #17'
+  network: ws
+  port: '80'
+  server: 28561085-t8wxs0-ta00rd-1o8ak.hkt.gotochinatown.net
+  tls: false
+  type: vmess
+  uuid: 8bb68d04-6973-11ee-b518-f23c9164ca5d
+  ws-opts:
+    headers:
+      Host: 28561085-t8wxs0-ta00rd-1o8ak.hkt.gotochinatown.net
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '568|🇭🇰 香港 | HKG #18'
+  network: tcp
+  port: '22224'
+  server: jzgz.tcity8.monster
+  tls: false
+  type: vmess
+  uuid: 0fe86dd8-c73a-4860-9ade-877e0a1c6ebf
+- alterId: 0
+  cipher: auto
+  name: '568|🇭🇰 香港 | HKG #20'
+  network: tcp
+  port: '35212'
+  server: dzgz.tcity8.monster
+  tls: false
+  type: vmess
+  uuid: ea761ad5-288f-40a0-913b-d31009e96005
+- alterId: 0
+  cipher: auto
+  name: '568|🇭🇰 香港 | HKG #21'
+  network: tcp
+  port: '35214'
+  server: dzgz.tcity8.monster
+  tls: false
+  type: vmess
+  uuid: 6404e21a-3fc5-45ed-91a8-001a5e48362b
+- alterId: 2
+  cipher: auto
+  name: '568|🇭🇰 香港 | HKG #22'
+  network: ws
+  port: '80'
+  server: 0229d743-t9mv40-tsdg75-tlhh.hkt.gotochinatown.net
+  tls: false
+  type: vmess
+  uuid: bdf3e15e-c64c-11ea-82ef-f23c9164ca5d
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: '568|🇭🇰 香港 | HKG #23'
+  network: ws
+  port: '80'
+  server: e3c7f60e-t8pj40-t9b2j8-11p9g.hkt.gotochinatown.net
+  tls: false
+  type: vmess
+  uuid: 384d1b42-655f-11ed-a8bf-f23c91cfbbc9
+  ws-opts:
+    headers:
+      Host: e3c7f60e-t8pj40-t9b2j8-11p9g.hkt.gotochinatown.net
+    path: /
 - alterId: 0
   cipher: auto
   name: 577|澳门NO.2
@@ -8597,18 +8932,6 @@ proxies:
     headers:
       Host: hrgdvpn.flycdnedc55.vip
     path: /opt/video/images
-- name: '580|HK香港(mibei77.com 米贝节点分享)-clone #3'
-  network: ws
-  port: 443
-  server: 43.161.254.121
-  servername: l.ayovo.netlib.re
-  tls: true
-  type: vless
-  uuid: 3e2e3c21-3fc8-468f-9ab5-e782bdf5bf97
-  ws-opts:
-    headers:
-      Host: l.ayovo.netlib.re
-    path: '%2F%3Fed%3D2560'
 - client-fingerprint: randomized
   name: 583|eooce-04-HK
   network: ws
@@ -8717,7 +9040,7 @@ proxies:
     headers:
       Host: yf.xhya.nyc.mn
     path: /
-- name: '605|HK #4'
+- name: '605|HK #1'
   network: tcp
   password: aa6ddd2f-d1cf-4a52-ba1b-2640c41a7856
   port: 41288
