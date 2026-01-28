@@ -751,18 +751,22 @@ proxies:
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     path: /linkvws
-- name: '378,536,537|🇷FR-57.128.174.124-4672 #1'
+- country: 🇷FR
+  name: '378,435,436,536,537|🇷FR-57.128.174.124-4672 #1'
   password: d150c8c3-a667-4d3e-843c-739f8558c7d2
   port: 443
   server: uk-full.privateip.net
   skip-cert-verify: false
   type: trojan
-- name: '378,536,537|🇫🇷FR-51.254.142.162-4673 #2'
+  udp: true
+- country: 🇫🇷FR
+  name: '378,435,436,536,537|🇫🇷FR-51.254.142.162-4673 #2'
   password: 6c64e6f9-a76c-49eb-96d2-bf8b1afee4a3
   port: 443
   server: fr-full.privateip.net
   skip-cert-verify: false
   type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: '378,536,537|🇷FR-146.59.55.50-4739 #1'
@@ -776,14 +780,17 @@ proxies:
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     path: /linkvws
-- name: '378,536,537|🇷FR-57.131.38.150-4745 #1'
+- country: 🇦UA
+  name: '378,435,436,536,537|🇷FR-57.131.38.150-4745 #1'
   password: 8d16a256-42d7-4431-8039-da1eb06cafbc
   port: 443
   server: it-full.privateip.net
   skip-cert-verify: false
   type: trojan
+  udp: true
 - cipher: aes-256-cfb
-  name: '378,537|🇷FR-195.154.119.77-4802 #1'
+  country: 🇷FR
+  name: '378,440,537|🇷FR-195.154.119.77-4802 #1'
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 195.154.119.77
@@ -972,7 +979,7 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: '378,536,537,559|🇧🇪 BE_18 #1'
+  name: '378,536,537,559|🇧🇪 BE_18 #2'
   network: ws
   port: 443
   server: 57.128.189.240
@@ -1570,22 +1577,52 @@ proxies:
   skip-cert-verify: false
   sni: trj.rollingnext.co.uk
   type: trojan
-- name: '456,494,559|FR VLESS-01 | free-nodes #1'
+- alterId: 0
+  cipher: auto
+  country: 🇷 FR
+  h2-opts: {}
+  http-opts: {}
+  name: 435| FR_35
   network: ws
-  port: 22224
-  server: 15.188.35.102
-  servername: trojan.burgerip.co.uk
+  port: 443
+  server: 91.134.8.101
+  skip-cert-verify: true
   tls: true
-  type: vless
-  uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-path: /linkvws
+- name: '456,494,507,580|FR TROJAN-39 | free-nodes #1'
+  network: ws
+  password: humanity
+  port: 443
+  server: 104.18.32.47
+  skip-cert-verify: false
+  sni: www.gossipglove.com
+  type: trojan
   ws-opts:
-    path: '%2Ftelegram-channel-vlessconfig'
-- name: '456,559|FR TROJAN-45 | free-nodes #1'
+    headers:
+      Host: www.gossipglove.com
+    path: '%2Fassignment'
+- name: '456,494,580|FR TROJAN-41 | free-nodes #1'
+  network: ws
+  password: humanity
+  port: 443
+  server: www.calmlunch.com
+  skip-cert-verify: true
+  sni: www.calmlunch.com
+  type: trojan
+  ws-opts:
+    headers:
+      Host: www.calmlunch.com
+    path: /assignment
+- alpn:
+  - http/1.1
+  name: '456,494,580|FR TROJAN-43 | free-nodes #1'
   network: tcp
-  password: nodes-b211f28a
-  port: 2083
-  server: node-fr-1.v2sv.top
-  sni: node-fr-1.v2sv.top
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 35.180.160.37
+  sni: trojan.burgerip.co.uk
   type: trojan
 - name: '456,494,507,559,580|FR VLESS-54 | free-nodes #2'
   port: 19702
@@ -1593,40 +1630,56 @@ proxies:
   tls: false
   type: vless
   uuid: 1f3b130d-7d29-45d1-b5aa-adc5cd94a885
-- name: '456,559|FR VLESS-54 | free-nodes #1'
-  port: 42542
-  server: fr.broadcasp.info
+- client-fingerprint: chrome
+  name: '456,580|FR VLESS-64 | free-nodes #1'
+  network: tcp
+  port: 50511
+  reality-opts:
+    public-key: Mz0OqGiU1O1s9cYbJ94zcpdmUskGBAt-r1DKKKEDwFA
+    short-id: 732c5236630892f8
+  server: 170.39.216.61
+  servername: refersion.com
   tls: false
   type: vless
-  uuid: f56f35a9-1123-4fe9-b1db-be57fb9f95d4
-- alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: firefox
-  flow: ''
-  name: '456,494,559|FR VLESS-72 | free-nodes #1'
-  network: tcp
-  port: 2222
-  server: 45.154.96.51
-  servername: tcp1.speedx3net.ir
-  skip-cert-verify: false
+  uuid: 3bc9c90e-dd6c-400d-bfb0-1d06b13fe46c
+- name: '456,507,580|FR VLESS-88 | free-nodes #1'
+  network: ws
+  port: 2087
+  server: 188.114.98.224
+  servername: vds.rahedarro.com
   tls: true
   type: vless
-  uuid: a37f349e-04b0-4967-a9e5-fb35083fa353
-- name: '456,507,559|FR TROJAN-87 | free-nodes #1'
-  password: humanity
-  port: 443
-  server: www.gossipglove.com
-  type: trojan
+  uuid: 8443822d-6b68-4af2-d096-c03207ed880d
   ws-opts:
-    path: '%2Fassignment'
-- name: '456,559|FR TROJAN-122 | free-nodes #1'
-  password: humanity
+    headers:
+      Host: vds.rahedarro.com
+    path: '%2Frahh'
+- name: '456,494,580|FR VLESS-105 | free-nodes #1'
+  network: ws
   port: 443
-  server: www.calmlunch.com
-  type: trojan
+  server: zzula.ir
+  servername: zitel.digikala-aparat-zula.com
+  tls: true
+  type: vless
+  uuid: c249ca6f-1bde-479b-af96-da0e948a3800
   ws-opts:
-    path: '%2Fassignment'
+    headers:
+      Host: zitel.digikala-aparat-zula.com
+    path: /admin
+- client-fingerprint: chrome
+  name: '456,494,580|FR VLESS-121 | free-nodes #1'
+  network: ws
+  port: 443
+  server: 69.84.182.20
+  servername: rAyAn-cOnFiG-fr-1.pAriSa.dPdNs.oRg
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  uuid: eee3e4b0-0dfc-46af-8c6e-cb4241e9258e
+  ws-opts:
+    headers:
+      Host: rAyAn-cOnFiG-fr-1.pAriSa.dPdNs.oRg
+    path: /ws
 - name: 460|法国_巴黎
   network: ws
   port: 443
@@ -1836,7 +1889,7 @@ proxies:
   type: ss
 - alterId: 2
   cipher: auto
-  name: 489,553|yandex-3503
+  name: 489,553|yandex-365
   port: 30835
   server: 202.85.53.205
   skip-cert-verify: true
@@ -1899,13 +1952,13 @@ proxies:
   server: pop.b1c7d2ec-e636-4521-a9f7-abb10044e3a5.heima360.cc
   skip-cert-verify: false
   type: trojan
-- name: 559|🇫🇷FR_36
+- name: '559|🇫🇷FR_36 #1'
   password: 6c64e6f9-a76c-49eb-96d2-bf8b1afee4a3
   port: 443
   server: fr-full.privateip.net
   sni: fr-full.privateip.net
   type: trojan
-- name: 559|🇫🇷FR_38
+- name: '559|🇫🇷FR_38 #2'
   password: d150c8c3-a667-4d3e-843c-739f8558c7d2
   port: 443
   server: 198.244.190.189
@@ -1917,7 +1970,7 @@ proxies:
   server: uk-full.privateip.net
   sni: uk-full.privateip.net
   type: trojan
-- name: 559|🇫🇷FR_37
+- name: '559|🇫🇷FR_37 #1'
   password: d86c421f-dbfe-4507-a864-f8f9e29d80e4
   port: 443
   server: de-full.privateip.net
@@ -1928,6 +1981,27 @@ proxies:
   port: 443
   server: chatgpt.com
   sni: www.gossipglove.com
+  type: trojan
+- name: 559|FR TROJAN-122 | free-nodes
+  password: humanity
+  port: 443
+  server: www.calmlunch.com
+  type: trojan
+  ws-opts:
+    path: '%2Fassignment'
+- name: 559|FR TROJAN-87 | free-nodes
+  password: humanity
+  port: 443
+  server: www.gossipglove.com
+  type: trojan
+  ws-opts:
+    path: '%2Fassignment'
+- name: 559|FR TROJAN-45 | free-nodes
+  network: tcp
+  password: nodes-b211f28a
+  port: 2083
+  server: node-fr-1.v2sv.top
+  sni: node-fr-1.v2sv.top
   type: trojan
 - grpc-opts:
     grpc-service-name: ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
@@ -1950,6 +2024,25 @@ proxies:
   tls: false
   type: vless
   uuid: 5695e906-fd40-45e7-b261-7bc605af614c
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: firefox
+  name: 559|FR VLESS-72 | free-nodes
+  network: tcp
+  port: 2222
+  server: 45.154.96.51
+  servername: tcp1.speedx3net.ir
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: a37f349e-04b0-4967-a9e5-fb35083fa353
+- name: '559|FR VLESS-54 | free-nodes #1'
+  port: 42542
+  server: fr.broadcasp.info
+  tls: false
+  type: vless
+  uuid: f56f35a9-1123-4fe9-b1db-be57fb9f95d4
 - alterId: 0
   cipher: auto
   name: 559|法国 141
@@ -1980,16 +2073,6 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 559|法国_012804007
-  network: tcp
-  port: '550'
-  server: 162.19.248.238
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: ede27a79-b039-490b-932c-495de4b68880
-- alterId: 0
-  cipher: auto
   name: 559|法国_012804283
   network: ws
   port: '80'
@@ -2002,6 +2085,20 @@ proxies:
     headers:
       Host: ''
     path: ''
+- client-fingerprint: chrome
+  name: 566|🇫🇷 法国 | FRA 2
+  network: ws
+  port: 443
+  server: v3.dabache.top
+  servername: x1MKkQTEJX0hRuPvUN3tUIAmtffMutnLGgNRIjSXOW7JZV4K.sangar.net
+  tls: true
+  type: vless
+  udp: true
+  uuid: c94f3cf9-7aa5-4b6d-b153-baea45280c64
+  ws-opts:
+    headers:
+      Host: x1MKkQTEJX0hRuPvUN3tUIAmtffMutnLGgNRIjSXOW7JZV4K.sangar.net
+    path: /test
 - alterId: 0
   cipher: auto
   name: '577|法国1 #4'
@@ -2048,18 +2145,6 @@ proxies:
   tls: false
   type: vmess
   uuid: a663bbab-4e9e-4080-b8ab-edd59fe1fdce
-- client-fingerprint: chrome
-  name: 580|FR VLESS-64 | free-nodes
-  network: tcp
-  port: 50511
-  reality-opts:
-    public-key: Mz0OqGiU1O1s9cYbJ94zcpdmUskGBAt-r1DKKKEDwFA
-    short-id: 732c5236630892f8
-  server: 170.39.216.61
-  servername: refersion.com
-  tls: false
-  type: vless
-  uuid: 3bc9c90e-dd6c-400d-bfb0-1d06b13fe46c
 - alpn:
   - h3
   auth-str: dongtaiwang.com

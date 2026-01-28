@@ -700,18 +700,22 @@ proxies:
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     path: /linkvws
-- name: '378,536,537|🇷FR-57.128.174.124-4672 #1'
+- country: 🇷FR
+  name: '378,435,436,536,537|🇷FR-57.128.174.124-4672 #1'
   password: d150c8c3-a667-4d3e-843c-739f8558c7d2
   port: 443
   server: uk-full.privateip.net
   skip-cert-verify: false
   type: trojan
-- name: '378,536,537|🇫🇷FR-51.254.142.162-4673 #2'
+  udp: true
+- country: 🇫🇷FR
+  name: '378,435,436,536,537|🇫🇷FR-51.254.142.162-4673 #2'
   password: 6c64e6f9-a76c-49eb-96d2-bf8b1afee4a3
   port: 443
   server: fr-full.privateip.net
   skip-cert-verify: false
   type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: '378,536,537|🇷FR-146.59.55.50-4739 #1'
@@ -725,14 +729,17 @@ proxies:
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     path: /linkvws
-- name: '378,536,537|🇷FR-57.131.38.150-4745 #1'
+- country: 🇦UA
+  name: '378,435,436,536,537|🇷FR-57.131.38.150-4745 #1'
   password: 8d16a256-42d7-4431-8039-da1eb06cafbc
   port: 443
   server: it-full.privateip.net
   skip-cert-verify: false
   type: trojan
+  udp: true
 - cipher: aes-256-cfb
-  name: '378,537|🇷FR-195.154.119.77-4802 #1'
+  country: 🇷FR
+  name: '378,440,537|🇷FR-195.154.119.77-4802 #1'
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 195.154.119.77
@@ -921,7 +928,7 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: '378,536,537,559|🇧🇪 BE_18 #1'
+  name: '378,536,537,559|🇧🇪 BE_18 #2'
   network: ws
   port: 443
   server: 57.128.189.240
@@ -1519,27 +1526,53 @@ proxies:
   skip-cert-verify: false
   sni: trj.rollingnext.co.uk
   type: trojan
-- name: '456,559|FR TROJAN-45 | free-nodes #1'
-  network: tcp
-  password: nodes-b211f28a
-  port: 2083
-  server: node-fr-1.v2sv.top
-  sni: node-fr-1.v2sv.top
-  type: trojan
-- name: '456,507,559|FR TROJAN-87 | free-nodes #1'
+- alterId: 0
+  cipher: auto
+  country: 🇷 FR
+  h2-opts: {}
+  http-opts: {}
+  name: 435| FR_35
+  network: ws
+  port: 443
+  server: 91.134.8.101
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-path: /linkvws
+- name: '456,494,507,580|FR TROJAN-39 | free-nodes #1'
+  network: ws
   password: humanity
   port: 443
-  server: www.gossipglove.com
+  server: 104.18.32.47
+  skip-cert-verify: false
+  sni: www.gossipglove.com
   type: trojan
   ws-opts:
+    headers:
+      Host: www.gossipglove.com
     path: '%2Fassignment'
-- name: '456,559|FR TROJAN-122 | free-nodes #1'
+- name: '456,494,580|FR TROJAN-41 | free-nodes #1'
+  network: ws
   password: humanity
   port: 443
   server: www.calmlunch.com
+  skip-cert-verify: true
+  sni: www.calmlunch.com
   type: trojan
   ws-opts:
-    path: '%2Fassignment'
+    headers:
+      Host: www.calmlunch.com
+    path: /assignment
+- alpn:
+  - http/1.1
+  name: '456,494,580|FR TROJAN-43 | free-nodes #1'
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 35.180.160.37
+  sni: trojan.burgerip.co.uk
+  type: trojan
 - alterId: 0
   cipher: auto
   name: 461|法国_马赛
@@ -1676,7 +1709,7 @@ proxies:
   type: ss
 - alterId: 2
   cipher: auto
-  name: 489,553|yandex-3503
+  name: 489,553|yandex-365
   port: 30835
   server: 202.85.53.205
   skip-cert-verify: true
@@ -1727,13 +1760,13 @@ proxies:
   server: pop.b1c7d2ec-e636-4521-a9f7-abb10044e3a5.heima360.cc
   skip-cert-verify: false
   type: trojan
-- name: 559|🇫🇷FR_36
+- name: '559|🇫🇷FR_36 #1'
   password: 6c64e6f9-a76c-49eb-96d2-bf8b1afee4a3
   port: 443
   server: fr-full.privateip.net
   sni: fr-full.privateip.net
   type: trojan
-- name: 559|🇫🇷FR_38
+- name: '559|🇫🇷FR_38 #2'
   password: d150c8c3-a667-4d3e-843c-739f8558c7d2
   port: 443
   server: 198.244.190.189
@@ -1745,7 +1778,7 @@ proxies:
   server: uk-full.privateip.net
   sni: uk-full.privateip.net
   type: trojan
-- name: 559|🇫🇷FR_37
+- name: '559|🇫🇷FR_37 #1'
   password: d86c421f-dbfe-4507-a864-f8f9e29d80e4
   port: 443
   server: de-full.privateip.net
@@ -1756,6 +1789,27 @@ proxies:
   port: 443
   server: chatgpt.com
   sni: www.gossipglove.com
+  type: trojan
+- name: 559|FR TROJAN-122 | free-nodes
+  password: humanity
+  port: 443
+  server: www.calmlunch.com
+  type: trojan
+  ws-opts:
+    path: '%2Fassignment'
+- name: 559|FR TROJAN-87 | free-nodes
+  password: humanity
+  port: 443
+  server: www.gossipglove.com
+  type: trojan
+  ws-opts:
+    path: '%2Fassignment'
+- name: 559|FR TROJAN-45 | free-nodes
+  network: tcp
+  password: nodes-b211f28a
+  port: 2083
+  server: node-fr-1.v2sv.top
+  sni: node-fr-1.v2sv.top
   type: trojan
 - alterId: 0
   cipher: auto
@@ -1785,16 +1839,6 @@ proxies:
     headers:
       Host: ''
     path: /
-- alterId: 0
-  cipher: auto
-  name: 559|法国_012804007
-  network: tcp
-  port: '550'
-  server: 162.19.248.238
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: ede27a79-b039-490b-932c-495de4b68880
 - alterId: 0
   cipher: auto
   name: 559|法国_012804283
