@@ -174,7 +174,17 @@ proxies:
   type: vmess
   udp: true
   uuid: 21629fa5-8a06-4c2c-bdaa-85a6fe5222d5
-- name: '340,495,502,514,551,559|9|TW #2'
+- name: 255|TW
+  network: ws
+  password: Aimer
+  port: 2096
+  server: 167.68.4.223
+  skip-cert-verify: true
+  sni: epcca.ambercc.filegear-sg.me
+  type: trojan
+  ws-opts:
+    path: '%2F'
+- name: '340,495,502,514,551,559|9|TW #1'
   password: e7965e64-e001-4e8c-8273-39c61ff4a094
   port: 30000
   server: tw.oomz.ru
@@ -533,11 +543,11 @@ proxies:
   tls: false
   type: vmess
   uuid: f6406b6d-5487-46da-f793-46611269a306
-- name: '378,536,537,559|🇨🇳 台湾省台中市 中华电信 #1'
+- name: '378,536,537|🇹🇼TW-220.130.58.136-0900 #2'
   password: 3f58bbd2-4bac-4c33-9dd9-788d7a35d8bf
   port: 31102
   server: green2.cdntencentmusic.com
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: green2.cdntencentmusic.com
   type: trojan
 - alterId: 0
@@ -949,7 +959,7 @@ proxies:
   server: 154.223.20.79
   type: ss
   udp: true
-- country: 🇨🇳 CN
+- country: 🇳 CN
   name: '378,435,436,536,537|🇼TW-114.44.99.181-4671 #1'
   password: 6e1b9a65-884f-3aa9-9469-bf6ec0f08610
   port: 3462
@@ -1175,15 +1185,20 @@ proxies:
     headers:
       Host: tw1bQiWSE4x.fzbqfrse.xyz
     path: /video/GQ2qE5Us9g
-- name: 472,473,474,502,544,553|yandex-3125
-  password: 1ca5a034-3dfb-4424-aaba-8b12d7279095
-  port: 31103
+- alterId: 0
+  name: '472,473,474,494,502,523,524,559,574,580|TW台湾(mibei77.com 米贝节点分享) #14'
+  network: tcp
+  password: 49f42d5b-7c92-4f26-aeb6-89b9dd7fa0a5
+  port: 31102
   server: green2.cdntencentmusic.com
   skip-cert-verify: true
   sni: green2.cdntencentmusic.com
+  tls: true
   type: trojan
   udp: true
-- name: 475,480,489,553|yandex-2821
+  ws-opts:
+    path: /
+- name: 475,480,489,553|yandex-3252
   network: tcp
   password: 30077070-596e-48ea-9400-14c8ed07bd97
   port: 40130
@@ -1193,7 +1208,7 @@ proxies:
   type: trojan
   udp: true
 - cipher: chacha20-ietf
-  name: 489,553|yandex-2812
+  name: 489,553|yandex-3243
   obfs: plain
   obfs-param: 1fa5048573.microsoft.com
   password: NaikoCloud
@@ -1204,7 +1219,7 @@ proxies:
   type: ssr
   udp: true
 - cipher: chacha20-ietf
-  name: 489,553|yandex-2831
+  name: 489,553|yandex-3262
   obfs: plain
   obfs-param: 1fa5048573.microsoft.com
   password: NaikoCloud
@@ -1225,7 +1240,7 @@ proxies:
   udp: true
   username: mrwdfNTD8M79LCukCieldrqZWqs=
 - cipher: chacha20-ietf
-  name: 489,553|yandex-2840
+  name: 489,553|yandex-3271
   obfs: plain
   obfs-param: 1fa5048573.microsoft.com
   password: NaikoCloud
@@ -1236,7 +1251,7 @@ proxies:
   type: ssr
   udp: true
 - client-fingerprint: chrome
-  name: 489,553|yandex-2879
+  name: 489,553|yandex-3310
   network: tcp
   port: 35960
   server: tw.miopara.rest
@@ -1245,7 +1260,7 @@ proxies:
   udp: true
   uuid: beddd73b-ed90-4e76-8a30-492384220878
 - cipher: chacha20-ietf
-  name: 489,553|yandex-2943
+  name: 489,553|yandex-3374
   obfs: plain
   obfs-param: 1fa5048573.microsoft.com
   password: NaikoCloud
@@ -1440,27 +1455,17 @@ proxies:
     headers:
       Host: fadawtawd.zhangwei.li
     path: /zh-cn
-- name: 559|台湾_012718031
-  password: 311d314b-f49b-4910-a15d-0186ec7d4895
-  port: 21115
-  server: cdnfire.xiaomispeed.com
-  skip-cert-verify: true
-  sni: cdnfire.xiaomispeed.com
-  type: trojan
-- name: 559|台湾_012718029
-  password: 3156fa36-5ee2-4bc6-897b-85cc40e3ba84
-  port: 22231
-  server: cdnfire.xiaomispeed.com
-  skip-cert-verify: true
-  sni: cdnfire.xiaomispeed.com
-  type: trojan
-- name: 559|台湾_012718028
-  password: 51ceb8d9-f727-4035-a1d4-4caf8c0b358c
-  port: 22231
-  server: cdnfire.xiaomispeed.com
-  skip-cert-verify: true
-  sni: cdnfire.xiaomispeed.com
-  type: trojan
+- name: 559|🇹🇼TW_2 | ⬇️ 9.0MB/s
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: -r9XcOa4PqlVraJwpM-DB8SHHw27W-Lq8MFnvEqwMSk
+    short-id: ''
+  server: 2026.01.2.tw.aimirror.top
+  servername: ''
+  tls: false
+  type: vless
+  uuid: eeaa07ca-2693-42f8-e544-a16521d8e922
 - alterId: 0
   cipher: auto
   name: 577|台湾1(GPT等流媒体1.5倍）
@@ -1539,17 +1544,30 @@ proxies:
     headers:
       Host: tw.appleid.bf
     path: /ws?ed=2048
-- name: '580|US美国(mibei77.com 米贝节点分享)-clone #68'
+- name: 580|tw台湾(mibei77.com 米贝节点分享)
   network: ws
-  password: Aimer
-  port: 2053
-  server: 167.68.4.199
-  sni: epge.muarua.filegear-sg.me
-  type: trojan
+  port: 43
+  server: 220.128.110.108
+  servername: l.ayovo.netlib.re
+  tls: true
+  type: vless
+  uuid: 3e2e3c21-3fc8-468f-9ab5-e782bdf5bf97
   ws-opts:
     headers:
-      Host: epge.muarua.filegear-sg.me
-    path: '%2F%3Fed%3D2560%26proxyip%3Dts.hpc.tw'
+      Host: l.ayovo.netlib.re
+    path: '%2F%3Fed%3D2560'
+- name: '580|TW台湾(mibei77.com 米贝节点分享) #12'
+  network: ws
+  port: 51443
+  server: 114.32.9.249
+  servername: l.ayovo.netlib.re
+  tls: true
+  type: vless
+  uuid: 3e2e3c21-3fc8-468f-9ab5-e782bdf5bf97
+  ws-opts:
+    headers:
+      Host: l.ayovo.netlib.re
+    path: '%2F%3Fed%3D2560'
 - client-fingerprint: randomized
   name: 583|TS-13-01-TW
   network: ws
