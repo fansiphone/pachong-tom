@@ -719,9 +719,9 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 378,494,536,537,538,559|🇯🇵 日本 V2CROSS.COM
+  name: 378,437,494,536,537,538|🇰🇷KR-146.56.177.166-4730 | 19....
   network: ws
-  port: '443'
+  port: 443
   server: seoul03.zgjok.com
   servername: 🇰🇷KR-146.56.177.166-4730 | 19.481MB
   skip-cert-verify: false
@@ -734,7 +734,7 @@ proxies:
     path: /
 - cipher: aes-256-cfb
   country: 🇰🇷KR
-  name: 378,435,537,538,548,553,606|218.237.185.230_Claude
+  name: 378,537,538,548,553,606|218.237.185.230_Claude
   password: qwerREWQ@@
   port: 4652
   server: p141.panda001.net
@@ -742,7 +742,7 @@ proxies:
   udp: true
 - cipher: aes-256-cfb
   country: 🇰🇷KR
-  name: 378,435,537,538,548,553|yandex-3019
+  name: 378,537,538,548,553|yandex-2648
   password: qwerREWQ@@
   port: 4652
   server: 218.237.185.230
@@ -1117,7 +1117,7 @@ proxies:
   server: 154.90.62.168
   type: ss
 - cipher: aes-256-cfb
-  name: 378,537,553|yandex-2887
+  name: 378,537,553|yandex-2516
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 154.90.63.177
@@ -1125,14 +1125,14 @@ proxies:
   udp: true
 - cipher: aes-256-cfb
   country: 🇰🇷KR
-  name: 378,537,538,548|disney_KR
+  name: 378,537,538,548|🇰🇷KR_95
   password: qwerREWQ@@
   port: 13979
   server: 221.139.79.57
   type: ss
 - cipher: aes-256-gcm
   country: 🇰🇷KR
-  name: 378,537,538,548|netflix_KR
+  name: 378,537,538,548|🇰🇷KR_96
   password: RexnBgU7EV5ADxG
   port: 7001
   server: 141.164.45.187
@@ -1363,7 +1363,28 @@ proxies:
   server: 52.221.255.53
   type: ss
 - down: 10000
-  name: '423,424,425|韩国KR-HY2 #2'
+  name: 417|韩国KR-HY2
+  password: ba001863-ddd0-4beb-8933-8a75a898c7ec
+  port: 1443
+  server: kr.mjhy2.com
+  skip-cert-verify: true
+  sni: kr.mjhy2.com
+  type: hysteria2
+  up: 10000
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  name: 417|韩国KR-A
+  password: ba001863-ddd0-4beb-8933-8a75a898c7ec
+  port: 1664
+  server: a.mjanyt.com
+  skip-cert-verify: true
+  sni: any.mjanyt.com
+  type: anytls
+  udp: true
+- down: 10000
+  name: '423,424,425|韩国KR-HY2 #3'
   password: 918003d3-1f5d-425c-b39c-ff61781e48f1
   port: 1443
   server: kr.mjhy2.com
@@ -1375,7 +1396,7 @@ proxies:
   - h2
   - http/1.1
   client-fingerprint: chrome
-  name: '423,424,425|韩国KR-A #2'
+  name: '423,424,425|韩国KR-A #3'
   password: 918003d3-1f5d-425c-b39c-ff61781e48f1
   port: 1664
   server: a.mjanyt.com
@@ -1383,11 +1404,30 @@ proxies:
   sni: any.mjanyt.com
   type: anytls
   udp: true
+- alterId: 0
+  cipher: auto
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 440|Relay_ZZ-🇷KR_54
+  network: ws
+  port: 8443
+  server: c7.620720.xyz
+  servername: c7.620720.xyz
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 516d8a7a-3f0b-41d3-bad0-246116381516
+  ws-opts:
+    headers:
+      HOST: c7.620720.xyz
+    path: /
 - name: '456,559,580|韩国(yudou789.top 玉豆免费节点) #4'
   network: ws
   port: 8082
   server: 62.60.156.158
   servername: ennyfe.zipgd3vx91o.ddns-ip.net
+  skip-cert-verify: false
   tls: true
   type: vless
   uuid: 00000000-0000-4000-8000-000000000000
@@ -2039,25 +2079,27 @@ proxies:
     headers:
       Host: l.ayovo.netlib.re
     path: /?ed=2560
-- name: '523,524|🇰🇷_韩国_6 #1'
+- name: 523,524,566|🇰🇷 韩国 | KOR 3
   network: ws
   port: 50001
   server: 115.94.122.118
   servername: l.ayovo.netlib.re
   tls: true
   type: vless
+  udp: true
   uuid: 3e2e3c21-3fc8-468f-9ab5-e782bdf5bf97
   ws-opts:
     headers:
       Host: l.ayovo.netlib.re
     path: /?ed=2560
-- name: '523,524|🇰🇷_韩国_9 #1'
+- name: 523,524,566|🇰🇷 韩国 | KOR 2
   network: ws
   port: 10180
   server: 220.118.97.223
   servername: l.ayovo.netlib.re
   tls: true
   type: vless
+  udp: true
   uuid: 3e2e3c21-3fc8-468f-9ab5-e782bdf5bf97
   ws-opts:
     headers:
@@ -2773,7 +2815,7 @@ proxies:
   country: 🇰🇷KR
   h2-opts: {}
   http-opts: {}
-  name: 548|🇰🇷KR_89
+  name: 548|🇰🇷KR_99
   network: none
   port: 443
   server: 140.238.2.250
@@ -2785,7 +2827,7 @@ proxies:
   country: 🇰🇷KR
   h2-opts: {}
   http-opts: {}
-  name: '548|netflix_KR #1'
+  name: 548|netflix_KR
   network: tcp
   port: 8888
   server: 146.56.112.110
@@ -2857,6 +2899,19 @@ proxies:
   type: hysteria2
 - name: '559|🇰🇷_韩国 #2'
   network: ws
+  port: 50000
+  server: 118.223.252.190
+  servername: zybs.worker.ddns-ip.net
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 00000000-0000-4000-8000-000000000000
+  ws-opts:
+    headers:
+      Host: zybs.worker.ddns-ip.net
+    path: '%2F%40Marisa_kristi'
+- name: '559|🇰🇷_韩国 #6'
+  network: ws
   port: 50001
   server: 115.94.122.118
   servername: l.ayovo.netlib.re
@@ -2868,10 +2923,10 @@ proxies:
     headers:
       Host: l.ayovo.netlib.re
     path: '%2F%3Fed%3D2560'
-- name: '559|🇰🇷_韩国 #3'
+- name: '559|🇰🇷_韩国 #7'
   network: ws
-  port: 32764
-  server: 125.137.68.79
+  port: 12417
+  server: 119.195.168.105
   servername: l.ayovo.netlib.re
   skip-cert-verify: false
   tls: true
@@ -2881,7 +2936,7 @@ proxies:
     headers:
       Host: l.ayovo.netlib.re
     path: '%2F%3Fed%3D2560'
-- name: '559|🇰🇷_韩国 #4'
+- name: '559|🇰🇷_韩国 #8'
   network: ws
   port: 50001
   server: 180.230.0.137
@@ -2894,7 +2949,7 @@ proxies:
     headers:
       Host: l.ayovo.netlib.re
     path: '%2F%3Fed%3D2560'
-- name: '559|🇰🇷_韩国 #5'
+- name: '559|🇰🇷_韩国 #9'
   network: ws
   port: 10180
   server: 220.118.97.223
@@ -2907,7 +2962,20 @@ proxies:
     headers:
       Host: l.ayovo.netlib.re
     path: '%2F%3Fed%3D2560'
-- name: '559|🇰🇷_韩国 #6'
+- name: '559|🇰🇷_韩国 #10'
+  network: ws
+  port: 12547
+  server: 220.85.144.155
+  servername: l.ayovo.netlib.re
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 3e2e3c21-3fc8-468f-9ab5-e782bdf5bf97
+  ws-opts:
+    headers:
+      Host: l.ayovo.netlib.re
+    path: '%2F%3Fed%3D2560'
+- name: '559|🇰🇷_韩国 #11'
   network: ws
   port: 18093
   server: 221.157.139.47
@@ -2920,7 +2988,7 @@ proxies:
     headers:
       Host: l.ayovo.netlib.re
     path: '%2F%3Fed%3D2560'
-- name: '559|🇰🇷_韩国 #7'
+- name: '559|🇰🇷_韩国 #12'
   network: ws
   port: 12433
   server: 221.158.139.181
@@ -2933,17 +3001,6 @@ proxies:
     headers:
       Host: l.ayovo.netlib.re
     path: '%2F%3Fed%3D2560'
-- name: 559|🇰🇷 韩国 | KOR 4
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: j5tsCQhMqefjOq-shVxsZS195S4R7Ce_prmT8yFsvm8
-    short-id: d02456fe
-  server: 146.56.158.145
-  servername: ''
-  tls: false
-  type: vless
-  uuid: dc6a6c45-b13c-4f1d-8729-19b4d8bba4aa
 - name: 559|🇰🇷 韩国 | KOR 3-1
   network: tcp
   port: 443
@@ -2955,6 +3012,16 @@ proxies:
   tls: false
   type: vless
   uuid: eeaa07ca-2693-42f8-e544-a16521d8e922
+- name: '568|🇰🇷 韩国 | KOR #1'
+  obfs: salamander
+  obfs-password: salamander
+  password: 937f8940-ad8a-409f-93c3-4d6249af628f
+  port: 42382
+  server: kr2.miyazono-kaori.com
+  skip-cert-verify: false
+  sni: kr2.miyazono-kaori.com
+  tls: false
+  type: hysteria2
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   name: 578|26|🇰🇷 韩国特殊|@ripaojiedian
