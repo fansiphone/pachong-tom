@@ -44,20 +44,6 @@ proxies:
   type: vmess
   udp: true
   uuid: 09216880-6484-4c36-89b1-3fe4093b47b6
-- name: '127,426|🇫🇷 FR_1|2.3MB/s|GPT⁺|YT-FR|NF|... #1'
-  password: telegram-id-directvpn
-  port: 22223
-  server: 13.36.112.231
-  skip-cert-verify: true
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- name: '127,426|🇫🇷 FR_2|2.1MB/s|GPT⁺|YT-FR|NF|... #1'
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 13.36.112.231
-  skip-cert-verify: true
-  sni: trojan.burgerip.co.uk
-  type: trojan
 - alterId: 0
   cipher: auto
   name: '128,430|法国1 #2'
@@ -406,7 +392,7 @@ proxies:
   uuid: 52704bc6-015d-4c36-bead-87053a8a9641
 - alterId: 0
   cipher: auto
-  name: '378,536,537,538,559|🇧🇪 BE_14 #1'
+  name: '378,536,537,538,559|🇧🇪 BE_14 #2'
   network: ws
   port: 443
   server: 57.128.189.240
@@ -435,14 +421,15 @@ proxies:
       Host: ''
     path: /
 - cipher: aes-256-cfb
-  name: 378,537,538|🇫🇷FR-51.159.106.175-4899 | 22....
+  country: 🇫🇷FR
+  name: '378,537,538,548|🇫🇷FR_39 #2'
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 51.159.106.175
   type: ss
 - cipher: aes-256-cfb
   country: 🇫🇷FR
-  name: 378,440,537,538,548|🇫🇷FR_31
+  name: 378,537,538,548|🇫🇷FR_40
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 195.154.119.77
@@ -715,7 +702,7 @@ proxies:
   country: 🇧🇪BE
   h2-opts: {}
   http-opts: {}
-  name: 378,437,494,536,537,548|🇧🇪BE_21
+  name: 378,437,494,536,537,548|🇧🇪BE_27
   network: ws
   port: 443
   server: 57.128.189.240
@@ -728,16 +715,21 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: '378,536,537|🇫🇷FR-57.128.189.253-4705 #1'
+  country: 🇧🇪 BE
+  h2-opts: {}
+  http-opts: {}
+  name: '378,536,537,548|🇧🇪 BE_23 #2'
   network: ws
   port: 443
   server: 57.128.189.253
   servername: kapelleng.com
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
+    headers:
+      HOST: kapelleng.com
     path: /linkvws
 - alterId: 0
   cipher: auto
@@ -767,29 +759,36 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: '378,437,494,536,537|🇷FR-91.134.8.101-4712 #1'
+  country: 🇫🇷 FR
+  h2-opts: {}
+  http-opts: {}
+  name: 378,437,494,536,537,548|🇫🇷 FR_38
   network: ws
   port: 443
   server: 91.134.8.101
   servername: ''
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     path: /linkvws
-- name: '378,436,536,537|🇷FR-57.128.174.124-4714 #1'
+- country: 🇷FR
+  name: '378,435,436,536,537|🇷FR-57.128.174.124-4714 #1'
   password: d150c8c3-a667-4d3e-843c-739f8558c7d2
   port: 443
   server: uk-full.privateip.net
   skip-cert-verify: false
   type: trojan
-- name: '378,436,536,537|🇫🇷FR-51.254.142.162-4715 #1'
+  udp: true
+- country: 🇫🇷FR
+  name: '378,435,436,536,537|🇫🇷FR-51.254.142.162-4715 #1'
   password: 6c64e6f9-a76c-49eb-96d2-bf8b1afee4a3
   port: 443
   server: fr-full.privateip.net
   skip-cert-verify: false
   type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: '378,536,537|🇫🇷FR-146.59.55.50-4784 #1'
@@ -803,12 +802,14 @@ proxies:
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     path: /linkvws
-- name: '378,436,536,537|🇷FR-57.131.38.150-4789 #1'
+- country: 🇦UA
+  name: '378,435,436,536,537|🇷FR-57.131.38.150-4789 #1'
   password: 8d16a256-42d7-4431-8039-da1eb06cafbc
   port: 443
   server: it-full.privateip.net
   skip-cert-verify: false
   type: trojan
+  udp: true
 - cipher: chacha20-ietf-poly1305
   name: '378,537|FR-178.18.244.2-5646 #1'
   password: 97OnDEZYGja4
@@ -1570,6 +1571,20 @@ proxies:
   skip-cert-verify: false
   sni: trj.rollingnext.co.uk
   type: trojan
+- alterId: 0
+  cipher: auto
+  country: 🇷 FR
+  h2-opts: {}
+  http-opts: {}
+  name: 435| FR_35
+  network: ws
+  port: 443
+  server: 91.134.8.101
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-path: /linkvws
 - name: 460|法国_巴黎
   network: ws
   port: 443
@@ -1736,10 +1751,40 @@ proxies:
     headers:
       Host: lax1.ibgfw.top
     path: /xrenvws
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  fingerprint: ''
+  name: 470|4f9c2bff76ff4f4ab260904555285b...
+  network: ws
+  port: 80
+  server: mv1.multipubg.com
+  tls: false
+  type: vmess
+  udp: false
+  uuid: eaec8713-fc4d-465c-a7e6-e5ba034e3263
+  ws-opts:
+    path: /
+- name: '475,480,559|🇨🇳_中国 #39'
+  network: tcp
+  password: 2f0e3d6c-87b2-49a6-8091-99373bf39ab5
+  port: 14651
+  server: mofahx2.til69.com
+  skip-cert-verify: true
+  sni: v1-dy.ixigua.com
+  type: trojan
+  udp: true
+- name: 479,484,580|FR TROJAN-37 | free-nodes
+  password: humanity
+  port: 443
+  server: www.gossipglove.com
+  type: trojan
+  ws-opts:
+    path: '%2Fassignment'
 - client-fingerprint: chrome
   grpc-opts:
     grpc-service-name: UpdateService
-  name: 475,480,489|🟢🇫🇷[🎬🤖📺🎭]_github.com/Ruk1ng001...
+  name: 489|🟢🇫🇷[🎬🤖📺🎭]_github.com/Ruk1ng001...
   network: grpc
   port: 2083
   reality-opts:
@@ -1747,39 +1792,23 @@ proxies:
     short-id: 6da16b1335651b38
   server: 213.176.73.206
   servername: apple.com
-  skip-cert-verify: true
   tls: true
   type: vless
   udp: true
   uuid: 95abaefc-7861-417a-81b7-166cb788ce1a
   xudp: true
-- name: '479,484|🇫🇷 FR TROJAN-02 | free-nodes #1'
-  password: telegram-id-directvpn
-  port: 22223
-  server: 13.37.174.80
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- cipher: chacha20-ietf-poly1305
-  name: '479,484|🇫🇷 FR SS-88 | free-nodes #1'
-  password: 5bbe7bf7a282ad8b
-  port: 11201
-  server: 51.178.114.93
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: '479,484|🇫🇷 FR SS-111 | free-nodes #1'
-  password: jP4Z9J3S6tAldCaSdCtaZR7gZtV7rQg0
-  port: 443
-  server: 64.31.63.92
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: '479,484|🇫🇷 FR SS-132 | free-nodes #1'
-  password: f19e359a2f0c4f5f
-  port: 11201
-  server: 51.68.83.117
-  type: ss
+- name: 489,553|yandex-82
+  network: tcp
+  port: 2024
+  server: 85.133.204.131
+  tls: false
+  type: vless
+  udp: true
+  uuid: efdd92c0-c32d-4039-a564-374abaa5d8ce
+  xudp: true
 - alterId: 2
   cipher: auto
-  name: 489,553|yandex-3597
+  name: 489,553|yandex-220
   port: 30835
   server: 202.85.53.205
   skip-cert-verify: true
@@ -1788,6 +1817,12 @@ proxies:
   type: vmess
   udp: true
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- name: 507,559,580|FR VLESS-52 | free-nodes
+  port: 19702
+  server: sktr.berkeart.ir
+  tls: false
+  type: vless
+  uuid: 1f3b130d-7d29-45d1-b5aa-adc5cd94a885
 - client-fingerprint: chrome
   name: 507,559|FR VLESS-64 | free-nodes
   network: tcp
@@ -1800,6 +1835,18 @@ proxies:
   tls: false
   type: vless
   uuid: 3bc9c90e-dd6c-400d-bfb0-1d06b13fe46c
+- name: 507,559|FR VLESS-105 | free-nodes
+  network: ws
+  port: 443
+  server: zzula.ir
+  servername: zitel.digikala-aparat-zula.com
+  tls: true
+  type: vless
+  uuid: c249ca6f-1bde-479b-af96-da0e948a3800
+  ws-opts:
+    headers:
+      Host: zitel.digikala-aparat-zula.com
+    path: /admin
 - name: '523,524|🇫🇷_法国_3 #1'
   port: 48185
   server: frr.largesite.ir
@@ -1848,7 +1895,25 @@ proxies:
   server: pop.b1c7d2ec-e636-4521-a9f7-abb10044e3a5.heima360.cc
   skip-cert-verify: false
   type: trojan
-- name: '559|🇫🇷FR_38 #1'
+- alterId: 0
+  cipher: auto
+  country: 🇫🇷FR
+  h2-opts: {}
+  http-opts: {}
+  name: 548|🇫🇷FR_41
+  network: ws
+  port: 443
+  server: 91.134.8.93
+  servername: pelang.org
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      HOST: pelang.org
+    path: linkvws
+- name: '559|🇫🇷FR_38 #2'
   password: 6c64e6f9-a76c-49eb-96d2-bf8b1afee4a3
   port: 443
   server: fr-full.privateip.net
@@ -1866,7 +1931,7 @@ proxies:
   server: uk-full.privateip.net
   sni: uk-full.privateip.net
   type: trojan
-- name: '559|🇫🇷FR_39 #1'
+- name: '559|🇫🇷FR_39 #3'
   password: d86c421f-dbfe-4507-a864-f8f9e29d80e4
   port: 443
   server: de-full.privateip.net
@@ -1957,16 +2022,6 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: 559|法国_012904270
-  network: tcp
-  port: '550'
-  server: 162.19.248.238
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: ede27a79-b039-490b-932c-495de4b68880
-- alterId: 0
-  cipher: auto
   name: '577|法国1 #4'
   network: tcp
   port: '45072'
@@ -2011,13 +2066,6 @@ proxies:
   tls: false
   type: vmess
   uuid: a663bbab-4e9e-4080-b8ab-edd59fe1fdce
-- name: 580|FR TROJAN-37 | free-nodes
-  password: humanity
-  port: 443
-  server: www.gossipglove.com
-  type: trojan
-  ws-opts:
-    path: '%2Fassignment'
 - name: 580|FR VLESS-104 | free-nodes
   network: ws
   port: 443
