@@ -8,6 +8,26 @@ proxies:
   type: vmess
   udp: true
   uuid: 000a0d18-02fe-4cda-a68e-96b55e067567
+- name: '340,502,514,551,553,559,567,585,586|SE_speednode_0009 #3'
+  network: tcp
+  port: 443
+  server: secdn13.suio.me
+  servername: secdn13.suio.me
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: ba9ddd0d-5ffd-4d40-b76d-df32ecb092a1
+- name: '340,502,514,551,553,559,567,585,586,717|【机场推荐：https://a0a.xyz/】25 #1'
+  network: tcp
+  port: 443
+  server: secdn11.suio.me
+  servername: secdn11.suio.me
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: a7a9f670-44c0-45a9-8047-69db0203c142
 - alterId: 0
   cipher: auto
   name: '362,363|🇸🇪 SE 057 |  20.8MB/s #1'
@@ -159,9 +179,9 @@ proxies:
   server: 13.60.149.22
   sni: trojan.burgerip.co.uk
   type: trojan
-- client-fingerprint: chrome
+- client-fingerprint: random
   flow: xtls-rprx-vision
-  name: '475,480,523,524,559|🇺🇦_乌克兰 #2'
+  name: '475,480,523,524,559,580|俄羅斯 #5'
   network: tcp
   port: 443
   reality-opts:
@@ -170,14 +190,17 @@ proxies:
   server: 176.125.240.166
   servername: apple.com
   skip-cert-verify: false
-  tls: true
+  tls: false
   type: vless
   udp: true
   uuid: 88888888-8888-8888-8888-888888888888
+  ws-opts:
+    headers:
+      Host: apple.com
 - grpc-opts:
     grpc-mode: gun
     grpc-service-name: max.ru
-  name: 489,553|yandex-423
+  name: 489,553|yandex-287
   network: grpc
   port: 8080
   server: 62.182.192.232
@@ -186,16 +209,6 @@ proxies:
   udp: true
   uuid: d44175ee-d3e2-45d3-b16a-ea2705cbfe7b
   xudp: true
-- name: '502,514,551,553,567,585,586|SE_speednode_0009 #3'
-  network: tcp
-  port: 443
-  server: secdn13.suio.me
-  servername: secdn13.suio.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ba9ddd0d-5ffd-4d40-b76d-df32ecb092a1
 - grpc-opts:
     grpc-service-name: ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
   name: 559|🇸🇪[openproxylist.com] vless-SE
@@ -205,3 +218,37 @@ proxies:
   tls: false
   type: vless
   uuid: 34e01c8f-673f-43a3-b4dc-45f7f3121c16
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 566|🇸🇪 瑞典 | SWE
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: 5bGFIWSo4vlrd9Tv1yFcpdpSjrjYYN20SOWHYfighHc
+    short-id: abde0809
+  server: 95.163.182.206
+  servername: api-maps.yandex.ru
+  tls: true
+  type: vless
+  udp: true
+  uuid: a7a9f670-44c0-45a9-8047-69db0203c142
+- name: 566|🇸🇪 瑞典 | SWE 2
+  network: ws
+  password: T9BpZIVMNv
+  port: 8443
+  server: v3.dabache.top
+  skip-cert-verify: true
+  sni: sweden.vmaxpanel.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: sweden.vmaxpanel.com
+    path: /amd
+- name: '568|🇸🇪 瑞典 | SWE #1'
+  password: T9BpZIVMNv
+  port: 8443
+  server: v3.dabache.top
+  skip-cert-verify: true
+  sni: sweden.vmaxpanel.com
+  type: trojan
