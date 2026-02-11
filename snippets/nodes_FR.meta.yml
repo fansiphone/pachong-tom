@@ -44,16 +44,6 @@ proxies:
   type: vmess
   udp: true
   uuid: 09216880-6484-4c36-89b1-3fe4093b47b6
-- country: 🇫🇷FR
-  delay: 1172
-  name: 96,343,528,553|yandex-613
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 13.39.127.100
-  skip-cert-verify: true
-  sni: trojan.burgerip.co.uk
-  type: trojan
-  udp: true
 - alterId: 0
   cipher: auto
   name: '128,430|法国1 #2'
@@ -440,7 +430,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: '378,536,537,538,559|🇧🇪 BE_18 #1'
+  name: '378,536,537,538,559|🇧🇪 BE_18 #2'
   network: ws
   port: 443
   server: 57.128.189.240
@@ -475,7 +465,8 @@ proxies:
       Host: ''
     path: /
 - cipher: aes-256-cfb
-  name: 378,537,538|🇫🇷FR-195.154.119.77-0299 | 1.3...
+  country: 🇷FR
+  name: 378,440,537,538|🇫🇷FR-195.154.119.77-0299 | 1.3...
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 195.154.119.77
@@ -794,18 +785,22 @@ proxies:
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     path: /linkvws
-- name: '378,436,536,537|🇫🇷FR-57.128.174.124-4648 #2'
+- country: 🇫🇷FR
+  name: '378,435,436,536,537|🇫🇷FR-57.128.174.124-4648 #2'
   password: d150c8c3-a667-4d3e-843c-739f8558c7d2
   port: 443
   server: uk-full.privateip.net
   skip-cert-verify: false
   type: trojan
-- name: '378,436,536,537|🇷FR-51.254.142.162-4649 #1'
+  udp: true
+- country: 🇫🇷FR
+  name: '378,435,436,536,537|🇷FR-51.254.142.162-4649 #1'
   password: 6c64e6f9-a76c-49eb-96d2-bf8b1afee4a3
   port: 443
   server: fr-full.privateip.net
   skip-cert-verify: false
   type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: '378,536,537|🇫🇷FR-146.59.55.50-4692 #2'
@@ -1580,6 +1575,20 @@ proxies:
   skip-cert-verify: false
   sni: trj.rollingnext.co.uk
   type: trojan
+- alterId: 0
+  cipher: auto
+  country: 🇷 FR
+  h2-opts: {}
+  http-opts: {}
+  name: 435| FR_37
+  network: ws
+  port: 443
+  server: 91.134.8.101
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-path: /linkvws
 - name: 460|法国_巴黎
   network: ws
   port: 443
@@ -1746,6 +1755,21 @@ proxies:
     headers:
       Host: lax1.ibgfw.top
     path: /xrenvws
+- client-fingerprint: chrome
+  fingerprint: ''
+  name: 470|47a4cf62c4434c55b9f9c4feaa5a89...
+  network: ws
+  port: 22224
+  server: 13.38.208.62
+  servername: trojan.burgerip.co.uk
+  tls: true
+  type: vless
+  udp: false
+  uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+  ws-opts:
+    headers:
+      host: trojan.burgerip.co.uk
+    path: /telegram-channel-vlessconfig
 - name: '476,481|FR法国(mibei77.com 米贝节点分享) #1'
   password: 5cccb4da-8aee-4b01-be84-2056265e52dc
   port: 443
@@ -1755,7 +1779,7 @@ proxies:
   type: trojan
   udp: true
 - cipher: aes-256-gcm
-  name: 489,553|yandex-379
+  name: 489,553|yandex-618
   password: ec8a5fb8-3a94-48a6-890a-4a80aa70b501
   port: 39220
   server: 183.240.179.202
@@ -1765,7 +1789,7 @@ proxies:
 - client-fingerprint: chrome
   encryption: none
   flow: xtls-rprx-vision
-  name: 489,553|yandex-385
+  name: 489,553|yandex-624
   network: tcp
   port: 443
   reality-opts:
@@ -1782,7 +1806,7 @@ proxies:
   grpc-opts:
     grpc-mode: gun
     grpc-service-name: ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
-  name: 489,553|yandex-450
+  name: 489,553|yandex-689
   network: grpc
   port: 7842
   server: 35.180.132.117
@@ -1809,7 +1833,7 @@ proxies:
   uuid: cdeedd27-4b50-4f5b-b0c4-1967cc972f93
   xudp: true
 - cipher: aes-128-gcm
-  name: 489,553|yandex-589
+  name: 489,553|yandex-828
   password: 47d01b45-67d0-4e7b-873f-dcb40182ae65
   port: 10913
   server: 103.181.165.135
@@ -1826,7 +1850,25 @@ proxies:
   sni: fr.pddwdf.store
   tls: false
   type: hysteria2
-- name: 507|FR VLESS-52 | free-nodes
+- alpn:
+  - http/1.1
+  name: 507|FR TROJAN-37 | free-nodes
+  network: tcp
+  password: telegram-id-directvpn
+  port: 22223
+  server: 13.38.208.62
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- alpn:
+  - http/1.1
+  name: 507|FR TROJAN-38 | free-nodes
+  network: tcp
+  password: telegram-id-directvpn
+  port: 22223
+  server: 13.39.0.222
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- name: 507|FR VLESS-54 | free-nodes
   network: ws
   port: 80
   server: ov-france1.09vpn.com
@@ -1834,12 +1876,10 @@ proxies:
   type: vless
   uuid: 25f86cb1-2140-4085-abcb-c3a0ea7a4be0
   ws-opts:
-    headers:
-      Host: Join---i10VPN---Join---i10VPN---Join---i10VPN---Join---i10VPN
     path: /vless/
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: 507|FR VLESS-69 | free-nodes
+  name: 507|FR VLESS-73 | free-nodes
   network: tcp
   port: 8080
   reality-opts:
@@ -1852,7 +1892,7 @@ proxies:
   uuid: 5d0e6695-6c63-4168-b5e5-2a73ea86b1b1
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 507|FR VLESS-70 | free-nodes
+  name: 507|FR VLESS-74 | free-nodes
   network: tcp
   port: 8080
   reality-opts:
@@ -1865,17 +1905,35 @@ proxies:
   uuid: 5d0e6695-6c63-4168-b5e5-2a73ea86b1b1
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 507|FR VLESS-95 | free-nodes
+  name: 507,559|🇫🇷FR_3 | ⬇️ 1.0MB/s
   network: tcp
-  port: 2096
+  port: 443
   reality-opts:
-    public-key: 6G6julG6n7bkD8JvdLdGSniDXf9AYV12PGYNPQgg7xQ
-    short-id: f77d05d1bf4d
-  server: france.alpacalounge.com
-  servername: fr.alpacalounge.com
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+    short-id: ''
+  server: 138.124.79.8
+  servername: ''
   tls: false
   type: vless
-  uuid: a4ed2e0b-85d9-4a13-884c-eae6bb4f1800
+  uuid: d6b1327d-2bec-4366-a3a1-9b1284f95841
+- client-fingerprint: chrome
+  name: 507|FR VLESS-124 | free-nodes
+  network: tcp
+  port: 52042
+  reality-opts:
+    public-key: Z23_1wSIy1CNUEB7YEJwPZzCEsMTmzTNGe_h5bzEMHY
+    short-id: 8e8dcb9a67bf43f1
+  server: 185.156.72.124
+  servername: yandex.ru
+  tls: false
+  type: vless
+  uuid: f557eadb-1715-4c0b-aaae-f9b9577d827d
+- name: 507|FR VLESS-125 | free-nodes
+  port: 889
+  server: 45.132.185.227
+  tls: false
+  type: vless
+  uuid: f7ddcea8-95e3-48de-909f-bb5d3c47696b
 - name: '523,524|🇫🇷_法国_14 #1'
   network: ws
   port: 443
@@ -2034,6 +2092,16 @@ proxies:
   tls: false
   type: vless
   uuid: d6b1327d-2bec-4366-a3a1-9b1284f95841
+- country: 🇫🇷FR
+  delay: 1172
+  name: 528,553|yandex-3737
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 13.39.127.100
+  skip-cert-verify: true
+  sni: trojan.burgerip.co.uk
+  type: trojan
+  udp: true
 - name: 534|PC端如无法使用请点-TUN-视频体验-1B
   password: 99b86106-d5b2-4aa6-9281-f7890c336bc5
   port: 443
@@ -2103,7 +2171,7 @@ proxies:
   server: de-full.privateip.net
   sni: de-full.privateip.net
   type: trojan
-- name: '559,580|FR VLESS-54 | free-nodes #1'
+- name: '559,580|FR VLESS-54 | free-nodes #2'
   network: ws
   port: 80
   server: ov-france1.09vpn.com
@@ -2943,17 +3011,6 @@ proxies:
     headers:
       Host: sni.111000.indevs.in
     path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2520%2540WangCai2'
-- name: 559|🇫🇷FR_3 | ⬇️ 1.0MB/s
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-    short-id: ''
-  server: 138.124.79.8
-  servername: ''
-  tls: false
-  type: vless
-  uuid: d6b1327d-2bec-4366-a3a1-9b1284f95841
 - alterId: 0
   cipher: auto
   name: 559|法国 140
@@ -2992,6 +3049,30 @@ proxies:
   tls: false
   type: vmess
   uuid: ede27a79-b039-490b-932c-495de4b68880
+- cipher: chacha20-ietf-poly1305
+  name: 566|🇫🇷 法国 | FRA
+  password: OWEyZ
+  port: 8388
+  server: 185.120.59.59
+  type: ss
+  udp: true
+- alterId: 2
+  cipher: auto
+  name: 566|🇫🇷 法国 | FRA 2
+  port: 30835
+  server: v35.hdacd.com
+  tls: false
+  type: vmess
+  udp: true
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- name: 566|🇫🇷 法国 | FRA 3
+  password: telegram-id-directvpn
+  port: 22223
+  server: 51.45.54.119
+  skip-cert-verify: true
+  sni: trojan.burgerip.co.uk
+  type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: '577|法国1 #4'
