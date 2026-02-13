@@ -917,7 +917,7 @@ proxies:
   sni: www.alibaba.com
   type: trojan
   udp: true
-- name: '340,495,502,514,551,559|9|SG #2'
+- name: '340,495,502,514,551,559|9|SG #1'
   password: e7965e64-e001-4e8c-8273-39c61ff4a094
   port: 30000
   server: sg3.oomz.ru
@@ -2093,7 +2093,7 @@ proxies:
   type: ss
 - alterId: 4
   cipher: auto
-  name: '378,536,537|🇬SG-103.253.26.134-0194 #1'
+  name: '378,494,536,537|🇬SG-103.253.26.134-0194 #1'
   network: ws
   port: 443
   server: 103.253.26.134
@@ -2182,7 +2182,8 @@ proxies:
       Host: 180.215.130.123
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 378,537,538|🇸🇬SG-38.89.142.56-0261 | 0.178...
+  country: 🇺🇸 US
+  name: 378,435,537,538|🇸🇬SG-38.89.142.56-0261 | 0.178...
   password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
   port: 990
   server: 38.89.142.56
@@ -2806,12 +2807,14 @@ proxies:
   server: sg2-full.privateip.net
   skip-cert-verify: false
   type: trojan
-- name: '378,436,536,537|🇬SG-31.192.234.199-4716 #1'
+- country: 🇬SG
+  name: '378,435,436,536,537|🇬SG-31.192.234.199-4716 #1'
   password: d4bdfc72-7f0c-4ff0-aa4d-3530736f4088
   port: 443
   server: sg-full.privateip.net
   skip-cert-verify: false
   type: trojan
+  udp: true
 - cipher: aes-256-gcm
   name: '378,537|SG-139.99.68.21-5633 #1'
   password: zDNVedRFPQexG9v
@@ -4665,7 +4668,7 @@ proxies:
       Host: sni.jpmj.dev
     path: /?ed=2560&Telegram🇨🇳 @WangCai2
 - cipher: chacha20-ietf
-  name: 489,553|yandex-3429
+  name: 489,553|yandex-3370
   obfs: plain
   obfs-param: 892da69334.microsoft.com
   password: HuTaoCloud
@@ -4678,7 +4681,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 489,553|yandex-3431
+  name: 489,553|yandex-3372
   port: 28102
   server: 120.236.198.111
   skip-cert-verify: true
@@ -4689,7 +4692,7 @@ proxies:
   uuid: cdb3511c-b69a-4ac1-b314-09a004a82f5e
 - alterId: 0
   cipher: auto
-  name: 489,553|yandex-3457
+  name: 489,553|yandex-3398
   port: 28001
   server: 183.236.51.43
   skip-cert-verify: true
@@ -4701,7 +4704,7 @@ proxies:
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   host: www.python.org
-  name: 489,553|yandex-3470
+  name: 489,553|yandex-3411
   network: tcp
   port: 18460
   reality-opts:
@@ -4717,7 +4720,7 @@ proxies:
 - grpc-opts:
     grpc-mode: gun
     grpc-service-name: video
-  name: 489,553|yandex-3641
+  name: 489,553|yandex-3582
   network: grpc
   packet-encoding: xudp
   port: 443
@@ -4746,13 +4749,60 @@ proxies:
       Host: sg.dalxy.eu.org
     path: a88a71fa-ed7c-48d3-89e0-74a00d605d88-vm
   xudp: true
-- name: 507|SG VLESS-102 | free-nodes
+- alpn:
+  - ''
+  client-fingerprint: random
+  flow: xtls-rprx-vision
+  grpc-opts:
+    grpc-service-name: ''
+  name: 507|SG VLESS-145 | free-nodes
   network: tcp
-  port: 59100
-  server: 47.82.1.12
-  tls: false
+  port: 443
+  server: s470.ccgfw.top
+  servername: u729804u7a22s470.ccgfw.top
+  tls: true
   type: vless
-  uuid: ca0e8520-42cd-49db-cfec-1295834b9e21
+  uuid: c2b6ef4f-58b5-34df-a9b2-b9423df641d9
+  ws-opts:
+    headers:
+      Host: s470.ccgfw.top
+    path: ''
+- alpn:
+  - ''
+  client-fingerprint: random
+  flow: xtls-rprx-vision
+  grpc-opts:
+    grpc-service-name: ''
+  name: 507|SG VLESS-155 | free-nodes
+  network: tcp
+  port: 443
+  server: s469.ccgfw.top
+  servername: u729804u5821s469.ccgfw.top
+  tls: true
+  type: vless
+  uuid: c2b6ef4f-58b5-34df-a9b2-b9423df641d9
+  ws-opts:
+    headers:
+      Host: s469.ccgfw.top
+    path: ''
+- alpn:
+  - ''
+  client-fingerprint: random
+  flow: xtls-rprx-vision
+  grpc-opts:
+    grpc-service-name: ''
+  name: 507|SG VLESS-178 | free-nodes
+  network: tcp
+  port: 443
+  server: s468.ccgfw.top
+  servername: u729804ucf4fs468.ccgfw.top
+  tls: true
+  type: vless
+  uuid: c2b6ef4f-58b5-34df-a9b2-b9423df641d9
+  ws-opts:
+    headers:
+      Host: s468.ccgfw.top
+    path: ''
 - cipher: aes-256-cfb
   name: '513,517,578|1|_SG_ #2'
   password: amazonskr05
@@ -4861,21 +4911,6 @@ proxies:
   server: jry.izenny.com
   type: ss
   udp: true
-- alterId: 0
-  cipher: auto
-  name: 536,538|🇸🇬SG-158.178.230.34-0272 | 4.1...
-  network: ws
-  port: 443
-  server: singapore02.zgjok.com
-  servername: ''
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: 780c7671-e8c8-45ab-922b-4fdfc4310aa0
-  ws-opts:
-    headers:
-      Host: singapore02.zgjok.com
-    path: /
 - alterId: 4
   cipher: auto
   name: 536|🇸🇬SG-103.253.26.20-0355
@@ -4892,7 +4927,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 542,553|yandex-3255
+  name: 542,553|yandex-3626
   port: 19841
   server: xgcma.dx002.top
   skip-cert-verify: true
@@ -4902,7 +4937,7 @@ proxies:
   uuid: 075c16e6-67cb-3599-aa5a-025b478db156
 - alterId: 0
   cipher: auto
-  name: 542,553|yandex-3256
+  name: 542,553|yandex-3627
   port: 19842
   server: xgcta.dx002.top
   skip-cert-verify: true
@@ -4912,7 +4947,7 @@ proxies:
   uuid: 075c16e6-67cb-3599-aa5a-025b478db156
 - alterId: 0
   cipher: auto
-  name: 542,553|yandex-3266
+  name: 542,553|yandex-3637
   network: ws
   port: 20011
   server: htsub-2024.899696998.xyz
@@ -4925,7 +4960,7 @@ proxies:
     headers:
       Host: yyyt-sg-2024.mofaxw.top
     path: /2024
-- name: 542,553|yandex-3296
+- name: 542,553|yandex-3667
   password: a6ba0ada-cef1-3009-98dc-a1300ca76ed6
   port: 20129
   server: gy.58n.net
@@ -4934,7 +4969,7 @@ proxies:
   tfo: true
   type: trojan
   udp: true
-- name: 542,553|yandex-3297
+- name: 542,553|yandex-3668
   password: a6ba0ada-cef1-3009-98dc-a1300ca76ed6
   port: 20130
   server: gy.58n.net
@@ -4945,7 +4980,7 @@ proxies:
   udp: true
 - grpc-opts:
     grpc-service-name: sgvip101
-  name: 542,553|yandex-3324
+  name: 542,553|yandex-3695
   network: grpc
   password: 3c668456-cc9c-3392-9014-0f73e5a09bb3
   port: 11223
@@ -4956,7 +4991,7 @@ proxies:
   udp: true
 - grpc-opts:
     grpc-service-name: sgvip101
-  name: 542,553|yandex-3325
+  name: 542,553|yandex-3696
   network: grpc
   password: 3c668456-cc9c-3392-9014-0f73e5a09bb3
   port: 21223
@@ -4967,7 +5002,7 @@ proxies:
   udp: true
 - grpc-opts:
     grpc-service-name: sgvip101
-  name: 542,553|yandex-3326
+  name: 542,553|yandex-3697
   network: grpc
   password: 3c668456-cc9c-3392-9014-0f73e5a09bb3
   port: 31223
@@ -4978,7 +5013,7 @@ proxies:
   udp: true
 - grpc-opts:
     grpc-service-name: sgvip101
-  name: 542,553|yandex-3327
+  name: 542,553|yandex-3698
   network: grpc
   password: 3c668456-cc9c-3392-9014-0f73e5a09bb3
   port: 41223
@@ -4989,7 +5024,7 @@ proxies:
   udp: true
 - grpc-opts:
     grpc-service-name: sgvip101
-  name: 542,553|yandex-3328
+  name: 542,553|yandex-3699
   network: grpc
   password: 3c668456-cc9c-3392-9014-0f73e5a09bb3
   port: 51223
@@ -5000,14 +5035,14 @@ proxies:
   udp: true
 - alterId: 2
   cipher: auto
-  name: 542,553|yandex-3363
+  name: 542,553|yandex-3734
   port: 23613
   server: traffic.a1.szx.gfw250.com
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: 63c0e39e-a5b1-3cb6-a9cf-ec4e98629d4c
+  uuid: dfc183ab-dcfc-3ce3-8a0c-61851f47a720
 - name: '545,546|新加坡[02] #1'
   password: 4568465a-a435-4569-b3ab-7f606018474f
   port: 443
@@ -5416,22 +5451,77 @@ proxies:
     headers:
       Host: n1747624271.lie5d.cyou
     path: /
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 566|🇸🇬 新加坡 | SGP
+  network: tcp
+  port: 30403
+  reality-opts:
+    public-key: avy1Z524LLGhXuHyCYV_k_hqi_fnHPCNSdNE85Z4qDo
+    short-id: 1b3f5a2e
+  server: freea.glyphara.com
+  servername: www.samsung.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 08da8e15-b6ce-4625-b94a-ae0d157df2c6
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: '566|🇸🇬 新加坡 | SGP 2 #1'
+  network: tcp
+  port: 30402
+  reality-opts:
+    public-key: uTOYAGREMpfEr3cQFcLwgMAWwwxjS3e2Yw32kCdN3Ew
+    short-id: f5f6e6f4
+  server: freea.glyphara.com
+  servername: itunes.apple.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: a77d253c-f960-405d-95b3-7ad4f21336ad
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 566|🇸🇬 新加坡 | SGP 3
+  network: tcp
+  port: 30401
+  reality-opts:
+    public-key: ZeXA8rcM3TV466jK83J157gY7U2JTI9KP9nmn_Nbawk
+    short-id: 105a652c
+  server: freea.glyphara.com
+  servername: learn.microsoft.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: a77d253c-f960-405d-95b3-7ad4f21336ad
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 566|🇸🇬 新加坡 | SGP 4
+  network: tcp
+  port: 30402
+  reality-opts:
+    public-key: uTOYAGREMpfEr3cQFcLwgMAWwwxjS3e2Yw32kCdN3Ew
+    short-id: f5f6e6f4
+  server: freea.glyphara.com
+  servername: itunes.apple.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 082ef81a-e6a9-48d0-a1f7-0dca70f149d4
+- auth: e4543370-0591-45c5-ba43-14f53fd58b4c
+  name: 566|🇸🇬 新加坡 | SGP 5
+  password: e4543370-0591-45c5-ba43-14f53fd58b4c
+  port: 8443
+  server: xjphkg.jjxcloud.xyz
+  skip-cert-verify: false
+  sni: xjphkg.jjxcloud.xyz
+  type: hysteria2
+  udp: true
 - name: 566|🇸🇬 新加坡 | SGP 6
   password: d607a577-978c-487a-a2ad-788e4129162a
   port: 18443
   server: 42.2.28.64
   skip-cert-verify: true
   type: anytls
-  udp: true
-- alterId: 0
-  name: 574|🇬SG新加坡3
-  password: BxceQaOe
-  port: 3579
-  server: 95.40.55.141
-  skip-cert-verify: true
-  sni: t.me%2Fripaojiedian
-  tls: true
-  type: trojan
   udp: true
 - alterId: 0
   cipher: auto
