@@ -184,7 +184,7 @@ proxies:
   type: trojan
   ws-opts:
     path: '%2F'
-- name: 340,495,502,514,551,559|8|TW
+- name: '340,495,502,514,551,559|9|TW #2'
   password: e7965e64-e001-4e8c-8273-39c61ff4a094
   port: 30000
   server: tw.oomz.ru
@@ -526,14 +526,15 @@ proxies:
   server: 154.223.20.79
   type: ss
   udp: true
-- name: '378,537|🇼TW-114.33.57.170-0513 #1'
+- name: 378,537,553,566|🇹🇼 🇨🇳 台湾 | TWN 6
   network: ws
   password: 5a2c16f9
   port: 443
   server: 114.33.57.170
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: 5c.hhhhh.eu.org
   type: trojan
+  udp: true
   ws-opts:
     headers:
       Host: 5c.hhhhh.eu.org
@@ -550,7 +551,7 @@ proxies:
     headers:
       Host: 5c.hhhhh.eu.org
     path: /125.228.236.138:443
-- name: '378,537|🇹🇼TW-220.128.110.108-0515 #2'
+- name: 378,537,553,566|🇹🇼 🇨🇳 台湾 | TWN 3
   network: ws
   password: 5a2c16f9
   port: 43
@@ -558,18 +559,20 @@ proxies:
   skip-cert-verify: false
   sni: 5c.hhhhh.eu.org
   type: trojan
+  udp: true
   ws-opts:
     headers:
       Host: 5c.hhhhh.eu.org
     path: /220.128.110.108:43
-- name: '378,537|🇹🇼TW-125.228.141.233-0516 #2'
+- name: 378,537,553,566|🇹🇼 🇨🇳 台湾 | TWN 2
   network: ws
   password: 5a2c16f9
   port: 443
   server: 125.228.141.233
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: 5c.hhhhh.eu.org
   type: trojan
+  udp: true
   ws-opts:
     headers:
       Host: 5c.hhhhh.eu.org
@@ -1025,7 +1028,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: '378,437,536,537|TW-157.20.135.41-5230 #1'
+  name: '378,536,537|TW-157.20.135.41-5230 #1'
   network: ws
   port: 52512
   server: aflzzul.meiquankongjian.com
@@ -1271,16 +1274,17 @@ proxies:
     headers:
       Host: tw1bQiWSE4x.fzbqfrse.xyz
     path: /video/GQ2qE5Us9g
-- cipher: chacha20-ietf-poly1305
-  name: 489,553|yandex-2732
-  password: e0e58053-ad7d-4436-8fd0-bc6c5b563f70
-  port: 10790
-  server: 36.141.117.92
+- name: 472,473,474,489,502,553|yandex-3375
+  password: b2e15b49-6606-4c62-baff-7015390b3c6a
+  port: 31101
+  server: 220.130.58.136
+  skip-cert-verify: true
+  sni: green2.cdntencentmusic.com
   tfo: true
-  type: ss
+  type: trojan
   udp: true
 - cipher: chacha20-ietf
-  name: 489,553|yandex-2738
+  name: 489,553|yandex-3226
   obfs: plain
   obfs-param: 892da69334.microsoft.com
   password: HuTaoCloud
@@ -1291,8 +1295,53 @@ proxies:
   tfo: true
   type: ssr
   udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 489,553|yandex-3220
+  password: e0e58053-ad7d-4436-8fd0-bc6c5b563f70
+  port: 10790
+  server: 36.141.117.92
+  tfo: true
+  type: ss
+  udp: true
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  host: academy.nvidia.com
+  name: 489,553|yandex-3360
+  network: tcp
+  port: 60101
+  reality-opts:
+    public-key: uQgwZVJcw4Gf06rPfllYdyqp-ZH5xQ2BnRMxoSR8DT8
+    short-id: d69b618d
+  server: 111.243.121.219
+  servername: academy.nvidia.com
+  skip-cert-verify: true
+  tfo: true
+  tls: true
+  type: vless
+  uuid: 437bd464-b524-3812-ac02-85483bcf7407
+- name: 489|🟢🇹🇼[🤖📺🎭🎪]_github.com/Ruk1ng001...
+  password: 437bd464-b524-3812-ac02-85483bcf7407
+  port: 54175
+  server: 114.37.211.12
+  skip-cert-verify: true
+  tfo: true
+  type: anytls
+- name: '489|🟢🇹🇼[🤖📺🎭🎪]_github.com/Ruk1ng001... #1'
+  password: 437bd464-b524-3812-ac02-85483bcf7407
+  port: 55450
+  server: 114.37.211.12
+  skip-cert-verify: true
+  tfo: true
+  type: anytls
+- name: 489|🟢🇹🇼[🤖🎭🎪✨]_github.com/Ruk1ng001...
+  password: 437bd464-b524-3812-ac02-85483bcf7407
+  port: 55326
+  server: 114.37.211.12
+  skip-cert-verify: true
+  tfo: true
+  type: anytls
 - cipher: chacha20-ietf
-  name: 489,553|yandex-2741
+  name: 489,553|yandex-3229
   obfs: plain
   obfs-param: 892da69334.microsoft.com
   password: HuTaoCloud
@@ -1304,101 +1353,26 @@ proxies:
   type: ssr
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 489,553|yandex-2742
+  name: 489,553|yandex-3230
   password: e0e58053-ad7d-4436-8fd0-bc6c5b563f70
   port: 10789
   server: 36.141.117.92
   tfo: true
   type: ss
   udp: true
-- name: 489|🟢🇹🇼[🤖📺🎭🎪]_github.com/Ruk1ng001...
-  password: 437bd464-b524-3812-ac02-85483bcf7407
-  port: 54175
-  server: 114.37.211.12
-  skip-cert-verify: true
+- cipher: chacha20-ietf
+  name: 489|🔴🇹🇼[🎬🤖📺🎭]_github.com/Ruk1ng001...
+  obfs: plain
+  obfs-param: 892da69334.microsoft.com
+  password: HuTaoCloud
+  port: 12506
+  protocol: auth_aes128_sha1
+  protocol-param: 69334:Q4NAywZ1OHYZcsd6
+  server: 113.108.6.209
   tfo: true
-  type: anytls
-- client-fingerprint: chrome
-  name: 489,523,524,553|yandex-2759
-  network: ws
-  port: 10443
-  server: 203.69.248.40
-  servername: a926adb5.lfree.ccwu.cc
-  tls: true
-  type: vless
+  type: ssr
   udp: true
-  uuid: 69905933-1b12-24fd-4ded-568ee4322895
-  ws-opts:
-    headers:
-      Host: a926adb5.lfree.ccwu.cc
-    path: /socks5=44fa737d:1bab4a4504ca@38.96.191.150:21719
-  xudp: true
-- name: 489|🟢🇹🇼[🎬🤖📺🎭]_github.com/Ruk1ng001...
-  password: 437bd464-b524-3812-ac02-85483bcf7407
-  port: 55450
-  server: 114.37.211.12
-  skip-cert-verify: true
-  tfo: true
-  type: anytls
-- cipher: chacha20-ietf-poly1305
-  name: 489,553|yandex-2763
-  password: c6d61cd1-d3dc-405e-afb2-d67815f4e4da
-  port: 43076
-  server: ldu.izenny.com
-  type: ss
-  udp: true
-- client-fingerprint: chrome
-  name: 489,523,524,553,566|🇹🇼 🇨🇳 台湾 | TWN 4
-  network: ws
-  port: 443
-  server: 43.213.197.32
-  servername: a926adb5.lfree.ccwu.cc
-  tls: true
-  type: vless
-  udp: true
-  uuid: 69905933-1b12-24fd-4ded-568ee4322895
-  ws-opts:
-    headers:
-      Host: a926adb5.lfree.ccwu.cc
-    path: /socks5=44fa737d:1bab4a4504ca@38.96.191.150:21719
-  xudp: true
-- name: '489|🟢🇹🇼[🤖📺🎭🎪]_github.com/Ruk1ng001... #1'
-  password: 437bd464-b524-3812-ac02-85483bcf7407
-  port: 55326
-  server: 114.37.211.12
-  skip-cert-verify: true
-  tfo: true
-  type: anytls
-- client-fingerprint: chrome
-  name: 489,523,524,553,566|🇹🇼 🇨🇳 台湾 | TWN 2
-  network: ws
-  port: 43
-  server: 220.128.110.108
-  servername: a926adb5.lfree.ccwu.cc
-  tls: true
-  type: vless
-  udp: true
-  uuid: 69905933-1b12-24fd-4ded-568ee4322895
-  ws-opts:
-    headers:
-      Host: a926adb5.lfree.ccwu.cc
-    path: /socks5=44fa737d:1bab4a4504ca@38.96.191.150:21719
-  xudp: true
-- name: 489,553|yandex-2846
-  network: ws
-  password: 5a2c16f9
-  port: 8443
-  server: 103.137.63.227
-  skip-cert-verify: true
-  sni: 5c.hhhhh.eu.org
-  tfo: true
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: 5c.hhhhh.eu.org
-    path: '%2F103.137.63.227%3A8443'
-- name: 489,553|yandex-2848
+- name: 489,553|yandex-3336
   network: ws
   password: 5a2c16f9
   port: 443
@@ -1412,33 +1386,83 @@ proxies:
     headers:
       Host: 5c.hhhhh.eu.org
     path: '%2F114.33.57.170%3A443'
+- client-fingerprint: chrome
+  name: '489,523,524,553,566|🇹🇼 🇨🇳 台湾 | TWN #1'
+  network: ws
+  port: 10443
+  server: 203.69.248.40
+  servername: a926adb5.lfree.ccwu.cc
+  tls: true
+  type: vless
+  udp: true
+  uuid: 69905933-1b12-24fd-4ded-568ee4322895
+  ws-opts:
+    headers:
+      Host: a926adb5.lfree.ccwu.cc
+    path: /socks5=44fa737d:1bab4a4504ca@38.96.191.150:21719
+  xudp: true
 - cipher: chacha20-ietf-poly1305
-  name: 489,553|yandex-2861
+  name: 489,553|yandex-3349
   password: c6d61cd1-d3dc-405e-afb2-d67815f4e4da
   port: 18148
   server: ldu.izenny.com
   type: ss
   udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 489,553|yandex-3251
+  password: c6d61cd1-d3dc-405e-afb2-d67815f4e4da
+  port: 43076
+  server: ldu.izenny.com
+  type: ss
+  udp: true
 - client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  host: academy.nvidia.com
-  name: 489,553|yandex-2872
-  network: tcp
-  port: 60101
-  reality-opts:
-    public-key: uQgwZVJcw4Gf06rPfllYdyqp-ZH5xQ2BnRMxoSR8DT8
-    short-id: d69b618d
-  server: 111.243.121.219
-  servername: academy.nvidia.com
-  skip-cert-verify: true
-  tfo: true
+  name: 489,523,524,553|yandex-3300
+  network: ws
+  port: 443
+  server: 43.213.197.32
+  servername: a926adb5.lfree.ccwu.cc
   tls: true
   type: vless
-  uuid: 437bd464-b524-3812-ac02-85483bcf7407
+  udp: true
+  uuid: 69905933-1b12-24fd-4ded-568ee4322895
+  ws-opts:
+    headers:
+      Host: a926adb5.lfree.ccwu.cc
+    path: /socks5=44fa737d:1bab4a4504ca@38.96.191.150:21719
+  xudp: true
+- client-fingerprint: chrome
+  name: 489,523,524,553|yandex-3319
+  network: ws
+  port: 43
+  server: 220.128.110.108
+  servername: a926adb5.lfree.ccwu.cc
+  tls: true
+  type: vless
+  udp: true
+  uuid: 69905933-1b12-24fd-4ded-568ee4322895
+  ws-opts:
+    headers:
+      Host: a926adb5.lfree.ccwu.cc
+    path: /socks5=44fa737d:1bab4a4504ca@38.96.191.150:21719
+  xudp: true
+- name: 489,553|yandex-3334
+  network: ws
+  password: 5a2c16f9
+  port: 8443
+  server: 103.137.63.227
+  skip-cert-verify: true
+  sni: 5c.hhhhh.eu.org
+  tfo: true
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: 5c.hhhhh.eu.org
+    path: '%2F103.137.63.227%3A8443'
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   host: buylite.music.apple.com
-  name: 489,553|yandex-2890
+  name: 489,553|yandex-3378
   network: tcp
   port: 10001
   reality-opts:
@@ -1451,6 +1475,19 @@ proxies:
   tls: true
   type: vless
   uuid: ecc0e0f1-d225-411d-8959-76a014143d11
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 507|TW VLESS-65 | free-nodes
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: q42m1wg11kZLyRtjaKus8T-NNl1vriRG3V1eVTL6ICc
+    short-id: 071d2947bac1
+  server: download.riferoser.icu
+  servername: www.tradingview.com
+  tls: false
+  type: vless
+  uuid: 3994b2e1-d52c-4536-9848-0b63d74560fa
 - cipher: aes-256-gcm
   client-fingerprint: chrome
   name: '513,517|15|🇹🇼 台湾|@ripaojiedian #1'
@@ -1639,7 +1676,7 @@ proxies:
     path: /223.165.4.57:443
 - alterId: 0
   cipher: auto
-  name: 542,553|yandex-3104
+  name: 542,553|yandex-71
   port: 19821
   server: xgcma.dx002.top
   skip-cert-verify: true
@@ -1649,7 +1686,7 @@ proxies:
   uuid: 075c16e6-67cb-3599-aa5a-025b478db156
 - alterId: 0
   cipher: auto
-  name: 542,553|yandex-3105
+  name: 542,553|yandex-72
   port: 19822
   server: xgcta.dx002.top
   skip-cert-verify: true
@@ -1659,14 +1696,14 @@ proxies:
   uuid: 075c16e6-67cb-3599-aa5a-025b478db156
 - alterId: 2
   cipher: auto
-  name: 542,553|yandex-3211
+  name: 542,553|yandex-178
   port: 23619
   server: traffic.a1.szx.gfw250.com
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: f4bc2f77-b32c-3385-918e-db4d01873695
+  uuid: cdea10b4-edf7-36e3-83a9-d22cdd0cf147
 - cipher: chacha20-ietf-poly1305
   name: 558|0| 01 | 1x TW
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
@@ -1738,7 +1775,7 @@ proxies:
     headers:
       Host: fadawtawd.zhangwei.li
     path: /zh-cn
-- name: 559|防失效github+SubCrawler台湾_0215180...
+- name: 559|防失效github+SubCrawler台湾_0216040...
   password: 0db758b4-e2ea-4716-bc9f-089bf6a1a30b
   port: 50017
   server: zz.9966663.xyz
@@ -1746,7 +1783,7 @@ proxies:
   sni: do-vnyear.9966663.xyz
   tls: false
   type: hysteria2
-- name: 559|台湾_021518040
+- name: 559|台湾_021604056
   password: 0db758b4-e2ea-4716-bc9f-089bf6a1a30b
   port: 50018
   server: zz.9966663.xyz
@@ -1754,7 +1791,7 @@ proxies:
   sni: do-vnyear.9966663.xyz
   tls: false
   type: hysteria2
-- name: 559|台湾_021518041
+- name: 559|台湾_021604057
   password: 0db758b4-e2ea-4716-bc9f-089bf6a1a30b
   port: 50019
   server: zz.9966663.xyz
@@ -1762,6 +1799,46 @@ proxies:
   sni: do-vnyear.9966663.xyz
   tls: false
   type: hysteria2
+- name: '559|台湾(yudou789.top 玉豆免费节点) #3'
+  network: ws
+  port: 10240
+  server: 34.81.140.124
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 69905933-1b12-24fd-4ded-568ee4322895
+  ws-opts:
+    headers:
+      Host: a926adb5.lfree.ccwu.cc
+    path: '%2Fsocks5%253D44fa737d%253A1bab4a4504ca%254038.96.191.150%253A21719'
+- alterId: 0
+  cipher: auto
+  name: 559|台湾_021604018
+  network: ws
+  port: '14610'
+  server: akh1.alibabaapi6.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: a2f33600-7ff1-46c4-abc9-7deb843e88a3
+  ws-opts:
+    headers:
+      Host: akh1.alibabaapi6.com
+    path: /5e60be4f/
+- alterId: 0
+  cipher: auto
+  name: 559|台湾_021604019
+  network: ws
+  port: '14310'
+  server: akh2.alibabaapi6.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: a2f33600-7ff1-46c4-abc9-7deb843e88a3
+  ws-opts:
+    headers:
+      Host: akh2.alibabaapi6.com
+    path: /5e60be4f/
 - name: '560,561|TW Moon #1'
   password: exaxgqkKkd0TAMrCxeonWg==
   port: 1443
