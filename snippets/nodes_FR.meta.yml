@@ -84,20 +84,6 @@ proxies:
   type: vmess
   udp: true
   uuid: 21629fa5-8a06-4c2c-bdaa-85a6fe5222d5
-- alterId: 0
-  cipher: auto
-  name: 255|🇫🇷 法国
-  network: ws
-  port: 30837
-  server: v37.heduian.link
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      Host: ocbc.com
-    path: /oooo
 - cipher: aes-256-cfb
   name: '356,378,537|🇳🇱NL-51.15.27.48-8190 #2'
   password: f8f7aCzcPKbsF8p3
@@ -442,7 +428,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: '378,536,537,538,559|🇧🇪 BE_25 #1'
+  name: '378,536,537,538,559|🇧🇪 BE_25 #2'
   network: ws
   port: 443
   server: 57.128.189.240
@@ -471,7 +457,8 @@ proxies:
       Host: ''
     path: /
 - cipher: aes-256-cfb
-  name: 378,537,538|🇫🇷FR-51.159.106.175-0276 | 29....
+  country: 🇫🇷FR
+  name: 378,537,538,548|🇫🇷FR_57
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 51.159.106.175
@@ -727,25 +714,33 @@ proxies:
     path: /ws
 - alterId: 0
   cipher: auto
-  name: '378,536,537|🇷FR-57.128.189.253-4638 #1'
+  country: 🇧🇪 BE
+  h2-opts: {}
+  http-opts: {}
+  name: '378,536,537,548|🇧🇪 BE_21 #1'
   network: ws
   port: 443
   server: 57.128.189.253
   servername: kapelleng.com
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
+    headers:
+      HOST: kapelleng.com
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: '378,437,536,537|🇫🇷FR-57.128.189.240-4643 #2'
+  country: 🇧🇪BE
+  h2-opts: {}
+  http-opts: {}
+  name: 378,437,536,537,548|🇧🇪BE_44
   network: ws
   port: 443
   server: 57.128.189.240
   servername: ''
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
@@ -753,38 +748,51 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: '378,536,537|🇷FR-141.94.155.224-4651 #1'
+  country: 🇩🇪 DE
+  h2-opts: {}
+  http-opts: {}
+  name: 378,536,537,548|🇩🇪 DE_52
   network: ws
   port: 443
   server: 141.94.155.224
   servername: fapeng.org
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
+    headers:
+      HOST: fapeng.org
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: '378,536,537|🇷FR-141.95.126.134-4652 #1'
+  country: 🇩🇪 DE
+  h2-opts: {}
+  http-opts: {}
+  name: 378,536,537,548|🇩🇪 DE_53
   network: ws
   port: 443
   server: 141.95.126.134
   servername: jamekk.org
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
+    headers:
+      HOST: jamekk.org
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: '378,437,536,537|🇫🇷FR-91.134.8.101-4656 #2'
+  country: 🇫🇷 FR
+  h2-opts: {}
+  http-opts: {}
+  name: 378,437,536,537,548|🇫🇷 FR_56
   network: ws
   port: 443
   server: 91.134.8.101
   servername: ''
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
@@ -804,16 +812,21 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: '378,536,537|🇷FR-146.59.55.50-4689 #1'
+  country: 🇳🇴 NO
+  h2-opts: {}
+  http-opts: {}
+  name: 378,536,537,548|🇳🇴 NO_120
   network: ws
   port: 443
   server: 146.59.55.50
   servername: o.metuji.com
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
+    headers:
+      HOST: o.metuji.com
     path: /linkvws
 - cipher: chacha20-ietf-poly1305
   name: '378,537|FR-178.18.244.2-5537 #1'
@@ -1786,7 +1799,7 @@ proxies:
   xudp: true
 - client-fingerprint: chrome
   encryption: none
-  name: 489,553|yandex-291
+  name: 489,553|yandex-3500
   network: ws
   port: 8443
   server: 31.59.120.141
@@ -1839,7 +1852,7 @@ proxies:
   xudp: true
 - client-fingerprint: chrome
   encryption: none
-  name: 489,553|yandex-344
+  name: 489,553|yandex-3553
   network: tcp
   port: 8443
   reality-opts:
@@ -1859,7 +1872,7 @@ proxies:
   type: socks5
 - alterId: 2
   cipher: auto
-  name: 489,553|yandex-364
+  name: 489,553|yandex-3573
   port: 30835
   server: 144.48.186.104
   skip-cert-verify: true
@@ -1896,35 +1909,22 @@ proxies:
   uuid: 0e90f352-e9bc-4834-8ff6-49ba887eded4
 - alpn:
   - http/1.1
-  name: 507|FR TROJAN-46 | free-nodes
+  name: 507|FR TROJAN-48 | free-nodes
   network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
+  password: telegram-id-directvpn
+  port: 22223
   server: 13.36.129.164
   sni: trojan.burgerip.co.uk
   type: trojan
-- name: 507|FR VLESS-49 | free-nodes
-  network: ws
-  port: 22224
-  server: 15.237.153.245
-  servername: trojan.burgerip.co.uk
-  tls: true
-  type: vless
-  uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
-  ws-opts:
-    path: '%2Ftelegram-channel-vlessconfig'
 - alpn:
-  - h2
-  client-fingerprint: chrome
-  name: 507|FR VLESS-54 | free-nodes
+  - http/1.1
+  name: 507|FR TROJAN-49 | free-nodes
   network: tcp
-  port: 443
-  server: fr.1323.world
-  servername: b12a6eea4807ca4e.1323.world
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 0e90f352-e9bc-4834-8ff6-49ba887eded4
+  password: telegram-id-directvpn
+  port: 22223
+  server: 15.237.153.245
+  sni: trojan.burgerip.co.uk
+  type: trojan
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: '523,524|🇫🇷_法国 #1'
@@ -2035,6 +2035,15 @@ proxies:
   uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   ws-opts:
     path: /
+- name: '523,524|🇫🇷_法国_37 #1'
+  network: ws
+  port: 80
+  server: ov-france1.09vpn.com
+  tls: false
+  type: vless
+  uuid: 25f86cb1-2140-4085-abcb-c3a0ea7a4be0
+  ws-opts:
+    path: /vless/
 - name: '523,524|🇫🇷_法国_38 #1'
   network: ws
   port: 2053
@@ -2057,7 +2066,7 @@ proxies:
     path: /
 - country: 🇫🇷FR
   delay: 820
-  name: 528,553|yandex-23
+  name: 528,553|yandex-3259
   password: telegram-id-directvpn
   port: 22223
   server: 15.188.241.30
@@ -2067,7 +2076,7 @@ proxies:
   udp: true
 - country: 🇫🇷FR
   delay: 845
-  name: 528,553|yandex-24
+  name: 528,553|yandex-3260
   password: telegram-id-privatevpns
   port: 22222
   server: 15.188.241.30
@@ -2137,6 +2146,169 @@ proxies:
   server: pop.b1c7d2ec-e636-4521-a9f7-abb10044e3a5.heima360.cc
   skip-cert-verify: false
   type: trojan
+- cipher: aes-256-gcm
+  name: 548,553|yandex-3367
+  password: 0grLqKvDT37qyj54d9QxRo1SKIQNazCpxpECt7sHIq4=
+  port: 8443
+  server: 51.195.203.247
+  type: ss
+  udp: true
+- name: 548|FR法国(mibei77.com 米贝节点分享) 8
+  password: 36325a98-46a4-4770-977a-9a9570e0bcc6
+  port: 31103
+  server: 220.130.58.136
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: 548|FR法国(mibei77.com 米贝节点分享) 15
+  password: b2e15b49-6606-4c62-baff-7015390b3c6a
+  port: 31101
+  server: 220.130.58.136
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: 548|FR法国(mibei77.com 米贝节点分享) 18
+  password: adf2550f-8b87-4ea1-aa80-e7fc8f65a68a
+  port: 31101
+  server: green2.cdntencentmusic.com
+  skip-cert-verify: true
+  sni: green2.cdntencentmusic.com
+  type: trojan
+  udp: true
+- name: 548|FR法国(mibei77.com 米贝节点分享) 19
+  password: 5f6ded93-4ab8-4a99-9c84-b19b9993f27c
+  port: 31102
+  server: green2.cdntencentmusic.com
+  skip-cert-verify: true
+  sni: green2.cdntencentmusic.com
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  country: 🇫🇷FR
+  h2-opts: {}
+  http-opts: {}
+  name: 548|🇫🇷FR_58
+  network: ws
+  port: 443
+  server: 146.59.118.250
+  servername: lammaland.org
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      HOST: lammaland.org
+    path: linkvws
+- alterId: 0
+  cipher: auto
+  country: 🇫🇷FR
+  h2-opts: {}
+  http-opts: {}
+  name: 548|🇫🇷FR_59
+  network: ws
+  port: 443
+  server: 141.94.155.229
+  servername: pelang.org
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      HOST: pelang.org
+    path: linkvws
+- alterId: 0
+  cipher: auto
+  country: 🇫🇷FR
+  h2-opts: {}
+  http-opts: {}
+  name: 548|🇫🇷FR_60
+  network: ws
+  port: 443
+  server: 141.94.155.228
+  servername: kampong.org
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      HOST: kampong.org
+    path: linkvws
+- alterId: 0
+  cipher: auto
+  country: 🇫🇷FR
+  h2-opts: {}
+  http-opts: {}
+  name: 548|🇫🇷FR_61
+  network: ws
+  port: 443
+  server: 91.134.8.88
+  servername: lammaland.org
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      HOST: lammaland.org
+    path: linkvws
+- alterId: 0
+  cipher: auto
+  country: 🇫🇷FR
+  h2-opts: {}
+  http-opts: {}
+  name: 548|🇫🇷FR_62
+  network: ws
+  port: 443
+  server: 91.134.8.100
+  servername: kampong.org
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      HOST: kampong.org
+    path: linkvws
+- alterId: 0
+  cipher: auto
+  country: 🇫🇷FR
+  h2-opts: {}
+  http-opts: {}
+  name: 548|🇫🇷FR_63
+  network: ws
+  port: 443
+  server: 91.134.8.93
+  servername: pelang.org
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      HOST: pelang.org
+    path: linkvws
+- alterId: 0
+  cipher: auto
+  country: 🇫🇷FR
+  h2-opts: {}
+  http-opts: {}
+  name: 548|🇫🇷FR_64
+  network: ws
+  port: 443
+  server: 91.134.8.92
+  servername: yichueng.org
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      HOST: yichueng.org
+    path: linkvws
 - name: '559|🇫🇷FR_41 #1'
   password: 6c64e6f9-a76c-49eb-96d2-bf8b1afee4a3
   port: 443
@@ -2155,13 +2327,6 @@ proxies:
   server: de-full.privateip.net
   sni: de-full.privateip.net
   type: trojan
-- name: '559|🇫🇷_法国 #2'
-  network: tcp
-  port: 2345
-  server: 54.38.214.29
-  tls: false
-  type: vless
-  uuid: 0331b690-79fc-49d5-85f0-54faa4eff89f
 - name: 559|FR VLESS-53 | free-nodes
   network: ws
   port: 22224
@@ -3170,13 +3335,14 @@ proxies:
   tls: false
   type: vmess
   uuid: ede27a79-b039-490b-932c-495de4b68880
-- name: 568|🇫🇷 法国 | FRA
+- name: 566|🇫🇷 法国 | FRA
   password: telegram-id-directvpn
   port: 22223
   server: 13.39.52.135
   skip-cert-verify: true
   sni: trojan.burgerip.co.uk
   type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: '577|法国1 #4'
