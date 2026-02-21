@@ -809,11 +809,11 @@ proxies:
   port: 17315
   server: 120.240.103.35
   type: ss
-- name: 255|SG
-  network: tcp
+- name: 255|🇸🇬 SG
   password: f57f01e6-9bb1-4277-a5cb-75ad0ce1fa11
   port: 32702
   server: xd-sh.timiwc.com
+  skip-cert-verify: true
   sni: k36.tudou211.com
   type: trojan
 - client-fingerprint: firefox
@@ -903,7 +903,7 @@ proxies:
   sni: www.alibaba.com
   type: trojan
   udp: true
-- name: 340,495,502,514,551,559|8|SG
+- name: '340,495,502,514,551,559|9|SG #2'
   password: e7965e64-e001-4e8c-8273-39c61ff4a094
   port: 30000
   server: sg3.oomz.ru
@@ -911,23 +911,22 @@ proxies:
   sni: bing.com
   tls: false
   type: hysteria2
-- name: 340,378,536,537,559|11,12|新加坡|@ripaojiedian
-  network: tcp
+- name: '340,378,536,537|🇯🇵JP-13.231.178.109-0817 #1'
   password: 64a59181551b5773e390bd717a7b7c06
   port: 3901
   server: 13.231.178.109
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: 340,378,536,537,559|11,12|新加坡2|@ripaojiedian
-  network: tcp
+- name: '340,378,536,537|🇵JP-18.183.98.127-0818 #1'
   password: 64a59181551b5773e390bd717a7b7c06
   port: 3901
   server: 18.183.98.127
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: 340,378,502,514,515,516,536,537,544,548,551,556,557,559|11,12|新加坡3|@ripaojiedian
+- name: '340,378,502,514,515,516,536,537,544,548,551,556,557,559|12,13|新加坡3|@ripaojiedian
+    #4'
   network: tcp
   password: BxceQaOe
   port: 381
@@ -935,12 +934,11 @@ proxies:
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
-- name: 340,378,536,537,538,559|11,12|新加坡4|@ripaojiedian
-  network: tcp
+- name: 340,378,536,537,538|🇸🇬SG-27.122.59.45-1767 | 0.098...
   password: 736cd94d-7b94-3e44-8106-3419f64eaf09
   port: 443
   server: sg.singaporenodeserverone.co.ua
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: 45.32.28.232
   type: trojan
 - name: 356|🇸🇬1 |  9.0MB/s
@@ -963,7 +961,7 @@ proxies:
   type: ss
 - cipher: rc4-md5
   country: 🇸🇬SG
-  name: 356,378,537,538,548|🇸🇬SG_140
+  name: 356,378,537,538,548|🇸🇬SG_125
   password: 14fFPrbezE3HDZzsMOr6
   port: 8080
   server: 68.183.227.4
@@ -2201,7 +2199,7 @@ proxies:
       Host: 180.215.130.123
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: '378,537,538,548|_09 #1'
+  name: 378,537,538,548|_03
   password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
   port: 990
   server: 38.89.142.56
@@ -3439,7 +3437,7 @@ proxies:
     headers: {}
     path:
     - /
-  name: 456,489,553|yandex-719
+  name: '456,489,507,553,559|SG VLESS-108 | free-nodes #1'
   network: tcp
   port: 51164
   server: 47.82.6.36
@@ -3450,7 +3448,7 @@ proxies:
   xudp: true
 - alterId: 32
   cipher: auto
-  name: '459,559,580|SG新加坡(mibei77.com 米贝节点分享) #1'
+  name: 459,559,580|SG新加坡(mibei77.com 米贝节点分享)
   network: ws
   port: '443'
   server: vc.fly.dev
@@ -4657,7 +4655,40 @@ proxies:
   skip-cert-verify: true
   sni: ''
   type: trojan
-- name: '475,477,480,482|SG #4'
+- client-fingerprint: chrome
+  fingerprint: ''
+  name: 470|07d552b5534c4ec58fe77e1b9a80af...
+  network: ws
+  port: 443
+  server: support.zoom.us
+  servername: zero.seaseus.pp.ua
+  tls: true
+  type: vless
+  udp: false
+  uuid: a7209c7e-b96f-4c95-8ff7-090f3d642d19
+  ws-opts:
+    headers:
+      host: zero.seaseus.pp.ua
+    path: /seaseus
+- alterId: 32
+  cipher: auto
+  client-fingerprint: chrome
+  fingerprint: ''
+  name: '470,574|未知11 432.7KB/s #1'
+  network: ws
+  port: 443
+  server: vc.fly.dev
+  servername: vc.fly.dev
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: false
+  uuid: 35379219-6535-4f2e-a4fe-3e44f61e0eee
+  ws-opts:
+    headers:
+      host: vc.fly.dev
+    path: /vc
+- name: '475,477,480,482|SG #3'
   network: ws
   port: 25435
   server: 8.222.220.81
@@ -4675,7 +4706,7 @@ proxies:
     headers: {}
     path:
     - /
-  name: 489,553,566|🇸🇬 新加坡 | SGP 4
+  name: 489,553|yandex-120
   network: tcp
   port: 15416
   reality-opts:
@@ -4694,7 +4725,7 @@ proxies:
     headers: {}
     path:
     - /
-  name: 489,553|yandex-682
+  name: 489,553|yandex-122
   network: tcp
   port: 15416
   reality-opts:
@@ -4725,14 +4756,14 @@ proxies:
     path: /danfeng?ed=2560&Telegram🇨🇳+@WangCai2
   xudp: true
 - cipher: chacha20-ietf-poly1305
-  name: 489,553,566|🇸🇬 新加坡 | SGP 3
+  name: 489,553|yandex-197
   password: 13df5feb-756e-4627-bcee-497f3c81bab4
   port: 33220
   server: xgrr.sdnlv0.cn
   type: ss
   udp: true
 - client-fingerprint: chrome
-  name: 489,523,524,553|yandex-766
+  name: 489,523,524,553|yandex-206
   network: ws
   port: 443
   server: support.zoom.us
@@ -4747,14 +4778,14 @@ proxies:
     path: /seaseus
   xudp: true
 - cipher: chacha20-ietf-poly1305
-  name: 489,553|yandex-818
+  name: 489,553|yandex-258
   password: c6d61cd1-d3dc-405e-afb2-d67815f4e4da
   port: 28063
   server: ldu.izenny.com
   type: ss
   udp: true
 - client-fingerprint: chrome
-  name: 489,553|yandex-855
+  name: 489,553|yandex-295
   network: ws
   port: 443
   server: 69.84.182.20
@@ -4770,7 +4801,7 @@ proxies:
   xudp: true
 - alterId: 0
   cipher: auto
-  name: 489,553|yandex-883
+  name: 489,553|yandex-323
   port: 30812
   server: v12.hdacd.com
   skip-cert-verify: true
@@ -4780,7 +4811,7 @@ proxies:
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - alterId: 2
   cipher: auto
-  name: 489,553|yandex-902
+  name: 489,553|yandex-342
   port: 30845
   server: 151.242.183.218
   skip-cert-verify: true
@@ -4791,13 +4822,49 @@ proxies:
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - alterId: 2
   cipher: auto
-  name: '502,551,568|🇸🇬 新加坡 | SGP #1'
+  name: '502,551,559|SG1｜机房｜低风险 #2'
   network: tcp
   port: '30845'
   server: v45.hdacd.com
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- alpn:
+  - ''
+  client-fingerprint: random
+  flow: xtls-rprx-vision
+  grpc-opts:
+    grpc-service-name: ''
+  name: '507,559|SG VLESS-140 | free-nodes #1'
+  network: tcp
+  port: 443
+  server: s222.okgfw.top
+  servername: u708330u8fc0s222.okgfw.top
+  tls: true
+  type: vless
+  uuid: 8c6118b9-78a8-3b3b-a49a-6aa9cb5b1d4e
+  ws-opts:
+    headers:
+      Host: s222.okgfw.top
+    path: ''
+- alpn:
+  - ''
+  client-fingerprint: random
+  flow: xtls-rprx-vision
+  grpc-opts:
+    grpc-service-name: ''
+  name: '507,559|SG VLESS-168 | free-nodes #1'
+  network: tcp
+  port: 443
+  server: s220.okgfw.top
+  servername: u708330u960es220.okgfw.top
+  tls: true
+  type: vless
+  uuid: 8c6118b9-78a8-3b3b-a49a-6aa9cb5b1d4e
+  ws-opts:
+    headers:
+      Host: s220.okgfw.top
+    path: ''
 - cipher: aes-256-cfb
   name: '513,517,578|1|_SG_ #2'
   password: amazonskr05
@@ -4886,7 +4953,7 @@ proxies:
   type: trojan
   udp: true
 - delay: 1236
-  name: 528,553|yandex-3604
+  name: 528,553|yandex-3210
   password: BxceQaOe
   port: 3579
   server: 95.40.55.141
@@ -4942,7 +5009,7 @@ proxies:
   country: 🇭🇰HK
   h2-opts: {}
   http-opts: {}
-  name: '548|disney_SG #1'
+  name: 548|disney_SG
   port: 35034
   server: 165.154.195.38
   skip-cert-verify: true
@@ -5027,18 +5094,6 @@ proxies:
   server: sg-full.privateip.net
   sni: sg-full.privateip.net
   type: trojan
-- name: 559|🇸🇬SG_3 | ⬇️ 1.7MB/s
-  network: ws
-  port: 8443
-  server: 143.20.213.205
-  servername: ''
-  tls: true
-  type: vless
-  uuid: 26524cce-d514-4014-a426-365fb266a14d
-  ws-opts:
-    headers:
-      Host: WangCai.443888.xyz
-    path: '%2Fdanfeng%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2540WangCai2'
 - name: 559|🇸🇬SG_1 | ⬇️ 3.2MB/s
   network: ws
   port: 8443
@@ -5077,34 +5132,10 @@ proxies:
     headers:
       Host: WangCai.443888.xyz
     path: '%2Fdanfeng%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%2B%40WangCai2'
-- name: 559|🇸🇬SG_9 | ⬇️ 4.3MB/s
-  network: ws
-  port: 443
-  server: 185.16.110.1
-  servername: ''
-  tls: true
-  type: vless
-  uuid: 26524cce-d514-4014-a426-365fb266a14d
-  ws-opts:
-    headers:
-      Host: WangCai.443888.xyz
-    path: '%2Fdanfeng%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2540WangCai2'
 - name: 559|🇸🇬SG_13 | ⬇️ 4.2MB/s
   network: ws
   port: 443
   server: 212.22.76.14
-  servername: ''
-  tls: true
-  type: vless
-  uuid: 26524cce-d514-4014-a426-365fb266a14d
-  ws-opts:
-    headers:
-      Host: WangCai.443888.xyz
-    path: '%2Fdanfeng%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2540WangCai2'
-- name: 559|🇸🇬SG_12 | ⬇️ 4.3MB/s
-  network: ws
-  port: 443
-  server: 212.22.76.20
   servername: ''
   tls: true
   type: vless
@@ -5151,18 +5182,6 @@ proxies:
     headers:
       Host: sni.jpmj.dev
     path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%20%40WangCai2'
-- name: 559|SG新加坡(mibei77.com 米贝节点分享)-002
-  network: ws
-  port: 17465
-  server: 138.2.95.33
-  servername: ''
-  tls: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.jpmj.dev
-    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2540WangCai2'
 - name: 559|YouTube顺丰资源 新加坡_23
   network: ws
   port: 443
@@ -5225,6 +5244,18 @@ proxies:
     headers:
       Host: sni.jpmj.dev
     path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%20%40WangCai2'
+- name: 559|YouTube顺丰资源 新加坡_223
+  network: ws
+  port: 2096
+  server: 27.50.48.238
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.jpmj.dev
+    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%252B%2540WangCai2'
 - name: 559|🇸🇬SG_2
   network: ws
   port: 443
@@ -5261,6 +5292,18 @@ proxies:
     headers:
       Host: sni.111000.indevs.in
     path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2520%2540WangCai2'
+- name: 559|🇸🇬SG-001
+  network: ws
+  port: 443
+  server: 45.76.188.229
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.jpmj.dev
+    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2520%2540WangCai2'
 - name: '559,580|🇸🇬SG #11'
   network: ws
   port: 8443
@@ -5274,53 +5317,18 @@ proxies:
     headers:
       Host: sni.jpmj.dev
     path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%20%40WangCai2'
-- alpn:
-  - ''
-  client-fingerprint: random
-  flow: xtls-rprx-vision
-  grpc-opts:
-    grpc-service-name: ''
-  name: 559|SG VLESS-167 | free-nodes
-  network: tcp
-  port: 443
-  server: s220.okgfw.top
-  servername: u708330u960es220.okgfw.top
-  tls: true
-  type: vless
-  uuid: 8c6118b9-78a8-3b3b-a49a-6aa9cb5b1d4e
-  ws-opts:
-    headers:
-      Host: s220.okgfw.top
-    path: ''
-- alpn:
-  - ''
-  client-fingerprint: random
-  flow: xtls-rprx-vision
-  grpc-opts:
-    grpc-service-name: ''
-  name: 559|SG VLESS-142 | free-nodes
-  network: tcp
-  port: 443
-  server: s222.okgfw.top
-  servername: u708330u8fc0s222.okgfw.top
-  tls: true
-  type: vless
-  uuid: 8c6118b9-78a8-3b3b-a49a-6aa9cb5b1d4e
-  ws-opts:
-    headers:
-      Host: s222.okgfw.top
-    path: ''
-- name: 559|🇸🇬_新加坡
+- name: 559|🇸🇬SG_4 | ⬇️ 4.9MB/s
   network: ws
-  port: 80
-  server: 151.101.9.80
-  tls: false
+  port: 2096
+  server: webmail.eclass.lk
+  servername: ''
+  tls: true
   type: vless
-  uuid: bb798d4c-6c86-404d-b4de-0884fc48d54a
+  uuid: b8ae3c37-37d6-4d4d-93fc-1ce0bc329ba0
   ws-opts:
     headers:
-      Host: viper7.global.ssl.fastly.net
-    path: '%2F%40HqV2RayNG--%40HqV2RayNG--%40HqV2RayNG--%40HqV2RayNG--%40HqV2RayNG--%40HqV2RayNG--%40HqV2RayNG--%40HqV2RayNG--%40HqV2RayNG--%40HqV2RayNG--%40HqV2RayNG--%40HqV2RayNG--%40HqV2RayNG--%40HqV2RayNG--%40HqV2RayNG--%40HqV2RayNG--%40HqV2RayNG--%40HqV2RayNG--%40HqV2RayNG--%40HqV2RayNG--%40HqV2RayNG--%40HqV2RayNG--%40HqV2RayNG--%40HqV2RayNG--%40HqV2RayNG--%40HqV2RayNG--%40HqV2RayNG--%40HqV2RayNG--%40HqV2RayNG--%40HqV2RayNG--%40HqV2RayNG%3Fed%3D2056'
+      Host: free-server.techsonic.ggff.net
+    path: '%2F%2540Tech_Sonic'
 - name: '559,580|SG VLESS-105 | free-nodes #1'
   network: tcp
   port: 59100
@@ -5358,7 +5366,7 @@ proxies:
     path: a88a71fa-ed7c-48d3-89e0-74a00d605d88-vm
 - alterId: 0
   cipher: auto
-  name: 559|新加坡_022104345
+  name: 559|新加坡_022118332
   network: ws
   port: '443'
   server: n1747624271.lie5d.cyou
@@ -5372,7 +5380,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 559|新加坡_022104339
+  name: 559|新加坡_022118329
   network: ws
   port: '443'
   server: n1747624280.lie5d.cyou
@@ -5384,52 +5392,45 @@ proxies:
     headers:
       Host: n1747624280.lie5d.cyou
     path: /
-- cipher: chacha20-ietf-poly1305
-  name: 566|🇸🇬 新加坡 | SGP
-  password: b661669b-718d-48bc-87f5-8730aea07f2b
-  port: 36199
-  server: slur.izenny.com
-  type: ss
+- name: 566|🇸🇬 新加坡 | SGP
+  password: 4348cc75-f652-4c67-b06e-0c49adcc7774
+  port: 23311
+  server: cdnfire.xiaomispeed.com
+  skip-cert-verify: true
+  sni: cdnfire.xiaomispeed.com
+  type: trojan
   udp: true
 - client-fingerprint: chrome
+  flow: xtls-rprx-vision
   name: 566|🇸🇬 新加坡 | SGP 2
-  network: ws
-  port: 443
-  server: chsm.cf.090227.xyz
-  servername: pub.113299.xyz
+  network: tcp
+  port: 15416
+  reality-opts:
+    public-key: H0oYX4GJe45zWXvrPdMzSKhmmrd2aqKFEk1Z2Dy9SBM
+    short-id: bd997a55
+  server: 18.141.57.177
+  servername: www.lamer.com.sg
   tls: true
   type: vless
   udp: true
-  uuid: bd196116-c3c4-4737-8e4f-4db7a12de2e6
-  ws-opts:
-    headers:
-      Host: pub.113299.xyz
-    path: /
-- name: 566|🇸🇬 新加坡 | SGP 5
-  password: e2b68fe2-eff2-476b-94cc-b256652010cc
-  port: 36807
-  server: jw.37.jwlink-platform01.com
-  skip-cert-verify: true
-  type: anytls
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 566|🇸🇬 新加坡 | SGP 6
-  network: ws
-  port: 443
-  server: sg.ok12345.ggff.net
-  servername: duiahw.1buigujj.ggff.net
+  uuid: 399a4aac-e5ed-44b6-ac00-4f0d02f72537
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 566|🇸🇬 新加坡 | SGP 3
+  network: tcp
+  port: 15416
+  reality-opts:
+    public-key: H0oYX4GJe45zWXvrPdMzSKhmmrd2aqKFEk1Z2Dy9SBM
+    short-id: bd997a55
+  server: 13.215.163.142
+  servername: www.lamer.com.sg
   tls: true
-  type: vmess
+  type: vless
   udp: true
-  uuid: d6fba3f5-e819-47e2-8f41-af0f2c36f101
-  ws-opts:
-    headers:
-      Host: duiahw.1buigujj.ggff.net
-    path: /
+  uuid: 0cae82c9-d966-4297-a5b0-d8b7a8de1378
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: 566|🇸🇬 新加坡 | SGP 7
+  name: 566|🇸🇬 新加坡 | SGP 4
   network: tcp
   port: 30402
   reality-opts:
@@ -5440,51 +5441,9 @@ proxies:
   tls: true
   type: vless
   udp: true
-  uuid: d7e8c56a-815c-4918-bdaf-0eadb5870fce
-- client-fingerprint: chrome
-  name: 566|🇸🇬 新加坡 | SGP 8
-  network: ws
-  port: 443
-  server: 103.136.68.86
-  servername: sni.111000.indevs.in
-  tls: true
-  type: vless
-  udp: true
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.111000.indevs.in
-    path: /?ed=2560&Telegram🇨🇳@WangCai2
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 566|🇸🇬 新加坡 | SGP 9
-  network: tcp
-  port: 15416
-  reality-opts:
-    public-key: H0oYX4GJe45zWXvrPdMzSKhmmrd2aqKFEk1Z2Dy9SBM
-    short-id: bd997a55
-  server: 13.229.128.140
-  servername: www.lamer.com.sg
-  tls: true
-  type: vless
-  udp: true
-  uuid: 0cae82c9-d966-4297-a5b0-d8b7a8de1378
-- client-fingerprint: chrome
-  name: 566|🇸🇬 新加坡 | SGP 10
-  network: ws
-  port: 443
-  server: 198.41.223.44
-  servername: pub.113299.xyz
-  tls: true
-  type: vless
-  udp: true
-  uuid: bd196116-c3c4-4737-8e4f-4db7a12de2e6
-  ws-opts:
-    headers:
-      Host: pub.113299.xyz
-    path: /
-- name: '568|🇸🇬 新加坡 | SGP #3'
-  password: 8fbc8af5-01b1-4825-a42d-9e190287248f
+  uuid: 9737389e-514a-4675-ae25-7e7dcbd6d4dc
+- name: '568|🇸🇬 新加坡 | SGP #1'
+  password: 00b2e0e0-0b52-4337-b0ff-a8e5f08f58a3
   port: 23311
   server: cdnfire.xiaomispeed.com
   skip-cert-verify: true
