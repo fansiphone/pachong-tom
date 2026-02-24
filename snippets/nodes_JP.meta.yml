@@ -1190,12 +1190,30 @@ proxies:
   sni: www.alibaba.com
   type: trojan
   udp: true
-- name: 255|JP
-  network: tcp
+- name: 255|🇯🇵 JP
   password: f57f01e6-9bb1-4277-a5cb-75ad0ce1fa11
   port: 21125
   server: 125.94.40.162
+  skip-cert-verify: true
   sni: k12.tudou211.com
+  type: trojan
+- name: '306,378,494,502,514,515,516,536,537,544,548,551,556,557|日本|@ripaojiedian
+    #2'
+  network: tcp
+  password: BxceQaOe
+  port: 2595
+  server: 54.250.16.92
+  skip-cert-verify: true
+  sni: t.me%252Fripaojiedian
+  type: trojan
+- name: '306,378,494,502,507,514,515,516,536,537,544,548,551,556,557|新加坡2|@ripaojiedian
+    #2'
+  network: tcp
+  password: 64a59181551b5773e390bd717a7b7c06
+  port: 3419
+  server: 160.16.132.38
+  skip-cert-verify: true
+  sni: www.nintendogames.net
   type: trojan
 - client-fingerprint: firefox
   flow: ''
@@ -1301,14 +1319,14 @@ proxies:
   sni: www.alibaba.com
   type: trojan
   udp: true
-- name: '340,495,502,514,551,559|9|JP #2'
+- name: '340,495,502,514,551,559|9|JP #1'
   password: 95D27EEF-B7AE-4076-BA39-40FDFA3D0F61
   port: 13778
   server: jp7.dexlos.com
   skip-cert-verify: true
   tls: false
   type: hysteria2
-- name: '340,378,502,536,537,544,559|12,13|日本|@ripaojiedian #2'
+- name: '340,378,494,536,537,559|12,13|日本|@ripaojiedian #1'
   network: tcp
   password: BxceQaOe
   port: 26378
@@ -1317,7 +1335,7 @@ proxies:
   sni: t.me%252Fripaojiedian
   type: trojan
 - alterId: 0
-  name: 340,378,502,536,537,538,544,559,574|🇯🇵JP日本3 5.2MB/s
+  name: 340,378,494,536,537,538,559,574|🇯🇵JP日本3 5.2MB/s
   network: tcp
   password: 64a59181551b5773e390bd717a7b7c06
   port: 3423
@@ -1328,7 +1346,7 @@ proxies:
   type: trojan
   udp: true
 - alterId: 0
-  name: 340,378,502,536,537,544,559,574|JP 5.8MB/s
+  name: 340,378,494,536,537,559,574|JP 5.8MB/s
   network: tcp
   password: 64a59181551b5773e390bd717a7b7c06
   port: 3423
@@ -1339,7 +1357,7 @@ proxies:
   type: trojan
   udp: true
 - alterId: 0
-  name: 340,378,489,502,536,537,544,553,559,574|🇨广东5
+  name: 340,378,489,494,536,537,553,559,574|🇨广东5
   network: tcp
   password: 736cd94d-7b94-3e44-8106-3419f64eaf09
   port: 2053
@@ -1380,7 +1398,8 @@ proxies:
   server: 149.22.87.241
   type: ss
 - cipher: aes-128-gcm
-  name: 356,357,378,537,538|🇯🇵JP-149.22.87.204-0268 | 41.0...
+  country: 🇬🇧GB
+  name: 356,357,378,537,538,548|🇬🇧GB_69
   password: shadowsocks
   port: 443
   server: 149.22.87.204
@@ -2429,67 +2448,81 @@ proxies:
   server: 185.160.24.217
   type: ss
 - cipher: rc4-md5
-  name: 378,537,538|🇯🇵JP-172.105.199.111-0266 | 44...
+  country: 🇯🇵JP
+  name: 378,537,538,548|🇯🇵JP_95
   password: 14fFPrbezE3HDZzsMOr6
   port: 8080
   server: 172.105.199.111
   type: ss
-- name: 378,536,537,538|🇯🇵JP-153.121.39.240-0284 | 20....
+- name: 378,494,536,537,538|🇯🇵JP-153.121.39.240-0284 | 20....
   password: 64a59181551b5773e390bd717a7b7c06
   port: 193
   server: 153.121.39.240
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: 378,536,537,538,559|日本_022404004
+- name: 378,494,536,537,538,559|日本_022404004
+  network: tcp
   password: 64a59181551b5773e390bd717a7b7c06
   port: 1281
   server: 160.16.72.205
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: 378,536,537,538,559|日本_022404005+L0
+  ws-opts:
+    path: /
+- name: 378,494,536,537,538,559|日本_022404005+L0
   password: 64a59181551b5773e390bd717a7b7c06
   port: 3423
   server: 160.16.72.33
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: 378,536,537,538,559|日本_022404006+L0
+  ws-opts:
+    path: /
+- name: 378,494,536,537,538,559|日本_022404006+L0
   password: 64a59181551b5773e390bd717a7b7c06
   port: 1281
   server: 160.16.236.32
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: 378,536,537,538|🇯🇵JP-160.16.105.192-0288 | 12....
+  ws-opts:
+    path: /
+- name: 378,494,536,537,538|🇯🇵JP-160.16.105.192-0288 | 12....
+  network: tcp
   password: 64a59181551b5773e390bd717a7b7c06
   port: 193
   server: 160.16.105.192
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: 378,536,537,538,559|日本_022404008
+  ws-opts:
+    path: /
+- name: 378,494,536,537,538,559|日本_022404008
   password: 64a59181551b5773e390bd717a7b7c06
   port: 3423
   server: 160.16.144.208
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: 378,536,537,538,559|日本_022404010
+- name: 378,494,536,537,538,559|日本_022404010
   password: 64a59181551b5773e390bd717a7b7c06
   port: 1281
   server: 160.16.116.227
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: 378,536,537,538,559|日本_022404011
+- name: 378,494,536,537,538,559|日本_022404011
+  network: tcp
   password: 64a59181551b5773e390bd717a7b7c06
   port: 1281
   server: 160.16.106.99
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
+  ws-opts:
+    path: /
 - alterId: 0
   cipher: auto
   name: 378,437,536,537,538|🇯🇵JP-47.74.52.195-0337 | 0.753...
@@ -2506,7 +2539,8 @@ proxies:
       Host: n1753598448.74qxv.top
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 378,537,538|🇯🇵JP-103.106.228.247-0345 | 0....
+  country: 🇮🇳IN
+  name: 378,537,538,548|🇮🇳IN_92
   password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
   port: 990
   server: 103.106.228.247
@@ -2806,22 +2840,6 @@ proxies:
   port: 443
   server: 43.207.82.53
   type: ss
-- name: '378,502,514,515,516,536,537,551,556,557|日本|@ripaojiedian #2'
-  network: tcp
-  password: BxceQaOe
-  port: 2595
-  server: 54.250.16.92
-  skip-cert-verify: true
-  sni: t.me%252Fripaojiedian
-  type: trojan
-- name: '378,502,514,515,516,536,537,551,556,557|新加坡2|@ripaojiedian #2'
-  network: tcp
-  password: 64a59181551b5773e390bd717a7b7c06
-  port: 3419
-  server: 160.16.132.38
-  skip-cert-verify: true
-  sni: www.nintendogames.net
-  type: trojan
 - alterId: 0
   cipher: auto
   name: '378,536,537|🇵JP-161.129.34.102-1773 #1'
@@ -4126,7 +4144,7 @@ proxies:
   tls: false
   type: vmess
   uuid: 55b88b14-0ff3-4f25-8983-e73d1f9f3a0a
-- name: '475,477,480,482|JP #4'
+- name: '475,477,480,482|JP #3'
   network: ws
   port: 2443
   server: 47.74.8.30
@@ -4164,7 +4182,7 @@ proxies:
     path: /?ed=2560&Telegram🇨🇳 @WangCai2
 - client-fingerprint: chrome
   host: navi.bankrate.com
-  name: 489,553|yandex-150
+  name: 489,553|yandex-484
   network: tcp
   path: /
   port: 443
@@ -4179,14 +4197,14 @@ proxies:
   type: vless
   uuid: bcc53d6e-4ff9-4e19-8145-7fbb298f2c56
 - cipher: chacha20-ietf-poly1305
-  name: 489,553|yandex-211
+  name: 489,548,553|yandex-545
   password: c6d61cd1-d3dc-405e-afb2-d67815f4e4da
   port: 10589
   server: ldu.izenny.com
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 489,553|yandex-212
+  name: 489,548,553|yandex-546
   password: c6d61cd1-d3dc-405e-afb2-d67815f4e4da
   port: 57927
   server: ldu.izenny.com
@@ -4721,6 +4739,40 @@ proxies:
   server: jry.izenny.com
   type: ss
   udp: true
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: 548|Relay_-🇯🇵JP_09
+  network: ws
+  port: 443
+  server: n1753598451.74qxv.top
+  servername: n1753598451.74qxv.top
+  tls: true
+  type: vmess
+  uuid: 9798678f-5b8c-4ff1-bbdd-b9b5c1539de0
+  ws-opts:
+    headers:
+      Host: n1753598451.74qxv.top
+    path: /
+- alterId: 0
+  cipher: auto
+  country: 🏁ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 548|Relay_🏁ZZ-🇯🇵JP_183
+  network: ws
+  port: 8443
+  server: t1.620720.xyz
+  servername: t1.620720.xyz
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 516d8a7a-3f0b-41d3-bad0-246116381516
+  ws-opts:
+    headers:
+      HOST: t1.620720.xyz
+    path: /
 - cipher: chacha20-ietf-poly1305
   name: 558|0| 01 | 1x JP
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
@@ -4917,21 +4969,21 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: '559,580|🇯🇵 日本3|@stairnode #3'
+- name: '559,580|🇯🇵 日本3|@stairnode #4'
   password: 9372cb81c7b0ad903f91f2f8a4d3f02b
   port: 193
   server: 160.16.132.38
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: '559,580|🇯🇵 日本2|@stairnode #3'
+- name: '559,580|🇯🇵 日本2|@stairnode #4'
   password: 9372cb81c7b0ad903f91f2f8a4d3f02b
   port: 3423
   server: 57.180.43.205
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: '559,579,580,582|🇯🇵 日本|@stairnode #3'
+- name: '559,579,580,582|🇯🇵 日本|@stairnode #4'
   password: BxceQaOe
   port: 2762
   server: 54.92.111.249
@@ -4954,18 +5006,6 @@ proxies:
     headers:
       Host: ''
     path: ''
-- client-fingerprint: chrome
-  name: '559,580|JP VLESS-64 | free-nodes #1'
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: DNdTBHyztOVJOBJQX91YXEhNkWbSAntqUoTFBHc6Clw
-    short-id: 6ba85179e30d4fc2
-  server: 47.74.6.60
-  servername: cdn77.api.userway.org
-  tls: false
-  type: vless
-  uuid: 5c183802-747d-4d2f-a6f1-aff2d5d78401
 - name: 559|YouTube顺丰资源 日本_130
   network: ws
   port: 2096
@@ -5161,34 +5201,34 @@ proxies:
     headers:
       HOST: n1753598448.74qxv.top
     path: /
-- alterId: 0
-  cipher: auto
-  name: 559|日本_022404213
-  network: ws
-  port: '443'
-  server: n1751468092.lie5d.cyou
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 7ace1873-9822-46af-9920-bd64f725212c
-  ws-opts:
-    headers:
-      Host: n1751468092.lie5d.cyou
-    path: /
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
+- client-fingerprint: chrome
   name: 566|🇯🇵 日本 | JPN
   network: tcp
-  port: 30301
+  port: 443
   reality-opts:
-    public-key: IoW1RqD-BzW9oxaM4KtHx5ap6haIENhYyZt_oMZqlCM
-    short-id: 950cee8a
-  server: freea.glyphara.com
-  servername: lol.secure.dyn.riotcdn.net
+    public-key: UT9tFQOdy54SeW_tg-XQN3QkGYoWUpO_88XFXijkrXc
+    short-id: 2da72ce6
+  server: 154.31.114.125
+  servername: navi.bankrate.com
   tls: true
   type: vless
   udp: true
-  uuid: 7e9556a5-3be0-4653-b45e-aeb19a46c337
+  uuid: a7a5a5ab-4faa-4091-98b2-1f219e8a4984
+- alterId: 0
+  cipher: auto
+  name: 566|🇯🇵 日本 | JPN 2
+  network: ws
+  port: 443
+  server: sg.ok12345.ggff.net
+  servername: jp001.japansb3.ggff.net
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 3e7f0531-be99-4ca8-bcf2-cc105de333e0
+  ws-opts:
+    headers:
+      Host: jp001.japansb3.ggff.net
+    path: /
 - client-fingerprint: chrome
   name: 566|🇯🇵 日本 | JPN 3
   network: tcp
@@ -5201,7 +5241,7 @@ proxies:
   tls: true
   type: vless
   udp: true
-  uuid: c22b5ead-e101-472d-a70c-76528c5273f1
+  uuid: cc007b3d-eb48-4796-a8cd-9cd96d39ee0b
 - client-fingerprint: chrome
   name: 566|🇯🇵 日本 | JPN 4
   network: tcp
@@ -5214,7 +5254,7 @@ proxies:
   tls: true
   type: vless
   udp: true
-  uuid: 97f6d9dc-2284-4494-ac05-a46370e40cf4
+  uuid: c0f234e8-5657-4ef1-9d07-8dc428ad4cf5
 - client-fingerprint: chrome
   name: 566|🇯🇵 日本 | JPN 5
   network: tcp
@@ -5227,39 +5267,9 @@ proxies:
   tls: true
   type: vless
   udp: true
-  uuid: dc910d28-039b-415c-8a40-88b02e9770cc
-- alterId: 0
-  cipher: auto
+  uuid: 1f84b6e8-f9db-4c8a-ad02-f9f36a817599
+- client-fingerprint: chrome
   name: 566|🇯🇵 日本 | JPN 6
-  network: ws
-  port: 443
-  server: sg.ok12345.ggff.net
-  servername: jp001.japansb3.ggff.net
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  udp: true
-  uuid: ee7b0420-d4ef-42b0-92c6-dbdc1280c470
-  ws-opts:
-    headers:
-      Host: jp001.japansb3.ggff.net
-    path: /
-- client-fingerprint: chrome
-  name: 566|🇯🇵 日本 | JPN 7
-  network: ws
-  port: 443
-  server: 69.84.182.13
-  servername: jp1-jp1.aiopen.sbs
-  tls: true
-  type: vless
-  udp: true
-  uuid: da8a47cb-3cc6-425b-a4da-24abe9b2c332
-  ws-opts:
-    headers:
-      Host: jp1-jp1.aiopen.sbs
-    path: /kbjc/jp1
-- client-fingerprint: chrome
-  name: 566|🇯🇵 日本 | JPN 8
   network: tcp
   port: 443
   reality-opts:
@@ -5270,7 +5280,27 @@ proxies:
   tls: true
   type: vless
   udp: true
-  uuid: cc11bdcc-600e-4ae3-ba5a-826df324eb91
+  uuid: 094e6187-ef8b-40aa-acde-ac73d30af2ef
+- client-fingerprint: chrome
+  name: 566|🇯🇵 日本 | JPN 7
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: UT9tFQOdy54SeW_tg-XQN3QkGYoWUpO_88XFXijkrXc
+    short-id: 2da72ce6
+  server: 154.31.114.125
+  servername: navi.bankrate.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 0fbdb52f-58b5-4880-bf44-8f13a34f3fb4
+- name: 566|🇯🇵 日本 | JPN 8
+  password: 4eedcde6-d16a-11ef-973a-f23c913c8d2b
+  port: 27233
+  server: d6fe109a-tb0v40-tch27r-1j0a4.cm4.oshuawei.com
+  tls: true
+  type: http
+  username: 4eedcde6-d16a-11ef-973a-f23c913c8d2b
 - client-fingerprint: chrome
   name: 566|🇯🇵 日本 | JPN 9
   network: tcp
@@ -5283,10 +5313,26 @@ proxies:
   tls: true
   type: vless
   udp: true
-  uuid: 31b4d8f0-c389-4b9e-a414-cdc878c0012c
+  uuid: e12e60f8-f955-4b46-905d-fd99692e19d7
+- alterId: 0
+  cipher: auto
+  name: 566|🇯🇵 日本 | JPN 10
+  network: ws
+  port: 443
+  server: sg.ok12345.ggff.net
+  servername: jp001.japansb3.ggff.net
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 6f2db5b5-0736-421d-9a42-bfbcc8b2faf2
+  ws-opts:
+    headers:
+      Host: jp001.japansb3.ggff.net
+    path: /
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: 566|🇯🇵 日本 | JPN 10
+  name: 566|🇯🇵 日本 | JPN 11
   network: tcp
   port: 30301
   reality-opts:
@@ -5297,20 +5343,7 @@ proxies:
   tls: true
   type: vless
   udp: true
-  uuid: f9065c3b-4582-4a65-8dc6-699cff1005be
-- client-fingerprint: chrome
-  name: 566|🇯🇵 日本 | JPN 11
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: UT9tFQOdy54SeW_tg-XQN3QkGYoWUpO_88XFXijkrXc
-    short-id: 2da72ce6
-  server: 154.31.114.125
-  servername: navi.bankrate.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 21c308f7-3df1-41f4-98de-ed94b4927de8
+  uuid: 55bca71d-75a0-4b78-92a6-88721a4f481c
 - client-fingerprint: chrome
   name: 566|🇯🇵 日本 | JPN 12
   network: tcp
@@ -5323,23 +5356,21 @@ proxies:
   tls: true
   type: vless
   udp: true
-  uuid: 892c36ea-8699-4c75-bd2b-0ddda47ab9e7
-- alterId: 0
-  cipher: auto
+  uuid: e406ac79-f7d6-40c9-b115-c4a4525783f8
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
   name: 566|🇯🇵 日本 | JPN 13
-  network: ws
-  port: 443
-  server: sg.ok12345.ggff.net
-  servername: jp001.japansb3.ggff.net
-  skip-cert-verify: false
+  network: tcp
+  port: 30301
+  reality-opts:
+    public-key: IoW1RqD-BzW9oxaM4KtHx5ap6haIENhYyZt_oMZqlCM
+    short-id: 950cee8a
+  server: freea.glyphara.com
+  servername: lol.secure.dyn.riotcdn.net
   tls: true
-  type: vmess
+  type: vless
   udp: true
-  uuid: ec53de8d-d42d-482a-b9f0-5bed719af7ee
-  ws-opts:
-    headers:
-      Host: jp001.japansb3.ggff.net
-    path: /
+  uuid: 15b2caf2-d236-45cd-ae39-5e6f83a2c176
 - alterId: 0
   cipher: auto
   name: 566|🇯🇵 日本 | JPN 14
@@ -5351,11 +5382,24 @@ proxies:
   tls: true
   type: vmess
   udp: true
-  uuid: e2273e4a-ae8f-4937-baa0-a68860e22e61
+  uuid: a15b5746-8ca1-4320-9aa2-ea1566189902
   ws-opts:
     headers:
       Host: jp001.japansb3.ggff.net
     path: /
+- client-fingerprint: chrome
+  name: 566|🇯🇵 日本 | JPN 15
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: UT9tFQOdy54SeW_tg-XQN3QkGYoWUpO_88XFXijkrXc
+    short-id: 2da72ce6
+  server: 154.31.114.125
+  servername: navi.bankrate.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 2e8e6709-8af1-45df-a8c8-d1a726e37098
 - alterId: 0
   cipher: auto
   name: '568|🇯🇵 日本 | JPN #1'
@@ -5395,16 +5439,6 @@ proxies:
     headers:
       Host: jp001.japansb3.ggff.net
     path: /
-- alterId: 0
-  name: 574|🇵JP日本2
-  password: BxceQaOe
-  port: 26378
-  server: 54.150.211.34
-  skip-cert-verify: true
-  sni: t.me%2Fripaojiedian
-  tls: true
-  type: trojan
-  udp: true
 - alterId: 0
   cipher: auto
   name: '577|日本NO.1 #4'
@@ -5543,14 +5577,14 @@ proxies:
     headers:
       Host: data-jp-v1.usabooks.com.cn
     path: /debian
-- name: '579,582|🇯🇵 日本2|@stairnode #4'
+- name: '579,582|🇯🇵 日本2|@stairnode #5'
   password: 9372cb81c7b0ad903f91f2f8a4d3f02b
   port: 3423
   server: 52.195.215.231
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: '579,582|🇯🇵 日本3|@stairnode #4'
+- name: '579,582|🇯🇵 日本3|@stairnode #5'
   password: 9372cb81c7b0ad903f91f2f8a4d3f02b
   port: 3423
   server: 35.77.86.187
