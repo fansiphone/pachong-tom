@@ -1190,22 +1190,24 @@ proxies:
   sni: www.alibaba.com
   type: trojan
   udp: true
-- name: 255|🇯🇵 JP
+- name: 255|JP
+  network: tcp
   password: f57f01e6-9bb1-4277-a5cb-75ad0ce1fa11
   port: 21125
   server: 125.94.40.162
-  skip-cert-verify: true
   sni: k12.tudou211.com
   type: trojan
-- name: '306,340,378,502,514,515,516,536,537,543,544,548,551,556,557,559|12,13|香港3|@ripaojiedian
-    #4'
+- alterId: 0
+  name: '306,340,378,502,514,515,516,536,537,543,544,548,551,556,557,559,574|HK #7'
   network: tcp
   password: 262f1d150049457ac1d6e66b020fa980
   port: 4856
   server: 13.114.51.135
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: www.nintendogames.net
+  tls: true
   type: trojan
+  udp: true
 - name: '306,340,378,502,514,515,516,536,537,543,544,548,551,556,557,559|12,13|日本|@ripaojiedian
     #2'
   network: tcp
@@ -1215,60 +1217,75 @@ proxies:
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
-- name: '306,340,378,502,514,515,516,536,537,543,544,548,551,556,557,559|12,13|日本2|@ripaojiedian
-    #4'
+- alterId: 0
+  name: 306,340,378,502,514,515,516,536,537,543,544,548,551,556,557,559,574|🇯🇵JP日本3
+    4.6MB/s
   network: tcp
   password: 262f1d150049457ac1d6e66b020fa980
   port: 193
   server: 160.16.138.24
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: www.nintendogames.net
+  tls: true
   type: trojan
-- name: '306,340,378,502,514,515,516,536,537,543,544,548,551,556,557,559|12,13|日本3|@ripaojiedian
-    #4'
+  udp: true
+- alterId: 0
+  name: 306,340,378,502,514,515,516,536,537,543,544,548,551,556,557,559,574|🇯🇵JP日本2
   network: tcp
   password: 262f1d150049457ac1d6e66b020fa980
   port: 3423
   server: 43.207.87.46
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: www.nintendogames.net
+  tls: true
   type: trojan
-- name: '306,340,378,502,514,515,516,536,537,543,544,548,551,556,557,559|12,13|新加坡|@ripaojiedian
-    #2'
+  udp: true
+- alterId: 0
+  name: 306,340,378,502,514,515,516,536,537,543,544,548,551,556,557,559,574|🇸🇬SG新加坡3
   network: tcp
   password: 262f1d150049457ac1d6e66b020fa980
   port: 3901
   server: 57.181.39.159
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: www.nintendogames.net
+  tls: true
   type: trojan
-- name: '306,340,378,502,514,515,516,536,537,543,544,548,551,556,557,559|12,13|新加坡2|@ripaojiedian
-    #4'
+  udp: true
+- alterId: 0
+  name: 306,340,378,502,514,515,516,536,537,543,544,548,551,556,557,559,574|🇬SG新加坡2
+    5.8MB/s
   network: tcp
   password: 262f1d150049457ac1d6e66b020fa980
   port: 3419
   server: 160.16.85.33
   skip-cert-verify: true
   sni: www.nintendogames.net
+  tls: true
   type: trojan
-- name: '306,340,378,502,514,515,516,536,537,543,544,548,551,556,557,559|12,13|美国|@ripaojiedian
-    #3'
+  udp: true
+- alterId: 0
+  name: 306,340,378,502,514,515,516,536,537,543,544,548,551,556,557,559,574|🇺🇸US美国9
+    1.1MB/s
   network: tcp
   password: 262f1d150049457ac1d6e66b020fa980
   port: 1281
   server: 160.16.68.250
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: www.nintendogames.net
+  tls: true
   type: trojan
-- name: '306,340,378,502,514,515,516,536,537,543,544,548,551,556,557,559|12,13|美国2|@ripaojiedian
-    #4'
+  udp: true
+- alterId: 0
+  name: 306,340,378,502,514,515,516,536,537,543,544,548,551,556,557,559,574|🇺🇸US美国6
   network: tcp
   password: 262f1d150049457ac1d6e66b020fa980
   port: 4920
   server: 13.231.123.180
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: www.nintendogames.net
+  tls: true
   type: trojan
+  udp: true
 - client-fingerprint: firefox
   flow: ''
   grpc-opts:
@@ -1412,7 +1429,7 @@ proxies:
   type: ss
 - cipher: aes-128-gcm
   country: 🇬🇧GB
-  name: 356,357,378,537,538,548|netflix_JP
+  name: 356,357,378,537,538,548|🇬🇧GB_65
   password: shadowsocks
   port: 443
   server: 149.22.87.204
@@ -2462,7 +2479,7 @@ proxies:
   type: ss
 - cipher: rc4-md5
   country: 🇯🇵JP
-  name: '378,537,538,548|netflix_JP #1'
+  name: 378,537,538,548|🇯🇵JP_83
   password: 14fFPrbezE3HDZzsMOr6
   port: 8080
   server: 172.105.199.111
@@ -2546,14 +2563,14 @@ proxies:
   type: trojan
 - cipher: chacha20-ietf-poly1305
   country: 🇮🇳IN
-  name: 378,537,538,548|🇮🇳IN_86
+  name: 378,537,538,548|🇮🇳IN_81
   password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
   port: 990
   server: 103.106.228.247
   type: ss
 - alterId: 0
   cipher: auto
-  name: 378,437,536,537,538|🇯🇵JP-47.74.52.195-4648 | 0.0MB
+  name: 378,536,537,538|🇯🇵JP-47.74.52.195-4648 | 0.0MB
   network: ws
   port: 443
   server: n1753598448.74qxv.top
@@ -3267,7 +3284,8 @@ proxies:
       Host: n1753598452.wpg27.xyz
     path: /
 - client-fingerprint: chrome
-  name: '378,489,507,536,537,553,559|TR TROJAN-42 | free-nodes #1'
+  country: 🇷IR
+  name: 378,440,489,536,537,553,559|TR TROJAN-42 | free-nodes
   network: tcp
   password: 347ca311-8fc2-499c-8fe1-bd0ecb50f1b3
   port: 43074
@@ -3583,7 +3601,7 @@ proxies:
   grpc-opts:
     grpc-mode: gun
     grpc-service-name: violet
-  name: 456,489,553|yandex-101
+  name: 456,489,553|yandex-3167
   network: grpc
   port: 25055
   server: sgskb.osaip.net
@@ -3604,7 +3622,7 @@ proxies:
   flow: xtls-rprx-vision
   grpc-opts:
     grpc-service-name: ''
-  name: '456,507,559|JP VLESS-134 | free-nodes #1'
+  name: 456,559|JP VLESS-134 | free-nodes
   network: tcp
   port: 443
   server: s527.okgg.top
@@ -3622,7 +3640,7 @@ proxies:
   flow: xtls-rprx-vision
   grpc-opts:
     grpc-service-name: ''
-  name: '456,507,559|JP VLESS-150 | free-nodes #1'
+  name: 456,559|JP VLESS-150 | free-nodes
   network: tcp
   port: 443
   server: s523.okgg.top
@@ -3640,7 +3658,7 @@ proxies:
   flow: xtls-rprx-vision
   grpc-opts:
     grpc-service-name: ''
-  name: '456,507,559|JP VLESS-151 | free-nodes #1'
+  name: 456,559|JP VLESS-151 | free-nodes
   network: tcp
   port: 443
   server: s526.okgg.top
@@ -4249,7 +4267,7 @@ proxies:
   tls: false
   type: vmess
   uuid: 55b88b14-0ff3-4f25-8983-e73d1f9f3a0a
-- name: '475,477,480,482|JP #3'
+- name: '475,477,480,482|JP #4'
   network: ws
   port: 2443
   server: 47.74.8.30
@@ -4287,7 +4305,7 @@ proxies:
     path: /?ed=2560&Telegram🇨🇳 @WangCai2
 - client-fingerprint: chrome
   host: navi.bankrate.com
-  name: 489,553|yandex-59
+  name: 489,553|yandex-3125
   network: tcp
   path: /
   port: 443
@@ -4302,14 +4320,14 @@ proxies:
   type: vless
   uuid: bcc53d6e-4ff9-4e19-8145-7fbb298f2c56
 - cipher: chacha20-ietf-poly1305
-  name: 489,548,553|yandex-94
+  name: 489,548,553|yandex-3160
   password: c6d61cd1-d3dc-405e-afb2-d67815f4e4da
   port: 57927
   server: ldu.izenny.com
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 489,548,553|yandex-95
+  name: 489,548,553|yandex-3161
   password: c6d61cd1-d3dc-405e-afb2-d67815f4e4da
   port: 10589
   server: ldu.izenny.com
@@ -4771,9 +4789,140 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
+  name: 542,553|yandex-3372
+  port: 19831
+  server: xgcma.dx002.top
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 075c16e6-67cb-3599-aa5a-025b478db156
+- alterId: 0
+  cipher: auto
+  name: 542,553|yandex-3373
+  port: 19832
+  server: xgcta.dx002.top
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 075c16e6-67cb-3599-aa5a-025b478db156
+- name: 542,553|yandex-3403
+  password: a6ba0ada-cef1-3009-98dc-a1300ca76ed6
+  port: 41767
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: x114.flybar.work
+  tfo: true
+  type: trojan
+  udp: true
+- name: 542,553|yandex-3404
+  password: a6ba0ada-cef1-3009-98dc-a1300ca76ed6
+  port: 54178
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: x115.flybar.work
+  tfo: true
+  type: trojan
+  udp: true
+- name: 542,553|yandex-3405
+  password: a6ba0ada-cef1-3009-98dc-a1300ca76ed6
+  port: 20139
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: z139.hongkongnode.top
+  tfo: true
+  type: trojan
+  udp: true
+- name: 542,553|yandex-3406
+  password: a6ba0ada-cef1-3009-98dc-a1300ca76ed6
+  port: 20140
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: z140.hongkongnode.top
+  tfo: true
+  type: trojan
+  udp: true
+- name: 542,553|yandex-3407
+  password: a6ba0ada-cef1-3009-98dc-a1300ca76ed6
+  port: 20141
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: z141.hongkongnode.top
+  tfo: true
+  type: trojan
+  udp: true
+- name: 542,553|yandex-3408
+  password: a6ba0ada-cef1-3009-98dc-a1300ca76ed6
+  port: 20142
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: z142.hongkongnode.top
+  tfo: true
+  type: trojan
+  udp: true
+- name: 542,553|yandex-3409
+  password: a6ba0ada-cef1-3009-98dc-a1300ca76ed6
+  port: 20059
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: x59.flybar.work
+  tfo: true
+  type: trojan
+  udp: true
+- name: 542,553|yandex-3410
+  password: a6ba0ada-cef1-3009-98dc-a1300ca76ed6
+  port: 20071
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: x71.flybar.work
+  tfo: true
+  type: trojan
+  udp: true
+- name: 542,553|yandex-3411
+  password: a6ba0ada-cef1-3009-98dc-a1300ca76ed6
+  port: 20076
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: x76.flybar.work
+  tfo: true
+  type: trojan
+  udp: true
+- alterId: 2
+  cipher: auto
+  name: 542,553|yandex-3478
+  port: 23611
+  server: traffic.a1.szx.gfw250.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 5f5b56c0-ff1b-3d5f-a0d1-d10c46a5da39
+- alterId: 2
+  cipher: auto
+  name: 542,553|yandex-3479
+  port: 23617
+  server: traffic.a1.szx.gfw250.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 5f5b56c0-ff1b-3d5f-a0d1-d10c46a5da39
+- alterId: 2
+  cipher: auto
+  name: 542,553|yandex-3480
+  port: 23618
+  server: traffic.a1.szx.gfw250.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 5f5b56c0-ff1b-3d5f-a0d1-d10c46a5da39
+- alterId: 0
+  cipher: auto
   h2-opts: {}
   http-opts: {}
-  name: 548|Relay_-🇯🇵JP_14
+  name: 548|Relay_-🇯🇵JP_08
   network: ws
   port: 443
   server: n1753598451.74qxv.top
@@ -4784,6 +4933,24 @@ proxies:
   ws-opts:
     headers:
       Host: n1753598451.74qxv.top
+    path: /
+- alterId: 0
+  cipher: auto
+  country: 🏁ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 548|Relay_🏁ZZ-🇯🇵JP_156
+  network: ws
+  port: 8443
+  server: t1.620720.xyz
+  servername: t1.620720.xyz
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 516d8a7a-3f0b-41d3-bad0-246116381516
+  ws-opts:
+    headers:
+      HOST: t1.620720.xyz
     path: /
 - cipher: chacha20-ietf-poly1305
   name: 558|0| 01 | 1x JP
@@ -5170,93 +5337,194 @@ proxies:
     headers:
       Host: n1751468092.lie5d.cyou
     path: /
-- name: 566|🇯🇵 日本 | JPN
-  password: 8f99107c-f091-11ee-9935-f23c9164ca5d
-  port: 27233
-  server: 5c18db02-tb4kg0-tcjl4y-1qzi1.cm4.oshuawei.com
-  tls: true
-  type: http
-  username: 8f99107c-f091-11ee-9935-f23c9164ca5d
-- client-fingerprint: chrome
-  name: 566|🇯🇵 日本 | JPN 2
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: UT9tFQOdy54SeW_tg-XQN3QkGYoWUpO_88XFXijkrXc
-    short-id: 2da72ce6
-  server: 154.31.114.125
-  servername: navi.bankrate.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: b9b0af00-8fca-4fb2-9e83-17d7a972a282
-- client-fingerprint: chrome
-  name: 566|🇯🇵 日本 | JPN 3
-  network: ws
-  port: 2083
-  server: v1.dabache.top
-  servername: wk1.f1w.de5.net
-  tls: true
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: wk1.f1w.de5.net
-    path: /?ed=2560
-- client-fingerprint: chrome
-  name: 566|🇯🇵 日本 | JPN 4
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: UT9tFQOdy54SeW_tg-XQN3QkGYoWUpO_88XFXijkrXc
-    short-id: 2da72ce6
-  server: 154.31.114.125
-  servername: navi.bankrate.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 4329fd60-6e69-4f20-8ea6-aae2eee50a95
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 566|🇯🇵 日本 | JPN 5
-  network: tcp
-  port: 30301
-  reality-opts:
-    public-key: IoW1RqD-BzW9oxaM4KtHx5ap6haIENhYyZt_oMZqlCM
-    short-id: 950cee8a
-  server: freea.glyphara.com
-  servername: lol.secure.dyn.riotcdn.net
-  tls: true
-  type: vless
-  udp: true
-  uuid: 418dcf0b-9923-43ec-817b-4dcf8e91cfc5
-- client-fingerprint: chrome
-  name: 566|🇯🇵 日本 | JPN 6
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: UT9tFQOdy54SeW_tg-XQN3QkGYoWUpO_88XFXijkrXc
-    short-id: 2da72ce6
-  server: 154.31.114.125
-  servername: navi.bankrate.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 147ccf68-ca08-4ce9-a507-b0f0d5af119c
 - alterId: 0
   cipher: auto
-  name: '568|🇯🇵 日本 | JPN #1'
+  name: 566|🇯🇵 日本 | JPN
   network: ws
-  port: '443'
+  port: 443
   server: sg.ok12345.ggff.net
+  servername: jp006.japansb3.ggff.net
   tls: true
   type: vmess
-  uuid: ee7b0420-d4ef-42b0-92c6-dbdc1280c470
+  udp: true
+  uuid: 06bf39d5-34ef-40f8-ba75-f2e16a279beb
   ws-opts:
     headers:
-      Host: jp003.japansb3.ggff.net
+      Host: jp006.japansb3.ggff.net
     path: /
+- alterId: 0
+  cipher: auto
+  name: 566|🇯🇵 日本 | JPN 2
+  network: ws
+  port: 443
+  server: sg.ok12345.ggff.net
+  servername: jp006.japansb3.ggff.net
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 25638d5e-4ce8-4e95-aec5-b0af3ef61207
+  ws-opts:
+    headers:
+      Host: jp006.japansb3.ggff.net
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 566|🇯🇵 日本 | JPN 3
+  network: ws
+  port: 443
+  server: sg.ok12345.ggff.net
+  servername: jp006.japansb3.ggff.net
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 2df8b584-d8c6-4964-a0d3-4bac6fb13161
+  ws-opts:
+    headers:
+      Host: jp006.japansb3.ggff.net
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 566|🇯🇵 日本 | JPN 4
+  network: ws
+  port: 443
+  server: sg.ok12345.ggff.net
+  servername: jp006.japansb3.ggff.net
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 329b1b11-41e4-4f28-9652-80f8479ead04
+  ws-opts:
+    headers:
+      Host: jp006.japansb3.ggff.net
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 566|🇯🇵 日本 | JPN 5
+  network: ws
+  port: 443
+  server: sg.ok12345.ggff.net
+  servername: jp006.japansb3.ggff.net
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 6f2db5b5-0736-421d-9a42-bfbcc8b2faf2
+  ws-opts:
+    headers:
+      Host: jp006.japansb3.ggff.net
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 566|🇯🇵 日本 | JPN 6
+  network: ws
+  port: 443
+  server: sg.ok12345.ggff.net
+  servername: jp006.japansb3.ggff.net
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 0e43d77c-6483-4703-bf3f-1de963f3e348
+  ws-opts:
+    headers:
+      Host: jp006.japansb3.ggff.net
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 566|🇯🇵 日本 | JPN 7
+  network: ws
+  port: 443
+  server: sg.ok12345.ggff.net
+  servername: jp006.japansb3.ggff.net
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 1e35e1ec-89cb-4515-90ea-d931bd1366fe
+  ws-opts:
+    headers:
+      Host: jp006.japansb3.ggff.net
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 566|🇯🇵 日本 | JPN 8
+  network: ws
+  port: 443
+  server: sg.ok12345.ggff.net
+  servername: jp006.japansb3.ggff.net
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 5ff0f0e7-7c1e-4d93-bd51-508eaa3554d4
+  ws-opts:
+    headers:
+      Host: jp006.japansb3.ggff.net
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 566|🇯🇵 日本 | JPN 9
+  network: ws
+  port: 443
+  server: sg.ok12345.ggff.net
+  servername: jp006.japansb3.ggff.net
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 6ba62094-ab9f-445a-a083-eafcde47aff6
+  ws-opts:
+    headers:
+      Host: jp006.japansb3.ggff.net
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 566|🇯🇵 日本 | JPN 10
+  network: ws
+  port: 443
+  server: sg.ok12345.ggff.net
+  servername: jp006.japansb3.ggff.net
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 6ed4f5f2-f97b-4d98-9618-ee53894bb666
+  ws-opts:
+    headers:
+      Host: jp006.japansb3.ggff.net
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 566|🇯🇵 日本 | JPN 11
+  network: ws
+  port: 443
+  server: sg.ok12345.ggff.net
+  servername: jp006.japansb3.ggff.net
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 0e09879f-a8d3-48eb-9440-1ab7da509d85
+  ws-opts:
+    headers:
+      Host: jp006.japansb3.ggff.net
+    path: /
+- alpn:
+  - h2
+  - http/1.1
+  name: 566|🇯🇵 日本 | JPN 12
+  password: bc4d55c1-38df-43e6-8df7-3733e84d9399
+  port: 35791
+  server: iijjp.mggl.wang
+  skip-cert-verify: true
+  type: anytls
+  udp: true
+- alterId: 0
+  name: '574|JP #8'
+  password: BxceQaOe
+  port: 2595
+  server: 3.112.214.167
+  skip-cert-verify: true
+  sni: t.me%2Fripaojiedian
+  tls: true
+  type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: '577|日本NO.1 #4'
