@@ -84,6 +84,20 @@ proxies:
   type: vmess
   udp: true
   uuid: 21629fa5-8a06-4c2c-bdaa-85a6fe5222d5
+- alterId: 0
+  cipher: auto
+  name: 255|🇫🇷 法国
+  network: ws
+  port: 30837
+  server: v37.heduian.link
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: ocbc.com
+    path: /oooo
 - client-fingerprint: chrome
   encryption: none
   flow: xtls-rprx-vision
@@ -421,7 +435,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 378,536,537,538,559|🇫🇷 FR_36
+  name: '378,536,537,538,559|🇫🇷 FR_36 #1'
   network: ws
   port: 443
   server: 91.134.8.101
@@ -763,7 +777,7 @@ proxies:
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     path: /linkvws
-- country: 🇫🇷FR
+- country: 🇷FR
   name: '378,435,436,536,537|🇫🇷FR-51.254.142.162-4584 #1'
   password: 6c64e6f9-a76c-49eb-96d2-bf8b1afee4a3
   port: 443
@@ -1558,7 +1572,7 @@ proxies:
   country: 🇷 FR
   h2-opts: {}
   http-opts: {}
-  name: 435| FR_34
+  name: 435| FR_36
   network: ws
   port: 443
   server: 91.134.8.101
@@ -1745,21 +1759,6 @@ proxies:
     headers:
       Host: lax1.ibgfw.top
     path: /xrenvws
-- client-fingerprint: chrome
-  fingerprint: ''
-  name: 470|a022cc3291554f0c919be17d1bbbd2...
-  network: ws
-  port: 22224
-  server: 35.181.123.87
-  servername: trojan.burgerip.co.uk
-  tls: true
-  type: vless
-  udp: false
-  uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
-  ws-opts:
-    headers:
-      host: trojan.burgerip.co.uk
-    path: /telegram-channel-vlessconfig
 - name: '476,481|FR法国(mibei77.com 米贝节点分享) #11'
   password: 5cccb4da-8aee-4b01-be84-2056265e52dc
   port: 443
@@ -1870,36 +1869,22 @@ proxies:
   udp: true
   uuid: f557eadb-1715-4c0b-aaae-f9b9577d827d
   xudp: true
-- name: '507,559|FR TROJAN-55 | free-nodes #1'
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 13.38.210.176
-  type: trojan
-- name: '507,559|FR VLESS-57 | free-nodes #1'
-  network: ws
-  port: 22224
-  server: 35.181.123.87
-  servername: trojan.burgerip.co.uk
-  tls: true
-  type: vless
-  uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
-  ws-opts:
-    path: '%2Ftelegram-channel-vlessconfig'
-- name: '507,559|FR VLESS-66 | free-nodes #1'
-  network: ws
-  port: 80
-  server: ov-france1.09vpn.com
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 507|FR VLESS-104 | free-nodes
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: AYQOZFxjvHN-RIzKYEibwFiFsp03cdlWGdCmyFfuNVc
+    short-id: 4fa44664f6a566d3
+  server: 45.13.119.38
+  servername: fran.scroogethebest.com
   tls: false
   type: vless
-  uuid: 25f86cb1-2140-4085-abcb-c3a0ea7a4be0
-  ws-opts:
-    path: '%2Fvless%2F'
-- name: '507,559|FR VLESS-121 | free-nodes #1'
-  port: 19547
-  server: 109.172.55.157
-  tls: false
-  type: vless
-  uuid: f9cdb2e1-939c-4470-b322-14b7313dec48
+  uuid: ccedb1b1-35f3-46d1-a85a-c699eef5f3e1
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: '523,524,559|🇫🇷_法国 #5'
@@ -2017,7 +2002,7 @@ proxies:
     path: /
 - country: 🇺🇸US
   delay: 2328
-  name: 528,553|yandex-281
+  name: 528,553|yandex-3491
   password: telegram-id-privatevpns
   port: 22222
   server: 51.44.27.45
@@ -2068,24 +2053,39 @@ proxies:
   server: pop.b1c7d2ec-e636-4521-a9f7-abb10044e3a5.heima360.cc
   skip-cert-verify: false
   type: trojan
-- name: 559|🇫🇷FR_39
+- name: '559|🇫🇷FR_39 #2'
   password: 6c64e6f9-a76c-49eb-96d2-bf8b1afee4a3
   port: 443
   server: fr-full.privateip.net
   sni: fr-full.privateip.net
   type: trojan
-- name: 559|🇫🇷FR_38
+- name: '559|🇫🇷FR_38 #1'
   password: d150c8c3-a667-4d3e-843c-739f8558c7d2
   port: 443
   server: uk-full.privateip.net
   sni: uk-full.privateip.net
   type: trojan
-- name: '559|🇫🇷FR_37 #2'
+- name: '559|🇫🇷FR_37 #1'
   password: d86c421f-dbfe-4507-a864-f8f9e29d80e4
   port: 443
   server: de-full.privateip.net
   sni: de-full.privateip.net
   type: trojan
+- name: 559|FR TROJAN-55 | free-nodes
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 13.38.210.176
+  type: trojan
+- name: 559|FR VLESS-57 | free-nodes
+  network: ws
+  port: 22224
+  server: 35.181.123.87
+  servername: trojan.burgerip.co.uk
+  tls: true
+  type: vless
+  uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+  ws-opts:
+    path: '%2Ftelegram-channel-vlessconfig'
 - name: '559,580|FR VLESS-33 | free-nodes #1'
   network: ws
   port: 22224
@@ -2096,6 +2096,15 @@ proxies:
   uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
   ws-opts:
     path: '%2Ftelegram-channel-vlessconfig'
+- name: 559|FR VLESS-66 | free-nodes
+  network: ws
+  port: 80
+  server: ov-france1.09vpn.com
+  tls: false
+  type: vless
+  uuid: 25f86cb1-2140-4085-abcb-c3a0ea7a4be0
+  ws-opts:
+    path: '%2Fvless%2F'
 - grpc-opts:
     grpc-service-name: ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
   name: 559|🇫🇷[openproxylist.com] vless-FR
@@ -2132,7 +2141,7 @@ proxies:
   uuid: 5d0e6695-6c63-4168-b5e5-2a73ea86b1b1
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: '559,580|FR VLESS-66 | free-nodes #3'
+  name: '559,580|FR VLESS-66 | free-nodes #2'
   network: tcp
   port: 8080
   reality-opts:
@@ -2817,19 +2826,26 @@ proxies:
   type: vmess
   uuid: ede27a79-b039-490b-932c-495de4b68880
 - name: 566|🇫🇷 法国 | FRA
-  password: 537d7098-fdbe-11ef-8ebc-f23c93141fad
+  password: 06c625ea-5902-11ee-9e87-f23c9313b177
   port: 3246
-  server: b4036aee-tb6f40-tcj7b6-d70y.h2frdc1.cdnbytescm.com
+  server: 8545f83e-tb6f40-tbo02e-4mce.h2frdc1.cdnbytescm.com
   tls: true
   type: http
-  username: 537d7098-fdbe-11ef-8ebc-f23c93141fad
+  username: 06c625ea-5902-11ee-9e87-f23c9313b177
 - name: 566|🇫🇷 法国 | FRA 2
-  password: 537d7098-fdbe-11ef-8ebc-f23c93141fad
+  password: c870fe5a-0729-11f0-8cf9-f23c93136cb3
   port: 3246
-  server: e106f345-tb71c0-tcjtj6-d70y.h2frdc1.cdnbytescm.com
+  server: 243fcf1a-tb6f40-tgp57k-ddgs.h2frdc1.cdnbytescm.com
   tls: true
   type: http
-  username: 537d7098-fdbe-11ef-8ebc-f23c93141fad
+  username: c870fe5a-0729-11f0-8cf9-f23c93136cb3
+- name: '566|🇫🇷 法国 | FRA 3 #1'
+  password: be8cc8f6-0c6a-11f0-a5a3-f23c93141fad
+  port: 3246
+  server: eb56bbd6-tb71c0-tbonmy-b4pt.h2frdc1.cdnbytescm.com
+  tls: true
+  type: http
+  username: be8cc8f6-0c6a-11f0-a5a3-f23c93141fad
 - alterId: 0
   cipher: auto
   name: '577|法国1 #4'
