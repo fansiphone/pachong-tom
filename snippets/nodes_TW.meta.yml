@@ -553,7 +553,7 @@ proxies:
   server: 185.189.160.105
   type: ss
 - alterId: 0
-  name: '378,536,537,544,559,574|TW #4'
+  name: '378,536,537,559,574|TW #4'
   network: raw
   password: 5f6ded93-4ab8-4a99-9c84-b19b9993f27c
   port: 31102
@@ -578,16 +578,17 @@ proxies:
   tls: false
   type: vmess
   uuid: f6406b6d-5487-46da-f793-46611269a306
-- name: 378,523,524,537,544,559|🇹🇼TW台湾2
+- name: 378,523,524,537,544,548,559|🇹🇼TW台湾2
   password: 0a169d7d-a30f-4d90-af1b-55f6ef6afcb7
   port: 31101
   server: green2.cdntencentmusic.com
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: green2.cdntencentmusic.com
   tls: true
   type: trojan
+  udp: true
 - alterId: 0
-  name: '378,523,524,537,544,559,574|🇺🇸US美国2 #1'
+  name: '378,523,524,537,544,548,559,574|🇺🇸US美国2 #1'
   password: 0a169d7d-a30f-4d90-af1b-55f6ef6afcb7
   port: 35501
   server: green2.cdntencentmusic.com
@@ -627,7 +628,7 @@ proxies:
   tls: true
   type: trojan
   udp: true
-- name: '378,523,524,537,544,559|🇹🇼_中国台湾省 #5'
+- name: '378,523,524,537,544,548,559|🇹🇼_中国台湾省 #5'
   network: tcp
   password: 11cfbea5-eae4-4654-8aa9-a9481f38dc42
   port: 35501
@@ -636,6 +637,7 @@ proxies:
   sni: green2.cdntencentmusic.com
   tls: true
   type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: '378,536,537,559|这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使... #19'
@@ -1038,7 +1040,7 @@ proxies:
     headers:
       Host: tw3.594888.xyz
     path: /v2ray
-- name: '378,436,536,537|TW-61.221.189.243-4683 #1'
+- name: '378,536,537|TW-61.221.189.243-4683 #1'
   password: 6e1b9a65-884f-3aa9-9469-bf6ec0f08610
   port: 3462
   server: a03.taipeicitygovernment.cn.ua
@@ -1216,11 +1218,14 @@ proxies:
       Host: 51b0e42034dd75a815fa9eb16021fbda.mobgslb.tbcache.com
     path: /
   ws-path: /
-- name: 436|🇹🇼 TW_124
+- country: 🇼 TW
+  name: 435,436|🇹🇼 TW_126
   password: 736cd94d-7b94-3e44-8106-3419f64eaf09
   port: 3462
   server: a03.taipeicitygovernment.cn.ua
+  skip-cert-verify: true
   type: trojan
+  udp: true
 - name: 459|台湾(yudou789.top 玉豆免费节点)
   network: tcp
   password: 774b491c-f809-4dbd-b31c-bc3bd6ab92ac
@@ -1397,7 +1402,21 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 2d15b18d-5993-3845-9d00-24a59e1f1e2f
+  uuid: af722a00-310a-3a48-b1ed-07412cf0af1d
+- name: 548|TW台湾(mibei77.com 米贝节点分享) 6
+  password: 11cfbea5-eae4-4654-8aa9-a9481f38dc42
+  port: 31101
+  server: 220.130.58.136
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: 548|TW台湾(mibei77.com 米贝节点分享) 9
+  password: 47d9af53-24a8-4593-a439-a73b88ad53ae
+  port: 35501
+  server: 220.130.58.136
+  skip-cert-verify: true
+  type: trojan
+  udp: true
 - cipher: chacha20-ietf-poly1305
   name: 558|0| 01 | 1x TW
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
