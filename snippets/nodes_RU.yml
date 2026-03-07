@@ -150,7 +150,8 @@ proxies:
   ws-opts:
     path: /
 - cipher: aes-256-cfb
-  name: 378,537,538|🇷🇺RU-38.60.223.8-0164 | 0.466M...
+  country: 🇺🇸US
+  name: 378,537,538,548|🇺🇸US_139
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 38.60.223.8
@@ -472,22 +473,14 @@ proxies:
   port: 444
   server: 146.185.198.44
   type: ss
-- name: 436,536|🇲🇩MD-194.246.114.54-4645
+- country: 🇺RU
+  name: 435,436,536|🇲🇩MD-194.246.114.54-4645
   password: e299faed-cb72-4c62-bb2e-f0a218aed72a
   port: 443
   server: 194.246.114.54
+  skip-cert-verify: true
   type: trojan
-- name: '459,559,580|RU俄罗斯(mibei77.com 米贝节点分享) #16'
-  network: ws
-  password: trojan
-  port: 8443
-  server: 109.234.211.66
-  sni: store.timimi.dpdns.org
-  type: trojan
-  ws-opts:
-    headers:
-      Host: store.timimi.dpdns.org
-    path: '%2F'
+  udp: true
 - name: '461|俄罗斯联邦_莫斯科 #2'
   network: tcp
   password: 88903f70-b50b-11ed-8775-f23c9164ca5d
@@ -859,14 +852,14 @@ proxies:
   server: 212.192.14.226
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 489,553|yandex-3231
+  name: 489,553|yandex-3657
   password: 623787ef-7786-4572-abf5-0180892558aa
   port: 25319
   server: ncgddx.gdsxrk.com
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: 489,553|yandex-3276
+  name: 489,553|yandex-3702
   password: c5fcdf7829112cb4
   port: 60129
   server: 45.140.169.225
@@ -901,11 +894,18 @@ proxies:
   tfo: false
   type: ss
 - cipher: aes-256-gcm
-  name: 522|🇺_RU_俄罗斯_1
+  name: '522,548|🇷🇺_RU_俄罗斯_1 #3'
   password: 9f3d1a6d31468599
   port: 60129
   server: 195.58.49.100
   type: ss
+- name: 544|🇷🇺 RU俄罗斯(mibei77.com 米贝节点分享)
+  password: trojan
+  port: 8443
+  server: 109.234.211.66
+  skip-cert-verify: false
+  sni: store.timimi.dpdns.org
+  type: trojan
 - cipher: chacha20-ietf-poly1305
   name: 558|0|🇺俄罗斯 01 | 1x RU
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
@@ -933,6 +933,17 @@ proxies:
   server: 194.246.114.54
   sni: 194.246.114.54
   type: trojan
+- name: '559,580|RU俄罗斯(mibei77.com 米贝节点分享) #16'
+  network: ws
+  password: trojan
+  port: 8443
+  server: 109.234.211.66
+  sni: store.timimi.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: store.timimi.dpdns.org
+    path: '%2F'
 - alterId: 0
   cipher: auto
   name: 578|11|俄罗斯 Rubtsovsk Branch of Alt...
