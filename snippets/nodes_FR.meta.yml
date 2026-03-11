@@ -84,20 +84,6 @@ proxies:
   type: vmess
   udp: true
   uuid: 21629fa5-8a06-4c2c-bdaa-85a6fe5222d5
-- alterId: 0
-  cipher: auto
-  name: 255|🇫🇷 法国
-  network: ws
-  port: 30837
-  server: v37.heduian.link
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      Host: ocbc.com
-    path: /oooo
 - cipher: aes-256-cfb
   name: '356,378,537|🇳🇱NL-51.15.27.48-7913 #1'
   password: f8f7aCzcPKbsF8p3
@@ -578,7 +564,7 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: '378,494,536,537|🇷FR-51.77.158.169-3551 #1'
+  name: '378,536,537|🇷FR-51.77.158.169-3551 #1'
   network: ws
   port: 2096
   server: 51.77.158.169
@@ -665,18 +651,22 @@ proxies:
     headers:
       Host: ahdaeph8.com
     path: /ws
-- name: '378,436,536,537|🇷FR-57.128.174.124-4577 #1'
+- country: 🇫🇷FR
+  name: '378,435,436,536,537|🇷FR-57.128.174.124-4577 #1'
   password: d150c8c3-a667-4d3e-843c-739f8558c7d2
   port: 443
   server: uk-full.privateip.net
   skip-cert-verify: false
   type: trojan
-- name: '378,436,536,537|🇷FR-51.254.142.162-4579 #1'
+  udp: true
+- country: 🇫🇷FR
+  name: '378,435,436,536,537|🇷FR-51.254.142.162-4579 #1'
   password: 6c64e6f9-a76c-49eb-96d2-bf8b1afee4a3
   port: 443
   server: fr-full.privateip.net
   skip-cert-verify: false
   type: trojan
+  udp: true
 - cipher: chacha20-ietf-poly1305
   name: '378,537|FR-178.18.244.2-5404 #1'
   password: 97OnDEZYGja4
@@ -821,7 +811,7 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: '378,494,536,537|🇷FR-146.59.55.50-6908 #1'
+  name: '378,536,537|🇷FR-146.59.55.50-6908 #1'
   network: ws
   port: 443
   server: 146.59.55.50
@@ -1023,7 +1013,7 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: '378,494,536,537|🇷FR-141.94.155.224-6947 #1'
+  name: '378,536,537|🇷FR-141.94.155.224-6947 #1'
   network: ws
   port: 443
   server: 141.94.155.224
@@ -1515,7 +1505,7 @@ proxies:
   sni: trj.rollingnext.co.uk
   type: trojan
 - client-fingerprint: chrome
-  name: '456,494,507,559,580|FR VLESS-78 | free-nodes #1'
+  name: '456,507,559,580|FR VLESS-78 | free-nodes #1'
   network: tcp
   port: 61873
   reality-opts:
@@ -1527,7 +1517,7 @@ proxies:
   type: vless
   uuid: 8b8f4dfb-cd48-4dab-bb75-b304971176cd
 - client-fingerprint: chrome
-  name: '456,507,559|FR VLESS-112 | free-nodes #1'
+  name: 456,507,559|FR VLESS-112 | free-nodes
   network: tcp
   port: 58198
   reality-opts:
@@ -1717,6 +1707,27 @@ proxies:
     headers:
       Host: lax1.ibgfw.top
     path: /xrenvws
+- alterId: 0
+  cipher: auto
+  name: '473,544,559,580|GB英国(mibei77.com 米贝节点分享) #6'
+  network: tcp
+  port: '50521'
+  server: 141.11.21.219
+  servername: a.sezar.top
+  tls: true
+  type: vmess
+  uuid: 7b4c6795-3be5-4a4e-b234-07a46f580c45
+- name: 507,559|FR VLESS-35 | free-nodes
+  network: ws
+  port: 80
+  server: fsdns.ectunnelvpn.me
+  tls: false
+  type: vless
+  uuid: 15cbab96-197e-46a5-9042-073b3980c798
+  ws-opts:
+    headers:
+      Host: fsdns.ectunnelvpn.me
+    path: /vless
 - client-fingerprint: random
   name: '523,524|🇫🇷_法国_7 #1'
   network: ws
@@ -1778,23 +1789,28 @@ proxies:
   sni: www.microsoft.com
   tls: false
   type: hysteria2
-- name: '559|🇫🇷FR_17 #1'
+- name: 559|🇫🇷FR_17
   password: 6c64e6f9-a76c-49eb-96d2-bf8b1afee4a3
   port: 443
   server: fr-full.privateip.net
   sni: fr-full.privateip.net
   type: trojan
-- name: '559|🇫🇷FR_18 #1'
+- name: 559|🇫🇷FR_18
   password: d150c8c3-a667-4d3e-843c-739f8558c7d2
   port: 443
   server: uk-full.privateip.net
   sni: uk-full.privateip.net
   type: trojan
-- name: '559|🇫🇷FR_16 #1'
+- name: 559|🇫🇷FR_16
   password: d86c421f-dbfe-4507-a864-f8f9e29d80e4
   port: 443
   server: de-full.privateip.net
   sni: de-full.privateip.net
+  type: trojan
+- name: 559|FR TROJAN-28 | free-nodes
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 13.38.214.118
   type: trojan
 - name: 559|法国 - 奧奈叢林 - 1
   password: trojan
@@ -2052,6 +2068,16 @@ proxies:
     headers:
       Host: nat3.outsidemyheart.space
     path: '%2Few4p98tu34wtghe39'
+- alterId: 0
+  cipher: auto
+  name: 559|法国_031118002
+  network: tcp
+  port: '550'
+  server: 162.19.248.238
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: ede27a79-b039-490b-932c-495de4b68880
 - alterId: 0
   cipher: auto
   name: '577|法国1 #4'
