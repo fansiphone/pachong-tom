@@ -66,6 +66,20 @@ proxies:
   type: vmess
   udp: true
   uuid: 21629fa5-8a06-4c2c-bdaa-85a6fe5222d5
+- alterId: 0
+  cipher: auto
+  name: 255|🇫🇷 法国
+  network: ws
+  port: 30837
+  server: v37.heduian.link
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: ocbc.com
+    path: /oooo
 - cipher: aes-256-cfb
   name: '356,378,537|🇳🇱NL-51.15.27.48-7886 #1'
   password: f8f7aCzcPKbsF8p3
@@ -506,7 +520,7 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: '378,536,537|🇷FR-51.77.158.169-3500 #1'
+  name: '378,494,536,537|🇷FR-51.77.158.169-3500 #1'
   network: ws
   port: 2096
   server: 51.77.158.169
@@ -593,18 +607,22 @@ proxies:
     headers:
       Host: ahdaeph8.com
     path: /ws
-- name: '378,436,536,537|🇷FR-51.254.142.162-4528 #1'
+- country: 🇫🇷FR
+  name: '378,435,436,536,537|🇷FR-51.254.142.162-4528 #1'
   password: 6c64e6f9-a76c-49eb-96d2-bf8b1afee4a3
   port: 443
   server: fr-full.privateip.net
   skip-cert-verify: false
   type: trojan
-- name: '378,436,536,537|🇫🇷FR-57.128.174.124-4529 #1'
+  udp: true
+- country: 🇷FR
+  name: '378,435,436,536,537|🇫🇷FR-57.128.174.124-4529 #1'
   password: d150c8c3-a667-4d3e-843c-739f8558c7d2
   port: 443
   server: uk-full.privateip.net
   skip-cert-verify: false
   type: trojan
+  udp: true
 - cipher: chacha20-ietf-poly1305
   name: '378,537|FR-178.18.244.2-5377 #1'
   password: 97OnDEZYGja4
@@ -749,7 +767,7 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: '378,536,537|🇷FR-146.59.55.50-6881 #1'
+  name: '378,494,536,537|🇷FR-146.59.55.50-6881 #1'
   network: ws
   port: 443
   server: 146.59.55.50
@@ -1565,22 +1583,7 @@ proxies:
     headers:
       Host: lax1.ibgfw.top
     path: /xrenvws
-- alterId: 0
-  cipher: auto
-  country: 🇫🇷FR
-  delay: 2856
-  h2-opts: {}
-  http-opts: {}
-  name: '472,473,474,502,528,544,559,580|GB英国(mibei77.com 米贝节点分享) #7'
-  network: tcp
-  port: '50521'
-  server: 141.11.21.219
-  servername: a.sezar.top
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 7b4c6795-3be5-4a4e-b234-07a46f580c45
-- name: 507|FR TROJAN-24 | free-nodes
+- name: 507|FR TROJAN-30 | free-nodes
   network: ws
   password: humanity
   port: 443
@@ -1592,7 +1595,7 @@ proxies:
     path: '%2Fassignment'
 - country: 🇺🇸US
   delay: 722
-  name: 528,553|yandex-3624
+  name: 528,553|yandex-259
   password: telegram-id-directvpn
   port: 22223
   server: 51.44.98.27
@@ -1685,40 +1688,28 @@ proxies:
   type: trojan
 - cipher: aes-256-cfb
   country: 🇳🇱NL
-  name: 548|Relay_🇳🇱NL-🇫🇷FR_84
+  name: 548|Relay_🇳🇱NL-🇫🇷FR_83
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 51.15.23.63
   type: ss
-- name: '559|🇫🇷FR_20 #1'
+- name: 559|🇫🇷FR_22
   password: 6c64e6f9-a76c-49eb-96d2-bf8b1afee4a3
   port: 443
   server: fr-full.privateip.net
   sni: fr-full.privateip.net
   type: trojan
-- name: 559|🇫🇷 FR_18
-  password: RXO4SlDD8qRKaxz3cBgSa3AXZuFnpu3Ce3KZFAN3YCxC7EEj2lTRN4Y6FyOcBp50IzD3D
-  port: 443
-  server: 35.180.65.55
-  sni: 35.180.65.55
-  type: trojan
-- name: 559|🇫🇷FR_21
+- name: 559|🇫🇷FR_23
   password: d150c8c3-a667-4d3e-843c-739f8558c7d2
   port: 443
   server: uk-full.privateip.net
   sni: uk-full.privateip.net
   type: trojan
-- name: '559|🇫🇷FR_19 #1'
+- name: '559|🇫🇷FR_21 #2'
   password: d86c421f-dbfe-4507-a864-f8f9e29d80e4
   port: 443
   server: de-full.privateip.net
   sni: de-full.privateip.net
-  type: trojan
-- name: 559|法国 - 奧奈叢林 - 1
-  password: trojan
-  port: 445
-  server: 109.61.110.80
-  sni: jflsjlaf.pages.dev
   type: trojan
 - name: 559|法国 - 奧奈叢林 - 4
   password: trojan
@@ -1738,25 +1729,6 @@ proxies:
   server: 51.83.47.153
   sni: jflsjlaf.pages.dev
   type: trojan
-- alterId: 2
-  cipher: auto
-  name: 559|FR3｜机房｜低风险
-  network: tcp
-  port: '30835'
-  server: v35.hdacd.com
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- alterId: 0
-  cipher: auto
-  name: 559|法国_031018002
-  network: tcp
-  port: '550'
-  server: 162.19.248.238
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: ede27a79-b039-490b-932c-495de4b68880
 - alterId: 0
   cipher: auto
   name: '577|法国1 #4'
