@@ -247,7 +247,7 @@ proxies:
     path: /
 - cipher: aes-256-cfb
   country: 🇺🇸US
-  name: 378,537,538,548|🇺🇸US_111
+  name: 378,537,538,548|🇺🇸US_102
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 38.60.223.8
@@ -598,14 +598,6 @@ proxies:
   skip-cert-verify: true
   sni: eu.mjanyt.com
   type: anytls
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  country: 🇷🇺RU
-  name: 435,489,548,553|yandex-584
-  password: 7kJQs2RYHhViTYWaf1RobB
-  port: 7749
-  server: 77.246.97.187
-  type: ss
   udp: true
 - name: '456,459,559,580|KR韩国(mibei77.com 米贝节点分享) #98'
   network: ws
@@ -1512,7 +1504,7 @@ proxies:
       Host: ''
     path: /
 - cipher: rc4-md5
-  name: 489,553|yandex-354
+  name: 489,553|yandex-214
   password: efanccyun
   plugin: obfs
   plugin-opts:
@@ -1523,7 +1515,7 @@ proxies:
   type: ss
   udp: true
 - cipher: rc4-md5
-  name: 489,553|yandex-478
+  name: 489,553|yandex-338
   password: efanccyun
   plugin: obfs
   plugin-opts:
@@ -1535,7 +1527,7 @@ proxies:
   udp: true
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '507,559|RU VLESS-76 | free-nodes #2'
+  name: '507,559|RU VLESS-76 | free-nodes #1'
   network: tcp
   port: 2777
   reality-opts:
@@ -1571,14 +1563,18 @@ proxies:
   tls: false
   type: vless
   uuid: e346f220-4ca4-4f69-a66b-52e992b3b625
-- name: 507,559,580|RU VLESS-111 | free-nodes
-  port: 8443
-  server: 45.12.114.73
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 507|RU VLESS-118 | free-nodes
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: BhTJ3phnq-Z-10aFKSsj1lzhA8mULR4L6leE4-0WTAs
+  server: 138.124.186.80
+  servername: www.fh-aachen.de
   tls: false
   type: vless
-  uuid: f1e74548-4c0b-463b-b68d-0d1ec48c965d
-  ws-opts:
-    path: '%2Fws-vless%2F'
+  uuid: e346f220-4ca4-4f69-a66b-52e992b3b625
 - alterId: 0
   cipher: auto
   name: '513,517,578|2|🇷🇺_RU_俄罗斯联邦 #3'
@@ -1954,7 +1950,7 @@ proxies:
   uuid: 7559ad2a-a419-4fd7-bc6a-9350a017f72a
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '559,580|RU VLESS-76 | free-nodes #3'
+  name: '559,580|RU VLESS-76 | free-nodes #2'
   network: tcp
   port: 2777
   reality-opts:
@@ -2010,6 +2006,14 @@ proxies:
   tls: false
   type: vless
   uuid: eb071647-72a6-46be-8e89-ff3d228d52f6
+- name: 559,580|RU VLESS-111 | free-nodes
+  port: 8443
+  server: 45.12.114.73
+  tls: false
+  type: vless
+  uuid: f1e74548-4c0b-463b-b68d-0d1ec48c965d
+  ws-opts:
+    path: '%2Fws-vless%2F'
 - alpn:
   - h3
   auth_str: dongtaiwang.com
@@ -2033,6 +2037,16 @@ proxies:
   tls: true
   type: hysteria
   up: 1000 Mbps
+- alterId: 0
+  name: 574|🇺RU
+  password: ZblhWr0mqMakCPg.N
+  port: 36158
+  server: 212.193.18.144
+  skip-cert-verify: true
+  sni: ya.ru
+  tls: true
+  type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: 578|11|俄罗斯 Rubtsovsk Branch of Alt...
