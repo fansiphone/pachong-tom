@@ -84,6 +84,20 @@ proxies:
   type: vmess
   udp: true
   uuid: 21629fa5-8a06-4c2c-bdaa-85a6fe5222d5
+- alterId: 0
+  cipher: auto
+  name: 255|🇫🇷 法国
+  network: ws
+  port: 30837
+  server: v37.heduian.link
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: ocbc.com
+    path: /oooo
 - cipher: aes-256-cfb
   name: '356,378,537|🇳🇱NL-51.15.27.48-8083 #2'
   password: f8f7aCzcPKbsF8p3
@@ -639,18 +653,22 @@ proxies:
     headers:
       Host: ahdaeph8.com
     path: /ws
-- name: '378,436,536,537|🇷FR-51.254.142.162-4564 #1'
+- country: 🇫🇷FR
+  name: '378,435,436,536,537|🇷FR-51.254.142.162-4564 #1'
   password: 6c64e6f9-a76c-49eb-96d2-bf8b1afee4a3
   port: 443
   server: fr-full.privateip.net
   skip-cert-verify: false
   type: trojan
-- name: '378,436,536,537|🇫🇷FR-57.128.174.124-4565 #2'
+  udp: true
+- country: 🇫🇷FR
+  name: '378,435,436,536,537|🇫🇷FR-57.128.174.124-4565 #2'
   password: d150c8c3-a667-4d3e-843c-739f8558c7d2
   port: 443
   server: uk-full.privateip.net
   skip-cert-verify: false
   type: trojan
+  udp: true
 - cipher: chacha20-ietf-poly1305
   name: '378,537|FR-178.18.244.2-5443 #1'
   password: 97OnDEZYGja4
@@ -1747,7 +1765,7 @@ proxies:
     path: /xrenvws
 - client-fingerprint: chrome
   fingerprint: ''
-  name: 470|3f2026993e71497683abbc749f4e1c...
+  name: 470|aa828fe97c6e406bacd80c29ec7b7c...
   network: ws
   port: 443
   server: cf.008500.xyz
@@ -1982,19 +2000,6 @@ proxies:
   uuid: 491ce522-7923-41ad-869f-df74539af6e0
   xudp: true
 - client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '507,559|FR VLESS-50 | free-nodes #1'
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: wgoLhL4pRP0y6fu6He4qW_ElohCM_ANWJF3HEoUhNz4
-    short-id: 9c2378562188c3cb
-  server: 185.171.202.38
-  servername: fr.denditop.site
-  tls: false
-  type: vless
-  uuid: 256c5f48-4908-4255-83d1-c86cb58f22b4
-- client-fingerprint: chrome
   name: 507,559,580|FR VLESS-53 | free-nodes
   network: tcp
   port: 443
@@ -2008,16 +2013,28 @@ proxies:
   uuid: 3cc7c3a4-03a7-11f1-9bc0-0242ac110002
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '507,559|FR VLESS-74 | free-nodes #1'
+  name: '507,559,580|FR VLESS-74 | free-nodes #2'
   network: tcp
   port: 23151
   reality-opts:
     public-key: eP0MKUFOcNVSVFbHT8GgBLP4LIHZFq8JuVGlCAlH1HI
-  server: 138.124.70.90
+  server: 3.fr.vles.space
   servername: cms-res-web.online.sberbank.ru
   tls: false
   type: vless
   uuid: 7f37b28b-cfcb-4c2a-ae41-8f2ddc9325dd
+- client-fingerprint: chrome
+  name: '507,559,580|FR VLESS-76 | free-nodes #1'
+  network: tcp
+  port: 61873
+  reality-opts:
+    public-key: wEU32qHhiQq-FDYUvuEl7_HAM6r5nDh6M4F8WGnEhjE
+    short-id: 34d8e80d8fa40501
+  server: 45.95.233.85
+  servername: yandex.ru
+  tls: false
+  type: vless
+  uuid: 8b8f4dfb-cd48-4dab-bb75-b304971176cd
 - alterId: 0
   cipher: auto
   name: '523,524|🇫🇷_法国 #1'
@@ -2327,7 +2344,7 @@ proxies:
   server: pop.b1c7d2ec-e636-4521-a9f7-abb10044e3a5.heima360.cc
   skip-cert-verify: false
   type: trojan
-- name: '559|🇫🇷FR_20 #1'
+- name: 559|🇫🇷FR_20
   password: 6c64e6f9-a76c-49eb-96d2-bf8b1afee4a3
   port: 443
   server: fr-full.privateip.net
@@ -2339,7 +2356,7 @@ proxies:
   server: uk-full.privateip.net
   sni: uk-full.privateip.net
   type: trojan
-- name: '559|🇫🇷FR_19 #1'
+- name: 559|🇫🇷FR_19
   password: d86c421f-dbfe-4507-a864-f8f9e29d80e4
   port: 443
   server: de-full.privateip.net
@@ -2356,7 +2373,7 @@ proxies:
   server: 109.61.110.80
   sni: jflsjlaf.pages.dev
   type: trojan
-- name: '559|FR VLESS-41 | free-nodes #1'
+- name: 559|FR VLESS-41 | free-nodes
   network: ws
   port: 80
   server: 213.136.69.8
@@ -2380,6 +2397,19 @@ proxies:
   tls: false
   type: vless
   uuid: 19cb2ba5-d074-42d6-8400-6d9183514f48
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 559|FR VLESS-50 | free-nodes
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: wgoLhL4pRP0y6fu6He4qW_ElohCM_ANWJF3HEoUhNz4
+    short-id: 9c2378562188c3cb
+  server: 185.171.202.38
+  servername: fr.denditop.site
+  tls: false
+  type: vless
+  uuid: 256c5f48-4908-4255-83d1-c86cb58f22b4
 - name: '559,580|FR VLESS-48 | free-nodes #1'
   port: 443
   server: fr.denditop.site
@@ -2481,28 +2511,16 @@ proxies:
     path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%252B%2540WangCai2'
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '559,580|FR VLESS-74 | free-nodes #3'
+  name: 559|FR VLESS-74 | free-nodes
   network: tcp
   port: 23151
   reality-opts:
     public-key: eP0MKUFOcNVSVFbHT8GgBLP4LIHZFq8JuVGlCAlH1HI
-  server: 3.fr.vles.space
+  server: 138.124.70.90
   servername: cms-res-web.online.sberbank.ru
   tls: false
   type: vless
   uuid: 7f37b28b-cfcb-4c2a-ae41-8f2ddc9325dd
-- client-fingerprint: chrome
-  name: '559,580|FR VLESS-76 | free-nodes #1'
-  network: tcp
-  port: 61873
-  reality-opts:
-    public-key: wEU32qHhiQq-FDYUvuEl7_HAM6r5nDh6M4F8WGnEhjE
-    short-id: 34d8e80d8fa40501
-  server: 45.95.233.85
-  servername: yandex.ru
-  tls: false
-  type: vless
-  uuid: 8b8f4dfb-cd48-4dab-bb75-b304971176cd
 - alterId: 0
   cipher: auto
   name: '559|🇫🇷_法国 #8'
