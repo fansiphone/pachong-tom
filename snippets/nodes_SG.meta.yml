@@ -164,6 +164,20 @@ proxies:
     headers:
       Host: download.cloud.189.cn
     path: /
+- name: '127,426,523,524|🇺🇸_美国_33 #1'
+  network: ws
+  port: 443
+  server: registry.cyou
+  servername: snip.zrfs.bbroot.com
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 4d6fa520-b8c1-4811-93f6-a91fd6f87b59
+  ws-opts:
+    headers:
+      Host: snip.zrfs.bbroot.com
+    path: /zrf?ed=2560
 - client-fingerprint: chrome
   name: '127,426,523,524|_未知_19 #1'
   network: ws
@@ -179,36 +193,21 @@ proxies:
     headers:
       Host: snip.zrfsub.pp.ua
     path: /zrf?ed=2560
-- alpn:
-  - http%2F1.1
-  client-fingerprint: random
-  name: '127,426|SG_2|3.4MB/s #1'
-  network: ws
-  port: 3389
-  server: 203.168.131.110
-  servername: snippet.chinav.eu.cc
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: vless
-  uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
-  ws-opts:
-    headers:
-      Host: snippet.chinav.eu.cc
-    path: /danfengfp=random
-- name: '127,426,523,524|🇺🇸_美国_33 #1'
+- client-fingerprint: chrome
+  name: 127,426,523,524,566|🇺🇸 美国 | USA 14
   network: ws
   port: 443
-  server: registry.cyou
-  servername: snip.zrfs.bbroot.com
+  server: 8.35.211.69
+  servername: snip.ere.de5.net
   skip-cert-verify: true
   tfo: false
   tls: true
   type: vless
+  udp: true
   uuid: 4d6fa520-b8c1-4811-93f6-a91fd6f87b59
   ws-opts:
     headers:
-      Host: snip.zrfs.bbroot.com
+      Host: snip.ere.de5.net
     path: /zrf?ed=2560
 - alterId: 0
   cipher: auto
@@ -855,11 +854,11 @@ proxies:
   port: 17315
   server: 120.240.103.35
   type: ss
-- name: 255|🇸🇬 SG
+- name: 255|SG
+  network: tcp
   password: f57f01e6-9bb1-4277-a5cb-75ad0ce1fa11
   port: 32702
   server: xd-sh.timiwc.com
-  skip-cert-verify: true
   sni: k36.tudou211.com
   type: trojan
 - name: '306,340,378,502,514,515,516,536,537,551,559,567,585,586|SG_speednode_0034
@@ -2240,7 +2239,7 @@ proxies:
       Host: 180.215.130.123
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: '378,537,538,548|_03 #1'
+  name: '378,537,538,548|_04 #1'
   password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
   port: 990
   server: 38.89.142.56
@@ -2508,7 +2507,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 378,536,537,559|SG
+  name: '378,536,537,559|SG #1'
   network: ws
   port: '50000'
   server: 89.28.239.43
@@ -4987,8 +4986,9 @@ proxies:
 - client-fingerprint: chrome
   encryption: none
   grpc-opts:
+    grpc-mode: gun
     grpc-service-name: violet
-  name: '489|🔴🇸🇬[🎬🤖📺🔍]_github.com/Ruk1ng001... #10'
+  name: 489,566|🇸🇬 新加坡 | SGP 6
   network: grpc
   port: 25055
   server: sgskb.osaip.net
@@ -5009,19 +5009,6 @@ proxies:
   type: vless
   udp: true
   uuid: b6f44420-a274-4e9e-aa89-ebef504c65f8
-  xudp: true
-- client-fingerprint: chrome
-  encryption: none
-  grpc-opts:
-    grpc-service-name: violet
-  name: '489|🔴🇸🇬[🎬🤖📺🔍]_github.com/Ruk1ng001... #12'
-  network: grpc
-  port: 25055
-  server: sgskb.osaip.net
-  tls: true
-  type: vless
-  udp: true
-  uuid: b2a196d2-a696-4be7-b440-7e9825f7ac5d
   xudp: true
 - name: '489|🔴🇸🇬[🎬🤖📺🔍]_github.com/Ruk1ng001... #13'
   password: C79F45C4-3A2A-2FC5-5DC7-B9DD307945F7
@@ -5112,7 +5099,29 @@ proxies:
   udp: true
   uuid: fab8ca81-80ea-445e-ba31-f900007c2e4e
   xudp: true
-- name: '507,559|SG VLESS-61 | free-nodes #1'
+- name: 507|SG TROJAN-56 | free-nodes
+  network: ws
+  password: 13c169be-8592-4eaa-94cb-69c859e7d987
+  port: 443
+  server: ubu.okaoclax.me
+  sni: ubu.okaoclax.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ubu.okaoclax.me
+    path: /trojan-ws
+- name: 507|SG VLESS-85 | free-nodes
+  network: ws
+  port: 80
+  server: 104.17.138.160
+  tls: false
+  type: vless
+  uuid: 388a6c57-87e7-420b-afe2-b3eb670fd7da
+  ws-opts:
+    headers:
+      Host: vip.yaml7.ggff.net
+    path: '%2F'
+- name: 507,559|SG VLESS-61 | free-nodes
   network: ws
   port: 80
   server: 104.17.152.254
@@ -5123,41 +5132,6 @@ proxies:
     headers:
       Host: vip.yaml7.ggff.net
     path: '%2F'
-- name: '507,559|SG VLESS-73 | free-nodes #1'
-  network: ws
-  port: 80
-  server: 104.18.173.174
-  tls: false
-  type: vless
-  uuid: 53342b53-157e-4475-9f3a-40439434e689
-  ws-opts:
-    headers:
-      Host: c.iamdt.dpdns.org
-    path: '%2F%3Fed%3D2048'
-- name: '507,559|SG VLESS-91 | free-nodes #1'
-  network: ws
-  port: 443
-  server: 104.19.173.68
-  servername: paRMis-1Tk63J.PArMiS.WoRkeRs.DeV
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  uuid: 7e346122-2ee0-406e-b964-a8ee665f1814
-  ws-opts:
-    headers:
-      Host: paRMis-1Tk63J.PArMiS.WoRkeRs.DeV
-    path: '%2F'
-- name: 507,559,580|SG VLESS-98 | free-nodes
-  network: ws
-  port: 80
-  server: vps.zakir.web.id
-  tls: false
-  type: vless
-  uuid: ca73d911-29f4-42d8-ada5-81dee679e96a
-  ws-opts:
-    headers:
-      Host: vps.zakir.web.id
-    path: vless
 - cipher: aes-256-cfb
   name: '513,517,578|1|_SG_ #2'
   password: amazonskr05
@@ -5324,21 +5298,6 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 542|【高级】🇬新加坡 - 滑梯云
-  network: ws
-  port: 20011
-  server: htsub-2024.899696998.xyz
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: eb9b6d07-8644-437f-a1c5-dbed378d38ed
-  ws-opts:
-    headers:
-      Host: yyyt-sg-2024.mofaxw.top
-    path: /2024
-- alterId: 0
-  cipher: auto
   name: 542|🇬 新加坡 1 GPT/Netflix  - 西瓜皮是真的皮
   port: 19841
   server: xgcma.dx002.top
@@ -5357,6 +5316,21 @@ proxies:
   type: vmess
   udp: true
   uuid: 075c16e6-67cb-3599-aa5a-025b478db156
+- alterId: 0
+  cipher: auto
+  name: 542|【高级】🇸🇬新加坡 - 滑梯云
+  network: ws
+  port: 20011
+  server: htsub-2024.899696998.xyz
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: eb9b6d07-8644-437f-a1c5-dbed378d38ed
+  ws-opts:
+    headers:
+      Host: yyyt-sg-2024.mofaxw.top
+    path: /2024
 - name: 542|🇸🇬 新加坡•高速129•高速 - 飞翔吧
   password: a6ba0ada-cef1-3009-98dc-a1300ca76ed6
   port: 20129
@@ -5375,26 +5349,6 @@ proxies:
   tfo: true
   type: trojan
   udp: true
-- alterId: 2
-  cipher: auto
-  name: 542|🇬 [vip①]新加坡1 - MG Network
-  port: 23616
-  server: traffic.a1.szx.gfw250.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 035cbc36-95c2-31ae-8a89-95a0926abee7
-- alterId: 2
-  cipher: auto
-  name: 542|🇸🇬 [vip①]新加坡2 - MG Network
-  port: 23613
-  server: traffic.a1.szx.gfw250.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 035cbc36-95c2-31ae-8a89-95a0926abee7
 - grpc-opts:
     grpc-service-name: sgvip101
   name: 542|🇬 新加坡 101 - 墙了个墙
@@ -5408,7 +5362,7 @@ proxies:
   udp: true
 - grpc-opts:
     grpc-service-name: sgvip101
-  name: 542|🇸🇬 新加坡 102 - 墙了个墙
+  name: 542|🇬 新加坡 102 - 墙了个墙
   network: grpc
   password: 3c668456-cc9c-3392-9014-0f73e5a09bb3
   port: 21223
@@ -5450,6 +5404,16 @@ proxies:
   sni: sgvip101.qlgq.fun
   type: trojan
   udp: true
+- alterId: 2
+  cipher: auto
+  name: 542|🇸🇬 [vip①]新加坡2 - MG Network
+  port: 23613
+  server: traffic.a1.szx.gfw250.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d2603cfe-8f76-3546-a7d4-75ae637d3dc6
 - name: '545,546|新加坡[02] #1'
   password: 4568465a-a435-4569-b3ab-7f606018474f
   port: 443
@@ -5669,6 +5633,17 @@ proxies:
     headers:
       Host: vip.yaml7.ggff.net
     path: '%2F'
+- name: 559|SG VLESS-73 | free-nodes
+  network: ws
+  port: 80
+  server: 104.18.173.174
+  tls: false
+  type: vless
+  uuid: 53342b53-157e-4475-9f3a-40439434e689
+  ws-opts:
+    headers:
+      Host: c.iamdt.dpdns.org
+    path: '%2F%3Fed%3D2048'
 - name: '559,580|SG VLESS-67 | free-nodes #1'
   network: ws
   port: 8443
@@ -5706,7 +5681,7 @@ proxies:
     headers:
       Host: sni.111000.indevs.in
     path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%252B%2540WangCai2'
-- name: '559|SG VLESS-61 | free-nodes #2'
+- name: '559|SG VLESS-61 | free-nodes #1'
   network: ws
   port: 2096
   server: 185.238.228.238
@@ -5767,6 +5742,30 @@ proxies:
     headers:
       Host: sni.my111000.tech
     path: '%2FTelegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2540WangCai2%2F'
+- name: 559|SG VLESS-91 | free-nodes
+  network: ws
+  port: 443
+  server: 104.19.173.68
+  servername: paRMis-1Tk63J.PArMiS.WoRkeRs.DeV
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  uuid: 7e346122-2ee0-406e-b964-a8ee665f1814
+  ws-opts:
+    headers:
+      Host: paRMis-1Tk63J.PArMiS.WoRkeRs.DeV
+    path: '%2F'
+- name: 559,580|SG VLESS-98 | free-nodes
+  network: ws
+  port: 80
+  server: vps.zakir.web.id
+  tls: false
+  type: vless
+  uuid: ca73d911-29f4-42d8-ada5-81dee679e96a
+  ws-opts:
+    headers:
+      Host: vps.zakir.web.id
+    path: vless
 - name: 559|SG VLESS-116 | free-nodes
   network: ws
   port: 2053
@@ -5808,132 +5807,63 @@ proxies:
       Host: n1747624282.lie5d.cyou
     path: /
 - name: 566|🇸🇬 新加坡 | SGP
-  password: c870fe5a-0729-11f0-8cf9-f23c93136cb3
-  port: 3233
-  server: e9fd5364-tcm9s0-tgp57k-ddgs.sub.cdnbytescm.com
-  tls: true
-  type: http
-  username: c870fe5a-0729-11f0-8cf9-f23c93136cb3
-- name: 566|🇸🇬 新加坡 | SGP 2
-  password: 7a2512b4-09ee-11f0-8d46-f23c9313b177
-  port: 8200
-  server: ed1b7a85-tcmw00-tcm6ys-deip.sgdc1mpro.wkuaishou.com
-  tls: true
-  type: http
-  username: 7a2512b4-09ee-11f0-8d46-f23c9313b177
-- client-fingerprint: chrome
-  name: 566|🇸🇬 新加坡 | SGP 3
-  network: ws
-  port: 2053
-  server: legion.lenovo.com
-  servername: pujd1crfzx5.chinam.indevs.in
-  tls: true
-  type: vless
-  udp: true
-  uuid: 26524cce-d514-4014-a426-365fb266a14d
-  ws-opts:
-    headers:
-      Host: pujd1crfzx5.chinam.indevs.in
-    path: /danfeng?ed=2560
-- client-fingerprint: chrome
-  name: 566|🇸🇬 新加坡 | SGP 4
-  network: ws
-  port: 10912
-  server: 27.35.204.29
-  servername: snippet.fgfw.ye.gs
-  tls: true
-  type: vless
-  udp: true
-  uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
-  ws-opts:
-    headers:
-      Host: snippet.fgfw.ye.gs
-    path: /danfeng
-- name: '566|🇸🇬 新加坡 | SGP 5 #1'
-  password: 6286105c-fb6d-11ef-be96-f23c93136cb3
-  port: 3233
-  server: f2cfcb29-tcmw00-tct7w4-4550.sub.cdnbytescm.com
-  tls: true
-  type: http
-  username: 6286105c-fb6d-11ef-be96-f23c93136cb3
-- name: 566|🇸🇬 新加坡 | SGP 6
-  password: 6286105c-fb6d-11ef-be96-f23c93136cb3
-  port: 3253
-  server: f2cfcb29-tcmw00-tct7w4-4550.sub.cdnbytescm.com
-  tls: true
-  type: http
-  username: 6286105c-fb6d-11ef-be96-f23c93136cb3
-- name: 566|🇸🇬 新加坡 | SGP 7
   password: 16955d72-1794-11f0-a035-f23c95b6f51d
-  port: 3233
-  server: ef40c35d-tcm9s0-tczog2-dnss.sub.cdnbytescm.com
+  port: 3253
+  server: ee011dde-tcmw00-td0ao2-dnss.sub.cdnbytescm.com
   tls: true
   type: http
   username: 16955d72-1794-11f0-a035-f23c95b6f51d
-- name: '566,567,585,586|US_speednode_0054 #1'
-  network: ws
-  port: 443
-  server: 192.0.54.188
-  servername: snippet.danfeng.kozow.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
-  ws-opts:
-    headers:
-      Host: snippet.danfeng.kozow.com
-    path: /danfeng?ed=2560
-- name: 566|🇸🇬 新加坡 | SGP 9
-  network: ws
-  port: 26257
-  server: 211.228.64.93
-  servername: snippet.danfeng.kozow.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
-  ws-opts:
-    headers:
-      Host: snippet.danfeng.kozow.com
-    path: /danfeng
-- client-fingerprint: chrome
-  name: 566|🇸🇬 新加坡 | SGP 10
-  network: ws
-  port: 443
-  server: www.sofi.com
-  servername: pujd1crfzx5.chinam.indevs.in
-  tls: true
-  type: vless
-  udp: true
-  uuid: 26524cce-d514-4014-a426-365fb266a14d
-  ws-opts:
-    headers:
-      Host: pujd1crfzx5.chinam.indevs.in
-    path: /danfeng?ed=2560
-- client-fingerprint: random
-  name: 566|🇸🇬 新加坡 | SGP 11
-  network: ws
-  port: 10443
-  server: 59.21.203.65
-  servername: snippet.fgfw.ccwu.cc
-  tls: true
-  type: vless
-  udp: true
-  uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
-  ws-opts:
-    headers:
-      Host: snippet.fgfw.ccwu.cc
-    path: /danfeng
-- name: 566|🇸🇬 新加坡 | SGP 14
-  password: 0b869f32-657e-11ee-a90c-f23c9313b177
-  port: 3234
-  server: fdae9c92-tcm9s0-tfmj6h-24c4.sub.cdnbytescm.com
+- name: 566|🇸🇬 新加坡 | SGP 2
+  password: be8cc8f6-0c6a-11f0-a5a3-f23c93141fad
+  port: 3253
+  server: 9c1f5cd6-tcm9s0-tde8dp-b4pt.sub.cdnbytescm.com
   tls: true
   type: http
-  username: 0b869f32-657e-11ee-a90c-f23c9313b177
+  username: be8cc8f6-0c6a-11f0-a5a3-f23c93141fad
+- name: 566|🇸🇬 新加坡 | SGP 3
+  password: 6286105c-fb6d-11ef-be96-f23c93136cb3
+  port: 3233
+  server: f2cfcb29-tcmw00-tct7w4-4550.sub.cdnbytescm.com
+  tls: true
+  type: http
+  username: 6286105c-fb6d-11ef-be96-f23c93136cb3
+- client-fingerprint: chrome
+  name: 566|🇸🇬 新加坡 | SGP 4
+  network: ws
+  port: 443
+  server: 192.0.54.31
+  servername: snippet.danfeng.loc.cc
+  tls: true
+  type: vless
+  udp: true
+  uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
+  ws-opts:
+    headers:
+      Host: snippet.danfeng.loc.cc
+    path: /danfeng?ed=2560
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 566|🇸🇬 新加坡 | SGP 7
+  network: tcp
+  port: 30401
+  reality-opts:
+    public-key: ZeXA8rcM3TV466jK83J157gY7U2JTI9KP9nmn_Nbawk
+    short-id: 105a652c
+  server: freea.glyphara.com
+  servername: learn.microsoft.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 7fef0dda-fc2b-4d66-9ba0-cb5812d917ca
+- name: 566|🇸🇬 新加坡 | SGP 8
+  password: 7a2512b4-09ee-11f0-8d46-f23c9313b177
+  port: 3233
+  server: 8229bd09-tcmw00-tcm6ys-deip.sub.cdnbytescm.com
+  tls: true
+  type: http
+  username: 7a2512b4-09ee-11f0-8d46-f23c9313b177
 - alterId: 0
-  name: 574|🇸🇬SG新加坡2
+  name: 574|🇸SG加
   password: BxceQaOe
   port: 22045
   server: 95.40.2.4
