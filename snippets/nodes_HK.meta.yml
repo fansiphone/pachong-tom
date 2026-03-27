@@ -897,11 +897,15 @@ proxies:
   type: trojan
 - alterId: 2
   cipher: auto
-  name: '306,340,454,502,514,515,516,544,551,557,559,580|🇭🇰 香港|@stairnode #5'
+  country: 🇭🇰HK
+  h2-opts: {}
+  http-opts: {}
+  name: '306,340,454,502,514,515,516,544,548,551,557,559,580|🇭🇰 香港|@stairnode #5'
   network: tcp
   port: '30807'
   server: v10.hdacd.com
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
@@ -2023,7 +2027,7 @@ proxies:
   ws-opts:
     path: /zh-cn/download
 - alterId: 0
-  name: 378,475,480,523,524,537,544,559,574|🇭🇰HK香港3
+  name: 378,475,480,523,524,537,559,574|🇭🇰HK香港3
   password: BxceQaOe
   port: 443
   server: 58.152.25.253
@@ -2695,22 +2699,18 @@ proxies:
   uuid: 1617e875-e377-4e4f-85ef-dcf9e5e10df7
   ws-opts:
     path: /
-- country: 🇺🇸 US
-  name: '378,435,436,536,537|🇰HK-45.149.92.71-4693 #1'
+- name: '378,536,537|🇰HK-45.149.92.71-4693 #1'
   password: e4af2638-bb12-4e4a-84f1-a032e23ca63f
   port: 443
   server: usla.mjt000.com
   skip-cert-verify: false
   type: trojan
-  udp: true
-- country: 🇸 US
-  name: '378,435,436,536,537|🇰HK-45.149.92.71-4694 #1'
+- name: '378,536,537|🇰HK-45.149.92.71-4694 #1'
   password: 92435aa8-f3b6-466a-ad58-c55cbb6d2acf
   port: 443
   server: hinet.mjt000.com
   skip-cert-verify: false
   type: trojan
-  udp: true
 - alterId: 0
   cipher: auto
   name: '378,536,537|🇰HK-8.223.63.189-4734 #1'
@@ -3339,12 +3339,15 @@ proxies:
     path: /Notif_Chat
 - alterId: 0
   cipher: auto
-  name: '378,536,537|🇭🇰HK-47.244.120.197-4859 #1'
+  country: 🇭🇰HK
+  h2-opts: {}
+  http-opts: {}
+  name: 378,536,537,548|🇭🇰HK_54
   network: ws
   port: 44867
   server: 47.244.120.197
   servername: ''
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 845e6b08-2919-4290-ade0-5dc7dcea59ca
@@ -5309,23 +5312,7 @@ proxies:
   country: 🇰 HK
   h2-opts: {}
   http-opts: {}
-  name: 435|🇰 HK_45
-  network: ws
-  port: 80
-  server: hkt.gotochinatown.net
-  servername: broadcastlv.chat.bilibili.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: b585dac6-dc69-11ef-9f1c-f23c913c8d2b
-  ws-headers:
-    HOST: broadcastlv.chat.bilibili.com
-  ws-path: /
-- alterId: 2
-  cipher: auto
-  country: 🇭🇰 HK
-  h2-opts: {}
-  http-opts: {}
-  name: 435|🇰 HK_46
+  name: 435|🇰 HK_36
   network: ws
   port: 80
   server: hkt.gotochinatown.net
@@ -5338,20 +5325,23 @@ proxies:
   ws-path: /
 - alterId: 2
   cipher: auto
-  name: 437|🇭🇰 HK_45
+  country: 🇭🇰 HK
+  h2-opts: {}
+  http-opts: {}
+  name: 435|🇰 HK_37
   network: ws
   port: 80
   server: hkt.gotochinatown.net
-  tls: false
+  servername: broadcastlv.chat.bilibili.com
+  skip-cert-verify: true
   type: vmess
   uuid: b585dac6-dc69-11ef-9f1c-f23c913c8d2b
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
+  ws-headers:
+    HOST: broadcastlv.chat.bilibili.com
+  ws-path: /
 - alterId: 2
   cipher: auto
-  name: 437|🇭🇰 HK_46
+  name: 437|🇭🇰 HK_36
   network: ws
   port: 80
   server: hkt.gotochinatown.net
@@ -5361,6 +5351,19 @@ proxies:
   ws-opts:
     headers:
       Host: hkt.gotochinatown.net
+    path: /
+- alterId: 2
+  cipher: auto
+  name: 437|🇭🇰 HK_37
+  network: ws
+  port: 80
+  server: hkt.gotochinatown.net
+  tls: false
+  type: vmess
+  uuid: b585dac6-dc69-11ef-9f1c-f23c913c8d2b
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
     path: /
 - name: '438|🇭🇰HK_2|1.7MB/s | 更多节点: https:/...'
   network: tcp
@@ -5382,6 +5385,17 @@ proxies:
   tls: false
   type: vless
   uuid: 6048472f-0993-4ae0-8203-960b9a0f4113
+- alterId: 0
+  country: 🇱PL
+  name: 440,523,524,574|🇰HK香港4
+  password: BxceQaOe
+  port: 1850
+  server: 95.40.57.225
+  skip-cert-verify: true
+  sni: t.me/ripaojiedian
+  tls: true
+  type: trojan
+  udp: true
 - name: 453|🇭🇰 香港4|@stairnode
   password: 253bc477d4e43c209f2d427272968280
   port: 4419
@@ -5407,7 +5421,7 @@ proxies:
   flow: xtls-rprx-vision
   grpc-opts:
     grpc-service-name: ''
-  name: '456,507,559,580|HK VLESS-163 | free-nodes #1'
+  name: '456,507,559,580|HK VLESS-163 | free-nodes #2'
   network: tcp
   port: 443
   server: ipv6s315.okgg.top
@@ -5425,7 +5439,7 @@ proxies:
   flow: xtls-rprx-vision
   grpc-opts:
     grpc-service-name: ''
-  name: '456,507,559,580|HK VLESS-172 | free-nodes #1'
+  name: '456,559,580|HK VLESS-172 | free-nodes #1'
   network: tcp
   port: 443
   server: s299.okgg.top
@@ -7177,6 +7191,24 @@ proxies:
   sni: f643a7e8-t6ngg0-t74ix0-1m0fq.hk1.hyhuawei.com
   tls: false
   type: hysteria2
+- alpn:
+  - ''
+  client-fingerprint: random
+  flow: xtls-rprx-vision
+  grpc-opts:
+    grpc-service-name: ''
+  name: 507|HK VLESS-158 | free-nodes
+  network: tcp
+  port: 443
+  server: s306.okgg.top
+  servername: u710947ue788s306.okgg.top
+  tls: true
+  type: vless
+  uuid: 424e7cc4-df34-3518-9c7b-401db4ece90a
+  ws-opts:
+    headers:
+      Host: s306.okgg.top
+    path: ''
 - client-fingerprint: chrome
   name: '513,517|15|🇭🇰 香港|@ripaojiedian #1'
   network: ws
@@ -7547,7 +7579,7 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 74c37de3-05bd-3ec0-b889-4c2e900f5d92
+  uuid: bfedee86-0961-3844-8be9-4a820e42de0c
 - grpc-opts:
     grpc-service-name: hkvip101
   name: 542|🇰 香港 101 - 墙了个墙
@@ -7670,6 +7702,40 @@ proxies:
   server: 107.149.254.26
   skip-cert-verify: true
   type: trojan
+- alterId: 2
+  cipher: auto
+  country: 🇭🇰HK
+  h2-opts: {}
+  http-opts: {}
+  name: '548|disney_HK #1'
+  network: ws
+  port: 80
+  server: 89d85c51-t7h340-t8xdfw-1m0fq.hkt.gotochinatown.net
+  servername: broadcastlv.chat.bilibili.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: a698c4a6-c3c9-11ee-9693-f23c91cfbbc9
+  ws-opts:
+    headers:
+      HOST: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  country: 🇭🇰HK
+  h2-opts: {}
+  http-opts: {}
+  name: '548|disney_HK #2'
+  network: ws
+  port: 80
+  server: 29f495e4-t94cg0-tairte-1m0fq.hkt.gotochinatown.net
+  servername: broadcastlv.chat.bilibili.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: a698c4a6-c3c9-11ee-9693-f23c91cfbbc9
+  ws-opts:
+    headers:
+      HOST: broadcastlv.chat.bilibili.com
+    path: /
 - cipher: chacha20-ietf-poly1305
   name: 558|0|🇭 01 | 1x HK
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
