@@ -246,11 +246,13 @@ proxies:
   ws-opts:
     path: /
 - cipher: aes-256-cfb
-  name: 378,537,538|🇷🇺RU-38.60.223.8-0315 | 0.194M...
+  delay: 1414
+  name: 378,528,537,538|🇷🇺RU-38.60.223.8-0315 | 0.194M...
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 38.60.223.8
   type: ss
+  udp: true
 - cipher: aes-256-cfb
   name: '378,537|🇺RU-213.183.53.222-0413 #1'
   password: KnJGad3FqTvjqbaX
@@ -562,9 +564,16 @@ proxies:
   sni: eu.mjanyt.com
   type: anytls
   udp: true
+- cipher: chacha20-ietf-poly1305
+  country: 🇺 RU
+  name: 435| RU_56
+  password: 9CmcQ6dF8LEyZU0YsMjgu8
+  port: 54106
+  server: 77.73.68.155
+  type: ss
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '438,494|Join+Telegram:@Farah_VPN #1878'
+  name: '438,494|Join+Telegram:@Farah_VPN #613'
   network: tcp
   port: 443
   server: 5.182.37.151
@@ -575,7 +584,7 @@ proxies:
   uuid: 31922c21-4292-5183-8e3b-52341ed80660
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '438,494|Join+Telegram:@Farah_VPN #1795'
+  name: '438,494|Join+Telegram:@Farah_VPN #1747'
   network: tcp
   port: 443
   server: crghxqxyoy-518237151-direct.bahame.co
@@ -585,7 +594,7 @@ proxies:
   type: vless
   uuid: 31922c21-4292-5183-8e3b-52341ed80660
 - client-fingerprint: chrome
-  name: '438,494|Join+Telegram:@Farah_VPN #960'
+  name: '438,494|Join+Telegram:@Farah_VPN #833'
   network: ws
   port: 443
   server: nl.vpnhi.ru
@@ -598,23 +607,12 @@ proxies:
     headers:
       Host: nl.vpnhi.ru
     path: '%2Fvpnws'
-- country: 🇺RU
-  name: '440,523,524,559|🇺🇸_美国 #3'
-  network: tcp
-  password: nodes-d2ac438d
-  port: 8443
-  server: 31.192.233.38
-  skip-cert-verify: true
-  sni: node-hk-1.v2sv.top
-  tls: true
-  type: trojan
-  udp: true
-- name: '459,494,523,524,544,580|RU俄罗斯(mibei77.com 米贝节点分享) #8'
+- name: '459,494,523,524,544,568,580|RU俄罗斯(mibei77.com 米贝节点分享) #8'
   network: tcp
   password: WF42809561
   port: 443
   server: nearby-muskrat.rooster465.autos
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: true
   type: trojan
 - name: 460|俄罗斯_新西伯利亚
@@ -1387,7 +1385,7 @@ proxies:
     path: /
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '502,514,551,585,586|RU_speednode_0017 #3'
+  name: '502,514,551,567,585,586|RU_speednode_0017 #3'
   port: 443
   reality-opts:
     public-key: FZbK0E3QBK7QslwVEXimX6vmXC8cb6826lSLJUkIEgU
@@ -1398,6 +1396,19 @@ proxies:
   type: vless
   udp: true
   uuid: 9768f14f-a790-4c78-b1d9-60cc0e9d99a0
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 507,559|RU VLESS-104 | free-nodes
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: whYmACpNNY4B3Yv8iBJ9AmxokZL2Tb7O210utmzvGSo
+    short-id: 6ba85179e30d4fc2
+  server: scvad1tel-ru.golden-cards.me
+  servername: avatars.mds.yandex.net
+  tls: false
+  type: vless
+  uuid: a774f61d-a518-4c61-902f-807797da6caf
 - alterId: 0
   cipher: auto
   name: '513,517,578|2|🇷🇺_RU_俄罗斯联邦 #3'
@@ -1706,19 +1717,6 @@ proxies:
   tls: false
   type: vless
   uuid: 6f99ed2f-9879-40e3-b5b4-5590c60f8e4a
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 559|RU VLESS-104 | free-nodes
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: whYmACpNNY4B3Yv8iBJ9AmxokZL2Tb7O210utmzvGSo
-    short-id: 6ba85179e30d4fc2
-  server: scvad1tel-ru.golden-cards.me
-  servername: avatars.mds.yandex.net
-  tls: false
-  type: vless
-  uuid: a774f61d-a518-4c61-902f-807797da6caf
 - alpn:
   - h3
   auth_str: dongtaiwang.com
@@ -1742,20 +1740,6 @@ proxies:
   tls: true
   type: hysteria
   up: 1000 Mbps
-- name: 567|RU_40490_0033
-  network: ws
-  port: 443
-  server: 193.9.49.65
-  servername: r.icy.de5.net
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 9e4f36da-8f61-44f8-a9a7-0fd3a8d81234
-  ws-opts:
-    headers:
-      Host: r.icy.de5.net
-    path: /?ed=2560
 - alterId: 0
   cipher: auto
   name: 578|11|俄罗斯 Rubtsovsk Branch of Alt...
