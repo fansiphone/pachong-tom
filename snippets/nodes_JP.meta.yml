@@ -534,12 +534,6 @@ proxies:
     headers:
       Host: download.windowsupdate.com
     path: /download
-- cipher: chacha20-ietf-poly1305
-  name: '127,426|🇯🇵 JP_1|5.5MB/s|GPT⁺|YT-JP|NF|... #1'
-  password: 335cf133-c368-4bee-92f8-e80069a4bdbe
-  port: 40003
-  server: jp.fastsoonlink.com
-  type: ss
 - alterId: 0
   cipher: auto
   name: '128,430|日本NO.1 #2'
@@ -1196,11 +1190,11 @@ proxies:
   sni: www.alibaba.com
   type: trojan
   udp: true
-- name: 255|JP
-  network: tcp
+- name: 255|🇯🇵 JP
   password: f57f01e6-9bb1-4277-a5cb-75ad0ce1fa11
   port: 21125
   server: 125.94.40.162
+  skip-cert-verify: true
   sni: k12.tudou211.com
   type: trojan
 - alterId: 0
@@ -1270,8 +1264,7 @@ proxies:
   type: trojan
   udp: true
 - alterId: 0
-  country: 🇵JP
-  name: '306,340,378,438,440,454,489,502,514,515,516,536,537,544,548,551,556,557,559,568,574,579,580,582|🇸🇬
+  name: '306,340,378,438,454,489,502,514,515,516,536,537,544,548,551,556,557,559,574,579,580,582|🇸🇬
     新加坡2|@stairnode #8'
   network: tcp
   password: 9f7d5cb76d1645101994d9b25891e3b7
@@ -1283,12 +1276,24 @@ proxies:
   type: trojan
   udp: true
 - alterId: 0
-  name: '306,340,378,454,502,514,515,516,536,537,544,548,551,556,557,559,574,579,580,582|🇺🇸
+  name: '306,340,378,454,502,514,515,516,536,537,544,548,551,556,557,559,568,574,579,580,582|🇺🇸
     美国|@stairnode #7'
   network: tcp
   password: 9f7d5cb76d1645101994d9b25891e3b7
   port: 3057
   server: 160.16.132.38
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: '306,340,378,454,489,502,514,515,516,536,537,544,548,551,556,557,559,574,579,580,582|🇺🇸
+    美国2|@stairnode #8'
+  network: tcp
+  password: 9f7d5cb76d1645101994d9b25891e3b7
+  port: 3700
+  server: 52.192.219.241
   skip-cert-verify: false
   sni: www.nintendogames.net
   tls: true
@@ -1430,7 +1435,7 @@ proxies:
   type: ss
 - cipher: aes-128-gcm
   country: 🇬🇧GB
-  name: 356,357,378,537,538,548|netflix_JP
+  name: 356,357,378,537,538,548|🇬🇧GB_33
   password: shadowsocks
   port: 443
   server: 149.22.87.204
@@ -2479,8 +2484,7 @@ proxies:
   server: 185.160.24.217
   type: ss
 - cipher: chacha20-ietf-poly1305
-  country: 🇮🇳IN
-  name: 378,537,538,548|🇮🇳IN_49
+  name: 378,537,538|🇯🇵JP-103.106.228.247-0327 | 0....
   password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
   port: 990
   server: 103.106.228.247
@@ -3162,7 +3166,7 @@ proxies:
   udp: true
 - cipher: rc4-md5
   country: 🇯🇵JP
-  name: '378,537,548|netflix_JP #1'
+  name: 378,537,548|netflix_JP
   password: 14fFPrbezE3HDZzsMOr6
   port: 8080
   server: 172.105.199.111
@@ -3468,6 +3472,45 @@ proxies:
   sni: eu.mjanyt.com
   type: anytls
   udp: true
+- client-fingerprint: chrome
+  name: '438,489|🟢🇯🇵[🎬🤖📺🎭]_github.com/Ruk1ng001... #7'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: UT9tFQOdy54SeW_tg-XQN3QkGYoWUpO_88XFXijkrXc
+    short-id: 2da72ce6
+  server: 154.31.114.125
+  servername: navi.bankrate.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 02250f72-886a-4b0e-9f28-dde701d6a0e7
+- client-fingerprint: chrome
+  name: '438,489|🟢🇯🇵[🎬🤖📺🎭]_github.com/Ruk1ng001... #8'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: UT9tFQOdy54SeW_tg-XQN3QkGYoWUpO_88XFXijkrXc
+    short-id: 2da72ce6
+  server: 154.31.114.125
+  servername: navi.bankrate.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: c5f92cd0-90f6-4f08-b2ea-e97d57433ce5
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '438|🇯🇵JP_3|1.9MB/s | 更多节点: https:/...'
+  network: tcp
+  port: 29059
+  reality-opts:
+    public-key: V_eMkcHXf237wGyfggMHHRvQqw51rW1UJPEIw_T2IE4
+    short-id: 6ba85179e30d4fc2
+  server: 38.60.212.251
+  servername: mensura.cdn-apple.com
+  tls: false
+  type: vless
+  uuid: d706bf16-124a-417b-aaa0-0d6d5efd58fd
 - name: 453|🇯🇵 日本2|@stairnode
   password: 253bc477d4e43c209f2d427272968280
   port: 1806
@@ -4088,17 +4131,15 @@ proxies:
   cipher: auto
   client-fingerprint: chrome
   fingerprint: ''
-  name: '470,568|🇯🇵 日本 | JPN #2'
+  name: 470|575cdfa3ad98480b90aa5537f0b5bd...
   network: ws
-  port: '6354'
+  port: 6354
   server: 166.88.99.80
   tls: false
   type: vmess
   udp: false
   uuid: 613952fa-9a1e-4944-b85f-3587b3592b3a
   ws-opts:
-    headers:
-      Host: ''
     path: /arki
 - client-fingerprint: chrome
   name: 489|🟢🇯🇵[🎬🤖📺🎭]_github.com/Ruk1ng001...
@@ -4129,7 +4170,7 @@ proxies:
 - alpn:
   - http/1.1
   client-fingerprint: random
-  name: '489,585,586|HK_speednode_0012 #1'
+  name: '489,567,585,586|HK_speednode_0012 #1'
   network: ws
   port: 3389
   server: 203.168.131.110
@@ -4277,19 +4318,6 @@ proxies:
   uuid: 88888888-8888-8888-8888-888888888888
   xudp: true
 - client-fingerprint: chrome
-  name: '489|🟢🇯🇵[🎬🤖📺🎭]_github.com/Ruk1ng001... #7'
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: UT9tFQOdy54SeW_tg-XQN3QkGYoWUpO_88XFXijkrXc
-    short-id: 2da72ce6
-  server: 154.31.114.125
-  servername: navi.bankrate.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 02250f72-886a-4b0e-9f28-dde701d6a0e7
-- client-fingerprint: chrome
   encryption: none
   flow: xtls-rprx-vision
   name: 489|🟢🇯🇵[🎬🤖📺]_github.com/Ruk1ng001_...
@@ -4327,20 +4355,7 @@ proxies:
   type: ss
   udp: true
 - client-fingerprint: chrome
-  name: '489|🟢🇯🇵[🎬🤖📺🎭]_github.com/Ruk1ng001... #8'
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: UT9tFQOdy54SeW_tg-XQN3QkGYoWUpO_88XFXijkrXc
-    short-id: 2da72ce6
-  server: 154.31.114.125
-  servername: navi.bankrate.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: c5f92cd0-90f6-4f08-b2ea-e97d57433ce5
-- client-fingerprint: chrome
-  name: '507,559|JP VLESS-139 | free-nodes #1'
+  name: 507,559|JP VLESS-139 | free-nodes
   network: tcp
   port: 443
   reality-opts:
@@ -4787,7 +4802,7 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 284804b7-bc2e-3ee2-a800-a6747ac65daa
+  uuid: 547892de-f03b-3f75-b48f-f75313b129ed
 - alterId: 2
   cipher: auto
   name: 542|🇯🇵 [vip①]日本2 - MG Network
@@ -4797,7 +4812,7 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 284804b7-bc2e-3ee2-a800-a6747ac65daa
+  uuid: 547892de-f03b-3f75-b48f-f75313b129ed
 - alterId: 2
   cipher: auto
   name: 542|🇯🇵 [vip①]日本3 - MG Network
@@ -4807,13 +4822,13 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 284804b7-bc2e-3ee2-a800-a6747ac65daa
+  uuid: 547892de-f03b-3f75-b48f-f75313b129ed
 - alterId: 0
   cipher: auto
   country: 🇯🇵JP
   h2-opts: {}
   http-opts: {}
-  name: 548|🇯🇵JP_51
+  name: 548|🇯🇵JP_155
   network: ws
   port: 80
   server: 172.111.146.64
@@ -5086,9 +5101,9 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 559|🇯🇵 日本 | JPN 3
+  name: '559,568|🇯🇵 日本 | JPN #3'
   network: ws
-  port: 24106
+  port: '24106'
   server: 166.88.99.80
   servername: ''
   tls: false
@@ -5098,178 +5113,46 @@ proxies:
     headers:
       Host: ''
     path: /arki
-- client-fingerprint: chrome
-  name: 566|🇯🇵 日本 | JPN
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: UT9tFQOdy54SeW_tg-XQN3QkGYoWUpO_88XFXijkrXc
-    short-id: 2da72ce6
-  server: 154.31.114.125
-  servername: navi.bankrate.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: effca4c1-e85b-438f-bb18-68e90680e5af
-- client-fingerprint: chrome
-  name: 566|🇯🇵 日本 | JPN 2
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: UT9tFQOdy54SeW_tg-XQN3QkGYoWUpO_88XFXijkrXc
-    short-id: 2da72ce6
-  server: 154.31.114.125
-  servername: navi.bankrate.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 7d772579-bc95-40a8-a0e5-eb5a05b6d7b5
-- client-fingerprint: chrome
-  name: '566|🇯🇵 日本 | JPN 3 #1'
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: UT9tFQOdy54SeW_tg-XQN3QkGYoWUpO_88XFXijkrXc
-    short-id: 2da72ce6
-  server: 154.31.114.125
-  servername: navi.bankrate.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 1b2b763f-12f2-4cab-b63c-17b335ed63c7
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 566|🇯🇵 日本 | JPN 4
-  network: tcp
-  port: 30301
-  reality-opts:
-    public-key: IoW1RqD-BzW9oxaM4KtHx5ap6haIENhYyZt_oMZqlCM
-    short-id: 950cee8a
-  server: freea.glyphara.com
-  servername: lol.secure.dyn.riotcdn.net
-  tls: true
-  type: vless
-  udp: true
-  uuid: bfb474e9-f851-426d-a1c2-dca3a19bd915
-- client-fingerprint: chrome
-  name: 566|🇯🇵 日本 | JPN 5
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: UT9tFQOdy54SeW_tg-XQN3QkGYoWUpO_88XFXijkrXc
-    short-id: 2da72ce6
-  server: 154.31.114.125
-  servername: navi.bankrate.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 3d4445a7-8562-4721-bf33-87d0c6e84af3
-- client-fingerprint: chrome
-  name: 566|🇯🇵 日本 | JPN 6
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: UT9tFQOdy54SeW_tg-XQN3QkGYoWUpO_88XFXijkrXc
-    short-id: 2da72ce6
-  server: 154.31.114.125
-  servername: navi.bankrate.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: fea04a1f-06f1-4ef4-a7d4-ac4031b29b3b
-- client-fingerprint: ios
-  name: 566|🇯🇵 日本 | JPN 7
-  network: tcp
-  port: 30005
-  reality-opts:
-    public-key: fTZLGGyhk2ytzqhs7HoGEa2SUaDcJzqsv9YEC3kv2EM
-    short-id: a40646b3
-  server: jpa1softbank.fengwio.top
-  servername: www.cloudflare.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: f9b1e4e3-8878-446d-ae3a-068aeb76b038
-- client-fingerprint: chrome
-  name: 566|🇯🇵 日本 | JPN 8
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: UT9tFQOdy54SeW_tg-XQN3QkGYoWUpO_88XFXijkrXc
-    short-id: 2da72ce6
-  server: 154.31.114.125
-  servername: navi.bankrate.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: ab47df8a-d1f3-43ea-ae3e-5bcc5c7f6a1d
-- client-fingerprint: chrome
-  name: 566|🇯🇵 日本 | JPN 9
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: UT9tFQOdy54SeW_tg-XQN3QkGYoWUpO_88XFXijkrXc
-    short-id: 2da72ce6
-  server: 154.31.114.125
-  servername: navi.bankrate.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 0b736194-b906-419c-aebf-8ff1d3eb7020
-- client-fingerprint: chrome
-  name: 566|🇯🇵 日本 | JPN 11
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: UT9tFQOdy54SeW_tg-XQN3QkGYoWUpO_88XFXijkrXc
-    short-id: 2da72ce6
-  server: 154.31.114.125
-  servername: navi.bankrate.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 0386273d-5423-41bb-8597-d002c98d7e09
-- client-fingerprint: chrome
-  name: 566|🇯🇵 日本 | JPN 12
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: UT9tFQOdy54SeW_tg-XQN3QkGYoWUpO_88XFXijkrXc
-    short-id: 2da72ce6
-  server: 154.31.114.125
-  servername: navi.bankrate.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: cb73a31b-c613-4fb4-af20-4169692480b1
-- client-fingerprint: chrome
-  name: 566|🇯🇵 日本 | JPN 13
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: UT9tFQOdy54SeW_tg-XQN3QkGYoWUpO_88XFXijkrXc
-    short-id: 2da72ce6
-  server: 154.31.114.125
-  servername: navi.bankrate.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: e12e60f8-f955-4b46-905d-fd99692e19d7
-- client-fingerprint: chrome
-  name: 566|🇯🇵 日本 | JPN 14
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: UT9tFQOdy54SeW_tg-XQN3QkGYoWUpO_88XFXijkrXc
-    short-id: 2da72ce6
-  server: 154.31.114.125
-  servername: navi.bankrate.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: bcd55d34-9dc7-443b-80af-c1790812b5d2
 - alterId: 0
-  name: 574|🇵JP日本3
+  cipher: auto
+  name: 566|🇯🇵 日本 | JPN
+  network: ws
+  port: 37469
+  server: 166.88.99.80
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 25549589-550c-43eb-99c2-2375284fd867
+  ws-opts:
+    path: /arki
+- cipher: chacha20-ietf-poly1305
+  name: 566|🇯🇵 日本 | JPN 2
+  password: c595b1fc-8233-4a34-9c6c-ebcd91f2c9cd
+  port: 40003
+  server: jp.fastsoonlink.com
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: '566|🇯🇵 日本 | JPN 3 #1'
+  password: c2b2fd63-521c-4cfa-b8dc-3c0c41a57b55
+  port: 40003
+  server: jp.fastsoonlink.com
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 566|🇯🇵 日本 | JPN 6
+  network: ws
+  port: 20202
+  server: 50.114.113.203
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 15f6c2dd-a251-44b3-9b73-5a737ae8d2cd
+  ws-opts:
+    path: /arki
+- alterId: 0
+  name: '574|JP #2'
   password: BxceQaOe
   port: 3357
   server: 3.112.217.47
