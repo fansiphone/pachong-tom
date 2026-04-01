@@ -84,6 +84,20 @@ proxies:
   type: vmess
   udp: true
   uuid: 21629fa5-8a06-4c2c-bdaa-85a6fe5222d5
+- alterId: 0
+  cipher: auto
+  name: 255|🇫🇷 法国
+  network: ws
+  port: 30837
+  server: v37.heduian.link
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: ocbc.com
+    path: /oooo
 - cipher: aes-256-cfb
   name: '356,378,537|🇳🇱NL-51.15.27.48-8105 #1'
   password: f8f7aCzcPKbsF8p3
@@ -639,14 +653,12 @@ proxies:
     headers:
       Host: ahdaeph8.com
     path: /ws
-- country: 🇫🇷FR
-  name: '378,435,436,536,537|🇷FR-57.128.174.124-4612 #1'
+- name: '378,436,536,537|🇷FR-57.128.174.124-4612 #1'
   password: d150c8c3-a667-4d3e-843c-739f8558c7d2
   port: 443
   server: uk-full.privateip.net
   skip-cert-verify: false
   type: trojan
-  udp: true
 - cipher: chacha20-ietf-poly1305
   name: '378,537|FR-178.18.244.2-5465 #1'
   password: 97OnDEZYGja4
@@ -1499,14 +1511,24 @@ proxies:
   skip-cert-verify: false
   sni: trj.rollingnext.co.uk
   type: trojan
-- country: 🇫🇷FR
-  name: 435,436|🇫🇷FR_20
+- name: 436|🇫🇷FR_24
   password: 6c64e6f9-a76c-49eb-96d2-bf8b1afee4a3
   port: 443
   server: fr-full.privateip.net
-  skip-cert-verify: true
   type: trojan
-  udp: true
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '438,559,580|FR VLESS-91 | free-nodes #1'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: wgoLhL4pRP0y6fu6He4qW_ElohCM_ANWJF3HEoUhNz4
+    short-id: 9c2378562188c3cb
+  server: fr.denditop.site
+  servername: fr.denditop.site
+  tls: false
+  type: vless
+  uuid: 256c5f48-4908-4255-83d1-c86cb58f22b4
 - name: 460|法国_巴黎
   network: ws
   port: 443
@@ -1883,7 +1905,7 @@ proxies:
   server: fr.network-cdn-gw-yd.net
   type: ss
   udp: true
-- name: 507|FR TROJAN-86 | free-nodes
+- name: '507,559|FR TROJAN-79 | free-nodes #1'
   password: telegram-id-privatevpns
   port: 22222
   server: 15.224.22.33
@@ -1915,44 +1937,48 @@ proxies:
   server: pop.b1c7d2ec-e636-4521-a9f7-abb10044e3a5.heima360.cc
   skip-cert-verify: false
   type: trojan
-- name: '559|🇫🇷FR_21 #2'
+- name: '559|🇫🇷FR_24 #1'
+  password: 6c64e6f9-a76c-49eb-96d2-bf8b1afee4a3
+  port: 443
+  server: fr-full.privateip.net
+  sni: fr-full.privateip.net
+  type: trojan
+- name: '559|🇫🇷FR_25 #1'
   password: d150c8c3-a667-4d3e-843c-739f8558c7d2
   port: 443
   server: uk-full.privateip.net
   sni: uk-full.privateip.net
   type: trojan
-- name: '559|🇫🇷FR_20 #1'
+- name: '559|🇫🇷FR_23 #1'
   password: d86c421f-dbfe-4507-a864-f8f9e29d80e4
   port: 443
   server: de-full.privateip.net
   sni: de-full.privateip.net
   type: trojan
+- name: 559|FR VLESS-28 | free-nodes
+  network: ws
+  port: 80
+  server: fsdns.ectunnelvpn.me
+  tls: false
+  type: vless
+  uuid: 15cbab96-197e-46a5-9042-073b3980c798
+  ws-opts:
+    headers:
+      Host: fsdns.ectunnelvpn.me
+    path: '%2Fvless'
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 559,580|FR VLESS-91 | free-nodes
+  name: '559,580|FR VLESS-90 | free-nodes #1'
   network: tcp
   port: 443
   reality-opts:
     public-key: wgoLhL4pRP0y6fu6He4qW_ElohCM_ANWJF3HEoUhNz4
     short-id: 9c2378562188c3cb
-  server: fr.denditop.site
+  server: 185.171.202.38
   servername: fr.denditop.site
   tls: false
   type: vless
   uuid: 256c5f48-4908-4255-83d1-c86cb58f22b4
-- name: 559,580|德国(yudou789.top 玉豆免费节点)
-  network: ws
-  port: 443
-  server: 185.16.110.0
-  servername: sni.111000.dynv6.net
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.111000.dynv6.net
-    path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2'
 - name: 559|YouTube顺丰资源 法国_247
   network: ws
   port: 2096
@@ -1965,20 +1991,6 @@ proxies:
     headers:
       Host: sni.jpmj.dev
     path: '%2F'
-- client-fingerprint: chrome
-  name: '559|🇫🇷_法国 #3'
-  network: ws
-  port: 2053
-  server: 34.155.19.30
-  servername: sni.111000.v6.navy
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.111000.v6.navy
-    path: '%2F%3Fed%3D2560%26telegram%F0%9F%87%A8%F0%9F%87%B3%2B%40wangcai2'
 - name: 559|YouTube顺丰资源 法国_216
   network: ws
   port: 8443
@@ -2027,57 +2039,40 @@ proxies:
     headers:
       Host: sni.111000.indevs.in
     path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%252B%2540WangCai2'
-- alterId: 0
-  cipher: auto
-  name: '559|🇫🇷_法国 #11'
-  network: tcp
-  port: '443'
-  server: 57.129.130.23
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 34faa20a-7597-444c-81a3-a92042e3cd95
-- alterId: 0
-  cipher: auto
-  name: '559|🇫🇷_法国 #12'
-  network: tcp
-  port: '443'
-  server: 57.129.130.23
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 5cb525ac-2762-4bc7-be83-206d7c92de33
-- alterId: 0
-  cipher: auto
-  name: '559|🇫🇷_法国 #13'
-  network: tcp
-  port: '443'
-  server: 57.129.130.23
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: a120cb7b-c322-436c-af77-6dfbdae19505
+- name: '559,580|🇫🇷FR法國丨yoyapai.com #1'
+  network: ws
+  port: 2053
+  server: 152.228.135.96
+  servername: cf.afrcloudnet1.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  uuid: 88888888-8888-8888-8888-888888888888
+  ws-opts:
+    headers:
+      Host: cf.afrcloudnet1.dpdns.org
+    path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%20%40WangCai2'
 - name: 566|🇫🇷 法国 | FRA
-  password: f7d95364-607b-11ee-93af-f23c91369f2d
+  password: 96c798f6-4645-11ee-b8a1-f23c9164ca5d
   port: 443
-  server: 257fc07f-tcxds0-tv7zgh-1ijh5.fr.oshuawei.com
+  server: 7382cbd7-tcxds0-th9kx9-1os43.fr.oshuawei.com
   tls: true
   type: http
-  username: f7d95364-607b-11ee-93af-f23c91369f2d
+  username: 96c798f6-4645-11ee-b8a1-f23c9164ca5d
 - name: 566|🇫🇷 法国 | FRA 2
-  password: 03573f46-e944-11eb-a8bf-f23c91cfbbc9
+  password: d18bcaf4-1323-11ec-a0fc-f23c913c8d2b
   port: 443
-  server: ae21139b-tcxds0-tee612-2r82.fr.oshuawei.com
+  server: cf4ef815-tcxds0-th1s9h-8rja.fr.oshuawei.com
   tls: true
   type: http
-  username: 03573f46-e944-11eb-a8bf-f23c91cfbbc9
+  username: d18bcaf4-1323-11ec-a0fc-f23c913c8d2b
 - name: 566|🇫🇷 法国 | FRA 3
-  password: bd515574-3b10-11ee-ac14-f23c9164ca5d
+  password: 55cce5a4-56b7-11ee-af82-f23c9164ca5d
   port: 443
-  server: 472e9718-tcxds0-tu0ezx-1m7l4.fr.oshuawei.com
+  server: 2816ea00-tcxds0-tcw58g-1p0be.fr.oshuawei.com
   tls: true
   type: http
-  username: bd515574-3b10-11ee-ac14-f23c9164ca5d
+  username: 55cce5a4-56b7-11ee-af82-f23c9164ca5d
 - alterId: 0
   cipher: auto
   name: '577|法国1 #4'
@@ -2124,29 +2119,3 @@ proxies:
   tls: false
   type: vmess
   uuid: a663bbab-4e9e-4080-b8ab-edd59fe1fdce
-- name: 580|🇫🇷FR法國丨yoyapai.com
-  network: ws
-  port: 2053
-  server: 152.228.135.96
-  servername: cf.afrcloudnet1.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  uuid: 88888888-8888-8888-8888-888888888888
-  ws-opts:
-    headers:
-      Host: cf.afrcloudnet1.dpdns.org
-    path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%20%40WangCai2'
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 580|FR VLESS-90 | free-nodes
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: wgoLhL4pRP0y6fu6He4qW_ElohCM_ANWJF3HEoUhNz4
-    short-id: 9c2378562188c3cb
-  server: 185.171.202.38
-  servername: fr.denditop.site
-  tls: false
-  type: vless
-  uuid: 256c5f48-4908-4255-83d1-c86cb58f22b4
