@@ -94,6 +94,20 @@ proxies:
   type: vmess
   udp: true
   uuid: 21629fa5-8a06-4c2c-bdaa-85a6fe5222d5
+- alterId: 0
+  cipher: auto
+  name: 255|🇫🇷 法国
+  network: ws
+  port: 30837
+  server: v37.heduian.link
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: ocbc.com
+    path: /oooo
 - cipher: aes-256-cfb
   name: '356,378,537|🇳🇱NL-51.15.27.48-7972 #2'
   password: f8f7aCzcPKbsF8p3
@@ -562,7 +576,7 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: '378,494,536,537|🇷FR-51.77.158.169-3506 #1'
+  name: '378,536,537|🇷FR-51.77.158.169-3506 #1'
   network: ws
   port: 2096
   server: 51.77.158.169
@@ -649,24 +663,30 @@ proxies:
     headers:
       Host: ahdaeph8.com
     path: /ws
-- name: '378,436,536,537|🇷FR-51.254.142.162-4532 #1'
+- country: 🇷FR
+  name: '378,435,436,536,537|🇷FR-51.254.142.162-4532 #1'
   password: 6c64e6f9-a76c-49eb-96d2-bf8b1afee4a3
   port: 443
   server: fr-full.privateip.net
   skip-cert-verify: false
   type: trojan
-- name: '378,436,536,537|🇫🇷FR-57.128.174.124-4533 #2'
+  udp: true
+- country: 🇫🇷FR
+  name: '378,435,436,536,537|🇫🇷FR-57.128.174.124-4533 #2'
   password: d150c8c3-a667-4d3e-843c-739f8558c7d2
   port: 443
   server: uk-full.privateip.net
   skip-cert-verify: false
   type: trojan
-- name: '378,436,536,537|🇷FR-141.227.152.129-4567 #1'
+  udp: true
+- country: 🇱NL
+  name: '378,435,436,536,537|🇷FR-141.227.152.129-4567 #1'
   password: a906625d-446c-468f-9e26-1d15981fa0e9
   port: 443
   server: nl-full.privateip.net
   skip-cert-verify: false
   type: trojan
+  udp: true
 - cipher: chacha20-ietf-poly1305
   name: '378,537|FR-178.18.244.2-5332 #1'
   password: 97OnDEZYGja4
@@ -811,7 +831,7 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: '378,494,536,537|🇷FR-146.59.55.50-6839 #1'
+  name: '378,536,537|🇷FR-146.59.55.50-6839 #1'
   network: ws
   port: 443
   server: 146.59.55.50
@@ -1687,7 +1707,7 @@ proxies:
     path: /xrenvws
 - client-fingerprint: chrome
   fingerprint: ''
-  name: 470|9d218e6dd4a545ae86f18d0a4d0eee...
+  name: 470|8c085d1db3574eaab3b44ae7e2a9da...
   network: ws
   port: 22224
   server: 51.44.53.220
@@ -1702,22 +1722,7 @@ proxies:
     path: /telegram-channel-vlessconfig
 - client-fingerprint: chrome
   fingerprint: ''
-  name: 470|f52a215089834b07bc173c4222445a...
-  network: ws
-  port: 4433
-  server: 84.247.129.205
-  servername: sub.mot.ip-ddns.com
-  tls: true
-  type: vless
-  udp: false
-  uuid: 00000000-0000-4000-8000-000000000000
-  ws-opts:
-    headers:
-      host: sub.mot.ip-ddns.com
-    path: /
-- client-fingerprint: chrome
-  fingerprint: ''
-  name: 470|be2cd36a7b33425f8b90a6839b2b15...
+  name: 470|35614073df2b4578830c78bf929de4...
   network: ws
   port: 2053
   server: 54.36.98.199
@@ -1736,6 +1741,11 @@ proxies:
   port: 28614
   server: 45e755.shlswe.xyz
   type: ss
+- name: '507,559,580|FR TROJAN-86 | free-nodes #2'
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 13.39.95.237
+  type: trojan
 - country: 🇫🇷FR
   delay: 1783
   name: 528|法国 - 巴黎 - 2
@@ -1762,7 +1772,7 @@ proxies:
   delay: 977
   h2-opts: {}
   http-opts: {}
-  name: 528,548|Relay_-🇺🇸US_14
+  name: 528,548|Relay_-🇺🇸US_13
   network: tcp
   port: 30835
   server: v35.hdacd.com
@@ -1913,6 +1923,17 @@ proxies:
   tls: false
   type: vless
   uuid: 43488128-319e-f480-64ea-0acdc712e2a8
+- name: 559|🇫🇷 568 - FR - VLESS/REALITY/PB...
+  network: tcp
+  port: 23576
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  server: 62.210.91.10
+  servername: ''
+  tls: false
+  type: vless
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
 - name: 559|hamedp71::🇫🇷-0008
   network: tcp
   port: 6443
@@ -1936,6 +1957,18 @@ proxies:
     headers:
       Host: sni.111000.v6.navy
     path: '%2Ft.me%2Fv2Line'
+- name: 559|>>@oneclickvpnkeys::FR-003
+  network: ws
+  port: 2053
+  server: 141.94.77.169
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.v6.navy
+    path: '%2F'
 - name: 559|v2go | 🇫🇷 FR | VLESS | 2378
   network: ws
   port: 2053
