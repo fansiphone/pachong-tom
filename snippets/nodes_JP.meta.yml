@@ -535,21 +535,6 @@ proxies:
       Host: download.windowsupdate.com
     path: /download
 - client-fingerprint: chrome
-  name: '127,426,523,524|🇺🇸_美国_56 #1'
-  network: ws
-  port: 443
-  server: 172.64.52.232
-  servername: snip.zrfs.nn.kg
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: vless
-  uuid: 5ca37755-ee04-431b-8b9a-9740d396b29b
-  ws-opts:
-    headers:
-      Host: snip.zrfs.nn.kg
-    path: /Telegram@lsmoo&?ed=2560
-- client-fingerprint: chrome
   name: '127,426,523,524|_未知_30 #1'
   network: ws
   port: 443
@@ -564,6 +549,36 @@ proxies:
     headers:
       Host: snip.wrr.pp.ua
     path: /Telegram@lsmoo&?ed=2560
+- client-fingerprint: chrome
+  name: 127,426,523,524,566|🇺🇸 美国 | USA 10
+  network: ws
+  port: 443
+  server: 172.64.52.232
+  servername: snip.zrfs.nn.kg
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 5ca37755-ee04-431b-8b9a-9740d396b29b
+  ws-opts:
+    headers:
+      Host: snip.zrfs.nn.kg
+    path: /Telegram@lsmoo&?ed=2560
+- alterId: 0
+  cipher: auto
+  name: '127,426|🇯🇵 JP_3|2.5MB/s|GPT⁺|YT-JP|NF|... #1'
+  network: ws
+  port: 80
+  server: abm96f00fby3.jkhkgj.xyz
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 0f868002-5230-45fb-be23-0fd0ed9bbdc4
+  ws-opts:
+    headers:
+      Host: abm96f00fby3.jkhkgj.xyz
+    path: /market/jp1
 - alterId: 0
   cipher: auto
   name: '128,430|日本NO.1 #2'
@@ -1220,11 +1235,11 @@ proxies:
   sni: www.alibaba.com
   type: trojan
   udp: true
-- name: 255|JP
-  network: tcp
+- name: 255|🇯🇵 JP
   password: f57f01e6-9bb1-4277-a5cb-75ad0ce1fa11
   port: 21125
   server: 125.94.40.162
+  skip-cert-verify: true
   sni: k12.tudou211.com
   type: trojan
 - name: '306,378,489,502,514,515,516,536,537,544,548,551,556,557,559,579,580,582|🇭🇰
@@ -1254,33 +1269,42 @@ proxies:
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
-- name: '306,378,502,514,515,516,536,537,544,548,551,556,557,559,579,580,582|🇯🇵 日本3|@stairnode
-    #8'
+- alterId: 0
+  name: '306,378,502,514,515,516,536,537,544,548,551,556,557,559,574,579,580,582|🇯🇵
+    日本3|@stairnode #8'
   network: tcp
   password: 187dda4498be9ac4f28db939d5940185
   port: 2001
   server: 13.115.237.4
   skip-cert-verify: false
   sni: www.nintendogames.net
+  tls: true
   type: trojan
-- name: '306,378,502,514,515,516,536,537,544,548,551,556,557,559,579,580,582|🇸🇬 新加坡2|@stairnode
-    #8'
+  udp: true
+- alterId: 0
+  name: '306,378,502,514,515,516,536,537,544,548,551,556,557,559,574,579,580,582|🇸🇬
+    新加坡2|@stairnode #8'
   network: tcp
   password: 187dda4498be9ac4f28db939d5940185
   port: 4674
   server: 13.115.237.4
   skip-cert-verify: false
   sni: www.nintendogames.net
+  tls: true
   type: trojan
-- name: '306,378,502,514,515,516,536,537,544,548,551,556,557,559,579,580,582|🇺🇸 美国2|@stairnode
-    #9'
+  udp: true
+- alterId: 0
+  name: '306,378,502,514,515,516,536,537,544,548,551,556,557,559,574,579,580,582|🇺🇸
+    美国2|@stairnode #9'
   network: tcp
   password: 187dda4498be9ac4f28db939d5940185
   port: 3057
   server: 13.115.237.4
   skip-cert-verify: false
   sni: www.nintendogames.net
+  tls: true
   type: trojan
+  udp: true
 - client-fingerprint: firefox
   flow: ''
   grpc-opts:
@@ -1438,7 +1462,7 @@ proxies:
   type: ss
 - cipher: aes-128-gcm
   country: 🇬🇧GB
-  name: 356,357,378,537,538,548|🇬🇧GB_32
+  name: 356,357,378,537,538,548|netflix_JP
   password: shadowsocks
   port: 443
   server: 149.22.87.204
@@ -4224,7 +4248,7 @@ proxies:
 - alpn:
   - http/1.1
   client-fingerprint: random
-  name: '489,566,567,585,586|HK_speednode_0004 #1'
+  name: '489,567,585,586|HK_speednode_0004 #1'
   network: ws
   port: 3389
   server: 203.168.131.110
@@ -4701,24 +4725,6 @@ proxies:
     headers:
       Host: gaosir.unfeeling.sbs
     path: Telegram%40freecodes%2F%3Fed%3D2560
-- alterId: 0
-  cipher: auto
-  country: 🇯🇵JP
-  h2-opts: {}
-  http-opts: {}
-  name: 548,559|🇯🇵 日本-CF736D0383
-  network: ws
-  port: 80
-  server: 172.111.146.64
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 05b8c783-7f59-47f9-9923-06a465679f6a
-  ws-opts:
-    headers:
-      Host: ''
-    path: /vmess/
 - cipher: chacha20-ietf-poly1305
   name: 558|0| 01 | 1x JP
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
@@ -5233,27 +5239,51 @@ proxies:
     headers:
       Host: v6.583181.xyz
     path: /
-- auth: 48b36b6a-eaa6-4843-9231-0bb8b38b5da5
-  name: 566|🇯🇵 日本 | JPN 5
-  obfs: salamander
-  obfs-password: CF7WJGiw6r1c8imX
-  password: 48b36b6a-eaa6-4843-9231-0bb8b38b5da5
-  port: 5443
-  server: jp-hy2.onetaplink.app
-  skip-cert-verify: false
-  sni: hy2-jp.onetaplink.app
-  type: hysteria2
-  udp: true
-- name: '568|🇯🇵 日本 | JPN #1'
-  obfs: salamander
-  obfs-password: salamander
-  password: 48b36b6a-eaa6-4843-9231-0bb8b38b5da5
-  port: 5443
-  server: jp-hy2.onetaplink.app
-  skip-cert-verify: false
-  sni: hy2-jp.onetaplink.app
+- alterId: 0
+  cipher: auto
+  name: 559|🇯🇵 日本-CF736D0383
+  network: ws
+  port: 80
+  server: 172.111.146.64
+  servername: ''
   tls: false
-  type: hysteria2
+  type: vmess
+  uuid: 05b8c783-7f59-47f9-9923-06a465679f6a
+  ws-opts:
+    headers:
+      Host: ''
+    path: /vmess/
+- name: 566|🇯🇵 日本 | JPN 6
+  password: 23b3b239-96e2-4e62-8d53-36bacbc9f2ea
+  port: 8443
+  server: jp.iij.sakura.baipiao0721-dns78655.eu
+  skip-cert-verify: true
+  type: anytls
+  udp: true
+- name: 566|🇯🇵 日本 | JPN 7
+  password: 94d40708-8273-11ea-8fc9-f23c913c8d2b
+  port: 443
+  server: 958b6264-td6n40-ten5li-mv7m.jp.oshuawei.com
+  tls: true
+  type: http
+  username: 94d40708-8273-11ea-8fc9-f23c913c8d2b
+- name: 566|🇯🇵 日本 | JPN 8
+  password: aca4364b-29ca-4206-8878-5abd8ada18bd
+  port: 8443
+  server: jp.iij.sakura.baipiao0721-dns78655.eu
+  skip-cert-verify: true
+  type: anytls
+  udp: true
+- alterId: 0
+  name: 574|JP
+  password: BxceQaOe
+  port: 1783
+  server: 18.182.5.125
+  skip-cert-verify: true
+  sni: t.me%2Fripaojiedian
+  tls: true
+  type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: '577|日本NO.1 #4'
