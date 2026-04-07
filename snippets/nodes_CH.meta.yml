@@ -63,23 +63,65 @@ proxies:
   uuid: 7c317161-5cf8-4cbc-811a-d1297c41bb23
   xudp: true
 - cipher: aes-256-cfb
-  name: '378,537|🇨CH-185.126.116.125-0092 #1'
+  name: '378,537|🇨CH-185.126.116.125-0063 #1'
   password: aLpQtfEZe445QyHk
   port: 9098
   server: 185.126.116.125
   type: ss
-- name: '378,536,537|CH-152.67.71.149-2181 #1'
+- name: '378,536,537|CH-152.67.71.149-2190 #1'
   password: 8a03bc28-2a33-42c4-be59-30464dbb9954
   port: 18818
   server: ch12.yukiss.eu.org
   skip-cert-verify: false
   type: trojan
 - cipher: aes-128-cfb
-  name: '378,537|🇨CH-156.146.62.160-3752 #1'
+  name: '378,537|🇨CH-156.146.62.160-3761 #1'
   password: shadowsocks
   port: 443
   server: 156.146.62.160
   type: ss
+- alterId: 1
+  cipher: auto
+  name: '378,537|CH-186.190.215.32-7636 #1'
+  network: ws
+  port: 443
+  server: 186.190.215.32
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: 186.190.215.32
+    path: linkvws
+- alterId: 1
+  cipher: auto
+  name: '378,537|🇭CH-186.190.215.75-7700 #1'
+  network: ws
+  port: 443
+  server: 186.190.215.75
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: 186.190.215.75
+    path: linkvws
+- alterId: 0
+  cipher: auto
+  name: '378,537|🇭CH-140.238.212.95-7713 #1'
+  network: ws
+  port: 443
+  server: 140.238.212.95
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
+  ws-opts:
+    headers:
+      Host: e130917c-1b58-4136-b2d9-76dc920e0add.add97ee8-0f14-48a3-b2cd-979c56742e64.loseyourip.com
+    path: /
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: '438,507,559,580|未知 VLESS-122 | free-nodes #2'
@@ -103,50 +145,34 @@ proxies:
   tls: false
   type: vmess
   uuid: 81b2b630-8b6a-404f-b996-b12f13db5786
-- name: 472,473,474,559|意大利_040704029
-  password: hCjWaBe5vTkewfiljOL=9FS9DYg0c09c.t
-  port: 18390
-  server: 81.29.149.201
-  sni: osl7.solidly.click
-  type: trojan
 - client-fingerprint: chrome
-  name: '523,524|🇨🇭_瑞士_2 #1'
+  flow: xtls-rprx-vision
+  name: 523,524,566|🇩🇪 德国 | DEU
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: yZh74kxd_k5PvamyrFDIS_rYRLUhy5xpc4v1lU_Gdk0
+    short-id: f085548164eba3de
+  server: 45.148.117.94
+  servername: yandex.ru
+  tls: true
+  type: vless
+  udp: true
+  uuid: 443fd8ea-3cfd-4286-a4e2-91276e41fe51
+- client-fingerprint: chrome
+  name: 523,524,566|🇳🇱 荷兰 | NLD 3
   network: ws
   port: 4433
   server: 138.226.240.199
   servername: sub.mot.ip-ddns.com
   tls: true
   type: vless
+  udp: true
   uuid: 00000000-0000-4000-8000-000000000000
   ws-opts:
     headers:
       Host: sub.mot.ip-ddns.com
     path: /
-- name: '523,524|🇨🇭_瑞士_1 #1'
-  network: ws
-  port: 39738
-  server: 185.238.189.89
-  servername: snippet.danfeng.dedyn.io
-  tls: true
-  type: vless
-  uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
-  ws-opts:
-    headers:
-      Host: snippet.danfeng.dedyn.io
-    path: /danfeng
-- name: '559|🇨🇭_瑞士 #2'
-  network: ws
-  port: 4433
-  server: 138.226.240.199
-  servername: sub.mot.ip-ddns.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 00000000-0000-4000-8000-000000000000
-  ws-opts:
-    headers:
-      Host: sub.mot.ip-ddns.com
-    path: '%2F'
 - name: 559|🇨🇭 瑞士-25C49EC9
   network: tcp
   port: 443
