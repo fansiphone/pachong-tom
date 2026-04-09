@@ -68,24 +68,25 @@ proxies:
   port: 9098
   server: 185.126.116.125
   type: ss
-- name: '378,536,537|CH-152.67.71.149-2190 #1'
+- name: '378,536,537|CH-152.67.71.149-2209 #1'
   password: 8a03bc28-2a33-42c4-be59-30464dbb9954
   port: 18818
   server: ch12.yukiss.eu.org
   skip-cert-verify: false
   type: trojan
 - cipher: aes-128-cfb
-  name: '378,537|🇨CH-156.146.62.160-3761 #1'
+  name: '378,537|🇨CH-156.146.62.160-3780 #1'
   password: shadowsocks
   port: 443
   server: 156.146.62.160
   type: ss
 - alterId: 1
   cipher: auto
-  name: '378,537|CH-186.190.215.32-7636 #1'
+  name: '378,536,537|CH-186.190.215.32-7683 #1'
   network: ws
   port: 443
   server: 186.190.215.32
+  servername: ''
   skip-cert-verify: false
   tls: true
   type: vmess
@@ -96,10 +97,11 @@ proxies:
     path: linkvws
 - alterId: 1
   cipher: auto
-  name: '378,537|🇭CH-186.190.215.75-7700 #1'
+  name: '378,536,537|🇭CH-186.190.215.75-7747 #1'
   network: ws
   port: 443
   server: 186.190.215.75
+  servername: ''
   skip-cert-verify: false
   tls: true
   type: vmess
@@ -110,10 +112,11 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: '378,537|🇭CH-140.238.212.95-7713 #1'
+  name: '378,536,537|🇭CH-140.238.212.95-7760 #1'
   network: ws
   port: 443
   server: 140.238.212.95
+  servername: ''
   skip-cert-verify: false
   tls: true
   type: vmess
@@ -132,9 +135,16 @@ proxies:
   tls: false
   type: vmess
   uuid: 81b2b630-8b6a-404f-b996-b12f13db5786
+- name: 472,473,474,502,559|🇨🇭CH瑞士 92.9KB/s
+  network: tcp
+  password: hCjWaBe5vTkewfiljOL=9FS9DYg0c09c.t
+  port: 18390
+  server: 81.29.149.240
+  sni: osl9.solidly.click
+  type: trojan
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 523,524,566|🇩🇪 德国 | DEU
+  name: '523,524,559|🇨🇭_瑞士 #2'
   network: tcp
   port: 443
   reality-opts:
@@ -142,16 +152,17 @@ proxies:
     short-id: f085548164eba3de
   server: 45.148.117.94
   servername: yandex.ru
+  skip-cert-verify: false
   tls: true
   type: vless
-  udp: true
   uuid: 443fd8ea-3cfd-4286-a4e2-91276e41fe51
 - client-fingerprint: chrome
-  name: 523,524,566|🇳🇱 荷兰 | NLD 3
+  name: '523,524,567,585,586|CH_speednode_0005 #1'
   network: ws
   port: 4433
   server: 138.226.240.199
   servername: sub.mot.ip-ddns.com
+  skip-cert-verify: true
   tls: true
   type: vless
   udp: true
@@ -160,17 +171,16 @@ proxies:
     headers:
       Host: sub.mot.ip-ddns.com
     path: /
-- name: 559|🇨🇭 瑞士-25C49EC9
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: k-K00UP1HMBhLZ1aUbSxL8_E9Rqq3wEoTzF-howkr1k
-    short-id: e927b04b7e93280c
-  server: swi-mws.onnstreaming.ru
-  servername: ''
-  tls: false
+- name: '523,524|🇨🇭_瑞士_3 #1'
+  network: ws
+  port: 4433
+  server: 138.226.240.199
+  servername: sub.mot.ip-ddns.com
+  tls: true
   type: vless
-  uuid: 197a0c0a-574d-497a-9e44-7bec185f8662
+  uuid: 00000000-0000-4000-8000-000000000000
+  ws-opts:
+    path: /
 - name: 559|🇨🇭 瑞士-B2878E8D
   network: tcp
   port: 443
@@ -194,19 +204,6 @@ proxies:
     headers:
       Host: sni.jpmj.dev
     path: '%2F'
-- name: '559|🇨🇭_瑞士 #3'
-  network: ws
-  port: 39738
-  server: 185.238.189.89
-  servername: snippet.danfeng.dedyn.io
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
-  ws-opts:
-    headers:
-      Host: snippet.danfeng.dedyn.io
-    path: '%2Fdanfeng'
 - name: 559|🇨🇭 瑞士-AAFCEFFE
   network: http
   port: 22
