@@ -466,25 +466,6 @@ proxies:
     headers:
       Host: download.windowsupdate.com
     path: /download
-- alpn:
-  - ''
-  alterId: 0
-  cipher: auto
-  name: '127,378,426,489,494,536,537,568|🇯🇵 日本 | JPN #1'
-  network: ws
-  port: '443'
-  server: tokyo01.zgjok.com
-  servername: tokyo01.zgjok.com
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  udp: true
-  uuid: e6d5d668-2091-41d9-9bff-df0a1c5107ec
-  ws-opts:
-    headers:
-      Host: tokyo01.zgjok.com
-    path: /
-  xudp: true
 - alterId: 0
   cipher: auto
   name: '128,430|日本NO.1 #2'
@@ -1073,11 +1054,11 @@ proxies:
   sni: www.alibaba.com
   type: trojan
   udp: true
-- name: 255|🇯🇵 JP
+- name: 255|JP
+  network: tcp
   password: f57f01e6-9bb1-4277-a5cb-75ad0ce1fa11
   port: 21125
   server: 125.94.40.162
-  skip-cert-verify: true
   sni: k12.tudou211.com
   type: trojan
 - name: '306,340,378,454,489,494,502,514,515,516,536,537,543,544,548,551,556,557,559,579,580,582|🇭🇰
@@ -2823,6 +2804,25 @@ proxies:
   port: 990
   server: 103.106.228.247
   type: ss
+- alpn:
+  - ''
+  alterId: 0
+  cipher: auto
+  name: '378,472,473,474,489,494,536,537|🇵JP-168.138.193.202-4694 #1'
+  network: ws
+  port: 443
+  server: tokyo01.zgjok.com
+  servername: tokyo01.zgjok.com
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: e6d5d668-2091-41d9-9bff-df0a1c5107ec
+  ws-opts:
+    headers:
+      Host: tokyo01.zgjok.com
+    path: /
+  xudp: true
 - alterId: 0
   cipher: auto
   name: '378,536,537|JP-138.2.52.244-6774 #1'
@@ -3078,6 +3078,24 @@ proxies:
       Host: 51b0e42034dd75a815fa9eb16021fbda.cdn.shoes-relativity.online
     path: /jp
   ws-path: /jp
+- alterId: 0
+  cipher: auto
+  country: 🇵JP
+  h2-opts: {}
+  http-opts: {}
+  name: 440,559|🇯🇵 日本-D398A327
+  network: ws
+  port: 443
+  server: tokyo01.zgjok.com
+  servername: ''
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: e6d5d668-2091-41d9-9bff-df0a1c5107ec
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
 - name: 453|🇯🇵 日本2|@stairnode
   password: 253bc477d4e43c209f2d427272968280
   port: 1806
@@ -3913,20 +3931,41 @@ proxies:
     headers:
       Host: ''
     path: /vmess/
-- alterId: 0
+- cipher: chacha20-ietf-poly1305
+  name: 566,606|2602:fd6f:1f:fdd::98_Gemini
+  password: somebody
+  plugin: obfs
+  plugin-opts:
+    host: 20xteamxa9-jp5-a7xr.update.microsoft.com
+    mode: http
+  port: 30011
+  server: 178.239.124.195
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  name: 566|🇯🇵 日本 | JPN 21
+  password: 99840981-d157-3437-b5a2-b2f8b67161ff
+  port: 495
+  server: z.4.8.1.p.g.z.8.d.jp04-ae5.entry.v51124-4.qpon
+  type: ss
+  udp: true
+- alterId: 1
   cipher: auto
-  name: 559|🇯🇵 日本-D398A327
-  network: ws
-  port: 443
-  server: tokyo01.zgjok.com
-  servername: ''
-  tls: true
+  name: 566|🇯🇵 日本 | JPN 25
+  port: 22324
+  server: 172.104.80.66
+  skip-cert-verify: true
+  tls: false
   type: vmess
-  uuid: e6d5d668-2091-41d9-9bff-df0a1c5107ec
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
+  udp: true
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+- cipher: aes-256-gcm
+  name: 566|🇯🇵 日本 | JPN 29
+  password: 7b562532-8f03-3a69-bb44-3c3e18227c19
+  port: 491
+  server: 8.r.1.d.6.g.8.e.d.jp03-ae5.entry.v51124-5.qpon
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
   name: '577|日本NO.1 #4'
