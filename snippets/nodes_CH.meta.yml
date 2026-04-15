@@ -125,6 +125,19 @@ proxies:
     headers:
       Host: e130917c-1b58-4136-b2d9-76dc920e0add.add97ee8-0f14-48a3-b2cd-979c56742e64.loseyourip.com
     path: /
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 438,494,523,524,559|🏁 未知-E273FDFE
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: DoZSKLwNQjogQMlE7oEEuB8TqpNa-umXzG-2Q6dTTEY
+    short-id: 4fa44664f6a566d3
+  server: nl.milas.click
+  servername: ''
+  tls: false
+  type: vless
+  uuid: 913c6074-a747-492b-a7e9-5abfcad6369d
 - alterId: 0
   cipher: auto
   name: 465|16|🔒 VM-TCP-NA 🇨🇭 CH-94.131.99...
@@ -135,25 +148,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 81b2b630-8b6a-404f-b996-b12f13db5786
-- flow: xtls-rprx-vision
-  name: '523,524,559|🇨🇭_瑞士 #2'
-  network: tcp
-  port: 443
-  server: 45.148.117.94
-  servername: yandex.ru
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 443fd8ea-3cfd-4286-a4e2-91276e41fe51
-- name: '523,524,559|🇨🇭_瑞士 #3'
-  network: tcp
-  port: 8443
-  server: 45.12.109.68
-  servername: dropbox.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: d0436b64-3355-11f1-a772-ee3d4fb45757
 - name: 559|🇨🇭 瑞士-B2878E8D
   network: tcp
   port: 443
@@ -165,6 +159,16 @@ proxies:
   tls: false
   type: vless
   uuid: 43488128-319e-f480-64ea-0acdc712e2a8
+- flow: xtls-rprx-vision
+  name: 559|🇨🇭_瑞士
+  network: tcp
+  port: 443
+  server: 45.148.117.94
+  servername: yandex.ru
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 443fd8ea-3cfd-4286-a4e2-91276e41fe51
 - name: 559|🇨🇭 瑞士-A055C9D4
   network: ws
   port: 2096
@@ -177,17 +181,15 @@ proxies:
     headers:
       Host: sni.jpmj.dev
     path: '%2F'
-- name: 559|🇨🇭 瑞士-34BB67D0
-  network: grpc
-  port: 2041
-  reality-opts:
-    public-key: qAzDiElJXS4orwLfz63SFhCJ-EB1AGXMoL3mSc0mNV0
-    short-id: ''
-  server: de2.clgate.network
-  servername: ''
-  tls: false
+- name: '559|🇨🇭_瑞士 #1'
+  network: tcp
+  port: 8443
+  server: 45.12.109.68
+  servername: dropbox.com
+  skip-cert-verify: false
+  tls: true
   type: vless
-  uuid: ccc4d100-07ec-4dbd-a054-50216788e15e
+  uuid: d0436b64-3355-11f1-a772-ee3d4fb45757
 - name: 559|🇨🇭 瑞士-AAFCEFFE
   network: http
   port: 22
@@ -202,10 +204,3 @@ proxies:
   tls: false
   type: vless
   uuid: 88888888-8888-8888-8888-888888888888
-- name: 566|🇨🇭 瑞士 | CHE
-  password: a4c1b618-024a-42d4-b78a-1c25c337a484
-  port: 4430
-  server: es1.xiaoliyu.cyou
-  skip-cert-verify: true
-  type: anytls
-  udp: true
