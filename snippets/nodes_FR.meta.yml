@@ -84,6 +84,20 @@ proxies:
   type: vmess
   udp: true
   uuid: 21629fa5-8a06-4c2c-bdaa-85a6fe5222d5
+- alterId: 0
+  cipher: auto
+  name: 255|🇫🇷 法国
+  network: ws
+  port: 30837
+  server: v37.heduian.link
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: ocbc.com
+    path: /oooo
 - cipher: aes-256-cfb
   name: '356,378,537|🇳🇱NL-51.15.27.48-7956 #1'
   password: f8f7aCzcPKbsF8p3
@@ -1497,35 +1511,12 @@ proxies:
   skip-cert-verify: false
   sni: trj.rollingnext.co.uk
   type: trojan
-- alpn:
-  - http/1.1
-  name: '438|🇫🇷FR_1|3.1MB/s | 网盘搜宝: https:/...'
+- name: '438|🇫🇷FR_1|2.4MB/s | 网盘搜宝: https:/...'
   network: ws
   password: humanity
   port: 443
-  server: 8.6.112.6
-  skip-cert-verify: true
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    path: '%2Fassignment'
-- name: '438,494|🔥Join+Telegram:@Farah_VPN🟣 #2527'
-  network: ws
-  password: humanity
-  port: 443
-  server: 104.18.32.47
-  skip-cert-verify: false
+  server: 188.114.98.0
   sni: www.calmlunch.com
-  type: trojan
-  ws-opts:
-    path: '%2Fassignment'
-- name: '438|🇫🇷FR_5|1.0MB/s | 网盘搜宝: https:/...'
-  network: ws
-  password: humanity
-  port: 443
-  server: www.ignitelimit.com
-  skip-cert-verify: true
-  sni: www.ignitelimit.com
   type: trojan
   ws-opts:
     path: '%2Fassignment'
@@ -1960,38 +1951,40 @@ proxies:
   server: 13.39.95.237
   type: trojan
 - client-fingerprint: firefox
-  name: '523,524|法国 03 #1'
+  name: '523,524,559|法国 03 #2'
+  network: tcp
   port: 443
   reality-opts:
     public-key: fXdtB8vImCUJMQBLcCNK7p1v3rVzx6HllaDLk8Vc4EU
     short-id: 239dcd11
   server: 57.128.81.193
   servername: www.samsung.com
-  tls: true
+  tls: false
   type: vless
   uuid: 53821f3c-5b03-456a-89f3-f8379f130752
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 523,524,559|🏁 未知-FA37F8D5
+  name: '523,524,559|法国 01 #2'
   network: tcp
   port: 443
   reality-opts:
     public-key: _xzl59bcUYD9QUSKFyboqCC_9eUnaXUUKWA19oQWFHU
     short-id: 8d17b7ebab7b99d7
   server: 51.68.155.153
-  servername: ''
+  servername: www.allegro.pl
   tls: false
   type: vless
   uuid: 43488128-319e-f480-64ea-0acdc712e2a8
 - client-fingerprint: chrome
-  name: '523,524|法国 #1'
+  name: '523,524,559|法国 #2'
+  network: tcp
   port: 38601
   reality-opts:
     public-key: wM72yOyGk1OAcETR3qdDzgSMxXIKLjqzLzXgPXoEV0Y
     short-id: c326a95b
   server: fr.ehdajgakg.org
   servername: www.apple.com
-  tls: true
+  tls: false
   type: vless
   uuid: edaf2183-9d5b-49be-862d-b016f173b674
 - client-fingerprint: chrome
@@ -2067,17 +2060,6 @@ proxies:
   server: pop.b1c7d2ec-e636-4521-a9f7-abb10044e3a5.heima360.cc
   skip-cert-verify: false
   type: trojan
-- auth: dongtaiwang.com
-  name: 559,566|🇫🇷 法国 | FRA
-  password: dongtaiwang.com
-  port: 40022
-  ports: 41000-42000
-  server: 163.172.113.118
-  skip-cert-verify: true
-  sni: www.microsoft.com
-  tls: false
-  type: hysteria2
-  udp: true
 - name: 559|🇫🇷 法国-6F0B42D3
   password: humanity
   port: 443
@@ -2112,25 +2094,11 @@ proxies:
     headers:
       Host: ov-france1.09vpn.com
     path: '%2Fvless%2F'
-- name: 559|🇫🇷_法国
-  network: ws
-  port: 443
-  server: 141.11.43.124
-  servername: snippet.danfeng.rr.kg
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 26524cce-d514-4014-a426-365fb266a14d
-  ws-opts:
-    headers:
-      Host: snippet.danfeng.rr.kg
-    path: '%2Fdanfeng'
 - name: '559,580|JP日本(mibei77.com 米贝节点分享) #22'
   network: ws
   port: 443
   server: 185.16.110.42
   servername: snippet.danfeng.rr.kg
-  skip-cert-verify: false
   tls: true
   type: vless
   uuid: 26524cce-d514-4014-a426-365fb266a14d
@@ -2138,40 +2106,6 @@ proxies:
     headers:
       Host: snippet.danfeng.rr.kg
     path: '%2Fdanfeng'
-- name: 559,580|GB英国(mibei77.com 米贝节点分享)
-  network: ws
-  port: 443
-  server: 185.7.240.42
-  servername: snippet.danfeng.rr.kg
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 26524cce-d514-4014-a426-365fb266a14d
-  ws-opts:
-    headers:
-      Host: snippet.danfeng.rr.kg
-    path: '%2Fdanfeng'
-- name: 559|🇫🇷 法国-AADA2D6C
-  network: http
-  port: 8080
-  server: dl2.pcapps.ir
-  tls: false
-  type: vless
-  uuid: 3b7acae0-e742-4062-b5e2-3f66e742c298
-- name: 559|🇫🇷 法国-0DC0D739
-  network: http
-  port: 4040
-  server: down.netrandom.com
-  tls: false
-  type: vless
-  uuid: 3b7acae0-e742-4062-b5e2-3f66e742c298
-- name: 559|🇫🇷 法国-454E0F4C
-  network: http
-  port: 5050
-  server: game.app9.ir
-  tls: false
-  type: vless
-  uuid: 3b7acae0-e742-4062-b5e2-3f66e742c298
 - name: 559|🇫🇷 法国-8AD7342E
   network: http
   port: 2086
@@ -2179,17 +2113,10 @@ proxies:
   tls: false
   type: vless
   uuid: 3b7acae0-e742-4062-b5e2-3f66e742c298
-- name: 559|🇫🇷 法国-31A908B6
-  network: http
-  port: 8855
-  server: tun.phoneshop98.ir
-  tls: false
-  type: vless
-  uuid: 3b7acae0-e742-4062-b5e2-3f66e742c298
-- name: 559|🇫🇷 法国-B7B2C175
+- name: 559|🇫🇷 法国-840DDFF6
   network: ws
   port: 443
-  server: 185.16.110.40
+  server: 141.11.202.40
   servername: ''
   tls: true
   type: vless
@@ -2197,11 +2124,11 @@ proxies:
   ws-opts:
     headers:
       Host: edtunnel-eiz.pages.dev
-    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2540WangCai2'
-- name: 559|🇫🇷 法国-39D12709
+    path: '%2F%25253Fed%25253D2560%252526Telegram%2525F0%25259F%252587%2525A8%2525F0%25259F%252587%2525B3%252540WangCai2'
+- name: 559|🇫🇷 法国-B7B2C175
   network: ws
   port: 443
-  server: 185.16.110.41
+  server: 185.16.110.40
   servername: ''
   tls: true
   type: vless
@@ -2339,6 +2266,20 @@ proxies:
     headers:
       Host: sni.111000.indevs.in
     path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2520%2540WangCai2'
+- client-fingerprint: chrome
+  name: '559|法国 05 #2'
+  network: ws
+  port: 2053
+  server: 217.60.252.232
+  servername: sni.111000.v6.navy
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.v6.navy
+    path: '%2F'
 - name: 559|🇫🇷 法国-75EA825E
   network: ws
   port: 8443
@@ -2375,18 +2316,6 @@ proxies:
     headers:
       Host: sni.111000.indevs.in
     path: '%2F%25253Fed'
-- name: 559|🇫🇷 法国-6F43F29C
-  network: ws
-  port: 2053
-  server: 45.95.174.50
-  servername: ''
-  tls: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.111000.indevs.in
-    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2540WangCai2'
 - name: 559|🇫🇷 法国-21EA1D88
   network: ws
   port: 2053
@@ -2423,18 +2352,6 @@ proxies:
     headers:
       Host: sni.111000.indevs.in
     path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2540WangCai2'
-- name: 559|🇫🇷 法国-D04115FE
-  network: ws
-  port: 8443
-  server: 51.75.16.244
-  servername: ''
-  tls: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.111000.v6.navy
-    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2520%2540WangCai2'
 - name: 559|🇫🇷 法国-9D76A16B
   network: ws
   port: 8443
@@ -2627,6 +2544,30 @@ proxies:
     headers:
       Host: sni.111000.indevs.in
     path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%252B%2540WangCai2'
+- name: 559|🇫🇷 法国-54B3F5A3
+  network: ws
+  port: 443
+  server: 51.91.251.37
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.v6.navy
+    path: '%2F'
+- name: 559|🇫🇷 法国-66B18E2B
+  network: ws
+  port: 443
+  server: 51.91.251.43
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.v6.navy
+    path: '%2F%25253FTelegram%252525F0%2525259F%25252587%252525A8%252525F0%2525259F%25252587%252525B3%25252B%25252540WangCai2%25253D'
 - name: 559|🇫🇷 法国-DF0B279C
   network: ws
   port: 443
@@ -2711,6 +2652,18 @@ proxies:
     headers:
       Host: sni.111000.v6.navy
     path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2520%2540WangCai2'
+- name: 559|🇫🇷 法国-A4D7C710
+  network: ws
+  port: 8443
+  server: 54.36.98.237
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.v6.navy
+    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2520%2540WangCai2'
 - name: 559|🇫🇷 法国-25BEBCB2
   network: ws
   port: 2053
@@ -2747,18 +2700,6 @@ proxies:
     headers:
       Host: sni.111000.v6.navy
     path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2520%2540WangCai2'
-- name: 559|🇫🇷 法国-845B6EFF
-  network: ws
-  port: 8443
-  server: 57.128.177.176
-  servername: ''
-  tls: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.111000.v6.navy
-    path: '%2F%253Ftelegram'
 - name: 559|🇫🇷 法国-12BCDB8D
   network: ws
   port: 8443
@@ -2855,18 +2796,20 @@ proxies:
     headers:
       Host: sni.111000.v6.navy
     path: '%2F%25253Fed'
-- name: 559|🇫🇷 法国-F8E83363
+- client-fingerprint: chrome
+  name: '559|法国 04 #2'
   network: ws
   port: 8443
   server: 57.128.183.225
-  servername: ''
+  servername: sni.111000.v6.navy
+  skip-cert-verify: true
   tls: true
   type: vless
   uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   ws-opts:
     headers:
       Host: sni.111000.v6.navy
-    path: '%2F%253Ftelegram'
+    path: '%2F%3Ftelegram'
 - name: 559|🇫🇷 法国-BA9ED2B1
   network: ws
   port: 8443
@@ -2879,18 +2822,6 @@ proxies:
     headers:
       Host: sni.111000.indevs.in
     path: '%2F%25253Fed%25253D2560%252526Telegram%2525F0%25259F%252587%2525A8%2525F0%25259F%252587%2525B3%252540WangCai2'
-- name: 559|🇫🇷 法国-A050955E
-  network: ws
-  port: 8443
-  server: 62.84.183.222
-  servername: ''
-  tls: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.111000.indevs.in
-    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2540WangCai2'
 - name: 559|🇫🇷 法国-65C0C249
   network: ws
   port: 8443
@@ -2939,6 +2870,18 @@ proxies:
     headers:
       Host: sni.111000.indevs.in
     path: '%2F%25253Fed%25253D2560%252526Telegram%2525F0%25259F%252587%2525A8%2525F0%25259F%252587%2525B3%252540WangCai2'
+- name: 559|🇫🇷 法国-D0755D6A
+  network: ws
+  port: 443
+  server: 94.131.9.241
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.indevs.in
+    path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2520%2540WangCai2'
 - name: 559|🇫🇷 法国-09E2BDAD
   network: ws
   port: 8443
@@ -2951,19 +2894,6 @@ proxies:
     headers:
       Host: sni.111000.dynv6.net
     path: '%2F%253Fed%253D2560%2526Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2540WangCai2'
-- client-fingerprint: chrome
-  name: '559|🇫🇷_法国 #3'
-  network: tcp
-  port: 38401
-  reality-opts:
-    public-key: GLEycjhrC8iI-GPnDYGA-7-OPMnBHfYZXAFNR5AiO0g
-    short-id: de85010f
-  server: sg.ehdajgakg.org
-  servername: www.apple.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 75f0ee0f-261c-418e-93ba-52cb238b7e6b
 - name: 559|🇫🇷 法国-5936CF0F
   network: tcp
   port: 54809
@@ -2975,6 +2905,17 @@ proxies:
   tls: false
   type: vless
   uuid: 87e60810-bb71-41ea-a2a6-f05c8ab903ef
+- name: 559|🇫🇷 法国-29F70EF1
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: XoJMrCB2aP6YCHbW4vsCoDF2h_d8eGZs3u_UAddWBBA
+    short-id: 9ad0e48c54dc7c41
+  server: fr.pink-world.ru
+  servername: ''
+  tls: false
+  type: vless
+  uuid: c5bbdac7-6ff5-4762-87bf-870f55a03581
 - name: 559|🇫🇷 法国-30807F6F
   network: ws
   port: 443
@@ -2999,7 +2940,7 @@ proxies:
   uuid: 22c396a3-95da-4be8-beef-834d17d75784
 - alterId: 0
   cipher: auto
-  name: 559|法国_041704324
+  name: 559|法国_041718322
   network: tcp
   port: '22324'
   server: 45.80.215.80
