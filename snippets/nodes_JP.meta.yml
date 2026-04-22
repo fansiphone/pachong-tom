@@ -1267,14 +1267,14 @@ proxies:
   sni: www.alibaba.com
   type: trojan
   udp: true
-- name: 255|🇯🇵 JP
+- name: 255|JP
+  network: tcp
   password: f57f01e6-9bb1-4277-a5cb-75ad0ce1fa11
   port: 21125
   server: 125.94.40.162
-  skip-cert-verify: true
   sni: k12.tudou211.com
   type: trojan
-- name: '306,340,378,494,502,514,515,516,536,537,544,551,556,557,559|11,12|香港5|@ripaojiedian
+- name: '306,340,378,494,502,514,515,516,536,537,543,544,551,556,557,559|11,12|香港5|@ripaojiedian
     #4'
   network: tcp
   password: BxceQaOe
@@ -1283,7 +1283,7 @@ proxies:
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- name: '306,340,378,494,502,514,515,516,536,537,544,551,556,557,559|11,12|日本|@ripaojiedian
+- name: '306,340,378,494,502,514,515,516,536,537,543,544,551,556,557,559|11,12|日本|@ripaojiedian
     #2'
   network: tcp
   password: BxceQaOe
@@ -1293,7 +1293,7 @@ proxies:
   sni: t.me%252Fripaojiedian
   type: trojan
 - alterId: 0
-  name: 306,340,378,494,502,514,515,516,536,537,544,551,556,557,559,574|JP
+  name: '306,340,378,494,502,514,515,516,536,537,543,544,551,556,557,559,574|JP #1'
   network: tcp
   password: 1774240c00db2b77d5a99f6540c47b69
   port: 4380
@@ -1304,7 +1304,7 @@ proxies:
   type: trojan
   udp: true
 - alterId: 0
-  name: 306,340,378,494,502,514,515,516,536,537,544,551,556,557,559,574|🇵JP日本3
+  name: 306,340,378,494,502,514,515,516,536,537,543,544,551,556,557,559,574|🇵JP日本3
   network: tcp
   password: 1774240c00db2b77d5a99f6540c47b69
   port: 4380
@@ -1315,7 +1315,8 @@ proxies:
   type: trojan
   udp: true
 - alterId: 0
-  name: 306,340,378,494,502,514,515,516,536,537,544,551,556,557,559,574|🇬SG新加坡2 1014.3KB/s
+  name: 306,340,378,494,502,514,515,516,536,537,543,544,551,556,557,559,574|🇬SG新加坡2
+    1014.3KB/s
   network: tcp
   password: 1774240c00db2b77d5a99f6540c47b69
   port: 32876
@@ -1326,7 +1327,7 @@ proxies:
   type: trojan
   udp: true
 - alterId: 0
-  name: 306,340,378,494,502,514,515,516,536,537,544,551,556,557,559,574|🇸SG加
+  name: 306,340,378,494,502,514,515,516,536,537,543,544,551,556,557,559,574|🇸SG加
   network: tcp
   password: 1774240c00db2b77d5a99f6540c47b69
   port: 5594
@@ -1337,7 +1338,8 @@ proxies:
   type: trojan
   udp: true
 - alterId: 0
-  name: 306,340,378,494,502,514,515,516,536,537,544,551,556,557,559,574|🇸US美国22 939.9KB/s
+  name: 306,340,378,494,502,514,515,516,536,537,543,544,551,556,557,559,574|🇸US美国22
+    939.9KB/s
   network: tcp
   password: 1774240c00db2b77d5a99f6540c47b69
   port: 4019
@@ -2562,7 +2564,7 @@ proxies:
   server: 185.160.24.217
   type: ss
 - alterId: 0
-  name: '378,438,476,481,494,537,538,544,559,574,580|US美国(mibei77.com 米贝节点分享) #126'
+  name: '378,438,476,481,494,537,538,559,574,580|US美国(mibei77.com 米贝节点分享) #126'
   network: tcp
   password: e136d465-0558-43b9-b50c-b1f45d4cb2c2
   port: 24534
@@ -3246,24 +3248,30 @@ proxies:
   port: 2333
   server: 54.199.83.239
   type: ss
-- name: '378,436,536,537|🇵JP-52.195.12.80-4523 #1'
+- country: 🇬🇧GB
+  name: '378,435,436,536,537|🇵JP-52.195.12.80-4523 #1'
   password: IL37892054
   port: 443
   server: upright-rhino.rooster465.autos
   skip-cert-verify: false
   type: trojan
-- name: '378,436,536,537|🇵JP-160.16.72.205-4537 #1'
+  udp: true
+- country: 🇵JP
+  name: '378,435,436,536,537|🇵JP-160.16.72.205-4537 #1'
   password: c1d83c0c7d57cead4379ba14a82df69b
   port: 491
   server: 160.16.72.205
   skip-cert-verify: false
   type: trojan
-- name: '378,436,536,537|🇵JP-3.113.25.200-4539 #1'
+  udp: true
+- country: 🇵JP
+  name: '378,435,436,536,537|🇵JP-3.113.25.200-4539 #1'
   password: IL37892054
   port: 443
   server: engaging-toucan.rooster465.autos
   skip-cert-verify: false
   type: trojan
+  udp: true
 - cipher: chacha20-ietf
   name: '378,536,537|JP-18.183.237.130-4964 #1'
   obfs: plain
@@ -3637,6 +3645,22 @@ proxies:
   sni: eu.mjanyt.com
   type: anytls
   udp: true
+- alterId: 0
+  cipher: auto
+  country: 🇵JP
+  h2-opts: {}
+  http-opts: {}
+  name: 435|🇵JP_50
+  network: ws
+  port: 19568
+  server: kr01.a0a.xyz
+  servername: kr01.a0a.xyz
+  skip-cert-verify: true
+  type: vmess
+  uuid: 641500bf-92f9-4720-e2e7-579a8f7dbb04
+  ws-headers:
+    HOST: kr01.a0a.xyz
+  ws-path: /cctv13.m3u8
 - alterId: 0
   cipher: auto
   name: 437,523,524,559|韩国_042218010
@@ -6072,17 +6096,11 @@ proxies:
   skip-cert-verify: true
   sni: jp02.ulifeai.com
   type: trojan
-- name: 559|🇯🇵JP_53
+- name: '559|🇯🇵JP_53 #1'
   password: c1d83c0c7d57cead4379ba14a82df69b
   port: 491
   server: 160.16.72.205
   sni: 160.16.72.205
-  type: trojan
-- name: 559|日本_042218200
-  password: e136d465-0558-43b9-b50c-b1f45d4cb2c2
-  port: 24534
-  server: 140.238.43.40
-  sni: jp2-8sb.6121999.dpdns.org
   type: trojan
 - name: 559|🇯🇵JP_54
   password: strong-secret-pass-777
