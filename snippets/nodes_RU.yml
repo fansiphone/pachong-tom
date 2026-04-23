@@ -23,6 +23,32 @@ proxies:
   type: vmess
   udp: true
   uuid: 000a0d18-02fe-4cda-a68e-96b55e067567
+- name: '306,515,516,567,585,586|FI_speednode_0072 #1'
+  network: ws
+  password: '!!str 1234567890'
+  port: 443
+  server: 94.141.123.243
+  skip-cert-verify: false
+  sni: kfm-bn0.pages.dev
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: kfm-bn0.pages.dev
+    path: /?ed=2560
+- name: '306,515,516,567,585,586|RU_speednode_0118 #1'
+  network: ws
+  password: '!!str 1234567890'
+  port: 2053
+  server: 89.169.9.177
+  skip-cert-verify: false
+  sni: kfm-bn0.pages.dev
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: kfm-bn0.pages.dev
+    path: /?ed=2560
 - cipher: chacha20-ietf-poly1305
   name: 356|🇷🇺1 |  5.2MB/s
   password: 0zyDRZ1XmNXaaCAN7KEA8a
@@ -150,8 +176,8 @@ proxies:
   ws-opts:
     path: /
 - cipher: aes-256-gcm
-  country: 🇨🇿CZ
-  name: 378,435,440,537,538|🇷🇺RU-195.58.49.220-0276 | 14.8...
+  country: 🇷🇺RU
+  name: 378,435,537,538|🇷🇺RU-195.58.49.220-0276 | 14.8...
   password: 9f3d1a6d31468599
   port: 10990
   server: 195.58.49.220
@@ -472,9 +498,16 @@ proxies:
   port: 444
   server: 146.185.198.44
   type: ss
-- cipher: chacha20-ietf-poly1305
+- cipher: aes-256-cfb
   country: 🇺RU
-  name: 435|RU_91
+  name: 435|RU_79
+  password: f8npKgNzdkss2ytn
+  port: 9088
+  server: 217.30.10.70
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇷🇺RU
+  name: 435|🇺RU_81
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
@@ -484,33 +517,22 @@ proxies:
   server: 88.210.36.108
   type: ss
 - cipher: aes-256-cfb
-  country: 🇺RU
-  name: 435|🇺RU_92
+  country: 🇷🇺RU
+  name: 435|🇺RU_82
   password: Lp27rqyJq72bZsqX
   port: 9045
   server: 217.30.10.70
   type: ss
 - cipher: aes-256-cfb
   country: 🇷🇺RU
-  name: 435|🇺RU_93
+  name: 435|🇺RU_83
   password: 9XwYyZsK8SNzQDtY
   port: 9059
   server: 217.30.10.70
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇺RU
-  name: 435|🇷🇺RU_94
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    host: 817aa69.default.nintendo.com:112719
-    mode: tls
-  port: 2377
-  server: 88.210.36.107
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇺RU
-  name: 435|🇺RU_95
+  name: 435|🇷🇺RU_84
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
@@ -519,16 +541,9 @@ proxies:
   port: 2377
   server: 88.210.36.106
   type: ss
-- cipher: aes-256-cfb
-  country: 🇷🇺RU
-  name: 435|🇷🇺RU_96
-  password: f8npKgNzdkss2ytn
-  port: 9088
-  server: 217.30.10.70
-  type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇺RU
-  name: 435|🇺RU_98
+  name: 435|🇷🇺RU_85
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
@@ -536,6 +551,17 @@ proxies:
     mode: tls
   port: 2377
   server: 88.210.36.109
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇺RU
+  name: 435|🇷🇺RU_87
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  plugin: obfs
+  plugin-opts:
+    host: 817aa69.default.nintendo.com:112719
+    mode: tls
+  port: 2377
+  server: 88.210.36.107
   type: ss
 - name: '456,580|RU俄罗斯(mibei77.com 米贝节点分享) #11'
   network: ws
@@ -961,19 +987,6 @@ proxies:
   server: 185.158.155.33
   tfo: false
   type: ss
-- name: '515,516,585,586|RU_speednode_0118 #1'
-  network: ws
-  password: '!!str 1234567890'
-  port: 2053
-  server: 89.169.9.177
-  skip-cert-verify: false
-  sni: kfm-bn0.pages.dev
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: kfm-bn0.pages.dev
-    path: /?ed=2560
 - cipher: chacha20-ietf-poly1305
   name: 558|0|🇺俄罗斯 01 | 1x RU
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
@@ -995,7 +1008,19 @@ proxies:
   port: 31348
   server: 5.189.201.250
   type: ss
-- name: 559|🇷🇺RU_87
+- name: 559|🇷🇺RU俄罗斯4
+  password: '!!str 1234567890'
+  port: 8443
+  server: 109.122.198.230
+  sni: kfm-bn0.pages.dev
+  type: trojan
+- name: 559|🇷🇺RU俄罗斯3
+  password: '!!str 1234567890'
+  port: 443
+  server: 109.122.198.64
+  sni: kfm-bn0.pages.dev
+  type: trojan
+- name: '559|🇷🇺RU_87 #1'
   password: WF42809561
   port: 443
   server: nearby-muskrat.rooster465.autos
