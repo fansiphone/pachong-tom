@@ -468,6 +468,15 @@ proxies:
     path: /download
 - alterId: 0
   cipher: auto
+  name: '127,426|🇯🇵 JP_2|2.6MB/s|GPT⁺|YT-JP|NF|... #1'
+  port: 53229
+  server: 103.127.243.54
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 2f50f5ef-1a3a-4585-a3c9-3a860d37b134
+- alterId: 0
+  cipher: auto
   name: '128,430|日本NO.1 #2'
   port: 45056
   server: hxa.dashuai.help
@@ -1062,7 +1071,7 @@ proxies:
   sni: k12.tudou211.com
   type: trojan
 - alterId: 0
-  name: 306,340,378,494,502,514,515,516,536,537,543,544,551,556,557,559,574|🇰HK香港2
+  name: 306,340,378,494,502,514,515,516,536,537,543,544,551,556,557,559,574|🇭🇰HK香港3
   network: tcp
   password: 1774240c00db2b77d5a99f6540c47b69
   port: 52687
@@ -1082,7 +1091,7 @@ proxies:
   sni: t.me%252Fripaojiedian
   type: trojan
 - alterId: 0
-  name: 306,340,378,494,502,514,515,516,536,537,543,544,551,556,557,559,574|JP
+  name: 306,340,378,494,502,514,515,516,536,537,543,544,551,556,557,559,574|🇵JP日本2
   network: tcp
   password: 1774240c00db2b77d5a99f6540c47b69
   port: 4380
@@ -1092,16 +1101,17 @@ proxies:
   tls: true
   type: trojan
   udp: true
-- name: '306,340,378,494,502,514,515,516,523,524,536,537,543,544,551,556,557,559|11,12|日本3|@ripaojiedian
-    #4'
+- alterId: 0
+  name: 306,340,378,494,502,514,515,516,523,524,536,537,543,544,551,556,557,559,574|🇵JP日本3
   network: tcp
   password: 1774240c00db2b77d5a99f6540c47b69
   port: 4380
   server: 160.16.132.38
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: www.nintendogames.net
   tls: true
   type: trojan
+  udp: true
 - alterId: 0
   name: 306,340,378,494,502,514,515,516,536,537,543,544,551,556,557,559,574|SG
   network: tcp
@@ -1114,7 +1124,7 @@ proxies:
   type: trojan
   udp: true
 - alterId: 0
-  name: 306,340,378,494,502,514,515,516,536,537,543,544,551,556,557,559,574|🇬SG新加坡3
+  name: 306,340,378,494,502,514,515,516,536,537,543,544,551,556,557,559,574|🇬SG新加坡2
   network: tcp
   password: 1774240c00db2b77d5a99f6540c47b69
   port: 32876
@@ -1124,17 +1134,19 @@ proxies:
   tls: true
   type: trojan
   udp: true
-- name: '306,340,378,494,502,514,515,516,536,537,543,544,551,556,557,559|11,12|美国|@ripaojiedian
-    #2'
+- alterId: 0
+  name: 306,340,378,494,502,514,515,516,536,537,543,544,551,556,557,559,574|🇺🇸US美国24
   network: tcp
   password: 1774240c00db2b77d5a99f6540c47b69
   port: 4019
   server: 13.231.195.214
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: www.nintendogames.net
+  tls: true
   type: trojan
+  udp: true
 - alterId: 0
-  name: 306,340,378,494,502,514,515,516,536,537,543,544,551,556,557,559,574|🇺🇸US美国12
+  name: 306,340,378,494,502,514,515,516,536,537,543,544,551,556,557,559,574|🇺🇸US美国22
   network: tcp
   password: 1774240c00db2b77d5a99f6540c47b69
   port: 4019
@@ -1153,29 +1165,6 @@ proxies:
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- name: '306,378,502,537,551,559|B - 🇯🇵 JP 10 TG: @nodpai'
-  password: e4756f1c-5ee3-487d-8a98-82bbc81f7e6b
-  port: 443
-  server: jp.co2.vn
-  skip-cert-verify: true
-  sni: www.linemo.jp
-  tls: true
-  type: trojan
-- cipher: aes-128-gcm
-  delay: 1522
-  name: 306,528|日本 - 成田市 - 2
-  password: 931d70c1-8644-433a-9e8a-e09e10f5e7f5
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: aoe.o.eoa.ccwu.cc
-    mode: websocket
-    mux: false
-    path: /?enc\=aes-128-gcm
-    tls: true
-  port: 2083
-  server: 54.199.22.197
-  type: ss
-  udp: true
 - name: '321,322,323|日本05 #3'
   network: ws
   password: 429ad146-8f43-4dd4-8fb3-cca3f3a30c63
@@ -2457,6 +2446,19 @@ proxies:
   port: 443
   server: 43.207.82.53
   type: ss
+- name: '378,502,537,559|B - 🇯🇵 JP 10 TG: @nodpai'
+  password: e4756f1c-5ee3-487d-8a98-82bbc81f7e6b
+  port: 443
+  server: jp.co2.vn
+  skip-cert-verify: true
+  sni: www.linemo.jp
+  type: trojan
+- cipher: aes-128-gcm
+  name: '378,537|🇵JP-54.199.22.197-1654 #1'
+  password: 931d70c1-8644-433a-9e8a-e09e10f5e7f5
+  port: 2083
+  server: 54.199.22.197
+  type: ss
 - alterId: 0
   cipher: auto
   name: '378,536,537|🇵JP-161.129.34.102-1660 #1'
@@ -3178,7 +3180,7 @@ proxies:
   country: 🇵JP
   h2-opts: {}
   http-opts: {}
-  name: 435|🇵JP_70
+  name: 435|🇵JP_72
   network: ws
   port: 19568
   server: kr01.a0a.xyz
@@ -3829,7 +3831,7 @@ proxies:
   uuid: 2ce005b4-e57a-3670-be88-60eeeb078bb7
 - alterId: 0
   cipher: auto
-  name: '502,551|C - 🇯🇵 JP 17 TG: @nodpai #1'
+  name: '502|C - 🇯🇵 JP 17 TG: @nodpai'
   network: ws
   port: 16617
   server: m.cnmjin.net
@@ -3916,6 +3918,21 @@ proxies:
   server: 18.181.194.77
   tfo: false
   type: ss
+- cipher: aes-128-gcm
+  delay: 1522
+  name: 528|日本 - 成田市 - 2
+  password: 931d70c1-8644-433a-9e8a-e09e10f5e7f5
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: aoe.o.eoa.ccwu.cc
+    mode: websocket
+    mux: false
+    path: /?enc\=aes-128-gcm
+    tls: true
+  port: 2083
+  server: 54.199.22.197
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
   delay: 2129
@@ -3924,11 +3941,10 @@ proxies:
     method: GET
     path:
     - /ABCDE
-  name: '528,568|🇯🇵 日本 | JPN #1'
+  name: 528|日本 - 東京都 - 3
   network: http
-  port: '56738'
+  port: 56738
   server: 103.127.243.59
-  tls: false
   type: vmess
   uuid: 5f49c80e-7770-4bd1-9c86-43c2068a3a26
 - alterId: 0
@@ -4233,7 +4249,7 @@ proxies:
   server: 43.165.190.11
   sni: cchh2.pages.dev
   type: trojan
-- name: 559|🇯🇵JP_73
+- name: '559|🇯🇵JP_73 #1'
   password: IL37892054
   port: 443
   server: engaging-toucan.rooster465.autos
@@ -4369,25 +4385,12 @@ proxies:
   sni: 266.yuanul.com
   type: trojan
   udp: true
-- alterId: 0
-  cipher: auto
-  name: '568|🇯🇵 日本 | JPN #2'
-  network: ws
-  port: '16617'
-  server: planb.mojcn.com
-  tls: false
-  type: vmess
-  uuid: 91f3e053-2caf-4d7d-a2ea-55fec9a19441
-  ws-opts:
-    headers:
-      Host: 11a79962aeff6caf4f270aa607818974.mobgslb.tbcache.com
-    path: '%2F'
-- name: '568|🇯🇵 日本 | JPN #3'
+- name: '568|🇯🇵 日本 | JPN #1'
   password: 0023c04a-3bfa-4c6e-b2f6-bfe94485dbdd
-  port: 12206
+  port: 12201
   server: f533f9b2-c69a-4dd0-bc63-f2ab94dd5f53.f1eb10ae-1d82-4c6a-b4dd-bd9525520956.com
   skip-cert-verify: false
-  sni: 123.yuanul.com
+  sni: 149.yuanul.com
   type: trojan
 - alterId: 0
   cipher: auto
