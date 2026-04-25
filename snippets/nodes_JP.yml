@@ -466,27 +466,6 @@ proxies:
     headers:
       Host: download.windowsupdate.com
     path: /download
-- cipher: chacha20-ietf-poly1305
-  delay: 1683
-  name: 127,426,489,528|日本 - 东京 - 1
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    host: 403880e.default.microsoft.io:164892
-    mode: tls
-  port: 2377
-  server: 403880e.j6.gladns.com
-  type: ss
-  udp: true
-- name: 127,306,378,426,494,502,514,515,516,523,524,537,543,544,551,556,557,559|日本_042509010
-  network: tcp
-  password: 1774240c00db2b77d5a99f6540c47b69
-  port: 4380
-  server: 160.16.132.38
-  skip-cert-verify: false
-  sni: www.nintendogames.net
-  tls: true
-  type: trojan
 - alterId: 0
   cipher: auto
   name: '128,430|日本NO.1 #2'
@@ -1082,15 +1061,17 @@ proxies:
   server: 125.94.40.162
   sni: k12.tudou211.com
   type: trojan
-- name: '306,378,494,502,514,515,516,537,543,544,551,556,557,559|香港3|@ripaojiedian
-    #4'
+- alterId: 0
+  name: 306,378,494,502,514,515,516,537,543,544,551,556,557,559,574|🇰HK香港2
   network: tcp
   password: 1774240c00db2b77d5a99f6540c47b69
   port: 52687
   server: 13.230.190.29
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: www.nintendogames.net
+  tls: true
   type: trojan
+  udp: true
 - name: '306,378,494,502,514,515,516,537,543,544,551,556,557,559|日本|@ripaojiedian
     #4'
   network: tcp
@@ -1100,33 +1081,48 @@ proxies:
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
-- name: '306,378,494,502,514,515,516,537,543,544,551,556,557,559|日本2|@ripaojiedian
-    #4'
+- alterId: 0
+  name: '306,378,494,502,514,515,516,537,543,544,551,556,557,559,574|JP #1'
   network: tcp
   password: 1774240c00db2b77d5a99f6540c47b69
   port: 4380
   server: 13.231.195.214
+  skip-cert-verify: true
+  sni: www.nintendogames.net
+  tls: true
+  type: trojan
+  udp: true
+- name: 306,378,494,502,514,515,516,523,524,537,543,544,551,556,557,559|日本_042509010
+  network: tcp
+  password: 1774240c00db2b77d5a99f6540c47b69
+  port: 4380
+  server: 160.16.132.38
   skip-cert-verify: false
   sni: www.nintendogames.net
+  tls: true
   type: trojan
-- name: '306,378,494,502,514,515,516,537,543,544,551,556,557,559|新加坡|@ripaojiedian
-    #4'
+- alterId: 0
+  name: '306,378,494,502,514,515,516,537,543,544,551,556,557,559,574|SG #1'
   network: tcp
   password: 1774240c00db2b77d5a99f6540c47b69
   port: 3057
   server: 160.16.106.99
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: www.nintendogames.net
+  tls: true
   type: trojan
-- name: '306,340,378,494,502,514,515,516,536,537,543,544,551,556,557,559|10,11|新加坡2|@ripaojiedian
-    #1'
+  udp: true
+- alterId: 0
+  name: 306,340,378,494,502,514,515,516,536,537,543,544,551,556,557,559,574|🇬SG新加坡3
   network: tcp
   password: 1774240c00db2b77d5a99f6540c47b69
   port: 32876
   server: 160.16.132.38
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: www.nintendogames.net
+  tls: true
   type: trojan
+  udp: true
 - name: '306,378,494,502,514,515,516,537,543,544,551,556,557,559|美国|@ripaojiedian
     #4'
   network: tcp
@@ -1136,14 +1132,17 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: 306,378,494,502,514,515,516,537,543,544,551,556,557,559|日本_042509011
+- alterId: 0
+  name: 306,378,494,502,514,515,516,537,543,544,551,556,557,559,574|🇺🇸US美国12
   network: tcp
   password: 1774240c00db2b77d5a99f6540c47b69
   port: 4019
   server: 160.16.106.99
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: www.nintendogames.net
+  tls: true
   type: trojan
+  udp: true
 - name: '306,378,494,502,514,515,516,537,543,544,551,556,557,559|美国3|@ripaojiedian
     #4'
   network: tcp
@@ -2122,7 +2121,7 @@ proxies:
   port: 803
   server: 185.160.24.217
   type: ss
-- name: 378,456,459,476,481,494,523,524,536,537,538,559|日本_042509002
+- name: 378,438,456,459,476,481,494,523,524,536,537,538,559|日本_042509002
   network: tcp
   password: e136d465-0558-43b9-b50c-b1f45d4cb2c2
   port: 24534
@@ -2827,28 +2826,24 @@ proxies:
   port: 2333
   server: 54.199.83.239
   type: ss
-- country: 🇧GB
-  name: '378,435,436,536,537|🇵JP-52.195.12.80-4540 #1'
+- name: '378,436,536,537|🇵JP-52.195.12.80-4540 #1'
   password: IL37892054
   port: 443
   server: upright-rhino.rooster465.autos
   skip-cert-verify: false
   type: trojan
-  udp: true
 - name: '378,536,537|🇵JP-160.16.72.205-4563 #1'
   password: c1d83c0c7d57cead4379ba14a82df69b
   port: 491
   server: 160.16.72.205
   skip-cert-verify: false
   type: trojan
-- country: 🇵JP
-  name: '378,435,436,536,537|🇯🇵JP-3.113.25.200-4564 #1'
+- name: '378,436,536,537|🇯🇵JP-3.113.25.200-4564 #1'
   password: IL37892054
   port: 443
   server: engaging-toucan.rooster465.autos
   skip-cert-verify: false
   type: trojan
-  udp: true
 - alterId: 0
   cipher: auto
   name: 378,494,536,537,559|日本_042509005
@@ -3173,20 +3168,18 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  country: 🇵JP
-  h2-opts: {}
-  http-opts: {}
-  name: 435|🇵JP_66
+  name: 438,559|🇯🇵 日本-CF736D03
   network: ws
-  port: 19568
-  server: kr01.a0a.xyz
-  servername: kr01.a0a.xyz
-  skip-cert-verify: true
+  port: 80
+  server: 172.111.146.64
+  servername: ''
+  tls: false
   type: vmess
-  uuid: 641500bf-92f9-4720-e2e7-579a8f7dbb04
-  ws-headers:
-    HOST: kr01.a0a.xyz
-  ws-path: /cctv13.m3u8
+  uuid: 05b8c783-7f59-47f9-9923-06a465679f6a
+  ws-opts:
+    headers:
+      Host: ''
+    path: /vmess/
 - alterId: 0
   cipher: auto
   country: 🇯🇵JP
@@ -3514,7 +3507,7 @@ proxies:
   uuid: 55b88b14-0ff3-4f25-8983-e73d1f9f3a0a
 - alterId: 1
   cipher: auto
-  name: '489|🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001... #1'
+  name: 489|🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001...
   port: 448
   server: x4uysrm-g05.jp04-1d-vm0.entry.fr0528.art
   skip-cert-verify: false
@@ -3523,7 +3516,7 @@ proxies:
   udp: true
   uuid: 2ce005b4-e57a-3670-be88-60eeeb078bb7
 - client-fingerprint: chrome
-  name: '489|🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001... #4'
+  name: '489|🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001... #3'
   password: 491111C2-9DA6-A4E3-4253-B189A7CEC37C
   port: 20036
   server: oss-shanghai.solidigm-zxcv.com
@@ -3532,7 +3525,7 @@ proxies:
   type: trojan
   udp: true
 - client-fingerprint: chrome
-  name: '489|🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001... #5'
+  name: '489|🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001... #4'
   password: 491111C2-9DA6-A4E3-4253-B189A7CEC37C
   port: 20037
   server: oss-shanghai.solidigm-zxcv.com
@@ -3549,7 +3542,7 @@ proxies:
   type: trojan
 - alterId: 1
   cipher: auto
-  name: '489|🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001... #6'
+  name: '489|🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001... #5'
   port: 11777
   server: wgf2xqy-g05.jp02-e3-vm0.entry.fr0528.art
   skip-cert-verify: false
@@ -3557,6 +3550,18 @@ proxies:
   type: vmess
   udp: true
   uuid: 2ce005b4-e57a-3670-be88-60eeeb078bb7
+- cipher: chacha20-ietf-poly1305
+  delay: 1683
+  name: 489,528|日本 - 东京 - 1
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  plugin: obfs
+  plugin-opts:
+    host: 403880e.default.microsoft.io:164892
+    mode: tls
+  port: 2377
+  server: 403880e.j6.gladns.com
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
   name: '489|🟢🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001... #1'
@@ -3583,14 +3588,14 @@ proxies:
   uuid: 4d6a19fd-ba4f-36c5-89ad-97224cca5484
 - alterId: 1
   cipher: auto
-  name: '489|🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001... #8'
+  name: '489|🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001... #7'
   port: 28786
   server: uttyipf-g04.jp07-sh-vm0.entry.fr0528.art
   type: vmess
   uuid: 7100bb64-2c3d-3818-bdd9-ff369b59577c
 - alterId: 1
   cipher: auto
-  name: '489|🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001... #9'
+  name: '489|🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001... #8'
   port: 448
   server: xg3yprc-g05.jp04-1d-vm0.entry.fr0528.art
   skip-cert-verify: false
@@ -3600,7 +3605,7 @@ proxies:
   uuid: 2ce005b4-e57a-3670-be88-60eeeb078bb7
 - alterId: 0
   cipher: auto
-  name: '489|🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001... #10'
+  name: '489|🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001... #9'
   network: tcp
   port: 9032
   server: select-jp.ddnskunlun.com
@@ -3621,7 +3626,7 @@ proxies:
   udp: true
 - alterId: 1
   cipher: auto
-  name: '489|🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001... #13'
+  name: '489|🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001... #12'
   port: 46486
   server: fdi2onc-g05.jp05-h6-vm0.entry.fr0528.art
   skip-cert-verify: false
@@ -3631,7 +3636,7 @@ proxies:
   uuid: 2ce005b4-e57a-3670-be88-60eeeb078bb7
 - alterId: 0
   cipher: auto
-  name: '489|🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001... #14'
+  name: '489|🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001... #13'
   network: tcp
   port: 9033
   server: select-jp.ddnskunlun.com
@@ -3643,7 +3648,7 @@ proxies:
   uuid: 4d6a19fd-ba4f-36c5-89ad-97224cca5484
 - alterId: 0
   cipher: auto
-  name: '489|🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001... #16'
+  name: '489|🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001... #15'
   network: tcp
   port: 9031
   server: select-jp.ddnskunlun.com
@@ -3655,7 +3660,7 @@ proxies:
   uuid: 4d6a19fd-ba4f-36c5-89ad-97224cca5484
 - alterId: 1
   cipher: auto
-  name: '489|🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001... #17'
+  name: '489|🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001... #16'
   port: 28787
   server: f4u5src-g05.jp07-sh-vm0.entry.fr0528.art
   skip-cert-verify: false
@@ -3665,7 +3670,7 @@ proxies:
   uuid: 2ce005b4-e57a-3670-be88-60eeeb078bb7
 - alterId: 0
   cipher: auto
-  name: '489|🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001... #18'
+  name: '489|🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001... #17'
   network: tcp
   port: 9030
   server: select-jp.ddnskunlun.com
@@ -3689,7 +3694,7 @@ proxies:
   uuid: 4d6a19fd-ba4f-36c5-89ad-97224cca5484
 - alterId: 1
   cipher: auto
-  name: '489|🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001... #23'
+  name: '489|🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001... #22'
   port: 11777
   server: wd32onc-g05.jp02-e3-vm0.entry.fr0528.art
   skip-cert-verify: false
@@ -3699,7 +3704,7 @@ proxies:
   uuid: 2ce005b4-e57a-3670-be88-60eeeb078bb7
 - alterId: 1
   cipher: auto
-  name: '489|🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001... #24'
+  name: '489|🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001... #23'
   port: 46486
   server: wd35slc-g05.jp05-h6-vm0.entry.fr0528.art
   skip-cert-verify: false
@@ -3709,7 +3714,7 @@ proxies:
   uuid: 2ce005b4-e57a-3670-be88-60eeeb078bb7
 - alterId: 1
   cipher: auto
-  name: '489|🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001... #25'
+  name: '489|🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001... #24'
   port: 11777
   server: wdiyxqm-g05.jp02-e3-vm0.entry.fr0528.art
   skip-cert-verify: false
@@ -3726,7 +3731,7 @@ proxies:
   udp: true
 - alterId: 1
   cipher: auto
-  name: '489|🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001... #28'
+  name: '489|🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001... #27'
   port: 28787
   server: f4fysrc-g05.jp07-sh-vm0.entry.fr0528.art
   skip-cert-verify: false
@@ -3753,7 +3758,7 @@ proxies:
   udp: true
 - alterId: 1
   cipher: auto
-  name: '489|🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001... #38'
+  name: '489|🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001... #37'
   port: 21585
   server: wg3yslm-g05.jp03-j7-vm0.entry.fr0528.art
   skip-cert-verify: false
@@ -3763,7 +3768,7 @@ proxies:
   uuid: 2ce005b4-e57a-3670-be88-60eeeb078bb7
 - alterId: 1
   cipher: auto
-  name: '489|🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001... #44'
+  name: '489|🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001... #43'
   port: 21585
   server: xgi2sn1-g05.jp03-j7-vm0.entry.fr0528.art
   skip-cert-verify: false
@@ -3773,7 +3778,7 @@ proxies:
   uuid: 2ce005b4-e57a-3670-be88-60eeeb078bb7
 - alterId: 1
   cipher: auto
-  name: '489|🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001... #50'
+  name: '489|🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001... #49'
   port: 21585
   server: w4f2sr1-g05.jp03-j7-vm0.entry.fr0528.art
   skip-cert-verify: false
@@ -3783,7 +3788,7 @@ proxies:
   uuid: 2ce005b4-e57a-3670-be88-60eeeb078bb7
 - alterId: 1
   cipher: auto
-  name: '489|🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001... #54'
+  name: '489|🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001... #53'
   port: 28787
   server: w4fyony-g05.jp06-jz-vm0.entry.fr0528.art
   skip-cert-verify: false
@@ -3898,21 +3903,6 @@ proxies:
   server: 216.23.85.219
   type: ss
   udp: true
-- alterId: 2
-  cipher: auto
-  country: 🏁 ZZ
-  delay: 584
-  http-opts: {}
-  name: 528,559|🇮🇷IR_71
-  network: tcp
-  port: 30806
-  server: v6.hdacd.com
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-path: /
 - alterId: 0
   cipher: auto
   delay: 2593
@@ -3987,6 +3977,29 @@ proxies:
   sni: t.me%2Fripaojiedian
   tls: false
   type: trojan
+- alterId: 0
+  cipher: auto
+  name: '551|B - 🇯🇵 JP 11 TG: @nodpai'
+  network: ws
+  port: 16617
+  server: planb.mojcn.com
+  tls: false
+  type: vmess
+  uuid: 705f9dfc-07a7-44b8-bd43-15d32abfa61d
+  ws-opts:
+    headers:
+      Host: 943b57a4316253b5c6ef402731b11d57.mobgslb.tbcache.com
+    path: /
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  name: '551|C - 🇯🇵 JP 23 TG: @nodpai #1'
+  network: h2
+  port: 54291
+  server: 103.127.243.66
+  tls: true
+  type: vmess
+  uuid: c5856e0b-5ca6-49bf-8525-d02af9c37cf5
 - cipher: chacha20-ietf-poly1305
   name: 558|0| 01 | 1x JP
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
@@ -4274,20 +4287,6 @@ proxies:
   tls: false
   type: vmess
   uuid: c45ab62e-5d25-486a-f91e-807fe4b9c23f
-- alterId: 0
-  cipher: auto
-  name: 559|🇯🇵 日本-CF736D03
-  network: ws
-  port: 80
-  server: 172.111.146.64
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 05b8c783-7f59-47f9-9923-06a465679f6a
-  ws-opts:
-    headers:
-      Host: ''
-    path: /vmess/
 - alterId: 0
   cipher: auto
   name: 559|日本_042509207
