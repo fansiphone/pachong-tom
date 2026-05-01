@@ -1054,15 +1054,15 @@ proxies:
   sni: www.alibaba.com
   type: trojan
   udp: true
-- name: 255|JP
-  network: tcp
+- name: 255|🇯🇵 JP
   password: f57f01e6-9bb1-4277-a5cb-75ad0ce1fa11
   port: 21125
   server: 125.94.40.162
+  skip-cert-verify: true
   sni: k12.tudou211.com
   type: trojan
 - alterId: 0
-  name: 306,340,378,494,502,514,515,516,536,537,544,551,556,557,559,574|🇯🇵JP日本2
+  name: 306,340,378,502,514,515,516,536,537,544,551,556,557,559,574|🇯🇵JP日本2
   network: tcp
   password: 69ecb45889d99f31b8ccc10bf8f76a72
   port: 2008
@@ -1073,7 +1073,7 @@ proxies:
   type: trojan
   udp: true
 - alterId: 0
-  name: 306,340,378,494,502,514,515,516,536,537,544,551,556,557,559,574|🇵JP日本6
+  name: 306,340,378,502,514,515,516,536,537,544,551,556,557,559,574|🇵JP日本6
   network: tcp
   password: 69ecb45889d99f31b8ccc10bf8f76a72
   port: 9201
@@ -1084,7 +1084,7 @@ proxies:
   type: trojan
   udp: true
 - alterId: 0
-  name: 306,340,378,494,502,514,515,516,536,537,544,551,556,557,559,574|🇬SG新加坡3
+  name: 306,340,378,502,514,515,516,536,537,544,551,556,557,559,574|🇬SG新加坡3
   network: tcp
   password: 69ecb45889d99f31b8ccc10bf8f76a72
   port: 3057
@@ -1095,7 +1095,7 @@ proxies:
   type: trojan
   udp: true
 - alterId: 0
-  name: 306,340,378,494,502,514,515,516,536,537,544,551,556,557,559,574|🇸🇬SG新加坡2
+  name: 306,340,378,502,514,515,516,536,537,544,551,556,557,559,574|🇸🇬SG新加坡2
   network: tcp
   password: 69ecb45889d99f31b8ccc10bf8f76a72
   port: 32876
@@ -1106,7 +1106,7 @@ proxies:
   type: trojan
   udp: true
 - alterId: 0
-  name: '306,378,494,502,514,515,516,537,544,551,556,557,574|🇺🇸US美国5 #1'
+  name: 306,378,502,514,515,516,537,544,551,556,557,559,574|🇺🇸US美国5
   network: tcp
   password: 69ecb45889d99f31b8ccc10bf8f76a72
   port: 4019
@@ -1117,7 +1117,7 @@ proxies:
   type: trojan
   udp: true
 - alterId: 0
-  name: 306,378,494,502,514,515,516,537,544,551,556,557,574|🇺🇸US美国8
+  name: 306,378,502,514,515,516,537,544,551,556,557,559,574|🇺🇸US美国8
   network: tcp
   password: 69ecb45889d99f31b8ccc10bf8f76a72
   port: 4019
@@ -1163,12 +1163,11 @@ proxies:
   sni: www.alibaba.com
   type: trojan
   udp: true
-- name: '340,378,536,537,559|11,12|日本|@ripaojiedian #2'
-  network: tcp
+- name: '340,378,536,537|🇵JP-18.183.75.181-0825 #1'
   password: BxceQaOe
   port: 16919
   server: 18.183.75.181
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: t.me%252Fripaojiedian
   type: trojan
 - name: 356|🇯🇵1 |  34.4MB/s
@@ -2203,7 +2202,7 @@ proxies:
       Host: 138.2.52.176
     path: /
 - alterId: 0
-  name: 378,438,456,459,494,507,523,524,536,537,544,559,574,580|JP TROJAN-45 | free-nodes
+  name: 378,456,459,507,523,524,536,537,544,559,574,580|JP TROJAN-45 | free-nodes
   network: tcp
   password: e136d465-0558-43b9-b50c-b1f45d4cb2c2
   port: 24534
@@ -2906,7 +2905,7 @@ proxies:
   type: ssr
 - alterId: 0
   cipher: auto
-  name: 378,494,536,537,559|日本_050104002
+  name: 378,536,537,559|日本_050119002
   network: ws
   port: '80'
   server: jp01.a0a.xyz
@@ -5131,15 +5130,6 @@ proxies:
   type: vmess
   udp: true
   uuid: 2ce005b4-e57a-3670-be88-60eeeb078bb7
-- alterId: 0
-  cipher: auto
-  name: '502,551|B - 🇯🇵 JP 08 TG: @nodpai #1'
-  network: http
-  port: 54291
-  server: 103.127.243.66
-  tls: false
-  type: vmess
-  uuid: c5856e0b-5ca6-49bf-8525-d02af9c37cf5
 - cipher: aes-256-gcm
   client-fingerprint: chrome
   name: 513|15|🇯🇵 日本|@ripaojiedian
@@ -5204,8 +5194,22 @@ proxies:
   server: 18.181.194.77
   tfo: false
   type: ss
+- delay: 374
+  name: 528|日本 - 成田市 - 2
+  network: ws
+  password: 8r<[9'l6hAO#8ZQi
+  port: 8443
+  server: 140.235.37.69
+  skip-cert-verify: true
+  sni: Koma-YT.PAGeS.Dev
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+    path: /trTelegram🇨🇳 @WangCai2
 - delay: 818
-  name: '528,559|A - 🇩🇪 DE 07 TG: @nodpai #2'
+  name: 528|日本 - 成田市 - 3
   network: ws
   password: 8r<[9'l6hAO#8ZQi
   port: 54321
@@ -5219,7 +5223,7 @@ proxies:
       Host: Koma-YT.PAGeS.Dev
     path: /trTelegram🇨🇳 @WangCai2
 - delay: 1128
-  name: '528,559|A - 🇩🇪 DE 10 TG: @nodpai'
+  name: 528|日本 - 成田市 - 4
   network: ws
   password: 8r<[9'l6hAO#8ZQi
   port: 47293
@@ -5233,7 +5237,7 @@ proxies:
       Host: Koma-YT.PAGeS.Dev
     path: /trTelegram🇨🇳 @WangCai2
 - delay: 528
-  name: '528,559|B - 🇩🇪 DE 26 TG: @nodpai'
+  name: 528|日本 - 成田市 - 6
   network: ws
   password: 8r<[9'l6hAO#8ZQi
   port: 53538
@@ -5246,8 +5250,22 @@ proxies:
     headers:
       Host: Koma-YT.PAGeS.Dev
     path: /trTelegram🇨🇳 @WangCai2
+- delay: 1285
+  name: '528,559|A - 🇷🇺 RU 01 TG: @nodpai'
+  network: ws
+  password: 8r<[9'l6hAO#8ZQi
+  port: 14345
+  server: 64.81.113.90
+  skip-cert-verify: true
+  sni: Koma-YT.PAGeS.Dev
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+    path: /trTelegram🇨🇳 @WangCai2
 - delay: 374
-  name: '528,559|B - 🇸🇪 SE 01 TG: @nodpai'
+  name: 528|日本 - 成田市 - 8
   network: ws
   password: 8r<[9'l6hAO#8ZQi
   port: 443
@@ -5260,17 +5278,20 @@ proxies:
     headers:
       Host: Koma-YT.PAGeS.Dev
     path: /trTelegram🇨🇳 @WangCai2
-- alterId: 2
-  cipher: auto
-  delay: 1177
-  name: 528|日本 - 东京 - 1
-  port: 30806
-  server: v6.hdacd.com
+- delay: 810
+  name: '528,559|A - 🇩🇪 DE 07 TG: @nodpai'
+  network: ws
+  password: 8r<[9'l6hAO#8ZQi
+  port: 443
+  server: 126.220.82.161
   skip-cert-verify: true
-  tls: false
-  type: vmess
+  sni: Koma-YT.PAGeS.Dev
+  type: trojan
   udp: true
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+    path: /trTelegram🇨🇳 @WangCai2
 - name: 534|🇵 日本 2号线 NETFLIX等流媒体解锁 解锁
   password: db9df710-a4c9-4684-9ceb-4ccd9e3febfc
   port: 24422
@@ -5357,6 +5378,13 @@ proxies:
   password: 8r<[9'l6hAO#8ZQi
   port: 14345
   server: 64.81.113.90
+  sni: Koma-YT.PAGeS.Dev
+  type: trojan
+- name: 544,559|🇯🇵JP日本5
+  password: 8r<[9'l6hAO#8ZQi
+  port: 443
+  server: 153.121.45.101
+  skip-cert-verify: true
   sni: Koma-YT.PAGeS.Dev
   type: trojan
 - name: 553|🇯🇵日本_c9d0b
@@ -5608,18 +5636,27 @@ proxies:
   tls: false
   type: vmess
   uuid: b806b388-5f97-11ee-8014-f23c913c8d2b
-- name: 559|🇯🇵JP_81
+- name: '559|🇯🇵JP_73 #1'
   password: IL37892054
   port: 443
   server: engaging-toucan.rooster465.autos
   sni: engaging-toucan.rooster465.autos
   type: trojan
-- name: 559|🇯🇵JP_80
+- name: '559|🇯🇵JP_72 #1'
   password: strong-secret-pass-777
   port: 4443
   server: 103.231.73.181
   sni: 103.231.73.181
   type: trojan
+- alterId: 0
+  cipher: auto
+  name: '559|B - 🇯🇵 JP 08 TG: @nodpai'
+  network: http
+  port: 54291
+  server: 103.127.243.66
+  tls: false
+  type: vmess
+  uuid: c5856e0b-5ca6-49bf-8525-d02af9c37cf5
 - alterId: 0
   cipher: auto
   name: 559|github.com/freefq - 日本东京Linode...
@@ -5634,53 +5671,9 @@ proxies:
     headers:
       Host: v6.583181.xyz
     path: /
-- alterId: 1
-  cipher: auto
-  name: 559|🇯🇵 日本-A0691973
-  network: tcp
-  port: 46482
-  server: vt50k-g01.jp05-6786-vm0.entry.fr0307a.art
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 7a6cb59b-fbcd-3f50-b5f2-a2534326c4c8
 - alterId: 0
   cipher: auto
-  name: 559|🇯🇵 日本-CF736D03
-  network: ws
-  port: 80
-  server: 172.111.146.64
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 05b8c783-7f59-47f9-9923-06a465679f6a
-  ws-opts:
-    headers:
-      Host: ''
-    path: /vmess/
-- alterId: 1
-  cipher: auto
-  name: 559|🇯🇵 日本-F474D78C
-  network: tcp
-  port: 444
-  server: 7gqt4-g01.jp04-3771-vm0.entry.fr0307a.art
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 7a6cb59b-fbcd-3f50-b5f2-a2534326c4c8
-- alterId: 1
-  cipher: auto
-  name: 559|🇯🇵JP_79
-  network: tcp
-  port: 28786
-  server: uttyipf-g04.jp07-sh-vm0.entry.fr0528.art
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 7100bb64-2c3d-3818-bdd9-ff369b59577c
-- alterId: 0
-  cipher: auto
-  name: 559|日本_050104283
+  name: 559|日本_050119326
   network: ws
   port: '25686'
   server: 140.83.51.161
@@ -5694,7 +5687,7 @@ proxies:
     path: /cctv13.m3u8
 - alterId: 0
   cipher: auto
-  name: 559|日本_050104280
+  name: 559|日本_050119323
   network: tcp
   port: '49803'
   server: 153.121.73.175
@@ -5704,7 +5697,7 @@ proxies:
   uuid: cd3dacbc-2b7b-4718-83ad-ab870f87e12e
 - alterId: 0
   cipher: auto
-  name: 559|日本_050104278
+  name: 559|日本_050119321
   network: ''
   port: '32221'
   server: 153.121.73.175
@@ -5714,7 +5707,7 @@ proxies:
   uuid: b06054ae-f249-438e-998a-8e67bd8df653
 - alterId: 0
   cipher: auto
-  name: 559|日本_050104285
+  name: 559|日本_050119328
   network: ws
   port: '80'
   server: 168.138.43.75
@@ -5728,7 +5721,7 @@ proxies:
     path: /cctv13.m3u8
 - alterId: 1
   cipher: auto
-  name: 559|日本_050104282
+  name: 559|日本_050119325
   network: tcp
   port: '22324'
   server: 172.104.80.66
@@ -5738,7 +5731,7 @@ proxies:
   uuid: 04621bae-ab36-11ec-b909-0242ac120002
 - alterId: 0
   cipher: auto
-  name: 559|日本_050104279
+  name: 559|日本_050119322
   network: ws
   port: '25686'
   server: jp02.a0a.xyz
@@ -5751,23 +5744,41 @@ proxies:
       Host: jp02.a0a.xyz
     path: /cctv13.m3u8
 - name: 566|🇯🇵 日本 | JPN
-  password: 2d544f19-ff61-4e36-93f8-9950962179a5
+  password: 39edcbab-49dd-4326-9f77-305c2e45d45c
+  port: 28803
+  server: svip-jp.xiaobaivpn.icu
+  skip-cert-verify: false
+  type: trojan
+  udp: true
+- name: 566|🇯🇵 日本 | JPN 2
+  password: dc17386d-4383-49f8-b11c-d9ea04ca2f7f
   port: 28801
   server: svip-jp.xiaobaivpn.icu
   skip-cert-verify: true
   type: trojan
   udp: true
+- name: 566|🇯🇵 日本 | JPN 3
+  password: 745a7522-67fe-451c-9417-f5c95286d132
+  port: 28803
+  server: svip-jp.xiaobaivpn.icu
+  skip-cert-verify: false
+  type: trojan
+  udp: true
+- cipher: aes-256-gcm
+  name: 566|🇯🇵 日本 | JPN 4
+  password: OPfrjA9xz5nw
+  port: 8388
+  server: 185.141.219.204
+  type: ss
+  udp: true
+- name: '568|🇯🇵 日本 | JPN #1'
+  password: 2d544f19-ff61-4e36-93f8-9950962179a5
+  port: 28801
+  server: svip-jp.xiaobaivpn.icu
+  skip-cert-verify: true
+  type: trojan
 - alterId: 0
-  cipher: auto
-  name: '568|🇯🇵 日本 | JPN #1'
-  network: http
-  port: '53224'
-  server: 103.127.243.49
-  tls: false
-  type: vmess
-  uuid: 4f47e6cc-659d-4588-8155-21d2782f1b91
-- alterId: 0
-  name: '574|JP #3'
+  name: '574|JP #2'
   password: BxceQaOe
   port: 9412
   server: 18.163.116.37
@@ -5777,7 +5788,7 @@ proxies:
   type: trojan
   udp: true
 - alterId: 0
-  name: 574|🇯🇵JP日本5
+  name: '574|🇯🇵JP日本5 #1'
   password: 8r%3C%5B9%27l6hAO%238ZQi
   port: 443
   server: 153.121.45.101
