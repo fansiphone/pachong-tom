@@ -1054,11 +1054,11 @@ proxies:
   sni: www.alibaba.com
   type: trojan
   udp: true
-- name: 255|🇯🇵 JP
+- name: 255|JP
+  network: tcp
   password: f57f01e6-9bb1-4277-a5cb-75ad0ce1fa11
   port: 21125
   server: 125.94.40.162
-  skip-cert-verify: true
   sni: k12.tudou211.com
   type: trojan
 - name: '306,340,378,494,502,514,515,516,536,537,544,551,556,557,559|11,12|香港5|@ripaojiedian
@@ -1070,7 +1070,7 @@ proxies:
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- name: '306,340,378,494,502,507,514,515,516,536,537,544,551,556,557,559|11,12|日本|@ripaojiedian
+- name: '306,340,378,494,502,514,515,516,536,537,544,551,556,557,559|11,12|日本|@ripaojiedian
     #2'
   network: tcp
   password: BxceQaOe
@@ -1079,35 +1079,39 @@ proxies:
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
-- name: '306,340,378,494,502,514,515,516,523,524,536,537,544,551,556,557,559|11,12|日本3|@ripaojiedian
-    #4'
+- alterId: 0
+  name: 306,340,378,494,502,514,515,516,523,524,536,537,544,551,556,557,559,574|🇯🇵JP日本2
   network: tcp
   password: 69ecb45889d99f31b8ccc10bf8f76a72
   port: 9201
   server: 3.112.1.63
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: www.nintendogames.net
   tls: true
   type: trojan
   udp: true
-- name: '306,340,378,494,502,514,515,516,536,537,544,551,556,557,559|11,12|新加坡|@ripaojiedian
-    #2'
+- alterId: 0
+  name: 306,340,378,494,502,514,515,516,536,537,544,551,556,557,559,574|🇬SG新加坡2
   network: tcp
   password: 69ecb45889d99f31b8ccc10bf8f76a72
   port: 3057
   server: 160.16.106.99
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: www.nintendogames.net
+  tls: true
   type: trojan
-- name: '306,340,378,494,502,514,515,516,536,537,544,551,556,557,559|11,12|新加坡2|@ripaojiedian
-    #4'
+  udp: true
+- alterId: 0
+  name: 306,340,378,494,502,514,515,516,536,537,544,551,556,557,559,574|🇬SG新加坡3
   network: tcp
   password: 69ecb45889d99f31b8ccc10bf8f76a72
   port: 32876
   server: 160.16.132.38
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: www.nintendogames.net
+  tls: true
   type: trojan
+  udp: true
 - name: '321,322,323|日本05 #3'
   network: ws
   password: 429ad146-8f43-4dd4-8fb3-cca3f3a30c63
@@ -2056,7 +2060,8 @@ proxies:
   port: 803
   server: 185.160.24.217
   type: ss
-- name: 378,459,494,507,523,524,536,537,538,544,559,580|JP TROJAN-42 | free-nodes
+- alterId: 0
+  name: 378,438,459,494,507,523,524,536,537,538,544,559,574,580|JP TROJAN-42 | free-nodes
   network: tcp
   password: e136d465-0558-43b9-b50c-b1f45d4cb2c2
   port: 24534
@@ -5528,16 +5533,20 @@ proxies:
       Host: e35f90811b45f78e13b04357ef766c24.mobgslb.tbcache.com
     path: /
   xudp: true
-- alterId: 2
-  cipher: auto
-  name: 502,551,559|🇮🇷IR_66
-  network: tcp
-  port: 30806
-  server: v6.hdacd.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- delay: 374
+  name: '502,528,559|🇯🇵JP_3|3.3MB/s #1'
+  network: ws
+  password: 8r<[9'l6hAO#8ZQi
+  port: 443
+  server: 108.162.198.253
+  skip-cert-verify: true
+  sni: Koma-YT.PAGeS.Dev
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+    path: /trTelegram🇨🇳 @WangCai2
 - cipher: aes-256-gcm
   client-fingerprint: chrome
   name: 513|15|🇯🇵 日本|@ripaojiedian
@@ -6043,13 +6052,13 @@ proxies:
     headers:
       Host: Koma-YT.PAGeS.Dev
     path: '%2FtrTelegram%F0%9F%87%A8%F0%9F%87%B3%20%40WangCai2'
-- name: 559|🇯🇵JP_72
+- name: '559|🇯🇵JP_72 #1'
   password: IL37892054
   port: 443
   server: engaging-toucan.rooster465.autos
   sni: engaging-toucan.rooster465.autos
   type: trojan
-- name: 559|🇯🇵JP_73
+- name: '559|🇯🇵JP_73 #1'
   password: strong-secret-pass-777
   port: 4443
   server: 103.231.73.181
@@ -6151,22 +6160,6 @@ proxies:
     headers:
       Host: jp02.a0a.xyz
     path: /cctv13.m3u8
-- alterId: 1
-  cipher: auto
-  name: 566|🇯🇵 日本 | JPN 8
-  port: 21586
-  server: 5j7s4ea-g06.jp01-nn-vm0.entry.fr0528.art
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 85de20b1-6241-3f2a-94bf-2af152278953
-- name: '568|🇯🇵 日本 | JPN #1'
-  password: 9d6acb62-401c-43e0-a8fb-277b844acb76
-  port: 28803
-  server: svip-jp.xiaobaivpn.icu
-  skip-cert-verify: false
-  type: trojan
 - alterId: 0
   cipher: auto
   name: '577|日本NO.1 #4'
