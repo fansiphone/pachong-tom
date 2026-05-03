@@ -84,6 +84,20 @@ proxies:
   type: vmess
   udp: true
   uuid: 21629fa5-8a06-4c2c-bdaa-85a6fe5222d5
+- alterId: 0
+  cipher: auto
+  name: 255|🇫🇷 法国
+  network: ws
+  port: 30837
+  server: v37.heduian.link
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: ocbc.com
+    path: /oooo
 - cipher: aes-256-cfb
   name: '356,378,537|🇳🇱NL-51.15.27.48-8066 #1'
   password: f8f7aCzcPKbsF8p3
@@ -1498,31 +1512,9 @@ proxies:
   skip-cert-verify: false
   sni: trj.rollingnext.co.uk
   type: trojan
-- name: '438|🇫🇷FR_1|1.1MB/s | 网盘搜宝: https:/...'
-  network: ws
-  password: humanity
-  port: 443
-  server: www.calmlunch.com
-  skip-cert-verify: true
-  sni: www.calmlunch.com
-  type: trojan
-  ws-opts:
-    headers:
-      Host: www.calmlunch.com
-    path: '%2Fassignment'
-- name: '438|🇫🇷FR_2|1.0MB/s | 更多节点: https:/...'
-  network: ws
-  password: humanity
-  port: 443
-  server: www.ignitelimit.com
-  skip-cert-verify: true
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    path: '%2Fassignment'
 - alpn:
   - http/1.1
-  name: '438,494|🔥Join+Telegram:@Farah_VPN🟣 #1008'
+  name: '438,494|🔥Join+Telegram:@Farah_VPN🟣 #1863'
   network: ws
   password: humanity
   port: 443
@@ -1534,21 +1526,49 @@ proxies:
     headers:
       Host: www.calmloud.com
     path: '%2Fassignment'
-- name: '438,494|🔥Join+Telegram:@Farah_VPN🟣 #2880'
+- alpn:
+  - http/1.1
+  name: '438,494|🔥Join+Telegram:@Farah_VPN🟣 #2548'
   network: ws
   password: humanity
   port: 443
-  server: 185.18.250.245
+  server: 104.18.13.149
   skip-cert-verify: true
+  sni: www.calmloud.com
+  type: trojan
+  ws-opts:
+    headers:
+      Host: www.calmloud.com
+    path: '%2Fassignment'
+- alpn:
+  - h2
+  - http/1.1
+  name: '438,494|🔥Join+Telegram:@Farah_VPN🟣 #1449'
+  network: ws
+  password: humanity
+  port: 443
+  server: chat.openai.com
   sni: www.calmlunch.com
   type: trojan
   ws-opts:
     headers:
       Host: www.calmlunch.com
     path: '%2Fassignment'
+- name: 438,559|FR TROJAN-46 | free-nodes
+  network: ws
+  password: humanity
+  port: 443
+  server: 8.6.112.0
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
+  type: trojan
+  ws-opts:
+    headers:
+      Host: www.ignitelimit.com
+    path: '%2Fassignment'
 - alpn:
   - http/1.1
-  name: 438,580|FR TROJAN-47 | free-nodes
+  name: 438,559|FR TROJAN-47 | free-nodes
   network: ws
   password: humanity
   port: 443
@@ -1726,35 +1746,32 @@ proxies:
     headers:
       Host: lax1.ibgfw.top
     path: /xrenvws
-- cipher: aes-256-gcm
-  name: 489|🔴🇫🇷[🎬🤖📺🔍]_github.com/Ruk1ng001...
-  password: d796c691-e954-30d4-9b20-62d84c8de468
-  port: 20065
-  server: l.u.q.n.r.h.d.3.b.fr01-ae5.entry.v51124-1.qpon
-  type: ss
-  udp: true
-- name: 507|FR TROJAN-54 | free-nodes
-  network: ws
-  password: humanity
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 507,559|FR VLESS-63 | free-nodes
+  network: tcp
   port: 443
-  server: 104.20.6.134
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    headers:
-      Host: www.ignitelimit.com
-    path: /assignment
-- name: 507,559,580|FR VLESS-50 | free-nodes
-  network: ws
-  port: 80
-  server: 213.136.69.8
+  reality-opts:
+    public-key: ESRdmody9xdWVTaCtyGLg_LDopyMm9bUYDWH8NVWtjE
+    short-id: c906f73d3ba8211f
+  server: 145.239.8.221
+  servername: www.leboncoin.fr
   tls: false
   type: vless
-  uuid: 15cbab96-197e-46a5-9042-073b3980c798
-  ws-opts:
-    headers:
-      Host: fsdns.ectunnelvpn.me
-    path: '%2Fvless'
+  uuid: 43488128-319e-f480-64ea-0acdc712e2a8
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 507,559|🇫🇷 法国-A451A577
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: 3mzvB6oezGe8hhBCVkXs4HIH1nkiPc3QCMurERaB_Ro
+    short-id: b87063a35aaa942e
+  server: 51.159.99.137
+  servername: ''
+  tls: false
+  type: vless
+  uuid: 43488128-319e-f480-64ea-0acdc712e2a8
 - name: 534|PC法用点-TUN-体
   password: db9df710-a4c9-4684-9ceb-4ccd9e3febfc
   port: 443
@@ -1890,41 +1907,9 @@ proxies:
     headers:
       Host: edt2.btxst.eu.cc
     path: /about/soft
-- name: 559|🇫🇷 法国-BFB7D7E1
-  password: dongtaiwang.com
-  port: 41073
-  server: 163.172.113.118
-  skip-cert-verify: true
-  sni: www.microsoft.com
-  tls: false
-  type: hysteria2
 - name: 559|🇫🇷 法国-67BDC195
   password: dongtaiwang.com
   port: 41164
-  server: 163.172.113.118
-  skip-cert-verify: true
-  sni: www.microsoft.com
-  tls: false
-  type: hysteria2
-- name: 559|🇫🇷 法国-A2F300C9
-  password: dongtaiwang.com
-  port: 41171
-  server: 163.172.113.118
-  skip-cert-verify: true
-  sni: www.microsoft.com
-  tls: false
-  type: hysteria2
-- name: 559|🇫🇷 法国-6B5BA285
-  password: dongtaiwang.com
-  port: 41283
-  server: 163.172.113.118
-  skip-cert-verify: true
-  sni: www.microsoft.com
-  tls: false
-  type: hysteria2
-- name: 559|🇫🇷 法国-63BFC977
-  password: dongtaiwang.com
-  port: 41389
   server: 163.172.113.118
   skip-cert-verify: true
   sni: www.microsoft.com
@@ -1941,7 +1926,6 @@ proxies:
 - name: 559|🇫🇷 法国-699C63C4
   password: dongtaiwang.com
   port: 41590
-  ports: 41283,40022,41000-42000
   server: 163.172.113.118
   skip-cert-verify: true
   sni: www.microsoft.com
@@ -1955,17 +1939,17 @@ proxies:
   sni: www.microsoft.com
   tls: false
   type: hysteria2
-- name: 559|🇫🇷 法国-EFF1D04E
+- name: 559|🇫🇷 法国-7F2B2522
   password: dongtaiwang.com
-  port: 41784
+  port: 41915
   server: 163.172.113.118
   skip-cert-verify: true
   sni: www.microsoft.com
   tls: false
   type: hysteria2
-- name: 559|🇫🇷 法国-7F2B2522
+- name: 559|🇫🇷 法国-614062EB
   password: dongtaiwang.com
-  port: 41915
+  port: 41947
   server: 163.172.113.118
   skip-cert-verify: true
   sni: www.microsoft.com
@@ -1979,15 +1963,7 @@ proxies:
   sni: www.microsoft.com
   tls: false
   type: hysteria2
-- name: 559|🇫🇷 法国-26C3A17F
-  password: qQe1z5kU8kN6SlKnDt9Ru3Qp
-  port: 443
-  server: vpn-fr-002.fastervpn.world
-  skip-cert-verify: true
-  sni: vpn-fr-002.fastervpn.world
-  tls: false
-  type: hysteria2
-- name: 559|法国_050218349
+- name: 559|法国_050304350
   network: tcp
   password: 03mpolj39zyewzufal2r
   port: 55646
@@ -2006,35 +1982,23 @@ proxies:
     headers:
       Host: Koma-YT.PAGeS.Dev
     path: '%2FtrTelegram%F0%9F%87%A8%F0%9F%87%B3%20%40WangCai2'
-- name: 559|🇫🇷FR_2|1.0MB/s
-  network: ws
-  password: 8r<[9'l6hAO#8ZQi
-  port: 8443
-  server: 194.116.217.189
-  sni: Koma-YT.PAGeS.Dev
-  type: trojan
-  ws-opts:
-    headers:
-      Host: Koma-YT.PAGeS.Dev
-    path: /trTelegram🇨🇳+@WangCai2
-- name: 559|FR TROJAN-57 | free-nodes
-  network: ws
+- name: 559|🇫🇷 法国-6F0B42D3
   password: humanity
   port: 443
-  server: 8.6.112.0
-  skip-cert-verify: false
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    headers:
-      Host: www.ignitelimit.com
-    path: /assignment
-- name: 559|🇫🇷 法国-F44EAD07
-  password: humanity
-  port: 443
-  server: www.gossipglove.com
+  server: chatgpt.com
   sni: www.gossipglove.com
   type: trojan
+- name: 559|FR VLESS-60 | free-nodes
+  network: ws
+  port: 80
+  server: 213.136.69.8
+  tls: false
+  type: vless
+  uuid: 15cbab96-197e-46a5-9042-073b3980c798
+  ws-opts:
+    headers:
+      Host: fsdns.ectunnelvpn.me
+    path: '%2Fvless'
 - name: 559|🇫🇷 法国-31EB7AC9
   network: tcp
   port: 443
@@ -2093,32 +2057,28 @@ proxies:
     headers:
       Host: ynwta9.api-edge.fgfw.qzz.io
     path: '%2Fdanfeng'
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 559,580|FR VLESS-63 | free-nodes
+- name: 559|🇫🇷 法国-D341DA50
   network: tcp
-  port: 443
+  port: 2053
   reality-opts:
-    public-key: ESRdmody9xdWVTaCtyGLg_LDopyMm9bUYDWH8NVWtjE
-    short-id: c906f73d3ba8211f
-  server: 145.239.8.221
-  servername: www.leboncoin.fr
+    public-key: aFsY-EZjSNTomlAFShKwQIQMJ5pHiZQXXJpWvcz8WkQ
+    short-id: 0858af97f4e7324d
+  server: web.37-z.ru
+  servername: ''
   tls: false
   type: vless
-  uuid: 43488128-319e-f480-64ea-0acdc712e2a8
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 559|FR VLESS-72 | free-nodes
+  uuid: 5570943f-6cc3-4a8a-bee3-d15a2b2f53a0
+- name: 559|🇫🇷 法国-6CF6B1DA
   network: tcp
-  port: 443
+  port: 2053
   reality-opts:
-    public-key: 3mzvB6oezGe8hhBCVkXs4HIH1nkiPc3QCMurERaB_Ro
-    short-id: b87063a35aaa942e
-  server: 51.159.99.137
-  servername: www.cdiscount.com
+    public-key: aFsY-EZjSNTomlAFShKwQIQMJ5pHiZQXXJpWvcz8WkQ
+    short-id: 0858af97f4e7324d
+  server: web.terminatorr.ru
+  servername: ''
   tls: false
   type: vless
-  uuid: 43488128-319e-f480-64ea-0acdc712e2a8
+  uuid: 5570943f-6cc3-4a8a-bee3-d15a2b2f53a0
 - name: 559|🇫🇷 法国-E50E9A8C
   network: ws
   port: 8443
@@ -2191,6 +2151,18 @@ proxies:
     headers:
       Host: sni.111000.dynv6.net
     path: '%2F%2525253Fed%2525253D2560%25252526Telegram%252525F0%2525259F%25252587%252525A8%252525F0%2525259F%25252587%252525B3%2525252B%25252540WangCai2'
+- name: 559|🇫🇷 法国-CF9E6240
+  network: ws
+  port: 8443
+  server: 152.228.135.5
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.indevs.in
+    path: '%2F%25253Fed%25253D2560%252526Telegram%2525F0%25259F%252587%2525A8%2525F0%25259F%252587%2525B3%25252B%252540WangCai2'
 - name: 559|🇫🇷 法国-B78CB04F
   network: ws
   port: 2053
@@ -2227,18 +2199,6 @@ proxies:
     headers:
       Host: sni.111000.indevs.in
     path: '%2F%253FTelegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2520%2540WangCai2'
-- name: 559|🇫🇷 法国-DBF5310E
-  network: ws
-  port: 2053
-  server: 194.120.24.146
-  servername: ''
-  tls: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.111000.dns.army
-    path: '%2F%25253Fed%25253D2560%252526https%25253A%2F%2Ft.me%2FWangCai2%2525F0%25259F%252587%2525A8%2525F0%25259F%252587%2525B3'
 - name: 559|🇧🇫 布基纳法索-BFAAF0E7
   network: ws
   port: 2053
@@ -2251,18 +2211,6 @@ proxies:
     headers:
       Host: sni.111000.v6.rocks
     path: '%2F'
-- name: 559|🇫🇷 法国-744C5EB1
-  network: ws
-  port: 8443
-  server: 31.59.121.155
-  servername: ''
-  tls: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.111000.indevs.in
-    path: '%2F%253FTelegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2520%2540WangCai2'
 - name: 559|🇫🇷 法国-5E928A64
   network: ws
   port: 443
@@ -2371,18 +2319,6 @@ proxies:
     headers:
       Host: sni.111000.v6.navy
     path: '%2F%25253Fed%25253D2560%252526Telegram%2525F0%25259F%252587%2525A8%2525F0%25259F%252587%2525B3%25252B%252540WangCai2'
-- name: 559|🇫🇷 法国-5A565265
-  network: ws
-  port: 8443
-  server: 51.75.24.135
-  servername: ''
-  tls: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.111000.v6.navy
-    path: '%2F%25253Fed%25253D2560%252526Telegram%2525F0%25259F%252587%2525A8%2525F0%25259F%252587%2525B3%25252B%252540WangCai2'
 - name: 559|🇫🇷 法国-9A3E1C1D
   network: ws
   port: 2053
@@ -2395,30 +2331,6 @@ proxies:
     headers:
       Host: sni.111000.indevs.in
     path: '%2F%253FTelegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2540WangCai2'
-- name: 559|🇫🇷 法国-7AEB2EC8
-  network: ws
-  port: 2053
-  server: 51.91.100.9
-  servername: ''
-  tls: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.111000.v6.navy
-    path: '%2F%253FTelegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2520%2540WangCai2'
-- name: 559|🇫🇷 法国-B7A22DA0
-  network: ws
-  port: 8443
-  server: 51.91.100.9
-  servername: ''
-  tls: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.111000.v6.navy
-    path: '%2F%253FTelegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%252B%2540WangCai2'
 - name: 559|🇫🇷 法国-FE774346
   network: ws
   port: 8443
@@ -2491,6 +2403,18 @@ proxies:
     headers:
       Host: sni.111000.indevs.in
     path: '%2F%25253Fed%25253D2560%252526Telegram%2525F0%25259F%252587%2525A8%2525F0%25259F%252587%2525B3%252520%252540WangCai2'
+- name: 559|🇫🇷 法国-B508496F
+  network: ws
+  port: 8443
+  server: 51.91.249.241
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.indevs.in
+    path: '%2F%253Fed'
 - name: 559|🇫🇷 法国-89168D73
   network: ws
   port: 443
@@ -2503,6 +2427,18 @@ proxies:
     headers:
       Host: sni.111000.indevs.in
     path: '%2F%25252F%252525253Fed%252525253D2560%2525252526Telegram%25252525F0%252525259F%2525252587%25252525A8%25252525F0%252525259F%2525252587%25252525B3%252525252B%2525252540WangCai2'
+- name: 559|🇫🇷 法国-A2F29BE3
+  network: ws
+  port: 443
+  server: 51.91.251.153
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.indevs.in
+    path: '%2F%25253Fed'
 - name: 559|🇫🇷 法国-30E70019
   network: ws
   port: 443
@@ -2587,6 +2523,18 @@ proxies:
     headers:
       Host: sni.111000.v6.navy
     path: '%2F%25253Fed'
+- name: 559|🇫🇷 法国-10BA9609
+  network: ws
+  port: 443
+  server: 51.91.253.83
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.indevs.in
+    path: '%2F%25253Fed%25253D2560%252526Telegram%2525F0%25259F%252587%2525A8%2525F0%25259F%252587%2525B3%252520%252540WangCai2'
 - name: 559|🇫🇷 法国-3536F719
   network: ws
   port: 8443
@@ -2695,6 +2643,18 @@ proxies:
     headers:
       Host: sni.111000.v6.navy
     path: '%2F%253FTelegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2520%2540WangCai2'
+- name: 559|🇫🇷 法国-60AC09FE
+  network: ws
+  port: 2053
+  server: 54.36.98.82
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.v6.navy
+    path: '%2F%253FTelegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2520%2540WangCai2'
 - name: 559|🇫🇷 法国-56D39050
   network: ws
   port: 2053
@@ -2731,18 +2691,6 @@ proxies:
     headers:
       Host: sni.111000.v6.navy
     path: '%2F%253Ftelegram'
-- name: 559|🇫🇷 法国-12BCDB8D
-  network: ws
-  port: 8443
-  server: 57.128.178.196
-  servername: ''
-  tls: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.111000.indevs.in
-    path: '%2F%25253Fed%25253D2560%252526Telegram%2525F0%25259F%252587%2525A8%2525F0%25259F%252587%2525B3%252540WangCai2'
 - name: 559|🇫🇷 法国-926AE15B
   network: ws
   port: 443
@@ -2959,18 +2907,6 @@ proxies:
     headers:
       Host: sni.111000.indevs.in
     path: '%2F%253FTelegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2520%2540WangCai2'
-- name: 559|🇫🇷 法国-C5273EFF
-  network: ws
-  port: 443
-  server: 94.131.9.241
-  servername: ''
-  tls: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.111000.indevs.in
-    path: '%2F%253FTelegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2520%2540WangCai2'
 - name: 559|🇧🇫 布基纳法索-ADCEA85A
   network: ws
   port: 8443
@@ -2994,6 +2930,17 @@ proxies:
   tls: false
   type: vless
   uuid: 87e60810-bb71-41ea-a2a6-f05c8ab903ef
+- name: 559|🇫🇷 法国-5A24D6EB
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: 9F7JxyyP-TNLt0dY2xOB0_34I8W0xXIpFY7rZ7-L0Gg
+    short-id: 19aa22f681923dc8
+  server: fr-qp.api.dznn.net
+  servername: ''
+  tls: false
+  type: vless
+  uuid: b11c8d06-96bf-41b3-908d-8663f919e399
 - name: 559|🇫🇷 法国-62CFFBB1
   network: tcp
   port: 7443
@@ -3005,44 +2952,27 @@ proxies:
   tls: false
   type: vless
   uuid: b375b840-8ac0-4d37-98c0-44ab85fd7127
-- name: 559|🇫🇷 法国-C8D877B5
-  network: ws
-  port: 443
-  server: 57.128.183.137
-  servername: ''
-  tls: true
-  type: vless
-  uuid: ce069292-c8bf-40dd-a6b1-87818a1e64e9
-  ws-opts:
-    headers:
-      Host: czvjaheuiweghruiwegfbldsafsdgaryreygnxvbhsfgretgreyhthsfgj.pages.dev
-    path: '%2F'
-- name: 559|🇫🇷 法国-85D06F64
-  network: ws
-  port: 443
-  server: 57.128.183.35
-  servername: ''
-  tls: true
-  type: vless
-  uuid: ce069292-c8bf-40dd-a6b1-87818a1e64e9
-  ws-opts:
-    headers:
-      Host: czvjaheuiweghruiwegfbldsafsdgaryreygnxvbhsfgretgreyhthsfgj.pages.dev
-    path: '%2F'
 - name: 566|🇫🇷 法国 | FRA
-  password: 0da8651e-e1f6-11ec-bd7c-f23c913c8d2b
+  password: ecfab6c8-df5b-11ed-98a7-f23c913c8d2b
   port: 443
-  server: 5c5d1fe2-tegxs0-tvgkxc-hrtf.fr.oshuawei.com
+  server: 560cad25-tegxs0-tn57fp-5ifr.fr.oshuawei.com
   tls: true
   type: http
-  username: 0da8651e-e1f6-11ec-bd7c-f23c913c8d2b
-- name: 566|🇫🇷 法国 | FRA 2
-  password: c11ff50c-f582-11ee-94df-f23c9164ca5d
+  username: ecfab6c8-df5b-11ed-98a7-f23c913c8d2b
+- name: 566|🇫🇷 法国 | FRA 3
+  password: a4c9b7cc-a816-11ed-9f65-f23c9164ca5d
   port: 443
-  server: 405e5127-tegxs0-tl09la-1q91p.fr.oshuawei.com
+  server: 768aa9f9-teisg0-tefu35-4lg6.fr.oshuawei.com
   tls: true
   type: http
-  username: c11ff50c-f582-11ee-94df-f23c9164ca5d
+  username: a4c9b7cc-a816-11ed-9f65-f23c9164ca5d
+- name: 566|🇫🇷 法国 | FRA 4
+  password: 6e8482fb-1f9b-11ed-af5f-f23c91cfbbc9
+  port: 443
+  server: 6b90f96e-tegxs0-tkka1f-1k25p.fr.oshuawei.com
+  tls: true
+  type: http
+  username: 6e8482fb-1f9b-11ed-af5f-f23c91cfbbc9
 - alterId: 0
   cipher: auto
   name: '577|法国1 #4'
@@ -3089,15 +3019,3 @@ proxies:
   tls: false
   type: vmess
   uuid: a663bbab-4e9e-4080-b8ab-edd59fe1fdce
-- name: 580|FR TROJAN-46 | free-nodes
-  network: ws
-  password: humanity
-  port: 443
-  server: 8.6.112.0
-  skip-cert-verify: false
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    headers:
-      Host: www.ignitelimit.com
-    path: '%2Fassignment'
