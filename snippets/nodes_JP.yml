@@ -1054,15 +1054,15 @@ proxies:
   sni: www.alibaba.com
   type: trojan
   udp: true
-- name: 255|🇯🇵 JP
+- name: 255|JP
+  network: tcp
   password: f57f01e6-9bb1-4277-a5cb-75ad0ce1fa11
   port: 21125
   server: 125.94.40.162
-  skip-cert-verify: true
   sni: k12.tudou211.com
   type: trojan
 - alterId: 0
-  name: 306,340,378,494,502,514,515,516,537,543,544,551,556,557,574|🇰HK
+  name: 306,340,378,494,502,514,515,516,537,543,544,551,556,557,559,574|🇰HK
   network: tcp
   password: ba62c023f9bce796ae334fecb20ef7cc
   port: 2008
@@ -1072,7 +1072,7 @@ proxies:
   tls: true
   type: trojan
   udp: true
-- name: '306,340,378,494,502,507,514,515,516,537,543,544,551,556,557|日本|@ripaojiedian
+- name: '306,340,378,494,502,507,514,515,516,537,543,544,551,556,557,559|11,12|日本|@ripaojiedian
     #2'
   network: tcp
   password: BxceQaOe
@@ -1082,7 +1082,7 @@ proxies:
   sni: t.me%252Fripaojiedian
   type: trojan
 - alterId: 0
-  name: '306,340,378,494,502,514,515,516,537,543,544,551,556,557,574|JP #2'
+  name: '306,340,378,494,502,514,515,516,537,543,544,551,556,557,559,574|JP #3'
   network: tcp
   password: ba62c023f9bce796ae334fecb20ef7cc
   port: 11541
@@ -1093,7 +1093,7 @@ proxies:
   type: trojan
   udp: true
 - alterId: 0
-  name: 306,340,378,494,502,514,515,516,537,543,544,551,556,557,574|🇺🇸US美国11
+  name: 306,340,378,494,502,514,515,516,537,543,544,551,556,557,559,574|🇺🇸US美国11
   network: tcp
   password: ba62c023f9bce796ae334fecb20ef7cc
   port: 4019
@@ -2016,8 +2016,8 @@ proxies:
   server: 89.31.126.171
   type: ss
 - alterId: 0
-  name: 378,456,459,494,507,523,524,536,537,538,543,544,559,574,580|JP TROJAN-44 |
-    free-nodes
+  name: '378,456,459,494,507,523,524,536,537,538,543,544,559,574,580|JP TROJAN-44
+    | free-nodes #1'
   network: tcp
   password: e136d465-0558-43b9-b50c-b1f45d4cb2c2
   port: 24534
@@ -2146,40 +2146,35 @@ proxies:
     headers:
       Host: 138.2.52.176
     path: /
-- name: '378,536,537,559|11,12|香港5|@ripaojiedian #4'
-  network: tcp
+- name: '378,536,537|🇯🇵JP-52.198.36.96-0825 #1'
   password: BxceQaOe
   port: 3685
   server: 52.198.36.96
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: t.me%2Fripaojiedian
   type: trojan
-- name: '378,438,536,537,559|11,12|日本|@ripaojiedian #2'
-  network: tcp
+- name: '378,536,537|🇯🇵JP-116.80.61.224-0827 #1'
   password: BxceQaOe
   port: 443
   server: 116.80.61.224
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: t.me%252Fripaojiedian
   type: trojan
-- name: '378,494,536,537,559|11,12|日本3|@ripaojiedian #4'
-  network: tcp
+- name: '378,536,537|🇯🇵JP-3.112.1.63-0829 #1'
   password: 69ecb45889d99f31b8ccc10bf8f76a72
   port: 9201
   server: 3.112.1.63
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: 378,494,536,537,559|11,12|新加坡|@ripaojiedian
-  network: tcp
+- name: '378,536,537|🇯🇵JP-160.16.106.99-0830 #1'
   password: 69ecb45889d99f31b8ccc10bf8f76a72
   port: 3057
   server: 160.16.106.99
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: '378,494,536,537,559|11,12|新加坡2|@ripaojiedian #2'
-  network: tcp
+- name: '378,536,537|🇯🇵JP-160.16.132.38-0831 #1'
   password: 69ecb45889d99f31b8ccc10bf8f76a72
   port: 32876
   server: 160.16.132.38
@@ -2756,7 +2751,7 @@ proxies:
   port: 2333
   server: 54.199.83.239
   type: ss
-- country: 🇬🇧GB
+- country: 🇧GB
   name: '378,435,436,536,537|🇵JP-52.195.12.80-4603 #1'
   password: IL37892054
   port: 443
@@ -2840,7 +2835,7 @@ proxies:
   type: ssr
 - alterId: 0
   cipher: auto
-  name: 378,494,536,537,559|日本_050304002
+  name: 378,494,536,537,559|日本_050318002
   network: ws
   port: '80'
   server: jp01.a0a.xyz
@@ -5360,18 +5355,6 @@ proxies:
   type: vmess
   udp: true
   uuid: 2ce005b4-e57a-3670-be88-60eeeb078bb7
-- name: '502,551|C - 🇯🇵 JP 21 TG: @nodpai #1'
-  network: ws
-  password: bpb-trojan
-  port: 443
-  server: russia.com
-  skip-cert-verify: false
-  sni: bpb.wdgg1979.nyc.mn
-  type: trojan
-  ws-opts:
-    headers:
-      Host: bpb.wdgg1979.nyc.mn
-    path: /tr
 - cipher: aes-256-gcm
   client-fingerprint: chrome
   name: 513|15|🇯🇵 日本|@ripaojiedian
@@ -5846,46 +5829,18 @@ proxies:
   tls: false
   type: vmess
   uuid: b806b388-5f97-11ee-8014-f23c913c8d2b
-- name: 559|🇯🇵 日本 16
-  network: tcp
-  password: 69ecb45889d99f31b8ccc10bf8f76a72
-  port: 4019
-  server: 54.238.146.34
-  skip-cert-verify: false
-  sni: www.nintendogames.net
-  type: trojan
-- name: 559|🇯🇵JP_76
+- name: 559|🇯🇵JP_73
   password: IL37892054
   port: 443
   server: engaging-toucan.rooster465.autos
   sni: engaging-toucan.rooster465.autos
   type: trojan
-- name: 559|🇯🇵JP_77
+- name: 559|🇯🇵JP_74
   password: strong-secret-pass-777
   port: 4443
   server: 103.231.73.181
   sni: 103.231.73.181
   type: trojan
-- alterId: 0
-  cipher: auto
-  name: 559|🇯🇵 日本 271
-  network: tcp
-  port: '55386'
-  server: 103.127.243.60
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 22d4ef9c-b269-4f82-9f59-6c2c0d8ce16d
-- alterId: 0
-  cipher: auto
-  h2-opts: {}
-  name: '559|B - 🇯🇵 JP 08 TG: @nodpai'
-  network: h2
-  port: 54291
-  server: 103.127.243.66
-  tls: true
-  type: vmess
-  uuid: c5856e0b-5ca6-49bf-8525-d02af9c37cf5
 - alterId: 0
   cipher: auto
   name: 559|github.com/freefq - 日本东京Linode...
@@ -5902,21 +5857,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 559|🇯🇵 日本-CF736D03
-  network: ws
-  port: 80
-  server: 172.111.146.64
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 05b8c783-7f59-47f9-9923-06a465679f6a
-  ws-opts:
-    headers:
-      Host: ''
-    path: /vmess/
-- alterId: 0
-  cipher: auto
-  name: 559|日本_050304369
+  name: 559|日本_050318378
   network: ws
   port: '25686'
   server: 140.83.51.161
@@ -5930,7 +5871,7 @@ proxies:
     path: /cctv13.m3u8
 - alterId: 0
   cipher: auto
-  name: 559|日本_050304366
+  name: 559|日本_050318375
   network: tcp
   port: '49803'
   server: 153.121.73.175
@@ -5940,7 +5881,7 @@ proxies:
   uuid: cd3dacbc-2b7b-4718-83ad-ab870f87e12e
 - alterId: 0
   cipher: auto
-  name: 559|日本_050304364
+  name: 559|日本_050318373
   network: ''
   port: '32221'
   server: 153.121.73.175
@@ -5950,7 +5891,7 @@ proxies:
   uuid: b06054ae-f249-438e-998a-8e67bd8df653
 - alterId: 0
   cipher: auto
-  name: 559|日本_050304371
+  name: 559|日本_050318380
   network: ws
   port: '80'
   server: 168.138.43.75
@@ -5964,7 +5905,7 @@ proxies:
     path: /cctv13.m3u8
 - alterId: 1
   cipher: auto
-  name: 559|日本_050304368
+  name: 559|日本_050318377
   network: tcp
   port: '22324'
   server: 172.104.80.66
@@ -5974,7 +5915,7 @@ proxies:
   uuid: 04621bae-ab36-11ec-b909-0242ac120002
 - alterId: 0
   cipher: auto
-  name: 559|日本_050304365
+  name: 559|日本_050318374
   network: ws
   port: '25686'
   server: jp02.a0a.xyz
@@ -6110,3 +6051,17 @@ proxies:
     headers:
       Host: linode.appleid.bf
     path: /CAT
+- alterId: 0
+  cipher: auto
+  name: 578|28|日本2|@ripaojiedian
+  network: ws
+  port: '20301'
+  server: data-jp-v1.usabooks.com.cn
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: b1478e24-4916-3abe-8f17-15931012ecbe
+  ws-opts:
+    headers:
+      Host: data-jp-v1.usabooks.com.cn
+    path: /debian

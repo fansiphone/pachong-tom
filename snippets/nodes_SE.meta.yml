@@ -267,17 +267,20 @@ proxies:
   type: trojan
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '523,524|🇸🇪 瑞典 130 #1'
+  name: '523,524,559|🇸🇪 瑞典 122 #2'
   port: 443
   reality-opts:
     public-key: 9WnuH4KUb9-cCqbApq4bVLDhrqhPbpnd5eTn14bGciA
     short-id: f7
   server: lol-swe-0001.api.neuralrelay.stream
   servername: hls-svod.itunes.apple.com
-  tls: true
+  tls: false
   type: vless
   udp: true
   uuid: f189684b-6213-4c0d-a2e3-cb8860f5d4c5
+  ws-opts:
+    headers:
+      Host: hls-svod.itunes.apple.com
 - name: '523,524|🇸🇪 瑞典 185 #1'
   network: ws
   port: 443
@@ -345,61 +348,29 @@ proxies:
     headers:
       Host: edt2.btxst.eu.cc
     path: /mag
-- name: 559|🇸🇪SE_1|1001KB/s
+- name: 559|🇸🇪 瑞典-FDCE8122
+  network: tcp
+  port: 2053
+  reality-opts:
+    public-key: aFsY-EZjSNTomlAFShKwQIQMJ5pHiZQXXJpWvcz8WkQ
+    short-id: 0858af97f4e7324d
+  server: 159.194.223.34
+  servername: ''
+  tls: false
+  type: vless
+  uuid: 5570943f-6cc3-4a8a-bee3-d15a2b2f53a0
+- name: 559|🇸🇪 瑞典-F4D3CEAF
   network: ws
-  password: 8r<[9'l6hAO#8ZQi
-  port: 8443
-  server: 70.34.212.154
-  sni: Koma-YT.PAGeS.Dev
-  type: trojan
+  port: 2053
+  server: 176.125.240.186
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   ws-opts:
     headers:
-      Host: Koma-YT.PAGeS.Dev
-    path: /trTelegram🇨🇳+@WangCai2
-- name: 559|🇸🇪 瑞典-159B9B17
-  network: tcp
-  port: 2053
-  reality-opts:
-    public-key: aFsY-EZjSNTomlAFShKwQIQMJ5pHiZQXXJpWvcz8WkQ
-    short-id: 0858af97f4e7324d
-  server: shop.catpatrol.ru
-  servername: ''
-  tls: false
-  type: vless
-  uuid: 5570943f-6cc3-4a8a-bee3-d15a2b2f53a0
-- name: 559|🇸🇪 瑞典-241555E2
-  network: tcp
-  port: 2053
-  reality-opts:
-    public-key: aFsY-EZjSNTomlAFShKwQIQMJ5pHiZQXXJpWvcz8WkQ
-    short-id: 0858af97f4e7324d
-  server: shop.chepisi.ru
-  servername: ''
-  tls: false
-  type: vless
-  uuid: 5570943f-6cc3-4a8a-bee3-d15a2b2f53a0
-- name: 559|🇸🇪 瑞典-FD50AC51
-  network: tcp
-  port: 2053
-  reality-opts:
-    public-key: aFsY-EZjSNTomlAFShKwQIQMJ5pHiZQXXJpWvcz8WkQ
-    short-id: 0858af97f4e7324d
-  server: shop.starsuntoday.ru
-  servername: ''
-  tls: false
-  type: vless
-  uuid: 5570943f-6cc3-4a8a-bee3-d15a2b2f53a0
-- name: 559|🇸🇪 瑞典-0C464CC0
-  network: tcp
-  port: 2053
-  reality-opts:
-    public-key: aFsY-EZjSNTomlAFShKwQIQMJ5pHiZQXXJpWvcz8WkQ
-    short-id: 0858af97f4e7324d
-  server: web.catpatrol.ru
-  servername: ''
-  tls: false
-  type: vless
-  uuid: 5570943f-6cc3-4a8a-bee3-d15a2b2f53a0
+      Host: sni.111000.v6.rocks
+    path: '%2F%25253Fed%25253D2560%252526https%25253A%2F%2Ft.me%2FWangCai2%2525F0%25259F%252587%2525A8%2525F0%25259F%252587%2525B3'
 - name: 559|🇸🇪 瑞典-5661083D
   network: ws
   port: 2053
@@ -424,6 +395,19 @@ proxies:
     headers:
       Host: sni.111000.v6.rocks
     path: '%2F%253Fhttps%253A%2F%2Ft.me%2FWangCai2%25F0%259F%2587%25A8%25F0%259F%2587%25B3'
+- name: '559|🇸🇪 瑞典 185 #2'
+  network: ws
+  port: 443
+  server: 206.168.212.162
+  servername: sni.111000.dns.army
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.dns.army
+    path: '%2F%3Fhttps%3A%2F%2Ft.me%2FWangCai2%F0%9F%87%A8%F0%9F%87%B3'
 - name: 559|🇸🇪 瑞典-27A3DA77
   network: ws
   port: 443
@@ -436,18 +420,6 @@ proxies:
     headers:
       Host: sni.latonyamadeline.ndjp.net
     path: '%2F%253Fhttps%253A%2F%2Ft.me%2FWangCai2%25F0%259F%2587%25A8%25F0%259F%2587%25B3'
-- name: 559|🇸🇪 瑞典-9223BD90
-  network: ws
-  port: 443
-  server: 77.110.96.41
-  servername: ''
-  tls: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.111000.v6.rocks
-    path: '%2F%25253Fed%25253D2560%252526https%25253A%2F%2Ft.me%2FWangCai2%2525F0%25259F%252587%2525A8%2525F0%25259F%252587%2525B3'
 - name: 559|🇸🇪 瑞典-D1DA9FB9
   network: ws
   port: 443
@@ -472,18 +444,14 @@ proxies:
     headers:
       Host: sni.latonyamadeline.ndjp.net
     path: '%2F%253Fhttps%253A%2F%2Ft.me%2FWangCai2%25F0%259F%2587%25A8%25F0%259F%2587%25B3'
-- name: 559|🇸🇪 瑞典-94E40612
-  network: ws
-  port: 443
-  server: 94.242.58.82
+- name: 559|🇸🇪 瑞典-0D858824
+  network: grpc
+  port: 573
+  server: 95.85.246.16.speed-storage.ru
   servername: ''
   tls: true
   type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.111000.dns.army
-    path: '%2F%253Fhttps%253A%2F%2Ft.me%2FWangCai2%25F0%259F%2587%25A8%25F0%259F%2587%25B3'
+  uuid: 832f76f8-fca3-4efa-80be-870e123ad764
 - name: 559|🇸🇪 瑞典-E5C8C343
   network: ws
   port: 8443
@@ -508,14 +476,19 @@ proxies:
     headers:
       Host: babayaga-6i7.pages.dev
     path: '%2F%253FTelegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2540WangCai2'
-- name: 559|🇸🇪 瑞典-7054A194
-  network: tcp
-  port: 443
+- client-fingerprint: chrome
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: buysec.ru
+  name: 566|🇸🇪 瑞典 | SWE
+  network: grpc
+  port: 8443
   reality-opts:
-    public-key: 9F7JxyyP-TNLt0dY2xOB0_34I8W0xXIpFY7rZ7-L0Gg
-    short-id: 0a6ba2716a409da6
-  server: 185.58.115.233
-  servername: ''
-  tls: false
+    public-key: J07yFEBPsic7-hLTS2KSxVqI7v4gpfkG6_a2cGKNVFk
+    short-id: 10f786a2491b2cd5
+  server: se.keepsecured.net
+  servername: cdn.kwork.com
+  tls: true
   type: vless
-  uuid: b11c8d06-96bf-41b3-908d-8663f919e399
+  udp: true
+  uuid: b6ce8a51-19b9-4979-91ba-b4298c26d5fc
