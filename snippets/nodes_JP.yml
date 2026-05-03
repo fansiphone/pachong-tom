@@ -1054,15 +1054,15 @@ proxies:
   sni: www.alibaba.com
   type: trojan
   udp: true
-- name: 255|🇯🇵 JP
+- name: 255|JP
+  network: tcp
   password: f57f01e6-9bb1-4277-a5cb-75ad0ce1fa11
   port: 21125
   server: 125.94.40.162
-  skip-cert-verify: true
   sni: k12.tudou211.com
   type: trojan
 - alterId: 0
-  name: 306,340,378,494,502,514,515,516,536,537,543,544,551,556,557,559,574|🇰HK
+  name: '306,340,378,494,502,514,515,516,536,537,543,544,551,556,557,559,574|HK #3'
   network: tcp
   password: ba62c023f9bce796ae334fecb20ef7cc
   port: 2008
@@ -1072,7 +1072,7 @@ proxies:
   tls: true
   type: trojan
   udp: true
-- name: '306,340,378,494,502,507,514,515,516,536,537,543,544,551,556,557,559|11,12|日本|@ripaojiedian
+- name: '306,340,378,494,502,514,515,516,536,537,543,544,551,556,557,559|11,12|日本|@ripaojiedian
     #2'
   network: tcp
   password: BxceQaOe
@@ -1082,7 +1082,7 @@ proxies:
   sni: t.me%252Fripaojiedian
   type: trojan
 - alterId: 0
-  name: '306,340,378,494,502,514,515,516,536,537,543,544,551,556,557,559,574|JP #2'
+  name: '306,340,378,494,502,514,515,516,536,537,543,544,551,556,557,559,574|JP #3'
   network: tcp
   password: ba62c023f9bce796ae334fecb20ef7cc
   port: 11541
@@ -1093,7 +1093,8 @@ proxies:
   type: trojan
   udp: true
 - alterId: 0
-  name: 306,340,378,494,502,514,515,516,536,537,543,544,551,556,557,559,574|🇺🇸US美国11
+  name: '306,340,378,494,502,514,515,516,536,537,543,544,551,556,557,559,574|🇺🇸US美国2
+    #1'
   network: tcp
   password: ba62c023f9bce796ae334fecb20ef7cc
   port: 4019
@@ -1103,6 +1104,21 @@ proxies:
   tls: true
   type: trojan
   udp: true
+- client-fingerprint: chrome
+  name: '306,489|🔴🇯🇵[🎬📺🔍]_github.com/Ruk1ng001_... #6'
+  network: ws
+  password: 8r<[9'l6hAO#8ZQi
+  port: 4196
+  server: 185.184.223.138
+  skip-cert-verify: true
+  sni: Koma-YT.PAGeS.Dev
+  tls: true
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+    path: /trTelegram🇨🇳 @WangCai2
 - name: '321,322,323|日本05 #3'
   network: ws
   password: 429ad146-8f43-4dd4-8fb3-cca3f3a30c63
@@ -2015,14 +2031,12 @@ proxies:
   port: 800
   server: 89.31.126.171
   type: ss
-- alterId: 0
-  name: '378,438,456,459,494,507,523,524,536,537,538,559,574,580|JP TROJAN-44 | free-nodes
-    #1'
+- name: 378,438,456,459,494,507,523,524,536,537,538,559,580|JP TROJAN-44 | free-nodes
   network: tcp
   password: e136d465-0558-43b9-b50c-b1f45d4cb2c2
   port: 24534
   server: jp2-8sb.6121999.dpdns.org
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: jp2-8sb.6121999.dpdns.org
   tls: true
   type: trojan
@@ -2152,14 +2166,11 @@ proxies:
   port: 30312
   server: 185.141.219.110
   type: ss
-- alterId: 0
-  cipher: aes-256-gcm
-  name: 378,537,574|🇪DE德国4
+- cipher: aes-256-gcm
+  name: '378,537|🇵JP-185.141.219.204-0859 #1'
   password: OPfrjA9xz5nw
   port: 8388
   server: 185.141.219.204
-  skip-cert-verify: true
-  tls: true
   type: ss
 - alterId: 0
   cipher: auto
@@ -2724,18 +2735,22 @@ proxies:
   port: 2333
   server: 54.199.83.239
   type: ss
-- name: '378,436,536,537|🇵JP-52.195.12.80-4591 #1'
+- country: 🇧GB
+  name: '378,435,436,536,537|🇵JP-52.195.12.80-4591 #1'
   password: IL37892054
   port: 443
   server: upright-rhino.rooster465.autos
   skip-cert-verify: false
   type: trojan
-- name: '378,436,536,537|🇵JP-3.113.25.200-4611 #1'
+  udp: true
+- country: 🇵JP
+  name: '378,435,436,536,537|🇵JP-3.113.25.200-4611 #1'
   password: IL37892054
   port: 443
   server: engaging-toucan.rooster465.autos
   skip-cert-verify: false
   type: trojan
+  udp: true
 - cipher: aes-128-gcm
   name: '378,537|🇵JP-172.238.15.102-4645 #1'
   password: 0fae0ceb-4b6d-4bab-9d3c-612c77ae9b2f
@@ -3549,20 +3564,6 @@ proxies:
       Host: 7742af127c04571e3e3953165a8bc157.mobgslb.tbcache.com
     path: /
   xudp: true
-- client-fingerprint: chrome
-  name: '489,502,551|B - 🇺🇸 US 30 TG: @nodpai #1'
-  network: ws
-  password: 8r<[9'l6hAO#8ZQi
-  port: 4196
-  server: 185.184.223.138
-  skip-cert-verify: true
-  sni: Koma-YT.PAGeS.Dev
-  tls: true
-  type: trojan
-  ws-opts:
-    headers:
-      Host: Koma-YT.PAGeS.Dev
-    path: /trTelegram🇨🇳 @WangCai2
 - alterId: '0'
   cipher: auto
   name: '489|🟢🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001... #2'
@@ -3663,7 +3664,7 @@ proxies:
   udp: true
 - alterId: 2
   cipher: auto
-  name: 502,551,559|🇮🇷IR_68
+  name: '502,551,559|🇮🇷IR_68 #1'
   network: tcp
   port: 30806
   server: v6.hdacd.com
@@ -3671,6 +3672,12 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- name: 502,551,559|🏁 未知-107B1705
+  password: '!!str 162534'
+  port: 443
+  server: 138.2.31.37
+  sni: cchh2.pages.dev
+  type: trojan
 - cipher: aes-256-gcm
   client-fingerprint: chrome
   name: 513|15|🇯🇵 日本|@ripaojiedian
@@ -4172,6 +4179,18 @@ proxies:
   server: engaging-toucan.rooster465.autos
   sni: engaging-toucan.rooster465.autos
   type: trojan
+- name: '559|C - 🇯🇵 JP 19 TG: @nodpai'
+  network: ws
+  password: bpb-trojan
+  port: 443
+  server: russia.com
+  skip-cert-verify: false
+  sni: bpb.wdgg1979.nyc.mn
+  type: trojan
+  ws-opts:
+    headers:
+      Host: bpb.wdgg1979.nyc.mn
+    path: /tr
 - name: 559|🇯🇵JP_74
   password: strong-secret-pass-777
   port: 4443
