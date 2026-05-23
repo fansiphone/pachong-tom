@@ -23,6 +23,33 @@ proxies:
   type: vmess
   udp: true
   uuid: 000a0d18-02fe-4cda-a68e-96b55e067567
+- client-fingerprint: edge
+  flow: xtls-rprx-vision
+  name: '340,438,472,473,474,502,507,514,523,524,551,559,567,580,585,586|RU_speednode_0029
+    #3'
+  network: raw
+  port: 22231
+  server: r1.mizulina.top
+  servername: r1.mizulina.top
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
+- client-fingerprint: chrome
+  name: '340,502,514,523,524,551,559,567,580,585,586|RU_speednode_0030 #3'
+  network: raw
+  port: 26424
+  reality-opts:
+    public-key: l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0
+    short-id: 23103e1e
+  server: 45.12.75.242
+  servername: ya.ru
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 633f424e-2b11-48da-a6b3-a849dd71456f
 - cipher: chacha20-ietf-poly1305
   name: 356|🇷🇺1 |  5.2MB/s
   password: 0zyDRZ1XmNXaaCAN7KEA8a
@@ -642,13 +669,6 @@ proxies:
   sni: eu.mjanyt.com
   type: anytls
   udp: true
-- cipher: aes-256-cfb
-  country: 🇺RU
-  name: 435|RU_82
-  password: BNmAXXxAHYpTRdzu
-  port: 9020
-  server: 217.30.10.70
-  type: ss
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: '438,507,559|未知 VLESS-862 | free-nodes #1'
@@ -664,7 +684,7 @@ proxies:
   uuid: be0e7d89-9c35-4950-a460-d3bf5aae5f91
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '438,507,559,580|未知 VLESS-863 | free-nodes #2'
+  name: '438,559,580|未知 VLESS-863 | free-nodes #2'
   network: raw
   port: 443
   reality-opts:
@@ -1469,20 +1489,51 @@ proxies:
     headers:
       Host: ''
     path: /
-- client-fingerprint: chrome
-  name: '502,514,523,524,551,559,567,580,585,586|RU_speednode_0030 #3'
-  network: raw
-  port: 26424
-  reality-opts:
-    public-key: l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0
-    short-id: 23103e1e
-  server: 45.12.75.242
-  servername: ya.ru
-  skip-cert-verify: false
+- name: '472,473,474|俄罗斯+V2CROSS.COM #5'
+  network: ws
+  password: 8r<[9'l6hAO#8ZQi
+  port: 2053
+  server: 176.124.201.78
+  sni: Koma-YT.PAGeS.Dev
+  type: trojan
+  ws-opts:
+    path: /trTelegram🇨🇳 @WangCai2
+- name: 500|[Vless] 🇷🇺 俄罗斯 V2CROSS.COM
+  network: ws
+  port: 443
+  server: 77.232.140.43
+  servername: sni.111000.cc.cd
+  skip-cert-verify: true
+  tfo: false
   tls: true
   type: vless
   udp: true
-  uuid: 633f424e-2b11-48da-a6b3-a849dd71456f
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.cc.cd
+    path: /
+- name: 502,559|🏁 未知-E1AE4837
+  network: ws
+  port: 443
+  server: 77.232.140.43
+  servername: ''
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.cc.cd
+    path: '%2F'
+- name: '507,559,580|RU TROJAN-142 | free-nodes #2'
+  network: tcp
+  password: 7aXwJPnpAJ
+  port: 50824
+  server: yespaintstudio.rav-kraski.ru
+  skip-cert-verify: false
+  sni: yespaintstudio.rav-kraski.ru
+  type: trojan
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: 507,559,580|RU VLESS-1027 | free-nodes
@@ -1806,7 +1857,7 @@ proxies:
 - name: 544|🇷🇺 俄罗斯 V2CROSS.COM
   password: 8r<[9'l6hAO#8ZQi
   port: 2053
-  server: 95.182.101.74
+  server: 176.124.201.78
   skip-cert-verify: false
   sni: Koma-YT.PAGeS.Dev
   type: trojan
@@ -1838,14 +1889,6 @@ proxies:
   sni: s516.okgfw.top
   tls: false
   type: hysteria2
-- name: '559,580|RU TROJAN-142 | free-nodes #1'
-  network: tcp
-  password: 7aXwJPnpAJ
-  port: 50824
-  server: yespaintstudio.rav-kraski.ru
-  skip-cert-verify: false
-  sni: yespaintstudio.rav-kraski.ru
-  type: trojan
 - name: '559,580|俄羅斯節點丨yoyapai.com #3'
   network: ws
   password: 8r<[9'l6hAO#8ZQi
@@ -1858,7 +1901,7 @@ proxies:
     headers:
       Host: Koma-YT.PAGeS.Dev
     path: '%2FtrTelegram%F0%9F%87%A8%F0%9F%87%B3%20%40WangCai2'
-- name: 559|俄罗斯+V2CROSS.COM
+- name: '559|俄罗斯+V2CROSS.COM #7'
   network: ws
   password: 8r<[9'l6hAO#8ZQi
   port: 443
@@ -1882,7 +1925,7 @@ proxies:
     headers:
       Host: Koma-YT.PAGeS.Dev
     path: '%2FtrTelegram%F0%9F%87%A8%F0%9F%87%B3%20%40WangCai2'
-- name: '559|俄罗斯+V2CROSS.COM #1'
+- name: '559|俄罗斯+V2CROSS.COM #8'
   network: ws
   password: 8r<[9'l6hAO#8ZQi
   port: 2053
