@@ -10,7 +10,7 @@ proxies:
   uuid: 000a0d18-02fe-4cda-a68e-96b55e067567
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '127,340,426,502,514,523,524,551,559,567,585,586|GB_speednode_0005 #3'
+  name: '127,340,426,438,502,507,514,523,524|🇸🇪 瑞典 14 #1'
   network: tcp
   port: 443
   reality-opts:
@@ -161,15 +161,21 @@ proxies:
   port: 989
   server: 121.127.46.147
   type: ss
-- name: '438,489,507,559,580|未知 VLESS-898 | free-nodes #2'
-  network: raw
-  port: 40617
-  server: 109.120.132.142
-  tls: false
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '438,523,524,551,567,585,586|GB_speednode_0008 #2'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: 978-Yxgtd3AWTVfiXEQqCstdwrT1qgsgleGPIRGQDl8
+    short-id: bdac121c7debdaba
+  server: 148.253.211.237
+  servername: www.microsoft.com
+  skip-cert-verify: false
+  tls: true
   type: vless
   udp: true
-  uuid: d8d05386-e381-40a4-bb63-715c208b3ed3
-  xudp: true
+  uuid: 980231fb-4372-5c81-b696-20aa34d33af0
 - name: '455,457,458|🇸🇪_SE_瑞典 #2'
   network: ws
   port: 443
@@ -197,12 +203,21 @@ proxies:
   server: 13.60.149.22
   sni: trojan.burgerip.co.uk
   type: trojan
-- name: '500,579,582|🇸🇪 瑞典 CCZZUU.TOP #2'
+- name: '489,507,580|未知 VLESS-898 | free-nodes #1'
+  network: raw
+  port: 40617
+  server: 109.120.132.142
+  tls: false
+  type: vless
+  udp: true
+  uuid: d8d05386-e381-40a4-bb63-715c208b3ed3
+  xudp: true
+- name: 500|[Trojan] 🇸🇪 瑞典 V2CROSS.COM
   network: ws
   password: 8r%3C%5B9%27l6hAO%238ZQi
   port: 443
   server: 185.130.46.81
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: Koma-YT.PAGeS.Dev
   type: trojan
   udp: true
@@ -212,31 +227,18 @@ proxies:
     path: /trTelegram🇨🇳 @WangCai2
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 523,524,559|🇸🇪 瑞典 9
+  name: '523,524,551,567,585,586|GB_speednode_0007 #2'
   port: 443
   reality-opts:
     public-key: 56RJlIcxwncUs5m9QSfd3waHxm6vJFBKso5IkMSsyCA
     short-id: 5d
   server: 194.238.57.104
   servername: www.icloud.com
-  tls: false
+  skip-cert-verify: false
+  tls: true
   type: vless
   udp: true
   uuid: 8046e3a1-83a7-4155-86e4-374153fe66f3
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 523,524,559|🏁 未知-7D894C20
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: 978-Yxgtd3AWTVfiXEQqCstdwrT1qgsgleGPIRGQDl8
-    short-id: bdac121c7debdaba
-  server: 148.253.211.237
-  servername: ''
-  tls: false
-  type: vless
-  udp: true
-  uuid: 980231fb-4372-5c81-b696-20aa34d33af0
 - name: '523,524|🇸🇪 瑞典 256 #1'
   password: 8r<[9'l6hAO#8ZQi
   port: 2053
@@ -301,40 +303,7 @@ proxies:
   type: trojan
   ws-opts:
     path: /trTelegram🇨🇳+@WangCai2
-- alpn:
-  - h2
-  - http/1.1
-  name: 559|🇸🇪 瑞典 195
-  password: 7aXwJPnpAJ
-  port: 50824
-  server: yespaintstudio.rav-kraski.ru
-  sni: yespaintstudio.rav-kraski.ru
-  type: trojan
-- name: 559|瑞典節點丨yoyapai.com
-  network: ws
-  password: 8r<[9'l6hAO#8ZQi
-  port: 2053
-  server: 176.125.240.147
-  skip-cert-verify: true
-  sni: Koma-YT.PAGeS.Dev
-  type: trojan
-  ws-opts:
-    headers:
-      Host: Koma-YT.PAGeS.Dev
-    path: '%2FtrTelegram%F0%9F%87%A8%F0%9F%87%B3%20%40WangCai2'
-- name: '559,580|🇸🇪SE瑞典丨yoyapai.com #1'
-  network: ws
-  password: 8r<[9'l6hAO#8ZQi
-  port: 2053
-  server: 176.125.240.63
-  skip-cert-verify: true
-  sni: Koma-YT.PAGeS.Dev
-  type: trojan
-  ws-opts:
-    headers:
-      Host: Koma-YT.PAGeS.Dev
-    path: '%2FtrTelegram%F0%9F%87%A8%F0%9F%87%B3%20%40WangCai2'
-- name: '559,580|瑞典節點丨yoyapai.com #2'
+- name: 580|瑞典節點丨yoyapai.com
   network: ws
   password: 8r<[9'l6hAO#8ZQi
   port: 443
@@ -346,7 +315,19 @@ proxies:
     headers:
       Host: Koma-YT.PAGeS.Dev
     path: '%2FtrTelegram%F0%9F%87%A8%F0%9F%87%B3%20%40WangCai2'
-- name: '559,580|🇸🇪SE瑞典節點丨yoyapai.com #1'
+- name: 580|🇸🇪SE瑞典丨yoyapai.com
+  network: ws
+  password: 8r<[9'l6hAO#8ZQi
+  port: 2053
+  server: 176.125.240.63
+  skip-cert-verify: true
+  sni: Koma-YT.PAGeS.Dev
+  type: trojan
+  ws-opts:
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+    path: '%2FtrTelegram%F0%9F%87%A8%F0%9F%87%B3%20%40WangCai2'
+- name: 580|🇸🇪SE瑞典節點丨yoyapai.com
   network: ws
   password: 8r<[9'l6hAO#8ZQi
   port: 443
@@ -358,146 +339,6 @@ proxies:
     headers:
       Host: Koma-YT.PAGeS.Dev
     path: '%2FtrTelegram%F0%9F%87%A8%F0%9F%87%B3%20%40WangCai2'
-- name: 559|🇸🇪 瑞典-96952998
-  network: tcp
-  port: 8443
-  reality-opts:
-    public-key: N0QyBaacGqSpRv_Ib4jsSx5A1kfE8IE1w0HcDB5w1BE
-    short-id: ''
-  server: 109.120.133.184
-  servername: ''
-  tls: false
-  type: vless
-  uuid: 10e82fcc-94ec-4d09-8855-579bb55b77e4
-- name: 559|🇸🇪 瑞典-5D159D9F
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: OCLtjVdRxsou3429LRfjkDYgiAPs24TSgSeFZpChCEw
-    short-id: d67ec5a8fc40ebea
-  server: swe02.myxasecure.space
-  servername: ''
-  tls: false
-  type: vless
-  uuid: 5381a1bb-479a-412a-9d99-08ccbc008828
-- name: 559|🇸🇪 瑞典-F4D3CEAF
-  network: ws
-  port: 2053
-  server: 176.125.240.186
-  servername: ''
-  tls: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.111000.v6.rocks
-    path: '%2F%25253Fed%25253D2560%252526https%25253A%2F%2Ft.me%2FWangCai2%2525F0%25259F%252587%2525A8%2525F0%25259F%252587%2525B3'
-- name: 559|🇸🇪 瑞典-5661083D
-  network: ws
-  port: 2053
-  server: 185.82.126.239
-  servername: ''
-  tls: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.111000.indevs.in
-    path: '%2F%253FTelegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2540%2540jdfxq'
-- name: 559|🇸🇪 瑞典-392225DB
-  network: ws
-  port: 443
-  server: 193.232.178.63
-  servername: ''
-  tls: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.111000.v6.rocks
-    path: '%2F%253Fhttps%253A%2F%2Ft.me%2FWangCai2%25F0%259F%2587%25A8%25F0%259F%2587%25B3'
-- name: 559|🇸🇪 瑞典-27A3DA77
-  network: ws
-  port: 443
-  server: 77.110.96.142
-  servername: ''
-  tls: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.latonyamadeline.ndjp.net
-    path: '%2F%253Fhttps%253A%2F%2Ft.me%2FWangCai2%25F0%259F%2587%25A8%25F0%259F%2587%25B3'
-- name: 559|🇸🇪 瑞典-D1DA9FB9
-  network: ws
-  port: 443
-  server: 83.147.254.245
-  servername: ''
-  tls: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.111000.v6.rocks
-    path: '%2F%253Fhttps%253A%2F%2Ft.me%2FWangCai2%25F0%259F%2587%25A8%25F0%259F%2587%25B3'
-- name: 559|🇸🇪 瑞典-BB866D69
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: BfJeaF35N3m4tBfBbdWC0i-D-Hj8yWZSHec_hpT7CS4
-    short-id: 9af851a265f4dad6
-  server: 185.103.103.213
-  servername: ''
-  tls: false
-  type: vless
-  uuid: 76ef4299-78d9-49a9-9620-a6b63c5519fd
-- name: 559|🇸🇪 瑞典-114E89C5
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: LszM5vYxUf7XqS_FRmhhJHcIOnqAMnOKcQ7j-QE0sWQ
-    short-id: 6ba85279e30d44c2
-  server: 144.31.230.111
-  servername: ''
-  tls: false
-  type: vless
-  uuid: 84c0e8e7-c497-45c2-9c13-777a2fa9e6f7
-- name: 559|🇸🇪 瑞典-D8ECB80D
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: LszM5vYxUf7XqS_FRmhhJHcIOnqAMnOKcQ7j-QE0sWQ
-    short-id: 6ba85279e30d44c2
-  server: 144.31.230.175
-  servername: ''
-  tls: false
-  type: vless
-  uuid: 84c0e8e7-c497-45c2-9c13-777a2fa9e6f7
-- name: 559|🇸🇪 瑞典-33904E92
-  network: ws
-  port: 2053
-  server: shop.app
-  servername: ''
-  tls: true
-  type: vless
-  uuid: 8c4604ef-749c-4b56-adf1-7da405002a21
-  ws-opts:
-    headers:
-      Host: qyi.fqjd663.ggff.net
-    path: '%2F'
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '559,580|未知 VLESS-741 | free-nodes #2'
-  network: raw
-  port: 8443
-  reality-opts:
-    public-key: A9jwrodyycJJV-apFQ91_rrh1vfJ_hSzZGNP9GBPGCM
-    short-id: 92d0c4089b6c1da3
-  server: 89.127.207.188
-  servername: io.ozone.ru
-  tls: false
-  type: vless
-  uuid: a67e3045-626c-42c9-8cc0-a5afa6b18b05
 - name: 728|🇸🇪 瑞典1
   password: 升级订阅解锁全部节点
   port: 10018
