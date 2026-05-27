@@ -1193,15 +1193,19 @@ proxies:
   skip-cert-verify: true
   sni: k12.tudou211.com
   type: trojan
-- name: '306,340,378,494,502,514,515,516,537,544,551,556,557|香港3|@ripaojiedian #2'
+- alterId: 0
+  name: 306,340,378,494,502,514,515,516,537,544,551,556,557,559,574|HK
   network: tcp
   password: f6d3aa07a52dbcedcb4731029e2fb6ae
   port: 2008
   server: 3.112.12.209
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: www.nintendogames.net
+  tls: true
   type: trojan
-- name: '306,340,378,494,502,514,515,516,537,544,551,556,557|香港4|@ripaojiedian #2'
+  udp: true
+- name: '306,340,378,494,502,514,515,516,537,544,551,556,557,559|11,12|香港4|@ripaojiedian
+    #4'
   network: tcp
   password: BxceQaOe
   port: 4327
@@ -1209,7 +1213,8 @@ proxies:
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- name: '306,340,378,494,502,514,515,516,537,544,551,556,557|日本|@ripaojiedian #2'
+- name: '306,340,378,494,502,514,515,516,537,544,551,556,557,559|11,12|日本|@ripaojiedian
+    #2'
   network: tcp
   password: BxceQaOe
   port: 4633
@@ -1217,22 +1222,28 @@ proxies:
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
-- name: '306,340,378,494,502,514,515,516,537,544,551,556,557|日本3|@ripaojiedian #2'
+- alterId: 0
+  name: 306,340,378,494,502,514,515,516,537,544,551,556,557,559,574|🇯🇵JP日本3
   network: tcp
   password: f6d3aa07a52dbcedcb4731029e2fb6ae
   port: 11541
   server: 3.112.12.209
   skip-cert-verify: true
   sni: www.nintendogames.net
+  tls: true
   type: trojan
-- name: '306,340,378,494,502,514,515,516,537,544,551,556,557|新加坡2|@ripaojiedian #2'
+  udp: true
+- alterId: 0
+  name: 306,340,378,494,502,514,515,516,537,544,551,556,557,559,574|🇸🇬SG新加坡3
   network: tcp
   password: f6d3aa07a52dbcedcb4731029e2fb6ae
   port: 2511
   server: 13.115.88.193
   skip-cert-verify: true
   sni: www.nintendogames.net
+  tls: true
   type: trojan
+  udp: true
 - client-fingerprint: firefox
   grpc-opts:
     grpc-service-name: tj
@@ -1335,45 +1346,33 @@ proxies:
   udp: true
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '340,502,514,551,559,567,585,586|JP_speednode_0013 #3'
+  name: '340,502,551,559|JP_speednode_0013 #2'
   port: 443
-  reality-opts:
-    public-key: CNUdP4EqYrvDYcw3E3EHCm1flSgKAUaO22XE5F2HAjI
-    short-id: 0eb5fb6958f835da
   server: j0uhwj.jpvless.yydzx.xyz
   servername: www.bandainamcoent.co.jp
   skip-cert-verify: false
   tls: true
   type: vless
-  udp: true
   uuid: 2219a1b1-9290-4ac5-94fd-6cfc1fb25280
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '340,502,514,551,559,567,585,586|JP_speednode_0014 #3'
+  name: '340,502,551,559|JP_speednode_0014 #2'
   port: 443
-  reality-opts:
-    public-key: CNUdP4EqYrvDYcw3E3EHCm1flSgKAUaO22XE5F2HAjI
-    short-id: 0eb5fb6958f835da
   server: tu2aq8.jpvless.yydzx.xyz
   servername: www.bandainamcoent.co.jp
   skip-cert-verify: false
   tls: true
   type: vless
-  udp: true
   uuid: 2219a1b1-9290-4ac5-94fd-6cfc1fb25280
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '340,502,514,551,559,567,585,586|JP_speednode_0015 #3'
+  name: '340,502,551,559|JP_speednode_0015 #2'
   port: 443
-  reality-opts:
-    public-key: CNUdP4EqYrvDYcw3E3EHCm1flSgKAUaO22XE5F2HAjI
-    short-id: 0eb5fb6958f835da
   server: rt643a.jpvless.yydzx.xyz
   servername: www.bandainamcoent.co.jp
   skip-cert-verify: false
   tls: true
   type: vless
-  udp: true
   uuid: 2219a1b1-9290-4ac5-94fd-6cfc1fb25280
 - name: 356|🇯🇵1 |  34.4MB/s
   network: ws
@@ -1395,22 +1394,20 @@ proxies:
   type: ss
 - cipher: aes-128-gcm
   country: 🇬🇧GB
-  name: 356,357,378,435,440,489,537,538|🇯🇵JP-149.22.87.240-0768 | 40.1...
+  name: 356,357,378,435,440,537,538|🇯🇵JP-149.22.87.240-0768 | 40.1...
   password: shadowsocks
   port: 443
   server: 149.22.87.240
   type: ss
-  udp: true
 - cipher: aes-128-gcm
-  country: 🇬🇧GB
-  name: 356,357,378,435,440,489,537,538|🇯🇵JP-149.22.87.241-0767 | 37.5...
+  country: 🇧GB
+  name: 356,357,378,435,440,537,538|🇯🇵JP-149.22.87.241-0767 | 37.5...
   password: shadowsocks
   port: 443
   server: 149.22.87.241
   type: ss
-  udp: true
 - cipher: aes-128-gcm
-  country: 🇧GB
+  country: 🇬🇧GB
   name: 356,357,378,435,440,537,538|🇯🇵JP-149.22.87.204-0145 | 52.7...
   password: shadowsocks
   port: 443
@@ -2463,7 +2460,7 @@ proxies:
       Host: jp01.a0a.xyz
     path: /
 - cipher: aes-256-gcm
-  country: 🇺🇸 US
+  country: 🇺 US
   name: 378,435,476,481,537,538|🇯🇵JP-47.79.144.115-4782 | 0.0M...
   password: GTZI5AbjNAeWQG0oVNptvWJogHNKiiKA
   port: 40003
@@ -2574,92 +2571,70 @@ proxies:
     headers:
       Host: 138.2.52.176
     path: /
-- alterId: 0
-  name: 378,494,536,537,559,574|🇭🇰HK香港3
-  network: tcp
+- name: '378,494,536,537|🇵JP-13.231.74.103-0720 #1'
   password: f6d3aa07a52dbcedcb4731029e2fb6ae
   port: 2008
   server: 13.231.74.103
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: www.nintendogames.net
-  tls: true
   type: trojan
-  udp: true
-- name: '378,494,536,537,559|11,12|日本|@ripaojiedian #2'
-  network: tcp
+- name: '378,494,536,537|🇵JP-13.114.188.23-0723 #1'
   password: BxceQaOe
   port: 4633
   server: 13.114.188.23
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: t.me%252Fripaojiedian
   type: trojan
-- alterId: 0
-  name: 378,494,536,537,559,574|JP
-  network: tcp
+- name: '378,494,536,537|🇯🇵JP-52.199.67.57-0724 #1'
   password: f6d3aa07a52dbcedcb4731029e2fb6ae
   port: 11541
   server: 52.199.67.57
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: www.nintendogames.net
-  tls: true
   type: trojan
-  udp: true
-- alterId: 0
-  name: 378,494,536,537,559,574|🇬SG新加坡3
-  network: tcp
+- name: '378,494,536,537|🇵JP-52.199.67.57-0726 #1'
   password: f6d3aa07a52dbcedcb4731029e2fb6ae
   port: 1180
   server: 52.199.67.57
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: www.nintendogames.net
-  tls: true
   type: trojan
-  udp: true
-- name: '378,494,536,537,559|11,12|新加坡3|@ripaojiedian #4'
-  network: tcp
+- name: '378,494,536,537|🇵JP-13.114.188.23-0728 #1'
   password: BxceQaOe
   port: 10478
   server: 13.114.188.23
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: t.me%252Fripaojiedian
   type: trojan
-- alterId: 0
-  name: 378,494,536,537,559,574|🇺🇸US美国21
-  network: tcp
+- name: '378,494,536,537|🇯🇵JP-52.199.67.57-0729 #1'
   password: f6d3aa07a52dbcedcb4731029e2fb6ae
   port: 6604
   server: 52.199.67.57
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: www.nintendogames.net
-  tls: true
   type: trojan
-  udp: true
-- alterId: 0
-  name: '378,494,523,524,536,537,559,574|🇺🇸US美国19 #1'
-  network: tcp
+- name: '378,494,523,524,536,537|🇯🇵JP-43.207.110.128-0730 #1'
   password: f6d3aa07a52dbcedcb4731029e2fb6ae
   port: 5224
   server: 43.207.110.128
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: www.nintendogames.net
   tls: true
   type: trojan
   udp: true
-- name: '378,494,536,537,559|11,12|美国3|@ripaojiedian #4'
-  network: tcp
+- name: '378,494,536,537|🇯🇵JP-13.114.188.23-0731 #1'
   password: BxceQaOe
   port: 22057
   server: 13.114.188.23
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: t.me%2Fripaojiedian
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 378,494,507,537,559,580|未知 VMESS-1082 | free-nodes
+  name: '378,494,537,559,580|未知 VMESS-1082 | free-nodes #1'
   network: ws
   port: '80'
   server: 168.138.43.75
-  servername: ''
   skip-cert-verify: false
   tls: false
   type: vmess
@@ -2670,7 +2645,7 @@ proxies:
     path: /cctv13.m3u8
 - alterId: 0
   cipher: auto
-  name: '378,494,507,536,537,559,580|未知 VMESS-1188 | free-nodes #1'
+  name: 378,494,536,537,559,580|未知 VMESS-1188 | free-nodes
   network: ws
   port: '80'
   server: jp01.a0a.xyz
@@ -3288,7 +3263,7 @@ proxies:
   port: 2333
   server: 54.199.83.239
   type: ss
-- country: 🇬🇧GB
+- country: 🇧GB
   name: '378,435,436,536,537|🇵JP-52.195.12.80-4649 #1'
   password: IL37892054
   port: 443
@@ -3711,30 +3686,22 @@ proxies:
   type: vmess
   uuid: 04621bae-ab36-11ec-b909-0242ac120002
   ws-path: /
-- client-fingerprint: chrome
-  name: 438,494,559|🏁 未知-8AF54FCB
+- alterId: 0
+  cipher: auto
+  name: '438,494|🔥Join+Telegram:@Farah_VPN🟣 #110'
   network: tcp
-  port: 8443
-  server: 178.249.213.177
+  port: '32221'
+  server: 153.121.73.175
   servername: ''
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  uuid: 394f6981-a782-4779-9a85-e6cf22935d93
-- cipher: aes-256-gcm
-  country: 🇵JP
-  name: 440,489|⚪🏳️_github.com/Ruk1ng001_d082f...
-  password: 6c4bd474-ac23-47fc-8742-c8f990357836
-  port: 19287
-  server: ss.021.node-for-bigairport.win
-  type: ss
-  udp: true
+  tls: false
+  type: vmess
+  uuid: b06054ae-f249-438e-998a-8e67bd8df653
 - alterId: 0
   cipher: auto
   country: 🇯🇵JP
   h2-opts: {}
   http-opts: {}
-  name: 440,494,507,559,580|未知 VMESS-1074 | free-nodes
+  name: '440,494,559,580|未知 VMESS-1074 | free-nodes #1'
   network: tcp
   port: '49803'
   server: 153.121.73.175
@@ -3796,7 +3763,7 @@ proxies:
   type: hysteria2
 - alterId: 0
   cipher: auto
-  name: '459,464,494,544,559,580|JP日本(mibei77.com 米贝节点分享) #17'
+  name: '459,464,494,544,559,580|JP日本(mibei77.com 米贝节点分享) #16'
   network: tcp
   port: '56738'
   server: 103.127.243.59
@@ -4435,98 +4402,37 @@ proxies:
       Host: Koma-YT.PAGeS.Dev
     path: /trTelegram🇨🇳 @WangCai2
 - name: 489|🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001...
-  obfs: salamander
-  obfs-password: ZTBjNDA0YTVhNTFkMzFlOQ==
-  password: c90cedc3-8d7f-4c7d-8bd7-d011d694aef3
-  port: 60000
-  server: hyfnjp01.769970.xyz
+  password: 9c0347aa-80f3-42bd-a906-9c645b4574cf
+  port: 8081
+  server: 1jp003.769970.xyz
   skip-cert-verify: true
-  sni: hyfnjp01.769970.xyz
+  sni: 1jp003.769970.xyz
   type: hysteria2
 - name: '489|🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001... #1'
-  obfs: salamander
-  obfs-password: ZTBjNDA0YTVhNTFkMzFlOQ==
-  password: 64c5b7d0-87aa-45eb-9721-3602325fa106
-  port: 60000
-  server: hyfnjp01.769970.xyz
-  skip-cert-verify: true
-  sni: hyfnjp01.769970.xyz
-  type: hysteria2
-- name: '489|🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001... #2'
-  password: 39c2e591-2ebe-4a6f-bea4-803783cd5183
-  port: 8080
-  server: hyfnjp03.769970.xyz
-  skip-cert-verify: true
-  sni: hyfnjp03.769970.xyz
-  type: hysteria2
-- name: '489|🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001... #3'
-  password: 247c71ea-fc3b-415f-92d2-db4c11f0f7c8
-  port: 8080
-  server: jp06.459292.xyz
-  skip-cert-verify: true
-  sni: jp06.459292.xyz
-  type: hysteria2
-- name: '489|🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001... #4'
-  obfs: salamander
-  obfs-password: ZTBjNDA0YTVhNTFkMzFlOQ==
-  password: aecd8c25-fd16-42a3-aefb-89c89557828f
-  port: 60000
-  server: jp03.769970.xyz
-  skip-cert-verify: true
-  sni: jp03.769970.xyz
-  type: hysteria2
-- name: '489|🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001... #5'
-  obfs: salamander
-  obfs-password: ZTBjNDA0YTVhNTFkMzFlOQ==
-  password: aecd8c25-fd16-42a3-aefb-89c89557828f
-  port: 60000
-  server: hyfnjp01.769970.xyz
-  skip-cert-verify: true
-  sni: hyfnjp01.769970.xyz
-  type: hysteria2
-- name: '489|🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001... #6'
-  password: 9c0347aa-80f3-42bd-a906-9c645b4574cf
-  port: 8081
-  server: 1jp003.769970.xyz
-  skip-cert-verify: true
-  sni: 1jp003.769970.xyz
-  type: hysteria2
-- name: '489|🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001... #7'
-  obfs: salamander
-  obfs-password: ZTBjNDA0YTVhNTFkMzFlOQ==
-  password: 9c0347aa-80f3-42bd-a906-9c645b4574cf
-  port: 60000
-  server: jp03.769970.xyz
-  skip-cert-verify: true
-  sni: jp03.769970.xyz
-  type: hysteria2
-- name: '489|🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001... #8'
-  password: 247c71ea-fc3b-415f-92d2-db4c11f0f7c8
-  port: 8080
-  server: hyfnjp03.769970.xyz
-  skip-cert-verify: true
-  sni: hyfnjp03.769970.xyz
-  type: hysteria2
-- name: '489|🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001... #9'
   password: 39c2e591-2ebe-4a6f-bea4-803783cd5183
   port: 8081
   server: 1jp003.769970.xyz
   skip-cert-verify: true
   sni: 1jp003.769970.xyz
   type: hysteria2
-- name: '489|🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001... #10'
-  obfs: salamander
-  obfs-password: ZTBjNDA0YTVhNTFkMzFlOQ==
-  password: 94a5dea9-6175-4cd1-8f0b-786bde8eaf9b
-  port: 60000
-  server: hyfnjp01.769970.xyz
-  skip-cert-verify: true
-  sni: hyfnjp01.769970.xyz
-  type: hysteria2
+- alpn:
+  - ''
+  alterId: '0'
+  cipher: auto
+  name: 489|🟢🇯🇵[🤖📺🔍]_github.com/Ruk1ng001_...
+  network: tcp
+  port: 11122
+  server: dotu-jpv1.kunlun03dns.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 6b989fce-172e-37a6-b324-3922008b17f9
+  xudp: true
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: '489|🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001... #13'
+  name: '489|🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001... #2'
   network: ws
   port: 443
   server: cfn.cdn.moe233.org
@@ -4541,33 +4447,34 @@ proxies:
       Host: d232fuc3xd1vzm.cloudfront.net
     max-early-data: 2048
     path: /riolu/4
-- client-fingerprint: firefox
-  ech-opts:
-    enable: true
-    query-server-name: encryptedsni.com
-  name: '489|🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001... #14'
-  network: ws
-  port: 443
-  server: 38.47.126.125
-  servername: qznql.node-proxy.chinat.indevs.in
+- alpn:
+  - ''
+  alterId: '0'
+  cipher: auto
+  name: 489|🟢🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001...
+  network: tcp
+  port: 11119
+  server: dotu-jpv1.kunlun03dns.com
   skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 26524cce-d514-4014-a426-365fb266a14d
-  ws-opts:
-    headers:
-      Host: qznql.node-proxy.chinat.indevs.in
-    path: /danfeng?ed=2560
-- name: '489,559|A - 🇯🇵 JP 17 TG: @nodpai'
-  password: aecd8c25-fd16-42a3-aefb-89c89557828f
-  port: 8080
-  server: hyfnjp03.769970.xyz
-  skip-cert-verify: true
-  sni: hyfnjp03.769970.xyz
   tls: false
-  type: hysteria2
+  type: vmess
+  udp: true
+  uuid: 6b989fce-172e-37a6-b324-3922008b17f9
+  xudp: true
+- alpn:
+  - ''
+  alterId: '0'
+  cipher: auto
+  name: '489|🟢🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001... #1'
+  network: tcp
+  port: 11120
+  server: dotu-jpv1.kunlun03dns.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 6b989fce-172e-37a6-b324-3922008b17f9
+  xudp: true
 - cipher: aes-256-gcm
   name: 489|🔴🇯🇵_github.com/Ruk1ng001_7738b...
   password: 6c4bd474-ac23-47fc-8742-c8f990357836
@@ -4578,7 +4485,7 @@ proxies:
 - client-fingerprint: chrome
   encryption: none
   flow: xtls-rprx-vision
-  name: 489|🟢🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001...
+  name: '489|🟢🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001... #2'
   network: tcp
   port: 6379
   reality-opts:
@@ -4591,6 +4498,20 @@ proxies:
   udp: true
   uuid: 88888888-8888-8888-8888-888888888888
   xudp: true
+- alpn:
+  - ''
+  alterId: '0'
+  cipher: auto
+  name: '489|🟢🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001... #3'
+  network: tcp
+  port: 11121
+  server: dotu-jpv1.kunlun03dns.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 6b989fce-172e-37a6-b324-3922008b17f9
+  xudp: true
 - cipher: aes-256-gcm
   name: 489|🔴🇯🇵_github.com/Ruk1ng001_64f79...
   password: 6c4bd474-ac23-47fc-8742-c8f990357836
@@ -4598,14 +4519,7 @@ proxies:
   server: ss.034.node-for-bigairport.win
   type: ss
   udp: true
-- name: '489|🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001... #16'
-  password: 3f2d3497-6843-46f1-aa34-5469dc953259
-  port: 8080
-  server: jp06.459292.xyz
-  skip-cert-verify: true
-  sni: jp06.459292.xyz
-  type: hysteria2
-- name: '489|🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001... #17'
+- name: '489|🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001... #3'
   obfs: salamander
   obfs-password: ZTBjNDA0YTVhNTFkMzFlOQ==
   password: 522c2107-f297-4420-bd56-ec82b175aa2d
@@ -4614,132 +4528,14 @@ proxies:
   skip-cert-verify: true
   sni: hyfnjp01.769970.xyz
   type: hysteria2
-- name: '489,559|A - 🇯🇵 JP 10 TG: @nodpai'
-  password: c90cedc3-8d7f-4c7d-8bd7-d011d694aef3
-  port: 8080
-  server: hyfnjp03.769970.xyz
-  skip-cert-verify: true
-  sni: hyfnjp03.769970.xyz
-  tls: false
-  type: hysteria2
-- name: '489|🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001... #19'
+- name: '489|🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001... #4'
   password: 3f2d3497-6843-46f1-aa34-5469dc953259
   port: 8081
   server: 1jp003.769970.xyz
   skip-cert-verify: true
   sni: 1jp003.769970.xyz
   type: hysteria2
-- name: '489|🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001... #20'
-  password: 94a5dea9-6175-4cd1-8f0b-786bde8eaf9b
-  port: 8080
-  server: hyfnjp03.769970.xyz
-  skip-cert-verify: true
-  sni: hyfnjp03.769970.xyz
-  type: hysteria2
-- name: '489|🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001... #21'
-  password: 9c0347aa-80f3-42bd-a906-9c645b4574cf
-  port: 8080
-  server: hyfnjp03.769970.xyz
-  skip-cert-verify: true
-  sni: hyfnjp03.769970.xyz
-  type: hysteria2
-- name: '489|🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001... #22'
-  obfs: salamander
-  obfs-password: ZTBjNDA0YTVhNTFkMzFlOQ==
-  password: df1a0967-5b79-41ec-8d12-915e9056c6e2
-  port: 60000
-  server: jp03.769970.xyz
-  skip-cert-verify: true
-  sni: jp03.769970.xyz
-  type: hysteria2
-- down: ''
-  fingerprint: ''
-  name: '489|🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001... #23'
-  obfs: ''
-  obfs-password: ''
-  password: 9678fe03-ca76-4044-8803-324d5e7fd7c8
-  port: 60000
-  server: aws-linkhy18.liangxin1.xyz
-  skip-cert-verify: true
-  sni: bilibili-jp4.biliimg.com
-  type: hysteria2
-  up: ''
-- name: '489|🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001... #24'
-  password: 15893455-4d21-4338-a273-01aed1d77fa2
-  port: 8080
-  server: jp06.459292.xyz
-  skip-cert-verify: true
-  sni: jp06.459292.xyz
-  type: hysteria2
-- name: '489,559|A - 🇯🇵 JP 02 TG: @nodpai'
-  password: 522c2107-f297-4420-bd56-ec82b175aa2d
-  port: 8080
-  server: hyfnjp03.769970.xyz
-  skip-cert-verify: true
-  sni: hyfnjp03.769970.xyz
-  tls: false
-  type: hysteria2
-- name: '489|🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001... #26'
-  password: df1a0967-5b79-41ec-8d12-915e9056c6e2
-  port: 8081
-  server: 1jp003.769970.xyz
-  skip-cert-verify: true
-  sni: 1jp003.769970.xyz
-  type: hysteria2
-- name: '489|🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001... #27'
-  obfs: salamander
-  obfs-password: ZTBjNDA0YTVhNTFkMzFlOQ==
-  password: f6836112-e9f3-4803-a366-5606ac214324
-  port: 60000
-  server: jp03.769970.xyz
-  skip-cert-verify: true
-  sni: jp03.769970.xyz
-  type: hysteria2
-- name: '489|🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001... #28'
-  password: f6836112-e9f3-4803-a366-5606ac214324
-  port: 8080
-  server: jp06.459292.xyz
-  skip-cert-verify: true
-  sni: jp06.459292.xyz
-  type: hysteria2
-- name: '489|🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001... #29'
-  obfs: salamander
-  obfs-password: ZTBjNDA0YTVhNTFkMzFlOQ==
-  password: 64c5b7d0-87aa-45eb-9721-3602325fa106
-  port: 60000
-  server: jp03.769970.xyz
-  skip-cert-verify: true
-  sni: jp03.769970.xyz
-  type: hysteria2
-- name: '489|🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001... #30'
-  password: 94a5dea9-6175-4cd1-8f0b-786bde8eaf9b
-  port: 8081
-  server: 1jp003.769970.xyz
-  skip-cert-verify: true
-  sni: 1jp003.769970.xyz
-  type: hysteria2
-- name: '489|🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001... #31'
-  password: 505cb813-5647-4898-918c-cde760d515a8
-  port: 8081
-  server: 1jp003.769970.xyz
-  skip-cert-verify: true
-  sni: 1jp003.769970.xyz
-  type: hysteria2
-- name: '489|🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001... #32'
-  password: 505cb813-5647-4898-918c-cde760d515a8
-  port: 8080
-  server: jp06.459292.xyz
-  skip-cert-verify: true
-  sni: jp06.459292.xyz
-  type: hysteria2
-- cipher: aes-256-gcm
-  name: '489|🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001... #33'
-  password: 6c4bd474-ac23-47fc-8742-c8f990357836
-  port: 19887
-  server: ss.032.node-for-bigairport.win
-  type: ss
-  udp: true
-- name: '489|🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001... #34'
+- name: '489|🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001... #5'
   obfs: salamander
   obfs-password: ZTBjNDA0YTVhNTFkMzFlOQ==
   password: 505cb813-5647-4898-918c-cde760d515a8
@@ -4748,106 +4544,16 @@ proxies:
   skip-cert-verify: true
   sni: hyfnjp01.769970.xyz
   type: hysteria2
-- name: '489|🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001... #35'
-  obfs: salamander
-  obfs-password: ZTBjNDA0YTVhNTFkMzFlOQ==
-  password: 15893455-4d21-4338-a273-01aed1d77fa2
-  port: 60000
-  server: jp03.769970.xyz
-  skip-cert-verify: true
-  sni: jp03.769970.xyz
-  type: hysteria2
-- name: '489|🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001... #36'
-  password: f6836112-e9f3-4803-a366-5606ac214324
-  port: 8081
-  server: 1jp003.769970.xyz
-  skip-cert-verify: true
-  sni: 1jp003.769970.xyz
-  type: hysteria2
-- name: '489|🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001... #37'
-  password: 64c5b7d0-87aa-45eb-9721-3602325fa106
-  port: 8081
-  server: 1jp003.769970.xyz
-  skip-cert-verify: true
-  sni: 1jp003.769970.xyz
-  type: hysteria2
-- name: '489|🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001... #38'
-  obfs: salamander
-  obfs-password: ZTBjNDA0YTVhNTFkMzFlOQ==
-  password: 3f2d3497-6843-46f1-aa34-5469dc953259
-  port: 60000
-  server: jp03.769970.xyz
-  skip-cert-verify: true
-  sni: jp03.769970.xyz
-  type: hysteria2
-- name: '489|🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001... #39'
-  obfs: salamander
-  obfs-password: ZTBjNDA0YTVhNTFkMzFlOQ==
-  password: 3f2d3497-6843-46f1-aa34-5469dc953259
-  port: 60000
-  server: hyfnjp01.769970.xyz
-  skip-cert-verify: true
-  sni: hyfnjp01.769970.xyz
-  type: hysteria2
-- name: '489|🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001... #40'
-  obfs: salamander
-  obfs-password: ZTBjNDA0YTVhNTFkMzFlOQ==
-  password: 94a5dea9-6175-4cd1-8f0b-786bde8eaf9b
-  port: 60000
-  server: jp03.769970.xyz
-  skip-cert-verify: true
-  sni: jp03.769970.xyz
-  type: hysteria2
 - client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '489|🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001... #41'
+  name: '489|🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001... #6'
   network: tcp
-  port: 443
-  reality-opts:
-    public-key: CNUdP4EqYrvDYcw3E3EHCm1flSgKAUaO22XE5F2HAjI
-    short-id: 0eb5fb6958f835da
-  server: jcv8sp.jpvless.yydzx.xyz
-  servername: www.bandainamcoent.co.jp
+  password: b6096ffb-656a-4fec-8840-0d032089a3e0
+  port: 12206
+  server: f533f9b2-c69a-4dd0-bc63-f2ab94dd5f53.f1eb10ae-1d82-4c6a-b4dd-bd9525520956.com
   skip-cert-verify: false
-  tls: true
-  type: vless
+  sni: 123.yuanul.com
+  type: trojan
   udp: true
-  uuid: 2219a1b1-9290-4ac5-94fd-6cfc1fb25280
-- down: ''
-  fingerprint: ''
-  name: '489|🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001... #42'
-  obfs: ''
-  obfs-password: ''
-  password: 9678fe03-ca76-4044-8803-324d5e7fd7c8
-  port: 60000
-  server: aws-linkhy17.liangxin1.xyz
-  skip-cert-verify: true
-  sni: bilibili-jp3.biliimg.com
-  type: hysteria2
-  up: ''
-- name: '489,559|A - 🇯🇵 JP 06 TG: @nodpai'
-  password: 505cb813-5647-4898-918c-cde760d515a8
-  port: 8080
-  server: hyfnjp03.769970.xyz
-  skip-cert-verify: true
-  sni: hyfnjp03.769970.xyz
-  tls: false
-  type: hysteria2
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '489|🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001... #44'
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: CNUdP4EqYrvDYcw3E3EHCm1flSgKAUaO22XE5F2HAjI
-    short-id: 0eb5fb6958f835da
-  server: e396qe.jpvless.yydzx.xyz
-  servername: www.bandainamcoent.co.jp
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 2219a1b1-9290-4ac5-94fd-6cfc1fb25280
 - client-fingerprint: chrome
   name: 489|🔴🇯🇵[🎬📺🔍]_github.com/Ruk1ng001_...
   network: ws
@@ -4863,84 +4569,6 @@ proxies:
       User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
         like Gecko) Chrome/61.0.3163.79 Safari/537.36
     path: /trTelegram🇨🇳 @WangCai2
-- client-fingerprint: chrome
-  name: '489|🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001... #45'
-  network: tcp
-  password: b6096ffb-656a-4fec-8840-0d032089a3e0
-  port: 12206
-  server: f533f9b2-c69a-4dd0-bc63-f2ab94dd5f53.f1eb10ae-1d82-4c6a-b4dd-bd9525520956.com
-  skip-cert-verify: false
-  sni: 123.yuanul.com
-  type: trojan
-  udp: true
-- name: '489,559|A - 🇯🇵 JP 03 TG: @nodpai'
-  password: 94a5dea9-6175-4cd1-8f0b-786bde8eaf9b
-  port: 8080
-  server: jp06.459292.xyz
-  skip-cert-verify: true
-  sni: jp06.459292.xyz
-  tls: false
-  type: hysteria2
-- client-fingerprint: firefox
-  ech-opts:
-    enable: true
-    query-server-name: encryptedsni.com
-  name: '489|🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001... #47'
-  network: ws
-  port: 443
-  server: 57.182.195.74
-  servername: qznql.node-proxy.chinat.indevs.in
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 26524cce-d514-4014-a426-365fb266a14d
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    headers:
-      Host: qznql.node-proxy.chinat.indevs.in
-    max-early-data: 2560
-    path: /danfeng
-- name: '489,559|A - 🇯🇵 JP 18 TG: @nodpai'
-  password: 64c5b7d0-87aa-45eb-9721-3602325fa106
-  port: 8080
-  server: hyfnjp03.769970.xyz
-  skip-cert-verify: true
-  sni: hyfnjp03.769970.xyz
-  tls: false
-  type: hysteria2
-- down: ''
-  fingerprint: ''
-  name: '489|🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001... #49'
-  obfs: ''
-  obfs-password: ''
-  password: 9678fe03-ca76-4044-8803-324d5e7fd7c8
-  port: 60000
-  server: aws-linkhy16.liangxin1.xyz
-  skip-cert-verify: true
-  sni: bilibili-jp2.biliimg.com
-  type: hysteria2
-  up: ''
-- client-fingerprint: firefox
-  ech-opts:
-    enable: true
-    query-server-name: encryptedsni.com
-  name: '489|🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001... #50'
-  network: ws
-  port: 443
-  server: 154.36.186.248
-  servername: qznql.node-proxy.chinat.indevs.in
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 26524cce-d514-4014-a426-365fb266a14d
-  ws-opts:
-    headers:
-      Host: qznql.node-proxy.chinat.indevs.in
-    path: /danfeng?ed=2560
 - alpn:
   - h2
   - http/1.1
@@ -4976,48 +4604,9 @@ proxies:
     headers:
       Host: nisav2de2t0ai8p-hd0.misa.cc.cd
     path: /@Marisa_kristi
-- name: 489,559|🇯🇵日本东京2
-  password: 9d0f6021-e1e3-47cd-a18e-722dd7f1c2ee
-  port: 443
-  ports: 55000-56000
-  server: 154.85.18.134
-  skip-cert-verify: true
-  sni: www.bing.com
-  tls: false
-  type: hysteria2
-- name: '489|🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001... #51'
-  obfs: salamander
-  obfs-password: ZTBjNDA0YTVhNTFkMzFlOQ==
-  password: 522c2107-f297-4420-bd56-ec82b175aa2d
-  port: 60000
-  server: jp03.769970.xyz
-  skip-cert-verify: true
-  sni: jp03.769970.xyz
-  type: hysteria2
-- alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: chrome
-  name: 489|🔴🇯🇵_github.com/Ruk1ng001_5388e...
-  password: 2219a1b1-9290-4ac5-94fd-6cfc1fb25280
-  port: 27004
-  server: u925j6.yytls.top
-  skip-cert-verify: false
-  sni: u925j6.yytls.top
-  type: anytls
-  udp: true
-- name: '489|🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001... #52'
-  obfs: salamander
-  obfs-password: ZTBjNDA0YTVhNTFkMzFlOQ==
-  password: c90cedc3-8d7f-4c7d-8bd7-d011d694aef3
-  port: 60000
-  server: jp03.769970.xyz
-  skip-cert-verify: true
-  sni: jp03.769970.xyz
-  type: hysteria2
 - client-fingerprint: chrome
   encryption: none
-  name: '489|🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001... #53'
+  name: '489|🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001... #7'
   network: ws
   port: 18836
   server: 172.237.12.208
@@ -5037,29 +4626,14 @@ proxies:
   - h2
   - http/1.1
   client-fingerprint: chrome
-  name: '489|🔴🇯🇵[🎬🤖]_github.com/Ruk1ng001_a... #1'
+  name: 489|🔴🇯🇵_github.com/Ruk1ng001_c0d74...
   password: 2219a1b1-9290-4ac5-94fd-6cfc1fb25280
   port: 27004
-  server: fupwpg.yytls.top
+  server: uyjlnz.yytls.top
   skip-cert-verify: false
-  sni: fupwpg.yytls.top
+  sni: uyjlnz.yytls.top
   type: anytls
   udp: true
-- client-fingerprint: chrome
-  name: '489|🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001... #54'
-  network: ws
-  password: 8r<[9'l6hAO#8ZQi
-  port: 18122
-  server: 155.248.168.35
-  skip-cert-verify: true
-  sni: Koma-YT.PAGeS.Dev
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/62.0.3202.94 Safari/537.36
-    path: /trTelegram🇨🇳 @WangCai2
 - name: '489,523,524|🇯🇵 日本 9 #1'
   network: ws
   port: 9586
@@ -5076,7 +4650,7 @@ proxies:
     path: /@Marisa_kristifp=chrome
 - alterId: '0'
   cipher: auto
-  name: '489|🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001... #56'
+  name: '489|🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001... #9'
   network: ws
   port: 16617
   server: planb.mojcn.com
@@ -5092,25 +4666,7 @@ proxies:
   xudp: true
 - client-fingerprint: chrome
   encryption: none
-  name: '489|🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001... #57'
-  network: ws
-  port: 443
-  server: 8.211.161.198
-  servername: jp2.shdetai.bond
-  tls: true
-  type: vless
-  udp: true
-  uuid: 876d9d25-19c8-462b-b364-7b47e0602f12
-  ws-opts:
-    headers:
-      Host: jp2.shdetai.bond
-      User-Agent: Mozilla/5.0 (Linux; Android 6.0.1; SM-G532M Build/MMB29T) AppleWebKit/537.36
-        (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36
-    path: /taizi
-  xudp: true
-- client-fingerprint: chrome
-  encryption: none
-  name: '489|🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001... #58'
+  name: '489|🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001... #10'
   network: ws
   port: 50443
   server: 158.101.89.113
@@ -5127,41 +4683,6 @@ proxies:
     path: /@Marisa_kristi
   xudp: true
 - client-fingerprint: chrome
-  name: '489|🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001... #59'
-  network: ws
-  port: 35311
-  server: 212.50.233.25
-  servername: rolaqoubhqt.bpd67081tsq.ddns-ip.net
-  skip-cert-verify: true
-  sni: rolaqoubhqt.bpd67081tsq.ddns-ip.net
-  tfo: false
-  tls: true
-  type: vless
-  udp: false
-  uuid: 00000000-0000-4000-8000-000000000000
-  ws-opts:
-    headers:
-      Host: rolaqoubhqt.bpd67081tsq.ddns-ip.net
-    path: /@Marisa_kristi
-- client-fingerprint: chrome
-  encryption: none
-  name: '489|🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001... #60'
-  network: ws
-  port: 10001
-  server: 47.91.19.147
-  servername: jp2.shdetai.bond
-  tls: true
-  type: vless
-  udp: true
-  uuid: 876d9d25-19c8-462b-b364-7b47e0602f12
-  ws-opts:
-    headers:
-      Host: jp2.shdetai.bond
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/68.0.3440.106 Safari/537.36
-    path: /taizi
-  xudp: true
-- client-fingerprint: chrome
   name: 489|🔴🇯🇵[🎬🤖🔍]_github.com/Ruk1ng001_...
   network: ws
   password: 8r<[9'l6hAO#8ZQi
@@ -5175,34 +4696,8 @@ proxies:
     headers:
       Host: Koma-YT.PAGeS.Dev
     path: /trTelegram🇨🇳 @WangCai2
-- alpn:
-  - h3
-  congestion-controller: bbr
-  name: '489|🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001... #61'
-  password: 876d9d25-19c8-462b-b364-7b47e0602f12
-  port: 50020
-  server: jp2.shdetai.cn
-  sni: jp2.shdetai.cn
-  type: tuic
-  udp: true
-  uuid: 876d9d25-19c8-462b-b364-7b47e0602f12
 - client-fingerprint: chrome
-  name: '489|🔴🇯🇵[🎬📺🔍]_github.com/Ruk1ng001_... #1'
-  network: ws
-  password: 8r<[9'l6hAO#8ZQi
-  port: 20770
-  server: 219.103.68.164
-  skip-cert-verify: true
-  sni: Koma-YT.PAGeS.Dev
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Linux; Android 7.0; TRT-LX3 Build/HUAWEITRT-LX3) AppleWebKit/537.36
-        (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36
-    path: /trTelegram🇨🇳 @WangCai2
-- client-fingerprint: chrome
-  name: '489|🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001... #62'
+  name: '489|🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001... #11'
   network: ws
   port: 30000
   security: tls
@@ -5216,7 +4711,7 @@ proxies:
       Host: rolaqoubhqt.bpd67081tsq.ddns-ip.net
     path: /@Marisa_kristifp=chrome
 - client-fingerprint: chrome
-  name: 489,559|🇦🇺AU澳大利亚
+  name: 489|🔴🇯🇵[📺🔍]_github.com/Ruk1ng001_a...
   network: ws
   password: 8r<[9'l6hAO#8ZQi
   port: 443
@@ -5226,10 +4721,13 @@ proxies:
   type: trojan
   udp: true
   ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36
     path: /trTelegram🇨🇳 @WangCai2
 - client-fingerprint: chrome
   encryption: none
-  name: '489|🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001... #63'
+  name: '489|🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001... #12'
   network: ws
   port: 39545
   server: 156.246.91.248
@@ -5245,24 +4743,6 @@ proxies:
         like Gecko) Chrome/70.0.3538.80 Mobile Safari/537.36
     path: /@Marisa_kristi
   xudp: true
-- client-fingerprint: chrome
-  encryption: none
-  name: '489|🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001... #64'
-  network: ws
-  port: 443
-  server: 154.12.191.206
-  servername: jp2.shdetai.bond
-  tls: true
-  type: vless
-  udp: true
-  uuid: 876d9d25-19c8-462b-b364-7b47e0602f12
-  ws-opts:
-    headers:
-      Host: jp2.shdetai.bond
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/70.0.3538.67 Safari/537.36
-    path: /taizi
-  xudp: true
 - alpn:
   - h2
   - http/1.1
@@ -5275,17 +4755,6 @@ proxies:
   sni: k7ruo8.yytls.top
   type: anytls
   udp: true
-- alpn:
-  - h3
-  congestion-controller: bbr
-  name: '489|🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001... #65'
-  password: 876d9d25-19c8-462b-b364-7b47e0602f12
-  port: 50020
-  server: jp1.shdetai.cn
-  sni: jp1.shdetai.cn
-  type: tuic
-  udp: true
-  uuid: 876d9d25-19c8-462b-b364-7b47e0602f12
 - client-fingerprint: chrome
   name: 489|🔴🇯🇵[📺]_github.com/Ruk1ng001_ea...
   network: ws
@@ -5301,25 +4770,7 @@ proxies:
       User-Agent: Mozilla/5.0 (Linux; Android 7.0; BLL-L22 Build/HUAWEIBLL-L22) AppleWebKit/537.36
         (KHTML, like Gecko) Chrome/55.0.2883.91 Mobile Safari/537.36
     path: /trTelegram🇨🇳 @WangCai2
-- client-fingerprint: chrome
-  encryption: none
-  name: '489|🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001... #66'
-  network: ws
-  port: 51294
-  server: 166.88.95.214
-  servername: jp2.shdetai.bond
-  tls: true
-  type: vless
-  udp: true
-  uuid: 876d9d25-19c8-462b-b364-7b47e0602f12
-  ws-opts:
-    headers:
-      Host: jp2.shdetai.bond
-      User-Agent: Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko)
-        Chrome/46.0.2490.71 Safari/537.36
-    path: /taizi
-  xudp: true
-- name: '489|🔴🇯🇵[🎬📺🔍]_github.com/Ruk1ng001_... #2'
+- name: '489|🔴🇯🇵[🎬📺🔍]_github.com/Ruk1ng001_... #1'
   network: ws
   password: 8r<[9'l6hAO#8ZQi
   port: 8443
@@ -5333,7 +4784,7 @@ proxies:
       Host: Koma-YT.PAGeS.Dev
     path: /trTelegram🇨🇳 @WangCai2
 - client-fingerprint: chrome
-  name: '489|🟢🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001... #2'
+  name: '489|🟢🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001... #5'
   network: tcp
   password: b6096ffb-656a-4fec-8840-0d032089a3e0
   port: 12202
@@ -5343,25 +4794,7 @@ proxies:
   type: trojan
   udp: true
 - client-fingerprint: chrome
-  encryption: none
-  name: '489|🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001... #67'
-  network: ws
-  port: 10443
-  server: 136.0.11.126
-  servername: jp2.shdetai.bond
-  tls: true
-  type: vless
-  udp: true
-  uuid: 876d9d25-19c8-462b-b364-7b47e0602f12
-  ws-opts:
-    headers:
-      Host: jp2.shdetai.bond
-      User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko)
-        Chrome/70.0.3538.110 Safari/537.36
-    path: /taizi
-  xudp: true
-- client-fingerprint: chrome
-  name: '489|🟢🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001... #3'
+  name: '489|🟢🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001... #6'
   network: tcp
   password: b6096ffb-656a-4fec-8840-0d032089a3e0
   port: 12203
@@ -5371,7 +4804,7 @@ proxies:
   type: trojan
   udp: true
 - client-fingerprint: chrome
-  name: '489|🟢🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001... #4'
+  name: '489|🟢🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001... #7'
   network: tcp
   password: b6096ffb-656a-4fec-8840-0d032089a3e0
   port: 12207
@@ -5381,13 +4814,104 @@ proxies:
   type: trojan
   udp: true
 - client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '502,551|B - 🇯🇵 JP 06 TG: @nodpai #1'
-  port: 25642
-  server: cdn.jp2.cocoduck.org
-  servername: www.apple.com
+  name: '489|🟢🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001... #8'
+  network: tcp
+  password: b6096ffb-656a-4fec-8840-0d032089a3e0
+  port: 12201
+  server: f533f9b2-c69a-4dd0-bc63-f2ab94dd5f53.f1eb10ae-1d82-4c6a-b4dd-bd9525520956.com
+  skip-cert-verify: false
+  sni: 149.yuanul.com
+  type: trojan
+  udp: true
+- alterId: '0'
+  cipher: auto
+  name: 489|🔴🇯🇵[🎬🤖📺🎪]_github.com/Ruk1ng001...
+  network: ws
+  port: 16617
+  server: t.cnmjcn.cyou
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 6bcea42f-4f70-49e5-8ed8-8067338ee7b3
+  ws-opts:
+    headers:
+      Host: 9f212577fc1fa9a13ccf657f03a1a20f.mobgslb.tbcache.com
+    path: /
+  xudp: true
+- client-fingerprint: chrome
+  encryption: none
+  name: '489|🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001... #13'
+  network: ws
+  port: 59303
+  server: 210.152.246.146
+  servername: 49ax00d7kmg3ijp3vbkua090bws.majusti.dpdns.org
   tls: true
   type: vless
+  udp: true
+  uuid: 00000000-0000-4000-8000-000000000000
+  ws-opts:
+    headers:
+      Host: 49ax00d7kmg3ijp3vbkua090bws.majusti.dpdns.org
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/67.0.3396.99 Safari/537.36
+    path: /@Marisa_kristi
+  xudp: true
+- encryption: none
+  name: '489|🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001... #14'
+  network: ws
+  port: 30032
+  security: tls
+  server: 138.3.210.67
+  servername: dcsrzh.ccwu.cc
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  uuid: 73bcd72f-9545-4cb8-8daf-7d004501880d
+  ws-opts:
+    headers:
+      Host: dcsrzh.ccwu.cc
+    path: /?ed=2560
+- client-fingerprint: chrome
+  name: '489|🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001... #15'
+  network: ws
+  password: 8r<[9'l6hAO#8ZQi
+  port: 443
+  server: 140.238.50.134
+  skip-cert-verify: true
+  sni: Koma-YT.PAGeS.Dev
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/48.0.2564.109 Safari/537.36
+    path: /trTelegram🇨🇳 @WangCai2
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  name: '489|🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001... #16'
+  password: 2219a1b1-9290-4ac5-94fd-6cfc1fb25280
+  port: 14225
+  server: odibmh.jpanytls.yydzx.xyz
+  skip-cert-verify: false
+  sni: odibmh.jpanytls.yydzx.xyz
+  type: anytls
+  udp: true
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '502,514,551,559,567,585,586|CN_speednode_0013 #1'
+  port: 25642
+  reality-opts:
+    public-key: VoA8WXthSh6CroV4pHK7V6L5gYUw8MHTo2kIVknTXSE
+    short-id: 693b25e06841ac7f
+  server: cdn.jp2.cocoduck.org
+  servername: www.apple.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
   uuid: 4dd69f91-190c-413d-88c7-2f1675a98d85
 - cipher: aes-256-gcm
   client-fingerprint: chrome
@@ -5455,7 +4979,7 @@ proxies:
   type: ss
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '522,559,580,581|🇯🇵_JP_日本 #12'
+  name: '522,548,559,580,581|🇯🇵_JP_日本 #14'
   port: 55305
   reality-opts:
     public-key: 7BS-JUFgYVaWrwwyDSiVq_YDoG36w8cRd4U8HvEg-F0
@@ -5466,7 +4990,7 @@ proxies:
   type: vless
   udp: true
   uuid: 9c5d1bf0-d58b-4001-9e7c-0c1fa314068c
-- name: 522|🇵_JP_日本_1
+- name: '522,548|🇯🇵_JP_日本_1 #1'
   network: ws
   port: 443
   server: 158.51.110.12
@@ -5479,7 +5003,7 @@ proxies:
     headers:
       Host: pagescm.freen5.cc.cd
     path: /showfp=chrome
-- name: '523,524|🇯🇵 日本 48 #1'
+- name: '523,524,559|🇯🇵 日本 48 #2'
   password: f6d3aa07a52dbcedcb4731029e2fb6ae
   port: 5224
   server: 43.207.110.128
@@ -5488,34 +5012,6 @@ proxies:
   tls: true
   type: trojan
   udp: true
-- delay: 2449
-  name: 528|日本 - 成田市 - 1
-  network: ws
-  password: 8r<[9'l6hAO#8ZQi
-  port: 8443
-  server: 103.125.216.22
-  skip-cert-verify: true
-  sni: Koma-YT.PAGeS.Dev
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: Koma-YT.PAGeS.Dev
-    path: /trTelegram
-- delay: 1803
-  name: 528,559|未知37
-  network: ws
-  password: 8r<[9'l6hAO#8ZQi
-  port: 443
-  server: 161.248.254.27
-  skip-cert-verify: true
-  sni: Koma-YT.PAGeS.Dev
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: Koma-YT.PAGeS.Dev
-    path: /trTelegram🇨🇳 @WangCai2
 - name: 533|JP日本(mibei77.com 米贝节点分享)
   network: ws
   port: 443
@@ -5825,7 +5321,7 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: a13ff2e0-b1e9-3352-bb45-6ca49ea53347
+  uuid: e6718918-e49f-30a1-ac7f-f30f49c6986d
 - alterId: 2
   cipher: auto
   name: 542|🇯🇵 [vip①]日本2|低倍率 - MG Network
@@ -5835,7 +5331,7 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: a13ff2e0-b1e9-3352-bb45-6ca49ea53347
+  uuid: e6718918-e49f-30a1-ac7f-f30f49c6986d
 - alterId: 2
   cipher: auto
   name: 542|🇯🇵 [vip①]日本3|低倍率 - MG Network
@@ -5845,7 +5341,7 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: a13ff2e0-b1e9-3352-bb45-6ca49ea53347
+  uuid: e6718918-e49f-30a1-ac7f-f30f49c6986d
 - alterId: 0
   cipher: auto
   name: 542|🇵 日本 1 Nico Abema - 西瓜皮是真的皮
@@ -6106,7 +5602,7 @@ proxies:
   uuid: a3de462b-0276-4003-8f34-536b0f9d340c
 - alterId: 0
   cipher: auto
-  name: '553,559,580|未知 VMESS-1161 | free-nodes #2'
+  name: '553,559,580|未知 VMESS-1161 | free-nodes #1'
   network: tcp
   port: 38510
   server: 8.209.218.109
@@ -6289,7 +5785,7 @@ proxies:
   uuid: 0be3a336-85ad-4c42-930b-05318236e68c
 - alterId: 0
   cipher: auto
-  name: '553,559,580|未知 VMESS-1144 | free-nodes #2'
+  name: '553,559,580|未知 VMESS-1144 | free-nodes #1'
   network: tcp
   port: '15777'
   server: 47.91.19.32
@@ -6311,7 +5807,7 @@ proxies:
   uuid: 0be3a336-85ad-4c42-930b-05318236e68c
 - alterId: 0
   cipher: auto
-  name: '553,580|未知 VMESS-1142 | free-nodes #1'
+  name: '553,559,580|未知 VMESS-1142 | free-nodes #1'
   network: tcp
   port: '53521'
   server: 47.74.59.195
@@ -6322,9 +5818,9 @@ proxies:
   uuid: 0be3a336-85ad-4c42-930b-05318236e68c
 - alterId: 0
   cipher: auto
-  name: '553,559|未知 VMESS-1148 | free-nodes #1'
+  name: 553|🇯🇵日本_87257
   network: tcp
-  port: '23464'
+  port: 23464
   server: 47.91.10.237
   servername: ''
   tls: false
@@ -6344,7 +5840,7 @@ proxies:
   uuid: 0be3a336-85ad-4c42-930b-05318236e68c
 - alterId: 0
   cipher: auto
-  name: '553,580|未知 VMESS-1143 | free-nodes #2'
+  name: '553,559,580|未知 VMESS-1143 | free-nodes #1'
   network: tcp
   port: '29583'
   server: 47.74.8.80
@@ -6662,29 +6158,22 @@ proxies:
   tls: false
   type: vmess
   uuid: b806b388-5f97-11ee-8014-f23c913c8d2b
-- name: '559|A - 🇯🇵 JP 01 TG: @nodpai'
-  password: 15893455-4d21-4338-a273-01aed1d77fa2
-  port: 8080
-  server: hyfnjp03.769970.xyz
+- name: 559|🇯🇵日本东京2
+  password: 9d0f6021-e1e3-47cd-a18e-722dd7f1c2ee
+  port: 443
+  server: 154.85.18.134
   skip-cert-verify: true
-  sni: hyfnjp03.769970.xyz
+  sni: www.bing.com
   tls: false
   type: hysteria2
-- name: '559|A - 🇯🇵 JP 08 TG: @nodpai'
-  password: 3f2d3497-6843-46f1-aa34-5469dc953259
-  port: 8080
-  server: hyfnjp03.769970.xyz
+- name: 559|🇯🇵 日本-9420DA42
+  obfs: salamander
+  obfs-password: YzgyOTkwNDk42TU23T365A%3D%3D
+  password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  port: 60018
+  server: zf.9966690.xyz
   skip-cert-verify: true
-  sni: hyfnjp03.769970.xyz
-  tls: false
-  type: hysteria2
-- alpn:
-  - h3
-  name: '559|A - 🇯🇵 JP 05 TG: @nodpai'
-  password: 6nne3n3cuvhyvdyo
-  port: 14817
-  server: jp.zlr.dpdns.org
-  sni: jp.zlr.dpdns.org
+  sni: zf.9966690.xyz
   tls: false
   type: hysteria2
 - name: 559|🇯🇵 日本-7F544D7B
@@ -6697,122 +6186,32 @@ proxies:
   sni: zfusp.9966690.xyz
   tls: false
   type: hysteria2
-- name: '559|A - 🇯🇵 JP 09 TG: @nodpai'
-  password: c90cedc3-8d7f-4c7d-8bd7-d011d694aef3
-  port: 8080
-  server: jp06.459292.xyz
-  skip-cert-verify: true
-  sni: jp06.459292.xyz
-  tls: false
-  type: hysteria2
-- name: '559|A - 🇯🇵 JP 11 TG: @nodpai'
-  password: df1a0967-5b79-41ec-8d12-915e9056c6e2
-  port: 8080
-  server: hyfnjp03.769970.xyz
-  skip-cert-verify: true
-  sni: hyfnjp03.769970.xyz
-  tls: false
-  type: hysteria2
-- name: '559|A - 🇯🇵 JP 07 TG: @nodpai'
-  password: df1a0967-5b79-41ec-8d12-915e9056c6e2
-  port: 8080
-  server: jp06.459292.xyz
-  skip-cert-verify: true
-  sni: jp06.459292.xyz
-  tls: false
-  type: hysteria2
-- name: '559|A - 🇯🇵 JP 04 TG: @nodpai'
-  password: f6836112-e9f3-4803-a366-5606ac214324
-  port: 8080
-  server: hyfnjp03.769970.xyz
-  skip-cert-verify: true
-  sni: hyfnjp03.769970.xyz
-  tls: false
-  type: hysteria2
-- name: 559|🇯🇵 日本-B6FB32D9
-  password: '!!str 162534'
-  port: 8388
-  server: 43.133.23.88
-  sni: cchh2.pages.dev
-  type: trojan
-- name: 559|🇯🇵JP_1|3.3MB/s
-  network: ws
-  password: 8r<[9'l6hAO#8ZQi
+- name: 559|🇯🇵 日本-DFEF913D
+  password: BxceQaOe
   port: 443
-  server: 108.162.198.253
-  skip-cert-verify: true
-  sni: Koma-YT.PAGeS.Dev
+  server: 116.80.80.121
+  sni: t.me%252Fripaojiedian
   type: trojan
-  ws-opts:
-    headers:
-      Host: Koma-YT.PAGeS.Dev
-    path: /trTelegram🇨🇳 @WangCai2
-- name: '559|B - 🇯🇵 JP 21 TG: @nodpai'
-  password: 8r<[9'l6hAO#8ZQi
-  port: 8443
-  server: 140.83.34.214
-  sni: Koma-YT.PAGeS.Dev
-  type: trojan
-- name: '559|B - 🇯🇵 JP 25 TG: @nodpai'
-  password: 8r<[9'l6hAO#8ZQi
-  port: 443
-  server: 168.138.46.67
-  sni: Koma-YT.PAGeS.Dev
-  type: trojan
-- name: 559|🇯🇵 日本 CCZZUU.TOP
-  password: 8r<[9'l6hAO#8ZQi
-  port: 443
-  server: 43.168.16.112
-  skip-cert-verify: false
-  sni: Koma-YT.PAGeS.Dev
-  type: trojan
-- name: '559|B - 🇯🇵 JP 22 TG: @nodpai'
-  network: ws
-  password: 8r<[9'l6hAO#8ZQi
-  port: 443
-  server: 64.110.104.30
-  sni: Koma-YT.PAGeS.Dev
-  type: trojan
-  ws-opts:
-    path: /trTelegram
-- name: 559|🇯🇵JP_62
+- name: '559|🇯🇵JP_48 #1'
   password: IL37892054
   port: 443
   server: engaging-toucan.rooster465.autos
   sni: engaging-toucan.rooster465.autos
   type: trojan
-- name: 559|🇯🇵 日本-4FD4590D
-  password: fde84658-f03b-430a-a86f-c32cb1a2cdad
-  port: 443
-  server: cdn1.bpcdn.cc
-  sni: 060514g0w17jtvgk.jptimecsgo.xyz
-  type: trojan
-- name: 559|🇯🇵 日本-C135329A
-  password: fde84658-f03b-430a-a86f-c32cb1a2cdad
-  port: 443
-  server: cdn2.bpcdn.cc
-  sni: 060514g0w17jtvgk.jptimecsgo.xyz
-  type: trojan
-- name: 559|🇯🇵 日本-CC2D74D4
-  password: fde84658-f03b-430a-a86f-c32cb1a2cdad
-  port: 443
-  server: jph3094h8r.cloudflare.182682.xyz
-  sni: 060514g0w17jtvgk.jptimecsgo.xyz
-  type: trojan
-- name: 559|🇯🇵 日本 180
+- name: '559|🇯🇵 日本 9 #2'
   network: ws
-  port: 39085
-  server: 142.248.151.249
-  servername: rvbtoc55o588ipfx2qieoygyk0hur.saghv.filegear-sg.me
+  port: 9586
+  server: 103.232.213.244
+  servername: oia8or7k8rs5.zrf.xx.kg
   skip-cert-verify: true
   tls: true
   type: vless
   uuid: 00000000-0000-4000-8000-000000000000
   ws-opts:
     headers:
-      Host: rvbtoc55o588ipfx2qieoygyk0hur.saghv.filegear-sg.me
+      Host: oia8or7k8rs5.zrf.xx.kg
     path: '%2F%40Marisa_kristifp%3Dchrome'
-- name: '559,580|JP日本(mibei77.com 米贝节点分享) #15'
+- name: '559,580|JP日本(mibei77.com 米贝节点分享) #14'
   network: ws
   port: 24443
   server: 162.141.130.233
@@ -6872,236 +6271,15 @@ proxies:
     headers:
       Host: sni.skylee4.cloudns.ch
     path: '%2Fproxyip%253DProxyIP.CMLiussss.net'
-- name: 559|🇯🇵 日本-DD8BEF21
-  network: ws
-  port: 587
-  server: 138.3.217.167
-  servername: ''
-  tls: true
-  type: vless
-  uuid: 06ef598c-1555-4887-b3f9-08214a2f6792
-  ws-opts:
-    headers:
-      Host: 2026.hhhhh.eu.org
-    path: '%2F138.3.217.167%253A587'
-- name: 559|🇯🇵 日本-1FEA3CF0
-  network: ws
-  port: 21169
-  server: 141.98.197.157
-  servername: ''
-  tls: true
-  type: vless
-  uuid: 06ef598c-1555-4887-b3f9-08214a2f6792
-  ws-opts:
-    headers:
-      Host: 2026.hhhhh.eu.org
-    path: '%2F141.98.197.157%25253A21169'
-- name: 559|🇯🇵 日本-42D97605
-  network: ws
-  port: 21953
-  server: 158.101.76.55
-  servername: ''
-  tls: true
-  type: vless
-  uuid: 06ef598c-1555-4887-b3f9-08214a2f6792
-  ws-opts:
-    headers:
-      Host: 2026.hhhhh.eu.org
-    path: '%2F158.101.76.55%253A21953'
-- name: 559|🇯🇵 日本-F77AF323
-  network: ws
-  port: 8443
-  server: 38.207.130.242
-  servername: ''
-  tls: true
-  type: vless
-  uuid: 06ef598c-1555-4887-b3f9-08214a2f6792
-  ws-opts:
-    headers:
-      Host: 2026.hhhhh.eu.org
-    path: '%2F38.207.130.242%25253A8443'
-- name: 559|🇯🇵 日本-BFF2EC7E
-  network: ws
+- name: 559|🇯🇵 日本-B61C5B3C
+  network: tcp
   port: 443
-  server: 64.176.54.102
+  server: 150.251.158.76
   servername: ''
   tls: true
   type: vless
-  uuid: 06ef598c-1555-4887-b3f9-08214a2f6792
-  ws-opts:
-    headers:
-      Host: 2026.hhhhh.eu.org
-    path: '%2F64.176.54.102%25253A443'
-- alpn:
-  - http/1.1
-  name: '559|JP日本(mibei77.com 米贝节点分享) #12'
-  network: ws
-  port: 10443
-  server: 132.226.0.87
-  servername: nai3.api-gateway-01.chinat.indevs.in
-  tls: true
-  type: vless
-  uuid: 26524cce-d514-4014-a426-365fb266a14d
-  ws-opts:
-    headers:
-      Host: nai3.api-gateway-01.chinat.indevs.in
-    path: '%2Fdanfeng%3Fed%3D2560'
-- name: 559|🇯🇵 日本-9C6E8913
-  network: ws
-  port: 2096
-  server: 103.116.7.238
-  servername: ''
-  tls: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.jpmj.dev
-    path: '%2F%253FTelegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%252B%2540WangCai2'
-- name: 559|🇯🇵 日本-44B9A70C
-  network: ws
-  port: 443
-  server: 132.226.7.217
-  servername: ''
-  tls: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.111000.indevs.in
-    path: '%2F%25253Fed%25253D2560%252526Telegram%2525F0%25259F%252587%2525A8%2525F0%25259F%252587%2525B3%25252B%252540WangCai2'
-- name: 559|🇯🇵 日本-AE85A931
-  network: ws
-  port: 7002
-  server: 139.162.102.152
-  servername: ''
-  tls: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.111000.dynv6.net
-    path: '%2F%253FTelegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2520%2540WangCai2'
-- name: 559|🇯🇵 日本-6F3AC87B
-  network: ws
-  port: 386
-  server: 139.162.83.106
-  servername: ''
-  tls: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.111000.indevs.in
-    path: '%2F%2525253Fed%2525253D2560%25252526Telegram%252525F0%2525259F%25252587%252525A8%252525F0%2525259F%25252587%252525B3%2525252B%25252540WangCai2'
-- name: 559|🇯🇵 日本-D95BDF8A
-  network: ws
-  port: 587
-  server: 140.238.38.81
-  servername: ''
-  tls: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.111000.v6.navy
-    path: '%2F%25253Fed%25253D2560%252526Telegram%2525F0%25259F%252587%2525A8%2525F0%25259F%252587%2525B3%25252B%252540WangCai2'
-- name: 559|🇯🇵 日本-833857FF
-  network: ws
-  port: 9872
-  server: 140.83.83.65
-  servername: ''
-  tls: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.111000.indevs.in
-    path: '%2F%25253Fed'
-- name: 559|🇯🇵 日本-4F80CF06
-  network: ws
-  port: 23333
-  server: 141.147.152.229
-  servername: ''
-  tls: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.jpmj.dev
-    path: '%2F%253FTelegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2520%2540WangCai2'
-- name: 559|🇯🇵 日本-7635F255
-  network: ws
-  port: 10118
-  server: 141.98.197.111
-  servername: ''
-  tls: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.111000.indevs.in
-    path: '%2F%253FTelegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%252B%2540WangCai2'
-- name: 559|🇯🇵 日本-1B851166
-  network: ws
-  port: 27560
-  server: 168.138.198.7
-  servername: ''
-  tls: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.111000.indevs.in
-    path: '%2F%253FTelegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2520%2540WangCai2'
-- name: 559|🇯🇵 日本-1F7E8E80
-  network: ws
-  port: 587
-  server: 217.142.250.195
-  servername: ''
-  tls: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.111000.indevs.in
-    path: '%2F%25253Fed%25253D2560%252526Telegram%2525F0%25259F%252587%2525A8%2525F0%25259F%252587%2525B3%252520%252540WangCai2'
-- name: 559|🇯🇵 日本-56203ADA
-  network: ws
-  port: 443
-  server: 45.76.198.248
-  servername: ''
-  tls: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.111000.dynv6.net
-    path: '%2F%253FTelegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2520%2540WangCai2'
-- name: '559|JP日本(mibei77.com 米贝节点分享) #13'
-  network: ws
-  port: 16090
-  server: 210.156.180.102
-  servername: dcsrzh.ccwu.cc
-  tls: true
-  type: vless
-  uuid: 73bcd72f-9545-4cb8-8daf-7d004501880d
-  ws-opts:
-    headers:
-      Host: dcsrzh.ccwu.cc
-    path: '%2F'
-- name: 559|🇯🇵 日本-E7965B98
-  network: ws
-  port: 80
-  server: 172.111.146.64
-  tls: false
-  type: vless
-  uuid: 904f8ffa-4652-4076-8f2f-e586807840ec
-  ws-opts:
-    headers:
-      Host: ''
-    path: '%2Fvless%2F'
-- name: '559,580,581|🇯🇵_JP_日本 #13'
+  uuid: 10550754-cf62-3d3b-ba6a-50be27a275d7
+- name: '559,580,581|🇯🇵_JP_日本 #15'
   network: ws
   port: 443
   server: 158.51.110.12
@@ -7125,18 +6303,6 @@ proxies:
     headers:
       Host: gsgsdgreyrehjsrteargsfhtrhsrwrhtruiekghmg.pages.dev
     path: '%2Ffp'
-- name: 559|🇯🇵 日本-374B19FD
-  network: ws
-  port: 443
-  server: 64.176.44.23
-  servername: ''
-  tls: true
-  type: vless
-  uuid: ce069292-c8bf-40dd-a6b1-87818a1e64e9
-  ws-opts:
-    headers:
-      Host: 3-2ll.pages.dev
-    path: '%2Fproxyip%253DProxyIP.DE.owg.dpdns.org'
 - name: 559|🇯🇵 日本-E3436857
   network: ws
   port: 443
@@ -7175,7 +6341,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '559,580|未知 VMESS-1062 | free-nodes #1'
+  name: 559,580|未知 VMESS-1062 | free-nodes
   network: ws
   port: 25686
   server: 140.83.51.161
@@ -7187,16 +6353,6 @@ proxies:
     headers:
       Host: jp02.a0a.xyz
     path: /cctv13.m3u8
-- alterId: 0
-  cipher: auto
-  name: 559|日本_052705005
-  network: ''
-  port: '32221'
-  server: 153.121.73.175
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: b06054ae-f249-438e-998a-8e67bd8df653
 - alterId: 0
   cipher: auto
   name: '577|日本NO.1 #4'
