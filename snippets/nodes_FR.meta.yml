@@ -148,7 +148,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: '356,507,580|未知 VMESS-1389 | free-nodes #2'
+  name: '356,507,580|未知 VMESS-1483 | free-nodes #1'
   network: ws
   port: 2082
   server: 5.196.29.123
@@ -456,6 +456,20 @@ proxies:
   type: vmess
   uuid: 54c6c823-4957-4c6c-b10c-359bc51f7cc3
   ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '378,537,580|未知 VMESS-1459 | free-nodes #3'
+  network: ws
+  port: '16648'
+  server: planb.mojcn.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 24e37e6e-7e01-4f68-afea-28fb14a47aef
+  ws-opts:
+    headers:
+      Host: 08071ec6f38bfb263ee89b1bb0c3ca1b.mobgslb.tbcache.com
     path: /
 - name: '378,536,537|🇷FR-176.31.83.90-0482 #1'
   password: origin
@@ -1731,7 +1745,7 @@ proxies:
   - h2
   - http/1.1
   client-fingerprint: chrome
-  name: '423,424,425|法国FR-A #3'
+  name: '425|法国FR-A #1'
   password: 918003d3-1f5d-425c-b39c-ff61781e48f1
   port: 1691
   server: 5.135.5.130
@@ -1739,7 +1753,7 @@ proxies:
   sni: any.mjanyt.com
   type: anytls
   udp: true
-- name: '438|🇫🇷FR_1|2.4MB/s | 福利姬: https://...'
+- name: '438|🇫🇷FR_2|2.0MB/s | 网盘搜宝: https:/...'
   network: ws
   password: humanity
   port: 443
@@ -1752,21 +1766,7 @@ proxies:
     path: '%2F%252Fassignment'
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '438,523,524,559|🇫🇷 法国 401 #2'
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: wgoLhL4pRP0y6fu6He4qW_ElohCM_ANWJF3HEoUhNz4
-    short-id: 9c2378562188c3cb
-  server: fr.denditop.site
-  servername: fr.denditop.site
-  tls: false
-  type: vless
-  udp: true
-  uuid: 256c5f48-4908-4255-83d1-c86cb58f22b4
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '438,507,559,580|未知 VLESS-889 | free-nodes #2'
+  name: '438,507,559,580|未知 VLESS-946 | free-nodes #2'
   network: raw
   port: 44520
   reality-opts:
@@ -1779,7 +1779,7 @@ proxies:
   uuid: acd726d3-0128-44d8-a575-21013ff7740a
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '438,507,559,580|未知 VLESS-986 | free-nodes #2'
+  name: '438,507,559,580|未知 VLESS-1051 | free-nodes #2'
   network: raw
   port: 12453
   reality-opts:
@@ -1792,7 +1792,7 @@ proxies:
   uuid: c9f0224c-c509-427e-b314-cef6cab20646
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '438,507,559,580|未知 VLESS-1067 | free-nodes #2'
+  name: '438,507,559,580|未知 VLESS-1136 | free-nodes #2'
   network: raw
   port: 15469
   reality-opts:
@@ -1803,13 +1803,51 @@ proxies:
   tls: false
   type: vless
   uuid: deb96819-bdaa-4f52-a536-d4751290ce47
-- name: '438|🇫🇷FR_6|2.3MB/s | 更多节点: https:/...'
-  network: tcp
+- client-fingerprint: chrome
+  name: '438,507,559|未知 VLESS-1222 | free-nodes #1'
+  network: xhttp
   port: 443
-  server: 145.239.173.163
+  reality-opts:
+    public-key: r2B2KwffHmyjWrmwKmI0o3uW9UEsn2l_Ko0UmyTjKgM
+  server: fr.clgate.network
+  servername: m.twitch.tv
   tls: false
   type: vless
-  uuid: 88888888-8888-8888-8888-888888888888
+  uuid: f4bad870-4b45-4a46-bec6-d05fa31df1cb
+  ws-opts:
+    headers:
+      Host: m.twitch.tv
+    path: '%2F'
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 438,523,524,559|🏁 未知-9ABDA738
+  network: tcp
+  port: 23576
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  server: 62.210.91.2
+  servername: ''
+  tls: false
+  type: vless
+  udp: true
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  name: '438|🇫🇷FR_9|1.3MB/s | 更多节点: https:/...'
+  network: xhttp
+  port: 443
+  server: 104.20.42.250
+  servername: f101001010.imsoon.org
+  tls: true
+  type: vless
+  uuid: 47022b4b-bbad-4bb4-a004-87c2d7538a28
+  ws-opts:
+    headers:
+      Host: f101001010.imsoon.org
+    path: '%2FTelegram%40SoonTeam'
 - name: 460|法国_巴黎
   network: ws
   port: 443
@@ -2013,18 +2051,6 @@ proxies:
     headers:
       Host: Koma-YT.PAGeS.Dev
     path: /trTelegram🇨🇳+@WangCai2
-- alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: chrome
-  name: 489|🔴🇫🇷[🎬🤖📺🔍]_github.com/Ruk1ng001...
-  password: 2219a1b1-9290-4ac5-94fd-6cfc1fb25280
-  port: 27021
-  server: uqywsq.yytls.top
-  skip-cert-verify: false
-  sni: uqywsq.yytls.top
-  type: anytls
-  udp: true
 - cipher: aes-256-cfb
   name: 500|[SS] 🇫🇷 _FR_法国
   password: asdKkaskJKfnsa
@@ -2032,50 +2058,29 @@ proxies:
   server: 51.158.54.209
   type: ss
   udp: true
+- name: 502,507,559|法国_053005010
+  network: tcp
+  password: YGWIMlg.W1wRWQkRDcKfjZY7sng09aC=Yh
+  port: 443
+  server: 217.69.2.107
+  sni: www.weavenet.click
+  type: trojan
 - client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '502|B - 🇫🇷 FR 01 TG: @nodpai'
-  port: 55676
-  server: appvless.tnjxaon.cn
-  servername: www.tue.nl
-  tls: true
-  type: vless
-  uuid: 1f81303d-bdb7-4cf9-8bef-f4f8cd9562ff
-- alterId: 0
-  cipher: auto
-  name: '502|B - 🇫🇷 FR 02 TG: @nodpai'
-  network: tcp
-  port: 2053
-  server: uk5.taskflowhub.org
-  tls: true
-  type: vmess
-  uuid: 89371dfc-2618-40d7-a558-693ff4f7f1eb
-- alterId: 0
-  cipher: auto
-  name: 502,717|ES【机场推荐：https://a9a.xyz】11
-  network: tcp
-  port: 2053
-  server: es.connfull.org
-  tls: true
-  type: vmess
-  uuid: fd08f8fe-1521-4239-8a01-6d5d451a0edb
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '523,524,559,580|未知 VLESS-398 | free-nodes #2'
-  network: tcp
+  name: 523,524,559|🇫🇷 法国 148
   port: 443
   reality-opts:
-    public-key: wgoLhL4pRP0y6fu6He4qW_ElohCM_ANWJF3HEoUhNz4
-    short-id: 9c2378562188c3cb
-  server: 185.171.202.48
-  servername: fr.denditop.site
+    public-key: i4Mx_tDND0Xxac3WyA7HgT9rvXdZlXpm5m1EGiQF-Uk
+    short-id: b8aa
+  server: 194.226.169.36
+  servername: yahoo.com
   tls: false
   type: vless
   udp: true
-  uuid: 256c5f48-4908-4255-83d1-c86cb58f22b4
+  uuid: fae3277c-0541-4ae9-bbbb-8247453ea652
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '523,524,559|🇫🇷 法国 224 #2'
+  name: '523,524,559,580|未知 VLESS-635 | free-nodes #3'
+  network: tcp
   port: 31413
   reality-opts:
     public-key: nMlxwhP34_5wFPscbso_hOfRDmsj9DonMpDSXUrnJR8
@@ -2087,44 +2092,7 @@ proxies:
   udp: true
   uuid: 5454343b-541b-4c96-8c2a-52e81079d124
 - client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '523,524,559|🇫🇷 法国 229 #2'
-  port: 23576
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  server: 62.210.91.10
-  servername: fuck.rkn
-  tls: false
-  type: vless
-  udp: true
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-- client-fingerprint: chrome
-  name: '523,524|🇫🇷 法国 255 #1'
-  network: ws
-  port: 443
-  server: 81.255.154.10
-  servername: jp.aniua.qzz.io
-  tls: true
-  type: vless
-  udp: true
-  uuid: e258977b-e413-4718-a3af-02d75492c349
-  ws-opts:
-    headers:
-      Host: jp.aniua.qzz.io
-    path: /
-- name: '523,524|🇫🇷 法国 340 #1'
-  network: ws
-  port: 443
-  server: 95.182.97.249
-  tls: false
-  type: vless
-  udp: true
-  uuid: a2b81a67-3cd2-42c7-a3f9-fd47ac27d4a1
-  ws-opts:
-    path: /
-- client-fingerprint: chrome
-  name: '523,524,559|🇫🇷 法国 364 #2'
+  name: 523,524,559|🇫🇷 法国 364
   port: 8443
   server: cdg-1.fromblancwithlove.com
   servername: cdg-1.fromblancwithlove.com
@@ -2132,19 +2100,30 @@ proxies:
   type: vless
   udp: true
   uuid: 55f7d143-a594-4a91-b030-f227039f85ef
+- alterId: 0
+  cipher: auto
+  name: '523,524|🇫🇷 法国 386 #1'
+  port: 2053
+  server: es.connfull.org
+  servername: es.connfull.org
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: fd08f8fe-1521-4239-8a01-6d5d451a0edb
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 523,524,559,580|RU VLESS-292 | free-nodes
+  name: 523,524,559|🇫🇷 法国 401
   port: 443
-  server: fr-tx.sbrf-cdn342.ru
-  servername: sub.sbrf-cdn342.ru
-  tls: true
+  reality-opts:
+    public-key: wgoLhL4pRP0y6fu6He4qW_ElohCM_ANWJF3HEoUhNz4
+    short-id: 9c2378562188c3cb
+  server: fr.denditop.site
+  servername: fr.denditop.site
+  tls: false
   type: vless
   udp: true
-  uuid: 01ea3b87-b7b1-4aef-b24a-9c43fbd3b26f
-  ws-opts:
-    headers:
-      Host: fr-tx.sbrf-cdn342.ru
+  uuid: 256c5f48-4908-4255-83d1-c86cb58f22b4
 - cipher: chacha20-ietf-poly1305
   country: 🇺🇸US
   delay: 1253
@@ -2363,17 +2342,30 @@ proxies:
     headers:
       Host: Koma-YT.PAGeS.Dev
     path: '%2FtrTelegram%F0%9F%87%A8%F0%9F%87%B3%2B%40WangCai2'
-- name: 559|🇫🇷 法国-31EB7AC9
-  network: tcp
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 559|🇫🇷 法国 127
   port: 443
   reality-opts:
     public-key: wgoLhL4pRP0y6fu6He4qW_ElohCM_ANWJF3HEoUhNz4
     short-id: 9c2378562188c3cb
-  server: 185.171.202.38
-  servername: ''
+  server: 185.171.202.48
+  servername: fr.denditop.site
   tls: false
   type: vless
   uuid: 256c5f48-4908-4255-83d1-c86cb58f22b4
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 559|🇫🇷 法国 229
+  port: 23576
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  server: 62.210.91.10
+  servername: fuck.rkn
+  tls: false
+  type: vless
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
 - name: 559|🇫🇷 法国-5936CF0F
   network: tcp
   port: 54809
@@ -2385,7 +2377,7 @@ proxies:
   tls: false
   type: vless
   uuid: 87e60810-bb71-41ea-a2a6-f05c8ab903ef
-- name: '559|🇫🇷 法国 340 #2'
+- name: 559|🇫🇷 法国 340
   network: ws
   port: 443
   server: 95.182.97.249
@@ -2395,7 +2387,7 @@ proxies:
   ws-opts:
     path: '%2F'
 - client-fingerprint: chrome
-  name: '559|🇫🇷 法国 255 #2'
+  name: 559|🇫🇷 法国 255
   network: ws
   port: 443
   server: 81.255.154.10
@@ -2424,24 +2416,14 @@ proxies:
   uuid: e5c7a52d-ee06-49c2-9eb7-6f3bf19d3d37
 - alterId: 0
   cipher: auto
-  name: 559|法国_052920354
+  name: 559|法国_053005045
   network: tcp
-  port: '2052'
-  server: 51.195.235.71
+  port: '2053'
+  server: uk5.taskflowhub.org
   servername: ''
-  tls: false
+  tls: true
   type: vmess
-  uuid: 59e28f78-c31b-4613-9d9f-1e6732a31f46
-- alterId: 0
-  cipher: auto
-  name: 559|法国_052920356
-  network: tcp
-  port: '2052'
-  server: uk.connfull.org
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 4a26a7f0-ceca-440b-bc1a-577aab41a6e0
+  uuid: 89371dfc-2618-40d7-a558-693ff4f7f1eb
 - alterId: 0
   cipher: auto
   name: '577|法国1 #4'
