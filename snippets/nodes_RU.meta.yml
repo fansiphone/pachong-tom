@@ -40,7 +40,7 @@ proxies:
   uuid: 3c3c3969-b06a-43ff-ad1e-11621c542946
 - client-fingerprint: edge
   flow: xtls-rprx-vision
-  name: '340,502,507,523,524,551,559,566,580|未知 VLESS-986 | free-nodes #2'
+  name: '340,502,523,524,551,559,580|未知 VLESS-986 | free-nodes #2'
   network: tcp
   port: 22231
   server: r1.mizulina.top
@@ -56,7 +56,7 @@ proxies:
     path: '%2F'
 - client-fingerprint: edge
   flow: xtls-rprx-vision
-  name: '340,502,507,523,524,551,559,566,580|未知 VLESS-984 | free-nodes #2'
+  name: '340,502,507,523,524,551,559,580|未知 VLESS-984 | free-nodes #2'
   network: raw
   port: 443
   server: 85.234.114.53
@@ -68,7 +68,7 @@ proxies:
   uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
 - client-fingerprint: edge
   flow: xtls-rprx-vision
-  name: '340,502,507,523,524,551,559,566,580|未知 VLESS-983 | free-nodes #1'
+  name: '340,502,523,524,551,559,580|未知 VLESS-983 | free-nodes #1'
   network: tcp
   port: 22231
   server: 85.234.114.53
@@ -594,7 +594,7 @@ proxies:
   - h2
   - http/1.1
   client-fingerprint: chrome
-  name: '424,425|俄罗斯RU-A #2'
+  name: '423,424,425|俄罗斯RU-A #3'
   password: 918003d3-1f5d-425c-b39c-ff61781e48f1
   port: 1671
   server: a.mjanyt.com
@@ -610,15 +610,11 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  country: 🇭🇰HK
-  h2-opts: {}
-  http-opts: {}
-  name: 437,440,507,559,580|未知 VMESS-1347 | free-nodes
+  name: 437,507,559,580|未知 VMESS-1347 | free-nodes
   network: tcp
   port: 22324
   server: 213.156.141.52
   servername: null
-  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 04621bae-ab36-11ec-b909-0242ac120002
@@ -635,6 +631,20 @@ proxies:
   tls: false
   type: vless
   uuid: d4ca8f1f-45b2-486c-8944-b6524887e656
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '438,507,523,524,559|🇷🇺 俄罗斯 42 #2'
+  network: raw
+  port: 443
+  reality-opts:
+    public-key: tMEkGmuOsuS_cgZYpj2UYBKnni559FZd-poGnH82ck8
+    short-id: bfb7cb31
+  server: 109.122.198.76
+  servername: www.icloud.com
+  tls: false
+  type: vless
+  udp: true
+  uuid: 18afb896-6e4b-403b-b804-714b09b517e5
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: '438,523,524,559|🇷🇺 俄罗斯 152 #2'
@@ -1416,6 +1426,22 @@ proxies:
     headers:
       Host: ''
     path: /
+- client-fingerprint: chrome
+  flow: ''
+  name: '500,507,523,524,553,559,580|未知 VLESS-1242 | free-nodes #2'
+  network: raw
+  port: 16622
+  reality-opts:
+    public-key: E5N_ckakvqgTOjiQ6Rmuwz1fchiT1-J3tH4cbzcH_GQ
+    short-id: 1c01d60ea915
+  server: 77.73.238.191
+  servername: yahoo.com
+  skip-cert-verify: true
+  tfo: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: f2e9df1b-e0ba-4b37-a301-6aab8662c926
 - alpn:
   - h2
   - http/1.1
@@ -1433,18 +1459,6 @@ proxies:
     headers:
       Host: ftatx5g6dt.cdn.twcstorage.ru
     path: '%2F'
-- client-fingerprint: chrome
-  name: '502,507,559,580|未知 VLESS-603 | free-nodes #2'
-  network: raw
-  port: 38065
-  reality-opts:
-    public-key: dSSDPTK6AHfAdRAXD9i4rzqcNIY65RxlF25UyCKdiyo
-    short-id: fa
-  server: 83.222.23.81
-  servername: yahoo.com
-  tls: false
-  type: vless
-  uuid: 4b9063e0-3288-44e9-9aac-80fbfce323a0
 - name: '502,551,559|A - 🇷🇺 RU 01 TG: @nodpai #2'
   network: ws
   port: 8880
@@ -1456,15 +1470,13 @@ proxies:
     headers:
       Host: vms.lifetime48.workers.dev
     path: /
-- alpn:
-  - h2
-  client-fingerprint: chrome
+- client-fingerprint: chrome
   grpc-opts:
     grpc-service-name: /sequre/grpc
-  name: 502|🇷🇺RU_1|1.0MB/s
+  name: '502,551|🇷🇺RU_1|2.1MB/s #1'
   network: grpc
   port: 443
-  server: 185.14.46.20.blanesik.space
+  server: 185.14.46.20
   servername: 185.14.46.20.blanesik.space
   tls: true
   type: vless
@@ -1509,17 +1521,14 @@ proxies:
   tls: true
   type: vless
   uuid: 01ea3b87-b7b1-4aef-b24a-9c43fbd3b26f
-- name: 507,559,580|RU VLESS-542 | free-nodes
+- name: 507|RU VLESS-602 | free-nodes
   network: ws
   port: 443
   server: fl-3-direct.djarbnet.ru
-  servername: fl-3-direct.djarbnet.ru
   tls: true
   type: vless
   uuid: 4259cd49-5ad0-432d-a078-29159dc999d0
   ws-opts:
-    headers:
-      Host: fl-3-direct.djarbnet.ru
     path: '%2Fgetupdates'
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
@@ -1538,7 +1547,7 @@ proxies:
   - http/1.1
   client-fingerprint: qq
   flow: xtls-rprx-vision
-  name: '507,559|RU VLESS-968 | free-nodes #1'
+  name: 507,559|RU VLESS-968 | free-nodes
   network: tcp
   port: 443
   server: de.sbrf-cdn342.ru
@@ -1549,7 +1558,7 @@ proxies:
   uuid: 91e120bc-159a-4390-b4e1-197b19602ea0
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 507|RU VLESS-969 | free-nodes
+  name: 507|RU VLESS-977 | free-nodes
   network: tcp
   port: 443
   server: de.sbrf-cdn342.ru
@@ -1560,7 +1569,7 @@ proxies:
   uuid: 91e120bc-159a-4390-b4e1-197b19602ea0
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '507,559|RU VLESS-970 | free-nodes #1'
+  name: 507,559|RU VLESS-970 | free-nodes
   network: tcp
   port: 443
   server: est-def.sbrf-cdn342.ru
@@ -1774,17 +1783,6 @@ proxies:
     headers:
       Host: gaosir.unfeeling.sbs
     path: X%40%E8%8A%82%E7%82%B9%E7%8B%82%E9%AD%94%2F%3Fed%3D2560
-- client-fingerprint: chrome
-  grpc-opts:
-    grpc-service-name: /sequre/grpc
-  name: 551|🇷🇺RU_1|2.1MB/s
-  network: grpc
-  port: 443
-  server: 185.14.46.20
-  servername: 185.14.46.20.blanesik.space
-  tls: true
-  type: vless
-  uuid: a1b19834-a5e3-4d49-9301-aaa3fb248f49
 - name: 553|🇷🇺俄罗斯联邦_63112
   password: 76yTlnTIsjCTlmqnUJ5Tzc1rM
   port: 443
