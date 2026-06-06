@@ -38,15 +38,6 @@ proxies:
   tls: true
   type: vless
   uuid: 3c3c3969-b06a-43ff-ad1e-11621c542946
-- cipher: aes-256-gcm
-  country: 🇨🇿CZ
-  delay: 585
-  name: '306,378,528,537|🇺RU-195.58.49.104-0730 #1'
-  password: fbaf33bcffe53cf9
-  port: 20129
-  server: 195.58.49.104
-  type: ss
-  udp: true
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: '340,438,475,480,494,502,514,523,524,551,559,566,567,580,585,586|RU_speednode_0039
@@ -80,7 +71,7 @@ proxies:
     path: '%2F'
 - client-fingerprint: edge
   flow: xtls-rprx-vision
-  name: '340,438,472,473,474,475,478,480,483,494,502,514,522,523,524,551,559,566,567,580,581,585,586|RU_speednode_0043
+  name: '340,438,475,478,480,483,494,502,514,522,523,524,548,551,559,566,567,580,581,585,586|RU_speednode_0043
     #3'
   network: tcp
   port: 22231
@@ -333,7 +324,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 378,494,536,537,538|🇷🇺RU-37.220.161.249-0241 | 0.0...
+  name: 378,536,537,538|🇷🇺RU-37.220.161.249-0241 | 0.0...
   network: ws
   port: 443
   server: renderer-stream-1-411.mirra.now
@@ -365,6 +356,14 @@ proxies:
   uuid: a25881f3-967f-3265-bc7f-9e66857b016b
   ws-opts:
     path: /fr-unlimitxxx
+- cipher: aes-256-gcm
+  country: 🇨🇿CZ
+  delay: 585
+  name: '378,528,537|🇺RU-195.58.49.104-0730 #1'
+  password: fbaf33bcffe53cf9
+  port: 20129
+  server: 195.58.49.104
+  type: ss
 - cipher: aes-256-gcm
   country: 🇨🇿CZ
   delay: 552
@@ -590,7 +589,7 @@ proxies:
   type: ss
 - alterId: 64
   cipher: auto
-  name: '378,494,536,537|🇺RU-171.22.134.12-8117 #1'
+  name: '378,536,537|🇺RU-171.22.134.12-8117 #1'
   network: ws
   port: 443
   server: 171.22.134.12
@@ -644,37 +643,22 @@ proxies:
   sni: eu.mjanyt.com
   type: anytls
   udp: true
-- cipher: aes-256-cfb
-  country: 🇺RU
-  name: 435|RU_83
-  password: fG2artUmHfNT2cX7
-  port: 9018
-  server: 217.30.10.70
-  type: ss
+- name: 436,559|🇷🇺RU_90
+  password: '!!str 1234567890'
+  port: 443
+  server: 194.87.77.91
+  sni: kfm-bn0.pages.dev
+  type: trojan
 - alterId: 0
   cipher: auto
-  country: 🇺RU
-  h2-opts: {}
-  http-opts: {}
-  name: '435,437,507,559,580|未知 VMESS-119 | free-nodes #1'
+  name: 437,507,559,580|未知 VMESS-119 | free-nodes
   network: tcp
   port: 22324
   server: 213.156.141.52
   servername: null
-  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  ws-path: /
-- country: 🇺RU
-  name: 435,436,559|🇷🇺RU_90
-  password: '!!str 1234567890'
-  port: 443
-  server: 194.87.77.91
-  skip-cert-verify: true
-  sni: kfm-bn0.pages.dev
-  type: trojan
-  udp: true
 - name: 460|俄罗斯_新西伯利亚
   network: ws
   port: 443
@@ -1444,17 +1428,7 @@ proxies:
       Host: ''
     path: /
 - client-fingerprint: chrome
-  name: '472,473,474,502,507,523,524,559|俄罗斯 #2'
-  port: 8443
-  server: 89.232.177.114
-  servername: cdn3-87.vk-cdnvideo.com
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 931729a8-3c20-4841-89a1-f18dc9ce0a6f
-- client-fingerprint: chrome
-  name: '475,478,480,483,522,559,580,581|🇱🇻_LV_拉脱维亚 #2'
+  name: '475,478,480,483,522,548,559,580,581|🇱🇻_LV_拉脱维亚 #4'
   network: raw
   port: 19562
   reality-opts:
@@ -1468,15 +1442,23 @@ proxies:
   udp: true
   uuid: 5b96be74-656d-4bb7-85c2-d2d8a3b7c2f3
 - cipher: aes-256-gcm
-  name: '478,483,522|🇺_RU_ #2'
+  name: '478,483,522,548|🇷🇺_RU_俄罗斯 #1'
   password: c5fcdf7829112cb4
   port: 30129
   server: 45.140.169.216
   type: ss
   udp: true
+- client-fingerprint: chrome
+  name: '502,559|未知 VLESS-87 | free-nodes #1'
+  port: 8443
+  server: 213.171.30.169
+  servername: cdn3-87.vk-cdnvideo.com
+  tls: true
+  type: vless
+  uuid: 931729a8-3c20-4841-89a1-f18dc9ce0a6f
 - alpn:
   - h3
-  name: '507,559|RU HY2-193 | free-nodes #1'
+  name: 507,559|RU HY2-193 | free-nodes
   password: 1c65bee4-bc54-364c-8988-6a5912fda891
   port: 443
   server: 139.84.155.186
@@ -1489,7 +1471,7 @@ proxies:
   flow: ''
   grpc-opts:
     grpc-service-name: ''
-  name: '507,559|RU VLESS-207 | free-nodes #1'
+  name: 507,559|RU VLESS-207 | free-nodes
   network: xhttp
   port: 443
   server: 139.84.155.186
@@ -1529,6 +1511,16 @@ proxies:
   server: 185.158.155.33
   tfo: false
   type: ss
+- client-fingerprint: chrome
+  name: '523,524,559|俄罗斯 #2'
+  port: 8443
+  server: 89.232.177.114
+  servername: cdn3-87.vk-cdnvideo.com
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 931729a8-3c20-4841-89a1-f18dc9ce0a6f
 - name: 533|RU俄罗斯(mibei77.com 米贝节点分享)
   network: ws
   port: 2096
@@ -1690,14 +1682,6 @@ proxies:
   tls: false
   type: vless
   uuid: 888403d1-621b-481a-b5dc-7aca518a787b
-- name: 559|🇷🇺 俄罗斯-23224965
-  network: tcp
-  port: 8443
-  server: 82.202.157.230
-  servername: ''
-  tls: true
-  type: vless
-  uuid: 931729a8-3c20-4841-89a1-f18dc9ce0a6f
 - name: 559|🇷🇺 俄罗斯-E2C698DD
   network: tcp
   port: 443
