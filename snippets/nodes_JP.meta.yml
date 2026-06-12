@@ -2368,7 +2368,7 @@ proxies:
   server: 103.106.228.175
   type: ss
 - cipher: aes-256-gcm
-  country: 🇸 US
+  country: 🇺 US
   name: 378,435,537,538|🇯🇵JP-47.79.144.115-0160 | 0.00...
   password: GTZI5AbjNAeWQG0oVNptvWJogHNKiiKA
   port: 40003
@@ -3088,7 +3088,7 @@ proxies:
   skip-cert-verify: false
   sni: t.me/ripaojiedian
   type: trojan
-- country: 🇬🇧GB
+- country: 🇧GB
   name: '378,435,436,536,537|🇯🇵JP-52.195.12.80-4458 #1'
   password: IL37892054
   port: 443
@@ -3104,7 +3104,7 @@ proxies:
   skip-cert-verify: false
   type: trojan
   udp: true
-- country: 🇺🇸US
+- country: 🇸US
   name: '378,435,537|🇯🇵JP-64.176.36.61-4520 #1'
   password: 8r<[9'l6hAO#8ZQi
   port: 443
@@ -3506,13 +3506,6 @@ proxies:
   sni: eu.mjanyt.com
   type: anytls
   udp: true
-- cipher: chacha20-ietf-poly1305
-  country: 🇵JP
-  name: 435|JP_61
-  password: 792e0bdb-01db-450c-94c4-925151eb396e
-  port: 16688
-  server: ss.041.node-for-bigairport.win
-  type: ss
 - alterId: 0
   cipher: auto
   country: 🇵JP
@@ -3615,7 +3608,7 @@ proxies:
   type: hysteria2
 - alterId: 0
   cipher: auto
-  name: '459,559,580|美国 加利福尼亚州圣何塞 #1'
+  name: '459,544,559,580|美国 加利福尼亚州圣何塞 #2'
   network: tcp
   port: '56738'
   server: 103.127.243.59
@@ -4213,6 +4206,30 @@ proxies:
   tls: false
   type: vmess
   uuid: 55b88b14-0ff3-4f25-8983-e73d1f9f3a0a
+- name: '472,473,474,502|日本+东京Fastly节点 #7'
+  network: ws
+  port: 443
+  server: 151.101.109.223
+  servername: default.ssl.fastly.net
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  uuid: 060cd76b-72e1-478f-b6c9-8e6d2bdc5517
+  ws-opts:
+    headers:
+      Host: bazaryabab.global.ssl.fastly.net
+    path: /
+- name: 472,473,474,502,551|🇩🇪DE_8|2.5MB/s
+  network: ws
+  port: 80
+  server: 151.101.109.223
+  tls: false
+  type: vless
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+  ws-opts:
+    headers:
+      Host: max-gb1.global.ssl.fastly.net
+    path: /
 - cipher: aes-128-gcm
   name: '476,481|JP(mibei77.com 米贝节点分享) #1'
   password: eeb6823c-b926-4ea2-866a-5542edd26e59
@@ -4433,26 +4450,13 @@ proxies:
       Host: 1a7b4b2d69cfc3485134b5ca9cc738f6.mobgslb.tbcache.com
     path: /
   xudp: true
-- alterId: 2
-  cipher: auto
-  client-fingerprint: chrome
-  name: '489,544,559|🇲🇾_MY_马来西亚->🇯🇵_JP_日本 #2'
-  network: tcp
-  port: 30806
-  server: v6.hdacd.com
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - alpn:
   - ''
-  alterId: '0'
+  alterId: 0
   cipher: auto
-  name: '489|🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001... #3'
+  name: '489,544|🇯🇵 JP日本(mibei77.com 米贝节点分享) #2'
   network: ws
-  port: 33105
+  port: '33105'
   server: cu1.ainivp.com
   servername: cu1.ainivp.com
   skip-cert-verify: false
@@ -4500,31 +4504,13 @@ proxies:
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - alpn:
   - h3
-  name: '507,559,580|JP HY2-163 | free-nodes #1'
+  name: 507|JP HY2-174 | free-nodes
   password: 80deaf6e-6747-35f1-848e-b8e8aeb8b2fa
   port: 443
-  server: 108.160.134.123
-  sni: u727887us1364.csgfw.top
+  server: 64.176.51.210
+  sni: u727887us2272.csgfw.top
   tls: false
   type: hysteria2
-- alpn:
-  - ''
-  client-fingerprint: random
-  flow: ''
-  grpc-opts:
-    grpc-service-name: ''
-  name: '507,559|JP VLESS-171 | free-nodes #1'
-  network: xhttp
-  port: 443
-  server: 207.148.93.201
-  servername: u727887us1885.csgfw.top
-  tls: true
-  type: vless
-  uuid: 80deaf6e-6747-35f1-848e-b8e8aeb8b2fa
-  ws-opts:
-    headers:
-      Host: s1885.csgfw.top
-    path: ssp-xhttp
 - alpn:
   - ''
   client-fingerprint: random
@@ -4572,60 +4558,6 @@ proxies:
     path: ''
 - alpn:
   - ''
-  client-fingerprint: ''
-  flow: xtls-rprx-vision
-  grpc-opts:
-    grpc-service-name: ''
-  name: 507,559|JP VLESS-214 | free-nodes
-  network: tcp
-  port: 443
-  server: 66.245.221.234
-  servername: u727887us2012.csgfw.top
-  tls: true
-  type: vless
-  uuid: 80deaf6e-6747-35f1-848e-b8e8aeb8b2fa
-  ws-opts:
-    headers:
-      Host: s2012.csgfw.top
-    path: ''
-- alpn:
-  - ''
-  client-fingerprint: random
-  flow: ''
-  grpc-opts:
-    grpc-service-name: ''
-  name: 507,559|JP VLESS-216 | free-nodes
-  network: xhttp
-  port: 443
-  server: 108.160.143.26
-  servername: u727887us2024.csgfw.top
-  tls: true
-  type: vless
-  uuid: 80deaf6e-6747-35f1-848e-b8e8aeb8b2fa
-  ws-opts:
-    headers:
-      Host: s2024.csgfw.top
-    path: ssp-xhttp
-- alpn:
-  - ''
-  client-fingerprint: ''
-  flow: xtls-rprx-vision
-  grpc-opts:
-    grpc-service-name: ''
-  name: '507,559|JP VLESS-225 | free-nodes #1'
-  network: tcp
-  port: 443
-  server: 66.245.217.10
-  servername: u727887us2177.csgfw.top
-  tls: true
-  type: vless
-  uuid: 80deaf6e-6747-35f1-848e-b8e8aeb8b2fa
-  ws-opts:
-    headers:
-      Host: s2177.csgfw.top
-    path: ''
-- alpn:
-  - ''
   client-fingerprint: random
   flow: ''
   grpc-opts:
@@ -4648,17 +4580,17 @@ proxies:
   flow: xtls-rprx-vision
   grpc-opts:
     grpc-service-name: ''
-  name: '507,559|JP VLESS-231 | free-nodes #1'
+  name: 507|JP VLESS-238 | free-nodes
   network: tcp
   port: 443
-  server: 64.176.44.175
-  servername: u727887us153.csgfw.top
+  server: 64.176.51.210
+  servername: u727887us2271.csgfw.top
   tls: true
   type: vless
   uuid: 80deaf6e-6747-35f1-848e-b8e8aeb8b2fa
   ws-opts:
     headers:
-      Host: s153.csgfw.top
+      Host: s2271.csgfw.top
     path: ''
 - alpn:
   - ''
@@ -4666,7 +4598,25 @@ proxies:
   flow: xtls-rprx-vision
   grpc-opts:
     grpc-service-name: ''
-  name: '507,559,580|JP VLESS-234 | free-nodes #1'
+  name: 507,559|JP VLESS-225 | free-nodes
+  network: tcp
+  port: 443
+  server: 66.245.217.10
+  servername: u727887us2177.csgfw.top
+  tls: true
+  type: vless
+  uuid: 80deaf6e-6747-35f1-848e-b8e8aeb8b2fa
+  ws-opts:
+    headers:
+      Host: s2177.csgfw.top
+    path: ''
+- alpn:
+  - ''
+  client-fingerprint: ''
+  flow: xtls-rprx-vision
+  grpc-opts:
+    grpc-service-name: ''
+  name: 507,559,580|JP VLESS-234 | free-nodes
   network: tcp
   port: 443
   server: 64.176.36.31
@@ -4678,24 +4628,6 @@ proxies:
     headers:
       Host: s1862.csgfw.top
     path: ''
-- alpn:
-  - ''
-  client-fingerprint: random
-  flow: ''
-  grpc-opts:
-    grpc-service-name: ''
-  name: '507,559,580|JP VLESS-236 | free-nodes #1'
-  network: xhttp
-  port: 443
-  server: 108.160.134.123
-  servername: u727887us1363.csgfw.top
-  tls: true
-  type: vless
-  uuid: 80deaf6e-6747-35f1-848e-b8e8aeb8b2fa
-  ws-opts:
-    headers:
-      Host: s1363.csgfw.top
-    path: ssp-xhttp
 - alpn:
   - h3
   name: 507,559|日本_061220348
@@ -4712,15 +4644,6 @@ proxies:
   port: 443
   server: 66.245.221.42
   sni: u727887us1737.csgfw.top
-  tls: false
-  type: hysteria2
-- alpn:
-  - h3
-  name: 507,559|JP HY2-272 | free-nodes
-  password: 80deaf6e-6747-35f1-848e-b8e8aeb8b2fa
-  port: 443
-  server: 108.160.143.26
-  sni: u727887us2025.csgfw.top
   tls: false
   type: hysteria2
 - cipher: aes-256-gcm
@@ -5022,7 +4945,7 @@ proxies:
   sni: cdnfire.xiaomispeed.com
   type: trojan
   udp: true
-- name: '536,559,580|未知 TROJAN-27 | free-nodes #2'
+- name: '536,559,580|未知 TROJAN-27 | free-nodes #1'
   password: E_hUHrn0+6VeZO=v9=fLgoPDXZWGfcrejg
   port: 443
   server: 172.238.19.11
@@ -5241,7 +5164,25 @@ proxies:
   type: hysteria2
 - alpn:
   - h3
-  name: '559,580|JP HY2-161 | free-nodes #2'
+  name: '559,580|JP HY2-163 | free-nodes #1'
+  password: 80deaf6e-6747-35f1-848e-b8e8aeb8b2fa
+  port: 443
+  server: 108.160.134.123
+  sni: u727887us1364.csgfw.top
+  tls: false
+  type: hysteria2
+- alpn:
+  - h3
+  name: 559|JP HY2-272 | free-nodes
+  password: 80deaf6e-6747-35f1-848e-b8e8aeb8b2fa
+  port: 443
+  server: 108.160.143.26
+  sni: u727887us2025.csgfw.top
+  tls: false
+  type: hysteria2
+- alpn:
+  - h3
+  name: '559,580|JP HY2-161 | free-nodes #1'
   password: 80deaf6e-6747-35f1-848e-b8e8aeb8b2fa
   port: 443
   server: 66.245.217.218
@@ -5299,17 +5240,60 @@ proxies:
     headers:
       Host: imap.mmadcoffee.info
     path: '%2F14708%2F31d3c8561998%2F'
-- name: 559|🇯🇵 日本-670CF032
-  network: tcp
-  port: 38388
-  reality-opts:
-    public-key: xHaPe5SLprSSqGccSor5d3tCRuwyowBwFeYrVXoSz3w
-    short-id: 6ba85179e30d4fc2
-  server: 47.79.149.248
-  servername: ''
-  tls: false
+- alpn:
+  - ''
+  client-fingerprint: random
+  flow: ''
+  grpc-opts:
+    grpc-service-name: ''
+  name: '559,580|JP VLESS-236 | free-nodes #2'
+  network: xhttp
+  port: 443
+  server: 108.160.134.123
+  servername: u727887us1363.csgfw.top
+  tls: true
   type: vless
-  uuid: 45c8d20e-0222-4b16-8d21-37318456b980
+  uuid: 80deaf6e-6747-35f1-848e-b8e8aeb8b2fa
+  ws-opts:
+    headers:
+      Host: s1363.csgfw.top
+    path: ssp-xhttp
+- alpn:
+  - ''
+  client-fingerprint: random
+  flow: ''
+  grpc-opts:
+    grpc-service-name: ''
+  name: '559|JP VLESS-216 | free-nodes #1'
+  network: xhttp
+  port: 443
+  server: 108.160.143.26
+  servername: u727887us2024.csgfw.top
+  tls: true
+  type: vless
+  uuid: 80deaf6e-6747-35f1-848e-b8e8aeb8b2fa
+  ws-opts:
+    headers:
+      Host: s2024.csgfw.top
+    path: ssp-xhttp
+- alpn:
+  - ''
+  client-fingerprint: random
+  flow: ''
+  grpc-opts:
+    grpc-service-name: ''
+  name: 559|JP VLESS-171 | free-nodes
+  network: xhttp
+  port: 443
+  server: 207.148.93.201
+  servername: u727887us1885.csgfw.top
+  tls: true
+  type: vless
+  uuid: 80deaf6e-6747-35f1-848e-b8e8aeb8b2fa
+  ws-opts:
+    headers:
+      Host: s1885.csgfw.top
+    path: ssp-xhttp
 - alpn:
   - ''
   client-fingerprint: random
@@ -5330,11 +5314,29 @@ proxies:
     path: ssp-xhttp
 - alpn:
   - ''
+  client-fingerprint: ''
+  flow: xtls-rprx-vision
+  grpc-opts:
+    grpc-service-name: ''
+  name: 559|JP VLESS-231 | free-nodes
+  network: tcp
+  port: 443
+  server: 64.176.44.175
+  servername: u727887us153.csgfw.top
+  tls: true
+  type: vless
+  uuid: 80deaf6e-6747-35f1-848e-b8e8aeb8b2fa
+  ws-opts:
+    headers:
+      Host: s153.csgfw.top
+    path: ''
+- alpn:
+  - ''
   client-fingerprint: random
   flow: ''
   grpc-opts:
     grpc-service-name: ''
-  name: '559,580|JP VLESS-214 | free-nodes #1'
+  name: '559,580|JP VLESS-214 | free-nodes #2'
   network: xhttp
   port: 443
   server: 66.245.217.218
@@ -5370,7 +5372,7 @@ proxies:
   flow: xtls-rprx-vision
   grpc-opts:
     grpc-service-name: ''
-  name: 559,580|JP VLESS-217 | free-nodes
+  name: '559,580|JP VLESS-217 | free-nodes #1'
   network: tcp
   port: 443
   server: 66.245.221.1
@@ -5381,6 +5383,24 @@ proxies:
   ws-opts:
     headers:
       Host: s1783.csgfw.top
+    path: ''
+- alpn:
+  - ''
+  client-fingerprint: ''
+  flow: xtls-rprx-vision
+  grpc-opts:
+    grpc-service-name: ''
+  name: '559|JP VLESS-214 | free-nodes #1'
+  network: tcp
+  port: 443
+  server: 66.245.221.234
+  servername: u727887us2012.csgfw.top
+  tls: true
+  type: vless
+  uuid: 80deaf6e-6747-35f1-848e-b8e8aeb8b2fa
+  ws-opts:
+    headers:
+      Host: s2012.csgfw.top
     path: ''
 - name: 559|🇯🇵 日本-7A190F27
   network: ws
