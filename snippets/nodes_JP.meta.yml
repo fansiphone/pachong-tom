@@ -1193,22 +1193,11 @@ proxies:
   skip-cert-verify: true
   sni: k12.tudou211.com
   type: trojan
-- alterId: 0
-  name: 306,340,378,502,514,515,516,536,537,544,551,556,557,559,574|🇰HK香港3
-  network: tcp
-  password: d02e3bb7e6b3333e818d36866d40de6e
-  port: 53018
-  server: 18.183.58.98
-  skip-cert-verify: true
-  sni: www.nintendogames.net
-  tls: true
-  type: trojan
-  udp: true
-- name: 306,340,378,502,514,515,516,536,537,544,551,556,557,559|10,11|日本|@ripaojiedian
+- name: '306,502,514,515,516,551,556,557|日本|@ripaojiedian #2'
   network: tcp
   password: BxceQaOe
-  port: 47655
-  server: 18.183.150.2
+  port: 5408
+  server: 18.181.230.17
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
@@ -1319,6 +1308,25 @@ proxies:
   skip-cert-verify: true
   tls: false
   type: hysteria2
+- name: 340,378,536,537,544,559|10,11|日本|@ripaojiedian
+  network: tcp
+  password: BxceQaOe
+  port: 47655
+  server: 18.183.150.2
+  skip-cert-verify: true
+  sni: t.me%252Fripaojiedian
+  type: trojan
+- alterId: 0
+  name: 340,378,536,537,544,559,574|🇵JP日本2
+  network: tcp
+  password: d02e3bb7e6b3333e818d36866d40de6e
+  port: 5701
+  server: 18.162.244.255
+  skip-cert-verify: true
+  sni: www.nintendogames.net
+  tls: true
+  type: trojan
+  udp: true
 - name: 356|🇯🇵1 |  34.4MB/s
   network: ws
   password: bpb-trojan
@@ -2368,7 +2376,7 @@ proxies:
   server: 103.106.228.175
   type: ss
 - cipher: aes-256-gcm
-  country: 🇺 US
+  country: ' US'
   name: 378,435,537,538|🇯🇵JP-47.79.144.115-0160 | 0.00...
   password: GTZI5AbjNAeWQG0oVNptvWJogHNKiiKA
   port: 40003
@@ -3088,7 +3096,7 @@ proxies:
   skip-cert-verify: false
   sni: t.me/ripaojiedian
   type: trojan
-- country: 🇧GB
+- country: 🇬🇧GB
   name: '378,435,436,536,537|🇯🇵JP-52.195.12.80-4458 #1'
   password: IL37892054
   port: 443
@@ -3104,7 +3112,7 @@ proxies:
   skip-cert-verify: false
   type: trojan
   udp: true
-- country: 🇸US
+- country: 🇺🇸US
   name: '378,435,537|🇯🇵JP-64.176.36.61-4520 #1'
   password: 8r<[9'l6hAO#8ZQi
   port: 443
@@ -3184,7 +3192,7 @@ proxies:
   type: ssr
 - alterId: 0
   cipher: auto
-  name: 378,536,537,559|🏁 未知-B40CAC94
+  name: '378,536,537|🇯🇵JP-172.111.146.64-4584 #1'
   network: ws
   port: 80
   server: 172.111.146.64
@@ -3194,8 +3202,6 @@ proxies:
   type: vmess
   uuid: 05b8c783-7f59-47f9-9923-06a465679f6a
   ws-opts:
-    headers:
-      Host: ''
     path: /vmess/
 - cipher: chacha20-ietf
   name: '378,536,537|🇵JP-13.115.2.236-4596 #1'
@@ -3506,12 +3512,19 @@ proxies:
   sni: eu.mjanyt.com
   type: anytls
   udp: true
+- cipher: chacha20-ietf-poly1305
+  country: 🇵JP
+  name: 435|🇵JP_66
+  password: 792e0bdb-01db-450c-94c4-925151eb396e
+  port: 16688
+  server: ss.041.node-for-bigairport.win
+  type: ss
 - alterId: 0
   cipher: auto
   country: 🇵JP
   h2-opts: {}
   http-opts: {}
-  name: 435,437,559|日本_061220003
+  name: 435,437,559|日本_061305005
   network: tcp
   port: '22324'
   server: 172.104.80.66
@@ -3523,7 +3536,7 @@ proxies:
   ws-path: /
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '438,507,559|未知 VLESS-111 | free-nodes #1'
+  name: '438,507,559|未知 VLESS-91 | free-nodes #2'
   network: tcp
   port: 26658
   reality-opts:
@@ -3536,7 +3549,7 @@ proxies:
   uuid: a5ac4482-917b-4739-b199-2602b0d685c1
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '438,507,559,580|未知 VLESS-113 | free-nodes #1'
+  name: '438,507,559,580|未知 VLESS-105 | free-nodes #3'
   network: tcp
   port: 12524
   reality-opts:
@@ -3547,7 +3560,23 @@ proxies:
   tls: false
   type: vless
   uuid: c8a930cb-7a41-403f-922a-0b2148a75e05
-- name: '438|🇯🇵JP_3|1.8MB/s | 更多节点: https:/...'
+- client-fingerprint: firefox
+  encryption: none
+  flow: xtls-rprx-vision
+  name: '438,489,559|JP日本(mibei77.com 米贝节点分享) #12'
+  network: tcp
+  port: 57921
+  reality-opts:
+    public-key: MZUXW6zSUtYRBiP7Zu7v6A5AjhrbSgOOz731CJhE3EQ
+    short-id: 2c35f2ac05bf15a0
+  server: 13.193.215.148
+  servername: www.nvidia.com
+  tls: false
+  type: vless
+  udp: true
+  uuid: f4e306dd-7919-41a1-bc29-5a37408e92a6
+  xudp: true
+- name: '438|🇯🇵JP_4|1.3MB/s | 网盘搜宝: https:/...'
   network: tcp
   port: 47878
   server: 152.69.195.67
@@ -3555,6 +3584,26 @@ proxies:
   tls: false
   type: vless
   uuid: eb8613e3-8393-4cff-a3ad-6501fd4adc63
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '438,507,559,580|未知 VLESS-95 | free-nodes #1'
+  network: tcp
+  port: 26902
+  reality-opts:
+    public-key: 5CqD0ZEtt5W_xA9adU4CxjH4xAV-BdCwhDuthBBnpFM
+    short-id: 450d60a09ffb65
+  server: 3.112.19.64
+  servername: www.icloud.com
+  tls: false
+  type: vless
+  uuid: 9cb72288-da5a-40a4-b856-4557f9849016
+- name: '438|🇯🇵JP_6|1.6MB/s | 网盘搜宝: https:/...'
+  network: tcp
+  port: 24477
+  server: 43.163.241.110
+  tls: false
+  type: vless
+  uuid: 2bc72bec-0c2a-4c6b-aa9f-138bfce7ba0d
 - name: 453|🇯🇵 日本2|@stairnode
   password: 253bc477d4e43c209f2d427272968280
   port: 1806
@@ -4206,30 +4255,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 55b88b14-0ff3-4f25-8983-e73d1f9f3a0a
-- name: '472,473,474,502|日本+东京Fastly节点 #7'
-  network: ws
-  port: 443
-  server: 151.101.109.223
-  servername: default.ssl.fastly.net
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  uuid: 060cd76b-72e1-478f-b6c9-8e6d2bdc5517
-  ws-opts:
-    headers:
-      Host: bazaryabab.global.ssl.fastly.net
-    path: /
-- name: 472,473,474,502,551|🇩🇪DE_8|2.5MB/s
-  network: ws
-  port: 80
-  server: 151.101.109.223
-  tls: false
-  type: vless
-  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
-  ws-opts:
-    headers:
-      Host: max-gb1.global.ssl.fastly.net
-    path: /
 - cipher: aes-128-gcm
   name: '476,481|JP(mibei77.com 米贝节点分享) #1'
   password: eeb6823c-b926-4ea2-866a-5542edd26e59
@@ -4418,22 +4443,16 @@ proxies:
       Host: 1a7b4b2d69cfc3485134b5ca9cc738f6.mobgslb.tbcache.com
     path: /
   xudp: true
-- client-fingerprint: firefox
-  encryption: none
-  flow: xtls-rprx-vision
-  name: '489,559,580|JP日本(mibei77.com 米贝节点分享) #14'
-  network: tcp
-  port: 57921
-  reality-opts:
-    public-key: MZUXW6zSUtYRBiP7Zu7v6A5AjhrbSgOOz731CJhE3EQ
-    short-id: 2c35f2ac05bf15a0
-  server: 13.193.215.148
-  servername: www.nvidia.com
+- alterId: 2
+  cipher: auto
+  name: 489,519|🇲🇾_MY_马来西亚->🇯🇵_JP_日本
+  port: 30806
+  server: v6.hdacd.com
+  skip-cert-verify: false
   tls: false
-  type: vless
+  type: vmess
   udp: true
-  uuid: f4e306dd-7919-41a1-bc29-5a37408e92a6
-  xudp: true
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - alterId: '0'
   cipher: auto
   name: '489|🟢🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001... #1'
@@ -4450,11 +4469,31 @@ proxies:
       Host: 1a7b4b2d69cfc3485134b5ca9cc738f6.mobgslb.tbcache.com
     path: /
   xudp: true
+- alterId: 2
+  cipher: auto
+  client-fingerprint: chrome
+  name: '489,544,559|🇲🇾_MY_马来西亚->🇯🇵_JP_日本 #2'
+  network: tcp
+  port: 30806
+  server: v6.hdacd.com
+  servername: ''
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- alterId: 2
+  cipher: auto
+  name: '489|🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001... #3'
+  port: 30806
+  server: 103.182.97.12
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - alpn:
   - ''
   alterId: 0
   cipher: auto
-  name: '489,544|🇯🇵 JP日本(mibei77.com 米贝节点分享) #2'
+  name: '489,544,559,580|JP日本(mibei77.com 米贝节点分享) #15'
   network: ws
   port: '33105'
   server: cu1.ainivp.com
@@ -4469,13 +4508,6 @@ proxies:
       Host: cu1.ainivp.com
     path: /ray
   xudp: true
-- alterId: 2
-  cipher: auto
-  name: 489|🔴🇯🇵_github.com/Ruk1ng001_3a116...
-  port: 30806
-  server: 103.182.97.12
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
@@ -4492,19 +4524,9 @@ proxies:
   type: vmess
   udp: true
   uuid: 2f50f5ef-1a3a-4585-a3c9-3a860d37b134
-- alterId: 2
-  cipher: auto
-  name: 489,519|🇲🇾_MY_马来西亚->🇯🇵_JP_日本
-  port: 30806
-  server: v6.hdacd.com
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - alpn:
   - h3
-  name: 507|JP HY2-174 | free-nodes
+  name: 507,559|JP HY2-174 | free-nodes
   password: 80deaf6e-6747-35f1-848e-b8e8aeb8b2fa
   port: 443
   server: 64.176.51.210
@@ -4517,7 +4539,7 @@ proxies:
   flow: ''
   grpc-opts:
     grpc-service-name: ''
-  name: 507,559|JP VLESS-198 | free-nodes
+  name: 507,559|JP VLESS-186 | free-nodes
   network: xhttp
   port: 443
   server: 64.176.50.101
@@ -4531,7 +4553,7 @@ proxies:
     path: ssp-xhttp
 - alpn:
   - h3
-  name: 507,559|JP HY2-199 | free-nodes
+  name: 507,559|JP HY2-187 | free-nodes
   password: 80deaf6e-6747-35f1-848e-b8e8aeb8b2fa
   port: 443
   server: 64.176.50.101
@@ -4544,7 +4566,7 @@ proxies:
   flow: xtls-rprx-vision
   grpc-opts:
     grpc-service-name: ''
-  name: 507,559,580|JP VLESS-224 | free-nodes
+  name: '507,559,580|JP VLESS-219 | free-nodes #1'
   network: tcp
   port: 443
   server: 66.245.221.42
@@ -4562,7 +4584,7 @@ proxies:
   flow: ''
   grpc-opts:
     grpc-service-name: ''
-  name: 507,559|JP VLESS-227 | free-nodes
+  name: 507,559|JP VLESS-203 | free-nodes
   network: xhttp
   port: 443
   server: 202.182.119.68
@@ -4580,17 +4602,17 @@ proxies:
   flow: xtls-rprx-vision
   grpc-opts:
     grpc-service-name: ''
-  name: 507|JP VLESS-238 | free-nodes
+  name: 507,559|JP VLESS-204 | free-nodes
   network: tcp
   port: 443
   server: 64.176.51.210
-  servername: u727887us2271.csgfw.top
+  servername: u727887us699.csgfw.top
   tls: true
   type: vless
   uuid: 80deaf6e-6747-35f1-848e-b8e8aeb8b2fa
   ws-opts:
     headers:
-      Host: s2271.csgfw.top
+      Host: s699.csgfw.top
     path: ''
 - alpn:
   - ''
@@ -4598,7 +4620,7 @@ proxies:
   flow: xtls-rprx-vision
   grpc-opts:
     grpc-service-name: ''
-  name: 507,559|JP VLESS-225 | free-nodes
+  name: '507,559|JP VLESS-209 | free-nodes #1'
   network: tcp
   port: 443
   server: 66.245.217.10
@@ -4616,7 +4638,7 @@ proxies:
   flow: xtls-rprx-vision
   grpc-opts:
     grpc-service-name: ''
-  name: 507,559,580|JP VLESS-234 | free-nodes
+  name: 507,559,580|JP VLESS-229 | free-nodes
   network: tcp
   port: 443
   server: 64.176.36.31
@@ -4630,7 +4652,7 @@ proxies:
     path: ''
 - alpn:
   - h3
-  name: 507,559|日本_061220348
+  name: 507,559|日本_061305357
   password: 80deaf6e-6747-35f1-848e-b8e8aeb8b2fa
   port: 443
   server: 202.182.119.68
@@ -4639,7 +4661,7 @@ proxies:
   type: hysteria2
 - alpn:
   - h3
-  name: 507,559,580|JP HY2-245 | free-nodes
+  name: 507,559,580|JP HY2-240 | free-nodes
   password: 80deaf6e-6747-35f1-848e-b8e8aeb8b2fa
   port: 443
   server: 66.245.221.42
@@ -4710,21 +4732,6 @@ proxies:
   server: 18.181.194.77
   tfo: false
   type: ss
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '523,524,559|日本 #4'
-  network: tcp
-  port: 5454
-  reality-opts:
-    public-key: 7Mb18pl7fH3NvhVevIVTgRdPlAorUucOWMlUaTrDV0o
-    short-id: 4265cc8365
-  server: 1.sdwan.realm-sync.com
-  servername: swcdn.apple.com
-  skip-cert-verify: true
-  tls: false
-  type: vless
-  udp: true
-  uuid: 8faf6e38-0531-4d63-91f0-2aba5b9ff864
 - name: 523,524,559,606|178.249.213.177_Gemini_Claude
   network: tcp
   port: 8443
@@ -4737,7 +4744,7 @@ proxies:
   uuid: 394f6981-a782-4779-9a85-e6cf22935d93
 - client-fingerprint: ios
   flow: xtls-rprx-vision
-  name: '523,524,559,580|US美国(mibei77.com 米贝节点分享) #66'
+  name: '523,524,559|日本 #3'
   network: tcp
   port: 443
   reality-opts:
@@ -4945,7 +4952,7 @@ proxies:
   sni: cdnfire.xiaomispeed.com
   type: trojan
   udp: true
-- name: '536,559,580|未知 TROJAN-27 | free-nodes #1'
+- name: '536,559,580|未知 TROJAN-26 | free-nodes #2'
   password: E_hUHrn0+6VeZO=v9=fLgoPDXZWGfcrejg
   port: 443
   server: 172.238.19.11
@@ -4969,6 +4976,20 @@ proxies:
   server: 35.79.220.32
   sni: www.nintendogames.net
   type: trojan
+- name: 553|🇯🇵日本_22c62
+  password: aeabae7e-a055-4505-85a6-b4cd4982b76a
+  port: 25055
+  server: jplic.osaip.net
+  sni: ''
+  type: trojan
+  udp: true
+- name: 553|🇯🇵日本_15ff0
+  password: f7d06c85-4a73-4687-bf1d-0c140406c248
+  port: 25055
+  server: jplic.osaip.net
+  sni: ''
+  type: trojan
+  udp: true
 - cipher: chacha20-ietf-poly1305
   name: 558|0| 01 | 1x JP
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
@@ -5130,7 +5151,7 @@ proxies:
   tls: false
   type: vmess
   uuid: b806b388-5f97-11ee-8014-f23c913c8d2b
-- name: 559|日本_061220344
+- name: 559|日本_061305353
   password: 573402b7-156e-4141-8c3b-f01b6ebedf05
   port: 10085
   server: hk01.jgpy.help
@@ -5138,7 +5159,7 @@ proxies:
   sni: apple.com
   tls: false
   type: hysteria2
-- name: 559|日本_061220345
+- name: 559|日本_061305354
   password: 573402b7-156e-4141-8c3b-f01b6ebedf05
   port: 10089
   server: hk03.jgpy.help
@@ -5146,7 +5167,7 @@ proxies:
   sni: apple.com
   tls: false
   type: hysteria2
-- name: 559|日本_061220346
+- name: 559|日本_061305355
   password: 573402b7-156e-4141-8c3b-f01b6ebedf05
   port: 10086
   server: jp01.jgpy.help
@@ -5154,7 +5175,7 @@ proxies:
   sni: apple.com
   tls: false
   type: hysteria2
-- name: 559|日本_061220347
+- name: 559|日本_061305356
   password: 573402b7-156e-4141-8c3b-f01b6ebedf05
   port: 10078
   server: us01.jgpy.help
@@ -5164,7 +5185,7 @@ proxies:
   type: hysteria2
 - alpn:
   - h3
-  name: '559,580|JP HY2-163 | free-nodes #1'
+  name: 559,580|JP HY2-158 | free-nodes
   password: 80deaf6e-6747-35f1-848e-b8e8aeb8b2fa
   port: 443
   server: 108.160.134.123
@@ -5173,16 +5194,7 @@ proxies:
   type: hysteria2
 - alpn:
   - h3
-  name: 559|JP HY2-272 | free-nodes
-  password: 80deaf6e-6747-35f1-848e-b8e8aeb8b2fa
-  port: 443
-  server: 108.160.143.26
-  sni: u727887us2025.csgfw.top
-  tls: false
-  type: hysteria2
-- alpn:
-  - h3
-  name: '559,580|JP HY2-161 | free-nodes #1'
+  name: 559,580|JP HY2-156 | free-nodes
   password: 80deaf6e-6747-35f1-848e-b8e8aeb8b2fa
   port: 443
   server: 66.245.217.218
@@ -5191,14 +5203,14 @@ proxies:
   type: hysteria2
 - alpn:
   - h3
-  name: '559,580|JP HY2-205 | free-nodes #1'
+  name: 559,580|JP HY2-200 | free-nodes
   password: 80deaf6e-6747-35f1-848e-b8e8aeb8b2fa
   port: 443
   server: 66.245.221.1
   sni: u727887us1785.csgfw.top
   tls: false
   type: hysteria2
-- name: 559|日本_061220349
+- name: 559|日本_061305358
   password: 9d0f6021-e1e3-47cd-a18e-722dd7f1c2ee
   port: 443
   server: 154.85.18.134
@@ -5206,25 +5218,18 @@ proxies:
   sni: www.bing.com
   tls: false
   type: hysteria2
-- name: 559|🇯🇵JP_59
+- name: 559|🇯🇵JP_72
   password: IL37892054
   port: 443
   server: engaging-toucan.rooster465.autos
   sni: engaging-toucan.rooster465.autos
   type: trojan
-- name: 559|日本_061220334
+- name: 559|日本_061305009
   network: tcp
   password: LYaEYwjN8LjWTRJdCCTzW7V6gK7atJVu
   port: 443
   server: 46.8.113.142
-  skip-cert-verify: false
   sni: ch-2.bexum.fun
-  type: trojan
-- name: 559|🇯🇵 日本-3C862A0C
-  password: tsuchiya
-  port: 443
-  server: aa.ccmusic.jp
-  sni: aa.ccmusic.jp
   type: trojan
 - client-fingerprint: chrome
   name: '559,580|日本節點丨yoyapai.com #3'
@@ -5246,7 +5251,7 @@ proxies:
   flow: ''
   grpc-opts:
     grpc-service-name: ''
-  name: '559,580|JP VLESS-236 | free-nodes #2'
+  name: '559,580|JP VLESS-231 | free-nodes #1'
   network: xhttp
   port: 443
   server: 108.160.134.123
@@ -5264,43 +5269,7 @@ proxies:
   flow: ''
   grpc-opts:
     grpc-service-name: ''
-  name: '559|JP VLESS-216 | free-nodes #1'
-  network: xhttp
-  port: 443
-  server: 108.160.143.26
-  servername: u727887us2024.csgfw.top
-  tls: true
-  type: vless
-  uuid: 80deaf6e-6747-35f1-848e-b8e8aeb8b2fa
-  ws-opts:
-    headers:
-      Host: s2024.csgfw.top
-    path: ssp-xhttp
-- alpn:
-  - ''
-  client-fingerprint: random
-  flow: ''
-  grpc-opts:
-    grpc-service-name: ''
-  name: 559|JP VLESS-171 | free-nodes
-  network: xhttp
-  port: 443
-  server: 207.148.93.201
-  servername: u727887us1885.csgfw.top
-  tls: true
-  type: vless
-  uuid: 80deaf6e-6747-35f1-848e-b8e8aeb8b2fa
-  ws-opts:
-    headers:
-      Host: s1885.csgfw.top
-    path: ssp-xhttp
-- alpn:
-  - ''
-  client-fingerprint: random
-  flow: ''
-  grpc-opts:
-    grpc-service-name: ''
-  name: 559,580|JP VLESS-249 | free-nodes
+  name: 559,580|JP VLESS-244 | free-nodes
   network: xhttp
   port: 443
   server: 64.176.39.50
@@ -5314,29 +5283,11 @@ proxies:
     path: ssp-xhttp
 - alpn:
   - ''
-  client-fingerprint: ''
-  flow: xtls-rprx-vision
-  grpc-opts:
-    grpc-service-name: ''
-  name: 559|JP VLESS-231 | free-nodes
-  network: tcp
-  port: 443
-  server: 64.176.44.175
-  servername: u727887us153.csgfw.top
-  tls: true
-  type: vless
-  uuid: 80deaf6e-6747-35f1-848e-b8e8aeb8b2fa
-  ws-opts:
-    headers:
-      Host: s153.csgfw.top
-    path: ''
-- alpn:
-  - ''
   client-fingerprint: random
   flow: ''
   grpc-opts:
     grpc-service-name: ''
-  name: '559,580|JP VLESS-214 | free-nodes #2'
+  name: '559,580|JP VLESS-209 | free-nodes #2'
   network: xhttp
   port: 443
   server: 66.245.217.218
@@ -5354,7 +5305,7 @@ proxies:
   flow: ''
   grpc-opts:
     grpc-service-name: ''
-  name: '559,580|JP VLESS-220 | free-nodes #1'
+  name: '559,580|JP VLESS-215 | free-nodes #1'
   network: xhttp
   port: 443
   server: 66.245.217.29
@@ -5372,7 +5323,7 @@ proxies:
   flow: xtls-rprx-vision
   grpc-opts:
     grpc-service-name: ''
-  name: '559,580|JP VLESS-217 | free-nodes #1'
+  name: '559,580|JP VLESS-212 | free-nodes #1'
   network: tcp
   port: 443
   server: 66.245.221.1
@@ -5384,47 +5335,6 @@ proxies:
     headers:
       Host: s1783.csgfw.top
     path: ''
-- alpn:
-  - ''
-  client-fingerprint: ''
-  flow: xtls-rprx-vision
-  grpc-opts:
-    grpc-service-name: ''
-  name: '559|JP VLESS-214 | free-nodes #1'
-  network: tcp
-  port: 443
-  server: 66.245.221.234
-  servername: u727887us2012.csgfw.top
-  tls: true
-  type: vless
-  uuid: 80deaf6e-6747-35f1-848e-b8e8aeb8b2fa
-  ws-opts:
-    headers:
-      Host: s2012.csgfw.top
-    path: ''
-- name: 559|🇯🇵 日本-7A190F27
-  network: ws
-  port: 666
-  server: 43.165.168.14
-  servername: ''
-  tls: true
-  type: vless
-  uuid: 8d5e7f2a-3c1b-4d9e-a6f8-2b5c0e7d4a19
-  ws-opts:
-    headers:
-      Host: 43.165.168.14
-    path: '%2Fproxy'
-- name: 559|🇯🇵 日本-A7895A30
-  network: tcp
-  port: 47381
-  reality-opts:
-    public-key: kiMGo34R7wN3bHFbY_6MqIHePd7rlnOkxGCt-Ek1Ej0
-    short-id: 67e2075367998314
-  server: 13.231.185.74
-  servername: ''
-  tls: false
-  type: vless
-  uuid: c6508e59-dd68-4dc0-b14f-3192e84ef843
 - alterId: 0
   cipher: auto
   name: 559|JP85
@@ -5451,21 +5361,11 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 559|🇯🇵 日本-CC40E05D
-  network: http
-  port: 55386
-  server: 103.127.243.60
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 22d4ef9c-b269-4f82-9f59-6c2c0d8ce16d
-- alterId: 0
-  cipher: auto
-  name: 559|日本_061220335
+  name: 559|日本_061305030
   network: ws
   port: '25686'
   server: 140.83.51.161
-  servername: jp02.a0a.xyz
+  servername: ''
   tls: false
   type: vmess
   uuid: 6733c357-ba11-4e9f-f00f-7d87f2776ff9
