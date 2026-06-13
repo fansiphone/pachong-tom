@@ -1187,7 +1187,7 @@ proxies:
   type: trojan
   udp: true
 - name: '306,340,378,502,514,515,516,536,537,544,551,556,557,559|11,12|日本|@ripaojiedian
-    #2'
+    #1'
   network: tcp
   password: BxceQaOe
   port: 5408
@@ -1295,7 +1295,7 @@ proxies:
   sni: www.alibaba.com
   type: trojan
   udp: true
-- name: '340,495,502,514,551,559|8|JP #2'
+- name: '340,495,502,514,551,559|8|JP #1'
   password: 95D27EEF-B7AE-4076-BA39-40FDFA3D0F61
   port: 13778
   server: jp7.dexlos.com
@@ -1335,7 +1335,7 @@ proxies:
   server: 149.22.87.241
   type: ss
 - cipher: aes-128-gcm
-  country: 🇺🇸US
+  country: 🇸US
   name: 356,357,378,435,537,538,606|149.22.87.204_Claude
   password: shadowsocks
   port: 443
@@ -2353,7 +2353,7 @@ proxies:
   server: 103.106.228.175
   type: ss
 - cipher: aes-256-gcm
-  country: 🇸 US
+  country: ' US'
   name: 378,435,537,538|🇯🇵JP-47.79.144.115-0189 | 0.02...
   password: GTZI5AbjNAeWQG0oVNptvWJogHNKiiKA
   port: 40003
@@ -3079,7 +3079,7 @@ proxies:
   skip-cert-verify: false
   sni: t.me/ripaojiedian
   type: trojan
-- country: 🇧GB
+- country: 🇬🇧GB
   name: '378,435,436,536,537|🇯🇵JP-52.195.12.80-4459 #1'
   password: IL37892054
   port: 443
@@ -3398,17 +3398,6 @@ proxies:
   sni: eu.mjanyt.com
   type: anytls
   udp: true
-- cipher: chacha20-ietf-poly1305
-  country: 🇵JP
-  name: 435|🇵JP_62
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    host: 817aa69.default.nintendo.com:112719
-    mode: tls
-  port: 2377
-  server: 52.196.30.101
-  type: ss
 - alterId: 0
   cipher: auto
   country: 🇵JP
@@ -3437,19 +3426,20 @@ proxies:
   tls: false
   type: vless
   uuid: a5ac4482-917b-4739-b199-2602b0d685c1
-- client-fingerprint: firefox
+- client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '438,559|JP日本(mibei77.com 米贝节点分享) #12'
+  name: '438,507,559|未知 VLESS-98 | free-nodes #2'
   network: tcp
-  port: 57921
+  port: 59826
   reality-opts:
-    public-key: MZUXW6zSUtYRBiP7Zu7v6A5AjhrbSgOOz731CJhE3EQ
+    public-key: H-Ule2FFFI4MFSowspFPAC5SYb_gW9IE0isIZY8Ix3w
     short-id: 2c35f2ac05bf15a0
-  server: 13.193.215.148
+  server: 57.181.38.2
   servername: www.nvidia.com
+  skip-cert-verify: true
   tls: false
   type: vless
-  uuid: f4e306dd-7919-41a1-bc29-5a37408e92a6
+  uuid: aa24026d-9542-4357-8625-3f04653fc4bd
 - name: 438,559|🏁 未知-5CB4B38A
   network: raw
   port: 24477
@@ -4329,33 +4319,27 @@ proxies:
   type: vmess
   udp: true
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- name: 502|日本+东京Fastly节点
+  network: ws
+  port: 443
+  server: 151.101.109.223
+  servername: default.ssl.fastly.net
+  tls: true
+  type: vless
+  uuid: 05dde938-bb2d-41c3-b176-2a9d370489b4
+  ws-opts:
+    headers:
+      Host: pan1.global.ssl.fastly.net
+    path: /
 - alpn:
   - h3
-  name: '507,559|JP HY2-140 | free-nodes #1'
+  name: 507,559|JP HY2-140 | free-nodes
   password: 723af53a-b131-3270-8ce0-13f8ecaaa322
   port: 443
   server: 89.125.244.28
   sni: u723828us646.csgfw.top
   tls: false
   type: hysteria2
-- alpn:
-  - ''
-  client-fingerprint: random
-  flow: ''
-  grpc-opts:
-    grpc-service-name: ''
-  name: '507,559|JP VLESS-144 | free-nodes #1'
-  network: xhttp
-  port: 443
-  server: 89.125.244.28
-  servername: u723828us641.csgfw.top
-  tls: true
-  type: vless
-  uuid: 723af53a-b131-3270-8ce0-13f8ecaaa322
-  ws-opts:
-    headers:
-      Host: s641.csgfw.top
-    path: ssp-xhttp
 - cipher: aes-256-gcm
   client-fingerprint: chrome
   name: 513|15|🇯🇵 日本|@ripaojiedian
@@ -5620,6 +5604,19 @@ proxies:
     headers:
       Host: t1s1.rittbo.kdns.fr
     path: '%2F'
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: '559|JP日本(mibei77.com 米贝节点分享) #12'
+  network: tcp
+  port: 57921
+  reality-opts:
+    public-key: MZUXW6zSUtYRBiP7Zu7v6A5AjhrbSgOOz731CJhE3EQ
+    short-id: 2c35f2ac05bf15a0
+  server: 13.193.215.148
+  servername: www.nvidia.com
+  tls: false
+  type: vless
+  uuid: f4e306dd-7919-41a1-bc29-5a37408e92a6
 - alterId: 0
   cipher: auto
   name: 559|JP85
@@ -5678,7 +5675,7 @@ proxies:
       Host: jp02.a0a.xyz
     path: /cctv13.m3u8
 - alterId: 0
-  name: '574|JP #3'
+  name: 574|🇵JP日本3
   password: BxceQaOe
   port: 5408
   server: 18.181.230.17
