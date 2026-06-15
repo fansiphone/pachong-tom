@@ -1187,7 +1187,7 @@ proxies:
   type: trojan
   udp: true
 - alterId: 0
-  name: 306,340,378,502,514,515,516,536,537,544,551,556,557,559,574|HK
+  name: 306,340,378,502,514,515,516,536,537,544,551,556,557,559,574|🇰HK香港5
   network: tcp
   password: e0195c73018d597b1c2f0ea89d8676ae
   port: 2008
@@ -1207,7 +1207,7 @@ proxies:
   sni: t.me%252Fripaojiedian
   type: trojan
 - alterId: 0
-  name: 306,340,378,502,514,515,516,536,537,544,551,556,557,559,574|🇵JP日本2
+  name: 306,340,378,502,514,515,516,536,537,544,551,556,557,559,574|🇯🇵JP日本2
   network: tcp
   password: e0195c73018d597b1c2f0ea89d8676ae
   port: 55973
@@ -1218,7 +1218,7 @@ proxies:
   type: trojan
   udp: true
 - alterId: 0
-  name: 306,340,378,502,514,515,516,536,537,544,551,556,557,559,574|🇬SG新加坡5
+  name: 306,340,378,502,514,515,516,536,537,544,551,556,557,559,574|🇸🇬SG新加坡3
   network: tcp
   password: e0195c73018d597b1c2f0ea89d8676ae
   port: 29642
@@ -1229,7 +1229,7 @@ proxies:
   type: trojan
   udp: true
 - alterId: 0
-  name: 306,340,378,502,514,515,516,536,537,544,551,556,557,559,574|US
+  name: 306,340,378,502,514,515,516,536,537,544,551,556,557,559,574|🇺🇸US美国6
   network: tcp
   password: e0195c73018d597b1c2f0ea89d8676ae
   port: 49277
@@ -1372,7 +1372,7 @@ proxies:
   server: 149.22.87.240
   type: ss
 - cipher: aes-128-gcm
-  country: 🇺🇸US
+  country: 🇸US
   name: 356,357,378,435,537,538,606|149.22.87.241_Claude
   password: shadowsocks
   port: 443
@@ -2382,7 +2382,7 @@ proxies:
   server: 103.106.228.175
   type: ss
 - cipher: aes-256-gcm
-  country: 🇺 US
+  country: 🇸 US
   name: 378,435,537,538|🇯🇵JP-47.79.144.115-0188 | 0.08...
   password: GTZI5AbjNAeWQG0oVNptvWJogHNKiiKA
   port: 40003
@@ -3157,7 +3157,7 @@ proxies:
   skip-cert-verify: false
   type: trojan
   udp: true
-- country: 🇸US
+- country: 🇺🇸US
   name: '378,435,537|🇯🇵JP-64.176.36.61-4434 #1'
   password: 8r<[9'l6hAO#8ZQi
   port: 443
@@ -4231,7 +4231,21 @@ proxies:
   tls: false
   type: vmess
   uuid: 55b88b14-0ff3-4f25-8983-e73d1f9f3a0a
-- name: '475,480,536,544,559,580|日本節點丨yoyapai.com #5'
+- name: 472|日本+东京Fastly节点
+  network: ws
+  port: 443
+  server: 151.101.109.223
+  servername: default.ssl.fastly.net
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 5daab9b5-c9a0-47a6-a5c6-0977c6631c14
+  ws-opts:
+    headers:
+      Host: bazaryabab.global.ssl.fastly.net
+    path: /
+- alterId: 0
+  name: '475,480,536,544,559,574,580|日本節點丨yoyapai.com #5'
   network: tcp
   password: 825929f4-c702-35ce-9124-00d3f95b8c32
   port: 34470
@@ -4347,6 +4361,22 @@ proxies:
   udp: true
   uuid: b98d4c6e-6770-4a31-8256-a4750cdea0e7
   xudp: true
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  name: '489,559|未知 VLESS-61 | free-nodes #1'
+  network: tcp
+  port: 5454
+  reality-opts:
+    public-key: 7Mb18pl7fH3NvhVevIVTgRdPlAorUucOWMlUaTrDV0o
+    short-id: 4265cc8365
+  server: 1.sdwan.realm-sync.com
+  servername: swcdn.apple.com
+  tls: false
+  type: vless
+  udp: true
+  uuid: 48959fe8-4a5e-4996-bc87-8d66398e6860
+  xudp: true
 - encryption: none
   name: 489|🔴🇯🇵[🎬📺🔍]_github.com/Ruk1ng001_...
   network: ws
@@ -4427,28 +4457,37 @@ proxies:
 - alpn:
   - ''
   client-fingerprint: ios
-  flow: ''
+  flow: xtls-rprx-vision
   grpc-opts:
     grpc-service-name: ''
-  name: '507,559|JP VLESS-168 | free-nodes #1'
-  network: xhttp
+  name: 507|JP VLESS-317 | free-nodes
+  network: tcp
   port: 443
-  server: 64.176.44.223
-  servername: u729792us2413.wagahaha.xyz
+  server: 139.180.201.141
+  servername: u729792us2896.wagahaha.xyz
   tls: true
   type: vless
   uuid: 28beee5e-40ab-3c36-b797-1e4ecf27d0a0
   ws-opts:
     headers:
-      Host: s2413.wagahaha.xyz
-    path: ssp-xhttp
+      Host: s2896.wagahaha.xyz
+    path: ''
+- alpn:
+  - h3
+  name: 507|JP HY2-245 | free-nodes
+  password: 28beee5e-40ab-3c36-b797-1e4ecf27d0a0
+  port: 443
+  server: 139.180.201.141
+  sni: u729792us2898.wagahaha.xyz
+  tls: false
+  type: hysteria2
 - alpn:
   - ''
   client-fingerprint: ios
   flow: xtls-rprx-vision
   grpc-opts:
     grpc-service-name: ''
-  name: '507,559|JP VLESS-170 | free-nodes #1'
+  name: 507,559|JP VLESS-170 | free-nodes
   network: tcp
   port: 443
   server: 64.176.43.231
@@ -4466,7 +4505,7 @@ proxies:
   flow: xtls-rprx-vision
   grpc-opts:
     grpc-service-name: ''
-  name: '507,559|JP VLESS-179 | free-nodes #1'
+  name: 507,559|JP VLESS-179 | free-nodes
   network: tcp
   port: 443
   server: 64.176.44.42
@@ -4484,7 +4523,7 @@ proxies:
   flow: ''
   grpc-opts:
     grpc-service-name: ''
-  name: '507,559|JP VLESS-184 | free-nodes #1'
+  name: 507,559|JP VLESS-184 | free-nodes
   network: xhttp
   port: 443
   server: 66.245.216.178
@@ -4499,10 +4538,64 @@ proxies:
 - alpn:
   - ''
   client-fingerprint: ios
+  flow: xtls-rprx-vision
+  grpc-opts:
+    grpc-service-name: ''
+  name: 507|JP VLESS-366 | free-nodes
+  network: tcp
+  port: 443
+  server: 108.160.130.182
+  servername: u729792us2809.wagahaha.xyz
+  tls: true
+  type: vless
+  uuid: 28beee5e-40ab-3c36-b797-1e4ecf27d0a0
+  ws-opts:
+    headers:
+      Host: s2809.wagahaha.xyz
+    path: ''
+- alpn:
+  - ''
+  client-fingerprint: ios
   flow: ''
   grpc-opts:
     grpc-service-name: ''
-  name: '507,559|JP VLESS-209 | free-nodes #1'
+  name: 507|JP VLESS-334 | free-nodes
+  network: xhttp
+  port: 443
+  server: 66.245.218.111
+  servername: u729792us2828.wagahaha.xyz
+  tls: true
+  type: vless
+  uuid: 28beee5e-40ab-3c36-b797-1e4ecf27d0a0
+  ws-opts:
+    headers:
+      Host: s2828.wagahaha.xyz
+    path: ssp-xhttp
+- alpn:
+  - ''
+  client-fingerprint: ios
+  flow: ''
+  grpc-opts:
+    grpc-service-name: ''
+  name: 507|JP VLESS-312 | free-nodes
+  network: xhttp
+  port: 443
+  server: 139.180.198.194
+  servername: u729792us3014.wagahaha.xyz
+  tls: true
+  type: vless
+  uuid: 28beee5e-40ab-3c36-b797-1e4ecf27d0a0
+  ws-opts:
+    headers:
+      Host: s3014.wagahaha.xyz
+    path: ssp-xhttp
+- alpn:
+  - ''
+  client-fingerprint: ios
+  flow: ''
+  grpc-opts:
+    grpc-service-name: ''
+  name: 507,559|JP VLESS-209 | free-nodes
   network: xhttp
   port: 443
   server: 45.76.51.103
@@ -4520,7 +4613,7 @@ proxies:
   flow: xtls-rprx-vision
   grpc-opts:
     grpc-service-name: ''
-  name: '507,559|JP VLESS-212 | free-nodes #1'
+  name: 507,559|JP VLESS-212 | free-nodes
   network: tcp
   port: 443
   server: 45.32.52.85
@@ -4535,10 +4628,64 @@ proxies:
 - alpn:
   - ''
   client-fingerprint: ios
+  flow: ''
+  grpc-opts:
+    grpc-service-name: ''
+  name: 507|JP VLESS-365 | free-nodes
+  network: xhttp
+  port: 443
+  server: 38.54.88.144
+  servername: u729792us2800.wagahaha.xyz
+  tls: true
+  type: vless
+  uuid: 28beee5e-40ab-3c36-b797-1e4ecf27d0a0
+  ws-opts:
+    headers:
+      Host: s2800.wagahaha.xyz
+    path: ssp-xhttp
+- alpn:
+  - ''
+  client-fingerprint: ios
   flow: xtls-rprx-vision
   grpc-opts:
     grpc-service-name: ''
-  name: '507,559|JP VLESS-225 | free-nodes #1'
+  name: 507|JP VLESS-363 | free-nodes
+  network: tcp
+  port: 443
+  server: 38.54.50.15
+  servername: u729792us2794.wagahaha.xyz
+  tls: true
+  type: vless
+  uuid: 28beee5e-40ab-3c36-b797-1e4ecf27d0a0
+  ws-opts:
+    headers:
+      Host: s2794.wagahaha.xyz
+    path: ''
+- alpn:
+  - ''
+  client-fingerprint: ios
+  flow: xtls-rprx-vision
+  grpc-opts:
+    grpc-service-name: ''
+  name: 507,559|JP VLESS-229 | free-nodes
+  network: tcp
+  port: 443
+  server: 45.32.34.228
+  servername: u729792us2520.wagahaha.xyz
+  tls: true
+  type: vless
+  uuid: 28beee5e-40ab-3c36-b797-1e4ecf27d0a0
+  ws-opts:
+    headers:
+      Host: s2520.wagahaha.xyz
+    path: ''
+- alpn:
+  - ''
+  client-fingerprint: ios
+  flow: xtls-rprx-vision
+  grpc-opts:
+    grpc-service-name: ''
+  name: 507,559|JP VLESS-225 | free-nodes
   network: tcp
   port: 443
   server: 104.156.238.135
@@ -4556,7 +4703,7 @@ proxies:
   flow: xtls-rprx-vision
   grpc-opts:
     grpc-service-name: ''
-  name: '507,559|JP VLESS-228 | free-nodes #1'
+  name: 507,559|JP VLESS-228 | free-nodes
   network: tcp
   port: 443
   server: 64.176.54.225
@@ -4569,26 +4716,8 @@ proxies:
       Host: s2722.wagahaha.xyz
     path: ''
 - alpn:
-  - ''
-  client-fingerprint: ios
-  flow: xtls-rprx-vision
-  grpc-opts:
-    grpc-service-name: ''
-  name: '507,559|JP VLESS-229 | free-nodes #1'
-  network: tcp
-  port: 443
-  server: 45.32.34.228
-  servername: u729792us2520.wagahaha.xyz
-  tls: true
-  type: vless
-  uuid: 28beee5e-40ab-3c36-b797-1e4ecf27d0a0
-  ws-opts:
-    headers:
-      Host: s2520.wagahaha.xyz
-    path: ''
-- alpn:
   - h3
-  name: '507,559|JP HY2-244 | free-nodes #1'
+  name: 507,559|JP HY2-244 | free-nodes
   password: 28beee5e-40ab-3c36-b797-1e4ecf27d0a0
   port: 443
   server: 64.176.43.231
@@ -4597,7 +4726,7 @@ proxies:
   type: hysteria2
 - alpn:
   - h3
-  name: '507,559|JP HY2-246 | free-nodes #1'
+  name: 507,559|JP HY2-246 | free-nodes
   password: 28beee5e-40ab-3c36-b797-1e4ecf27d0a0
   port: 443
   server: 64.176.54.225
@@ -4606,7 +4735,7 @@ proxies:
   type: hysteria2
 - alpn:
   - h3
-  name: '507,559|JP HY2-249 | free-nodes #1'
+  name: 507,559|JP HY2-249 | free-nodes
   password: 28beee5e-40ab-3c36-b797-1e4ecf27d0a0
   port: 443
   server: 104.156.238.135
@@ -4615,7 +4744,7 @@ proxies:
   type: hysteria2
 - alpn:
   - h3
-  name: '507,559|JP HY2-257 | free-nodes #1'
+  name: 507,559|JP HY2-257 | free-nodes
   password: 28beee5e-40ab-3c36-b797-1e4ecf27d0a0
   port: 443
   server: 66.245.216.178
@@ -4624,11 +4753,20 @@ proxies:
   type: hysteria2
 - alpn:
   - h3
-  name: '507,559|JP HY2-260 | free-nodes #1'
+  name: 507,559|JP HY2-260 | free-nodes
   password: 28beee5e-40ab-3c36-b797-1e4ecf27d0a0
   port: 443
   server: 45.32.34.228
   sni: u729792us2527.wagahaha.xyz
+  tls: false
+  type: hysteria2
+- alpn:
+  - h3
+  name: 507|JP HY2-364 | free-nodes
+  password: 28beee5e-40ab-3c36-b797-1e4ecf27d0a0
+  port: 443
+  server: 38.54.50.15
+  sni: u729792us2795.wagahaha.xyz
   tls: false
   type: hysteria2
 - cipher: aes-256-gcm
@@ -4740,11 +4878,12 @@ proxies:
     headers:
       Host: 162q5rc5uyvd.rh8xe8d22f0k6t6ok0y1oi6qm29fr77ht70ntdbyx4jmbzn98.workers.dev
     path: /@Marisa_kristi
-- name: '523,524,544|🇯🇵 JP日本(mibei77.com 米贝节点分享) #2'
+- alterId: 0
+  name: '523,524,544,574|JP #3'
   password: eeb6823c-b926-4ea2-866a-5542edd26e59
   port: 8443
   server: 45.32.26.252
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: tjsp.hhxaf.cc.cd
   tls: true
   type: trojan
@@ -4768,11 +4907,12 @@ proxies:
     headers:
       Host: t1s1.rittbo.kdns.fr
     path: /
-- name: 523,524,544|🇯🇵 JP日本(mibei77.com 米贝节点分享)
+- alterId: 0
+  name: 523,524,544,574|🇵JP日本5
   password: eeb6823c-b926-4ea2-866a-5542edd26e59
   port: 443
   server: 168.138.212.80
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: hhcm.hhxaf.cc.cd
   tls: true
   type: trojan
@@ -5221,7 +5361,7 @@ proxies:
   sni: www.bing.com
   tls: false
   type: hysteria2
-- name: '559|🇯🇵JP_62 #1'
+- name: 559|🇯🇵JP_62
   password: IL37892054
   port: 443
   server: engaging-toucan.rooster465.autos
@@ -5378,6 +5518,24 @@ proxies:
     headers:
       Host: cfoo-n0d.pages.dev
     path: '%2F'
+- alpn:
+  - ''
+  client-fingerprint: ios
+  flow: ''
+  grpc-opts:
+    grpc-service-name: ''
+  name: 559|JP VLESS-168 | free-nodes
+  network: xhttp
+  port: 443
+  server: 64.176.44.223
+  servername: u729792us2413.wagahaha.xyz
+  tls: true
+  type: vless
+  uuid: 28beee5e-40ab-3c36-b797-1e4ecf27d0a0
+  ws-opts:
+    headers:
+      Host: s2413.wagahaha.xyz
+    path: ssp-xhttp
 - client-fingerprint: chrome
   name: '559,580|日本節點丨yoyapai.com #4'
   network: ws
@@ -5552,7 +5710,7 @@ proxies:
       Host: jp02.a0a.xyz
     path: /cctv13.m3u8
 - alterId: 0
-  name: 574|🇵JP日本3
+  name: 574|🇯🇵JP日本3
   password: BxceQaOe
   port: 19706
   server: 18.183.247.142
