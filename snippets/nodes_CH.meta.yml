@@ -1,4 +1,17 @@
 proxies:
+- alpn:
+  - h2
+  - http/1.1
+  - h3
+  name: '306,502,551|🇨🇭CH_1|3.3MB/s #1'
+  network: tcp
+  password: SoftNetConnect
+  port: 42549
+  server: 83.228.230.226
+  skip-cert-verify: true
+  sni: www.speedtest.net
+  type: trojan
+  udp: true
 - cipher: aes-128-gcm
   name: '356,357|4 #4'
   password: shadowsocks
@@ -62,21 +75,21 @@ proxies:
   udp: true
   uuid: 7c317161-5cf8-4cbc-811a-d1297c41bb23
   xudp: true
-- name: '378,536,537|CH-152.67.71.149-2197 #1'
+- name: '378,536,537|CH-152.67.71.149-2218 #1'
   password: 8a03bc28-2a33-42c4-be59-30464dbb9954
   port: 18818
   server: ch12.yukiss.eu.org
   skip-cert-verify: false
   type: trojan
 - cipher: aes-128-cfb
-  name: '378,537|🇨CH-156.146.62.160-3768 #1'
+  name: '378,537|🇨CH-156.146.62.160-3789 #1'
   password: shadowsocks
   port: 443
   server: 156.146.62.160
   type: ss
 - alterId: 1
   cipher: auto
-  name: '378,536,537|CH-186.190.215.32-7105 #1'
+  name: '378,536,537|CH-186.190.215.32-7133 #1'
   network: ws
   port: 443
   server: 186.190.215.32
@@ -91,7 +104,7 @@ proxies:
     path: linkvws
 - alterId: 1
   cipher: auto
-  name: '378,536,537|🇭CH-186.190.215.75-7169 #1'
+  name: '378,536,537|🇭CH-186.190.215.75-7196 #1'
   network: ws
   port: 443
   server: 186.190.215.75
@@ -106,7 +119,7 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: '378,536,537|🇭CH-140.238.212.95-7182 #1'
+  name: '378,536,537|🇭CH-140.238.212.95-7209 #1'
   network: ws
   port: 443
   server: 140.238.212.95
@@ -119,6 +132,39 @@ proxies:
     headers:
       Host: e130917c-1b58-4136-b2d9-76dc920e0add.add97ee8-0f14-48a3-b2cd-979c56742e64.loseyourip.com
     path: /
+- name: 436|🇨🇭CH_08
+  password: SoftNetConnect
+  port: 42549
+  server: 83.228.230.226
+  type: trojan
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '438,502,551|🇨🇭CH_2|1.9MB/s #1'
+  network: tcp
+  port: 2083
+  reality-opts:
+    public-key: l1Ekgk-8T5rB-yolp5OIpc0XZTcd2gBeqmIR2bytKXY
+    short-id: 4e590fdc
+  server: 83.228.230.226
+  servername: www.yahoo.com
+  tls: true
+  type: vless
+  uuid: 89049f79-320b-48a0-b1cf-110165cae30c
+- http-opts:
+    method: GET
+    path:
+    - /@monacoVPN@monacoVPN@monacoVPN@monacoVPN
+  name: '438,489|🔴🇨🇭[🎬🤖📺🔍]_github.com/Ruk1ng001... #1'
+  network: http
+  port: 22
+  server: 172.65.111.43
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vless
+  uuid: 8a38623a-3e7f-5598-bdc9-894cbad4c5b6
+  ws-opts:
+    path: '%2F%40monacoVPN%40monacoVPN%40monacoVPN%40monacoVPN'
 - alterId: 0
   cipher: auto
   name: 465|16|🔒 VM-TCP-NA 🇨🇭 CH-94.131.99...
@@ -129,28 +175,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 81b2b630-8b6a-404f-b996-b12f13db5786
-- http-opts:
-    method: GET
-    path:
-    - /@monacoVPN@monacoVPN@monacoVPN@monacoVPN
-  name: '489|🔴🇨🇭[🎬🤖📺🔍]_github.com/Ruk1ng001... #1'
-  network: http
-  port: 22
-  server: 172.65.111.43
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vless
-  uuid: 8a38623a-3e7f-5598-bdc9-894cbad4c5b6
-- client-fingerprint: chrome
-  name: 502,551,559|🇨🇭 瑞士-AAFCEFFE
-  network: http
-  port: 22
-  server: 172.65.111.43
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: 88888888-8888-8888-8888-888888888888
 - client-fingerprint: chrome
   name: 559|🇨🇭 Switzerland, Zurich | [BL]
   network: xhttp
@@ -186,6 +210,13 @@ proxies:
   tls: false
   type: vless
   uuid: d78c12c4-6927-40b8-8550-ed9be00334da
+- name: 559|🇨🇭 瑞士-AAFCEFFE
+  network: http
+  port: 22
+  server: 172.65.111.43
+  tls: false
+  type: vless
+  uuid: 88888888-8888-8888-8888-888888888888
 - name: 728|🇨🇭 瑞士1
   password: 升级订阅解锁全部节点
   port: 443
