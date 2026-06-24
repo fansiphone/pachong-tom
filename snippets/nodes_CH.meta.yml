@@ -62,72 +62,6 @@ proxies:
   udp: true
   uuid: 7c317161-5cf8-4cbc-811a-d1297c41bb23
   xudp: true
-- name: 378,508,509,536,537,636|🇨🇭 瑞士 002
-  network: tcp
-  password: SoftNetConnect
-  port: 42549
-  server: 83.228.224.161
-  skip-cert-verify: true
-  sni: www.speedtest.net
-  type: trojan
-  udp: true
-- alterId: 1
-  cipher: auto
-  name: 378,508,509,536,537,636|🇺🇸 美国 1027
-  network: ws
-  port: '443'
-  server: 186.190.215.32
-  servername: ''
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: 186.190.215.32
-    path: linkvws
-- alterId: 1
-  cipher: auto
-  name: 378,508,509,536,537,636|🇺🇸 美国 1051
-  network: ws
-  port: '443'
-  server: 186.190.215.75
-  servername: ''
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: 186.190.215.75
-    path: linkvws
-- alterId: 0
-  cipher: auto
-  name: 378,508,509,536,537,636|🇨🇭 瑞士 003
-  network: ws
-  port: '443'
-  server: 140.238.212.95
-  servername: ''
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
-  ws-opts:
-    headers:
-      Host: e130917c-1b58-4136-b2d9-76dc920e0add.add97ee8-0f14-48a3-b2cd-979c56742e64.loseyourip.com
-    path: /
-- name: '378,536,537|CH-152.67.71.149-3626 #1'
-  password: 8a03bc28-2a33-42c4-be59-30464dbb9954
-  port: 18818
-  server: ch12.yukiss.eu.org
-  skip-cert-verify: false
-  type: trojan
-- cipher: aes-128-cfb
-  name: '378,537|🇨CH-156.146.62.160-5197 #1'
-  password: shadowsocks
-  port: 443
-  server: 156.146.62.160
-  type: ss
 - http-opts:
     method: GET
     path:
@@ -199,6 +133,30 @@ proxies:
   type: vless
   udp: true
   uuid: f1a44ae4-20f9-4dd7-b60e-b4f2acecfdb4
+- name: 508,509,536,537,636|🇨🇭 瑞士 002
+  network: tcp
+  password: SoftNetConnect
+  port: 42549
+  server: 83.228.224.161
+  skip-cert-verify: true
+  sni: www.speedtest.net
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 508,509,536,537,636|🇨🇭 瑞士 003
+  network: ws
+  port: '443'
+  server: 140.238.212.95
+  servername: ''
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
+  ws-opts:
+    headers:
+      Host: e130917c-1b58-4136-b2d9-76dc920e0add.add97ee8-0f14-48a3-b2cd-979c56742e64.loseyourip.com
+    path: /
 - alterId: 0
   cipher: auto
   name: 508,509,636|🇨🇭 瑞士 004
@@ -224,6 +182,18 @@ proxies:
     headers:
       Host: media-us.frdmhere.com
     path: /mp3/all/us/
+- name: 536,537|CH-152.67.71.149-3626
+  password: 8a03bc28-2a33-42c4-be59-30464dbb9954
+  port: 18818
+  server: ch12.yukiss.eu.org
+  skip-cert-verify: false
+  type: trojan
+- cipher: aes-128-cfb
+  name: 537|🇨CH-156.146.62.160-5197
+  password: shadowsocks
+  port: 443
+  server: 156.146.62.160
+  type: ss
 - alpn:
   - h2
   - http/1.1
@@ -248,6 +218,17 @@ proxies:
   uuid: 1014818b-5c5c-46b1-98fe-eaf8d5eba642
   ws-opts:
     path: '%2Fvk'
+- name: 559|🇨🇭 瑞士-40736BC4
+  network: tcp
+  port: 2083
+  reality-opts:
+    public-key: l1Ekgk-8T5rB-yolp5OIpc0XZTcd2gBeqmIR2bytKXY
+    short-id: 4e590fdc
+  server: 37.156.44.6
+  servername: ''
+  tls: false
+  type: vless
+  uuid: 89049f79-320b-48a0-b1cf-110165cae30c
 - name: 559|🇨🇭 瑞士-C7761D9A
   network: tcp
   port: 443

@@ -196,7 +196,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 119,378,508,509,536,537,636|🇨🇳 中国 001
+  name: 119,508,509,536,537,636|🇨🇳 中国 001
   network: ws
   port: '36101'
   server: 120.82.70.149
@@ -212,7 +212,7 @@ proxies:
     path: /download
 - alterId: 0
   cipher: auto
-  name: 119,378,508,509,536,537,636|🇯🇵 日本 002
+  name: 119,508,509,536,537,636|🇯🇵 日本 002
   network: ws
   port: '14954'
   server: 91.200.242.187
@@ -228,7 +228,7 @@ proxies:
     path: /download
 - alterId: 1
   cipher: auto
-  name: '119,378,508,509,536,537,636|其他 004 #2'
+  name: '119,508,509,536,537,636|其他 004 #2'
   network: ws
   port: '1552'
   server: nas.ruyo.in
@@ -3652,14 +3652,18 @@ proxies:
     path: '%2F'
 - alterId: 2
   cipher: auto
-  name: '455,457,458,459,544,559|🇮🇩_ID_印度尼西亚->🇭🇰_HK_中国香港 #5'
+  name: '455,457,458,459,543,544,559|🇮🇩_ID_印度尼西亚->🇭🇰_HK_中国香港 #5'
   network: tcp
   port: 30809
   server: v9.hdacd.com
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-headers:
+    Host: v9.hdacd.com
+  ws-path: /
 - name: '455,457,458|🇳🇱_NL_荷兰->🇱🇻_LV_拉脱维亚 #2'
   network: ws
   port: 443
@@ -3671,6 +3675,22 @@ proxies:
   ws-opts:
     headers:
       Host: sni.111000.dns.army
+- alterId: 0
+  cipher: auto
+  name: 465,508,509,537,578,636|🇫🇷 法国 080
+  network: ws
+  port: '8880'
+  server: 94.140.0.110
+  servername: ''
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 0d1bf26a-ce97-4707-a270-7f4d2ae37334
+  ws-opts:
+    headers:
+      Host: food.zhaal.ir
+    path: /
 - alterId: 0
   cipher: auto
   name: 465|0,3,4,8,9,20|🇨🇦_CA_加拿大->🇺🇸_US_...
@@ -4260,6 +4280,21 @@ proxies:
     path: /dabai.in172.67.95.35
 - alterId: 0
   cipher: auto
+  name: 468,508,509,536,537,636|🇺🇸 美国 865
+  network: ws
+  port: '443'
+  server: 172.67.135.62
+  servername: hknbyivfffj.site
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  ws-opts:
+    headers:
+      Host: hknbyivfffj.site
+    path: /rbqqvws
+- alterId: 0
+  cipher: auto
   name: 468|CF中转_0218052512 L0
   network: ws
   port: '2086'
@@ -4356,6 +4391,21 @@ proxies:
     headers:
       Host: 100-105-92-158.s1.db-link01.top
     path: /dabai.in104.24.89.11
+- alterId: 0
+  cipher: auto
+  name: 468,508,509,536,537,636|🇺🇸 美国 864
+  network: ws
+  port: '443'
+  server: 172.67.213.110
+  servername: ''
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  ws-opts:
+    headers:
+      Host: sgfqkqmltcy.site
+    path: /rbqqvws
 - alterId: 0
   cipher: auto
   name: 468|CF中转_021805939 L7
@@ -4635,6 +4685,35 @@ proxies:
   type: vmess
   uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   ws-opts: {}
+- name: 519,536,537,559|🇺🇸US美国4
+  password: BxceQaOe
+  port: 17801
+  server: 95.40.68.192
+  skip-cert-verify: false
+  sni: t.me/ripaojiedian
+  tls: false
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 519,523,524,536,537,543,544,559,574|DE国
+  password: 4f4d1167-ef14-4304-9bce-0740472503ef
+  port: 46424
+  server: 90081bb25c.node.tro.cac.cab
+  skip-cert-verify: true
+  sni: de.01.naiun.bilibili.com
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 519,536,537,543,544,559,574|🇬SG新加坡3
+  password: gcuCpQfaiVeDBdWG
+  port: 19128
+  server: 211.76.176.97
+  skip-cert-verify: true
+  sni: yazhou10.dynu.net
+  tls: true
+  type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: 519|🇭🇰_HK_中国香港->🇹🇼_TW_中国台湾
@@ -4645,47 +4724,50 @@ proxies:
   type: vmess
   udp: true
   uuid: 1d3d868e-ae7b-3762-b9d9-a7f267494c7e
+- alterId: 0
+  name: 519,523,524,536,537,543,544,559,574|AZ
+  password: 4f4d1167-ef14-4304-9bce-0740472503ef
+  port: 41943
+  server: 90081bb25c.node.tro.cac.cab
+  skip-cert-verify: true
+  sni: az.01.naiun.bilibili.com
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 519,523,524,536,537,543,544,559,574|🇸IS
+  password: 4f4d1167-ef14-4304-9bce-0740472503ef
+  port: 47909
+  server: 90081bb25c.node.tro.cac.cab
+  skip-cert-verify: true
+  sni: is.01.naiun.bilibili.com
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 519,536,537,559,574|🇺🇸US美国9
+  password: BxceQaOe
+  port: 2702
+  server: 95.40.68.150
+  skip-cert-verify: true
+  sni: t.me/ripaojiedian
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 519,523,524,536,537,543,544,559,574|CH
+  password: 4f4d1167-ef14-4304-9bce-0740472503ef
+  port: 45553
+  server: 90081bb25c.node.tro.cac.cab
+  skip-cert-verify: true
+  sni: ch.01.naiun.bilibili.com
+  tls: true
+  type: trojan
+  udp: true
 - name: '544|🇭🇰_HK_中国香港->🇺🇸_US_美国 #1'
   password: BxceQaOe
   port: 17801
   server: 95.40.68.192
-  skip-cert-verify: true
-  sni: t.me%2Fripaojiedian
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: '544,559|🇭🇰_HK_中国香港->🇹🇼_TW_中国台湾 #2'
-  network: tcp
-  port: 2510
-  server: world.t.51guangtaobao.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 1d3d868e-ae7b-3762-b9d9-a7f267494c7e
-- alterId: 2
-  cipher: auto
-  name: '544,559|🇯🇵_日本_77 #2'
-  network: tcp
-  port: 30806
-  server: v6.hdacd.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- alterId: 0
-  cipher: auto
-  name: '544,559|🇺🇸_US_美国->🇸🇬_SG_新加坡 #2'
-  network: tcp
-  port: 6004
-  server: gtm-sg-cc54q7d1q01.365cloud0285.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: a030842a-d29a-4ea9-a776-14fc4b9e102d
-- name: '544|🇭🇰_HK_中国香港->🇺🇸_US_美国 #2'
-  password: BxceQaOe
-  port: 2702
-  server: 95.40.68.150
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
