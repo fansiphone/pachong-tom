@@ -212,7 +212,7 @@ proxies:
     path: /download
 - alterId: 0
   cipher: auto
-  name: 119,378,508,509,536,537,636|🇯🇵 日本 003
+  name: 119,378,508,509,536,537,636|🇯🇵 日本 002
   network: ws
   port: '14954'
   server: 91.200.242.187
@@ -228,7 +228,7 @@ proxies:
     path: /download
 - alterId: 1
   cipher: auto
-  name: '119,378,508,509,536,537,636|其他 014 #2'
+  name: '119,378,508,509,536,537,636|其他 004 #2'
   network: ws
   port: '1552'
   server: nas.ruyo.in
@@ -3673,13 +3673,15 @@ proxies:
       Host: sni.111000.dns.army
 - alterId: 0
   cipher: auto
-  name: 465,578|28|🇦🇪_AE_阿联酋->🇬🇧_GB_英国
+  name: 465,508,509,578,636|🇫🇷 法国 080
   network: ws
-  port: 8880
+  port: '8880'
   server: 94.140.0.110
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
+  udp: true
   uuid: 0d1bf26a-ce97-4707-a270-7f4d2ae37334
   ws-opts:
     headers:
@@ -3700,12 +3702,14 @@ proxies:
     path: 33eb512b-8f3a-459b-b823-3cccb6e82049-vm
 - alterId: 0
   cipher: auto
-  name: 465|0,3,4,8,9,20,24|🇺🇸_US_美国->🇫🇷_F...
+  name: '465,508,509,636|其他 344 #2'
   network: ws
-  port: 2082
+  port: '2082'
   server: s1c.v2.v001sss.xyz
+  skip-cert-verify: true
   tls: false
   type: vmess
+  udp: true
   uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
   ws-opts:
     headers:
@@ -4382,6 +4386,18 @@ proxies:
     headers:
       Host: lax2.ibgfw.top
     path: /dyajvws
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '478,483,559,580|俄羅斯丨yoyapai.com #10'
+  network: tcp
+  port: 22231
+  server: 85.234.114.53
+  servername: r1.mizulina.top
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
 - alterId: 0
   cipher: auto
   name: '513,517,578|1,3,6,30|🇺🇸_US_美国->🇨🇦_CA_加拿大 #...'
@@ -4609,19 +4625,6 @@ proxies:
   type: vmess
   uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   ws-opts: {}
-- name: 519|🇺🇸_US_美国->🇮🇩_ID_印度尼西亚
-  network: ws
-  port: 443
-  server: 208.103.161.170
-  servername: ava.game.naver.com.cyylr.eu.cc
-  tls: true
-  type: vless
-  udp: true
-  uuid: 2dc797c8-9588-48a6-bc4a-265c23d87cd6
-  ws-opts:
-    headers:
-      Host: ava.game.naver.com.cyylr.eu.cc
-    path: /id-pusat
 - alterId: 0
   cipher: auto
   name: 519|🇭🇰_HK_中国香港->🇹🇼_TW_中国台湾
@@ -4632,14 +4635,7 @@ proxies:
   type: vmess
   udp: true
   uuid: 1d3d868e-ae7b-3762-b9d9-a7f267494c7e
-- name: '519,559|🇷🇺_RU_俄罗斯->🇩🇪_DE_德国 #1'
-  port: 8443
-  server: cdn9-33.vk-cdnvideo.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 931729a8-3c20-4841-89a1-f18dc9ce0a6f
-- name: 522|_NL_->_US_
+- name: 522,548|🇳🇱_NL_荷兰->🇺🇸_US_美国
   network: ws
   port: 2096
   server: 188.42.88.238
@@ -4653,7 +4649,7 @@ proxies:
       Host: sni.jpmj.dev
 - client-fingerprint: qq
   flow: xtls-rprx-vision
-  name: 522|_JP_->_TW_国
+  name: 522,548|🇯🇵_JP_日本->🇹🇼_TW_中国台湾
   port: 55309
   reality-opts:
     public-key: 7BS-JUFgYVaWrwwyDSiVq_YDoG36w8cRd4U8HvEg-F0
@@ -4666,7 +4662,7 @@ proxies:
   uuid: 9c5d1bf0-d58b-4001-9e7c-0c1fa314068c
 - client-fingerprint: safari
   flow: xtls-rprx-vision
-  name: 522|🇯🇵_JP_日本->🇬_SG_
+  name: 522,548|🇯🇵_JP_日本->🇸🇬_SG_新加坡
   port: 55313
   reality-opts:
     public-key: 7BS-JUFgYVaWrwwyDSiVq_YDoG36w8cRd4U8HvEg-F0
@@ -4711,6 +4707,49 @@ proxies:
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
+- name: 548|🇵🇱_PL_波兰->🇺🇸_US_美国
+  network: ws
+  port: 8880
+  server: 185.158.133.30
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: vms.lifetime58.workers.dev
+    path: /
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '548,559,580,581|🇭🇰_HK_中国香港->🇸🇬_SG_新加坡 #7'
+  port: 55567
+  reality-opts:
+    public-key: 0soGDTguByd3I9e2nLuzkw5BOHELZ_AHHDkA0Zx3JRA
+    short-id: f3f70ca767
+  server: 1.sdwan.realm-sync.com
+  servername: www.discoverasr.com
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: da4f61d1-8ca2-4bbf-a79a-1dfff04073e6
+- client-fingerprint: chrome
+  encryption: mlkem768x25519plus.native.0rtt.OB4yhTV2iFBBbdkBvMkVFLCcTlAdXKnTdm6NGlvt_wA
+  name: '548|🇺🇸_US_美国->🇩🇪_DE_德国 #2'
+  network: ws
+  port: 2083
+  server: 192.0.63.61
+  servername: twotwoirvz.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 88888888-8888-8888-8888-888888888888
+  ws-opts:
+    headers:
+      Host: twotwoirvz.dpdns.org
+    path: /
 - alterId: 2
   cipher: auto
   name: 558|_CN_->_US_国
@@ -4725,16 +4764,6 @@ proxies:
     headers:
       host: baidu.com
     path: /oooo
-- alterId: 0
-  cipher: auto
-  name: 558|13|加坡|@ripaojiedian
-  network: tcp
-  port: 23910
-  server: hzz9.fgmcx.top
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: be443689-bc64-49ff-85a5-8eecaa2235d3
 - cipher: chacha20-ietf-poly1305
   name: 558|12|🇷 法国|@ripaojiedian
   password: be443689-bc64-49ff-85a5-8eecaa2235d3
@@ -4742,40 +4771,6 @@ proxies:
   server: zz5.fgmcx.top
   tfo: false
   type: ss
-- alterId: 0
-  cipher: auto
-  name: 558|2|🇺🇸1 |  5.1MB/s
-  network: tcp
-  port: 5228
-  server: 716545eb-sux8g0-t5oe1a-1ejod.cu.plebai.net
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 6ada1622-e018-11ec-bb74-f23c9164ca5d
-  ws-headers:
-    Host: 716545eb-sux8g0-t5oe1a-1ejod.cu.plebai.net
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  name: 558|2|🇺🇸30 |  5.3MB/s
-  network: tcp
-  port: 5229
-  server: f5f98477-sutj40-tdcdb7-1k27l.cu.plebai.net
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: ba4b1f2e-c985-11ed-9c0c-f23c913c8d2b
-  ws-headers:
-    Host: f5f98477-sutj40-tdcdb7-1k27l.cu.plebai.net
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  name: 558|🇨🇳_CN_中国->🇺🇸_US_美国_4
-  network: tcp
-  port: 5229
-  server: 74f77c00-sutj40-t5qufl-8n27.cu.plebai.net
-  type: vmess
-  uuid: 5dc6fa05-a601-aba6-7761-ecde22d2b0fc
 - alterId: 2
   cipher: auto
   name: 558|🇨🇳_CN_中国->🇺🇸_US_美国_5
@@ -4790,21 +4785,6 @@ proxies:
     headers:
       host: baidu.com
     path: /oooo
-- name: 558|_GB_国->_CH_
-  network: tcp
-  password: 20bc0771-1fde-45ee-8052-3c26249c43dc
-  port: 34865
-  server: 144.24.4.176
-  sni: zurich.678789.xyz
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: 558|🇨🇳_CN_中国->🇷_FR_国
-  network: tcp
-  port: 17235
-  server: 00fd0574-sux8g0-sv07nd-jtx1.cm5.p5pv.com
-  type: vmess
-  uuid: 947dde8e-bcf5-11ef-af4a-f23c91cfbbc9
 - alterId: 0
   cipher: auto
   name: 558|🇸_US_美国->🇨_CR_斯
@@ -4833,19 +4813,6 @@ proxies:
     headers:
       host: ocbc.com
     path: /oooo
-- alterId: 0
-  cipher: auto
-  name: 558|2|🇺🇸23 |  4.6MB/s
-  network: tcp
-  port: 5228
-  server: 157.148.96.92
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 6ada1622-e018-11ec-bb74-f23c9164ca5d
-  ws-headers:
-    Host: 157.148.96.92
-  ws-path: /
 - alterId: 2
   cipher: auto
   name: 558|🇨🇳_CN_中国->🇺🇸_US_美国_8
@@ -4860,19 +4827,6 @@ proxies:
     headers:
       host: baidu.com
     path: /oooo
-- alterId: 0
-  cipher: auto
-  name: 558|2|🇺🇸18 |  5.1MB/s
-  network: tcp
-  port: 5229
-  server: 2c2227e1-sutj40-t907cr-1c1mr.cu.plebai.net
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: a12640d0-e2ad-11ef-8f5b-f23c913c8d2b
-  ws-headers:
-    Host: 2c2227e1-sutj40-t907cr-1c1mr.cu.plebai.net
-  ws-path: /
 - alterId: 0
   cipher: auto
   name: 558|🇸_US_美国->🇨🇷_CR_哥斯达黎加_1
@@ -4903,19 +4857,6 @@ proxies:
     path: /s15.html
 - alterId: 0
   cipher: auto
-  name: 558|2|🇷4 |  1.1MB/s
-  network: tcp
-  port: 17235
-  server: 87ab6ec1-sux8g0-susn3i-1lkt0.cm5.p5pv.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: cd1b0ae0-4010-11ee-953a-f23c9164ca5d
-  ws-headers:
-    Host: 87ab6ec1-sux8g0-susn3i-1lkt0.cm5.p5pv.com
-  ws-path: /
-- alterId: 0
-  cipher: auto
   name: 558|🇸_US_美国->🇨🇷_CR_哥斯达黎加_3
   network: ws
   port: 80
@@ -4942,24 +4883,6 @@ proxies:
     headers:
       host: baidu.com
     path: /oooo
-- alterId: 0
-  cipher: auto
-  name: 558|13|美国2|@ripaojiedian
-  network: tcp
-  port: 23903
-  server: usz1.fgmcx.top
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: be443689-bc64-49ff-85a5-8eecaa2235d3
-- alterId: 0
-  cipher: auto
-  name: 558|🇨🇳_CN_中国->🇺🇸_US_美国_10
-  network: tcp
-  port: 5228
-  server: ba91e0a1-sutj40-t1k53r-1jm8i.cu.plebai.net
-  type: vmess
-  uuid: a6ddfc37-05eb-11ed-af40-f23c91cfbbc9
 - name: 559|🇺🇸_US_美国->🇫🇷_FR_法国
   network: ws
   port: 443
@@ -5004,7 +4927,7 @@ proxies:
     headers:
       Host: ava.game.naver.com.cyylr.eu.cc
     path: '%2Fid-pusat'
-- name: '559|🇺🇸_US_美国->🇩🇪_DE_德国 #2'
+- name: '559|🇺🇸_US_美国->🇩🇪_DE_德国 #3'
   network: ws
   port: 2053
   server: 104.19.255.51
@@ -5014,7 +4937,7 @@ proxies:
   uuid: 4b90796f-8973-467e-966b-54319b064ee9
   ws-opts:
     path: /backup
-- name: '559|🇺🇸_US_美国->🇩🇪_DE_德国 #3'
+- name: '559|🇺🇸_US_美国->🇩🇪_DE_德国 #4'
   network: ws
   port: 2053
   server: 104.22.13.192
@@ -5024,7 +4947,7 @@ proxies:
   uuid: 4b90796f-8973-467e-966b-54319b064ee9
   ws-opts:
     path: /backup
-- name: '559,580,581|🇵🇱_PL_波兰->🇺🇸_US_美国 #3'
+- name: '559,580,581|🇵🇱_PL_波兰->🇺🇸_US_美国 #4'
   network: ws
   port: 8880
   server: 185.158.133.30
@@ -5112,7 +5035,7 @@ proxies:
       Host: joinbedeee-daily-configs.net
     path: '%2F%40Daily_Configs--%40Daily_Configs--%40Daily_Configs--%40Daily_Configs--%40Daily_Configs--%40Daily_Configs%3Fed%3D2056'
 - client-fingerprint: chrome
-  name: '559,580,581|🇺🇸_US_美国->🇩🇪_DE_德国 #11'
+  name: '559,580,581|🇺🇸_US_美国->🇩🇪_DE_德国 #12'
   network: ws
   port: 2083
   server: 192.0.63.61
@@ -5188,18 +5111,6 @@ proxies:
   ws-opts:
     headers:
       Host: ELIV2-ELENA.COM
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '559,580,581|🇭🇰_HK_中国香港->🇸🇬_SG_新加坡 #6'
-  port: 55567
-  reality-opts:
-    public-key: 0soGDTguByd3I9e2nLuzkw5BOHELZ_AHHDkA0Zx3JRA
-    short-id: f3f70ca767
-  server: 1.sdwan.realm-sync.com
-  servername: www.discoverasr.com
-  tls: true
-  type: vless
-  uuid: da4f61d1-8ca2-4bbf-a79a-1dfff04073e6
 - name: '559|🇺🇸_US_美国->🇬🇧_GB_英国 #1'
   network: ws
   port: 443
@@ -5238,20 +5149,7 @@ proxies:
     path: /tg@hkaa0
 - alterId: 0
   cipher: auto
-  name: 559|🇺🇸_US_美国->🇸🇦_SA_沙特阿拉伯
-  network: ws
-  port: 80
-  server: jd3.shabijichang.com
-  tls: false
-  type: vmess
-  uuid: c458695d-6908-45c3-9512-e0c46418454c
-  ws-opts:
-    headers:
-      Host: jd3.shabijichang.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '559|🇺🇸_US_美国->🇩🇪_DE_德国 #5'
+  name: '559|🇺🇸_US_美国->🇩🇪_DE_德国 #6'
   network: ws
   port: 2052
   server: 104.18.19.191
@@ -5264,7 +5162,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '559|🇺🇸_US_美国->🇩🇪_DE_德国 #6'
+  name: '559|🇺🇸_US_美国->🇩🇪_DE_德国 #7'
   network: ws
   port: 2052
   server: 104.18.36.119
@@ -5277,7 +5175,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '559|🇺🇸_US_美国->🇩🇪_DE_德国 #7'
+  name: '559|🇺🇸_US_美国->🇩🇪_DE_德国 #8'
   network: ws
   port: 2052
   server: 104.19.250.15
@@ -5288,110 +5186,6 @@ proxies:
     headers:
       Host: helanv6cf.inekokkk.top
     path: /
-- alterId: 0
-  cipher: auto
-  name: '559|🇺🇸_US_美国->🇩🇪_DE_德国 #8'
-  network: ws
-  port: 80
-  server: flkf2.shabijichang.com
-  tls: false
-  type: vmess
-  uuid: c458695d-6908-45c3-9512-e0c46418454c
-  ws-opts:
-    headers:
-      Host: flkf2.shabijichang.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '559|🇺🇸_US_美国->🇬🇧_GB_英国 #2'
-  network: ws
-  port: 80
-  server: ld2.shabijichang.com
-  tls: false
-  type: vmess
-  uuid: c458695d-6908-45c3-9512-e0c46418454c
-  ws-opts:
-    headers:
-      Host: ld2.shabijichang.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '559|🇺🇸_US_美国->🇬🇧_GB_英国 #3'
-  network: ws
-  port: 80
-  server: mrb2.shabijichang.com
-  tls: false
-  type: vmess
-  uuid: c458695d-6908-45c3-9512-e0c46418454c
-  ws-opts:
-    headers:
-      Host: mrb2.shabijichang.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 559|🇺🇸_US_美国->🇮🇳_IN_印度
-  network: ws
-  port: 80
-  server: 104.17.18.26
-  tls: false
-  type: vmess
-  uuid: 5180444a-4756-43b4-960b-49eb9052e4e8
-  ws-opts:
-    headers:
-      Host: a.109420.xyz
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '559|🇺🇸_US_美国->🇮🇳_IN_印度 #1'
-  network: ws
-  port: 80
-  server: 104.26.8.44
-  tls: false
-  type: vmess
-  uuid: 5180444a-4756-43b4-960b-49eb9052e4e8
-  ws-opts:
-    headers:
-      Host: a.109420.xyz
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '559|🇺🇸_US_美国->🇮🇳_IN_印度 #2'
-  network: ws
-  port: 80
-  server: mm2.shabijichang.com
-  tls: false
-  type: vmess
-  uuid: c458695d-6908-45c3-9512-e0c46418454c
-  ws-opts:
-    headers:
-      Host: mm2.shabijichang.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '559|🇺🇸_US_美国->🇮🇳_IN_印度 #3'
-  network: ws
-  port: 80
-  server: mm3.shabijichang.com
-  tls: false
-  type: vmess
-  uuid: c458695d-6908-45c3-9512-e0c46418454c
-  ws-opts:
-    headers:
-      Host: mm3.shabijichang.com
-    path: /
-- alterId: 64
-  cipher: auto
-  name: 559|🇺🇸_US_美国->🇳🇱_NL_荷兰
-  network: ws
-  port: 30000
-  server: 45.199.138.191
-  tls: true
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-opts:
-    headers:
-      Host: www.42077230.xyz
-    path: /path/1696251522438
 - alterId: 0
   cipher: auto
   h2-opts: {}
