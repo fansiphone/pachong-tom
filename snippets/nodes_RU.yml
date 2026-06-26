@@ -550,12 +550,29 @@ proxies:
   port: 444
   server: 146.185.198.44
   type: ss
-- name: 436,559|🇷🇺RU_79
+- cipher: aes-256-cfb
+  country: 🇺RU
+  name: 435|RU_79
+  password: 9XwYyZsK8SNzQDtY
+  port: 9059
+  server: 217.30.10.70
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇷🇺RU
+  name: 435|🇺RU_80
+  password: fG2artUmHfNT2cX7
+  port: 9018
+  server: 217.30.10.70
+  type: ss
+- country: 🇺RU
+  name: 435,436,559|🇷🇺RU_88
   password: '!!str 1234567890'
   port: 443
   server: 194.87.77.91
+  skip-cert-verify: true
   sni: kfm-bn0.pages.dev
   type: trojan
+  udp: true
 - name: '461|俄罗斯联邦_莫斯科 #2'
   network: tcp
   password: 88903f70-b50b-11ed-8775-f23c9164ca5d
@@ -920,24 +937,6 @@ proxies:
   server: ru.safepass.click
   type: ss
   udp: true
-- cipher: aes-256-gcm
-  country: 🇨🇿CZ
-  delay: 592
-  name: 489,528|俄罗斯 - 圣彼得堡 - 1
-  password: 9f3d1a6d31468599
-  port: 60129
-  server: 195.133.23.164
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  country: 🇷🇺RU
-  delay: 2553
-  name: 489,528|俄罗斯 - 莫斯科 - 2
-  password: b24a80e79cee1d1f
-  port: 20129
-  server: 46.29.163.176
-  type: ss
-  udp: true
 - alterId: 0
   cipher: auto
   name: '508,509|俄罗斯 054 #1'
@@ -969,6 +968,19 @@ proxies:
   uuid: 67744e32-4a46-4805-d42c-70391bdb8dc5
 - alterId: 0
   cipher: auto
+  name: 509|俄罗斯 070
+  network: ws
+  port: 2082
+  server: 185.174.138.34
+  skip-cert-verify: true
+  type: vmess
+  uuid: 6066abf1-cdb1-4818-d35a-7c8e0ee90320
+  ws-opts:
+    headers:
+      Host: ee.v2jey.fun
+    path: /
+- alterId: 0
+  cipher: auto
   name: '513,517,578|2|🇷🇺_RU_俄罗斯联邦 #3'
   network: tcp
   port: 35972
@@ -994,6 +1006,22 @@ proxies:
   port: 8388
   server: 185.158.155.33
   tfo: false
+  type: ss
+- cipher: aes-256-gcm
+  country: 🇷🇺RU
+  delay: 2553
+  name: 528|俄罗斯 - 莫斯科 - 2
+  password: b24a80e79cee1d1f
+  port: 20129
+  server: 46.29.163.176
+  type: ss
+- cipher: aes-256-gcm
+  country: 🇨🇿CZ
+  delay: 592
+  name: 528|俄罗斯 - 圣彼得堡 - 1
+  password: 9f3d1a6d31468599
+  port: 60129
+  server: 195.133.23.164
   type: ss
 - alterId: 0
   cipher: auto
@@ -1028,7 +1056,7 @@ proxies:
   port: 31348
   server: 5.189.201.250
   type: ss
-- name: 559|🇷🇺RU_80
+- name: 559|🇷🇺RU_87
   password: WF42809561
   port: 443
   server: nearby-muskrat.rooster465.autos

@@ -25,7 +25,7 @@ proxies:
   uuid: 000a0d18-02fe-4cda-a68e-96b55e067567
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 127,426|🇷🇺 NL_1|2.5MB/s|GPT⁺|YT-RU|NF|...
+  name: '127,426|🇷🇺 NL_1|2.5MB/s|GPT⁺|YT-RU|NF|... #1'
   network: tcp
   port: 443
   reality-opts:
@@ -685,12 +685,43 @@ proxies:
   sni: eu.mjanyt.com
   type: anytls
   udp: true
-- name: 436,559|🇷🇺RU_79
+- cipher: aes-256-cfb
+  country: 🇺RU
+  name: 435|RU_79
+  password: 9XwYyZsK8SNzQDtY
+  port: 9059
+  server: 217.30.10.70
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇷🇺RU
+  name: 435|🇺RU_80
+  password: fG2artUmHfNT2cX7
+  port: 9018
+  server: 217.30.10.70
+  type: ss
+- country: 🇺RU
+  name: 435,436,559|🇷🇺RU_88
   password: '!!str 1234567890'
   port: 443
   server: 194.87.77.91
+  skip-cert-verify: true
   sni: kfm-bn0.pages.dev
   type: trojan
+  udp: true
+- client-fingerprint: chrome
+  flow: ''
+  name: '438,507,553,559,580|未知 VLESS-389 | free-nodes #2'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: ''
+    short-id: ''
+  server: 193.151.108.143
+  servername: ''
+  tls: false
+  type: vless
+  udp: true
+  uuid: d78c12c4-6927-40b8-8550-ed9be00334da
 - name: 460|俄罗斯_新西伯利亚
   network: ws
   port: 443
@@ -1459,30 +1490,18 @@ proxies:
     headers:
       Host: ''
     path: /
-- client-fingerprint: edge
-  flow: xtls-rprx-vision
-  name: '475,480,519,523,524,553,559,580|俄羅斯丨yoyapai.com #13'
-  network: tcp
-  port: 443
-  server: 85.234.114.53
-  servername: r1.mizulina.top
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
 - client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '475,480,523,524,553,559,580|俄羅斯丨yoyapai.com #12'
+  name: 472,473,474,559|🇷🇺 俄罗斯-4EBB1421
   network: tcp
-  port: 22231
-  server: 85.234.114.53
-  servername: r1.mizulina.top
-  skip-cert-verify: false
-  tls: true
+  port: 5269
+  reality-opts:
+    public-key: hx1gkWBL2ixtwQSGXEvLT1Yz8GBsCFWriz_WLzLQNHQ
+    short-id: 4eb166dbed98e63d
+  server: 82.202.177.144
+  servername: ''
+  tls: false
   type: vless
-  udp: true
-  uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
+  uuid: 083471bf-bbf4-4e1d-8953-912b8d3b6255
 - client-fingerprint: chrome
   name: '475,480,559,580|俄羅斯丨yoyapai.com #9'
   network: tcp
@@ -1531,24 +1550,6 @@ proxies:
   password: 6784aee2-0dfe-474f-8446-480259ff9918
   port: 442
   server: ru.safepass.click
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  country: 🇨🇿CZ
-  delay: 592
-  name: 489,528|俄罗斯 - 圣彼得堡 - 1
-  password: 9f3d1a6d31468599
-  port: 60129
-  server: 195.133.23.164
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  country: 🇷🇺RU
-  delay: 2553
-  name: 489,528|俄罗斯 - 莫斯科 - 2
-  password: b24a80e79cee1d1f
-  port: 20129
-  server: 46.29.163.176
   type: ss
   udp: true
 - client-fingerprint: chrome
@@ -2112,6 +2113,19 @@ proxies:
     path: /api/connect
 - alterId: 0
   cipher: auto
+  name: 509|俄罗斯 070
+  network: ws
+  port: 2082
+  server: 185.174.138.34
+  skip-cert-verify: true
+  type: vmess
+  uuid: 6066abf1-cdb1-4818-d35a-7c8e0ee90320
+  ws-opts:
+    headers:
+      Host: ee.v2jey.fun
+    path: /
+- alterId: 0
+  cipher: auto
   name: '513,517,578|2|🇷🇺_RU_俄罗斯联邦 #3'
   network: tcp
   port: 35972
@@ -2137,6 +2151,22 @@ proxies:
   port: 8388
   server: 185.158.155.33
   tfo: false
+  type: ss
+- cipher: aes-256-gcm
+  country: 🇷🇺RU
+  delay: 2553
+  name: 528|俄罗斯 - 莫斯科 - 2
+  password: b24a80e79cee1d1f
+  port: 20129
+  server: 46.29.163.176
+  type: ss
+- cipher: aes-256-gcm
+  country: 🇨🇿CZ
+  delay: 592
+  name: 528|俄罗斯 - 圣彼得堡 - 1
+  password: 9f3d1a6d31468599
+  port: 60129
+  server: 195.133.23.164
   type: ss
 - name: 533|RU俄罗斯(mibei77.com 米贝节点分享)
   network: ws
@@ -2267,14 +2297,7 @@ proxies:
   port: 31348
   server: 5.189.201.250
   type: ss
-- name: 559|🇷🇺 俄罗斯-D68CDB88
-  password: 0dd50f72-bf39-4b59-b183-61b3fa52df57
-  port: 443
-  server: 46.254.18.107
-  sni: newlte.kihsuyhf8jkiugsxb.cfd
-  tls: false
-  type: hysteria2
-- name: 559|🇷🇺RU_80
+- name: 559|🇷🇺RU_87
   password: WF42809561
   port: 443
   server: nearby-muskrat.rooster465.autos
@@ -2297,20 +2320,9 @@ proxies:
   tls: false
   type: vless
   uuid: 12a49340-fd9c-4a70-8ebc-d2cf0dd36b2a
-- name: 559|🇷🇺 俄罗斯-E735D32B
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-    short-id: ''
-  server: 186.246.10.101
-  servername: ''
-  tls: false
-  type: vless
-  uuid: 33de2596-d95d-412b-a8c2-410be7060ca3
 - client-fingerprint: qq
   flow: xtls-rprx-vision
-  name: '559,580|RU VLESS-313 | free-nodes #1'
+  name: 559|RU VLESS-313 | free-nodes
   network: tcp
   port: 40443
   reality-opts:
@@ -2323,7 +2335,7 @@ proxies:
   uuid: 4480161e-2c59-4d37-8736-675c9af32bf1
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: '559,580|RU VLESS-318 | free-nodes #1'
+  name: 559|RU VLESS-318 | free-nodes
   network: tcp
   port: 443
   reality-opts:
@@ -2346,6 +2358,50 @@ proxies:
   tls: false
   type: vless
   uuid: 6c6bb37a-3315-45bc-88d6-0fbba043c07f
+- name: 559|🇷🇺 俄罗斯-99EDD587
+  network: grpc
+  port: 443
+  reality-opts:
+    public-key: jwT3lcIzJQMjzBKRNsmyRGrgaa1qNfE7pQF_nAKu0GA
+    short-id: a73cf719b624
+  server: 185.254.190.174
+  servername: ''
+  tls: false
+  type: vless
+  uuid: 7b3b6e39-dd78-000b-af6e-6d00da419aa0
+- name: 559|🇷🇺 俄罗斯-447585A0
+  network: tcp
+  port: 2777
+  reality-opts:
+    public-key: HyxhIAJ1VbVX77n76vXAps81yWRVbKCr8AC_71sM5Ao
+    short-id: 0f4dacf08722a29f
+  server: 84.201.146.213
+  servername: ''
+  tls: false
+  type: vless
+  uuid: a48c736e-d3de-47b8-a6eb-ef1d6fd34c63
+- name: 559|🇷🇺 俄罗斯-4FBA7780
+  network: tcp
+  port: 2777
+  reality-opts:
+    public-key: HyxhIAJ1VbVX77n76vXAps81yWRVbKCr8AC_71sM5Ao
+    short-id: 0f4dacf08722a29f
+  server: 84.201.181.179
+  servername: ''
+  tls: false
+  type: vless
+  uuid: a48c736e-d3de-47b8-a6eb-ef1d6fd34c63
+- name: 559|🇷🇺 俄罗斯-317EC7E1
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: 6QIHdF1dvSK8mDPOeWXvGIqJmZ2ySq5fyc7N15h1WFE
+    short-id: 34256b39b4ebb864
+  server: 158.160.191.91
+  servername: ''
+  tls: false
+  type: vless
+  uuid: a5ea9247-79f3-4655-aece-3fb51e1e669e
 - name: 559|🇷🇺 俄罗斯-57BBBC79
   network: tcp
   port: 443
