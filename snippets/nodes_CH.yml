@@ -1,4 +1,25 @@
 proxies:
+- alpn:
+  - h2
+  - http/1.1
+  - h3
+  name: '306,502,551,559|🇨🇭CH_2|4.0MB/s #2'
+  network: tcp
+  password: SoftNetConnect
+  port: 42549
+  server: 37.156.44.215
+  skip-cert-verify: true
+  sni: www.speedtest.net
+  type: trojan
+  udp: true
+- name: '306,378,502,508,509,536,537,551|🇨🇭CH_4|2.9MB/s #1'
+  network: tcp
+  password: SoftNetConnect
+  port: 42549
+  server: 37.156.44.215
+  skip-cert-verify: false
+  type: trojan
+  udp: true
 - cipher: aes-128-gcm
   name: '356,357|4 #4'
   password: shadowsocks
@@ -93,14 +114,6 @@ proxies:
     headers:
       Host: e130917c-1b58-4136-b2d9-76dc920e0add.add97ee8-0f14-48a3-b2cd-979c56742e64.loseyourip.com
     path: /
-- name: '378,494,502,508,509,536,537,551|🇨🇭CH_4|2.9MB/s #1'
-  network: tcp
-  password: SoftNetConnect
-  port: 42549
-  server: 37.156.44.215
-  skip-cert-verify: false
-  type: trojan
-  udp: true
 - name: '378,536,537|CH-152.67.71.149-3818 #1'
   password: 8a03bc28-2a33-42c4-be59-30464dbb9954
   port: 18818
@@ -123,17 +136,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 81b2b630-8b6a-404f-b996-b12f13db5786
-- alpn:
-  - h2
-  - http/1.1
-  - h3
-  name: '502,551,559|🇨🇭CH_2|4.0MB/s #2'
-  password: SoftNetConnect
-  port: 42549
-  server: 37.156.44.215
-  skip-cert-verify: true
-  sni: www.speedtest.net
-  type: trojan
 - alterId: 0
   cipher: auto
   name: '508,509|瑞士 006 #1'
@@ -153,6 +155,12 @@ proxies:
   tls: true
   type: vmess
   uuid: 1de9d119-12ca-4620-a29c-60b40a7f8650
+- name: 559|瑞士_062922064
+  network: tcp
+  password: SoftNetConnect
+  port: 42549
+  server: 83.228.250.119
+  type: trojan
 - name: 728|🇨🇭 瑞士2🔒
   password: 升级订阅解锁全部节点
   port: 443
