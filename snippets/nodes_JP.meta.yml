@@ -1230,7 +1230,8 @@ proxies:
   sni: jp1.xiaoliyu.cyou
   type: hysteria2
   up: 100
-- name: 306,340,378,502,508,509,514,515,516,536,537,543,544,551,556,557,559|10,11|日本|@ripaojiedian
+- name: '306,340,378,502,508,509,514,515,516,536,537,543,544,551,556,557,559|10,11|日本|@ripaojiedian
+    #1'
   network: tcp
   password: BxceQaOe
   port: 10624
@@ -1238,6 +1239,13 @@ proxies:
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
+- name: 306,551|🇯🇵JP_8|4.7MB/s
+  password: PI36027154
+  port: 443
+  server: large-baboon.rooster465.autos
+  skip-cert-verify: false
+  type: trojan
+  udp: true
 - client-fingerprint: firefox
   grpc-opts:
     grpc-service-name: tj
@@ -1338,7 +1346,7 @@ proxies:
   sni: www.alibaba.com
   type: trojan
   udp: true
-- name: 340,495,502,514,551,559|7|JP
+- name: '340,495,502,514,551,559|7|JP #1'
   password: 95D27EEF-B7AE-4076-BA39-40FDFA3D0F61
   port: 13778
   server: jp7.dexlos.com
@@ -1364,7 +1372,7 @@ proxies:
   server: 57.180.246.231
   type: ss
 - cipher: aes-128-gcm
-  country: 🇺🇸US
+  country: 🇸US
   name: 356,357,378,435,537,538,606|JP_Tokyo_Datacamp Limited_Gemi...
   password: shadowsocks
   port: 443
@@ -2386,7 +2394,7 @@ proxies:
   uuid: fb908160-9697-4bfd-f5b7-f1fbc53e60fa
   ws-opts:
     path: /
-- name: '378,536,537,538,559,580|亚太地区 starcorenode.com #2'
+- name: '378,507,536,537,538,548,559,580|亚太地区 starcorenode.com #3'
   password: T9qoEuuxUEa9Dk3KxnTWrs6J8ilng9sCIf
   port: 443
   server: 103.125.216.18
@@ -2408,8 +2416,8 @@ proxies:
       Host: jp02.a0a.xyz
     path: /
 - client-fingerprint: chrome
-  name: '378,477,482,502,507,508,509,536,537,538,543,544,559,580|未知 TROJAN-91 | free-nodes
-    #1'
+  name: '378,472,473,474,477,482,502,508,509,536,537,538,543,544,559,580|未知 TROJAN-91
+    | free-nodes #2'
   network: tcp
   password: T9qoEuuxUEa9Dk3KxnTWrs6J8ilng9sCIf
   port: 443
@@ -4036,25 +4044,6 @@ proxies:
   type: vmess
   uuid: 04621bae-ab36-11ec-b909-0242ac120002
   ws-path: /
-- alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  grpc-opts:
-    grpc-service-name: ''
-  name: '438,507,559|JP VLESS-611 | free-nodes #1'
-  network: tcp
-  port: 443
-  server: s8700.gogocs.xyz
-  servername: u691611u79c2eb15s8698.gogocs.xyz
-  tls: true
-  type: vless
-  uuid: 9794d18f-9280-3553-a7a5-a23da75aca76
-  ws-opts:
-    headers:
-      Host: 79c2eb15s8698.gogocs.xyz
-    path: ''
 - name: '438,508,509|澳大利亚 056 #1'
   network: tcp
   port: 24477
@@ -4717,25 +4706,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 55b88b14-0ff3-4f25-8983-e73d1f9f3a0a
-- alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  grpc-opts:
-    grpc-service-name: ''
-  name: '472,473,474,559,580|JP VLESS-584 | free-nodes #1'
-  network: tcp
-  port: 443
-  server: s5976.wagahaha.xyz
-  servername: u691611uee859f33s5969.wagahaha.xyz
-  tls: true
-  type: vless
-  uuid: 9794d18f-9280-3553-a7a5-a23da75aca76
-  ws-opts:
-    headers:
-      Host: ee859f33s5969.wagahaha.xyz
-    path: ''
 - name: '475,480|JP丨yoyapai.com #1'
   password: Mitivpn
   port: 80
@@ -9795,15 +9765,13 @@ proxies:
   type: vmess
   udp: true
   uuid: d687b024-a5cf-3433-8d06-1c99e2e28821
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 502,559|🇯🇵JP_9|3.6MB/s
-  port: 51142
-  server: awsjpxt.xxnqwq.xyz
-  servername: akamai.com
-  tls: true
-  type: vless
-  uuid: a2af9b94-424f-4164-a412-19cd3d60bad6
+- name: 502|日本+东京Amazon数据中心
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  port: 443
+  server: 13.231.108.76
+  skip-cert-verify: true
+  tls: false
+  type: hysteria2
 - alpn:
   - h2
   - http/1.1
@@ -9811,7 +9779,26 @@ proxies:
   flow: xtls-rprx-vision
   grpc-opts:
     grpc-service-name: ''
-  name: '507,559|JP VLESS-609 | free-nodes #1'
+  name: '502,580|JP VLESS-594 | free-nodes #1'
+  network: tcp
+  port: 443
+  server: 207.148.106.23
+  servername: u691611u2f37eb18s8124.uugfw.top
+  tls: true
+  type: vless
+  uuid: 9794d18f-9280-3553-a7a5-a23da75aca76
+  ws-opts:
+    headers:
+      Host: 2f37eb18s8124.uugfw.top
+    path: ''
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  grpc-opts:
+    grpc-service-name: ''
+  name: 507,559|JP VLESS-609 | free-nodes
   network: tcp
   port: 443
   server: s8693.uugfw.top
@@ -9830,7 +9817,7 @@ proxies:
   flow: xtls-rprx-vision
   grpc-opts:
     grpc-service-name: ''
-  name: '507,559|JP VLESS-610 | free-nodes #1'
+  name: 507,559|JP VLESS-610 | free-nodes
   network: tcp
   port: 443
   server: s8694.ccgfw.online
@@ -9849,7 +9836,26 @@ proxies:
   flow: xtls-rprx-vision
   grpc-opts:
     grpc-service-name: ''
-  name: 507,559,580|JP VLESS-605 | free-nodes
+  name: 507,559|JP VLESS-611 | free-nodes
+  network: tcp
+  port: 443
+  server: s8700.gogocs.xyz
+  servername: u691611u79c2eb15s8698.gogocs.xyz
+  tls: true
+  type: vless
+  uuid: 9794d18f-9280-3553-a7a5-a23da75aca76
+  ws-opts:
+    headers:
+      Host: 79c2eb15s8698.gogocs.xyz
+    path: ''
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  grpc-opts:
+    grpc-service-name: ''
+  name: '507,559,580|JP VLESS-605 | free-nodes #1'
   network: tcp
   port: 443
   server: 167.179.119.170
@@ -9868,7 +9874,7 @@ proxies:
   flow: xtls-rprx-vision
   grpc-opts:
     grpc-service-name: ''
-  name: '507,559|JP VLESS-631 | free-nodes #2'
+  name: '507,559|JP VLESS-631 | free-nodes #1'
   network: tcp
   port: 443
   server: s8630.ccgfw.top
@@ -9887,7 +9893,7 @@ proxies:
   flow: xtls-rprx-vision
   grpc-opts:
     grpc-service-name: ''
-  name: '507,559|JP VLESS-632 | free-nodes #2'
+  name: '507,559|JP VLESS-632 | free-nodes #1'
   network: tcp
   port: 443
   server: s8631.okgfw.top
@@ -9906,7 +9912,7 @@ proxies:
   flow: xtls-rprx-vision
   grpc-opts:
     grpc-service-name: ''
-  name: '507,559|JP VLESS-636 | free-nodes #1'
+  name: 507,559|JP VLESS-636 | free-nodes
   network: tcp
   port: 443
   server: s8701.gogocs.xyz
@@ -10633,6 +10639,28 @@ proxies:
   type: trojan
   ws-opts:
     path: /
+- alpn:
+  - h2%2Chttp%2F1.1
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 548|🇯🇵 日本 东京Choopa数据中心
+  network: tcp
+  port: 443
+  server: s5976.wagahaha.xyz
+  servername: u691611uee859f33s5969.wagahaha.xyz
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 9794d18f-9280-3553-a7a5-a23da75aca76
+- name: 551|🇯🇵JP_5|4.0MB/s
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  port: 443
+  server: 13.231.108.76
+  skip-cert-verify: true
+  sni: https://t.me/WangCai2🇨🇳
+  tls: false
+  type: hysteria2
 - cipher: chacha20-ietf-poly1305
   name: 558|0| 01 | 1x JP
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
@@ -11222,10 +11250,29 @@ proxies:
   flow: xtls-rprx-vision
   grpc-opts:
     grpc-service-name: ''
-  name: '559,580|JP VLESS-610 | free-nodes #2'
+  name: '559,580|JP VLESS-610 | free-nodes #1'
   network: tcp
   port: 443
   server: s5975.okgg.top
+  servername: u691611uee859f33s5969.wagahaha.xyz
+  tls: true
+  type: vless
+  uuid: 9794d18f-9280-3553-a7a5-a23da75aca76
+  ws-opts:
+    headers:
+      Host: ee859f33s5969.wagahaha.xyz
+    path: ''
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  grpc-opts:
+    grpc-service-name: ''
+  name: '559,580|JP VLESS-584 | free-nodes #1'
+  network: tcp
+  port: 443
+  server: s5976.wagahaha.xyz
   servername: u691611uee859f33s5969.wagahaha.xyz
   tls: true
   type: vless
@@ -11390,6 +11437,15 @@ proxies:
     headers:
       Host: ac1d6314s7846.csgfw.top
     path: ''
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 559|🇯🇵JP_9|3.6MB/s
+  port: 51142
+  server: awsjpxt.xxnqwq.xyz
+  servername: akamai.com
+  tls: true
+  type: vless
+  uuid: a2af9b94-424f-4164-a412-19cd3d60bad6
 - name: 559|🇯🇵 日本-A7895A30
   network: tcp
   port: 47381
@@ -11900,26 +11956,7 @@ proxies:
   flow: xtls-rprx-vision
   grpc-opts:
     grpc-service-name: ''
-  name: '580|JP VLESS-594 | free-nodes #1'
-  network: tcp
-  port: 443
-  server: 207.148.106.23
-  servername: u691611u2f37eb18s8124.uugfw.top
-  tls: true
-  type: vless
-  uuid: 9794d18f-9280-3553-a7a5-a23da75aca76
-  ws-opts:
-    headers:
-      Host: 2f37eb18s8124.uugfw.top
-    path: ''
-- alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  grpc-opts:
-    grpc-service-name: ''
-  name: 580|JP VLESS-615 | free-nodes
+  name: '580|JP VLESS-615 | free-nodes #1'
   network: tcp
   port: 443
   server: s8136.uugfw.top

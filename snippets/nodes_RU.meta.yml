@@ -652,20 +652,21 @@ proxies:
   port: 9020
   server: 217.30.10.70
   type: ss
-- cipher: aes-256-cfb
-  country: 🇷🇺RU
-  name: 435|🇺RU_72
-  password: f8npKgNzdkss2ytn
-  port: 9088
-  server: 217.30.10.70
-  type: ss
 - country: 🇺RU
-  name: '435,436,559|🇷🇺RU_73 #2'
+  name: '435,436,559|🇷🇺RU_73 #1'
   password: '!!str 1234567890'
   port: 443
   server: 194.87.77.91
   skip-cert-verify: true
   sni: kfm-bn0.pages.dev
+  type: trojan
+  udp: true
+- country: 🇷🇺RU
+  name: 435,436|🇷🇺RU_74
+  password: tunnel-ljlcf
+  port: 8441
+  server: tr-1.stunnel.cc
+  skip-cert-verify: true
   type: trojan
   udp: true
 - client-fingerprint: chrome
@@ -1461,9 +1462,23 @@ proxies:
   type: vless
   udp: true
   uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
+- client-fingerprint: edge
+  encryption: none
+  flow: xtls-rprx-vision
+  name: '475,480,508,509,523,524,559,580|俄羅斯丨yoyapai.com #13'
+  network: tcp
+  port: 443
+  server: 85.234.114.53
+  servername: r1.mizulina.top
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
+  xudp: true
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '475,480,508,509,522,523,524,559,580,581|🇬🇧_GB_英国->🇬🇪_GE_格鲁吉亚 #2'
+  name: '475,480,508,509,522,523,524,548,559,580,581|🇬🇧_GB_英国->🇬🇪_GE_格鲁吉亚 #4'
   network: tcp
   port: 22231
   server: 85.234.114.53
@@ -1475,7 +1490,7 @@ proxies:
   udp: true
   uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
 - client-fingerprint: chrome
-  name: '475,480,522,559,580,581|🇱🇻_LV_拉脱维亚 #2'
+  name: '475,480,522,548,559,580,581|🇱🇻_LV_拉脱维亚 #4'
   network: raw
   port: 19562
   reality-opts:
@@ -1510,37 +1525,40 @@ proxies:
   server: ru.safepass.click
   type: ss
   udp: true
+- name: '496,514,551,559,580|RU俄罗斯(mibei77.com 米贝节点分享) #11'
+  password: c059a786-3a03-4300-9ace-4f9cda0f360c
+  port: 8451
+  server: wlte9.nimarko.org
+  skip-cert-verify: false
+  sni: testing7.nimarko.org
+  tls: false
+  type: hysteria2
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: '502,523,524,559,566,580,717|RU【机场推荐：https://a9a.xyz】9 #1'
+  name: '502,523,524,548,559,566,580,717|RU【机场推荐：https://a9a.xyz】9 #1'
   network: tcp
   port: 1111
   reality-opts:
     public-key: YuhNgtj_Tf8WNLiSB2bNJKPvfwmqa6PNRpbP8TvNkzA
   server: 78.159.250.32
   servername: api-maps.yandex.ru
-  skip-cert-verify: true
+  skip-cert-verify: false
+  tfo: false
   tls: false
   type: vless
   udp: true
   uuid: 9d748910-8306-411a-9b2e-11f0a2a4486f
-- client-fingerprint: chrome
-  name: '502,559|俄罗斯+V2CROSS.COM #1'
-  network: ws
-  port: 443
-  server: 109.120.176.37
-  servername: sertraline.adaspoloandco.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 10a6b923-e349-4594-92bb-d81a6245aaec
-  ws-opts:
-    headers:
-      Host: sertraline.adaspoloandco.com
-    path: /download.php
-- name: '507,559|RU VLESS-324 | free-nodes #1'
+- client-fingerprint: qq
+  flow: xtls-rprx-vision
+  name: 507,559|RU VLESS-324 | free-nodes
+  network: tcp
   port: 40443
+  reality-opts:
+    public-key: D_ks4Yyk4-osnWBxCFvd0_UEgohUXvR2zJoWQg1CACU
+    short-id: c84f
   server: cdn.netraidly.ru
+  servername: deepl.com
+  skip-cert-verify: true
   tls: false
   type: vless
   uuid: 4bf5a71c-d726-4585-b095-7396675706d5
@@ -2322,8 +2340,16 @@ proxies:
   server: 185.158.155.33
   tfo: false
   type: ss
+- name: '514,551,559,580|FR法国(mibei77.com 米贝节点分享) #22'
+  password: c059a786-3a03-4300-9ace-4f9cda0f360c
+  port: 8444
+  server: wlte3.nimarko.org
+  skip-cert-verify: false
+  sni: testing8.nimarko.org
+  tls: false
+  type: hysteria2
 - cipher: aes-256-gcm
-  name: 522|🇺_RU_
+  name: '522,548|🇷🇺_RU_俄罗斯 #1'
   password: c5fcdf7829112cb4
   port: 30129
   server: 45.140.169.216
@@ -2343,20 +2369,6 @@ proxies:
   type: vless
   udp: true
   uuid: e4cd624c-18d6-415e-8cde-0a800e06ce31
-- client-fingerprint: edge
-  flow: xtls-rprx-vision
-  name: '523,524,559|🇷🇺_俄罗斯_13 #2'
-  port: 443
-  reality-opts:
-    public-key: 6QIHdF1dvSK8mDPOeWXvGIqJmZ2ySq5fyc7N15h1WFE
-    short-id: 34256b39b4ebb864
-  server: 158.160.198.162
-  servername: rezerv11.yunus.guru
-  skip-cert-verify: true
-  tls: false
-  type: vless
-  udp: true
-  uuid: a5ea9247-79f3-4655-aece-3fb51e1e669e
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: '523,524,559,580|RU俄罗斯(mibei77.com 米贝节点分享) #12'
@@ -2386,20 +2398,6 @@ proxies:
   type: vless
   udp: true
   uuid: 6d1cf8d0-d903-4a64-9e2b-fe2c5d2c3e12
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: '523,524,559|🇷🇺_俄罗斯_181 #2'
-  port: 443
-  reality-opts:
-    public-key: 6QIHdF1dvSK8mDPOeWXvGIqJmZ2ySq5fyc7N15h1WFE
-    short-id: 34256b39b4ebb864
-  server: 158.160.191.91
-  servername: rezerv8.yunus.guru
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: a5ea9247-79f3-4655-aece-3fb51e1e669e
 - client-fingerprint: qq
   name: '523,524|🇷🇺_俄罗斯_289 #1'
   network: ws
@@ -2521,6 +2519,21 @@ proxies:
   tls: true
   type: vmess
   uuid: 433f1111-b780-4eae-b7e7-d7823b09e701
+- client-fingerprint: chrome
+  name: 548,559|俄罗斯+V2CROSS.COM
+  network: ws
+  port: 443
+  server: 109.120.176.37
+  servername: sertraline.adaspoloandco.com
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 10a6b923-e349-4594-92bb-d81a6245aaec
+  ws-opts:
+    headers:
+      Host: sertraline.adaspoloandco.com
+    path: /download.php
 - cipher: chacha20-ietf-poly1305
   name: 558|0|🇺俄罗斯 01 | 1x RU
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
@@ -2542,23 +2555,7 @@ proxies:
   port: 31348
   server: 5.189.201.250
   type: ss
-- name: '559,580|FR法国(mibei77.com 米贝节点分享) #22'
-  password: c059a786-3a03-4300-9ace-4f9cda0f360c
-  port: 8444
-  server: wlte3.nimarko.org
-  skip-cert-verify: false
-  sni: testing8.nimarko.org
-  tls: false
-  type: hysteria2
-- name: '559,580|RU俄罗斯(mibei77.com 米贝节点分享) #11'
-  password: c059a786-3a03-4300-9ace-4f9cda0f360c
-  port: 8451
-  server: wlte9.nimarko.org
-  skip-cert-verify: false
-  sni: testing7.nimarko.org
-  tls: false
-  type: hysteria2
-- name: 559|🇷🇺RU_72
+- name: '559|🇷🇺RU_72 #1'
   password: WF42809561
   port: 443
   server: nearby-muskrat.rooster465.autos
