@@ -56,6 +56,21 @@ proxies:
     headers:
       Host: download.windowsupdate.com
     path: /download
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '127,426|🇩🇪 DE_1|2.4MB/s|GPT⁺|YT-DE|NF|... #1'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: qdp5Q3QZ7JhMnOaETGJjsRJe8m30P7np9xnu75-6xSE
+    short-id: 0da3ca76067a5e3c
+  server: germany2.chickenkiller.com
+  servername: germany2.chickenkiller.com
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: vless
+  uuid: d78c12c4-6927-40b8-8550-ed9be00334da
 - client-fingerprint: random
   name: 232|德国4-anytls协议
   password: 62854f16-2a6c-474a-ad5e-365da754c3c1
@@ -78,14 +93,14 @@ proxies:
   up: 300
 - name: 232|德国1-hy2  协议
   password: 62854f16-2a6c-474a-ad5e-365da754c3c1
-  port: 26814
+  port: 25065
   ports: 22000-27000
   server: de1.xiaoliyu.cyou
   skip-cert-verify: true
   type: hysteria2
 - name: 232|德国2-hy2 协议
   password: 62854f16-2a6c-474a-ad5e-365da754c3c1
-  port: 25211
+  port: 25282
   ports: 22000-27000
   server: de2.xiaoliyu.cyou
   skip-cert-verify: true
@@ -97,7 +112,7 @@ proxies:
   down: 70
   fast-open: true
   name: 232|德国1-ChatGPT
-  port: 9293
+  port: 8027
   ports: 6000-11000
   protocol: udp
   server: de1.xiaoliyu.cyou
@@ -121,7 +136,7 @@ proxies:
   sni: ger1.riziro.ir
   tls: false
   type: hysteria2
-- name: '340,496,502,514,551,559|9|🇩🇪@V2raybazi #2'
+- name: '340,496,502,514,551,559|9|🇩🇪@V2raybazi #1'
   password: zhangyang
   port: 6443
   server: 130.61.50.75
@@ -823,21 +838,22 @@ proxies:
   sni: ''
   type: trojan
   udp: true
-- name: '378,536,537,538,559,580|未知 TROJAN-94 | free-nodes #1'
+- name: '378,536,537,538,559,580|未知 TROJAN-94 | free-nodes #2'
   network: tcp
   password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
   port: 443
   server: 185.137.157.140
   skip-cert-verify: false
   type: trojan
-- name: 378,536,537,538|🇩🇪DE-185.137.157.145-0121 | 0....
+- name: 378,472,473,474,502,507,536,537,538|🇩🇪DE-185.137.157.145-0121 | 0....
+  network: tcp
   password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
   port: 443
   server: 185.137.157.145
   skip-cert-verify: false
   type: trojan
 - alterId: 0
-  name: '378,507,508,509,536,537,538,559|未知 TROJAN-106 | free-nodes #1'
+  name: '378,508,509,536,537,538,559|未知 TROJAN-106 | free-nodes #1'
   network: tcp
   password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
   port: 443
@@ -847,7 +863,7 @@ proxies:
   type: trojan
   udp: true
 - alterId: 0
-  name: 378,508,509,536,537,538,544,559,574|🇷RO罗马尼亚2
+  name: 378,508,509,536,537,538,544,559,574|RO
   network: tcp
   password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
   port: 443
@@ -1041,15 +1057,16 @@ proxies:
   uuid: dab6ce8a-8059-4357-9083-c5283e1908b2
   ws-opts:
     path: /
-- country: 🇷🇺RU
+- alterId: 0
+  country: 🇷🇺RU
   delay: 856
-  name: 378,519,528,537,544,559|德国_070419888
+  name: 378,519,528,537,544,559,574|DE国
   password: SoftNetConnect
   port: 42549
   server: 213.108.20.209
   skip-cert-verify: true
   sni: www.speedtest.net
-  tls: false
+  tls: true
   type: trojan
   udp: true
 - alterId: 0
@@ -3080,21 +3097,6 @@ proxies:
   ws-path: /
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 426|🇩🇪 DE_1|2.4MB/s|GPT⁺|YT-DE|NF|...
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: qdp5Q3QZ7JhMnOaETGJjsRJe8m30P7np9xnu75-6xSE
-    short-id: 0da3ca76067a5e3c
-  server: germany2.chickenkiller.com
-  servername: germany2.chickenkiller.com
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: vless
-  uuid: d78c12c4-6927-40b8-8550-ed9be00334da
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
   name: '438,475,480,507,559,580|未知 VLESS-324 | free-nodes #1'
   network: tcp
   port: 443
@@ -3111,19 +3113,6 @@ proxies:
   ws-opts:
     headers:
       Host: www.nvidia.com
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: '438,507,559,580|未知 VLESS-115 | free-nodes #2'
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: 5NHgGSXmIyLoslNxkfnH9ZUojx_WafjIhllNUEAhIwc
-    short-id: ea7acce8b971
-  server: 79.137.207.130
-  servername: lvz.de
-  tls: false
-  type: vless
-  uuid: 1f4c983e-382c-d2fa-b2dc-7981f02b34de
 - name: '438,507,508,509,559,580|未知 VLESS-465 | free-nodes #2'
   network: tcp
   port: 56453
@@ -3134,25 +3123,24 @@ proxies:
   type: vless
   udp: true
   uuid: c87950b3-f132-450a-bec6-e9e91fc9d8bc
-- name: '438|🇩🇪DE_6|1.1MB/s | 福利姬: https://...'
-  password: zhangyang
-  port: 6443
-  server: 130.61.50.75
-  skip-cert-verify: true
-  sni: https%3A%2F%2Fwww.calmloud.com
-  tls: false
-  type: hysteria2
-- name: '438|🇩🇪DE_8|1.6MB/s | 网盘搜宝: https:/...'
+- encryption: none
+  http-opts:
+    headers: {}
+    path:
+    - /
+  name: '438,508,509,523,524,559,580|US美国(mibei77.com 米贝节点分享) #68'
   network: tcp
-  port: 2087
-  server: finalaaaa-tswe.horlutr.ir
+  port: 8882
+  server: gr1.fifapes.monster
+  skip-cert-verify: true
   tls: false
   type: vless
-  uuid: 9ffcb940-cbf9-43ef-a077-20e26b2bde8c
+  udp: true
+  uuid: eab915bc-d2df-73d1-47d0-6eb240497055
   ws-opts:
     headers:
-      Host: play.google.com
-    path: '%2F'
+      Host: gr1.fifapes.monster
+  xudp: true
 - name: '438,508,509|美国 2442 #1'
   network: tcp
   port: 20018
@@ -3168,7 +3156,7 @@ proxies:
       Host: status.play.google.com
     path: '%2F'
 - client-fingerprint: firefox
-  name: '438|🇩🇪DE_10|1.6MB/s | 福利姬: https:/...'
+  name: '438|🇩🇪DE_6|1.6MB/s | 网盘搜宝: https:/...'
   network: xhttp
   port: 8443
   reality-opts:
@@ -3181,8 +3169,19 @@ proxies:
   uuid: e52fedb7-befe-4615-a53e-89d446f74bf4
   ws-opts:
     path: '%2Fdownload'
+- name: '438|🇩🇪DE_7|1.7MB/s | 网盘搜宝: https:/...'
+  network: tcp
+  port: 2087
+  server: finalaaaa-tswe.horlutr.ir
+  tls: false
+  type: vless
+  uuid: 9ffcb940-cbf9-43ef-a077-20e26b2bde8c
+  ws-opts:
+    headers:
+      Host: play.google.com
+    path: '%2F'
 - client-fingerprint: firefox
-  name: '438|🇩🇪DE_11|1.6MB/s | 福利姬: https:/...'
+  name: '438|🇩🇪DE_8|1.7MB/s | 福利姬: https://...'
   network: xhttp
   port: 8443
   reality-opts:
@@ -3195,6 +3194,13 @@ proxies:
   uuid: e52fedb7-befe-4615-a53e-89d446f74bf4
   ws-opts:
     path: '%2Fdownload'
+- name: '438|🇩🇪DE_9|1.7MB/s | 网盘搜宝: https:/...'
+  network: tcp
+  port: 443
+  server: 46.4.230.210
+  tls: false
+  type: vless
+  uuid: c6b88c92-6329-422d-ab66-3933a76c9cea
 - name: 460|德国_Frankfurt am Main
   network: ws
   port: 443
@@ -4400,7 +4406,7 @@ proxies:
   uuid: d20e38ef-1a4d-4009-a00d-2f0d44e3c65a
 - alterId: 0
   cipher: auto
-  name: '508,509,559,574|未知13 #1'
+  name: '508,509,559,574|未知16 #1'
   network: tcp
   port: 2053
   server: de.connfull.org
@@ -5419,7 +5425,7 @@ proxies:
   uuid: fb37aadd-b957-4462-8738-80c55d77a52d
 - alterId: 0
   cipher: auto
-  name: '508,509,559,574|未知16 #1'
+  name: '508,509,559,574|未知79 #1'
   network: tcp
   port: 1020
   server: spt.reata.ir
@@ -5496,6 +5502,16 @@ proxies:
     headers:
       Host: wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev
     path: /
+- name: '508,509|德国 188 #1'
+  network: tcp
+  port: 26191
+  server: 91.107.150.147
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 5cbc3beb-61f1-45eb-b365-9555353cdf96
 - name: '508,509|德国 189 #1'
   network: tcp
   port: 8080
@@ -5602,7 +5618,7 @@ proxies:
   type: ss
 - alpn:
   - h3
-  name: '519,559|🇩🇪_DE_德国 #4'
+  name: '519,559|🇩🇪_DE_德国 #2'
   password: 612d9f38-5242-42b8-84ad-cdbf528b4cbd
   port: 29968
   server: jason.ilovezhenjiu.top
@@ -5758,6 +5774,11 @@ proxies:
     headers:
       Host: us2.wxgqlfx.icu
     path: /TG@wxgqlfx
+- name: 536|🇩🇪DE-185.137.157.149-2245
+  password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
+  port: 443
+  server: 185.137.157.149
+  type: trojan
 - cipher: chacha20-ietf
   name: 536|8J%2BHqPCfh7NDTi0zNi4xNTYuMjIy...
   obfs: http_simple
@@ -6476,7 +6497,7 @@ proxies:
     path: '%2Fvless'
 - alterId: 0
   cipher: auto
-  name: '559|🇩🇪_DE_德国 #5'
+  name: '559|🇩🇪_DE_德国 #3'
   network: tcp
   port: 8080
   server: 185.189.58.195

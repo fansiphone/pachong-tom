@@ -1239,6 +1239,27 @@ proxies:
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
+- cipher: aes-256-cfb
+  name: 306|Japan_Tokyo_ss_1128
+  password: amazonskr05
+  port: '443'
+  server: 57.180.55.43
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 306|Japan_Tokyo_ss_1130
+  password: amazonskr05
+  port: '443'
+  server: 43.207.4.4
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 306|Japan_Tokyo_ss_1131
+  password: amazonskr05
+  port: '443'
+  server: 52.192.80.59
+  type: ss
+  udp: true
 - client-fingerprint: firefox
   grpc-opts:
     grpc-service-name: tj
@@ -1365,7 +1386,7 @@ proxies:
   server: 57.180.246.231
   type: ss
 - cipher: aes-128-gcm
-  country: 🇺🇸US
+  country: 🇸US
   name: 356,357,378,435,537,538,606|JP_Tokyo_Datacamp Limited_Gemi...
   password: shadowsocks
   port: 443
@@ -2413,12 +2434,15 @@ proxies:
   server: large-baboon.rooster465.autos
   skip-cert-verify: false
   type: trojan
-- name: 378,502,507,536,537,538,544,548,559,580|未知 TROJAN-92 | free-nodes
+- alterId: 0
+  name: 378,472,473,474,502,507,536,537,538,544,559,574,580|未知 TROJAN-92 | free-nodes
   password: T9qoEuuxUEa9Dk3KxnTWrs6J8ilng9sCIf
   port: 443
   server: 103.125.216.18
-  skip-cert-verify: false
+  skip-cert-verify: true
+  tls: true
   type: trojan
+  udp: true
 - client-fingerprint: chrome
   name: 378,477,482,508,509,536,537,538,559|日本_070419003
   network: tcp
@@ -4090,31 +4114,34 @@ proxies:
   sni: eu.mjanyt.com
   type: anytls
   udp: true
-- alterId: 0
+- alterId: 1
   cipher: auto
   country: 🇵JP
   h2-opts: {}
   http-opts: {}
-  name: 435,437,508,509,559|日本_070419006
+  name: 435,437,508,509,559,574|未知23 1.5MB/s
   network: tcp
-  port: '22324'
+  port: 22324
   server: 172.104.80.66
   servername: ''
   skip-cert-verify: true
-  tls: false
+  tls: true
   type: vmess
   uuid: 04621bae-ab36-11ec-b909-0242ac120002
   ws-path: /
-- name: '438,507,508,509,559|未知 VLESS-268 | free-nodes #1'
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 438,559|🇯🇵 日本-67024069
   network: tcp
-  port: 24477
-  server: 43.163.241.110
-  skip-cert-verify: false
-  tfo: false
+  port: 443
+  reality-opts:
+    public-key: Oua7ls5NZ2sxxFSyccAHZCMrCjW34WPEsHbaIpWmxX8
+    short-id: ac78f53d
+  server: 172.207.210.238
+  servername: ''
   tls: false
   type: vless
-  udp: true
-  uuid: 2bc72bec-0c2a-4c6b-aa9f-138bfce7ba0d
+  uuid: 39d1c043-7bc5-4876-9d07-58574c023850
 - name: 453|🇯🇵 日本2|@stairnode
   password: 253bc477d4e43c209f2d427272968280
   port: 1806
@@ -5640,7 +5667,7 @@ proxies:
   tfo: false
   type: ss
 - alterId: 0
-  name: 523,524,574|🇰HK香港2
+  name: 523,524,574|🇭🇰HK香港6
   password: BxceQaOe
   port: 11035
   server: 43.199.66.183
@@ -6230,17 +6257,6 @@ proxies:
     headers:
       Host: imap.mmadcoffee.info
     path: '%2F14708%2F31d3c8561998%2F'
-- name: 559|🇯🇵 日本-67024069
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: Oua7ls5NZ2sxxFSyccAHZCMrCjW34WPEsHbaIpWmxX8
-    short-id: ac78f53d
-  server: 172.207.210.238
-  servername: ''
-  tls: false
-  type: vless
-  uuid: 39d1c043-7bc5-4876-9d07-58574c023850
 - name: 559|🇯🇵 日本-6D840D20
   network: tcp
   port: 443
@@ -6313,7 +6329,7 @@ proxies:
   flow: xtls-rprx-vision
   grpc-opts:
     grpc-service-name: ''
-  name: '559,580|JP VLESS-638 | free-nodes #2'
+  name: '559,580|JP VLESS-638 | free-nodes #1'
   network: tcp
   port: 443
   server: 202.182.120.100
@@ -6351,7 +6367,7 @@ proxies:
   flow: xtls-rprx-vision
   grpc-opts:
     grpc-service-name: ''
-  name: '559,580|JP VLESS-625 | free-nodes #3'
+  name: '559,580|JP VLESS-625 | free-nodes #2'
   network: tcp
   port: 443
   server: s8631.okgfw.top
@@ -6586,7 +6602,7 @@ proxies:
   type: vmess
   uuid: 22d4ef9c-b269-4f82-9f59-6c2c0d8ce16d
 - alterId: 0
-  name: 574|🇯🇵JP日本4
+  name: 574|🇯🇵JP日本3
   password: BxceQaOe
   port: 27826
   server: 13.230.228.151
