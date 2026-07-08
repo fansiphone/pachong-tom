@@ -84,14 +84,14 @@ proxies:
   up: 300
 - name: 232|德国1-hy2  协议
   password: 62854f16-2a6c-474a-ad5e-365da754c3c1
-  port: 24012
+  port: 23847
   ports: 22000-27000
   server: de1.xiaoliyu.cyou
   skip-cert-verify: true
   type: hysteria2
 - name: 232|德国2-hy2 协议
   password: 62854f16-2a6c-474a-ad5e-365da754c3c1
-  port: 22771
+  port: 24317
   ports: 22000-27000
   server: de2.xiaoliyu.cyou
   skip-cert-verify: true
@@ -103,28 +103,12 @@ proxies:
   down: 70
   fast-open: true
   name: 232|德国1-ChatGPT
-  port: 9156
+  port: 9104
   ports: 6000-11000
   protocol: udp
   server: de1.xiaoliyu.cyou
   type: hysteria
   up: 30
-- alpn:
-  - http/1.1
-  name: 306|Germany_None_trojan_1129
-  network: ws
-  password: MITIVPN
-  port: '443'
-  server: 45.80.111.7
-  skip-cert-verify: true
-  sni: u---as.MaQror.ir
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/60.0.3112.90 Safari/537.36
-    path: /---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=usa
 - name: '340,495,502,514,551,559|8|DE #2'
   password: a084933d-0b41-4571-ae0c-7163b8c71ed1
   port: 2056
@@ -833,8 +817,7 @@ proxies:
   server: 161.35.69.20
   type: ss
 - cipher: chacha20-ietf-poly1305
-  country: 🇺US
-  name: 378,435,537,538|🇩🇪DE-209.46.102.22-0071 | 30.6...
+  name: 378,537,538|🇩🇪DE-209.46.102.22-0071 | 30.6...
   password: 1hhrqrokj3ag
   port: 8388
   server: 209.46.102.22
@@ -851,15 +834,12 @@ proxies:
   port: 7001
   server: 213.202.208.199
   type: ss
-- alterId: 0
-  name: '378,536,537,538,559,574|🇷🇴RO罗马尼亚3 #1'
+- name: 378,536,537,538,559|🇷🇴RO罗马尼亚3
   password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
   port: 443
   server: 185.137.157.149
-  skip-cert-verify: true
-  tls: true
+  skip-cert-verify: false
   type: trojan
-  udp: true
 - name: 378,536,537,538|🇩🇪DE-185.137.157.142-0101 | 0....
   password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
   port: 443
@@ -867,39 +847,44 @@ proxies:
   skip-cert-verify: false
   type: trojan
 - alterId: 0
-  name: '378,509,537,559,574|🇷🇴RO罗马尼亚2 #1'
+  name: 378,509,537,559|🇷🇴RO罗马尼亚2
   network: tcp
   password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
   port: 443
   server: 185.137.157.151
+  skip-cert-verify: false
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 378,536,537,538,544,574|🇷🇴RO罗马尼亚4
+  password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
+  port: 443
+  server: 185.137.157.145
   skip-cert-verify: true
   tls: true
   type: trojan
   udp: true
-- name: '378,502,536,537,538,544|🇷🇴 罗马尼亚 V2CROSS.COM #2'
-  password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
-  port: 443
-  server: 185.137.157.145
-  skip-cert-verify: false
-  type: trojan
-- client-fingerprint: chrome
-  name: 378,502,509,536,537,538,544,559|未知_070819001
+- alterId: 0
+  client-fingerprint: chrome
+  name: 378,509,536,537,538,544,559,574|RO
   network: tcp
   password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
   port: 443
   server: 185.137.157.135
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: ''
+  tls: true
   type: trojan
   udp: true
-- name: 378,536,537,538,548|🇷🇴 罗马尼亚 starcorenode.com 2
+- name: 378,536,537,538|🇩🇪DE-185.137.157.140-0245 | 0....
   password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
   port: 443
   server: 185.137.157.140
   skip-cert-verify: false
   type: trojan
 - alterId: 0
-  name: '378,502,509,536,537,538,544,559,580|未知 TROJAN-109 | free-nodes #2'
+  name: '378,509,536,537,538,544,559,574,580|未知 TROJAN-109 | free-nodes #2'
   network: tcp
   password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
   port: 443
@@ -908,13 +893,16 @@ proxies:
   tls: true
   type: trojan
   udp: true
-- name: 378,502,536,537,538,544,548,559|未知_070819082
+- alterId: 0
+  name: '378,536,537,538,544,559,574|🇷🇴RO罗马尼亚3 #1'
   password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
   port: 443
   server: 185.137.157.128
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: ''
+  tls: true
   type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: '378,537|🇪DE-94.130.184.57-0194 #1'
@@ -2363,15 +2351,13 @@ proxies:
   uuid: 826b8d0a-e0d3-407a-927d-19953c170779
   ws-opts:
     path: /cctv13/hd.m3u8
-- country: 🇧GB
-  name: '378,435,436,536,537,559|🇬🇧GB_42 #2'
+- name: '378,436,536,537,559|🇬🇧GB_42 #1'
   password: 11559103-9993-4d00-b599-d6bcd8db2197
   port: 443
   server: free-v7-09.elbrusway.online
   skip-cert-verify: false
   sni: free-v7-09.elbrusway.online
   type: trojan
-  udp: true
 - cipher: aes-256-gcm
   name: '378,537|🇪DE-193.108.117.75-6456 #1'
   password: PCnnH6SQSnfoS27
@@ -3035,29 +3021,6 @@ proxies:
   udp: true
   uuid: c87950b3-f132-450a-bec6-e9e91fc9d8bc
 - client-fingerprint: chrome
-  name: 438,509|荷兰 208
-  network: xhttp
-  port: 8443
-  server: cdn1.sub-rock.ir
-  servername: new-nd.ir
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 3daa68f1-e240-4aea-a4c3-618924aab136
-  ws-opts:
-    headers:
-      Host: ccs.new-nd.ir
-    path: '%2F'
-- name: '438|🇩🇪DE_7|1.7MB/s | 福利姬: https://...'
-  network: tcp
-  port: 443
-  server: 46.4.230.210
-  tls: false
-  type: vless
-  uuid: 8f9c5483-6398-401a-92dd-b9bc99ef4c30
-- client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: '438,559,580|未知 VLESS-335 | free-nodes #2'
   network: tcp
@@ -3073,65 +3036,6 @@ proxies:
   ws-opts:
     headers:
       Host: www.nvidia.com
-- client-fingerprint: randomized
-  flow: xtls-rprx-vision
-  name: '438,559,580|🇩🇪DE_122|2.7MB/s|M002-260618 0... #1'
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: ivgTfLR13A6xBsicIA28OPoav2tXlsstTTmGuETfnSk
-    short-id: 6d6f13013d3e1d0c
-  server: ru-2.videoproeditor.com
-  servername: ru-2.videoproeditor.com
-  tls: false
-  type: vless
-  uuid: 9b651a79-83f8-49a0-9848-b18c6a9406f7
-- name: '438|🇩🇪DE_10|1.7MB/s | 福利姬: https:/...'
-  network: tcp
-  port: 443
-  server: 46.4.230.210
-  tls: false
-  type: vless
-  uuid: c2876487-c0f5-4cb5-95d0-c764920f0636
-- name: '438|🇩🇪DE_11|1.7MB/s | 网盘搜宝: https:...'
-  network: tcp
-  port: 443
-  server: 46.4.230.210
-  tls: false
-  type: vless
-  uuid: df542c98-1ceb-40ff-9d21-6ac78ff8b173
-- name: '438,559,580|🇩🇪DE_22|4.4MB/s|K001-260618 01 #1'
-  password: qQe1z5kU8kN6SlKnDt9Ru3Qp
-  port: 443
-  server: 3.79.47.137
-  skip-cert-verify: true
-  tls: false
-  type: hysteria2
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 438,559,580|🇩🇪DE_98|2.7MB/s 01
-  network: raw
-  port: 10443
-  reality-opts:
-    public-key: WeShDM0MdunM6N8btrY8tXlL0GT1Ah-0jcplNQf9FEo
-  server: 83.243.86.117
-  servername: www.cloudflare.com
-  tls: false
-  type: vless
-  uuid: f6431ff1-dec0-4a6c-be4a-ce917913b589
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '438,559,580|🇩🇪DE_99|2.3MB/s 01 #1'
-  network: tcp
-  port: 8443
-  reality-opts:
-    public-key: ReyzYUpiTv5ov5Vk1POr8WVeXO9-2ELBndlk4lLipBs
-    short-id: 8a19bb82dfb326eb
-  server: 80.66.72.179
-  servername: teamdocs.su
-  tls: false
-  type: vless
-  uuid: 7b1727dc-f481-440b-b7f5-a515dcf34306
 - name: 460|德国_Frankfurt am Main
   network: ws
   port: 443
@@ -3561,6 +3465,22 @@ proxies:
   type: trojan
 - client-fingerprint: chrome
   encryption: none
+  name: 489,559,580|🇩🇪DE_67|4.8MB/s|B007-260618 01
+  network: ws
+  port: 443
+  server: octopusss5.info
+  servername: octopusss5.info
+  tls: true
+  type: vless
+  udp: true
+  uuid: c35050ce-01ab-45a9-91b8-54cec637d0a8
+  ws-opts:
+    headers:
+      Host: octopusss5.info
+    path: /udfyfws
+  xudp: true
+- client-fingerprint: chrome
+  encryption: none
   name: '489,559,580|🇩🇪DE_72|3.4MB/s|V001-260618 01 #1'
   network: ws
   port: 8443
@@ -3600,32 +3520,16 @@ proxies:
   sni: apple.com
   type: hysteria
   up: '500'
-- name: '502,509,559|🇩🇪DE_1|2.1MB/s #2'
-  network: ws
-  port: 80
-  server: 104.17.108.69
+- name: '496,502,514,551|🇩🇪@V2RayyNGvpn #1 #2'
+  obfs: salamander
+  obfs-password: t-me-V2RayyNGvpn
+  password: TGzLlWQaFb
+  port: 40460
+  server: 91.107.152.188
+  skip-cert-verify: true
+  sni: www.amd.com
   tls: false
-  type: vless
-  udp: true
-  uuid: 9f8e7d6c-5b4a-4321-8b7a-6c5d4e3f2a1b
-  ws-opts:
-    headers:
-      Host: free-hzr21-cdn.sabzi.name.ng.
-    path: /
-  xudp: true
-- name: '502,509,559|🇩🇪DE_2|1.8MB/s #1'
-  network: ws
-  port: 80
-  server: 172.66.47.69
-  tls: false
-  type: vless
-  udp: true
-  uuid: 9f8e7d6c-5b4a-4321-8b7a-6c5d4e3f2a1b
-  ws-opts:
-    headers:
-      Host: free-hzr26-cdn.sabzi.name.ng.
-    path: /
-  xudp: true
+  type: hysteria2
 - alpn:
   - h2
   - http/1.1
@@ -4173,7 +4077,7 @@ proxies:
   uuid: d20e38ef-1a4d-4009-a00d-2f0d44e3c65a
 - alterId: 0
   cipher: auto
-  name: '509,559,574|未知85 #1'
+  name: '509,559,574|未知62 #1'
   network: tcp
   port: 2053
   server: de.connfull.org
@@ -5637,7 +5541,7 @@ proxies:
   tfo: false
   type: ss
 - client-fingerprint: chrome
-  name: '522,548,559,580,581|🇩🇪_DE_德国 #8'
+  name: '522,559,580,581|🇩🇪_DE_德国 #7'
   network: raw
   port: 8443
   reality-opts:
@@ -5652,7 +5556,7 @@ proxies:
   uuid: 21c1132b-068c-46fb-880e-3268f6a30e7f
 - client-fingerprint: qq
   flow: xtls-rprx-vision
-  name: '522,548,559,580,581|🇩🇪_DE_德国 #9'
+  name: '522,559,580,581|🇩🇪_DE_德国 #8'
   network: tcp
   port: 443
   server: 87.120.126.205
@@ -5729,17 +5633,19 @@ proxies:
   uuid: 3e7f67de-648e-4871-b51a-a225214d41ee
 - alterId: 0
   cipher: auto
-  name: '523,524,559,574|未知73 #1'
+  name: 523,524,559|未知73
   network: ws
-  port: 6281
+  port: '6281'
   server: 193.36.84.146
   servername: ''
   skip-cert-verify: true
-  tls: true
+  tls: false
   type: vmess
   udp: true
   uuid: dbc464ad-e674-4078-a983-265184a487f5
   ws-opts:
+    headers:
+      Host: ''
     path: /arki
 - country: 🇩🇪DE
   delay: 1021
@@ -5787,7 +5693,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: '536,559,574|未知69 #1'
+  name: 536,559,574|未知87
   network: ws
   port: 8880
   server: 178.104.66.83
@@ -5798,17 +5704,6 @@ proxies:
   uuid: 6cd9c576-a21a-49a1-b922-f7daf1f2bfe4
   ws-opts:
     path: /ray
-- client-fingerprint: chrome
-  grpc-opts:
-    grpc-service-name: grpc
-  name: '551|🇩🇪DE_1|2.1MB/s #1'
-  network: grpc
-  port: 2096
-  server: 144.31.87.16
-  servername: www.avito.ru
-  tls: true
-  type: vless
-  uuid: c40f773e-3b96-417e-b22c-e48cb63ca7d9
 - cipher: chacha20-ietf-poly1305
   name: 558|0|国 01 | 1x DE
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
@@ -5858,7 +5753,7 @@ proxies:
   sni: ma-ybu7mswk.9966690.xyz
   tls: false
   type: hysteria2
-- name: '559|🇩🇪_DE_德国 #2'
+- name: '559|🇩🇪_DE_德国 #1'
   obfs: salamander
   obfs-password: eNM%2FNfxTsBqQIKcN0ezARS1z0f5mIxRd9GSwhVsyJlo%3D
   password: f7cb07a0-e6f9-4d22-a60e-c61854450c89
@@ -5866,6 +5761,13 @@ proxies:
   server: ff2.yuntong.click
   skip-cert-verify: true
   sni: ff2.yuntong.click
+  tls: false
+  type: hysteria2
+- name: '559,580|🇩🇪DE_22|4.4MB/s|K001-260618 01 #1'
+  password: qQe1z5kU8kN6SlKnDt9Ru3Qp
+  port: 443
+  server: 3.79.47.137
+  skip-cert-verify: true
   tls: false
   type: hysteria2
 - name: 559|🇩🇪 德国-B14B9B01
@@ -6830,6 +6732,19 @@ proxies:
   tls: false
   type: vless
   uuid: 7982f37c-757c-4a29-9ad4-04db96d6b1bc
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '559,580|🇩🇪DE_99|2.3MB/s 01 #1'
+  network: tcp
+  port: 8443
+  reality-opts:
+    public-key: ReyzYUpiTv5ov5Vk1POr8WVeXO9-2ELBndlk4lLipBs
+    short-id: 8a19bb82dfb326eb
+  server: 80.66.72.179
+  servername: teamdocs.su
+  tls: false
+  type: vless
+  uuid: 7b1727dc-f481-440b-b7f5-a515dcf34306
 - name: 559|🇩🇪 德国-2565DE59
   network: ws
   port: 80
@@ -7071,6 +6986,19 @@ proxies:
   tls: false
   type: vless
   uuid: 9a5e5d27-b055-4e06-bc2b-307462e43a44
+- client-fingerprint: randomized
+  flow: xtls-rprx-vision
+  name: '559,580|🇩🇪DE_122|2.7MB/s|M002-260618 0... #1'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: ivgTfLR13A6xBsicIA28OPoav2tXlsstTTmGuETfnSk
+    short-id: 6d6f13013d3e1d0c
+  server: ru-2.videoproeditor.com
+  servername: ru-2.videoproeditor.com
+  tls: false
+  type: vless
+  uuid: 9b651a79-83f8-49a0-9848-b18c6a9406f7
 - name: 559|🏁 未知-AD782DE5
   network: tcp
   port: 443
@@ -7290,6 +7218,19 @@ proxies:
   network: ws
   port: 443
   server: 188.114.97.6
+  servername: octopusss5.info
+  tls: true
+  type: vless
+  uuid: c35050ce-01ab-45a9-91b8-54cec637d0a8
+  ws-opts:
+    headers:
+      Host: octopusss5.info
+    path: /udfyfws
+- client-fingerprint: chrome
+  name: '559,580|🇩🇪DE_87|3.8MB/s|B007-260618 01 #1'
+  network: ws
+  port: 443
+  server: celestara.biz
   servername: octopusss5.info
   tls: true
   type: vless
@@ -7551,6 +7492,22 @@ proxies:
     headers:
       Host: po.fastbrokencompony.com
     path: /
+- alpn:
+  - h3
+  - h2
+  client-fingerprint: chrome
+  name: '559,580|🇩🇪DE_2|3.3MB/s 01 #1'
+  network: ws
+  port: 2053
+  server: po.fastbrokencompony.com
+  servername: po.fastbrokencompony.com
+  tls: true
+  type: vless
+  uuid: e7961655-9674-4cbd-a36f-ec0d5d7d660c
+  ws-opts:
+    headers:
+      Host: po.fastbrokencompony.com
+    path: /
 - name: 559|🏁 未知-E12DE8DC
   network: ws
   port: 443
@@ -7563,6 +7520,19 @@ proxies:
     headers:
       Host: t1s1.rittbo.kdns.fr
     path: '%2F'
+- client-fingerprint: chrome
+  name: '559,580|🇩🇪DE_77|3.4MB/s|B007-260618 01 #1'
+  network: ws
+  port: 8443
+  server: celestara.biz
+  servername: srv75.perfectbulk.info
+  tls: true
+  type: vless
+  uuid: f3b8c2a1-9d4e-4b7f-a6c5-2e8d1f0b4a93
+  ws-opts:
+    headers:
+      Host: srv75.perfectbulk.info
+    path: /
 - name: 559|🇩🇪 德国-94CD5B9F
   network: tcp
   port: 9010
@@ -7587,6 +7557,18 @@ proxies:
   tls: false
   type: vless
   uuid: f552a78e-400c-4332-8265-8e5da1c21eeb
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 559,580|🇩🇪DE_98|2.7MB/s 01
+  network: raw
+  port: 10443
+  reality-opts:
+    public-key: WeShDM0MdunM6N8btrY8tXlL0GT1Ah-0jcplNQf9FEo
+  server: 83.243.86.117
+  servername: www.cloudflare.com
+  tls: false
+  type: vless
+  uuid: f6431ff1-dec0-4a6c-be4a-ce917913b589
 - alpn:
   - h2
   - http/1.1
@@ -7650,7 +7632,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '559|🇩🇪_DE_德国 #3'
+  name: '559|🇩🇪_DE_德国 #2'
   network: tcp
   port: 8080
   server: 185.189.58.195
@@ -7739,13 +7721,6 @@ proxies:
   sni: https%3A%2F%2Ft.me%2FWangCai2%F0%9F%87%A8%F0%9F%87%B3
   tls: false
   type: hysteria2
-- name: 580|🇩🇪DE_7|2.2MB/s|B007-260618 01
-  network: tcp
-  password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
-  port: 443
-  server: 185.137.157.151
-  sni: 185.137.157.151
-  type: trojan
 - alpn:
   - h3
   - h2

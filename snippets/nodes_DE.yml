@@ -56,22 +56,6 @@ proxies:
     headers:
       Host: download.windowsupdate.com
     path: /download
-- alpn:
-  - http/1.1
-  name: 306|Germany_None_trojan_1129
-  network: ws
-  password: MITIVPN
-  port: '443'
-  server: 45.80.111.7
-  skip-cert-verify: true
-  sni: u---as.MaQror.ir
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/60.0.3112.90 Safari/537.36
-    path: /---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=usa
 - cipher: chacha20-ietf-poly1305
   name: 356|🇩🇪1 |  1.6MB/s
   password: oXGp1+ihlfKg826H
@@ -481,8 +465,7 @@ proxies:
   server: 161.35.69.20
   type: ss
 - cipher: chacha20-ietf-poly1305
-  country: 🇺US
-  name: 378,435,537,538|🇩🇪DE-209.46.102.22-0071 | 30.6...
+  name: 378,537,538|🇩🇪DE-209.46.102.22-0071 | 30.6...
   password: 1hhrqrokj3ag
   port: 8388
   server: 209.46.102.22
@@ -499,15 +482,12 @@ proxies:
   port: 7001
   server: 213.202.208.199
   type: ss
-- alterId: 0
-  name: '378,536,537,538,559,574|🇷🇴RO罗马尼亚3 #1'
+- name: 378,536,537,538,559|🇷🇴RO罗马尼亚3
   password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
   port: 443
   server: 185.137.157.149
-  skip-cert-verify: true
-  tls: true
+  skip-cert-verify: false
   type: trojan
-  udp: true
 - name: 378,536,537,538|🇩🇪DE-185.137.157.142-0101 | 0....
   password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
   port: 443
@@ -515,39 +495,44 @@ proxies:
   skip-cert-verify: false
   type: trojan
 - alterId: 0
-  name: '378,509,537,559,574|🇷🇴RO罗马尼亚2 #1'
+  name: 378,509,537,559|🇷🇴RO罗马尼亚2
   network: tcp
   password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
   port: 443
   server: 185.137.157.151
+  skip-cert-verify: false
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 378,536,537,538,544,574|🇷🇴RO罗马尼亚4
+  password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
+  port: 443
+  server: 185.137.157.145
   skip-cert-verify: true
   tls: true
   type: trojan
   udp: true
-- name: '378,502,536,537,538,544|🇷🇴 罗马尼亚 V2CROSS.COM #2'
-  password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
-  port: 443
-  server: 185.137.157.145
-  skip-cert-verify: false
-  type: trojan
-- client-fingerprint: chrome
-  name: 378,502,509,536,537,538,544,559|未知_070819001
+- alterId: 0
+  client-fingerprint: chrome
+  name: 378,509,536,537,538,544,559,574|RO
   network: tcp
   password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
   port: 443
   server: 185.137.157.135
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: ''
+  tls: true
   type: trojan
   udp: true
-- name: 378,536,537,538,548|🇷🇴 罗马尼亚 starcorenode.com 2
+- name: 378,536,537,538|🇩🇪DE-185.137.157.140-0245 | 0....
   password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
   port: 443
   server: 185.137.157.140
   skip-cert-verify: false
   type: trojan
 - alterId: 0
-  name: '378,502,509,536,537,538,544,559,580|未知 TROJAN-109 | free-nodes #2'
+  name: '378,509,536,537,538,544,559,574,580|未知 TROJAN-109 | free-nodes #2'
   network: tcp
   password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
   port: 443
@@ -556,13 +541,16 @@ proxies:
   tls: true
   type: trojan
   udp: true
-- name: 378,502,536,537,538,544,548,559|未知_070819082
+- alterId: 0
+  name: '378,536,537,538,544,559,574|🇷🇴RO罗马尼亚3 #1'
   password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
   port: 443
   server: 185.137.157.128
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: ''
+  tls: true
   type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: '378,537|🇪DE-94.130.184.57-0194 #1'
@@ -2011,15 +1999,13 @@ proxies:
   uuid: 826b8d0a-e0d3-407a-927d-19953c170779
   ws-opts:
     path: /cctv13/hd.m3u8
-- country: 🇧GB
-  name: '378,435,436,536,537,559|🇬🇧GB_42 #2'
+- name: '378,436,536,537,559|🇬🇧GB_42 #1'
   password: 11559103-9993-4d00-b599-d6bcd8db2197
   port: 443
   server: free-v7-09.elbrusway.online
   skip-cert-verify: false
   sni: free-v7-09.elbrusway.online
   type: trojan
-  udp: true
 - cipher: aes-256-gcm
   name: '378,537|🇪DE-193.108.117.75-6456 #1'
   password: PCnnH6SQSnfoS27
@@ -2971,7 +2957,7 @@ proxies:
   uuid: d20e38ef-1a4d-4009-a00d-2f0d44e3c65a
 - alterId: 0
   cipher: auto
-  name: '509,559,574|未知85 #1'
+  name: '509,559,574|未知62 #1'
   network: tcp
   port: 2053
   server: de.connfull.org
@@ -3167,17 +3153,19 @@ proxies:
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
 - alterId: 0
   cipher: auto
-  name: '523,524,559,574|未知73 #1'
+  name: 523,524,559|未知73
   network: ws
-  port: 6281
+  port: '6281'
   server: 193.36.84.146
   servername: ''
   skip-cert-verify: true
-  tls: true
+  tls: false
   type: vmess
   udp: true
   uuid: dbc464ad-e674-4078-a983-265184a487f5
   ws-opts:
+    headers:
+      Host: ''
     path: /arki
 - country: 🇩🇪DE
   delay: 1021
@@ -3225,7 +3213,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: '536,559,574|未知69 #1'
+  name: 536,559,574|未知87
   network: ws
   port: 8880
   server: 178.104.66.83
@@ -3323,7 +3311,7 @@ proxies:
     path: /da
 - alterId: 0
   cipher: auto
-  name: '559|🇩🇪_DE_德国 #3'
+  name: '559|🇩🇪_DE_德国 #2'
   network: tcp
   port: 8080
   server: 185.189.58.195
@@ -3404,13 +3392,6 @@ proxies:
     headers:
       Host: ''
     path: /
-- name: 580|🇩🇪DE_7|2.2MB/s|B007-260618 01
-  network: tcp
-  password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
-  port: 443
-  server: 185.137.157.151
-  sni: 185.137.157.151
-  type: trojan
 - name: 728|🇩🇪 德国3🔒
   password: ZIXQa-7pg0vPahuyi8bABhob
   port: 443
