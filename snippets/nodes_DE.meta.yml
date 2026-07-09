@@ -84,14 +84,14 @@ proxies:
   up: 300
 - name: 232|德国1-hy2  协议
   password: 62854f16-2a6c-474a-ad5e-365da754c3c1
-  port: 24905
+  port: 26952
   ports: 22000-27000
   server: de1.xiaoliyu.cyou
   skip-cert-verify: true
   type: hysteria2
 - name: 232|德国2-hy2 协议
   password: 62854f16-2a6c-474a-ad5e-365da754c3c1
-  port: 26627
+  port: 25102
   ports: 22000-27000
   server: de2.xiaoliyu.cyou
   skip-cert-verify: true
@@ -103,7 +103,7 @@ proxies:
   down: 70
   fast-open: true
   name: 232|德国1-ChatGPT
-  port: 7547
+  port: 9235
   ports: 6000-11000
   protocol: udp
   server: de1.xiaoliyu.cyou
@@ -834,7 +834,7 @@ proxies:
   type: trojan
   udp: true
 - alterId: 0
-  name: 378,472,473,474,536,537,538,544,574|🇷RO罗
+  name: 378,536,537,538,574|🇷RO罗
   password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
   port: 443
   server: 185.137.157.149
@@ -842,8 +842,7 @@ proxies:
   tls: true
   type: trojan
   udp: true
-- name: 378,472,473,474,536,537,538,559|🇷🇴RO罗马尼亚2
-  network: tcp
+- name: 378,536,537,538,559|🇷🇴RO罗马尼亚2
   password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
   port: 443
   server: 185.137.157.140
@@ -863,7 +862,7 @@ proxies:
   type: trojan
 - alterId: 0
   client-fingerprint: chrome
-  name: 378,508,509,536,537,538,544,559,574|🇷RO罗马尼亚2
+  name: 378,508,509,536,537,538,559,574|🇷RO罗马尼亚2
   network: tcp
   password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
   port: 443
@@ -873,14 +872,15 @@ proxies:
   tls: true
   type: trojan
   udp: true
-- name: 378,536,537,538,559|🇷🇴RO罗马尼亚
+- name: 378,472,473,474,502,507,536,537,538,544,559|🇷🇴RO罗马尼亚
+  network: tcp
   password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
   port: 443
   server: 185.137.157.142
   skip-cert-verify: false
   type: trojan
 - alterId: 0
-  name: 378,502,508,509,536,537,538,544,548,574|🇴RO罗马尼亚3
+  name: 378,508,509,536,537,538,548,574|🇴RO罗马尼亚3
   network: tcp
   password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
   port: 443
@@ -2344,15 +2344,15 @@ proxies:
   ws-opts:
     path: /cctv13/hd.m3u8
 - country: 🇬🇧GB
-  name: 378,435,536,537,580|未知 TROJAN-110 | free-nodes
+  name: '378,435,536,537,580|未知 TROJAN-110 | free-nodes #1'
   password: TrojanPass2026!
   port: 8448
   server: 2.26.54.174
   skip-cert-verify: false
   type: trojan
   udp: true
-- country: 🇧GB
-  name: 378,435,436,536,537,559|🇬🇧GB_53
+- country: 🇬🇧GB
+  name: '378,435,436,536,537,559|🇬🇧GB_53 #2'
   password: 11559103-9993-4d00-b599-d6bcd8db2197
   port: 443
   server: free-v7-09.elbrusway.online
@@ -3033,7 +3033,7 @@ proxies:
   uuid: 1f4c983e-382c-d2fa-b2dc-7981f02b34de
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 438,559,580|未知 VLESS-343 | free-nodes
+  name: '438,507,559,580|未知 VLESS-343 | free-nodes #1'
   network: tcp
   port: 443
   reality-opts:
@@ -3048,7 +3048,7 @@ proxies:
   ws-opts:
     headers:
       Host: www.nvidia.com
-- name: '438,508,509,559,580|未知 VLESS-501 | free-nodes #1'
+- name: '438,507,508,509,559,580|未知 VLESS-501 | free-nodes #2'
   network: tcp
   port: 56453
   server: 193.23.219.140
@@ -3525,7 +3525,7 @@ proxies:
     headers: {}
     path:
     - /
-  name: 489,548,559|未知 VLESS-381 | free-nodes
+  name: '489,548,559|未知 VLESS-381 | free-nodes #1'
   network: tcp
   port: 443
   reality-opts:
@@ -3566,21 +3566,44 @@ proxies:
   type: hysteria
   udp: true
   up: '500'
-- alterId: 0
-  cipher: auto
-  name: '502,559,574,717|DE【机场推荐：https://a9a.xyz】18 #1'
-  network: ws
-  port: 8880
-  server: 178.104.66.83
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 6cd9c576-a21a-49a1-b922-f7daf1f2bfe4
-  ws-opts:
-    headers:
-      Host: ''
-    path: /ray
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '502,551|🇩🇪DE_1|3.0MB/s #1'
+  port: 2096
+  server: 195.201.169.164
+  servername: www.yahoo.com
+  tls: true
+  type: vless
+  uuid: 00874e80-0d25-4ff6-c25d-edb5a28546e6
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '502,551|🇩🇪DE_2|2.5MB/s #1'
+  port: 40443
+  server: 138.124.114.29
+  servername: deepl.com
+  tls: true
+  type: vless
+  uuid: d3ed4cb7-cf16-4ec6-bfcf-cf3ead1c8625
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  name: 502,551,559|🇩🇪DE_2|2.0MB/s
+  port: 8443
+  server: securitytrails.com
+  servername: api.somethingelse.dpdns.org
+  tls: true
+  type: vless
+  uuid: 3a5fd8d7-4182-4f65-a005-ee8d39fe96b9
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: '502,551|🇩🇪DE_7|2.6MB/s #1'
+  port: 443
+  server: 95.163.208.184
+  servername: ads.x5.ru
+  tls: true
+  type: vless
+  uuid: d3d932d2-ff06-4005-8ce7-b49b73f13967
 - client-fingerprint: chrome
   encryption: none
   name: '508,509,559,580|🇩🇪DE_8|4.7MB/s|B007-260618 01 #1'
@@ -4049,17 +4072,6 @@ proxies:
     headers:
       Host: max-gb1.global.ssl.fastly.net
     path: /?https:/t.me/WangCai2🇨🇳
-- alterId: 0
-  cipher: auto
-  name: '508,509,559,574,580|未知 VMESS-621 | free-nodes #1'
-  network: tcp
-  port: '1020'
-  server: nlt.reata.ir
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 6244c41a-f4c1-4733-a654-c38f7729b13c
 - alterId: 0
   cipher: auto
   name: '508,509|德国 061 #1'
@@ -4734,17 +4746,6 @@ proxies:
     headers:
       Host: qeztrg7u.akscasx.workers.dev
     path: /
-- alterId: 0
-  cipher: auto
-  name: 508,509,559,574,580|未知 VMESS-614 | free-nodes
-  network: tcp
-  port: '1050'
-  server: spt.reata.ir
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: b5b183b6-a4f0-41ad-a015-ba9f000ad7ed
 - client-fingerprint: chrome
   name: '508,509|德国 156 #1'
   network: grpc
@@ -5658,6 +5659,11 @@ proxies:
   sni: trojan.burgerip.co.uk
   type: trojan
   udp: true
+- name: 536|🇩🇪DE-185.137.157.156-2356
+  password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
+  port: 443
+  server: 185.137.157.156
+  type: trojan
 - cipher: rc4-md5
   name: '536|8J%2BHrfCfh7BISy00My4yNTUuMTE5... #1'
   obfs: plain
@@ -5668,15 +5674,6 @@ proxies:
   protocol-param: ''
   server: cdn01.25k2l8.meituan88.com
   type: ssr
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 551|🇩🇪DE_1|3.2MB/s
-  port: 2096
-  server: 195.201.169.164
-  servername: www.yahoo.com
-  tls: true
-  type: vless
-  uuid: 00874e80-0d25-4ff6-c25d-edb5a28546e6
 - cipher: chacha20-ietf-poly1305
   name: 558|0|国 01 | 1x DE
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
@@ -5929,17 +5926,6 @@ proxies:
   tls: true
   type: vless
   uuid: 36a99843-3a94-4d0d-bedb-26ac4c3afb36
-- alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: chrome
-  name: 559|🇩🇪DE_2|2.0MB/s
-  port: 8443
-  server: securitytrails.com
-  servername: api.somethingelse.dpdns.org
-  tls: true
-  type: vless
-  uuid: 3a5fd8d7-4182-4f65-a005-ee8d39fe96b9
 - name: 559|🏁 未知-AC9DE6E6
   network: tcp
   port: 8443
@@ -6528,7 +6514,7 @@ proxies:
   uuid: aa5b231c-4e18-4ae6-b83c-a293f51c0dfa
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 559,580|未知 VLESS-488 | free-nodes
+  name: '559,580|未知 VLESS-488 | free-nodes #1'
   network: tcp
   port: 8443
   reality-opts:
@@ -7100,18 +7086,6 @@ proxies:
     headers:
       Host: shegeftihaaa.net
     path: /rsedgws
-- client-fingerprint: chrome
-  name: 580|🇩🇪DE_79|617KB/s 01
-  network: tcp
-  port: 8443
-  reality-opts:
-    public-key: upDCW94g-pSYQrmXvOrTVYlwBUrSKhYFF9QwrqObdVo
-    short-id: 3ca620a7ed5f3196
-  server: de.ko.prod.n7.homes
-  servername: google.com
-  tls: false
-  type: vless
-  uuid: dcba77d7-bb59-4802-b32c-37fd7011fca4
 - alpn:
   - h2
   client-fingerprint: chrome
