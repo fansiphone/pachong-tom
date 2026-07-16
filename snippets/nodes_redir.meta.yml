@@ -196,7 +196,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 119,378,508,509,536,537,636|🇨🇳 中国 006
+  name: 119,378,508,509,536,537,636|🇨🇳 中国 014
   network: ws
   port: '36101'
   server: 120.82.70.149
@@ -212,7 +212,7 @@ proxies:
     path: /download
 - alterId: 0
   cipher: auto
-  name: 119,378,508,509,536,537,636|🇯🇵 日本 039
+  name: 119,378,508,509,536,537,636|🇯🇵 日本 019
   network: ws
   port: '14954'
   server: 91.200.242.187
@@ -228,7 +228,7 @@ proxies:
     path: /download
 - alterId: 1
   cipher: auto
-  name: '119,378,508,509,536,537,636|其他 022 #2'
+  name: '119,378,508,509,536,537,636|其他 019 #2'
   network: ws
   port: '1552'
   server: nas.ruyo.in
@@ -4595,15 +4595,6 @@ proxies:
   type: vmess
   uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   ws-opts: {}
-- name: '519,559,580|德国(yudou789.top 玉豆免费节点) #18'
-  password: c0aa0cee-e855-4bcc-9afc-46241cb17990
-  port: 443
-  server: fast88.screw.page
-  skip-cert-verify: false
-  sni: fast88.screw.page
-  tls: false
-  type: hysteria2
-  udp: true
 - alterId: 2
   cipher: auto
   name: 519|🇨🇳_CN_中国->🇯🇵_JP_日本
@@ -4614,8 +4605,68 @@ proxies:
   type: vmess
   udp: true
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- alterId: 0
+  cipher: auto
+  name: 519|🇺🇸_US_美国->🇫🇷_FR_法国
+  network: ws
+  port: 443
+  server: 4cdn.njkrpl.com
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: a0449b33-d7f6-42a5-8bdc-3b5e727ec9f8
 - alterId: 2
-  cipher: none
+  cipher: auto
+  delay: 2674
+  name: 519,528|美国 - 洛杉矶 - 1
+  port: 30804
+  server: v4.hdacd.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- name: '519,523,524,580|未知 VLESS-443 | free-nodes #1'
+  network: ws
+  port: 443
+  server: 1.tls.fastly.veraspeed.ir
+  servername: ssl.fastly.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 891710f4-45f3-41b1-99a6-6f1510f83c10
+  ws-opts:
+    headers:
+      Host: pan21.global.ssl.fastly.net
+    path: /TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER?ed
+- name: '519,559|🇮🇷_IR_伊朗->🇩🇪_DE_德国 #1'
+  network: ws
+  port: 443
+  server: dash1.dequa.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 26c5d167-03ae-42f9-81a2-b9d57b3409a7
+- client-fingerprint: chrome
+  name: 519|🇸🇨_SC_塞舌尔->🇩🇪_DE_德国
+  network: ws
+  port: 2087
+  server: push.sukario.ir
+  servername: k3.erooo12345.xyz
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 03707fb7-0990-440f-88f6-b0e0f7242a38
+  ws-opts:
+    headers:
+      Host: k3.erooo12345.xyz
+    path: /
+- alterId: 2
+  cipher: auto
   name: 519|🇨🇳_CN_中国->🇩🇪_DE_德国
   port: 30833
   server: v33.hdacd.com
@@ -4626,7 +4677,8 @@ proxies:
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - client-fingerprint: edge
   flow: xtls-rprx-vision
-  name: '522,559,580,581|🇬🇧_GB_英国->🇬🇪_GE_格鲁吉亚 #9'
+  name: '522,559,580,581|🇬🇧_GB_英国->🇬🇪_GE_格鲁吉亚 #6'
+  network: tcp
   port: 22231
   server: r1.mizulina.top
   servername: r1.mizulina.top
@@ -4635,16 +4687,30 @@ proxies:
   type: vless
   udp: true
   uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
-- alterId: 2
-  cipher: auto
-  name: 522|_ID_亚->🇷_FR_法国
-  port: 30835
-  server: v35.hdacd.com
+- client-fingerprint: edge
+  flow: xtls-rprx-vision
+  name: '522,559,580,581|🇬🇧_GB_英国->🇬🇪_GE_格鲁吉亚 #7'
+  network: tcp
+  port: 443
+  server: 85.234.114.53
+  servername: r1.mizulina.top
   skip-cert-verify: true
-  tls: false
-  type: vmess
+  tls: true
+  type: vless
   udp: true
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
+- client-fingerprint: edge
+  flow: xtls-rprx-vision
+  name: '522,559,580,581|🇬🇧_GB_英国->🇬🇪_GE_格鲁吉亚 #8'
+  network: tcp
+  port: 22231
+  server: 85.234.114.53
+  servername: r1.mizulina.top
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
 - name: '522,559,580,581|🇺🇸_US_美国->🇦🇿_AZ_阿塞拜疆 #3'
   password: 4f4d1167-ef14-4304-9bce-0740472503ef
   port: 41943
@@ -4913,14 +4979,20 @@ proxies:
   server: ba91e0a1-sutj40-t1k53r-1jm8i.cu.plebai.net
   type: vmess
   uuid: a6ddfc37-05eb-11ed-af40-f23c91cfbbc9
-- name: 559|🇳🇱_NL_荷兰->🇩🇪_DE_德国
-  network: tcp
-  port: 37825
-  server: 31.56.89.31
-  tls: false
+- client-fingerprint: chrome
+  name: '559|🇸🇨_SC_塞舌尔->🇩🇪_DE_德国 #1'
+  network: ws
+  port: 2087
+  server: push.sukario.ir
+  servername: k3.erooo12345.xyz
+  tls: true
   type: vless
-  uuid: 1eb75d06-34b5-48af-8564-90e9ca0a3e04
-- name: 559|🇺🇸_US_美国->🇫🇷_FR_法国
+  uuid: 03707fb7-0990-440f-88f6-b0e0f7242a38
+  ws-opts:
+    headers:
+      Host: k3.erooo12345.xyz
+    path: '%2F'
+- name: '559|🇺🇸_US_美国->🇫🇷_FR_法国 #1'
   network: ws
   port: 443
   server: 104.21.76.160
@@ -4972,7 +5044,7 @@ proxies:
   uuid: 4b90796f-8973-467e-966b-54319b064ee9
   ws-opts:
     path: /backup
-- name: '559|🇺🇸_US_美国->🇫🇷_FR_法国 #1'
+- name: '559|🇺🇸_US_美国->🇫🇷_FR_法国 #2'
   network: ws
   port: 443
   server: 172.67.204.17
@@ -4992,19 +5064,6 @@ proxies:
   uuid: 7fa0ed5f-4c53-4fa9-af42-46fb2ca1279a
   ws-opts:
     path: /
-- client-fingerprint: chrome
-  name: 559|🇺🇸_US_美国->🇯🇵_JP_日本
-  network: ws
-  port: 443
-  server: tokyo.ilovezhenjiu.top
-  servername: tokyo.iloveacupuncture.top
-  tls: true
-  type: vless
-  uuid: 86a89a81-b619-44ba-b4a6-2d03fef52b99
-  ws-opts:
-    headers:
-      Host: tokyo.iloveacupuncture.top
-    path: '%2Flbemws'
 - name: 559|🇳🇱_NL_荷兰->🇬🇧_GB_英国
   network: ws
   port: 8443
@@ -5061,7 +5120,7 @@ proxies:
     headers:
       Host: joinbedeee-daily-configs.net
     path: '%2F%40Daily_Configs--%40Daily_Configs--%40Daily_Configs--%40Daily_Configs--%40Daily_Configs--%40Daily_Configs%3Fed%3D2056'
-- name: '559|🇺🇸_US_美国->🇫🇷_FR_法国 #2'
+- name: '559|🇺🇸_US_美国->🇫🇷_FR_法国 #3'
   network: ws
   port: 443
   server: 104.21.74.139
@@ -5071,7 +5130,7 @@ proxies:
   uuid: a3f8cad2-e83b-4429-a290-373bec463c7e
   ws-opts:
     path: /nimws
-- name: '559|🇺🇸_US_美国->🇫🇷_FR_法国 #3'
+- name: '559|🇺🇸_US_美国->🇫🇷_FR_法国 #4'
   network: ws
   port: 443
   server: 172.67.156.243
@@ -5137,7 +5196,7 @@ proxies:
     path: /telegram:@vpnhub69telegram:@vpnhub69telegram:@vpnhub69telegram:@vpnhub69
 - alterId: 0
   cipher: auto
-  name: 559|🇨🇳_CN_中国->🇺🇸_US_美国
+  name: '559|🇨🇳_CN_中国->🇺🇸_US_美国 #1'
   network: ws
   port: 16928
   server: vip3.niuniupremium.xyz
@@ -5278,6 +5337,15 @@ proxies:
     headers:
       Host: mm3.shabijichang.com
     path: /
+- alterId: 2
+  cipher: auto
+  name: '559,580,581|🇮🇩_ID_印度尼西亚->🇫🇷_FR_法国 #2'
+  network: tcp
+  port: 30835
+  server: v35.hdacd.com
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - cipher: aes-256-gcm
   name: 575|SS->-NF英国-ChatGPT-144.217.164....
   password: 8JCsPssfgS8tiRwiMlhARg==

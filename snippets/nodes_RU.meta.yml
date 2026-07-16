@@ -296,7 +296,7 @@ proxies:
     path: /fr-unlimitxxx
 - alterId: 0
   cipher: auto
-  name: 378,508,509,536,537,636|🇷🇺 俄罗斯 001
+  name: 378,508,509,536,537,636|🇷🇺 俄罗斯 005
   network: ws
   port: '14369'
   server: 195.133.53.192
@@ -311,7 +311,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 378,508,509,536,537,636|🇩🇪 德国 015
+  name: 378,508,509,536,537,636|🇩🇪 德国 016
   network: ws
   port: '443'
   server: ua-full.privateip.net
@@ -328,7 +328,7 @@ proxies:
   cipher: auto
   grpc-opts:
     grpc-service-name: /
-  name: 378,537,636|🇷🇺 俄罗斯 004
+  name: 378,537,636|🇷🇺 俄罗斯 007
   network: grpc
   port: '32740'
   server: 5.42.80.252
@@ -339,7 +339,7 @@ proxies:
   uuid: 433f1111-b780-4eae-b7e7-d7823b09e701
 - alterId: 64
   cipher: auto
-  name: 378,508,509,536,537,559,636|🇷🇺 俄罗斯 006
+  name: 378,508,509,536,537,559,636|🇷🇺 俄罗斯 009
   network: ws
   port: '30002'
   server: 185.173.94.1
@@ -354,7 +354,7 @@ proxies:
     path: /path/191019072927
 - alterId: 0
   cipher: auto
-  name: 378,508,509,536,537,636|🇷🇺 俄罗斯 007
+  name: 378,508,509,536,537,636|🇷🇺 俄罗斯 010
   network: ws
   port: '16231'
   server: 31.129.105.239
@@ -369,7 +369,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 378,508,509,536,537,636|🇷🇺 俄罗斯 008
+  name: 378,508,509,536,537,636|🇷🇺 俄罗斯 011
   network: ws
   port: '443'
   server: 37.220.161.249
@@ -388,7 +388,7 @@ proxies:
     method: GET
     path:
     - /
-  name: 378,508,509,536,537,636|🇷🇺 俄罗斯 010
+  name: 378,508,509,536,537,636|🇷🇺 俄罗斯 013
   network: http
   port: '26743'
   server: 194.87.248.27
@@ -403,7 +403,7 @@ proxies:
     method: GET
     path:
     - /
-  name: 378,508,509,536,537,636|🇷🇺 俄罗斯 011
+  name: 378,508,509,536,537,636|🇷🇺 俄罗斯 014
   network: http
   port: '37672'
   server: 176.119.159.245
@@ -414,7 +414,7 @@ proxies:
   uuid: 86b4e35c-1061-47b3-8c6c-811d1853a477
 - alterId: 0
   cipher: auto
-  name: 378,508,509,536,537,636|🇺🇦 乌克兰 006
+  name: 378,508,509,536,537,636|🇺🇦 乌克兰 005
   network: ws
   port: '443'
   server: 45.67.215.119
@@ -429,7 +429,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 378,508,509,536,537,636|🇷🇺 俄罗斯 017
+  name: 378,508,509,536,537,636|🇷🇺 俄罗斯 020
   network: ws
   port: '443'
   server: 93.93.89.118
@@ -444,7 +444,7 @@ proxies:
     path: /api/v1/gpu-stream/socket
 - alterId: 0
   cipher: auto
-  name: 378,508,509,536,537,559,580,636|🇷🇺 俄罗斯 018
+  name: 378,508,509,536,537,559,580,636|🇷🇺 俄罗斯 021
   network: ws
   port: '443'
   server: renderer-stream-1-411.mirra.now
@@ -459,9 +459,9 @@ proxies:
     path: /api/v1/gpu-stream/socket
 - alterId: 0
   cipher: auto
-  name: 378,508,509,536,537,636|🇷🇺 俄罗斯 021
+  name: '378,536,537|🇺RU-195.133.53.192-1938 #1'
   network: ws
-  port: '43688'
+  port: 43688
   server: 195.133.53.192
   servername: ''
   skip-cert-verify: false
@@ -688,7 +688,7 @@ proxies:
   type: anytls
   udp: true
 - country: 🇺RU
-  name: 435,436,559|🇷🇺RU_85
+  name: '435,436,559|🇷🇺RU_123 #1'
   password: '!!str 1234567890'
   port: 443
   server: 194.87.77.91
@@ -696,6 +696,15 @@ proxies:
   sni: kfm-bn0.pages.dev
   type: trojan
   udp: true
+- auth: 8bc63720-5ec8-45b5-b6a6-9a21ffb490e8
+  name: '438,502,551,559,566,568|🇩🇪 德国 | DEU #2'
+  password: 8bc63720-5ec8-45b5-b6a6-9a21ffb490e8
+  port: 8443
+  server: fl02.auragg.org
+  skip-cert-verify: true
+  sni: fl02.auragg.org
+  tls: false
+  type: hysteria2
 - name: 460|俄罗斯_新西伯利亚
   network: ws
   port: 443
@@ -1464,56 +1473,39 @@ proxies:
     headers:
       Host: ''
     path: /
-- client-fingerprint: chrome
-  encryption: none
+- alpn:
+  - http/1.1
+  client-fingerprint: qq
   flow: xtls-rprx-vision
-  name: 489|🟠🇷🇺[📺🎪✨📦]_github.com/Ruk1ng001...
-  network: tcp
+  name: '502,551,559|🇷🇺RU_2|2.6MB/s #2'
   port: 443
-  reality-opts:
-    public-key: Np5eNpCJdcXe4IvMs0stzE-sMtlphhTnZeuCkhjQXzQ
-    short-id: a8389289e18af5f4
-  server: ru-01.gni-daed.ru
-  servername: ru-01.gni-daed.ru
+  server: 213.219.212.24
+  servername: eh.vk.ru
   tls: true
   type: vless
-  udp: true
-  uuid: 7c0f30a2-a7c1-43b1-bc51-20f07036a76e
-  xudp: true
-- client-fingerprint: qq
-  name: '502,523,524,551,559,580,717|RU【机场推荐：https://a9a.xyz】12 #1'
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: 4e4FI0siWxFtLCRCVDQurn1wLTuvKWhRY0zj1SaUcyw
-    short-id: 1559b440
-  server: 77.110.113.188
-  servername: www.samsung.com
-  skip-cert-verify: true
+  uuid: b0c03d71-8139-4639-bb05-e444e07a0d2b
+- name: 507,559,566|🇺🇸 美国 | USA 11
+  network: ws
+  packet-encoding: xudp
+  port: 4100
+  server: tn.tmn141246.ru
+  servername: tn.tmn141246.ru
   tls: false
   type: vless
   udp: true
-  uuid: 218fd696-e3a2-4c33-b397-a5f13a82969e
+  uuid: 155e8dd4-a559-407a-9ea8-13a5e829f066
+  ws-opts:
+    headers:
+      Host: live.ok.ru
+    path: /v1
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 507,559|RU VLESS-489 | free-nodes
+  name: '507,559|RU VLESS-492 | free-nodes #1'
   network: tcp
   port: 443
   reality-opts:
     public-key: W8hnq0oVIPpRGyM8UUQuaAF2KKxl6C10yBgO911iFwM
-  server: ch-5.lemonbow.ru
-  servername: www.samsung.com
-  tls: false
-  type: vless
-  uuid: 8516c47e-a7a1-42f7-9c14-ae9b14873cc8
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 507|RU VLESS-483 | free-nodes
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: W8hnq0oVIPpRGyM8UUQuaAF2KKxl6C10yBgO911iFwM
-  server: ge-5.lemonbow.ru
+  server: tr-5.lemonbow.ru
   servername: www.samsung.com
   tls: false
   type: vless
@@ -1525,7 +1517,7 @@ proxies:
   flow: xtls-rprx-vision
   grpc-opts:
     grpc-service-name: ''
-  name: 507|RU VLESS-914 | free-nodes
+  name: '507,559|RU VLESS-915 | free-nodes #1'
   network: tcp
   port: 443
   server: s462.csgfw.top
@@ -1544,7 +1536,7 @@ proxies:
   flow: xtls-rprx-vision
   grpc-opts:
     grpc-service-name: ''
-  name: '507,559|RU VLESS-941 | free-nodes #1'
+  name: '507,559|RU VLESS-942 | free-nodes #1'
   network: tcp
   port: 443
   server: 45.130.146.232
@@ -1563,7 +1555,7 @@ proxies:
   flow: xtls-rprx-vision
   grpc-opts:
     grpc-service-name: ''
-  name: '507,559|RU VLESS-953 | free-nodes #1'
+  name: '507,559|RU VLESS-954 | free-nodes #1'
   network: tcp
   port: 443
   server: s461.wagahaha.xyz
@@ -1575,6 +1567,50 @@ proxies:
     headers:
       Host: 57be39cds394.csgfw.top
     path: ''
+- client-fingerprint: chrome
+  name: '508,509|俄罗斯 001 #1'
+  network: ws
+  port: 8443
+  server: 92.243.74.4
+  servername: vp1.cc.cd
+  tls: true
+  type: vless
+  udp: true
+  uuid: 663cf772-829c-4bc6-893d-b7d021d42f5b
+  ws-opts:
+    headers:
+      Host: vp1.cc.cd
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 508,509,559,636|🇷🇺 俄罗斯 003
+  network: ws
+  port: '2087'
+  server: speedtestgoogleyahoobingyandexgmailappleaol.andishehnegariran.ir
+  servername: speedtestgoogleyahoobingyandexgmailappleaol.andishehnegariran.ir
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: efdb11ca-8d37-40ab-9ec2-bdfd72ad4a5b
+  ws-opts:
+    headers:
+      Host: speedtestgoogleyahoobingyandexgmailappleaol.andishehnegariran.ir
+    path: /mehdi
+- alterId: 0
+  cipher: auto
+  name: 508,509,559,636|🇷🇺 俄罗斯 004
+  network: ws
+  port: '2096'
+  server: speedtestgoogleyahoobingyandexgmailappleaol.andishehnegariran.ir
+  servername: speedtestgoogleyahoobingyandexgmailappleaol.andishehnegariran.ir
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 5402fe64-5f18-43a1-bd07-dcadb5c76d77
+  ws-opts:
+    headers:
+      Host: speedtestgoogleyahoobingyandexgmailappleaol.andishehnegariran.ir
+    path: /mehdi
 - alterId: 0
   cipher: auto
   grpc-opts:
@@ -1588,6 +1624,21 @@ proxies:
   tls: true
   type: vmess
   uuid: 433f1111-b780-4eae-b7e7-d7823b09e701
+- alterId: 0
+  cipher: auto
+  name: 508,509,536,636|🇷🇺 俄罗斯 026
+  network: ws
+  port: '443'
+  server: us03.gogogoo.cyou
+  servername: ''
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: db5d1aa3-908b-44d1-be0a-4e6a8d4e4cda
+  ws-opts:
+    headers:
+      Host: us03.gogogoo.cyou
+    path: /go
 - alterId: 0
   cipher: auto
   name: '513,517,578|2|🇷🇺_RU_俄罗斯联邦 #3'
@@ -1617,7 +1668,21 @@ proxies:
   tfo: false
   type: ss
 - client-fingerprint: chrome
-  name: '523,524,559|🇷🇺_俄罗斯_7 #2'
+  flow: xtls-rprx-vision
+  name: '519,559|🇷🇺_RU_俄罗斯 #1'
+  port: 443
+  reality-opts:
+    public-key: Lbug_wz0y9xgKeDK44D9kuUap0fXzNKyv_nMJxnZRzU
+    short-id: 28a059440d3d5ba1
+  server: 89.169.39.55
+  servername: max.ru
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: c61ec320-29f1-4e00-9272-8b676e6957b4
+- client-fingerprint: chrome
+  name: '523,524|🇷🇺_俄罗斯_7 #1'
   port: 443
   reality-opts:
     public-key: TRP10HqKUXEQ3O-cfsq93DycfBmbJe9KM36yvSa8Mmw
@@ -1724,26 +1789,6 @@ proxies:
     headers:
       Host: gaosir.unfeeling.sbs
     path: X%40%E8%8A%82%E7%82%B9%E7%8B%82%E9%AD%94%2F%3Fed%3D2560
-- auth: 8bc63720-5ec8-45b5-b6a6-9a21ffb490e8
-  name: '551,566,568|🇩🇪 德国 | DEU #2'
-  password: 8bc63720-5ec8-45b5-b6a6-9a21ffb490e8
-  port: 8443
-  server: fl02.auragg.org
-  skip-cert-verify: true
-  sni: fl02.auragg.org
-  tls: false
-  type: hysteria2
-- alpn:
-  - http/1.1
-  client-fingerprint: qq
-  flow: xtls-rprx-vision
-  name: 551|🇷🇺RU_2|2.6MB/s
-  port: 443
-  server: 213.219.212.24
-  servername: eh.vk.ru
-  tls: true
-  type: vless
-  uuid: b0c03d71-8139-4639-bb05-e444e07a0d2b
 - cipher: chacha20-ietf-poly1305
   name: 558|0|🇺俄罗斯 01 | 1x RU
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
@@ -1765,7 +1810,7 @@ proxies:
   port: 31348
   server: 5.189.201.250
   type: ss
-- name: 559|🇷🇺RU_84
+- name: '559|🇷🇺RU_124 #1'
   password: WF42809561
   port: 443
   server: nearby-muskrat.rooster465.autos
@@ -1791,6 +1836,16 @@ proxies:
   type: vless
   uuid: 039a1658-e86e-475f-a3a4-67cc249acada
 - client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: grpc
+  name: 559,580|RU VLESS-152 | free-nodes
+  network: grpc
+  port: 2083
+  server: using.neobo-tooth.ru
+  tls: true
+  type: vless
+  uuid: 0c6b632a-cd96-4b74-9b51-151e3b5697db
+- client-fingerprint: chrome
   name: '559,580|🇷🇺俄羅斯丨yoyapai.com #1'
   network: ws
   port: 443
@@ -1815,6 +1870,17 @@ proxies:
   tls: false
   type: vless
   uuid: 12a49340-fd9c-4a70-8ebc-d2cf0dd36b2a
+- name: 559|🇷🇺_俄罗斯_18
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: KYNrRy0ElOU9Hg5tmWRwpf-Ff3R8Gjcjdk91jZt2nGg
+    short-id: bb6c8a1e7c
+  server: 51.250.46.89
+  servername: ''
+  tls: false
+  type: vless
+  uuid: 4392b776-41a2-4300-b545-a3d2724b605b
 - client-fingerprint: firefox
   name: '559|RU俄罗斯(mibei77.com 米贝节点分享) #8'
   network: xhttp
@@ -1831,6 +1897,18 @@ proxies:
     headers:
       Host: cdn.tracker.yandex.net
     path: '%2Fstatic%2Fjs%2Fmain.js'
+- name: 559|🇷🇺_俄罗斯_136
+  network: ws
+  port: 443
+  server: 195.209.87.181
+  servername: ''
+  tls: true
+  type: vless
+  uuid: 45c8814c-c06f-4444-acda-1b745e74d33e
+  ws-opts:
+    headers:
+      Host: s76276.cdn.ngenix.net
+    path: '%2Fv1%2Fdata%2Fsync%2F'
 - client-fingerprint: chrome
   name: '559,580|俄羅斯丨yoyapai.com #3'
   network: tcp
@@ -1843,26 +1921,6 @@ proxies:
   tls: false
   type: vless
   uuid: 5b96be74-656d-4bb7-85c2-d2d8a3b7c2f3
-- flow: xtls-rprx-vision
-  name: '559|🇷🇺_RU_俄罗斯 #1'
-  network: tcp
-  port: 443
-  server: s462.csgfw.top
-  tls: true
-  type: vless
-  uuid: 5d02517f-63d5-3e9f-b467-1bcf4d4e25d3
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 559|RU VLESS-491 | free-nodes
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: W8hnq0oVIPpRGyM8UUQuaAF2KKxl6C10yBgO911iFwM
-  server: us-5.lemonbow.ru
-  servername: www.samsung.com
-  tls: false
-  type: vless
-  uuid: 8516c47e-a7a1-42f7-9c14-ae9b14873cc8
 - name: 559|🇷🇺 俄罗斯-14C375F3
   network: tcp
   port: 443
@@ -1874,15 +1932,13 @@ proxies:
   tls: false
   type: vless
   uuid: 98fdfffe-28d8-4580-a4d1-2d7e15bdde4a
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 559|🇷🇺RU_1|2.9MB/s
-  port: 443
-  server: freenl.aiage.work
-  servername: freenl.aiage.work
-  tls: true
+- name: 559|🇷🇺_俄罗斯_93
+  network: tcp
+  port: 8081
+  server: 94.228.171.171
+  tls: false
   type: vless
-  uuid: a8957892-6db0-4310-983b-6f3f5146a584
+  uuid: bb5b4296-e7fa-42f9-9f65-64306413e00a
 - name: 559|🇷🇺 俄罗斯-E0EC4F76
   network: tcp
   port: 898
@@ -1948,6 +2004,19 @@ proxies:
     headers:
       Host: ''
     path: /
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 580|RU VLESS-380 | free-nodes
+  network: tcp
+  port: 2087
+  reality-opts:
+    public-key: J2RPvguvaBHlFDFOcZHs4sY9wSNIGNvvmDZud49A7i8
+    short-id: 9f0a1b2c
+  server: msk.24pitbullstore.ru
+  servername: msk.24pitbullstore.ru
+  tls: false
+  type: vless
+  uuid: 570779d8-b4cd-4b3c-a8bd-6127f51c4d48
 - name: 728|🇷🇺 俄罗斯1🔒
   password: 升级订阅解锁全部节点
   port: 10010
