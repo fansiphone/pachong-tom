@@ -284,17 +284,23 @@ proxies:
   sni: eu.mjanyt.com
   type: anytls
   udp: true
-- name: 436,559|🇷🇺RU_127
-  password: '!!str 1234567890'
-  port: 443
-  server: 194.87.77.91
-  sni: kfm-bn0.pages.dev
-  type: trojan
-- name: 436,536|🇺🇸US-54.184.22.123-5873
+- country: RU
+  name: 435,436,536|🇺🇸US-54.184.22.123-5873
   password: WF42809561
   port: 443
   server: nearby-muskrat.rooster465.autos
+  skip-cert-verify: true
   type: trojan
+  udp: true
+- country: 🇷RU
+  name: 435,436,559|🇷🇺RU_127
+  password: '!!str 1234567890'
+  port: 443
+  server: 194.87.77.91
+  skip-cert-verify: true
+  sni: kfm-bn0.pages.dev
+  type: trojan
+  udp: true
 - name: 460|俄罗斯_新西伯利亚
   network: ws
   port: 443
@@ -1063,20 +1069,9 @@ proxies:
     headers:
       Host: ''
     path: /
-- name: '502|A - 🇷🇺 RU 01 TG: @nodpai'
-  network: ws
-  port: 8880
-  server: 45.67.215.30
-  tls: false
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: vms.lifetime48.workers.dev
-    path: /
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: 507|RU VLESS-495 | free-nodes
+  name: 507|RU VLESS-485 | free-nodes
   network: tcp
   port: 443
   reality-opts:
@@ -1411,7 +1406,7 @@ proxies:
     path: /api/v1/gpu-stream/socket
 - alterId: 0
   cipher: auto
-  name: 508,509,536,537,559,580,636|🇷🇺 俄罗斯 020
+  name: 508,509,536,537,544,559,580,636|🇷🇺 俄罗斯 020
   network: ws
   port: '443'
   server: renderer-stream-1-411.mirra.now
@@ -1499,6 +1494,16 @@ proxies:
     headers:
       Host: us02.gogogoo.cyou
     path: /go
+- alterId: 64
+  cipher: auto
+  name: 508,509,636|🇷🇺 俄罗斯 028
+  network: tcp
+  port: '57872'
+  server: 95.182.90.118
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 74c63e6f-a3f6-4995-a542-539c3bcdbb66
 - client-fingerprint: chrome
   name: '508,509|俄罗斯 031 #1'
   network: ws

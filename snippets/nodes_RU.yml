@@ -149,17 +149,23 @@ proxies:
   uuid: a867b90f-0ed1-401a-9088-bf852f6636db
   ws-opts:
     path: /
-- name: 436,559|🇷🇺RU_127
-  password: '!!str 1234567890'
-  port: 443
-  server: 194.87.77.91
-  sni: kfm-bn0.pages.dev
-  type: trojan
-- name: 436,536|🇺🇸US-54.184.22.123-5873
+- country: RU
+  name: 435,436,536|🇺🇸US-54.184.22.123-5873
   password: WF42809561
   port: 443
   server: nearby-muskrat.rooster465.autos
+  skip-cert-verify: true
   type: trojan
+  udp: true
+- country: 🇷RU
+  name: 435,436,559|🇷🇺RU_127
+  password: '!!str 1234567890'
+  port: 443
+  server: 194.87.77.91
+  skip-cert-verify: true
+  sni: kfm-bn0.pages.dev
+  type: trojan
+  udp: true
 - name: '461|俄罗斯联邦_莫斯科 #2'
   network: tcp
   password: 88903f70-b50b-11ed-8775-f23c9164ca5d
@@ -785,7 +791,7 @@ proxies:
     path: /api/v1/gpu-stream/socket
 - alterId: 0
   cipher: auto
-  name: 508,509,536,537,559,580,636|🇷🇺 俄罗斯 020
+  name: 508,509,536,537,544,559,580,636|🇷🇺 俄罗斯 020
   network: ws
   port: '443'
   server: renderer-stream-1-411.mirra.now
@@ -873,6 +879,16 @@ proxies:
     headers:
       Host: us02.gogogoo.cyou
     path: /go
+- alterId: 64
+  cipher: auto
+  name: 508,509,636|🇷🇺 俄罗斯 028
+  network: tcp
+  port: '57872'
+  server: 95.182.90.118
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 74c63e6f-a3f6-4995-a542-539c3bcdbb66
 - alterId: 0
   cipher: auto
   name: '513,517,578|2|🇷🇺_RU_俄罗斯联邦 #3'
