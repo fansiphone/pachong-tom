@@ -62,36 +62,39 @@ proxies:
   udp: true
   uuid: 7c317161-5cf8-4cbc-811a-d1297c41bb23
   xudp: true
-- client-fingerprint: firefox
-  encryption: none
-  flow: xtls-rprx-vision
-  name: '438,489,502,523,524,551,559|🇨🇭_瑞士_63 #2'
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: USffNprEM08MHiuVy5bj6-kvxugxycuZcgQDFJyz2Wc
-    short-id: 8f9d033ad6d2cebf
-  server: fi2.cyphervpn.pro
-  servername: fi2.cyphervpn.pro
-  skip-cert-verify: true
-  tls: false
-  type: vless
-  udp: true
-  uuid: 8bba3194-4856-46d1-8319-075817d87eb1
-  xudp: true
-- alterId: 0
+- alterId: 1
   cipher: auto
-  name: 465|16|🔒 VM-TCP-NA 🇨🇭 CH-94.131.99...
-  network: tcp
-  port: '47182'
-  server: 94.131.99.8
+  name: 378,508,509,536,537,636|🇺🇸 美国 1069
+  network: ws
+  port: '443'
+  server: 186.190.215.32
   servername: ''
-  tls: false
+  skip-cert-verify: false
+  tls: true
   type: vmess
-  uuid: 81b2b630-8b6a-404f-b996-b12f13db5786
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: 186.190.215.32
+    path: linkvws
+- alterId: 1
+  cipher: auto
+  name: 378,508,509,536,537,636|🇺🇸 美国 1093
+  network: ws
+  port: '443'
+  server: 186.190.215.75
+  servername: ''
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: 186.190.215.75
+    path: linkvws
 - alterId: 0
   cipher: auto
-  name: 508,509,536,537,636|🇨🇭 瑞士 002
+  name: 378,508,509,536,537,636|🇨🇭 瑞士 002
   network: ws
   port: '443'
   server: 140.238.212.95
@@ -104,9 +107,87 @@ proxies:
     headers:
       Host: e130917c-1b58-4136-b2d9-76dc920e0add.add97ee8-0f14-48a3-b2cd-979c56742e64.loseyourip.com
     path: /
+- name: '378,536,537|CH-152.67.71.149-3692 #1'
+  password: 8a03bc28-2a33-42c4-be59-30464dbb9954
+  port: 18818
+  server: ch12.yukiss.eu.org
+  skip-cert-verify: false
+  type: trojan
+- cipher: aes-128-cfb
+  name: '378,537|🇨CH-156.146.62.160-5263 #1'
+  password: shadowsocks
+  port: 443
+  server: 156.146.62.160
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 465|16|🔒 VM-TCP-NA 🇨🇭 CH-94.131.99...
+  network: tcp
+  port: '47182'
+  server: 94.131.99.8
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 81b2b630-8b6a-404f-b996-b12f13db5786
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: '523,524,559|🇨🇭_瑞士_62 #2'
+  name: 502,523,524,559,566|🇩🇪 德国 | DEU 24
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: USffNprEM08MHiuVy5bj6-kvxugxycuZcgQDFJyz2Wc
+    short-id: 8f9d033ad6d2cebf
+  server: fi2.cyphervpn.pro
+  servername: fi2.cyphervpn.pro
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 8bba3194-4856-46d1-8319-075817d87eb1
+- name: '508,509|瑞士 003 #1'
+  network: tcp
+  port: 80
+  server: rfvbtghnuyjmikolpqaz.sd.noafra.ir
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 1de6be2d-567a-4663-b5ea-5de8afe0f496
+- name: '508,509|瑞士 004 #1'
+  network: tcp
+  port: 13791
+  server: 138.124.72.60
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 2410ed4e-b04c-45c4-a893-67e073c70398
+- name: '508,509|瑞士 005 #1'
+  network: tcp
+  port: 1418
+  server: nin9.gd.sanaiehdasti.com
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 81b8aac5-e22e-46aa-91f4-bdf6a686be51
+- name: '508,509|瑞士 006 #1'
+  network: tcp
+  port: 12596
+  server: 193.134.100.23
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: e48cf70b-a9a5-4855-9330-e8649a11882e
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 523,524,559,580|🇨🇭CH_10|2.5MB/s|F003-260618 01
+  network: tcp
   port: 443
   reality-opts:
     public-key: OCLtjVdRxsou3429LRfjkDYgiAPs24TSgSeFZpChCEw
@@ -118,18 +199,25 @@ proxies:
   type: vless
   udp: true
   uuid: b79ada82-b394-4afd-828f-7eefecae3a97
-- name: 536,537|CH-152.67.71.149-3692
-  password: 8a03bc28-2a33-42c4-be59-30464dbb9954
-  port: 18818
-  server: ch12.yukiss.eu.org
-  skip-cert-verify: false
-  type: trojan
-- cipher: aes-128-cfb
-  name: 537|🇨CH-156.146.62.160-5263
-  password: shadowsocks
-  port: 443
-  server: 156.146.62.160
-  type: ss
+- client-fingerprint: chrome
+  http-opts:
+    headers:
+      Host:
+      - yahoo.com
+    method: GET
+    path:
+    - /
+  name: 551,566|🇨🇭 瑞士 | CHE
+  network: http
+  port: 40084
+  reality-opts:
+    public-key: 9kgnhNCzQsfomFrK3nKlOCbmUyS2oPltp2gOnuFv7nY
+  server: 179.237.75.28
+  servername: yahoo.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: bcd7d69f-98d4-4622-8caf-db83b7af81da
 - client-fingerprint: chrome
   name: 559|🇨🇭 Switzerland, Zurich | [BL]
   network: xhttp
@@ -211,6 +299,57 @@ proxies:
   tls: false
   type: vless
   uuid: 88888888-8888-8888-8888-888888888888
+- name: 580|🇨🇭CH_1|3.2MB/s|B007-260618 01
+  network: tcp
+  port: 19551
+  server: 37.156.44.241
+  tls: false
+  type: vless
+  uuid: fef61355-77d1-4523-9550-1e7b7cbcc47c
+- client-fingerprint: firefox
+  grpc-opts:
+    grpc-service-name: wlgrpc
+  name: 580|🇨🇭CH_4|2.4MB/s|K001-260618 01
+  network: grpc
+  port: 443
+  reality-opts:
+    public-key: Uwj82vGl-jAhU3VflWnTy7rISYi03slggjS32Zx8pkk
+    short-id: 6ba85179e30d4fc2
+  server: 45.59.117.169
+  servername: www.blick.ch
+  tls: false
+  type: vless
+  uuid: d2e3768f-cb23-4cfc-a884-dbd6813cb70b
+- client-fingerprint: chrome
+  name: 580|🇨🇭CH_5|2.5MB/s|B007-260618 01
+  network: tcp
+  port: 32875
+  reality-opts:
+    public-key: NFQAS72yT1b_7ZZhYcIC6Nm3rYSqQwxqOZKid5DJ0Gg
+  server: 179.237.75.28
+  servername: yahoo.com
+  tls: false
+  type: vless
+  uuid: 1961317f-5f2c-4346-e4b0-b767f0946138
+  ws-opts:
+    headers:
+      Host: yahoo.com
+    path: /
+- client-fingerprint: chrome
+  name: 580|🇨🇭CH_6|2.5MB/s|B007-260618 01
+  network: tcp
+  port: 11596
+  reality-opts:
+    public-key: L6zEB5x8-kyr75lwmBNuz2S_UFo-GwVZvcyy0GY8QXA
+  server: 179.237.75.28
+  servername: yahoo.com
+  tls: false
+  type: vless
+  uuid: d1c9eccc-91b1-4185-e459-febe9c42ccd1
+  ws-opts:
+    headers:
+      Host: yahoo.com
+    path: /
 - name: 728|🇨🇭 瑞士1🔒
   password: 升级订阅解锁全部节点
   port: 443
