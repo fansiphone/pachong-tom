@@ -107,24 +107,26 @@ proxies:
     headers:
       Host: e130917c-1b58-4136-b2d9-76dc920e0add.add97ee8-0f14-48a3-b2cd-979c56742e64.loseyourip.com
     path: /
-- name: '378,536,537|CH-152.67.71.149-3629 #1'
+- name: '378,536,537|CH-152.67.71.149-3644 #1'
   password: 8a03bc28-2a33-42c4-be59-30464dbb9954
   port: 18818
   server: ch12.yukiss.eu.org
   skip-cert-verify: false
   type: trojan
 - cipher: aes-128-cfb
-  name: '378,537|🇨CH-156.146.62.160-5200 #1'
+  name: '378,537|🇨CH-156.146.62.160-5215 #1'
   password: shadowsocks
   port: 443
   server: 156.146.62.160
   type: ss
-- name: '378,436,536,537|🇨CH-86.106.84.195-6004 #1'
+- country: 🇴RO
+  name: '378,435,436,536,537|🇨CH-86.106.84.195-6019 #1'
   password: y3b03zx3tznhyo538p4c
   port: 53261
   server: 86.106.84.195
   skip-cert-verify: false
   type: trojan
+  udp: true
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
   name: '438,507,580|未知 VLESS-501 | free-nodes #1'
@@ -148,59 +150,30 @@ proxies:
   tls: false
   type: vmess
   uuid: 81b2b630-8b6a-404f-b996-b12f13db5786
-- client-fingerprint: firefox
-  encryption: none
-  flow: xtls-rprx-vision
-  name: '489,502,523,524,580,717|ES【机场推荐：https://a9a.xyz】12 #1'
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: Q7-sRiaAcmlJ_iwqiA46kDKso_r2kJ7X1mrVjL2illo
-    short-id: 12ec83857964f25e
-  server: es.monkeyvillage.pro
-  servername: es.monkeyvillage.pro
-  skip-cert-verify: true
-  tls: false
-  type: vless
-  udp: true
-  uuid: 528ee6c3-7d3c-410e-b0de-0d5da09aeb14
-  xudp: true
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: firefox
   name: 566|🇨🇭 瑞士 | CHE
-  network: tcp
+  network: xhttp
+  packet-encoding: xudp
   port: 443
-  reality-opts:
-    public-key: QZDU9ZZt6HEIijqRyeyebLxt11S692nSBIDNCKLBM3k
-    short-id: f5420efbe305d354
-  server: free.ch1.laodavip.com
-  servername: free.ch1.laodavip.com
+  server: ch09.tunnely.ru
+  servername: ch09.tunnely.ru
   tls: true
   type: vless
   udp: true
-  uuid: 69f56e4d-6403-48c4-876d-16a5819c3672
-- client-fingerprint: chrome
-  http-opts:
-    headers:
-      Host:
-      - yahoo.com
-    method: GET
-    path:
-    - /
-  name: 566|🇨🇭 瑞士 | CHE 2
-  network: http
-  port: 2053
-  reality-opts:
-    public-key: bBI2yUWXDIbDUrreMQL2YiCbFBWCjlv_Vxn35I0BlSc
-  server: isheheuuwhe-2-2-2-2-2.poki-pakipon.ir
-  servername: yahoo.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 992649b6-189d-4007-b0df-8a5457f9ccee
+  uuid: 31649657-6c78-4c2c-b25b-5cd574b082b5
+  xhttp-opts:
+    host: ch09.tunnely.ru
+    mode: packet-up
+    path: /xhttp/
+    sc-max-each-post-bytes: 1000000
+    sc-min-posts-interval-ms: 30
+    x-padding-bytes: 100-1000
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: 566|🇨🇭 瑞士 | CHE 3
+  name: 566|🇨🇭 瑞士 | CHE 2
   network: tcp
   port: 443
   reality-opts:
