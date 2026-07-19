@@ -205,6 +205,12 @@ proxies:
     headers:
       Host: download.windowsupdate.com
     path: /download
+- cipher: aes-256-gcm
+  name: '127,426|🇭🇰 HK_1|7.6MB/s|YT-HK|NF #1'
+  password: feng3d@ss2025
+  port: 8388
+  server: li.feng3d.com
+  type: ss
 - alterId: 0
   cipher: auto
   name: '128,430|香港NO.2 #1'
@@ -859,7 +865,11 @@ proxies:
   type: trojan
 - alterId: 2
   cipher: auto
-  name: '306,340,454,459,502,514,515,516,543,544,551,557,580,581|🇭🇰_HK_中国香港 #18'
+  country: 🇭🇰HK
+  h2-opts: {}
+  http-opts: {}
+  name: '306,340,435,437,454,459,502,514,515,516,543,544,551,557,580,581|🇭🇰_HK_中国香港
+    #18'
   network: tcp
   port: 30807
   server: v10.hdacd.com
@@ -871,6 +881,13 @@ proxies:
   ws-headers:
     Host: v10.hdacd.com
   ws-path: /
+- name: '306,502,551,566,568|🇭🇰 香港 | HKG #3'
+  password: ON38567014
+  port: 443
+  server: genuine-grackle.rooster465.autos
+  skip-cert-verify: true
+  type: trojan
+  udp: true
 - cipher: chacha20-ietf-poly1305
   name: 356|🇭🇰1 |  3.5MB/s
   password: WfmxKX2FBJRU0Ie9VLIYDL
@@ -1643,21 +1660,25 @@ proxies:
     headers:
       Host: hk3.grpc.stream
     path: /event
-- country: 🇹LT
-  name: 378,435,436,536,537,538|🇭🇰HK-194.99.79.214-6001 | 0.0M...
+- alterId: 0
+  country: 🇹LT
+  name: 378,435,436,536,537,538,574|HK
   password: XG59623478
   port: 443
   server: growing-oyster.rooster465.autos
-  skip-cert-verify: false
+  skip-cert-verify: true
+  tls: true
   type: trojan
   udp: true
-- name: 378,472,474,508,509,536,537,538,636|🇨🇳 中国 007
+- alterId: 0
+  name: 378,508,509,536,537,538,574,636|🇨🇳 中国 007
   network: tcp
   password: OccIqeORGQwiNkwS
   port: 19128
   server: jpbgp.netvigor.cc
   skip-cert-verify: false
   sni: yazhou10.dynu.net
+  tls: true
   type: trojan
   udp: true
 - alterId: 0
@@ -2714,7 +2735,7 @@ proxies:
   server: 103.103.245.125
   skip-cert-verify: false
   type: trojan
-- name: '378,438,502,537|🇰HK-91.199.84.196-3104 #1'
+- name: '378,438,537|🇰HK-91.199.84.196-3104 #1'
   network: tcp
   password: ON38567014
   port: 443
@@ -2959,15 +2980,13 @@ proxies:
   ws-opts:
     path: /
 - cipher: chacha20-ietf
-  country: 🇰HK
-  name: '378,435,537|🇰HK-103.149.182.105-5933 #1'
+  name: '378,537|🇰HK-103.149.182.105-5933 #1'
   password: asd123456
   port: 8388
   server: 103.149.182.105
   type: ss
 - cipher: chacha20-ietf
-  country: 🇰HK
-  name: '378,435,537|🇭🇰HK-103.141.221.124-5934 #1'
+  name: '378,537|🇭🇰HK-103.141.221.124-5934 #1'
   password: asd123456
   port: 8388
   server: 103.141.221.124
@@ -4609,20 +4628,36 @@ proxies:
       Host: 51b0e42034dd75a815fa9eb16021fbda.mobgslb.tbcache.com
     path: /
   ws-path: /
-- cipher: aes-256-gcm
-  name: 426|🇭🇰 HK_1|7.6MB/s|YT-HK|NF
-  password: feng3d@ss2025
-  port: 8388
-  server: li.feng3d.com
-  type: ss
-- country: 🇰HK
-  name: '435,436|🇭🇰HK_60 #1'
-  password: BxceQaOe
-  port: 443
-  server: 203.198.122.187
+- alterId: 2
+  cipher: auto
+  country: 🇰HK
+  h2-opts: {}
+  http-opts: {}
+  name: '435,437,459|美国(yudou789.top 玉豆免费节点) #84'
+  network: tcp
+  port: '30808'
+  server: v8.hdacd.com
+  servername: ''
   skip-cert-verify: true
-  type: trojan
-  udp: true
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-path: /
+- alterId: 2
+  cipher: auto
+  country: 🇰HK
+  h2-opts: {}
+  http-opts: {}
+  name: '435,437,459|美国(yudou789.top 玉豆免费节点) #54'
+  network: tcp
+  port: '30804'
+  server: v4.hdacd.com
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-path: /
 - name: 453|🇭🇰 香港4|@stairnode
   password: 253bc477d4e43c209f2d427272968280
   port: 4419
@@ -5117,41 +5152,20 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
-- name: '566,568|🇭🇰 香港 | HKG #3'
-  password: ON38567014
-  port: 443
-  server: genuine-grackle.rooster465.autos
-  skip-cert-verify: true
-  type: trojan
-  udp: true
 - alterId: 0
-  name: 574,580|香港 37
-  network: tcp
-  password: BxceQaOe
-  port: 7674
-  server: 16.163.145.248
+  name: 574,580|香港 17
+  network: raw
+  password: KV63147582
+  port: 443
+  server: electric-sturgeon.rooster465.autos
   skip-cert-verify: true
-  sni: t.me/ripaojiedian
+  sni: electric-sturgeon.rooster465.autos
   tls: true
   type: trojan
   udp: true
-- alterId: 2
+- alterId: 0
   cipher: auto
   name: 574|HK3
-  network: ws
-  port: 80
-  server: e0349a52-sv8cg0-t7uinf-i8ie.hk3.p5pv.com
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 990e8f34-bd4f-11ef-bdb9-f23c91cfbbc9
-  ws-opts:
-    headers:
-      host: broadcastlv.chat.bilibili.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 574|HK4
   network: ws
   port: 11655
   server: 131.186.63.89
@@ -5164,12 +5178,48 @@ proxies:
       host: hk.nbee.pp.ua
     path: /aa
 - alterId: 0
-  name: 574|🇰HK香港3
+  name: '574|HK #1'
   password: BxceQaOe
   port: 50115
   server: 54.46.125.103
   skip-cert-verify: true
   sni: t.me/ripaojiedian
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 2
+  cipher: auto
+  name: 574|HK5
+  network: ws
+  port: 80
+  server: e0349a52-sv8cg0-t7uinf-i8ie.hk3.p5pv.com
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 990e8f34-bd4f-11ef-bdb9-f23c91cfbbc9
+  ws-opts:
+    headers:
+      host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 0
+  name: 574,580|香港 37
+  network: tcp
+  password: BxceQaOe
+  port: 7674
+  server: 16.163.145.248
+  skip-cert-verify: true
+  sni: t.me/ripaojiedian
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 574,580|香港 09
+  network: tcp
+  password: CF68213490
+  port: 443
+  server: well-marmot.rooster465.autos
+  skip-cert-verify: true
+  sni: well-marmot.rooster465.autos
   tls: true
   type: trojan
   udp: true
@@ -5396,13 +5446,6 @@ proxies:
   server: growing-oyster.rooster465.autos
   sni: growing-oyster.rooster465.autos
   type: trojan
-- name: 580|香港 09
-  network: tcp
-  password: CF68213490
-  port: 443
-  server: well-marmot.rooster465.autos
-  sni: well-marmot.rooster465.autos
-  type: trojan
 - name: 580|香港 10
   network: tcp
   password: KV63147582
@@ -5430,13 +5473,6 @@ proxies:
   port: 443
   server: modest-foal.rooster465.autos
   sni: modest-foal.rooster465.autos
-  type: trojan
-- name: 580|香港 17
-  network: raw
-  password: KV63147582
-  port: 443
-  server: electric-sturgeon.rooster465.autos
-  sni: electric-sturgeon.rooster465.autos
   type: trojan
 - name: 580|香港 18
   network: tcp
