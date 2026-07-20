@@ -129,7 +129,7 @@ proxies:
   udp: true
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: '438,507,580|未知 VLESS-501 | free-nodes #1'
+  name: '438,507,580|未知 VLESS-529 | free-nodes #1'
   network: tcp
   port: 443
   reality-opts:
@@ -142,7 +142,7 @@ proxies:
   uuid: 8bba3194-4856-46d1-8319-075817d87eb1
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: 438,566|🇨🇭 瑞士 | CHE 2
+  name: 438,580|🇨🇭CH_8|2.2MB/s|S001-260618 01
   network: tcp
   port: 443
   reality-opts:
@@ -150,9 +150,8 @@ proxies:
     short-id: 2e40144ddc07e8e1
   server: ch03.tunnely.ru
   servername: ch03.tunnely.ru
-  tls: true
+  tls: false
   type: vless
-  udp: true
   uuid: 31649657-6c78-4c2c-b25b-5cd574b082b5
 - alterId: 0
   cipher: auto
@@ -164,27 +163,20 @@ proxies:
   tls: false
   type: vmess
   uuid: 81b2b630-8b6a-404f-b996-b12f13db5786
-- alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: firefox
-  name: 566|🇨🇭 瑞士 | CHE
-  network: xhttp
-  packet-encoding: xudp
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: '523,524|🇨🇭_瑞士_29 #1'
   port: 443
-  server: ch09.tunnely.ru
-  servername: ch09.tunnely.ru
+  reality-opts:
+    public-key: Q7-sRiaAcmlJ_iwqiA46kDKso_r2kJ7X1mrVjL2illo
+    short-id: 12ec83857964f25e
+  server: es.monkeyvillage.pro
+  servername: es.monkeyvillage.pro
+  skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 31649657-6c78-4c2c-b25b-5cd574b082b5
-  xhttp-opts:
-    host: ch09.tunnely.ru
-    mode: packet-up
-    path: /xhttp/
-    sc-max-each-post-bytes: 1000000
-    sc-min-posts-interval-ms: 30
-    x-padding-bytes: 100-1000
+  uuid: 528ee6c3-7d3c-410e-b0de-0d5da09aeb14
 - client-fingerprint: chrome
   name: 580|瑞士丨yoyapai.com
   network: tcp
@@ -236,7 +228,7 @@ proxies:
   tls: false
   type: vless
   uuid: 7f89560c-b9f0-4c56-b3e0-1b1bdafe0b08
-- name: 580|🇨🇭CH_4|2.1MB/s 01
+- name: 580|🇨🇭CH_3|2.6MB/s 01
   network: tcp
   password: y3b03zx3tznhyo538p4c
   port: 53261
@@ -244,21 +236,61 @@ proxies:
   skip-cert-verify: true
   sni: 86.106.84.195
   type: trojan
-- client-fingerprint: chrome
-  name: 580|🇨🇭CH_6|2.7MB/s|B007-260618 01
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 580|🇨🇭CH_4|628KB/s|F003-260618 01
   network: tcp
-  port: 40084
+  port: 443
   reality-opts:
-    public-key: 9kgnhNCzQsfomFrK3nKlOCbmUyS2oPltp2gOnuFv7nY
-  server: 179.237.75.28
+    public-key: USffNprEM08MHiuVy5bj6-kvxugxycuZcgQDFJyz2Wc
+    short-id: 8f9d033ad6d2cebf
+  server: fi2.cyphervpn.pro
+  servername: fi2.cyphervpn.pro
+  tls: false
+  type: vless
+  uuid: 8bba3194-4856-46d1-8319-075817d87eb1
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 580|🇨🇭CH_6|2.1MB/s|B007-260618 01
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: oGgupP3uX0TNyFwuxNYaFj-IQ8EPhCuKfJdaOHiMnV0
+    short-id: c334408a1056aaf8
+  server: 138.124.67.45
+  servername: nl15.sodahub.online
+  tls: false
+  type: vless
+  uuid: 8bba3194-4856-46d1-8319-075817d87eb1
+- client-fingerprint: chrome
+  name: 580|🇨🇭CH_7|2.4MB/s|B007-260618 01
+  network: tcp
+  port: 2053
+  reality-opts:
+    public-key: bBI2yUWXDIbDUrreMQL2YiCbFBWCjlv_Vxn35I0BlSc
+  server: isheheuuwhe-2-2-2-2-2.poki-pakipon.ir
   servername: yahoo.com
   tls: false
   type: vless
-  uuid: bcd7d69f-98d4-4622-8caf-db83b7af81da
+  uuid: 992649b6-189d-4007-b0df-8a5457f9ccee
   ws-opts:
     headers:
       Host: yahoo.com
     path: /
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: firefox
+  name: 580|🇨🇭CH_9|2.5MB/s|S001-260618 01
+  network: xhttp
+  port: 443
+  server: ch09.tunnely.ru
+  servername: ch09.tunnely.ru
+  tls: true
+  type: vless
+  uuid: 31649657-6c78-4c2c-b25b-5cd574b082b5
+  ws-opts:
+    path: /xhttp/
 - name: 728|🇨🇭 瑞士1🔒
   password: 升级订阅解锁全部节点
   port: 443
