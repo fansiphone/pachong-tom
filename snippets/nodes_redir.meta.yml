@@ -196,9 +196,9 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 119,378,508,509,536,537,636|🇨🇳 中国 014
+  name: '119,378,508,509,536,537|🇳CN-120.82.70.149-0650 #1'
   network: ws
-  port: '36101'
+  port: 36101
   server: 120.82.70.149
   servername: ''
   skip-cert-verify: false
@@ -212,9 +212,9 @@ proxies:
     path: /download
 - alterId: 0
   cipher: auto
-  name: 119,378,508,509,536,537,636|🇯🇵 日本 033
+  name: '119,378,508,509,536,537|🇵JP-91.200.242.187-0658 #1'
   network: ws
-  port: '14954'
+  port: 14954
   server: 91.200.242.187
   servername: ''
   skip-cert-verify: false
@@ -228,9 +228,9 @@ proxies:
     path: /download
 - alterId: 1
   cipher: auto
-  name: '119,378,508,509,536,537,636|其他 018 #2'
+  name: '119,378,508,509,536,537|🇨🇳CN-118.212.70.210-0681 #2'
   network: ws
-  port: '1552'
+  port: 1552
   server: nas.ruyo.in
   servername: ''
   skip-cert-verify: false
@@ -4587,9 +4587,19 @@ proxies:
   ws-opts: {}
 - alterId: 2
   cipher: auto
-  name: 519|🇨🇳_CN_中国->🇺🇸_US_美国
-  port: 30829
-  server: v29.hdacd.com
+  name: '519,523,524|🇨🇳_中国_58 #1'
+  port: 30806
+  server: v6.hdacd.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- alterId: 2
+  cipher: none
+  name: 519|🇨🇳_CN_中国->🇩🇪_DE_德国
+  port: 30833
+  server: v33.hdacd.com
   skip-cert-verify: true
   tls: false
   type: vmess
@@ -4597,23 +4607,14 @@ proxies:
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - alterId: 2
   cipher: auto
-  name: 519|🇨🇳_CN_中国->🇸🇬_SG_新加坡
-  port: 30845
-  server: v45.hdacd.com
+  name: 519|🇸🇬_SG_新加坡->🇫🇷_FR_法国
+  port: 30835
+  server: v35.hdacd.com
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: 519|🇺🇸_US_美国->🇬🇧_GB_英国
-  network: ws
-  port: 8443
-  server: ad-010.vector9nmb3.info
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 9047efd2-5aa4-4c9c-a58f-a5791b06c79e
 - alpn:
   - ''
   alterId: 2
@@ -4626,27 +4627,7 @@ proxies:
   type: vmess
   udp: true
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- alterId: 2
-  cipher: auto
-  name: 519|🇨🇳_CN_中国->🇬🇧_GB_英国
-  port: 30836
-  server: v36.hdacd.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- alterId: 2
-  cipher: auto
-  name: 519|🇨🇳_CN_中国->🇺🇸_US_美国_1
-  port: 30808
-  server: v8.hdacd.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: 522,548|🇳🇱_NL_荷兰->🇺🇸_US_美国
+- name: 522|_NL_->_US_
   network: ws
   port: 2096
   server: 188.42.88.238
@@ -4660,7 +4641,7 @@ proxies:
       Host: sni.jpmj.dev
 - client-fingerprint: qq
   flow: xtls-rprx-vision
-  name: 522,548|🇯🇵_JP_日本->🇹🇼_TW_中国台湾
+  name: 522|_JP_->_TW_国
   port: 55309
   reality-opts:
     public-key: 7BS-JUFgYVaWrwwyDSiVq_YDoG36w8cRd4U8HvEg-F0
@@ -4673,7 +4654,7 @@ proxies:
   uuid: 9c5d1bf0-d58b-4001-9e7c-0c1fa314068c
 - client-fingerprint: safari
   flow: xtls-rprx-vision
-  name: 522,548|🇯🇵_JP_日本->🇸🇬_SG_新加坡
+  name: 522|🇯🇵_JP_日本->🇬_SG_
   port: 55313
   reality-opts:
     public-key: 7BS-JUFgYVaWrwwyDSiVq_YDoG36w8cRd4U8HvEg-F0
@@ -4684,49 +4665,6 @@ proxies:
   type: vless
   udp: true
   uuid: 9c5d1bf0-d58b-4001-9e7c-0c1fa314068c
-- name: 548|🇵🇱_PL_波兰->🇺🇸_US_美国
-  network: ws
-  port: 8880
-  server: 185.158.133.30
-  skip-cert-verify: true
-  tls: false
-  type: vless
-  udp: true
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: vms.lifetime58.workers.dev
-    path: /
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '548,580,581|🇭🇰_HK_中国香港->🇸🇬_SG_新加坡 #5'
-  port: 55567
-  reality-opts:
-    public-key: 0soGDTguByd3I9e2nLuzkw5BOHELZ_AHHDkA0Zx3JRA
-    short-id: f3f70ca767
-  server: 1.sdwan.realm-sync.com
-  servername: www.discoverasr.com
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: da4f61d1-8ca2-4bbf-a79a-1dfff04073e6
-- client-fingerprint: chrome
-  encryption: mlkem768x25519plus.native.0rtt.OB4yhTV2iFBBbdkBvMkVFLCcTlAdXKnTdm6NGlvt_wA
-  name: 548|🇺🇸_US_美国->🇩🇪_DE_德国
-  network: ws
-  port: 2083
-  server: 192.0.63.61
-  servername: twotwoirvz.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 88888888-8888-8888-8888-888888888888
-  ws-opts:
-    headers:
-      Host: twotwoirvz.dpdns.org
-    path: /
 - alterId: 2
   cipher: auto
   name: 558|_CN_->_US_国
@@ -5136,24 +5074,6 @@ proxies:
   tls: true
   type: vless
   uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
-- client-fingerprint: edge
-  flow: xtls-rprx-vision
-  name: '580|🇬🇧_GB_英国->🇬🇪_GE_格鲁吉亚 #1'
-  port: 443
-  server: 85.234.114.53
-  servername: r1.mizulina.top
-  tls: true
-  type: vless
-  uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
-- client-fingerprint: edge
-  flow: xtls-rprx-vision
-  name: '580|🇬🇧_GB_英国->🇬🇪_GE_格鲁吉亚 #2'
-  port: 22231
-  server: 85.234.114.53
-  servername: r1.mizulina.top
-  tls: true
-  type: vless
-  uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
 - name: 580|🇺🇸_US_美国->🇦🇿_AZ_阿塞拜疆
   password: 4f4d1167-ef14-4304-9bce-0740472503ef
   port: 41943
@@ -5161,7 +5081,7 @@ proxies:
   skip-cert-verify: true
   sni: az.01.naiun.bilibili.com
   type: trojan
-- name: '580,581|🇵🇱_PL_波兰->🇺🇸_US_美国 #2'
+- name: '580,581|🇵🇱_PL_波兰->🇺🇸_US_美国 #1'
   network: ws
   port: 8880
   server: 185.158.133.30
@@ -5173,7 +5093,19 @@ proxies:
       Host: vms.lifetime58.workers.dev
     path: '%2F'
 - client-fingerprint: chrome
-  name: '580,581|🇺🇸_US_美国->🇩🇪_DE_德国 #2'
+  flow: xtls-rprx-vision
+  name: '580,581|🇭🇰_HK_中国香港->🇸🇬_SG_新加坡 #4'
+  port: 55567
+  reality-opts:
+    public-key: 0soGDTguByd3I9e2nLuzkw5BOHELZ_AHHDkA0Zx3JRA
+    short-id: f3f70ca767
+  server: 1.sdwan.realm-sync.com
+  servername: www.discoverasr.com
+  tls: true
+  type: vless
+  uuid: da4f61d1-8ca2-4bbf-a79a-1dfff04073e6
+- client-fingerprint: chrome
+  name: '580,581|🇺🇸_US_美国->🇩🇪_DE_德国 #1'
   network: ws
   port: 2083
   server: 192.0.63.61
