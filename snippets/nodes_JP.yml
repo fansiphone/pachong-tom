@@ -1078,8 +1078,7 @@ proxies:
   type: trojan
   udp: true
 - alterId: 0
-  name: 306,340,378,502,508,509,514,515,516,523,524,536,537,544,551,556,557,559,574,636|🇺🇸
-    美国 003
+  name: 306,340,378,508,509,514,515,516,523,524,536,537,544,574,580,636|🇺🇸 美国 003
   network: tcp
   password: b490740312aedb5f9f6b84c7aebd08c0
   port: 40138
@@ -1089,6 +1088,17 @@ proxies:
   tls: true
   type: trojan
   udp: true
+- name: '306,502,551|🇩🇪DE_3|2.4MB/s #1'
+  network: ws
+  password: p2QFnWdKPZt0evve7n-C52fTqRndJa5W
+  port: 443
+  server: 103.27.157.97
+  skip-cert-verify: false
+  sni: rem.dtr.kotokopolb.ru
+  type: trojan
+  udp: true
+  ws-opts:
+    path: /trojan-ws
 - name: '321,322,323|日本05 #3'
   network: ws
   password: 429ad146-8f43-4dd4-8fb3-cca3f3a30c63
@@ -1990,11 +2000,12 @@ proxies:
   skip-cert-verify: false
   sni: download.windowsupdate1.com
   type: trojan
-- name: 378,536,537,538,559|日本_072119005
+- name: 378,507,536,537,538,580|🇯🇵JP_100|4.3MB/s 01
+  network: tcp
   password: IQ68037294
   port: 443
   server: literate-grizzly.rooster465.autos
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: literate-grizzly.rooster465.autos
   type: trojan
 - alterId: 0
@@ -2010,14 +2021,15 @@ proxies:
   uuid: 071a8a71-c656-4fb6-a908-4e42eb72243d
   ws-opts:
     path: /
-- name: 378,536,537,538,559|英国_072119012
+- name: 378,507,536,537,538,580|🇯🇵JP_97|2.8MB/s|A001-260618 01
+  network: tcp
   password: IQ68037294
   port: 443
   server: enhanced-dassie.rooster465.autos
   skip-cert-verify: false
   sni: enhanced-dassie.rooster465.autos
   type: trojan
-- name: 378,536,537,538,559|英国_072119013
+- name: 378,507,536,537,538|🇯🇵JP-85.234.83.29-0438 | 4.092...
   password: IQ68037294
   port: 443
   server: amazed-burro.rooster465.autos
@@ -2078,7 +2090,7 @@ proxies:
   uuid: 927094d3-d678-4763-8591-e240d0bcae87
   ws-opts:
     path: /
-- name: 378,508,509,523,524,536,537,559,636|🇵🇱 波兰 004
+- name: 378,507,508,509,523,524,536,537,580,636|🇵🇱 波兰 004
   network: tcp
   password: IQ68037294
   port: 443
@@ -2089,7 +2101,8 @@ proxies:
   type: trojan
   udp: true
 - client-fingerprint: chrome
-  name: 378,508,509,536,537,559,636|🇷🇺 俄罗斯 003
+  country: 🇵JP
+  name: 378,440,507,508,509,536,537,580,636|🇷🇺 俄罗斯 003
   network: tcp
   password: IQ68037294
   port: 443
@@ -2100,7 +2113,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 378,508,509,536,537,559,636|🇦🇺 澳大利亚 006
+  name: 378,508,509,536,537,636|🇦🇺 澳大利亚 006
   network: ws
   port: '25686'
   server: 140.83.51.161
@@ -2115,7 +2128,7 @@ proxies:
     path: /cctv13.m3u8
 - alterId: 0
   cipher: auto
-  name: 378,508,509,536,537,559,636|🇺🇸 美国 216
+  name: 378,508,509,536,537,636|🇺🇸 美国 216
   network: ws
   port: '58905'
   server: 161.33.139.138
@@ -2130,11 +2143,11 @@ proxies:
     path: /1610f8dc-0661-4032-ac6a-a7250603f608-vm
 - alterId: 0
   cipher: auto
-  name: 378,508,509,536,537,559,636|🇺🇸 美国 220
+  name: 378,508,509,536,537,636|🇺🇸 美国 220
   network: ws
   port: '11655'
   server: 131.186.63.89
-  servername: hk.nbee.pp.ua
+  servername: ''
   skip-cert-verify: false
   tls: true
   type: vmess
@@ -2220,7 +2233,7 @@ proxies:
     path: /AnhBin
 - alterId: 64
   cipher: auto
-  name: 378,508,509,536,537,559,636|🇯🇵 日本 021
+  name: 378,508,509,536,537,636|🇯🇵 日本 021
   network: ws
   port: '46666'
   server: 103.72.5.227
@@ -2235,7 +2248,7 @@ proxies:
     path: /path/191019072927
 - alterId: 64
   cipher: auto
-  name: 378,508,509,536,537,559,636|🇺🇸 美国 488
+  name: 378,508,509,536,537,636|🇺🇸 美国 488
   network: ws
   port: '34001'
   server: 104.219.208.195
@@ -3108,9 +3121,9 @@ proxies:
   type: ssr
 - alterId: 0
   cipher: auto
-  name: '378,507,536,537,559,580|未知 VMESS-789 | free-nodes #2'
+  name: '378,507,536,537,580|未知 VMESS-788 | free-nodes #1'
   network: ws
-  port: '4010'
+  port: 4010
   server: 45.76.202.45
   servername: ''
   skip-cert-verify: false
@@ -3118,6 +3131,8 @@ proxies:
   type: vmess
   uuid: 071a8a71-c656-4fb6-a908-4e42eb72243d
   ws-opts:
+    headers:
+      Host: ''
     path: /liksuzcp
 - cipher: chacha20-ietf
   name: '378,536,537|🇵JP-54.250.68.192-5996 #1'
@@ -3338,7 +3353,7 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: '459,544,559,580|美国 加利福尼亚州圣何塞 #2'
+  name: '459,544,580|美国 加利福尼亚州圣何塞 #1'
   network: tcp
   port: '56738'
   server: 103.127.243.59
@@ -3611,6 +3626,14 @@ proxies:
   tls: false
   type: vmess
   uuid: 55b88b14-0ff3-4f25-8983-e73d1f9f3a0a
+- name: '472,473,474,502|日本+V2CROSS.COM #3'
+  network: ws
+  password: p2QFnWdKPZt0evve7n-C52fTqRndJa5W
+  port: 443
+  server: rem.dtr.kotokopolb.ru
+  type: trojan
+  ws-opts:
+    path: '%2Ftrojan-ws'
 - cipher: aes-256-gcm
   client-fingerprint: chrome
   name: 513|15|🇯🇵 日本|@ripaojiedian
@@ -3675,7 +3698,7 @@ proxies:
   server: 18.181.194.77
   tfo: false
   type: ss
-- name: '523,524,559|🇯🇵_日本_8 #2'
+- name: '523,524|🇯🇵_日本_8 #1'
   password: an70aOaIjcCF43gOlSB6eKER53Z38DYDx8l9RCSCpYTwXS3pueyAqyFZx2zDNA
   port: 443
   server: 154.31.114.10
@@ -3684,16 +3707,8 @@ proxies:
   tls: true
   type: trojan
   udp: true
-- name: '523,524,544,559|🇯🇵_日本_14 #2'
-  password: IQ68037294
-  port: 443
-  server: flexible-pony.rooster465.autos
-  skip-cert-verify: false
-  sni: flexible-pony.rooster465.autos
-  tls: true
-  type: trojan
-  udp: true
-- name: '523,524|🇯🇵_日本_15 #1'
+- name: 523,524,580|🇯🇵JP_103|1.6MB/s|F003-260618 0...
+  network: tcp
   password: IQ68037294
   port: 443
   server: major-duckling.rooster465.autos
@@ -3702,7 +3717,7 @@ proxies:
   tls: true
   type: trojan
   udp: true
-- name: '544,580|日本丨yoyapai.com #1'
+- name: '544,580|日本丨yoyapai.com #3'
   network: tcp
   password: b490740312aedb5f9f6b84c7aebd08c0
   port: 38937
@@ -3710,36 +3725,13 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: '544,580|日本丨yoyapai.com #2'
+- name: '544,580|日本丨yoyapai.com #4'
   network: tcp
   password: b490740312aedb5f9f6b84c7aebd08c0
   port: 40138
   server: 18.166.58.27
   skip-cert-verify: false
   sni: www.nintendogames.net
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: '551|A - 🇯🇵 JP 04 TG: @nodpai'
-  network: tcp
-  port: 6003
-  server: gtm-sg-cc54q7d1q01.365cloud0285.com
-  tls: false
-  type: vmess
-  uuid: a030842a-d29a-4ea9-a776-14fc4b9e102d
-- name: 551|🇯🇵JP_2|2.3MB/s
-  password: IQ68037294
-  port: 443
-  server: guided-warthog.rooster465.autos
-  skip-cert-verify: true
-  sni: guided-warthog.rooster465.autos
-  type: trojan
-- name: 551|🇯🇵JP_3|2.1MB/s
-  password: IQ68037294
-  port: 443
-  server: pleased-lobster.rooster465.autos
-  skip-cert-verify: true
-  sni: pleased-lobster.rooster465.autos
   type: trojan
 - name: 553|🇯🇵日本_22c62
   password: aeabae7e-a055-4505-85a6-b4cd4982b76a
@@ -3916,179 +3908,6 @@ proxies:
   tls: false
   type: vmess
   uuid: b806b388-5f97-11ee-8014-f23c913c8d2b
-- name: 559|🇯🇵 日本-C92BFEDC
-  password: 7e70223b-f331-41d5-9313-02b8d2df2885
-  port: 50888
-  server: d1.catcat321.com
-  sni: d.usj1.cat.bilibili.com
-  type: trojan
-- name: 559|🇯🇵 日本-181D530F
-  password: 7e70223b-f331-41d5-9313-02b8d2df2885
-  port: 58868
-  server: d1.catcat321.com
-  sni: d.usj1.cat.bilibili.com
-  type: trojan
-- name: '559|JP日本(mibei77.com 米贝节点分享) #12'
-  network: tcp
-  password: HW85960347
-  port: 443
-  server: daring-cobra.rooster465.autos
-  skip-cert-verify: false
-  sni: daring-cobra.rooster465.autos
-  type: trojan
-- name: '559|JP日本(mibei77.com 米贝节点分享) #13'
-  network: tcp
-  password: HW85960347
-  port: 443
-  server: normal-pika.rooster465.autos
-  skip-cert-verify: false
-  sni: normal-pika.rooster465.autos
-  type: trojan
-- name: '559|JP日本(mibei77.com 米贝节点分享) #14'
-  network: tcp
-  password: HW85960347
-  port: 443
-  server: star-shrew.rooster465.autos
-  skip-cert-verify: false
-  sni: star-shrew.rooster465.autos
-  type: trojan
-- name: '559|JP日本(mibei77.com 米贝节点分享) #15'
-  network: tcp
-  password: HW85960347
-  port: 443
-  server: touching-turtle.rooster465.autos
-  skip-cert-verify: false
-  sni: touching-turtle.rooster465.autos
-  type: trojan
-- name: 559|日本_072119575
-  password: IQ68037294
-  port: 443
-  server: major-duckling.rooster465.autos
-  skip-cert-verify: false
-  sni: ''
-  type: trojan
-- name: '559,566,568|🇯🇵 日本 | JPN #1'
-  password: IQ68037294
-  port: 443
-  server: saving-sawfly.rooster465.autos
-  skip-cert-verify: true
-  sni: saving-sawfly.rooster465.autos
-  type: trojan
-- name: 559|日本_072119577
-  password: IQ68037294
-  port: 443
-  server: sweeping-parakeet.rooster465.autos
-  skip-cert-verify: false
-  type: trojan
-- name: '559|JP日本(mibei77.com 米贝节点分享) #16'
-  network: tcp
-  password: JA96378052
-  port: 443
-  server: apparent-wasp.rooster465.autos
-  skip-cert-verify: false
-  sni: apparent-wasp.rooster465.autos
-  type: trojan
-- name: '559|JP日本(mibei77.com 米贝节点分享) #17'
-  network: tcp
-  password: JA96378052
-  port: 443
-  server: probable-weasel.rooster465.autos
-  skip-cert-verify: false
-  sni: probable-weasel.rooster465.autos
-  type: trojan
-- name: 559|🇯🇵JP_55|3.6MB/s|C002-260622 01
-  network: tcp
-  password: ON38567014
-  port: 443
-  server: definite-panda.rooster465.autos
-  sni: definite-panda.rooster465.autos
-  type: trojan
-- name: 559|🇯🇵JP_56|3.2MB/s|C002-260622 01
-  network: tcp
-  password: ON38567014
-  port: 443
-  server: superb-wildcat.rooster465.autos
-  sni: superb-wildcat.rooster465.autos
-  type: trojan
-- name: 559|🇯🇵 日本-83257829
-  password: T9qoEuuxUEa9Dk3KxnTWrs6J8ilng9sCIf
-  port: 443
-  server: 103.125.216.18
-  sni: 103.125.216.18
-  type: trojan
-- name: 559|🇯🇵 日本-381ED26D
-  password: T9qoEuuxUEa9Dk3KxnTWrs6J8ilng9sCIf
-  port: 443
-  server: 103.125.216.68
-  sni: 103.125.216.68
-  type: trojan
-- name: 559|🇯🇵 日本-949D6513
-  password: eeb6823c-b926-4ea2-866a-5542edd26e59
-  port: 443
-  server: 156.246.91.9
-  sni: hhcm.hhxaf.cc.cd
-  type: trojan
-- name: 559|🇯🇵 日本-68965877
-  password: eeb6823c-b926-4ea2-866a-5542edd26e59
-  port: 443
-  server: 172.104.120.92
-  sni: hhcm.hhxaf.cc.cd
-  type: trojan
-- name: 559|🇯🇵 日本-FBDFB36B
-  password: eeb6823c-b926-4ea2-866a-5542edd26e59
-  port: 443
-  server: 172.104.86.229
-  sni: tjsp.hhxaf.cc.cd
-  type: trojan
-- name: 559|🇯🇵JP_11|907KB/s 01
-  network: tcp
-  password: tsuchiya
-  port: 443
-  server: 161.34.39.108
-  sni: aa.ccmusic.jp
-  type: trojan
-- name: 559,580|🇯🇵JP_44|1.0MB/s|V009-260618 01
-  network: tcp
-  password: u2sVknrSIFjDojeqAUjgYk89m9szHcMQ
-  port: 54603
-  server: 103.106.228.187
-  skip-cert-verify: true
-  sni: 103.106.228.187
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: 559|JP85
-  network: tcp
-  port: '41385'
-  server: v85.topman8846.cc
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: d2a1cd29-9ac2-3165-a082-cf09cdd3bf50
-- alterId: 0
-  cipher: auto
-  name: 559|github.com/freefq - 日本东京Linode...
-  network: ws
-  port: '80'
-  server: v6.583181.xyz
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 561d9533-e20a-4ff0-83d4-80d0cc588dfb
-  ws-opts:
-    headers:
-      Host: v6.583181.xyz
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 559|🇯🇵 日本-CC40E05D
-  network: http
-  port: 55386
-  server: 103.127.243.60
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 22d4ef9c-b269-4f82-9f59-6c2c0d8ce16d
 - alterId: 0
   name: 574|🇵JP日本3
   password: BxceQaOe
@@ -4237,6 +4056,153 @@ proxies:
     headers:
       Host: data-jp-v1.usabooks.com.cn
     path: /debian
+- name: 580|🇯🇵JP_80|3.5MB/s|C002-260622 01
+  network: tcp
+  password: IQ68037294
+  port: 443
+  server: deciding-rattler.rooster465.autos
+  sni: deciding-rattler.rooster465.autos
+  type: trojan
+- name: 580|🇯🇵JP_90|3.4MB/s|C002-260622 01
+  network: tcp
+  password: IQ68037294
+  port: 443
+  server: next-ringtail.rooster465.autos
+  sni: next-ringtail.rooster465.autos
+  type: trojan
+- name: 580|🇯🇵JP_72|3.5MB/s|C002-260622 01
+  network: tcp
+  password: IQ68037294
+  port: 443
+  server: moral-buzzard.rooster465.autos
+  sni: moral-buzzard.rooster465.autos
+  type: trojan
+- name: 580|🇯🇵JP_71|3.5MB/s|C002-260622 01
+  network: tcp
+  password: IQ68037294
+  port: 443
+  server: evolving-grouper.rooster465.autos
+  sni: evolving-grouper.rooster465.autos
+  type: trojan
+- name: 580|🇯🇵JP_81|4.8MB/s|C002-260622 01
+  network: tcp
+  password: IQ68037294
+  port: 443
+  server: intense-basilisk.rooster465.autos
+  sni: intense-basilisk.rooster465.autos
+  type: trojan
+- name: 580|🇯🇵JP_85|4.6MB/s|C002-260622 01
+  network: tcp
+  password: IQ68037294
+  port: 443
+  server: key-sponge.rooster465.autos
+  sni: key-sponge.rooster465.autos
+  type: trojan
+- name: 580|🇯🇵JP_83|4.7MB/s|C002-260622 01
+  network: tcp
+  password: IQ68037294
+  port: 443
+  server: saving-sawfly.rooster465.autos
+  sni: saving-sawfly.rooster465.autos
+  type: trojan
+- name: 580|🇯🇵JP_86|3.5MB/s|C002-260622 01
+  network: tcp
+  password: IQ68037294
+  port: 443
+  server: moved-osprey.rooster465.autos
+  sni: moved-osprey.rooster465.autos
+  type: trojan
+- name: 580|🇯🇵JP_94|3.3MB/s|C002-260622 01
+  network: tcp
+  password: IQ68037294
+  port: 443
+  server: improved-anteater.rooster465.autos
+  sni: improved-anteater.rooster465.autos
+  type: trojan
+- name: 580|🇯🇵JP_93|4.8MB/s|C002-260622 01
+  network: tcp
+  password: IQ68037294
+  port: 443
+  server: frank-piranha.rooster465.autos
+  sni: frank-piranha.rooster465.autos
+  type: trojan
+- name: 580|🇯🇵JP_79|4.7MB/s|C002-260622 01
+  network: tcp
+  password: IQ68037294
+  port: 443
+  server: amazed-burro.rooster465.autos
+  sni: amazed-burro.rooster465.autos
+  type: trojan
+- name: 580|🇯🇵JP_98|1.8MB/s|P002-260618 01
+  network: tcp
+  password: IQ68037294
+  port: 443
+  server: novel-bat.rooster465.autos
+  sni: novel-bat.rooster465.autos
+  type: trojan
+- name: 580|🇯🇵JP_95|3.6MB/s|C002-260622 01
+  network: tcp
+  password: IQ68037294
+  port: 443
+  server: pumped-eft.rooster465.autos
+  sni: pumped-eft.rooster465.autos
+  type: trojan
+- name: 580|🇯🇵JP_69|3.4MB/s|C002-260622 01
+  network: tcp
+  password: IQ68037294
+  port: 443
+  server: stirring-bat.rooster465.autos
+  sni: stirring-bat.rooster465.autos
+  type: trojan
+- name: 580|🇯🇵JP_70|4.4MB/s|C002-260622 01
+  network: tcp
+  password: IQ68037294
+  port: 443
+  server: busy-slug.rooster465.autos
+  sni: busy-slug.rooster465.autos
+  type: trojan
+- name: 580|🇯🇵JP_101|3.1MB/s 01
+  network: tcp
+  password: IQ68037294
+  port: 443
+  server: sweeping-parakeet.rooster465.autos
+  sni: sweeping-parakeet.rooster465.autos
+  type: trojan
+- name: 580|🇯🇵JP_91|3.6MB/s|C002-260622 01
+  network: tcp
+  password: IQ68037294
+  port: 443
+  server: ideal-phoenix.rooster465.autos
+  sni: ideal-phoenix.rooster465.autos
+  type: trojan
+- name: 580|🇯🇵JP_77|3.4MB/s|C002-260622 01
+  network: tcp
+  password: IQ68037294
+  port: 443
+  server: proud-honeybee.rooster465.autos
+  sni: proud-honeybee.rooster465.autos
+  type: trojan
+- name: 580|🇯🇵JP_89|3.1MB/s|C002-260622 01
+  network: tcp
+  password: IQ68037294
+  port: 443
+  server: together-insect.rooster465.autos
+  sni: together-insect.rooster465.autos
+  type: trojan
+- name: 580|🇯🇵JP_88|3.6MB/s|C002-260622 01
+  network: tcp
+  password: IQ68037294
+  port: 443
+  server: premium-perch.rooster465.autos
+  sni: premium-perch.rooster465.autos
+  type: trojan
+- name: 580|🇯🇵JP_87|2.4MB/s|C002-260622 01
+  network: tcp
+  password: IQ68037294
+  port: 443
+  server: tough-shark.rooster465.autos
+  sni: tough-shark.rooster465.autos
+  type: trojan
 - name: 728|🇯🇵 日本7🔒
   password: 升级订阅解锁全部节点
   port: 443
