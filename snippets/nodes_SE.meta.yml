@@ -138,6 +138,20 @@ proxies:
   port: 989
   server: 121.127.46.147
   type: ss
+- auth: b05346a9-4d13-41a4-8d2a-6b7b64e73ffc
+  down: ''
+  fingerprint: ''
+  name: 438,489,502,548,566,568,580|🇬🇧GB_58|2.6MB/s|S001-260618 01
+  obfs: ''
+  obfs-password: ''
+  password: b05346a9-4d13-41a4-8d2a-6b7b64e73ffc
+  port: 8443
+  server: sw02.auragg.org
+  skip-cert-verify: true
+  sni: sw02.auragg.org
+  tls: false
+  type: hysteria2
+  up: ''
 - name: '455,457,458|🇸🇪_SE_瑞典 #2'
   network: ws
   port: 443
@@ -210,23 +224,6 @@ proxies:
     headers:
       Host: max-gb1.global.ssl.fastly.net
     path: /
-- client-fingerprint: chrome
-  encryption: none
-  grpc-opts:
-    grpc-service-name: auragrpc
-  name: 489|🟢🇸🇪[🎬🤖📺🎭]_github.com/Ruk1ng001...
-  network: grpc
-  port: 443
-  reality-opts:
-    public-key: TGJxKbPG8ds2NwK6uhgQURUfVJ01BcRh3Eaoy3dtdGA
-    short-id: a3d8f1e9b2c7d4e6
-  server: sw01.auragg.org
-  servername: cloudflare.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: b05346a9-4d13-41a4-8d2a-6b7b64e73ffc
-  xudp: true
 - name: '508,509|瑞典 017 #1'
   network: ws
   port: 80
@@ -267,22 +264,49 @@ proxies:
   type: vless
   udp: true
   uuid: f75566a5-4744-4806-ac2e-ccaefe1b1080
-- client-fingerprint: chrome
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: auragrpc
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
   name: 566|🇸🇪 瑞典 | SWE
-  network: grpc
+  network: tcp
   port: 443
   reality-opts:
-    public-key: TGJxKbPG8ds2NwK6uhgQURUfVJ01BcRh3Eaoy3dtdGA
-    short-id: a3d8f1e9b2c7d4e6
-  server: sw01.auragg.org
-  servername: cloudflare.com
+    public-key: TlpXTLz1Y-v8B6q9MX55U6eypjfL0LCSNE5zQP4yRHw
+    short-id: bbc68cec8bb8d2e3
+  server: node1.mxvpn.dev
+  servername: node1.mxvpn.dev
   tls: true
   type: vless
   udp: true
-  uuid: 8bc63720-5ec8-45b5-b6a6-9a21ffb490e8
+  uuid: 564082ff-cf3c-48db-9e10-8ad2312847b4
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: firefox
+  encryption: mlkem768x25519plus.native.0rtt.wEt7ipFZWtmdJjg8PayTm1s6nydIMrFyarCr1qBa9mJyFWRMduuAgauF48ECyMBOMOYQyxo9iudS-QuyEOaAoxN5TupqUbExB5M2lKZPcztS82IbyBJ9E7sJ_iCCRCVvMTQMKCCuV6nPFlUPfqxFM1hSNPlUhtC_CtE9rhZQHcdIL8WcXigwpBE2q7tuvLhNV9i8H2BIyvoINeaQcqayK4Vj-OaggRsV68c22alEKtuB-TWT58CjcyQ4kZelxtJ4CWB5L0w5RQpAh-JZ_ronLQxL2pqjrKlv7TkC9hFsS1q8CnvBh_x0mnyfGpumR_kHeGeEHrynW_SckTQNTkdvZqklwwwpEAKp6FdpWxRuaZSDOzFfPttlMOh23syv0ukTQ1pciVY3YdSeEsGsxfCQM1CPVQRAmXciClJxR2lhk5mCvGZ_kdwMZNohPMuwYtqTiBmkSVwS61lgBgOHGUiTMtCAtPiGWqktHvhNrjNVKsfB8gkrpOpMJOM6-nlGoPSpVJDBtugLtaSaxWiP3lFISIOsxUiyJXm0UGZ7_dYIxKKV9xm1zBfESPZL4Aqo1tChbdYMeeiODvCiCqVV-tjA0AVPHWh4FPNX3ZRGGaZdRnpV5yBnr8h2G_mS4Rih9OKq8sO2xJSfkalwJbBMv9xEgWK29omsiUsR95YMWKZapPQ-ankLC5aB2HTA5AZJfSxDc_qClTc7IBypo6U2guSY31gNhSUNbkULD0h8UDukhsIXXIJVTeJG11adKrIF_MWDQeS_E0pj1mlx_4SHsuW5gxuMvle2Ket7H0h-GzCr-Uqb8OpSmeC5BkgmaAJogdOSd5U5z1ghflepzQpEXvKjfmSUzsKrdIssD5egyBAMJ-q9qXk-uvcxdzmM52dS_lkfZORunrZ-bWWIB-IOLwEEAriRMLUK80a-uGZXYHCKukGJkWO-KNRM2EBwE8yp--h9tImVNyWUCMPBCkXNQ-pfl5ovXdhefdk-ozxkfTccPHycCNcBYisQMXUKOxVTEOwEc6dPiyk12BZouURScoqEDWurywa1izaW1SkmZ8sMoXs8sdUlEhM29_qGBAcbFDIz7AyPgKtue_WILocQqukkBaYnVRZxjnhh6rvJ3IQIXppCpExD2sY27bWdxjBxWkZiUFqmaCSwjbu1rMBzedCMJMyV2dVUMAe04PAwZNw3NkVn_VAYKVhrJ9awipIC5UirQdOhmDk1nGVLCboRn9OVBFY2FyJQRdykVHCXWpqjJaEOtYC-NsZgQ7JBzFFkmwewkhkBSTwg-0QqiFs9BKlGbyyKKVgHLyQYJZub9Eh5IMzPR8y56nYjfuW12NRvY9PDzOqJq8csK5Ekz5cUMkOu7jW2MWGdukRN-OV4pByq6YjBVvEYwKZXchOoF8Ocrhw_ccQEB-SoxpoBC5hiX_U0YEa0gLEp7gwuzWt-7eB_YHYGY2GYohtQ_YOXuzhrgrmliMBI9hWkwKtFGbbBAYwf0VdcG8uGOhm2nNApJ5aGDkc5eHt7NAxXY8p6NXZRBtGPGG_H8w4tsCppCYRAMi2uy7oEtbTLqis1QXn4PKiplxk
+  name: 566|🇸🇪 瑞典 | SWE 2
+  network: xhttp
+  port: 443
+  server: 46.42.185.252
+  servername: he2wdkveia.a.trbcdn.net
+  tls: true
+  type: vless
+  udp: true
+  uuid: 1845ddce-0a79-4cde-a6a5-03035fe122fd
+  xhttp-opts:
+    host: he2wdkveia.a.trbcdn.net
+    mode: packet-up
+    no-grpc-header: true
+    path: /api/v3/video.mp4
+    seq-key: offset
+    seq-placement: query
+    session-key: auth
+    session-placement: query
+    uplink-data-placement: body
+    x-padding-bytes: 50-150
+    x-padding-header: X-Api-Key
+    x-padding-method: tokenish
+    x-padding-obfs-mode: true
+    x-padding-placement: header
 - name: '580|SE瑞典丨yoyapai.com #2'
   network: ws
   port: 80
@@ -296,20 +320,7 @@ proxies:
       Host: max-gb1.global.ssl.fastly.net
     path: '%2F'
 - client-fingerprint: chrome
-  name: 580|🇸🇪SE_1|1.5MB/s|B007-260618 01
-  network: ws
-  port: 443
-  server: 78.109.17.114
-  servername: netlivpn4813.ddhshhshs.workers.dev
-  tls: true
-  type: vless
-  uuid: 2388e166-3890-33ae-f77e-efac00000000
-  ws-opts:
-    headers:
-      Host: netlivpn4813.ddhshhshs.workers.dev
-    path: /NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN
-- client-fingerprint: chrome
-  name: 580|🇸🇪SE_2|1.5MB/s|S004-260618 01
+  name: 580|🇸🇪SE_1|2.6MB/s|S004-260618 01
   network: xhttp
   port: 443
   server: zadefree-hyperlink.hyperfreelink.com
@@ -319,50 +330,23 @@ proxies:
   uuid: 3e725086-dabd-ae9d-ffa5-3bab782249e1
   ws-opts:
     path: /video
-- name: 580|🇸🇪SE_3|646KB/s|B007-260618 01
-  obfs: salamander
-  obfs-password: fd3olglr2bmimgje
-  password: elknam6l7izf3z71
-  port: 52061
-  server: assets.gateway-stream.com
-  sni: assets.gateway-stream.com
-  tls: false
-  type: hysteria2
-- name: 580|🇸🇪SE_4|1.3MB/s|B007-260618 01
-  obfs: salamander
-  obfs-password: hg7rfvz151ftjh0w
-  password: elknam6l7izf3z71
-  port: 52062
-  server: assets.gateway-stream.com
-  sni: assets.gateway-stream.com
-  tls: false
-  type: hysteria2
-- name: 580|🇸🇪SE_5|1.1MB/s|K001-260618 01
-  obfs: salamander
-  obfs-password: hg7rfvz151ftjh0w
-  password: elknam6l7izf3z71
-  port: 52062
-  server: assets.gateway-stream.com
-  tls: false
-  type: hysteria2
-- client-fingerprint: firefox
+- client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 580|🇸🇪SE_6|1.5MB/s|F003-260618 01
+  name: 580|🇸🇪SE_2|530KB/s|B007-260618 01
   network: tcp
   port: 443
   reality-opts:
-    public-key: kWLch3EWX5VBdNU5EiTNQhMwaOWNUtqR-ftUcc-B6gc
-    short-id: 43dabaaf5e906033
-  server: 2.26.124.69
+    public-key: JwL5KoiWkCJI2vMJxyTEplfv-zBAtwxOH8SMbw6QHzY
+    short-id: cd40c992fe4b10c2
+  server: 46.246.92.109
   servername: site.rumedia-cdn.com
-  skip-cert-verify: true
   tls: false
   type: vless
-  uuid: 73db72eb-eae3-4623-9395-a5eedc584569
-- client-fingerprint: chrome
+  uuid: 14f19724-de91-4285-a633-aa8e2caaf812
+- client-fingerprint: random
   flow: xtls-rprx-vision
-  name: 580|RU VLESS-665 | free-nodes
-  network: tcp
+  name: 580|🇸🇪SE_5|1.1MB/s|M002-260618 01
+  network: raw
   port: 443
   reality-opts:
     public-key: 1c7TsslPz_gsvzX4ENkEa36Pp3gm-M3SRLhvqtGaAz4
@@ -373,7 +357,7 @@ proxies:
   type: vless
   uuid: d1c624fc-d0b0-49c7-8afa-e15a5949bc17
 - client-fingerprint: chrome
-  name: 580|🇸🇪SE_8|3.9MB/s|M002-260618 01
+  name: 580|🇸🇪SE_4|3.3MB/s|M002-260618 01
   network: ws
   port: 443
   server: cc.ircybersec.org
@@ -385,6 +369,44 @@ proxies:
     headers:
       Host: cp.kermanshahi.org
     path: /@JavidnamanIran/Javid-SHAH-KingRezaPahlavi/
+- client-fingerprint: chrome
+  name: 580|🇸🇪SE_6|2.6MB/s|B007-260618 01
+  network: tcp
+  port: 1000
+  reality-opts:
+    public-key: ECxm-BdHYhxYK9MtN33NkkrFSdFZXp-OB-yhN8AleRY
+    short-id: a62d513cd709744a
+  server: teain.org
+  servername: knox.cdn-apple.com
+  tls: false
+  type: vless
+  uuid: 6f436a44-f703-93da-7e45-615824a39d3b
+- client-fingerprint: chrome
+  name: 580|🇸🇪SE_7|2.0MB/s|B007-260618 01
+  network: tcp
+  port: 22024
+  reality-opts:
+    public-key: OncWhxWwzrKOFH21JT9WxcenacQuc7ZmuQy_rZFJ8xg
+    short-id: c6e19c434dc87df7
+  server: se.sv.temas-bor.ir
+  servername: login.yahoo.com
+  tls: false
+  type: vless
+  uuid: 2c326e00-d936-42e1-b463-5022c90d4597
+- client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: auragrpc
+  name: 580|🇸🇪SE_8|2.6MB/s|R002-260618 01
+  network: grpc
+  port: 443
+  reality-opts:
+    public-key: TGJxKbPG8ds2NwK6uhgQURUfVJ01BcRh3Eaoy3dtdGA
+    short-id: a3d8f1e9b2c7d4e6
+  server: sw01.auragg.org
+  servername: cloudflare.com
+  tls: false
+  type: vless
+  uuid: b05346a9-4d13-41a4-8d2a-6b7b64e73ffc
 - name: 728|🇸🇪 瑞典1🔒
   password: 升级订阅解锁全部节点
   port: 443
