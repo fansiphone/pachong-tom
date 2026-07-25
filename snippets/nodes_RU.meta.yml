@@ -40,7 +40,7 @@ proxies:
   uuid: 3c3c3969-b06a-43ff-ad1e-11621c542946
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '340,438,502,514,551,585,586|RU_speednode_0109 #3'
+  name: '340,438,502,507,514,551,585,586|RU_speednode_0109 #3'
   network: tcp
   port: 443
   reality-opts:
@@ -332,7 +332,8 @@ proxies:
   ws-opts:
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 378,479,484,537,538|🇷🇺RU-157.22.240.141-0175 | 10....
+  country: 🇺🇸US
+  name: 378,435,479,484,537,538|🇷🇺RU-157.22.240.141-0175 | 10....
   password: FXpDf7WV6lfD6n9hpz7HF2
   port: 57925
   server: 157.22.240.141
@@ -735,17 +736,23 @@ proxies:
   sni: eu.mjanyt.com
   type: anytls
   udp: true
-- name: 436|🇷🇺RU_91
-  password: '!!str 1234567890'
-  port: 443
-  server: 194.87.77.91
-  sni: kfm-bn0.pages.dev
-  type: trojan
-- name: 436|🇷🇺RU_92
+- country: 🇷RU
+  name: 435,436|🇷🇺RU_93
   password: IQ68037294
   port: 443
   server: square-anchovy.rooster465.autos
+  skip-cert-verify: true
   type: trojan
+  udp: true
+- country: 🇷RU
+  name: 435,436|🇷🇺RU_94
+  password: '!!str 1234567890'
+  port: 443
+  server: 194.87.77.91
+  skip-cert-verify: true
+  sni: kfm-bn0.pages.dev
+  type: trojan
+  udp: true
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
   name: '438,523,524|🇷🇺_俄罗斯_22 #1'
@@ -761,7 +768,7 @@ proxies:
   type: vless
   udp: true
   uuid: 06d44c57-8e1a-41f4-b9c4-65d35869e078
-- name: '438,472,473,474,502,580|US美国(mibei77.com 米贝节点分享) #17'
+- name: '438,580|US美国(mibei77.com 米贝节点分享) #17'
   password: 76713d07-5a6b-49c2-abd8-bc450a2fa7fc
   port: 443
   server: usa1.spectrumproxy.shop
@@ -1537,6 +1544,55 @@ proxies:
     headers:
       Host: ''
     path: /
+- name: '473,580|US美国(mibei77.com 米贝节点分享) #18'
+  network: ws
+  port: 4100
+  server: 194.87.161.60
+  tls: false
+  type: vless
+  uuid: 9b44bfb4-9d28-4870-9fc3-5154d6d462ff
+  ws-opts:
+    headers:
+      Host: live.ok.ru
+    path: '%2Fv1'
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  grpc-opts:
+    grpc-service-name: ''
+  name: 473,507,580|HK VLESS-973 | free-nodes
+  network: tcp
+  port: 443
+  server: s306.ccgfw.top
+  servername: u695099u36cf43b9s298.wagahaha.xyz
+  tls: true
+  type: vless
+  uuid: 5d02517f-63d5-3e9f-b467-1bcf4d4e25d3
+  ws-opts:
+    headers:
+      Host: 36cf43b9s298.wagahaha.xyz
+    path: ''
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  grpc-opts:
+    grpc-service-name: ''
+  name: 473,507,580|HK VLESS-981 | free-nodes
+  network: tcp
+  port: 443
+  server: 212.192.15.191
+  servername: u695099u36cf43b9s298.wagahaha.xyz
+  tls: true
+  type: vless
+  uuid: 5d02517f-63d5-3e9f-b467-1bcf4d4e25d3
+  ws-opts:
+    headers:
+      Host: 36cf43b9s298.wagahaha.xyz
+    path: ''
 - client-fingerprint: chrome
   name: '475,480|🇺俄羅斯丨yoyapai.com #1'
   network: ws
@@ -1601,12 +1657,32 @@ proxies:
   server: ru.safepass.click
   type: ss
   udp: true
-- name: 507,580|RU VLESS-222 | free-nodes
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 507|RU VLESS-231 | free-nodes
+  network: tcp
   port: 443
-  server: veesp-fj-vpn-2.concept7.ru
+  reality-opts:
+    public-key: KEZ93Y9VgoirI18wIpcfS3z8I9GiaiFe-GKqGdEPMmg
+    short-id: 4e07408562be
+  server: red-fhmq5ehr3ievlnabv8l2.concept7.ru
+  servername: api-maps.yandex.ru
   tls: false
   type: vless
   uuid: 15e0833c-08ad-47f3-bf80-60c2a47a6774
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 507,580|RU VLESS-457 | free-nodes
+  network: tcp
+  port: 40443
+  reality-opts:
+    public-key: Sw4tAz5d-rLhaSFsEDDxlgwJbK4NMQUFDHF_oyRwUWE
+    short-id: cd5c
+  server: login.netraidly.ru
+  servername: deepl.com
+  tls: false
+  type: vless
+  uuid: 52720aa1-a75b-4f72-9af4-d7237c197f3e
 - alpn:
   - h2
   - http/1.1
@@ -1614,7 +1690,7 @@ proxies:
   flow: xtls-rprx-vision
   grpc-opts:
     grpc-service-name: ''
-  name: 507|RU VLESS-984 | free-nodes
+  name: 507|RU VLESS-988 | free-nodes
   network: tcp
   port: 443
   server: s2359.ccgfw.online
@@ -1652,7 +1728,7 @@ proxies:
   flow: xtls-rprx-vision
   grpc-opts:
     grpc-service-name: ''
-  name: 507|RU VLESS-1026 | free-nodes
+  name: 507|RU VLESS-1030 | free-nodes
   network: tcp
   port: 443
   server: s2360.okgfwbackxyz.xyz
@@ -1671,7 +1747,7 @@ proxies:
   flow: xtls-rprx-vision
   grpc-opts:
     grpc-service-name: ''
-  name: '507,580|RU VLESS-1026 | free-nodes #1'
+  name: 507,580|RU VLESS-1026 | free-nodes
   network: tcp
   port: 443
   server: 45.130.146.232
@@ -1690,7 +1766,7 @@ proxies:
   flow: xtls-rprx-vision
   grpc-opts:
     grpc-service-name: ''
-  name: 507|RU VLESS-1030 | free-nodes
+  name: 507|RU VLESS-1034 | free-nodes
   network: tcp
   port: 443
   server: 193.53.126.91
@@ -2179,25 +2255,18 @@ proxies:
   type: trojan
   ws-opts:
     path: /trojan-ws
+- name: 580|RU VLESS-222 | free-nodes
+  port: 443
+  server: veesp-fj-vpn-2.concept7.ru
+  tls: false
+  type: vless
+  uuid: 15e0833c-08ad-47f3-bf80-60c2a47a6774
 - name: 580|RU VLESS-233 | free-nodes
   port: 443
   server: api-1.de.orbit-escape.ru
   tls: false
   type: vless
   uuid: 27c1d725-629c-4e65-9271-d6f5df82c7e9
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 580|RU VLESS-457 | free-nodes
-  network: tcp
-  port: 40443
-  reality-opts:
-    public-key: Sw4tAz5d-rLhaSFsEDDxlgwJbK4NMQUFDHF_oyRwUWE
-    short-id: cd5c
-  server: login.netraidly.ru
-  servername: deepl.com
-  tls: false
-  type: vless
-  uuid: 52720aa1-a75b-4f72-9af4-d7237c197f3e
 - name: 580|RU VLESS-509 | free-nodes
   port: 40443
   server: private.netraidly.ru
