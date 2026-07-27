@@ -1577,19 +1577,8 @@ proxies:
   port: 870
   server: 183.240.222.15
   type: ss
-- alterId: 2
-  cipher: auto
-  name: 437,508,509,559,574,636|🇨🇳 中国 007
-  network: tcp
-  port: '30835'
-  server: v35.hdacd.com
-  servername: ''
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - client-fingerprint: chrome
-  name: 438,502,551,566,580|🇨🇳CN_1|1.4MB/s|A001-260618 01
+  name: 438,502,551,580|🇨🇳CN_1|1.4MB/s|A001-260618 01
   network: xhttp
   port: 443
   reality-opts:
@@ -1598,12 +1587,11 @@ proxies:
   servername: download.nvidia.com
   tls: false
   type: vless
-  udp: true
   uuid: c97b2158-64c9-1f55-8167-72970d347288
-  xhttp-opts:
-    host: download.nvidia.com
-    mode: auto
-    path: /
+  ws-opts:
+    headers:
+      Host: download.nvidia.com
+    path: '%2F'
 - name: 456|🇨🇳 中国 阿里云
   password: 8r<[9'l6hAO#8ZQi
   port: 443
@@ -1706,6 +1694,17 @@ proxies:
     headers:
       Host: ty986gfazs.cainiaohub.xyz
     path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
+- alterId: 2
+  cipher: auto
+  name: 508,509,559,574,636|🇨🇳 中国 007
+  network: tcp
+  port: '30835'
+  server: v35.hdacd.com
+  servername: ''
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - alterId: 0
   cipher: auto
   name: 508,509,559,574,636|🇨🇳 中国 009
@@ -2247,6 +2246,20 @@ proxies:
   type: vless
   udp: true
   uuid: 6d7cc537-84fa-3f73-b9fc-b84d30a258e1
+- alterId: 2
+  cipher: auto
+  country: 🇨🇳CN
+  delay: 769
+  h2-opts: {}
+  http-opts: {}
+  name: 523,524,528|中国 - 香港 - 1
+  port: 30809
+  server: v9.hdacd.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - name: 535|🇨🇳CN-183.56.247.206-000
   password: f441a2b0-31ef-490d-bd91-9b1cd960f4ce
   port: 29482
@@ -2894,7 +2907,7 @@ proxies:
   tls: false
   type: vmess
   uuid: a6ddfc37-05eb-11ed-af40-f23c91cfbbc9
-- name: 559|🇨🇳CN_09
+- name: 559|🇨🇳CN_11
   password: 736cd94d-7b94-3e44-8106-3419f64eaf09
   port: 3462
   server: a12.taipeicitygovernment.org.ua
