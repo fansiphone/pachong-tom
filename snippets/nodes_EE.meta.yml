@@ -13,6 +13,25 @@ proxies:
   tls: true
   type: vless
   uuid: 8da3432a-d4da-4f43-801f-342cda5eae9f
+- alterId: 0
+  cipher: auto
+  name: '378,536,537|🇪EE-176.112.146.190-0236 #1'
+  network: ws
+  port: 80
+  server: 176.112.146.190
+  servername: ''
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: f9247df4-02d5-4b31-acc5-4022652c5953
+  ws-opts:
+    path: /
+- cipher: aes-256-cfb
+  name: '378,537|🇪EE-37.252.5.234-5274 #1'
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 37.252.5.234
+  type: ss
 - name: 462|爱沙尼亚_塔林
   network: ws
   port: 2087
@@ -255,7 +274,7 @@ proxies:
     path: twitterfreecodessecurity%3Dtls
 - client-fingerprint: qq
   flow: xtls-rprx-vision
-  name: 489,494,551,566|🇪🇪 爱沙尼亚 | EST 2
+  name: 489,494,502,566|🇪🇪 爱沙尼亚 | EST 2
   network: tcp
   port: 443
   reality-opts:
@@ -270,7 +289,7 @@ proxies:
 - client-fingerprint: firefox
   encryption: none
   flow: xtls-rprx-vision
-  name: 489,494,551,566|🇪🇪 爱沙尼亚 | EST
+  name: 489,494,502,551,566|🇪🇪 爱沙尼亚 | EST
   network: tcp
   packet-encoding: xudp
   port: 8443
@@ -284,22 +303,29 @@ proxies:
   udp: true
   uuid: 631ee34f-4faf-4ad7-b49d-e6f50403cf0e
   xudp: true
-- alterId: 0
-  cipher: auto
-  name: 536,537|🇪EE-176.112.146.190-0236
-  network: ws
-  port: 80
-  server: 176.112.146.190
-  servername: ''
-  skip-cert-verify: false
+- client-fingerprint: qq
+  flow: xtls-rprx-vision
+  name: 580|🇪🇪EE_3|71KB/s|C002-260622 01
+  network: raw
+  port: 443
+  reality-opts:
+    public-key: SJkDT_L0eziQR2afDGrkN7-uRxjYu6bZxIGXlKeCvX4
+    short-id: 15aa18f971da1f81
+  server: est.vrsvpn.com
+  servername: web.max.ru
   tls: false
-  type: vmess
-  uuid: f9247df4-02d5-4b31-acc5-4022652c5953
-  ws-opts:
-    path: /
-- cipher: aes-256-cfb
-  name: 537|🇪EE-37.252.5.234-5274
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 37.252.5.234
-  type: ss
+  type: vless
+  uuid: 0b9bcbc1-b289-4a64-86fa-a5b731b65384
+- client-fingerprint: random
+  flow: xtls-rprx-vision
+  name: 580|🇪🇪EE_5|166KB/s|A004-260618 01
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: V2JprbR_aJkS7uX6anyU3nrswGxdvDQT2HpY4WnzuC8
+    short-id: 5629431325884ff0
+  server: 5.181.202.15
+  servername: eston3.o4ka-internet.com
+  tls: false
+  type: vless
+  uuid: a03df445-0666-4d61-acde-9705009e409c
