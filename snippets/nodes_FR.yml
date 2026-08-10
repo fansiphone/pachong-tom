@@ -403,7 +403,7 @@ proxies:
   sni: star-kiwi.rooster465.autos
   type: trojan
 - client-fingerprint: chrome
-  name: 378,508,509,536,537,538,559,580,636|🇺🇸 美国 026
+  name: 378,438,508,509,536,537,538,559,580,636|🇺🇸 美国 026
   network: tcp
   password: ND91608427
   port: 443
@@ -412,7 +412,7 @@ proxies:
   sni: classic-gator.rooster465.autos
   type: trojan
   udp: true
-- name: 378,536,537,538,559,580|🇫🇷FR_1109|236KB/s|S004-260618 ...
+- name: 378,438,536,537,538,559,580|🇫🇷FR_1109|236KB/s|S004-260618 ...
   network: tcp
   password: ND91608427
   port: 443
@@ -1456,18 +1456,22 @@ proxies:
   server: chief-cricket.rooster465.autos
   skip-cert-verify: false
   type: trojan
-- name: '378,436,536,537|🇷FR-15.237.100.62-6092 #1'
+- country: 🇯🇵JP
+  name: '378,435,436,536,537|🇷FR-15.237.100.62-6092 #1'
   password: CF68213490
   port: 443
   server: star-moray.rooster465.autos
   skip-cert-verify: false
   type: trojan
-- name: '378,536,537|🇫🇷FR-15.237.112.48-6121 #1'
+  udp: true
+- country: 🇯🇵JP
+  name: '378,435,436,536,537|🇫🇷FR-15.237.112.48-6121 #1'
   password: CF68213490
   port: 443
   server: smiling-fowl.rooster465.autos
   skip-cert-verify: false
   type: trojan
+  udp: true
 - cipher: aes-256-gcm
   name: '378,537|🇷FR-54.36.174.181-6390 #1'
   password: cdBIDV42DCwnfIN
@@ -1771,21 +1775,17 @@ proxies:
   skip-cert-verify: false
   sni: trj.rollingnext.co.uk
   type: trojan
-- name: 436|🇫🇷FR_34
-  password: ND91608427
+- name: '438|🇫🇷FR_3|4.4MB/s | 网盘搜宝: https:/...'
+  network: ws
+  password: humanity
   port: 443
-  server: star-kiwi.rooster465.autos
+  server: 104.19.229.21
+  sni: www.calmlunch.com
   type: trojan
-- name: 436|🇫🇷FR_35
-  password: ND91608427
-  port: 443
-  server: fancy-skink.rooster465.autos
-  type: trojan
-- name: 436,580|未知 TROJAN-269 | free-nodes
-  password: ND91608427
-  port: 443
-  server: careful-tadpole.rooster465.autos
-  type: trojan
+  ws-opts:
+    headers:
+      Host: www.calmlunch.com
+    path: '%2F%252Fassignment'
 - alterId: 0
   cipher: auto
   name: 461|法国_马赛
@@ -1896,15 +1896,6 @@ proxies:
     headers:
       Host: lax1.ibgfw.top
     path: /xrenvws
-- name: 474|法国巴黎+CloudFlare节点
-  network: ws
-  password: humanity
-  port: 443
-  server: 141.101.90.101
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    path: '%2Fassignment'
 - name: '476,481|FR国(mibei77.com 米贝节点分享) #1'
   password: 19877587-ed94-4033-88cd-4ac50a5e8718
   port: 443
@@ -1962,7 +1953,7 @@ proxies:
   uuid: 500e29aa-c40b-43e1-905c-e6e7ac4a5b83
 - alterId: 0
   cipher: auto
-  name: 508,509,559,574,636|🇫🇷 法国 006
+  name: 508,509,559,636|🇫🇷 法国 006
   network: tcp
   port: '27726'
   server: fj260203.freechatup.com
@@ -1973,7 +1964,7 @@ proxies:
   uuid: 98e2be3c-8f84-4b85-996b-b68dcc2fbcb6
 - alterId: 0
   cipher: auto
-  name: 508,509,559,574,636|🇫🇷 法国 007
+  name: 508,509,559,636|🇫🇷 法国 007
   network: tcp
   port: '26126'
   server: 188.165.61.68
@@ -1984,7 +1975,7 @@ proxies:
   uuid: b09b111e-f41c-4145-83c9-029027a5a745
 - alterId: 0
   cipher: auto
-  name: 508,509,559,574,580,636|🇫🇷 法国 008
+  name: 508,509,559,580,636|🇫🇷 法国 008
   network: tcp
   port: '27726'
   server: fj260205.freechatup.com
@@ -2403,16 +2394,6 @@ proxies:
   sni: trj.rollingnext.co.uk
   type: trojan
   udp: true
-- alterId: 0
-  cipher: chacha20-poly1305
-  name: 578|28|法国 OVH SAS
-  network: tcp
-  port: '3586'
-  server: max-ip.hiroman5445.ir
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: a663bbab-4e9e-4080-b8ab-edd59fe1fdce
 - name: 580|🇫🇷FR_367|263KB/s|B007-260618 0...
   network: ws
   password: humanity
