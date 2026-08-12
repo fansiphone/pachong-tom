@@ -196,9 +196,9 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 119,378,508,509,536,537,636|🇨🇳 中国 017
+  name: '119,378,508,509,536,537|🇳CN-120.82.70.149-0854 #1'
   network: ws
-  port: '36101'
+  port: 36101
   server: 120.82.70.149
   servername: ''
   skip-cert-verify: false
@@ -212,9 +212,9 @@ proxies:
     path: /download
 - alterId: 0
   cipher: auto
-  name: 119,378,508,509,536,537,636|🇯🇵 日本 009
+  name: '119,378,508,509,536,537|🇵JP-91.200.242.187-0862 #1'
   network: ws
-  port: '14954'
+  port: 14954
   server: 91.200.242.187
   servername: ''
   skip-cert-verify: false
@@ -228,9 +228,9 @@ proxies:
     path: /download
 - alterId: 1
   cipher: auto
-  name: 119,378,508,509,536,537,636|🇨🇳 中国 022
+  name: '119,378,508,509,536,537|🇨🇳CN-118.212.70.199-0885 #1'
   network: ws
-  port: '1552'
+  port: 1552
   server: nas.ruyo.in
   servername: ''
   skip-cert-verify: false
@@ -4358,24 +4358,66 @@ proxies:
     headers:
       Host: lax2.ibgfw.top
     path: /dyajvws
-- name: '478,483|🇭🇰_HK_中国香港->🇩🇪_DE_德国 #1'
-  password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
-  port: 20041
-  server: hkdcrtc-e.catcat321.com
+- client-fingerprint: edge
+  flow: xtls-rprx-vision
+  name: '478,483,522,580,581|🇬🇧_GB_英国->🇬🇪_GE_格鲁吉亚 #6'
+  port: 22231
+  server: r1.mizulina.top
+  servername: r1.mizulina.top
   skip-cert-verify: true
-  sni: de.catxstar.com
   tls: true
+  type: vless
+  udp: true
+  uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
+- client-fingerprint: edge
+  flow: xtls-rprx-vision
+  name: '478,483,522,559,580,581|🇬🇧_GB_英国->🇬🇪_GE_格鲁吉亚 #7'
+  network: tcp
+  port: 443
+  server: 85.234.114.53
+  servername: r1.mizulina.top
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
+- alterId: 2
+  cipher: auto
+  name: '478,483,519,522|_ID_亚->🇷_FR_法国 #2'
+  port: 30835
+  server: v35.hdacd.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- client-fingerprint: edge
+  flow: xtls-rprx-vision
+  name: '478,483,508,509,522,559,580,581|🇬🇧_GB_英国->🇬🇪_GE_格鲁吉亚 #8'
+  network: tcp
+  port: 22231
+  server: 85.234.114.53
+  servername: r1.mizulina.top
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
+- name: '478,483,522,580,581|🇺🇸_US_美国->🇦🇿_AZ_阿塞拜疆 #2'
+  password: 4f4d1167-ef14-4304-9bce-0740472503ef
+  port: 41943
+  server: 90081bb25c.node.tro.cac.cab
+  skip-cert-verify: true
+  sni: az.01.naiun.bilibili.com
+  tls: false
   type: trojan
   udp: true
 - alterId: 2
   cipher: auto
-  country: 🇸🇬SG
-  delay: 1199
-  h2-opts: {}
-  http-opts: {}
-  name: 478,483,519,523,524,528,566|🇭🇰 香港 | HKG 3
-  port: 30809
-  server: v9.hdacd.com
+  name: '478,483,522|🇮🇩_ID_印度尼西亚->🇧_GB_英国 #2'
+  port: 30836
+  server: v36.hdacd.com
   skip-cert-verify: true
   tls: false
   type: vmess
@@ -4609,6 +4651,20 @@ proxies:
   uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   ws-opts: {}
 - alterId: 2
+  cipher: auto
+  country: 🇸🇬SG
+  delay: 1199
+  h2-opts: {}
+  http-opts: {}
+  name: 519,523,524,528,566|🇭🇰 香港 | HKG 3
+  port: 30809
+  server: v9.hdacd.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- alterId: 2
   cipher: none
   name: 519|🇨🇳_CN_中国->🇩🇪_DE_德国
   port: 30833
@@ -4628,16 +4684,6 @@ proxies:
   type: vmess
   udp: true
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- alterId: 2
-  cipher: auto
-  name: '519,522,548|🇮🇩_ID_印度尼西亚->🇫🇷_FR_法国 #1'
-  port: 30835
-  server: v35.hdacd.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - name: 519|🇷🇺_RU_俄罗斯->🇫🇮_FI_芬兰
   network: ws
   port: 2053
@@ -4648,21 +4694,6 @@ proxies:
   udp: true
   uuid: b6c29ae7-4748-4049-b642-b695c0d2c776
   ws-opts:
-    path: /
-- client-fingerprint: chrome
-  name: '519,523,524,585,586|US_speednode_0120 #1'
-  network: ws
-  port: 443
-  server: www.true.th
-  servername: d1yxsk0zprgivr.cloudfront.net
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 7ce54bb3-d612-4aa7-be08-089d3c461d53
-  ws-opts:
-    headers:
-      Host: d1yxsk0zprgivr.cloudfront.net
     path: /
 - alterId: 2
   cipher: auto
@@ -4689,48 +4720,6 @@ proxies:
   name: 519|🇨🇳_CN_中国->🇮🇪_IE_爱尔兰
   port: 30804
   server: v4.hdacd.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- client-fingerprint: edge
-  flow: xtls-rprx-vision
-  name: '522,548,580,581|🇬🇧_GB_英国->🇬🇪_GE_格鲁吉亚 #8'
-  port: 22231
-  server: r1.mizulina.top
-  servername: r1.mizulina.top
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
-- client-fingerprint: edge
-  flow: xtls-rprx-vision
-  name: '522,548,559,580,581|🇬🇧_GB_英国->🇬🇪_GE_格鲁吉亚 #9'
-  network: tcp
-  port: 443
-  server: 85.234.114.53
-  servername: r1.mizulina.top
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
-- name: '522,548,580,581|🇺🇸_US_美国->🇦🇿_AZ_阿塞拜疆 #4'
-  password: 4f4d1167-ef14-4304-9bce-0740472503ef
-  port: 41943
-  server: 90081bb25c.node.tro.cac.cab
-  skip-cert-verify: true
-  sni: az.01.naiun.bilibili.com
-  tls: false
-  type: trojan
-  udp: true
-- alterId: 2
-  cipher: auto
-  name: '522,548|🇮🇩_ID_印度尼西亚->🇬🇧_GB_英国 #1'
-  port: 30836
-  server: v36.hdacd.com
   skip-cert-verify: true
   tls: false
   type: vmess
