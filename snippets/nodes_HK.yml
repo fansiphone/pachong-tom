@@ -863,14 +863,19 @@ proxies:
   type: trojan
 - alterId: 2
   cipher: auto
-  name: '306,340,437,454,459,502,514,515,516,544,551,557,559,581|🇭🇰_HK_中国香港 #7'
+  country: 🇰HK
+  h2-opts: {}
+  http-opts: {}
+  name: '306,340,435,437,454,459,502,514,515,516,544,551,557,559,581|🇭🇰_HK_中国香港 #7'
   network: tcp
   port: 30807
   server: v10.hdacd.com
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-path: /
 - name: '306,340,378,502,514,515,516,536,537,551,559,585,586|HK_speednode_0012 #3'
   password: BxceQaOe
   port: 27161
@@ -2356,7 +2361,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 378,536,537,544,559|香港_081618247
+  name: 378,536,537,559|香港_081618247
   network: ws
   port: '32913'
   server: 47.243.39.251
@@ -2371,7 +2376,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 378,536,537,544,559|未知 VMESS-955 | free-nodes
+  name: 378,536,537,559|未知 VMESS-955 | free-nodes
   network: ws
   port: '35043'
   server: 156.245.232.239
@@ -2597,12 +2602,14 @@ proxies:
   uuid: 1617e875-e377-4e4f-85ef-dcf9e5e10df7
   ws-opts:
     path: /
-- name: '378,436,536,537|🇰HK-185.244.208.25-5108 #1'
+- country: 🇺HU
+  name: '378,435,436,536,537|🇰HK-185.244.208.25-5108 #1'
   password: IL37892054
   port: 443
   server: just-alpaca.rooster465.autos
   skip-cert-verify: false
   type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: '378,536,537|🇭🇰HK-47.244.120.197-5174 #1'
@@ -2760,16 +2767,28 @@ proxies:
   skip-cert-verify: false
   sni: telewebion.com
   type: trojan
+- cipher: chacha20-ietf
+  country: 🇰HK
+  name: 435|🇰HK_78
+  password: asd123456
+  port: 8388
+  server: 103.149.182.79
+  type: ss
 - alterId: 2
   cipher: auto
-  name: 437,459,559|🇭🇰HK_66
+  country: 🇰HK
+  h2-opts: {}
+  http-opts: {}
+  name: 435,437,459,559|🇭🇰HK_66
   network: tcp
   port: 30804
   server: v4.hdacd.com
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-path: /
 - name: 453|🇭🇰 香港4|@stairnode
   password: 253bc477d4e43c209f2d427272968280
   port: 4419
@@ -3229,17 +3248,6 @@ proxies:
   protocol-param: 144391:uBtVcY
   server: api.meituan88.com
   type: ssr
-- client-fingerprint: chrome
-  name: '489,523,524,536,538,559|🇭🇰_香港_96 #2'
-  network: tcp
-  password: 6ec301428255a78a1d826988d86cc87e
-  port: 50887
-  server: 2c.fast9988.com
-  skip-cert-verify: false
-  sni: www.nintendogames.net
-  tls: true
-  type: trojan
-  udp: true
 - cipher: chacha20-ietf
   name: '489|🟢🇭🇰[🎬🤖📺🎭]_github.com/Ruk1ng001... #3'
   password: passwd
@@ -3334,7 +3342,7 @@ proxies:
   type: ss
   udp: true
 - client-fingerprint: chrome
-  name: '489|🟢🇭🇰[🎬🧠📺🎭]_github.com/Ruk1ng001... #1'
+  name: '489,502,551|🇺🇸US_19|2.8MB/s #1'
   network: ws
   password: 65c56e1f-5c41-40bc-b0b5-9346772476ca
   port: 2053
@@ -3344,28 +3352,16 @@ proxies:
   type: trojan
   udp: true
   ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Windows NT 10.0) AppleWebKit/537.36 (KHTML, like Gecko)
-        Chrome/70.0.3538.67 Safari/537.36
     path: /api/v2/check_update
-- alpn:
-  - ''
-  alterId: 0
+- alterId: 0
   cipher: auto
-  name: '502,551,559,566,568|🇭🇰 香港 | HKG #4'
-  network: ws
-  port: '16632'
-  server: planb.mojcn.com.linuxlh.xin
-  servername: ''
-  skip-cert-verify: true
+  name: '502,551|B - 🇭🇰 HK 04 TG: @nodpai #1'
+  network: tcp
+  port: 6001
+  server: gtm-sg-cc54q7d1q01.365cloud0285.com
   tls: false
   type: vmess
-  udp: true
-  uuid: 0c657913-e593-4893-9555-f88478c33a4b
-  ws-opts:
-    headers:
-      Host: f784fdb75e4fc8a478c10d9acff513d3.mobgslb.tbcache.com
-    path: /
+  uuid: a030842a-d29a-4ea9-a776-14fc4b9e102d
 - client-fingerprint: chrome
   name: '513,517|15|🇭🇰 香港|@ripaojiedian #1'
   network: ws
