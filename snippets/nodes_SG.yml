@@ -731,6 +731,36 @@ proxies:
   port: 17315
   server: 120.240.103.35
   type: ss
+- client-fingerprint: chrome
+  name: 306,494,502,551|🇸🇬SG_5|1.3MB/s
+  network: tcp
+  password: EQ30679154
+  port: 443
+  server: well-goshawk.rooster465.autos
+  skip-cert-verify: false
+  sni: well-goshawk.rooster465.autos
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: '306,494,502,566,568|🇸🇬 新加坡 | SGP #1'
+  network: tcp
+  password: EQ30679154
+  port: 443
+  server: 47.129.160.142
+  skip-cert-verify: true
+  sni: well-goshawk.rooster465.autos
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: 306,494,502,551|🇸🇬SG_3|4.1MB/s
+  network: tcp
+  password: EQ30679154
+  port: 443
+  server: direct-hawk.rooster465.autos
+  skip-cert-verify: false
+  sni: direct-hawk.rooster465.autos
+  type: trojan
+  udp: true
 - name: '321,322,323|tg群组: https://t.me/tjiajc1 #3'
   network: ws
   password: 429ad146-8f43-4dd4-8fb3-cca3f3a30c63
@@ -1478,36 +1508,34 @@ proxies:
   uuid: 442094b1-a2c2-422f-f3cf-7fc0bb134666
   ws-opts:
     path: /wss
-- name: 378,438,472,473,474,494,536,537,538|🇭🇰HK-43.199.210.189-1144 | 64....
-  network: tcp
+- name: 378,472,473,474,536,537,538,548|🇸🇬 新加坡 亚马逊(Amazon)公司数据中心
+  network: raw
   password: 6ec301428255a78a1d826988d86cc87e
   port: 50887
   server: 2c.fast9988.com
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: 378,494,537,538|🇸🇬SG-54.254.235.88-0222 | 16.9...
+- name: 378,537,538|🇸🇬SG-54.254.235.88-0222 | 16.9...
   password: FH72359861
   port: 443
   server: charming-ox.rooster465.autos
   skip-cert-verify: false
   sni: charming-ox.rooster465.autos
   type: trojan
-- name: 378,494,537,538|🇸🇬SG-13.212.173.162-0223 | 16....
+- name: 378,537,538|🇸🇬SG-13.212.173.162-0223 | 16....
   password: AE62539071
   port: 443
   server: integral-quetzal.rooster465.autos
   skip-cert-verify: false
   sni: integral-quetzal.rooster465.autos
   type: trojan
-- name: 378,494,523,524,537,538|🇸🇬SG-13.212.33.67-1353 | 16.93...
+- name: 378,537,538|🇸🇬SG-13.212.33.67-1353 | 16.93...
   password: PQ05174892
   port: 443
   server: intense-monarch.rooster465.autos
   skip-cert-verify: false
-  tls: true
   type: trojan
-  udp: true
 - name: 378,494,537,538|🇸🇬SG-13.251.133.9-0227 | 16.58...
   password: PQ05174892
   port: 443
@@ -1515,21 +1543,23 @@ proxies:
   skip-cert-verify: false
   sni: infinite-anteater.rooster465.autos
   type: trojan
-- name: 378,494,536,537,538|🇸🇬SG-47.129.183.20-0387 | 16.5...
+- name: 378,494,523,524,536,537,538|🇸🇬SG-47.129.183.20-0387 | 16.5...
   password: PQ05174892
   port: 443
   server: welcome-monitor.rooster465.autos
   skip-cert-verify: false
   sni: welcome-monitor.rooster465.autos
+  tls: true
   type: trojan
-- name: 378,494,537,538|🇸🇬SG-18.143.132.167-0224 | 16....
+  udp: true
+- name: 378,537,538|🇸🇬SG-18.143.132.167-0224 | 16....
   password: FH72359861
   port: 443
   server: worthy-perch.rooster465.autos
   skip-cert-verify: false
   sni: worthy-perch.rooster465.autos
   type: trojan
-- name: 378,494,537,538|🇸🇬SG-52.220.98.46-1354 | 16.35...
+- name: 378,537,538|🇸🇬SG-52.220.98.46-1354 | 16.35...
   password: PQ05174892
   port: 443
   server: pleased-albacore.rooster465.autos
@@ -2498,11 +2528,6 @@ proxies:
   port: 9044
   server: 103.172.116.79
   type: ss
-- name: 436|🇸🇬SG_83
-  password: IQ68037294
-  port: 443
-  server: 45.135.228.169
-  type: trojan
 - name: 453|🇸🇬 新加坡|@stairnode
   password: 253bc477d4e43c209f2d427272968280
   port: 2173
@@ -2677,81 +2702,89 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 468|新加坡_021805059 L0
+  name: '468,508,509|德国 039 #1'
   network: tcp
-  port: '14372'
+  port: 14372
   server: 62.146.232.159
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: ed1d7ea8-bf40-4a4a-8eac-8e57798ba6f7
 - alterId: 0
   cipher: auto
-  name: 468|新加坡_021805060 L0
+  name: '468,508,509|捷克 002 #1'
   network: tcp
-  port: '59032'
+  port: 59032
   server: 109.123.232.74
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 96ab7e1f-bf0d-45cd-8ebc-c8be2f8d43cd
 - alterId: 0
   cipher: auto
-  name: 468|新加坡_021805061 L20
+  name: '468,508,509|德国 042 #1'
   network: tcp
-  port: '38324'
+  port: 38324
   server: 62.146.233.115
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: f863ef99-5ef0-4321-aaac-a476a5e8c3fb
 - alterId: 0
   cipher: auto
-  name: 468|新加坡_021805062 M49
+  name: '468,508,509|美国 438 #1'
   network: tcp
-  port: '57143'
+  port: 57143
   server: 154.26.129.247
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 28efbf36-079a-4c98-8470-d13458db6ee6
 - alterId: 0
   cipher: auto
-  name: 468|新加坡_021805063 L20
+  name: '468,508,509|德国 043 #1'
   network: tcp
-  port: '43763'
+  port: 43763
   server: 62.146.233.159
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 1ddf3ade-5b8c-420c-84f6-f96979ec3080
 - alterId: 0
   cipher: auto
-  name: 468|新加坡_021805064 L21
+  name: '468,508,509|德国 038 #1'
   network: tcp
-  port: '27575'
+  port: 27575
   server: 194.233.72.228
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 16509262-dbe2-43ba-99ce-07913d2a18b4
 - alterId: 0
   cipher: auto
-  name: 468|新加坡_021805065 L19
+  name: '468,508,509|德国 044 #1'
   network: tcp
-  port: '50678'
+  port: 50678
   server: 62.146.233.53
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 5d1ec6e7-fd58-4e85-91c5-6335a86d2775
 - alterId: 0
   cipher: auto
-  name: 468|新加坡_021805066 M49
+  name: '468,508,509|美国 437 #1'
   network: tcp
-  port: '44104'
+  port: 44104
   server: 154.26.137.42
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: e9933a4c-e56e-458c-bcf4-9cb3875bba55
@@ -2780,11 +2813,12 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 468|新加坡_021805110 L0
+  name: '468,508,509|德国 040 #1'
   network: tcp
-  port: '33281'
+  port: 33281
   server: 62.146.232.156
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 24eda0ea-acf0-4538-a001-f746a480237a
@@ -2897,6 +2931,120 @@ proxies:
   protocol-param: 276924:CPFGip
   server: api.meituan88.com
   type: ssr
+- client-fingerprint: chrome
+  name: '508,509|新加坡 001 #1'
+  network: ws
+  password: eeb6823c-b926-4ea2-866a-5542edd26e59
+  port: 443
+  server: 103.25.202.114
+  sni: tjsp.hhxaf.cc.cd
+  type: trojan
+  ws-opts:
+    headers:
+      Host: tjsp.hhxaf.cc.cd
+    path: /
+- client-fingerprint: chrome
+  name: '508,509|新加坡 004 #1'
+  network: ws
+  password: eeb6823c-b926-4ea2-866a-5542edd26e59
+  port: 443
+  server: 139.162.62.195
+  sni: tjsp.hhxaf.cc.cd
+  type: trojan
+  ws-opts:
+    headers:
+      Host: tjsp.hhxaf.cc.cd
+    path: /
+- name: '508,509|新加坡 005 #1'
+  network: ws
+  password: eeb6823c-b926-4ea2-866a-5542edd26e59
+  port: 8443
+  server: 66.42.51.60
+  skip-cert-verify: true
+  sni: hhcm.hhxaf.cc.cd
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: hhcm.hhxaf.cc.cd
+    path: /
+- name: '508,509|新加坡 006 #1'
+  network: ws
+  password: eeb6823c-b926-4ea2-866a-5542edd26e59
+  port: 443
+  server: 45.77.241.64
+  skip-cert-verify: true
+  sni: tjsp.hhxaf.cc.cd
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: tjsp.hhxaf.cc.cd
+    path: /
+- client-fingerprint: chrome
+  name: '508,509|新加坡 007 #1'
+  network: ws
+  password: eeb6823c-b926-4ea2-866a-5542edd26e59
+  port: 443
+  server: 139.59.224.185
+  sni: tjsp.hhxaf.cc.cd
+  type: trojan
+  ws-opts:
+    headers:
+      Host: tjsp.hhxaf.cc.cd
+    path: /
+- client-fingerprint: chrome
+  name: '508,509|新加坡 008 #1'
+  network: ws
+  password: eeb6823c-b926-4ea2-866a-5542edd26e59
+  port: 443
+  server: 13.250.31.132
+  sni: hhcm.hhxaf.cc.cd
+  type: trojan
+  ws-opts:
+    headers:
+      Host: hhcm.hhxaf.cc.cd
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '508,509|新加坡 012 #1'
+  network: ws
+  port: 16737
+  server: 139.180.211.152
+  skip-cert-verify: true
+  type: vmess
+  uuid: 1458e38c-9f71-4c3c-aa70-aaccda6789dd
+  ws-opts:
+    headers:
+      Host: m.twitter.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '508,509|新加坡 013 #1'
+  network: ws
+  port: 18063
+  server: 139.180.211.152
+  skip-cert-verify: true
+  type: vmess
+  uuid: 0d4f647b-0d96-4820-9de8-0186156185dd
+  ws-opts:
+    headers:
+      Host: m.zoom.us
+    path: /Dialog Zoom
+- alterId: 64
+  cipher: auto
+  name: '508,509|新加坡 014 #1'
+  network: ws
+  port: 30010
+  server: 103.254.152.82
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts:
+    headers:
+      Host: www.47876202.xyz
+    path: /path/191019072927
 - cipher: aes-256-cfb
   name: '513,517,578|1|_SG_ #2'
   password: amazonskr05
@@ -2975,24 +3123,22 @@ proxies:
   server: 52.196.181.68
   tfo: false
   type: ss
-- name: '523,524|🇸🇬_新加坡_63 #1'
-  password: PQ05174892
+- alterId: 0
+  cipher: auto
+  name: '523,524|🇸🇬_新加坡_271 #1'
+  network: ws
   port: 443
-  server: intense-sole.rooster465.autos
+  server: singapore01.zgjok.com
+  servername: singapore01.zgjok.com
   skip-cert-verify: true
-  sni: intense-sole.rooster465.autos
   tls: true
-  type: trojan
+  type: vmess
   udp: true
-- name: '523,524|🇸🇬_新加坡_67 #1'
-  password: PQ05174892
-  port: 443
-  server: amusing-grub.rooster465.autos
-  skip-cert-verify: true
-  sni: amusing-grub.rooster465.autos
-  tls: true
-  type: trojan
-  udp: true
+  uuid: 9469bf84-6e2a-4cc2-84e9-f334161a9e94
+  ws-opts:
+    headers:
+      Host: singapore01.zgjok.com
+    path: /
 - name: 536|🇸🇬SG-47.128.15.18-4716
   password: FH72359861
   port: 443
@@ -3004,27 +3150,17 @@ proxies:
   server: pop.09d21837-9b89-4490-92bf-eabf449e3321.heima360.cc
   skip-cert-verify: false
   type: trojan
-- name: '551,566,568|🇸🇬 新加坡 | SGP #1'
+- name: 551|🇸🇬SG_4|4.7MB/s
+  password: EQ30679154
+  port: 443
+  server: moved-bass.rooster465.autos
+  skip-cert-verify: false
+  type: trojan
+- name: 551|🇸🇬SG_6|1.4MB/s
   password: EQ30679154
   port: 443
   server: well-goshawk.rooster465.autos
-  skip-cert-verify: true
-  sni: well-goshawk.rooster465.autos
-  type: trojan
-  udp: true
-- name: 551|🇸🇬SG_3|4.6MB/s
-  password: EQ30679154
-  port: 443
-  server: 47.129.160.142
   skip-cert-verify: false
-  sni: well-goshawk.rooster465.autos
-  type: trojan
-- name: 551|🇸🇬SG_5|5.6MB/s
-  password: EQ30679154
-  port: 443
-  server: direct-hawk.rooster465.autos
-  skip-cert-verify: false
-  sni: direct-hawk.rooster465.autos
   type: trojan
 - alterId: 0
   cipher: auto
@@ -3096,14 +3232,6 @@ proxies:
   server: gg21.hangfengjiasu.com
   tfo: false
   type: ss
-- name: '566,568|🇸🇬 新加坡 | SGP #3'
-  password: EQ30679154
-  port: 443
-  server: balanced-firefly.rooster465.autos
-  skip-cert-verify: true
-  sni: balanced-firefly.rooster465.autos
-  type: trojan
-  udp: true
 - alterId: 0
   cipher: auto
   name: '577|新加坡NO.1 #4'
