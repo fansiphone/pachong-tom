@@ -198,7 +198,7 @@ proxies:
       Host: download.windowsupdate.com
     path: /download
 - cipher: aes-256-gcm
-  name: '127,426|🇭🇰 HK_1|7.6MB/s|YT-HK|NF #1'
+  name: 127|🇭🇰 HK_1|7.6MB/s|YT-HK|NF
   password: feng3d@ss2025
   port: 8388
   server: li.feng3d.com
@@ -757,7 +757,7 @@ proxies:
     path: /stream?ed=2048
 - alterId: 2
   cipher: auto
-  name: '306,478,483,515,516,523,524,556|🇭🇰 香港|@ripaojiedian #3'
+  name: '306,478,483,515,516,519,523,524,556|🇭🇰 香港|@ripaojiedian #3'
   port: 30807
   server: v10.hdacd.com
   skip-cert-verify: false
@@ -765,8 +765,7 @@ proxies:
   type: vmess
   udp: true
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: 306,340,378,494,502,508,509,514,515,516,536,537,544,551,556,557,636|🇺🇸 美国
-    001
+- name: 306,340,378,494,508,509,514,515,516,536,537,544,636|🇺🇸 美国 001
   network: tcp
   password: BxceQaOe
   port: 2944
@@ -1537,9 +1536,9 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 378,494,536,537,538|🇭🇰HK-156.245.232.239-0188 | 0....
+  name: 378,494,536,537,538,580|未知 VMESS-1038 | free-nodes
   network: ws
-  port: 35043
+  port: '35043'
   server: 156.245.232.239
   servername: ''
   skip-cert-verify: false
@@ -1547,6 +1546,8 @@ proxies:
   type: vmess
   uuid: b15e481d-17e4-41a8-84c2-23d4f0514d9a
   ws-opts:
+    headers:
+      Host: ''
     path: /
 - alterId: 0
   cipher: auto
@@ -1561,7 +1562,8 @@ proxies:
   uuid: 845e6b08-2919-4290-ade0-5dc7dcea59ca
   ws-opts:
     path: /
-- name: 378,494,536,537,538|🇭🇰HK-185.244.208.13-0129 | 0.0...
+- name: 378,494,536,537,538,580|香港 10
+  network: tcp
   password: ND91608427
   port: 443
   server: ace-starling.rooster465.autos
@@ -1915,7 +1917,7 @@ proxies:
   uuid: 318b3dd1-09cf-4980-81ed-6cf689e5825a
 - alterId: 0
   cipher: auto
-  name: 378,494,508,509,536,537,636|🇨🇳 中国 040
+  name: 378,494,508,509,536,537,580,636|🇨🇳 中国 040
   network: ws
   port: '443'
   server: n1747624260.4u9ma.icu
@@ -2773,12 +2775,12 @@ proxies:
   type: ssr
 - alterId: 0
   cipher: auto
-  name: '378,494,522,536,537,581|🇭🇰_HK_中国香港 #6'
+  name: '378,494,522,536,537,548,580,581|🇭🇰_HK_中国香港 #12'
   network: ws
   port: 44867
   server: 47.244.120.197
   servername: ''
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
@@ -3143,6 +3145,22 @@ proxies:
     headers:
       Host: vpn-node.internal
     path: /xVpnTrojanWsSvc7f3a
+- name: '502,551,556,557|香港4|@ripaojiedian #2'
+  network: tcp
+  password: BxceQaOe
+  port: 2944
+  server: 18.181.83.46
+  skip-cert-verify: true
+  sni: t.me%2Fripaojiedian
+  type: trojan
+- name: '502,551,556,557|香港5|@ripaojiedian #2'
+  network: tcp
+  password: BxceQaOe
+  port: 1103
+  server: 43.206.117.36
+  skip-cert-verify: true
+  sni: t.me%2Fripaojiedian
+  type: trojan
 - client-fingerprint: chrome
   name: '513,517|15|🇭🇰 香港|@ripaojiedian #1'
   network: ws
@@ -3450,13 +3468,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- cipher: chacha20-ietf-poly1305
-  name: 566|🇭🇰 香港 | HKG 2
-  password: qI513Sf0ARJuirKb37p0amvgUd0aNr6d
-  port: 2082
-  server: grman.pubgjim.ir
-  type: ss
-  udp: true
 - alterId: 0
   cipher: auto
   name: 574|HK 44.5KB/s
@@ -3497,7 +3508,7 @@ proxies:
   uuid: f018361c-3d66-4635-80c9-22be36b70ac4
 - alterId: 0
   cipher: auto
-  name: 574|HK10
+  name: 574,580|未知 VMESS-1344 | free-nodes
   network: ws
   port: 443
   server: drbkg16egf3fzlm3.v.3dns.vip
@@ -3506,8 +3517,6 @@ proxies:
   type: vmess
   uuid: 88888888-8888-8888-8888-888888888888
   ws-opts:
-    headers:
-      host: DrBKg16eGf3FZlM3.v.3dns.vip
     path: /ws-vmess
 - alterId: 0
   cipher: auto
@@ -3527,6 +3536,585 @@ proxies:
   tls: false
   type: vmess
   uuid: 070f662b-3c75-4e7f-8381-287d6d8f45b2
+- alpn:
+  - http/1.1
+  name: '580|HK香港(mibei77.com 米贝节点分享) #8'
+  network: ws
+  password: humanity
+  port: 443
+  server: 104.18.23.63
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
+  type: trojan
+  ws-opts:
+    headers:
+      Host: www.ignitelimit.com
+    path: '%2Fassignment'
+- alpn:
+  - http/1.1
+  name: '580|HK香港(mibei77.com 米贝节点分享) #10'
+  network: ws
+  password: humanity
+  port: 443
+  server: 216.24.57.7
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
+  type: trojan
+  ws-opts:
+    headers:
+      Host: www.ignitelimit.com
+    path: '%2Fassignment'
+- alpn:
+  - http/1.1
+  name: '580|HK香港(mibei77.com 米贝节点分享) #12'
+  network: ws
+  password: MiTiVPN
+  port: 443
+  server: 188.42.145.180
+  skip-cert-verify: false
+  sni: 82929473-mitivpn--mitivpn------mitivpn.mitivpn-s.lifestyle
+  type: trojan
+  ws-opts:
+    headers:
+      Host: 82929473-mitivpn--mitivpn------mitivpn.mitivpn-s.lifestyle
+    path: '%2F---%40MiTiVPN---%40MiTiVPN%2F---%40MiTiVPN---%40MiTiVPN%2F---%40MiTiVPN---%40MiTiVPN%2Fs-g%40MiTiVPN---%40MiTiVPN%2F---%40MiTiVPN---%40MiTiVPN%2F---%40MiTiVPN---%40MiTiVPN'
+- name: '580|HK香港(mibei77.com 米贝节点分享) #22'
+  network: ws
+  password: humanity
+  port: 443
+  server: 104.18.152.152
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
+  type: trojan
+  ws-opts:
+    headers:
+      Host: www.ignitelimit.com
+    path: '%2Fassignment'
+- name: '580|HK香港(mibei77.com 米贝节点分享) #24'
+  network: ws
+  password: humanity
+  port: 443
+  server: 104.26.15.137
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
+  type: trojan
+  ws-opts:
+    headers:
+      Host: www.ignitelimit.com
+    path: '%2Fassignment'
+- name: '580|HK香港(mibei77.com 米贝节点分享) #30'
+  network: ws
+  password: humanity
+  port: 443
+  server: 104.16.174.109
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
+  type: trojan
+  ws-opts:
+    headers:
+      Host: www.ignitelimit.com
+    path: '%2Fassignment'
+- name: 580|香港 09
+  network: tcp
+  password: ND91608427
+  port: 443
+  server: upright-hamster.rooster465.autos
+  sni: upright-hamster.rooster465.autos
+  type: trojan
+- name: 580|香港 11
+  network: tcp
+  password: ND91608427
+  port: 443
+  server: dynamic-grubworm.rooster465.autos
+  sni: dynamic-grubworm.rooster465.autos
+  type: trojan
+- name: 580|香港 12
+  network: tcp
+  password: ND91608427
+  port: 443
+  server: 185.244.208.13
+  sni: ace-starling.rooster465.autos
+  type: trojan
+- name: 580|香港 13
+  network: tcp
+  password: ND91608427
+  port: 443
+  server: 91.199.84.120
+  sni: dynamic-grubworm.rooster465.autos
+  type: trojan
+- name: 580|香港 14
+  network: tcp
+  password: ND91608427
+  port: 443
+  server: 185.244.208.210
+  sni: upright-hamster.rooster465.autos
+  type: trojan
+- name: 580|未知 TROJAN-382 | free-nodes
+  network: tcp
+  password: AE62539071
+  port: 443
+  server: smiling-ray.rooster465.autos
+  sni: smiling-ray.rooster465.autos
+  type: trojan
+  ws-opts:
+    path: /
+- name: 580|香港 46
+  network: tcp
+  password: AE62539071
+  port: 443
+  server: dynamic-grubworm.rooster465.autos
+  skip-cert-verify: true
+  sni: dynamic-grubworm.rooster465.autos
+  type: trojan
+- name: 580|未知 TROJAN-381 | free-nodes
+  network: tcp
+  password: AE62539071
+  port: 443
+  server: magical-kodiak.rooster465.autos
+  sni: magical-kodiak.rooster465.autos
+  type: trojan
+- name: 580|香港 22
+  network: tcp
+  password: AE62539071
+  port: 443
+  server: upright-bedbug.rooster465.autos
+  sni: upright-bedbug.rooster465.autos
+  type: trojan
+- name: 580|香港 23
+  network: tcp
+  password: AE62539071
+  port: 443
+  server: wealthy-loon.rooster465.autos
+  sni: wealthy-loon.rooster465.autos
+  type: trojan
+- name: 580|香港 45
+  network: tcp
+  password: AE62539071
+  port: 443
+  server: modest-foal.rooster465.autos
+  skip-cert-verify: true
+  sni: modest-foal.rooster465.autos
+  type: trojan
+- name: 580|香港 25
+  network: tcp
+  password: AE62539071
+  port: 443
+  server: strong-haddock.rooster465.autos
+  sni: strong-haddock.rooster465.autos
+  type: trojan
+- name: 580|香港 26
+  network: tcp
+  password: AE62539071
+  port: 443
+  server: novel-mouse.rooster465.autos
+  sni: novel-mouse.rooster465.autos
+  type: trojan
+- name: 580|香港 42
+  network: tcp
+  password: FH72359861
+  port: 443
+  server: modern-bedbug.rooster465.autos
+  skip-cert-verify: true
+  sni: modern-bedbug.rooster465.autos
+  type: trojan
+- name: 580|香港 35
+  network: tcp
+  password: FH72359861
+  port: 443
+  server: natural-swan.rooster465.autos
+  sni: natural-swan.rooster465.autos
+  type: trojan
+- name: 580|香港 93
+  network: tcp
+  password: FH72359861
+  port: 443
+  server: strong-haddock.rooster465.autos
+  skip-cert-verify: true
+  sni: strong-haddock.rooster465.autos
+  type: trojan
+- name: 580|香港 37
+  network: tcp
+  password: FH72359861
+  port: 443
+  server: dynamic-grubworm.rooster465.autos
+  sni: dynamic-grubworm.rooster465.autos
+  type: trojan
+- name: 580|香港 38
+  network: tcp
+  password: FH72359861
+  port: 443
+  server: smiling-ray.rooster465.autos
+  sni: smiling-ray.rooster465.autos
+  type: trojan
+- name: 580|香港 44
+  network: tcp
+  password: FH72359861
+  port: 443
+  server: growing-oyster.rooster465.autos
+  skip-cert-verify: true
+  sni: growing-oyster.rooster465.autos
+  type: trojan
+- name: 580|香港 40
+  network: tcp
+  password: FH72359861
+  port: 443
+  server: amused-peacock.rooster465.autos
+  sni: amused-peacock.rooster465.autos
+  type: trojan
+- name: 580|香港 41
+  network: tcp
+  password: FH72359861
+  port: 443
+  server: choice-worm.rooster465.autos
+  sni: choice-worm.rooster465.autos
+  type: trojan
+- name: 580|香港 43
+  network: tcp
+  password: AE62539071
+  port: 443
+  server: 185.244.208.69
+  sni: strong-haddock.rooster465.autos
+  type: trojan
+- name: 580|香港 47
+  network: tcp
+  password: AE62539071
+  port: 443
+  server: 185.14.47.234
+  sni: novel-mouse.rooster465.autos
+  type: trojan
+- name: 580|香港 48
+  network: tcp
+  password: AE62539071
+  port: 443
+  server: 185.14.47.228
+  sni: wealthy-loon.rooster465.autos
+  type: trojan
+- name: 580|香港 49
+  network: tcp
+  password: FH72359861
+  port: 443
+  server: 91.199.84.155
+  sni: modern-bedbug.rooster465.autos
+  type: trojan
+- name: 580|香港 50
+  network: tcp
+  password: AE62539071
+  port: 443
+  server: 194.99.79.197
+  sni: smiling-ray.rooster465.autos
+  type: trojan
+- name: 580|香港 54
+  network: raw
+  password: HC04361579
+  port: 443
+  server: eminent-lamb.rooster465.autos
+  sni: eminent-lamb.rooster465.autos
+  type: trojan
+- name: 580|香港 52
+  network: tcp
+  password: HC04361579
+  port: 443
+  server: 185.14.47.125
+  sni: eminent-lamb.rooster465.autos
+  type: trojan
+- name: 580|香港 53
+  network: tcp
+  password: AE62539071
+  port: 443
+  server: 194.99.79.189
+  sni: humorous-parakeet.rooster465.autos
+  type: trojan
+- name: 580|香港 56
+  network: tcp
+  password: BxceQaOe
+  port: 443
+  server: 119.246.1.143
+  skip-cert-verify: true
+  sni: t.me%2Fripaojiedian
+  type: trojan
+- name: 580|香港 58
+  network: tcp
+  password: AE62539071
+  port: 443
+  server: 194.99.79.121
+  sni: modest-foal.rooster465.autos
+  type: trojan
+- name: 580|香港 59
+  network: tcp
+  password: PQ05174892
+  port: 443
+  server: strong-haddock.rooster465.autos
+  sni: strong-haddock.rooster465.autos
+  type: trojan
+- name: 580|香港 60
+  network: tcp
+  password: PQ05174892
+  port: 443
+  server: smiling-ray.rooster465.autos
+  sni: smiling-ray.rooster465.autos
+  type: trojan
+- name: 580|香港 61
+  network: tcp
+  password: PQ05174892
+  port: 443
+  server: full-ox.rooster465.autos
+  sni: full-ox.rooster465.autos
+  type: trojan
+- name: 580|香港 62
+  network: tcp
+  password: PQ05174892
+  port: 443
+  server: well-marmot.rooster465.autos
+  sni: well-marmot.rooster465.autos
+  type: trojan
+- name: 580|香港 63
+  network: tcp
+  password: PQ05174892
+  port: 443
+  server: wealthy-loon.rooster465.autos
+  sni: wealthy-loon.rooster465.autos
+  type: trojan
+- name: 580|香港 102
+  network: tcp
+  password: PQ05174892
+  port: 443
+  server: glad-roughy.rooster465.autos
+  skip-cert-verify: true
+  sni: glad-roughy.rooster465.autos
+  type: trojan
+- name: 580|香港 73
+  network: tcp
+  password: PQ05174892
+  port: 443
+  server: just-alpaca.rooster465.autos
+  skip-cert-verify: true
+  sni: just-alpaca.rooster465.autos
+  type: trojan
+- name: 580|香港 68
+  network: tcp
+  password: BxceQaOe
+  port: 443
+  server: 119.246.1.143
+  skip-cert-verify: true
+  sni: 119.246.1.143
+  type: trojan
+- name: 580|香港 71
+  network: tcp
+  password: BxceQaOe
+  port: 443
+  server: 119.246.1.143
+  skip-cert-verify: true
+  sni: t.me%2fripaojiedian
+  type: trojan
+- name: 580|香港 80
+  network: tcp
+  password: EQ30679154
+  port: 443
+  server: true-coral.rooster465.autos
+  sni: true-coral.rooster465.autos
+  type: trojan
+- name: 580|香港 81
+  network: tcp
+  password: EQ30679154
+  port: 443
+  server: eternal-swift.rooster465.autos
+  sni: eternal-swift.rooster465.autos
+  type: trojan
+- name: 580|香港 88
+  network: tcp
+  password: EQ30679154
+  port: 443
+  server: full-ox.rooster465.autos
+  sni: full-ox.rooster465.autos
+  type: trojan
+- name: 580|香港 89
+  network: tcp
+  password: EQ30679154
+  port: 443
+  server: striking-cheetah.rooster465.autos
+  sni: striking-cheetah.rooster465.autos
+  type: trojan
+- name: 580|香港 90
+  network: tcp
+  password: EQ30679154
+  port: 443
+  server: dynamic-grubworm.rooster465.autos
+  sni: dynamic-grubworm.rooster465.autos
+  type: trojan
+- name: 580|香港 100
+  network: tcp
+  password: HC04361579
+  port: 443
+  server: renewing-ewe.rooster465.autos
+  sni: renewing-ewe.rooster465.autos
+  type: trojan
+- name: 580|香港 140
+  network: tcp
+  password: HC04361579
+  port: 443
+  server: normal-elk.rooster465.autos
+  sni: normal-elk.rooster465.autos
+  type: trojan
+- name: 580|香港 97
+  network: tcp
+  password: EQ30679154
+  port: 443
+  server: choice-worm.rooster465.autos
+  sni: choice-worm.rooster465.autos
+  type: trojan
+- name: 580|香港 113
+  network: tcp
+  password: EQ30679154
+  port: 443
+  server: kind-unicorn.rooster465.autos
+  skip-cert-verify: true
+  sni: kind-unicorn.rooster465.autos
+  type: trojan
+- name: 580|香港 103
+  network: tcp
+  password: FH72359861
+  port: 443
+  server: 91.199.84.204
+  skip-cert-verify: true
+  sni: growing-oyster.rooster465.autos
+  type: trojan
+- name: 580|香港 104
+  network: tcp
+  password: FH72359861
+  port: 443
+  server: 91.199.84.195
+  sni: amused-peacock.rooster465.autos
+  type: trojan
+- name: 580|未知 TROJAN-386 | free-nodes
+  network: tcp
+  password: PQ05174892
+  port: 443
+  server: 185.14.47.101
+  sni: ideal-robin.rooster465.autos
+  type: trojan
+- name: 580|香港 106
+  network: tcp
+  password: PQ05174892
+  port: 443
+  server: 91.199.84.83
+  sni: full-ox.rooster465.autos
+  type: trojan
+- name: 580|香港 107
+  network: tcp
+  password: FH72359861
+  port: 443
+  server: 185.244.208.56
+  sni: choice-worm.rooster465.autos
+  type: trojan
+- name: 580|香港 109
+  network: tcp
+  password: PQ05174892
+  port: 443
+  server: 185.244.208.25
+  sni: just-alpaca.rooster465.autos
+  type: trojan
+- name: 580|香港 110
+  network: tcp
+  password: PQ05174892
+  port: 443
+  server: 185.14.47.222
+  sni: well-marmot.rooster465.autos
+  type: trojan
+- name: 580|香港 112
+  network: tcp
+  password: PQ05174892
+  port: 443
+  server: 185.14.47.228
+  sni: wealthy-loon.rooster465.autos
+  type: trojan
+- name: 580|香港 115
+  network: tcp
+  password: EQ30679154
+  port: 443
+  server: 185.14.47.56
+  sni: kind-unicorn.rooster465.autos
+  type: trojan
+- name: 580|香港 117
+  network: tcp
+  password: FH72359861
+  port: 443
+  server: 91.199.84.120
+  skip-cert-verify: true
+  sni: dynamic-grubworm.rooster465.autos
+  type: trojan
+- name: 580|香港 120
+  network: tcp
+  password: PQ05174892
+  port: 443
+  server: 194.99.79.197
+  sni: smiling-ray.rooster465.autos
+  type: trojan
+- name: 580|香港 124
+  network: tcp
+  password: FH72359861
+  port: 443
+  server: 185.244.208.213
+  sni: natural-swan.rooster465.autos
+  type: trojan
+- name: 580|香港 125
+  network: tcp
+  password: FH72359861
+  port: 443
+  server: 194.99.79.197
+  sni: smiling-ray.rooster465.autos
+  type: trojan
+- name: 580|香港 127
+  network: tcp
+  password: FH72359861
+  port: 443
+  server: 185.244.208.69
+  sni: strong-haddock.rooster465.autos
+  type: trojan
+- name: 580|香港 128
+  network: tcp
+  password: PQ05174892
+  port: 443
+  server: 185.244.208.69
+  sni: strong-haddock.rooster465.autos
+  type: trojan
+- name: 580|香港 129
+  network: tcp
+  password: HC04361579
+  port: 443
+  server: 185.14.47.38
+  sni: normal-elk.rooster465.autos
+  type: trojan
+- name: 580|香港 130
+  network: tcp
+  password: EQ30679154
+  port: 443
+  server: 185.244.208.56
+  sni: choice-worm.rooster465.autos
+  type: trojan
+- name: 580|香港 135
+  network: tcp
+  password: EQ30679154
+  port: 443
+  server: 185.244.208.176
+  skip-cert-verify: true
+  sni: eternal-swift.rooster465.autos
+  type: trojan
+- name: 580|香港 146
+  network: tcp
+  password: BxceQaOe
+  port: 1103
+  server: 18.163.79.248
+  skip-cert-verify: true
+  sni: t.me/ripaojiedian
+  type: trojan
+- name: 580|香港 161
+  network: tcp
+  password: BxceQaOe
+  port: 1103
+  server: 18.163.79.248
+  skip-cert-verify: true
+  sni: t.me%2Fripaojiedian
+  type: trojan
 - name: '605|HK #5'
   network: tcp
   password: aa6ddd2f-d1cf-4a52-ba1b-2640c41a7856
@@ -3535,3 +4123,43 @@ proxies:
   skip-cert-verify: true
   sni: hk12.bilibili.com
   type: trojan
+- name: 728|🇭🇰 香港7 IPLC🔒
+  password: 升级订阅解锁全部节点
+  port: 21521
+  server: z-hk1.251313.xyz
+  skip-cert-verify: true
+  sni: www.cloudflare.com
+  type: trojan
+  udp: true
+- name: 728|🇭🇰 香港8 IPLC🔒
+  password: 升级订阅解锁全部节点
+  port: 21522
+  server: z-hk2.251313.xyz
+  skip-cert-verify: true
+  sni: www.cloudflare.com
+  type: trojan
+  udp: true
+- name: 728|🇭🇰 香港11 家宽🔒
+  password: 升级订阅解锁全部节点
+  port: 21520
+  server: starlink-hkt1.251313.xyz
+  skip-cert-verify: true
+  sni: www.cloudflare.com
+  type: trojan
+  udp: true
+- name: 728|🇭🇰 香港12 家宽🔒
+  password: 升级订阅解锁全部节点
+  port: 21520
+  server: starlink-hkt2.251313.xyz
+  skip-cert-verify: true
+  sni: www.cloudflare.com
+  type: trojan
+  udp: true
+- name: 728|🇭🇰 TCP🔒
+  password: 升级订阅解锁全部节点
+  port: 21520
+  server: z-hk1.251313.xyz
+  skip-cert-verify: true
+  sni: www.cloudflare.com
+  type: trojan
+  udp: true
