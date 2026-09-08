@@ -8,6 +8,16 @@ proxies:
   type: vmess
   udp: true
   uuid: 000a0d18-02fe-4cda-a68e-96b55e067567
+- name: '340,496,502,514,519,551|Telegram 🆔@cnetvpn 🇸🇪 #4'
+  obfs: salamander
+  obfs-password: fuw2k1ddrouwxr3u
+  password: vz86jgszv4zszchv
+  port: 52062
+  server: giftcard.gateway-stream.com
+  skip-cert-verify: false
+  sni: giftcard.gateway-stream.com
+  tls: false
+  type: hysteria2
 - alterId: 0
   cipher: auto
   name: '362,363|🇸🇪 SE 057 |  20.8MB/s #1'
@@ -123,22 +133,6 @@ proxies:
   port: 989
   server: 121.127.46.147
   type: ss
-- alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: chrome
-  name: '438|🇸🇪SE_1|1.7MB/s | 更多节点: https:/...'
-  network: xhttp
-  port: 2053
-  server: page.irhubby.ir
-  servername: vips.irhubby.ir
-  tls: true
-  type: vless
-  uuid: 9abe6dbd-5988-4943-8a93-afc65ab50f54
-  ws-opts:
-    headers:
-      Host: vips.irhubby.ir
-    path: '%2F'
 - name: '455,457,458|🇸🇪_SE_瑞典 #2'
   network: ws
   port: 443
@@ -166,7 +160,7 @@ proxies:
   server: 13.60.149.22
   sni: trojan.burgerip.co.uk
   type: trojan
-- name: 489|D🔴🇸🇪[🎬🤖📺🎪]_dokng.com_1ba3cfe0
+- name: 489,519|🇸🇪SE_1|3.3MB/s
   password: None
   port: 443
   server: 146.70.242.130
@@ -188,7 +182,7 @@ proxies:
   tls: true
   type: http
   username: null
-- name: 489|C🟠🇸🇪[🤖📺🎪✨]_dokng.com_5cd882c7
+- name: 489,519|🇸🇪SE_2|3.2MB/s
   port: 443
   server: 149.50.216.65
   skip-cert-verify: true
@@ -284,6 +278,19 @@ proxies:
       Host: 6.v.v.V-_-_-V2ray-_-_-V.v.v.vg.www.speedtest.net.uv.Zula.ir.cloudflare.com.mehpOw.iR.
     path: /telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray?ed=2048
 - client-fingerprint: chrome
+  name: 519|🇸🇪 瑞典 | SWE
+  network: xhttp
+  port: 2053
+  server: page.irhubby.ir
+  tls: true
+  type: vless
+  udp: true
+  uuid: 9abe6dbd-5988-4943-8a93-afc65ab50f54
+  xhttp-opts:
+    host: vips.irhubby.ir
+    mode: auto
+    path: /
+- client-fingerprint: chrome
   name: '523,524|🇸🇪_瑞典_24 #1'
   port: 443
   server: sw1-chr.astralweb.tech
@@ -293,44 +300,48 @@ proxies:
   type: vless
   udp: true
   uuid: 5dc56757-458e-4df2-9e71-2a14ce47e8af
-- client-fingerprint: chrome
-  name: 566|🇸🇪 瑞典 | SWE
-  network: ws
-  port: 443
-  server: 185.36.141.81
-  servername: sni.868001.xyz
-  tls: true
-  type: vless
-  udp: true
-  uuid: 56cba26b-efcb-40d0-838a-d66df2dd516f
-  ws-opts:
-    headers:
-      Host: sni.868001.xyz
-    path: /proxyip=tw.william.us.ci?uuid=82bc2875-3fee-49d1-ab29-e108a7b1e5f9
-- client-fingerprint: chrome
-  name: 566|🇸🇪 瑞典 | SWE 2
-  network: ws
-  port: 443
-  server: 64.188.82.173
-  servername: sni.868001.xyz
-  tls: true
-  type: vless
-  uuid: 56cba26b-efcb-40d0-838a-d66df2dd516f
-  ws-opts:
-    headers:
-      Host: sni.868001.xyz
-    path: /proxyip=tw.william.us.ci?uuid=82bc2875-3fee-49d1-ab29-e108a7b1e5f9
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: '581|🇸🇪_SE_瑞典 #3'
+  name: '548,581|🇸🇪_SE_瑞典 #4'
   port: 443
   reality-opts:
     public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
   server: 141.227.160.23
   servername: se.sellflow.org
+  skip-cert-verify: true
   tls: true
   type: vless
+  udp: true
   uuid: 0bc31c7f-1ee2-4dd3-929b-b61ae780eb3c
+- client-fingerprint: chrome
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: TunService
+  name: '566|🇸🇪 瑞典 | SWE #1'
+  network: grpc
+  port: 8443
+  reality-opts:
+    public-key: R8Mogel1wypEIpcUXnGmG1cuzT9POghNhqJcw4-CLx0
+  server: 170.168.99.6
+  servername: cdn.steamstatic.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: f71957f3-29e0-d077-9b51-83da5cf31480
+- client-fingerprint: edge
+  flow: xtls-rprx-vision
+  name: 566|🇸🇪 瑞典 | SWE 2
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: niL0fb-4IaVHr5VCg2yN_5wDTNYEq9W8wi7pDWLPcVg
+    short-id: 7505bfa3b6b933e6
+  server: 200.169.182.57
+  servername: defaultenginedimly.rivetpress.me
+  tls: true
+  type: vless
+  udp: true
+  uuid: 7a97f64d-5fc7-4011-9028-58d2ba751595
 - name: 728|🇸🇪 瑞典1🔒
   password: 升级订阅解锁全部节点
   port: 443
