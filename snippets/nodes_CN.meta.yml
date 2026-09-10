@@ -43,11 +43,19 @@ proxies:
   type: ss
 - cipher: aes-256-cfb
   country: 🇨CN
-  delay: 354
-  name: 306,378,435,489,519,528,537,538,566|🇨🇳 CN_06
+  name: '306,378,435,489,519,537,538,548|🇨🇳_CN_中国->🇯🇵_JP_日本 #1'
   password: 7eadc6dbe2ae
   port: 65443
-  server: 121.46.230.233
+  server: 121.46.230.137
+  skip-cert-verify: true
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  country: CN
+  name: '306,378,435,519,537,538,548|🇨🇳_CN_中国->🇰🇷_KR_韩国 #1'
+  password: 7eadc6dbe2ae
+  port: 65443
+  server: 121.46.230.138
   skip-cert-verify: true
   type: ss
   udp: true
@@ -167,17 +175,8 @@ proxies:
       Host: 120.240.55.137
     path: /hls/cctv5phd.m3u8
 - cipher: aes-256-cfb
-  name: '378,489,519,537,538,548|🇨🇳_CN_中国->🇯🇵_JP_日本 #1'
-  password: 7eadc6dbe2ae
-  port: 65443
-  server: 121.46.230.137
-  skip-cert-verify: true
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  country: 🇨CN
   delay: 969
-  name: 378,435,489,519,528,537,538,548|🇨🇳_CN_中国->🇺🇸_US_美国_2
+  name: '378,489,519,528,537,538,548|🇨🇳_CN_中国->🇺🇸_US_美国_2 #1'
   password: 7eadc6dbe2ae
   port: 65443
   server: 121.46.230.232
@@ -185,11 +184,12 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  country: CN
-  name: 378,435,537,538,548|🇨🇳_CN_中国->🇰🇷_KR_韩国
+  country: 🇨CN
+  delay: 354
+  name: '378,435,489,519,528,537,538,566|🇺🇸 美国 | USA 7 #1'
   password: 7eadc6dbe2ae
   port: 65443
-  server: 121.46.230.138
+  server: 121.46.230.233
   skip-cert-verify: true
   type: ss
   udp: true
@@ -1424,36 +1424,6 @@ proxies:
   port: 870
   server: 183.240.222.15
   type: ss
-- alterId: 2
-  cipher: auto
-  country: 🇨CN
-  delay: 2799
-  h2-opts: {}
-  http-opts: {}
-  name: 435,437,508,509,636|🇨🇳 中国 001
-  network: tcp
-  port: '30833'
-  server: v33.hdacd.com
-  servername: v33.hdacd.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-path: /
-- alterId: 2
-  cipher: auto
-  country: 🇨🇳CN
-  h2-opts: {}
-  http-opts: {}
-  name: 435,437|🇨🇳CN_34
-  network: tcp
-  port: 30835
-  server: v35.hdacd.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-path: /
 - name: 456|🇨🇳 中国 阿里云
   password: 8r<[9'l6hAO#8ZQi
   port: 443
@@ -1539,25 +1509,29 @@ proxies:
   delay: 167
   h2-opts: {}
   http-opts: {}
-  name: 489,508,509,528,581,636|🇨🇳 中国 002
+  name: 489,508,509,528,580,581,636|🇨🇳 中国 002
   network: tcp
   port: '50002'
   server: 112.132.215.108
-  servername: 112.132.215.108
+  servername: ''
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
   xudp: true
-- name: 502,548,581,717|UN【机场推荐：https://a9a.xyz】72
-  port: 52683
-  server: jp.sofast.live
+- alterId: 2
+  cipher: auto
+  delay: 2799
+  name: 508,509,636|🇨🇳 中国 001
+  network: tcp
+  port: '30833'
+  server: v33.hdacd.com
+  servername: v33.hdacd.com
   skip-cert-verify: true
   tls: false
-  type: vless
-  udp: true
-  uuid: 5aaa5259-f924-4682-a4a3-149d472a9dcc
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - alterId: 0
   cipher: auto
   name: 508,509,636|🇨🇳 中国 062
@@ -1570,10 +1544,11 @@ proxies:
   uuid: d9865d63-d95c-454b-ba07-8e88b838a801
 - alterId: 0
   cipher: auto
-  name: 508,509,636|🇨🇳 中国 063
+  name: 508,509,580,636|🇨🇳 中国 063
   network: tcp
   port: '54321'
   server: 156.226.183.181
+  servername: ''
   skip-cert-verify: true
   tls: false
   type: vmess
@@ -2404,6 +2379,21 @@ proxies:
   tls: false
   type: vmess
   uuid: a6ddfc37-05eb-11ed-af40-f23c91cfbbc9
+- name: 580|🇨🇳CN_1|368KB/s|A004-260618 01
+  password: 0wdsa_nJXEWRj9jz9J9xMgtx_n7gzfK_m8
+  port: 9080
+  server: 139.28.168.55
+  skip-cert-verify: true
+  sni: grape-honk.yyuyy.com
+  tls: false
+  type: hysteria2
+- name: 580|🇨🇳CN_2|379KB/s|A004-260618 01
+  password: 0wdsa_nJXEWRj9jz9J9xMgtx_n7gzfK_m8
+  port: 9080
+  server: 139.28.168.54
+  sni: grape-honk.yyuyy.com
+  tls: false
+  type: hysteria2
 - cipher: aes-256-cfb
   name: 585|CN_speednode_0001
   password: 7eadc6dbe2ae

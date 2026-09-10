@@ -51,19 +51,6 @@ proxies:
   port: 989
   server: 37.252.5.234
   type: ss
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '438|🇪🇪EE_1|1.8MB/s | 网盘搜宝: https:/...'
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: WWeAHWUVD-phmnjNJ823cer0c4CMIbEs08AhsuEZmDc
-    short-id: a696de84963656de
-  server: 95.85.224.51
-  servername: max.ru
-  tls: false
-  type: vless
-  uuid: 342ab7e4-5a89-0001-8809-304120d4aa83
 - name: 462|爱沙尼亚_塔林
   network: ws
   port: 2087
@@ -315,7 +302,8 @@ proxies:
   type: vless
   udp: true
   uuid: 88888888-8888-8888-8888-888888888888
-- name: '475,480|🇪🇪爱沙尼亚丨yoyapai.com #1'
+- name: '475,480,580|🇪🇪爱沙尼亚丨yoyapai.com #2'
+  network: tcp
   password: oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1
   port: 449
   server: 109.206.241.10
@@ -325,7 +313,8 @@ proxies:
   udp: true
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: '475,480|🇪🇪EE爱沙尼亚丨yoyapai.com #1'
+  name: '475,480,580|🇪🇪EE爱沙尼亚丨yoyapai.com #2'
+  network: tcp
   port: 2053
   reality-opts:
     public-key: RwtMzZtTCmy9WRq3_27xeGF8-1l_qPXRVG3yIFp-6Go
@@ -333,10 +322,59 @@ proxies:
   server: 5.175.178.43
   servername: ee-t3.vinnypuxtomoon.today
   skip-cert-verify: false
-  tls: true
+  tls: false
   type: vless
   udp: true
   uuid: 629f88a6-b20b-4489-a22f-4d8b418c0488
+- alpn:
+  - http/1.1
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 580|🇪🇪 EE丨yoyapai.com爱沙尼亚丨yoyapai....
+  network: tcp
+  port: 443
+  server: 138.124.100.128
+  servername: ee4.fast-connect-service.site
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 88888888-8888-8888-8888-888888888888
+- name: 580|🇪🇪EE_1|159KB/s|A004-260618 01
+  password: sOiWCQ2AdIV0OWNuqQVyWp4JZnRxdyLROSjX
+  port: 443
+  server: cabinet.wwwinternetvideo.click
+  sni: 127.0.0.1
+  tls: false
+  type: hysteria2
+- client-fingerprint: qq
+  flow: xtls-rprx-vision
+  name: 580|🇪🇪EE_2|325KB/s|A004-260618 01
+  network: raw
+  port: 443
+  reality-opts:
+    public-key: WWeAHWUVD-phmnjNJ823cer0c4CMIbEs08AhsuEZmDc
+    short-id: a696de84963656de
+  server: 95.85.224.51
+  servername: max.ru
+  tls: false
+  type: vless
+  uuid: 342ab7e4-5a89-0001-8809-304120d4aa83
+- name: 580|🇪🇪EE_3|267KB/s|A001-260618 01
+  password: sOiWCQ2AdIV0OWNuqQVyWp4JZnRxdyLROSjX
+  port: 443
+  server: cabinet.wwwinternetvideo.click
+  skip-cert-verify: true
+  sni: cabinet.wwwinternetvideo.click
+  tls: false
+  type: hysteria2
+- name: 580|🇪🇪EE_5|472KB/s|B007-260618 01
+  network: tcp
+  password: oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1
+  port: 449
+  server: 109.206.241.10
+  skip-cert-verify: true
+  sni: 109.206.241.10
+  type: trojan
 - name: 728|🇪🇪 爱沙尼亚1🔒
   password: 升级订阅解锁全部节点
   port: 10035
