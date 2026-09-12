@@ -38,8 +38,7 @@ proxies:
   tls: true
   type: vless
   uuid: 3c3c3969-b06a-43ff-ad1e-11621c542946
-- auth: mkL3AfdSZIpTWRB9TcWPn9vywPGN89MRHg3ToRDj
-  name: '340,476,481,495,502,514,519,551|俄罗斯 #4'
+- name: '340,472,473,474,476,481,495,502,514,519,551|俄罗斯 #4'
   password: mkL3AfdSZIpTWRB9TcWPn9vywPGN89MRHg3ToRDj
   port: 443
   server: gta.internet-card.sbs
@@ -59,14 +58,21 @@ proxies:
   tls: false
   type: hysteria2
 - client-fingerprint: chrome
+  encryption: none
   flow: xtls-rprx-vision
-  name: '340,502,514,551|🇷🇺RU_1|1.6MB/s #1'
-  port: 443
+  name: '340,489,502,519|🇷🇺RU_1|1.6MB/s #1'
+  network: tcp
+  port: '443'
+  reality-opts:
+    public-key: GKuFgxMDHNxodlhM5bVclxDtFSdb1vSadmpD7fYRERo
+    short-id: c3248f699ea5d8d0
   server: 5.35.91.96
   servername: rus1.baboon.digital
   tls: true
   type: vless
+  udp: true
   uuid: 52d1d193-7a49-4d2e-9d52-c2615704034b
+  xudp: true
 - cipher: chacha20-ietf-poly1305
   name: 356|🇷🇺1 |  5.2MB/s
   password: 0zyDRZ1XmNXaaCAN7KEA8a
@@ -310,9 +316,9 @@ proxies:
     path: /fr-unlimitxxx
 - alterId: 0
   cipher: auto
-  name: 378,494,508,509,523,524,536,537,636|🇪🇪 爱沙尼亚 002
+  name: '378,523,524,536,537|🇺RU-5.188.26.85-0778 #1'
   network: ws
-  port: '443'
+  port: 443
   server: 5.188.26.85
   servername: ''
   skip-cert-verify: false
@@ -326,9 +332,9 @@ proxies:
     path: /api/v1/gpu-stream/socket
 - alterId: 0
   cipher: auto
-  name: 378,494,508,509,536,537,636|🇷🇺 俄罗斯 019
+  name: '378,536,537|🇷🇺RU-194.226.142.120-0779 #1'
   network: ws
-  port: '443'
+  port: 443
   server: 194.226.142.120
   servername: ''
   skip-cert-verify: false
@@ -345,9 +351,9 @@ proxies:
     method: GET
     path:
     - /
-  name: 378,508,509,536,537,636|🇷🇺 俄罗斯 021
+  name: '378,536,537|🇺RU-194.87.248.27-1175 #1'
   network: http
-  port: '26743'
+  port: 26743
   server: 194.87.248.27
   servername: ''
   skip-cert-verify: false
@@ -360,9 +366,9 @@ proxies:
     method: GET
     path:
     - /
-  name: 378,508,509,536,537,636|🇷🇺 俄罗斯 022
+  name: '378,536,537|🇺RU-176.119.159.245-1193 #1'
   network: http
-  port: '37672'
+  port: 37672
   server: 176.119.159.245
   servername: ''
   skip-cert-verify: false
@@ -566,6 +572,19 @@ proxies:
   port: 444
   server: 146.185.198.44
   type: ss
+- client-fingerprint: chrome
+  name: '438|🇷🇺RU_3|1.9MB/s | 更多节点: https:/...'
+  network: xhttp
+  port: 443
+  reality-opts:
+    public-key: Rt2wltCWOxIroFggNWMudZDBJXls8DsF4icaWqxKDk8
+  server: 147.78.182.3
+  servername: www.epson.com
+  tls: false
+  type: vless
+  uuid: 8bf3e040-8ac9-5d0e-304f-9b735e145de8
+  ws-opts:
+    path: '%2F'
 - name: 460|俄罗斯_新西伯利亚
   network: ws
   port: 443
@@ -1334,20 +1353,6 @@ proxies:
     headers:
       Host: ''
     path: /
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: '472,473,474,494,502,523,524|日期：09-12 #1'
-  network: tcp
-  port: 8200
-  reality-opts:
-    public-key: 1KrzmnGnXweOpiuDle8bRNY6BPXWsD7ufzx1uFurl1c
-  server: 77.223.119.80
-  servername: ru01.arpanet-cdn.com
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: dfad3362-8534-4495-bf49-89f2ae229e7a
 - cipher: aes-256-gcm
   name: '475,480|🇷 RU羅丨yoyapai.com #1'
   password: 7e1dd4c55bf85da5
@@ -1550,19 +1555,16 @@ proxies:
     path: /v1
 - alterId: 0
   cipher: auto
-  name: '475,480,494|🔥Join+Telegram:@Farah_VPN🟣 #1597'
+  name: '475,480|🇺RU俄罗斯 #1'
   network: ws
-  port: '443'
+  port: 443
   server: renderer-stream-2-62.mirra.now
-  servername: ''
   skip-cert-verify: false
   tls: true
   type: vmess
   udp: true
   uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
   ws-opts:
-    headers:
-      Host: ''
     path: /api/v1/gpu-stream/socket
 - client-fingerprint: edge
   name: '476,481|RU(mibei77.com 米贝节点分享) #1'
@@ -1607,33 +1609,30 @@ proxies:
     headers:
       Host: rutube.hampals.net
     path: /rutube
-- name: 489|A🟢🇷🇺[🎪✨📦]_dokng.com_a3d6297e
-  port: 8095
-  server: 45.8.88.156
-  type: http
-- name: 489|A🟢🇷🇺[🎪✨📦🔍]_dokng.com_bfb33a78
-  port: 8095
-  server: 194.61.232.13
-  type: http
-- name: 489|A🟢🇷🇺[✨📦🔍]_dokng.com_965e2a11
-  port: 4080
-  server: 185.21.156.73
-  type: http
-- name: 489|A🟢🇷🇺[🎪✨📦🔍]_dokng.com_9af66ad2
-  port: 5050
-  server: 45.159.0.194
-  type: http
-- name: 489|A🟢🇷🇺[🎪✨📦]_dokng.com_a2d8e877
+- name: 489|A🟢🇷🇺[🎪📦🔍]_dokng.com_a2d8e877
   port: 8095
   server: 193.19.190.59
   type: http
-- name: 489|A🟢🇷🇺_dokng.com_eff614d6
-  password: None
-  port: 1082
-  server: 147.45.221.112
-  type: socks5
-  udp: true
-  username: null
+- name: 489|A🟢🇷🇺[🎪✨📦🔍]_dokng.com_a3d6297e
+  port: 8095
+  server: 45.8.88.156
+  type: http
+- name: 489|A🟢🇷🇺[📦]_dokng.com_bfb33a78
+  port: 8095
+  server: 194.61.232.13
+  type: http
+- name: 489|A🟢🇷🇺[🎪📦]_dokng.com_9af66ad2
+  port: 5050
+  server: 45.159.0.194
+  type: http
+- name: 489|C🟠🇷🇺[📺🎪✨🎞️]_dokng.com_da465a9c
+  port: 49156
+  server: 45.132.252.25
+  type: http
+- name: 489|A🟢🇷🇺[✨🔍]_dokng.com_965e2a11
+  port: 4080
+  server: 185.21.156.73
+  type: http
 - client-fingerprint: chrome
   name: '502,717|RU【机场推荐：https://a9a.xyz】17 #1'
   network: ws
@@ -1656,63 +1655,6 @@ proxies:
   uuid: fb67fd37-8d41-43a9-a093-c0b807fc5299
   ws-opts:
     path: '%2Fws'
-- client-fingerprint: chrome
-  name: '508,509|俄罗斯 005 #1'
-  network: ws
-  port: 2053
-  server: 89.23.106.39
-  servername: sni.111000.indevs.in
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.111000.indevs.in
-    path: /?ed=2560
-- client-fingerprint: chrome
-  name: '508,509|俄罗斯 008 #1'
-  network: xhttp
-  port: 443
-  server: 78.24.92.66
-  servername: lt65.cdnfern.org
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: a4fee7ea-cb5b-47bf-8422-41a03fdfcf5e
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '508,509|俄罗斯 013 #1'
-  network: tcp
-  port: 52006
-  server: 94.26.249.216
-  servername: clode.fastaichat.ru
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: e76dc9ca-b09f-07d0-bd4f-316ee0dce041
-- client-fingerprint: chrome
-  name: '508,509|俄罗斯 017 #1'
-  network: ws
-  port: 2087
-  server: 194.76.18.126
-  servername: probabblynot.fazelextremeisreal.com
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 88888888-8888-8888-8888-888888888888
-  ws-opts:
-    headers:
-      Host: probabblynot.fazelextremeisreal.com
-    path: /
 - alterId: 0
   cipher: auto
   name: '513,517|2|🇷🇺_RU_俄罗斯联邦 #2'
@@ -1741,6 +1683,34 @@ proxies:
   server: 185.158.155.33
   tfo: false
   type: ss
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '523,524|🇷🇺_俄罗斯_21 #1'
+  port: 443
+  reality-opts:
+    public-key: Nb9IwEEhUHEbHSc6e5uYTjxDgN4ZExhDckM3OgYhj2o
+    short-id: 52ccb3687fe0b7ec
+  server: 109.68.212.173
+  servername: api8.eaglors.com
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 238e492b-bc20-4380-92b6-135d39112ca4
+- client-fingerprint: qq
+  flow: xtls-rprx-vision
+  name: '523,524|🇷🇺_俄罗斯_33 #1'
+  port: 443
+  reality-opts:
+    public-key: Nb9IwEEhUHEbHSc6e5uYTjxDgN4ZExhDckM3OgYhj2o
+    short-id: 52ccb3687fe0b7ec
+  server: 200.165.235.78
+  servername: api8.eaglors.com
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 238e492b-bc20-4380-92b6-135d39112ca4
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
   name: '523,524|🇷🇺_俄罗斯_18 #1'
@@ -1755,9 +1725,24 @@ proxies:
   type: vless
   udp: true
   uuid: 92089155-6602-4122-86d4-fe6de20e8c4d
-- client-fingerprint: firefox
+- client-fingerprint: qq
   flow: xtls-rprx-vision
-  name: '523,524|🇷🇺_俄罗斯_44 #1'
+  name: '523,524|🇷🇺_俄罗斯_37 #1'
+  port: 443
+  reality-opts:
+    public-key: Nb9IwEEhUHEbHSc6e5uYTjxDgN4ZExhDckM3OgYhj2o
+    short-id: 52ccb3687fe0b7ec
+  server: 188.225.45.152
+  servername: api8.eaglors.com
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 238e492b-bc20-4380-92b6-135d39112ca4
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '523,524,566|🇩🇪 德国 | DEU 3 #1'
+  network: xhttp
   port: 443
   reality-opts:
     public-key: 74pbcWZE8Ne6iYrsl_31qy_pWKRrILQiAWfZs2IuGR0
@@ -1769,6 +1754,11 @@ proxies:
   type: vless
   udp: true
   uuid: d73e3cdc-a80b-4e73-a11b-cc467d7a84f8
+  xhttp-opts:
+    mode: auto
+    path: /static/071af6
+    uplink-data-placement: body
+    uplink-http-method: POST
 - name: 533|RU俄罗斯(mibei77.com 米贝节点分享)
   network: ws
   port: 2096
