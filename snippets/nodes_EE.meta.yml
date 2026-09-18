@@ -51,6 +51,22 @@ proxies:
   port: 989
   server: 37.252.5.234
   type: ss
+- client-fingerprint: edge
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 438,519|🇪🇪EE_1|2.2MB/s
+  network: tcp
+  port: '443'
+  reality-opts:
+    public-key: SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I
+    short-id: ''
+  server: est1313.ggisopi.su
+  servername: est1313.ggisopi.su
+  tls: true
+  type: vless
+  udp: true
+  uuid: d0f0a880-0df1-48c9-bdf1-5669fb9483ce
+  xudp: true
 - name: 462|爱沙尼亚_塔林
   network: ws
   port: 2087
@@ -324,41 +340,52 @@ proxies:
   type: vless
   udp: true
   uuid: 629f88a6-b20b-4489-a22f-4d8b418c0488
-- name: '508,509|爱沙尼亚 001 #1'
-  network: tcp
-  port: 443
-  server: 85.9.194.75
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 88888888-8888-8888-8888-888888888888
 - client-fingerprint: firefox
-  grpc-opts:
-    grpc-service-name: 9d30d49278
-  name: 519|🇪🇪_EE_爱沙尼亚
-  network: grpc
-  port: 8443
-  reality-opts:
-    public-key: s2uiu3GQA2SlZzsr86Z5Dav97eAFTPf7Nvr-zqzzRgg
-    short-id: 72ccd4a7563c2953
-  server: 94.183.170.147
-  servername: www.cloudflare.com
-  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  name: '502,551|🇪🇪EE_1|1.6MB/s #1'
+  port: 20443
+  server: 89.106.88.6
+  servername: dest1.cdn-update.rutube.info
   tls: true
   type: vless
-  udp: true
-  uuid: 5edbcb44-8d04-4fa7-a587-bc5d60c24ca1
+  uuid: ad297a2b-ae17-4d2d-8fce-e2eafb89b145
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 551|🇪🇪EE_1|2.1MB/s
+  name: 514|🇪🇪EE_1|2.1MB/s
   port: 443
   server: ee.sharkygames.fun
   servername: ee.sharkygames.fun
   tls: true
   type: vless
   uuid: 6e8b8adc-8782-4f42-b260-81b03ab5fbb2
+- alpn:
+  - h3
+  - h2
+  - http/1.1
+  name: 519|🇪🇪 爱沙尼亚 | EST
+  password: eZwp12tXna8-s_ysszXnXq25rv1c8w
+  port: 8443
+  server: ee.cheapgo.cc
+  skip-cert-verify: true
+  sni: ee.cheapgo.cc
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: grpc
+  name: '566|🇪🇪 爱沙尼亚 | EST #1'
+  network: grpc
+  port: 443
+  reality-opts:
+    public-key: ivgTfLR13A6xBsicIA28OPoav2tXlsstTTmGuETfnSk
+    short-id: 5c766813929a1fdd
+  server: 91.215.40.6
+  servername: id.dframe.app
+  tls: true
+  type: vless
+  udp: true
+  uuid: e3c3b722-1264-4cdc-a97c-b0a1bb73cd67
 - name: 728|🇪🇪 爱沙尼亚1🔒
   password: 升级订阅解锁全部节点
   port: 10035
