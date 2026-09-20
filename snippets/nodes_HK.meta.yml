@@ -838,16 +838,21 @@ proxies:
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- alterId: 2
+- alpn:
+  - ''
+  alterId: 2
   cipher: auto
-  name: '306,340,437,454,459,494,502,514,519,551,557,580,581|🇭🇰_HK_中国香港 #7'
+  name: '306,340,437,454,459,489,502,514,519,551,557,581|🇭🇰_HK_中国香港 #6'
   network: tcp
   port: 30807
   server: v10.hdacd.com
   servername: ''
+  skip-cert-verify: false
   tls: false
   type: vmess
+  udp: true
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  xudp: true
 - cipher: chacha20-ietf-poly1305
   name: 356|🇭🇰1 |  3.5MB/s
   password: WfmxKX2FBJRU0Ie9VLIYDL
@@ -1802,7 +1807,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 378,494,536,537,538|🇭🇰HK-47.244.120.197-0214 | 0.0...
+  name: 378,536,537,538|🇭🇰HK-47.244.120.197-0214 | 0.0...
   network: ws
   port: 36703
   server: 47.244.120.197
@@ -1815,9 +1820,9 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 378,494,536,537,538,580|未知 VMESS-1079 | free-nodes
+  name: 378,536,537,538|🇭🇰HK-156.245.232.239-0169 | 0....
   network: ws
-  port: '35043'
+  port: 35043
   server: 156.245.232.239
   servername: ''
   skip-cert-verify: false
@@ -1825,8 +1830,6 @@ proxies:
   type: vmess
   uuid: b15e481d-17e4-41a8-84c2-23d4f0514d9a
   ws-opts:
-    headers:
-      Host: ''
     path: /
 - cipher: chacha20-ietf
   name: 378,537,538|🇭🇰HK-103.149.182.79-0161 | 0.0...
@@ -1862,7 +1865,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 378,494,508,509,536,537,636|🇨🇳 中国 004
+  name: 378,508,509,536,537,636|🇨🇳 中国 004
   network: ws
   port: '8080'
   server: yh1.dtku41.xyz
@@ -1877,7 +1880,7 @@ proxies:
     path: 34c0bb5e-c120-432d-9c58-bd7d82c7397b-vm
 - alterId: 0
   cipher: auto
-  name: 378,494,508,509,536,537,636|🇨🇳 中国 005
+  name: 378,508,509,536,537,636|🇨🇳 中国 005
   network: ws
   port: '8080'
   server: yh2.dtku41.xyz
@@ -2117,7 +2120,7 @@ proxies:
   uuid: 318b3dd1-09cf-4980-81ed-6cf689e5825a
 - alterId: 0
   cipher: auto
-  name: 378,494,508,509,536,537,580,636|🇨🇳 中国 037
+  name: 378,508,509,536,537,636|🇨🇳 中国 037
   network: ws
   port: '443'
   server: n1747624260.4u9ma.icu
@@ -2898,7 +2901,7 @@ proxies:
   server: api.meituan88.com
   type: ssr
 - cipher: chacha20-ietf
-  name: '378,537|🇭🇰HK-43.255.119.28-5327 #1'
+  name: '378,489,537|🇭🇰HK-43.255.119.28-5327 #1'
   obfs: tls1.2_ticket_auth
   obfs-param: 33f313723.douyin.com
   password: di15PV
@@ -2969,7 +2972,7 @@ proxies:
   type: ssr
 - alterId: 0
   cipher: auto
-  name: '378,494,536,537|🇭🇰HK-47.244.120.197-5337 #1'
+  name: '378,536,537|🇭🇰HK-47.244.120.197-5337 #1'
   network: ws
   port: 36703
   server: 47.244.120.197
@@ -2982,7 +2985,7 @@ proxies:
     path: /arki?ed=2048
 - alterId: 0
   cipher: auto
-  name: '378,494,536,537|🇰HK-47.244.120.197-5338 #1'
+  name: '378,536,537|🇰HK-47.244.120.197-5338 #1'
   network: ws
   port: 44867
   server: 47.244.120.197
@@ -3121,54 +3124,45 @@ proxies:
   skip-cert-verify: false
   sni: telewebion.com
   type: trojan
-- name: 438,580|香港 01
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  port: 443
-  server: 202.146.222.29
-  skip-cert-verify: true
-  sni: www.bing.com
+- alterId: 0
+  cipher: auto
+  name: 437|🇭🇰HK_66
+  network: ws
+  port: 44867
+  server: 47.244.120.197
   tls: false
-  type: hysteria2
-- name: '438|🇭🇰HK_3|2.1MB/s | 网盘搜宝: https:/...'
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  type: vmess
+  uuid: 845e6b08-2919-4290-ade0-5dc7dcea59ca
+  ws-opts:
+    headers:
+      Host: ''
+    path: /arki
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '438|🇭🇰HK_1|1.6MB/s | 更多节点: https:/...'
+  network: tcp
   port: 443
-  server: 202.146.222.29
-  skip-cert-verify: true
-  sni: https%3A%2F%2Ft.me%2Fwangcai2%C3%B0%C2%9F%C2%87
+  reality-opts:
+    public-key: TP_bpIPUtjdxxGA9j7mpsHtSDfM2HMSZFNWW9MtDPT0
+    short-id: 14156e3ac23212cc
+  server: vj37-1936vtw.fincore.top
+  servername: www.bing.com
   tls: false
-  type: hysteria2
-- name: 438,580|香港 04
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  type: vless
+  uuid: 5e8e81ac-a1c4-4543-b81e-651bf9872b54
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '438|🇭🇰HK_2|1.8MB/s | 福利姬: https://...'
+  network: tcp
   port: 443
-  server: 202.146.222.29
-  skip-cert-verify: true
-  sni: t.me
+  reality-opts:
+    public-key: TP_bpIPUtjdxxGA9j7mpsHtSDfM2HMSZFNWW9MtDPT0
+    short-id: 14156e3ac23212cc
+  server: 162.128.157.164
+  servername: www.bing.com
   tls: false
-  type: hysteria2
-- name: '438|🇭🇰HK_5|2.3MB/s | 福利姬: https://...'
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  port: 443
-  server: 202.146.222.89
-  skip-cert-verify: true
-  sni: https%3A%2F%2Ft.me%2Fclashv8
-  tls: false
-  type: hysteria2
-- name: '438|🇭🇰HK_6|2.3MB/s | 网盘搜宝: https:/...'
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  port: 443
-  server: 202.146.222.174
-  skip-cert-verify: true
-  sni: https%3A%2F%2Ft.me%2Fwangcai2
-  tls: false
-  type: hysteria2
-- name: 438,580|香港 08
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  port: 443
-  server: 202.146.222.89
-  skip-cert-verify: true
-  sni: https%253a%252f%252ft.me%252fclashv8%25f0%259f%2587%25a8%25f0%259f%2587%25b3
-  tls: false
-  type: hysteria2
+  type: vless
+  uuid: 5e8e81ac-a1c4-4543-b81e-651bf9872b54
 - name: 453|🇭🇰 香港4|@stairnode
   password: 253bc477d4e43c209f2d427272968280
   port: 4419
@@ -3835,8 +3829,7 @@ proxies:
   uuid: bee21918-0933-430c-904b-c941b92256ba
   ws-opts:
     path: /v1
-- name: '475,480,580|🇭🇰香港丨yoyapai.com #3'
-  network: tcp
+- name: '475,480|🇭🇰香港丨yoyapai.com_1 #1'
   port: 43630
   server: 47.82.120.47
   skip-cert-verify: false
@@ -3846,8 +3839,7 @@ proxies:
   uuid: 01a95af3-a2f6-453e-9f88-b2fc011627cc
 - client-fingerprint: qq
   flow: xtls-rprx-vision
-  name: '475,480,580|🇭🇰HK香港丨yoyapai.com #8'
-  network: tcp
+  name: '475,480|🇭🇰HK香港丨yoyapai.com_7 #1'
   port: 13443
   reality-opts:
     public-key: gc9oXe37KCCm3J1dJ03wdGsnxPBdeEkRPOvl_t-vfVM
@@ -3855,13 +3847,10 @@ proxies:
   server: 114.29.238.251
   servername: auto.cendora.ru
   skip-cert-verify: false
-  tls: false
+  tls: true
   type: vless
   udp: true
   uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
-  ws-opts:
-    headers:
-      Host: auto.cendora.ru
 - alterId: 0
   cipher: auto
   name: '475,480|🇰HK香港丨yoyapai.com_8 #1'
@@ -3874,11 +3863,10 @@ proxies:
   uuid: 59c06976-3009-48d5-89f3-bd94d4a120a0
 - alterId: 0
   cipher: auto
-  name: 475,480,494,580|未知 VMESS-1494 | free-nodes
+  name: '475,480|🇭🇰HK香港丨yoyapai.com_9 #1'
   network: ws
-  port: '443'
+  port: 443
   server: u2frxj0g13vdi0wo.v.3dns.vip
-  servername: ''
   skip-cert-verify: false
   tls: true
   type: vmess
@@ -3960,86 +3948,27 @@ proxies:
     headers:
       Host: feixiang1981.ccwu.cc
     path: /
-- name: 489|D🔴🇭🇰hos[📺🎭🎪]_dokng.com_054bd55...
-  port: 10808
-  server: 123.58.219.171
-  type: socks5
-- client-fingerprint: chrome
-  ech-opts:
-    enable: true
-    query-server-name: cloudflare-ech.com
-  name: 489|D🔴🇭🇰hos[🎬🤖📺🎭]_dokng.com_d31aa2...
-  network: ws
-  port: 443
-  server: 122.10.119.252
-  servername: cdn8848.776676.xyz
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: cdn8848.776676.xyz
-    path: /photos/avatar/redirect?ed=2560
-- name: 489|A🟢🇭🇰res[📺🎪🎞️️]_dokng.com_7db53...
-  password: Og==
-  port: 1080
-  server: 103.210.161.8
-  type: socks5
-  udp: true
-  username: Og==
-- name: 489|C🟠🇭🇰hos[🎬📺🎭📦]_dokng.com_da7c41...
+- cipher: chacha20-ietf
+  name: 489|C🟠🇭🇰hos[🎬📺🎭]_dokng.com_e78e4a8...
+  obfs: plain
+  obfs-param: 33f313723.douyin.com
+  password: di15PV
+  port: 7007
+  protocol: auth_aes128_md5
+  protocol-param: 313723:dCwrni
+  server: api.meituan88.com
+  type: ssr
+- name: 489|C🟠🇭🇰hos[📺🎭🎪✨]_dokng.com_da7c41...
   password: admin
   port: 1080
   server: 47.239.116.165
   type: socks5
   username: admin
-- name: 489|C🟠🇭🇰hos_dokng.com_db363b3a
-  password: admin
-  port: 8899
-  server: 47.242.19.215
-  skip-cert-verify: true
-  type: socks5
-  username: admin
-- name: 489|D🔴🇭🇰hos[🎬📺🎭🎪]_dokng.com_de4eaa...
-  port: 443
-  server: fan.240104.xyz
-  skip-cert-verify: true
-  sni: fan.240104.xyz
-  tls: true
-  type: http
-- fingerprint: ''
-  name: 489|A🟢🇭🇰res[🎬🤖📺🎪]_dokng.com_218ee7...
-  password: 9sK2mP8xQ7vL3nZ6
-  port: 443
-  server: ac7548f3ebe045b39a90288ff1e97528.pnuqcnp.cn
-  skip-cert-verify: true
-  sni: ac7548f3ebe045b39a90288ff1e97528.lwdnxf.cn
-  type: anytls
-  udp: true
-  username: 9sK2mP8xQ7vL3nZ6
 - client-fingerprint: chrome
   ech-opts:
     enable: true
     query-server-name: cloudflare-ech.com
-  name: 489|D🔴🇭🇰hos[🎬🤖📺🎭]_dokng.com_ea1b7f...
-  network: ws
-  port: 443
-  server: 160.30.54.63
-  servername: cdn8848.776676.xyz
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: cdn8848.776676.xyz
-    path: /channel?ed=2560
-- client-fingerprint: chrome
-  ech-opts:
-    enable: true
-    query-server-name: cloudflare-ech.com
-  name: 489|D🔴🇭🇰hos[🤖📺🎭🎪]_dokng.com_d5c5b4...
+  name: 489|D🔴🇭🇰hos[🎬🤖📺🎭]_dokng.com_d5c5b4...
   network: ws
   port: 8581
   server: 23.249.18.144
@@ -4052,6 +3981,100 @@ proxies:
     headers:
       Host: cdn8848.776676.xyz
     path: /channels/act?ed=2560
+- name: 489|C🟠🇭🇰hos[🎬📺🎭🎪]_dokng.com_56007c...
+  password: dCwrni
+  port: 7008
+  server: api.meituan88.com
+  skip-cert-verify: true
+  sni: globalnetworktraffic.com
+  type: anytls
+  udp: true
+- client-fingerprint: chrome
+  ech-opts:
+    enable: true
+    query-server-name: cloudflare-ech.com
+  name: '489,523,524|🇻🇳_越南_300 #1'
+  network: ws
+  port: 443
+  server: 160.30.54.63
+  servername: cdn8848.776676.xyz
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: cdn8848.776676.xyz
+    path: /channel?ed=2560
+- auth: 8fa4bea0-8703-11ef-83cc-f23c913c8d2b
+  name: 489|A🟢🇭🇰res[🎬📺🎭🎪]_dokng.com_6f412a...
+  password: 8fa4bea0-8703-11ef-83cc-f23c913c8d2b
+  port: 443
+  server: db1b2f3b-tly2o0-tn3jhp-1qthu.nw4.hyhuawei.com
+  skip-cert-verify: true
+  sni: db1b2f3b-tly2o0-tn3jhp-1qthu.nw4.hyhuawei.com
+  type: hysteria2
+- fingerprint: ''
+  name: 489|A🟢🇭🇰res[🎬🤖📺🎭]_dokng.com_218ee7...
+  password: 9sK2mP8xQ7vL3nZ6
+  port: 443
+  server: ac7548f3ebe045b39a90288ff1e97528.pnuqcnp.cn
+  skip-cert-verify: true
+  sni: ac7548f3ebe045b39a90288ff1e97528.lwdnxf.cn
+  type: anytls
+  udp: true
+  username: 9sK2mP8xQ7vL3nZ6
+- name: 489|A🟢🇭🇰res[📺🎪✨🎞️]_dokng.com_d5e42...
+  password: T2c9PTpPZz09
+  port: 1080
+  server: 103.210.161.8
+  type: socks5
+  udp: true
+  username: T2c9PTpPZz09
+- client-fingerprint: chrome
+  ech-opts:
+    enable: true
+    query-server-name: cloudflare-ech.com
+  name: 489|D🔴🇭🇰hos[🎬🤖📺🎭]_dokng.com_28b24b...
+  network: ws
+  port: 443
+  server: 109.66.88.158
+  servername: cdn8848.776676.xyz
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: cdn8848.776676.xyz
+    path: /details?ed=2560
+- name: 489|C🟠🇭🇰hos[📺️🔍]_dokng.com_db363b3...
+  password: admin
+  port: 8899
+  server: 47.242.19.215
+  skip-cert-verify: true
+  type: socks5
+  username: admin
+- name: 489|C🟠🇭🇰hos[📺]_dokng.com_099454ad
+  password: '!!str 111'
+  port: 11211
+  server: 47.243.173.50
+  skip-cert-verify: true
+  type: socks5
+  username: '111'
+- name: 489|D🔴🇭🇰hos[🎬📺🎭🎪]_dokng.com_d85a93...
+  password: None
+  port: 443
+  server: fan.240104.xyz
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: null
+- name: 489|D🔴🇭🇰hos_dokng.com_054bd55d
+  port: 10808
+  server: 123.58.219.171
+  type: socks5
 - client-fingerprint: chrome
   ech-opts:
     enable: true
@@ -4073,10 +4096,10 @@ proxies:
   ech-opts:
     enable: true
     query-server-name: cloudflare-ech.com
-  name: 489|D🔴🇭🇰hos[🎬🤖📺🎭]_dokng.com_28b24b...
+  name: 489|D🔴🇭🇰hos[🎬📺🎭📦]_dokng.com_d31aa2...
   network: ws
   port: 443
-  server: 109.66.88.158
+  server: 122.10.119.252
   servername: cdn8848.776676.xyz
   skip-cert-verify: true
   tls: true
@@ -4085,24 +4108,7 @@ proxies:
   ws-opts:
     headers:
       Host: cdn8848.776676.xyz
-    path: /details?ed=2560
-- client-fingerprint: chrome
-  ech-opts:
-    enable: true
-    query-server-name: cloudflare-ech.com
-  name: 489|D🔴🇭🇰hos_dokng.com_44bbccbe
-  network: ws
-  port: 40649
-  server: 185.155.235.35
-  servername: cdn8848.776676.xyz
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: cdn8848.776676.xyz
-    path: /clip/tech/vod?ed=2560
+    path: /photos/avatar/redirect?ed=2560
 - client-fingerprint: chrome
   name: '513,517|15|🇭🇰 香港|@ripaojiedian #1'
   network: ws
@@ -4164,15 +4170,6 @@ proxies:
   server: hk02.x.quickcht3.club
   tfo: false
   type: ss
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 514|🇭🇰HK_2|4.3MB/s
-  port: 443
-  server: hk3.miyazono-kaori.com
-  servername: hk4e-launcher-static.hoyoverse.com
-  tls: true
-  type: vless
-  uuid: c43389cf-4364-4bf3-8ee2-6ba81a9104f8
 - cipher: rc4-md5
   client-fingerprint: chrome
   name: '517|15|🇭🇰 香港3|@ripaojiedian #1'
@@ -4213,35 +4210,6 @@ proxies:
   server: qh62onjn.slashdevslashnetslashtun.net
   tfo: false
   type: ss
-- client-fingerprint: chrome
-  name: '523,524|🇭🇰_香港_9 #1'
-  port: 443
-  reality-opts:
-    public-key: tSBJnEt6E1dy6UgX9gX5wUfvZ2KAXjGWVKsEq886OWM
-    short-id: 56d4e7ae4f86fa39
-  server: 35.220.207.209
-  servername: www.cloudflare.com
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 90153538-ef08-4942-b8e1-41e7c523e659
-- alterId: 0
-  cipher: auto
-  name: 523,524,580|未知 VMESS-1149 | free-nodes
-  network: ws
-  port: '443'
-  server: 47.83.198.38
-  servername: wwafj5lhl6bi8au9.v.3dns.vip
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 88888888-8888-8888-8888-888888888888
-  ws-opts:
-    headers:
-      Host: wwafj5lhl6bi8au9.v.3dns.vip
-    path: /ws-vmess
 - name: 533|HK香港(mibei77.com 米贝节点分享)
   network: ws
   port: 18622
@@ -4352,7 +4320,7 @@ proxies:
   type: trojan
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 548|🇭🇰 香港_6CTQUV
+  name: 548|🇭🇰 香港_O34DV2
   network: tcp
   port: 443
   reality-opts:
@@ -4367,24 +4335,8 @@ proxies:
   udp: true
   uuid: 8952ecb7-4b85-4aa5-8b22-adc9aa4d3591
 - client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 548,580|香港 09
-  network: tcp
-  port: 13779
-  reality-opts:
-    public-key: llTyp52oRXnJmQ3I9UUrmlwbMA79B-wLCRHCu-8dLGg
-    short-id: af1bdd293097b664
-  server: 47.239.6.251
-  servername: tesla.com
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: 928e6cce-8ced-4243-9a48-a6642edd09b0
-- client-fingerprint: chrome
-  name: 548,580|未知 VLESS-849 | free-nodes
-  network: tcp
+  name: 548|🇭🇰 香港_G3K7HF
+  network: raw
   port: 13779
   reality-opts:
     public-key: llTyp52oRXnJmQ3I9UUrmlwbMA79B-wLCRHCu-8dLGg
@@ -4393,7 +4345,7 @@ proxies:
   servername: tesla.com
   skip-cert-verify: false
   tfo: false
-  tls: false
+  tls: true
   type: vless
   udp: true
   uuid: 928e6cce-8ced-4243-9a48-a6642edd09b0
@@ -4627,6 +4579,20 @@ proxies:
   type: hysteria
   udp: true
   up: 1000 Mbps
+- client-fingerprint: random
+  name: 566|🇭🇰 香港 | HKG
+  network: ws
+  port: 443
+  server: 149.118.144.163
+  servername: free.cndyw.ggff.net
+  tls: true
+  type: vless
+  udp: true
+  uuid: 04c808e2-0b59-47b0-a54b-32fc7ef1c902
+  ws-opts:
+    headers:
+      Host: free.cndyw.ggff.net
+    path: pyip=bpb.yousef.isegaro.com
 - alterId: 0
   cipher: auto
   name: 574|HK
@@ -4640,6 +4606,18 @@ proxies:
   ws-opts:
     headers:
       host: lcv8v9l7OyamxxfZ.v.3dns.vip
+    path: /ws-vmess
+- alterId: 0
+  cipher: auto
+  name: 574|HK2
+  network: ws
+  port: 443
+  server: 93ucrn4i0pffuabk.v.3dns.vip
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 88888888-8888-8888-8888-888888888888
+  ws-opts:
     path: /ws-vmess
 - alterId: 0
   cipher: auto
@@ -4657,6 +4635,16 @@ proxies:
     path: /ws?ed=2048
 - alterId: 0
   cipher: auto
+  name: 574|HK4
+  network: tcp
+  port: 16115
+  server: zfd-hkv2.kunlun01dns.com
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
+- alterId: 0
+  cipher: auto
   name: 574|HK5
   network: ws
   port: 443
@@ -4669,6 +4657,16 @@ proxies:
     headers:
       host: m01c7b2z26dtqgee.v.3dns.vip
     path: /ws-vmess
+- alterId: 0
+  cipher: chacha20-poly1305
+  name: 574|HK6
+  network: tcp
+  port: 9527
+  server: 43.132.192.16
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: ae862e1d-3b8c-443a-027b-37c6c69ef43c
 - alterId: 0
   cipher: auto
   name: 574|HK7
@@ -4683,6 +4681,28 @@ proxies:
     headers:
       host: 01.appleid.bf
     path: /ws?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 574|HK8
+  network: tcp
+  port: 9039
+  server: select-sg.ddnskunlun.com
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 4fa65799-694e-316b-b2d3-30c793777cbf
+- alterId: 0
+  cipher: auto
+  name: 574|HK9
+  network: ws
+  port: 443
+  server: vah4urdzl3jdx5r2.v.3dns.vip
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 88888888-8888-8888-8888-888888888888
+  ws-opts:
+    path: /ws-vmess
 - alterId: 0
   cipher: auto
   name: 574|HK10
@@ -4709,6 +4729,80 @@ proxies:
     path: /ws-vmess
 - alterId: 0
   cipher: auto
+  name: 574|HK12
+  network: tcp
+  port: 55314
+  server: 103.240.197.112
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: bdb68629-1c6a-4eed-8083-7d4379a2dd52
+- alterId: 0
+  cipher: auto
+  name: 574|HK13
+  network: ws
+  port: 443
+  server: lcv8v9l7oyamxxfz.v.3dns.vip
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 88888888-8888-8888-8888-888888888888
+  ws-opts:
+    path: /ws-vmess
+- alterId: 0
+  cipher: auto
+  name: 574|HK14 27.5KB/s
+  network: tcp
+  port: 52080
+  server: 154.37.223.56
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: f1ac5c82-00a4-400b-bb20-530c91b7c5bb
+- alterId: 0
+  cipher: auto
+  name: 574|HK15
+  network: ws
+  port: 443
+  server: i2psm3knof5qjjix.v.3dns.vip
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 88888888-8888-8888-8888-888888888888
+  ws-opts:
+    headers:
+      host: I2PSm3Knof5qjjix.v.3dns.vip
+    path: /ws-vmess
+- alterId: 0
+  cipher: auto
+  name: 574|HK16
+  network: ws
+  port: 443
+  server: ex1ogt73nzpqkac2.v.3dns.vip
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 88888888-8888-8888-8888-888888888888
+  ws-opts:
+    headers:
+      host: ex1ogt73nzpqkac2.v.3dns.vip
+    path: /ws-vmess
+- alterId: 0
+  cipher: auto
+  name: 574|HK17
+  network: ws
+  port: 443
+  server: qtkdr8jxe3wefxjm.v.3dns.vip
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 88888888-8888-8888-8888-888888888888
+  ws-opts:
+    headers:
+      host: qTKDR8jXE3wEFxJM.v.3dns.vip
+    path: /ws-vmess
+- alterId: 0
+  cipher: auto
   name: 577|澳门NO.2
   network: tcp
   port: '45051'
@@ -4725,225 +4819,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 070f662b-3c75-4e7f-8381-287d6d8f45b2
-- name: '580|US美国(mibei77.com 米贝节点分享) #126'
-  network: ws
-  password: humanity
-  port: 443
-  server: 104.16.174.44
-  skip-cert-verify: false
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    path: '%2Fassignment'
-- name: '580|🇭🇰HK香港丨yoyapai.com #1'
-  network: ws
-  port: 80
-  server: 91.193.58.243
-  tls: false
-  type: vless
-  uuid: 26beb784-a664-4c3e-becf-0f0c12568b62
-  ws-opts:
-    headers:
-      Host: twilight-poetry-2bfe.218-699.workers.dev
-    path: '%2Fpyip%3DTelegram-WangCai2%F0%9F%87%A8%F0%9F%87%B3'
-- name: '580|🇭🇰HK香港丨yoyapai.com #2'
-  network: ws
-  port: 80
-  server: 91.193.58.246
-  tls: false
-  type: vless
-  uuid: 26beb784-a664-4c3e-becf-0f0c12568b62
-  ws-opts:
-    headers:
-      Host: twilight-poetry-2bfe.218-699.workers.dev
-    path: '%2Fpyip%3DTelegram-WangCai2%F0%9F%87%A8%F0%9F%87%B3'
-- name: '580|🇭🇰HK香港丨yoyapai.com #3'
-  network: ws
-  port: 80
-  server: 91.193.58.209
-  tls: false
-  type: vless
-  uuid: 26beb784-a664-4c3e-becf-0f0c12568b62
-  ws-opts:
-    headers:
-      Host: twilight-poetry-2bfe.218-699.workers.dev
-    path: '%2Fpyip%3DTelegram-WangCai2%F0%9F%87%A8%F0%9F%87%B3'
-- name: '580|🇭🇰HK香港丨yoyapai.com #4'
-  network: ws
-  port: 80
-  server: 91.193.58.197
-  tls: false
-  type: vless
-  uuid: 26beb784-a664-4c3e-becf-0f0c12568b62
-  ws-opts:
-    headers:
-      Host: twilight-poetry-2bfe.218-699.workers.dev
-    path: '%2Fpyip%3DTelegram-WangCai2%F0%9F%87%A8%F0%9F%87%B3'
-- name: '580|🇭🇰HK香港丨yoyapai.com #5'
-  network: ws
-  port: 80
-  server: 91.193.58.179
-  tls: false
-  type: vless
-  uuid: 26beb784-a664-4c3e-becf-0f0c12568b62
-  ws-opts:
-    headers:
-      Host: twilight-poetry-2bfe.218-699.workers.dev
-    path: '%2Fpyip%3DTelegram-WangCai2%F0%9F%87%A8%F0%9F%87%B3'
-- name: 580|🇭🇰HK香港節點丨yoyapai.com
-  network: ws
-  port: 443
-  server: 91.193.58.93
-  servername: jamph131-1228.pages.dev
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 9419f782-b18e-4c4b-ae95-a7a279fd021f
-  ws-opts:
-    headers:
-      Host: jamph131-1228.pages.dev
-    path: Telegram-WangCai2%F0%9F%87%A8%F0%9F%87%B3
-- name: '580|🇭🇰HK香港節點丨yoyapai.com #1'
-  network: ws
-  port: 443
-  server: 91.193.58.195
-  servername: jamph131-1228.pages.dev
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 9419f782-b18e-4c4b-ae95-a7a279fd021f
-  ws-opts:
-    headers:
-      Host: jamph131-1228.pages.dev
-    path: Telegram-WangCai2%F0%9F%87%A8%F0%9F%87%B3
-- name: '580|🇭🇰HK香港節點丨yoyapai.com #2'
-  network: ws
-  port: 443
-  server: 91.193.58.141
-  servername: jamph131-1228.pages.dev
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 9419f782-b18e-4c4b-ae95-a7a279fd021f
-  ws-opts:
-    headers:
-      Host: jamph131-1228.pages.dev
-    path: Telegram-WangCai2%F0%9F%87%A8%F0%9F%87%B3
-- name: '580|🇭🇰HK香港節點丨yoyapai.com #3'
-  network: ws
-  port: 443
-  server: 91.193.58.117
-  servername: jamph131-1228.pages.dev
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 9419f782-b18e-4c4b-ae95-a7a279fd021f
-  ws-opts:
-    headers:
-      Host: jamph131-1228.pages.dev
-    path: Telegram-WangCai2%F0%9F%87%A8%F0%9F%87%B3
-- name: '580|🇭🇰HK香港節點丨yoyapai.com #4'
-  network: ws
-  port: 80
-  server: 91.193.58.92
-  tls: false
-  type: vless
-  uuid: f2d55510-fa3c-4e3b-adfc-2d96fa399c19
-  ws-opts:
-    headers:
-      Host: plain-darkness-90ea.259.workers.dev
-    path: '%2Fpyip%3DTelegram%F0%9F%87%A8%F0%9F%87%B3%2B%40WangCai2'
-- name: '580|🇭🇰HK香港節點丨yoyapai.com #5'
-  network: ws
-  port: 80
-  server: 91.193.58.93
-  tls: false
-  type: vless
-  uuid: f2d55510-fa3c-4e3b-adfc-2d96fa399c19
-  ws-opts:
-    headers:
-      Host: plain-darkness-90ea.259.workers.dev
-    path: '%2Fpyip%3DTelegram%F0%9F%87%A8%F0%9F%87%B3%2B%40WangCai2'
-- name: '580|🇭🇰香港丨yoyapai.com #2'
-  network: ws
-  port: 2200
-  server: 104.171.136.112
-  tls: false
-  type: vless
-  uuid: bee21918-0933-430c-904b-c941b92256ba
-  ws-opts:
-    path: '%2Fv1'
-- alterId: 0
-  cipher: auto
-  name: 580|未知 VMESS-1152 | free-nodes
-  network: tcp
-  port: '800'
-  server: 47.83.247.150
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 59c06976-3009-48d5-89f3-bd94d4a120a0
-- alpn:
-  - http/1.1
-  name: '580|HK香港(mibei77.com 米贝节点分享) #8'
-  network: ws
-  password: humanity
-  port: 443
-  server: 104.18.23.63
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    headers:
-      Host: www.ignitelimit.com
-    path: '%2Fassignment'
-- name: 580|香港 02
-  network: tcp
-  password: BxceQaOe
-  port: 443
-  server: 119.246.1.143
-  skip-cert-verify: true
-  sni: t.me%2Fripaojiedian
-  type: trojan
-- name: 580|香港 03
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  port: 443
-  server: 202.146.222.29
-  skip-cert-verify: true
-  sni: https://t.me/wangcai2
-  tls: false
-  type: hysteria2
-- name: 580|香港 05
-  network: tcp
-  password: BxceQaOe
-  port: 443
-  server: 119.246.1.143
-  skip-cert-verify: true
-  sni: 119.246.1.143
-  type: trojan
-- name: 580|香港 06
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  port: 443
-  server: 202.146.222.89
-  skip-cert-verify: true
-  sni: https://t.me/clashv8
-  tls: false
-  type: hysteria2
-- name: 580|❓Other_197|141KB/s|A004-260618...
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  port: 443
-  server: 202.146.222.174
-  skip-cert-verify: true
-  sni: https://t.me/wangcai2
-  tls: false
-  type: hysteria2
-- name: 580|香港 11
-  network: tcp
-  password: BxceQaOe
-  port: 443
-  server: 119.246.1.143
-  skip-cert-verify: true
-  sni: t.me/ripaojiedian
-  type: trojan
 - client-fingerprint: randomized
   name: 583|eooce-04-HK
   network: ws
