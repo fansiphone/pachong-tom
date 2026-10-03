@@ -15,7 +15,7 @@ proxies:
   type: vless
   uuid: 3c3c3969-b06a-43ff-ad1e-11621c542946
 - cipher: chacha20-ietf-poly1305
-  name: '306,378,537|🇺RU-90.156.203.62-1982 #1'
+  name: '306,378,519,537|🇺RU-90.156.203.62-1982 #1'
   password: VVlAff77CnAU43Aoc5j15Y
   port: 5112
   server: 90.156.203.62
@@ -43,7 +43,7 @@ proxies:
 - client-fingerprint: random
   grpc-opts:
     grpc-service-name: moktana.net.v1.StreamService
-  name: '340,502,514,551|🇷🇺[www.v2nodes.com] vless-RU-1... #14'
+  name: '340,502,514,551|🇷🇺[www.v2nodes.com] vless-RU-1... #17'
   network: grpc
   port: 443
   server: 45.93.201.119
@@ -54,7 +54,7 @@ proxies:
 - client-fingerprint: chrome
   grpc-opts:
     grpc-service-name: cdn.v1.AssetService
-  name: '340,502,514,519,551|🇷🇺[www.v2nodes.com] vless-RU-1... #15'
+  name: '340,502,514,519,551|🇷🇺[www.v2nodes.com] vless-RU-1... #16'
   network: grpc
   port: 443
   server: 72.4.65.116
@@ -64,13 +64,25 @@ proxies:
   uuid: 0dca2cfe-98eb-4f9d-9a47-cf87510c558b
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: '340,502,514,551|🇷🇺[www.v2nodes.com] vless-RU-1... #16'
+  name: '340,502,514,551|🇷🇺[www.v2nodes.com] vless-RU-1... #18'
   port: 443
   server: 45.152.113.206
   servername: 1.ru.oncloudnineservicestreang.com
   tls: true
   type: vless
   uuid: 859a537b-09cf-4bce-8da4-ecbb72950e3a
+- client-fingerprint: random
+  encryption: none
+  grpc-opts:
+    grpc-service-name: grpc-ru
+  name: '340,502,514,519,551|🇷🇺[www.v2nodes.com] vless-RU-1... #19'
+  network: grpc
+  port: 443
+  server: xsru1.ddnsfree.com
+  servername: xsru1.ddnsfree.com
+  tls: true
+  type: vless
+  uuid: c90395e6-2140-47ad-a54d-9b166729d3ef
 - cipher: chacha20-ietf-poly1305
   name: 356|🇷🇺1 |  5.2MB/s
   password: 0zyDRZ1XmNXaaCAN7KEA8a
@@ -313,18 +325,17 @@ proxies:
   ws-opts:
     path: /fr-unlimitxxx
 - cipher: chacha20-ietf-poly1305
-  name: '378,519,537|🇺RU-130.49.189.158-0410 #1'
+  name: '378,537|🇺RU-130.49.189.158-0410 #1'
   password: ziOeKejhhw+fmWet+xvuJsVJH7U9DvSWq1hlqtaKv+I=
   port: 43558
   server: 130.49.189.158
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '378,519,537|🇺RU-80.87.197.181-0486 #1'
+  name: '378,537|🇺RU-80.87.197.181-0486 #1'
   password: MBiJEJ5VgZXVSj58CEEFZA
   port: 2055
   server: 80.87.197.181
   type: ss
-  udp: true
 - alterId: 0
   cipher: auto
   name: 378,508,509,536,537,636|🇷🇺 俄罗斯 005
@@ -570,19 +581,21 @@ proxies:
   port: 444
   server: 146.185.198.44
   type: ss
-- down: ''
-  fingerprint: ''
-  name: 438,489|D🔴🇷🇺hos[📺🎪🎞️📦]_dokng.com_c144c...
-  obfs: ''
-  obfs-password: ''
+- name: '438|🇷🇺RU_3|1.6MB/s | 更多节点: https:/...'
   password: 3f63c86c-ac4a-4900-85cf-4fedf93c2ca5
   port: 22443
   server: 91.240.86.70
-  skip-cert-verify: false
   sni: hy.quattro-tech.ru
   tls: false
   type: hysteria2
-  up: ''
+- name: 438,473,474,489|C🟠🇷🇺hos[📺✨🎞️🔍]_dokng.com_3a17b...
+  password: 5d0a6445-a30d-4522-bb1f-94f1d3ad63be
+  port: 2060
+  server: els.mangshe.xyz
+  skip-cert-verify: true
+  sni: els.mangshe.xyz
+  tls: false
+  type: hysteria2
 - name: 460|俄罗斯_新西伯利亚
   network: ws
   port: 443
@@ -1667,19 +1680,11 @@ proxies:
   type: vless
   udp: true
   uuid: 5d16ac22-6eea-426f-b778-6f4c2961faef
-- name: 489|A🟢🇷🇺res[📦🔍]_dokng.com_965e2a11
-  port: 4080
-  server: 185.21.156.73
-  type: http
 - name: 489|D🔴🇷🇺hos[📺🎪✨🎞️]_dokng.com_f46bb...
   port: 443
   server: 82.147.71.46
   skip-cert-verify: true
   tls: true
-  type: http
-- name: 489|D🔴🇷🇺hos[📺🎪]_dokng.com_013844aa
-  port: 8888
-  server: 147.45.164.178
   type: http
 - name: 489|D🔴🇷🇺hos[🎪✨📦]_dokng.com_76177e9...
   port: 8443
@@ -1687,86 +1692,58 @@ proxies:
   skip-cert-verify: true
   tls: true
   type: http
-- name: 489|D🔴🇷🇺hos[📺🎪✨📦]_dokng.com_cd0ee9...
+- name: 489|D🔴🇷🇺hos[📺🎪✨🔍]_dokng.com_cd0ee9...
   port: 1446
   server: 46.29.166.134
   skip-cert-verify: true
   tls: true
   type: http
-- name: 489|D🔴🇷🇺hos[🎪✨🎞️📦]_dokng.com_f4e27...
+- cipher: chacha20-ietf-poly1305
+  name: 489|A🟢🇷🇺res[📺]_dokng.com_1afdb48b
+  password: MQC4oXhq62cUJ9uQ2kuS1w
+  port: 8388
+  server: 62.217.181.57
+  type: ss
+  udp: true
+- name: 489|D🔴🇷🇺hos[🎪✨📦🔍]_dokng.com_f4e27d...
   port: 443
   server: 194.186.179.62
   skip-cert-verify: true
   tls: true
   type: http
-- client-fingerprint: random
+- name: 489|D🔴🇷🇺hos[📺🎪]_dokng.com_013844aa
+  port: 8888
+  server: 147.45.164.178
+  type: http
+- client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 502|RU【机场推荐：https://a9a.xyz】20
+  name: '502,523,524,548,717|RU【机场推荐：https://a9a.xyz】22 #1'
   network: tcp
   port: 443
   reality-opts:
-    public-key: -GzslqnFGVkpNJvcZt7uKnMGOn8R2v_z6sLOtmci6B0
+    public-key: bZpzmeWiEJyJQy0W2hHc34Nr6BuFXj1UDd80Cbwh1Fk
+    short-id: ff776ff77be48b88
+  server: yaruss.stopingiphatered.shop
+  servername: yaruss.stopingiphatered.shop
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: 4bdeee92-97e8-414d-bef6-ec1d5e2ab73b
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 502|俄罗斯+V2CROSS.COM
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: '%2DGzslqnFGVkpNJvcZt7uKnMGOn8R2v_z6sLOtmci6B0'
     short-id: 2fff0b51ab07386a
   server: 194.55.239.148
   servername: my.selectel.ru
   tls: false
   type: vless
   uuid: ff65fb9b-552f-426f-8321-4c85024377e6
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 502,523,524,717|RU【机场推荐：https://a9a.xyz】8
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: bZpzmeWiEJyJQy0W2hHc34Nr6BuFXj1UDd80Cbwh1Fk
-    short-id: ff776ff77be48b88
-  server: 31.76.84.174
-  servername: yaruss.stopingiphatered.shop
-  skip-cert-verify: true
-  tls: false
-  type: vless
-  udp: true
-  uuid: 4bdeee92-97e8-414d-bef6-ec1d5e2ab73b
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 502,717|RU【机场推荐：https://a9a.xyz】9
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: 9rdvkUGJyNbRvsB0Pp06h1URq9AHDPRtH9-wmNB1-j4
-    short-id: e4aa362b5f9d07d7
-  server: 185.147.26.210
-  servername: example.com
-  tls: false
-  type: vless
-  uuid: 1c5ed2e1-56da-41ab-9a78-159d9892ec17
-  ws-opts:
-    headers:
-      Host: /?TELEGRAM--MARAMBASHI--MARAMBASHI
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 502|RU【机场推荐：https://a9a.xyz】26
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: EroArXWVxIMXclqgp4WNolB5vtfWSZEF1wjb_t1QrBE
-    short-id: a150dcf9
-  server: lk-1.yes-on.ru
-  servername: lk-1.yes-on.ru
-  tls: false
-  type: vless
-  uuid: 6a3c68b1-d4b8-0004-975f-a01da4184225
-- client-fingerprint: random
-  grpc-opts:
-    grpc-service-name: grpc-ru
-  name: '502,514,551|🇷🇺[www.v2nodes.com] vless-RU-1... #17'
-  network: grpc
-  port: 443
-  server: xsru1.ddnsfree.com
-  servername: xsru1.ddnsfree.com
-  tls: true
-  type: vless
-  uuid: c90395e6-2140-47ad-a54d-9b166729d3ef
 - client-fingerprint: chrome
   name: '508,509|俄罗斯 001 #1'
   network: ws
@@ -1875,11 +1852,26 @@ proxies:
   server: 185.158.155.33
   tfo: false
   type: ss
+- client-fingerprint: firefox
+  name: '519,523,524|🇷🇺_俄罗斯_133 #1'
+  network: ws
+  port: 443
+  server: fbsv6.guardora.pro
+  servername: fbsv6.guardora.pro
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: bc5ec86c-3e65-4272-994c-59a924c72a68
+  ws-opts:
+    headers:
+      Host: fbsv6.guardora.pro
+    path: /ws
 - alpn:
   - http/1.1
-  client-fingerprint: firefox
+  client-fingerprint: chrome
   encryption: none
-  name: '519|🇷🇺[www.v2nodes.com] vless-RU-1... #12'
+  name: '519|🇷🇺[www.v2nodes.com] vless-RU-1... #13'
   network: ws
   port: 443
   server: fbsv6.guardora.pro
@@ -1894,7 +1886,7 @@ proxies:
     path: /ws
 - client-fingerprint: random
   encryption: none
-  name: '519|🇷🇺[www.v2nodes.com] vless-RU-1... #13'
+  name: '519|🇷🇺[www.v2nodes.com] vless-RU-1... #15'
   network: ws
   port: 8443
   server: 194.87.143.165
@@ -1906,6 +1898,46 @@ proxies:
     headers:
       Host: 194.87.143.165
     path: /
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '523,524|🇷🇺_俄罗斯_29 #1'
+  port: 30007
+  reality-opts:
+    public-key: UR-ELTbCCTAAvg_y8vIznWFkGkCKFFaEAVgTtPYNCCk
+    short-id: 54861d36
+  server: files-d1c1.julsapart.com
+  servername: storage.yandexcloud.net
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 5bba3558-ad1c-4d97-a360-7d993d503abd
+- client-fingerprint: chrome
+  name: '523,524|🇷🇺_俄罗斯_72 #1'
+  network: ws
+  port: 443
+  server: fbsv6.guardora.pro
+  servername: fbsv6.guardora.pro
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: bc5ec86c-3e65-4272-994c-59a924c72a68
+  ws-opts:
+    path: /ws
+- client-fingerprint: chrome
+  name: '523,524|🇷🇺_俄罗斯_111 #1'
+  network: ws
+  port: 443
+  server: 78.159.246.110
+  servername: fbsv6.guardora.pro
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: bc5ec86c-3e65-4272-994c-59a924c72a68
+  ws-opts:
+    path: /ws
 - name: 533|RU俄罗斯(mibei77.com 米贝节点分享)
   network: ws
   port: 2096
@@ -2016,6 +2048,23 @@ proxies:
     headers:
       Host: www.69296134.xyz
     path: /
+- client-fingerprint: firefox
+  grpc-opts:
+    grpc-service-name: cloud.v1.RelayService
+  name: 548|🇧🇬 保加利亚_RUTB9A
+  network: grpc
+  port: 443
+  reality-opts:
+    public-key: k-vH6pkyAv26L1_dXKOFhp0Kesur9-FCUDoj-IIpVhc
+    short-id: 51f45d4fd58cc319
+  server: bg4.univesalsrv.com
+  servername: bg4.univesalsrv.com
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 2f35965a-9a9b-45fd-ba32-987296dfb6be
 - cipher: chacha20-ietf-poly1305
   name: 558|0|🇺俄罗斯 01 | 1x RU
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
