@@ -54,6 +54,24 @@ proxies:
   sni: ru1.sferavpn.pro
   tls: false
   type: hysteria2
+- client-fingerprint: safari
+  flow: xtls-rprx-vision
+  name: '340,502,514,551|🇷🇺[www.v2nodes.com] vless-RU-1... #21'
+  port: 443
+  server: 2.26.80.235
+  servername: dl.google.com
+  tls: true
+  type: vless
+  uuid: cb0ccf90-0e8f-4621-b042-4e35c797de2b
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '340,502,514,551|🇷🇺[www.v2nodes.com] vless-RU-1... #22'
+  port: 443
+  server: 31.76.34.216
+  servername: ru-c-1.minzt.su
+  tls: true
+  type: vless
+  uuid: 94def50e-5f3c-4e4c-9719-3325f42d2131
 - client-fingerprint: random
   grpc-opts:
     grpc-service-name: moktana.net.v1.StreamService
@@ -68,7 +86,7 @@ proxies:
 - client-fingerprint: chrome
   grpc-opts:
     grpc-service-name: cdn.v1.AssetService
-  name: '340,502,508,509,514,519,551|🇷🇺[www.v2nodes.com] vless-RU-1... #24'
+  name: '340,508,509,514,519|🇷🇺[www.v2nodes.com] vless-RU-1... #18'
   network: grpc
   port: 443
   server: 72.4.65.116
@@ -78,7 +96,7 @@ proxies:
   uuid: 0dca2cfe-98eb-4f9d-9a47-cf87510c558b
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '340,502,514,551|🇷🇺[www.v2nodes.com] vless-RU-1... #25'
+  name: '340,502,514,551|🇷🇺[www.v2nodes.com] vless-RU-1... #24'
   port: 443
   server: 45.152.113.206
   servername: 1.ru.oncloudnineservicestreang.com
@@ -87,25 +105,13 @@ proxies:
   uuid: 859a537b-09cf-4bce-8da4-ecbb72950e3a
 - client-fingerprint: random
   flow: xtls-rprx-vision
-  name: '340,502,514,551|🇷🇺[www.v2nodes.com] vless-RU-1... #26'
+  name: '340,502,514,551|🇷🇺[www.v2nodes.com] vless-RU-1... #25'
   port: 8443
   server: 144.31.190.230
   servername: ozon.ru
   tls: true
   type: vless
   uuid: d4e7bb0a-ad2c-4030-b2e0-7bb6840b04f5
-- client-fingerprint: random
-  encryption: none
-  grpc-opts:
-    grpc-service-name: grpc-ru
-  name: '340,502,508,509,514,519,551|🏳[www.v2nodes.com] vless- #4 #3'
-  network: grpc
-  port: 443
-  server: xsru1.ddnsfree.com
-  servername: xsru1.ddnsfree.com
-  tls: true
-  type: vless
-  uuid: c90395e6-2140-47ad-a54d-9b166729d3ef
 - cipher: chacha20-ietf-poly1305
   name: 356|🇷🇺1 |  5.2MB/s
   password: 0zyDRZ1XmNXaaCAN7KEA8a
@@ -589,6 +595,20 @@ proxies:
   port: 444
   server: 146.185.198.44
   type: ss
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  name: '438|🇷🇺RU_2|1.3MB/s | 网盘搜宝: https:/...'
+  network: xhttp
+  port: 2053
+  server: dismissaltree.net
+  servername: dismissaltree.net
+  tls: true
+  type: vless
+  uuid: 2c634977-584e-4e1f-b501-1b70c77a6743
+  ws-opts:
+    path: '%2Fapi%2Fv1%2Fupload'
 - name: 460|俄罗斯_新西伯利亚
   network: ws
   port: 443
@@ -1357,6 +1377,35 @@ proxies:
     headers:
       Host: ''
     path: /
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '472,473,474,502|俄罗斯+V2CROSS.COM #6'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: SxbaWzlvE_HQqqsA4PNX2PFcSYXTVE2nZlgLc7cPOgk
+    short-id: 8681edc9
+  server: 188.225.25.142
+  servername: prime.betust.net
+  tls: false
+  type: vless
+  uuid: 7610be85-9855-4010-8929-ce16d4993969
+- alpn:
+  - http/1.1
+  client-fingerprint: random
+  name: '472,473,474,502|俄罗斯+V2CROSS.COM #7'
+  network: ws
+  port: 443
+  server: fbsv6.guardora.pro
+  servername: fbsv6.guardora.pro
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  uuid: bc5ec86c-3e65-4272-994c-59a924c72a68
+  ws-opts:
+    headers:
+      Host: fbsv6.guardora.pro
+    path: '%2Fws'
 - cipher: aes-256-gcm
   name: '475,480|🇷 RU羅丨yoyapai.com #1'
   password: 7e1dd4c55bf85da5
@@ -1708,7 +1757,7 @@ proxies:
   tls: true
   type: http
 - client-fingerprint: firefox
-  name: '502,717|RU【机场推荐：https://a9a.xyz】7 #1'
+  name: '502,519,717|RU【机场推荐：https://a9a.xyz】14 #1'
   network: xhttp
   port: 443
   reality-opts:
@@ -1718,12 +1767,16 @@ proxies:
   servername: donatov.net
   tls: false
   type: vless
+  udp: true
   uuid: bcd297ab-f064-0031-a659-5d7f90075fa8
   ws-opts:
     path: /assets
+  xhttp-opts:
+    host: donatov.net
+    path: /assets
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: '502,717|RU【机场推荐：https://a9a.xyz】9 #1'
+  name: '502,523,524,717|RU【机场推荐：https://a9a.xyz】18 #1'
   network: tcp
   port: 443
   reality-opts:
@@ -1731,8 +1784,10 @@ proxies:
     short-id: e4aa362b5f9d07d7
   server: 185.147.26.210
   servername: example.com
+  skip-cert-verify: true
   tls: false
   type: vless
+  udp: true
   uuid: 1c5ed2e1-56da-41ab-9a78-159d9892ec17
   ws-opts:
     headers:
@@ -1751,7 +1806,7 @@ proxies:
       Host: free.cndyw.ggff.net
     path: pyip=bpb.yousef.isegaro.com
 - client-fingerprint: random
-  name: '508,509,519|🇫🇮[www.v2nodes.com] vless-FI-1... #24'
+  name: '508,509,519|🇫🇮[www.v2nodes.com] vless-FI-1... #23'
   network: ws
   port: 443
   server: 109.120.134.243
@@ -1778,7 +1833,7 @@ proxies:
       Host: 194.87.143.165
     path: /
 - client-fingerprint: unsafe
-  name: '508,509,519|🇧🇾 BY_21 #1'
+  name: '508,509|白俄罗斯 001 #1'
   network: ws
   port: 8443
   server: 95.130.84.36
@@ -2220,11 +2275,26 @@ proxies:
   server: 185.158.155.33
   tfo: false
   type: ss
+- client-fingerprint: chrome
+  name: 519|🇷🇺_RU_俄罗斯
+  network: ws
+  port: 443
+  server: fbsv6.guardora.pro
+  servername: fbsv6.guardora.pro
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: bc5ec86c-3e65-4272-994c-59a924c72a68
+  ws-opts:
+    headers:
+      Host: fbsv6.guardora.pro
+    path: /ws
 - alpn:
   - http/1.1
   client-fingerprint: chrome
   encryption: none
-  name: '519|🇷🇺[www.v2nodes.com] vless-RU-1... #18'
+  name: '519|🇷🇺[www.v2nodes.com] vless-RU-1... #19'
   network: ws
   port: 443
   server: fbsv6.guardora.pro
@@ -2238,34 +2308,7 @@ proxies:
       Host: fbsv6.guardora.pro
     path: /ws
 - client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '523,524|🇷🇺_俄罗斯_29 #1'
-  port: 30007
-  reality-opts:
-    public-key: UR-ELTbCCTAAvg_y8vIznWFkGkCKFFaEAVgTtPYNCCk
-    short-id: 54861d36
-  server: files-d1c1.julsapart.com
-  servername: storage.yandexcloud.net
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 5bba3558-ad1c-4d97-a360-7d993d503abd
-- client-fingerprint: chrome
-  name: '523,524|🇷🇺_俄罗斯_72 #1'
-  network: ws
-  port: 443
-  server: fbsv6.guardora.pro
-  servername: fbsv6.guardora.pro
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: bc5ec86c-3e65-4272-994c-59a924c72a68
-  ws-opts:
-    path: /ws
-- client-fingerprint: chrome
-  name: '523,524|🇷🇺_俄罗斯_111 #1'
+  name: '523,524|🇷🇺_俄罗斯_133 #1'
   network: ws
   port: 443
   server: 78.159.246.110
@@ -2277,8 +2320,50 @@ proxies:
   uuid: bc5ec86c-3e65-4272-994c-59a924c72a68
   ws-opts:
     path: /ws
-- client-fingerprint: firefox
-  name: '523,524|🇷🇺_俄罗斯_133 #1'
+- alterId: 0
+  cipher: auto
+  name: '523,524|🇷🇺_俄罗斯_275 #1'
+  network: ws
+  port: 443
+  server: renderer-stream-1-832.mirra.now
+  servername: renderer-stream-1-832.mirra.now
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 8ffa41d4-e6b5-4af5-a8a9-69e26bec75f5
+  ws-opts:
+    headers:
+      Host: renderer-stream-1-832.mirra.now
+    path: /api/v1/gpu-stream/socket
+- client-fingerprint: chrome
+  name: '523,524|🇷🇺_俄罗斯_276 #1'
+  network: ws
+  port: 443
+  server: 217.19.122.200
+  servername: fbsv6.guardora.pro
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: bc5ec86c-3e65-4272-994c-59a924c72a68
+  ws-opts:
+    path: /ws
+- client-fingerprint: chrome
+  name: '523,524|🇷🇺_俄罗斯_277 #1'
+  network: ws
+  port: 443
+  server: 81.94.148.214
+  servername: fbsv6.guardora.pro
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: bc5ec86c-3e65-4272-994c-59a924c72a68
+  ws-opts:
+    path: /ws
+- client-fingerprint: chrome
+  name: '523,524|🇷🇺_俄罗斯_278 #1'
   network: ws
   port: 443
   server: fbsv6.guardora.pro
@@ -2289,8 +2374,6 @@ proxies:
   udp: true
   uuid: bc5ec86c-3e65-4272-994c-59a924c72a68
   ws-opts:
-    headers:
-      Host: fbsv6.guardora.pro
     path: /ws
 - name: 533|RU俄罗斯(mibei77.com 米贝节点分享)
   network: ws
