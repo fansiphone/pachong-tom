@@ -39,32 +39,55 @@ proxies:
   type: vmess
   udp: true
   uuid: 21629fa5-8a06-4c2c-bdaa-85a6fe5222d5
+- alpn:
+  - h3
+  auth: ca78f919e6
+  name: '340,496,502,514,519,551|🇫🇷 法国 | FRA #3'
+  obfs: salamander
+  obfs-password: ec66908dbc46e6920143d9b684adf277
+  password: ca78f919e6
+  port: 11592
+  server: 155.94.134.183
+  skip-cert-verify: true
+  sni: srv-3fc7c9.21freedom.net
+  tls: false
+  type: hysteria2
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: '340,502,514,551|🇫🇷[www.v2nodes.com] vless-FR-1... #25'
+  port: 443
+  server: 95.179.208.12
+  servername: googleapis.com
+  tls: true
+  type: vless
+  uuid: d90087c3-54f5-4283-a13f-615260c8b0c7
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '340,502,514,551|🇫🇷[www.v2nodes.com] vless-FR-1... #26'
   port: 443
   server: 194.113.235.66
   servername: github.com
   tls: true
   type: vless
   uuid: 1c5ed2e1-56da-41ab-9a78-159d9892ec17
-- client-fingerprint: safari
+- client-fingerprint: chrome
   encryption: none
   grpc-opts:
     grpc-service-name: cdn.v1.AssetService
-  name: '340,476,481,502,508,509,514,519,551|🇫🇷[www.v2nodes.com] vless-FR-1... #26'
+  name: '340,438,476,481,502,508,509,514,519,551|🇫🇷[www.v2nodes.com] vless-FR-1...
+    #27'
   network: grpc
   port: 443
   server: 143.246.208.113
   servername: assets-fr4.pleiades.codes
-  skip-cert-verify: true
+  skip-cert-verify: false
   tls: true
   type: vless
   udp: true
   uuid: 0dca2cfe-98eb-4f9d-9a47-cf87510c558b
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: '340,502,514,551|🇫🇷[www.v2nodes.com] vless-FR-1... #27'
+  name: '340,502,514,551|🇫🇷[www.v2nodes.com] vless-FR-1... #28'
   port: 443
   server: 185.171.202.105
   servername: fra.loozerp.wiki
@@ -73,7 +96,7 @@ proxies:
   uuid: 4bdeee92-97e8-414d-bef6-ec1d5e2ab73b
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '340,438,502,514,551|🇫🇷[www.v2nodes.com] vless-FR-1... #28'
+  name: '340,438,502,514,551|🇫🇷[www.v2nodes.com] vless-FR-1... #29'
   network: tcp
   port: 443
   reality-opts:
@@ -85,7 +108,18 @@ proxies:
   type: vless
   uuid: aaec4e42-a095-44b6-a239-f16d234a0798
 - client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: grpc-common3
   name: '340,502,514,551|🇫🇷[www.v2nodes.com] vless-FR-1... #30'
+  network: grpc
+  port: 35108
+  server: 152.228.139.33
+  servername: www.nvidia.com
+  tls: true
+  type: vless
+  uuid: 81dc0b61-f9fe-4ad6-8b4e-b8c067b73712
+- client-fingerprint: chrome
+  name: '340,502,514,551|🇫🇷[www.v2nodes.com] vless-FR-1... #31'
   port: 2053
   server: 51.77.217.70
   servername: www.apple.com
@@ -93,13 +127,40 @@ proxies:
   type: vless
   uuid: bf16ee0c-8b3c-41e4-ab3a-8b48033c404e
 - client-fingerprint: chrome
-  name: '340,502,514,551|🇫🇷[www.v2nodes.com] vless-FR-1... #31'
+  name: '340,502,514,551|🇫🇷[www.v2nodes.com] vless-FR-1... #32'
   port: 40443
   server: 194.76.154.31
   servername: deepl.com
   tls: true
   type: vless
   uuid: 9f0baff8-bdee-4de9-9515-bcc4932b41fa
+- client-fingerprint: android
+  encryption: none
+  name: '340,438,502,514,519,551|🇳🇱 荷兰 | NLD #1 #4'
+  network: xhttp
+  port: 443
+  server: 50.7.216.172
+  servername: 24f9d11d.ferrin.uk
+  tls: true
+  type: vless
+  udp: true
+  uuid: 24f9d11d-ceca-4f75-93ca-ad143ca18b28
+  ws-opts:
+    headers:
+      Host: 24f9d11d.ferrin.uk
+    path: '%2F'
+  xhttp-opts:
+    host: 24f9d11d.ferrin.uk
+    path: /
+  xudp: true
+- client-fingerprint: chrome
+  name: 340,502,514,551|🇫🇮FI_4|1015KB/s
+  port: 443
+  server: 122.8.45.4
+  servername: download.nvidia.com
+  tls: true
+  type: vless
+  uuid: 2d24e797-ec6c-0808-dd31-9cd22b5dfdc7
 - cipher: aes-256-cfb
   name: '356,378,537|🇳🇱NL-51.15.27.48-7576 #1'
   password: f8f7aCzcPKbsF8p3
@@ -430,7 +491,6 @@ proxies:
   password: amazonskr05
   port: 443
   server: 52.47.133.105
-  skip-cert-verify: true
   type: ss
   udp: true
 - alterId: 0
@@ -1143,47 +1203,30 @@ proxies:
   sni: trj.rollingnext.co.uk
   type: trojan
 - country: 🇷FR
-  name: 435,436|🇫🇷FR_42
+  name: 435,436|🇫🇷FR_28
   password: ND91608427
   port: 443
   server: star-kiwi.rooster465.autos
   skip-cert-verify: true
   type: trojan
   udp: true
-- name: '438|🇫🇷FR_1|1.5MB/s | 更多节点: https:/...'
-  network: ws
-  password: humanity
+- country: 🇫🇷FR
+  name: 435,436|🇫🇷FR_29
+  password: ND91608427
   port: 443
-  server: 185.255.179.166
-  sni: www.calmlunch.com
+  server: careful-tadpole.rooster465.autos
+  skip-cert-verify: true
   type: trojan
-  ws-opts:
-    headers:
-      Host: www.calmlunch.com
-    path: '%2Fassignment'
-- name: '438|🇫🇷FR_2|1.7MB/s | 福利姬: https://...'
-  network: ws
-  password: humanity
+  udp: true
+- country: 🇫🇷FR
+  name: '435,436|🇫🇷FR_30 #1'
+  password: ND91608427
   port: 443
-  server: 185.225.68.232
-  sni: www.calmlunch.com
+  server: fancy-skink.rooster465.autos
+  skip-cert-verify: true
   type: trojan
-  ws-opts:
-    headers:
-      Host: www.calmlunch.com
-    path: '%2Fassignment'
-- name: '438|🇫🇷FR_3|1.7MB/s | 网盘搜宝: https:/...'
-  network: ws
-  password: humanity
-  port: 8443
-  server: 212.227.144.37
-  sni: www.calmlunch.com
-  type: trojan
-  ws-opts:
-    headers:
-      Host: www.calmlunch.com
-    path: '%2Fassignment'
-- name: '438|🇫🇷FR_4|1.5MB/s | 更多节点: https:/...'
+  udp: true
+- name: '438|🇫🇷FR_1|2.2MB/s | 福利姬: https://...'
   network: ws
   password: humanity
   port: 443
@@ -1194,7 +1237,7 @@ proxies:
     headers:
       Host: www.calmlunch.com
     path: '%2Fassignment'
-- name: '438|🇫🇷FR_5|1.7MB/s | 福利姬: https://...'
+- name: '438|🇫🇷FR_2|2.1MB/s | 网盘搜宝: https:/...'
   network: ws
   password: humanity
   port: 443
@@ -1205,18 +1248,7 @@ proxies:
     headers:
       Host: www.calmlunch.com
     path: '%2Fassignment'
-- name: '438|🇫🇷FR_6|1.7MB/s | 网盘搜宝: https:/...'
-  network: ws
-  password: humanity
-  port: 443
-  server: 212.183.88.136
-  sni: www.calmlunch.com
-  type: trojan
-  ws-opts:
-    headers:
-      Host: www.calmlunch.com
-    path: '%2F%252Fassignment'
-- name: '438|🇫🇷FR_8|5.2MB/s | 网盘搜宝: https:/...'
+- name: '438|🇫🇷FR_4|1.5MB/s | 网盘搜宝: https:/...'
   network: ws
   password: humanity
   port: 443
@@ -1228,24 +1260,47 @@ proxies:
     headers:
       Host: www.calmlunch.com
     path: '%2F%252Fassignment'
-- client-fingerprint: android
-  name: '438,502,514,551|🇫🇷FR_3|2.3MB/s #2'
-  network: xhttp
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '438,508,509|美国 955 #1'
+  network: tcp
   port: 443
-  server: 50.7.216.172
-  servername: 24f9d11d.ferrin.uk
+  server: 162.19.10.99
+  servername: nasnet-162191099-direct.mbghalibaf.com
+  skip-cert-verify: false
+  tfo: false
   tls: true
   type: vless
-  uuid: 24f9d11d-ceca-4f75-93ca-ad143ca18b28
-  ws-opts:
-    headers:
-      Host: api.ferrin.uk
-    path: '%2Ffr'
+  udp: true
+  uuid: e8b1500b-e9e8-5492-8312-f4eadf7d0767
+- alpn:
+  - h2
+  - ' http/1.1'
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '438|🇫🇷FR_10|1.7MB/s | 更多节点: https:...'
+  network: tcp
+  port: 52006
+  server: 31.77.227.10
+  servername: fr.setlisting.ru
+  tls: true
+  type: vless
+  uuid: bc659d88-a1e0-4c65-a49a-7b51b26a7a7f
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '438|🇫🇷FR_11|1.7MB/s | 网盘搜宝: https:...'
+  network: tcp
+  port: 443
+  server: nasnet-162191099-direct.mbghalibaf.com
+  servername: nasnet-162191099-direct.mbghalibaf.com
+  tls: true
+  type: vless
+  uuid: e8b1500b-e9e8-5492-8312-f4eadf7d0767
 - alpn:
   - h2
   client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '438|🇫🇷FR_12|1.7MB/s | 网盘搜宝: https:...'
+  name: '438|🇫🇷FR_12|1.6MB/s | 福利姬: https:/...'
   network: tcp
   port: 443
   server: nasnet-162191099-direct.mbghalibaf.com
@@ -1253,45 +1308,21 @@ proxies:
   tls: true
   type: vless
   uuid: 88888888-8888-8888-8888-888888888888
-- client-fingerprint: chrome
+- alpn:
+  - h2
+  client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '438,523,524|🇫🇷_法国_110 #1'
+  name: '438|🇫🇷FR_13|1.6MB/s | 网盘搜宝: https:...'
   network: tcp
   port: 443
   server: nasnet-162191099-direct.mbghalibaf.com
   servername: nasnet-162191099-direct.mbghalibaf.com
-  skip-cert-verify: true
   tls: true
   type: vless
-  udp: true
   uuid: e8b1500b-e9e8-5492-8312-f4eadf7d0767
-- name: '438|🇫🇷FR_14|1.8MB/s | 福利姬: https:/...'
-  network: tcp
-  port: 2045
-  server: kayoor.hivaphone.ir
-  tls: false
-  type: vless
-  uuid: d7e99010-e7c3-4978-9d30-2e63882dcfbe
-  ws-opts:
-    headers:
-      Host: speedtest.net
-    path: '%2F'
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '438|🇫🇷FR_16|1.6MB/s | 更多节点: https:...'
-  network: tcp
-  port: 23576
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  server: 62.210.91.2
-  servername: fuck.rkn
-  tls: false
-  type: vless
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '438|🇫🇷FR_17|1.6MB/s | 网盘搜宝: https:...'
+  name: '438|🇫🇷FR_14|1.7MB/s | 网盘搜宝: https:...'
   network: tcp
   port: 23576
   reality-opts:
@@ -1302,34 +1333,18 @@ proxies:
   tls: false
   type: vless
   uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-- alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: chrome
-  name: '438|🇫🇷FR_18|1.6MB/s | 网盘搜宝: https:...'
-  network: xhttp
-  port: 443
-  server: cdn.alihapp.com
-  servername: cdn.alihapp.com
-  tls: true
-  type: vless
-  uuid: c4394e27-baeb-422d-8905-a93f8e01126f
-  ws-opts:
-    headers:
-      Host: cdn.alihapp.com
-    path: '%2F'
-- alpn:
-  - h2
-  client-fingerprint: chrome
+- client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '438|🇫🇷FR_19|1.7MB/s | 福利姬: https:/...'
+  name: '438|🇫🇷FR_15|1.7MB/s | 网盘搜宝: https:...'
   network: tcp
-  port: 443
-  server: 162.19.10.99
-  servername: nasnet-162191099-direct.mbghalibaf.com
-  tls: true
+  port: 23576
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+  server: 62.210.91.2
+  servername: fuck.rkn
+  tls: false
   type: vless
-  uuid: e8b1500b-e9e8-5492-8312-f4eadf7d0767
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
 - name: 460|法国_巴黎
   network: ws
   port: 443
@@ -1509,13 +1524,6 @@ proxies:
     headers:
       Host: lax1.ibgfw.top
     path: /xrenvws
-- name: '472,473,474,502|法国+ONLINE+S.A.S.数据中心 #3'
-  password: github.com/Alvin9999-newpac/fanqiang
-  port: 60111
-  server: 62.210.7.139
-  skip-cert-verify: true
-  tls: false
-  type: hysteria2
 - name: '475,476,480,481|US美国(mibei77.com 米贝节点分享)_140 #1'
   password: humanity
   port: 443
@@ -1832,7 +1840,7 @@ proxies:
   server: 15.237.126.250
   type: ss
   udp: true
-- name: 489,519|🇫🇷 法国 | FRA 2
+- name: '489,519,566|🇫🇷 法国 | FRA #4'
   password: github.com/Alvin9999-newpac/fanqiang
   port: 30099
   server: ip5.934618.xyz
@@ -1885,7 +1893,7 @@ proxies:
   skip-cert-verify: true
   tls: true
   type: http
-- name: 489|D🔴🇫🇷hos[🤖📺🎭🎪]_dokng.com_522320...
+- name: 489,519|🇫🇷FR_2|1.8MB/s
   port: 443
   server: 82.64.255.151
   skip-cert-verify: true
@@ -1941,41 +1949,14 @@ proxies:
   skip-cert-verify: true
   tls: true
   type: http
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '502,514,551|🇫🇷[www.v2nodes.com] vless-FR-1... #24'
-  port: 443
-  server: 95.179.208.12
-  servername: googleapis.com
-  tls: true
-  type: vless
-  uuid: d90087c3-54f5-4283-a13f-615260c8b0c7
-- client-fingerprint: chrome
-  grpc-opts:
-    grpc-service-name: grpc-common3
-  name: '502,514,551|🇫🇷[www.v2nodes.com] vless-FR-1... #29'
-  network: grpc
-  port: 35108
-  server: 152.228.139.33
-  servername: www.nvidia.com
-  tls: true
-  type: vless
-  uuid: 81dc0b61-f9fe-4ad6-8b4e-b8c067b73712
-- client-fingerprint: chrome
-  name: '502,514,551,566|🇫🇷 法国 | FRA #3'
-  network: xhttp
-  port: 443
-  reality-opts:
-    public-key: iVDh09Vm2DqZMNQoUdf-LCZ6TqVGb9mLXnClAK2LRj4
-  server: 122.8.45.4
-  servername: www.canon.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 2d24e797-ec6c-0808-dd31-9cd22b5dfdc7
-  xhttp-opts:
-    host: www.canon.com
-    path: /
+- auth: github.com/Alvin9999-newpac/fanqiang
+  name: 502,519|🇫🇷 法国 | FRA 4
+  password: github.com/Alvin9999-newpac/fanqiang
+  port: 60111
+  server: 62.210.7.139
+  skip-cert-verify: true
+  tls: false
+  type: hysteria2
 - alterId: 0
   cipher: auto
   name: 508,509,636|🇫🇷 法国 009
@@ -2251,77 +2232,35 @@ proxies:
   type: vless
   udp: true
   uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-- alpn:
-  - h3
-  auth-str: github.com/Alvin9999-newpac/fanqiang
-  auth_str: github.com/Alvin9999-newpac/fanqiang
-  down: 55 Mbps
-  name: 519|🇫🇷 法国 | FRA
-  port: 23556
-  protocol: udp
-  server: 62.210.70.191
+- http-opts:
+    headers:
+      Host:
+      - speedtest.net
+    method: GET
+    path:
+    - /
+  name: '519,523,524,551|🇫🇷 法国 | FRA #2 #4'
+  network: http
+  port: 2045
+  server: kayoor.hivaphone.ir
   skip-cert-verify: true
-  sni: bing.com
-  type: hysteria
-  up: 11 Mbps
-- alpn:
-  - http/1.1
-  client-fingerprint: chrome
-  name: '519|🇫🇷[www.v2nodes.com] vless-FR-1... #23'
-  network: ws
-  port: 443
-  server: 199.232.78.160
-  servername: ssl.fastly.com
-  tls: true
+  tls: false
   type: vless
-  uuid: 88888888-8888-8888-8888-888888888888
+  udp: true
+  uuid: d7e99010-e7c3-4978-9d30-2e63882dcfbe
+- name: '523,524|🇫🇷_法国_214 #1'
+  network: ws
+  port: 20295
+  server: 51.75.118.75
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: 2974b6b4-6184-9239-4e43-2f73c04509ed
   ws-opts:
     headers:
-      Host: Appxdn.global.ssl.fastly.net
-    path: /
-- name: '523,524|🇫🇷_法国_121 #1'
-  port: 8080
-  server: bulbul.color-panel.ir
-  servername: play.google.com
-  skip-cert-verify: true
-  tls: false
-  type: vless
-  udp: true
-  uuid: fdc1206a-9d2e-42b7-b615-9ccea8cf70ee
-- name: '523,524|🇫🇷_法国_234 #1'
-  network: ws
-  port: 80
-  server: 152.228.162.19
-  skip-cert-verify: true
-  tls: false
-  type: vless
-  udp: true
-  uuid: 25f86cb1-2140-4085-abcb-c3a0ea7a4be0
-  ws-opts:
-    path: /vless/
-- name: '523,524|🇫🇷_法国_262 #1'
-  network: ws
-  port: 80
-  server: ov-france1.09vpn.com
-  skip-cert-verify: true
-  tls: false
-  type: vless
-  udp: true
-  uuid: f5c47e9c-914a-4a91-a81e-a5a77bc10fc1
-  ws-opts:
-    path: /vless/
-- name: '523,524|🇫🇷_法国_283 #1'
-  network: ws
-  port: 443
-  server: 149.202.58.99
-  servername: bab-6.site
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
-  ws-opts:
-    path: /vws/
+      Host: 51.75.118.75
+    path: /ws/2974b6b4-6184-9239-4e43-2f73c04509ed
 - name: 536|🇫🇷FR-146.70.158.111-8147
   network: ws
   password: 11ae0edd-2f63-4495-8683-037abbda9986
@@ -2339,7 +2278,7 @@ proxies:
   type: trojan
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: '548|🇫🇷_FR_法国 #1'
+  name: 548|🇫🇷_FR_法国
   port: 43248
   reality-opts:
     public-key: LPLKpq5_G1WB6BqJhrCKQp1oQly3akbsVjvYPZrbGgg
@@ -2352,13 +2291,50 @@ proxies:
   udp: true
   uuid: f9d8ca28-2fff-45de-9b25-3bf29186018e
 - cipher: aes-256-cfb
-  name: '548|🇫🇷_FR_法国 #2'
+  name: '548|🇫🇷_FR_法国 #1'
   password: 7eadc6dbe2ae
   port: 65443
   server: 95.170.13.47
   skip-cert-verify: true
   type: ss
   udp: true
+- client-fingerprint: firefox
+  grpc-opts:
+    grpc-service-name: gw.v1.ObjectService
+  name: 548|🇷🇸 塞尔维亚_K4FRD6
+  network: grpc
+  port: 443
+  reality-opts:
+    public-key: X8mPYnsoTd8QCnvFZKSy7VvpSn_nrt_NWJkCUJhFCyE
+    short-id: 4872856d5489c37d
+  server: 150.40.126.24
+  servername: rs5.univesalsrv.com
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 2f35965a-9a9b-45fd-ba32-987296dfb6be
+- name: 551|🇫🇷FR_2|1.7MB/s
+  network: ws
+  password: humanity
+  port: 443
+  server: 162.159.36.20
+  skip-cert-verify: false
+  sni: www.calmlunch.com
+  type: trojan
+  ws-opts:
+    path: /assignment
+- name: '551|🇫🇷 法国 | FRA #1 #3'
+  obfs: salamander
+  obfs-password: salamander
+  password: ca78f919e6
+  port: 11592
+  server: 155.94.134.183
+  skip-cert-verify: true
+  sni: srv-3fc7c9.21freedom.net
+  tls: false
+  type: hysteria2
 - alterId: 0
   cipher: auto
   name: '577|法国1 #4'
