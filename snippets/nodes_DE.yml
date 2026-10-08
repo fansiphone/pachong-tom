@@ -52,8 +52,22 @@ proxies:
   skip-cert-verify: false
   sni: meet-goshawk.rooster465.autos
   type: trojan
+- alpn:
+  - v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus
+  name: '306,502,514,519,551|🇫🇷[www.v2nodes.com] trojan-FR-... #45'
+  network: ws
+  password: humanity
+  port: 8443
+  server: 212.227.144.37
+  skip-cert-verify: false
+  sni: www.calmlunch.com
+  type: trojan
+  ws-opts:
+    headers:
+      Host: www.calmlunch.com
+    path: /assignment
 - name: '306,340,378,502,508,509,514,519,537,551|🇫🇷[www.v2nodes.com] trojan-FR-...
-    #51'
+    #50'
   network: ws
   password: humanity
   port: 443
@@ -65,17 +79,61 @@ proxies:
     headers:
       Host: www.calmlunch.com
     path: /assignment
+- name: '306,502,514|🇳🇱[www.v2nodes.com] trojan-NL-... #4'
+  network: ws
+  password: humanity
+  port: 443
+  server: 78.47.146.151
+  skip-cert-verify: false
+  sni: www.pleadcourt.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: www.pleadcourt.org
+    path: /assignment
 - cipher: aes-256-cfb
-  name: 306,378,519,537,538|🇩🇪DE-3.67.197.81-0640 | 24.759...
+  name: 306,378,519,537,538,566|🇩🇪 德国 | DEU 7
+  password: amazonskr05
+  port: 443
+  server: 63.177.230.112
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 306,378,489,519,537,538,566|🇩🇪 德国 | DEU 11
+  password: amazonskr05
+  port: 443
+  server: 18.196.88.40
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 306,378,537,538|🇩🇪DE-3.67.197.81-0640 | 24.759...
   password: amazonskr05
   port: 443
   server: 3.67.197.81
   type: ss
   udp: true
+- alterId: 0
+  cipher: auto
+  http-opts:
+    headers:
+      Host:
+      - down-cdn.dingtalk.com
+    method: GET
+    path:
+    - /3x
+  name: '340,378,508,509,536,537|FI-185.212.149.7-0641 #1'
+  network: http
+  port: 52080
+  server: 185.212.149.7
+  servername: ''
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: ec3c8b97-f308-4fee-aa16-95e2c7595acd
 - alpn:
   - h2
   - http/1.1
-  name: '306,340,472,473,474,502,519|🇩🇪 德国 | DEU 10 #2'
+  name: '340,502|德国+V2CROSS.COM #4'
   network: tcp
   password: WFer-5gN21nfHbVB2N8s71Z74EPUfzVj
   port: 443
@@ -83,21 +141,13 @@ proxies:
   skip-cert-verify: true
   sni: de.zhabulik.ru
   type: trojan
-  udp: true
-- name: '306,340,378,502,519,523,524,536,537|🇪DE-193.23.199.32-0492 #1'
+- name: '340,378,523,524,536,537|🇪DE-193.23.199.32-0492 #1'
   password: WFer-5gN21nfHbVB2N8s71Z74EPUfzVj
   port: 443
   server: de.zhabulik.ru
   skip-cert-verify: false
   sni: de.zhabulik.ru
   type: trojan
-  udp: true
-- cipher: aes-256-cfb
-  name: '306,378,519,537,538,566|🇩🇪 德国 | DEU 11 #1'
-  password: amazonskr05
-  port: 443
-  server: 63.177.230.112
-  type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 356|🇩🇪1 |  1.6MB/s
@@ -503,9 +553,9 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 378,508,509,536,537,636|🇮🇷 伊朗 010
+  name: '378,508,509,536,537|DE-91.98.101.145-0098 #1'
   network: ws
-  port: '10010'
+  port: 10010
   server: az.hk01.paopaocloud.cyou
   servername: ''
   skip-cert-verify: false
@@ -518,9 +568,9 @@ proxies:
     path: /v2ray
 - alterId: 0
   cipher: auto
-  name: 378,508,509,536,537,636|🇮🇷 伊朗 009
+  name: '378,508,509,536,537|🇪DE-91.98.101.145-0114 #1'
   network: ws
-  port: '443'
+  port: 443
   server: aus01.paopaocloud.cyou
   servername: ''
   skip-cert-verify: false
@@ -533,9 +583,9 @@ proxies:
     path: /v2ray
 - alterId: 0
   cipher: auto
-  name: 378,508,509,536,537,538,636|🇮🇷 伊朗 007
+  name: 378,508,509,536,537,538|🇩🇪DE-91.98.101.145-0146 | 0.0M...
   network: ws
-  port: '10003'
+  port: 10003
   server: az.hk01.paopaocloud.cyou
   servername: ''
   skip-cert-verify: false
@@ -575,9 +625,9 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 378,508,509,536,537,636|🇺🇸 美国 063
+  name: '378,508,509,536,537|🇪DE-216.106.187.60-0323 #1'
   network: ws
-  port: '443'
+  port: 443
   server: 216.106.187.60
   servername: ''
   skip-cert-verify: false
@@ -662,9 +712,9 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 378,508,509,536,537,636|🇮🇷 伊朗 011
+  name: '378,508,509,536,537|🇪DE-91.98.101.145-0798 #1'
   network: ws
-  port: '10020'
+  port: 10020
   server: ah.yd01.paopaocloud.cyou
   servername: ''
   skip-cert-verify: false
@@ -677,9 +727,9 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 378,508,509,536,537,636|🇩🇪 德国 005
+  name: '378,508,509,536,537|🇩🇪DE-91.195.240.12-0819 #2'
   network: ws
-  port: '443'
+  port: 443
   server: sgp.kapok.buzz
   servername: ''
   skip-cert-verify: false
@@ -718,9 +768,9 @@ proxies:
     path: /4ba99a39b90faa/
 - alterId: 0
   cipher: auto
-  name: 378,508,509,536,537,636|🇮🇷 伊朗 008
+  name: '378,508,509,536,537|🇪DE-91.98.101.145-0919 #1'
   network: ws
-  port: '443'
+  port: 443
   server: hms082.gwdef.sbs
   servername: ''
   skip-cert-verify: false
@@ -733,9 +783,9 @@ proxies:
     path: /linkws
 - alterId: 0
   cipher: auto
-  name: 378,508,509,536,537,636|🇮🇷 伊朗 012
+  name: '378,508,509,536,537|DE-91.98.101.145-1075 #1'
   network: ws
-  port: '443'
+  port: 443
   server: octavi.cfd
   servername: ''
   skip-cert-verify: false
@@ -748,9 +798,9 @@ proxies:
     path: linkvws
 - alterId: 1
   cipher: auto
-  name: 378,508,509,536,537,636|🇮🇷 伊朗 013
+  name: '378,508,509,536,537|🇪DE-91.98.101.145-1080 #1'
   network: ws
-  port: '443'
+  port: 443
   server: jahfkjha.cfd
   servername: ''
   skip-cert-verify: false
@@ -763,9 +813,9 @@ proxies:
     path: /linkws
 - alterId: 0
   cipher: auto
-  name: 378,508,509,536,537,636|🇩🇪 德国 006
+  name: '378,508,509,536,537|🇩🇪DE-139.162.178.95-1108 #2'
   network: ws
-  port: '443'
+  port: 443
   server: 139.162.178.95
   servername: ''
   skip-cert-verify: false
@@ -778,9 +828,9 @@ proxies:
     path: /linkwsd
 - alterId: 0
   cipher: auto
-  name: 378,508,509,536,537,636|🇺🇸 美国 206
+  name: '378,508,509,536,537|🇪DE-23.158.56.241-1109 #1'
   network: ws
-  port: '443'
+  port: 443
   server: 23.158.56.241
   servername: ''
   skip-cert-verify: false
@@ -793,9 +843,9 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: 378,508,509,536,537,636|🇧🇪 比利时 002
+  name: '378,508,509,536,537|🇩🇪DE-57.129.24.124-1110 #2'
   network: ws
-  port: '443'
+  port: 443
   server: 57.129.24.124
   servername: ''
   skip-cert-verify: false
@@ -808,9 +858,9 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: 378,508,509,536,537,636|🇧🇪 比利时 003
+  name: '378,508,509,536,537|🇪DE-57.129.24.125-1111 #1'
   network: ws
-  port: '443'
+  port: 443
   server: 57.129.24.125
   servername: ''
   skip-cert-verify: false
@@ -823,9 +873,9 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: 378,508,509,536,537,636|🇧🇪 比利时 004
+  name: '378,508,509,536,537|🇩DE-57.129.24.133-1112 #1'
   network: ws
-  port: '443'
+  port: 443
   server: 57.129.24.133
   servername: ''
   skip-cert-verify: false
@@ -838,9 +888,9 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: 378,508,509,536,537,636|🇧🇪 比利时 005
+  name: '378,508,509,536,537|🇪DE-57.129.25.25-1113 #1'
   network: ws
-  port: '443'
+  port: 443
   server: 57.129.25.25
   servername: ''
   skip-cert-verify: false
@@ -853,9 +903,9 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: 378,508,509,536,537,636|🇧🇪 比利时 006
+  name: '378,508,509,536,537|🇪DE-57.129.28.69-1114 #1'
   network: ws
-  port: '443'
+  port: 443
   server: 57.129.28.69
   servername: ''
   skip-cert-verify: false
@@ -868,9 +918,9 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: 378,508,509,536,537,636|🇬🇧 英国 005
+  name: '378,508,509,536,537|🇪DE-158.180.48.19-1115 #1'
   network: ws
-  port: '23451'
+  port: 23451
   server: frankfurt.faforex.eu.org
   servername: ''
   skip-cert-verify: false
@@ -883,9 +933,9 @@ proxies:
     path: /itdog?ed=2560
 - alterId: 0
   cipher: auto
-  name: 378,508,509,536,537,636|🇩🇪 德国 007
+  name: '378,508,509,536,537|🇩🇪DE-130.61.23.77-1119 #2'
   network: ws
-  port: '443'
+  port: 443
   server: 130.61.23.77
   servername: ''
   skip-cert-verify: false
@@ -898,9 +948,9 @@ proxies:
     path: /linkws
 - alterId: 0
   cipher: auto
-  name: 378,508,509,536,537,636|🇩🇪 德国 008
+  name: '378,508,509,536,537|DE-138.68.90.231-1372 #1'
   network: ws
-  port: '8080'
+  port: 8080
   server: 138.68.90.231
   servername: ''
   skip-cert-verify: false
@@ -913,9 +963,9 @@ proxies:
     path: /cctv13/hd.m3u8
 - alterId: 0
   cipher: auto
-  name: 378,508,509,536,537,636|🇮🇷 伊朗 018
+  name: '378,508,509,536,537|🇩🇪DE-91.98.101.145-1401 #2'
   network: ws
-  port: '10025'
+  port: 10025
   server: ah.yd01.paopaocloud.cyou
   servername: ''
   skip-cert-verify: false
@@ -928,9 +978,9 @@ proxies:
     path: /v2ray
 - alterId: 0
   cipher: auto
-  name: 378,508,509,536,537,636|🇮🇷 伊朗 019
+  name: '378,508,509,536,537|🇩🇪DE-91.98.101.145-1402 #2'
   network: ws
-  port: '10009'
+  port: 10009
   server: ah.yd01.paopaocloud.cyou
   servername: ''
   skip-cert-verify: false
@@ -947,9 +997,9 @@ proxies:
     method: GET
     path:
     - /
-  name: 378,508,509,536,537,636|🇩🇪 德国 011
+  name: '378,508,509,536,537|🇩🇪DE-157.90.20.18-1403 #2'
   network: http
-  port: '443'
+  port: 443
   server: 157.90.20.18
   servername: ''
   skip-cert-verify: false
@@ -962,9 +1012,9 @@ proxies:
     method: GET
     path:
     - /
-  name: 378,508,509,536,537,636|🇩🇪 德国 012
+  name: '378,508,509,536,537|🇪DE-5.75.168.155-1404 #1'
   network: http
-  port: '443'
+  port: 443
   server: 5.75.168.155
   servername: ''
   skip-cert-verify: false
@@ -977,9 +1027,9 @@ proxies:
     method: GET
     path:
     - /
-  name: 378,508,509,536,537,636|🇩🇪 德国 013
+  name: '378,508,509,536,537|🇩🇪DE-94.130.25.155-1405 #2'
   network: http
-  port: '443'
+  port: 443
   server: 94.130.25.155
   servername: ''
   skip-cert-verify: false
@@ -992,9 +1042,9 @@ proxies:
     method: GET
     path:
     - /
-  name: 378,508,509,536,537,636|🇩🇪 德国 014
+  name: '378,508,509,536,537|🇩🇪DE-167.235.136.155-1406 #2'
   network: http
-  port: '443'
+  port: 443
   server: 167.235.136.155
   servername: ''
   skip-cert-verify: false
@@ -1007,9 +1057,9 @@ proxies:
     method: GET
     path:
     - /
-  name: 378,508,509,536,537,636|🇩🇪 德国 016
+  name: '378,508,509,536,537|🇩🇪DE-5.75.247.192-1411 #2'
   network: http
-  port: '443'
+  port: 443
   server: 5.75.247.192
   servername: ''
   skip-cert-verify: false
@@ -1022,9 +1072,9 @@ proxies:
     method: GET
     path:
     - /
-  name: 378,508,509,536,537,636|🇩🇪 德国 017
+  name: '378,508,509,536,537|🇪DE-88.198.104.211-1412 #1'
   network: http
-  port: '443'
+  port: 443
   server: 88.198.104.211
   servername: ''
   skip-cert-verify: false
@@ -1033,9 +1083,9 @@ proxies:
   uuid: 6b7cbc41-fb80-41a8-8eb6-b5bdb0e86147
 - alterId: 0
   cipher: auto
-  name: 378,508,509,536,537,636|🇮🇷 伊朗 020
+  name: '378,508,509,536,537|🇪DE-91.98.101.145-1442 #1'
   network: ws
-  port: '3306'
+  port: 3306
   server: paopao.v2.tw04.paopaocloud.cyou
   servername: ''
   skip-cert-verify: false
@@ -1048,9 +1098,9 @@ proxies:
     path: /v2ray
 - alterId: 4
   cipher: auto
-  name: 378,508,509,536,537,636|🇩🇪 德国 018
+  name: '378,508,509,536,537|🇩🇪DE-146.0.42.87-1461 #2'
   network: ws
-  port: '443'
+  port: 443
   server: 146.0.42.87
   servername: ''
   skip-cert-verify: false
@@ -1063,9 +1113,9 @@ proxies:
     path: /ws
 - alterId: 0
   cipher: auto
-  name: 378,508,509,536,537,636|🇮🇷 伊朗 022
+  name: '378,508,509,536,537|🇩🇪DE-91.98.101.145-1516 #2'
   network: ws
-  port: '443'
+  port: 443
   server: btbu996.icu
   servername: ''
   skip-cert-verify: false
@@ -1078,9 +1128,9 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 378,508,509,536,537,636|🇩🇪 德国 026
+  name: '378,508,509,536,537|🇩🇪DE-193.108.117.54-1540 #2'
   network: ws
-  port: '443'
+  port: 443
   server: 193.108.117.54
   servername: ''
   skip-cert-verify: false
@@ -1181,13 +1231,6 @@ proxies:
   skip-cert-verify: false
   sni: www.pleadcourt.org
   type: trojan
-- cipher: aes-256-cfb
-  name: 378,489,537,538|🇩🇪DE-18.196.88.40-2666 | 23.54...
-  password: amazonskr05
-  port: 443
-  server: 18.196.88.40
-  type: ss
-  udp: true
 - cipher: aes-256-gcm
   name: '378,537|🇪DE-193.108.118.34-2935 #1'
   password: faBAoD54k87UJG7
@@ -2145,7 +2188,7 @@ proxies:
     path: /
 - alterId: 2
   cipher: auto
-  name: '489,523,524|🇭🇰_香港_59 #1'
+  name: '489,519,523,524|🇭🇰_香港_59 #1'
   port: 30833
   server: v33.hdacd.com
   skip-cert-verify: true
@@ -2156,62 +2199,56 @@ proxies:
   xudp: true
 - alterId: 0
   cipher: auto
-  name: 508,509,636|🇩🇪 德国 019
+  name: '508,509|德国 019 #1'
   network: tcp
-  port: '2053'
+  port: 2053
   server: 178.63.237.158
   skip-cert-verify: true
-  tls: false
   type: vmess
   uuid: 2d4dd672-180f-415c-9035-e2fc461dd95a
 - alterId: 64
   cipher: auto
-  name: 508,509,636|🇩🇪 德国 020
+  name: '508,509|德国 020 #1'
   network: tcp
-  port: '31484'
+  port: 31484
   server: 168.119.107.162
   skip-cert-verify: true
-  tls: false
   type: vmess
   uuid: 943961b8-4e27-4bdf-a048-c2f724f542fb
 - alterId: 0
-  cipher: auto
-  name: 508,509,574,636|🇩🇪 德国 021
+  cipher: aes-128-gcm
+  name: '508,509|德国 021 #1'
   network: tcp
-  port: '443'
+  port: 443
   server: 46.183.187.73
   skip-cert-verify: true
-  tls: false
   type: vmess
   uuid: 92a048ec-a160-497e-8069-c2e902626d7a
 - alterId: 0
   cipher: auto
-  name: 508,509,636|🇩🇪 德国 022
+  name: '508,509|德国 022 #1'
   network: tcp
-  port: '8080'
+  port: 8080
   server: 91.107.162.63
   skip-cert-verify: true
-  tls: false
   type: vmess
   uuid: 0232607c-5100-4a10-a387-33a6a42b1f22
 - alterId: 0
   cipher: auto
-  name: 508,509,574,636|🇩🇪 德国 024
+  name: '508,509|德国 024 #1'
   network: tcp
-  port: '80'
+  port: 80
   server: 128.140.109.232
   skip-cert-verify: true
-  tls: false
   type: vmess
   uuid: 05a178f9-e6ba-4006-93d7-3d980cdc3a76
 - alterId: 0
   cipher: auto
-  name: 508,509,636|🇩🇪 德国 025
+  name: '508,509|德国 025 #1'
   network: tcp
-  port: '22324'
+  port: 22324
   server: 185.177.229.129
   skip-cert-verify: true
-  tls: false
   type: vmess
   uuid: 04621bae-ab36-11ec-b909-0242ac120002
 - alterId: 0
@@ -2232,6 +2269,13 @@ proxies:
   server: 91.107.219.5
   tfo: false
   type: ss
+- cipher: aes-256-cfb
+  name: 519,566|🇩🇪 德国 | DEU 12
+  password: amazonskr05
+  port: 443
+  server: 3.66.88.253
+  type: ss
+  udp: true
 - name: '536|🇩🇪DE-185.255.179.166-0541 #1'
   network: ws
   password: humanity
@@ -2279,13 +2323,6 @@ proxies:
   server: free.2weradf.xyz
   type: ss
   udp: true
-- name: 636|🇩🇪 德国 003
-  password: humanity
-  port: 443
-  server: 185.220.100.168
-  skip-cert-verify: false
-  sni: www.calmlunch.com
-  type: trojan
 - name: 728|🇩🇪 德国4🔒
   password: ZIXQa-7pg0vPahuyi8bABhob
   port: 443
