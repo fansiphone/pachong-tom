@@ -88,20 +88,14 @@ proxies:
   udp: true
   uuid: 7c317161-5cf8-4cbc-811a-d1297c41bb23
   xudp: true
-- name: '378,489,537|🇨CH-31.7.62.50-0613 #1'
-  port: 443
-  server: 31.7.62.50
-  skip-cert-verify: false
-  tls: true
-  type: http
-- name: '378,536,537|CH-152.67.71.149-3184 #1'
+- name: '378,536,537|CH-152.67.71.149-3195 #1'
   password: 8a03bc28-2a33-42c4-be59-30464dbb9954
   port: 18818
   server: ch12.yukiss.eu.org
   skip-cert-verify: false
   type: trojan
 - cipher: aes-128-cfb
-  name: '378,537|🇨CH-156.146.62.160-4755 #1'
+  name: '378,537|🇨CH-156.146.62.160-4766 #1'
   password: shadowsocks
   port: 443
   server: 156.146.62.160
@@ -208,23 +202,20 @@ proxies:
   skip-cert-verify: true
   tls: true
   type: http
-- name: 489|D🔴🇨🇭hos[🎬🤖📺🎭]_dokng.com_d20505...
-  password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
-  port: 1024
-  server: 2nkc8d82.zf-mix.9999231.xyz
-  skip-cert-verify: true
-  sni: ch-wy.9999231.xyz
-  type: anytls
-  udp: true
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 502|🇨🇭CH_1|1.5MB/s
+- name: 489|D🔴🇨🇭hos[🎬🤖📺🎭]_dokng.com_d10161...
   port: 443
-  server: 179.237.69.151
-  servername: yloyqo0gfsqm.edgepop.lol
+  server: 31.7.62.50
+  skip-cert-verify: true
   tls: true
-  type: vless
-  uuid: c9c219dc-50da-4135-8e5b-67020291f0ec
+  type: http
+- name: 489|D🔴🇨🇭hos[🎬🤖📺🎭]_dokng.com_a74c39...
+  password: None
+  port: 443
+  server: 31.7.62.50
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: null
 - alterId: 0
   cipher: auto
   name: 508,509,636|🇨🇭 瑞士 001
@@ -248,16 +239,6 @@ proxies:
   type: vless
   udp: true
   uuid: 8787dd0a-095a-414e-804f-a7d16a1ae166
-- name: '508,509|瑞士 003 #1'
-  network: tcp
-  port: 62145
-  server: 141.148.225.158
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
 - name: '508,509|瑞士 004 #1'
   network: tcp
   port: 2086
@@ -268,7 +249,7 @@ proxies:
   type: vless
   udp: true
   uuid: b6606cb0-e15d-4813-94af-985028c4b9f3
-- name: '519,566|🇨🇭 瑞士 | CHE #1'
+- name: 519|🇨🇭 瑞士 | CHE
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
   port: 1024
   server: sj8aycl6.zf-mix.9999231.xyz
@@ -276,6 +257,69 @@ proxies:
   sni: ch-wy.9999231.xyz
   type: anytls
   udp: true
+- alpn:
+  - h2
+  client-fingerprint: chrome
+  encryption: mlkem768x25519plus.native.0rtt.100-111-1111.75-0-111.50-0-3333.r0GHkKItWBaa1PUy0tN6uBX3xozktLQIs6Vr1tbc0X0
+  flow: xtls-rprx-vision
+  name: '519,551|🇨🇭 瑞士 | CHE #1'
+  network: xhttp
+  port: 443
+  server: 36a4a905.bilibiliapp.cn
+  servername: 6261d264.m3u8.chcauib.pay.cfcndns.pp.ua
+  tls: true
+  type: vless
+  udp: true
+  uuid: d5556fce-cc34-4df9-b1ff-755b02a3fc9a
+  xhttp-opts:
+    host: 36a4a905.bilibiliapp.cn
+    mode: auto
+    no-grpc-header: false
+    no-sse-header: false
+    path: /zones
+    sc-max-buffered-posts: 60
+    sc-max-each-post-bytes: 1000000
+    sc-min-posts-interval-ms: 5
+    sc-stream-up-server-secs: 5-10
+    x-padding-bytes: 100-1000
+- auth: 3a702d4d1de4949005d8431220e040fb
+  name: '519,551,566|🇨🇭 瑞士 | CHE #3'
+  obfs: salamander
+  obfs-password: c13f29db6a638ad2b211b9ce2669ef27
+  password: 3a702d4d1de4949005d8431220e040fb
+  port: 443
+  server: 152.67.75.161
+  skip-cert-verify: true
+  sni: www.bing.com
+  tls: false
+  type: hysteria2
+- alpn:
+  - h2
+  client-fingerprint: chrome
+  encryption: mlkem768x25519plus.native.0rtt.shwrr-SZXMfmu3Vc_3Ts3xVnLkri_jVutSWXpmT0KCc
+  name: 519|🇨🇭 瑞士 | CHE 3
+  network: ws
+  port: 443
+  server: fastip.zabidat.ir
+  servername: speedtest.net
+  tls: true
+  type: vless
+  udp: true
+  uuid: b4fb7995-b93b-4ffd-b49e-0cf2b47da15a
+  ws-opts:
+    headers:
+      Host: ceawvctcqshoivh.global.ssl.fastly.net
+    path: /
+- name: '551,568|🇨🇭 瑞士 | CHE #4'
+  obfs: salamander
+  obfs-password: salamander
+  password: 3a702d4d1de4949005d8431220e040fb
+  port: 443
+  server: 152.67.75.161
+  skip-cert-verify: true
+  sni: www.bing.com
+  tls: false
+  type: hysteria2
 - name: 728|🇨🇭 瑞士1🔒
   password: ZIXQa-7pg0vPahuyi8bABhob
   port: 443
