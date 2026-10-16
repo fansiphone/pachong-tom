@@ -1,11 +1,4 @@
 proxies:
-- cipher: chacha20-ietf-poly1305
-  name: 306,378,519,537,548|🇳🇱 荷兰_1BMOPX
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 178.83.185.156
-  type: ss
-  udp: true
 - name: '340,496,502,514,519,551|🇨🇭192087 | ⚡️Telegram = t.me/v... #4'
   obfs: salamander
   obfs-password: mbQXP2ASuHbF6ZPq
@@ -17,12 +10,20 @@ proxies:
   tls: false
   type: hysteria2
 - client-fingerprint: chrome
-  name: '340,494,502,514,551|🇨🇭[www.v2nodes.com] vless-CH-1... #4'
-  network: tcp
+  name: '340,502,508,509,514,551|🇨🇭[www.v2nodes.com] vless-CH-1... #6'
+  network: grpc
+  port: 444
+  server: ch.srv.vbuste.ru
+  servername: ch.srv.vbuste.ru
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 318c935d-c195-41d3-99ad-9bbcfdab3386
+- client-fingerprint: chrome
+  name: '340,502,514,551|🏳[www.v2nodes.com] vless- #12 #1'
   port: 2053
-  reality-opts:
-    public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
-    short-id: ad86e2d52ff40ebd
   server: 208.69.78.217
   servername: www.apple.com
   tls: true
@@ -91,25 +92,32 @@ proxies:
   udp: true
   uuid: 7c317161-5cf8-4cbc-811a-d1297c41bb23
   xudp: true
-- name: '378,489,519,537|🇨CH-149.88.27.33-0512 #1'
+- name: '378,489,537|🇨CH-149.88.27.33-0512 #1'
+  password: ''
   port: 9443
   server: 149.88.27.33
   skip-cert-verify: false
+  sub_tag: K001-260618
   tls: true
   type: http
-- name: '378,489,519,537|🇨🇭CH-31.7.62.50-0514 #1'
+  udp: true
+  username: ''
+- name: '378,489,537|🇨🇭CH-31.7.62.50-0514 #1'
   port: 443
   server: 31.7.62.50
   skip-cert-verify: false
   tls: true
   type: http
-- name: '378,489,519,537|🇨🇭CH-149.88.27.46-0518 #1'
+- name: '378,489,537|🇨🇭CH-149.88.27.46-0518 #1'
+  password: ''
   port: 9443
   server: 149.88.27.46
   skip-cert-verify: false
   tls: true
   type: http
-- name: '378,489,519,537|🇨🇭CH-37.120.213.210-0551 #1'
+  udp: true
+  username: ''
+- name: '378,489,537|🇨🇭CH-37.120.213.210-0551 #1'
   password: None
   port: 9443
   server: 37.120.213.210
@@ -225,14 +233,6 @@ proxies:
   type: vless
   udp: true
   uuid: ab7d5ea9-6eca-47c3-b14b-67378fc2d7c2
-- name: 489|C🟠🇨🇭hos[🎬🤖📺🎭]_dokng.com_a74c39...
-  password: None
-  port: 443
-  server: 31.7.62.50
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: null
 - name: 489|D🔴🇨🇭hos[🎬🤖📺🎭]_dokng.com_c3243a...
   port: 9443
   server: 37.120.213.210
@@ -241,56 +241,53 @@ proxies:
   tls: true
   type: http
   udp: true
-- alpn:
-  - h2
-  client-fingerprint: chrome
-  encryption: mlkem768x25519plus.native.0rtt.100-111-1111.75-0-111.50-0-3333.r0GHkKItWBaa1PUy0tN6uBX3xozktLQIs6Vr1tbc0X0
-  flow: xtls-rprx-vision
-  name: 519|🇨🇭 瑞士 | CHE
-  network: xhttp
+- name: 489|C🟠🇨🇭hos[🎬🤖📺🎭]_dokng.com_a74c39...
+  password: None
   port: 443
-  server: 427c5e29.bilibiliapp.cn
-  servername: c5943b26.m3u8.chcauib.pay.cfcndns.pp.ua
+  server: 31.7.62.50
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: null
+- alterId: 0
+  cipher: auto
+  name: 508,509,636|🇨🇭 瑞士 002
+  network: tcp
+  port: '38998'
+  server: 178.83.45.29
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 48422300-458f-4dbb-b0f5-96f45450ab9f
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '508,509|瑞士 003 #1'
+  network: tcp
+  port: 8443
+  server: 138.124.244.77
+  servername: fi1.hys.braidx.tech
+  skip-cert-verify: false
+  tfo: false
   tls: true
   type: vless
   udp: true
-  uuid: d5556fce-cc34-4df9-b1ff-755b02a3fc9a
-  xhttp-opts:
-    host: 427c5e29.bilibiliapp.cn
-    mode: auto
-    no-grpc-header: false
-    no-sse-header: false
-    path: /zones
-    sc-max-buffered-posts: 60
-    sc-max-each-post-bytes: 1000000
-    sc-min-posts-interval-ms: 5
-    sc-stream-up-server-secs: 5-10
-    x-padding-bytes: 100-1000
-- alpn:
-  - h2
-  client-fingerprint: chrome
-  encryption: mlkem768x25519plus.native.0rtt.100-111-1111.75-0-111.50-0-3333.r0GHkKItWBaa1PUy0tN6uBX3xozktLQIs6Vr1tbc0X0
-  flow: xtls-rprx-vision
-  name: 519|🇨🇭 瑞士 | CHE 2
-  network: xhttp
-  port: 443
-  server: ed88abc9.bilibiliapp.cn
-  servername: 1a21e522.m3u8.chcauib.pay.cfcndns.pp.ua
+  uuid: 8787dd0a-095a-414e-804f-a7d16a1ae166
+- name: '508,509|瑞士 004 #1'
+  network: tcp
+  port: 2086
+  server: 138.124.123.127
+  skip-cert-verify: false
+  tfo: false
   tls: true
   type: vless
   udp: true
-  uuid: d5556fce-cc34-4df9-b1ff-755b02a3fc9a
-  xhttp-opts:
-    host: ed88abc9.bilibiliapp.cn
-    mode: auto
-    no-grpc-header: false
-    no-sse-header: false
-    path: /zones
-    sc-max-buffered-posts: 60
-    sc-max-each-post-bytes: 1000000
-    sc-min-posts-interval-ms: 5
-    sc-stream-up-server-secs: 5-10
-    x-padding-bytes: 100-1000
+  uuid: b6606cb0-e15d-4813-94af-985028c4b9f3
+- cipher: aes-128-gcm
+  name: 566|🇨🇭 瑞士 | CHE
+  password: 30e9c7aa-d86d-4f0d-a0d6-9d0ddf3f5e42
+  port: 35037
+  server: ruot.ayucloudservices.nl
+  type: ss
 - name: 728|🇨🇭 瑞士1🔒
   password: ZIXQa-7pg0vPahuyi8bABhob
   port: 443
