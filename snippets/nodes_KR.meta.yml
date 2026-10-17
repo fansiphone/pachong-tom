@@ -175,24 +175,49 @@ proxies:
     headers:
       Host: 8nTzyR5KNivfabaT.v.3dns.vip
     path: /ws-vmess
-- alpn:
-  - ''
-  alterId: 0
-  cipher: auto
-  name: 340,378,494,508,509,519,536,537,636|🇯🇵 日本 026
-  network: ws
-  port: '443'
-  server: seoul02.zgjok.com
-  servername: seoul02.zgjok.com
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 1a1e5196-eab4-4772-9012-65c27f19a524
-  ws-opts:
+- http-opts:
     headers:
-      Host: seoul02.zgjok.com
-    path: /
+      Host:
+      - play.googleapis.com
+    method: GET
+    path:
+    - /
+  name: 340,514,519|🇰🇷 韩国 | KOR
+  network: http
+  port: 443
+  server: 52.78.30.63
+  tls: false
+  type: vless
+  udp: true
+  uuid: 7060231d-b9ba-495f-a218-bf427940cf3e
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 340,514,519|🇰🇷 韩国 | KOR 2
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: DHOrfoin7TeRpnIoU3d6qT5Yrq3QPVFp49kApATA4iE
+    short-id: e04a526b0b09c765
+  server: 13.125.94.114
+  servername: lmate.net
+  tls: true
+  type: vless
+  uuid: 7e68e32f-8015-4f37-9082-70e8b0b58043
+- http-opts:
+    headers:
+      Host:
+      - play.googleapis.com
+    method: GET
+    path:
+    - /
+  name: '340,514,519,551,566|🇰🇷 韩国 | KOR 2 #1'
+  network: http
+  port: 443
+  server: 13.124.9.166
+  tls: false
+  type: vless
+  udp: true
+  uuid: 7060231d-b9ba-495f-a218-bf427940cf3e
 - cipher: aes-256-cfb
   name: 356|🇰🇷1 |  8.2MB/s
   password: amazonskr05
@@ -599,7 +624,8 @@ proxies:
   sni: main-fawn.rooster465.autos
   type: trojan
 - cipher: aes-256-cfb
-  name: 378,537,538|🇰🇷KR-218.237.185.234-0185 | 1....
+  country: 🇷KR
+  name: 378,435,537,538|🇰🇷KR-218.237.185.234-0185 | 1....
   password: qwerREWQ@@
   port: 4652
   server: p141.panda001.net
@@ -632,8 +658,7 @@ proxies:
   sni: pretty-rat.rooster465.autos
   type: trojan
 - cipher: aes-256-cfb
-  country: 🇷KR
-  name: 378,435,537,538|🇰🇷KR-211.178.105.134-0186 | 0....
+  name: 378,537,538|🇰🇷KR-211.178.105.134-0186 | 0....
   password: qwerREWQ@@
   port: 6123
   server: 211.178.105.134
@@ -667,6 +692,21 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
+  name: '378,494,536,537|🇷KR-146.56.136.237-0616 #1'
+  network: ws
+  port: 443
+  server: seoul02.zgjok.com
+  servername: seoul02.zgjok.com
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 1a1e5196-eab4-4772-9012-65c27f19a524
+  ws-opts:
+    headers:
+      Host: seoul02.zgjok.com
+    path: /
+- alterId: 0
+  cipher: auto
   name: '378,536,537|🇰🇷KR-146.56.40.117-0792 #1'
   network: ws
   port: 27675
@@ -680,9 +720,9 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 378,508,509,536,537,636|🇰🇷 韩国 001
+  name: '378,508,509,536,537|🇰KR-92.223.61.25-0979 #1'
   network: ws
-  port: '80'
+  port: 80
   server: 92.223.61.25
   servername: ''
   skip-cert-verify: false
@@ -695,9 +735,9 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 378,508,509,536,537,636|🇦🇺 澳大利亚 007
+  name: '378,508,509,536,537|🇷KR-43.201.103.12-1039 #1'
   network: ws
-  port: '29930'
+  port: 29930
   server: 43.201.103.12
   servername: ''
   skip-cert-verify: false
@@ -710,9 +750,9 @@ proxies:
     path: /f46b2e2a-e02c-437a-833c-023410840a80
 - alterId: 0
   cipher: auto
-  name: 378,508,509,536,537,636|🇦🇺 澳大利亚 008
+  name: '378,508,509,536,537|🇰🇷KR-43.201.253.222-1040 #1'
   network: ws
-  port: '26540'
+  port: 26540
   server: 43.201.253.222
   servername: ''
   skip-cert-verify: false
@@ -725,9 +765,9 @@ proxies:
     path: /c841c903-7657-41f7-bf55-b41dd9456179
 - alterId: 0
   cipher: auto
-  name: 378,508,509,536,537,636|🇯🇵 日本 019
+  name: '378,536,537|KR-146.56.162.25-1151 #1'
   network: ws
-  port: '443'
+  port: 443
   server: 146.56.162.25
   servername: ''
   skip-cert-verify: false
@@ -740,9 +780,9 @@ proxies:
     path: /ray
 - alterId: 1
   cipher: auto
-  name: 378,508,509,536,537,636|🇰🇷 韩国 002
+  name: '378,536,537|KR-54.180.96.67-1271 #1'
   network: ws
-  port: '8888'
+  port: 8888
   server: 54.180.96.67
   servername: ''
   skip-cert-verify: false
@@ -755,9 +795,9 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 378,508,509,536,537,636|🇰🇷 韩国 003
+  name: '378,536,537|🇷KR-52.231.200.179-1337 #1'
   network: ws
-  port: '443'
+  port: 443
   server: fullaccesstokoreannetsubnode1.azurewebsites.net
   servername: ''
   skip-cert-verify: false
@@ -774,9 +814,9 @@ proxies:
     method: GET
     path:
     - /
-  name: 378,508,509,536,537,636|🇺🇸 美国 805
+  name: '378,536,537|🇰🇷KR-150.230.249.15-1364 #1'
   network: http
-  port: '46842'
+  port: 46842
   server: 150.230.249.15
   servername: ''
   skip-cert-verify: false
@@ -1034,7 +1074,8 @@ proxies:
   server: 3.36.118.190
   type: ss
 - cipher: aes-256-gcm
-  name: '378,537|🇷KR-141.164.45.187-5461 #1'
+  country: 🇵JP
+  name: '378,435,537|🇷KR-141.164.45.187-5461 #1'
   password: TEzjfAYq2IjtuoS
   port: 6679
   server: 141.164.45.187
@@ -1116,35 +1157,6 @@ proxies:
   port: 2003
   server: 125.141.26.5
   type: ss
-- client-fingerprint: ''
-  flow: xtls-rprx-vision
-  name: '438,494|Join+Telegram:@Farah_VPN #2934'
-  network: tcp
-  port: 18967
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  server: 3.39.4.109
-  servername: www.apple.com
-  tls: false
-  type: vless
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-- name: '438|🇰🇷KR_2|2.1MB/s | 更多节点: https:/...'
-  password: 3d7634af8cb2c6cb4bac1c0efad8b43d
-  port: 50160
-  server: 152.67.200.82
-  skip-cert-verify: true
-  sni: 152.67.200.82
-  tls: false
-  type: hysteria2
-- name: '438|🇰🇷KR_3|2.2MB/s | 网盘搜宝: https:/...'
-  password: 1671a252e2a97dc2bda4e515475931da
-  port: 50160
-  server: 132.226.226.189
-  skip-cert-verify: true
-  sni: www.bing.com
-  tls: false
-  type: hysteria2
 - name: 460|韩国_首尔特别市
   network: ws
   port: 8443
@@ -1672,26 +1684,60 @@ proxies:
     headers:
       Host: ylnhh.cc.cd
     path: /Telegram🇨🇳@WangCai2
-- client-fingerprint: chrome
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 489|C🟠🇰🇷hos[🎬🤖📺🎭]_dokng.com_4a3d6d...
-  network: tcp
+- auth: 9cfc9458e48c028ec03ff86ebc71c744
+  name: 489|D🔴🇰🇷hos[🎬🤖📺🎭]_dokng.com_45c836...
+  password: 9cfc9458e48c028ec03ff86ebc71c744
+  port: 50160
+  server: 150-230-252-217.liao.kdns.fr
+  skip-cert-verify: true
+  sni: 150-230-252-217.liao.kdns.fr
+  type: hysteria2
+  udp: true
+- name: 489|C🟠🇰🇷hos[🤖🎪✨🎞️]_dokng.com_9f755...
+  password: d9109567-3fc3-4e08-9cac-4d9162ef5a9f
+  port: 53200
+  server: 8dwou5alze.chhbuv.cn
+  skip-cert-verify: true
+  sni: hx-hk-zl-02.youxuan4828.vip
+  type: anytls
+  udp: true
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  name: '489,502|美国+CloudFlare节点 #15'
+  network: ws
   port: 443
-  reality-opts:
-    public-key: DHOrfoin7TeRpnIoU3d6qT5Yrq3QPVFp49kApATA4iE
-    short-id: e04a526b0b09c765
-  server: 3.34.96.37
-  servername: api-cadi.dadilabs.com
+  server: 104.17.147.22
+  servername: snip.edgeoneai.cc.cd
+  skip-cert-verify: false
   tls: true
   type: vless
-  uuid: 7e68e32f-8015-4f37-9082-70e8b0b58043
-- cipher: aes-128-gcm
-  name: 489|D🔴🇰🇷hos[🎬🤖📺🎭]_dokng.com_49b314...
-  password: e3834037-70dd-4f6e-95f6-c37633664bc1
-  port: 40029
-  server: ruot.ayucloudservices.nl
-  type: ss
+  udp: true
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  ws-opts:
+    headers:
+      Host: snip.edgeoneai.cc.cd
+  xudp: true
+- alpn:
+  - http/1.1
+  client-fingerprint: unsafe
+  encryption: none
+  name: 489|D🔴🇰🇷hos[🎬🤖📺🎭]_dokng.com_dda1ff...
+  network: ws
+  port: 443
+  server: 188.114.98.0
+  servername: snip.edgeoneai.cc.cd
+  tls: true
+  type: vless
+  udp: true
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  ws-opts:
+    headers:
+      Host: snip.edgeoneai.cc.cd
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/54.0.2840.99 Safari/537.36
+    path: /?TELEGRAM--MARAMBASHI--MARAMBASHI--MARAMBASHI--MARAMBASHI?ed
+  xudp: true
 - client-fingerprint: unsafe
   name: 489|D🔴🇰🇷hos[🎬🤖📺🎭]_dokng.com_e422de...
   network: ws
@@ -1709,18 +1755,6 @@ proxies:
         Gecko) Chrome/68.0.3440.1805 Safari/537.36 MVisionPlayer/1.0.0.0
     path: ''
   xudp: true
-- name: 489|D🔴🇰🇷hos[🎬🤖📺🎭]_dokng.com_aba567...
-  port: 443
-  server: 172.64.69.89
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 489|D🔴🇰🇷hos[🎬🤖📺🎭]_dokng.com_6c43e4...
-  port: 443
-  server: 172.64.68.89
-  skip-cert-verify: true
-  tls: true
-  type: http
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   name: 513|15|🇰🇷 韩国特殊|@ripaojiedian
@@ -1767,16 +1801,6 @@ proxies:
     headers:
       Host: jln31qtswdkut5.60kohcognywybguuq3ouc818oofnxfvn35daott.workers.dev
     path: /@Marisa_kristi
-- country: 🇰🇷KR
-  delay: 1445
-  name: 528|韩国 - 首尔特别市 - 1
-  password: Trojan@82164024
-  port: 443
-  server: kr.tronsg.com
-  skip-cert-verify: true
-  sni: kr.tronsg.com
-  type: trojan
-  udp: true
 - name: 533|KR韩国(mibei77.com 米贝节点分享)
   network: ws
   port: 50001
@@ -2442,11 +2466,6 @@ proxies:
   port: 443
   server: next-turkey.rooster465.autos
   type: trojan
-- name: 536|🇰🇷KR-52.78.76.194-5497
-  password: CF68213490
-  port: 443
-  server: innocent-rattler.rooster465.autos
-  type: trojan
 - name: 536|🇰🇷KR-43.202.1.241-5500
   password: CF68213490
   port: 443
@@ -2468,6 +2487,21 @@ proxies:
   server: pop.ff34894a-296c-446f-af39-20b90947f3a7.heima360.cc
   skip-cert-verify: false
   type: trojan
+- http-opts:
+    headers:
+      Host:
+      - play.googleapis.com
+    method: GET
+    path:
+    - /
+  name: '551,566|🇰🇷 韩国 | KOR 3 #1'
+  network: http
+  port: 443
+  server: 43.203.219.68
+  tls: false
+  type: vless
+  udp: true
+  uuid: 7060231d-b9ba-495f-a218-bf427940cf3e
 - cipher: chacha20-ietf-poly1305
   name: 558|0|🇷国 01 | 1x KR
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
@@ -2513,49 +2547,20 @@ proxies:
   server: 3.34.192.249
   tfo: false
   type: ss
-- http-opts:
-    headers:
-      Host:
-      - play.googleapis.com
-    method: GET
-    path:
-    - /
-  name: 566|🇰🇷 韩国 | KOR
-  network: http
-  port: 443
-  server: 52.78.30.63
-  tls: false
-  type: vless
-  udp: true
-  uuid: 7060231d-b9ba-495f-a218-bf427940cf3e
 - client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 566|🇰🇷 韩国 | KOR 2
-  network: tcp
+  name: '566|🇰🇷 韩国 | KOR #4'
+  network: ws
   port: 443
-  reality-opts:
-    public-key: DHOrfoin7TeRpnIoU3d6qT5Yrq3QPVFp49kApATA4iE
-    short-id: e04a526b0b09c765
-  server: 13.125.94.114
-  servername: lmate.net
+  server: 152.67.198.36
+  servername: snip.edgeoneai.cc.cd
   tls: true
   type: vless
-  uuid: 7e68e32f-8015-4f37-9082-70e8b0b58043
-- http-opts:
-    headers:
-      Host:
-      - play.googleapis.com
-    method: GET
-    path:
-    - /
-  name: 566|🇰🇷 韩国 | KOR 3
-  network: http
-  port: 443
-  server: 13.124.9.166
-  tls: false
-  type: vless
   udp: true
-  uuid: 7060231d-b9ba-495f-a218-bf427940cf3e
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  ws-opts:
+    headers:
+      Host: snip.edgeoneai.cc.cd
+    path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443
 - name: 728|🇰🇷 韩国1🔒
   password: ZIXQa-7pg0vPahuyi8bABhob
   port: 443
