@@ -683,6 +683,12 @@ proxies:
   port: 17315
   server: 120.240.103.35
   type: ss
+- cipher: aes-256-gcm
+  name: '306,519|🇸🇬[www.v2nodes.com] ss-SG-1559... #2'
+  password: qpSevKaUXYQKvSjp
+  port: 8388
+  server: 139.180.220.175
+  type: ss
 - name: '306,340,378,502,514,519,536,537,551|🇭🇰[www.v2nodes.com] trojan-HK-... #8'
   password: bad06c3525a6eaee1757b34776b83892
   port: 12001
@@ -697,12 +703,11 @@ proxies:
   skip-cert-verify: true
   sni: ixigua.com
   type: trojan
-- name: '306,340,378,502,514,519,536,537|🇸🇬SG-139.180.146.200-0458 #1'
+- name: '306,502,514,519,551|🇸🇬[www.v2nodes.com] trojan-SG-... #3'
   password: e26a229d-e8f2-4ff9-8c7d-58a9d83ee437
   port: 8886
   server: 139.180.146.200
-  skip-cert-verify: false
-  sni: 139.180.146.200
+  skip-cert-verify: true
   type: trojan
 - alterId: 0
   cipher: auto
@@ -779,21 +784,6 @@ proxies:
     headers:
       Host: bJ1Aa2ZyJxYamYuK.v.3dns.vip
     path: /ws-vmess
-- alterId: 0
-  cipher: auto
-  name: '306,340,378,514,519,537|🇬SG-206.238.239.109-0599 #1'
-  network: ws
-  port: 8443
-  server: 206.238.239.109
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 6006c9a2-c0a2-4cda-80f2-405b0d790fc8
-  ws-opts:
-    headers:
-      Host: uk.frnhk.xyz
-    path: /London31
 - name: '321,322,323|tg群组: https://t.me/tjiajc1 #3'
   network: ws
   password: 429ad146-8f43-4dd4-8fb3-cca3f3a30c63
@@ -828,6 +818,16 @@ proxies:
   server: sg008.421421.xyz
   skip-cert-verify: true
   sni: www.alibaba.com
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: '340,378,489,536,537|🇸🇬SG-139.180.146.200-0458 #1'
+  network: tcp
+  password: e26a229d-e8f2-4ff9-8c7d-58a9d83ee437
+  port: 8886
+  server: 139.180.146.200
+  skip-cert-verify: false
+  sni: 139.180.146.200
   type: trojan
   udp: true
 - alterId: 0
@@ -879,8 +879,7 @@ proxies:
   server: 128.199.172.224
   type: ss
 - cipher: rc4-md5
-  country: 🇬SG
-  name: 356,378,435,537,538|🇸🇬SG-68.183.227.4-0161 | 22.60...
+  name: 356,378,537,538|🇸🇬SG-68.183.227.4-0161 | 22.60...
   password: 14fFPrbezE3HDZzsMOr6
   port: 8080
   server: 68.183.227.4
@@ -1657,6 +1656,12 @@ proxies:
   uuid: 6fea1649-425b-4092-bf53-29792152c925
   ws-opts:
     path: /sshkit/Ertusg86/635014638c264/
+- cipher: rc4-md5
+  name: '378,537|🇬SG-128.1.186.132-0578 #1'
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 128.1.186.132
+  type: ss
 - alterId: 0
   cipher: auto
   name: 378,494,508,509,536,537,636|🇺🇸 美国 108
@@ -2313,7 +2318,7 @@ proxies:
   uuid: ce3868a4-e2ca-4a6f-8731-e7e88d098886
   ws-opts:
     path: /
-- country: 🇸🇬SG
+- country: 🇬SG
   name: '378,435,436,536,537|🇬SG-91.243.81.248-5160 #1'
   password: IQ68037294
   port: 443
@@ -2391,7 +2396,7 @@ proxies:
   skip-cert-verify: false
   type: trojan
   udp: true
-- country: 🇬SG
+- country: 🇸🇬SG
   name: '378,435,436,537|🇬SG-81.28.13.180-5347 #1'
   password: IQ68037294
   port: 443
@@ -2682,11 +2687,21 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: '438,494|🔥Join+Telegram:@Farah_VPN🟣 #3463'
-  network: raw
+  name: '438,494|🔥Join+Telegram:@Farah_VPN🟣 #3443'
+  network: tcp
   port: '18000'
   server: ww11.levikogjgfdd.ir
   servername: ''
+  tls: false
+  type: vmess
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+- alterId: 0
+  cipher: auto
+  name: '438,494|🔥Join+Telegram:@Farah_VPN🟣 #996'
+  network: raw
+  port: '18000'
+  server: ww11.levikogjgfdd.ir
+  servername: ww11.levikogjgfdd.ir
   tls: false
   type: vmess
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
@@ -3102,42 +3117,12 @@ proxies:
   server: 52.196.181.68
   tfo: false
   type: ss
-- cipher: rc4-md5
-  delay: 1413
-  name: 528|新加坡 - 新加坡 - 1
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  server: 128.1.186.73
-  type: ss
-  udp: true
 - name: '545,546|新加坡[02] #1'
   password: 4568465a-a435-4569-b3ab-7f606018474f
   port: 443
   server: pop.09d21837-9b89-4490-92bf-eabf449e3321.heima360.cc
   skip-cert-verify: false
   type: trojan
-- name: '551|🇸🇬[www.v2nodes.com] trojan-SG-... #2'
-  password: e26a229d-e8f2-4ff9-8c7d-58a9d83ee437
-  port: 8886
-  server: 139.180.146.200
-  skip-cert-verify: true
-  type: trojan
-- name: '551,566,568|🇸🇬 新加坡 | SGP #10'
-  password: 6e4ceae4-6d81-4d87-9802-759ea5c244e5
-  port: 50125
-  server: fj3x.waimaosass.icu
-  skip-cert-verify: true
-  sni: iosapps.itunes.apple.com
-  type: trojan
-  udp: true
-- name: '551,566,568|🇸🇬 新加坡 | SGP #11'
-  password: 6e4ceae4-6d81-4d87-9802-759ea5c244e5
-  port: 55016
-  server: fj3x.waimaosass.icu
-  skip-cert-verify: true
-  sni: www.lamer.com.sg
-  type: trojan
-  udp: true
 - cipher: chacha20-ietf-poly1305
   name: 558|0|🇬加 01 | 1x SG
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
@@ -3215,6 +3200,27 @@ proxies:
   tls: false
   type: vmess
   uuid: 070f662b-3c75-4e7f-8381-287d6d8f45b2
+- name: 580|🇸🇬SG_16|806KB/s|A004-260618 01
+  network: tcp
+  password: sshs8_6481354771
+  port: 2087
+  server: 86.38.247.109
+  sni: ul-singapore1.09vpn.com
+  type: trojan
+- name: 580|🇸🇬SG_94|499KB/s|A004-260618 01
+  network: raw
+  password: skynet
+  port: 119
+  server: cloud.lakshan.us
+  sni: cloud.lakshan.us
+  type: trojan
+- name: 580|🇸🇬SG_104|512KB/s|A004-260618 0...
+  network: tcp
+  password: skynet
+  port: 119
+  server: 64.120.95.203
+  sni: cloud.lakshan.us
+  type: trojan
 - name: 728|🇸🇬 新加坡7🔒
   password: 升级订阅解锁全部节点
   port: 443
