@@ -776,13 +776,21 @@ proxies:
   port: 17315
   server: 120.240.103.35
   type: ss
-- cipher: aes-256-gcm
-  name: 306|Singapore_Singapore_ss_1139
-  password: qpSevKaUXYQKvSjp
-  port: 8388
-  server: 139.180.220.175
-  type: ss
-- name: '306,340,378,502,514,519,536,537,551|🇸🇬[www.v2nodes.com] trojan-SG-... #4'
+- name: '306,340,378,502,514,519,536,537,551|🇭🇰[www.v2nodes.com] trojan-HK-... #8'
+  password: bad06c3525a6eaee1757b34776b83892
+  port: 12001
+  server: 4c2d5151.266nets.com
+  skip-cert-verify: true
+  sni: ixigua.com
+  type: trojan
+- name: '306,340,378,502,514,519,536,537,551|🇯🇵[www.v2nodes.com] trojan-JP-... #8'
+  password: bad06c3525a6eaee1757b34776b83892
+  port: 12019
+  server: 4c2d5151.266nets.com
+  skip-cert-verify: true
+  sni: ixigua.com
+  type: trojan
+- name: '306,340,378,502,514,519,536,537|🇸🇬SG-139.180.146.200-0458 #1'
   password: e26a229d-e8f2-4ff9-8c7d-58a9d83ee437
   port: 8886
   server: 139.180.146.200
@@ -864,14 +872,21 @@ proxies:
     headers:
       Host: bJ1Aa2ZyJxYamYuK.v.3dns.vip
     path: /ws-vmess
-- client-fingerprint: chrome
-  name: 306,514|🇸🇬SG_2|1.0MB/s
-  password: e26a229d-e8f2-4ff9-8c7d-58a9d83ee437
-  port: 8886
-  server: 139.180.146.200
-  skip-cert-verify: true
-  type: trojan
+- alterId: 0
+  cipher: auto
+  name: '306,340,378,514,519,537|🇬SG-206.238.239.109-0599 #1'
+  network: ws
+  port: 8443
+  server: 206.238.239.109
+  skip-cert-verify: false
+  tls: true
+  type: vmess
   udp: true
+  uuid: 6006c9a2-c0a2-4cda-80f2-405b0d790fc8
+  ws-opts:
+    headers:
+      Host: uk.frnhk.xyz
+    path: /London31
 - client-fingerprint: firefox
   name: '321,322,323|新加坡01|流媒体 #3'
   port: 20230
@@ -973,26 +988,25 @@ proxies:
   sni: www.alibaba.com
   type: trojan
   udp: true
+- name: '340,494,502,514,519,551|🇸🇬[www.v2nodes.com] vless-SG-9... #9'
+  port: 443
+  server: 188.114.97.6
+  tls: false
+  type: vless
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  ws-opts:
+    path: /cart/docs/www/proxyip
 - client-fingerprint: firefox
-  name: '340,502,514,551|🇸🇬[www.v2nodes.com] vless-SG-1... #25'
+  name: '340,502,514,551|🇸🇬[www.v2nodes.com] vless-SG-1... #28'
   port: 2053
   server: 45.132.75.213
   servername: www.cloudflare.com
   tls: true
   type: vless
   uuid: f46182d1-e13b-47d3-97e2-fa5426a93e7c
-- client-fingerprint: safari
-  flow: xtls-rprx-vision
-  name: '340,502,514,551|🏳[www.v2nodes.com] vless- #23 #3'
-  port: 10444
-  server: 147.93.173.45
-  servername: video.yandex.ru
-  tls: true
-  type: vless
-  uuid: 75c5f51b-d548-4eab-a26e-aa10fc3dbc7b
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '340,494,502,514,523,524,551|🇸🇬[www.v2nodes.com] vless-SG-1... #26'
+  name: '340,494,502,514,523,524,551|🇸🇬[www.v2nodes.com] vless-SG-1... #29'
   network: tcp
   port: 46105
   reality-opts:
@@ -1009,50 +1023,78 @@ proxies:
     headers:
       Host: /?Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET
 - encryption: none
-  name: '340,494,502,508,509,514,519,551|🇸🇬[www.v2nodes.com] vless-SG-1... #27'
+  name: '340,494,502,508,509,514,519,551|🇸🇬[www.v2nodes.com] vless-SG-1... #30'
   network: tcp
   port: 16263
   server: 47.237.74.17
   tls: false
   type: vless
   uuid: c538c9dd-2e3f-488f-a8ca-ac5b7c0773f3
+- client-fingerprint: ios
+  flow: xtls-rprx-vision
+  name: '340,494,502,514,551|🇸🇬[www.v2nodes.com] vless-SG-1... #31'
+  network: tcp
+  port: 24146
+  reality-opts:
+    public-key: VeluC9A7XDurAWQNgXKShS2SJSgoK79QHFgiAMYrvGo
+    short-id: 7205d9079521832c
+  server: 54.251.9.130
+  servername: www.intel.com
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  uuid: 9d9a048b-3aea-4b3e-b106-1106bf301feb
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: 340,494,502,514,519,551,580|未知 VLESS-713 | free-nodes
-  network: raw
+  name: '340,494,502,514,519,551|🇸🇬[www.v2nodes.com] vless-SG-1... #32'
+  network: tcp
   port: 12512
   reality-opts:
     public-key: sO0RBMr_l8TLtZaYBX8n3NdI9AtaugUqJpCR1szNsyA
     short-id: e692a8250d2e2fd0
   server: 46.137.202.178
   servername: www.intel.com
-  tls: false
+  tls: true
   type: vless
   uuid: 2a6c617d-98e4-49c3-95ab-76f02fcf0150
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 340,502,514,551,580|🇸🇬SG_32|891KB/s|A004-260618 01
-  network: raw
+  name: '340,438,494,502,514,551|🇸🇬[www.v2nodes.com] vless-SG-1... #33'
+  network: tcp
   port: 19825
   reality-opts:
     public-key: GvvkY8xYb9QjvwvzYq_uNC4tOGd0DCxRnz6770-xgkI
     short-id: 6ba85179e30d4fc2
   server: sg2-8sb.6121999.dpdns.org
   servername: sg2-8sb.6121999.dpdns.org
-  tls: false
+  tls: true
   type: vless
   uuid: 2d1ad594-80a4-4bfb-87a6-038e39701f51
-- name: '340,508,509,519|🇸🇬[www.v2nodes.com] vless-SG-1... #23'
-  network: ws
-  port: 8080
-  server: www.whoer.net
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '340,502,514,551|🇸🇬[www.v2nodes.com] vless-SG-1... #34'
+  port: 12972
+  server: 3.0.111.82
+  servername: www.apple.com
+  tls: true
+  type: vless
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+- name: '340,494,502,514,519,551|🇸🇬[www.v2nodes.com] vless-SG #... #4'
+  port: 8443
+  server: 172.67.155.65
   tls: false
   type: vless
-  uuid: 9cc42ee7-1f5f-46f5-a8b0-2da76b6b6641
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
   ws-opts:
-    headers:
-      Host: pe2ev-frosty-poetry-3d08.s67y4jl8.workers.dev
-    path: /
+    path: /cart/docs/www/proxyip?ed#Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET
+- name: '340,494,502,514,519|🇸🇬[www.v2nodes.com] vless-SG-9... #7'
+  port: 2082
+  server: 172.64.150.28
+  tls: false
+  type: vless
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  ws-opts:
+    path: /fp
 - alterId: 0
   cipher: auto
   name: '340,502,514,551,556|🇸🇬 新加坡|@ripaojiedian #5'
@@ -1083,6 +1125,37 @@ proxies:
     headers:
       Host: 6JiziO8PxQAXBAtZ.v.3dns.vip
     path: /ws-vmess
+- name: '340,494,502,514,519|🇺🇸 美国 | USA #10 #1'
+  network: ws
+  port: 8080
+  server: 104.18.35.86
+  servername: hhlfy.twiladaphne.ndjp.net
+  tls: false
+  type: vless
+  udp: true
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  ws-opts:
+    headers:
+      Host: hhlfy.twiladaphne.ndjp.net
+    path: /sg-melbi
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '340,494,502,514,523,524,551,585,586|SG_speednode_0021 #5'
+  network: tcp
+  port: 34379
+  reality-opts:
+    public-key: KfOrtENkHAXDFlsCluw6fv62Q-WuJXCKI98XZihtemA
+    short-id: e51285e3
+  server: funagfrdfs.alixxplay.com
+  servername: us1p1.xn--ghq880n3na965a.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  ws-opts:
+    headers:
+      Host: /?TELEGRAM--BYA--CHANEL---@V2ray_AM---@V2ray_AM---@V2ray_AM---@V2ray_AM---@V2ray_AM---@V2ray_AM---@V2ray_AM
 - name: 356|🇸🇬1 |  9.0MB/s
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   port: 443
@@ -1102,7 +1175,8 @@ proxies:
   server: 128.199.172.224
   type: ss
 - cipher: rc4-md5
-  name: 356,378,537,538|🇸🇬SG-68.183.227.4-0161 | 17.33...
+  country: 🇬SG
+  name: 356,378,435,537,538|🇸🇬SG-68.183.227.4-0161 | 22.60...
   password: 14fFPrbezE3HDZzsMOr6
   port: 8080
   server: 68.183.227.4
@@ -1916,111 +1990,6 @@ proxies:
     headers:
       Host: westsg2-ddns.oraclenat.cc
     path: /
-- alterId: 2
-  cipher: auto
-  name: 378,508,509,536,537,636|🇺🇸 美国 494
-  network: ws
-  port: '4343'
-  server: ru-1.dnspro.icu
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 3155e00f-71ef-3edc-b6d0-5bce283daf90
-  ws-opts:
-    headers:
-      Host: ru-1.dnspro.icu
-    path: /iso
-- alterId: 0
-  cipher: auto
-  name: 378,494,508,509,536,537,636|🇺🇸 美国 147
-  network: ws
-  port: '7000'
-  server: gz-us-1.dnspro.icu
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 3155e00f-71ef-3edc-b6d0-5bce283daf90
-  ws-opts:
-    headers:
-      Host: gz-us-1.dnspro.icu
-    path: /iso
-- alterId: 0
-  cipher: auto
-  name: 378,494,508,509,536,537,538,636|🇺🇸 美国 146
-  network: ws
-  port: '40515'
-  server: madush.duckdns.org
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: f0e69c63-99e9-455c-a8ae-cbab068c7481
-  ws-opts:
-    headers:
-      Host: ar.linkedin.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 378,494,508,509,536,537,636|🇺🇸 美国 121
-  network: ws
-  port: '20023'
-  server: aws-beijing-1.dnspro.icu
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 3155e00f-71ef-3edc-b6d0-5bce283daf90
-  ws-opts:
-    headers:
-      Host: aws-beijing-1.dnspro.icu
-    path: /iso
-- alterId: 0
-  cipher: auto
-  name: 378,494,508,509,536,537,636|🇺🇸 美国 108
-  network: ws
-  port: '5200'
-  server: st-2.dnspro.icu
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 3155e00f-71ef-3edc-b6d0-5bce283daf90
-  ws-opts:
-    headers:
-      Host: lg-hkg-b.gcorelabs.info
-    path: /iso
-- alterId: 0
-  cipher: auto
-  name: '378,494,536,537|🇬SG-18.142.161.221-0070 #1'
-  network: ws
-  port: 20029
-  server: aws-beijing-1.dnspro.icu
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 3155e00f-71ef-3edc-b6d0-5bce283daf90
-  ws-opts:
-    headers:
-      Host: aws-beijing-1.dnspro.icu
-    path: /iso
-- alterId: 0
-  cipher: auto
-  name: '378,494,536,537|🇬SG-18.142.161.221-0072 #1'
-  network: ws
-  port: 9333
-  server: st-1.dnspro.icu
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 3155e00f-71ef-3edc-b6d0-5bce283daf90
-  ws-opts:
-    headers:
-      Host: hkt04.dnspro.icu
-    path: /iso
 - alterId: 0
   cipher: auto
   name: 378,508,509,536,537,538,636|🇺🇸 美国 030
@@ -2053,7 +2022,64 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '378,536,537|🇬SG-139.99.61.53-0318 #1'
+  name: 378,537,538|🇸🇬SG-18.142.161.221-0068 | 0.0...
+  network: ws
+  port: 5200
+  server: st-2.dnspro.icu
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 3155e00f-71ef-3edc-b6d0-5bce283daf90
+  ws-opts:
+    headers:
+      Host: lg-hkg-b.gcorelabs.info
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 378,537,538|🇸🇬SG-18.142.161.221-0053 | 0.0...
+  network: ws
+  port: 20023
+  server: aws-beijing-1.dnspro.icu
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 3155e00f-71ef-3edc-b6d0-5bce283daf90
+  ws-opts:
+    headers:
+      Host: aws-beijing-1.dnspro.icu
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 378,494,508,509,536,537,538,636|🇺🇸 美国 146
+  network: ws
+  port: '40515'
+  server: madush.duckdns.org
+  servername: ''
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: f0e69c63-99e9-455c-a8ae-cbab068c7481
+  ws-opts:
+    headers:
+      Host: ar.linkedin.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 378,537,538|🇸🇬SG-18.142.161.221-0023 | 0.0...
+  network: ws
+  port: 7000
+  server: gz-us-1.dnspro.icu
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 3155e00f-71ef-3edc-b6d0-5bce283daf90
+  ws-opts:
+    headers:
+      Host: gz-us-1.dnspro.icu
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '378,536,537|🇬SG-139.99.61.53-0295 #1'
   network: ws
   port: 80
   server: 139.99.61.53
@@ -2066,7 +2092,7 @@ proxies:
     path: /vmess
 - alterId: 0
   cipher: auto
-  name: '378,536,537|🇬SG-15.235.147.186-0404 #1'
+  name: '378,536,537|🇬SG-15.235.147.186-0381 #1'
   network: ws
   port: 80
   server: 15.235.147.186
@@ -2077,6 +2103,60 @@ proxies:
   uuid: 6fea1649-425b-4092-bf53-29792152c925
   ws-opts:
     path: /sshkit/Ertusg86/635014638c264/
+- name: '378,489,519,537|🇬SG-149.88.99.209-0523 #1'
+  password: ''
+  port: 9443
+  server: 149.88.99.209
+  skip-cert-verify: false
+  tls: true
+  type: http
+  udp: true
+  username: ''
+- alterId: 0
+  cipher: auto
+  name: 378,494,508,509,536,537,636|🇺🇸 美国 108
+  network: ws
+  port: '5200'
+  server: st-2.dnspro.icu
+  servername: ''
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 3155e00f-71ef-3edc-b6d0-5bce283daf90
+  ws-opts:
+    headers:
+      Host: lg-hkg-b.gcorelabs.info
+    path: /iso
+- alterId: 0
+  cipher: auto
+  name: 378,494,508,509,536,537,636|🇺🇸 美国 121
+  network: ws
+  port: '20023'
+  server: aws-beijing-1.dnspro.icu
+  servername: ''
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 3155e00f-71ef-3edc-b6d0-5bce283daf90
+  ws-opts:
+    headers:
+      Host: aws-beijing-1.dnspro.icu
+    path: /iso
+- alterId: 0
+  cipher: auto
+  name: 378,494,508,509,536,537,636|🇺🇸 美国 147
+  network: ws
+  port: '7000'
+  server: gz-us-1.dnspro.icu
+  servername: ''
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 3155e00f-71ef-3edc-b6d0-5bce283daf90
+  ws-opts:
+    headers:
+      Host: gz-us-1.dnspro.icu
+    path: /iso
 - alterId: 2
   cipher: auto
   name: 378,508,509,536,537,636|🇺🇸 美国 156
@@ -2317,9 +2397,24 @@ proxies:
     headers:
       Host: 180.215.130.123
     path: /
+- alterId: 2
+  cipher: auto
+  name: 378,508,509,536,537,636|🇺🇸 美国 494
+  network: ws
+  port: '4343'
+  server: ru-1.dnspro.icu
+  servername: ''
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 3155e00f-71ef-3edc-b6d0-5bce283daf90
+  ws-opts:
+    headers:
+      Host: ru-1.dnspro.icu
+    path: /iso
 - alterId: 0
   cipher: auto
-  name: '378,536,537|SG-174.138.25.187-1679 #1'
+  name: '378,536,537|🇬SG-174.138.25.187-1609 #1'
   network: ws
   port: 8880
   server: 174.138.25.187
@@ -2332,7 +2427,7 @@ proxies:
     path: /hkaa0
 - alterId: 0
   cipher: auto
-  name: '378,536,537|🇸SG-139.99.61.53-1793 #1'
+  name: '378,536,537|🇸🇬SG-139.99.61.53-1723 #1'
   network: ws
   port: 80
   server: 139.99.61.53
@@ -2347,7 +2442,7 @@ proxies:
     path: /
 - alterId: 64
   cipher: auto
-  name: '378,536,537|🇬SG-202.79.172.53-1936 #1'
+  name: '378,536,537|🇬SG-202.79.172.53-1866 #1'
   network: ws
   port: 443
   server: 202.79.172.53
@@ -2360,7 +2455,7 @@ proxies:
     path: /path/220128071100
 - alterId: 0
   cipher: auto
-  name: '378,536,537|🇬SG-143.198.219.182-1952 #1'
+  name: '378,536,537|🇬SG-143.198.219.182-1882 #1'
   network: ws
   port: 80
   server: 143.198.219.182
@@ -2373,7 +2468,7 @@ proxies:
     path: /v2ray
 - alterId: 0
   cipher: auto
-  name: '378,536,537|🇸🇬SG-146.190.82.241-1989 #2'
+  name: '378,536,537|🇸🇬SG-146.190.82.241-1919 #1'
   network: ws
   port: 80
   server: 146.190.82.241
@@ -2385,14 +2480,14 @@ proxies:
   ws-opts:
     path: /
 - cipher: aes-256-cfb
-  name: '378,537|🇬SG-54.179.221.54-2014 #1'
+  name: '378,537|🇬SG-54.179.221.54-1944 #1'
   password: amazonskr05
   port: 443
   server: 54.179.221.54
   type: ss
 - alterId: 0
   cipher: auto
-  name: '378,536,537|🇬SG-18.143.123.35-2025 #1'
+  name: '378,536,537|🇬SG-18.143.123.35-1955 #1'
   network: ws
   port: 80
   server: 18.143.123.35
@@ -2404,20 +2499,20 @@ proxies:
   ws-opts:
     path: /
 - cipher: aes-256-cfb
-  name: '378,537|🇸🇬SG-13.215.191.190-2052 #2'
+  name: '378,537|🇸🇬SG-13.215.191.190-1982 #1'
   password: amazonskr05
   port: 443
   server: 13.215.191.190
   type: ss
 - cipher: aes-256-cfb
-  name: '378,537|🇬SG-13.215.177.216-2202 #1'
+  name: '378,537|🇬SG-13.215.177.216-2132 #1'
   password: amazonskr05
   port: 443
   server: 13.215.177.216
   type: ss
 - alterId: 0
   cipher: auto
-  name: '378,536,537|🇬SG-178.128.61.149-2219 #1'
+  name: '378,536,537|🇬SG-178.128.61.149-2149 #1'
   network: ws
   port: 50328
   server: 178.128.61.149
@@ -2429,14 +2524,14 @@ proxies:
   ws-opts:
     path: /
 - cipher: aes-256-cfb
-  name: '378,537|🇬SG-13.215.49.89-2347 #1'
+  name: '378,537|🇬SG-13.215.49.89-2277 #1'
   password: amazonskr05
   port: 443
   server: 13.215.49.89
   type: ss
 - alterId: 0
   cipher: auto
-  name: '378,536,537|🇸🇬SG-146.190.82.241-2402 #2'
+  name: '378,536,537|🇸🇬SG-146.190.82.241-2332 #1'
   network: ws
   port: 443
   server: 146.190.82.241
@@ -2448,14 +2543,14 @@ proxies:
   ws-opts:
     path: /
 - cipher: aes-256-cfb
-  name: '378,537|🇬SG-13.214.212.124-2664 #1'
+  name: '378,537|🇬SG-13.214.212.124-2596 #1'
   password: amazonskr05
   port: 443
   server: 13.214.212.124
   type: ss
 - alterId: 0
   cipher: auto
-  name: '378,536,537|🇸🇬SG-129.150.44.64-3038 #2'
+  name: '378,536,537|🇸🇬SG-129.150.44.64-2970 #1'
   network: ws
   port: 46075
   server: 129.150.44.64
@@ -2468,7 +2563,7 @@ proxies:
     path: /jhndsmlanj11223
 - alterId: 0
   cipher: auto
-  name: '378,536,537|🇬SG-15.235.184.36-2748 #1'
+  name: '378,536,537|🇬SG-15.235.184.36-2680 #1'
   network: ws
   port: 80
   server: 15.235.184.36
@@ -2481,7 +2576,7 @@ proxies:
     path: /vmess
 - alterId: 0
   cipher: auto
-  name: '378,536,537|🇬SG-139.99.61.154-2753 #1'
+  name: '378,536,537|🇬SG-139.99.61.154-2685 #1'
   network: ws
   port: 80
   server: 139.99.61.154
@@ -2494,7 +2589,7 @@ proxies:
     path: /vmess
 - alterId: 0
   cipher: auto
-  name: '378,536,537|🇬SG-109.123.237.41-2780 #1'
+  name: '378,536,537|🇬SG-109.123.237.41-2712 #1'
   network: ws
   port: 80
   server: 109.123.237.41
@@ -2506,12 +2601,12 @@ proxies:
   ws-opts:
     path: /
 - cipher: aes-256-cfb
-  name: '378,537|🇬SG-13.215.173.2-2824 #1'
+  name: '378,537|🇬SG-13.215.173.2-2756 #1'
   password: amazonskr05
   port: 443
   server: 13.215.173.2
   type: ss
-- name: '378,536,537|🇬SG-103.172.116.196-2852 #1'
+- name: '378,536,537|🇬SG-103.172.116.196-2784 #1'
   password: 0c6a3341e8d5ab17
   port: 3389
   server: 103.172.116.196
@@ -2519,7 +2614,7 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: '378,536,537|🇬SG-109.123.237.41-2942 #1'
+  name: '378,536,537|🇬SG-109.123.237.41-2874 #1'
   network: ws
   port: 80
   server: 109.123.237.41
@@ -2531,14 +2626,14 @@ proxies:
   ws-opts:
     path: /fastssh
 - cipher: aes-256-cfb
-  name: '378,537|🇸🇬SG-13.215.163.54-2955 #2'
+  name: '378,537|🇸🇬SG-13.215.163.54-2887 #1'
   password: amazonskr05
   port: 443
   server: 13.215.163.54
   type: ss
 - alterId: 0
   cipher: auto
-  name: '378,536,537|🇬SG-15.235.192.196-3034 #1'
+  name: '378,536,537|🇬SG-15.235.192.196-2966 #1'
   network: ws
   port: 80
   server: 15.235.192.196
@@ -2551,7 +2646,7 @@ proxies:
     path: /vmess
 - alterId: 0
   cipher: auto
-  name: '378,536,537|🇬SG-157.230.36.235-3035 #1'
+  name: '378,536,537|🇬SG-157.230.36.235-2967 #1'
   network: ws
   port: 80
   server: 157.230.36.235
@@ -2562,27 +2657,27 @@ proxies:
   uuid: b484d576-b3e3-4ac5-b108-88a300dfe7e3
   ws-opts:
     path: /graphql
-- name: '378,536,537|🇸🇬SG-168.138.189.17-3056 #2'
+- name: '378,536,537|🇸🇬SG-168.138.189.17-2988 #1'
   password: 750a29bf-0a40-437f-b120-38de74ae7eaf
   port: 28443
   server: 168.138.189.17
   skip-cert-verify: false
   type: trojan
 - cipher: aes-256-cfb
-  name: '378,537|🇬SG-13.229.105.31-3082 #1'
+  name: '378,537|🇬SG-13.229.105.31-3014 #1'
   password: amazonskr05
   port: 443
   server: 13.229.105.31
   type: ss
 - cipher: aes-256-cfb
-  name: '378,537|🇸🇬SG-3.0.148.195-3129 #2'
+  name: '378,537|🇸🇬SG-3.0.148.195-3061 #1'
   password: amazonskr05
   port: 443
   server: 3.0.148.195
   type: ss
 - alterId: 64
   cipher: auto
-  name: '378,536,537|🇬SG-202.79.171.157-3203 #1'
+  name: '378,536,537|🇬SG-202.79.171.157-3135 #1'
   network: ws
   port: 443
   server: 202.79.171.157
@@ -2594,62 +2689,62 @@ proxies:
   ws-opts:
     path: /path/243535322906
 - cipher: aes-256-cfb
-  name: '378,537|🇬SG-54.254.199.122-3273 #1'
+  name: '378,537|🇬SG-54.254.199.122-3205 #1'
   password: amazonskr05
   port: 443
   server: 54.254.199.122
   type: ss
 - cipher: aes-256-cfb
-  name: '378,537|🇬SG-13.215.174.243-3568 #1'
+  name: '378,537|🇬SG-13.215.174.243-3500 #1'
   password: amazonskr05
   port: 443
   server: 13.215.174.243
   type: ss
-- name: '378,536,537|🇸🇬SG-139.162.45.139-3608 #2'
+- name: '378,536,537|🇸🇬SG-139.162.45.139-3540 #1'
   password: FLpONjB2Lb
   port: 443
   server: 139.162.45.139
   skip-cert-verify: false
   type: trojan
 - cipher: aes-256-cfb
-  name: '378,537|🇬SG-13.250.46.178-4297 #1'
+  name: '378,537|🇬SG-13.250.46.178-4229 #1'
   password: amazonskr05
   port: 443
   server: 13.250.46.178
   type: ss
 - cipher: aes-256-cfb
-  name: '378,537|🇬SG-13.213.2.160-4501 #1'
+  name: '378,537|🇬SG-13.213.2.160-4433 #1'
   password: amazonskr05
   port: 443
   server: 13.213.2.160
   type: ss
 - cipher: aes-256-cfb
-  name: '378,537|🇸🇬SG-18.141.183.204-4361 #2'
+  name: '378,537|🇸🇬SG-18.141.183.204-4293 #1'
   password: amazonskr05
   port: 443
   server: 18.141.183.204
   type: ss
 - cipher: aes-256-cfb
-  name: '378,537|🇬SG-13.250.54.18-4396 #1'
+  name: '378,537|🇬SG-13.250.54.18-4328 #1'
   password: amazonskr05
   port: 443
   server: 13.250.54.18
   type: ss
 - cipher: aes-256-cfb
-  name: '378,537|🇸🇬SG-13.215.200.86-4420 #2'
+  name: '378,537|🇸🇬SG-13.215.200.86-4352 #1'
   password: amazonskr05
   port: 443
   server: 13.215.200.86
   type: ss
 - cipher: aes-256-cfb
-  name: '378,537|🇬SG-18.142.183.235-4440 #1'
+  name: '378,537|🇬SG-18.142.183.235-4372 #1'
   password: amazonskr05
   port: 443
   server: 18.142.183.235
   type: ss
 - alterId: 0
   cipher: auto
-  name: '378,536,537|🇬SG-180.215.130.123-5088 #1'
+  name: '378,536,537|🇬SG-180.215.130.123-5020 #1'
   network: ws
   port: 46452
   server: 180.215.130.123
@@ -2662,7 +2757,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '378,536,537|🇬SG-139.99.61.53-5100 #1'
+  name: '378,536,537|🇬SG-139.99.61.53-5032 #1'
   network: ws
   port: 80
   server: 139.99.61.53
@@ -2674,7 +2769,7 @@ proxies:
   ws-opts:
     path: /
 - country: 🇸🇬SG
-  name: '378,435,436,536,537|🇬SG-91.243.81.248-5228 #1'
+  name: '378,435,436,536,537|🇬SG-91.243.81.248-5160 #1'
   password: IQ68037294
   port: 443
   server: apt-midge.rooster465.autos
@@ -2683,7 +2778,7 @@ proxies:
   udp: true
 - alterId: 4
   cipher: auto
-  name: '378,536,537|🇬SG-159.223.32.230-5284 #1'
+  name: '378,536,537|🇬SG-159.223.32.230-5216 #1'
   network: ws
   port: 8080
   server: 159.223.32.230
@@ -2695,20 +2790,20 @@ proxies:
   ws-opts:
     path: /cctv13/hd.m3u8
 - cipher: aes-256-cfb
-  name: '378,537|🇸🇬SG-13.213.46.196-5311 #2'
+  name: '378,537|🇸🇬SG-13.213.46.196-5243 #1'
   password: amazonskr05
   port: 443
   server: 13.213.46.196
   type: ss
 - cipher: aes-256-cfb
-  name: '378,537|🇬SG-54.251.168.143-5313 #1'
+  name: '378,537|🇬SG-54.251.168.143-5245 #1'
   password: amazonskr05
   port: 443
   server: 54.251.168.143
   type: ss
 - alterId: 64
   cipher: auto
-  name: '378,494,536,537|🇬SG-159.223.94.156-5317 #1'
+  name: '378,494,536,537|🇬SG-159.223.94.156-5249 #1'
   network: ws
   port: 80
   server: 159.223.94.156
@@ -2720,249 +2815,289 @@ proxies:
   ws-opts:
     path: /anti13.zingfast.vn
 - country: 🇦🇺AU
-  name: '378,435,436,536,537|🇸🇬SG-43.160.197.160-5327 #2'
+  name: '378,435,436,536,537|🇸🇬SG-43.160.197.160-5259 #1'
   password: 38f169d6-d202-4b1b-8db8-e6eb1648f5cf
   port: 443
   server: 43.160.197.160
   skip-cert-verify: false
   type: trojan
   udp: true
+- country: 🇺RU
+  name: '378,435,436,537|🇬SG-91.243.81.20-5342 #1'
+  password: IQ68037294
+  port: 443
+  server: still-mastodon.rooster465.autos
+  skip-cert-verify: false
+  type: trojan
+  udp: true
+- country: 🇷RU
+  name: '378,435,436,537|🇬SG-45.135.228.189-5343 #1'
+  password: WG39087154
+  port: 443
+  server: pet-albacore.rooster465.autos
+  skip-cert-verify: false
+  type: trojan
+  udp: true
+- country: 🇬SG
+  name: '378,435,436,537|🇸🇬SG-91.243.81.128-5346 #1'
+  password: FC60532879
+  port: 443
+  server: helpful-possum.rooster465.autos
+  skip-cert-verify: false
+  type: trojan
+  udp: true
+- country: 🇬SG
+  name: '378,435,436,537|🇬SG-81.28.13.180-5347 #1'
+  password: IQ68037294
+  port: 443
+  server: fair-reptile.rooster465.autos
+  skip-cert-verify: false
+  type: trojan
+  udp: true
+- country: 🇸🇬SG
+  name: '378,435,436,537|🇸🇬SG-91.243.81.78-5350 #1'
+  password: IQ68037294
+  port: 443
+  server: endless-kiwi.rooster465.autos
+  skip-cert-verify: false
+  type: trojan
+  udp: true
 - cipher: aes-256-gcm
-  name: '378,537|SG-139.99.68.21-5871 #1'
+  name: '378,537|SG-139.99.68.21-5805 #1'
   password: zDNVedRFPQexG9v
   port: 6379
   server: 139.99.68.21
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '378,537|🇬SG-81.90.189.41-5872 #1'
+  name: '378,537|🇬SG-81.90.189.41-5806 #1'
   password: G!yBwPWH3Vao
   port: 801
   server: 81.90.189.41
   type: ss
-- name: '378,536,537|🇬SG-172.104.51.247-5875 #1'
+- name: '378,536,537|🇬SG-172.104.51.247-5809 #1'
   password: affae2e0-e84b-11ec-b09f-1239d0255272
   port: 443
   server: trojan1.udpgw.com
   skip-cert-verify: false
   type: trojan
-- name: '378,536,537|🇬SG-18.141.8.87-5876 #1'
+- name: '378,536,537|🇬SG-18.141.8.87-5810 #1'
   password: iyinglong
   port: 443
   server: 18.141.8.87
   skip-cert-verify: false
   type: trojan
-- name: '378,536,537|🇸🇬SG-128.199.185.211-5877 #2'
+- name: '378,536,537|🇸🇬SG-128.199.185.211-5811 #1'
   password: 973ef350-f6a5-11ec-9274-1239d0255272
   port: 443
   server: trojan2.udpgw.com
   skip-cert-verify: false
   type: trojan
-- name: '378,536,537|🇸🇬SG-18.140.67.76-5878 #2'
+- name: '378,536,537|🇸🇬SG-18.140.67.76-5812 #1'
   password: iyinglong
   port: 443
   server: 18.140.67.76
   skip-cert-verify: false
   type: trojan
-- name: '378,536,537|🇸🇬SG-103.253.24.212-5880 #2'
+- name: '378,536,537|🇸🇬SG-103.253.24.212-5814 #1'
   password: 71086710-33eb-11ed-adce-1239d0255272
   port: 443
   server: sg1-trojan.bonds.id
   skip-cert-verify: false
   type: trojan
-- name: '378,536,537|🇸🇬SG-172.104.177.105-5882 #2'
+- name: '378,536,537|🇸🇬SG-172.104.177.105-5816 #1'
   password: 08964210-e7b8-11ec-95aa-1239d0255272
   port: 443
   server: w12.udpgw.com
   skip-cert-verify: false
   type: trojan
-- name: '378,536,537|🇸🇬SG-13.213.69.245-5971 #2'
+- name: '378,536,537|🇸🇬SG-13.213.69.245-5905 #1'
   password: iyinglong
   port: 443
   server: 13.213.69.245
   skip-cert-verify: false
   type: trojan
-- name: '378,536,537|🇸🇬SG-5.44.249.43-5999 #2'
+- name: '378,536,537|🇸🇬SG-5.44.249.43-5933 #1'
   password: cd39f62aed7b90f6
   port: 3389
   server: 5.44.249.43
   skip-cert-verify: false
   type: trojan
-- name: '378,536,537|🇬SG-5.44.249.43-6001 #1'
+- name: '378,536,537|🇬SG-5.44.249.43-5935 #1'
   password: 6f0a9d0fa39d65fa
   port: 3389
   server: 5.44.249.43
   skip-cert-verify: false
   type: trojan
 - cipher: aes-256-cfb
-  name: '378,537|🇬SG-165.232.169.142-7123 #1'
+  name: '378,537|🇬SG-165.232.169.142-7057 #1'
   password: 1e5111699c45496da84112f35db665c4
   port: 29332
   server: 165.232.169.142
   type: ss
 - cipher: aes-256-cfb
-  name: '378,537|🇬SG-103.172.116.6-7227 #1'
+  name: '378,537|🇬SG-103.172.116.6-7161 #1'
   password: UWZQeLRWnkqgkseq
   port: 9032
   server: 103.172.116.6
   type: ss
 - cipher: aes-256-cfb
-  name: '378,537|🇸🇬SG-103.172.116.5-7228 #2'
+  name: '378,537|🇸🇬SG-103.172.116.5-7162 #1'
   password: aLpQtfEZe445QyHk
   port: 9098
   server: 103.172.116.5
   type: ss
 - cipher: aes-256-cfb
-  name: '378,537|🇸🇬SG-103.172.116.5-7229 #2'
+  name: '378,537|🇸🇬SG-103.172.116.5-7163 #1'
   password: y9VURyNzJWNRYEGQ
   port: 9008
   server: 103.172.116.5
   type: ss
 - cipher: aes-256-cfb
-  name: '378,537|🇸🇬SG-103.172.116.6-7230 #2'
+  name: '378,537|🇸🇬SG-103.172.116.6-7164 #1'
   password: HSZuyJQcWe8dxNdF
   port: 9043
   server: 103.172.116.6
   type: ss
 - cipher: aes-256-cfb
-  name: '378,537|🇸🇬SG-103.172.116.6-7231 #2'
+  name: '378,537|🇸🇬SG-103.172.116.6-7165 #1'
   password: 9XwYyZsK8SNzQDtY
   port: 9059
   server: 103.172.116.6
   type: ss
 - cipher: aes-256-cfb
-  name: '378,537|🇬SG-103.172.116.6-7232 #1'
+  name: '378,537|🇬SG-103.172.116.6-7166 #1'
   password: KnJGad3FqTvjqbaX
   port: 9014
   server: 103.172.116.6
   type: ss
 - cipher: aes-256-cfb
-  name: '378,537|🇸🇬SG-103.172.116.5-7233 #2'
+  name: '378,537|🇸🇬SG-103.172.116.5-7167 #1'
   password: c3NtHJ5ujV2tGDfj
   port: 9084
   server: 103.172.116.5
   type: ss
 - cipher: aes-256-cfb
-  name: '378,537|🇸🇬SG-103.172.116.5-7234 #2'
+  name: '378,537|🇸🇬SG-103.172.116.5-7168 #1'
   password: UWZQeLRWnkqgkseq
   port: 9032
   server: 103.172.116.5
   type: ss
 - cipher: aes-256-cfb
-  name: '378,537|🇸🇬SG-103.172.116.5-7235 #2'
+  name: '378,537|🇸🇬SG-103.172.116.5-7169 #1'
   password: QWDDvVE9npNurQfA
   port: 9026
   server: 103.172.116.5
   type: ss
 - cipher: aes-256-cfb
-  name: '378,537|🇸🇬SG-103.172.116.6-7236 #2'
+  name: '378,537|🇸🇬SG-103.172.116.6-7170 #1'
   password: M3t2ZEQcMGRWBjRa
   port: 9011
   server: 103.172.116.6
   type: ss
 - cipher: aes-256-cfb
-  name: '378,537|🇸🇬SG-54.254.129.246-7496 #2'
+  name: '378,537|🇸🇬SG-54.254.129.246-7430 #1'
   password: amazonskr05
   port: 443
   server: 54.254.129.246
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '378,537|🇬SG-51.79.161.232-7512 #1'
+  name: '378,537|🇬SG-51.79.161.232-7446 #1'
   password: 4Hub2f9JyhECyAq2Opm0NS
   port: 443
   server: 51.79.161.232
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '378,537|🇸SG-217.197.161.138-7721 #1'
+  name: '378,537|🇸SG-217.197.161.138-7655 #1'
   password: G!yBwPWH3Vao
   port: 805
   server: 217.197.161.138
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '378,537|🇬SG-217.197.161.138-7722 #1'
+  name: '378,537|🇬SG-217.197.161.138-7656 #1'
   password: G!yBwPWH3Vao
   port: 811
   server: 217.197.161.138
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '378,537|🇸🇬SG-217.197.161.138-7723 #2'
+  name: '378,537|🇸🇬SG-217.197.161.138-7657 #1'
   password: G!yBwPWH3Vao
   port: 807
   server: 217.197.161.138
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '378,537|🇸🇬SG-217.197.161.138-7724 #2'
+  name: '378,537|🇸🇬SG-217.197.161.138-7658 #1'
   password: G!yBwPWH3Vao
   port: 802
   server: 217.197.161.138
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '378,537|🇸🇬SG-217.197.161.138-7725 #2'
+  name: '378,537|🇸🇬SG-217.197.161.138-7659 #1'
   password: G!yBwPWH3Vao
   port: 800
   server: 217.197.161.138
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '378,537|🇬SG-217.197.161.138-7726 #1'
+  name: '378,537|🇬SG-217.197.161.138-7660 #1'
   password: G!yBwPWH3Vao
   port: 804
   server: 217.197.161.138
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '378,537|🇬SG-217.197.161.136-7727 #1'
+  name: '378,537|🇬SG-217.197.161.136-7661 #1'
   password: G!yBwPWH3Vao
   port: 810
   server: 217.197.161.136
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '378,537|🇸🇬SG-217.197.161.136-7728 #2'
+  name: '378,537|🇸🇬SG-217.197.161.136-7662 #1'
   password: G!yBwPWH3Vao
   port: 803
   server: 217.197.161.136
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '378,537|🇸🇬SG-217.197.161.136-7729 #2'
+  name: '378,537|🇸🇬SG-217.197.161.136-7663 #1'
   password: G!yBwPWH3Vao
   port: 806
   server: 217.197.161.136
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '378,537|🇸🇬SG-217.197.161.136-7730 #2'
+  name: '378,537|🇸🇬SG-217.197.161.136-7664 #1'
   password: G!yBwPWH3Vao
   port: 808
   server: 217.197.161.136
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '378,537|🇸🇬SG-217.197.161.136-7731 #2'
+  name: '378,537|🇸🇬SG-217.197.161.136-7665 #1'
   password: G!yBwPWH3Vao
   port: 805
   server: 217.197.161.136
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '378,537|🇸🇬SG-217.197.161.136-7732 #2'
+  name: '378,537|🇸🇬SG-217.197.161.136-7666 #1'
   password: G!yBwPWH3Vao
   port: 809
   server: 217.197.161.136
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '378,537|🇸🇬SG-217.197.161.136-7733 #2'
+  name: '378,537|🇸🇬SG-217.197.161.136-7667 #1'
   password: G!yBwPWH3Vao
   port: 801
   server: 217.197.161.136
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '378,537|🇸🇬SG-217.197.161.136-7734 #2'
+  name: '378,537|🇸🇬SG-217.197.161.136-7668 #1'
   password: G!yBwPWH3Vao
   port: 807
   server: 217.197.161.136
   type: ss
-- name: '378,536,537|SG-15.235.197.4-8105 #1'
+- name: '378,536,537|SG-15.235.197.4-8039 #1'
   password: 16bcc187-a1a0-4b8a-8b69-627f38b7cc0d
   port: 80
   server: 15.235.197.4
   skip-cert-verify: false
   sni: 15.235.197.4
   type: trojan
-- name: '378,536,537|🇸🇬SG-15.235.197.4-8107 #2'
+- name: '378,536,537|🇸🇬SG-15.235.197.4-8041 #1'
   password: 16bcc187-a1a0-4b8a-8b69-627f38b7cc0d
   port: 80
   server: 15.235.197.4
@@ -2970,20 +3105,20 @@ proxies:
   sni: getandroid.com
   type: trojan
 - cipher: aes-256-cfb
-  name: '378,537|🇬SG-13.213.44.183-8199 #1'
+  name: '378,537|🇬SG-13.213.44.183-8133 #1'
   password: amazonskr05
   port: 443
   server: 13.213.44.183
   type: ss
 - cipher: aes-256-cfb
-  name: '378,537|🇸🇬SG-13.212.199.120-8200 #2'
+  name: '378,537|🇸🇬SG-13.212.199.120-8134 #1'
   password: amazonskr05
   port: 443
   server: 13.212.199.120
   type: ss
 - alterId: 64
   cipher: auto
-  name: '378,536,537|🇬SG-118.107.46.173-8205 #1'
+  name: '378,536,537|🇬SG-118.107.46.173-8139 #1'
   network: ws
   port: 443
   server: 118.107.46.173
@@ -2995,65 +3130,14 @@ proxies:
   ws-opts:
     path: /path/080712342310
 - cipher: aes-256-cfb
-  name: '378,537|SG-103.172.116.79-8414 #1'
+  name: '378,537|SG-103.172.116.79-8348 #1'
   password: KBGjZYcy4SyRShmA
   port: 9044
   server: 103.172.116.79
   type: ss
-- country: 🇬SG
-  name: 435,436|🇸🇬SG_92
-  password: FC60532879
-  port: 443
-  server: helpful-possum.rooster465.autos
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- country: 🇬SG
-  name: 435,436|🇸🇬SG_93
-  password: IQ68037294
-  port: 443
-  server: fair-reptile.rooster465.autos
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- country: 🇬SG
-  name: 435,436|🇸🇬SG_94
-  password: IQ68037294
-  port: 443
-  server: fun-salmon.rooster465.autos
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- country: 🇸🇬SG
-  name: '435,436|🇸🇬SG_96 #1'
-  password: IQ68037294
-  port: 443
-  server: endless-kiwi.rooster465.autos
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- http-opts:
-    headers:
-      Host:
-      - play.googleapis.com
-    method: GET
-    path:
-    - /
-  name: '438,502,514,551,566|🇸🇬 新加坡 | SGP 3 #1'
-  network: http
-  port: 443
-  server: 13.212.217.197
-  tls: false
-  type: vless
-  udp: true
-  uuid: 7060231d-b9ba-495f-a218-bf427940cf3e
-  ws-opts:
-    headers:
-      Host: play.googleapis.com
-    path: '%2F'
-- client-fingerprint: firefox
+- client-fingerprint: ''
   flow: xtls-rprx-vision
-  name: 438,494,580|5🐲@oneclickvpnkeys&packetEncod...
+  name: '438,494|Join+Telegram:@Farah_VPN #4195'
   network: tcp
   port: 19825
   reality-opts:
@@ -3066,7 +3150,7 @@ proxies:
   uuid: 2d1ad594-80a4-4bfb-87a6-038e39701f51
 - alterId: 0
   cipher: auto
-  name: '438,494|🔥Join+Telegram:@Farah_VPN🟣 #2433'
+  name: '438,494|🔥Join+Telegram:@Farah_VPN🟣 #3463'
   network: raw
   port: '18000'
   server: ww11.levikogjgfdd.ir
@@ -4331,8 +4415,7 @@ proxies:
     path: /
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: '475,480,580|🇸🇬SG新加坡丨yoyapai.com #2'
-  network: tcp
+  name: '475,480|🇸🇬SG新加坡丨yoyapai.com_2 #1'
   port: 443
   reality-opts:
     public-key: eaRNeC8fccrx0nBNvBpAXZgK4m4FxfnQ-t0W7NOM7mU
@@ -4340,13 +4423,10 @@ proxies:
   server: 154.196.139.50
   servername: asia.cendora.ru
   skip-cert-verify: false
-  tls: false
+  tls: true
   type: vless
   udp: true
   uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
-  ws-opts:
-    headers:
-      Host: asia.cendora.ru
 - client-fingerprint: chrome
   name: '475,480|🇬SG新加坡丨yoyapai.com_3 #1'
   network: ws
@@ -4428,7 +4508,7 @@ proxies:
   udp: true
   uuid: 5567cac6-2a32-4318-83cd-7df3a9eebbd7
 - client-fingerprint: chrome
-  name: '476,481|SG(mibei77.com 米贝节点分享) #1'
+  name: '476,481,523,524|🇸🇬_新加坡_52 #1'
   network: ws
   port: 627
   server: 142.91.101.39
@@ -4466,7 +4546,7 @@ proxies:
   tls: true
   type: anytls
   udp: true
-- name: 489,519|🇸🇬SG_3|3.2MB/s
+- name: 489|C🟠🇸🇬hos[🎬🤖📺🎭]_dokng.com_f3c6f9...
   password: '!!str 1234'
   port: 2080
   server: 47.129.235.22
@@ -4538,7 +4618,7 @@ proxies:
   skip-cert-verify: true
   type: http
   username: '1234'
-- name: 489|C🟠🇸🇬hos[📺🎪]_dokng.com_b83de358
+- name: 489,519|🇸🇬SG_1|1.8MB/s
   password: '!!str 1234'
   port: 2080
   server: 13.212.55.110
@@ -4573,7 +4653,7 @@ proxies:
   skip-cert-verify: true
   type: http
   username: '1234'
-- name: 489,519|🇸🇬SG_4|1.2MB/s
+- name: 489|C🟠🇸🇬hos[🎬🤖📺🎭]_dokng.com_d363cf...
   password: '!!str 1234'
   port: 2080
   server: 13.250.6.200
@@ -4642,15 +4722,6 @@ proxies:
   port: 9090
   server: 104.248.151.93
   type: http
-- name: 489|A🟢🇸🇬res[🎬🤖📺🎭]_dokng.com_e2867a...
-  password: ''
-  port: 9443
-  server: 149.88.99.209
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-  username: ''
 - name: 489|C🟠🇸🇬hos[📺🎪🔍]_dokng.com_1cfd1a3...
   port: 9999
   server: 8.219.122.8
@@ -4725,12 +4796,11 @@ proxies:
   type: http
 - client-fingerprint: chrome
   encryption: none
-  name: '489,523,524|🇲🇾_马来西亚_73 #1'
+  name: 489|D🔴🇸🇬hos[🎬📺🎭🎪]_dokng.com_547301...
   network: ws
   port: 8443
   server: 76.13.188.13
   servername: snip.edgeoneai.cc.cd
-  skip-cert-verify: true
   tls: true
   type: vless
   udp: true
@@ -4738,6 +4808,8 @@ proxies:
   ws-opts:
     headers:
       Host: snip.edgeoneai.cc.cd
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/68.0.3440.106 Safari/537.36
     path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443
   xudp: true
 - client-fingerprint: chrome
@@ -4759,12 +4831,11 @@ proxies:
   xudp: true
 - client-fingerprint: chrome
   encryption: none
-  name: '489,523,524|🇸🇬_新加坡_76 #1'
+  name: 489|D🔴🇸🇬hos[🎬📺🎭🎪]_dokng.com_627f03...
   network: ws
   port: 443
   server: 157.245.50.181
   servername: snip.edgeoneai.cc.cd
-  skip-cert-verify: true
   tls: true
   type: vless
   udp: true
@@ -4772,16 +4843,17 @@ proxies:
   ws-opts:
     headers:
       Host: snip.edgeoneai.cc.cd
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/46.0.2490.86 Safari/537.36
     path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443
   xudp: true
 - client-fingerprint: chrome
   encryption: none
-  name: '489,523,524|🇸🇬_新加坡_75 #1'
+  name: 489|D🔴🇸🇬hos[🎬📺🎭🎪]_dokng.com_8f2ce4...
   network: ws
   port: 443
   server: 129.212.232.171
   servername: snip.edgeoneai.cc.cd
-  skip-cert-verify: true
   tls: true
   type: vless
   udp: true
@@ -4789,11 +4861,13 @@ proxies:
   ws-opts:
     headers:
       Host: snip.edgeoneai.cc.cd
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/53.0.2785.143 Safari/537.36
     path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443
   xudp: true
 - client-fingerprint: chrome
   encryption: none
-  name: '489,523,524|🇻🇳_越南_70 #1'
+  name: '489,523,524|🇻🇳_越南_357 #1'
   network: ws
   port: 443
   server: 103.161.178.205
@@ -4838,8 +4912,23 @@ proxies:
     headers:
       Host: snip.edgeoneai.cc.cd
     path: '%2F'
+- http-opts:
+    headers:
+      Host:
+      - play.googleapis.com
+    method: GET
+    path:
+    - /
+  name: '502,519|🇸🇬 新加坡 | SGP #2 #1'
+  network: http
+  port: 443
+  server: 13.212.217.197
+  tls: false
+  type: vless
+  udp: true
+  uuid: 7060231d-b9ba-495f-a218-bf427940cf3e
 - client-fingerprint: chrome
-  name: '508,509,519|🇮🇳 印度 | IND #1'
+  name: '508,509|新加坡 002 #1'
   network: ws
   port: 443
   server: 188.166.234.177
@@ -4890,18 +4979,6 @@ proxies:
   server: 5.223.55.99
   tfo: false
   type: ss
-- name: '514|🇸🇬[www.v2nodes.com] vless-SG-9... #2'
-  network: ws
-  port: 8080
-  server: 172.64.150.43
-  servername: hhlfy.twiladaphne.ndjp.net
-  tls: false
-  type: vless
-  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
-  ws-opts:
-    headers:
-      Host: hhlfy.twiladaphne.ndjp.net
-    path: /sg-melbi
 - cipher: rc4-md5
   client-fingerprint: chrome
   name: '517|15|🇸🇬 新加坡|@ripaojiedian #1'
@@ -4945,16 +5022,16 @@ proxies:
 - name: 519|🇸🇬[www.v2nodes.com] vless-SG
   network: ws
   port: 443
-  server: 216.173.67.59
+  server: 172.64.152.241
   servername: ccc.010304.xyz
   skip-cert-verify: false
-  tls: true
+  tls: false
   type: vless
   uuid: d342d11e-d224-4463-b982-532309285094
   ws-opts:
     headers:
       Host: ccc.010304.xyz
-    path: /fp=chrome
+    path: /fp=chromesecurity=tls
 - alpn:
   - http/1.1
   client-fingerprint: chrome
@@ -4971,10 +5048,12 @@ proxies:
   ws-opts:
     headers:
       Host: lucasjow.us.ci
-    path: /cart/docs/www/proxyip=108.160.132.132?ed#Telegram---TOOTFFARANGI
+    path: /cart/docs/www/proxyip=108.160.132.132?ed#
 - alpn:
   - http/1.1
-  name: '519|🇸🇬[www.v2nodes.com] vless-SG-9... #3'
+  client-fingerprint: chrome
+  encryption: none
+  name: '519|🇸🇬[www.v2nodes.com] vless-SG #... #1'
   network: ws
   port: 443
   server: 188.114.97.6
@@ -4986,44 +5065,26 @@ proxies:
   ws-opts:
     headers:
       Host: lucasjow.us.ci
-    path: /?Telegram---mehrosaboranfp=chrome
-- name: 519|🇸🇬 新加坡 | SGP
-  password: 21b60363-271b-49f0-975b-dbe315215164
-  port: 32189
-  server: vv66.wjwhi90.com
-  skip-cert-verify: true
-  sni: hdzsg.wjwhi90.com
-  type: anytls
-  udp: true
-- name: '519,566|🇸🇬 新加坡 | SGP 2 #1'
-  password: 21b60363-271b-49f0-975b-dbe315215164
-  port: 18082
-  server: 1sw-olo.wjwhi90.com
-  skip-cert-verify: true
-  sni: hdzsg.wjwhi90.com
-  type: anytls
-  udp: true
-- name: 519|🇸🇬 新加坡 | SGP 3
-  password: 21b60363-271b-49f0-975b-dbe315215164
-  port: 18013
-  server: 1sw-olo.wjwhi90.com
-  skip-cert-verify: true
-  sni: hdzsg-m.wjwhi90.com
-  type: anytls
-  udp: true
-- name: 519,566|🇸🇬 新加坡 | SGP 6
-  password: 21b60363-271b-49f0-975b-dbe315215164
-  port: 18113
-  server: 1sw-olo.wjwhi90.com
-  skip-cert-verify: true
-  sni: hdzsg.wjwhi90.com
-  type: anytls
-  udp: true
+    path: /cart/docs/www/proxyip=108.160.132.132?ed#Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET
+- encryption: none
+  name: '519|🇸🇬[www.v2nodes.com] vless-SG #... #2'
+  network: ws
+  port: 8443
+  server: 172.67.155.65
+  servername: lucasjow.us.ci
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  ws-opts:
+    headers:
+      Host: lucasjow.us.ci
+    path: /cart/docs/www/proxyip=108.160.132.132
 - client-fingerprint: chrome
-  name: '523,524|🇸🇬_新加坡_72 #1'
+  name: 519,523,524,566|🇻🇳 越南 | VNM
   network: ws
   port: 443
-  server: 161.118.219.229
+  server: 103.161.178.215
   servername: snip.edgeoneai.cc.cd
   skip-cert-verify: true
   tls: true
@@ -5034,28 +5095,42 @@ proxies:
     headers:
       Host: snip.edgeoneai.cc.cd
     path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443
-- client-fingerprint: chrome
-  name: '523,524|🇸🇬_新加坡_99 #1'
-  network: ws
-  port: 51262
-  server: 175.41.179.37
-  servername: jln31qtswdkut5.60kohcognywybguuq3ouc818oofnxfvn35daott.workers.dev
+- name: 519|🇸🇬 新加坡 | SGP 2
+  password: 21b60363-271b-49f0-975b-dbe315215164
+  port: 18082
+  server: 1sw-olo.wjwhi90.com
   skip-cert-verify: true
+  sni: hdzsg.wjwhi90.com
+  type: anytls
+  udp: true
+- name: 519|🇸🇬 新加坡 | SGP 6
+  password: 21b60363-271b-49f0-975b-dbe315215164
+  port: 18113
+  server: 1sw-olo.wjwhi90.com
+  skip-cert-verify: true
+  sni: hdzsg.wjwhi90.com
+  type: anytls
+  udp: true
+- client-fingerprint: chrome
+  name: 519|🇸🇬 新加坡 | SGP
+  network: ws
+  port: 443
+  server: 84.32.22.205
+  servername: snip.edgeoneai.cc.cd
   tls: true
   type: vless
   udp: true
-  uuid: 6c6ea474-0cf5-4a3d-bc81-aa2eeb6516d6
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
   ws-opts:
     headers:
-      Host: jln31qtswdkut5.60kohcognywybguuq3ouc818oofnxfvn35daott.workers.dev
-    path: /@Marisa_kristi
+      Host: snip.edgeoneai.cc.cd
+    path: /fdip=sstp://vpn:vpn@vpn748359672.opengw.net:1458?ed=2560fp=chrome
 - client-fingerprint: chrome
-  name: '523,524|🇸🇬_新加坡_107 #1'
+  name: 519|ProxyPool | 🇸🇬 新加坡 | SGP 2
   network: ws
   port: 443
-  server: 43.174.195.1
+  server: 103.170.217.60
   servername: snip.edgeoneai.cc.cd
-  skip-cert-verify: true
   tls: true
   type: vless
   udp: true
@@ -5065,7 +5140,117 @@ proxies:
       Host: snip.edgeoneai.cc.cd
     path: /
 - client-fingerprint: chrome
-  name: '523,524|🇸🇬_新加坡_110 #1'
+  name: 519|🇸🇬 新加坡 | SGP 3
+  network: ws
+  port: 443
+  server: 152.175.67.17
+  servername: snip.edgeoneai.cc.cd
+  tls: true
+  type: vless
+  udp: true
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  ws-opts:
+    headers:
+      Host: snip.edgeoneai.cc.cd
+    path: /fp=chrome
+- client-fingerprint: chrome
+  name: 519|🇸🇬 新加坡 | SGP 4
+  network: ws
+  port: 443
+  server: 185.115.207.102
+  servername: snip.edgeoneai.cc.cd
+  tls: true
+  type: vless
+  udp: true
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  ws-opts:
+    headers:
+      Host: snip.edgeoneai.cc.cd
+    path: /
+- client-fingerprint: chrome
+  name: 519|🇸🇬 新加坡 | SGP 5
+  network: ws
+  port: 443
+  server: 13.215.182.29
+  servername: snip.edgeoneai.cc.cd
+  tls: true
+  type: vless
+  udp: true
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  ws-opts:
+    headers:
+      Host: snip.edgeoneai.cc.cd
+    path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443fp=chrome
+- client-fingerprint: chrome
+  name: 519|ProxyPool | 🇸🇬 新加坡 | SGP 6
+  network: ws
+  port: 2096
+  server: 140.245.38.33
+  servername: snip.edgeoneai.cc.cd
+  tls: true
+  type: vless
+  udp: true
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  ws-opts:
+    headers:
+      Host: snip.edgeoneai.cc.cd
+    path: /
+- client-fingerprint: chrome
+  name: 519|🇸🇬 新加坡 | SGP 8
+  network: ws
+  port: 443
+  server: 45.32.100.162
+  servername: snip.edgeoneai.cc.cd
+  tls: true
+  type: vless
+  udp: true
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  ws-opts:
+    headers:
+      Host: snip.edgeoneai.cc.cd
+    path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443
+- client-fingerprint: chrome
+  name: '523,524|🇸🇬_新加坡_6 #1'
+  port: 21003
+  reality-opts:
+    public-key: HZwHZBP3x4Yo4UQiHcypRJIU_UdZY5OAapQM8RUqVAU
+    short-id: bab49aa4c2a88d27
+  server: 511.150333.xyz
+  servername: www.cloudflare.com
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 41b1c169-5905-4d98-b6a6-56896c25737c
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '523,524|🇸🇬_新加坡_28 #1'
+  port: 55069
+  reality-opts:
+    public-key: YQ3pqAAbm2RcACEkU8K0nol3-B-driJbXISk-rb-A0E
+    short-id: 98a763b0b27e284b
+  server: jklo.personalitytoday.com
+  servername: www.apple.com
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: b2332eff-b231-4c10-8552-5dfad84f5521
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '523,524|🇸🇬_新加坡_30 #1'
+  port: 36000
+  reality-opts:
+    public-key: X_RnxIw_MpC_qCMcsgM3CDcPx2y6LGVl7UMms0IxOkI
+    short-id: 8cd87cd0dcc86b9f
+  server: 162.128.44.254
+  servername: www.apple.com
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: b2332eff-b231-4c10-8552-5dfad84f5521
+- name: '523,524|🇸🇬_新加坡_42 #1'
   network: ws
   port: 443
   server: 43.174.195.1
@@ -5080,7 +5265,37 @@ proxies:
       Host: kv.074167.xyz
     path: /
 - client-fingerprint: chrome
-  name: '523,524|🇸🇬_新加坡_148 #1'
+  name: '523,524|🇸🇬_新加坡_55 #1'
+  network: ws
+  port: 51262
+  server: 175.41.179.37
+  servername: jln31qtswdkut5.60kohcognywybguuq3ouc818oofnxfvn35daott.workers.dev
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 6c6ea474-0cf5-4a3d-bc81-aa2eeb6516d6
+  ws-opts:
+    headers:
+      Host: jln31qtswdkut5.60kohcognywybguuq3ouc818oofnxfvn35daott.workers.dev
+    path: /@Marisa_kristi
+- client-fingerprint: chrome
+  name: '523,524|🇸🇬_新加坡_384 #1'
+  network: ws
+  port: 443
+  server: 43.174.195.1
+  servername: snip.edgeoneai.cc.cd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  ws-opts:
+    headers:
+      Host: snip.edgeoneai.cc.cd
+    path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443fp=chrome
+- client-fingerprint: chrome
+  name: '523,524|🇸🇬_新加坡_183 #1'
   network: ws
   port: 443
   server: 178.93.160.236
@@ -5095,10 +5310,10 @@ proxies:
       Host: snip.edgeoneai.cc.cd
     path: /
 - client-fingerprint: chrome
-  name: '523,524|🇸🇬_新加坡_153 #1'
+  name: '523,524|🇸🇬_新加坡_211 #1'
   network: ws
   port: 443
-  server: 161.118.219.229
+  server: 152.42.198.190
   servername: snip.edgeoneai.cc.cd
   skip-cert-verify: true
   tls: true
@@ -5110,10 +5325,25 @@ proxies:
       Host: snip.edgeoneai.cc.cd
     path: /
 - client-fingerprint: chrome
-  name: '523,524|🇸🇬_新加坡_158 #1'
+  name: '523,524|🇸🇬_新加坡_215 #1'
   network: ws
   port: 443
-  server: 129.212.232.171
+  server: 172.93.219.9
+  servername: snip.edgeoneai.cc.cd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  ws-opts:
+    headers:
+      Host: snip.edgeoneai.cc.cd
+    path: /fp=chrome
+- client-fingerprint: chrome
+  name: '523,524,566|🇸🇬 新加坡 | SGP 6 #1'
+  network: ws
+  port: 443
+  server: 185.115.207.234
   servername: snip.edgeoneai.cc.cd
   skip-cert-verify: true
   tls: true
@@ -5125,10 +5355,360 @@ proxies:
       Host: snip.edgeoneai.cc.cd
     path: /
 - client-fingerprint: chrome
-  name: '523,524|🇸🇬_新加坡_160 #1'
+  name: '523,524|🇸🇬_新加坡_243 #1'
   network: ws
   port: 443
-  server: 157.245.50.181
+  server: 94.237.65.232
+  servername: snip.edgeoneai.cc.cd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  ws-opts:
+    headers:
+      Host: snip.edgeoneai.cc.cd
+    path: /fp=chrome
+- name: '523,524|🇸🇬_新加坡_252 #1'
+  network: ws
+  port: 443
+  server: 43.174.195.1
+  servername: snip.edgeoneai.cc.cd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  ws-opts:
+    headers:
+      Host: snip.edgeoneai.cc.cd
+    path: /fp=chrome
+- client-fingerprint: chrome
+  name: '523,524|🇸🇬_新加坡_279 #1'
+  network: ws
+  port: 443
+  server: 103.149.46.74
+  servername: snip.edgeoneai.cc.cd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  ws-opts:
+    headers:
+      Host: snip.edgeoneai.cc.cd
+    path: /
+- name: '523,524|🇸🇬_新加坡_280 #1'
+  network: ws
+  port: 443
+  server: 101.32.169.108
+  servername: snip.edgeoneai.cc.cd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  ws-opts:
+    headers:
+      Host: snip.edgeoneai.cc.cd
+    path: /fp=chrome
+- client-fingerprint: chrome
+  name: '523,524|🇸🇬_新加坡_281 #1'
+  network: ws
+  port: 2053
+  server: 103.136.68.176
+  servername: snip.edgeoneai.cc.cd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  ws-opts:
+    headers:
+      Host: snip.edgeoneai.cc.cd
+    path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443
+- name: '523,524|🇸🇬_新加坡_342 #1'
+  network: ws
+  port: 443
+  server: 116.251.217.65
+  servername: snip.edgeoneai.cc.cd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  ws-opts:
+    headers:
+      Host: snip.edgeoneai.cc.cd
+    path: fp=unsafe
+- client-fingerprint: chrome
+  name: '523,524|🇸🇬_新加坡_343 #1'
+  network: ws
+  port: 443
+  server: 13.212.31.121
+  servername: snip.edgeoneai.cc.cd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  ws-opts:
+    headers:
+      Host: snip.edgeoneai.cc.cd
+    path: /
+- name: '523,524|🇸🇬_新加坡_344 #1'
+  network: ws
+  port: 443
+  server: 138.2.66.236
+  servername: snip.edgeoneai.cc.cd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  ws-opts:
+    headers:
+      Host: snip.edgeoneai.cc.cd
+    path: /fp=chrome
+- client-fingerprint: chrome
+  name: '523,524|🇸🇬_新加坡_345 #1'
+  network: ws
+  port: 443
+  server: 152.42.175.157
+  servername: snip.edgeoneai.cc.cd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  ws-opts:
+    headers:
+      Host: snip.edgeoneai.cc.cd
+    path: /
+- name: '523,524|🇸🇬_新加坡_346 #1'
+  network: ws
+  port: 443
+  server: 165.22.106.244
+  servername: snip.edgeoneai.cc.cd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  ws-opts:
+    headers:
+      Host: snip.edgeoneai.cc.cd
+    path: /
+- client-fingerprint: chrome
+  name: '523,524|🇸🇬_新加坡_347 #1'
+  network: ws
+  port: 443
+  server: 165.232.173.161
+  servername: snip.edgeoneai.cc.cd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  ws-opts:
+    headers:
+      Host: snip.edgeoneai.cc.cd
+    path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443
+- client-fingerprint: chrome
+  name: '523,524|🇸🇬_新加坡_348 #1'
+  network: ws
+  port: 443
+  server: 167.172.75.10
+  servername: snip.edgeoneai.cc.cd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  ws-opts:
+    headers:
+      Host: snip.edgeoneai.cc.cd
+    path: /
+- name: '523,524|🇸🇬_新加坡_349 #1'
+  network: ws
+  port: 443
+  server: 168.144.128.4
+  servername: snip.edgeoneai.cc.cd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  ws-opts:
+    headers:
+      Host: snip.edgeoneai.cc.cd
+    path: /fdip=sstp://vpn:vpn@vpn748359672.opengw.net:1458?ed=2560fp=chrome
+- client-fingerprint: chrome
+  name: '523,524|🇸🇬_新加坡_350 #1'
+  network: ws
+  port: 443
+  server: 172.104.180.121
+  servername: snip.edgeoneai.cc.cd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  ws-opts:
+    headers:
+      Host: snip.edgeoneai.cc.cd
+    path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443
+- name: '523,524|🇸🇬_新加坡_351 #1'
+  network: ws
+  port: 443
+  server: 194.127.192.138
+  servername: snip.edgeoneai.cc.cd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  ws-opts:
+    headers:
+      Host: snip.edgeoneai.cc.cd
+    path: /fp=chrome
+- name: '523,524|🇸🇬_新加坡_352 #1'
+  network: ws
+  port: 8443
+  server: 206.206.77.6
+  servername: snip.edgeoneai.cc.cd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  ws-opts:
+    headers:
+      Host: snip.edgeoneai.cc.cd
+    path: /
+- name: '523,524|🇸🇬_新加坡_353 #1'
+  network: ws
+  port: 443
+  server: 207.148.123.149
+  servername: snip.edgeoneai.cc.cd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  ws-opts:
+    headers:
+      Host: snip.edgeoneai.cc.cd
+    path: /
+- client-fingerprint: chrome
+  name: '523,524|🇸🇬_新加坡_354 #1'
+  network: ws
+  port: 443
+  server: 216.195.195.205
+  servername: snip.edgeoneai.cc.cd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  ws-opts:
+    headers:
+      Host: snip.edgeoneai.cc.cd
+    path: /fp=unsafe
+- client-fingerprint: chrome
+  name: '523,524|🇸🇬_新加坡_355 #1'
+  network: ws
+  port: 8443
+  server: 5.223.70.20
+  servername: snip.edgeoneai.cc.cd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  ws-opts:
+    headers:
+      Host: snip.edgeoneai.cc.cd
+    path: /
+- client-fingerprint: chrome
+  name: '523,524|🇸🇬_新加坡_356 #1'
+  network: ws
+  port: 443
+  server: 69.8.133.6
+  servername: snip.edgeoneai.cc.cd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  ws-opts:
+    headers:
+      Host: snip.edgeoneai.cc.cd
+    path: /
+- client-fingerprint: chrome
+  name: '523,524|🇸🇬_新加坡_371 #1'
+  network: ws
+  port: 443
+  server: 43.174.195.1
+  servername: snip.edgeoneai.cc.cd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  ws-opts:
+    headers:
+      Host: snip.edgeoneai.cc.cd
+    path: /
+- client-fingerprint: chrome
+  name: '523,524|🇸🇬_新加坡_383 #1'
+  network: ws
+  port: 443
+  server: 139.162.62.195
+  servername: snip.edgeoneai.cc.cd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  ws-opts:
+    headers:
+      Host: snip.edgeoneai.cc.cd
+    path: /
+- client-fingerprint: chrome
+  name: '523,524|🇸🇬_新加坡_400 #1'
+  network: ws
+  port: 443
+  server: 103.195.190.134
+  servername: snip.edgeoneai.cc.cd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  ws-opts:
+    headers:
+      Host: snip.edgeoneai.cc.cd
+    path: /
+- name: '523,524|🇸🇬_新加坡_401 #1'
+  network: ws
+  port: 443
+  server: 56.10.33.77
+  servername: snip.edgeoneai.cc.cd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  ws-opts:
+    headers:
+      Host: snip.edgeoneai.cc.cd
+    path: /
+- client-fingerprint: chrome
+  name: '523,524|🇸🇬_新加坡_409 #1'
+  network: ws
+  port: 8443
+  server: 168.107.90.137
   servername: snip.edgeoneai.cc.cd
   skip-cert-verify: true
   tls: true
@@ -5147,54 +5727,78 @@ proxies:
   server: 128.1.186.73
   type: ss
   udp: true
-- alterId: 0
-  cipher: auto
-  name: 538|🇸🇬SG-18.142.161.221-0068 | 0.0...
-  network: ws
-  port: 5200
-  server: st-2.dnspro.icu
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 3155e00f-71ef-3edc-b6d0-5bce283daf90
-  ws-opts:
-    headers:
-      Host: lg-hkg-b.gcorelabs.info
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 538|🇸🇬SG-18.142.161.221-0053 | 0.0...
-  network: ws
-  port: 20023
-  server: aws-beijing-1.dnspro.icu
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 3155e00f-71ef-3edc-b6d0-5bce283daf90
-  ws-opts:
-    headers:
-      Host: aws-beijing-1.dnspro.icu
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 538|🇸🇬SG-18.142.161.221-0023 | 0.0...
-  network: ws
-  port: 7000
-  server: gz-us-1.dnspro.icu
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 3155e00f-71ef-3edc-b6d0-5bce283daf90
-  ws-opts:
-    headers:
-      Host: gz-us-1.dnspro.icu
-    path: /
 - name: '545,546|新加坡[02] #1'
   password: 4568465a-a435-4569-b3ab-7f606018474f
   port: 443
   server: pop.09d21837-9b89-4490-92bf-eabf449e3321.heima360.cc
   skip-cert-verify: false
   type: trojan
+- name: '551|🇸🇬[www.v2nodes.com] vless-SG #... #5'
+  network: ws
+  port: 80
+  server: 104.20.28.233
+  tls: false
+  type: vless
+  uuid: e081da45-9fae-4687-9376-f9a6a0dbbe83
+  ws-opts:
+    headers:
+      Host: e33xr.qzz.io
+    path: /id-amz
+- name: '551|🇸🇬[www.v2nodes.com] trojan-SG-... #2'
+  password: e26a229d-e8f2-4ff9-8c7d-58a9d83ee437
+  port: 8886
+  server: 139.180.146.200
+  skip-cert-verify: true
+  type: trojan
+- name: '551,566|🇸🇬 新加坡 | SGP #5'
+  network: tcp
+  port: 10443
+  server: 178.94.25.73
+  servername: 178.94.25.73
+  tls: false
+  type: vless
+  udp: true
+  uuid: 2dacc738-5720-4824-b8bc-e3db57596ba7
+- name: '551,566|🇸🇬 新加坡 | SGP 4 #1'
+  network: ws
+  port: 14430
+  server: 178.94.25.73
+  servername: 178.94.25.73
+  tls: false
+  type: vless
+  udp: true
+  uuid: 2dacc738-5720-4824-b8bc-e3db57596ba7
+  ws-opts:
+    headers:
+      Host: 178.94.25.73
+    path: /vless
+- auth: 6e4ceae4-6d81-4d87-9802-759ea5c244e5
+  name: '551,566,568|🇸🇬 新加坡 | SGP #8'
+  password: 6e4ceae4-6d81-4d87-9802-759ea5c244e5
+  port: 20000
+  ports: 20000-50000
+  server: sg02-hy.poke-mon.xyz
+  skip-cert-verify: true
+  sni: www.bing.com
+  tls: false
+  type: hysteria2
+  udp: true
+- name: '551,566,568|🇸🇬 新加坡 | SGP #10'
+  password: 6e4ceae4-6d81-4d87-9802-759ea5c244e5
+  port: 50125
+  server: fj3x.waimaosass.icu
+  skip-cert-verify: true
+  sni: iosapps.itunes.apple.com
+  type: trojan
+  udp: true
+- name: '551,566,568|🇸🇬 新加坡 | SGP #11'
+  password: 6e4ceae4-6d81-4d87-9802-759ea5c244e5
+  port: 55016
+  server: fj3x.waimaosass.icu
+  skip-cert-verify: true
+  sni: www.lamer.com.sg
+  type: trojan
+  udp: true
 - cipher: chacha20-ietf-poly1305
   name: 558|0|🇬加 01 | 1x SG
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
@@ -5254,6 +5858,20 @@ proxies:
   server: gg21.hangfengjiasu.com
   tfo: false
   type: ss
+- client-fingerprint: chrome
+  name: '566|🇸🇬 新加坡 | SGP 2 #1'
+  network: ws
+  port: 443
+  server: 128.1.186.61
+  servername: snip.edgeoneai.cc.cd
+  tls: true
+  type: vless
+  udp: true
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  ws-opts:
+    headers:
+      Host: snip.edgeoneai.cc.cd
+    path: /
 - alterId: 0
   cipher: auto
   name: '577|新加坡NO.1 #4'
@@ -5272,883 +5890,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 070f662b-3c75-4e7f-8381-287d6d8f45b2
-- name: 580|🇸🇬SG新加坡丨yoyapai.com
-  network: ws
-  port: 8880
-  server: 45.40.149.50
-  tls: false
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: vms.lifetime39.workers.dev
-    path: '%2F'
-- client-fingerprint: chrome
-  name: '580|🇸🇬SG新加坡丨yoyapai.com #3'
-  network: ws
-  port: 443
-  server: 47.131.189.221
-  servername: mia7.pages.dev
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 3db635e4-f9ec-42d6-8aba-e23df8b0e6da
-  ws-opts:
-    headers:
-      Host: mia7.pages.dev
-    path: '%2FTG%3A%40MiaChatChannel'
-- client-fingerprint: chrome
-  name: '580|SG新加坡(mibei77.com 米贝节点分享) #1'
-  network: ws
-  port: 443
-  server: 103.195.188.192
-  servername: shuma.ccwu.cc
-  tls: true
-  type: vless
-  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
-  ws-opts:
-    headers:
-      Host: shuma.ccwu.cc
-    path: '%2F'
-- client-fingerprint: chrome
-  name: '580|SG新加坡(mibei77.com 米贝节点分享) #2'
-  network: ws
-  port: 443
-  server: 103.195.188.206
-  servername: shuma.ccwu.cc
-  tls: true
-  type: vless
-  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
-  ws-opts:
-    headers:
-      Host: shuma.ccwu.cc
-    path: '%2F'
-- client-fingerprint: chrome
-  name: '580|SG新加坡(mibei77.com 米贝节点分享) #3'
-  network: ws
-  port: 443
-  server: 103.170.217.60
-  servername: shuma.ccwu.cc
-  tls: true
-  type: vless
-  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
-  ws-opts:
-    headers:
-      Host: shuma.ccwu.cc
-    path: '%2F'
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 580|🇸🇬SG_13|127KB/s|C002-260622 01
-  network: tcp
-  port: 17623
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  server: 3.0.111.82
-  servername: www.apple.com
-  tls: false
-  type: vless
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-- name: 580|US VLESS-855 | free-nodes
-  network: ws
-  port: 80
-  server: support.zoom.us
-  servername: shalana.xyz
-  tls: false
-  type: vless
-  uuid: 6aa028bc-08a9-41d1-a397-d60ce65df081
-  ws-opts:
-    headers:
-      Host: shalana.xyz
-    path: /shalana
-- name: 580|🇸🇬SG_15|469KB/s|A004-260618 01
-  network: ws
-  port: 80
-  server: 170.114.45.6
-  tls: false
-  type: vless
-  uuid: 6aa028bc-08a9-41d1-a397-d60ce65df081
-  ws-opts:
-    headers:
-      Host: shalana.xyz
-    path: /shalana
-- name: 580|🇸🇬SG_16|806KB/s|A004-260618 01
-  network: tcp
-  password: sshs8_6481354771
-  port: 2087
-  server: 86.38.247.109
-  sni: ul-singapore1.09vpn.com
-  type: trojan
-- client-fingerprint: chrome
-  name: 580|🇸🇬SG_19|284KB/s|M003-260806 01
-  network: ws
-  port: 51262
-  server: 175.41.179.37
-  servername: 3tmj2egtm-fno.49bnithzk8vphybv36d1z1xkzfvogt2m6.workers.dev
-  tls: true
-  type: vless
-  uuid: 903fed13-8e78-4fa2-a83e-b392b289741f
-  ws-opts:
-    headers:
-      Host: 3tmj2egtm-fno.49bnithzk8vphybv36d1z1xkzfvogt2m6.workers.dev
-    path: /@Marisa_kristi
-- name: 580|🇸🇬SG_21|373KB/s|A004-260618 01
-  password: f87376e17da040ed04c9665ce8972930
-  port: 50160
-  server: 138.2.73.238
-  skip-cert-verify: true
-  sni: 138.2.73.238
-  tls: false
-  type: hysteria2
-- name: 580|🇸🇬SG_48|652KB/s|A004-260618 01
-  network: ws
-  port: 80
-  server: 170.114.46.6
-  servername: shalana.xyz
-  tls: false
-  type: vless
-  uuid: 6aa028bc-08a9-41d1-a397-d60ce65df081
-  ws-opts:
-    headers:
-      Host: shalana.xyz
-    path: /shalana
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 580|🇸🇬SG_27|133KB/s 01
-  network: tcp
-  port: 10574
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  server: 3.0.111.82
-  servername: www.apple.com
-  tls: false
-  type: vless
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-- name: 580|🇸🇬SG_31|448KB/s|R002-260618 01
-  password: 5d0a6445-a30d-4522-bb1f-94f1d3ad63be
-  port: 20562
-  server: msjp.mangshe.xyz
-  skip-cert-verify: true
-  sni: www.microsoft.com
-  tls: false
-  type: hysteria2
-- client-fingerprint: chrome
-  name: 580|🇸🇬SG_33|318KB/s|M003-260806 01
-  network: ws
-  port: 443
-  server: 116.251.217.65
-  servername: netlivpn4813.ddhshhshs.workers.dev
-  tls: true
-  type: vless
-  uuid: 2388e166-3890-33ae-f77e-efac00000002
-  ws-opts:
-    headers:
-      Host: netlivpn4813.ddhshhshs.workers.dev
-    path: /NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN
-- client-fingerprint: chrome
-  name: 580|🇸🇬SG_34|191KB/s|M003-260806 01
-  network: ws
-  port: 8441
-  server: 45.77.241.190
-  servername: wjwkhoaftdgrt8qus.mp8pmwdgwf3sdapasouszjobjr57nrxxgtx9n.workers.dev
-  tls: true
-  type: vless
-  uuid: b3ddac6f-b2b7-43a6-bd69-413013f30040
-  ws-opts:
-    headers:
-      Host: wjwkhoaftdgrt8qus.mp8pmwdgwf3sdapasouszjobjr57nrxxgtx9n.workers.dev
-    path: /@Marisa_kristi
-- client-fingerprint: chrome
-  name: 580|🇸🇬SG_35|269KB/s|F003-260618 01
-  network: ws
-  port: 53646
-  server: 54.179.79.12
-  servername: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
-  tls: true
-  type: vless
-  uuid: d57b9436-a238-4066-8b11-d23ae57c5982
-  ws-opts:
-    headers:
-      Host: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
-    path: /@Marisa_kristi
-- name: 580|🇸🇬SG_37|379KB/s|M003-260806 01
-  obfs: salamander
-  obfs-password: 309502c4a8df10b46fb976d4a8c43f42
-  password: d042d150716709bb778cc73889cddb02
-  port: 443
-  server: 138.2.89.249
-  skip-cert-verify: true
-  sni: www.bing.com
-  tls: false
-  type: hysteria2
-- client-fingerprint: chrome
-  name: 580|🇸🇬SG_41|249KB/s|M002-260618 01
-  network: ws
-  port: 8441
-  server: 45.77.241.190
-  servername: jln31qtswdkut5.60kohcognywybguuq3ouc818oofnxfvn35daott.workers.dev
-  tls: true
-  type: vless
-  uuid: 3011e40c-228f-4f2e-9dbf-5b256887e071
-  ws-opts:
-    headers:
-      Host: jln31qtswdkut5.60kohcognywybguuq3ouc818oofnxfvn35daott.workers.dev
-    path: /@Marisa_kristi
-- client-fingerprint: chrome
-  name: 580|🇸🇬SG_43|494KB/s|A004-260618 01
-  network: ws
-  port: 8443
-  server: news.zoom.us
-  servername: u.srilankangrill.online
-  tls: true
-  type: vless
-  uuid: 29c3dd6b-b164-40ca-a0d5-f06aca52a8b2
-  ws-opts:
-    headers:
-      Host: u.srilankangrill.online
-    path: /
-- client-fingerprint: firefox
-  name: 580|🇸🇬SG_86|421KB/s|A004-260618 01
-  network: raw
-  port: 2053
-  reality-opts:
-    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
-    short-id: 87829de0e2bb82cb
-  server: 217.217.254.126
-  servername: www.cloudflare.com
-  tls: false
-  type: vless
-  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
-- client-fingerprint: chrome
-  name: 580|🇸🇬SG_45|434KB/s|A004-260618 01
-  network: ws
-  port: 8443
-  server: 141.193.213.20
-  servername: u.srilankangrill.online
-  tls: true
-  type: vless
-  uuid: 29c3dd6b-b164-40ca-a0d5-f06aca52a8b2
-  ws-opts:
-    headers:
-      Host: u.srilankangrill.online
-    path: /
-- client-fingerprint: chrome
-  name: 580|🇸🇬SG_46|467KB/s|A004-260618 01
-  network: ws
-  port: 8443
-  server: 141.193.213.21
-  servername: u.srilankangrill.online
-  tls: true
-  type: vless
-  uuid: 29c3dd6b-b164-40ca-a0d5-f06aca52a8b2
-  ws-opts:
-    headers:
-      Host: u.srilankangrill.online
-    path: /
-- name: 580|🇸🇬SG_49|532KB/s 01
-  password: qQe1z5kU8kN6SlKnDt9Ru3Qp
-  port: 443
-  server: vpn-sg-001.fastervpn.world
-  skip-cert-verify: true
-  sni: vpn-sg-001.fastervpn.world
-  tls: false
-  type: hysteria2
-- client-fingerprint: chrome
-  name: 580|🇸🇬SG_54|728KB/s|A004-260618 01
-  network: ws
-  port: 443
-  server: 43.160.203.174
-  servername: mia0.pages.dev
-  tls: true
-  type: vless
-  uuid: 3db635e4-f9ec-42d6-8aba-e23df8b0e6da
-  ws-opts:
-    headers:
-      Host: mia0.pages.dev
-    path: /TG:@MiaChatChannel
-- client-fingerprint: chrome
-  name: 580|🇸🇬SG_56|770KB/s|M003-260806 01
-  network: ws
-  port: 443
-  server: 43.160.241.174
-  servername: mia11.pages.dev
-  tls: true
-  type: vless
-  uuid: 3db635e4-f9ec-42d6-8aba-e23df8b0e6da
-  ws-opts:
-    headers:
-      Host: mia11.pages.dev
-    path: /TG:@MiaChatChannel
-- name: 580|🇸🇬SG_57|407KB/s|A004-260618 01
-  network: ws
-  port: 80
-  server: 170.114.46.6
-  tls: false
-  type: vless
-  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
-  ws-opts:
-    headers:
-      Host: u.srilankangrill.online
-    path: /
-- name: 580|🇸🇬SG_58|487KB/s|A004-260618 01
-  network: ws
-  port: 80
-  server: 170.114.45.6
-  tls: false
-  type: vless
-  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
-  ws-opts:
-    headers:
-      Host: u.srilankangrill.online
-    path: /
-- client-fingerprint: chrome
-  name: 580|🇸🇬SG_59|624KB/s|A004-260618 01
-  network: ws
-  port: 443
-  server: 188.114.97.6
-  servername: u.srilankangrill.online
-  tls: true
-  type: vless
-  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
-  ws-opts:
-    headers:
-      Host: u.srilankangrill.online
-    path: /
-- client-fingerprint: chrome
-  name: 580|🇸🇬SG_60|528KB/s|A004-260618 01
-  network: ws
-  port: 443
-  server: 104.16.3.98
-  servername: u.srilankangrill.online
-  tls: true
-  type: vless
-  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
-  ws-opts:
-    headers:
-      Host: u.srilankangrill.online
-    path: /
-- client-fingerprint: chrome
-  name: 580|🇸🇬SG_61|677KB/s|A004-260618 01
-  network: ws
-  port: 443
-  server: 104.16.10.234
-  servername: u.srilankangrill.online
-  tls: true
-  type: vless
-  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
-  ws-opts:
-    headers:
-      Host: u.srilankangrill.online
-    path: /
-- client-fingerprint: unsafe
-  name: 580|🇸🇬SG_62|460KB/s|M003-260806 01
-  network: ws
-  port: 443
-  server: 104.16.10.233
-  servername: u.srilankangrill.online
-  tls: true
-  type: vless
-  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
-  ws-opts:
-    headers:
-      Host: u.srilankangrill.online
-    path: /
-- client-fingerprint: chrome
-  name: 580|🇸🇬SG_63|430KB/s|A004-260618 01
-  network: ws
-  port: 443
-  server: 104.16.10.10
-  servername: u.srilankangrill.online
-  tls: true
-  type: vless
-  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
-  ws-opts:
-    headers:
-      Host: u.srilankangrill.online
-    path: /
-- client-fingerprint: chrome
-  name: 580|🇸🇬SG_64|264KB/s|A004-260618 01
-  network: ws
-  port: 443
-  server: 104.16.10.191
-  servername: u.srilankangrill.online
-  tls: true
-  type: vless
-  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
-  ws-opts:
-    headers:
-      Host: u.srilankangrill.online
-    path: /
-- client-fingerprint: chrome
-  name: 580|🇸🇬SG_65|544KB/s|A004-260618 01
-  network: ws
-  port: 443
-  server: 104.16.10.198
-  servername: u.srilankangrill.online
-  tls: true
-  type: vless
-  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
-  ws-opts:
-    headers:
-      Host: u.srilankangrill.online
-    path: /
-- client-fingerprint: chrome
-  name: 580|🇸🇬SG_66|438KB/s|A004-260618 01
-  network: ws
-  port: 443
-  server: 104.18.26.90
-  servername: u.srilankangrill.online
-  tls: true
-  type: vless
-  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
-  ws-opts:
-    headers:
-      Host: u.srilankangrill.online
-    path: /
-- client-fingerprint: chrome
-  name: 580|🇸🇬SG_67|421KB/s|A004-260618 01
-  network: ws
-  port: 443
-  server: 104.16.10.104
-  servername: u.srilankangrill.online
-  tls: true
-  type: vless
-  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
-  ws-opts:
-    headers:
-      Host: u.srilankangrill.online
-    path: /
-- client-fingerprint: chrome
-  name: 580|🇸🇬SG_68|426KB/s|A004-260618 01
-  network: ws
-  port: 443
-  server: 104.16.10.235
-  servername: u.srilankangrill.online
-  tls: true
-  type: vless
-  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
-  ws-opts:
-    headers:
-      Host: u.srilankangrill.online
-    path: /
-- client-fingerprint: chrome
-  name: 580|🇸🇬SG_69|791KB/s|A004-260618 01
-  network: ws
-  port: 443
-  server: 104.16.10.189
-  servername: u.srilankangrill.online
-  tls: true
-  type: vless
-  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
-  ws-opts:
-    headers:
-      Host: u.srilankangrill.online
-    path: /
-- client-fingerprint: chrome
-  name: 580|🇸🇬SG_70|716KB/s|A004-260618 01
-  network: ws
-  port: 443
-  server: 104.17.117.137
-  servername: u.srilankangrill.online
-  tls: true
-  type: vless
-  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
-  ws-opts:
-    headers:
-      Host: u.srilankangrill.online
-    path: /
-- client-fingerprint: chrome
-  name: 580|🇸🇬SG_72|486KB/s|A004-260618 01
-  network: ws
-  port: 443
-  server: 104.16.10.100
-  servername: u.srilankangrill.online
-  tls: true
-  type: vless
-  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
-  ws-opts:
-    headers:
-      Host: u.srilankangrill.online
-    path: /
-- client-fingerprint: chrome
-  name: 580|🇸🇬SG_73|469KB/s|A004-260618 01
-  network: ws
-  port: 443
-  server: 104.16.10.116
-  servername: u.srilankangrill.online
-  tls: true
-  type: vless
-  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
-  ws-opts:
-    headers:
-      Host: u.srilankangrill.online
-    path: /
-- client-fingerprint: chrome
-  name: 580|🇸🇬SG_74|474KB/s|A004-260618 01
-  network: ws
-  port: 443
-  server: 104.24.0.184
-  servername: u.srilankangrill.online
-  tls: true
-  type: vless
-  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
-  ws-opts:
-    headers:
-      Host: u.srilankangrill.online
-    path: /
-- client-fingerprint: chrome
-  name: 580|🇸🇬SG_75|518KB/s|A004-260618 01
-  network: ws
-  port: 443
-  server: 104.16.10.103
-  servername: u.srilankangrill.online
-  tls: true
-  type: vless
-  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
-  ws-opts:
-    headers:
-      Host: u.srilankangrill.online
-    path: /
-- client-fingerprint: chrome
-  name: 580|🇸🇬SG_76|598KB/s|A004-260618 01
-  network: ws
-  port: 443
-  server: 104.16.156.227
-  servername: u.srilankangrill.online
-  tls: true
-  type: vless
-  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
-  ws-opts:
-    headers:
-      Host: u.srilankangrill.online
-    path: /
-- client-fingerprint: chrome
-  name: 580|🇸🇬SG_77|444KB/s|A004-260618 01
-  network: ws
-  port: 443
-  server: 104.21.70.228
-  servername: u.srilankangrill.online
-  tls: true
-  type: vless
-  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
-  ws-opts:
-    headers:
-      Host: u.srilankangrill.online
-    path: /
-- client-fingerprint: chrome
-  name: 580|🇸🇬SG_78|425KB/s|A004-260618 01
-  network: ws
-  port: 443
-  server: 104.19.178.244
-  servername: u.srilankangrill.online
-  tls: true
-  type: vless
-  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
-  ws-opts:
-    headers:
-      Host: u.srilankangrill.online
-    path: /
-- client-fingerprint: chrome
-  name: 580|🇸🇬SG_79|534KB/s|A004-260618 01
-  network: ws
-  port: 443
-  server: 104.21.236.63
-  servername: u.srilankangrill.online
-  tls: true
-  type: vless
-  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
-  ws-opts:
-    headers:
-      Host: u.srilankangrill.online
-    path: /
-- client-fingerprint: chrome
-  name: 580|🇸🇬SG_80|449KB/s|A004-260618 01
-  network: ws
-  port: 443
-  server: 104.16.10.2
-  servername: u.srilankangrill.online
-  tls: true
-  type: vless
-  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
-  ws-opts:
-    headers:
-      Host: u.srilankangrill.online
-    path: /
-- client-fingerprint: chrome
-  name: 580|🇸🇬SG_81|477KB/s|A004-260618 01
-  network: ws
-  port: 443
-  server: 104.19.32.166
-  servername: u.srilankangrill.online
-  tls: true
-  type: vless
-  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
-  ws-opts:
-    headers:
-      Host: u.srilankangrill.online
-    path: /
-- client-fingerprint: chrome
-  name: 580|🇸🇬SG_82|503KB/s|A004-260618 01
-  network: ws
-  port: 443
-  server: 104.21.60.109
-  servername: u.srilankangrill.online
-  tls: true
-  type: vless
-  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
-  ws-opts:
-    headers:
-      Host: u.srilankangrill.online
-    path: /
-- client-fingerprint: chrome
-  name: 580|🇸🇬SG_83|731KB/s|A004-260618 01
-  network: ws
-  port: 443
-  server: 104.21.89.41
-  servername: u.srilankangrill.online
-  tls: true
-  type: vless
-  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
-  ws-opts:
-    headers:
-      Host: u.srilankangrill.online
-    path: /
-- client-fingerprint: unsafe
-  name: 580|🇸🇬SG_84|639KB/s|T001-260618 01
-  network: ws
-  port: 2096
-  server: 188.114.97.6
-  servername: shalana.xyz
-  tls: true
-  type: vless
-  uuid: 395d040e-a04a-43d7-a1e9-8635f545879a
-  ws-opts:
-    headers:
-      Host: shalana.xyz
-    path: /shalana
-- client-fingerprint: chrome
-  name: 580|🇸🇬SG_85|745KB/s|M002-260618 01
-  network: ws
-  port: 2096
-  server: 104.17.70.206
-  servername: shalana.xyz
-  tls: true
-  type: vless
-  uuid: 395d040e-a04a-43d7-a1e9-8635f545879a
-  ws-opts:
-    headers:
-      Host: shalana.xyz
-    path: /shalana
-- client-fingerprint: chrome
-  name: 580|🇸🇬SG_88|468KB/s|A004-260618 01
-  network: ws
-  port: 443
-  server: 104.21.5.75
-  servername: u.srilankangrill.online
-  tls: true
-  type: vless
-  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
-  ws-opts:
-    headers:
-      Host: u.srilankangrill.online
-    path: /
-- client-fingerprint: chrome
-  name: 580|🇸🇬SG_89|649KB/s|A004-260618 01
-  network: ws
-  port: 443
-  server: 104.24.11.68
-  servername: u.srilankangrill.online
-  tls: true
-  type: vless
-  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
-  ws-opts:
-    headers:
-      Host: u.srilankangrill.online
-    path: /
-- client-fingerprint: unsafe
-  name: 580|🇸🇬SG_90|473KB/s|B007-260618 01
-  network: ws
-  port: 443
-  server: 104.16.10.199
-  servername: u.srilankangrill.online
-  tls: true
-  type: vless
-  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
-  ws-opts:
-    headers:
-      Host: u.srilankangrill.online
-    path: /
-- name: 580|🇸🇬SG_94|499KB/s|A004-260618 01
-  network: raw
-  password: skynet
-  port: 119
-  server: cloud.lakshan.us
-  sni: cloud.lakshan.us
-  type: trojan
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 580|未知 VLESS-650 | free-nodes
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: TqIFzUEEI1pIOR8BEpkNKEXcJ6cPfE5EzHb5joIivig
-    short-id: 9930177816ab09da
-  server: 206.206.76.75
-  servername: www.cloudflare.com
-  tls: false
-  type: vless
-  uuid: 1e3d3634-36ac-43ac-a439-9665d885238f
-- client-fingerprint: chrome
-  name: 580|🇸🇬SG_97|312KB/s|R002-260618 01
-  network: ws
-  port: 443
-  server: 52.221.158.37
-  servername: mia3.pages.dev
-  tls: true
-  type: vless
-  uuid: 3db635e4-f9ec-42d6-8aba-e23df8b0e6da
-  ws-opts:
-    headers:
-      Host: mia3.pages.dev
-    path: /TG:@MiaChatChannel
-- client-fingerprint: chrome
-  name: 580|🇸🇬SG_98|425KB/s|R002-260618 01
-  network: ws
-  port: 443
-  server: 18.139.30.198
-  servername: mia3.pages.dev
-  tls: true
-  type: vless
-  uuid: 3db635e4-f9ec-42d6-8aba-e23df8b0e6da
-  ws-opts:
-    headers:
-      Host: mia3.pages.dev
-    path: /TG:@MiaChatChannel
-- client-fingerprint: chrome
-  name: 580|🇸🇬SG_99|476KB/s|R002-260618 01
-  network: ws
-  port: 443
-  server: 43.160.220.86
-  servername: mia0.pages.dev
-  tls: true
-  type: vless
-  uuid: 3db635e4-f9ec-42d6-8aba-e23df8b0e6da
-  ws-opts:
-    headers:
-      Host: mia0.pages.dev
-    path: /TG:@MiaChatChannel
-- client-fingerprint: chrome
-  name: 580|🇸🇬SG_101|88KB/s|R002-260618 01
-  network: ws
-  port: 443
-  server: 43.160.214.98
-  servername: mia9.pages.dev
-  tls: true
-  type: vless
-  uuid: 3db635e4-f9ec-42d6-8aba-e23df8b0e6da
-  ws-opts:
-    headers:
-      Host: mia9.pages.dev
-    path: /TG:@MiaChatChannel
-- client-fingerprint: chrome
-  name: 580|🇸🇬SG_102|440KB/s|R002-260618 0...
-  network: ws
-  port: 443
-  server: 149.118.48.187
-  servername: mia4.pages.dev
-  tls: true
-  type: vless
-  uuid: 3db635e4-f9ec-42d6-8aba-e23df8b0e6da
-  ws-opts:
-    headers:
-      Host: mia4.pages.dev
-    path: /TG:@MiaChatChannel
-- name: 580|🇸🇬SG_104|512KB/s|A004-260618 0...
-  network: tcp
-  password: skynet
-  port: 119
-  server: 64.120.95.203
-  sni: cloud.lakshan.us
-  type: trojan
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 580|🇸🇬SG_106|665KB/s|A004-260618 0...
-  network: tcp
-  port: 14352
-  reality-opts:
-    public-key: AzOs0Mh5_Ax-CrvFYTYXAp78syFjgkotED2cKO_kbyw
-    short-id: 461b0192ec23b6
-  server: xjpjus.jiedddym.com
-  servername: www.lamer.com.hk
-  tls: false
-  type: vless
-  uuid: 17ab31f7-c021-4aec-83b2-ab48de8886bd
-- client-fingerprint: chrome
-  name: 580|🇸🇬SG_107|556KB/s|A004-260618 0...
-  network: ws
-  port: 40649
-  server: 185.155.235.35
-  servername: cdn8848.776676.xyz
-  tls: true
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: cdn8848.776676.xyz
-    path: /
-- client-fingerprint: chrome
-  name: 580|🇸🇬SG_109|326KB/s|F003-260618 0...
-  network: ws
-  port: 443
-  server: 103.195.188.206
-  servername: shuma.ccwu.cc
-  tls: true
-  type: vless
-  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
-  ws-opts:
-    headers:
-      Host: shuma.ccwu.cc
-    path: /
-- client-fingerprint: chrome
-  name: 580|🇸🇬SG_110|351KB/s|F003-260618 0...
-  network: ws
-  port: 443
-  server: 103.195.188.192
-  servername: shuma.ccwu.cc
-  tls: true
-  type: vless
-  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
-  ws-opts:
-    headers:
-      Host: shuma.ccwu.cc
-    path: /
-- client-fingerprint: chrome
-  name: 580|🇸🇬SG_111|454KB/s|F003-260618 0...
-  network: ws
-  port: 443
-  server: 216.173.67.119
-  servername: shuma.ccwu.cc
-  tls: true
-  type: vless
-  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
-  ws-opts:
-    headers:
-      Host: shuma.ccwu.cc
-    path: /
-- client-fingerprint: chrome
-  name: 580|🇸🇬SG_112|412KB/s|F003-260618 0...
-  network: ws
-  port: 443
-  server: 216.173.67.144
-  servername: shuma.ccwu.cc
-  tls: true
-  type: vless
-  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
-  ws-opts:
-    headers:
-      Host: shuma.ccwu.cc
-    path: /
 - client-fingerprint: randomized
   name: 583|TS-13-02-SG
   network: ws
