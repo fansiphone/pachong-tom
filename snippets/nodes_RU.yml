@@ -1,10 +1,4 @@
 proxies:
-- cipher: chacha20-ietf-poly1305
-  name: '306,378,519,537|🇺RU-90.156.203.62-0417 #1'
-  password: VVlAff77CnAU43Aoc5j15Y
-  port: 5112
-  server: 90.156.203.62
-  type: ss
 - name: '306,340,378,502,514,519,536,537,551|🇳🇱[www.v2nodes.com] trojan-NL-... #72'
   password: humanity
   port: 443
@@ -158,6 +152,12 @@ proxies:
   uuid: a25881f3-967f-3265-bc7f-9e66857b016b
   ws-opts:
     path: /fr-unlimitxxx
+- cipher: chacha20-ietf-poly1305
+  name: '378,519,537|🇺RU-90.156.203.62-0417 #1'
+  password: VVlAff77CnAU43Aoc5j15Y
+  port: 5112
+  server: 90.156.203.62
+  type: ss
 - alterId: 0
   cipher: auto
   name: 378,508,509,536,537,636|🇷🇺 俄罗斯 005
@@ -403,14 +403,6 @@ proxies:
   port: 444
   server: 146.185.198.44
   type: ss
-- country: 🇺RU
-  name: 435,436|🇷🇺RU_86
-  password: AE62539071
-  port: 443
-  server: magical-kodiak.rooster465.autos
-  skip-cert-verify: true
-  type: trojan
-  udp: true
 - name: '461|俄罗斯联邦_莫斯科 #2'
   network: tcp
   password: 88903f70-b50b-11ed-8775-f23c9164ca5d
@@ -802,16 +794,19 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: '475,480|🇺RU俄罗斯 #1'
+  name: 475,480,494,574,580|未知 VMESS-1511 | free-nodes
   network: ws
-  port: 443
+  port: '443'
   server: renderer-stream-2-62.mirra.now
-  skip-cert-verify: false
+  servername: ''
+  skip-cert-verify: true
   tls: true
   type: vmess
   udp: true
   uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
   ws-opts:
+    headers:
+      Host: ''
     path: /api/v1/gpu-stream/socket
 - alterId: 0
   cipher: auto
