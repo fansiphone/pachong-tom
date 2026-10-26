@@ -1,4 +1,17 @@
 proxies:
+- alterId: 2
+  cipher: auto
+  name: '306,502,514,519|🇳🇱NL_2|1.4MB/s #2'
+  network: tcp
+  port: 30829
+  server: v29.hdacd.com
+  servername: v29.hdacd.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  xudp: true
 - cipher: chacha20-ietf-poly1305
   name: '362,363|423|🇨🇳  20X-1B |  16.5MB/s #1'
   password: cac56de5-40e5-4cd1-b23a-5e7e1dde311f
@@ -252,7 +265,7 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: '378,519,536,537|🇳CN-47.244.120.197-0506 #1'
+  name: '378,519,536,537,551|🇭🇰 香港 | HKG #2 #3'
   network: ws
   port: 36703
   server: 47.244.120.197
@@ -266,7 +279,7 @@ proxies:
     path: /arki
 - alterId: 0
   cipher: auto
-  name: 378,508,509,519,536,537,636|🇨🇳 中国 007
+  name: 378,508,509,536,537,636|🇨🇳 中国 007
   network: ws
   port: '443'
   server: 47.243.65.243
@@ -295,13 +308,15 @@ proxies:
     headers:
       Host: 6jdvarazgu3qqr6q.v.3dns.vip
     path: /ws-vmess
-- alterId: 0
+- alpn:
+  - ''
+  alterId: 0
   cipher: auto
   http-opts:
     method: GET
     path:
     - /
-  name: 378,508,509,536,537,636|🇨🇳 中国 031
+  name: 378,508,509,519,536,537,551,636|🇨🇳 中国 031
   network: http
   port: '52080'
   server: 47.242.81.94
@@ -309,6 +324,7 @@ proxies:
   skip-cert-verify: false
   tls: false
   type: vmess
+  udp: true
   uuid: e47b9f77-60e4-4738-8d53-772b6002e146
 - alterId: 0
   cipher: auto
@@ -2474,6 +2490,17 @@ proxies:
   port: 15082
   server: 59.56.77.178
   type: ss
+- alterId: 0
+  cipher: auto
+  name: '519|🇨🇳_CN_中国 #2'
+  network: ws
+  port: 10086
+  server: 120.48.133.162
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: a01e5d56-464f-45b9-b600-164db4700162
 - name: 535|🇨🇳CN-183.56.247.206-000
   password: f441a2b0-31ef-490d-bd91-9b1cd960f4ce
   port: 29482
