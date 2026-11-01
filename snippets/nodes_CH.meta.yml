@@ -2,6 +2,15 @@ proxies:
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
   name: '340,502,514,551|🇨🇭[www.v2nodes.com] vless-CH-1... #12'
+  port: 443
+  server: 144.31.129.174
+  servername: s3-fi-1.rucdn777.com
+  tls: true
+  type: vless
+  uuid: 6f34a071-9a87-001e-b01a-4b5a5c95e552
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: '340,502,514,551|🇨🇭[www.v2nodes.com] vless-CH-1... #13'
   port: 8443
   server: 45.90.57.119
   servername: twitch.tv
@@ -10,7 +19,7 @@ proxies:
   uuid: f5e70ce3-cfb4-4df1-b25c-d19bfae627c0
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: '340,502,514,551|🇨🇭[www.v2nodes.com] vless-CH-1... #13'
+  name: '340,502,514,551|🇨🇭[www.v2nodes.com] vless-CH-1... #14'
   port: 443
   server: 45.90.59.15
   servername: www.cloudflare.com
@@ -18,13 +27,22 @@ proxies:
   type: vless
   uuid: 3950b45e-740d-4dca-ac95-505ec8534592
 - client-fingerprint: chrome
-  name: '340,502,514,551|🇨🇭[www.v2nodes.com] vless-CH-1... #14'
+  name: '340,502,514,551|🇨🇭[www.v2nodes.com] vless-CH-1... #15'
   port: 2053
   server: 208.69.78.217
   servername: www.apple.com
   tls: true
   type: vless
   uuid: c0dd6d59-1573-43af-8b70-1470b2632a6d
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '340,514|🇨🇭CH_3|3.0MB/s #1'
+  port: 443
+  server: 179.43.170.84
+  servername: si2.greenzone12.com
+  tls: true
+  type: vless
+  uuid: 8007dda2-aed2-4514-8299-6e3edbdb015b
 - cipher: aes-128-gcm
   name: '356,357|4 #4'
   password: shadowsocks
@@ -89,18 +107,17 @@ proxies:
   uuid: 7c317161-5cf8-4cbc-811a-d1297c41bb23
   xudp: true
 - cipher: chacha20-ietf-poly1305
-  name: 378,537,538|CH-132.243.175.144-0190 | 0.0M...
+  name: '378,537|🇨CH-132.243.175.144-0280 #1'
   password: e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3
   port: 8388
   server: 132.243.175.144
   type: ss
-- name: '378,519,537|🇨CH-149.88.27.46-0562 #1'
+- name: '378,537|🇨CH-149.88.27.46-0562 #1'
   port: 9443
   server: 149.88.27.46
   skip-cert-verify: false
   tls: true
   type: http
-  udp: true
 - name: '378,489,519,537|🇭CH-149.88.27.33-0577 #1'
   password: ''
   port: 9443
@@ -119,6 +136,19 @@ proxies:
   tls: true
   type: http
   username: null
+- name: '378,508,509,537|CH-83.228.199.3-0863 #1'
+  network: ws
+  password: humanity
+  port: 443
+  server: 83.228.199.3
+  skip-cert-verify: false
+  sni: www.cordweave.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: www.cordweave.com
+    path: /assignment
 - name: '378,536,537|CH-152.67.71.149-3749 #1'
   password: 8a03bc28-2a33-42c4-be59-30464dbb9954
   port: 18818
@@ -191,7 +221,7 @@ proxies:
   tls: true
   type: http
   username: null
-- name: 489|D🔴🇨🇭hos[🎬🤖📺🎭]_dokng.com_4abf4d...
+- name: 489,519|🇨🇭CH_3|1001KB/s|K001-260618
   password: None
   port: 9443
   server: 149.88.27.46
@@ -224,15 +254,21 @@ proxies:
   udp: true
   uuid: 1c8f7130-8c1a-4949-831d-1d45b39c795b
   xudp: true
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: '502,514,551|🇨🇭[www.v2nodes.com] vless-CH-1... #11'
-  port: 443
-  server: 144.31.129.174
-  servername: s3-fi-1.rucdn777.com
-  tls: true
+- name: '508,509|瑞士 001 #1'
+  network: tcp
+  port: 8080
+  server: milo.networkforexir.site
+  servername: milo.networkforexir.site
+  tls: false
   type: vless
-  uuid: 6f34a071-9a87-001e-b01a-4b5a5c95e552
+  uuid: 6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8
+- name: '508,509|瑞士 002 #1'
+  network: tcp
+  port: 10002
+  server: 178.83.45.226
+  tls: false
+  type: vless
+  uuid: c6362720-0931-4b91-b187-d8ecf3149734
 - encryption: none
   http-opts:
     path:
@@ -264,11 +300,12 @@ proxies:
     path: /proxyip=3cfb8e26.tp30304.ip.090227.xyz
 - alterId: 0
   cipher: auto
-  name: '508,509|瑞士 007 #1'
+  name: 508,509,636|🇨🇭 瑞士 007
   network: tcp
-  port: 38998
+  port: '38998'
   server: 178.83.45.29
   skip-cert-verify: true
+  tls: false
   type: vmess
   uuid: 48422300-458f-4dbb-b0f5-96f45450ab9f
 - client-fingerprint: chrome
@@ -408,6 +445,29 @@ proxies:
   type: vless
   udp: true
   uuid: 5254c281-3bc1-40ee-ba89-1aaf8c251402
+- name: 536|🇨🇭CH-83.228.199.3-0558
+  network: ws
+  password: humanity
+  port: 443
+  server: 83.228.199.3
+  sni: www.cordweave.com
+  type: trojan
+  ws-opts:
+    path: /assignment
+- name: 636|🇨🇭 瑞士 003
+  password: humanity
+  port: 443
+  server: 83.228.199.3
+  skip-cert-verify: true
+  sni: www.cordweave.com
+  type: trojan
+- name: 636|🇨🇭 瑞士 004
+  password: eeb6823c-b926-4ea2-866a-5542edd26e59
+  port: 443
+  server: 64.110.70.64
+  skip-cert-verify: false
+  sni: tjsp.hhxaf.cc.cd
+  type: trojan
 - name: 728|🇨🇭 瑞士1🔒
   password: ZIXQa-7pg0vPahuyi8bABhob
   port: 443
