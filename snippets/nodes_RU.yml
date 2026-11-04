@@ -1,28 +1,17 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: '306,378,519,537|🇷🇺RU-147.45.126.113-0515 #1'
-  password: 8z2OB_gvFvpKgjFi8s9Cvw
-  port: 8388
-  server: pol.rvpn.app
-  type: ss
-- cipher: chacha20-ietf-poly1305
   name: '306,378,519,537|🇺RU-90.156.203.62-0521 #1'
   password: VVlAff77CnAU43Aoc5j15Y
   port: 5112
   server: 90.156.203.62
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: '306,378,519,537|🇺RU-195.80.238.225-0522 #1'
-  password: MODziWLa9qMuW-4yPa0rfw
-  port: 8388
-  server: msk2.rvpn.app
-  type: ss
-- name: '306,340,378,502,514,519,536,537,551|🇩🇪[www.v2nodes.com] trojan-DE-... #8'
+- name: '306,340,378,502,514,519,536,537,551|🇩🇪 德国 | DEU #2 #3'
   password: happybirthdaydaniel
   port: 25267
   server: de-bots4.h1cloud.net
-  skip-cert-verify: false
+  skip-cert-verify: true
   type: trojan
+  udp: true
 - cipher: chacha20-ietf-poly1305
   name: 356|🇷🇺1 |  5.2MB/s
   password: 0zyDRZ1XmNXaaCAN7KEA8a
@@ -150,7 +139,7 @@ proxies:
   ws-opts:
     path: /
 - cipher: aes-256-gcm
-  name: 378,519,537,538|🇷🇺RU-46.17.46.27-0280 | 1.112M...
+  name: '378,537,538,566|🇷🇺 俄罗斯 | RUS #2'
   password: cCMJgJTA3BA489YUYrFq7XHXSiSpWlLa
   port: 18443
   server: 46.17.46.27
@@ -176,10 +165,28 @@ proxies:
   ws-opts:
     path: /fr-unlimitxxx
 - cipher: chacha20-ietf-poly1305
-  name: '378,519,537|🇺RU-130.49.189.54-0474 #1'
+  name: '378,537|🇺RU-130.49.189.54-0474 #1'
   password: hTTg7lwQMzpaF7KXpY3A8w
   port: 8388
   server: alb.rvpn.app
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: '378,519,537|🇷🇺RU-130.49.189.158-0475 #1'
+  password: lsu1v/3iNERwDDVwxCu5033KCUqQOoElYQul63kmqJ8=
+  port: 43558
+  server: 130.49.189.158
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: '378,519,537|🇷🇺RU-147.45.126.113-0515 #1'
+  password: 8z2OB_gvFvpKgjFi8s9Cvw
+  port: 8388
+  server: pol.rvpn.app
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: '378,519,537|🇺RU-195.80.238.225-0522 #1'
+  password: MODziWLa9qMuW-4yPa0rfw
+  port: 8388
+  server: msk2.rvpn.app
   type: ss
 - alterId: 64
   cipher: auto
@@ -832,7 +839,7 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: '477,482|🇺RU_6|470KB/s|K001-260618 [027... #1'
+  name: 482|🇺RU_6|470KB/s|K001-260618 [027...
   password: NTiHBg64fsY8u8DbGrtypD9gPGSL386p
   port: 18443
   server: 46.17.44.216
@@ -840,7 +847,7 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: '477,482|RU_8|767KB/s|K001-260618 [9d93... #1'
+  name: 482|RU_8|767KB/s|K001-260618 [9d93...
   password: cCMJgJTA3BA489YUYrFq7XHXSiSpWlLa
   port: 18443
   server: 176.32.33.254
@@ -848,7 +855,7 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: '477,482|RU_7|1.9MB/s|K001-260618 [b8b1... #1'
+  name: 482|RU_7|1.9MB/s|K001-260618 [b8b1...
   password: Lpq5UPVHtQYiuB9jEUNc2WkeIYCUH9DE
   port: 18443
   server: 176.32.34.253
@@ -903,30 +910,40 @@ proxies:
   server: 185.158.155.33
   tfo: false
   type: ss
-- name: '523,524|🇷🇺_俄罗斯 #1'
+- alterId: 0
+  cipher: auto
+  name: '523,524|🇷🇺_俄罗斯 (32) #1'
   network: ws
-  password: humanity
   port: 443
-  server: 217.26.26.14
-  servername: www.cordweave.com
+  server: 5.188.26.85
+  servername: renderer-stream-2-62.mirra.now
   skip-cert-verify: true
-  sni: www.cordweave.com
+  sni: renderer-stream-2-62.mirra.now
   tls: true
-  type: trojan
+  type: vmess
   udp: true
+  uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
   ws-opts:
-    path: /assignment
-- client-fingerprint: safari
-  name: '523,524|🇷🇺_俄罗斯 (11) #1'
-  password: UAKWGor-h0woFsxKSWK92HptcM0g2k2h
+    headers:
+      Host: renderer-stream-2-62.mirra.now
+    path: /api/v1/gpu-stream/socket
+- alterId: 0
+  cipher: auto
+  name: '523,524|🇷🇺_俄罗斯 (33) #1'
+  network: ws
   port: 443
-  server: 176.114.95.242
-  servername: us-1.1984.love
+  server: 80.240.252.241
+  servername: renderer-stream-2-62.mirra.now
   skip-cert-verify: true
-  sni: us-1.1984.love
+  sni: renderer-stream-2-62.mirra.now
   tls: true
-  type: trojan
+  type: vmess
   udp: true
+  uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
+  ws-opts:
+    headers:
+      Host: renderer-stream-2-62.mirra.now
+    path: /api/v1/gpu-stream/socket
 - cipher: chacha20-ietf-poly1305
   name: 558|0|🇺俄罗斯 01 | 1x RU
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549

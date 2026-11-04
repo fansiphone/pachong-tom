@@ -15,37 +15,26 @@ proxies:
   type: vless
   uuid: 3c3c3969-b06a-43ff-ad1e-11621c542946
 - cipher: chacha20-ietf-poly1305
-  name: '306,378,519,537|🇷🇺RU-147.45.126.113-0515 #1'
-  password: 8z2OB_gvFvpKgjFi8s9Cvw
-  port: 8388
-  server: pol.rvpn.app
-  type: ss
-- cipher: chacha20-ietf-poly1305
   name: '306,378,519,537|🇺RU-90.156.203.62-0521 #1'
   password: VVlAff77CnAU43Aoc5j15Y
   port: 5112
   server: 90.156.203.62
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: '306,378,519,537|🇺RU-195.80.238.225-0522 #1'
-  password: MODziWLa9qMuW-4yPa0rfw
-  port: 8388
-  server: msk2.rvpn.app
-  type: ss
-- name: '306,340,378,502,514,519,536,537,551|🇩🇪[www.v2nodes.com] trojan-DE-... #8'
+- name: '306,340,378,502,514,519,536,537,551|🇩🇪 德国 | DEU #2 #3'
   password: happybirthdaydaniel
   port: 25267
   server: de-bots4.h1cloud.net
-  skip-cert-verify: false
+  skip-cert-verify: true
   type: trojan
-- name: '340,502,514,519,551|🇷🇺[www.v2nodes.com] vless-RU-1... #19'
+  udp: true
+- name: '340,502,514,519,551|🇷🇺[www.v2nodes.com] vless-RU-1... #16'
   port: 443
   server: app-tw-113.statsmarket-wb.com
   tls: false
   type: vless
   uuid: 07680ffb-0666-4836-b6ad-ec0de62bc38f
 - client-fingerprint: firefox
-  name: '340,502,514,551|🇷🇺[www.v2nodes.com] vless-RU-1... #20'
+  name: '340,502,514,551|🇷🇺[www.v2nodes.com] vless-RU-1... #17'
   port: 443
   server: 135.106.153.131
   servername: rug.tems.bet
@@ -54,7 +43,7 @@ proxies:
   uuid: a5212bcb-ab85-459a-bec6-9f259eeeebfa
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: '340,502,514,551|🇷🇺[www.v2nodes.com] vless-RU-1... #21'
+  name: '340|🇷🇺[www.v2nodes.com] vless-RU-1... #2'
   port: 8443
   server: xnod13x.artemida.live
   servername: xnod13x.artemida.live
@@ -64,9 +53,10 @@ proxies:
 - alpn:
   - h2
   client-fingerprint: chrome
+  encryption: none
   grpc-opts:
     grpc-service-name: vlgrpc
-  name: '340,502,514,519,551|🇷🇺[www.v2nodes.com] vless-RU-1... #22'
+  name: '340,502,514,519,551|🇷🇺[www.v2nodes.com] vless-RU-1... #18'
   network: grpc
   port: 443
   server: 201.24.121.243
@@ -78,7 +68,7 @@ proxies:
 - client-fingerprint: random
   grpc-opts:
     grpc-service-name: grpc-ru
-  name: '340,502,514,519,551|🇷🇺[www.v2nodes.com] vless-RU-1... #23'
+  name: '340,502,514,519,551|🇷🇺[www.v2nodes.com] vless-RU-1... #19'
   network: grpc
   port: 443
   server: xsru1.ddnsfree.com
@@ -436,7 +426,7 @@ proxies:
   ws-opts:
     path: /
 - cipher: aes-256-gcm
-  name: 378,519,537,538|🇷🇺RU-46.17.46.27-0280 | 1.112M...
+  name: '378,537,538,566|🇷🇺 俄罗斯 | RUS #2'
   password: cCMJgJTA3BA489YUYrFq7XHXSiSpWlLa
   port: 18443
   server: 46.17.46.27
@@ -462,10 +452,28 @@ proxies:
   ws-opts:
     path: /fr-unlimitxxx
 - cipher: chacha20-ietf-poly1305
-  name: '378,519,537|🇺RU-130.49.189.54-0474 #1'
+  name: '378,537|🇺RU-130.49.189.54-0474 #1'
   password: hTTg7lwQMzpaF7KXpY3A8w
   port: 8388
   server: alb.rvpn.app
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: '378,519,537|🇷🇺RU-130.49.189.158-0475 #1'
+  password: lsu1v/3iNERwDDVwxCu5033KCUqQOoElYQul63kmqJ8=
+  port: 43558
+  server: 130.49.189.158
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: '378,519,537|🇷🇺RU-147.45.126.113-0515 #1'
+  password: 8z2OB_gvFvpKgjFi8s9Cvw
+  port: 8388
+  server: pol.rvpn.app
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: '378,519,537|🇺RU-195.80.238.225-0522 #1'
+  password: MODziWLa9qMuW-4yPa0rfw
+  port: 8388
+  server: msk2.rvpn.app
   type: ss
 - alterId: 64
   cipher: auto
@@ -1902,26 +1910,6 @@ proxies:
     headers:
       Host: ''
     path: /
-- alpn:
-  - '[http/1.1'
-  client-fingerprint: qq
-  name: '472,473,474|俄罗斯+V2CROSS.COM #8'
-  network: tcp
-  port: 443
-  server: 87.242.119.253
-  servername: hvtlr-ru-47sb.fade.mom
-  tls: true
-  type: vless
-  uuid: aba9cdd4-026c-0001-87a9-9b3e5f24dd82
-- client-fingerprint: qq
-  name: 472,473,474,502,717|RU【机场推荐：https://a9a.xyz】2
-  network: tcp
-  port: 443
-  server: 87.242.119.253
-  servername: hvtlr-ru-47sb.fade.mom
-  tls: true
-  type: vless
-  uuid: aba9cdd4-026c-0001-87a9-9b3e5f24dd82
 - cipher: aes-256-gcm
   name: '475,480|🇷 RU俄斯丨yoyapai.com #1'
   password: 7e1dd4c55bf85da5
@@ -2036,7 +2024,7 @@ proxies:
     path: /
 - client-fingerprint: chrome
   encryption: none
-  name: '476,477,481,482|RU_4|793KB/s|F003-260618 [7992... #1'
+  name: 476,481,482|RU_4|793KB/s|F003-260618 [7992...
   network: ws
   packet-encoding: xudp
   port: 8443
@@ -2085,14 +2073,14 @@ proxies:
       Host: snip.edgeoneai.cc.cd
     path: /fdip=sstp://vpn:vpn@vpn748359672.opengw.net:1458?ed=2560fp=chrome
 - cipher: aes-256-gcm
-  name: '477,482|🇺RU_6|470KB/s|K001-260618 [027... #1'
+  name: 482|🇺RU_6|470KB/s|K001-260618 [027...
   password: NTiHBg64fsY8u8DbGrtypD9gPGSL386p
   port: 18443
   server: 46.17.44.216
   sub_tag: K001-260618
   type: ss
   udp: true
-- name: 477,482,489|D🔴🇷🇺hos[🎪✨📦🔍]_dokng.com_f4e27d...
+- name: 482,489|D🔴🇷🇺hos[🎪✨📦🔍]_dokng.com_f4e27d...
   port: 443
   server: 194.186.179.62
   skip-cert-verify: true
@@ -2100,7 +2088,7 @@ proxies:
   tls: true
   type: http
   udp: true
-- name: 477,482,489|D🔴🇷🇺hos[🎪✨🎞️📦]_dokng.com_76177...
+- name: 482,489|D🔴🇷🇺hos[🎪✨🎞️📦]_dokng.com_76177...
   port: 8443
   server: 87.242.85.187
   skip-cert-verify: true
@@ -2108,7 +2096,7 @@ proxies:
   tls: true
   type: http
   udp: true
-- name: 477,482,489|D🔴🇷🇺hos[✨🎞️📦🔍]_dokng.com_847b7...
+- name: 482,489|D🔴🇷🇺hos[✨🎞️📦🔍]_dokng.com_847b7...
   port: 443
   server: 178.219.43.226
   skip-cert-verify: true
@@ -2117,7 +2105,7 @@ proxies:
   type: http
   udp: true
 - cipher: aes-256-gcm
-  name: '477,482|RU_8|767KB/s|K001-260618 [9d93... #1'
+  name: 482|RU_8|767KB/s|K001-260618 [9d93...
   password: cCMJgJTA3BA489YUYrFq7XHXSiSpWlLa
   port: 18443
   server: 176.32.33.254
@@ -2125,7 +2113,7 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: '477,482|RU_7|1.9MB/s|K001-260618 [b8b1... #1'
+  name: 482|RU_7|1.9MB/s|K001-260618 [b8b1...
   password: Lpq5UPVHtQYiuB9jEUNc2WkeIYCUH9DE
   port: 18443
   server: 176.32.34.253
@@ -2152,37 +2140,8 @@ proxies:
   port: 1080
   server: 77.37.203.137
   type: socks5
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 502,507|RU VLESS-14 | free-nodes
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: 52fsWySqEpUvCt-jbEy2rYjVIZBYwoqsGfmSef8_UgI
-    short-id: 97a15f5af85c4a30
-  server: 213.159.209.66
-  servername: ru11.oshost.network
-  skip-cert-verify: true
-  tls: false
-  type: vless
-  uuid: afbd410e-1663-4f40-9d3b-df5117aa23ca
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 502,507|RU VLESS-16 | free-nodes
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: 52fsWySqEpUvCt-jbEy2rYjVIZBYwoqsGfmSef8_UgI
-    short-id: 97a15f5af85c4a30
-  server: ru11.oshost.network
-  servername: ru11.oshost.network
-  skip-cert-verify: true
-  tls: false
-  type: vless
-  uuid: afbd410e-1663-4f40-9d3b-df5117aa23ca
-- alpn:
-  - '["[http/1.1"]'
-  name: '502|俄罗斯+V2CROSS.COM #12'
+- client-fingerprint: qq
+  name: '502,507,717|RU【机场推荐：https://a9a.xyz】2 #1'
   network: tcp
   port: 443
   server: 87.242.119.253
@@ -2190,9 +2149,6 @@ proxies:
   tls: true
   type: vless
   uuid: aba9cdd4-026c-0001-87a9-9b3e5f24dd82
-  ws-opts:
-    headers:
-      Host: hvtlr-ru-47sb.fade.mom
 - client-fingerprint: edge
   encryption: none
   flow: xtls-rprx-vision
@@ -2748,153 +2704,277 @@ proxies:
   tfo: false
   type: ss
 - client-fingerprint: chrome
-  name: '519,523,524|🇷🇺_俄罗斯 (6) #1'
+  name: '523,524|🇷🇺_俄罗斯 (23) #1'
   network: ws
-  port: 8880
-  server: 185.148.104.30
-  servername: 185.148.104.30
+  port: 28449
+  server: 84.23.52.120
+  servername: pl.sparxiecn.com
   skip-cert-verify: true
-  sni: 185.148.104.30
-  tls: false
-  type: vless
-  udp: true
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: vms.lifetime51.workers.dev
-    path: /
-- client-fingerprint: chrome
-  name: '519|🇷🇺[www.v2nodes.com] vless-RU-1... #16'
-  network: ws
-  port: 443
-  server: 185.229.9.135
-  servername: business.lesotorg-kirov.ru
+  sni: pl.sparxiecn.com
   tls: true
   type: vless
-  uuid: 8f763a7f-4cda-4db1-90e3-9aeae0860dc0
+  udp: true
+  uuid: 4d8132cb-f4e3-428c-91ff-2b4f7a868551
   ws-opts:
-    headers:
-      Host: business.lesotorg-kirov.ru
-    path: /chws
-- alpn:
-  - http/1.1
-  client-fingerprint: qq
+    path: /lovelive
+- client-fingerprint: chrome
   name: '523,524|🇷🇺_俄罗斯 (24) #1'
   network: ws
-  port: 443
-  server: 185.229.9.135
-  servername: business.lesotorg-kirov.ru
+  port: 28450
+  server: 84.23.52.120
+  servername: pl.sparxiecn.com
   skip-cert-verify: true
-  sni: business.lesotorg-kirov.ru
+  sni: pl.sparxiecn.com
   tls: true
   type: vless
   udp: true
-  uuid: 4df3e06b-85e9-4b69-b38a-be37bad2fe9d
+  uuid: 4d8132cb-f4e3-428c-91ff-2b4f7a868551
   ws-opts:
-    headers:
-      Host: business.lesotorg-kirov.ru
-    path: /chws
-- alpn:
-  - http/1.1
-  client-fingerprint: firefox
-  name: '523,524|🇷🇺_俄罗斯 (25) #1'
+    path: /lovelive
+- client-fingerprint: ios
+  name: '523,524|🇷🇺_俄罗斯 (26) #1'
   network: ws
   port: 443
-  server: 91.185.83.44
-  servername: nguyxejonb.rucdncomp.pro
+  server: 217.19.122.156
+  servername: z1q3pv4g78.rucdncomp.pro
   skip-cert-verify: true
-  sni: nguyxejonb.rucdncomp.pro
+  sni: z1q3pv4g78.rucdncomp.pro
   tls: true
   type: vless
   udp: true
   uuid: c720cb74-4c84-4fce-b8ae-637dbaa16199
   ws-opts:
-    headers:
-      Host: nguyxejonb.rucdncomp.pro
-    path: /service/telemetry/0294da469190/
-- name: '523,524|🇷🇺_俄罗斯 #1'
+    path: /useraction/events/b892639b7195/
+- client-fingerprint: random
+  name: '523,524|🇷🇺_俄罗斯 (27) #1'
   network: ws
-  password: humanity
   port: 443
-  server: 217.26.26.14
-  servername: www.cordweave.com
+  server: z1q3pv4g78.rucdncomp.pro
+  servername: z1q3pv4g78.rucdncomp.pro
   skip-cert-verify: true
-  sni: www.cordweave.com
-  tls: true
-  type: trojan
-  udp: true
-  ws-opts:
-    path: /assignment
-- client-fingerprint: ios
-  name: '523,524|🇷🇺_俄罗斯 (2) #1'
-  network: ws
-  port: 8443
-  server: 194.87.143.165
-  servername: wsru1.wba-pn.ru
-  skip-cert-verify: true
-  sni: wsru1.wba-pn.ru
+  sni: z1q3pv4g78.rucdncomp.pro
   tls: true
   type: vless
   udp: true
-  uuid: f9613819-d2fe-4b3a-a2e6-40c184c6854c
+  uuid: c720cb74-4c84-4fce-b8ae-637dbaa16199
+  ws-opts:
+    path: /useraction/events/b892639b7195/
+- name: '523,524|🇷🇺_俄罗斯 (28) #1'
+  network: ws
+  port: 443
+  server: 45.9.15.206
+  servername: ru05.abvpn.ru
+  skip-cert-verify: true
+  sni: ru05.abvpn.ru
+  tls: true
+  type: vless
+  udp: true
+  uuid: a289a3d3-5833-4b28-8809-ae72898a98d0
+  ws-opts:
+    path: /websocket
+- client-fingerprint: chrome
+  name: '523,524|🇷🇺_俄罗斯 (29) #1'
+  network: ws
+  port: 443
+  server: ru05.abvpn.ru
+  servername: ru05.abvpn.ru
+  skip-cert-verify: true
+  sni: ru05.abvpn.ru
+  tls: true
+  type: vless
+  udp: true
+  uuid: a289a3d3-5833-4b28-8809-ae72898a98d0
+  ws-opts:
+    path: /websocket
+- name: '523,524|🇷🇺_俄罗斯 (30) #1'
+  network: ws
+  port: 443
+  server: ru05.abvpn.ru
+  servername: ru05.abvpn.ru
+  skip-cert-verify: true
+  sni: ru05.abvpn.ru
+  tls: true
+  type: vless
+  udp: true
+  uuid: a289a3d3-5833-4b28-8809-ae72898a98d0
   ws-opts:
     headers:
-      Host: 194.87.143.165
-    path: /
-- alpn:
-  - http/1.1
-  client-fingerprint: firefox
+      Host: ru05.abvpn.ru
+    path: /websocket
+- name: '523,524|🇷🇺_俄罗斯 (31) #1'
+  network: ws
+  port: 443
+  server: 45.9.15.206
+  servername: ru05.abvpn.ru
+  skip-cert-verify: true
+  sni: ru05.abvpn.ru
+  tls: true
+  type: vless
+  udp: true
+  uuid: a289a3d3-5833-4b28-8809-ae72898a98d0
+  ws-opts:
+    headers:
+      Host: ru05.abvpn.ru
+    path: /websocket
+- alterId: 0
+  cipher: auto
+  name: '523,524|🇷🇺_俄罗斯 (32) #1'
+  network: ws
+  port: 443
+  server: 5.188.26.85
+  servername: renderer-stream-2-62.mirra.now
+  skip-cert-verify: true
+  sni: renderer-stream-2-62.mirra.now
+  tls: true
+  type: vmess
+  udp: true
+  uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
+  ws-opts:
+    headers:
+      Host: renderer-stream-2-62.mirra.now
+    path: /api/v1/gpu-stream/socket
+- alterId: 0
+  cipher: auto
+  name: '523,524|🇷🇺_俄罗斯 (33) #1'
+  network: ws
+  port: 443
+  server: 80.240.252.241
+  servername: renderer-stream-2-62.mirra.now
+  skip-cert-verify: true
+  sni: renderer-stream-2-62.mirra.now
+  tls: true
+  type: vmess
+  udp: true
+  uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
+  ws-opts:
+    headers:
+      Host: renderer-stream-2-62.mirra.now
+    path: /api/v1/gpu-stream/socket
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '523,524|🇷🇺_俄罗斯 #1'
+  port: 443
+  reality-opts:
+    public-key: LEziyH-E4k9hehGRJkVi1FadVObB_NZJy8U7oUCVWXU
+    short-id: b9120cd53ffd7bba
+  server: 201.51.4.89
+  servername: cache-89.topp-con.xyz
+  skip-cert-verify: true
+  sni: cache-89.topp-con.xyz
+  tls: true
+  type: vless
+  udp: true
+  uuid: 7ad63b26-bf70-4872-8fab-ebaf73a1e19d
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
   name: '523,524|🇷🇺_俄罗斯 (3) #1'
-  network: ws
   port: 443
-  server: 178.130.46.211
-  servername: t5pmr.mail-node.gfw.kdns.fr
+  reality-opts:
+    public-key: IuzAWh6UM62Txrnh_No9y5n6wmZecyR1ki8z5xor-0g
+  server: 147.45.108.45
+  servername: absolute-disaster.org
   skip-cert-verify: true
-  sni: t5pmr.mail-node.gfw.kdns.fr
+  sni: absolute-disaster.org
   tls: true
   type: vless
   udp: true
-  uuid: 26524cce-d514-4014-a426-365fb266a14d
-  ws-opts:
-    headers:
-      Host: t5pmr.mail-node.gfw.kdns.fr
-    path: /danfeng?ed=2560
+  uuid: 1e2b9c0c-4f9b-56f5-a062-1c4f2d2aa200
 - alpn:
-  - http/1.1
-  client-fingerprint: firefox
+  - '[http/1.1'
+  client-fingerprint: qq
   name: '523,524|🇷🇺_俄罗斯 (4) #1'
-  network: ws
   port: 443
-  server: 178.130.46.211
-  servername: t5pmr.mail-node.gfw.kdns.fr
+  server: 87.242.119.253
+  servername: hvtlr-ru-47sb.fade.mom
   skip-cert-verify: true
-  sni: t5pmr.mail-node.gfw.kdns.fr
+  sni: hvtlr-ru-47sb.fade.mom
   tls: true
   type: vless
   udp: true
-  uuid: 26524cce-d514-4014-a426-365fb266a14d
-  ws-opts:
-    headers:
-      Host: t5pmr.mail-node.gfw.kdns.fr
-    path: /
+  uuid: aba9cdd4-026c-0001-87a9-9b3e5f24dd82
 - client-fingerprint: firefox
+  name: '523,524|🇷🇺_俄罗斯 (5) #1'
+  port: 443
+  reality-opts:
+    public-key: MPNMomAMn_lu9YMYjD2jAQWrI-rTM4hj9Jgg9d6qzTA
+    short-id: 50ad5564
+  server: 186.246.9.29
+  servername: wordpress.com
+  skip-cert-verify: true
+  sni: wordpress.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: b2847c3b-5278-4b06-9c66-bc919d2dfec7
+- client-fingerprint: edge
+  name: '523,524|🇷🇺_俄罗斯 (11) #1'
+  port: 443
+  server: 87.242.119.253
+  servername: hvtlr-ru-47sb.fade.mom
+  skip-cert-verify: true
+  sni: hvtlr-ru-47sb.fade.mom
+  tls: true
+  type: vless
+  udp: true
+  uuid: aba9cdd4-026c-0001-87a9-9b3e5f24dd82
+- client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: '523,524|🇷🇺_俄罗斯 (7) #1'
   port: 443
   reality-opts:
-    public-key: 52fsWySqEpUvCt-jbEy2rYjVIZBYwoqsGfmSef8_UgI
-    short-id: 97a15f5af85c4a30
-  server: 213.159.209.66
-  servername: ru11.oshost.network
+    public-key: NY2bvH4IFKTstWkBWwyU5MmlzuKk0nU08cBoHlti2S8
+    short-id: 2ef2b10d5143d798
+  server: 5.129.202.80
+  servername: mirror-50.topp-con.xyz
   skip-cert-verify: true
-  sni: ru11.oshost.network
+  sni: mirror-50.topp-con.xyz
   tls: true
   type: vless
   udp: true
-  uuid: afbd410e-1663-4f40-9d3b-df5117aa23ca
+  uuid: 7ad63b26-bf70-4872-8fab-ebaf73a1e19d
+- alpn:
+  - http/1.1
+  - h2
+  client-fingerprint: qq
+  name: '523,524|🇷🇺_俄罗斯 (12) #1'
+  port: 443
+  server: 87.242.119.253
+  servername: hvtlr-ru-47sb.fade.mom
+  skip-cert-verify: true
+  sni: hvtlr-ru-47sb.fade.mom
+  tls: true
+  type: vless
+  udp: true
+  uuid: aba9cdd4-026c-0001-87a9-9b3e5f24dd82
+- alpn:
+  - '["[http/1.1"]'
+  name: '523,524|🇷🇺_俄罗斯 (13) #1'
+  port: 443
+  server: 87.242.119.253
+  servername: hvtlr-ru-47sb.fade.mom
+  skip-cert-verify: true
+  sni: hvtlr-ru-47sb.fade.mom
+  tls: true
+  type: vless
+  udp: true
+  uuid: aba9cdd4-026c-0001-87a9-9b3e5f24dd82
+- client-fingerprint: chrome
+  name: '523,524|🇷🇺_俄罗斯 (14) #1'
+  port: 25362
+  reality-opts:
+    public-key: hFee7zTreqlv_wccK_8zxN5v23hj9u-DshByvGf-KAA
+    short-id: 23732d14a527990d
+  server: de15.h1cloud.net
+  servername: www.chip.de
+  skip-cert-verify: true
+  sni: www.chip.de
+  tls: true
+  type: vless
+  udp: true
+  uuid: 36fb6650-8a50-42b5-9f66-06538806f32c
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: '523,524|🇷🇺_俄罗斯 (5) (2) #1'
+  name: '523,524|🇷🇺_俄罗斯 (16) #1'
   port: 443
   reality-opts:
     public-key: QnaizqXrXA0e4XihP_5Nf1z1aOOf0obBoyJ8QY_03kw
@@ -2909,7 +2989,7 @@ proxies:
   uuid: 6036c28a-8db2-432e-8118-ff0c16641ad0
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '523,524|🇷🇺_俄罗斯 (3) (2) #1'
+  name: '523,524|🇷🇺_俄罗斯 (17) #1'
   port: 443
   reality-opts:
     public-key: 2IylNqpuTBeUvd333tXWY6i0l8nkH6o5qfRVKZm6FA0
@@ -2922,154 +3002,21 @@ proxies:
   type: vless
   udp: true
   uuid: 6036c28a-8db2-432e-8118-ff0c16641ad0
-- client-fingerprint: chrome
+- client-fingerprint: ios
   flow: xtls-rprx-vision
-  name: '523,524|🇷🇺_俄罗斯 (4) (2) #1'
-  port: 443
-  reality-opts:
-    public-key: 52fsWySqEpUvCt-jbEy2rYjVIZBYwoqsGfmSef8_UgI
-    short-id: 97a15f5af85c4a30
-  server: ru11.oshost.network
-  servername: ru11.oshost.network
-  skip-cert-verify: true
-  sni: ru11.oshost.network
-  tls: true
-  type: vless
-  udp: true
-  uuid: afbd410e-1663-4f40-9d3b-df5117aa23ca
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: '523,524|🇷🇺_俄罗斯 (6) (2) #1'
-  port: 443
-  reality-opts:
-    public-key: mpo4BIcoWiMXAQGt5a8IJ4MFkPJQyLC50dO_bXzC7z0
-  server: 104.171.135.229
-  servername: absolute-disaster.org
-  skip-cert-verify: true
-  sni: absolute-disaster.org
-  tls: true
-  type: vless
-  udp: true
-  uuid: 88888888-8888-8888-8888-888888888888
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: '523,524|🇷🇺_俄罗斯 (20) #1'
-  port: 443
-  reality-opts:
-    public-key: _qSbW4JL4Ffqvj25vX-6a2ul9Qlj6PBdlF0ghsf_0RQ
-    short-id: a9dc98a7dc87a7dc
-  server: 45.132.176.61
-  servername: sopelka.yandex-api.com
-  skip-cert-verify: true
-  sni: sopelka.yandex-api.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 1b7ee703-fa08-4305-8469-ae3e30e61e44
-- client-fingerprint: firefox
-  name: '523,524|🇷🇺_俄罗斯 (10) #1'
-  port: 443
-  reality-opts:
-    public-key: 3qgZ9UlB-y1i9jx_zQQBgiNgFHz6fPQdP9gMMl4zXiM
-    short-id: 8937c9ed2d470352
-  server: 46.254.19.164
-  servername: wtb.tems.bet
-  skip-cert-verify: true
-  sni: wtb.tems.bet
-  tls: true
-  type: vless
-  udp: true
-  uuid: a5212bcb-ab85-459a-bec6-9f259eeeebfa
-- client-fingerprint: safari
-  name: '523,524|🇷🇺_俄罗斯 (11) #1'
-  password: UAKWGor-h0woFsxKSWK92HptcM0g2k2h
-  port: 443
-  server: 176.114.95.242
-  servername: us-1.1984.love
-  skip-cert-verify: true
-  sni: us-1.1984.love
-  tls: true
-  type: trojan
-  udp: true
-- alpn:
-  - http/1.1
-  - h2
-  client-fingerprint: ios
-  name: '523,524|🇷🇺_俄罗斯 (17) #1'
-  port: 443
-  server: 87.242.119.253
-  servername: hvtlr-ru-47sb.fade.mom
-  skip-cert-verify: true
-  sni: hvtlr-ru-47sb.fade.mom
-  tls: true
-  type: vless
-  udp: true
-  uuid: aba9cdd4-026c-0001-87a9-9b3e5f24dd82
-- client-fingerprint: qq
-  name: '523,524|🇷🇺_俄罗斯 (23) #1'
-  port: 443
-  server: 87.242.119.253
-  servername: hvtlr-ru-47sb.fade.mom
-  skip-cert-verify: true
-  sni: hvtlr-ru-47sb.fade.mom
-  tls: true
-  type: vless
-  udp: true
-  uuid: aba9cdd4-026c-0001-87a9-9b3e5f24dd82
-- alpn:
-  - '["[http/1.1"]'
-  name: '523,524|🇷🇺_俄罗斯 (18) #1'
-  port: 443
-  server: 87.242.119.253
-  servername: hvtlr-ru-47sb.fade.mom
-  skip-cert-verify: true
-  sni: hvtlr-ru-47sb.fade.mom
-  tls: true
-  type: vless
-  udp: true
-  uuid: aba9cdd4-026c-0001-87a9-9b3e5f24dd82
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '523,524|🇷🇺_俄罗斯 (19) #1'
-  port: 443
-  reality-opts:
-    public-key: NY2bvH4IFKTstWkBWwyU5MmlzuKk0nU08cBoHlti2S8
-    short-id: 2ef2b10d5143d798
-  server: 5.129.202.80
-  servername: mirror-50.topp-con.xyz
-  skip-cert-verify: true
-  sni: mirror-50.topp-con.xyz
-  tls: true
-  type: vless
-  udp: true
-  uuid: 7ad63b26-bf70-4872-8fab-ebaf73a1e19d
-- client-fingerprint: firefox
   name: '523,524|🇷🇺_俄罗斯 (21) #1'
   port: 443
   reality-opts:
-    public-key: MPNMomAMn_lu9YMYjD2jAQWrI-rTM4hj9Jgg9d6qzTA
-    short-id: 50ad5564
-  server: 186.246.9.29
-  servername: wordpress.com
+    public-key: HKKWGVu7xJfscDTH_28WhqSfSnp8fA5jpj7X1eMO-mU
+    short-id: 1067b23f928e7618
+  server: 200.165.229.159
+  servername: flarora.ferreo.sbs
   skip-cert-verify: true
-  sni: wordpress.com
+  sni: flarora.ferreo.sbs
   tls: true
   type: vless
   udp: true
-  uuid: b2847c3b-5278-4b06-9c66-bc919d2dfec7
-- alpn:
-  - '[http/1.1'
-  client-fingerprint: qq
-  name: '523,524|🇷🇺_俄罗斯 (22) #1'
-  port: 443
-  server: 87.242.119.253
-  servername: hvtlr-ru-47sb.fade.mom
-  skip-cert-verify: true
-  sni: hvtlr-ru-47sb.fade.mom
-  tls: true
-  type: vless
-  udp: true
-  uuid: aba9cdd4-026c-0001-87a9-9b3e5f24dd82
+  uuid: 3db8407b-1f96-4b82-bfeb-55258c1e57b4
 - name: '533|RU俄罗斯(mibei77.com 米贝节点分享) #1'
   network: ws
   port: 2096
