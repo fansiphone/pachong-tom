@@ -1,17 +1,54 @@
 proxies:
-- client-fingerprint: firefox
+- cipher: aes-256-gcm
+  name: 306,378,477,482,519,537,538|CH-23.166.88.127-0158 | 52.998...
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  port: 19999
+  server: 23.166.88.127
+  sub_tag: M003-260806
+  type: ss
+  udp: true
+- client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '340,453,502,514,551|🇨🇭[www.v2nodes.com] vless-CH-1... #10'
-  network: raw
-  port: 8443
+  name: '340,438,453,456,502,514,551|🇨🇭[www.v2nodes.com] vless-CH-1... #12'
+  network: tcp
+  port: 443
   reality-opts:
-    public-key: L6DeK_a25_ZjPKFOrQLoCPWuXi5KCIH_EcRpARmCwkI
-    short-id: 16036bbef04d0509
-  server: 45.90.57.119
-  servername: twitch.tv
+    public-key: 1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs
+    short-id: 428ef87fd47a3a32
+  server: prvtch.titun.su
+  servername: perevodchiki.su
   tls: true
   type: vless
-  uuid: f5e70ce3-cfb4-4df1-b25c-d19bfae627c0
+  uuid: 90157e25-cee1-4217-921e-91f300bc1a24
+  ws-opts:
+    headers:
+      Host: perevodchiki.su
+    path: '%2F'
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: '340,453,456,502,514,551|🇨🇭[www.v2nodes.com] vless-CH-1... #13'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: P7S4UPFlQbmiBr4txyy8NZIMTrmO3UdxyH16WBU-YzY
+    short-id: 19253fae84102271
+  server: 45.90.59.15
+  servername: www.cloudflare.com
+  tls: true
+  type: vless
+  uuid: 3950b45e-740d-4dca-ac95-505ec8534592
+- client-fingerprint: firefox
+  name: '340,453,456,502,514,551|🇨🇭[www.v2nodes.com] vless-CH-1... #14'
+  network: tcp
+  port: 2053
+  reality-opts:
+    public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
+    short-id: ad86e2d52ff40ebd
+  server: 208.69.78.217
+  servername: www.apple.com
+  tls: true
+  type: vless
+  uuid: c0dd6d59-1573-43af-8b70-1470b2632a6d
 - cipher: aes-128-gcm
   name: '356,357|4 #4'
   password: shadowsocks
@@ -75,46 +112,75 @@ proxies:
   udp: true
   uuid: 7c317161-5cf8-4cbc-811a-d1297c41bb23
   xudp: true
-- name: '378,536,537|CH-152.67.71.149-3221 #1'
+- name: '378,519,537|🇨CH-37.120.213.210-0606 #1'
+  port: 9443
+  server: 37.120.213.210
+  skip-cert-verify: false
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+- name: '378,519,537|🇭CH-147.161.246.39-0615 #1'
+  port: 10230
+  server: 147.161.246.39
+  skip-cert-verify: false
+  tls: false
+  type: http
+- name: '378,536,537|CH-152.67.71.149-3075 #1'
   password: 8a03bc28-2a33-42c4-be59-30464dbb9954
   port: 18818
   server: ch12.yukiss.eu.org
   skip-cert-verify: false
   type: trojan
 - cipher: aes-128-cfb
-  name: '378,537|🇨CH-156.146.62.160-4792 #1'
+  name: '378,537|🇨CH-156.146.62.160-4646 #1'
   password: shadowsocks
   port: 443
   server: 156.146.62.160
   type: ss
-- name: 438,453,580|🇨🇭CH_5|325KB/s|R002-260618 01
-  obfs: salamander
-  obfs-password: c13f29db6a638ad2b211b9ce2669ef27
-  password: 3a702d4d1de4949005d8431220e040fb
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: '438,453,456,502,514,551|🇨🇭[www.v2nodes.com] vless-CH-1... #11'
+  network: tcp
   port: 443
-  server: 152.67.75.161
-  skip-cert-verify: true
-  sni: www.bing.com
+  reality-opts:
+    public-key: 1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs
+    short-id: 428ef87fd47a3a32
+  server: 179.43.166.190
+  servername: perevodchiki.su
   tls: false
-  type: hysteria2
+  type: vless
+  uuid: 90157e25-cee1-4217-921e-91f300bc1a24
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 438,519,548|瑞士_34CD92
+  network: tcp
+  port: 2058
+  reality-opts:
+    public-key: lJBsn9ndieTIUBzXkJUhf6O0OE8pm29_z1fUtARwL0s
+    short-id: 937255313d6ce673
+  server: 157.22.185.68
+  servername: www.cloudflare.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 4ad9f982-b56a-444a-9684-35ce51307a36
 - client-fingerprint: chrome
   grpc-opts:
     grpc-service-name: vless-grpc-reality
-  name: '453,475,480|丨yoyapai.com #4'
+  name: '453,456|🇨🇭瑞士丨yoyapai.com #1'
   network: grpc
   port: 2096
   reality-opts:
     public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
   server: ns.l90909l.vip
   servername: id.vk.com
-  skip-cert-verify: false
-  tls: true
+  tls: false
   type: vless
-  udp: true
   uuid: 3fcec4e4-a674-44d2-8cae-c253cec43b9c
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '453,475,480,580|🇨🇭CH瑞士丨yoyapai.com #3'
+  name: '453,456,580|🇨🇭CH瑞士丨yoyapai.com #6'
   network: tcp
   port: 8443
   reality-opts:
@@ -122,14 +188,12 @@ proxies:
     short-id: e3d38cee79d4f94c
   server: 45.195.137.219
   servername: storage.yandex.net
-  skip-cert-verify: false
   tls: false
   type: vless
-  udp: true
   uuid: 7f89560c-b9f0-4c56-b3e0-1b1bdafe0b08
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '453,475,480,580|🇨🇭CH瑞士丨yoyapai.com #4'
+  name: '453,456,580|🇨🇭CH瑞士丨yoyapai.com #7'
   network: tcp
   port: 8443
   reality-opts:
@@ -137,14 +201,12 @@ proxies:
     short-id: e3d38cee79d4f94c
   server: 45.195.137.119
   servername: storage.yandex.net
-  skip-cert-verify: false
   tls: false
   type: vless
-  udp: true
   uuid: 7f89560c-b9f0-4c56-b3e0-1b1bdafe0b08
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '453,475,480,580|🇨🇭CH瑞士丨yoyapai.com #5'
+  name: '453,456,580|🇨🇭CH瑞士丨yoyapai.com #8'
   network: tcp
   port: 8443
   reality-opts:
@@ -152,25 +214,10 @@ proxies:
     short-id: e3d38cee79d4f94c
   server: 45.195.137.109
   servername: storage.yandex.net
-  skip-cert-verify: false
   tls: false
   type: vless
-  udp: true
   uuid: 7f89560c-b9f0-4c56-b3e0-1b1bdafe0b08
-- client-fingerprint: chrome
-  name: '453|美国(yudou99.com 玉豆分享) #57'
-  network: ws
-  port: 8443
-  server: 45.90.56.67
-  servername: sdwf-amq.pages.dev
-  tls: true
-  type: vless
-  uuid: 3305c285-8d55-4f52-a3b0-2a582f5ffd59
-  ws-opts:
-    headers:
-      Host: sdwf-amq.pages.dev
-    path: '%2F%3Fed%3D2048'
-- name: 453|🇨🇭CH_10|3.8MB/s|B007-260618 [0...
+- name: 453,456|🇨🇭CH_11|172KB/s|B007-260618 [0...
   obfs: salamander
   obfs-password: mbQXP2ASuHbF6ZPq
   password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
@@ -180,7 +227,7 @@ proxies:
   sni: vpn.local
   tls: false
   type: hysteria2
-- name: 453|🇨🇭CH_12|4.1MB/s|B007-260618 [0...
+- name: 453,456|🇨🇭CH_19|171KB/s|B007-260618 [0...
   obfs: salamander
   obfs-password: mbQXP2ASuHbF6ZPq
   password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
@@ -190,7 +237,7 @@ proxies:
   sni: vpn.local
   tls: false
   type: hysteria2
-- name: 453|🇨🇭CH_15|3.7MB/s|B007-260618 [0...
+- name: 453,456|🇨🇭CH_17|300KB/s|B007-260618 [0...
   obfs: salamander
   obfs-password: mbQXP2ASuHbF6ZPq
   password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
@@ -200,7 +247,7 @@ proxies:
   sni: vpn.local
   tls: false
   type: hysteria2
-- name: 453|🇨🇭CH_26|3.6MB/s|B007-260618 [1...
+- name: 453|🇨🇭CH_25|155KB/s|B007-260618 [1...
   obfs: salamander
   obfs-password: mbQXP2ASuHbF6ZPq
   password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
@@ -210,7 +257,7 @@ proxies:
   sni: vpn.local
   tls: false
   type: hysteria2
-- name: 453|🇨🇭CH_31|3.2MB/s|B007-260618 [2...
+- name: 453|🇨🇭CH_30|259KB/s|B007-260618 [2...
   obfs: salamander
   obfs-password: mbQXP2ASuHbF6ZPq
   password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
@@ -220,7 +267,7 @@ proxies:
   sni: vpn.local
   tls: false
   type: hysteria2
-- name: 453|🇨🇭CH_24|3.4MB/s|B007-260618 [2...
+- name: 453,456|🇨🇭CH_23|261KB/s|B007-260618 [2...
   obfs: salamander
   obfs-password: mbQXP2ASuHbF6ZPq
   password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
@@ -230,7 +277,7 @@ proxies:
   sni: vpn.local
   tls: false
   type: hysteria2
-- name: 453|🇨🇭CH_34|4.4MB/s|M003-260806 [2...
+- name: 453,456|🇨🇭CH_6|440KB/s|M003-260806 [22...
   obfs: salamander
   obfs-password: mbQXP2ASuHbF6ZPq
   password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
@@ -240,7 +287,7 @@ proxies:
   sni: vpn.local
   tls: false
   type: hysteria2
-- name: 453|🇨🇭CH_20|4.5MB/s|B007-260618 [2...
+- name: 453|🇨🇭CH_19|264KB/s|B007-260618 [2...
   obfs: salamander
   obfs-password: mbQXP2ASuHbF6ZPq
   password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
@@ -250,7 +297,15 @@ proxies:
   sni: vpn.local
   tls: false
   type: hysteria2
-- name: 453|🇨🇭CH_36|4.0MB/s|B007-260618 [2...
+- name: 453|🇨🇭CH_69|830KB/s|M003-260806 [2...
+  network: tcp
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  port: 443
+  server: 208.69.78.19
+  skip-cert-verify: true
+  sni: ekb.eg
+  type: trojan
+- name: 453,456|🇨🇭CH_7|215KB/s|B007-260618 [26...
   obfs: salamander
   obfs-password: mbQXP2ASuHbF6ZPq
   password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
@@ -260,7 +315,34 @@ proxies:
   sni: vpn.local
   tls: false
   type: hysteria2
-- name: 453|🇨🇭CH_45|3.7MB/s|M003-260806 [2...
+- client-fingerprint: ios
+  name: 453|🇨🇭CH_75|485KB/s|M003-260806 [2...
+  network: xhttp
+  port: 443
+  reality-opts:
+    public-key: OqpjppFQ222BTeRXlK6fh7nP5ePkkNCLlUH1-CvkmBc
+    short-id: f245401987e85cad
+  server: 94.26.35.217
+  servername: d0f7fax.ch5.h1clayd.click
+  tls: false
+  type: vless
+  uuid: 54066259-28a1-47dc-b0f7-e7715f27918e
+  ws-opts:
+    headers:
+      Host: d0f7fax.ch5.h1clayd.click
+    path: '%2F14b7754c61d2'
+- client-fingerprint: chrome
+  name: '453,456,477,482|🇨🇭CH_54|2.1MB/s|M003-260806 [a... #1'
+  network: tcp
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  port: 443
+  server: 208.69.78.208
+  skip-cert-verify: true
+  sni: resources.yourultimateprofessionalcareerhub.com
+  sub_tag: M003-260806
+  type: trojan
+  udp: true
+- name: 453,456|🇨🇭CH_15|212KB/s|M003-260806 [2...
   obfs: salamander
   obfs-password: mbQXP2ASuHbF6ZPq
   password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
@@ -272,27 +354,7 @@ proxies:
   type: hysteria2
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 453|🇨🇭CH_64|632KB/s|M003-260806 [2...
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: hyOYRfDSIYyqALQt3N2H0RjK8gbV1JvPTkNACC4PJF8
-    short-id: 8718c58d3d51db59
-  server: 179.43.170.84
-  servername: si2.greenzone12.com
-  tls: false
-  type: vless
-  uuid: 8007dda2-aed2-4514-8299-6e3edbdb015b
-- name: 453|🇨🇭CH_62|311KB/s|M003-260806 [2...
-  network: tcp
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  port: 443
-  server: 208.69.78.33
-  sni: courses.yourultimateprofessionalcareerhub.com
-  type: trojan
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 453|🇨🇭CH_51|408KB/s|M003-260806 [d...
+  name: 453,456|🇨🇭CH_43|413KB/s|M003-260806 [d...
   network: raw
   port: 443
   reality-opts:
@@ -303,7 +365,7 @@ proxies:
   tls: false
   type: vless
   uuid: 67eb6b17-7797-4ded-bf52-423c4c5f6cbd
-- name: 453|🇨🇭CH_21|4.0MB/s|B007-260618 [3...
+- name: 453,456|🇨🇭CH_37|144KB/s|B007-260618 [3...
   obfs: salamander
   obfs-password: mbQXP2ASuHbF6ZPq
   password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
@@ -313,7 +375,7 @@ proxies:
   sni: vpn.local
   tls: false
   type: hysteria2
-- name: 453|🇨🇭CH_27|3.8MB/s|B007-260618 [3...
+- name: 453,456|🇨🇭CH_20|117KB/s|B007-260618 [3...
   obfs: salamander
   obfs-password: mbQXP2ASuHbF6ZPq
   password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
@@ -323,7 +385,7 @@ proxies:
   sni: vpn.local
   tls: false
   type: hysteria2
-- name: 453|🇨🇭CH_22|3.1MB/s|B007-260618 [3...
+- name: 453,456|🇨🇭CH_41|293KB/s|B007-260618 [3...
   obfs: salamander
   obfs-password: mbQXP2ASuHbF6ZPq
   password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
@@ -333,7 +395,7 @@ proxies:
   sni: vpn.local
   tls: false
   type: hysteria2
-- name: 453|🇨🇭CH_11|2.6MB/s|B007-260618 [3...
+- name: 453|🇨🇭CH_10|119KB/s|B007-260618 [3...
   obfs: salamander
   obfs-password: mbQXP2ASuHbF6ZPq
   password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
@@ -343,14 +405,20 @@ proxies:
   sni: vpn.local
   tls: false
   type: hysteria2
-- name: 453|🇨🇭CH_60|1.9MB/s|M003-260806 [3...
+- client-fingerprint: chrome
+  name: '453,456,477,482,523,524|🇨🇭_瑞士 (7) #1'
   network: tcp
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   port: 443
   server: 208.69.78.222
+  servername: yourultimateprofessionalcareerhub.com
+  skip-cert-verify: true
   sni: yourultimateprofessionalcareerhub.com
+  sub_tag: C002-260622
+  tls: true
   type: trojan
-- name: 453|🇨🇭CH_13|3.8MB/s|B007-260618 [5...
+  udp: true
+- name: 453|🇨🇭CH_12|423KB/s|B007-260618 [5...
   obfs: salamander
   obfs-password: mbQXP2ASuHbF6ZPq
   password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
@@ -360,14 +428,18 @@ proxies:
   sni: vpn.local
   tls: false
   type: hysteria2
-- name: 453|🇨🇭CH_53|780KB/s|A004-260618 [5...
+- client-fingerprint: chrome
+  name: '453,456,477,482|CH_51|753KB/s|A004-260618 [186... #1'
   network: tcp
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   port: 443
   server: 208.69.78.60
+  skip-cert-verify: false
   sni: cdn.yourultimateprofessionalcareerhub.com
+  sub_tag: A004-260618
   type: trojan
-- name: 453|🇨🇭CH_41|3.0MB/s|B007-260618 [5...
+  udp: true
+- name: 453,456|🇨🇭CH_12|332KB/s|B007-260618 [5...
   obfs: salamander
   obfs-password: mbQXP2ASuHbF6ZPq
   password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
@@ -377,17 +449,22 @@ proxies:
   sni: vpn.local
   tls: false
   type: hysteria2
-- name: 453|🇨🇭CH_57|397KB/s|M003-260806 [6...
+- client-fingerprint: chrome
+  name: '453,456,477,482,523,524|🇨🇭_瑞士 (3) #1'
   network: tcp
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   port: 443
   server: 208.69.78.19
+  servername: www.yourultimateprofessionalcareerhub.com
   skip-cert-verify: true
   sni: www.yourultimateprofessionalcareerhub.com
+  sub_tag: S004-260618
+  tls: true
   type: trojan
+  udp: true
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 453,580|🇫🇮FI_38|387KB/s|M002-260618 01
+  name: 453,456,580|🇫🇮FI_38|387KB/s|M002-260618 01
   network: tcp
   port: 443
   reality-opts:
@@ -398,7 +475,44 @@ proxies:
   tls: false
   type: vless
   uuid: 67eb6b17-7797-4ded-bf52-423c4c5f6cbd
-- name: 453|🇨🇭CH_42|3.1MB/s|B007-260618 [8...
+- name: 453,456,580|🇨🇭CH_5|325KB/s|R002-260618 01
+  obfs: salamander
+  obfs-password: c13f29db6a638ad2b211b9ce2669ef27
+  password: 3a702d4d1de4949005d8431220e040fb
+  port: 443
+  server: 152.67.75.161
+  skip-cert-verify: true
+  sni: www.bing.com
+  tls: false
+  type: hysteria2
+- client-fingerprint: chrome
+  name: 453|🇨🇭CH_76|408KB/s|B007-260618 [7...
+  network: xhttp
+  port: 443
+  reality-opts:
+    public-key: OqpjppFQ222BTeRXlK6fh7nP5ePkkNCLlUH1-CvkmBc
+    short-id: f245401987e85cad
+  server: d0f7fax.ch5.h1clayd.click
+  servername: d0f7fax.ch5.h1clayd.click
+  tls: false
+  type: vless
+  uuid: 54066259-28a1-47dc-b0f7-e7715f27918e
+  ws-opts:
+    path: '%2F14b7754c61d2'
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 453,456|🇨🇭CH_52|1.4MB/s|B007-260618 [7...
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: nIXZmF729Mzn5hq8aWSxsv8wBDawVYmFNzwBytwYfm0
+    short-id: aafcd65859993991
+  server: 132.243.167.147
+  servername: ch1.japancase.site
+  tls: false
+  type: vless
+  uuid: db80088c-32a1-4cb8-a907-0f3cb7844152
+- name: 453,456|🇨🇭CH_16|260KB/s|B007-260618 [8...
   obfs: salamander
   obfs-password: mbQXP2ASuHbF6ZPq
   password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
@@ -408,7 +522,7 @@ proxies:
   sni: vpn.local
   tls: false
   type: hysteria2
-- name: 453|🇨🇭CH_37|2.8MB/s|B007-260618 [8...
+- name: 453,456|🇨🇭CH_21|220KB/s|B007-260618 [8...
   obfs: salamander
   obfs-password: mbQXP2ASuHbF6ZPq
   password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
@@ -418,7 +532,7 @@ proxies:
   sni: vpn.local
   tls: false
   type: hysteria2
-- name: 453|🇨🇭CH_18|4.6MB/s|B007-260618 [8...
+- name: 453,456|🇨🇭CH_35|103KB/s|B007-260618 [8...
   obfs: salamander
   obfs-password: mbQXP2ASuHbF6ZPq
   password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
@@ -428,14 +542,18 @@ proxies:
   sni: vpn.local
   tls: false
   type: hysteria2
-- name: 453|🇨🇭CH_59|290KB/s|M003-260806 [8...
+- client-fingerprint: chrome
+  name: '453,456,477,482|🇨🇭CH_55|428KB/s|M003-260806 [b... #1'
   network: tcp
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   port: 443
   server: 208.69.78.158
+  skip-cert-verify: false
   sni: api.yourultimateprofessionalcareerhub.com
+  sub_tag: M003-260806
   type: trojan
-- name: 453|🇨🇭CH_28|4.5MB/s|B007-260618 [9...
+  udp: true
+- name: 453,456|🇨🇭CH_25|433KB/s|B007-260618 [9...
   obfs: salamander
   obfs-password: mbQXP2ASuHbF6ZPq
   password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
@@ -445,7 +563,7 @@ proxies:
   sni: vpn.local
   tls: false
   type: hysteria2
-- name: 453|🇨🇭CH_17|3.3MB/s|B007-260618 [9...
+- name: 453,456|🇨🇭CH_18|120KB/s|B007-260618 [9...
   obfs: salamander
   obfs-password: mbQXP2ASuHbF6ZPq
   password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
@@ -455,7 +573,20 @@ proxies:
   sni: vpn.local
   tls: false
   type: hysteria2
-- name: 453|🇨🇭CH_46|3.2MB/s|B007-260618 [b...
+- client-fingerprint: ios
+  flow: xtls-rprx-vision
+  name: 453,456|🇨🇭CH_53|1.1MB/s|M003-260806 [b...
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: nIXZmF729Mzn5hq8aWSxsv8wBDawVYmFNzwBytwYfm0
+    short-id: aafcd65859993991
+  server: ch1.japancase.site
+  servername: ch1.japancase.site
+  tls: false
+  type: vless
+  uuid: db80088c-32a1-4cb8-a907-0f3cb7844152
+- name: 453,456|🇨🇭CH_24|342KB/s|B007-260618 [b...
   obfs: salamander
   obfs-password: mbQXP2ASuHbF6ZPq
   password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
@@ -465,15 +596,33 @@ proxies:
   sni: vpn.local
   tls: false
   type: hysteria2
-- name: 453|🇨🇭CH_55|382KB/s|M003-260806 [f...
+- client-fingerprint: chrome
+  name: '453,477,482,523,524|🇨🇭_瑞士 (6) #1'
   network: tcp
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   port: 443
   server: 208.69.78.29
+  servername: learn.yourultimateprofessionalcareerhub.com
   skip-cert-verify: true
   sni: learn.yourultimateprofessionalcareerhub.com
+  sub_tag: M003-260806
+  tls: true
   type: trojan
-- name: 453|🇨🇭CH_16|3.7MB/s|B007-260618 [c...
+  udp: true
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 453|🇨🇭CH_73|2.9MB/s|M003-260806 [c...
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: 1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs
+    short-id: 428ef87fd47a3a32
+  server: 46.19.138.214
+  servername: perevodchiki.su
+  tls: false
+  type: vless
+  uuid: 90157e25-cee1-4217-921e-91f300bc1a24
+- name: 453,456|🇨🇭CH_34|173KB/s|B007-260618 [c...
   obfs: salamander
   obfs-password: mbQXP2ASuHbF6ZPq
   password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
@@ -483,7 +632,7 @@ proxies:
   sni: vpn.local
   tls: false
   type: hysteria2
-- name: 453|🇨🇭CH_39|3.2MB/s|M003-260806 [c...
+- name: 453,456|🇨🇭CH_39|318KB/s|M003-260806 [c...
   obfs: salamander
   obfs-password: mbQXP2ASuHbF6ZPq
   password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
@@ -493,7 +642,7 @@ proxies:
   sni: vpn.local
   tls: false
   type: hysteria2
-- name: 453|🇨🇭CH_19|3.7MB/s|B007-260618 [c...
+- name: 453,456|🇨🇭CH_36|68KB/s|B007-260618 [cf...
   obfs: salamander
   obfs-password: mbQXP2ASuHbF6ZPq
   password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
@@ -503,7 +652,7 @@ proxies:
   sni: vpn.local
   tls: false
   type: hysteria2
-- name: 453|🇨🇭CH_33|3.9MB/s|M003-260806 [d...
+- name: 453,456|🇨🇭CH_14|363KB/s|M003-260806 [d...
   obfs: salamander
   obfs-password: mbQXP2ASuHbF6ZPq
   password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
@@ -513,15 +662,7 @@ proxies:
   sni: vpn.local
   tls: false
   type: hysteria2
-- name: 453|🇨🇭CH_56|555KB/s|M003-260806 [d...
-  network: tcp
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  port: 443
-  server: 208.69.78.208
-  skip-cert-verify: true
-  sni: resources.yourultimateprofessionalcareerhub.com
-  type: trojan
-- name: 453|🇨🇭CH_25|4.9MB/s|B007-260618 [d...
+- name: 453,456|🇨🇭CH_38|211KB/s|B007-260618 [d...
   obfs: salamander
   obfs-password: mbQXP2ASuHbF6ZPq
   password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
@@ -531,7 +672,20 @@ proxies:
   sni: vpn.local
   tls: false
   type: hysteria2
-- name: 453|🇨🇭CH_29|3.1MB/s|B007-260618 [d...
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 453|🇨🇭CH_74|209KB/s|B007-260618 [d...
+  network: tcp
+  port: 2058
+  reality-opts:
+    public-key: lJBsn9ndieTIUBzXkJUhf6O0OE8pm29_z1fUtARwL0s
+    short-id: 937255313d6ce673
+  server: 62.109.1.5
+  servername: www.cloudflare.com
+  tls: false
+  type: vless
+  uuid: 4ad9f982-b56a-444a-9684-35ce51307a36
+- name: 453|🇨🇭CH_28|161KB/s|B007-260618 [d...
   obfs: salamander
   obfs-password: mbQXP2ASuHbF6ZPq
   password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
@@ -541,7 +695,7 @@ proxies:
   sni: vpn.local
   tls: false
   type: hysteria2
-- name: 453|🇨🇭CH_23|4.7MB/s|B007-260618 [d...
+- name: 453,456|🇨🇭CH_40|364KB/s|B007-260618 [d...
   obfs: salamander
   obfs-password: mbQXP2ASuHbF6ZPq
   password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
@@ -551,7 +705,7 @@ proxies:
   sni: vpn.local
   tls: false
   type: hysteria2
-- name: 453|🇨🇭CH_5|1.9MB/s|A004-260618 [de...
+- name: 453,456|🇨🇭CH_4|4.7MB/s|A004-260618 [de...
   password: 84a506ca5aca505696a454d828420b3f
   port: 50160
   server: 140.238.213.114
@@ -559,7 +713,7 @@ proxies:
   sni: 140.238.213.114
   tls: false
   type: hysteria2
-- name: 453|🇨🇭CH_14|4.2MB/s|B007-260618 [e...
+- name: 453,456|🇨🇭CH_13|194KB/s|B007-260618 [e...
   obfs: salamander
   obfs-password: mbQXP2ASuHbF6ZPq
   password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
@@ -577,7 +731,7 @@ proxies:
   sni: www.bing.com
   tls: false
   type: hysteria2
-- name: 453|🇨🇭CH_30|4.7MB/s|B007-260618 [f...
+- name: 453,456|🇨🇭CH_5|249KB/s|B007-260618 [f3...
   obfs: salamander
   obfs-password: mbQXP2ASuHbF6ZPq
   password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
@@ -587,19 +741,6 @@ proxies:
   sni: vpn.local
   tls: false
   type: hysteria2
-- client-fingerprint: chrome
-  name: 453|🇨🇭CH_44|1016KB/s|A001-260618 [...
-  network: ws
-  port: 8443
-  server: 64.177.66.9
-  servername: vp7.1145678.xyz
-  tls: true
-  type: vless
-  uuid: 5d7b401c-78fa-4254-872e-6d42bf7e75ec
-  ws-opts:
-    headers:
-      Host: vp7.1145678.xyz
-    path: '%2Fevents%2Fclassfp%3Dchrome'
 - alterId: 0
   cipher: auto
   name: 465|16|🔒 VM-TCP-NA 🇨🇭 CH-94.131.99...
@@ -610,7 +751,60 @@ proxies:
   tls: false
   type: vmess
   uuid: 81b2b630-8b6a-404f-b996-b12f13db5786
-- name: 482|CH_7|845KB/s [2579f7044e34]
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '475,480|🇭CH瑞士丨yoyapai.com #1'
+  port: 8443
+  reality-opts:
+    public-key: IdqrygjwHBEMCOamBl7a504TVk6uMAtTRj0xLWcFcxY
+    short-id: e3d38cee79d4f94c
+  server: 45.195.137.219
+  servername: storage.yandex.net
+  skip-cert-verify: false
+  sni: storage.yandex.net
+  tls: true
+  type: vless
+  udp: true
+  uuid: 7f89560c-b9f0-4c56-b3e0-1b1bdafe0b08
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '475,480|🇨🇭CH瑞士丨yoyapai.com (2) #1'
+  port: 8443
+  reality-opts:
+    public-key: IdqrygjwHBEMCOamBl7a504TVk6uMAtTRj0xLWcFcxY
+    short-id: e3d38cee79d4f94c
+  server: 45.195.137.119
+  servername: storage.yandex.net
+  skip-cert-verify: false
+  sni: storage.yandex.net
+  tls: true
+  type: vless
+  udp: true
+  uuid: 7f89560c-b9f0-4c56-b3e0-1b1bdafe0b08
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '475,480|🇨🇭CH瑞士丨yoyapai.com (3) #1'
+  port: 8443
+  reality-opts:
+    public-key: IdqrygjwHBEMCOamBl7a504TVk6uMAtTRj0xLWcFcxY
+    short-id: e3d38cee79d4f94c
+  server: 45.195.137.109
+  servername: storage.yandex.net
+  skip-cert-verify: false
+  sni: storage.yandex.net
+  tls: true
+  type: vless
+  udp: true
+  uuid: 7f89560c-b9f0-4c56-b3e0-1b1bdafe0b08
+- name: '477,482|🇨🇭CH_13|820KB/s|R002-260618 [2... #1'
+  port: 443
+  server: 31.7.62.50
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+- name: '477,482|🇭CH_48|1.1MB/s [2579f7044e34] #1'
   password: ''
   port: 9443
   server: 149.88.27.46
@@ -619,7 +813,7 @@ proxies:
   type: http
   udp: true
   username: ''
-- name: 482,489|D🔴🇨🇭hos[🎬🤖📺🎭]_dokng.com_5edb8d...
+- name: '477,482|CH_9|605KB/s|P002-260618 [58b6... #1'
   password: None
   port: 9443
   server: 37.120.213.210
@@ -628,26 +822,42 @@ proxies:
   tls: true
   type: http
   udp: true
-  username: null
-- cipher: chacha20-ietf-poly1305
-  name: 482|CH_1|2.0MB/s|A004-260618 [ba28...
-  password: e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3
-  port: 8388
-  server: 132.243.175.144
-  sub_tag: A004-260618
+- cipher: aes-256-gcm
+  name: '477,482|CH_66|3.2MB/s|M003-260806 [723... #1'
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  port: 19999
+  server: 23.166.88.189
+  sub_tag: M003-260806
   type: ss
   udp: true
-- name: 482,489|C🟠🇨🇭hos[🎬🤖📺🎭]_dokng.com_a74c39...
+- name: '477,482|🇨🇭CH_4|1.4MB/s|K001-260618 [9c... #1'
   password: None
-  port: 443
-  server: 31.7.62.50
+  port: 9443
+  server: 149.88.27.46
   skip-cert-verify: true
-  sub_tag: P002-260618
+  sub_tag: K001-260618
   tls: true
   type: http
   udp: true
-  username: null
-- name: 482|🇨CH_30|1.1MB/s|K001-260618 [e0...
+  username: ''
+- client-fingerprint: chrome
+  name: 477,482,519|🇮🇱[www.v2nodes.com] vless-IL-1...
+  network: ws
+  packet-encoding: xudp
+  port: 8443
+  server: 64.177.66.9
+  servername: vp7.1145678.xyz
+  sub_tag: A001-260618
+  tls: true
+  type: vless
+  udp: true
+  uuid: 5d7b401c-78fa-4254-872e-6d42bf7e75ec
+  ws-opts:
+    headers:
+      Host: vp7.1145678.xyz
+    path: /events/classfp=chrome
+  xudp: true
+- name: '477,482|🇨CH_46|649KB/s|K001-260618 [e0... #1'
   password: ''
   port: 9443
   server: 149.88.27.33
@@ -657,36 +867,15 @@ proxies:
   type: http
   udp: true
   username: ''
-- name: 489|D🔴🇨🇭hos[🎬🤖📺🎭]_dokng.com_c3243a...
-  port: 9443
-  server: 37.120.213.210
-  skip-cert-verify: true
-  sub_tag: R002-260618
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '502,551|🇨🇭CH_1|2.7MB/s #1'
+  port: 2058
+  server: 82.146.42.160
+  servername: www.cloudflare.com
   tls: true
-  type: http
-  udp: true
-- name: 489|D🔴🇨🇭hos[🎬🤖📺🎭]_dokng.com_d5afcc...
-  password: None
-  port: 9443
-  server: 149.88.27.33
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: null
-- name: 489|D🔴🇨🇭hos[🎬🤖📺🎭]_dokng.com_bff060...
-  password: None
-  port: 9443
-  server: 149.88.27.46
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: null
-- name: 489|C🟠🇨🇭hos[🎬🤖📺🎭]_dokng.com_d10161...
-  port: 443
-  server: 31.7.62.50
-  skip-cert-verify: true
-  tls: true
-  type: http
+  type: vless
+  uuid: 4ad9f982-b56a-444a-9684-35ce51307a36
 - encryption: none
   http-opts:
     path:
@@ -716,40 +905,39 @@ proxies:
     headers:
       Host: nbhhh.mrcool.kdns.fr
     path: /proxyip=3cfb8e26.tp30304.ip.090227.xyz
-- client-fingerprint: safari
-  name: '523,524|🇨🇭_瑞士 (7) #1'
-  network: ws
+- flow: xtls-rprx-vision
+  name: '523,524|🇨🇭_瑞士 (2) #1'
   port: 443
-  server: 195.141.65.98
-  servername: 148-253-210-191.sslip.io
+  server: prvtch.titun.su
+  servername: perevodchiki.su
   skip-cert-verify: true
-  sni: 148-253-210-191.sslip.io
-  tls: true
+  sni: perevodchiki.su
+  tls: false
   type: vless
   udp: true
-  uuid: 53f03acd-fec1-6685-fc8f-03baf9550cb8
-  ws-opts:
-    headers:
-      Host: 148-253-210-191.sslip.io
-    path: /test-ws
-- alpn:
-  - http/1.1
-  client-fingerprint: ios
-  name: '523,524|🇨🇭_瑞士 (9) #1'
-  network: ws
+  uuid: 90157e25-cee1-4217-921e-91f300bc1a24
+- flow: xtls-rprx-vision
+  name: '523,524|🇨🇭_瑞士 (4) #1'
   port: 443
-  server: 195.141.65.98
-  servername: 148-253-210-191.sslip.io
+  server: 46.19.138.214
+  servername: perevodchiki.su
   skip-cert-verify: true
-  sni: 148-253-210-191.sslip.io
-  tls: true
+  sni: perevodchiki.su
+  tls: false
   type: vless
   udp: true
-  uuid: 53f03acd-fec1-6685-fc8f-03baf9550cb8
-  ws-opts:
-    headers:
-      Host: 148-253-210-191.sslip.io
-    path: /test-ws
+  uuid: 90157e25-cee1-4217-921e-91f300bc1a24
+- flow: xtls-rprx-vision
+  name: '523,524|🇨🇭_瑞士 (5) #1'
+  port: 443
+  server: 179.43.166.190
+  servername: perevodchiki.su
+  skip-cert-verify: true
+  sni: perevodchiki.su
+  tls: false
+  type: vless
+  udp: true
+  uuid: 90157e25-cee1-4217-921e-91f300bc1a24
 - client-fingerprint: chrome
   name: 580|🇨🇭CH_2|654KB/s|B007-260618 01
   network: ws
