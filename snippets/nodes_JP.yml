@@ -588,17 +588,13 @@ proxies:
   type: trojan
   udp: true
 - cipher: aes-256-gcm
-  name: 306,378,537,538|🇯🇵JP-84.247.155.196-0222 | 0.4...
-  password: 3eOFeNssde7PYYMv
-  port: 443
-  server: 84.247.155.196
-  type: ss
-- cipher: aes-256-gcm
-  name: 306,378,519,537,538|🇯🇵JP-84.247.155.196-0485 | 1.2...
+  name: 306,378,477,482,519,537,538|🇯🇵JP-84.247.155.196-0485 | 1.2...
   password: 3eOFeNssde7PYYMv
   port: 80
   server: 84.247.155.196
+  sub_tag: A004-260618
   type: ss
+  udp: true
 - name: '321,322,323|日本05 #3'
   network: ws
   password: 429ad146-8f43-4dd4-8fb3-cca3f3a30c63
@@ -652,18 +648,6 @@ proxies:
   password: amazonskr05
   port: 443
   server: 57.180.246.231
-  type: ss
-- cipher: aes-128-gcm
-  name: '356,357,378,537|🇯🇵JP-149.22.87.240-2904 #2'
-  password: shadowsocks
-  port: 443
-  server: 149.22.87.240
-  type: ss
-- cipher: aes-128-gcm
-  name: '356,357,378,537|🇯🇵JP-149.22.87.241-2905 #2'
-  password: shadowsocks
-  port: 443
-  server: 149.22.87.241
   type: ss
 - name: '362,363|🇯🇵4 |  35.6MB/s #1'
   password: 1136b5a8-e708-4f75-adbd-78ab2e4c16d7
@@ -1496,9 +1480,9 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: '378,536,537|🇵JP-43.206.127.213-0055 #1'
+  name: 378,508,509,536,537,636|🇦🇺 澳大利亚 018
   network: ws
-  port: 30001
+  port: '30001'
   server: 43.206.127.213
   servername: ustr63.moonfree.top
   skip-cert-verify: false
@@ -1511,9 +1495,9 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '378,536,537|🇵JP-168.138.43.75-0220 #1'
+  name: 378,508,509,536,537,636|🇯🇵 日本 036
   network: ws
-  port: 80
+  port: '80'
   server: 168.138.43.75
   servername: ''
   skip-cert-verify: false
@@ -1524,6 +1508,15 @@ proxies:
     headers:
       Host: jp01.a0a.xyz
     path: /
+- cipher: aes-256-gcm
+  country: 🇴 NO
+  name: 378,435,477,482,537,538|🇯🇵JP-84.247.155.196-0222 | 0.4...
+  password: 3eOFeNssde7PYYMv
+  port: 443
+  server: 84.247.155.196
+  sub_tag: A004-260618
+  type: ss
+  udp: true
 - cipher: aes-256-cfb
   name: '378,537|🇵JP-172.104.123.158-0371 #1'
   password: eIW0Dnk69454e6nSwuspv9DmS201tQ0D
@@ -1532,7 +1525,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 378,508,509,536,537,636|🇯🇵 日本 046
+  name: 378,508,509,536,537,636|🇯🇵 日本 040
   network: ws
   port: '443'
   server: fullaccesstojapannetsubnode1.azurewebsites.net
@@ -1547,7 +1540,7 @@ proxies:
     path: /ws
 - alterId: 0
   cipher: auto
-  name: 378,508,509,536,537,636|🇧🇷 巴西 032
+  name: 378,508,509,536,537,636|🇧🇷 巴西 010
   network: ws
   port: '443'
   server: suzhihan.eu.org
@@ -1594,7 +1587,7 @@ proxies:
     headers:
       Host: 92.38.178.93
     path: linkvws
-- name: 378,508,509,536,537,636|🇺🇸 美国 081
+- name: 378,508,509,536,537,636|🇺🇸 美国 073
   network: tcp
   password: an70aOaIjcCF43gOlSB6eKER53Z38DYDx8l9RCSCpYTwXS3pueyAqyFZx2zDNA
   port: 443
@@ -1673,7 +1666,7 @@ proxies:
     method: GET
     path:
     - /ABCDE
-  name: 378,508,509,536,537,636|🇺🇸 美国 102
+  name: 378,508,509,536,537,636|🇺🇸 美国 094
   network: http
   port: '55386'
   server: 103.127.243.60
@@ -1979,7 +1972,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 378,508,509,536,537,636|🇦🇺 澳大利亚 015
+  name: 378,494,508,509,536,537,636|🇦🇺 澳大利亚 015
   network: ws
   port: '25686'
   server: 140.83.51.161
@@ -1995,22 +1988,26 @@ proxies:
     path: /cctv13.m3u8
 - alterId: 0
   cipher: auto
-  name: 378,456,508,509,536,537,636|🇯🇵 日本 036
+  name: '378,456,477,482,494,536,537|🇯🇵JP-168.138.43.75-1124 #2'
   network: ws
-  port: '80'
+  packet-encoding: xudp
+  port: 80
   server: 168.138.43.75
   servername: ''
   skip-cert-verify: false
+  sub_tag: S004-260618
   tls: false
   type: vmess
+  udp: true
   uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
   ws-opts:
     headers:
       Host: jp01.a0a.xyz
     path: /cctv13.m3u8
+  xudp: true
 - alterId: 64
   cipher: auto
-  name: 378,508,509,536,537,636|🇺🇸 美国 378
+  name: 378,494,508,509,536,537,580,636|🇺🇸 美国 393
   network: ws
   port: '34001'
   server: 104.219.208.195
@@ -2025,7 +2022,7 @@ proxies:
     path: /path/191019072927
 - alterId: 0
   cipher: auto
-  name: 378,508,509,536,537,636|🇨🇿 捷克 005
+  name: 378,508,509,536,537,636|🇨🇿 捷克 002
   network: ws
   port: '80'
   server: 109.123.230.157
@@ -2040,7 +2037,7 @@ proxies:
     path: /takeshi.wiki
 - alterId: 64
   cipher: auto
-  name: 378,508,509,536,537,636|🇯🇵 日本 048
+  name: 378,508,509,536,537,636|🇯🇵 日本 042
   network: ws
   port: '46666'
   server: 103.72.5.227
@@ -2055,7 +2052,7 @@ proxies:
     path: /path/191019072927
 - alterId: 64
   cipher: auto
-  name: 378,508,509,536,537,636|🇺🇸 美国 980
+  name: 378,508,509,536,537,636|🇺🇸 美国 615
   network: ws
   port: '37206'
   server: 152.70.103.195
@@ -2070,7 +2067,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 378,508,509,536,537,636|🇺🇸 美国 983
+  name: 378,508,509,536,537,636|🇺🇸 美国 618
   network: ws
   port: '24429'
   server: 138.2.52.176
@@ -2085,7 +2082,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 378,508,509,536,537,636|🇯🇵 日本 050
+  name: 378,508,509,536,537,636|🇯🇵 日本 044
   network: ws
   port: '443'
   server: 172.105.223.136
@@ -2100,7 +2097,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 378,508,509,536,537,636|🇺🇸 美国 1093
+  name: 378,508,509,536,537,636|🇺🇸 美国 732
   network: ws
   port: '443'
   server: 147.78.244.7
@@ -2115,7 +2112,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 378,508,509,536,537,636|🇯🇵 日本 051
+  name: 378,508,509,536,537,636|🇯🇵 日本 045
   network: ws
   port: '443'
   server: 124.156.225.184
@@ -2130,7 +2127,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 378,508,509,536,537,636|🇦🇺 澳大利亚 027
+  name: 378,508,509,536,537,636|🇺🇸 美国 747
   network: ws
   port: '12889'
   server: gtm1.ktmwan.net
@@ -2437,7 +2434,7 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: '378,536,537|🇵JP-138.2.49.230-3810 #1'
+  name: '378,494,536,537|🇵JP-138.2.49.230-3810 #1'
   network: ws
   port: 10021
   server: 138.2.49.230
@@ -2670,30 +2667,40 @@ proxies:
   port: 989
   server: 103.75.118.27
   type: ss
-- name: 436|🇯🇵JP_50
+- country: 🇵JP
+  name: 435,436|🇯🇵JP_47
   password: ND91608427
   port: 443
   server: 18.179.31.199
+  skip-cert-verify: true
   type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
-  name: 453|🇯🇵JP_62|371KB/s|S004-260618 [5...
+  name: '453,456,477,482,494|🔥Join+Telegram:@Farah_VPN🟣 #2576'
   network: ws
-  port: 80
+  packet-encoding: xudp
+  port: '80'
   server: 168.138.43.75
+  servername: ''
+  skip-cert-verify: false
+  sub_tag: S004-260618
   tls: false
   type: vmess
+  udp: true
   uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
   ws-opts:
     headers:
       Host: 168.138.43.75
     path: /cctv13.m3u8
+  xudp: true
 - alterId: 0
   cipher: auto
-  name: 453|🇯🇵JP_58|214KB/s|S004-260618 [6...
+  name: '453,494|🔥Join+Telegram:@Farah_VPN🟣 #2846'
   network: ws
-  port: 80
+  port: '80'
   server: 168.138.43.75
+  servername: ''
   tls: false
   type: vmess
   uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
@@ -2701,26 +2708,36 @@ proxies:
     headers:
       Host: None
     path: /cctv13.m3u8
-- name: 453,456|🇯🇵JP_29|516KB/s|C002-260622 [7...
+- name: '453,456,494|🔥Join+Telegram:@Farah_VPN🟣 #8214'
   network: tcp
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   port: 443
   server: 167.179.108.225
+  skip-cert-verify: false
   sni: discoverparttimepositionsandsupplementyourincomeguide.com
   type: trojan
+  ws-opts:
+    headers:
+      Host: /?Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET
 - alterId: 0
   cipher: auto
-  name: 453|🇯🇵JP_63|273KB/s|S004-260618 [7...
+  name: '453,456,477,482,494|🔥Join+Telegram:@Farah_VPN🟣 #8845'
   network: ws
-  port: 80
+  packet-encoding: xudp
+  port: '80'
   server: 168.138.43.75
+  servername: none
+  skip-cert-verify: false
+  sub_tag: S004-260618
   tls: false
   type: vmess
+  udp: true
   uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
   ws-opts:
     headers:
       Host: none
     path: /cctv13.m3u8
+  xudp: true
 - name: 453,456|🇯🇵JP_31|105KB/s|C002-260622 [9...
   network: tcp
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
@@ -2731,11 +2748,11 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 456|🇯🇵JP_36|430KB/s|A004-260618 [7...
+  name: '456,494|🔥Join+Telegram:@Farah_VPN🟣 #8414'
   network: ws
   port: 2083
   server: cdn.sfacg.uk
-  servername: or3.sfacg.uk
+  servername: ''
   tls: true
   type: vmess
   uuid: ac251237-576f-40c8-a543-554960c958b1
@@ -2745,9 +2762,9 @@ proxies:
     path: /or3
 - alterId: 0
   cipher: auto
-  name: 456|🇯🇵JP_41|471KB/s|B006-260618 [9...
+  name: '456,494|🔥Join+Telegram:@Farah_VPN🟣 #5513'
   network: ws
-  port: 443
+  port: '443'
   server: 162.159.128.17
   servername: v2ray.ryin.vip
   tls: true
@@ -2757,6 +2774,27 @@ proxies:
     headers:
       Host: v2ray.ryin.vip
     path: /ryinsocksv2board
+- client-fingerprint: chrome
+  name: '456,477,482|🇵JP_39|596KB/s|M003-260806 [b5... #1'
+  network: tcp
+  password: F3NzMNuYnG7akU2mSlBY
+  port: 8443
+  server: 193.123.160.109
+  skip-cert-verify: true
+  sni: www.microsoft.com
+  sub_tag: M003-260806
+  type: trojan
+  udp: true
+- name: 456|🇯🇵_JP_日本_IPV4
+  network: ws
+  password: HutaoCloud
+  port: 11543
+  server: 185.220.238.77
+  skip-cert-verify: true
+  sni: 185.220.238.77
+  type: trojan
+  ws-opts:
+    path: '%2Fapi'
 - name: '460|日本_Osaka #1'
   network: ws
   password: NISHIKUITAN222
@@ -2809,7 +2847,7 @@ proxies:
   uuid: 0e0f8e06-3ae6-4889-9bf8-6d744b57369f
 - alterId: 0
   cipher: auto
-  name: 465,508,509,636|🇯🇵 日本 054
+  name: 465,508,509,636|🇯🇵 日本 058
   network: tcp
   port: '14935'
   server: 167.179.111.237
@@ -3023,15 +3061,14 @@ proxies:
   tls: false
   type: vmess
   uuid: 55b88b14-0ff3-4f25-8983-e73d1f9f3a0a
-- name: '489,566,568|🇳🇬 尼日利亚 | NGA #1'
-  password: d7563108-615c-4338-a7bd-77f359869a4a
-  port: 20103
-  server: sclass-01.catcat321.com
+- name: '502,551,566,568|🇳🇬 尼日利亚 | NGA #5'
+  password: d9064589-74af-432a-9390-5d8a9da281bf
+  port: 20051
+  server: sclass-c2.catcat321.com
   skip-cert-verify: true
   sni: hk.catxstar.com
   type: trojan
   udp: true
-  x-toolall-mihomo: true
 - alterId: 1
   cipher: auto
   name: 508,509,636|🇯🇵 日本 032
@@ -3064,7 +3101,7 @@ proxies:
   uuid: cd3dacbc-2b7b-4718-83ad-ab870f87e12e
 - alterId: 0
   cipher: auto
-  name: 508,509,636|🇯🇵 日本 053
+  name: 508,509,636|🇯🇵 日本 057
   network: tcp
   port: '49499'
   server: 139.162.125.97
@@ -3326,15 +3363,6 @@ proxies:
   type: trojan
   ws-opts:
     path: /
-- name: 536|🇯🇵JP-209.33.173.167-1003
-  network: ws
-  password: eeb6823c-b926-4ea2-866a-5542edd26e59
-  port: 443
-  server: 209.33.173.167
-  sni: tjsp.hhxaf.cc.cd
-  type: trojan
-  ws-opts:
-    path: /
 - name: 536|🇯🇵JP-151.241.129.141-1004
   network: ws
   password: eeb6823c-b926-4ea2-866a-5542edd26e59
@@ -3371,6 +3399,18 @@ proxies:
   type: trojan
   ws-opts:
     path: /
+- name: '548|🇯🇵_JP_日本_IPV4 #1'
+  network: ws
+  password: HutaoCloud
+  port: 11543
+  server: 185.220.238.77
+  servername: 185.220.238.77
+  skip-cert-verify: true
+  sni: 185.220.238.77
+  tls: true
+  type: trojan
+  ws-opts:
+    path: /api
 - cipher: chacha20-ietf-poly1305
   name: 558|0| 01 | 1x JP
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549

@@ -1,22 +1,26 @@
 proxies:
 - cipher: aes-256-gcm
-  name: 306,378,537,538|🇷🇺RU-185.22.153.117-0214 | 0.0...
+  name: 306,378,519,537,538|🇷🇺RU-185.22.153.117-0214 | 0.0...
   password: NTiHBg64fsY8u8DbGrtypD9gPGSL386p
   port: 18443
   server: 185.22.153.117
   type: ss
 - cipher: aes-128-gcm
-  name: '306,378,519,537|🇺RU-38.60.223.125-0495 #1'
+  name: '306,378,477,482,519,537|🇺RU-38.60.223.125-0495 #1'
   password: 8722de56b6c0b3f6a4d01cf91c07e6aa
   port: 13108
   server: 38.60.223.125
+  sub_tag: M003-260806
   type: ss
+  udp: true
 - cipher: aes-256-gcm
-  name: 306,378,519,537,538|🇷🇺RU-46.17.47.58-0237 | 0.664M...
+  name: 306,378,477,482,519,537,538|🇷🇺RU-46.17.47.58-0237 | 0.664M...
   password: cCMJgJTA3BA489YUYrFq7XHXSiSpWlLa
   port: 18443
   server: 46.17.47.58
+  sub_tag: K001-260618
   type: ss
+  udp: true
 - cipher: chacha20-ietf-poly1305
   name: 306,378,519,537,538|SE-62.182.193.228-0188 | 0.0MB
   password: 2e555e46dbc421452416834962fd014f
@@ -170,7 +174,7 @@ proxies:
     path: /fr-unlimitxxx
 - alterId: 64
   cipher: auto
-  name: 378,508,509,536,537,636|🇷🇺 俄罗斯 052
+  name: 378,508,509,536,537,636|🇷🇺 俄罗斯 010
   network: ws
   port: '30002'
   server: 185.173.94.1
@@ -189,7 +193,7 @@ proxies:
     method: GET
     path:
     - /
-  name: 378,508,509,536,537,636|🇷🇺 俄罗斯 054
+  name: 378,508,509,536,537,636|🇷🇺 俄罗斯 012
   network: http
   port: '26743'
   server: 194.87.248.27
@@ -204,7 +208,7 @@ proxies:
     method: GET
     path:
     - /
-  name: 378,508,509,536,537,636|🇷🇺 俄罗斯 055
+  name: 378,508,509,536,537,636|🇷🇺 俄罗斯 013
   network: http
   port: '37672'
   server: 176.119.159.245
@@ -410,19 +414,35 @@ proxies:
   port: 444
   server: 146.185.198.44
   type: ss
+- cipher: aes-256-cfb
+  country: 🇺RU
+  name: 435|RU_54
+  password: 9XwYyZsK8SNzQDtY
+  port: 9059
+  server: 217.30.10.70
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇷🇺RU
+  name: 435|🇺RU_55
+  password: fG2artUmHfNT2cX7
+  port: 9018
+  server: 217.30.10.70
+  type: ss
 - alterId: 0
   cipher: auto
-  name: 453,456,475,480,574|未知119
+  name: 453,456,475,480,494,580|未知 VMESS-1511 | free-nodes
   network: ws
-  port: 443
+  port: '443'
   server: renderer-stream-2-62.mirra.now
   servername: ''
-  skip-cert-verify: true
+  skip-cert-verify: false
   tls: true
   type: vmess
   udp: true
   uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
   ws-opts:
+    headers:
+      Host: ''
     path: /api/v1/gpu-stream/socket
 - name: '461|俄罗斯联邦_莫斯科 #2'
   network: tcp
@@ -818,7 +838,7 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: '476,481|RU俄罗斯(mibei77.com 米贝节点分享) (10) #1'
+  name: '475,480|🇺RU俄罗斯丨yoyapai.com (16) #1'
   password: cCMJgJTA3BA489YUYrFq7XHXSiSpWlLa
   port: 18443
   server: 46.17.46.27
@@ -826,36 +846,6 @@ proxies:
   tls: false
   type: ss
   udp: true
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 508,509,636|🇷🇺 俄罗斯 007
-  network: tcp
-  port: '22324'
-  server: 5.188.190.252
-  tls: false
-  type: vmess
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-- alterId: 0
-  cipher: auto
-  name: 508,509,636|🇷🇺 俄罗斯 016
-  network: tcp
-  port: '22324'
-  server: 89.223.95.77
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-- alterId: 0
-  cipher: auto
-  name: 508,509,636|🇷🇺 俄罗斯 017
-  network: tcp
-  port: '2083'
-  server: 31.184.244.163
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: e4769292-66a6-45f7-be3a-1ebbdb7f8448
 - alterId: 0
   cipher: auto
   name: '513,517|2|🇷🇺_RU_俄罗斯联邦 #2'
