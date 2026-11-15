@@ -1,7 +1,27 @@
 proxies:
+- cipher: aes-256-gcm
+  name: 306,378,477,482,519,537,538|SE-138.199.55.243-0148 | 34.16...
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  port: 19999
+  server: 138.199.55.243
+  sub_tag: M003-260806
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  name: '306,378,519,537|🇪SE-70.34.212.124-0197 #1'
+  password: AxIYWtskJWIIaefW
+  port: 8388
+  server: 70.34.212.124
+  type: ss
+- name: '306,340,378,502,514,519,536,537,551|🇸🇪[www.v2nodes.com] trojan-SE-... #5'
+  password: FkQH0Q5EFneySv20Qj3yoArD2GSb2XZF
+  port: 443
+  server: 95.143.196.97
+  skip-cert-verify: false
+  type: trojan
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: '340,453,502,514,551|🇸🇪[www.v2nodes.com] vless-SE-1... #18'
+  name: '340,453,502,514,551|🇸🇪[www.v2nodes.com] vless-SE-1... #20'
   network: tcp
   port: 8443
   reality-opts:
@@ -15,7 +35,8 @@ proxies:
 - client-fingerprint: firefox
   grpc-opts:
     grpc-service-name: 138-124-86-230-sslip-io
-  name: '340,453,477,482,502,508,509,514,519,551|🏳[www.v2nodes.com] vless- #17 #2'
+  name: '340,453,477,482,502,508,509,514,519,551|🇸🇪[www.v2nodes.com] vless-SE-1...
+    #21'
   network: grpc
   packet-encoding: xudp
   port: 48115
@@ -29,7 +50,7 @@ proxies:
   xudp: true
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: '340,453,502,514,519,551|🇸🇪[www.v2nodes.com] vless-SE-1... #19'
+  name: '340,453,502,514,519,551|🇸🇪[www.v2nodes.com] vless-SE-1... #22'
   network: raw
   port: 443
   reality-opts:
@@ -40,7 +61,7 @@ proxies:
   tls: false
   type: vless
   uuid: 1fe01c8a-ab37-4e95-bbfc-95d4a608931e
-- name: '340,477,482,502,508,509,514,519,551|🇸🇪[www.v2nodes.com] vless-SE-1... #20'
+- name: '340,477,482,502,508,509,514,519,551|🇸🇪[www.v2nodes.com] vless-SE-1... #23'
   network: ws
   packet-encoding: xudp
   port: 14430
@@ -56,9 +77,18 @@ proxies:
       Host: 5.178.109.174
     path: /vless
   xudp: true
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: '340,502,514,551|🇸🇪[www.v2nodes.com] vless-SE-1... #24'
+  port: 10444
+  server: 193.188.21.253
+  servername: video.yandex.ru
+  tls: true
+  type: vless
+  uuid: 57f7772d-f5d6-4d8f-992d-5fa5e0d6da55
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '340,453,502,514,551|🇸🇪[www.v2nodes.com] vless-SE-1... #22'
+  name: '340,453,502,514,551|🇸🇪[www.v2nodes.com] vless-SE-1... #25'
   network: raw
   port: 443
   reality-opts:
@@ -69,55 +99,6 @@ proxies:
   tls: true
   type: vless
   uuid: 11aabba0-5fd1-4f15-8068-74c1a466cefc
-- name: '340,378,502,514,519,536,537,551|🇸🇪[www.v2nodes.com] trojan-SE-... #8'
-  password: FkQH0Q5EFneySv20Qj3yoArD2GSb2XZF
-  port: 443
-  server: 95.143.196.97
-  skip-cert-verify: false
-  type: trojan
-- name: '340,378,453,502,514,519,537,551|🇸🇪[www.v2nodes.com] trojan-SE-... #9'
-  network: ws
-  password: f426d3c9-fb43-43c0-868b-898dfa451a74
-  port: 443
-  server: 121.127.33.130
-  skip-cert-verify: false
-  sni: likejennie.pages.dev
-  type: trojan
-  ws-opts:
-    headers:
-      Host: likejennie.pages.dev
-    path: '%2F'
-- client-fingerprint: firefox
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: neurex
-  name: '340,489,519|🇸🇪 瑞典 | SWE #2'
-  network: grpc
-  port: 443
-  reality-opts:
-    public-key: pR39Vv5qhk8r6akOicoy6mMs4-ppSWUez8MyAXG7wwQ
-    short-id: 27350908de933e09
-  server: 185.117.89.74
-  servername: seb.kosmosapp.net
-  tls: true
-  type: vless
-  udp: true
-  uuid: f8cb3c89-32af-4255-bebc-d90aad175069
-  x-toolall-mihomo: true
-- client-fingerprint: firefox
-  grpc-opts:
-    grpc-service-name: ''
-  name: '340,508,509|法国 008 #1'
-  network: grpc
-  port: 443
-  server: 185.117.89.74
-  servername: seb.kosmosapp.net
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: f8cb3c89-32af-4255-bebc-d90aad175069
 - alterId: 0
   cipher: auto
   name: '362,363|🇸🇪 SE 057 |  20.8MB/s #1'
@@ -135,26 +116,6 @@ proxies:
   skip-cert-verify: true
   sni: trojan.burgerip.co.uk
   type: trojan
-- cipher: aes-256-gcm
-  name: 378,477,482,519,537,538|SE-138.199.55.243-0148 | 34.16...
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  port: 19999
-  server: 138.199.55.243
-  sub_tag: M003-260806
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  name: '378,519,537|🇪SE-70.34.212.124-0197 #1'
-  password: AxIYWtskJWIIaefW
-  port: 8388
-  server: 70.34.212.124
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: '378,519,537|🇪SE-62.182.193.228-0274 #1'
-  password: 2e555e46dbc421452416834962fd014f
-  port: 8388
-  server: 62.182.193.228
-  type: ss
 - alterId: 64
   cipher: auto
   name: 378,508,509,536,537,636|🇸🇪 瑞典 016
@@ -453,7 +414,7 @@ proxies:
   tls: true
   type: http
   udp: true
-- name: '477,482|🇪SE_13|1.3MB/s|R002-260618 [3e... #1'
+- name: 477,482,489|🇸🇪SE_14|782KB/s|R002-260618 [e...
   port: 443
   server: 146.70.242.130
   skip-cert-verify: true
@@ -461,6 +422,7 @@ proxies:
   tls: true
   type: http
   udp: true
+  x-toolall-mihomo: true
 - client-fingerprint: chrome
   name: '477,482|🇸SE_8|3.1MB/s|M003-260806 [433... #1'
   network: tcp
@@ -499,7 +461,7 @@ proxies:
   tls: true
   type: http
   udp: true
-- name: 477,482,489|🇸🇪SE_1|2.1MB/s|R002-260618 [68...
+- name: '477,482|🇪SE_12|771KB/s|R002-260618 [f5... #1'
   port: 443
   server: 79.142.77.63
   skip-cert-verify: true
@@ -507,44 +469,23 @@ proxies:
   tls: true
   type: http
   udp: true
-  x-toolall-mihomo: true
-- name: 489|🇸🇪SE_1|1.4MB/s|R002-260618 [6b...
-  port: 9443
-  server: 146.70.242.146
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-  x-toolall-mihomo: true
-- name: 489|VIP2-SE-Stockholm-1251934-jdis...
-  port: 9050
-  server: 45.61.129.165
-  type: socks5
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: '502,514,551|🇸🇪[www.v2nodes.com] vless-SE-1... #21'
-  port: 10444
-  server: 193.188.21.253
-  servername: video.yandex.ru
-  tls: true
-  type: vless
-  uuid: 57f7772d-f5d6-4d8f-992d-5fa5e0d6da55
-- client-fingerprint: chrome
-  name: '508,509,519|🇬🇧[www.v2nodes.com] vless-GB-1... #21'
-  network: ws
+  name: '502,519,551,566|🇸🇪 瑞典 | SWE 2 #1'
+  network: tcp
   port: 443
-  server: 146.75.59.186
-  servername: cdn.akamai.steamstatic.com
+  reality-opts:
+    public-key: XQWaIMBPo0mpWs3MooxxkjWNSgxnkIESd_2PnR8_2HA
+    short-id: 1061f1b1cdaad3ad
+  server: 3fb2b6t.se1.h1clayd.click
+  servername: 3fb2b6t.se1.h1clayd.click
   tls: true
   type: vless
-  uuid: 8d2cbffd-43d0-458d-906b-7c54b7b51f38
-  ws-opts:
-    headers:
-      Host: ukoijji.global.ssl.fastly.net
-    path: /
+  udp: true
+  uuid: 632cd343-1e8f-4bf6-a9a2-20ada1f6970f
 - client-fingerprint: chrome
-  name: '508,509,519|🇺🇸[www.v2nodes.com] vless-US-1... #16'
+  encryption: none
+  name: '508,509,519|🇺🇸[www.v2nodes.com] vless-US-1... #17'
   network: ws
   port: 443
   server: wwww.qarvian.ir
@@ -655,8 +596,17 @@ proxies:
     headers:
       Host: 3.V.v.V.v.V.v.V-_-_-V2ray-_-_-V.v.V.v.arV2ray.Host.
     path: /telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray?ed=2048
+- name: 519|🇸🇪SE_1|2.6MB/s|R002-260618
+  port: 9443
+  server: 146.70.242.146
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+  x-toolall-mihomo: true
 - client-fingerprint: chrome
-  name: '523,524|🇸🇪_瑞典 (3) #1'
+  name: '523,524|🇸🇪_瑞典 #1'
   network: ws
   port: 8443
   server: 167.104.104.138
@@ -669,52 +619,20 @@ proxies:
   uuid: a5194487-9b9a-462f-a047-ac7580d80201
   ws-opts:
     path: /
-- name: '523,524|🇸🇪_瑞典 (4) #1'
-  network: ws
-  port: 14430
-  server: 5.178.109.174
-  servername: 5.178.109.174
-  skip-cert-verify: true
-  sni: 5.178.109.174
-  tls: false
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: '566|🇸🇪 瑞典 | SWE #3'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: XQWaIMBPo0mpWs3MooxxkjWNSgxnkIESd_2PnR8_2HA
+    short-id: 1061f1b1cdaad3ad
+  server: 201.8.64.238
+  servername: 3fb2b6t.se1.h1clayd.click
+  tls: true
   type: vless
   udp: true
-  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
-  ws-opts:
-    path: /vless
-- name: '523,524|🇸🇪_瑞典 (5) #1'
-  network: ws
-  port: 14430
-  server: 193.188.21.253
-  servername: 193.188.21.253
-  skip-cert-verify: true
-  sni: 193.188.21.253
-  tls: false
-  type: vless
-  udp: true
-  uuid: 57f7772d-f5d6-4d8f-992d-5fa5e0d6da55
-  ws-opts:
-    path: /vless
-- alterId: 0
-  cipher: auto
-  name: '523,524|🇸🇪_瑞典 #1'
-  port: 1270
-  server: 138.199.55.230
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-- alterId: 0
-  cipher: auto
-  name: '523,524|🇸🇪_瑞典 (2) #1'
-  port: 1270
-  server: 62.93.166.184
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  uuid: 632cd343-1e8f-4bf6-a9a2-20ada1f6970f
 - name: '727,728,729|🇸🇪 瑞典1 #1'
   password: 升级订阅解锁全部节点
   port: 443

@@ -1,20 +1,15 @@
 proxies:
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '340,438,453,502,514,551|🏳[www.v2nodes.com] vless- #9'
-  network: tcp
-  port: 2083
-  reality-opts:
-    public-key: WbgtxLlo2gmTzB4Wzxgh_U7G97d4ENTS10fYIoujET4
-    short-id: 0123456789abcdef
-  server: 74.161.152.237
-  servername: www.apple.com
-  tls: true
-  type: vless
-  uuid: 52a5a29f-c162-411a-8a37-a3f11b0dc537
+- cipher: aes-256-gcm
+  name: 306,378,477,482,519,537,538|CH-23.166.88.127-0199 | 51.171...
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  port: 19999
+  server: 23.166.88.127
+  sub_tag: M003-260806
+  type: ss
+  udp: true
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: '340,453,502,514,551|🇨🇭[www.v2nodes.com] vless-CH-1... #10'
+  name: '340,453,502,514,551|🇨🇭[www.v2nodes.com] vless-CH-1... #9'
   network: tcp
   port: 443
   reality-opts:
@@ -32,7 +27,7 @@ proxies:
     path: '%2F'
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: '340,453,502,514,551|🇨🇭[www.v2nodes.com] vless-CH-1... #11'
+  name: '340,453,502,514,551|🇨🇭[www.v2nodes.com] vless-CH-1... #10'
   network: none
   port: 443
   reality-opts:
@@ -44,7 +39,7 @@ proxies:
   type: vless
   uuid: 3950b45e-740d-4dca-ac95-505ec8534592
 - client-fingerprint: firefox
-  name: '340,453,502,514,551|🇨🇭[www.v2nodes.com] vless-CH-1... #12'
+  name: '340,453,502,514,551|🇨🇭[www.v2nodes.com] vless-CH-1... #11'
   network: tcp
   port: 2053
   reality-opts:
@@ -55,46 +50,6 @@ proxies:
   tls: true
   type: vless
   uuid: c0dd6d59-1573-43af-8b70-1470b2632a6d
-- client-fingerprint: chrome
-  name: '340,378,453,477,482,502,514,519,536,537,538,551|🇨🇭[www.v2nodes.com] trojan-CH-...
-    #12'
-  network: tcp
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  port: 443
-  server: 208.69.78.33
-  skip-cert-verify: false
-  sni: courses.yourultimateprofessionalcareerhub.com
-  sub_tag: M003-260806
-  type: trojan
-  udp: true
-- name: '340,378,502,514,519,536,537,551|🇨🇭[www.v2nodes.com] trojan-CH-... #13'
-  password: b7795ce8-3863-4292-adfc-9c0a7b847774
-  port: 443
-  server: t2w2t2w2.bpca2026.top
-  skip-cert-verify: true
-  sni: t2w2t2w2.bpca2026.top
-  type: trojan
-- name: '340,378,502,514,519,536,537,551|🇨🇭[www.v2nodes.com] trojan-CH-... #14'
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  port: 443
-  server: 208.69.78.158
-  skip-cert-verify: false
-  type: trojan
-- alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: chrome
-  name: 340,519|🇨🇭 瑞士 | CHE
-  network: tcp
-  port: 443
-  server: 194.87.109.106
-  servername: currant.asynchronous.site
-  tls: true
-  type: vless
-  udp: true
-  uuid: d9274255-edf4-4944-bc62-6ef35cd2de40
-  ws-opts:
-    path: /
 - cipher: aes-128-gcm
   name: '356,357|4 #4'
   password: shadowsocks
@@ -158,30 +113,6 @@ proxies:
   udp: true
   uuid: 7c317161-5cf8-4cbc-811a-d1297c41bb23
   xudp: true
-- cipher: aes-256-gcm
-  name: 378,477,482,519,537,538|CH-186.190.215.251-0165 | 1.30...
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  port: 19999
-  server: 186.190.215.251
-  sub_tag: M003-260806
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  name: 378,477,482,519,537,538|CH-23.166.88.127-0199 | 51.171...
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  port: 19999
-  server: 23.166.88.127
-  sub_tag: M003-260806
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  name: 378,477,482,519,537,538|CH-79.127.184.104-0195 | 0.299...
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  port: 19999
-  server: 79.127.184.104
-  sub_tag: M003-260806
-  type: ss
-  udp: true
 - name: '378,489,519,537|🇭CH-31.7.62.50-0528 #1'
   port: 443
   server: 31.7.62.50
@@ -200,6 +131,15 @@ proxies:
   port: 443
   server: 156.146.62.160
   type: ss
+- alterId: 0
+  cipher: auto
+  name: '438|🇨🇭CH_3|1.4MB/s | 网盘搜宝: https:/...'
+  network: tcp
+  port: '16284'
+  server: zfd-boardv2.kunlun01dns.com
+  tls: false
+  type: vmess
+  uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
 - client-fingerprint: chrome
   name: '438,453,477,482|CH_45|447KB/s|S004-260618 [fb5... #1'
   network: tcp
@@ -766,7 +706,7 @@ proxies:
   type: vless
   udp: true
   uuid: 90157e25-cee1-4217-921e-91f300bc1a24
-- name: 477,482,489|🇨🇭CH_2|1.4MB/s|R002-260618 [f7...
+- name: '477,482|CH_3|1.3MB/s|R002-260618 [3a6e... #1'
   port: 9443
   server: 37.120.213.210
   skip-cert-verify: true
@@ -774,7 +714,6 @@ proxies:
   tls: true
   type: http
   udp: true
-  x-toolall-mihomo: true
 - name: '477,482|🇭CH_40|981KB/s|P002-260618 [49... #1'
   password: None
   port: 9443
@@ -811,7 +750,7 @@ proxies:
   tls: true
   type: http
   udp: true
-- name: 477,482,489|🇨🇭CH_3|1.6MB/s|K001-260618 [0d...
+- name: '477,482|🇭CH_41|1.5MB/s|K001-260618 [e0... #1'
   password: ''
   port: 9443
   server: 149.88.27.33
@@ -821,8 +760,7 @@ proxies:
   type: http
   udp: true
   username: ''
-  x-toolall-mihomo: true
-- name: 489|🇨🇭CH_15|421KB/s [5c03190585e3]
+- name: 489|🇨🇭CH_29|719KB/s [5c03190585e3]
   password: ''
   port: 9443
   server: 149.88.27.46
@@ -832,6 +770,18 @@ proxies:
   udp: true
   username: ''
   x-toolall-mihomo: true
+- name: '508,509|瑞士 004 #1'
+  network: ws
+  port: 443
+  server: cdn.cloudof1.ir
+  tls: false
+  type: vless
+  udp: true
+  uuid: 00f7637c-acab-465b-933a-727becde5c1b
+  ws-opts:
+    headers:
+      Host: cdn.cloudof1.ir
+    path: /vcffrt
 - encryption: none
   http-opts:
     path:

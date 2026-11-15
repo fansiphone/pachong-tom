@@ -1,4 +1,38 @@
 proxies:
+- cipher: aes-256-gcm
+  name: 306,378,519,537,538|🇷🇺RU-185.22.153.117-0193 | 7.1...
+  password: NTiHBg64fsY8u8DbGrtypD9gPGSL386p
+  port: 18443
+  server: 185.22.153.117
+  type: ss
+- cipher: aes-128-gcm
+  name: '306,378,477,482,519,537|🇷RU-38.60.223.125-0485 #1'
+  password: 8722de56b6c0b3f6a4d01cf91c07e6aa
+  port: 13108
+  server: 38.60.223.125
+  sub_tag: M003-260806
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  name: '306,378,477,482,519,537|🇺RU-46.17.47.58-0486 #1'
+  password: cCMJgJTA3BA489YUYrFq7XHXSiSpWlLa
+  port: 18443
+  server: 46.17.47.58
+  sub_tag: K001-260618
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: '306,378,519,537|🇷🇺RU-90.156.203.62-0487 #1'
+  password: VVlAff77CnAU43Aoc5j15Y
+  port: 5112
+  server: 90.156.203.62
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: '306,378,519,537|🇪SE-62.182.193.228-0274 #1'
+  password: 2e555e46dbc421452416834962fd014f
+  port: 8388
+  server: 62.182.193.228
+  type: ss
 - cipher: chacha20-ietf-poly1305
   name: 356|🇷🇺1 |  5.2MB/s
   password: 0zyDRZ1XmNXaaCAN7KEA8a
@@ -125,12 +159,6 @@ proxies:
   uuid: a867b90f-0ed1-401a-9088-bf852f6636db
   ws-opts:
     path: /
-- cipher: aes-256-gcm
-  name: 378,519,537,538|🇷🇺RU-185.22.153.117-0193 | 7.1...
-  password: NTiHBg64fsY8u8DbGrtypD9gPGSL386p
-  port: 18443
-  server: 185.22.153.117
-  type: ss
 - cipher: aes-256-cfb
   name: '378,537|🇺RU-213.183.53.222-0298 #1'
   password: KnJGad3FqTvjqbaX
@@ -155,28 +183,6 @@ proxies:
   password: yZiPrr484OdSYcivDUv+UIygwvyW+HQYytKsIgTw9tU=
   port: 43558
   server: 130.49.189.158
-  type: ss
-- cipher: aes-128-gcm
-  name: '378,477,482,519,537|🇷RU-38.60.223.125-0485 #1'
-  password: 8722de56b6c0b3f6a4d01cf91c07e6aa
-  port: 13108
-  server: 38.60.223.125
-  sub_tag: M003-260806
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  name: '378,477,482,519,537|🇺RU-46.17.47.58-0486 #1'
-  password: cCMJgJTA3BA489YUYrFq7XHXSiSpWlLa
-  port: 18443
-  server: 46.17.47.58
-  sub_tag: K001-260618
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: '378,519,537|🇷🇺RU-90.156.203.62-0487 #1'
-  password: VVlAff77CnAU43Aoc5j15Y
-  port: 5112
-  server: 90.156.203.62
   type: ss
 - name: '378,537|🇺RU-5.59.204.26-0538 #1'
   network: ws
@@ -431,20 +437,6 @@ proxies:
   password: V7jmsA6PQsLn
   port: 444
   server: 146.185.198.44
-  type: ss
-- cipher: aes-256-cfb
-  country: 🇺RU
-  name: 435|RU_46
-  password: c3NtHJ5ujV2tGDfj
-  port: 9084
-  server: 217.30.10.70
-  type: ss
-- cipher: aes-256-cfb
-  country: 🇷🇺RU
-  name: 435|🇺RU_47
-  password: f8npKgNzdkss2ytn
-  port: 9088
-  server: 217.30.10.70
   type: ss
 - alterId: 0
   cipher: auto
@@ -920,6 +912,46 @@ proxies:
   server: 185.158.155.33
   tfo: false
   type: ss
+- alterId: 0
+  cipher: auto
+  name: '523,524|🇷🇺_俄罗斯 (12) #1'
+  network: ws
+  port: 443
+  server: 5.188.26.85
+  servername: renderer-stream-2-62.mirra.now
+  skip-cert-verify: true
+  sni: renderer-stream-2-62.mirra.now
+  tls: true
+  type: vmess
+  udp: true
+  uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
+  ws-opts:
+    headers:
+      Host: renderer-stream-2-62.mirra.now
+    path: /api/v1/gpu-stream/socket
+- alterId: 0
+  cipher: auto
+  name: '523,524|🇷🇺_俄罗斯 (13) #1'
+  network: ws
+  port: 443
+  server: 80.240.252.241
+  servername: renderer-stream-2-62.mirra.now
+  skip-cert-verify: true
+  sni: renderer-stream-2-62.mirra.now
+  tls: true
+  type: vmess
+  udp: true
+  uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
+  ws-opts:
+    headers:
+      Host: renderer-stream-2-62.mirra.now
+    path: /api/v1/gpu-stream/socket
+- name: 536|🇷🇺RU-5.59.204.26-2550
+  password: X00HagvwL8gQXNDAnsxsN8dv1_VdneEo
+  port: 21443
+  server: 5.59.204.26
+  sni: fi1.nebulaguard.org
+  type: trojan
 - cipher: chacha20-ietf-poly1305
   name: 558|0|🇺俄罗斯 01 | 1x RU
   password: 035ceef0-c949-4e4e-bcaa-aaaafb9d0549
