@@ -1,22 +1,38 @@
 proxies:
 - client-fingerprint: safari
   flow: xtls-rprx-vision
-  name: '340,502,514,551|🇪🇪[www.v2nodes.com] vless-EE-1... #3'
+  name: '340,456,502,514,551|🇪🇪[www.v2nodes.com] vless-EE-1... #3'
+  network: tcp
   port: 8443
   server: 165.231.157.126
   servername: api-6b04608f.adhil.uk
   tls: true
   type: vless
   uuid: 0173d52e-8e1b-4681-831e-11529677b72f
+  ws-opts:
+    path: '%2F'
 - client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: '340,514|🇪🇪 爱沙尼亚 | EST #1 #1'
-  port: 8443
-  server: 196.198.111.179
-  servername: api-6b04608f.adhil.uk
+  grpc-opts:
+    grpc-service-name: neurex
+  name: '340,514|🇪🇪 爱沙尼亚 | EST #2'
+  network: grpc
+  port: 443
+  server: 185.174.135.219
+  servername: eeb.899themes.pro
   tls: true
   type: vless
-  uuid: 0173d52e-8e1b-4681-831e-11529677b72f
+  uuid: ba373a70-295f-482d-a471-8bc17b54e23b
+- client-fingerprint: firefox
+  grpc-opts:
+    grpc-service-name: ''
+  name: '340,514|🇪🇪 爱沙尼亚 | EST #1 #1'
+  network: grpc
+  port: 443
+  server: 185.174.135.219
+  servername: eeb.899themes.pro
+  tls: true
+  type: vless
+  uuid: ba373a70-295f-482d-a471-8bc17b54e23b
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: 372|🇪🇪 Estonia 1 TG:@nodpai
@@ -31,17 +47,9 @@ proxies:
   tls: true
   type: vless
   uuid: 8da3432a-d4da-4f43-801f-342cda5eae9f
-- name: '378,477,482,537|EE-95.153.31.66-0567 #1'
-  port: 9443
-  server: 95.153.31.66
-  skip-cert-verify: false
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
 - alterId: 0
   cipher: auto
-  name: '378,536,537|🇪EE-176.112.146.190-0648 #1'
+  name: '378,536,537|EE-176.112.146.190-0578 #1'
   network: ws
   port: 80
   server: 176.112.146.190
@@ -52,27 +60,27 @@ proxies:
   uuid: f9247df4-02d5-4b31-acc5-4022652c5953
   ws-opts:
     path: /
-- name: '378,536,537|🇪EE-138.124.183.222-3058 #1'
+- name: '378,536,537|🇪EE-138.124.183.222-2985 #1'
   password: xxoo
   port: 443
   server: 138.124.183.222
   skip-cert-verify: false
   sni: 138.124.183.222
   type: trojan
-- name: '378,536,537|🇪EE-138.124.183.216-3455 #1'
+- name: '378,536,537|🇪EE-138.124.183.216-3382 #1'
   password: xxoo
   port: 443
   server: 138.124.183.216
   skip-cert-verify: false
   type: trojan
-- name: '378,536,537|🇪EE-138.124.183.226-3544 #1'
+- name: '378,536,537|🇪EE-138.124.183.226-3471 #1'
   password: xxoo
   port: 443
   server: 138.124.183.226
   skip-cert-verify: false
   type: trojan
 - cipher: aes-256-cfb
-  name: '378,537|🇪EE-37.252.5.234-4981 #1'
+  name: '378,537|🇪EE-37.252.5.234-4908 #1'
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 37.252.5.234
@@ -90,24 +98,11 @@ proxies:
   tls: false
   type: vless
   uuid: 2acc3742-c568-11f1-9902-a337233c6cda
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: '453,456|🇪🇪EE_5|934KB/s|M003-260806 [82... #1'
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: lI2vfdzBaAKrDxAdkAW8IHp9pkpQV6INmJrYriC_lyE
-    short-id: 9ef8ebef9638b9c7
-  server: 13.143.239.90
-  servername: e0ddd1x.ee2.h1clayd.click
-  tls: false
-  type: vless
-  uuid: 7d31a423-4bb6-4c16-91b8-c08901a37780
 - alpn:
   - http/1.1
   client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: '456,580|🇪🇪 EE丨yoyapai.com爱沙尼亚丨yoyapai.... #1'
+  name: '453,456,580|🇪🇪 EE丨yoyapai.com爱沙尼亚丨yoyapai.... #3'
   network: tcp
   port: 443
   server: 138.124.100.128
@@ -116,6 +111,20 @@ proxies:
   tls: true
   type: vless
   uuid: 88888888-8888-8888-8888-888888888888
+- client-fingerprint: qq
+  grpc-opts:
+    grpc-service-name: grpc-tunnel
+  name: 456|🇪🇪EE_6|1019KB/s|M003-260806 [0...
+  network: grpc
+  port: 8881
+  reality-opts:
+    public-key: Dfgu8Ey0M8Hz4gXGZAwQ3H9jLt2HByVsjAOTWiuKDB0
+    short-id: aa
+  server: 136.234.173.231
+  servername: dl.google.com
+  tls: false
+  type: vless
+  uuid: e460e7b2-a146-4468-87ed-52510b2caae6
 - name: 462|爱沙尼亚_塔林
   network: ws
   port: 2087
@@ -358,7 +367,7 @@ proxies:
     path: twitterfreecodessecurity%3Dtls
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '475,480|🇪🇪EE爱沙尼亚丨yoyapai.com (2) #1'
+  name: 475,480|🇪🇪EE爱沙尼亚丨yoyapai.com (2)
   port: 443
   reality-opts:
     public-key: uqLRHVERHP974FJk39ltiV8pkcGAWYKJfOJ1nMALahU
@@ -371,17 +380,64 @@ proxies:
   type: vless
   udp: true
   uuid: 2acc3742-c568-11f1-9902-a337233c6cda
-- name: '477,482,508,509|美国 835 #1'
-  network: tcp
-  port: 16443
-  server: 45.86.60.174
+- alpn:
+  - http/1.1
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: '475|🇪🇪 EE丨yoyapai.com爱沙尼亚丨yoyapai.... #2'
+  port: 443
+  server: 138.124.100.128
+  servername: ee4.fast-connect-service.site
   skip-cert-verify: false
-  sub_tag: P002-260618
-  tfo: false
+  sni: ee4.fast-connect-service.site
   tls: true
   type: vless
   udp: true
-  uuid: 13e541f3-d09d-4633-89df-8513db0ced20
+  uuid: 88888888-8888-8888-8888-888888888888
+- cipher: chacha20-ietf-poly1305
+  name: '477,482|EE_5|390KB/s|M003-260806 [2bb6... #1'
+  password: 104243d8a410f4e54013b7fdb57c4b688d929c7b5b89e86b
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: estonia.astroapps.io
+    mode: websocket
+    path: /fd3f56f3dc9f5ceca7e57ecd
+    tls: true
+  port: 443
+  server: estonia.astroapps.io
+  sub_tag: M003-260806
+  type: ss
+  udp: true
+- name: '477,482|EE_3|1.1MB/s|K001-260618 [5908... #1'
+  password: ''
+  port: 9443
+  server: 95.153.32.2
+  skip-cert-verify: true
+  sub_tag: K001-260618
+  tls: true
+  type: http
+  udp: true
+  username: ''
+- name: '477,482|🇪EE_2|951KB/s|K001-260618 [968... #1'
+  password: None
+  port: 9443
+  server: 95.153.31.66
+  skip-cert-verify: true
+  sub_tag: K001-260618
+  tls: true
+  type: http
+  udp: true
+  username: ''
+- name: '477,482|EE_1|1.1MB/s|K001-260618 [ea6f... #1'
+  password: None
+  port: 9443
+  server: 192.159.101.174
+  skip-cert-verify: true
+  sub_tag: K001-260618
+  tls: true
+  type: http
+  udp: true
+  username: ''
 - name: '508,509|爱沙尼亚 001 #1'
   network: tcp
   port: 443
@@ -421,6 +477,19 @@ proxies:
   type: vless
   udp: true
   uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
+- client-fingerprint: chrome
+  name: '566|🇪🇪 爱沙尼亚 | EST #3'
+  network: tcp
+  port: 5269
+  reality-opts:
+    public-key: meI7RA9FgxL1yjJsbJBehEKoB2Z1ra4hyYJso9qtmFA
+    short-id: 4b198dc3bfffb7af
+  server: 82.202.182.32
+  servername: max.ru
+  tls: true
+  type: vless
+  udp: true
+  uuid: 0d4807a7-260b-4d66-a71e-5e793c46c66e
 - name: 580|🇪🇪EE_8|1.2MB/s|C002-260622 01
   network: tcp
   password: oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1
